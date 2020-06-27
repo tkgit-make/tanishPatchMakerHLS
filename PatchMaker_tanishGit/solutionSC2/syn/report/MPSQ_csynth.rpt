@@ -1,0 +1,224 @@
+
+
+================================================================
+== Vitis HLS Report for 'MPSQ'
+================================================================
+* Date:           Sat Jun 27 14:16:19 2020
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionSC2 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.650 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------+------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                             |                  |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |           Instance          |      Module      |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +-----------------------------+------------------+---------+---------+-----------+-----------+------+------+---------+
+        |grp_solveNextColumn_fu_217   |solveNextColumn   |        ?|        ?|          ?|          ?|     ?|     ?|     none|
+        |grp_initializeArrays_fu_236  |initializeArrays  |     6404|     6404|  32.020 us|  32.020 us|  6404|  6404|     none|
+        +-----------------------------+------------------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |            Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- initGDarrayDecoded_perLayer   |        ?|        ?|         ?|          -|          -|     5|        no|
+        | + initGDarrayDecoded_perPoint  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        |- shadowQuilt_loop              |        ?|        ?|         ?|          -|          -|     ?|        no|
+        +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      195|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        9|   105|   162350|   153536|    -|
+|Memory               |        0|     -|        0|        0|    -|
+|Multiplexer          |        -|     -|        -|      303|    -|
+|Register             |        -|     -|      191|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        9|   105|   162541|   154034|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |       ~0|    10|        7|       15|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |       ~0|     2|        1|        3|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+------------------+---------+-----+--------+--------+-----+
+    |           Instance          |      Module      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
+    +-----------------------------+------------------+---------+-----+--------+--------+-----+
+    |grp_initializeArrays_fu_236  |initializeArrays  |        0|    0|     124|     728|    0|
+    |grp_solveNextColumn_fu_217   |solveNextColumn   |        9|  105|  162226|  152808|    0|
+    +-----------------------------+------------------+---------+-----+--------+--------+-----+
+    |Total                        |                  |        9|  105|  162350|  153536|    0|
+    +-----------------------------+------------------+---------+-----+--------+--------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |         Memory         |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |GDarrayDecoded_V_U      |GDarrayDecoded_V      |        0|  0|   0|    0|  2560|   32|     1|        81920|
+    |patches_parameters_V_U  |patches_parameters_V  |        0|  0|   0|    0|  3840|   32|     1|       122880|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                   |                      |        0|  0|   0|    0|  6400|   64|     2|       204800|
+    +------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |add_ln618_fu_244_p2              |         +|   0|  0|  10|           3|           1|
+    |add_ln624_fu_281_p2              |         +|   0|  0|  19|          12|           1|
+    |add_ln629_1_fu_300_p2            |         +|   0|  0|  20|          13|          13|
+    |add_ln629_fu_321_p2              |         +|   0|  0|  21|          14|          14|
+    |loopCounter_3_fu_405_p2          |         +|   0|  0|  39|          32|           1|
+    |ap_block_state9_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln618_fu_250_p2             |      icmp|   0|  0|   8|           3|           3|
+    |icmp_ln624_fu_291_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln647_fu_411_p2             |      icmp|   0|  0|  20|          32|           5|
+    |icmp_ln886_fu_399_p2             |      icmp|   0|  0|  20|          32|          26|
+    |or_ln630_fu_372_p2               |        or|   0|  0|  12|          12|           1|
+    |ap_enable_pp0                    |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1          |       xor|   0|  0|   2|           2|           1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |Total                            |          |   0|  0| 195|         189|         101|
+    +---------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |GDarrayDecoded_V_address0      |  14|          3|   12|         36|
+    |GDarrayDecoded_V_ce0           |  14|          3|    1|          3|
+    |GDn_points_address0            |  14|          3|    3|          9|
+    |GDn_points_ce0                 |  14|          3|    1|          3|
+    |a_reg_171                      |   9|          2|    3|          6|
+    |ap_NS_fsm                      |  49|          9|    1|          9|
+    |ap_enable_reg_pp0_iter1        |  14|          3|    1|          3|
+    |apexZ0_V_2_reg_194             |   9|          2|   32|         64|
+    |b_reg_183                      |   9|          2|   12|         24|
+    |loopCounter_reg_206            |   9|          2|   32|         64|
+    |n_patches_o                    |   9|          2|    8|         16|
+    |patches_parameters_V_address0  |  14|          3|   12|         36|
+    |patches_parameters_V_ce0       |  14|          3|    1|          3|
+    |patches_parameters_V_ce1       |   9|          2|    1|          2|
+    |patches_parameters_V_d0        |  14|          3|   32|         96|
+    |patches_parameters_V_we0       |  14|          3|    1|          3|
+    |patches_parameters_V_we1       |   9|          2|    1|          2|
+    |patches_superpoints_address0   |  14|          3|   12|         36|
+    |patches_superpoints_ce0        |  14|          3|    1|          3|
+    |patches_superpoints_ce1        |   9|          2|    1|          2|
+    |patches_superpoints_d0         |  14|          3|   64|        192|
+    |patches_superpoints_we0        |  14|          3|    1|          3|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          | 303|         64|  233|        615|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------+----+----+-----+-----------+
+    |                   Name                   | FF | LUT| Bits| Const Bits|
+    +------------------------------------------+----+----+-----+-----------+
+    |GDn_points_load_reg_440                   |  32|   0|   32|          0|
+    |a_reg_171                                 |   3|   0|    3|          0|
+    |add_ln618_reg_422                         |   3|   0|    3|          0|
+    |add_ln629_1_reg_459                       |  13|   0|   13|          0|
+    |ap_CS_fsm                                 |   8|   0|    8|          0|
+    |ap_enable_reg_pp0_iter0                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                   |   1|   0|    1|          0|
+    |apexZ0_V_2_reg_194                        |  32|   0|   32|          0|
+    |b_reg_183                                 |  12|   0|   12|          0|
+    |grp_initializeArrays_fu_236_ap_start_reg  |   1|   0|    1|          0|
+    |grp_solveNextColumn_fu_217_ap_start_reg   |   1|   0|    1|          0|
+    |icmp_ln624_reg_455                        |   1|   0|    1|          0|
+    |icmp_ln647_reg_483                        |   1|   0|    1|          0|
+    |icmp_ln886_reg_474                        |   1|   0|    1|          0|
+    |loopCounter_3_reg_478                     |  32|   0|   32|          0|
+    |loopCounter_reg_206                       |  32|   0|   32|          0|
+    |shl_ln_reg_445                            |   3|   0|   14|         11|
+    |trunc_ln629_reg_464                       |  11|   0|   11|          0|
+    |zext_ln618_1_reg_435                      |   3|   0|   13|         10|
+    +------------------------------------------+----+----+-----+-----------+
+    |Total                                     | 191|   0|  212|         21|
+    +------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+---------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++------------------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|                 MPSQ|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|                 MPSQ|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|                 MPSQ|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|                 MPSQ|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|                 MPSQ|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|                 MPSQ|  return value|
+|stop                          |   in|   32|     ap_none|                 stop|        scalar|
+|ppl                           |   in|   32|     ap_none|                  ppl|        scalar|
+|leftRight                     |   in|    1|     ap_none|            leftRight|        scalar|
+|n_patches_i                   |   in|    8|     ap_ovld|            n_patches|       pointer|
+|n_patches_o                   |  out|    8|     ap_ovld|            n_patches|       pointer|
+|n_patches_o_ap_vld            |  out|    1|     ap_ovld|            n_patches|       pointer|
+|GDarray_address0              |  out|   11|   ap_memory|              GDarray|         array|
+|GDarray_ce0                   |  out|    1|   ap_memory|              GDarray|         array|
+|GDarray_q0                    |   in|   64|   ap_memory|              GDarray|         array|
+|GDn_points_address0           |  out|    3|   ap_memory|           GDn_points|         array|
+|GDn_points_ce0                |  out|    1|   ap_memory|           GDn_points|         array|
+|GDn_points_q0                 |   in|   32|   ap_memory|           GDn_points|         array|
+|patches_superpoints_address0  |  out|   12|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_ce0       |  out|    1|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_we0       |  out|    1|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_d0        |  out|   64|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_q0        |   in|   64|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_address1  |  out|   12|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_ce1       |  out|    1|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_q1        |   in|   64|   ap_memory|  patches_superpoints|         array|
++------------------------------+-----+-----+------------+---------------------+--------------+
+

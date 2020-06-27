@@ -4,7 +4,7 @@
 ## Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ############################################################
 open_project PatchMaker_tanishGit
-set_top makePatches_ShadowQuilt_fromEdges
+set_top MPSQ
 add_files patchMaker.cpp -cflags "-IC:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader"
 add_files -tb tanishTestBench/cppOutput.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 add_files -tb tanishTestBench/cppOutputRef.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"

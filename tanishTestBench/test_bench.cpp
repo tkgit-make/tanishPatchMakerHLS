@@ -80,7 +80,7 @@ solve_loop:
 #pragma HLS array_partition variable=GDarrayPostSort
 #pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarrayPostSort bundle=GDarrayPostSort_b
 
-    makePatches_ShadowQuilt_fromEdges(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
+    MPSQ(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
 #if PRINT_OUTS == true
     cout << "n_patches = " << n_patches << endl;
 

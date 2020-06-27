@@ -1,0 +1,191 @@
+
+
+================================================================
+== Vitis HLS Report for 'get_acceptanceCorners'
+================================================================
+* Date:           Sat Jun 27 14:15:48 2020
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionSC2 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.059 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                       |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |               Loop Name               |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- get_acceptanceCorners_minMaxFinding  |        ?|        ?|         3|          2|          1|     ?|       yes|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      438|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      411|    -|
+|Register             |        -|     -|      384|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|      384|      849|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------+----------+----+---+----+------------+------------+
+    |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------+----------+----+---+----+------------+------------+
+    |add_ln244_fu_356_p2         |         +|   0|  0|  39|          32|           1|
+    |add_ln886_1_fu_424_p2       |         +|   0|  0|  14|           7|           2|
+    |add_ln886_fu_414_p2         |         +|   0|  0|  14|           7|           2|
+    |sub_ln878_fu_392_p2         |         -|   0|  0|  14|           7|           7|
+    |icmp_ln244_fu_362_p2        |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln874_1_fu_496_p2      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln874_2_fu_502_p2      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln874_3_fu_508_p2      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln874_fu_490_p2        |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_10_fu_520_p2     |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_9_fu_448_p2      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_fu_434_p2        |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln886_7_fu_476_p2      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln886_8_fu_514_p2      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln886_fu_462_p2        |      icmp|   0|  0|  20|          32|          32|
+    |or_ln878_fu_403_p2          |        or|   0|  0|   7|           7|           1|
+    |a_corner_min_V_1_fu_440_p3  |    select|   0|  0|  32|           1|          32|
+    |b_corner_min_V_2_fu_454_p3  |    select|   0|  0|  32|           1|          32|
+    |c_corner_max_V_1_fu_468_p3  |    select|   0|  0|  32|           1|          32|
+    |d_corner_max_V_2_fu_482_p3  |    select|   0|  0|  32|           1|          32|
+    |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
+    +----------------------------+----------+----+---+----+------------+------------+
+    |Total                       |          |   0|  0| 438|         417|         495|
+    +----------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------+-----+-----------+-----+-----------+
+    |              Name              | LUT | Input Size| Bits| Total Bits|
+    +--------------------------------+-----+-----------+-----+-----------+
+    |a_corner_min_V_reg_323          |    9|          2|   32|         64|
+    |ap_NS_fsm                       |  102|         21|    1|         21|
+    |ap_enable_reg_pp0_iter1         |    9|          2|    1|          2|
+    |ap_phi_mux_i_phi_fu_276_p4      |    9|          2|   32|         64|
+    |arrayidx1796519_load_0_reg_336  |    9|          2|   32|         64|
+    |b_corner_min_V_reg_309          |    9|          2|   32|         64|
+    |c_corner_max_V_reg_296          |    9|          2|   32|         64|
+    |d_corner_max_V_reg_283          |    9|          2|   32|         64|
+    |i_reg_272                       |    9|          2|   32|         64|
+    |wp_parameters_address0          |   86|         18|    7|        126|
+    |wp_parameters_address1          |   65|         15|    7|        105|
+    |wp_parameters_d0                |   37|          7|   32|        224|
+    |wp_parameters_d1                |   49|          9|   32|        288|
+    +--------------------------------+-----+-----------+-----+-----------+
+    |Total                           |  411|         86|  304|       1214|
+    +--------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+----+-----+-----------+
+    |              Name              | FF | LUT| Bits| Const Bits|
+    +--------------------------------+----+----+-----+-----------+
+    |a_corner_min_V_1_reg_660        |  32|   0|   32|          0|
+    |a_corner_min_V_reg_323          |  32|   0|   32|          0|
+    |add_ln244_reg_625               |  32|   0|   32|          0|
+    |ap_CS_fsm                       |  20|   0|   20|          0|
+    |ap_enable_reg_pp0_iter0         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1         |   1|   0|    1|          0|
+    |arrayidx1796519_load_0_reg_336  |  32|   0|   32|          0|
+    |b_corner_min_V_2_reg_665        |  32|   0|   32|          0|
+    |b_corner_min_V_reg_309          |  32|   0|   32|          0|
+    |c_corner_max_V_reg_296          |  32|   0|   32|          0|
+    |d_corner_max_V_reg_283          |  32|   0|   32|          0|
+    |i_reg_272                       |  32|   0|   32|          0|
+    |icmp_ln244_reg_630              |   1|   0|    1|          0|
+    |icmp_ln874_reg_685              |   1|   0|    1|          0|
+    |icmp_ln878_10_reg_702           |   1|   0|    1|          0|
+    |icmp_ln886_8_reg_698            |   1|   0|    1|          0|
+    |reg_350                         |  32|   0|   32|          0|
+    |sub_ln878_reg_634               |   6|   0|    7|          1|
+    |wp_parameters_load_2_reg_680    |  32|   0|   32|          0|
+    +--------------------------------+----+----+-----+-----------+
+    |Total                           | 384|   0|  385|          1|
+    +--------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+-----------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  get_acceptanceCorners|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  get_acceptanceCorners|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  get_acceptanceCorners|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  get_acceptanceCorners|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  get_acceptanceCorners|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  get_acceptanceCorners|  return value|
+|wp_parameters_address0  |  out|    7|   ap_memory|          wp_parameters|         array|
+|wp_parameters_ce0       |  out|    1|   ap_memory|          wp_parameters|         array|
+|wp_parameters_we0       |  out|    1|   ap_memory|          wp_parameters|         array|
+|wp_parameters_d0        |  out|   32|   ap_memory|          wp_parameters|         array|
+|wp_parameters_q0        |   in|   32|   ap_memory|          wp_parameters|         array|
+|wp_parameters_address1  |  out|    7|   ap_memory|          wp_parameters|         array|
+|wp_parameters_ce1       |  out|    1|   ap_memory|          wp_parameters|         array|
+|wp_parameters_we1       |  out|    1|   ap_memory|          wp_parameters|         array|
+|wp_parameters_d1        |  out|   32|   ap_memory|          wp_parameters|         array|
+|wp_parameters_q1        |   in|   32|   ap_memory|          wp_parameters|         array|
++------------------------+-----+-----+------------+-----------------------+--------------+
+

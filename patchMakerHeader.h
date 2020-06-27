@@ -5,7 +5,7 @@
 #define PRINT_OUTS false
 #define LOGIC_VALIDATION false //Set to true if comparing to the Standalone, validated CPP, for validation of VITIS code
 #define WHILE_LOOP_CATCHES true
-#define SMALL_CIRCUIT false
+#define SMALL_CIRCUIT true
 
 #include <stdio.h>
 #include <limits.h>
@@ -104,6 +104,8 @@ index_type n_patches = 0;
  */
 
 const long_type radii[MAX_LAYERS] = {5 * INTEGER_FACTOR_CM, 10 * INTEGER_FACTOR_CM, 15 * INTEGER_FACTOR_CM, 20 * INTEGER_FACTOR_CM, 25 * INTEGER_FACTOR_CM};
+const long_type radiiDivisionList[MAX_LAYERS + 1][MAX_LAYERS + 1] = {{0, 0, 0, 0, 0, 0}, {0, 4294967296, 2147483648, 1431655765, 1073741824, 858993459}, {0, 8589934592, 4294967296, 2863311530, 2147483648, 1717986918}, {0, 12884901888, 6442450944, 4294967296, 3221225472, 2576980377}, {0, 17179869184, 8589934592, 5726623061, 4294967296, 3435973836}, {0, 21474836480, 10737418240, 7158278826, 5368709120, 4294967296}};
+#define RIGHT_SHIFT_FACTOR 32
 //const float radii_leverArm[MAX_LAYERS-1] = {1, 1.333333, 2, 4};
 const float layer1Edge = 22.0001;
 const float layer2Edge = 29.0001;
@@ -219,7 +221,7 @@ void get_acceptanceCorners(WEDGE_PATCH);
 void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES);
 void delete_patch(int_type index, index_type &n_patches, GPATCHES);
 index_type get_index_from_z(int_type layer, COORDINATE_TYPE z_value, GDARRAY);
-void makePatches_ShadowQuilt_fromEdges(int_type stop, int_type ppl, bool leftRight, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int_type (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]); // TOP-LEVEL FUNCTION FOR VITIS
+void MPSQ(int_type stop, int_type ppl, bool leftRight, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int_type (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]); // TOP-LEVEL FUNCTION FOR VITIS
 COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, bool leftRight, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES);
 void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, bool leftRight, bool fix42, COORDINATE_TYPE &saved_apexZ0, int_type &nPatchesInColumn, COORDINATE_TYPE &c_corner, COORDINATE_TYPE &projectionOfCornerToBeam, COORDINATE_TYPE &z_top_min, COORDINATE_TYPE &z_top_max, COORDINATE_TYPE &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES);
 void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDINATE_TYPE z_top_max, COORDINATE_TYPE complementary_apexZ0, COORDINATE_TYPE apexZ0, int_type ppl, index_type &n_patches, GDARRAY, GPATCHES);

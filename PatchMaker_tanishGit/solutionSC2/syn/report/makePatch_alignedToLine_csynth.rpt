@@ -1,0 +1,332 @@
+
+
+================================================================
+== Vitis HLS Report for 'makePatch_alignedToLine'
+================================================================
+* Date:           Sat Jun 27 14:15:52 2020
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionSC2 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.612 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------+--------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                           |                                |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                  Instance                 |             Module             |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-------------------------------------------+--------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_wedgePatch_init_fu_404                 |wedgePatch_init                 |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+        |grp_add_patch9_fu_414                      |add_patch9                      |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+        |grp_makeSuperPoint_alignedToLine11_fu_427  |makeSuperPoint_alignedToLine11  |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+        +-------------------------------------------+--------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +---------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                                                                                                                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |                                                                     Loop Name                                                                     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter             |      160|      160|         2|          1|          1|   160|       yes|
+        |- makePatch_alignedToLine_makeSuperpoint_loop                                                                                                      |        ?|        ?|         ?|          -|          -|     5|        no|
+        |- makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter                 |      160|      160|         2|          1|          1|   160|       yes|
+        |- makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength  |      120|      120|         2|          1|          1|   120|       yes|
+        +---------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      478|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        1|    23|    25593|    23671|    -|
+|Memory               |        2|     -|       32|       65|    -|
+|Multiplexer          |        -|     -|        -|      609|    -|
+|Register             |        -|     -|      167|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        3|    23|    25792|    24823|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |       ~0|     2|        1|        2|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |       ~0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------+--------------------------------+---------+----+-------+-------+-----+
+    |                  Instance                 |             Module             | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +-------------------------------------------+--------------------------------+---------+----+-------+-------+-----+
+    |grp_add_patch9_fu_414                      |add_patch9                      |        0|   0|   7511|   7169|    0|
+    |grp_makeSuperPoint_alignedToLine11_fu_427  |makeSuperPoint_alignedToLine11  |        1|   1|   1551|   2636|    0|
+    |mul_58s_60ns_117_2_1_U63                   |mul_58s_60ns_117_2_1            |        0|   4|    157|    109|    0|
+    |mul_64ns_66ns_129_2_1_U64                  |mul_64ns_66ns_129_2_1           |        0|   8|    361|    178|    0|
+    |mul_64ns_66ns_129_2_1_U65                  |mul_64ns_66ns_129_2_1           |        0|   8|    361|    178|    0|
+    |grp_wedgePatch_init_fu_404                 |wedgePatch_init                 |        0|   2|  15652|  13401|    0|
+    +-------------------------------------------+--------------------------------+---------+----+-------+-------+-----+
+    |Total                                      |                                |        1|  23|  25593|  23671|    0|
+    +-------------------------------------------+--------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +---------------------------+-------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |           Memory          |                      Module                     | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------------------------+-------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |NPpatches_parameters_V_U   |makePatch_alignedToLine_NPpatches_parameters_V   |        0|  32|  65|    0|   120|   32|     1|         3840|
+    |NPpatches_superpoints_V_U  |makePatch_alignedToLine_NPpatches_superpoints_V  |        1|   0|   0|    0|   160|   32|     1|         5120|
+    |init_patch_V_U             |makePatch_alignedToLine_init_patch_V             |        1|   0|   0|    0|   160|   32|     1|         5120|
+    +---------------------------+-------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total                      |                                                 |        2|  32|  65|    0|   440|   96|     3|        14080|
+    +---------------------------+-------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln1337_1_fu_446_p2     |         +|   0|  0|  15|           8|           1|
+    |add_ln1337_fu_458_p2       |         +|   0|  0|  10|           3|           1|
+    |add_ln1343_1_fu_538_p2     |         +|   0|  0|  14|           7|           1|
+    |add_ln1343_fu_504_p2       |         +|   0|  0|  12|           5|           1|
+    |add_ln1349_fu_532_p2       |         +|   0|  0|   9|           2|           1|
+    |add_ln1354_1_fu_581_p2     |         +|   0|  0|  15|           8|           8|
+    |add_ln1354_fu_566_p2       |         +|   0|  0|  15|           8|           8|
+    |add_ln1363_fu_592_p2       |         +|   0|  0|  10|           3|           1|
+    |add_ln1380_1_fu_604_p2     |         +|   0|  0|  15|           8|           1|
+    |add_ln1380_fu_616_p2       |         +|   0|  0|  10|           3|           1|
+    |add_ln1386_1_fu_696_p2     |         +|   0|  0|  14|           7|           1|
+    |add_ln1386_fu_662_p2       |         +|   0|  0|  12|           5|           1|
+    |add_ln1392_fu_690_p2       |         +|   0|  0|   9|           2|           1|
+    |add_ln1397_1_fu_739_p2     |         +|   0|  0|  15|           8|           8|
+    |add_ln1397_fu_724_p2       |         +|   0|  0|  15|           8|           8|
+    |add_ln1410_1_fu_750_p2     |         +|   0|  0|  14|           7|           1|
+    |add_ln1410_fu_762_p2       |         +|   0|  0|  10|           3|           1|
+    |add_ln1416_1_fu_900_p2     |         +|   0|  0|  13|           6|           1|
+    |add_ln1416_fu_820_p2       |         +|   0|  0|  10|           3|           1|
+    |add_ln1422_fu_894_p2       |         +|   0|  0|  10|           3|           1|
+    |add_ln1427_1_fu_888_p2     |         +|   0|  0|  16|           7|           7|
+    |add_ln1427_fu_852_p2       |         +|   0|  0|  13|           6|           6|
+    |sub_ln1427_fu_878_p2       |         -|   0|  0|  16|           7|           7|
+    |and_ln1337_fu_498_p2       |       and|   0|  0|   2|           1|           1|
+    |and_ln1380_fu_656_p2       |       and|   0|  0|   2|           1|           1|
+    |and_ln1410_fu_814_p2       |       and|   0|  0|   2|           1|           1|
+    |icmp_ln1337_fu_452_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln1343_fu_464_p2      |      icmp|   0|  0|  10|           7|           6|
+    |icmp_ln1349_fu_492_p2      |      icmp|   0|  0|   8|           2|           3|
+    |icmp_ln1363_fu_598_p2      |      icmp|   0|  0|   8|           3|           3|
+    |icmp_ln1380_fu_610_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln1386_fu_622_p2      |      icmp|   0|  0|  10|           7|           6|
+    |icmp_ln1392_fu_650_p2      |      icmp|   0|  0|   8|           2|           3|
+    |icmp_ln1410_fu_756_p2      |      icmp|   0|  0|  10|           7|           5|
+    |icmp_ln1416_fu_768_p2      |      icmp|   0|  0|  10|           6|           5|
+    |icmp_ln1422_fu_808_p2      |      icmp|   0|  0|   8|           3|           3|
+    |or_ln1343_fu_510_p2        |        or|   0|  0|   2|           1|           1|
+    |or_ln1386_fu_668_p2        |        or|   0|  0|   2|           1|           1|
+    |or_ln1416_fu_826_p2        |        or|   0|  0|   2|           1|           1|
+    |select_ln1337_1_fu_478_p3  |    select|   0|  0|   3|           1|           3|
+    |select_ln1337_fu_470_p3    |    select|   0|  0|   5|           1|           1|
+    |select_ln1343_1_fu_524_p3  |    select|   0|  0|   5|           1|           5|
+    |select_ln1343_2_fu_544_p3  |    select|   0|  0|   7|           1|           1|
+    |select_ln1343_fu_516_p3    |    select|   0|  0|   2|           1|           1|
+    |select_ln1380_1_fu_636_p3  |    select|   0|  0|   3|           1|           3|
+    |select_ln1380_fu_628_p3    |    select|   0|  0|   5|           1|           1|
+    |select_ln1386_1_fu_682_p3  |    select|   0|  0|   5|           1|           5|
+    |select_ln1386_2_fu_702_p3  |    select|   0|  0|   7|           1|           1|
+    |select_ln1386_fu_674_p3    |    select|   0|  0|   2|           1|           1|
+    |select_ln1410_1_fu_782_p3  |    select|   0|  0|   3|           1|           3|
+    |select_ln1410_fu_774_p3    |    select|   0|  0|   3|           1|           1|
+    |select_ln1416_1_fu_840_p3  |    select|   0|  0|   3|           1|           3|
+    |select_ln1416_2_fu_906_p3  |    select|   0|  0|   6|           1|           1|
+    |select_ln1416_fu_832_p3    |    select|   0|  0|   3|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_pp1              |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_pp2              |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1    |       xor|   0|  0|   2|           2|           1|
+    |ap_enable_reg_pp1_iter1    |       xor|   0|  0|   2|           2|           1|
+    |ap_enable_reg_pp2_iter1    |       xor|   0|  0|   2|           2|           1|
+    |xor_ln1337_fu_486_p2       |       xor|   0|  0|   2|           1|           2|
+    |xor_ln1380_fu_644_p2       |       xor|   0|  0|   2|           1|           2|
+    |xor_ln1410_fu_802_p2       |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 478|         213|         170|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |NPpatches_parameters_V_address0   |  20|          4|    7|         28|
+    |NPpatches_parameters_V_ce0        |  20|          4|    1|          4|
+    |NPpatches_parameters_V_ce1        |   9|          2|    1|          2|
+    |NPpatches_parameters_V_d0         |  14|          3|   32|         96|
+    |NPpatches_parameters_V_we0        |  14|          3|    1|          3|
+    |NPpatches_parameters_V_we1        |   9|          2|    1|          2|
+    |NPpatches_superpoints_V_address0  |  20|          4|    8|         32|
+    |NPpatches_superpoints_V_address1  |  14|          3|    8|         24|
+    |NPpatches_superpoints_V_ce0       |  20|          4|    1|          4|
+    |NPpatches_superpoints_V_ce1       |  14|          3|    1|          3|
+    |NPpatches_superpoints_V_d0        |  14|          3|   32|         96|
+    |NPpatches_superpoints_V_we0       |  14|          3|    1|          3|
+    |a_reg_228                         |   9|          2|    3|          6|
+    |ap_NS_fsm                         |  65|         13|    1|         13|
+    |ap_enable_reg_pp0_iter1           |  14|          3|    1|          3|
+    |ap_enable_reg_pp1_iter1           |  14|          3|    1|          3|
+    |ap_enable_reg_pp2_iter1           |  14|          3|    1|          3|
+    |ap_phi_mux_a_phi_fu_232_p4        |   9|          2|    3|          6|
+    |ap_phi_mux_b_1_phi_fu_309_p4      |   9|          2|    3|          6|
+    |ap_phi_mux_b_2_phi_fu_364_p4      |   9|          2|    3|          6|
+    |ap_phi_mux_b_phi_fu_254_p4        |   9|          2|    5|         10|
+    |ap_phi_mux_c_1_phi_fu_331_p4      |   9|          2|    5|         10|
+    |ap_phi_mux_c_2_phi_fu_386_p4      |   9|          2|    3|          6|
+    |b_1_reg_305                       |   9|          2|    3|          6|
+    |b_2_reg_360                       |   9|          2|    3|          6|
+    |b_reg_250                         |   9|          2|    5|         10|
+    |c_1_reg_327                       |   9|          2|    5|         10|
+    |c_2_reg_382                       |   9|          2|    3|          6|
+    |c_reg_261                         |   9|          2|    2|          4|
+    |d_1_reg_393                       |   9|          2|    3|          6|
+    |d_reg_338                         |   9|          2|    2|          4|
+    |grp_fu_1065_ce                    |   9|          2|    1|          2|
+    |grp_fu_1069_ce                    |   9|          2|    1|          2|
+    |grp_fu_1073_ce                    |   9|          2|    1|          2|
+    |i_reg_282                         |   9|          2|    3|          6|
+    |indvar_flatten13_reg_217          |   9|          2|    8|         16|
+    |indvar_flatten21_reg_316          |   9|          2|    7|         14|
+    |indvar_flatten35_reg_294          |   9|          2|    8|         16|
+    |indvar_flatten43_reg_371          |   9|          2|    6|         12|
+    |indvar_flatten57_reg_349          |   9|          2|    7|         14|
+    |indvar_flatten_reg_239            |   9|          2|    7|         14|
+    |init_patch_V_address0             |  20|          4|    8|         32|
+    |init_patch_V_ce0                  |  20|          4|    1|          4|
+    |init_patch_V_d0                   |  14|          3|   32|         96|
+    |init_patch_V_we0                  |  14|          3|    1|          3|
+    |n_patches_o                       |   9|          2|    8|         16|
+    |n_patches_o_ap_vld                |   9|          2|    1|          2|
+    |ppl_0_reg_272                     |   9|          2|   32|         64|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             | 609|        130|  281|        736|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |                          Name                          | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |a_reg_228                                               |   3|   0|    3|          0|
+    |add_ln1363_reg_976                                      |   3|   0|    3|          0|
+    |add_ln1427_1_reg_1045                                   |   7|   0|    7|          0|
+    |ap_CS_fsm                                               |  12|   0|   12|          0|
+    |ap_enable_reg_pp0_iter0                                 |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                                 |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter0                                 |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter1                                 |   1|   0|    1|          0|
+    |ap_enable_reg_pp2_iter0                                 |   1|   0|    1|          0|
+    |ap_enable_reg_pp2_iter1                                 |   1|   0|    1|          0|
+    |b_1_reg_305                                             |   3|   0|    3|          0|
+    |b_2_reg_360                                             |   3|   0|    3|          0|
+    |b_reg_250                                               |   5|   0|    5|          0|
+    |c_1_reg_327                                             |   5|   0|    5|          0|
+    |c_2_reg_382                                             |   3|   0|    3|          0|
+    |c_reg_261                                               |   2|   0|    2|          0|
+    |d_1_reg_393                                             |   3|   0|    3|          0|
+    |d_reg_338                                               |   2|   0|    2|          0|
+    |grp_add_patch9_fu_414_ap_start_reg                      |   1|   0|    1|          0|
+    |grp_makeSuperPoint_alignedToLine11_fu_427_ap_start_reg  |   1|   0|    1|          0|
+    |grp_wedgePatch_init_fu_404_ap_start_reg                 |   1|   0|    1|          0|
+    |i_reg_282                                               |   3|   0|    3|          0|
+    |icmp_ln1337_reg_945                                     |   1|   0|    1|          0|
+    |icmp_ln1380_reg_995                                     |   1|   0|    1|          0|
+    |icmp_ln1410_reg_1031                                    |   1|   0|    1|          0|
+    |indvar_flatten13_reg_217                                |   8|   0|    8|          0|
+    |indvar_flatten21_reg_316                                |   7|   0|    7|          0|
+    |indvar_flatten35_reg_294                                |   8|   0|    8|          0|
+    |indvar_flatten43_reg_371                                |   6|   0|    6|          0|
+    |indvar_flatten57_reg_349                                |   7|   0|    7|          0|
+    |indvar_flatten_reg_239                                  |   7|   0|    7|          0|
+    |ppl_0_reg_272                                           |  32|   0|   32|          0|
+    |select_ln1337_1_reg_949                                 |   3|   0|    3|          0|
+    |select_ln1343_1_reg_960                                 |   5|   0|    5|          0|
+    |select_ln1343_reg_955                                   |   2|   0|    2|          0|
+    |select_ln1380_1_reg_999                                 |   3|   0|    3|          0|
+    |select_ln1386_1_reg_1010                                |   5|   0|    5|          0|
+    |select_ln1386_reg_1005                                  |   2|   0|    2|          0|
+    |select_ln1410_1_reg_1035                                |   3|   0|    3|          0|
+    |select_ln1416_1_reg_1040                                |   3|   0|    3|          0|
+    +--------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                   | 167|   0|  167|          0|
+    +--------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+-------------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++------------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|  makePatch_alignedToLine|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|  makePatch_alignedToLine|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|  makePatch_alignedToLine|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|  makePatch_alignedToLine|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|  makePatch_alignedToLine|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|  makePatch_alignedToLine|  return value|
+|ap_return                     |  out|   32|  ap_ctrl_hs|  makePatch_alignedToLine|  return value|
+|n_patches_i                   |   in|    8|     ap_ovld|                n_patches|       pointer|
+|n_patches_o                   |  out|    8|     ap_ovld|                n_patches|       pointer|
+|n_patches_o_ap_vld            |  out|    1|     ap_ovld|                n_patches|       pointer|
+|GDn_points_address0           |  out|    3|   ap_memory|               GDn_points|         array|
+|GDn_points_ce0                |  out|    1|   ap_memory|               GDn_points|         array|
+|GDn_points_q0                 |   in|   32|   ap_memory|               GDn_points|         array|
+|patches_superpoints_address0  |  out|   12|   ap_memory|      patches_superpoints|         array|
+|patches_superpoints_ce0       |  out|    1|   ap_memory|      patches_superpoints|         array|
+|patches_superpoints_we0       |  out|    1|   ap_memory|      patches_superpoints|         array|
+|patches_superpoints_d0        |  out|   64|   ap_memory|      patches_superpoints|         array|
+|patches_superpoints_q0        |   in|   64|   ap_memory|      patches_superpoints|         array|
+|apexZ0                        |   in|   32|     ap_none|                   apexZ0|        scalar|
+|z_top                         |   in|   32|     ap_none|                    z_top|        scalar|
+|p_read                        |   in|   32|     ap_none|                   p_read|        scalar|
+|leftRight                     |   in|    1|     ap_none|                leftRight|        scalar|
+|GDarrayDecoded_address0       |  out|   12|   ap_memory|           GDarrayDecoded|         array|
+|GDarrayDecoded_ce0            |  out|    1|   ap_memory|           GDarrayDecoded|         array|
+|GDarrayDecoded_q0             |   in|   32|   ap_memory|           GDarrayDecoded|         array|
+|patches_parameters_address0   |  out|   12|   ap_memory|       patches_parameters|         array|
+|patches_parameters_ce0        |  out|    1|   ap_memory|       patches_parameters|         array|
+|patches_parameters_we0        |  out|    1|   ap_memory|       patches_parameters|         array|
+|patches_parameters_d0         |  out|   32|   ap_memory|       patches_parameters|         array|
+|patches_parameters_q0         |   in|   32|   ap_memory|       patches_parameters|         array|
++------------------------------+-----+-----+------------+-------------------------+--------------+
+

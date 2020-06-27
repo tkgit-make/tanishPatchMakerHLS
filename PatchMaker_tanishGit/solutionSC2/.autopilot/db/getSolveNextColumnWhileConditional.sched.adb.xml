@@ -1,0 +1,159 @@
+<stg><name>getSolveNextColumnWhileConditional</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge:0 %projectionOfCornerToBeam_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %projectionOfCornerToBeam
+
+]]></Node>
+<StgValue><ssdm name="projectionOfCornerToBeam_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge:1 %nPatchesInColumn_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %nPatchesInColumn
+
+]]></Node>
+<StgValue><ssdm name="nPatchesInColumn_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge:2 %c_corner_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %c_corner
+
+]]></Node>
+<StgValue><ssdm name="c_corner_read"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="1" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge:3 %icmp_ln886 = icmp_sgt  i32 %c_corner_read, i32 4244967196
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln886"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="1" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge:4 %icmp_ln710 = icmp_slt  i32 %nPatchesInColumn_read, i32 100000000
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln710"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="1" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge:5 %icmp_ln710_1 = icmp_slt  i32 %projectionOfCornerToBeam_read, i32 15000000
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln710_1"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+._crit_edge:6 %and_ln710 = and i1 %icmp_ln710, i1 %icmp_ln710_1
+
+]]></Node>
+<StgValue><ssdm name="and_ln710"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+._crit_edge:7 %and_ln710_1 = and i1 %and_ln710, i1 %icmp_ln886
+
+]]></Node>
+<StgValue><ssdm name="and_ln710_1"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="0" op_0_bw="1">
+<![CDATA[
+._crit_edge:8 %ret_ln710 = ret i1 %and_ln710_1
+
+]]></Node>
+<StgValue><ssdm name="ret_ln710"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

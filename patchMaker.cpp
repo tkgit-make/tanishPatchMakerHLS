@@ -138,8 +138,30 @@ COORDINATE_TYPE straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDIN
     {
         radius_k = radii[k - 1];
     }
+    /*
+    if((k - i) * (j - i) < 0)
+    {
+    	COORDINATE_TYPE returnVal = z_i - static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
+        cout << returnVal << endl;
+
+    	return z_i - static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
+    }
+    else
+    {
+    	COORDINATE_TYPE returnVal = z_i + static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
+        cout << returnVal << endl;
+
+    	return z_i + static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
+    }
 
     //float radii_leverArmF = ((float) (radius_k - radius_i)) / (float) (radius_j - radius_i);
+
+    //return static_cast<COORDINATE_TYPE> (z_i + static_cast<long_type>((z_j * (radius_k - radius_i)) / (radius_j - radius_i)) - static_cast<long_type>((z_i * (radius_k - radius_i)) / (radius_j - radius_i)));
+    COORDINATE_TYPE returnVal = z_i + static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
+
+    cout << returnVal << endl;
+    return returnVal;
+    */
 
     return static_cast<COORDINATE_TYPE> (z_i + static_cast<long_type>((z_j * (radius_k - radius_i)) / (radius_j - radius_i)) - static_cast<long_type>((z_i * (radius_k - radius_i)) / (radius_j - radius_i)));
 }
@@ -560,12 +582,11 @@ void initializeArrays(GPATCHES)
     }
 }
 
-void makePatches_ShadowQuilt_fromEdges(int_type stop, int_type ppl, bool leftRight, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET],
+void MPSQ(int_type stop, int_type ppl, bool leftRight, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET],
 		int_type (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
 {
-#pragma HLS DATAFLOW
-
 #if SMALL_CIRCUIT == false
+	#pragma HLS DATAFLOW
     #pragma HLS ARRAY_PARTITION variable=patches_superpoints dim=3 complete
     #pragma HLS ARRAY_PARTITION variable=patches_superpoints dim=2 complete
 #endif

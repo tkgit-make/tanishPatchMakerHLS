@@ -1,0 +1,7 @@
+   Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling patchMaker.cpp_pre.cpp.tb.cpp
+   Compiling apatb_MPSQ.cpp
+   Compiling test_bench.cpp_pre.cpp.tb.cpp
+   Compiling apatb_MPSQ_util.cpp
+   Compiling apatb_MPSQ_ir.ll
+   Generating cosim.tv.exe

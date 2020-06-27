@@ -1,0 +1,401 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCBC844322CF4B32F",
+      "device": "xcvu19p-fsvb3824-2-e",
+      "gen_directory": "../../../../project.gen/sources_1/bd/bd_0",
+      "name": "bd_0",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "hls_inst": ""
+    },
+    "interface_ports": {
+      "ap_ctrl": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+      }
+    },
+    "ports": {
+      "GDarray_address0": {
+        "type": "data",
+        "direction": "O",
+        "left": "10",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "GDarray_ce0": {
+        "direction": "O"
+      },
+      "GDarray_q0": {
+        "type": "data",
+        "direction": "I",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "GDn_points_address0": {
+        "type": "data",
+        "direction": "O",
+        "left": "2",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "GDn_points_ce0": {
+        "direction": "O"
+      },
+      "GDn_points_q0": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "bd_0_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "200000000.0"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "leftRight": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "n_patches_i": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "n_patches_o": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "n_patches_o_ap_vld": {
+        "direction": "O"
+      },
+      "patches_superpoints_address0": {
+        "type": "data",
+        "direction": "O",
+        "left": "11",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "patches_superpoints_address1": {
+        "type": "data",
+        "direction": "O",
+        "left": "11",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "patches_superpoints_ce0": {
+        "direction": "O"
+      },
+      "patches_superpoints_ce1": {
+        "direction": "O"
+      },
+      "patches_superpoints_d0": {
+        "type": "data",
+        "direction": "O",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "patches_superpoints_q0": {
+        "type": "data",
+        "direction": "I",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "patches_superpoints_q1": {
+        "type": "data",
+        "direction": "I",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "patches_superpoints_we0": {
+        "direction": "O"
+      },
+      "ppl": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "stop": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "hls_inst": {
+        "vlnv": "xilinx.com:hls:MPSQ:1.0",
+        "xci_name": "bd_0_hls_inst_0",
+        "xci_path": "ip\\bd_0_hls_inst_0\\bd_0_hls_inst_0.xci",
+        "inst_hier_path": "hls_inst"
+      }
+    },
+    "interface_nets": {
+      "ap_ctrl_0_1": {
+        "interface_ports": [
+          "ap_ctrl",
+          "hls_inst/ap_ctrl"
+        ]
+      }
+    },
+    "nets": {
+      "hls_inst_GDarray_address0": {
+        "ports": [
+          "hls_inst/GDarray_address0",
+          "GDarray_address0"
+        ]
+      },
+      "hls_inst_GDarray_ce0": {
+        "ports": [
+          "hls_inst/GDarray_ce0",
+          "GDarray_ce0"
+        ]
+      },
+      "GDarray_q0_0_1": {
+        "ports": [
+          "GDarray_q0",
+          "hls_inst/GDarray_q0"
+        ]
+      },
+      "hls_inst_GDn_points_address0": {
+        "ports": [
+          "hls_inst/GDn_points_address0",
+          "GDn_points_address0"
+        ]
+      },
+      "hls_inst_GDn_points_ce0": {
+        "ports": [
+          "hls_inst/GDn_points_ce0",
+          "GDn_points_ce0"
+        ]
+      },
+      "GDn_points_q0_0_1": {
+        "ports": [
+          "GDn_points_q0",
+          "hls_inst/GDn_points_q0"
+        ]
+      },
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk",
+          "hls_inst/ap_clk"
+        ]
+      },
+      "ap_rst_0_1": {
+        "ports": [
+          "ap_rst",
+          "hls_inst/ap_rst"
+        ]
+      },
+      "leftRight_0_1": {
+        "ports": [
+          "leftRight",
+          "hls_inst/leftRight"
+        ]
+      },
+      "n_patches_i_0_1": {
+        "ports": [
+          "n_patches_i",
+          "hls_inst/n_patches_i"
+        ]
+      },
+      "hls_inst_n_patches_o": {
+        "ports": [
+          "hls_inst/n_patches_o",
+          "n_patches_o"
+        ]
+      },
+      "hls_inst_n_patches_o_ap_vld": {
+        "ports": [
+          "hls_inst/n_patches_o_ap_vld",
+          "n_patches_o_ap_vld"
+        ]
+      },
+      "hls_inst_patches_superpoints_address0": {
+        "ports": [
+          "hls_inst/patches_superpoints_address0",
+          "patches_superpoints_address0"
+        ]
+      },
+      "hls_inst_patches_superpoints_address1": {
+        "ports": [
+          "hls_inst/patches_superpoints_address1",
+          "patches_superpoints_address1"
+        ]
+      },
+      "hls_inst_patches_superpoints_ce0": {
+        "ports": [
+          "hls_inst/patches_superpoints_ce0",
+          "patches_superpoints_ce0"
+        ]
+      },
+      "hls_inst_patches_superpoints_ce1": {
+        "ports": [
+          "hls_inst/patches_superpoints_ce1",
+          "patches_superpoints_ce1"
+        ]
+      },
+      "hls_inst_patches_superpoints_d0": {
+        "ports": [
+          "hls_inst/patches_superpoints_d0",
+          "patches_superpoints_d0"
+        ]
+      },
+      "patches_superpoints_q0_0_1": {
+        "ports": [
+          "patches_superpoints_q0",
+          "hls_inst/patches_superpoints_q0"
+        ]
+      },
+      "patches_superpoints_q1_0_1": {
+        "ports": [
+          "patches_superpoints_q1",
+          "hls_inst/patches_superpoints_q1"
+        ]
+      },
+      "hls_inst_patches_superpoints_we0": {
+        "ports": [
+          "hls_inst/patches_superpoints_we0",
+          "patches_superpoints_we0"
+        ]
+      },
+      "ppl_0_1": {
+        "ports": [
+          "ppl",
+          "hls_inst/ppl"
+        ]
+      },
+      "stop_0_1": {
+        "ports": [
+          "stop",
+          "hls_inst/stop"
+        ]
+      }
+    }
+  }
+}
