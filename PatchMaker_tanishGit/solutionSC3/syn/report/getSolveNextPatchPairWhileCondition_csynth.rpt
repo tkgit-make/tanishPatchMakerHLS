@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vitis HLS Report for 'getSolveNextPatchPairWhileCondition'
+================================================================
+* Date:           Sun Jul 28 18:54:34 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionSC3 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.00 ns|  1.802 ns|     0.81 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        3|        3|  9.000 ns|  9.000 ns|    3|    3|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      309|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       35|    -|
+|Register             |        -|     -|      110|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|      110|      344|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |add_ln886_fu_139_p2     |         +|   0|  0|  17|          12|           6|
+    |sub_ln180_fu_149_p2     |         -|   0|  0|  71|           1|          64|
+    |sub_ln886_fu_133_p2     |         -|   0|  0|  17|          12|          12|
+    |and_ln910_1_fu_227_p2   |       and|   0|  0|   2|           1|           1|
+    |and_ln910_2_fu_233_p2   |       and|   0|  0|   2|           1|           1|
+    |and_ln910_3_fu_239_p2   |       and|   0|  0|   2|           1|           1|
+    |and_ln910_fu_221_p2     |       and|   0|  0|   2|           1|           1|
+    |icmp_ln886_fu_174_p2    |      icmp|   0|  0|  20|          32|          27|
+    |icmp_ln909_1_fu_202_p2  |      icmp|   0|  0|  29|          64|           1|
+    |icmp_ln909_fu_168_p2    |      icmp|   0|  0|  29|          64|           3|
+    |icmp_ln911_fu_179_p2    |      icmp|   0|  0|  29|          64|           3|
+    |icmp_ln912_fu_190_p2    |      icmp|   0|  0|  20|          32|          32|
+    |or_ln909_fu_215_p2      |        or|   0|  0|   2|           1|           1|
+    |or_ln910_fu_184_p2      |        or|   0|  0|   2|           1|           1|
+    |select_ln180_fu_162_p3  |    select|   0|  0|  63|           1|          64|
+    |xor_ln913_fu_196_p2     |       xor|   0|  0|   2|           1|           2|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 309|         289|         220|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  26|          5|    1|          5|
+    |ap_return  |   9|          2|    1|          2|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  35|          7|    2|          7|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------+----+----+-----+-----------+
+    |               Name              | FF | LUT| Bits| Const Bits|
+    +---------------------------------+----+----+-----+-----------+
+    |add_ln886_reg_245                |   9|   0|   12|          3|
+    |ap_CS_fsm                        |   4|   0|    4|          0|
+    |ap_return_preg                   |   1|   0|    1|          0|
+    |patches_parameters_load_reg_268  |  32|   0|   32|          0|
+    |sub_ln180_reg_263                |  64|   0|   64|          0|
+    +---------------------------------+----+----+-----+-----------+
+    |Total                            | 110|   0|  113|          3|
+    +---------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+-------------------------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |            Source Object            |    C Type    |
++-----------------------------+-----+-----+------------+-------------------------------------+--------------+
+|ap_clk                       |   in|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
+|ap_rst                       |   in|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
+|ap_start                     |   in|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
+|ap_done                      |  out|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
+|ap_idle                      |  out|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
+|ap_ready                     |  out|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
+|ap_return                    |  out|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
+|GDn_points_address0          |  out|    3|   ap_memory|                           GDn_points|         array|
+|GDn_points_ce0               |  out|    1|   ap_memory|                           GDn_points|         array|
+|GDn_points_q0                |   in|   32|   ap_memory|                           GDn_points|         array|
+|lastPatchIndex               |   in|    5|     ap_none|                       lastPatchIndex|        scalar|
+|repeat_original              |   in|    1|     ap_none|                      repeat_original|        scalar|
+|white_space_height           |   in|   64|     ap_none|                   white_space_height|        scalar|
+|previous_white_space_height  |   in|   64|     ap_none|          previous_white_space_height|        scalar|
+|current_z_top_index          |   in|   32|     ap_none|                  current_z_top_index|        scalar|
+|patches_parameters_address0  |  out|   12|   ap_memory|                   patches_parameters|         array|
+|patches_parameters_ce0       |  out|    1|   ap_memory|                   patches_parameters|         array|
+|patches_parameters_q0        |   in|   32|   ap_memory|                   patches_parameters|         array|
++-----------------------------+-----+-----+------------+-------------------------------------+--------------+
+

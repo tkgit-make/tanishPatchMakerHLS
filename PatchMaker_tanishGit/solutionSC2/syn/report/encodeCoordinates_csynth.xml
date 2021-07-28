@@ -9,14 +9,13 @@
 <ProductFamily>virtexuplus</ProductFamily>
 <Part>xcvu19p-fsvb3824-2-e</Part>
 <TopModelName>encodeCoordinates</TopModelName>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>1.35</ClockUncertainty>
-<TargetInitiationInterval>4294967295</TargetInitiationInterval>
+<TargetClockPeriod>3.00</TargetClockPeriod>
+<ClockUncertainty>0.81</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
 <PerformanceEstimates>
-<PipelineType>yes</PipelineType>
+<PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
 <EstimatedClockPeriod>0.000</EstimatedClockPeriod>
@@ -29,10 +28,8 @@
 <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>1</PipelineDepth>
-<Interval-min>1</Interval-min>
-<Interval-max>1</Interval-max>
+<Interval-min>0</Interval-min>
+<Interval-max>0</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 

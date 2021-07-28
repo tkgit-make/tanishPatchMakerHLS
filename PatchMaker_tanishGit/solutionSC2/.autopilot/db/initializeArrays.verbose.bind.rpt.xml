@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'initializeArrays'" level="0">
-<item name = "Date">Sat Jul 27 22:49:13 2024
+<item name = "Date">Sun Jul 28 01:26:38 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.228 ns, 1.35 ns</column>
+<column name="ap_clk">3.00 ns, 1.905 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">6404, 6404, 32.020 us, 32.020 us, 6404, 6404, none</column>
+<column name="">132, 132, 0.396 us, 0.396 us, 132, 132, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- initArraysSPloop1_initArraysSPloop2_initArraysSPloop3">2560, 2560, 2, 1, 1, 2560, yes</column>
-<column name="- initArraysPPloop1_initArraysPPloop3_initArraysPPloop4">3840, 3840, 2, 1, 1, 3840, yes</column>
+<column name="- initArraysSPloop1">96, 96, 3, 3, 1, 32, yes</column>
+<column name="- initArraysPPloop1">32, 32, 1, 1, 1, 32, yes</column>
 </table>
 </item>
 </section>

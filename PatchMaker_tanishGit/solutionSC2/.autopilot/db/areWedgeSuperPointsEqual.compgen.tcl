@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 68
-set name MPSQ_urem_11ns_4ns_8_15_1
+set id 6386
+set name MPSQ_urem_11ns_4ns_3_15_1
 set corename simcore_urem
 set op urem
 set stage_num 15
@@ -17,7 +17,7 @@ set in1_width 4
 set in1_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 8
+set out_width 3
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_urem] == "ap_gen_simcore_urem"} {
 eval "ap_gen_simcore_urem { \
@@ -85,8 +85,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your pla
 }
 
 
-set id 70
-set name MPSQ_mul_mul_18ns_20ns_37_4_1
+set id 6388
+set name MPSQ_mul_mul_14ns_16ns_29_4_1
 set corename simcore_mul
 set op mul
 set stage_num 4
@@ -96,15 +96,15 @@ set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set in0_width 18
+set in0_width 14
 set in0_signed 0
-set in1_width 20
+set in1_width 16
 set in1_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 37
+set out_width 29
 set exp i0*i1
-set arg_lists {i0 {18 0 +} i1 {20 0 +} p {37 0 +} acc {0} }
+set arg_lists {i0 {14 0 +} i1 {16 0 +} p {29 0 +} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
@@ -190,17 +190,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 74 \
-    name wsp1_2 \
+    id 6392 \
+    name patches_superpoints_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename wsp1_2 \
+    corename patches_superpoints_0 \
     op interface \
-    ports { wsp1_2_address0 { O 12 vector } wsp1_2_ce0 { O 1 bit } wsp1_2_q0 { I 64 vector } wsp1_2_address1 { O 12 vector } wsp1_2_ce1 { O 1 bit } wsp1_2_q1 { I 64 vector } } \
+    ports { patches_superpoints_0_address0 { O 8 vector } patches_superpoints_0_ce0 { O 1 bit } patches_superpoints_0_q0 { I 64 vector } patches_superpoints_0_address1 { O 8 vector } patches_superpoints_0_ce1 { O 1 bit } patches_superpoints_0_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wsp1_2'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_0'"
 }
 }
 
@@ -208,7 +208,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 75 \
+    id 6393 \
     name wsp1 \
     type other \
     dir I \
@@ -223,7 +223,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 76 \
+    id 6394 \
     name wsp11 \
     type other \
     dir I \
@@ -238,7 +238,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 77 \
+    id 6395 \
     name wsp2 \
     type other \
     dir I \
@@ -253,15 +253,15 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 78 \
-    name wsp23 \
+    id 6396 \
+    name wsp22 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_wsp23 \
+    corename dc_wsp22 \
     op interface \
-    ports { wsp23 { I 3 vector } } \
+    ports { wsp22 { I 3 vector } } \
 } "
 }
 

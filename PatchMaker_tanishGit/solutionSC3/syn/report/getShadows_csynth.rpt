@@ -1,0 +1,238 @@
+
+
+================================================================
+== Vitis HLS Report for 'getShadows'
+================================================================
+* Date:           Sun Jul 28 18:54:41 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionSC3 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.00 ns|  2.190 ns|     0.81 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      154|      154|  0.462 us|  0.462 us|  154|  154|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                |                                     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                    Instance                    |                Module               |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_straightLineProjectorFromLayerIJtoK_fu_245  |straightLineProjectorFromLayerIJtoK  |        6|        6|  18.000 ns|  18.000 ns|    1|    1|      yes|
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |           Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- getShadows_settingtopArrays  |      112|      112|        28|          -|          -|     4|        no|
+        |- getShadows_maxFinding_loop   |       39|       39|        13|          -|          -|     3|        no|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      449|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        0|     0|      602|      517|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      356|    -|
+|Register             |        -|     -|      924|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|     1526|     1322|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |                    Instance                    |                Module               | BRAM_18K| DSP|  FF | LUT | URAM|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |mux_42_32_1_1_U105                              |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |mux_42_32_1_1_U106                              |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |mux_42_32_1_1_U107                              |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_245  |straightLineProjectorFromLayerIJtoK  |        0|   0|  602|  457|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |Total                                           |                                     |        0|   0|  602|  517|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |add_ln196_1_fu_392_p2    |         +|   0|  0|  15|           8|           8|
+    |add_ln196_fu_348_p2      |         +|   0|  0|  15|           8|           8|
+    |add_ln199_1_fu_446_p2    |         +|   0|  0|  10|           3|           1|
+    |add_ln199_fu_382_p2      |         +|   0|  0|  10|           3|           1|
+    |add_ln205_fu_288_p2      |         +|   0|  0|  19|          12|           5|
+    |add_ln206_fu_299_p2      |         +|   0|  0|  19|          12|           5|
+    |add_ln207_fu_310_p2      |         +|   0|  0|  19|          12|           6|
+    |add_ln208_fu_321_p2      |         +|   0|  0|  19|          12|           6|
+    |add_ln212_fu_681_p2      |         +|   0|  0|  10|           3|           1|
+    |sub_ln205_fu_282_p2      |         -|   0|  0|  19|          12|          12|
+    |icmp_ln194_fu_421_p2     |      icmp|   0|  0|   9|           3|           4|
+    |icmp_ln212_fu_544_p2     |      icmp|   0|  0|   9|           3|           4|
+    |icmp_ln878_11_fu_368_p2  |      icmp|   0|  0|  20|          32|          26|
+    |icmp_ln878_12_fu_619_p2  |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_13_fu_675_p2  |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_fu_354_p2     |      icmp|   0|  0|  20|          32|          27|
+    |icmp_ln886_10_fu_647_p2  |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln886_11_fu_577_p2  |      icmp|   0|  0|   8|           2|           1|
+    |icmp_ln886_9_fu_563_p2   |      icmp|   0|  0|   8|           2|           3|
+    |icmp_ln886_fu_591_p2     |      icmp|   0|  0|  20|          32|          32|
+    |or_ln197_fu_410_p2       |        or|   0|  0|  12|          12|           4|
+    |select_ln185_fu_360_p3   |    select|   0|  0|  32|           1|          27|
+    |select_ln186_fu_374_p3   |    select|   0|  0|  32|           1|          32|
+    |topL_jL_V_3_7_fu_583_p3  |    select|   0|  0|  32|           1|          32|
+    |topL_jL_V_3_fu_569_p3    |    select|   0|  0|  32|           1|          32|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0| 449|         303|         373|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------------+-----+-----------+-----+-----------+
+    |                        Name                        | LUT | Input Size| Bits| Total Bits|
+    +----------------------------------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                                           |  193|         44|    1|         44|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_245_z_i  |   14|          3|   32|         96|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_245_z_j  |   14|          3|   32|         96|
+    |i_10_reg_233                                        |    9|          2|    3|          6|
+    |i_reg_222                                           |    9|          2|    3|          6|
+    |wp_parameters_address0                              |   26|          5|   12|         60|
+    |wp_parameters_address1                              |   26|          5|   12|         60|
+    |wp_parameters_d0                                    |   14|          3|   32|         96|
+    |wp_parameters_d1                                    |   37|          7|   32|        224|
+    |wp_superpoints_address0                             |   14|          3|   12|         36|
+    +----------------------------------------------------+-----+-----------+-----+-----------+
+    |Total                                               |  356|         77|  171|        724|
+    +----------------------------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |                             Name                            | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |add_ln196_reg_807                                            |   8|   0|    8|          0|
+    |add_ln199_1_reg_850                                          |   3|   0|    3|          0|
+    |add_ln199_reg_822                                            |   3|   0|    3|          0|
+    |ap_CS_fsm                                                    |  43|   0|   43|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_245_ap_start_reg  |   1|   0|    1|          0|
+    |i_10_reg_233                                                 |   3|   0|    3|          0|
+    |i_reg_222                                                    |   3|   0|    3|          0|
+    |icmp_ln878_12_reg_884                                        |   1|   0|    1|          0|
+    |icmp_ln878_13_reg_902                                        |   1|   0|    1|          0|
+    |icmp_ln886_10_reg_893                                        |   1|   0|    1|          0|
+    |icmp_ln886_reg_875                                           |   1|   0|    1|          0|
+    |phi_ln878_1_reg_897                                          |  32|   0|   32|          0|
+    |phi_ln886_1_reg_888                                          |  32|   0|   32|          0|
+    |phi_ln_reg_879                                               |  32|   0|   32|          0|
+    |reg_258                                                      |  32|   0|   32|          0|
+    |select_ln185_reg_812                                         |  32|   0|   32|          0|
+    |select_ln186_reg_817                                         |  32|   0|   32|          0|
+    |topL_jL_V_3_1_fu_78                                          |  32|   0|   32|          0|
+    |topL_jL_V_3_2_fu_82                                          |  32|   0|   32|          0|
+    |topL_jL_V_3_4_fu_86                                          |  32|   0|   32|          0|
+    |topL_jL_V_3_5_fu_90                                          |  32|   0|   32|          0|
+    |topL_jL_V_3_7_reg_870                                        |  32|   0|   32|          0|
+    |topL_jR_V_3_1_fu_98                                          |  32|   0|   32|          0|
+    |topL_jR_V_3_2_fu_102                                         |  32|   0|   32|          0|
+    |topL_jR_V_3_3_fu_106                                         |  32|   0|   32|          0|
+    |topL_jR_V_3_fu_94                                            |  32|   0|   32|          0|
+    |topR_jL_V_3_1_fu_114                                         |  32|   0|   32|          0|
+    |topR_jL_V_3_2_fu_118                                         |  32|   0|   32|          0|
+    |topR_jL_V_3_3_fu_122                                         |  32|   0|   32|          0|
+    |topR_jL_V_3_fu_110                                           |  32|   0|   32|          0|
+    |topR_jR_V_3_1_fu_130                                         |  32|   0|   32|          0|
+    |topR_jR_V_3_2_fu_134                                         |  32|   0|   32|          0|
+    |topR_jR_V_3_3_fu_138                                         |  32|   0|   32|          0|
+    |topR_jR_V_3_fu_126                                           |  32|   0|   32|          0|
+    |trunc_ln199_reg_840                                          |   2|   0|    2|          0|
+    |trunc_ln886_reg_863                                          |   2|   0|    2|          0|
+    |wp_parameters_addr_28_reg_789                                |   9|   0|   12|          3|
+    |wp_parameters_addr_29_reg_795                                |   9|   0|   12|          3|
+    |wp_parameters_addr_30_reg_801                                |   9|   0|   12|          3|
+    |wp_parameters_addr_reg_783                                   |   9|   0|   12|          3|
+    |wp_superpoints_addr_1_reg_832                                |   8|   0|   12|          4|
+    |wp_superpoints_addr_reg_827                                  |   8|   0|   12|          4|
+    |z_j_max_V_reg_855                                            |  32|   0|   32|          0|
+    |z_j_min_V_reg_845                                            |  32|   0|   32|          0|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                        | 924|   0|  944|         20|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-----------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++-------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                   |   in|    1|  ap_ctrl_hs|             getShadows|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|             getShadows|  return value|
+|ap_start                 |   in|    1|  ap_ctrl_hs|             getShadows|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|             getShadows|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|             getShadows|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|             getShadows|  return value|
+|wp_superpoints_address0  |  out|   12|   ap_memory|         wp_superpoints|         array|
+|wp_superpoints_ce0       |  out|    1|   ap_memory|         wp_superpoints|         array|
+|wp_superpoints_q0        |   in|   64|   ap_memory|         wp_superpoints|         array|
+|wp_superpoints_offset    |   in|    5|     ap_none|  wp_superpoints_offset|        scalar|
+|wp_parameters_address0   |  out|   12|   ap_memory|          wp_parameters|         array|
+|wp_parameters_ce0        |  out|    1|   ap_memory|          wp_parameters|         array|
+|wp_parameters_we0        |  out|    1|   ap_memory|          wp_parameters|         array|
+|wp_parameters_d0         |  out|   32|   ap_memory|          wp_parameters|         array|
+|wp_parameters_q0         |   in|   32|   ap_memory|          wp_parameters|         array|
+|wp_parameters_address1   |  out|   12|   ap_memory|          wp_parameters|         array|
+|wp_parameters_ce1        |  out|    1|   ap_memory|          wp_parameters|         array|
+|wp_parameters_we1        |  out|    1|   ap_memory|          wp_parameters|         array|
+|wp_parameters_d1         |  out|   32|   ap_memory|          wp_parameters|         array|
+|wp_parameters_offset     |   in|    5|     ap_none|   wp_parameters_offset|        scalar|
+|zTopMin                  |   in|   32|     ap_none|                zTopMin|        scalar|
+|zTopMax                  |   in|   32|     ap_none|                zTopMax|        scalar|
++-------------------------+-----+-----+------------+-----------------------+--------------+
+

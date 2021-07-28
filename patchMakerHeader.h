@@ -107,23 +107,25 @@ const long_type radii[MAX_LAYERS] = {5 * INTEGER_FACTOR_CM, 10 * INTEGER_FACTOR_
 const long_type radiiDivisionList[MAX_LAYERS + 1][MAX_LAYERS + 1] = {{0, 0, 0, 0, 0, 0}, {0, 4294967296, 2147483648, 1431655765, 1073741824, 858993459}, {0, 8589934592, 4294967296, 2863311530, 2147483648, 1717986918}, {0, 12884901888, 6442450944, 4294967296, 3221225472, 2576980377}, {0, 17179869184, 8589934592, 5726623061, 4294967296, 3435973836}, {0, 21474836480, 10737418240, 7158278826, 5368709120, 4294967296}};
 #define RIGHT_SHIFT_FACTOR 32
 //const float radii_leverArm[MAX_LAYERS-1] = {1, 1.333333, 2, 4};
-const float layer1Edge = 22.0001;
-const float layer2Edge = 29.0001;
-const float layer3Edge = 36.0001;
-const float layer4Edge = 43.0001;
-const float layer5Edge = 50.0001;
+#define layer1Edge 220001
+#define layer2Edge 290001
+#define layer3Edge 360001
+#define layer4Edge 430001
+#define layer5Edge 500001
 
-const COORDINATE_TYPE trapezoid_edges[MAX_LAYERS] = {static_cast<long_type>(layer1Edge * INTEGER_FACTOR_CM),
-                                              static_cast<long_type>(layer2Edge * INTEGER_FACTOR_CM),
-                                              static_cast<long_type>(layer3Edge * INTEGER_FACTOR_CM),
-                                              static_cast<long_type>(layer4Edge * INTEGER_FACTOR_CM),
-                                              static_cast<long_type>(layer5Edge * INTEGER_FACTOR_CM)};
+#define TE_factor (INTEGER_FACTOR_CM / 10000)
 
-const COORDINATE_TYPE trapezoid_edgesNEGATIVE[MAX_LAYERS] = {static_cast<long_type>(-layer1Edge * INTEGER_FACTOR_CM),
-                                              static_cast<long_type>(-layer2Edge * INTEGER_FACTOR_CM),
-                                              static_cast<long_type>(-layer3Edge * INTEGER_FACTOR_CM),
-                                              static_cast<long_type>(-layer4Edge * INTEGER_FACTOR_CM),
-                                              static_cast<long_type>(-layer5Edge * INTEGER_FACTOR_CM)};
+const COORDINATE_TYPE trapezoid_edges[MAX_LAYERS] = {static_cast<long_type>(layer1Edge * TE_factor),
+                                              static_cast<long_type>(layer2Edge * TE_factor),
+                                              static_cast<long_type>(layer3Edge * TE_factor),
+                                              static_cast<long_type>(layer4Edge * TE_factor),
+                                              static_cast<long_type>(layer5Edge * TE_factor)};
+
+const COORDINATE_TYPE trapezoid_edgesNEGATIVE[MAX_LAYERS] = {static_cast<long_type>(-layer1Edge * TE_factor),
+                                              static_cast<long_type>(-layer2Edge * TE_factor),
+                                              static_cast<long_type>(-layer3Edge * TE_factor),
+                                              static_cast<long_type>(-layer4Edge * TE_factor),
+                                              static_cast<long_type>(-layer5Edge * TE_factor)};
                                               
 /* Deprecate Point struct into array of longs: {layer_num, phi, z}
 typedef struct

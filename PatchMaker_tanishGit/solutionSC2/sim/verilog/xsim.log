@@ -2,8 +2,8 @@
 # xsim v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Jul 27 22:54:32 2024
-# Process ID: 7356
+# Start of session at: Sun Jul 28 02:25:09 2024
+# Process ID: 3400
 # Current directory: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC2/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/MPSQ/xsim_script.tcl}
 # Log file: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC2/sim/verilog/xsim.log
@@ -21,10 +21,10 @@ source MPSQ.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [n/a] @ "113000"
-// RTL Simulation : 1 / 1 [n/a] @ "19237198000"
+// RTL Simulation : 0 / 1 [n/a] @ "107000"
+// RTL Simulation : 1 / 1 [n/a] @ "10357382000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 19237217500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC2/sim/verilog/MPSQ.autotb.v" Line 536
-run: Time (s): cpu = 00:00:02 ; elapsed = 00:19:11 . Memory (MB): peak = 924.453 ; gain = 0.000
+$finish called at time : 10357393500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC2/sim/verilog/MPSQ.autotb.v" Line 2056
+run: Time (s): cpu = 00:00:01 ; elapsed = 01:02:37 . Memory (MB): peak = 1158.266 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Jul 27 23:13:50 2024...
+INFO: [Common 17-206] Exiting xsim at Sun Jul 28 03:27:56 2024...

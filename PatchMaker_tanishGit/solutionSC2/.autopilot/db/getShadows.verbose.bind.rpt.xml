@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getShadows'" level="0">
-<item name = "Date">Sat Jul 27 22:49:43 2024
+<item name = "Date">Sun Jul 28 01:30:26 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.612 ns, 1.35 ns</column>
+<column name="ap_clk">3.00 ns, 2.190 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">334, 334, 1.670 us, 1.670 us, 334, 334, none</column>
+<column name="">401, 401, 1.203 us, 1.203 us, 401, 401, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_297">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_303">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- getShadows_settingtopArrays">304, 304, 76, -, -, 4, no</column>
+<column name="- getShadows_settingtopArrays">372, 372, 93, -, -, 4, no</column>
 <column name="- getShadows_maxFinding_loop">27, 27, 9, -, -, 3, no</column>
 </table>
 </item>

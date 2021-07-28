@@ -7,7 +7,7 @@
 
 module MPSQ_fcmp_32ns_32ns_1_2_no_dsp_1
 #(parameter
-    ID         = 96,
+    ID         = 19772,
     NUM_STAGE  = 2,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

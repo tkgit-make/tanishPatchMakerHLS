@@ -1,0 +1,214 @@
+
+
+================================================================
+== Vitis HLS Report for 'solveNextColumn'
+================================================================
+* Date:           Sun Jul 28 18:54:52 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionSC3 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.00 ns|  2.190 ns|     0.81 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                |                                     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                    Instance                    |                Module               |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_solveNextPatchPair_fu_190                   |solveNextPatchPair                   |        ?|        ?|          ?|          ?|    ?|    ?|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_218  |straightLineProjectorFromLayerIJtoK  |        6|        6|  18.000 ns|  18.000 ns|    1|    1|      yes|
+        |tmp_getSolveNextColumnWhileConditional_fu_234   |getSolveNextColumnWhileConditional   |        0|        0|       0 ns|       0 ns|    0|    0|     none|
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        +------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                        |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |        Loop Name       |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- solveNextColumn_loop  |        ?|        ?|         ?|          -|          -|     ?|        no|
+        +------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      124|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        9|     2|    29869|    42483|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      200|    -|
+|Register             |        -|     -|      432|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        9|     2|    30301|    42807|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |       ~0|    ~0|        1|        4|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |       ~0|    ~0|       ~0|        1|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
+    |                    Instance                    |                Module               | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
+    |tmp_getSolveNextColumnWhileConditional_fu_234   |getSolveNextColumnWhileConditional   |        0|   0|      0|     64|    0|
+    |grp_solveNextPatchPair_fu_190                   |solveNextPatchPair                   |        9|   2|  29267|  41962|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_218  |straightLineProjectorFromLayerIJtoK  |        0|   0|    602|    457|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
+    |Total                                           |                                     |        9|   2|  29869|  42483|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |loopCounter_1_fu_263_p2           |         +|   0|  0|  39|          32|           1|
+    |ap_block_state11_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln688_fu_244_p2              |      icmp|   0|  0|  11|           8|           1|
+    |icmp_ln708_fu_269_p2              |      icmp|   0|  0|  20|          32|           5|
+    |icmp_ln878_fu_250_p2              |      icmp|   0|  0|  20|          32|          26|
+    |select_ln690_fu_255_p3            |    select|   0|  0|  32|           1|          26|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 124|         106|          60|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                    | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                    |  65|         12|    1|         12|
+    |ap_phi_mux_saved_apexZ0_buf_1_phi_fu_183_p4  |   9|          2|   32|         64|
+    |ap_phi_mux_z_top_max_V_16_ph_phi_fu_82_p4    |   9|          2|   32|         64|
+    |ap_return                                    |   9|          2|   32|         64|
+    |c_corner_V_0_reg_101                         |   9|          2|   32|         64|
+    |complementary_apexZ0_V_0_reg_112             |   9|          2|   32|         64|
+    |loopCounter_reg_169                          |   9|          2|   32|         64|
+    |nPatchesInColumn_0_reg_136                   |   9|          2|   32|         64|
+    |n_patches_o                                  |   9|          2|    8|         16|
+    |n_patches_o_ap_vld                           |   9|          2|    1|          2|
+    |projectionOfCornerToBeam_V_0_reg_148         |   9|          2|   32|         64|
+    |saved_apexZ0_buf_0_reg_159                   |   9|          2|   32|         64|
+    |saved_apexZ0_buf_1_reg_180                   |   9|          2|   32|         64|
+    |z_top_max_V_16_ph_reg_78                     |   9|          2|   32|         64|
+    |z_top_max_V_16_reg_90                        |   9|          2|   32|         64|
+    |z_top_min_V_0_reg_124                        |   9|          2|   32|         64|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |Total                                        | 200|         42|  426|        862|
+    +---------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |                             Name                            | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                    |  11|   0|   11|          0|
+    |ap_return_preg                                               |  32|   0|   32|          0|
+    |c_corner_V_0_reg_101                                         |  32|   0|   32|          0|
+    |complementary_apexZ0_V_0_reg_112                             |  32|   0|   32|          0|
+    |grp_solveNextPatchPair_fu_190_ap_start_reg                   |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_start_reg  |   1|   0|    1|          0|
+    |icmp_ln688_reg_304                                           |   1|   0|    1|          0|
+    |icmp_ln708_reg_335                                           |   1|   0|    1|          0|
+    |loopCounter_1_reg_330                                        |  32|   0|   32|          0|
+    |loopCounter_reg_169                                          |  32|   0|   32|          0|
+    |nPatchesInColumn_0_reg_136                                   |  32|   0|   32|          0|
+    |op2_V_reg_320                                                |  32|   0|   32|          0|
+    |projectionOfCornerToBeam_V_0_reg_148                         |  32|   0|   32|          0|
+    |saved_apexZ0_buf_0_reg_159                                   |  32|   0|   32|          0|
+    |saved_apexZ0_buf_1_reg_180                                   |  32|   0|   32|          0|
+    |tmp_reg_326                                                  |   1|   0|    1|          0|
+    |z_top_max_V_16_ph_reg_78                                     |  32|   0|   32|          0|
+    |z_top_max_V_16_reg_90                                        |  32|   0|   32|          0|
+    |z_top_min_V_0_reg_124                                        |  32|   0|   32|          0|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                        | 432|   0|  432|          0|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+---------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++------------------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|      solveNextColumn|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|      solveNextColumn|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|      solveNextColumn|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|      solveNextColumn|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|      solveNextColumn|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|      solveNextColumn|  return value|
+|ap_return                     |  out|   32|  ap_ctrl_hs|      solveNextColumn|  return value|
+|n_patches_i                   |   in|    8|     ap_ovld|            n_patches|       pointer|
+|n_patches_o                   |  out|    8|     ap_ovld|            n_patches|       pointer|
+|n_patches_o_ap_vld            |  out|    1|     ap_ovld|            n_patches|       pointer|
+|GDn_points_address0           |  out|    3|   ap_memory|           GDn_points|         array|
+|GDn_points_ce0                |  out|    1|   ap_memory|           GDn_points|         array|
+|GDn_points_q0                 |   in|   32|   ap_memory|           GDn_points|         array|
+|apexZ0                        |   in|   32|     ap_none|               apexZ0|        scalar|
+|ppl                           |   in|   32|     ap_none|                  ppl|        scalar|
+|GDarrayDecoded_address0       |  out|   12|   ap_memory|       GDarrayDecoded|         array|
+|GDarrayDecoded_ce0            |  out|    1|   ap_memory|       GDarrayDecoded|         array|
+|GDarrayDecoded_q0             |   in|   32|   ap_memory|       GDarrayDecoded|         array|
+|patches_superpoints_address0  |  out|   12|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_ce0       |  out|    1|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_we0       |  out|    1|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_d0        |  out|   64|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_q0        |   in|   64|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_address1  |  out|   12|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_ce1       |  out|    1|   ap_memory|  patches_superpoints|         array|
+|patches_superpoints_q1        |   in|   64|   ap_memory|  patches_superpoints|         array|
+|patches_parameters_address0   |  out|   12|   ap_memory|   patches_parameters|         array|
+|patches_parameters_ce0        |  out|    1|   ap_memory|   patches_parameters|         array|
+|patches_parameters_we0        |  out|    1|   ap_memory|   patches_parameters|         array|
+|patches_parameters_d0         |  out|   32|   ap_memory|   patches_parameters|         array|
+|patches_parameters_q0         |   in|   32|   ap_memory|   patches_parameters|         array|
+|patches_parameters_address1   |  out|   12|   ap_memory|   patches_parameters|         array|
+|patches_parameters_ce1        |  out|    1|   ap_memory|   patches_parameters|         array|
+|patches_parameters_we1        |  out|    1|   ap_memory|   patches_parameters|         array|
+|patches_parameters_d1         |  out|   32|   ap_memory|   patches_parameters|         array|
+|patches_parameters_q1         |   in|   32|   ap_memory|   patches_parameters|         array|
++------------------------------+-----+-----+------------+---------------------+--------------+
+

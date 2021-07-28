@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'encodeCoordinates'
 ================================================================
-* Date:           Sat Jul 27 22:49:24 2024
+* Date:           Sun Jul 28 01:27:18 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|      0 ns|     1.35 ns|
+    |ap_clk  |  3.00 ns|      0 ns|     0.81 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    |        0|        0|      0 ns|      0 ns|    0|    0|     none|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -52,25 +52,21 @@ ResetActiveHigh: 1
 IsCombinational: 0
 IsDatapathOnly: 0
 HasWiredReturn: 1
-HasMFsm: 2
+HasMFsm: 0
 HasVarLatency: 0
-IsPipeline: 1
+IsPipeline: 0
 IsRtlPipelined: 0
 IsInstanceOverlapped: 0
 IsDontTouch: 0
 HasImplIP: 0
 IsGatedGlobalClock: 0
 
-+ Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 1
-
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
 * Number of FSM states : 1
-* Pipeline : 1
-  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
@@ -88,7 +84,7 @@ ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%ret_ln319 = ret i64 %ret" [patchMak
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 5ns, clock uncertainty: 1.35ns.
+Target clock period: 3ns, clock uncertainty: 0.81ns.
 
  <State 1>: 0ns
 The critical path consists of the following:

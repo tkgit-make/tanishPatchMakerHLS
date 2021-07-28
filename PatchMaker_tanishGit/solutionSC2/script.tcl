@@ -6,13 +6,13 @@
 open_project PatchMaker_tanishGit
 set_top MPSQ
 add_files patchMaker.cpp -cflags "-IC:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader"
-add_files -tb tanishTestBench/cppOutput.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
-add_files -tb tanishTestBench/cppOutputRef.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
-add_files -tb tanishTestBench/test_bench.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 add_files -tb tanishTestBench/wedgeData_v3_128.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb tanishTestBench/test_bench.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb tanishTestBench/cppOutputRef.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb tanishTestBench/cppOutput.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solutionSC2" -flow_target vivado
 set_part {xcvu19p-fsvb3824-2-e}
-create_clock -period 5 -name default
+create_clock -period 3 -name default
 config_export -format ip_catalog -rtl verilog
 source "./PatchMaker_tanishGit/solutionSC2/directives.tcl"
 csim_design

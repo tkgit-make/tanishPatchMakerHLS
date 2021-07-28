@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'areWedgeSuperPointsEqual'" level="0">
-<item name = "Date">Sat Jul 27 22:49:31 2024
+<item name = "Date">Sun Jul 28 01:27:54 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.097 ns, 1.35 ns</column>
+<column name="ap_clk">3.00 ns, 2.038 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">18, 18, 90.000 ns, 90.000 ns, 2, 2, yes</column>
+<column name="">21, 21, 63.000 ns, 63.000 ns, 2, 2, yes</column>
 </table>
 </item>
 <item name = "Detail">

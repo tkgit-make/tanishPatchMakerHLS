@@ -148,7 +148,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769238127</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>37</bitwidth>
 				</Value>
@@ -256,7 +256,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -327,7 +327,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>10</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_8">
@@ -365,7 +365,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769238127</coreId>
+						<coreId>1768190511</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -383,7 +383,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_9">
@@ -477,7 +477,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -495,7 +495,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_11">
@@ -533,7 +533,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -549,7 +549,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.88</m_delay>
-				<m_topoIndex>5</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_12">
@@ -587,7 +587,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769238127</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -603,7 +603,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.85</m_delay>
-				<m_topoIndex>6</m_topoIndex>
+				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_13">
@@ -658,7 +658,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -696,7 +696,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769238127</coreId>
+						<coreId>1768190511</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -749,7 +749,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852793647</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -804,7 +804,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -857,7 +857,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>37</bitwidth>
 				</Value>
@@ -872,7 +872,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -910,7 +910,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>37</bitwidth>
 				</Value>
@@ -926,7 +926,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.93</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_19">
@@ -964,7 +964,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -979,7 +979,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_20">
@@ -1017,7 +1017,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768190511</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>37</bitwidth>
 				</Value>
@@ -1033,7 +1033,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.93</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_21">
@@ -1088,7 +1088,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_22">
@@ -1143,7 +1143,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>19</m_topoIndex>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1196,7 +1196,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1239,18 +1239,19 @@
 					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
 					<item>96</item>
 					<item>97</item>
+					<item>2147483647</item>
 				</oprand_edges>
 				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_isLCDNode>1</m_isLCDNode>
+				<m_isStartOfPath>1</m_isStartOfPath>
 				<m_delay>1.14</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1258,7 +1259,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>tmp_32</name>
+						<name>tmp_30</name>
 						<fileName>C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>180</lineNumber>
@@ -1288,7 +1289,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768190511</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1343,7 +1344,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1398,20 +1399,21 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1852793647</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
 					<item>106</item>
 					<item>107</item>
+					<item>2147483647</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
+				<m_isLCDNode>1</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.06</m_delay>
 				<m_topoIndex>24</m_topoIndex>
@@ -1710,7 +1712,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>96</bitwidth>
 				</Value>
@@ -1807,7 +1809,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685417059</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1863,7 +1865,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1685417059</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1947,7 +1949,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1685417059</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1975,7 +1977,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1853187616</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2003,7 +2005,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869901417</coreId>
+						<coreId>1685417059</coreId>
 					</Obj>
 					<bitwidth>96</bitwidth>
 				</Value>
@@ -2034,7 +2036,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1702060387</coreId>
+					<coreId>825242426</coreId>
 				</Obj>
 				<node_objs>
 					<count>3</count>
@@ -2064,7 +2066,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>825242426</coreId>
+					<coreId>1702060387</coreId>
 				</Obj>
 				<node_objs>
 					<count>7</count>
@@ -2155,7 +2157,7 @@
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>71</count>
+			<count>73</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_47">
 				<id>43</id>
@@ -2654,12 +2656,26 @@
 				<sink_obj>16</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
+			<item class_id_reference="20" object_id="_118">
+				<id>2147483647</id>
+				<edge_type>3</edge_type>
+				<source_obj>28</source_obj>
+				<sink_obj>31</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_119">
+				<id>2147483647</id>
+				<edge_type>1</edge_type>
+				<source_obj>31</source_obj>
+				<sink_obj>28</sink_obj>
+				<is_back_edge>1</is_back_edge>
+			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>4</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_118">
+		<item class_id="22" tracking_level="1" version="0" object_id="_120">
 			<mId>1</mId>
 			<mTag>mSP_findStartIndex</mTag>
 			<mNormTag>mSP_findStartIndex</mNormTag>
@@ -2684,7 +2700,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_119">
+		<item class_id_reference="22" object_id="_121">
 			<mId>2</mId>
 			<mTag>Entry</mTag>
 			<mNormTag>Entry</mNormTag>
@@ -2707,7 +2723,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_120">
+		<item class_id_reference="22" object_id="_122">
 			<mId>3</mId>
 			<mTag>mSP_findStartIndex_startValue</mTag>
 			<mNormTag>mSP_findStartIndex_startValue</mNormTag>
@@ -2722,8 +2738,8 @@
 				<item>16</item>
 				<item>36</item>
 			</basic_blocks>
-			<mII>1</mII>
-			<mDepth>3</mDepth>
+			<mII>2</mII>
+			<mDepth>4</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
 			<mMinLatency>-1</mMinLatency>
@@ -2731,7 +2747,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_121">
+		<item class_id_reference="22" object_id="_123">
 			<mId>4</mId>
 			<mTag>Return</mTag>
 			<mNormTag>Return</mNormTag>
@@ -2784,14 +2800,14 @@
 		<item>
 			<first>8</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>9</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2812,7 +2828,7 @@
 		<item>
 			<first>12</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2826,7 +2842,7 @@
 		<item>
 			<first>15</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2854,21 +2870,21 @@
 		<item>
 			<first>21</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>22</first>
 			<second>
-				<first>3</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>23</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2882,21 +2898,21 @@
 		<item>
 			<first>25</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>26</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2910,70 +2926,70 @@
 		<item>
 			<first>29</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>34</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>3</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>37</first>
 			<second>
-				<first>4</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>38</first>
 			<second>
-				<first>4</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>4</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2992,28 +3008,28 @@
 			<first>16</first>
 			<second>
 				<first>1</first>
-				<second>2</second>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
 			<first>36</first>
 			<second>
 				<first>1</first>
-				<second>3</second>
+				<second>4</second>
 			</second>
 		</item>
 		<item>
 			<first>40</first>
 			<second>
-				<first>3</first>
-				<second>3</second>
+				<first>4</first>
+				<second>4</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="32" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="33" tracking_level="1" version="0" object_id="_122">
+		<item class_id="33" tracking_level="1" version="0" object_id="_124">
 			<region_name>mSP_findStartIndex_startValue</region_name>
 			<basic_blocks>
 				<count>2</count>
@@ -3027,8 +3043,8 @@
 			</nodes>
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
-			<interval>1</interval>
-			<pipe_depth>3</pipe_depth>
+			<interval>2</interval>
+			<pipe_depth>4</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="34" tracking_level="0" version="0">

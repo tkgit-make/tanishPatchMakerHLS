@@ -6,7 +6,7 @@
 <Project Version="7" Minor="54" Path="C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC2/.autopilot/db/ip_tmp/prj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="cc052ed4074d43489188b463bee75341"/>
+    <Option Name="Id" Val="1f1881ef5eb340ba9847d640adc777ee"/>
     <Option Name="Part" Val="xcvu19p-fsvb3824-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -80,7 +80,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/MPSQ_ap_sitofp_1_no_dsp_32/MPSQ_ap_sitofp_1_no_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/MPSQ_ap_sitofp_4_no_dsp_32/MPSQ_ap_sitofp_4_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

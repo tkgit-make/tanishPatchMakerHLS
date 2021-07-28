@@ -102569,13 +102569,13 @@ void add_patch(ap_int<32> (&wp_superpoints) [5][16][2], ap_int<32> (&wp_paramete
         for(int32_t a = 0; a < 5; a++)
         {
 
-
+#pragma HLS UNROLL
 
             add_patch_perPointSP0:
             for(int32_t b = 0; b < 16; b++)
             {
 
-
+#pragma HLS UNROLL
 
                 patches_superpoints[0][a][b] = encodeCoordinates(wp_superpoints[a][b][0], wp_superpoints[a][b][1]);
             }
@@ -102585,19 +102585,19 @@ void add_patch(ap_int<32> (&wp_superpoints) [5][16][2], ap_int<32> (&wp_paramete
         for(int32_t a = 0; a < 5; a++)
         {
 
-
+#pragma HLS UNROLL
 
             add_patch_perParallelogramPP0:
             for(int32_t b = 0; b < 5 - 1; b++)
             {
 
-
+#pragma HLS UNROLL
 
                 add_patch_perPropertyLengthPP0:
                 for(int32_t c = 0; c < 6; c++)
                 {
 
-
+#pragma HLS UNROLL
 
                     patches_parameters[0][a][b][c] = wp_parameters[a][b][c];
                 }
@@ -102634,13 +102634,13 @@ void add_patch(ap_int<32> (&wp_superpoints) [5][16][2], ap_int<32> (&wp_paramete
                 for(int32_t a = 0; a < 5; a++)
                 {
 
-
+#pragma HLS UNROLL
 
                     add_patch_perPointSP1:
                     for(int32_t b = 0; b < 16; b++)
                     {
 
-
+#pragma HLS UNROLL
 
                         patches_superpoints[n_patches][a][b] = encodeCoordinates(wp_superpoints[a][b][0], wp_superpoints[a][b][1]);
                     }
@@ -102650,19 +102650,19 @@ void add_patch(ap_int<32> (&wp_superpoints) [5][16][2], ap_int<32> (&wp_paramete
                 for(int32_t a = 0; a < 5; a++)
                 {
 
-
+#pragma HLS UNROLL
 
                     add_patch_perParallelogramPP1:
                     for(int32_t b = 0; b < 5 - 1; b++)
                     {
 
-
+#pragma HLS UNROLL
 
                         add_patch_perPropertyLengthPP1:
                         for(int32_t c = 0; c < 6; c++)
                         {
 
-
+#pragma HLS UNROLL
 
                             patches_parameters[n_patches][a][b][c] = wp_parameters[a][b][c];
                         }
@@ -102693,19 +102693,19 @@ void delete_patch(int32_t index, uint8_t &n_patches, ap_int<(2 * 32)> (&patches_
     for (uint8_t i = index; i < n_patches - 1; i++)
     {
 
-
+#pragma HLS UNROLL
 
         delete_patch_perSuperpointSP:
         for(int32_t a = 0; a < 5; a++)
         {
 
-
+#pragma HLS UNROLL
 
             delete_patch_perPointSP:
             for(int32_t b = 0; b < 16; b++)
             {
 
-
+#pragma HLS UNROLL
 
                 patches_superpoints[i][a][b] = patches_superpoints[i + 1][a][b];
             }
@@ -102715,19 +102715,19 @@ void delete_patch(int32_t index, uint8_t &n_patches, ap_int<(2 * 32)> (&patches_
         for(int32_t a = 0; a < 5; a++)
         {
 
-
+#pragma HLS UNROLL
 
             delete_patch_perParallelogramPP:
             for(int32_t b = 0; b < 5 - 1; b++)
             {
 
-
+#pragma HLS UNROLL
 
                 delete_patch_perPropertyLengthPP:
                 for(int32_t c = 0; c < 6; c++)
                 {
 
-
+#pragma HLS UNROLL
 
                     patches_parameters[i][a][b][c] = patches_parameters[i + 1][a][b][c];
                 }
@@ -102784,13 +102784,13 @@ void initializeArrays(ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_in
         for(int32_t b = 0; b < 5; b++)
         {
 
-
+#pragma HLS UNROLL
 
          initArraysSPloop3:
             for(int32_t c = 0; c < 16; c++)
             {
 
-
+#pragma HLS UNROLL
 
              patches_superpoints[a][b][c] = 0;
             }
@@ -102805,19 +102805,19 @@ void initializeArrays(ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_in
         for(int32_t b = 0; b < 5; b++)
         {
 
-
+#pragma HLS UNROLL
 
          initArraysPPloop3:
             for(int32_t c = 0; c < 5 - 1; c++)
             {
 
-
+#pragma HLS UNROLL
 
              initArraysPPloop4:
                 for(int32_t d = 0; d < 6; d++)
                 {
 
-
+#pragma HLS UNROLL
 
                     patches_parameters[a][b][c][d] = 0;
                 }
@@ -102831,15 +102831,15 @@ void MPSQ(int32_t stop, int32_t ppl, bool leftRight, uint8_t &n_patches, ap_int<
 {
 
 
-
-
+#pragma HLS ARRAY_PARTITION variable=patches_superpoints dim=3 complete
+#pragma HLS ARRAY_PARTITION variable=patches_superpoints dim=2 complete
 
 
     ap_int<32> patches_parameters[32][5][5 - 1][6];
 
-
-
-
+#pragma HLS ARRAY_PARTITION variable=patches_parameters dim=4 complete
+#pragma HLS ARRAY_PARTITION variable=patches_parameters dim=3 complete
+#pragma HLS ARRAY_PARTITION variable=patches_parameters dim=2 complete
 
     bool fix42 = true;
     ap_int<32> apexZ0 = trapezoid_edges[0];
@@ -102848,27 +102848,27 @@ void MPSQ(int32_t stop, int32_t ppl, bool leftRight, uint8_t &n_patches, ap_int<
 
 
 
-
+#pragma HLS ARRAY_PARTITION variable=GDn_points dim=1 complete
 
 
     ap_int<32> GDarrayDecoded[5][256][2];
 
-
-
-
+#pragma HLS ARRAY_PARTITION variable=GDarrayDecoded dim=3 complete
+#pragma HLS ARRAY_PARTITION variable=GDarrayDecoded dim=2 complete
+#pragma HLS ARRAY_PARTITION variable=GDarrayDecoded dim=1 complete
 
 
     initGDarrayDecoded_perLayer:
     for(int32_t a = 0; a < 5; a++)
     {
 
-
+#pragma HLS UNROLL
 
         initGDarrayDecoded_perPoint:
         for(int32_t b = 0; b < GDn_points[a]; b++)
         {
 
-
+#pragma HLS UNROLL
 
             GDarrayDecoded[a][b][0] = decodePHIcoordinate(GDarray[a][b]);
             GDarrayDecoded[a][b][1] = decodeZcoordinate(GDarray[a][b]);
@@ -103499,28 +103499,28 @@ void makePatch_alignedToLine(ap_int<32> apexZ0, ap_int<32> z_top, int32_t &ppl, 
 #pragma HLS INLINE OFF
     ap_int<32> init_patch[5][16][2];
 
-
-
-
+#pragma HLS ARRAY_PARTITION variable=init_patch dim=3 complete
+#pragma HLS ARRAY_PARTITION variable=init_patch dim=2 complete
+#pragma HLS ARRAY_PARTITION variable=init_patch dim=1 complete
 
 
     makePatch_alignedToLine_initPatch_perLayer:
     for(int32_t a = 0; a < 5; a++)
  {
 
-
+#pragma HLS UNROLL
 
         makePatch_alignedToLine_initPatch_perPoint:
   for(int32_t b = 0; b < 16; b++)
   {
 
-
+#pragma HLS UNROLL
 
             makePatch_alignedToLine_initPatch_perParameter:
    for(int32_t c = 0; c < 2; c++)
    {
 
-
+#pragma HLS UNROLL
 
     init_patch[a][b][c] = 0;
    }
@@ -103534,7 +103534,7 @@ void makePatch_alignedToLine(ap_int<32> apexZ0, ap_int<32> z_top, int32_t &ppl, 
     for (uint8_t i = 0; i < 5; i++)
     {
 
-
+#pragma HLS UNROLL
 
         makeSuperPoint_alignedToLine(i, z_top, apexZ0, float_middleLayers_ppl, ppl, original_ppl, leftRight, alignmentAccuracy, init_patch, GDarrayDecoded, GDn_points);
     }
@@ -103542,28 +103542,28 @@ void makePatch_alignedToLine(ap_int<32> apexZ0, ap_int<32> z_top, int32_t &ppl, 
 
     ap_int<32> NPpatches_superpoints[5][16][2];
 
-
-
-
+#pragma HLS ARRAY_PARTITION variable=NPpatches_superpoints dim=3 complete
+#pragma HLS ARRAY_PARTITION variable=NPpatches_superpoints dim=2 complete
+#pragma HLS ARRAY_PARTITION variable=NPpatches_superpoints dim=1 complete
 
 
     makePatch_alignedToLine_initSP_perSuperpoint:
     for(int32_t b = 0; b < 5; b++)
  {
 
-
+#pragma HLS UNROLL
 
         makePatch_alignedToLine_initSP_perPoint:
   for(int32_t c = 0; c < 16; c++)
   {
 
-
+#pragma HLS UNROLL
 
             makePatch_alignedToLine_initSP_perParameter:
             for(int32_t d = 0; d < 2; d++)
             {
 
-
+#pragma HLS UNROLL
 
                 NPpatches_superpoints[b][c][d] = 0;
             }
@@ -103572,28 +103572,28 @@ void makePatch_alignedToLine(ap_int<32> apexZ0, ap_int<32> z_top, int32_t &ppl, 
 
     ap_int<32> NPpatches_parameters[5][5 - 1][6];
 
-
-
-
+#pragma HLS ARRAY_PARTITION variable=NPpatches_parameters dim=3 complete
+#pragma HLS ARRAY_PARTITION variable=NPpatches_parameters dim=2 complete
+#pragma HLS ARRAY_PARTITION variable=NPpatches_parameters dim=1 complete
 
 
     makePatch_alignedToLine_initPP_perPropertyType:
     for(int32_t b = 0; b < 5; b++)
  {
 
-
+#pragma HLS UNROLL
 
         makePatch_alignedToLine_initPP_perParallelogram:
   for(int32_t c = 0; c < 5 - 1; c++)
   {
 
-
+#pragma HLS UNROLL
 
             makePatch_alignedToLine_initPP_perPropertyLength:
    for(int32_t d = 0; d < 6; d++)
    {
 
-
+#pragma HLS UNROLL
 
     NPpatches_parameters[b][c][d] = 0;
    }
@@ -103703,13 +103703,13 @@ void makeSuperPoint_alignedToLine(int32_t i, ap_int<32> z_top, ap_int<32> apexZ0
     for(int j = 0; j < 16; j++)
     {
 
-
+#pragma HLS UNROLL
 
      makeSuperPoint_alignedToLine_initSP_perParameter:
      for(int32_t z = 0; z < 2; z++)
      {
 
-
+#pragma HLS UNROLL
 
          init_patch[i][j][z] = GDarrayDecoded[i][j + temp_start][z];
      }

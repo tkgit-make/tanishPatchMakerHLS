@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makeThirdPatch'" level="0">
-<item name = "Date">Sat Jul 27 22:49:47 2024
+<item name = "Date">Sun Jul 28 01:30:47 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.868 ns, 1.35 ns</column>
+<column name="ap_clk">3.00 ns, 2.477 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -31,11 +31,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makePatch_alignedToLine_fu_493">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_getShadows_fu_516">getShadows, 334, 334, 1.670 us, 1.670 us, 334, 334, none</column>
-<column name="grp_delete_patch_fu_532">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_544">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_558">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_makePatch_alignedToLine_1_fu_21280">makePatch_alignedToLine_1, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_delete_patch_1_fu_24132">delete_patch_1, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_getShadows_fu_24412">getShadows, 401, 401, 1.203 us, 1.203 us, 401, 401, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_24437">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

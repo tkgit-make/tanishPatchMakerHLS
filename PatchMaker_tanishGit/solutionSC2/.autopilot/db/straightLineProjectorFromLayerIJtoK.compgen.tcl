@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 3
+set id 137
 set name MPSQ_mul_4s_4s_8_1_1
 set corename simcore_mul
 set op mul
@@ -67,17 +67,23 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 4
-set name MPSQ_mul_35ns_33s_64_1_1
+set id 138
+set name MPSQ_mul_35ns_33s_64_3_1
 set corename simcore_mul
 set op mul
-set stage_num 1
+set stage_num 3
 set max_latency -1
 set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
 set in0_width 35
 set in0_signed 0
 set in1_width 33
 set in1_signed 1
+set ce_width 1
+set ce_signed 0
 set out_width 64
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
@@ -91,10 +97,16 @@ eval "ap_gen_simcore_mul { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
@@ -122,10 +134,16 @@ eval "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
@@ -135,7 +153,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 # Memory (RAM/ROM)  definition:
-set ID 7
+set ID 141
 set hasByteEnable 0
 set MemName MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList
 set CoreName ap_simcore_mem
@@ -152,7 +170,7 @@ set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 0.714
-set ClkPeriod 5
+set ClkPeriod 3
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -230,7 +248,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 142 \
     name z_i \
     type other \
     dir I \
@@ -245,7 +263,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 9 \
+    id 143 \
     name z_j \
     type other \
     dir I \
@@ -260,7 +278,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10 \
+    id 144 \
     name i \
     type other \
     dir I \
@@ -275,7 +293,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
+    id 145 \
     name j \
     type other \
     dir I \
@@ -290,7 +308,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 12 \
+    id 146 \
     name k \
     type other \
     dir I \

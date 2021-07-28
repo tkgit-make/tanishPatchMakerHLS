@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mSP_findStartIndex'" level="0">
-<item name = "Date">Sat Jul 27 22:50:23 2024
+<item name = "Date">Sun Jul 28 01:34:59 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.341 ns, 1.35 ns</column>
+<column name="ap_clk">3.00 ns, 2.128 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- mSP_findStartIndex_startValue">?, ?, 3, 1, 1, ?, yes</column>
+<column name="- mSP_findStartIndex_startValue">?, ?, 4, 2, 1, ?, yes</column>
 </table>
 </item>
 </section>
@@ -52,8 +52,8 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 88, -</column>
-<column name="Register">-, -, 296, -, -</column>
+<column name="Multiplexer">-, -, -, 80, -</column>
+<column name="Register">-, -, 402, -, -</column>
 <specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
@@ -80,25 +80,24 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln1646_fu_113_p2">+, 0, 0, 39, 32, 1</column>
-<column name="sub_ln180_7_fu_167_p2">-, 0, 0, 71, 1, 64</column>
-<column name="sub_ln180_fu_141_p2">-, 0, 0, 44, 1, 37</column>
-<column name="sub_ln534_fu_132_p2">-, 0, 0, 44, 37, 37</column>
-<column name="icmp_ln1646_fu_119_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln1648_fu_189_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="select_ln1648_1_fu_203_p3">select, 0, 0, 63, 1, 64</column>
-<column name="select_ln1648_2_fu_211_p3">select, 0, 0, 63, 1, 64</column>
-<column name="select_ln1648_fu_195_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln180_7_fu_181_p3">select, 0, 0, 63, 1, 64</column>
-<column name="select_ln180_fu_155_p3">select, 0, 0, 37, 1, 37</column>
+<column name="add_ln1646_fu_123_p2">+, 0, 0, 39, 32, 1</column>
+<column name="sub_ln180_7_fu_143_p2">-, 0, 0, 71, 1, 64</column>
+<column name="sub_ln180_fu_138_p2">-, 0, 0, 44, 1, 37</column>
+<column name="sub_ln534_fu_133_p2">-, 0, 0, 44, 37, 37</column>
+<column name="icmp_ln1646_fu_113_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln1648_fu_184_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="select_ln1648_1_fu_198_p3">select, 0, 0, 63, 1, 64</column>
+<column name="select_ln1648_2_fu_206_p3">select, 0, 0, 63, 1, 64</column>
+<column name="select_ln1648_fu_190_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln180_7_fu_177_p3">select, 0, 0, 63, 1, 64</column>
+<column name="select_ln180_fu_159_p3">select, 0, 0, 37, 1, 37</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">20, 4, 1, 4</column>
+<column name="ap_NS_fsm">26, 5, 1, 5</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_enable_reg_pp0_iter2">14, 3, 1, 3</column>
 <column name="ap_phi_mux_j_phi_fu_69_p4">9, 2, 32, 64</column>
 <column name="j_reg_65">9, 2, 32, 64</column>
 <column name="p_x_assign_7_reg_101">9, 2, 64, 128</column>
@@ -108,19 +107,20 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln1646_reg_241">32, 0, 32, 0</column>
-<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="add_ln1646_reg_245">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
-<column name="icmp_ln1646_reg_246">1, 0, 1, 0</column>
-<column name="icmp_ln1646_reg_246_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln1646_reg_236">1, 0, 1, 0</column>
+<column name="icmp_ln1646_reg_236_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="j_reg_65">32, 0, 32, 0</column>
 <column name="j_reg_65_pp0_iter1_reg">32, 0, 32, 0</column>
 <column name="p_x_assign_7_reg_101">64, 0, 64, 0</column>
-<column name="row_list_load_reg_255">32, 0, 32, 0</column>
 <column name="start_index_write_assign_reg_77">32, 0, 32, 0</column>
 <column name="start_value_write_assign_reg_89">64, 0, 64, 0</column>
+<column name="sub_ln180_7_reg_263">64, 0, 64, 0</column>
+<column name="sub_ln180_reg_258">37, 0, 37, 0</column>
+<column name="sub_ln534_reg_250">37, 0, 37, 0</column>
 </table>
 </item>
 </section>

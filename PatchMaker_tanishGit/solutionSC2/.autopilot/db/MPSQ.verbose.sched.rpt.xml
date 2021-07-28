@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MPSQ'" level="0">
-<item name = "Date">Sat Jul 27 22:50:10 2024
+<item name = "Date">Sun Jul 28 01:33:25 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.868 ns, 1.35 ns</column>
+<column name="ap_clk">3.00 ns, 2.477 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -35,8 +35,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- initGDarrayDecoded_perLayer">?, ?, ?, -, -, 5, no</column>
-<column name=" + initGDarrayDecoded_perPoint">?, ?, 2, 1, 1, ?, yes</column>
+<column name="- initGDarrayDecoded_perPoint">?, ?, 3, -, -, ?, no</column>
+<column name="- initGDarrayDecoded_perPoint">?, ?, 4, -, -, ?, no</column>
+<column name="- initGDarrayDecoded_perPoint">?, ?, 4, -, -, ?, no</column>
+<column name="- initGDarrayDecoded_perPoint">?, ?, 4, -, -, ?, no</column>
+<column name="- initGDarrayDecoded_perPoint">?, ?, 3, -, -, ?, no</column>
 <column name="- shadowQuilt_loop">?, ?, ?, -, -, ?, no</column>
 </table>
 </item>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'getSolveNextPatchPairWhileCondition'
 ================================================================
-* Date:           Sat Jul 27 22:49:32 2024
+* Date:           Sun Jul 28 01:28:47 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  2.748 ns|     1.35 ns|
+    |ap_clk  |  3.00 ns|  1.802 ns|     0.81 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |        1|        1|  5.000 ns|  5.000 ns|    1|    1|     none|
+    |        1|        1|  3.000 ns|  3.000 ns|    1|    1|     none|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -75,66 +75,55 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 2.40>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%lastPatchIndex_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %lastPatchIndex"   --->   Operation 3 'read' 'lastPatchIndex_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i5.i7, i5 %lastPatchIndex_read, i7 0"   --->   Operation 4 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i5.i3, i5 %lastPatchIndex_read, i3 0"   --->   Operation 5 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln886 = zext i8 %tmp_s"   --->   Operation 6 'zext' 'zext_ln886' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln886 = sub i12 %tmp, i12 %zext_ln886"   --->   Operation 7 'sub' 'sub_ln886' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.37> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_1 : Operation 8 [1/1] (0.75ns) (root node of TernaryAdder)   --->   "%add_ln886 = add i12 %sub_ln886, i12 61"   --->   Operation 8 'add' 'add_ln886' <Predicate = true> <Delay = 0.75> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.37> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln886_2 = zext i12 %add_ln886"   --->   Operation 9 'zext' 'zext_ln886_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%patches_parameters_addr = getelementptr i32 %patches_parameters, i64 0, i64 %zext_ln886_2"   --->   Operation 10 'getelementptr' 'patches_parameters_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [2/2] (1.64ns)   --->   "%patches_parameters_load = load i12 %patches_parameters_addr"   --->   Operation 11 'load' 'patches_parameters_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3840> <RAM>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%GDn_points_addr = getelementptr i32 %GDn_points, i64 0, i64 4" [patchMaker.cpp:896]   --->   Operation 12 'getelementptr' 'GDn_points_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [2/2] (0.69ns)   --->   "%GDn_points_load = load i3 %GDn_points_addr" [patchMaker.cpp:896]   --->   Operation 13 'load' 'GDn_points_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 5> <RAM>
+State 1 <SV = 0> <Delay = 1.14>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%white_space_height_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %white_space_height"   --->   Operation 3 'read' 'white_space_height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%lastPatchIndex_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %lastPatchIndex"   --->   Operation 4 'read' 'lastPatchIndex_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (1.14ns)   --->   "%sub_ln180 = sub i64 0, i64 %white_space_height_read" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 5 'sub' 'sub_ln180' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln894 = zext i5 %lastPatchIndex_read" [patchMaker.cpp:894]   --->   Operation 6 'zext' 'zext_ln894' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%patches_parameters21056_addr = getelementptr i32 %patches_parameters21056, i64 0, i64 %zext_ln894"   --->   Operation 7 'getelementptr' 'patches_parameters21056_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (0.69ns)   --->   "%patches_parameters21056_load = load i5 %patches_parameters21056_addr"   --->   Operation 8 'load' 'patches_parameters21056_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
 
-State 2 <SV = 1> <Delay = 2.74>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%current_z_top_index_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %current_z_top_index"   --->   Operation 14 'read' 'current_z_top_index_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%previous_white_space_height_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %previous_white_space_height"   --->   Operation 15 'read' 'previous_white_space_height_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%white_space_height_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %white_space_height"   --->   Operation 16 'read' 'white_space_height_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%repeat_original_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %repeat_original"   --->   Operation 17 'read' 'repeat_original_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_11, i32 0, i32 0, void @empty_10, i32 4294967295, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_10"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (1.14ns)   --->   "%sub_ln180 = sub i64 0, i64 %white_space_height_read" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 19 'sub' 'sub_ln180' <Predicate = true> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln893)   --->   "%tmp_36 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %white_space_height_read, i32 63" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 20 'bitselect' 'tmp_36' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln893)   --->   "%select_ln180 = select i1 %tmp_36, i64 %sub_ln180, i64 %white_space_height_read" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 21 'select' 'select_ln180' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 22 [1/1] (1.06ns) (out node of the LUT)   --->   "%icmp_ln893 = icmp_sgt  i64 %select_ln180, i64 5" [patchMaker.cpp:893]   --->   Operation 22 'icmp' 'icmp_ln893' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 23 [1/2] (1.64ns)   --->   "%patches_parameters_load = load i12 %patches_parameters_addr"   --->   Operation 23 'load' 'patches_parameters_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3840> <RAM>
-ST_2 : Operation 24 [1/1] (0.85ns)   --->   "%icmp_ln886 = icmp_sgt  i32 %patches_parameters_load, i32 4244967196"   --->   Operation 24 'icmp' 'icmp_ln886' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] (1.06ns)   --->   "%icmp_ln895 = icmp_sgt  i64 %white_space_height_read, i64 5" [patchMaker.cpp:895]   --->   Operation 25 'icmp' 'icmp_ln895' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_2)   --->   "%or_ln894 = or i1 %icmp_ln886, i1 %icmp_ln895" [patchMaker.cpp:894]   --->   Operation 26 'or' 'or_ln894' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 27 [1/2] (0.69ns)   --->   "%GDn_points_load = load i3 %GDn_points_addr" [patchMaker.cpp:896]   --->   Operation 27 'load' 'GDn_points_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 5> <RAM>
-ST_2 : Operation 28 [1/1] (0.85ns)   --->   "%icmp_ln896 = icmp_sgt  i32 %GDn_points_load, i32 %current_z_top_index_read" [patchMaker.cpp:896]   --->   Operation 28 'icmp' 'icmp_ln896' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_2)   --->   "%xor_ln897 = xor i1 %repeat_original_read, i1 1" [patchMaker.cpp:897]   --->   Operation 29 'xor' 'xor_ln897' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 30 [1/1] (1.06ns)   --->   "%icmp_ln893_1 = icmp_sgt  i64 %white_space_height_read, i64 0" [patchMaker.cpp:893]   --->   Operation 30 'icmp' 'icmp_ln893_1' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_3)   --->   "%tmp_37 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %previous_white_space_height_read, i32 63" [patchMaker.cpp:893]   --->   Operation 31 'bitselect' 'tmp_37' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_3)   --->   "%or_ln893 = or i1 %tmp_37, i1 %icmp_ln893_1" [patchMaker.cpp:893]   --->   Operation 32 'or' 'or_ln893' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_3)   --->   "%and_ln894 = and i1 %or_ln893, i1 %icmp_ln893" [patchMaker.cpp:894]   --->   Operation 33 'and' 'and_ln894' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_2)   --->   "%and_ln894_1 = and i1 %icmp_ln896, i1 %xor_ln897" [patchMaker.cpp:894]   --->   Operation 34 'and' 'and_ln894_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln894_2 = and i1 %and_ln894_1, i1 %or_ln894" [patchMaker.cpp:894]   --->   Operation 35 'and' 'and_ln894_2' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 36 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln894_3 = and i1 %and_ln894_2, i1 %and_ln894" [patchMaker.cpp:894]   --->   Operation 36 'and' 'and_ln894_3' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%ret_ln893 = ret i1 %and_ln894_3" [patchMaker.cpp:893]   --->   Operation 37 'ret' 'ret_ln893' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 1.80>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%current_z_top_index_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %current_z_top_index"   --->   Operation 9 'read' 'current_z_top_index_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%previous_white_space_height_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %previous_white_space_height"   --->   Operation 10 'read' 'previous_white_space_height_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%repeat_original_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %repeat_original"   --->   Operation 11 'read' 'repeat_original_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%p_read_27075 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read"   --->   Operation 12 'read' 'p_read_27075' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln893)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %white_space_height_read, i32 63" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 13 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln893)   --->   "%select_ln180 = select i1 %tmp, i64 %sub_ln180, i64 %white_space_height_read" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 14 'select' 'select_ln180' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (1.06ns) (out node of the LUT)   --->   "%icmp_ln893 = icmp_sgt  i64 %select_ln180, i64 5" [patchMaker.cpp:893]   --->   Operation 15 'icmp' 'icmp_ln893' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/2] (0.69ns)   --->   "%patches_parameters21056_load = load i5 %patches_parameters21056_addr"   --->   Operation 16 'load' 'patches_parameters21056_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 17 [1/1] (0.85ns)   --->   "%icmp_ln886 = icmp_sgt  i32 %patches_parameters21056_load, i32 4244967196"   --->   Operation 17 'icmp' 'icmp_ln886' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (1.06ns)   --->   "%icmp_ln895 = icmp_sgt  i64 %white_space_height_read, i64 5" [patchMaker.cpp:895]   --->   Operation 18 'icmp' 'icmp_ln895' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_2)   --->   "%or_ln894 = or i1 %icmp_ln886, i1 %icmp_ln895" [patchMaker.cpp:894]   --->   Operation 19 'or' 'or_ln894' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.85ns)   --->   "%icmp_ln896 = icmp_sgt  i32 %p_read_27075, i32 %current_z_top_index_read" [patchMaker.cpp:896]   --->   Operation 20 'icmp' 'icmp_ln896' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_2)   --->   "%xor_ln897 = xor i1 %repeat_original_read, i1 1" [patchMaker.cpp:897]   --->   Operation 21 'xor' 'xor_ln897' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (1.06ns)   --->   "%icmp_ln893_1 = icmp_sgt  i64 %white_space_height_read, i64 0" [patchMaker.cpp:893]   --->   Operation 22 'icmp' 'icmp_ln893_1' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_3)   --->   "%tmp_32 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %previous_white_space_height_read, i32 63" [patchMaker.cpp:893]   --->   Operation 23 'bitselect' 'tmp_32' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_3)   --->   "%or_ln893 = or i1 %tmp_32, i1 %icmp_ln893_1" [patchMaker.cpp:893]   --->   Operation 24 'or' 'or_ln893' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_3)   --->   "%and_ln894 = and i1 %or_ln893, i1 %icmp_ln893" [patchMaker.cpp:894]   --->   Operation 25 'and' 'and_ln894' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node and_ln894_2)   --->   "%and_ln894_1 = and i1 %icmp_ln896, i1 %xor_ln897" [patchMaker.cpp:894]   --->   Operation 26 'and' 'and_ln894_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln894_2 = and i1 %and_ln894_1, i1 %or_ln894" [patchMaker.cpp:894]   --->   Operation 27 'and' 'and_ln894_2' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln894_3 = and i1 %and_ln894_2, i1 %and_ln894" [patchMaker.cpp:894]   --->   Operation 28 'and' 'and_ln894_3' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln893 = ret i1 %and_ln894_3" [patchMaker.cpp:893]   --->   Operation 29 'ret' 'ret_ln893' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 5ns, clock uncertainty: 1.35ns.
+Target clock period: 3ns, clock uncertainty: 0.81ns.
 
- <State 1>: 2.4ns
+ <State 1>: 1.15ns
 The critical path consists of the following:
-	wire read on port 'lastPatchIndex' [12]  (0 ns)
-	'sub' operation ('sub_ln886') [21]  (0 ns)
-	'add' operation ('add_ln886') [22]  (0.756 ns)
-	'getelementptr' operation ('patches_parameters_addr') [24]  (0 ns)
-	'load' operation ('patches_parameters_load') on array 'patches_parameters' [25]  (1.65 ns)
+	wire read on port 'white_space_height' [10]  (0 ns)
+	'sub' operation ('sub_ln180', C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180) [14]  (1.15 ns)
 
- <State 2>: 2.75ns
+ <State 2>: 1.8ns
 The critical path consists of the following:
-	'load' operation ('patches_parameters_load') on array 'patches_parameters' [25]  (1.65 ns)
-	'icmp' operation ('icmp_ln886') [26]  (0.859 ns)
-	'or' operation ('or_ln894', patchMaker.cpp:894) [28]  (0 ns)
-	'and' operation ('and_ln894_2', patchMaker.cpp:894) [38]  (0.122 ns)
-	'and' operation ('and_ln894_3', patchMaker.cpp:894) [39]  (0.122 ns)
+	'load' operation ('patches_parameters21056_load') on array 'patches_parameters21056' [20]  (0.699 ns)
+	'icmp' operation ('icmp_ln886') [21]  (0.859 ns)
+	'or' operation ('or_ln894', patchMaker.cpp:894) [23]  (0 ns)
+	'and' operation ('and_ln894_2', patchMaker.cpp:894) [31]  (0.122 ns)
+	'and' operation ('and_ln894_3', patchMaker.cpp:894) [32]  (0.122 ns)
 
 
 ============================================================

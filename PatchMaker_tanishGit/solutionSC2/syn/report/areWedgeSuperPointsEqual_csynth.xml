@@ -9,8 +9,8 @@
 <ProductFamily>virtexuplus</ProductFamily>
 <Part>xcvu19p-fsvb3824-2-e</Part>
 <TopModelName>areWedgeSuperPointsEqual</TopModelName>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>1.35</ClockUncertainty>
+<TargetClockPeriod>3.00</TargetClockPeriod>
+<ClockUncertainty>0.81</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
@@ -19,18 +19,18 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.097</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.038</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>18</Best-caseLatency>
-<Average-caseLatency>18</Average-caseLatency>
-<Worst-caseLatency>18</Worst-caseLatency>
-<Best-caseRealTimeLatency>90.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>90.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>90.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>21</Best-caseLatency>
+<Average-caseLatency>21</Average-caseLatency>
+<Worst-caseLatency>21</Worst-caseLatency>
+<Best-caseRealTimeLatency>63.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>63.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>63.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>2</PipelineInitiationInterval>
-<PipelineDepth>19</PipelineDepth>
+<PipelineDepth>22</PipelineDepth>
 <Interval-min>2</Interval-min>
 <Interval-max>2</Interval-max>
 </SummaryOfOverallLatency>
@@ -39,8 +39,8 @@
 <AreaEstimates>
 <Resources>
 <DSP>2</DSP>
-<FF>962</FF>
-<LUT>989</LUT>
+<FF>1113</FF>
+<LUT>928</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -132,19 +132,19 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wsp1_2_address0</name>
-<Object>wsp1_2</Object>
+<name>patches_superpoints_0_address0</name>
+<Object>patches_superpoints_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>8</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wsp1_2_ce0</name>
-<Object>wsp1_2</Object>
+<name>patches_superpoints_0_ce0</name>
+<Object>patches_superpoints_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -154,8 +154,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wsp1_2_q0</name>
-<Object>wsp1_2</Object>
+<name>patches_superpoints_0_q0</name>
+<Object>patches_superpoints_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -165,19 +165,19 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wsp1_2_address1</name>
-<Object>wsp1_2</Object>
+<name>patches_superpoints_0_address1</name>
+<Object>patches_superpoints_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>8</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wsp1_2_ce1</name>
-<Object>wsp1_2</Object>
+<name>patches_superpoints_0_ce1</name>
+<Object>patches_superpoints_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -187,8 +187,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wsp1_2_q1</name>
-<Object>wsp1_2</Object>
+<name>patches_superpoints_0_q1</name>
+<Object>patches_superpoints_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -231,8 +231,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wsp23</name>
-<Object>wsp23</Object>
+<name>wsp22</name>
+<Object>wsp22</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

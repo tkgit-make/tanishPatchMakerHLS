@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722207265971">
+  <ports id="1" name="wp_superpoints" type="PortType" originalName="wp_superpoints.V" coreName="RAM" coreId="673201714" bitwidth="32" iftype="IfTypeRegister" arraysize="160">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="wp_parameters" type="PortType" originalName="wp_parameters.V" coreName="RAM" coreId="673201714" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="120">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <edges id="108" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="113" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="117" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="122" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="125" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="127" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="130" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="138" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="139" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="142" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="144" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="146" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="147" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="156" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="157" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="158" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="161" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="164" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="171" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="172" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="174" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="175" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="180" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="181" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="183" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="184" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="187" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="188" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="189" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="190" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="192" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="193" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="194" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="197" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="198" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="200" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="203" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="204" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="206" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="209" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="210" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="212" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="215" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="216" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="218" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="222" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="227" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="230" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="231" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="232" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="233" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="236" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="239" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="242" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="245" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="246" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="247" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="248" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="250" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="251" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="252" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="253" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.8"/>
+  <edges id="254" source_obj="//@blocks.3/@node_objs.8" sink_obj="//@blocks.3/@node_objs.9"/>
+  <edges id="256" source_obj="//@blocks.3/@node_objs.9" sink_obj="//@blocks.3/@node_objs.10"/>
+  <edges id="258" source_obj="//@blocks.3/@node_objs.8" sink_obj="//@blocks.3/@node_objs.11"/>
+  <edges id="260" source_obj="//@blocks.3/@node_objs.11" sink_obj="//@blocks.3/@node_objs.12"/>
+  <edges id="262" source_obj="//@blocks.3/@node_objs.10" sink_obj="//@blocks.3/@node_objs.13"/>
+  <edges id="263" source_obj="//@blocks.3/@node_objs.12" sink_obj="//@blocks.3/@node_objs.13"/>
+  <edges id="264" source_obj="//@blocks.3/@node_objs.13" sink_obj="//@blocks.3/@node_objs.14"/>
+  <edges id="267" source_obj="//@blocks.3/@node_objs.14" sink_obj="//@blocks.3/@node_objs.15"/>
+  <edges id="268" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.16"/>
+  <edges id="270" source_obj="//@blocks.3/@node_objs.15" sink_obj="//@blocks.3/@node_objs.16"/>
+  <edges id="271" source_obj="//@blocks.3/@node_objs.13" sink_obj="//@blocks.3/@node_objs.17"/>
+  <edges id="274" source_obj="//@blocks.3/@node_objs.17" sink_obj="//@blocks.3/@node_objs.18"/>
+  <edges id="275" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.19"/>
+  <edges id="277" source_obj="//@blocks.3/@node_objs.18" sink_obj="//@blocks.3/@node_objs.19"/>
+  <edges id="278" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.3/@node_objs.20"/>
+  <edges id="279" source_obj="//@blocks.3/@node_objs.16" sink_obj="//@blocks.3/@node_objs.20"/>
+  <edges id="280" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.3/@node_objs.21"/>
+  <edges id="281" source_obj="//@blocks.3/@node_objs.19" sink_obj="//@blocks.3/@node_objs.21"/>
+  <edges id="282" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.22"/>
+  <edges id="283" source_obj="//@blocks.3/@node_objs.22" sink_obj="//@blocks.3/@node_objs.23"/>
+  <edges id="285" source_obj="//@blocks.3/@node_objs.23" sink_obj="//@blocks.3/@node_objs.24"/>
+  <edges id="287" source_obj="//@blocks.3/@node_objs.22" sink_obj="//@blocks.3/@node_objs.25"/>
+  <edges id="289" source_obj="//@blocks.3/@node_objs.25" sink_obj="//@blocks.3/@node_objs.26"/>
+  <edges id="291" source_obj="//@blocks.3/@node_objs.24" sink_obj="//@blocks.3/@node_objs.27"/>
+  <edges id="292" source_obj="//@blocks.3/@node_objs.26" sink_obj="//@blocks.3/@node_objs.27"/>
+  <edges id="293" source_obj="//@blocks.3/@node_objs.27" sink_obj="//@blocks.3/@node_objs.28"/>
+  <edges id="296" source_obj="//@blocks.3/@node_objs.28" sink_obj="//@blocks.3/@node_objs.29"/>
+  <edges id="297" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.30"/>
+  <edges id="299" source_obj="//@blocks.3/@node_objs.29" sink_obj="//@blocks.3/@node_objs.30"/>
+  <edges id="300" source_obj="//@blocks.3/@node_objs.27" sink_obj="//@blocks.3/@node_objs.31"/>
+  <edges id="303" source_obj="//@blocks.3/@node_objs.31" sink_obj="//@blocks.3/@node_objs.32"/>
+  <edges id="304" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.33"/>
+  <edges id="306" source_obj="//@blocks.3/@node_objs.32" sink_obj="//@blocks.3/@node_objs.33"/>
+  <edges id="307" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.3/@node_objs.34"/>
+  <edges id="308" source_obj="//@blocks.3/@node_objs.30" sink_obj="//@blocks.3/@node_objs.34"/>
+  <edges id="309" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.3/@node_objs.35"/>
+  <edges id="310" source_obj="//@blocks.3/@node_objs.33" sink_obj="//@blocks.3/@node_objs.35"/>
+  <edges id="311" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.36"/>
+  <edges id="312" source_obj="//@blocks.3/@node_objs.36" sink_obj="//@blocks.3/@node_objs.37"/>
+  <edges id="314" source_obj="//@blocks.3/@node_objs.37" sink_obj="//@blocks.3/@node_objs.38"/>
+  <edges id="316" source_obj="//@blocks.3/@node_objs.36" sink_obj="//@blocks.3/@node_objs.39"/>
+  <edges id="318" source_obj="//@blocks.3/@node_objs.39" sink_obj="//@blocks.3/@node_objs.40"/>
+  <edges id="320" source_obj="//@blocks.3/@node_objs.38" sink_obj="//@blocks.3/@node_objs.41"/>
+  <edges id="321" source_obj="//@blocks.3/@node_objs.40" sink_obj="//@blocks.3/@node_objs.41"/>
+  <edges id="322" source_obj="//@blocks.3/@node_objs.41" sink_obj="//@blocks.3/@node_objs.42"/>
+  <edges id="325" source_obj="//@blocks.3/@node_objs.42" sink_obj="//@blocks.3/@node_objs.43"/>
+  <edges id="326" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.44"/>
+  <edges id="328" source_obj="//@blocks.3/@node_objs.43" sink_obj="//@blocks.3/@node_objs.44"/>
+  <edges id="329" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.3/@node_objs.45"/>
+  <edges id="330" source_obj="//@blocks.3/@node_objs.44" sink_obj="//@blocks.3/@node_objs.45"/>
+  <edges id="331" source_obj="//@blocks.3/@node_objs.36" sink_obj="//@blocks.3/@node_objs.46"/>
+  <edges id="333" source_obj="//@blocks.3/@node_objs.46" sink_obj="//@blocks.3/@node_objs.47"/>
+  <edges id="334" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.47"/>
+  <edges id="335" source_obj="//@blocks.3/@node_objs.46" sink_obj="//@blocks.3/@node_objs.48"/>
+  <edges id="336" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.48"/>
+  <edges id="337" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.49"/>
+  <edges id="338" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="339" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="340" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="341" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="342" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="355" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.5"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="359" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="361" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.36" sink_obj="//@blocks.3/@node_objs.47"/>
+  <edges id="362" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.22" sink_obj="//@blocks.3/@node_objs.47"/>
+  <edges id="363" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.8" sink_obj="//@blocks.3/@node_objs.47"/>
+  <edges id="364" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="365" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.3/@node_objs.48"/>
+  <edges id="366" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.3/@node_objs.48"/>
+  <edges id="-117" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@ports.1"/>
+  <edges id="-248" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@ports.1"/>
+  <edges id="-268" source_obj="//@blocks.3/@node_objs.16" sink_obj="//@ports.1"/>
+  <edges id="-275" source_obj="//@blocks.3/@node_objs.19" sink_obj="//@ports.1"/>
+  <edges id="-297" source_obj="//@blocks.3/@node_objs.30" sink_obj="//@ports.1"/>
+  <edges id="-304" source_obj="//@blocks.3/@node_objs.33" sink_obj="//@ports.1"/>
+  <edges id="-326" source_obj="//@blocks.3/@node_objs.44" sink_obj="//@ports.1"/>
+  <blocks id="25" name="block_25" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_37</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="empty" coreId="1532835163" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="wp_superpoints_addr" lineNumber="878" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_lt_32_true" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>wp_superpoints</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="wp_superpoints_addr_2" lineNumber="878" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_lt_32_true" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>wp_superpoints</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="wp_parameters_addr" lineNumber="57" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" bitwidth="7" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="57" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>wp_parameters</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="wp_superpoints_load" lineNumber="878" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="operator_lt_32_true" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="1.19" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="icmp_ln878" lineNumber="878" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln878_fu_271_p2" opType="icmp" coreId="1532835163" contextFuncName="operator_lt_32_true" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.85" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="z1_min_V" lineNumber="43" originalName="z1_min.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="z1_min_V_fu_283_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="getParallelograms" bitwidth="32" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.22" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="43" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="trunc_ln43" lineNumber="43" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln43_fu_290_p1" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="26" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="43" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="wp_superpoints_load_1" lineNumber="878" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="operator_lt_32_true" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="1.19" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="icmp_ln878_14" lineNumber="878" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln878_14_fu_277_p2" opType="icmp" coreId="1532835163" contextFuncName="operator_lt_32_true" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.85" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="z1_max_V" lineNumber="44" originalName="z1_max.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="z1_max_V_fu_294_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="getParallelograms" bitwidth="32" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.22" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="44" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="trunc_ln44" lineNumber="44" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln44_fu_301_p1" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="26" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="44" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="icmp_ln886" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln886_fu_305_p2" opType="icmp" coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="886" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;gt;&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="z1_max_V_1" lineNumber="46" originalName="z1_max.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="z1_max_V_1_fu_311_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="getParallelograms" bitwidth="26" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.34" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="46" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="sext_ln46" lineNumber="46" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln46_fu_319_p1" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="32" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="46" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="z1_min_V_1" lineNumber="46" originalName="z1_min.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="z1_min_V_1_fu_323_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="getParallelograms" bitwidth="26" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.34" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="46" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="sext_ln43" lineNumber="43" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln43_fu_331_p1" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="32" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="43" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="wp_parameters_addr_write_ln57" lineNumber="57" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.6" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="57" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="empty_write_ln59" lineNumber="59" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="59" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="br_ln59" lineNumber="59" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="59" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <controlInputObjs>block_37</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>57</validLinenumbers>
+      <validLinenumbers>43</validLinenumbers>
+      <validLinenumbers>44</validLinenumbers>
+      <validLinenumbers>46</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>878</validLinenumbers>
+      <validLinenumbers>886</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="37" name="block_37" type="BlockType">
+    <controlInputObjs>block_25</controlInputObjs>
+    <controlInputObjs>.split._crit_edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_105</controlOutputObjs>
+    <controlOutputObjs>.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="i" lineNumber="64" originalName="i" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" bitwidth="3" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="64" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_25</controlInputObjs>
+      <controlInputObjs>.split._crit_edge</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp" lineNumber="61" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_fu_335_p3" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="8" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="61" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="or_ln61" lineNumber="61" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln61_fu_343_p2" coreId="29" contextFuncName="getParallelograms" bitwidth="8" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="61" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="tmp_s" lineNumber="61" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_s_fu_349_p3" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="64" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="61" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="wp_superpoints_addr_3" lineNumber="61" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" bitwidth="8" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="61" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_superpoints</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="or_ln62" lineNumber="62" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln62_fu_358_p2" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="8" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="62" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp_24" lineNumber="62" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_24_fu_364_p3" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="64" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="62" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="wp_superpoints_addr_4" lineNumber="62" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" bitwidth="8" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="62" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_superpoints</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln59" lineNumber="59" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln59_fu_373_p2" opType="icmp" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.49" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="59" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln59" lineNumber="59" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="59" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlInputObjs>block_105</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>64</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+      <validLinenumbers>62</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="50" name=".split" type="BlockType">
+    <controlInputObjs>block_37</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_101</controlOutputObjs>
+    <controlOutputObjs>.split._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="add_ln64" lineNumber="64" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln64_fu_379_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="getParallelograms" bitwidth="3" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.57" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="64" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="p_load84" lineNumber="70" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" bitwidth="32" opcode="load" nodeLabel="11.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="70" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="wp_superpoints_load_2" lineNumber="61" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.19" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="61" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="wp_superpoints_load_3" lineNumber="62" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.19" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="62" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="a_V" lineNumber="64" originalName="a.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_straightLineProjectorFromLayerIJtoK_fu_202" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="32" opcode="call" nodeLabel="5.0" nodeLatency="6" m_display="0" m_delay="2.08" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="64" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>straightLineProjectorFromLayerIJtoK</constName>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="b_V" lineNumber="65" originalName="b.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_straightLineProjectorFromLayerIJtoK_fu_215" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="32" opcode="call" nodeLabel="5.0" nodeLatency="6" m_display="0" m_delay="2.08" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="65" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>straightLineProjectorFromLayerIJtoK</constName>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="c_V" lineNumber="66" originalName="c.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_straightLineProjectorFromLayerIJtoK_fu_228" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="32" opcode="call" nodeLabel="5.0" nodeLatency="6" m_display="0" m_delay="2.08" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="66" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>straightLineProjectorFromLayerIJtoK</constName>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="d_V" lineNumber="67" originalName="d.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_straightLineProjectorFromLayerIJtoK_fu_241" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="32" opcode="call" nodeLabel="5.0" nodeLatency="6" m_display="0" m_delay="2.08" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="67" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>straightLineProjectorFromLayerIJtoK</constName>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="tmp_28" lineNumber="70" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_28_fu_388_p4" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="30" opcode="partselect" nodeLabel="11.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="70" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="icmp_ln70" lineNumber="70" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln70_fu_398_p2" opType="icmp" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="0.83" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="70" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln70" lineNumber="70" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getParallelograms" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="70" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split._crit_edge</controlInputObjs>
+      <controlInputObjs>block_101</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>64</validLinenumbers>
+      <validLinenumbers>70</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+      <validLinenumbers>62</validLinenumbers>
+      <validLinenumbers>65</validLinenumbers>
+      <validLinenumbers>66</validLinenumbers>
+      <validLinenumbers>67</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="101" name="block_101" type="BlockType">
+    <controlInputObjs>.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.split._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="trunc_ln72" lineNumber="72" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln72_fu_404_p1" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="4" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="72" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="tmp_57_cast" lineNumber="72" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_57_cast_fu_408_p3" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="7" opcode="bitconcatenate" nodeLabel="11.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="72" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="trunc_ln72_1" lineNumber="72" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln72_1_fu_416_p1" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="6" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="72" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp_58_cast" lineNumber="72" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_58_cast_fu_420_p3" coreId="1532835163" contextFuncName="getParallelograms" bitwidth="7" opcode="bitconcatenate" nodeLabel="11.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="72" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="sub_ln72" lineNumber="72" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln72_fu_428_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="getParallelograms" bitwidth="7" opcode="sub" nodeLabel="11.0" m_display="0" m_delay="0.7" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="72" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="zext_ln72" lineNumber="72" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln72_fu_434_p1" coreId="267963011" contextFuncName="getParallelograms" bitwidth="64" opcode="zext" nodeLabel="12.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="72" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="wp_parameters_addr_31" lineNumber="72" fileName="patchMaker.cpp" fileDirectory=".." coreId="265931490" contextFuncName="getParallelograms" bitwidth="7" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="72" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>wp_parameters</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="wp_parameters_addr_31_write_ln72" lineNumber="72" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" opcode="store" nodeLabel="12.0" m_display="0" m_delay="0.6" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="72" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>call</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="wp_parameters_load" lineNumber="534" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="operator_long_long" bitwidth="32" opcode="load" nodeLabel="11.0" nodeLatency="1" m_display="0" m_delay="0.6" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="534" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator long long"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="trunc_ln73" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln73_fu_438_p1" coreId="422102131" contextFuncName="getParallelograms" bitwidth="4" opcode="trunc" nodeLabel="12.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="tmp_59_cast" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_59_cast_fu_442_p3" coreId="498456822" contextFuncName="getParallelograms" bitwidth="7" opcode="bitconcatenate" nodeLabel="12.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="trunc_ln73_1" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln73_1_fu_450_p1" coreId="514709998" contextFuncName="getParallelograms" bitwidth="6" opcode="trunc" nodeLabel="12.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="tmp_60_cast" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_60_cast_fu_454_p3" coreId="438355307" contextFuncName="getParallelograms" bitwidth="7" opcode="bitconcatenate" nodeLabel="12.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="sub_ln73" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln73_fu_462_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="getParallelograms" bitwidth="7" opcode="sub" nodeLabel="12.0" m_display="0" m_delay="0.7" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="or_ln73" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln73_fu_498_p2" coreId="509860132" contextFuncName="getParallelograms" bitwidth="7" opcode="or" nodeLabel="13.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="zext_ln73" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln73_fu_503_p1" coreId="535288480" contextFuncName="getParallelograms" bitwidth="64" opcode="zext" nodeLabel="13.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="wp_parameters_addr_32" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." coreId="484231071" contextFuncName="getParallelograms" bitwidth="7" opcode="getelementptr" nodeLabel="13.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>wp_parameters</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="add_ln74" lineNumber="74" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln74_fu_508_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="getParallelograms" bitwidth="7" opcode="add" nodeLabel="13.0" m_display="0" m_delay="0.7" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="74" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="zext_ln74" lineNumber="74" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln74_fu_513_p1" coreId="433570960" contextFuncName="getParallelograms" bitwidth="64" opcode="zext" nodeLabel="13.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="74" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="wp_parameters_addr_33" lineNumber="74" fileName="patchMaker.cpp" fileDirectory=".." coreId="468108961" contextFuncName="getParallelograms" bitwidth="7" opcode="getelementptr" nodeLabel="13.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="74" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>wp_parameters</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="wp_parameters_addr_32_write_ln73" lineNumber="73" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" opcode="store" nodeLabel="13.0" m_display="0" m_delay="0.6" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="73" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>call</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="wp_parameters_addr_33_write_ln74" lineNumber="74" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" opcode="store" nodeLabel="13.0" m_display="0" m_delay="0.6" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="74" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>call</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="wp_parameters_load_14" lineNumber="534" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="operator_long_long" bitwidth="32" opcode="load" nodeLabel="11.0" nodeLatency="1" m_display="0" m_delay="0.6" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="534" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator long long"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="trunc_ln75" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln75_fu_468_p1" coreId="493606956" contextFuncName="getParallelograms" bitwidth="4" opcode="trunc" nodeLabel="12.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="tmp_61_cast" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_61_cast_fu_472_p3" coreId="391889436" contextFuncName="getParallelograms" bitwidth="7" opcode="bitconcatenate" nodeLabel="12.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="trunc_ln75_1" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln75_1_fu_480_p1" coreId="436323658" contextFuncName="getParallelograms" bitwidth="6" opcode="trunc" nodeLabel="12.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="tmp_62_cast" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_62_cast_fu_484_p3" coreId="461752006" contextFuncName="getParallelograms" bitwidth="7" opcode="bitconcatenate" nodeLabel="12.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="sub_ln75" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln75_fu_492_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="getParallelograms" bitwidth="7" opcode="sub" nodeLabel="12.0" m_display="0" m_delay="0.7" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="add_ln75" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln75_fu_554_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="getParallelograms" bitwidth="7" opcode="add" nodeLabel="14.0" m_display="0" m_delay="0.7" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="zext_ln75" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln75_fu_559_p1" coreId="477349684" contextFuncName="getParallelograms" bitwidth="64" opcode="zext" nodeLabel="14.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="wp_parameters_addr_34" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." coreId="488036433" contextFuncName="getParallelograms" bitwidth="7" opcode="getelementptr" nodeLabel="14.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>wp_parameters</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="add_ln76" lineNumber="76" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln76_fu_564_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="getParallelograms" bitwidth="7" opcode="add" nodeLabel="14.0" m_display="0" m_delay="0.7" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="76" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="zext_ln76" lineNumber="76" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln76_fu_569_p1" coreId="496163029" contextFuncName="getParallelograms" bitwidth="64" opcode="zext" nodeLabel="14.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="76" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="wp_parameters_addr_35" lineNumber="76" fileName="patchMaker.cpp" fileDirectory=".." coreId="410174261" contextFuncName="getParallelograms" bitwidth="7" opcode="getelementptr" nodeLabel="14.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="76" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>wp_parameters</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="wp_parameters_addr_34_write_ln75" lineNumber="75" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" opcode="store" nodeLabel="14.0" m_display="0" m_delay="0.6" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="75" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>call</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="wp_parameters_addr_35_write_ln76" lineNumber="76" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" opcode="store" nodeLabel="14.0" m_display="0" m_delay="0.6" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="76" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="wp_parameters_load_15" lineNumber="534" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="operator_long_long" bitwidth="32" opcode="load" nodeLabel="12.0" nodeLatency="1" m_display="0" m_delay="0.6" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="534" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator long long"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="trunc_ln77" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln77_fu_518_p1" coreId="451855785" contextFuncName="getParallelograms" bitwidth="4" opcode="trunc" nodeLabel="13.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="tmp_63_cast" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_63_cast_fu_522_p3" coreId="505534826" contextFuncName="getParallelograms" bitwidth="7" opcode="bitconcatenate" nodeLabel="13.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="trunc_ln77_1" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln77_1_fu_530_p1" coreId="435602609" contextFuncName="getParallelograms" bitwidth="6" opcode="trunc" nodeLabel="13.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="tmp_64_cast" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_64_cast_fu_534_p3" coreId="482199550" contextFuncName="getParallelograms" bitwidth="7" opcode="bitconcatenate" nodeLabel="13.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="sub_ln77" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln77_fu_542_p2" coreName="TAddSub" implIndex="tadder" control="auto" opType="add" coreId="10" contextFuncName="getParallelograms" bitwidth="7" opcode="sub" nodeLabel="13.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="add_ln77" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln77_fu_548_p2" coreName="TAddSub" implIndex="tadder" control="auto" opType="add" coreId="10" contextFuncName="getParallelograms" bitwidth="7" opcode="add" nodeLabel="13.0" m_display="0" m_delay="0.72" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="zext_ln77" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln77_fu_574_p1" coreId="479905757" contextFuncName="getParallelograms" bitwidth="64" opcode="zext" nodeLabel="15.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="wp_parameters_addr_36" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." coreId="525982306" contextFuncName="getParallelograms" bitwidth="7" opcode="getelementptr" nodeLabel="15.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>wp_parameters</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="wp_parameters_addr_36_write_ln77" lineNumber="77" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getParallelograms" opcode="store" nodeLabel="15.0" m_display="0" m_delay="0.6" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="77" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="add_ln691" lineNumber="691" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="add_ln691_fu_578_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="operator_add_assign_32_true" bitwidth="32" opcode="add" nodeLabel="15.0" m_display="0" m_delay="0.88" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="691" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator+=&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="wp_parameters_addr_write_ln691" lineNumber="691" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="operator_add_assign_32_true" opcode="store" nodeLabel="15.0" m_display="0" m_delay="0.6" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="691" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator+=&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="empty_write_ln80" lineNumber="80" fileName="patchMaker.cpp" fileDirectory=".." coreId="449824136" contextFuncName="getParallelograms" opcode="store" nodeLabel="15.0" m_display="0" m_delay="0.38" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="80" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="br_ln80" lineNumber="80" fileName="patchMaker.cpp" fileDirectory=".." coreId="415024127" contextFuncName="getParallelograms" opcode="br" nodeLabel="15.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="80" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+      <controlInputObjs>.split._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>72</validLinenumbers>
+      <validLinenumbers>73</validLinenumbers>
+      <validLinenumbers>74</validLinenumbers>
+      <validLinenumbers>75</validLinenumbers>
+      <validLinenumbers>76</validLinenumbers>
+      <validLinenumbers>77</validLinenumbers>
+      <validLinenumbers>80</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>534</validLinenumbers>
+      <validLinenumbers>691</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="103" name=".split._crit_edge" type="BlockType">
+    <controlInputObjs>.split</controlInputObjs>
+    <controlInputObjs>block_101</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_37</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="br_ln0" coreId="431277303" opcode="br" nodeLabel="15.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_37</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="105" name="block_105" type="BlockType">
+    <controlInputObjs>block_37</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="_ln82" lineNumber="82" fileName="patchMaker.cpp" fileDirectory=".." coreId="403817306" contextFuncName="getParallelograms" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="82" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getParallelograms"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>82</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <regnodes realName="sub_ln75_reg_693">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="wp_superpoints_addr_2_reg_601">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="wp_superpoints_addr_reg_596">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln77_reg_704">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="wp_parameters_addr_reg_616">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="wp_superpoints_addr_3_reg_636">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln70_reg_678">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln46_reg_622">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="a_V_reg_658">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_reg_589">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln878_reg_606">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln64_reg_649">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_254">
+    <nodeIds>9</nodeIds>
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="wp_parameters_load_15_reg_699">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="b_V_reg_663">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_ln73_reg_687">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln878_14_reg_611">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_ln72_reg_682">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="wp_superpoints_addr_4_reg_641">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_260">
+    <nodeIds>13</nodeIds>
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="d_V_reg_673">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln43_reg_629">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="c_V_reg_668">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_190">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_fu_335">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_parameters_addr_36_gep_fu_182">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln73_1_fu_450">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_superpoints_addr_2_gep_fu_88">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_60_cast_fu_454">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="z1_min_V_fu_283">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln64_fu_379">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln62_fu_358">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_parameters_addr_gep_fu_107">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_parameters_addr_32_gep_fu_150">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln77_fu_574">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_57_cast_fu_408">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln75_1_fu_480">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_59_cast_fu_442">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln75_fu_554">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln76_fu_569">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln75_fu_468">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="z1_max_V_fu_294">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_superpoints_addr_gep_fu_80">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln73_fu_498">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln44_fu_301">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln43_fu_331">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_64_cast_fu_534">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln46_fu_319">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_24_fu_364">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln691_fu_578">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln73_fu_462">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln74_fu_508">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln72_fu_404">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln73_fu_503">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln77_fu_542">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_parameters_addr_33_gep_fu_157">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_superpoints_addr_3_gep_fu_122">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="z1_min_V_1_fu_323">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln74_fu_513">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln43_fu_290">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln77_fu_518">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln72_fu_434">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln878_fu_271">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_63_cast_fu_522">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln72_1_fu_416">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_superpoints_addr_4_gep_fu_129">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln77_1_fu_530">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln59_fu_373">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_61_cast_fu_472">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln73_fu_438">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_parameters_addr_35_gep_fu_173">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_349">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_58_cast_fu_420">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln75_fu_559">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_194">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln75_fu_492">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_parameters_addr_31_gep_fu_142">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_fu_76">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln70_fu_398">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln878_14_fu_277">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="wp_parameters_addr_34_gep_fu_166">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln77_fu_548">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="z1_max_V_1_fu_311">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln61_fu_343">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln886_fu_305">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_28_fu_388">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_62_cast_fu_484">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln76_fu_564">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln72_fu_428">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_straightLineProjectorFromLayerIJtoK_fu_215">
+    <nodeIds>44</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_straightLineProjectorFromLayerIJtoK_fu_228">
+    <nodeIds>45</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_straightLineProjectorFromLayerIJtoK_fu_241">
+    <nodeIds>46</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_straightLineProjectorFromLayerIJtoK_fu_202">
+    <nodeIds>43</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln80_store_fu_584">
+    <nodeIds>99</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln59_store_fu_266">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_load84_load_fu_385">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="radiiDivisionList" portID="100">
+    <nodeIds>43</nodeIds>
+    <nodeIds>44</nodeIds>
+    <nodeIds>45</nodeIds>
+    <nodeIds>46</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wp_parameters">
+    <nodeIds>22</nodeIds>
+    <nodeIds>73</nodeIds>
+    <nodeIds>87</nodeIds>
+    <nodeIds>71</nodeIds>
+    <nodeIds>85</nodeIds>
+    <nodeIds>96</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wp_parameters" portID="1">
+    <nodeIds>59</nodeIds>
+    <nodeIds>58</nodeIds>
+    <nodeIds>72</nodeIds>
+    <nodeIds>86</nodeIds>
+    <nodeIds>98</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wp_superpoints">
+    <nodeIds>13</nodeIds>
+    <nodeIds>42</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="wp_superpoints" portID="1">
+    <nodeIds>9</nodeIds>
+    <nodeIds>41</nodeIds>
+  </memoryPorts>
+  <ioPorts name="wp_parameters(p0)">
+    <contents name="load">
+      <nodeIds>73</nodeIds>
+      <nodeIds>87</nodeIds>
+    </contents>
+    <contents name="store">
+      <nodeIds>22</nodeIds>
+      <nodeIds>71</nodeIds>
+      <nodeIds>85</nodeIds>
+      <nodeIds>96</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wp_parameters(p1)">
+    <contents name="load">
+      <nodeIds>59</nodeIds>
+    </contents>
+    <contents name="store">
+      <nodeIds>58</nodeIds>
+      <nodeIds>72</nodeIds>
+      <nodeIds>86</nodeIds>
+      <nodeIds>98</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wp_superpoints(p0)">
+    <contents name="load">
+      <nodeIds>13</nodeIds>
+      <nodeIds>42</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wp_superpoints(p1)">
+    <contents name="load">
+      <nodeIds>9</nodeIds>
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="9" stage="2" latency="2"/>
+      <operations id="13" stage="2" latency="2"/>
+      <operations id="23" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="2"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="2"/>
+      <operations id="14" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="41" stage="2" latency="2"/>
+      <operations id="42" stage="2" latency="2"/>
+      <operations id="104" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="2"/>
+      <operations id="42" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="43" stage="7" latency="7"/>
+      <operations id="44" stage="7" latency="7"/>
+      <operations id="45" stage="7" latency="7"/>
+      <operations id="46" stage="7" latency="7"/>
+    </states>
+    <states id="7">
+      <operations id="43" stage="6" latency="7"/>
+      <operations id="44" stage="6" latency="7"/>
+      <operations id="45" stage="6" latency="7"/>
+      <operations id="46" stage="6" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="43" stage="5" latency="7"/>
+      <operations id="44" stage="5" latency="7"/>
+      <operations id="45" stage="5" latency="7"/>
+      <operations id="46" stage="5" latency="7"/>
+    </states>
+    <states id="9">
+      <operations id="43" stage="4" latency="7"/>
+      <operations id="44" stage="4" latency="7"/>
+      <operations id="45" stage="4" latency="7"/>
+      <operations id="46" stage="4" latency="7"/>
+    </states>
+    <states id="10">
+      <operations id="43" stage="3" latency="7"/>
+      <operations id="44" stage="3" latency="7"/>
+      <operations id="45" stage="3" latency="7"/>
+      <operations id="46" stage="3" latency="7"/>
+    </states>
+    <states id="11">
+      <operations id="43" stage="2" latency="7"/>
+      <operations id="44" stage="2" latency="7"/>
+      <operations id="45" stage="2" latency="7"/>
+      <operations id="46" stage="2" latency="7"/>
+    </states>
+    <states id="12">
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="7"/>
+      <operations id="44" stage="1" latency="7"/>
+      <operations id="45" stage="1" latency="7"/>
+      <operations id="46" stage="1" latency="7"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="59" stage="2" latency="2"/>
+      <operations id="73" stage="2" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="2"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="2"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="87" stage="2" latency="2"/>
+    </states>
+    <states id="14">
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="2"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+    </states>
+    <states id="15">
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+    </states>
+    <states id="16">
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="getParallelograms" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="43" mMaxLatency="55">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="2">
+      <basicBlocks>25</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="getParallelograms_settingWPparameters" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="40" mMaxLatency="52" mType="1">
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>50</basicBlocks>
+      <basicBlocks>101</basicBlocks>
+      <basicBlocks>103</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>105</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,2053 @@
+{
+  "Top": "MPSQ",
+  "RtlTop": "MPSQ",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "MPSQ_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "virtexuplus",
+    "Device": "xcvu19p",
+    "Package": "-fsvb3824",
+    "Speed": "-2-e",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "stop": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "stop",
+          "name": "stop",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "ppl": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "ppl",
+          "name": "ppl",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "leftRight": {
+      "index": "2",
+      "direction": "in",
+      "srcType": "bool",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "leftRight",
+          "name": "leftRight",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "n_patches": {
+      "index": "3",
+      "direction": "inout",
+      "srcType": "unsigned char&",
+      "srcSize": "8",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "n_patches_i",
+          "name": "n_patches_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "n_patches_o",
+          "name": "n_patches_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "n_patches_o_ap_vld",
+          "name": "n_patches_o_ap_vld",
+          "usage": "control",
+          "direction": "inout"
+        }
+      ]
+    },
+    "GDarray": {
+      "index": "4",
+      "direction": "in",
+      "srcType": "ap_int<64>&",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "GDarray_address0",
+          "name": "GDarray_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_ce0",
+          "name": "GDarray_ce0",
+          "usage": "control",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_q0",
+          "name": "GDarray_q0",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "GDn_points": {
+      "index": "5",
+      "direction": "in",
+      "srcType": "int&",
+      "srcSize": "32",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "GDn_points_address0",
+          "name": "GDn_points_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_ce0",
+          "name": "GDn_points_ce0",
+          "usage": "control",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_q0",
+          "name": "GDn_points_q0",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "patches_superpointsOUTPUT": {
+      "index": "6",
+      "direction": "out",
+      "srcType": "ap_int<64>&",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "patches_superpointsOUTPUT_address0",
+          "name": "patches_superpointsOUTPUT_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpointsOUTPUT_ce0",
+          "name": "patches_superpointsOUTPUT_ce0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpointsOUTPUT_we0",
+          "name": "patches_superpointsOUTPUT_we0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpointsOUTPUT_d0",
+          "name": "patches_superpointsOUTPUT_d0",
+          "usage": "data",
+          "direction": "out"
+        }
+      ]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "DirectiveTcl": ["set_directive_top MPSQ -name MPSQ"],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "MPSQ"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "3",
+    "Uncertainty": "0.81",
+    "IsCombinational": "0",
+    "II": "x",
+    "Latency": "undef"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 3.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "MPSQ",
+    "Version": "1.0",
+    "DisplayName": "Mpsq",
+    "Revision": "",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_MPSQ_1_0.zip"
+  },
+  "Files": {
+    "CSource": ["..\/..\/patchMaker.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/MPSQ_add_patch9.vhd",
+      "impl\/vhdl\/MPSQ_areWedgeSuperPointsEqual.vhd",
+      "impl\/vhdl\/MPSQ_delete_patch.vhd",
+      "impl\/vhdl\/MPSQ_encodeCoordinates.vhd",
+      "impl\/vhdl\/MPSQ_GDarrayDecoded_V.vhd",
+      "impl\/vhdl\/MPSQ_get_acceptanceCorners.vhd",
+      "impl\/vhdl\/MPSQ_get_index_from_z.vhd",
+      "impl\/vhdl\/MPSQ_getParallelograms.vhd",
+      "impl\/vhdl\/MPSQ_getShadows.vhd",
+      "impl\/vhdl\/MPSQ_getSolveNextColumnWhileConditional.vhd",
+      "impl\/vhdl\/MPSQ_getSolveNextPatchPairWhileCondition.vhd",
+      "impl\/vhdl\/MPSQ_initializeArrays.vhd",
+      "impl\/vhdl\/MPSQ_makePatch_alignedToLine.vhd",
+      "impl\/vhdl\/MPSQ_makePatch_alignedToLine_init_patch_V.vhd",
+      "impl\/vhdl\/MPSQ_makePatch_alignedToLine_NPpatches_parameters_V.vhd",
+      "impl\/vhdl\/MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V.vhd",
+      "impl\/vhdl\/MPSQ_makeSuperPoint_alignedToLine11.vhd",
+      "impl\/vhdl\/MPSQ_makeSuperPoint_alignedToLine11_row_list_V.vhd",
+      "impl\/vhdl\/MPSQ_makeThirdPatch.vhd",
+      "impl\/vhdl\/MPSQ_mSP_findLRBounds.vhd",
+      "impl\/vhdl\/MPSQ_mSP_findLRBounds_trapezoid_edges_V.vhd",
+      "impl\/vhdl\/MPSQ_mSP_findStartIndex.vhd",
+      "impl\/vhdl\/MPSQ_mul_4s_4s_8_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mul_33s_64s_64_5_1.vhd",
+      "impl\/vhdl\/MPSQ_mul_35ns_33s_64_3_1.vhd",
+      "impl\/vhdl\/MPSQ_mul_35ns_33s_68_3_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_42_32_1_1.vhd",
+      "impl\/vhdl\/MPSQ_patches_parameters_V.vhd",
+      "impl\/vhdl\/MPSQ_patches_superpoints_V.vhd",
+      "impl\/vhdl\/MPSQ_solveComplmentaryPatch.vhd",
+      "impl\/vhdl\/MPSQ_solveComplmentaryPatch_current_z_i_index.vhd",
+      "impl\/vhdl\/MPSQ_solveComplmentaryPatch_new_z_i_index.vhd",
+      "impl\/vhdl\/MPSQ_solveComplmentaryPatch_new_z_i_V.vhd",
+      "impl\/vhdl\/MPSQ_solveNextColumn.vhd",
+      "impl\/vhdl\/MPSQ_solveNextPatchPair.vhd",
+      "impl\/vhdl\/MPSQ_straightLineProjectorFromLayerIJtoK.vhd",
+      "impl\/vhdl\/MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList.vhd",
+      "impl\/vhdl\/MPSQ_wedgePatch_init.vhd",
+      "impl\/vhdl\/MPSQ.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/MPSQ_add_patch9.v",
+      "impl\/verilog\/MPSQ_areWedgeSuperPointsEqual.v",
+      "impl\/verilog\/MPSQ_delete_patch.v",
+      "impl\/verilog\/MPSQ_encodeCoordinates.v",
+      "impl\/verilog\/MPSQ_GDarrayDecoded_V.v",
+      "impl\/verilog\/MPSQ_get_acceptanceCorners.v",
+      "impl\/verilog\/MPSQ_get_index_from_z.v",
+      "impl\/verilog\/MPSQ_getParallelograms.v",
+      "impl\/verilog\/MPSQ_getShadows.v",
+      "impl\/verilog\/MPSQ_getSolveNextColumnWhileConditional.v",
+      "impl\/verilog\/MPSQ_getSolveNextPatchPairWhileCondition.v",
+      "impl\/verilog\/MPSQ_initializeArrays.v",
+      "impl\/verilog\/MPSQ_makePatch_alignedToLine.v",
+      "impl\/verilog\/MPSQ_makePatch_alignedToLine_init_patch_V.v",
+      "impl\/verilog\/MPSQ_makePatch_alignedToLine_NPpatches_parameters_V.v",
+      "impl\/verilog\/MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V.v",
+      "impl\/verilog\/MPSQ_makeSuperPoint_alignedToLine11.v",
+      "impl\/verilog\/MPSQ_makeSuperPoint_alignedToLine11_row_list_V.v",
+      "impl\/verilog\/MPSQ_makeThirdPatch.v",
+      "impl\/verilog\/MPSQ_mSP_findLRBounds.v",
+      "impl\/verilog\/MPSQ_mSP_findLRBounds_trapezoid_edges_V.v",
+      "impl\/verilog\/MPSQ_mSP_findLRBounds_trapezoid_edges_V_rom.dat",
+      "impl\/verilog\/MPSQ_mSP_findStartIndex.v",
+      "impl\/verilog\/MPSQ_mul_4s_4s_8_1_1.v",
+      "impl\/verilog\/MPSQ_mul_33s_64s_64_5_1.v",
+      "impl\/verilog\/MPSQ_mul_35ns_33s_64_3_1.v",
+      "impl\/verilog\/MPSQ_mul_35ns_33s_68_3_1.v",
+      "impl\/verilog\/MPSQ_mux_42_32_1_1.v",
+      "impl\/verilog\/MPSQ_patches_parameters_V.v",
+      "impl\/verilog\/MPSQ_patches_superpoints_V.v",
+      "impl\/verilog\/MPSQ_solveComplmentaryPatch.v",
+      "impl\/verilog\/MPSQ_solveComplmentaryPatch_current_z_i_index.v",
+      "impl\/verilog\/MPSQ_solveComplmentaryPatch_new_z_i_index.v",
+      "impl\/verilog\/MPSQ_solveComplmentaryPatch_new_z_i_V.v",
+      "impl\/verilog\/MPSQ_solveNextColumn.v",
+      "impl\/verilog\/MPSQ_solveNextPatchPair.v",
+      "impl\/verilog\/MPSQ_straightLineProjectorFromLayerIJtoK.v",
+      "impl\/verilog\/MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList.v",
+      "impl\/verilog\/MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList_rom.dat",
+      "impl\/verilog\/MPSQ_wedgePatch_init.v",
+      "impl\/verilog\/MPSQ.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "DesignXml": ".autopilot\/db\/MPSQ.design.xml",
+    "DebugDir": ".debug",
+    "ProtoInst": ["C:\/Users\/rapiduser\/Desktop\/tanishGitHub\/tanishPatchMakerHLS\/PatchMaker_tanishGit\/solutionSC3\/.debug\/MPSQ.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {"ASSOCIATED_RESET": "ap_rst"},
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "ap_rst": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_HIGH"},
+      "portMap": {"ap_rst": "RST"},
+      "ports": ["ap_rst"]
+    },
+    "GDarray_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "11",
+      "portMap": {"GDarray_address0": "DATA"},
+      "ports": ["GDarray_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"GDarray_q0": "DATA"},
+      "ports": ["GDarray_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDn_points_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "3",
+      "portMap": {"GDn_points_address0": "DATA"},
+      "ports": ["GDn_points_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDn_points"
+        }]
+    },
+    "GDn_points_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_q0": "DATA"},
+      "ports": ["GDn_points_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDn_points"
+        }]
+    },
+    "leftRight": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"leftRight": "DATA"},
+      "ports": ["leftRight"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "leftRight"
+        }]
+    },
+    "n_patches_i": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "8",
+      "portMap": {"n_patches_i": "DATA"},
+      "ports": ["n_patches_i"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "n_patches"
+        }]
+    },
+    "n_patches_o": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "8",
+      "portMap": {"n_patches_o": "DATA"},
+      "ports": ["n_patches_o"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "n_patches"
+        }]
+    },
+    "patches_superpointsOUTPUT_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "12",
+      "portMap": {"patches_superpointsOUTPUT_address0": "DATA"},
+      "ports": ["patches_superpointsOUTPUT_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "patches_superpointsOUTPUT"
+        }]
+    },
+    "patches_superpointsOUTPUT_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"patches_superpointsOUTPUT_d0": "DATA"},
+      "ports": ["patches_superpointsOUTPUT_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "patches_superpointsOUTPUT"
+        }]
+    },
+    "ppl": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"ppl": "DATA"},
+      "ports": ["ppl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "ppl"
+        }]
+    },
+    "stop": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"stop": "DATA"},
+      "ports": ["stop"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "stop"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "stop": {
+      "dir": "in",
+      "width": "32"
+    },
+    "ppl": {
+      "dir": "in",
+      "width": "32"
+    },
+    "leftRight": {
+      "dir": "in",
+      "width": "1"
+    },
+    "n_patches_i": {
+      "dir": "in",
+      "width": "8"
+    },
+    "n_patches_o": {
+      "dir": "out",
+      "width": "8"
+    },
+    "n_patches_o_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_address0": {
+      "dir": "out",
+      "width": "11"
+    },
+    "GDarray_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_q0": {
+      "dir": "in",
+      "width": "64"
+    },
+    "GDn_points_address0": {
+      "dir": "out",
+      "width": "3"
+    },
+    "GDn_points_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDn_points_q0": {
+      "dir": "in",
+      "width": "32"
+    },
+    "patches_superpointsOUTPUT_address0": {
+      "dir": "out",
+      "width": "12"
+    },
+    "patches_superpointsOUTPUT_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "patches_superpointsOUTPUT_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "patches_superpointsOUTPUT_d0": {
+      "dir": "out",
+      "width": "64"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "MPSQ",
+      "Instances": [
+        {
+          "ModuleName": "solveNextColumn",
+          "InstanceName": "grp_solveNextColumn_fu_336",
+          "Instances": [
+            {
+              "ModuleName": "solveNextPatchPair",
+              "InstanceName": "grp_solveNextPatchPair_fu_190",
+              "Instances": [
+                {
+                  "ModuleName": "makeThirdPatch",
+                  "InstanceName": "grp_makeThirdPatch_fu_481",
+                  "Instances": [
+                    {
+                      "ModuleName": "makePatch_alignedToLine",
+                      "InstanceName": "grp_makePatch_alignedToLine_fu_494",
+                      "Instances": [
+                        {
+                          "ModuleName": "wedgePatch_init",
+                          "InstanceName": "grp_wedgePatch_init_fu_404",
+                          "Instances": [
+                            {
+                              "ModuleName": "getParallelograms",
+                              "InstanceName": "grp_getParallelograms_fu_239",
+                              "Instances": [
+                                {
+                                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_202"
+                                },
+                                {
+                                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_215"
+                                },
+                                {
+                                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_228"
+                                },
+                                {
+                                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_241"
+                                }
+                              ]
+                            },
+                            {
+                              "ModuleName": "get_acceptanceCorners",
+                              "InstanceName": "grp_get_acceptanceCorners_fu_249"
+                            }
+                          ]
+                        },
+                        {
+                          "ModuleName": "makeSuperPoint_alignedToLine11",
+                          "InstanceName": "grp_makeSuperPoint_alignedToLine11_fu_414",
+                          "Instances": [
+                            {
+                              "ModuleName": "mSP_findLRBounds",
+                              "InstanceName": "grp_mSP_findLRBounds_fu_282"
+                            },
+                            {
+                              "ModuleName": "mSP_findStartIndex",
+                              "InstanceName": "grp_mSP_findStartIndex_fu_292"
+                            }
+                          ]
+                        },
+                        {
+                          "ModuleName": "add_patch9",
+                          "InstanceName": "grp_add_patch9_fu_433",
+                          "Instances": [{
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_494"
+                            }]
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "getShadows",
+                      "InstanceName": "grp_getShadows_fu_517",
+                      "Instances": [{
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_245"
+                        }]
+                    },
+                    {
+                      "ModuleName": "delete_patch",
+                      "InstanceName": "grp_delete_patch_fu_533"
+                    },
+                    {
+                      "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                      "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_545"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "solveComplmentaryPatch",
+                  "InstanceName": "grp_solveComplmentaryPatch_fu_508",
+                  "Instances": [
+                    {
+                      "ModuleName": "makePatch_alignedToLine",
+                      "InstanceName": "grp_makePatch_alignedToLine_fu_649",
+                      "Instances": [
+                        {
+                          "ModuleName": "wedgePatch_init",
+                          "InstanceName": "grp_wedgePatch_init_fu_404",
+                          "Instances": [
+                            {
+                              "ModuleName": "getParallelograms",
+                              "InstanceName": "grp_getParallelograms_fu_239",
+                              "Instances": [
+                                {
+                                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_202"
+                                },
+                                {
+                                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_215"
+                                },
+                                {
+                                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_228"
+                                },
+                                {
+                                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_241"
+                                }
+                              ]
+                            },
+                            {
+                              "ModuleName": "get_acceptanceCorners",
+                              "InstanceName": "grp_get_acceptanceCorners_fu_249"
+                            }
+                          ]
+                        },
+                        {
+                          "ModuleName": "makeSuperPoint_alignedToLine11",
+                          "InstanceName": "grp_makeSuperPoint_alignedToLine11_fu_414",
+                          "Instances": [
+                            {
+                              "ModuleName": "mSP_findLRBounds",
+                              "InstanceName": "grp_mSP_findLRBounds_fu_282"
+                            },
+                            {
+                              "ModuleName": "mSP_findStartIndex",
+                              "InstanceName": "grp_mSP_findStartIndex_fu_292"
+                            }
+                          ]
+                        },
+                        {
+                          "ModuleName": "add_patch9",
+                          "InstanceName": "grp_add_patch9_fu_433",
+                          "Instances": [{
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_494"
+                            }]
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "delete_patch",
+                      "InstanceName": "grp_delete_patch_fu_672"
+                    },
+                    {
+                      "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                      "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_684"
+                    },
+                    {
+                      "ModuleName": "get_index_from_z",
+                      "InstanceName": "grp_get_index_from_z_fu_698"
+                    },
+                    {
+                      "ModuleName": "areWedgeSuperPointsEqual",
+                      "InstanceName": "grp_areWedgeSuperPointsEqual_fu_712"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "makePatch_alignedToLine",
+                  "InstanceName": "grp_makePatch_alignedToLine_fu_541",
+                  "Instances": [
+                    {
+                      "ModuleName": "wedgePatch_init",
+                      "InstanceName": "grp_wedgePatch_init_fu_404",
+                      "Instances": [
+                        {
+                          "ModuleName": "getParallelograms",
+                          "InstanceName": "grp_getParallelograms_fu_239",
+                          "Instances": [
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_202"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_215"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_228"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_241"
+                            }
+                          ]
+                        },
+                        {
+                          "ModuleName": "get_acceptanceCorners",
+                          "InstanceName": "grp_get_acceptanceCorners_fu_249"
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "makeSuperPoint_alignedToLine11",
+                      "InstanceName": "grp_makeSuperPoint_alignedToLine11_fu_414",
+                      "Instances": [
+                        {
+                          "ModuleName": "mSP_findLRBounds",
+                          "InstanceName": "grp_mSP_findLRBounds_fu_282"
+                        },
+                        {
+                          "ModuleName": "mSP_findStartIndex",
+                          "InstanceName": "grp_mSP_findStartIndex_fu_292"
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "add_patch9",
+                      "InstanceName": "grp_add_patch9_fu_433",
+                      "Instances": [{
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_494"
+                        }]
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_568"
+                },
+                {
+                  "ModuleName": "getSolveNextPatchPairWhileCondition",
+                  "InstanceName": "grp_getSolveNextPatchPairWhileCondition_fu_582"
+                },
+                {
+                  "ModuleName": "areWedgeSuperPointsEqual",
+                  "InstanceName": "grp_areWedgeSuperPointsEqual_fu_600"
+                }
+              ]
+            },
+            {
+              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_218"
+            },
+            {
+              "ModuleName": "getSolveNextColumnWhileConditional",
+              "InstanceName": "tmp_getSolveNextColumnWhileConditional_fu_234"
+            }
+          ]
+        },
+        {
+          "ModuleName": "initializeArrays",
+          "InstanceName": "grp_initializeArrays_fu_354"
+        }
+      ]
+    },
+    "Info": {
+      "initializeArrays": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "straightLineProjectorFromLayerIJtoK": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getSolveNextColumnWhileConditional": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "mSP_findStartIndex": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "mSP_findLRBounds": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makeSuperPoint_alignedToLine11": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getParallelograms": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "get_acceptanceCorners": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "wedgePatch_init": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "encodeCoordinates": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "add_patch9": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makePatch_alignedToLine": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "areWedgeSuperPointsEqual": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getSolveNextPatchPairWhileCondition": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "get_index_from_z": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "delete_patch": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "solveComplmentaryPatch": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getShadows": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makeThirdPatch": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "solveNextPatchPair": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "solveNextColumn": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "MPSQ": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "initializeArrays": {
+        "Latency": {
+          "LatencyBest": "6407",
+          "LatencyAvg": "6407",
+          "LatencyWorst": "6407",
+          "PipelineII": "6407",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.990"
+        },
+        "Loops": [
+          {
+            "Name": "initArraysSPloop1_initArraysSPloop2_initArraysSPloop3",
+            "TripCount": "2560",
+            "Latency": "2561",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "initArraysPPloop1_initArraysPPloop3_initArraysPPloop4",
+            "TripCount": "3840",
+            "Latency": "3842",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          }
+        ],
+        "Area": {
+          "FF": "217",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "766",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "straightLineProjectorFromLayerIJtoK": {
+        "Latency": {
+          "LatencyBest": "6",
+          "LatencyAvg": "6",
+          "LatencyWorst": "6",
+          "PipelineII": "1",
+          "PipelineDepth": "7",
+          "PipelineType": "yes"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.100"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "602",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "457",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "getSolveNextColumnWhileConditional": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "0",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "0.981"
+        },
+        "Area": {
+          "FF": "0",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "0",
+          "LUT": "64",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "mSP_findStartIndex": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.128"
+        },
+        "Loops": [{
+            "Name": "mSP_findStartIndex_startValue",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "2",
+            "PipelineDepth": "4"
+          }],
+        "Area": {
+          "FF": "402",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "587",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "mSP_findLRBounds": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.997"
+        },
+        "Loops": [{
+            "Name": "mSP_findLRBounds_LRdiscovery",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "FF": "549",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "735",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makeSuperPoint_alignedToLine11": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.128"
+        },
+        "Loops": [
+          {
+            "Name": "makeSuperPoint_alignedToLine_rowListSet_loop",
+            "TripCount": "",
+            "LatencyMin": "3",
+            "LatencyMax": "?",
+            "Latency": "3 ~ ?",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          },
+          {
+            "Name": "makeSuperPoint_alignedToLine_initSP_perPoint_makeSuperPoint_alignedToLine_initSP_perParameter",
+            "TripCount": "32",
+            "Latency": "35",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "1",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "~0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "2054",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "2740",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "getParallelograms": {
+        "Latency": {
+          "LatencyBest": "43",
+          "LatencyAvg": "51",
+          "LatencyWorst": "55",
+          "PipelineIIMin": "43",
+          "PipelineIIMax": "55",
+          "PipelineII": "43 ~ 55",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [{
+            "Name": "getParallelograms_settingWPparameters",
+            "TripCount": "4",
+            "LatencyMin": "40",
+            "LatencyMax": "52",
+            "Latency": "40 ~ 52",
+            "PipelineII": "",
+            "PipelineDepthMin": "10",
+            "PipelineDepthMax": "13",
+            "PipelineDepth": "10 ~ 13"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "2781",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "2455",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "get_acceptanceCorners": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.059"
+        },
+        "Loops": [{
+            "Name": "get_acceptanceCorners_minMaxFinding",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "2",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "FF": "354",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "858",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "wedgePatch_init": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [{
+            "Name": "wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter",
+            "TripCount": "160",
+            "Latency": "163",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "3307",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "3861",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "encodeCoordinates": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "yes"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "0.000"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "0",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "0",
+          "LUT": "0",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "add_patch9": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.104"
+        },
+        "Loops": [
+          {
+            "Name": "add_patch_perSuperpointSP0_add_patch_perPointSP0",
+            "TripCount": "80",
+            "Latency": "82",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          },
+          {
+            "Name": "add_patch_perPropertyTypePP0_add_patch_perParallelogramPP0_add_patch_perPropertyLengthPP0",
+            "TripCount": "120",
+            "Latency": "122",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          },
+          {
+            "Name": "add_patch_checkDiff",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "6",
+            "PipelineDepth": "6"
+          },
+          {
+            "Name": "add_patch_perSuperpointSP1_add_patch_perPointSP1",
+            "TripCount": "80",
+            "Latency": "82",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          },
+          {
+            "Name": "add_patch_perPropertyTypePP1_add_patch_perParallelogramPP1_add_patch_perPropertyLengthPP1",
+            "TripCount": "120",
+            "Latency": "122",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          }
+        ],
+        "Area": {
+          "FF": "779",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "1574",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makePatch_alignedToLine": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [
+          {
+            "Name": "makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter",
+            "TripCount": "160",
+            "Latency": "161",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "makePatch_alignedToLine_makeSuperpoint_loop",
+            "TripCount": "5",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          },
+          {
+            "Name": "makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter",
+            "TripCount": "160",
+            "Latency": "161",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength",
+            "TripCount": "120",
+            "Latency": "120",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "3",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "~0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "6355",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "9308",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "areWedgeSuperPointsEqual": {
+        "Latency": {
+          "LatencyBest": "4",
+          "LatencyAvg": "4",
+          "LatencyWorst": "4",
+          "PipelineII": "2",
+          "PipelineDepth": "5",
+          "PipelineType": "yes"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.645"
+        },
+        "Area": {
+          "FF": "166",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "193",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "getSolveNextPatchPairWhileCondition": {
+        "Latency": {
+          "LatencyBest": "3",
+          "LatencyAvg": "3",
+          "LatencyWorst": "3",
+          "PipelineII": "3",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.802"
+        },
+        "Area": {
+          "FF": "110",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "344",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "get_index_from_z": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.997"
+        },
+        "Loops": [{
+            "Name": "getIndexFromZ_perPoint",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          }],
+        "Area": {
+          "FF": "355",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "411",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "delete_patch": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.186"
+        },
+        "Loops": [
+          {
+            "Name": "delete_patch_perPatch",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": "211",
+            "Loops": [
+              {
+                "Name": "delete_patch_perSuperpointSP_delete_patch_perPointSP",
+                "TripCount": "80",
+                "Latency": "83",
+                "PipelineII": "1",
+                "PipelineDepth": "5"
+              },
+              {
+                "Name": "delete_patch_perPropertyTypePP_delete_patch_perParallelogramPP_delete_patch_perPropertyLengthPP",
+                "TripCount": "120",
+                "Latency": "123",
+                "PipelineII": "1",
+                "PipelineDepth": "5"
+              }
+            ]
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "80",
+            "Latency": "80",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "120",
+            "Latency": "120",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }
+        ],
+        "Area": {
+          "FF": "585",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "1152",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "solveComplmentaryPatch": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [
+          {
+            "Name": "solveComplmentaryPatch_fillCurrent_z_i_index",
+            "TripCount": "5",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          },
+          {
+            "Name": "solveComplmentaryPatch_fillNew_z_i_index0",
+            "TripCount": "5",
+            "Latency": "5",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "solveComplmentaryPatch_fillNew_z_i_index1",
+            "TripCount": "5",
+            "Latency": "5",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "solveComplmentaryPatch_fillNew_z_i_index2",
+            "TripCount": "5",
+            "Latency": "5",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "solveComplmentaryPatch_fillNew_z_i_index3",
+            "TripCount": "5",
+            "Latency": "6",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "solveComplmentaryPatch_fillNew_z_i_index5",
+            "TripCount": "5",
+            "Latency": "8",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          },
+          {
+            "Name": "solveComplmentaryPatch_fillNew_z_i_atTop",
+            "TripCount": "4",
+            "Latency": "11",
+            "PipelineII": "1",
+            "PipelineDepth": "9"
+          },
+          {
+            "Name": "solveComplmentaryPatch_findlayerWithSmallestShift",
+            "TripCount": "4",
+            "Latency": "5",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "solveComplmentaryPatch_superpointEqualCheck_2",
+            "TripCount": "",
+            "LatencyMin": "11",
+            "LatencyMax": "35",
+            "Latency": "11 ~ 35",
+            "PipelineII": "6",
+            "PipelineDepth": "6"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "3",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "~0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "9630",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "14166",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "getShadows": {
+        "Latency": {
+          "LatencyBest": "154",
+          "LatencyAvg": "154",
+          "LatencyWorst": "154",
+          "PipelineII": "154",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [
+          {
+            "Name": "getShadows_settingtopArrays",
+            "TripCount": "4",
+            "Latency": "112",
+            "PipelineII": "",
+            "PipelineDepth": "28"
+          },
+          {
+            "Name": "getShadows_maxFinding_loop",
+            "TripCount": "3",
+            "Latency": "39",
+            "PipelineII": "",
+            "PipelineDepth": "13"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "1526",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "1322",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makeThirdPatch": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [{
+            "Name": "thirdPatch_loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          }],
+        "Area": {
+          "BRAM_18K": "3",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "~0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "10321",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "14957",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "solveNextPatchPair": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [
+          {
+            "Name": "solveNextPatchPair_superPointEqualCheck",
+            "TripCount": "",
+            "LatencyMin": "7",
+            "LatencyMax": "41",
+            "Latency": "7 ~ 41",
+            "PipelineII": "",
+            "PipelineDepth": "7"
+          },
+          {
+            "Name": "solvePatchPair_loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "9",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "~0",
+          "DSP": "2",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "~0",
+          "FF": "29267",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "41962",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "1",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "solveNextColumn": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [{
+            "Name": "solveNextColumn_loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          }],
+        "Area": {
+          "BRAM_18K": "9",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "~0",
+          "DSP": "2",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "~0",
+          "FF": "30301",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "42807",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "1",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "MPSQ": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.190"
+        },
+        "Loops": [
+          {
+            "Name": "initGDarrayDecoded_perLayer",
+            "TripCount": "5",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": "",
+            "Loops": [{
+                "Name": "initGDarrayDecoded_perPoint",
+                "TripCount": "",
+                "Latency": "",
+                "PipelineII": "1",
+                "PipelineDepth": "4"
+              }]
+          },
+          {
+            "Name": "shadowQuilt_loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          },
+          {
+            "Name": "finalSPOutputInit_perPatch_finalSPOutputInit_perSuperpoint_finalSPOutputInit_perPoint",
+            "TripCount": "2560",
+            "Latency": "2563",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "9",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "~0",
+          "DSP": "2",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "~0",
+          "FF": "31099",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "44451",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "1",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      }
+    }
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2024-07-28 18:55:15 -0400",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2020.2"
+  }
+}

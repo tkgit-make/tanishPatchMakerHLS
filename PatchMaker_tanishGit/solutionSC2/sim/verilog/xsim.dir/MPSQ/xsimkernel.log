@@ -1,7 +1,7 @@
-Running: xsim.dir/MPSQ/xsimk.exe -simmode gui -wdb MPSQ.wdb -simrunnum 0 -socket 52076
+Running: xsim.dir/MPSQ/xsimk.exe -simmode gui -wdb MPSQ.wdb -simrunnum 0 -socket 52619
 Design successfully loaded
-Design Loading Memory Usage: 11340 KB (Peak: 11340 KB)
-Design Loading CPU Usage: 46 ms
+Design Loading Memory Usage: 126212 KB (Peak: 126212 KB)
+Design Loading CPU Usage: 389 ms
 Simulation completed
-Simulation Memory Usage: 18460 KB (Peak: 18460 KB)
-Simulation CPU Usage: 1147421 ms
+Simulation Memory Usage: 135336 KB (Peak: 135336 KB)
+Simulation CPU Usage: 3750639 ms

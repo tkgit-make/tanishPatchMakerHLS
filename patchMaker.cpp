@@ -587,10 +587,11 @@ void initializeArrays(GPATCHES)
 }
 
 void MPSQ(int_type stop, int_type ppl, bool leftRight, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET],
-		int_type (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
+		int_type (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpointsOUTPUT)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
 {
+	SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT];
 #if SMALL_CIRCUIT == false
-	#pragma HLS DATAFLOW
+	//#pragma HLS DATAFLOW
     #pragma HLS ARRAY_PARTITION variable=patches_superpoints dim=3 complete
     #pragma HLS ARRAY_PARTITION variable=patches_superpoints dim=2 complete
 #endif
@@ -656,6 +657,21 @@ void MPSQ(int_type stop, int_type ppl, bool leftRight, index_type &n_patches, SP
             loopCounter++;
         #endif
     }
+
+    finalSPOutputInit_perPatch:
+	for(int_type a = 0; a < MAX_PATCHES; a++)
+	{
+		finalSPOutputInit_perSuperpoint:
+		for(int_type b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
+		{
+			finalSPOutputInit_perPoint:
+			for(int_type c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+			{
+				patches_superpointsOUTPUT[a][b][c] = patches_superpoints[a][b][c];
+			}
+		}
+	}
+
 }
 
 COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, bool leftRight, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
@@ -1154,7 +1170,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     solveComplmentaryPatch_fillNew_z_i_index4:
     for (index_type i = 0; i < num_layers; i++)
     {
-        new_z_i_index[i] = max(new_z_i_index[i], 0.0f);
+        new_z_i_index[i] = max(new_z_i_index[i], 0);
     }
     COORDINATE_TYPE new_z_i[MAX_LAYERS];
 
@@ -1617,8 +1633,8 @@ void mSP_findLRBounds(int_type i, COORDINATE_TYPE row_list[MAX_POINTS_PER_LAYER]
 #pragma HLS INLINE OFF
     left_bound= 0;
     right_bound= 0;
-    long_type lbVal = INT64_MAX;
-    long_type rbVal = INT64_MAX;
+    long_type lbVal = LONG_MAX;
+    long_type rbVal = LONG_MAX;
 
     mSP_findLRBounds_LRdiscovery:
     for (int_type j = 0; j < row_list_size; j++)
