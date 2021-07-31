@@ -12,8 +12,9 @@ use IEEE.numeric_std.all;
 entity MPSQ_encodeCoordinates is
 port (
     ap_ready : OUT STD_LOGIC;
+    phi : IN STD_LOGIC_VECTOR (31 downto 0);
     z : IN STD_LOGIC_VECTOR (31 downto 0);
-    ap_return : OUT STD_LOGIC_VECTOR (31 downto 0) );
+    ap_return : OUT STD_LOGIC_VECTOR (63 downto 0) );
 end;
 
 
@@ -30,5 +31,5 @@ begin
 
 
     ap_ready <= ap_const_logic_1;
-    ap_return <= z;
+    ap_return <= (phi & z);
 end behav;

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'wedgePatch_init'" level="0">
-<item name = "Date">Tue Jul 30 23:06:14 2024
+<item name = "Date">Wed Jul 31 13:57:47 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 5.682 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 2.190 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">219, 220, 2.190 us, 2.200 us, 219, 220, none</column>
+<column name="">241, 254, 0.723 us, 0.762 us, 241, 254, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter">160, 160, 2, 1, 1, 160, yes</column>
+<column name="- wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter">163, 163, 5, 1, 1, 160, yes</column>
 </table>
 </item>
 </section>

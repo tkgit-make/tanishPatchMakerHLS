@@ -31,7 +31,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1563833650</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -64,7 +64,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>842226464</coreId>
+						<coreId>1952543333</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -97,7 +97,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1952673397</coreId>
+						<coreId>539437428</coreId>
 					</Obj>
 					<bitwidth>33</bitwidth>
 				</Value>
@@ -134,7 +134,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>33</bitwidth>
 				</Value>
@@ -174,7 +174,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>4048188020</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -214,7 +214,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>34</bitwidth>
 				</Value>
@@ -237,10 +237,10 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>br_ln1721</name>
+						<name>br_ln1679</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1721</lineNumber>
+						<lineNumber>1679</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -256,7 +256,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1721</second>
+										<second>1679</second>
 									</item>
 								</second>
 							</item>
@@ -267,7 +267,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -293,7 +293,7 @@
 						<name>start_index_write_assign</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1723</lineNumber>
+						<lineNumber>1681</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -309,7 +309,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1723</second>
+										<second>1681</second>
 									</item>
 								</second>
 							</item>
@@ -320,7 +320,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2501423392</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -338,7 +338,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>5</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_9">
@@ -349,7 +349,7 @@
 						<name>start_value_write_assign</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1723</lineNumber>
+						<lineNumber>1681</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -365,7 +365,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1723</second>
+										<second>1681</second>
 									</item>
 								</second>
 							</item>
@@ -376,7 +376,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>875716435</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -394,7 +394,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>6</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_10">
@@ -405,7 +405,7 @@
 						<name>j</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1725</lineNumber>
+						<lineNumber>1683</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -421,7 +421,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1725</second>
+										<second>1683</second>
 									</item>
 								</second>
 							</item>
@@ -432,7 +432,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2501453856</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -450,7 +450,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>7</m_topoIndex>
+				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_11">
@@ -458,10 +458,10 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>p_x_assign_1</name>
+						<name>p_x_assign_7</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1723</lineNumber>
+						<lineNumber>1681</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -477,7 +477,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1723</second>
+										<second>1681</second>
 									</item>
 								</second>
 							</item>
@@ -488,7 +488,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885413420</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -506,7 +506,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>8</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_12">
@@ -514,10 +514,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>add_ln1721</name>
+						<name>add_ln1679</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1721</lineNumber>
+						<lineNumber>1679</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -533,7 +533,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1721</second>
+										<second>1679</second>
 									</item>
 								</second>
 							</item>
@@ -544,7 +544,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>544501353</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -560,7 +560,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.88</m_delay>
-				<m_topoIndex>9</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_13">
@@ -568,10 +568,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>icmp_ln1721</name>
+						<name>icmp_ln1679</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1721</lineNumber>
+						<lineNumber>1679</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -587,7 +587,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1721</second>
+										<second>1679</second>
 									</item>
 								</second>
 							</item>
@@ -598,7 +598,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2896443008</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -614,7 +614,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.85</m_delay>
-				<m_topoIndex>10</m_topoIndex>
+				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -622,10 +622,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>br_ln1721</name>
+						<name>br_ln1679</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1721</lineNumber>
+						<lineNumber>1679</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -641,7 +641,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1721</second>
+										<second>1679</second>
 									</item>
 								</second>
 							</item>
@@ -669,7 +669,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_15">
@@ -677,10 +677,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>trunc_ln1725_cast</name>
+						<name>trunc_ln1683_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1725</lineNumber>
+						<lineNumber>1683</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -696,7 +696,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1725</second>
+										<second>1683</second>
 									</item>
 								</second>
 							</item>
@@ -722,7 +722,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -760,7 +760,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869635878</coreId>
+						<coreId>6</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -777,7 +777,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -815,7 +815,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1629890592</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -830,7 +830,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.19</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -868,7 +868,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539691581</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>34</bitwidth>
 				</Value>
@@ -883,7 +883,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_19">
@@ -921,7 +921,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>842226464</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>34</bitwidth>
 				</Value>
@@ -937,7 +937,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.89</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_20">
@@ -975,7 +975,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1025519927</coreId>
+						<coreId>1</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -990,7 +990,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_21">
@@ -1028,7 +1028,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>875835999</coreId>
+						<coreId>1</coreId>
 					</Obj>
 					<bitwidth>34</bitwidth>
 				</Value>
@@ -1044,7 +1044,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.90</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_22">
@@ -1082,7 +1082,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2502248208</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1099,7 +1099,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>19</m_topoIndex>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1137,7 +1137,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>807418469</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>34</bitwidth>
 				</Value>
@@ -1154,7 +1154,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>20</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1192,7 +1192,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>6</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1207,7 +1207,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1215,7 +1215,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>sub_ln180_1</name>
+						<name>sub_ln180_7</name>
 						<fileName>C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>180</lineNumber>
@@ -1250,18 +1250,19 @@
 					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
 					<item>98</item>
 					<item>99</item>
+					<item>2147483647</item>
 				</oprand_edges>
 				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_isLCDNode>1</m_isLCDNode>
+				<m_isStartOfPath>1</m_isStartOfPath>
 				<m_delay>1.14</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_26">
@@ -1269,7 +1270,7 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>tmp_2</name>
+						<name>tmp_21</name>
 						<fileName>C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>180</lineNumber>
@@ -1299,7 +1300,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2503657360</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1324,7 +1325,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>select_ln180_1</name>
+						<name>select_ln180_7</name>
 						<fileName>C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>180</lineNumber>
@@ -1379,10 +1380,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>icmp_ln1723</name>
+						<name>icmp_ln1681</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1723</lineNumber>
+						<lineNumber>1681</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -1398,7 +1399,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1723</second>
+										<second>1681</second>
 									</item>
 								</second>
 							</item>
@@ -1409,20 +1410,21 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2003790950</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
 					<item>108</item>
 					<item>109</item>
+					<item>2147483647</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
+				<m_Display>1</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
+				<m_isLCDNode>1</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.06</m_delay>
 				<m_topoIndex>25</m_topoIndex>
@@ -1433,10 +1435,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>select_ln1723</name>
+						<name>select_ln1681</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1723</lineNumber>
+						<lineNumber>1681</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -1452,7 +1454,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1723</second>
+										<second>1681</second>
 									</item>
 								</second>
 							</item>
@@ -1463,7 +1465,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539122992</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1488,10 +1490,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>select_ln1723_1</name>
+						<name>select_ln1681_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1723</lineNumber>
+						<lineNumber>1681</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -1507,7 +1509,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1723</second>
+										<second>1681</second>
 									</item>
 								</second>
 							</item>
@@ -1543,10 +1545,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>select_ln1723_2</name>
+						<name>select_ln1681_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1723</lineNumber>
+						<lineNumber>1681</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -1562,7 +1564,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1723</second>
+										<second>1681</second>
 									</item>
 								</second>
 							</item>
@@ -1573,7 +1575,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>545005600</coreId>
+						<coreId>6</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1614,7 +1616,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>137</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1640,7 +1642,7 @@
 						<name>mrv</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1729</lineNumber>
+						<lineNumber>1687</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -1656,7 +1658,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1729</second>
+										<second>1687</second>
 									</item>
 								</second>
 							</item>
@@ -1694,7 +1696,7 @@
 						<name>mrv_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1729</lineNumber>
+						<lineNumber>1687</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -1710,7 +1712,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1729</second>
+										<second>1687</second>
 									</item>
 								</second>
 							</item>
@@ -1745,10 +1747,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>_ln1729</name>
+						<name>_ln1687</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1729</lineNumber>
+						<lineNumber>1687</lineNumber>
 						<contextFuncName>mSP_findStartIndex</contextFuncName>
 						<contextNormFuncName>mSP_findStartIndex</contextNormFuncName>
 						<inlineStackInfo>
@@ -1764,7 +1766,7 @@
 											<first>patchMaker.cpp</first>
 											<second>mSP_findStartIndex</second>
 										</first>
-										<second>1729</second>
+										<second>1687</second>
 									</item>
 								</second>
 							</item>
@@ -1775,7 +1777,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1818,7 +1820,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1667329136</coreId>
+						<coreId>1814047852</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1846,7 +1848,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1667329136</coreId>
+						<coreId>828071221</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1874,7 +1876,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852793632</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1902,7 +1904,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1667329136</coreId>
+						<coreId>744305243</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1930,7 +1932,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1835168879</coreId>
+						<coreId>1630040681</coreId>
 					</Obj>
 					<bitwidth>34</bitwidth>
 				</Value>
@@ -1958,7 +1960,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1835168879</coreId>
+						<coreId>1646275700</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1986,7 +1988,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1801538920</coreId>
+						<coreId>1868782181</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2014,7 +2016,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1667329136</coreId>
+						<coreId>1298686836</coreId>
 					</Obj>
 					<bitwidth>96</bitwidth>
 				</Value>
@@ -2045,7 +2047,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>943353968</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>4</count>
@@ -2076,7 +2078,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>943353968</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>7</count>
@@ -2110,7 +2112,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>943353968</coreId>
+					<coreId>0</coreId>
 				</Obj>
 				<node_objs>
 					<count>18</count>
@@ -2155,7 +2157,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>943353968</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>3</count>
@@ -2167,7 +2169,7 @@
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>72</count>
+			<count>74</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_48">
 				<id>44</id>
@@ -2673,12 +2675,26 @@
 				<sink_obj>17</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
+			<item class_id_reference="20" object_id="_120">
+				<id>2147483647</id>
+				<edge_type>3</edge_type>
+				<source_obj>29</source_obj>
+				<sink_obj>32</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_121">
+				<id>2147483647</id>
+				<edge_type>1</edge_type>
+				<source_obj>32</source_obj>
+				<sink_obj>29</sink_obj>
+				<is_back_edge>1</is_back_edge>
+			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>4</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_120">
+		<item class_id="22" tracking_level="1" version="0" object_id="_122">
 			<mId>1</mId>
 			<mTag>mSP_findStartIndex</mTag>
 			<mNormTag>mSP_findStartIndex</mNormTag>
@@ -2703,7 +2719,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_121">
+		<item class_id_reference="22" object_id="_123">
 			<mId>2</mId>
 			<mTag>Entry</mTag>
 			<mNormTag>Entry</mNormTag>
@@ -2726,7 +2742,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_122">
+		<item class_id_reference="22" object_id="_124">
 			<mId>3</mId>
 			<mTag>mSP_findStartIndex_startValue</mTag>
 			<mNormTag>mSP_findStartIndex_startValue</mNormTag>
@@ -2741,8 +2757,8 @@
 				<item>17</item>
 				<item>37</item>
 			</basic_blocks>
-			<mII>1</mII>
-			<mDepth>2</mDepth>
+			<mII>2</mII>
+			<mDepth>4</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
 			<mMinLatency>-1</mMinLatency>
@@ -2750,7 +2766,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_123">
+		<item class_id_reference="22" object_id="_125">
 			<mId>4</mId>
 			<mTag>Return</mTag>
 			<mNormTag>Return</mNormTag>
@@ -2810,14 +2826,14 @@
 		<item>
 			<first>9</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>10</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2831,14 +2847,14 @@
 		<item>
 			<first>12</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>13</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2894,112 +2910,112 @@
 		<item>
 			<first>24</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>25</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>26</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>34</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>36</first>
 			<second>
-				<first>2</first>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>38</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>39</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>40</first>
 			<second>
-				<first>3</first>
+				<first>5</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -3018,28 +3034,28 @@
 			<first>17</first>
 			<second>
 				<first>1</first>
-				<second>1</second>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
 			<first>37</first>
 			<second>
 				<first>1</first>
-				<second>2</second>
+				<second>4</second>
 			</second>
 		</item>
 		<item>
 			<first>41</first>
 			<second>
-				<first>2</first>
-				<second>2</second>
+				<first>4</first>
+				<second>4</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="32" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="33" tracking_level="1" version="0" object_id="_124">
+		<item class_id="33" tracking_level="1" version="0" object_id="_126">
 			<region_name>mSP_findStartIndex_startValue</region_name>
 			<basic_blocks>
 				<count>2</count>
@@ -3053,8 +3069,8 @@
 			</nodes>
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
-			<interval>1</interval>
-			<pipe_depth>2</pipe_depth>
+			<interval>2</interval>
+			<pipe_depth>4</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="34" tracking_level="0" version="0">

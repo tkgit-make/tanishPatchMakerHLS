@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'encodeCoordinates'" level="0">
-<item name = "Date">Tue Jul 30 23:06:36 2024
+<item name = "Date">Wed Jul 31 13:58:56 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 0 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 0 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -97,7 +97,8 @@
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="ap_ready">out, 1, ap_ctrl_hs, encodeCoordinates, return value</column>
-<column name="ap_return">out, 32, ap_ctrl_hs, encodeCoordinates, return value</column>
+<column name="ap_return">out, 64, ap_ctrl_hs, encodeCoordinates, return value</column>
+<column name="phi">in, 32, ap_none, phi, scalar</column>
 <column name="z">in, 32, ap_none, z, scalar</column>
 </table>
 </item>

@@ -9,8 +9,8 @@
 <ProductFamily>virtexuplus</ProductFamily>
 <Part>xcvu19p-fsvb3824-2-e</Part>
 <TopModelName>wedgePatch_init</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>3.00</TargetClockPeriod>
+<ClockUncertainty>0.81</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,26 +18,26 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.682</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.190</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>219</Best-caseLatency>
-<Average-caseLatency>220</Average-caseLatency>
-<Worst-caseLatency>220</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.190 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.200 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.200 us</Worst-caseRealTimeLatency>
-<Interval-min>219</Interval-min>
-<Interval-max>220</Interval-max>
+<Best-caseLatency>241</Best-caseLatency>
+<Average-caseLatency>250</Average-caseLatency>
+<Worst-caseLatency>254</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.723 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.750 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.762 us</Worst-caseRealTimeLatency>
+<Interval-min>241</Interval-min>
+<Interval-max>254</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter>
 <TripCount>160</TripCount>
-<Latency>160</Latency>
-<AbsoluteTimeLatency>1600</AbsoluteTimeLatency>
+<Latency>163</Latency>
+<AbsoluteTimeLatency>489</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>2</PipelineDepth>
+<PipelineDepth>5</PipelineDepth>
 </wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -46,8 +46,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
-<FF>779</FF>
-<LUT>2322</LUT>
+<FF>3281</FF>
+<LUT>3782</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -352,6 +352,17 @@
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>apexZ0I</name>
+<Object>apexZ0I</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>32</Bits>

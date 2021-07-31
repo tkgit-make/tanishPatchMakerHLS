@@ -10,7 +10,22 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 34 \
+    id 40 \
+    name phi \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_phi \
+    op interface \
+    ports { phi { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 41 \
     name z \
     type other \
     dir I \
@@ -46,7 +61,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename ap_return \
     op interface \
-    ports { ap_return { O 32 vector } } \
+    ports { ap_return { O 64 vector } } \
 } "
 }
 

@@ -12,16 +12,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 1 \
-    name patches_superpoints \
+    name patches_superpoints_V \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename patches_superpoints \
+    corename patches_superpoints_V \
     op interface \
-    ports { patches_superpoints_address0 { O 12 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 32 vector } } \
+    ports { patches_superpoints_V_address0 { O 12 vector } patches_superpoints_V_ce0 { O 1 bit } patches_superpoints_V_we0 { O 1 bit } patches_superpoints_V_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_V'"
 }
 }
 
@@ -31,16 +31,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 2 \
-    name patches_parameters \
+    name patches_parameters_V \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename patches_parameters \
+    corename patches_parameters_V \
     op interface \
-    ports { patches_parameters_address0 { O 12 vector } patches_parameters_ce0 { O 1 bit } patches_parameters_we0 { O 1 bit } patches_parameters_d0 { O 32 vector } } \
+    ports { patches_parameters_V_address0 { O 12 vector } patches_parameters_V_ce0 { O 1 bit } patches_parameters_V_we0 { O 1 bit } patches_parameters_V_d0 { O 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_V'"
 }
 }
 

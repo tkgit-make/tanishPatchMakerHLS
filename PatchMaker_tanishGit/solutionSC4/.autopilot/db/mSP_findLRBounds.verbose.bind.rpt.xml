@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mSP_findLRBounds'" level="0">
-<item name = "Date">Tue Jul 30 23:06:09 2024
+<item name = "Date">Wed Jul 31 13:57:41 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.669 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 1.997 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- mSP_findLRBounds_LRdiscovery">?, ?, 2, 1, 1, ?, yes</column>
+<column name="- mSP_findLRBounds_LRdiscovery">?, ?, 4, 1, 1, ?, yes</column>
 </table>
 </item>
 </section>

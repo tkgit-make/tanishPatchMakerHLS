@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'get_acceptanceCorners'" level="0">
-<item name = "Date">Tue Jul 30 23:06:13 2024
+<item name = "Date">Wed Jul 31 13:57:46 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 2.059 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 2.059 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">24, 25, 0.240 us, 0.250 us, 24, 25, none</column>
+<column name="">27, 28, 81.000 ns, 84.000 ns, 27, 28, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- get_acceptanceCorners_minMaxFinding">8, 8, 3, 2, 1, 4, yes</column>
+<column name="- get_acceptanceCorners_minMaxFinding">12, 12, 3, -, -, 4, no</column>
 </table>
 </item>
 </section>

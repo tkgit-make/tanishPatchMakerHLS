@@ -6,6 +6,5 @@ set depth_list {
 {GDarray 1280}
 {GDn_points 5}
 {patches_superpointsOUTPUT 2560}
-{tempArray 200}
 }
 set trans_num 1

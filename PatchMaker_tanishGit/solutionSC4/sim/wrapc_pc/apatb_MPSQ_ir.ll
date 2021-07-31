@@ -8,7 +8,7 @@ target triple = "fpga64-xilinx-none"
 %struct.ssdm_int.2 = type { i64 }
 
 ; Function Attrs: noinline
-define void @apatb_MPSQ_ir(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x i32]* %GDn_points, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [200 x i64]* %tempArray) local_unnamed_addr #0 {
+define void @apatb_MPSQ_ir(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x i32]* %GDn_points, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT) local_unnamed_addr #0 {
 entry:
   %n_patches_copy = alloca i8, align 512
   %malloccall = tail call i8* @malloc(i64 10240)
@@ -16,10 +16,9 @@ entry:
   %GDn_points_copy = alloca [5 x i32], align 512
   %malloccall1 = tail call i8* @malloc(i64 20480)
   %patches_superpointsOUTPUT_copy = bitcast i8* %malloccall1 to [32 x [5 x [16 x %struct.ap_int.0]]]*
-  %tempArray_copy = alloca [200 x i64], align 512
-  call fastcc void @copy_in(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy, [200 x i64]* %tempArray, [200 x i64]* nonnull align 512 %tempArray_copy)
-  call void @apatb_MPSQ_hw(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy, [200 x i64]* %tempArray_copy)
-  call fastcc void @copy_out(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy, [200 x i64]* %tempArray, [200 x i64]* nonnull align 512 %tempArray_copy)
+  call fastcc void @copy_in(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
+  call void @apatb_MPSQ_hw(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
+  call fastcc void @copy_out(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
   tail call void @free(i8* %malloccall)
   tail call void @free(i8* %malloccall1)
   ret void
@@ -28,13 +27,12 @@ entry:
 declare noalias i8* @malloc(i64) local_unnamed_addr
 
 ; Function Attrs: noinline
-define internal fastcc void @copy_in(i8* readonly, i8* noalias align 512, [5 x [256 x %struct.ap_int.0]]*, [5 x [256 x %struct.ap_int.0]]* noalias, [5 x i32]* readonly, [5 x i32]* noalias align 512, [32 x [5 x [16 x %struct.ap_int.0]]]*, [32 x [5 x [16 x %struct.ap_int.0]]]* noalias, [200 x i64]* readonly, [200 x i64]* noalias align 512) unnamed_addr #1 {
+define internal fastcc void @copy_in(i8* readonly, i8* noalias align 512, [5 x [256 x %struct.ap_int.0]]*, [5 x [256 x %struct.ap_int.0]]* noalias, [5 x i32]* readonly, [5 x i32]* noalias align 512, [32 x [5 x [16 x %struct.ap_int.0]]]*, [32 x [5 x [16 x %struct.ap_int.0]]]* noalias) unnamed_addr #1 {
 entry:
   call fastcc void @onebyonecpy_hls.p0i8(i8* align 512 %1, i8* %0)
   call fastcc void @onebyonecpy_hls.p0a5a256struct.ap_int.0([5 x [256 x %struct.ap_int.0]]* %3, [5 x [256 x %struct.ap_int.0]]* %2)
   call fastcc void @onebyonecpy_hls.p0a5i32([5 x i32]* align 512 %5, [5 x i32]* %4)
   call fastcc void @onebyonecpy_hls.p0a32a5a16struct.ap_int.0([32 x [5 x [16 x %struct.ap_int.0]]]* %7, [32 x [5 x [16 x %struct.ap_int.0]]]* %6)
-  call fastcc void @onebyonecpy_hls.p0a200i64([200 x i64]* align 512 %9, [200 x i64]* %8)
   ret void
 }
 
@@ -320,56 +318,29 @@ ret:                                              ; preds = %for.loop.split, %en
   ret void
 }
 
-; Function Attrs: argmemonly noinline
-define internal fastcc void @onebyonecpy_hls.p0a200i64([200 x i64]* noalias align 512, [200 x i64]* noalias readonly) unnamed_addr #2 {
-entry:
-  %2 = icmp eq [200 x i64]* %0, null
-  %3 = icmp eq [200 x i64]* %1, null
-  %4 = or i1 %2, %3
-  br i1 %4, label %ret, label %copy
-
-copy:                                             ; preds = %entry
-  br label %for.loop
-
-for.loop:                                         ; preds = %for.loop, %copy
-  %for.loop.idx3 = phi i64 [ 0, %copy ], [ %for.loop.idx.next, %for.loop ]
-  %dst.addr.gep1 = getelementptr [200 x i64], [200 x i64]* %0, i64 0, i64 %for.loop.idx3
-  %5 = bitcast i64* %dst.addr.gep1 to i8*
-  %src.addr.gep2 = getelementptr [200 x i64], [200 x i64]* %1, i64 0, i64 %for.loop.idx3
-  %6 = bitcast i64* %src.addr.gep2 to i8*
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %5, i8* align 1 %6, i64 8, i1 false)
-  %for.loop.idx.next = add nuw nsw i64 %for.loop.idx3, 1
-  %exitcond = icmp ne i64 %for.loop.idx.next, 200
-  br i1 %exitcond, label %for.loop, label %ret
-
-ret:                                              ; preds = %for.loop, %entry
-  ret void
-}
-
 ; Function Attrs: noinline
-define internal fastcc void @copy_out(i8*, i8* noalias readonly align 512, [5 x [256 x %struct.ap_int.0]]*, [5 x [256 x %struct.ap_int.0]]* noalias, [5 x i32]*, [5 x i32]* noalias readonly align 512, [32 x [5 x [16 x %struct.ap_int.0]]]*, [32 x [5 x [16 x %struct.ap_int.0]]]* noalias, [200 x i64]*, [200 x i64]* noalias readonly align 512) unnamed_addr #6 {
+define internal fastcc void @copy_out(i8*, i8* noalias readonly align 512, [5 x [256 x %struct.ap_int.0]]*, [5 x [256 x %struct.ap_int.0]]* noalias, [5 x i32]*, [5 x i32]* noalias readonly align 512, [32 x [5 x [16 x %struct.ap_int.0]]]*, [32 x [5 x [16 x %struct.ap_int.0]]]* noalias) unnamed_addr #6 {
 entry:
   call fastcc void @onebyonecpy_hls.p0i8(i8* %0, i8* align 512 %1)
   call fastcc void @onebyonecpy_hls.p0a5a256struct.ap_int.0([5 x [256 x %struct.ap_int.0]]* %2, [5 x [256 x %struct.ap_int.0]]* %3)
   call fastcc void @onebyonecpy_hls.p0a5i32([5 x i32]* %4, [5 x i32]* align 512 %5)
   call fastcc void @onebyonecpy_hls.p0a32a5a16struct.ap_int.0([32 x [5 x [16 x %struct.ap_int.0]]]* %6, [32 x [5 x [16 x %struct.ap_int.0]]]* %7)
-  call fastcc void @onebyonecpy_hls.p0a200i64([200 x i64]* %8, [200 x i64]* align 512 %9)
   ret void
 }
 
 declare void @free(i8*) local_unnamed_addr
 
-declare void @apatb_MPSQ_hw(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*, [200 x i64]*)
+declare void @apatb_MPSQ_hw(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*)
 
-define void @MPSQ_hw_stub_wrapper(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*, [200 x i64]*) #7 {
+define void @MPSQ_hw_stub_wrapper(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*) #7 {
 entry:
-  call void @copy_out(i8* null, i8* %3, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* null, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %6, [200 x i64]* null, [200 x i64]* %7)
-  call void @MPSQ_hw_stub(i32 %0, i32 %1, i1 %2, i8* %3, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* %6, [200 x i64]* %7)
-  call void @copy_in(i8* null, i8* %3, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* null, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %6, [200 x i64]* null, [200 x i64]* %7)
+  call void @copy_out(i8* null, i8* %3, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* null, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %6)
+  call void @MPSQ_hw_stub(i32 %0, i32 %1, i1 %2, i8* %3, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* %6)
+  call void @copy_in(i8* null, i8* %3, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* null, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %6)
   ret void
 }
 
-declare void @MPSQ_hw_stub(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*, [200 x i64]*)
+declare void @MPSQ_hw_stub(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*)
 
 declare i1 @fpga_fifo_not_empty_8(i8*)
 

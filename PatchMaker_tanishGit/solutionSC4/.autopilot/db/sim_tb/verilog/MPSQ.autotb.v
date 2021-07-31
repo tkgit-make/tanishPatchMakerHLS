@@ -12,7 +12,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "MPSQ.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_MPSQ_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 5.00
+`define AUTOTB_CLOCK_PERIOD_DIV2 1.50
 
 `define AESL_DEPTH_stop 1
 `define AESL_DEPTH_ppl 1
@@ -24,22 +24,20 @@
 `define AESL_MEM_INST_GDn_points mem_inst_GDn_points
 `define AESL_MEM_patches_superpointsOUTPUT AESL_automem_patches_superpointsOUTPUT
 `define AESL_MEM_INST_patches_superpointsOUTPUT mem_inst_patches_superpointsOUTPUT
-`define AESL_MEM_tempArray AESL_automem_tempArray
-`define AESL_MEM_INST_tempArray mem_inst_tempArray
 `define AUTOTB_TVIN_ppl  "./c.MPSQ.autotvin_ppl.dat"
 `define AUTOTB_TVIN_n_patches  "./c.MPSQ.autotvin_n_patches.dat"
 `define AUTOTB_TVIN_GDarray  "./c.MPSQ.autotvin_GDarray.dat"
 `define AUTOTB_TVIN_GDn_points  "./c.MPSQ.autotvin_GDn_points.dat"
-`define AUTOTB_TVIN_tempArray  "./c.MPSQ.autotvin_tempArray.dat"
+`define AUTOTB_TVIN_patches_superpointsOUTPUT  "./c.MPSQ.autotvin_patches_superpointsOUTPUT.dat"
 `define AUTOTB_TVIN_ppl_out_wrapc  "./rtl.MPSQ.autotvin_ppl.dat"
 `define AUTOTB_TVIN_n_patches_out_wrapc  "./rtl.MPSQ.autotvin_n_patches.dat"
 `define AUTOTB_TVIN_GDarray_out_wrapc  "./rtl.MPSQ.autotvin_GDarray.dat"
 `define AUTOTB_TVIN_GDn_points_out_wrapc  "./rtl.MPSQ.autotvin_GDn_points.dat"
-`define AUTOTB_TVIN_tempArray_out_wrapc  "./rtl.MPSQ.autotvin_tempArray.dat"
+`define AUTOTB_TVIN_patches_superpointsOUTPUT_out_wrapc  "./rtl.MPSQ.autotvin_patches_superpointsOUTPUT.dat"
 `define AUTOTB_TVOUT_n_patches  "./c.MPSQ.autotvout_n_patches.dat"
-`define AUTOTB_TVOUT_tempArray  "./c.MPSQ.autotvout_tempArray.dat"
+`define AUTOTB_TVOUT_patches_superpointsOUTPUT  "./c.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
 `define AUTOTB_TVOUT_n_patches_out_wrapc  "./impl_rtl.MPSQ.autotvout_n_patches.dat"
-`define AUTOTB_TVOUT_tempArray_out_wrapc  "./impl_rtl.MPSQ.autotvout_tempArray.dat"
+`define AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc  "./impl_rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
@@ -52,7 +50,6 @@ parameter LENGTH_n_patches = 1;
 parameter LENGTH_GDarray = 1280;
 parameter LENGTH_GDn_points = 5;
 parameter LENGTH_patches_superpointsOUTPUT = 2560;
-parameter LENGTH_tempArray = 200;
 
 task read_token;
     input integer fp;
@@ -156,20 +153,6 @@ wire [11 : 0] patches_superpointsOUTPUT_address0;
 wire  patches_superpointsOUTPUT_ce0;
 wire  patches_superpointsOUTPUT_we0;
 wire [63 : 0] patches_superpointsOUTPUT_d0;
-wire [63 : 0] patches_superpointsOUTPUT_q0;
-wire [11 : 0] patches_superpointsOUTPUT_address1;
-wire  patches_superpointsOUTPUT_ce1;
-wire  patches_superpointsOUTPUT_we1;
-wire [63 : 0] patches_superpointsOUTPUT_d1;
-wire [63 : 0] patches_superpointsOUTPUT_q1;
-wire [7 : 0] tempArray_address0;
-wire  tempArray_ce0;
-wire  tempArray_we0;
-wire [63 : 0] tempArray_d0;
-wire [7 : 0] tempArray_address1;
-wire  tempArray_ce1;
-wire  tempArray_we1;
-wire [63 : 0] tempArray_d1;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -206,21 +189,7 @@ wire ap_rst_n;
     .patches_superpointsOUTPUT_address0(patches_superpointsOUTPUT_address0),
     .patches_superpointsOUTPUT_ce0(patches_superpointsOUTPUT_ce0),
     .patches_superpointsOUTPUT_we0(patches_superpointsOUTPUT_we0),
-    .patches_superpointsOUTPUT_d0(patches_superpointsOUTPUT_d0),
-    .patches_superpointsOUTPUT_q0(patches_superpointsOUTPUT_q0),
-    .patches_superpointsOUTPUT_address1(patches_superpointsOUTPUT_address1),
-    .patches_superpointsOUTPUT_ce1(patches_superpointsOUTPUT_ce1),
-    .patches_superpointsOUTPUT_we1(patches_superpointsOUTPUT_we1),
-    .patches_superpointsOUTPUT_d1(patches_superpointsOUTPUT_d1),
-    .patches_superpointsOUTPUT_q1(patches_superpointsOUTPUT_q1),
-    .tempArray_address0(tempArray_address0),
-    .tempArray_ce0(tempArray_ce0),
-    .tempArray_we0(tempArray_we0),
-    .tempArray_d0(tempArray_d0),
-    .tempArray_address1(tempArray_address1),
-    .tempArray_ce1(tempArray_ce1),
-    .tempArray_we1(tempArray_we1),
-    .tempArray_d1(tempArray_d1));
+    .patches_superpointsOUTPUT_d0(patches_superpointsOUTPUT_d0));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -517,63 +486,39 @@ wire    [63 : 0]    arraypatches_superpointsOUTPUT_dout0, arraypatches_superpoin
 wire    arraypatches_superpointsOUTPUT_ready;
 wire    arraypatches_superpointsOUTPUT_done;
 
-// Assignment between dut and arraypatches_superpointsOUTPUT
-assign arraypatches_superpointsOUTPUT_done = 0;
-
-
-//------------------------arraytempArray Instantiation--------------
-
-// The input and output of arraytempArray
-wire    arraytempArray_ce0, arraytempArray_ce1;
-wire [8 - 1 : 0]    arraytempArray_we0, arraytempArray_we1;
-wire    [7 : 0]    arraytempArray_address0, arraytempArray_address1;
-wire    [63 : 0]    arraytempArray_din0, arraytempArray_din1;
-wire    [63 : 0]    arraytempArray_dout0, arraytempArray_dout1;
-wire    arraytempArray_ready;
-wire    arraytempArray_done;
-
-`AESL_MEM_tempArray `AESL_MEM_INST_tempArray(
+`AESL_MEM_patches_superpointsOUTPUT `AESL_MEM_INST_patches_superpointsOUTPUT(
     .clk        (AESL_clock),
     .rst        (AESL_reset),
-    .ce0        (arraytempArray_ce0),
-    .we0        (arraytempArray_we0),
-    .address0   (arraytempArray_address0),
-    .din0       (arraytempArray_din0),
-    .dout0      (arraytempArray_dout0),
-    .ce1        (arraytempArray_ce1),
-    .we1        (arraytempArray_we1),
-    .address1   (arraytempArray_address1),
-    .din1       (arraytempArray_din1),
-    .dout1      (arraytempArray_dout1),
-    .ready      (arraytempArray_ready),
-    .done    (arraytempArray_done)
+    .ce0        (arraypatches_superpointsOUTPUT_ce0),
+    .we0        (arraypatches_superpointsOUTPUT_we0),
+    .address0   (arraypatches_superpointsOUTPUT_address0),
+    .din0       (arraypatches_superpointsOUTPUT_din0),
+    .dout0      (arraypatches_superpointsOUTPUT_dout0),
+    .ce1        (arraypatches_superpointsOUTPUT_ce1),
+    .we1        (arraypatches_superpointsOUTPUT_we1),
+    .address1   (arraypatches_superpointsOUTPUT_address1),
+    .din1       (arraypatches_superpointsOUTPUT_din1),
+    .dout1      (arraypatches_superpointsOUTPUT_dout1),
+    .ready      (arraypatches_superpointsOUTPUT_ready),
+    .done    (arraypatches_superpointsOUTPUT_done)
 );
 
-// Assignment between dut and arraytempArray
-assign arraytempArray_address0 = tempArray_address0;
-assign arraytempArray_ce0 = tempArray_ce0;
-assign arraytempArray_we0[0] = tempArray_we0;
-assign arraytempArray_we0[1] = tempArray_we0;
-assign arraytempArray_we0[2] = tempArray_we0;
-assign arraytempArray_we0[3] = tempArray_we0;
-assign arraytempArray_we0[4] = tempArray_we0;
-assign arraytempArray_we0[5] = tempArray_we0;
-assign arraytempArray_we0[6] = tempArray_we0;
-assign arraytempArray_we0[7] = tempArray_we0;
-assign arraytempArray_din0 = tempArray_d0;
-assign arraytempArray_address1 = tempArray_address1;
-assign arraytempArray_ce1 = tempArray_ce1;
-assign arraytempArray_we1[0] = tempArray_we1;
-assign arraytempArray_we1[1] = tempArray_we1;
-assign arraytempArray_we1[2] = tempArray_we1;
-assign arraytempArray_we1[3] = tempArray_we1;
-assign arraytempArray_we1[4] = tempArray_we1;
-assign arraytempArray_we1[5] = tempArray_we1;
-assign arraytempArray_we1[6] = tempArray_we1;
-assign arraytempArray_we1[7] = tempArray_we1;
-assign arraytempArray_din1 = tempArray_d1;
-assign arraytempArray_ready= ready_initial | arraytempArray_done;
-assign arraytempArray_done =    AESL_done_delay;
+// Assignment between dut and arraypatches_superpointsOUTPUT
+assign arraypatches_superpointsOUTPUT_address0 = patches_superpointsOUTPUT_address0;
+assign arraypatches_superpointsOUTPUT_ce0 = patches_superpointsOUTPUT_ce0;
+assign arraypatches_superpointsOUTPUT_we0[0] = patches_superpointsOUTPUT_we0;
+assign arraypatches_superpointsOUTPUT_we0[1] = patches_superpointsOUTPUT_we0;
+assign arraypatches_superpointsOUTPUT_we0[2] = patches_superpointsOUTPUT_we0;
+assign arraypatches_superpointsOUTPUT_we0[3] = patches_superpointsOUTPUT_we0;
+assign arraypatches_superpointsOUTPUT_we0[4] = patches_superpointsOUTPUT_we0;
+assign arraypatches_superpointsOUTPUT_we0[5] = patches_superpointsOUTPUT_we0;
+assign arraypatches_superpointsOUTPUT_we0[6] = patches_superpointsOUTPUT_we0;
+assign arraypatches_superpointsOUTPUT_we0[7] = patches_superpointsOUTPUT_we0;
+assign arraypatches_superpointsOUTPUT_din0 = patches_superpointsOUTPUT_d0;
+assign arraypatches_superpointsOUTPUT_we1 = 0;
+assign arraypatches_superpointsOUTPUT_din1 = 0;
+assign arraypatches_superpointsOUTPUT_ready= ready_initial | arraypatches_superpointsOUTPUT_done;
+assign arraypatches_superpointsOUTPUT_done =    AESL_done_delay;
 
 
 initial begin : generate_AESL_ready_cnt_proc
@@ -643,14 +588,14 @@ end
     end
     $fclose(fp1);
     $fclose(fp2);
-    fp1 = $fopen("./rtl.MPSQ.autotvout_tempArray.dat", "r");
-    fp2 = $fopen("./impl_rtl.MPSQ.autotvout_tempArray.dat", "r");
+    fp1 = $fopen("./rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat", "r");
+    fp2 = $fopen("./impl_rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat", "r");
     if(fp1 == 0)        // Failed to open file
-        $display("Failed to open file \"./rtl.MPSQ.autotvout_tempArray.dat\"!");
+        $display("Failed to open file \"./rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat\"!");
     else if(fp2 == 0)
-        $display("Failed to open file \"./impl_rtl.MPSQ.autotvout_tempArray.dat\"!");
+        $display("Failed to open file \"./impl_rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat\"!");
     else begin
-        $display("Comparing rtl.MPSQ.autotvout_tempArray.dat with impl_rtl.MPSQ.autotvout_tempArray.dat");
+        $display("Comparing rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat with impl_rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat");
         post_check(fp1, fp2);
     end
     $fclose(fp1);
@@ -677,9 +622,9 @@ reg [31:0] size_GDarray_backup;
 reg end_GDn_points;
 reg [31:0] size_GDn_points;
 reg [31:0] size_GDn_points_backup;
-reg end_tempArray;
-reg [31:0] size_tempArray;
-reg [31:0] size_tempArray_backup;
+reg end_patches_superpointsOUTPUT;
+reg [31:0] size_patches_superpointsOUTPUT;
+reg [31:0] size_patches_superpointsOUTPUT_backup;
 
 initial begin : initial_process
     integer proc_rand;
@@ -787,14 +732,14 @@ begin
   end
 end
 
-reg dump_tvout_finish_tempArray;
+reg dump_tvout_finish_patches_superpointsOUTPUT;
 
-initial begin : dump_tvout_runtime_sign_tempArray
+initial begin : dump_tvout_runtime_sign_patches_superpointsOUTPUT
     integer fp;
-    dump_tvout_finish_tempArray = 0;
-    fp = $fopen(`AUTOTB_TVOUT_tempArray_out_wrapc, "w");
+    dump_tvout_finish_patches_superpointsOUTPUT = 0;
+    fp = $fopen(`AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_tempArray_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -805,15 +750,15 @@ initial begin : dump_tvout_runtime_sign_tempArray
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_tempArray_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_tempArray_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_tempArray = 1;
+    dump_tvout_finish_patches_superpointsOUTPUT = 1;
 end
 
 

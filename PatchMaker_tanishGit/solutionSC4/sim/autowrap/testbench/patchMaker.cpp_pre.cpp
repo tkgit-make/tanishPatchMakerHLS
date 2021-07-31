@@ -108257,9 +108257,9 @@ void get_acceptanceCorners(ap_int<32> (&wp_superpoints) [5][16][2], ap_int<32> (
 void add_patch(ap_int<32> (&wp_superpoints) [5][16][2], ap_int<32> (&wp_parameters) [5][5 - 1][6], uint8_t &n_patches, ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6]);
 void delete_patch(int32_t index, uint8_t &n_patches, ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6]);
 uint8_t get_index_from_z(int32_t layer, ap_int<32> z_value, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5]);
-void MPSQ(int32_t stop, int32_t ppl, bool leftRight, uint8_t &n_patches, ap_int<(2 * 32)> (&GDarray) [5][256], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints)[32][5][16], long (&tempArray)[200]);
-ap_int<32> solveNextColumn(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftRight, bool fix42, ap_int<32> saved_apexZ0, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6], long (&tempArray)[200]);
-void solveNextPatchPair(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftRight, bool fix42, ap_int<32> &saved_apexZ0, int32_t &nPatchesInColumn, ap_int<32> &c_corner, ap_int<32> &projectionOfCornerToBeam, ap_int<32> &z_top_min, ap_int<32> &z_top_max, ap_int<32> &complementary_apexZ0, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6], long (&tempArray)[200]);
+void MPSQ(int32_t stop, int32_t ppl, bool leftRight, uint8_t &n_patches, ap_int<(2 * 32)> (&GDarray) [5][256], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints)[32][5][16]);
+ap_int<32> solveNextColumn(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftRight, bool fix42, ap_int<32> saved_apexZ0, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6]);
+void solveNextPatchPair(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftRight, bool fix42, ap_int<32> &saved_apexZ0, int32_t &nPatchesInColumn, ap_int<32> &c_corner, ap_int<32> &projectionOfCornerToBeam, ap_int<32> &z_top_min, ap_int<32> &z_top_max, ap_int<32> &complementary_apexZ0, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6]);
 void makeThirdPatch(uint8_t lastPatchIndex, ap_int<32> z_top_min, ap_int<32> z_top_max, ap_int<32> complementary_apexZ0, ap_int<32> apexZ0, int32_t ppl, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6]);
 void solveComplmentaryPatch(int64_t &previous_white_space_height, int32_t ppl, bool fix42, int32_t nPatchesAtOriginal, ap_int<32> &previous_z_top_min, ap_int<32> complementary_apexZ0, int64_t &white_space_height, uint8_t &lastPatchIndex, ap_int<32> original_c, ap_int<32> original_d, ap_int<32> &complementary_a, ap_int<32> &complementary_b, int32_t &current_z_top_index, int32_t &counter, int32_t &counterUpshift, ap_int<32> &z_top_min, bool &repeat_patch, bool &repeat_original, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6]);
 void makePatch_alignedToLine(ap_int<32> apexZ0, ap_int<32> z_top, int32_t &ppl, bool leftRight, bool float_middleLayers_ppl, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6]);
@@ -108476,18 +108476,10 @@ void get_acceptanceCorners(ap_int<32> (&wp_superpoints) [5][16][2], ap_int<32> (
     wp_parameters[3][0][0] = true;
     wp_parameters[3][3][0] = false;
 
-    ap_int<32> a_corner_min = 0x7fffffffL - 2;
-    ap_int<32> b_corner_min = 0x7fffffffL - 2;
-    ap_int<32> c_corner_max = 
-# 243 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp" 3 4
-                                  (-0x7fffffffL - 1L) 
-# 243 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
-                                           + 2;
-    ap_int<32> d_corner_max = 
-# 244 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp" 3 4
-                                  (-0x7fffffffL - 1L) 
-# 244 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
-                                           + 2;
+    ap_int<32> a_corner_min = 100 * 1000000;
+    ap_int<32> b_corner_min = 100 * 1000000;
+    ap_int<32> c_corner_max = -100 * 1000000;
+    ap_int<32> d_corner_max = -100 * 1000000;
 
 
     get_acceptanceCorners_minMaxFinding:
@@ -108557,6 +108549,7 @@ void get_acceptanceCorners(ap_int<32> (&wp_superpoints) [5][16][2], ap_int<32> (
         wp_parameters[2][1][1] = wp_parameters[2][2][1];
         wp_parameters[2][3][1] = wp_parameters[2][2][1];
     }
+
 }
 
 ap_int<(2 * 32)> encodeCoordinates(ap_int<32> phi, ap_int<32> z)
@@ -108833,7 +108826,7 @@ void initializeArrays(ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_in
 }
 
 void MPSQ(int32_t stop, int32_t ppl, bool leftRight, uint8_t &n_patches, ap_int<(2 * 32)> (&GDarray) [5][256],
-  int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpointsOUTPUT)[32][5][16], long (&tempArray)[200])
+  int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpointsOUTPUT)[32][5][16])
 {
  ap_int<(2 * 32)> patches_superpoints[32][5][16];
 
@@ -108850,7 +108843,6 @@ void MPSQ(int32_t stop, int32_t ppl, bool leftRight, uint8_t &n_patches, ap_int<
 
     bool fix42 = true;
     ap_int<32> apexZ0 = trapezoid_edges[0];
-    tempArray[197] = trapezoid_edges[0];
     ap_int<32> saved_apexZ0;
     initializeArrays(patches_superpoints, patches_parameters);
 
@@ -108885,16 +108877,14 @@ void MPSQ(int32_t stop, int32_t ppl, bool leftRight, uint8_t &n_patches, ap_int<
 
 
 
-
         int loopCounter = 0;
 
 
     shadowQuilt_loop:
     while (apexZ0 > trapezoid_edgesNEGATIVE[0])
     {
-        apexZ0 = solveNextColumn(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, tempArray);
+        apexZ0 = solveNextColumn(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
         saved_apexZ0 = apexZ0;
-        return;
 
 
             if (loopCounter > 25)
@@ -108922,7 +108912,7 @@ void MPSQ(int32_t stop, int32_t ppl, bool leftRight, uint8_t &n_patches, ap_int<
 
 }
 
-ap_int<32> solveNextColumn(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftRight, bool fix42, ap_int<32> saved_apexZ0, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6], long (&tempArray)[200])
+ap_int<32> solveNextColumn(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftRight, bool fix42, ap_int<32> saved_apexZ0, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6])
 {
 #pragma HLS INLINE OFF
     ap_int<32> z_top_min = static_cast<ap_int<32> > (-(50 * 1000000));
@@ -108950,8 +108940,7 @@ ap_int<32> solveNextColumn(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool le
     while(getSolveNextColumnWhileConditional(c_corner, nPatchesInColumn, projectionOfCornerToBeam))
     {
         solveNextPatchPair(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, nPatchesInColumn, c_corner, projectionOfCornerToBeam,
-          z_top_min, z_top_max, complementary_apexZ0, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, tempArray);
-        return 0;
+          z_top_min, z_top_max, complementary_apexZ0, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
 
 
             if (loopCounter > 25)
@@ -108981,7 +108970,7 @@ bool getSolveNextColumnWhileConditional(ap_int<32> c_corner, int32_t nPatchesInC
 
 void solveNextPatchPair(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftRight, bool fix42, ap_int<32> &saved_apexZ0,
   int32_t &nPatchesInColumn, ap_int<32> &c_corner, ap_int<32> &projectionOfCornerToBeam, ap_int<32> &z_top_min,
-  ap_int<32> &z_top_max, ap_int<32> &complementary_apexZ0, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6], long (&tempArray)[200])
+  ap_int<32> &z_top_max, ap_int<32> &complementary_apexZ0, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6])
 {
 #pragma HLS INLINE OFF
     nPatchesInColumn++;
@@ -108994,7 +108983,7 @@ void solveNextPatchPair(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftR
 
 
     uint8_t lastPatchIndex = n_patches - 1;
-# 787 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 784 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     ap_int<32> original_c = patches_parameters[lastPatchIndex][2][2][1];
     ap_int<32> original_d = patches_parameters[lastPatchIndex][2][3][1];
 
@@ -109002,7 +108991,7 @@ void solveNextPatchPair(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftR
 
     bool repeat_patch = false;
     bool repeat_original = false;
-# 807 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 804 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     if (n_patches > 2)
     {
         uint8_t thirdLastPatchIndex = lastPatchIndex - 2;
@@ -109032,16 +109021,6 @@ void solveNextPatchPair(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftR
 
 
 
-    tempArray[0] = projectionOfCornerToBeam;
- tempArray[1] = (15 * 1000000);
- tempArray[2] = (patches_parameters[lastPatchIndex][2][2][1]);
- tempArray[3] = (trapezoid_edgesNEGATIVE[5 - 1]);
- tempArray[4] = (notChoppedPatch);
- tempArray[5] = (!notChoppedPatch && (patches_parameters[lastPatchIndex][2][2][1] > trapezoid_edgesNEGATIVE[5 - 1]) && ((static_cast<int64_t>(projectionOfCornerToBeam) < (15 * 1000000))));
- tempArray[6] = squarePatch_alternate1;
- tempArray[7] = squarePatch_alternate2;
-
- return;
     if (!notChoppedPatch && (patches_parameters[lastPatchIndex][2][2][1] > trapezoid_edgesNEGATIVE[5 - 1]) && ((static_cast<int64_t>(projectionOfCornerToBeam) < (15 * 1000000))))
     {
         complementary_apexZ0 = decodeZcoordinate(patches_superpoints[lastPatchIndex][0][0]);
@@ -109081,22 +109060,6 @@ void solveNextPatchPair(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftR
         int32_t current_z_top_index = -1;
         ap_int<32> previous_z_top_min = -999 * 1000000;
 
-        tempArray[199] = 101010;
-
-        if(n_patches == 2)
-  {
-   tempArray[counterUpshift * 10 + 0] = counterUpshift;
-   tempArray[counterUpshift * 10 + 1] = getSolveNextPatchPairWhileCondition(lastPatchIndex, repeat_patch, repeat_original, white_space_height,
-     previous_white_space_height, current_z_top_index, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
-   tempArray[counterUpshift * 10 + 2] = (white_space_height);
-   tempArray[counterUpshift * 10 + 3] = (previous_white_space_height);
-   tempArray[counterUpshift * 10 + 4] = (patches_parameters[lastPatchIndex][2][2][1]);
-   tempArray[counterUpshift * 10 + 5] = (current_z_top_index);
-   tempArray[counterUpshift * 10 + 6] = (repeat_patch);
-   tempArray[counterUpshift * 10 + 7] = (repeat_original);
-  }
-
-
         while (getSolveNextPatchPairWhileCondition(lastPatchIndex, repeat_patch, repeat_original, white_space_height,
                                                    previous_white_space_height, current_z_top_index, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters))
         {
@@ -109108,19 +109071,6 @@ void solveNextPatchPair(ap_int<32> apexZ0, int32_t stop, int32_t ppl, bool leftR
                 }
 
 
-
-            if(n_patches == 2)
-            {
-             tempArray[counterUpshift * 10 + 0] = counterUpshift;
-             tempArray[counterUpshift * 10 + 1] = getSolveNextPatchPairWhileCondition(lastPatchIndex, repeat_patch, repeat_original, white_space_height,
-                        previous_white_space_height, current_z_top_index, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
-             tempArray[counterUpshift * 10 + 2] = (white_space_height);
-             tempArray[counterUpshift * 10 + 3] = (previous_white_space_height);
-             tempArray[counterUpshift * 10 + 4] = (patches_parameters[lastPatchIndex][2][2][1]);
-             tempArray[counterUpshift * 10 + 5] = (current_z_top_index);
-             tempArray[counterUpshift * 10 + 6] = (repeat_patch);
-             tempArray[counterUpshift * 10 + 7] = (repeat_original);
-            }
         }
 
     }
@@ -109159,7 +109109,7 @@ bool getSolveNextPatchPairWhileCondition(int32_t lastPatchIndex, bool repeat_pat
  bool exp5 = !(repeat_patch) && !(repeat_original);
 
  return exp1 && exp2 && exp3 && exp4 && exp5;
-# 971 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 929 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
 }
 
 void makeThirdPatch(uint8_t lastPatchIndex, ap_int<32> z_top_min, ap_int<32> z_top_max, ap_int<32> complementary_apexZ0, ap_int<32> apexZ0, int32_t ppl, uint8_t &n_patches, ap_int<32> (&GDarrayDecoded) [5][256][2], int32_t (&GDn_points) [5], ap_int<(2 * 32)> (&patches_superpoints) [32][5][16], ap_int<32> (&patches_parameters) [32][5][5 - 1][6])
@@ -109455,7 +109405,7 @@ void solveComplmentaryPatch(int64_t &previous_white_space_height, int32_t ppl, b
     }
 
     layerWithSmallestShift += 1;
-# 1275 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1233 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     z_top_min = GDarrayDecoded[5 - 1][current_z_top_index][1];
     z_top_min = new_z_i_atTop[layerWithSmallestShift - 1];
 
@@ -109478,12 +109428,12 @@ void solveComplmentaryPatch(int64_t &previous_white_space_height, int32_t ppl, b
     {
         z_top_min = new_z_i_atTop[5 - 2];
     }
-# 1308 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1266 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     int32_t nPatchesAtComplementary = n_patches;
     lastPatchIndex = n_patches - 1;
     if (nPatchesAtComplementary > nPatchesAtOriginal)
     {
-# 1329 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1287 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
         delete_patch(lastPatchIndex, n_patches, patches_superpoints, patches_parameters);
 
     }
@@ -109503,7 +109453,7 @@ void solveComplmentaryPatch(int64_t &previous_white_space_height, int32_t ppl, b
     previous_white_space_height = white_space_height;
 
     white_space_height = ((original_c - complementary_a) < (original_d - complementary_b) ? (original_d - complementary_b) : (original_c - complementary_a));
-# 1363 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1321 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     if ((n_patches > 3) && fix42)
     {
         uint8_t lastPatchIdx = n_patches - 1;
@@ -109707,13 +109657,13 @@ void makeSuperPoint_alignedToLine(int32_t i, ap_int<32> z_top, ap_int<32> apexZ0
 
         if ((start_index + ppl) > (right_bound + 1))
         {
-# 1583 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1541 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
          temp_start = right_bound + 1 - ppl;
 
         }
         else
         {
-# 1604 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1562 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
             temp_start = start_index;
 
         }
@@ -109737,13 +109687,13 @@ void makeSuperPoint_alignedToLine(int32_t i, ap_int<32> z_top, ap_int<32> apexZ0
 
         if ((start_index - ppl + 1) < left_bound)
         {
-# 1644 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1602 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
          temp_start = left_bound;
 
         }
         else
         {
-# 1665 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1623 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
          temp_start = start_index - ppl + 1;
 
         }

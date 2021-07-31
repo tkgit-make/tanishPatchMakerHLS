@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="MPSQ" xd:componentRef="MPSQ" xd:initiationInterval="x" xd:clockPeriod="3.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="stop" xd:originalName="stop" xd:direction="in" xd:interfaceRef="stop" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="ppl" xd:originalName="ppl" xd:direction="in" xd:interfaceRef="ppl" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="leftRight" xd:originalName="leftRight" xd:direction="in" xd:interfaceRef="leftRight" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(n_patches)" xd:originalName="n_patches" xd:direction="in" xd:interfaceRef="n_patches_i" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(n_patches)" xd:originalName="n_patches" xd:direction="out" xd:interfaceRef="n_patches_o" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="1"/>
+  <xd:arg xd:name="GDarray_q0" xd:originalName="GDarray_q0" xd:direction="in" xd:interfaceRef="GDarray_q0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="64"/>
+  <xd:arg xd:name="GDn_points_q0" xd:originalName="GDn_points_q0" xd:direction="in" xd:interfaceRef="GDn_points_q0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="32"/>
+  <xd:arg xd:name="patches_superpointsOUTPUT_d0" xd:originalName="patches_superpointsOUTPUT_d0" xd:direction="out" xd:interfaceRef="patches_superpointsOUTPUT_d0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="64"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="44146" xd:FF="31126" xd:BRAM="9" xd:DSP="2"/>
+</xd:acceleratorMap>

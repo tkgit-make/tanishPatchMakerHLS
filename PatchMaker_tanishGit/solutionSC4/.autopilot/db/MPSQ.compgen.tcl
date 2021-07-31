@@ -1,12 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 66
+set ID 143
 set hasByteEnable 0
 set MemName MPSQ_patches_superpoints_V
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
-set DataWd 32
+set PortList { 2 1 }
+set DataWd 64
 set AddrRange 2560
 set AddrWd 12
 set impl_style auto
@@ -17,7 +17,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 1.645
-set ClkPeriod 10
+set ClkPeriod 3
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -86,11 +86,11 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 67
+set ID 144
 set hasByteEnable 0
 set MemName MPSQ_patches_parameters_V
 set CoreName ap_simcore_mem
-set PortList { 2 1 }
+set PortList { 2 2 }
 set DataWd 32
 set AddrRange 3840
 set AddrWd 12
@@ -102,7 +102,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 1.645
-set ClkPeriod 10
+set ClkPeriod 3
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -171,7 +171,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 68
+set ID 145
 set hasByteEnable 0
 set MemName MPSQ_GDarrayDecoded_V
 set CoreName ap_simcore_mem
@@ -187,7 +187,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 1.645
-set ClkPeriod 10
+set ClkPeriod 3
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -267,7 +267,7 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 71 \
+    id 148 \
     name GDarray \
     reset_level 1 \
     sync_rst true \
@@ -286,7 +286,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 72 \
+    id 149 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -305,17 +305,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 73 \
-    name tempArray \
+    id 150 \
+    name patches_superpointsOUTPUT \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename tempArray \
+    corename patches_superpointsOUTPUT \
     op interface \
-    ports { tempArray_address0 { O 8 vector } tempArray_ce0 { O 1 bit } tempArray_we0 { O 1 bit } tempArray_d0 { O 64 vector } tempArray_address1 { O 8 vector } tempArray_ce1 { O 1 bit } tempArray_we1 { O 1 bit } tempArray_d1 { O 64 vector } } \
+    ports { patches_superpointsOUTPUT_address0 { O 12 vector } patches_superpointsOUTPUT_ce0 { O 1 bit } patches_superpointsOUTPUT_we0 { O 1 bit } patches_superpointsOUTPUT_d0 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'tempArray'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpointsOUTPUT'"
 }
 }
 
@@ -323,7 +323,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 69 \
+    id 146 \
     name ppl \
     type other \
     dir I \
@@ -338,7 +338,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 70 \
+    id 147 \
     name n_patches \
     type other \
     dir IO \

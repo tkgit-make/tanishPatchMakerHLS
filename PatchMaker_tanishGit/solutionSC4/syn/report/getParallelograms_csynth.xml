@@ -9,8 +9,8 @@
 <ProductFamily>virtexuplus</ProductFamily>
 <Part>xcvu19p-fsvb3824-2-e</Part>
 <TopModelName>getParallelograms</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>3.00</TargetClockPeriod>
+<ClockUncertainty>0.81</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,26 +18,40 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.682</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.190</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>27</Best-caseLatency>
-<Average-caseLatency>27</Average-caseLatency>
-<Worst-caseLatency>27</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.270 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.270 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.270 us</Worst-caseRealTimeLatency>
-<Interval-min>27</Interval-min>
-<Interval-max>27</Interval-max>
+<Best-caseLatency>43</Best-caseLatency>
+<Average-caseLatency>51</Average-caseLatency>
+<Worst-caseLatency>55</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.129 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.153 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.165 us</Worst-caseRealTimeLatency>
+<Interval-min>43</Interval-min>
+<Interval-max>55</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <getParallelograms_settingWPparameters>
 <TripCount>4</TripCount>
-<Latency>24</Latency>
-<AbsoluteTimeLatency>240</AbsoluteTimeLatency>
-<PipelineII>5</PipelineII>
-<PipelineDepth>10</PipelineDepth>
+<Latency>
+<range>
+<min>40</min>
+<max>52</max>
+</range>
+</Latency>
+<AbsoluteTimeLatency>
+<range>
+<min>120</min>
+<max>156</max>
+</range>
+</AbsoluteTimeLatency>
+<IterationLatency>
+<range>
+<min>10</min>
+<max>13</max>
+</range>
+</IterationLatency>
 </getParallelograms_settingWPparameters>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -46,8 +60,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
-<FF>399</FF>
-<LUT>1011</LUT>
+<FF>2781</FF>
+<LUT>2455</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

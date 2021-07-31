@@ -9,17 +9,19 @@
 
 module MPSQ_encodeCoordinates (
         ap_ready,
+        phi,
         z,
         ap_return
 );
 
 
 output   ap_ready;
+input  [31:0] phi;
 input  [31:0] z;
-output  [31:0] ap_return;
+output  [63:0] ap_return;
 
 assign ap_ready = 1'b1;
 
-assign ap_return = z;
+assign ap_return = {{phi}, {z}};
 
 endmodule //MPSQ_encodeCoordinates

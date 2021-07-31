@@ -87,12 +87,8 @@ solve_loop:
 		tempArray[i] = 0;
 	}
 
-    MPSQ(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints, tempArray);
+    MPSQ(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
 
-    for(int i = 0; i < 200; i++)
-    {
-		cout << tempArray[i] << endl;
-    }
     /*
 
     SPACEPOINT_TYPE currentVal2 = 0;

@@ -10,5 +10,4 @@ char leftRight,
 volatile void* n_patches,
 volatile void* GDarray,
 volatile void* GDn_points,
-volatile void* patches_superpointsOUTPUT,
-volatile void* tempArray);
+volatile void* patches_superpointsOUTPUT);

@@ -17,7 +17,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="2" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="3" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 :0 %z_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %z
 
@@ -32,30 +32,73 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="3" bw="0" op_0_bw="32">
+<Node id="4" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:1 %ret_ln319 = ret i32 %z_read
+:1 %phi_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %phi
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln319"/></StgValue>
+<StgValue><ssdm name="phi_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="64" op_0_bw="64" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+:2 %ret = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %phi_read, i32 %z_read
+
+]]></Node>
+<StgValue><ssdm name="ret"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="64">
+<![CDATA[
+:3 %ret_ln320 = ret i64 %ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln320"/></StgValue>
 </operation>
 </state>
 </state_list>
 
 
 <ports>
-<port id="5" name="z" dir="0" iftype="0">
+<port id="7" name="phi" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="phi"/></StgValue>
+</port>
+<port id="8" name="z" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="z"/></StgValue>
 </port>
 </ports>
 
 
 <dataflows>
-<dataflow id="7" from="_ssdm_op_Read.ap_auto.i32" to="z_read" fromId="6" toId="2">
+<dataflow id="10" from="_ssdm_op_Read.ap_auto.i32" to="z_read" fromId="9" toId="2">
 </dataflow>
-<dataflow id="8" from="z" to="z_read" fromId="5" toId="2">
+<dataflow id="11" from="z" to="z_read" fromId="8" toId="2">
 </dataflow>
-<dataflow id="9" from="z_read" to="ret_ln319" fromId="2" toId="3">
+<dataflow id="12" from="_ssdm_op_Read.ap_auto.i32" to="phi_read" fromId="9" toId="3">
+</dataflow>
+<dataflow id="13" from="phi" to="phi_read" fromId="7" toId="3">
+</dataflow>
+<dataflow id="15" from="_ssdm_op_BitConcatenate.i64.i32.i32" to="ret" fromId="14" toId="4">
+</dataflow>
+<dataflow id="16" from="phi_read" to="ret" fromId="3" toId="4">
+</dataflow>
+<dataflow id="17" from="z_read" to="ret" fromId="2" toId="4">
+</dataflow>
+<dataflow id="18" from="ret" to="ret_ln320" fromId="4" toId="5">
 </dataflow>
 </dataflows>
 

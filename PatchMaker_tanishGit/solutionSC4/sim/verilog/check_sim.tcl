@@ -84,9 +84,9 @@ proc check_tvin_file {} {
          "c.MPSQ.autotvin_n_patches.dat"
          "c.MPSQ.autotvin_GDarray.dat"
          "c.MPSQ.autotvin_GDn_points.dat"
-         "c.MPSQ.autotvin_tempArray.dat"
+         "c.MPSQ.autotvin_patches_superpointsOUTPUT.dat"
          "c.MPSQ.autotvout_n_patches.dat"
-         "c.MPSQ.autotvout_tempArray.dat"
+         "c.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -112,7 +112,7 @@ proc check_tvout_file {} {
 	}
     set rtlfilelist {
          "rtl.MPSQ.autotvout_n_patches.dat"
-         "rtl.MPSQ.autotvout_tempArray.dat"
+         "rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

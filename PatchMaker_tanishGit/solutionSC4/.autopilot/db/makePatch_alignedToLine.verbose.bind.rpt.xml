@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makePatch_alignedToLine'" level="0">
-<item name = "Date">Tue Jul 30 23:06:19 2024
+<item name = "Date">Wed Jul 31 13:57:56 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 5.682 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 2.190 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -31,17 +31,17 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makeSuperPoint_alignedToLine7_fu_376">makeSuperPoint_alignedToLine7, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_wedgePatch_init_fu_393">wedgePatch_init, 219, 220, 2.190 us, 2.200 us, 219, 220, none</column>
-<column name="grp_add_patch5_fu_402">add_patch5, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_wedgePatch_init_fu_404">wedgePatch_init, 241, 254, 0.723 us, 0.762 us, 241, 254, none</column>
+<column name="grp_makeSuperPoint_alignedToLine11_fu_414">makeSuperPoint_alignedToLine11, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_add_patch9_fu_433">add_patch9, ?, ?, ?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter">160, 160, 1, 1, 1, 160, yes</column>
+<column name="- makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter">161, 161, 3, 1, 1, 160, yes</column>
 <column name="- makePatch_alignedToLine_makeSuperpoint_loop">?, ?, ?, -, -, 5, no</column>
-<column name="- makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter">160, 160, 1, 1, 1, 160, yes</column>
-<column name="- makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength">120, 120, 1, 1, 1, 120, yes</column>
+<column name="- makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter">161, 161, 3, 1, 1, 160, yes</column>
+<column name="- makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength">120, 120, 2, 1, 1, 120, yes</column>
 </table>
 </item>
 </section>
