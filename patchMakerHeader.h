@@ -186,3 +186,5 @@ bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, 
                                          int current_z_top_index, GDARRAY, GPATCHES);
 
 bool getSolveNextColumnWhileConditional(long c_corner, int nPatchesInColumn, long projectionOfCornerToBeam);
+void mSP_findStartIndex(const long *row_list, int row_list_size, long projectionToRow, int &start_index, long &start_value);
+void mSP_findLRBounds(int i, const long *row_list, int row_list_size, int &left_bound, int &right_bound);

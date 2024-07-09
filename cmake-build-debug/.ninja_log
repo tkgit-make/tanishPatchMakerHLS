@@ -1,0 +1,4 @@
+# ninja log v5
+0	340	1720548212188833595	CMakeFiles/tanishPatchMakerHLS.dir/patchMaker.cpp.o	b4946cd1764ae560
+0	651	1720548212499119077	CMakeFiles/tanishPatchMakerHLS.dir/tanishTestBench/test_bench.cpp.o	dfaa2b850fefb50
+651	699	1720548212550929213	tanishPatchMakerHLS	367b2465d982148

@@ -1140,38 +1140,13 @@ rowListSet_loop:
 
     long r_max = radii[num_layers - 1];
     long projectionToRow = static_cast<long>((z_top - apexZ0) * ((y - radii[0]) / (float) (r_max - radii[0])) + apexZ0);
+    int start_index;
+    long start_value;
+    mSP_findStartIndex(row_list, row_list_size, projectionToRow, start_index, start_value);
 
-    int start_index = 0;
-    long start_value = LONG_MAX;
-start_value_loop:
-    for (index_type j = 0; j < row_list_size; j++)
-    {
-        if (fabs(row_list[j] - projectionToRow) < fabs(start_value))
-        {
-            start_index = j;
-            start_value = row_list[j] - projectionToRow;
-        }
-    }
-
-    int left_bound = 0;
-    long lbVal = LONG_MAX;
-    int right_bound = 0;
-    long rbVal = LONG_MAX;
-LRdiscovery_loop:
-    for (index_type j = 0; j < row_list_size; j++)
-    {
-        if (static_cast<long>(fabs((row_list[j] + trapezoid_edges[i]))) < lbVal)
-        {
-            left_bound = j;
-            lbVal = static_cast<long>(fabs((row_list[j] + trapezoid_edges[i])));
-        }
-
-        if (static_cast<long>(fabs((row_list[j] - trapezoid_edges[i]))) < rbVal)
-        {
-            right_bound = j;
-            rbVal = static_cast<long>(fabs((row_list[j] - trapezoid_edges[i])));
-        }
-    }
+    int left_bound;
+    int right_bound;
+    mSP_findLRBounds(i, row_list, row_list_size, left_bound, right_bound);
 
     if (float_middleLayers_ppl && i != 0 && i != num_layers - 1)
     {
@@ -1259,6 +1234,43 @@ LRdiscovery_loop:
     }
     // passing in address to an uninitialized WedgeSuperPoint structure in the init_patch array with the points from temp to initialize it.
     initWedgeSuperPoint(init_patch[init_patch_size++], temp, temp_size);
+}
+
+void mSP_findLRBounds(int i, const long *row_list, int row_list_size, int &left_bound, int &right_bound) {
+    left_bound= 0;
+    right_bound= 0;
+    long lbVal = LONG_MAX;
+    long rbVal = LONG_MAX;
+    LRdiscovery_loop:
+    for (index_type j = 0; j < row_list_size; j++)
+    {
+        if (static_cast<long>(fabs((row_list[j] + trapezoid_edges[i]))) < lbVal)
+        {
+            left_bound = j;
+            lbVal = static_cast<long>(fabs((row_list[j] + trapezoid_edges[i])));
+        }
+
+        if (static_cast<long>(fabs((row_list[j] - trapezoid_edges[i]))) < rbVal)
+        {
+            right_bound = j;
+            rbVal = static_cast<long>(fabs((row_list[j] - trapezoid_edges[i])));
+        }
+    }
+}
+
+void
+mSP_findStartIndex(const long *row_list, int row_list_size, long projectionToRow, int &start_index, long &start_value) {
+    start_index= 0;
+    start_value= LONG_MAX;
+    start_value_loop:
+    for (index_type j = 0; j < row_list_size; j++)
+    {
+        if (fabs(row_list[j] - projectionToRow) < fabs(start_value))
+        {
+            start_index = j;
+            start_value = row_list[j] - projectionToRow;
+        }
+    }
 }
 
 
