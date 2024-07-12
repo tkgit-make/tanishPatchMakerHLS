@@ -64,7 +64,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1651076195</coreId>
+              <coreId>1764713065</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -97,7 +97,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1752457581</coreId>
+              <coreId>1764714612</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -163,7 +163,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1818455657</coreId>
+              <coreId>1752457581</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -200,7 +200,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>795111282</coreId>
+              <coreId>841966703</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -240,7 +240,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>808595300</coreId>
+              <coreId>792359464</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -280,7 +280,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1919954793</coreId>
+              <coreId>1600742514</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -320,7 +320,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1919954793</coreId>
+              <coreId>1869770799</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -360,7 +360,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1915695662</coreId>
+              <coreId>795111282</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -400,7 +400,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>792359464</coreId>
+              <coreId>1915695662</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -423,10 +423,10 @@
             <Obj>
               <type>0</type>
               <id>14</id>
-              <name>icmp_ln118</name>
+              <name>icmp_ln120</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>118</lineNumber>
+              <lineNumber>120</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -442,18 +442,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>118</second>
+                      <second>120</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln118_fu_157_p2</rtlName>
+              <rtlName>icmp_ln120_fu_157_p2</rtlName>
               <control/>
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1915695662</coreId>
+              <coreId>1768107834</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -477,10 +477,10 @@
             <Obj>
               <type>0</type>
               <id>15</id>
-              <name>add_ln124</name>
+              <name>add_ln126</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>124</lineNumber>
+              <lineNumber>126</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -496,13 +496,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>124</second>
+                      <second>126</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln124_fu_163_p2</rtlName>
+              <rtlName>add_ln126_fu_163_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -531,10 +531,10 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>zext_ln124</name>
+              <name>zext_ln126</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>124</lineNumber>
+              <lineNumber>126</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -550,13 +550,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>124</second>
+                      <second>126</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln124_fu_169_p1</rtlName>
+              <rtlName>zext_ln126_fu_169_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -587,7 +587,7 @@
               <name>radii_addr</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>124</lineNumber>
+              <lineNumber>126</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -603,7 +603,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>124</second>
+                      <second>126</second>
                     </item>
                   </second>
                 </item>
@@ -614,7 +614,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1915695662</coreId>
+              <coreId>1882155363</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -642,7 +642,7 @@
               <name>radius_i</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>124</lineNumber>
+              <lineNumber>126</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -658,7 +658,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>124</second>
+                      <second>126</second>
                     </item>
                   </second>
                 </item>
@@ -695,7 +695,7 @@
               <name>radius_i_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>118</lineNumber>
+              <lineNumber>120</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -711,7 +711,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>118</second>
+                      <second>120</second>
                     </item>
                   </second>
                 </item>
@@ -747,10 +747,10 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>zext_ln114</name>
+              <name>zext_ln116</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>114</lineNumber>
+              <lineNumber>116</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -766,18 +766,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>114</second>
+                      <second>116</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln114_fu_215_p1</rtlName>
+              <rtlName>zext_ln116_fu_215_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1768107834</coreId>
+              <coreId>1919954793</coreId>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -800,10 +800,10 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>icmp_ln126</name>
+              <name>icmp_ln128</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>126</lineNumber>
+              <lineNumber>128</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -819,18 +819,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>126</second>
+                      <second>128</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln126_fu_174_p2</rtlName>
+              <rtlName>icmp_ln128_fu_174_p2</rtlName>
               <control/>
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>808595300</coreId>
+              <coreId>795111282</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -854,10 +854,10 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>add_ln132</name>
+              <name>add_ln134</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>132</lineNumber>
+              <lineNumber>134</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -873,13 +873,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>132</second>
+                      <second>134</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln132_fu_180_p2</rtlName>
+              <rtlName>add_ln134_fu_180_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -908,10 +908,10 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>zext_ln132</name>
+              <name>zext_ln134</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>132</lineNumber>
+              <lineNumber>134</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -927,18 +927,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>132</second>
+                      <second>134</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln132_fu_186_p1</rtlName>
+              <rtlName>zext_ln134_fu_186_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1685204786</coreId>
+              <coreId>1768107834</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -964,7 +964,7 @@
               <name>radii_addr_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>132</lineNumber>
+              <lineNumber>134</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -980,7 +980,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>132</second>
+                      <second>134</second>
                     </item>
                   </second>
                 </item>
@@ -991,7 +991,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>808595300</coreId>
+              <coreId>29</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -1019,7 +1019,7 @@
               <name>radius_j</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>132</lineNumber>
+              <lineNumber>134</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1035,7 +1035,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>132</second>
+                      <second>134</second>
                     </item>
                   </second>
                 </item>
@@ -1072,7 +1072,7 @@
               <name>radius_j_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>126</lineNumber>
+              <lineNumber>128</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1088,7 +1088,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>126</second>
+                      <second>128</second>
                     </item>
                   </second>
                 </item>
@@ -1124,10 +1124,10 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>zext_ln115</name>
+              <name>zext_ln117</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>115</lineNumber>
+              <lineNumber>117</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1143,13 +1143,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>115</second>
+                      <second>117</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln115_fu_226_p1</rtlName>
+              <rtlName>zext_ln117_fu_226_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1177,10 +1177,10 @@
             <Obj>
               <type>0</type>
               <id>28</id>
-              <name>icmp_ln134</name>
+              <name>icmp_ln136</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>134</lineNumber>
+              <lineNumber>136</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1196,18 +1196,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>134</second>
+                      <second>136</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln134_fu_191_p2</rtlName>
+              <rtlName>icmp_ln136_fu_191_p2</rtlName>
               <control/>
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1882155363</coreId>
+              <coreId>808595300</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1231,10 +1231,10 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>add_ln140</name>
+              <name>add_ln142</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>142</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1250,13 +1250,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>140</second>
+                      <second>142</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln140_fu_197_p2</rtlName>
+              <rtlName>add_ln142_fu_197_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1285,10 +1285,10 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>zext_ln140</name>
+              <name>zext_ln142</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>142</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1304,18 +1304,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>140</second>
+                      <second>142</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln140_fu_203_p1</rtlName>
+              <rtlName>zext_ln142_fu_203_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1600742514</coreId>
+              <coreId>4247437260</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1341,7 +1341,7 @@
               <name>radii_addr_2</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>142</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1357,7 +1357,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>140</second>
+                      <second>142</second>
                     </item>
                   </second>
                 </item>
@@ -1368,7 +1368,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1919954793</coreId>
+              <coreId>4164073700</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -1396,7 +1396,7 @@
               <name>radius_k</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>142</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1412,7 +1412,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>140</second>
+                      <second>142</second>
                     </item>
                   </second>
                 </item>
@@ -1449,7 +1449,7 @@
               <name>radius_k_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>134</lineNumber>
+              <lineNumber>136</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1465,7 +1465,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>134</second>
+                      <second>136</second>
                     </item>
                   </second>
                 </item>
@@ -1501,10 +1501,10 @@
             <Obj>
               <type>0</type>
               <id>34</id>
-              <name>zext_ln116</name>
+              <name>zext_ln118</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>116</lineNumber>
+              <lineNumber>118</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1520,18 +1520,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>116</second>
+                      <second>118</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln116_fu_237_p1</rtlName>
+              <rtlName>zext_ln118_fu_237_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1768107834</coreId>
+              <coreId>4196581108</coreId>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -1554,10 +1554,10 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>sub_ln143</name>
+              <name>sub_ln145</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>143</lineNumber>
+              <lineNumber>145</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1573,13 +1573,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>143</second>
+                      <second>145</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln143_fu_241_p2</rtlName>
+              <rtlName>sub_ln145_fu_241_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -1608,10 +1608,10 @@
             <Obj>
               <type>0</type>
               <id>36</id>
-              <name>sext_ln143</name>
+              <name>sext_ln145</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>143</lineNumber>
+              <lineNumber>145</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1627,7 +1627,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>143</second>
+                      <second>145</second>
                     </item>
                   </second>
                 </item>
@@ -1638,7 +1638,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1768107834</coreId>
+              <coreId>4236098725</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1664,7 +1664,7 @@
               <name>conv</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>143</lineNumber>
+              <lineNumber>145</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1680,18 +1680,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>143</second>
+                      <second>145</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sitofp_32s_32_2_no_dsp_1_U43</rtlName>
+              <rtlName>sitofp_32s_32_2_no_dsp_1_U50</rtlName>
               <control/>
               <opType>sitofp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>795111282</coreId>
+              <coreId>4294556961</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1714,10 +1714,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>sub_ln143_1</name>
+              <name>sub_ln145_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>143</lineNumber>
+              <lineNumber>145</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1733,13 +1733,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>143</second>
+                      <second>145</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln143_1_fu_252_p2</rtlName>
+              <rtlName>sub_ln145_1_fu_252_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -1768,10 +1768,10 @@
             <Obj>
               <type>0</type>
               <id>39</id>
-              <name>sext_ln143_1</name>
+              <name>sext_ln145_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>143</lineNumber>
+              <lineNumber>145</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1787,7 +1787,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>143</second>
+                      <second>145</second>
                     </item>
                   </second>
                 </item>
@@ -1798,7 +1798,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1919954793</coreId>
+              <coreId>4205231736</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1824,7 +1824,7 @@
               <name>conv1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>143</lineNumber>
+              <lineNumber>145</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1840,18 +1840,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>143</second>
+                      <second>145</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sitofp_32s_32_2_no_dsp_1_U44</rtlName>
+              <rtlName>sitofp_32s_32_2_no_dsp_1_U51</rtlName>
               <control/>
               <opType>sitofp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1882155363</coreId>
+              <coreId>4199530135</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1877,7 +1877,7 @@
               <name>radii_leverArmF</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>143</lineNumber>
+              <lineNumber>145</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1893,13 +1893,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>143</second>
+                      <second>145</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>radii_leverArmF</originalName>
-              <rtlName>fdiv_32ns_32ns_32_6_no_dsp_1_U40</rtlName>
+              <rtlName>fdiv_32ns_32ns_32_6_no_dsp_1_U47</rtlName>
               <control>auto</control>
               <opType>fdiv</opType>
               <implIndex>fabric</implIndex>
@@ -1931,7 +1931,7 @@
               <name>conv2</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>145</lineNumber>
+              <lineNumber>147</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1947,18 +1947,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>145</second>
+                      <second>147</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sitofp_64ns_32_2_no_dsp_1_U41</rtlName>
+              <rtlName>sitofp_64ns_32_2_no_dsp_1_U48</rtlName>
               <control/>
               <opType>sitofp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1882155363</coreId>
+              <coreId>4233936006</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -1984,7 +1984,7 @@
               <name>dc</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>145</lineNumber>
+              <lineNumber>147</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -2000,13 +2000,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>145</second>
+                      <second>147</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>x</originalName>
-              <rtlName>fmul_32ns_32ns_32_2_max_dsp_1_U38</rtlName>
+              <rtlName>fmul_32ns_32ns_32_2_max_dsp_1_U45</rtlName>
               <control>auto</control>
               <opType>fmul</opType>
               <implIndex>maxdsp</implIndex>
@@ -2065,7 +2065,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>29</coreId>
+              <coreId>4288593216</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2118,7 +2118,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>841966703</coreId>
+              <coreId>4259888946</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2173,7 +2173,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>792359464</coreId>
+              <coreId>4270277208</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -2229,7 +2229,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>841966703</coreId>
+              <coreId>4217682366</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -2282,7 +2282,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1869770799</coreId>
+              <coreId>4276109881</coreId>
             </Obj>
             <bitwidth>25</bitwidth>
           </Value>
@@ -2338,7 +2338,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1768107834</coreId>
+              <coreId>4202806873</coreId>
             </Obj>
             <bitwidth>111</bitwidth>
           </Value>
@@ -2391,7 +2391,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1869770799</coreId>
+              <coreId>4209032762</coreId>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -2498,7 +2498,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>840969278</coreId>
+              <coreId>4221155649</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2607,7 +2607,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>539437405</coreId>
+              <coreId>4162697413</coreId>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -2715,7 +2715,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1177511268</coreId>
+              <coreId>4253663057</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2768,7 +2768,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1747935849</coreId>
+              <coreId>4290755943</coreId>
             </Obj>
             <bitwidth>111</bitwidth>
           </Value>
@@ -2929,7 +2929,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1014587762</coreId>
+              <coreId>4176525354</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2984,7 +2984,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1629890592</coreId>
+              <coreId>4225480963</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -3037,7 +3037,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1414750021</coreId>
+              <coreId>4282105315</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -3230,7 +3230,7 @@
               <name>conv3</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>145</lineNumber>
+              <lineNumber>147</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -3246,18 +3246,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>145</second>
+                      <second>147</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sitofp_64ns_32_2_no_dsp_1_U42</rtlName>
+              <rtlName>sitofp_64ns_32_2_no_dsp_1_U49</rtlName>
               <control/>
               <opType>sitofp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1836280936</coreId>
+              <coreId>4241538058</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -3283,7 +3283,7 @@
               <name>dc_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>145</lineNumber>
+              <lineNumber>147</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -3299,13 +3299,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>145</second>
+                      <second>147</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>x</originalName>
-              <rtlName>fmul_32ns_32ns_32_2_max_dsp_1_U39</rtlName>
+              <rtlName>fmul_32ns_32ns_32_2_max_dsp_1_U46</rtlName>
               <control>auto</control>
               <opType>fmul</opType>
               <implIndex>maxdsp</implIndex>
@@ -3364,7 +3364,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1702258035</coreId>
+              <coreId>4214929916</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -3417,7 +3417,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1663988325</coreId>
+              <coreId>4257988371</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3472,7 +3472,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>809121078</coreId>
+              <coreId>4172724328</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -3528,7 +3528,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1699560457</coreId>
+              <coreId>4284857789</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -3581,7 +3581,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1881145423</coreId>
+              <coreId>4274078234</coreId>
             </Obj>
             <bitwidth>25</bitwidth>
           </Value>
@@ -3637,7 +3637,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1597059377</coreId>
+              <coreId>4252352429</coreId>
             </Obj>
             <bitwidth>111</bitwidth>
           </Value>
@@ -3690,7 +3690,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1768318322</coreId>
+              <coreId>4170299465</coreId>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -3797,7 +3797,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1936028192</coreId>
+              <coreId>4250189710</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3906,7 +3906,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1162889552</coreId>
+              <coreId>4266476182</coreId>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -4014,7 +4014,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>539784302</coreId>
+              <coreId>4243700777</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -4067,7 +4067,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1663988325</coreId>
+              <coreId>4231249131</coreId>
             </Obj>
             <bitwidth>111</bitwidth>
           </Value>
@@ -4228,7 +4228,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1769234797</coreId>
+              <coreId>4282695070</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4283,7 +4283,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1852383271</coreId>
+              <coreId>4261626580</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4336,7 +4336,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1868984933</coreId>
+              <coreId>3788063506</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4526,10 +4526,10 @@
             <Obj>
               <type>0</type>
               <id>90</id>
-              <name>add_ln145</name>
+              <name>add_ln147</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>145</lineNumber>
+              <lineNumber>147</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -4545,13 +4545,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>145</second>
+                      <second>147</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln145_fu_541_p2</rtlName>
+              <rtlName>add_ln147_fu_541_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>tadder</implIndex>
@@ -4580,10 +4580,10 @@
             <Obj>
               <type>0</type>
               <id>91</id>
-              <name>sub_ln145</name>
+              <name>sub_ln147</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>145</lineNumber>
+              <lineNumber>147</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -4599,7 +4599,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>145</second>
+                      <second>147</second>
                     </item>
                   </second>
                 </item>
@@ -4634,10 +4634,10 @@
             <Obj>
               <type>0</type>
               <id>92</id>
-              <name>_ln145</name>
+              <name>_ln147</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>145</lineNumber>
+              <lineNumber>147</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -4653,7 +4653,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>145</second>
+                      <second>147</second>
                     </item>
                   </second>
                 </item>
@@ -4664,7 +4664,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1936018748</coreId>
+              <coreId>4190813164</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -4707,7 +4707,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1752457581</coreId>
+              <coreId>1818455657</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -4735,7 +4735,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1818455657</coreId>
+              <coreId>1651076195</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -4763,7 +4763,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1752457581</coreId>
+              <coreId>1764714612</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4819,7 +4819,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1764713065</coreId>
+              <coreId>1818455657</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -4847,7 +4847,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1764714612</coreId>
+              <coreId>3691669136</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -4875,7 +4875,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1047295286</coreId>
+              <coreId>1752457581</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -4903,7 +4903,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1869438831</coreId>
+              <coreId>1764714612</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -4931,7 +4931,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1010054455</coreId>
+              <coreId>3691911200</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4959,7 +4959,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1835823213</coreId>
+              <coreId>1818455657</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4987,7 +4987,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1750889582</coreId>
+              <coreId>3690192720</coreId>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -5015,7 +5015,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>867179305</coreId>
+              <coreId>1853187616</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5043,7 +5043,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1920098618</coreId>
+              <coreId>1834971487</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -5071,7 +5071,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>740714350</coreId>
+              <coreId>1920151350</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5099,7 +5099,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1768843579</coreId>
+              <coreId>1768316786</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5130,7 +5130,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>825242426</coreId>
+            <coreId>980447331</coreId>
           </Obj>
           <node_objs>
             <count>85</count>
@@ -7064,14 +7064,14 @@
         <count>7</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>fdiv_32ns_32ns_32_6_no_dsp_1_U40 (fdiv_32ns_32ns_32_6_no_dsp_1)</first>
+          <first>fdiv_32ns_32ns_32_6_no_dsp_1_U47 (fdiv_32ns_32ns_32_6_no_dsp_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_2_max_dsp_1_U38 (fmul_32ns_32ns_32_2_max_dsp_1)</first>
+          <first>fmul_32ns_32ns_32_2_max_dsp_1_U45 (fmul_32ns_32ns_32_2_max_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7090,7 +7090,7 @@
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_2_max_dsp_1_U39 (fmul_32ns_32ns_32_2_max_dsp_1)</first>
+          <first>fmul_32ns_32ns_32_2_max_dsp_1_U46 (fmul_32ns_32ns_32_2_max_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7109,28 +7109,28 @@
           </second>
         </item>
         <item>
-          <first>sitofp_32s_32_2_no_dsp_1_U43 (sitofp_32s_32_2_no_dsp_1)</first>
+          <first>sitofp_32s_32_2_no_dsp_1_U50 (sitofp_32s_32_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sitofp_32s_32_2_no_dsp_1_U44 (sitofp_32s_32_2_no_dsp_1)</first>
+          <first>sitofp_32s_32_2_no_dsp_1_U51 (sitofp_32s_32_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sitofp_64ns_32_2_no_dsp_1_U41 (sitofp_64ns_32_2_no_dsp_1)</first>
+          <first>sitofp_64ns_32_2_no_dsp_1_U48 (sitofp_64ns_32_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sitofp_64ns_32_2_no_dsp_1_U42 (sitofp_64ns_32_2_no_dsp_1)</first>
+          <first>sitofp_64ns_32_2_no_dsp_1_U49 (sitofp_64ns_32_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -7141,7 +7141,7 @@
         <count>30</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln124_fu_163_p2 ( + ) </first>
+          <first>add_ln126_fu_163_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7164,7 +7164,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln132_fu_180_p2 ( + ) </first>
+          <first>add_ln134_fu_180_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7187,7 +7187,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln140_fu_197_p2 ( + ) </first>
+          <first>add_ln142_fu_197_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7210,7 +7210,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln145_fu_541_p2 ( + ) </first>
+          <first>add_ln147_fu_541_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7325,7 +7325,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln118_fu_157_p2 ( icmp ) </first>
+          <first>icmp_ln120_fu_157_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7348,7 +7348,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln126_fu_174_p2 ( icmp ) </first>
+          <first>icmp_ln128_fu_174_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7371,7 +7371,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln134_fu_191_p2 ( icmp ) </first>
+          <first>icmp_ln136_fu_191_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7713,7 +7713,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln143_1_fu_252_p2 ( - ) </first>
+          <first>sub_ln145_1_fu_252_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7736,7 +7736,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln143_fu_241_p2 ( - ) </first>
+          <first>sub_ln145_fu_241_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -8260,7 +8260,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln118_reg_563</first>
+          <first>icmp_ln120_reg_563</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8279,7 +8279,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln126_reg_573</first>
+          <first>icmp_ln128_reg_573</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8298,7 +8298,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln134_reg_583</first>
+          <first>icmp_ln136_reg_583</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8359,49 +8359,49 @@
         <count>7</count>
         <item_version>0</item_version>
         <item>
-          <first>fdiv_32ns_32ns_32_6_no_dsp_1_U40</first>
+          <first>fdiv_32ns_32ns_32_6_no_dsp_1_U47</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_2_max_dsp_1_U38</first>
+          <first>fmul_32ns_32ns_32_2_max_dsp_1_U45</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_2_max_dsp_1_U39</first>
+          <first>fmul_32ns_32ns_32_2_max_dsp_1_U46</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sitofp_32s_32_2_no_dsp_1_U43</first>
+          <first>sitofp_32s_32_2_no_dsp_1_U50</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sitofp_32s_32_2_no_dsp_1_U44</first>
+          <first>sitofp_32s_32_2_no_dsp_1_U51</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sitofp_64ns_32_2_no_dsp_1_U41</first>
+          <first>sitofp_64ns_32_2_no_dsp_1_U48</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sitofp_64ns_32_2_no_dsp_1_U42</first>
+          <first>sitofp_64ns_32_2_no_dsp_1_U49</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -8412,7 +8412,7 @@
         <count>7</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>fdiv_32ns_32ns_32_6_no_dsp_1_U40 (fdiv_32ns_32ns_32_6_no_dsp_1)</first>
+          <first>fdiv_32ns_32ns_32_6_no_dsp_1_U47 (fdiv_32ns_32ns_32_6_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8420,7 +8420,7 @@
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_2_max_dsp_1_U38 (fmul_32ns_32ns_32_2_max_dsp_1)</first>
+          <first>fmul_32ns_32ns_32_2_max_dsp_1_U45 (fmul_32ns_32ns_32_2_max_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8428,7 +8428,7 @@
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_2_max_dsp_1_U39 (fmul_32ns_32ns_32_2_max_dsp_1)</first>
+          <first>fmul_32ns_32ns_32_2_max_dsp_1_U46 (fmul_32ns_32ns_32_2_max_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8436,7 +8436,7 @@
           </second>
         </item>
         <item>
-          <first>sitofp_32s_32_2_no_dsp_1_U43 (sitofp_32s_32_2_no_dsp_1)</first>
+          <first>sitofp_32s_32_2_no_dsp_1_U50 (sitofp_32s_32_2_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8444,7 +8444,7 @@
           </second>
         </item>
         <item>
-          <first>sitofp_32s_32_2_no_dsp_1_U44 (sitofp_32s_32_2_no_dsp_1)</first>
+          <first>sitofp_32s_32_2_no_dsp_1_U51 (sitofp_32s_32_2_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8452,7 +8452,7 @@
           </second>
         </item>
         <item>
-          <first>sitofp_64ns_32_2_no_dsp_1_U41 (sitofp_64ns_32_2_no_dsp_1)</first>
+          <first>sitofp_64ns_32_2_no_dsp_1_U48 (sitofp_64ns_32_2_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8460,7 +8460,7 @@
           </second>
         </item>
         <item>
-          <first>sitofp_64ns_32_2_no_dsp_1_U42 (sitofp_64ns_32_2_no_dsp_1)</first>
+          <first>sitofp_64ns_32_2_no_dsp_1_U49 (sitofp_64ns_32_2_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8472,7 +8472,7 @@
         <count>29</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln124_fu_163_p2 ( + ) </first>
+          <first>add_ln126_fu_163_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8480,7 +8480,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln132_fu_180_p2 ( + ) </first>
+          <first>add_ln134_fu_180_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8488,7 +8488,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln140_fu_197_p2 ( + ) </first>
+          <first>add_ln142_fu_197_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8496,7 +8496,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln145_fu_541_p2 ( + ) </first>
+          <first>add_ln147_fu_541_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8528,7 +8528,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln118_fu_157_p2 ( icmp ) </first>
+          <first>icmp_ln120_fu_157_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8536,7 +8536,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln126_fu_174_p2 ( icmp ) </first>
+          <first>icmp_ln128_fu_174_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8544,7 +8544,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln134_fu_191_p2 ( icmp ) </first>
+          <first>icmp_ln136_fu_191_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8656,7 +8656,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln143_1_fu_252_p2 ( - ) </first>
+          <first>sub_ln145_1_fu_252_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8664,7 +8664,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln143_fu_241_p2 ( - ) </first>
+          <first>sub_ln145_fu_241_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10031,7 +10031,7 @@
       <count>69</count>
       <item_version>0</item_version>
       <item class_id="53" tracking_level="0" version="0">
-        <first>add_ln124_fu_163</first>
+        <first>add_ln126_fu_163</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10039,7 +10039,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln132_fu_180</first>
+        <first>add_ln134_fu_180</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10047,7 +10047,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln140_fu_197</first>
+        <first>add_ln142_fu_197</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10055,7 +10055,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln145_fu_541</first>
+        <first>add_ln147_fu_541</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10103,7 +10103,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln118_fu_157</first>
+        <first>icmp_ln120_fu_157</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10111,7 +10111,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln126_fu_174</first>
+        <first>icmp_ln128_fu_174</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10119,7 +10119,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln134_fu_191</first>
+        <first>icmp_ln136_fu_191</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10303,7 +10303,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln143_1_fu_258</first>
+        <first>sext_ln145_1_fu_258</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10311,7 +10311,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln143_fu_247</first>
+        <first>sext_ln145_fu_247</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10367,7 +10367,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln143_1_fu_252</first>
+        <first>sub_ln145_1_fu_252</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10375,7 +10375,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln143_fu_241</first>
+        <first>sub_ln145_fu_241</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10383,7 +10383,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln145_fu_546</first>
+        <first>sub_ln147_fu_546</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10487,7 +10487,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln114_fu_215</first>
+        <first>zext_ln116_fu_215</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10495,7 +10495,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln115_fu_226</first>
+        <first>zext_ln117_fu_226</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10503,7 +10503,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln116_fu_237</first>
+        <first>zext_ln118_fu_237</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10511,7 +10511,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln124_fu_169</first>
+        <first>zext_ln126_fu_169</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10519,7 +10519,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln132_fu_186</first>
+        <first>zext_ln134_fu_186</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10527,7 +10527,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln140_fu_203</first>
+        <first>zext_ln142_fu_203</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10942,7 +10942,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln118_reg_563</first>
+        <first>icmp_ln120_reg_563</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10950,7 +10950,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln126_reg_573</first>
+        <first>icmp_ln128_reg_573</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10958,7 +10958,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln134_reg_583</first>
+        <first>icmp_ln136_reg_583</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10998,7 +10998,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln143_1_reg_598</first>
+        <first>sext_ln145_1_reg_598</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11006,7 +11006,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln143_reg_593</first>
+        <first>sext_ln145_reg_593</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

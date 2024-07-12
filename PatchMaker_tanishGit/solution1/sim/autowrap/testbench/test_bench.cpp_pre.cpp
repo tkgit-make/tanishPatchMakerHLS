@@ -68360,6 +68360,8 @@ bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, 
                                          int current_z_top_index, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
 
 bool getSolveNextColumnWhileConditional(long c_corner, int nPatchesInColumn, long projectionOfCornerToBeam);
+void mSP_findStartIndex(long row_list[256], int row_list_size, long projectionToRow, int &start_index, long &start_value);
+void mSP_findLRBounds(int i, long row_list[256], int row_list_size, int &left_bound, int &right_bound);
 # 2 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp" 2
 
 long master_list[6400][512][3];
@@ -68414,14 +68416,16 @@ solve_loop:
             }
         }
     }
+    cout << "Has not failed" << endl;
     makePatches_ShadowQuilt_fromEdges(apexZ0, 1, ppl, leftRight, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
+    cout << "Has not failed after" << endl;
 }
 
 static vector<string> splitString(string str, string splitter = "),(")
 {
     vector<string> result;
     string currentStr = "";
-    for (int i = 0; i < str.size(); i++)
+    for (int i = 0; i < str.size() - splitter.size() + 1; i++)
     {
         bool flag = true;
         for (int j = 0; j < splitter.size(); j++)
@@ -68619,9 +68623,9 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
     myfile = fopen("/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/cppOutput.txt", "w");
 
     if (myfile == 
-# 259 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp" 3 4
+# 261 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp" 3 4
                  __null
-# 259 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 261 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
                      )
     {
         printf("Error opening file");
@@ -68669,6 +68673,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
     }
    }
   }
+#pragma HLS array_partition variable=patches_superpoints type=complete
   long patches_parameters[32][5][5 - 1][6];
 
   for(int a = 0; a < 32; a++)
@@ -68684,7 +68689,9 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
     }
    }
   }
+#pragma HLS array_partition variable=patches_parameters type=complete
 
+#pragma HLS stream variable=patches_superpoints
     int n_patches = 0;
 
     for (int z = 0; z < wedges[1]; z++)
@@ -68694,7 +68701,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 
 
 
-        fprintf(myfile, "wedge %d\n", z);
+
 
         initWedgeCover(n_patches);
 
@@ -68707,46 +68714,33 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         addBoundaryPoint(static_cast<long>(0.0001 * 1000000), GDarray, GDn_points);
 
         solve(apexZ0, ppl, false, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
-# 369 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
-        for (int i = 0; i < n_patches; i++)
-        {
-            fprintf(myfile, "Patch \n");
-            fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][0][0] / (float) 1000000 * 10000));
-            fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][1][0] / (float) 1000000 * 10000));
-            fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][2][0] / (float) 1000000 * 10000));
-            fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][3][0] / (float) 1000000 * 10000));
 
-            for (int j = 0; j < static_cast<int>(patches_parameters[i][4][1][0]); j++)
-            {
-                fprintf(myfile, "Superpoint \n");
-                for (int r = 0; r < static_cast<int>(patches_superpoints[i][j][2][0][0]); r++)
-                {
-                    fprintf(myfile, "%d %.4f %d %.4f\n",
-                            patches_superpoints[i][j][0][r][0],
-                            patches_superpoints[i][j][0][r][1] / (float) (pow(10, 7)),
-                            (int) (radii[patches_superpoints[i][j][0][r][0] - 1] / (float) 1000000),
-                            patches_superpoints[i][j][0][r][2] / (float) 1000000);
-                }
-            }
-        }
-        for (int i = 0; i < n_patches; i++)
-        {
-            fprintf(myfile, "[%ld, %ld]\n",
-                    lround(patches_parameters[i][2][0][0] / (float) 1000000 * 10000),
-                    lround(patches_parameters[i][2][0][1] / (float) 1000000 * 10000));
-            fprintf(myfile, "[%ld, %ld]\n",
-                    lround(patches_parameters[i][2][1][0] / (float) 1000000 * 10000),
-                    lround(patches_parameters[i][2][1][1] / (float) 1000000 * 10000));
-            fprintf(myfile, "[%ld, %ld]\n",
-                    lround(patches_parameters[i][2][2][0] / (float) 1000000 * 10000),
-                    lround(patches_parameters[i][2][2][1] / (float) 1000000 * 10000));
-            fprintf(myfile, "[%ld, %ld]\n",
-                    lround(patches_parameters[i][2][3][0] / (float) 1000000 * 10000),
-                    lround(patches_parameters[i][2][3][1] / (float) 1000000 * 10000));
-            fprintf(myfile, "\n");
-        }
+        printf("Printing First Patch Points \n");
+        for (int i = 0; i < 1; i++)
+  {
+   printf("Patch \n");
+   printf("%ld\n", lround(patches_parameters[i][1][0][0] / (float) 1000000 * 10000));
+   printf("%ld\n", lround(patches_parameters[i][1][1][0] / (float) 1000000 * 10000));
+   printf("%ld\n", lround(patches_parameters[i][1][2][0] / (float) 1000000 * 10000));
+   printf("%ld\n", lround(patches_parameters[i][1][3][0] / (float) 1000000 * 10000));
 
+   printf("%d \n", static_cast<int>(patches_parameters[i][4][1][0]));
 
+   for (int j = 0; j < static_cast<int>(patches_parameters[i][4][1][0]); j++)
+   {
+    printf("Superpoint \n");
+
+    for (int r = 0; r < static_cast<int>(patches_superpoints[i][j][2][0][0]); r++)
+    {
+     printf("%d %.4f %d %.4f\n",
+       patches_superpoints[i][j][0][r][0],
+       patches_superpoints[i][j][0][r][1] / (float) (pow(10, 7)),
+       (int) (radii[patches_superpoints[i][j][0][r][0] - 1] / (float) 1000000),
+       patches_superpoints[i][j][0][r][2] / (float) 1000000);
+    }
+   }
+  }
+# 415 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
     }
 
     fclose(myfile);
@@ -68754,16 +68748,18 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 
 int main () {
 
+
     int ret = 0;
 
 
 
-    int wedgesToTest[] = {0, 1};
+    int wedgesToTest[] = {2176, 2177};
 
     wedge_test(0, 16, wedgesToTest);
 
 
 
+    return 0;
     ret = system("diff --brief  -w C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/cppOutput.txt C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/cppOutputRef.txt");
 
     printf("%d", ret);

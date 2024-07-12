@@ -1,101 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 159
-set name makePatches_ShadowQuilt_fromEdges_mul_mul_5ns_11ns_15_4_1
-set corename simcore_mul
-set op mul
-set stage_num 4
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 5
-set in0_signed 0
-set in1_width 11
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 15
-set exp i0*i1
-set arg_lists {i0 {5 0 +} i1 {11 0 +} p {15 0 +} acc {0} }
-set TrueReset 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mul
-set corename DSP48
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 163
+set ID 618
 set hasByteEnable 0
 set MemName makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_temp
 set CoreName ap_simcore_mem
@@ -180,6 +86,178 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 }
 
 
+# Memory (RAM/ROM)  definition:
+set ID 619
+set hasByteEnable 0
+set MemName makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_NPpatches_parameters_229
+set CoreName ap_simcore_mem
+set PortList { 2 0 }
+set DataWd 64
+set AddrRange 24
+set AddrWd 5
+set impl_style auto
+set TrueReset 0
+set IsROM 0
+set ROMData { }
+set HasInitializer 1
+set Initializer $ROMData
+set NumOfStage 2
+set MaxLatency -1
+set DelayBudget 0.714
+set ClkPeriod 10
+set RegisteredInput 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+} else {
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+  ::AP::rtl_comp_handler $MemName
+}
+
+
+set CoreName RAM
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
+  }
+}
+
+
+# Memory (RAM/ROM)  definition:
+set ID 620
+set hasByteEnable 0
+set MemName makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_NPpatches_parameters_330
+set CoreName ap_simcore_mem
+set PortList { 2 0 }
+set DataWd 1
+set AddrRange 24
+set AddrWd 5
+set impl_style auto
+set TrueReset 0
+set IsROM 0
+set ROMData { }
+set HasInitializer 1
+set Initializer $ROMData
+set NumOfStage 2
+set MaxLatency -1
+set DelayBudget 0.639
+set ClkPeriod 10
+set RegisteredInput 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+} else {
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+  ::AP::rtl_comp_handler $MemName
+}
+
+
+set CoreName RAM
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
+  }
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -191,7 +269,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 165 \
+    id 622 \
     name GDarray \
     reset_level 1 \
     sync_rst true \
@@ -210,7 +288,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 166 \
+    id 623 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -229,17 +307,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 167 \
-    name patches_superpoints \
+    id 624 \
+    name patches_superpoints_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename patches_superpoints \
+    corename patches_superpoints_0 \
     op interface \
-    ports { patches_superpoints_address0 { O 15 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 64 vector } patches_superpoints_q0 { I 64 vector } patches_superpoints_address1 { O 15 vector } patches_superpoints_ce1 { O 1 bit } patches_superpoints_q1 { I 64 vector } } \
+    ports { patches_superpoints_0_address0 { O 10 vector } patches_superpoints_0_ce0 { O 1 bit } patches_superpoints_0_we0 { O 1 bit } patches_superpoints_0_d0 { O 64 vector } patches_superpoints_0_q0 { I 64 vector } patches_superpoints_0_address1 { O 10 vector } patches_superpoints_0_ce1 { O 1 bit } patches_superpoints_0_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_0'"
 }
 }
 
@@ -248,17 +326,682 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 168 \
-    name patches_parameters \
+    id 625 \
+    name patches_superpoints_1 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename patches_parameters \
+    corename patches_superpoints_1 \
     op interface \
-    ports { patches_parameters_address0 { O 12 vector } patches_parameters_ce0 { O 1 bit } patches_parameters_we0 { O 1 bit } patches_parameters_d0 { O 64 vector } patches_parameters_q0 { I 64 vector } patches_parameters_address1 { O 12 vector } patches_parameters_ce1 { O 1 bit } patches_parameters_we1 { O 1 bit } patches_parameters_d1 { O 64 vector } patches_parameters_q1 { I 64 vector } } \
+    ports { patches_superpoints_1_address0 { O 10 vector } patches_superpoints_1_ce0 { O 1 bit } patches_superpoints_1_we0 { O 1 bit } patches_superpoints_1_d0 { O 64 vector } patches_superpoints_1_q0 { I 64 vector } patches_superpoints_1_address1 { O 10 vector } patches_superpoints_1_ce1 { O 1 bit } patches_superpoints_1_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 626 \
+    name patches_superpoints_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_2 \
+    op interface \
+    ports { patches_superpoints_2_address0 { O 10 vector } patches_superpoints_2_ce0 { O 1 bit } patches_superpoints_2_we0 { O 1 bit } patches_superpoints_2_d0 { O 64 vector } patches_superpoints_2_q0 { I 64 vector } patches_superpoints_2_address1 { O 10 vector } patches_superpoints_2_ce1 { O 1 bit } patches_superpoints_2_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 627 \
+    name patches_superpoints_3 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_3 \
+    op interface \
+    ports { patches_superpoints_3_address0 { O 10 vector } patches_superpoints_3_ce0 { O 1 bit } patches_superpoints_3_we0 { O 1 bit } patches_superpoints_3_d0 { O 64 vector } patches_superpoints_3_q0 { I 64 vector } patches_superpoints_3_address1 { O 10 vector } patches_superpoints_3_ce1 { O 1 bit } patches_superpoints_3_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_3'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 628 \
+    name patches_superpoints_4 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_4 \
+    op interface \
+    ports { patches_superpoints_4_address0 { O 10 vector } patches_superpoints_4_ce0 { O 1 bit } patches_superpoints_4_we0 { O 1 bit } patches_superpoints_4_d0 { O 64 vector } patches_superpoints_4_q0 { I 64 vector } patches_superpoints_4_address1 { O 10 vector } patches_superpoints_4_ce1 { O 1 bit } patches_superpoints_4_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_4'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 629 \
+    name patches_superpoints_5 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_5 \
+    op interface \
+    ports { patches_superpoints_5_address0 { O 10 vector } patches_superpoints_5_ce0 { O 1 bit } patches_superpoints_5_we0 { O 1 bit } patches_superpoints_5_d0 { O 64 vector } patches_superpoints_5_q0 { I 64 vector } patches_superpoints_5_address1 { O 10 vector } patches_superpoints_5_ce1 { O 1 bit } patches_superpoints_5_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_5'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 630 \
+    name patches_superpoints_6 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_6 \
+    op interface \
+    ports { patches_superpoints_6_address0 { O 10 vector } patches_superpoints_6_ce0 { O 1 bit } patches_superpoints_6_we0 { O 1 bit } patches_superpoints_6_d0 { O 64 vector } patches_superpoints_6_q0 { I 64 vector } patches_superpoints_6_address1 { O 10 vector } patches_superpoints_6_ce1 { O 1 bit } patches_superpoints_6_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_6'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 631 \
+    name patches_superpoints_7 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_7 \
+    op interface \
+    ports { patches_superpoints_7_address0 { O 10 vector } patches_superpoints_7_ce0 { O 1 bit } patches_superpoints_7_we0 { O 1 bit } patches_superpoints_7_d0 { O 64 vector } patches_superpoints_7_q0 { I 64 vector } patches_superpoints_7_address1 { O 10 vector } patches_superpoints_7_ce1 { O 1 bit } patches_superpoints_7_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_7'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 632 \
+    name patches_superpoints_8 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_8 \
+    op interface \
+    ports { patches_superpoints_8_address0 { O 10 vector } patches_superpoints_8_ce0 { O 1 bit } patches_superpoints_8_we0 { O 1 bit } patches_superpoints_8_d0 { O 64 vector } patches_superpoints_8_q0 { I 64 vector } patches_superpoints_8_address1 { O 10 vector } patches_superpoints_8_ce1 { O 1 bit } patches_superpoints_8_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_8'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 633 \
+    name patches_superpoints_9 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_9 \
+    op interface \
+    ports { patches_superpoints_9_address0 { O 10 vector } patches_superpoints_9_ce0 { O 1 bit } patches_superpoints_9_we0 { O 1 bit } patches_superpoints_9_d0 { O 64 vector } patches_superpoints_9_q0 { I 64 vector } patches_superpoints_9_address1 { O 10 vector } patches_superpoints_9_ce1 { O 1 bit } patches_superpoints_9_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_9'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 634 \
+    name patches_superpoints_10 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_10 \
+    op interface \
+    ports { patches_superpoints_10_address0 { O 10 vector } patches_superpoints_10_ce0 { O 1 bit } patches_superpoints_10_we0 { O 1 bit } patches_superpoints_10_d0 { O 64 vector } patches_superpoints_10_q0 { I 64 vector } patches_superpoints_10_address1 { O 10 vector } patches_superpoints_10_ce1 { O 1 bit } patches_superpoints_10_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_10'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 635 \
+    name patches_superpoints_11 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_11 \
+    op interface \
+    ports { patches_superpoints_11_address0 { O 10 vector } patches_superpoints_11_ce0 { O 1 bit } patches_superpoints_11_we0 { O 1 bit } patches_superpoints_11_d0 { O 64 vector } patches_superpoints_11_q0 { I 64 vector } patches_superpoints_11_address1 { O 10 vector } patches_superpoints_11_ce1 { O 1 bit } patches_superpoints_11_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_11'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 636 \
+    name patches_superpoints_12 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_12 \
+    op interface \
+    ports { patches_superpoints_12_address0 { O 10 vector } patches_superpoints_12_ce0 { O 1 bit } patches_superpoints_12_we0 { O 1 bit } patches_superpoints_12_d0 { O 64 vector } patches_superpoints_12_q0 { I 64 vector } patches_superpoints_12_address1 { O 10 vector } patches_superpoints_12_ce1 { O 1 bit } patches_superpoints_12_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_12'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 637 \
+    name patches_superpoints_13 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_13 \
+    op interface \
+    ports { patches_superpoints_13_address0 { O 10 vector } patches_superpoints_13_ce0 { O 1 bit } patches_superpoints_13_we0 { O 1 bit } patches_superpoints_13_d0 { O 64 vector } patches_superpoints_13_q0 { I 64 vector } patches_superpoints_13_address1 { O 10 vector } patches_superpoints_13_ce1 { O 1 bit } patches_superpoints_13_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_13'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 638 \
+    name patches_superpoints_14 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_14 \
+    op interface \
+    ports { patches_superpoints_14_address0 { O 10 vector } patches_superpoints_14_ce0 { O 1 bit } patches_superpoints_14_we0 { O 1 bit } patches_superpoints_14_d0 { O 64 vector } patches_superpoints_14_q0 { I 64 vector } patches_superpoints_14_address1 { O 10 vector } patches_superpoints_14_ce1 { O 1 bit } patches_superpoints_14_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_14'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 639 \
+    name patches_superpoints_15 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_15 \
+    op interface \
+    ports { patches_superpoints_15_address0 { O 10 vector } patches_superpoints_15_ce0 { O 1 bit } patches_superpoints_15_we0 { O 1 bit } patches_superpoints_15_d0 { O 64 vector } patches_superpoints_15_q0 { I 64 vector } patches_superpoints_15_address1 { O 10 vector } patches_superpoints_15_ce1 { O 1 bit } patches_superpoints_15_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_15'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 640 \
+    name patches_superpoints_16 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_16 \
+    op interface \
+    ports { patches_superpoints_16_address0 { O 10 vector } patches_superpoints_16_ce0 { O 1 bit } patches_superpoints_16_we0 { O 1 bit } patches_superpoints_16_d0 { O 64 vector } patches_superpoints_16_q0 { I 64 vector } patches_superpoints_16_address1 { O 10 vector } patches_superpoints_16_ce1 { O 1 bit } patches_superpoints_16_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_16'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 641 \
+    name patches_superpoints_17 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_17 \
+    op interface \
+    ports { patches_superpoints_17_address0 { O 10 vector } patches_superpoints_17_ce0 { O 1 bit } patches_superpoints_17_we0 { O 1 bit } patches_superpoints_17_d0 { O 64 vector } patches_superpoints_17_q0 { I 64 vector } patches_superpoints_17_address1 { O 10 vector } patches_superpoints_17_ce1 { O 1 bit } patches_superpoints_17_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_17'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 642 \
+    name patches_superpoints_18 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_18 \
+    op interface \
+    ports { patches_superpoints_18_address0 { O 10 vector } patches_superpoints_18_ce0 { O 1 bit } patches_superpoints_18_we0 { O 1 bit } patches_superpoints_18_d0 { O 64 vector } patches_superpoints_18_q0 { I 64 vector } patches_superpoints_18_address1 { O 10 vector } patches_superpoints_18_ce1 { O 1 bit } patches_superpoints_18_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_18'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 643 \
+    name patches_superpoints_19 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_19 \
+    op interface \
+    ports { patches_superpoints_19_address0 { O 10 vector } patches_superpoints_19_ce0 { O 1 bit } patches_superpoints_19_we0 { O 1 bit } patches_superpoints_19_d0 { O 64 vector } patches_superpoints_19_q0 { I 64 vector } patches_superpoints_19_address1 { O 10 vector } patches_superpoints_19_ce1 { O 1 bit } patches_superpoints_19_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_19'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 644 \
+    name patches_superpoints_20 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_20 \
+    op interface \
+    ports { patches_superpoints_20_address0 { O 10 vector } patches_superpoints_20_ce0 { O 1 bit } patches_superpoints_20_we0 { O 1 bit } patches_superpoints_20_d0 { O 64 vector } patches_superpoints_20_q0 { I 64 vector } patches_superpoints_20_address1 { O 10 vector } patches_superpoints_20_ce1 { O 1 bit } patches_superpoints_20_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_20'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 645 \
+    name patches_superpoints_21 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_21 \
+    op interface \
+    ports { patches_superpoints_21_address0 { O 10 vector } patches_superpoints_21_ce0 { O 1 bit } patches_superpoints_21_we0 { O 1 bit } patches_superpoints_21_d0 { O 64 vector } patches_superpoints_21_q0 { I 64 vector } patches_superpoints_21_address1 { O 10 vector } patches_superpoints_21_ce1 { O 1 bit } patches_superpoints_21_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_21'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 646 \
+    name patches_superpoints_22 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_22 \
+    op interface \
+    ports { patches_superpoints_22_address0 { O 10 vector } patches_superpoints_22_ce0 { O 1 bit } patches_superpoints_22_we0 { O 1 bit } patches_superpoints_22_d0 { O 64 vector } patches_superpoints_22_q0 { I 64 vector } patches_superpoints_22_address1 { O 10 vector } patches_superpoints_22_ce1 { O 1 bit } patches_superpoints_22_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_22'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 647 \
+    name patches_superpoints_23 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_23 \
+    op interface \
+    ports { patches_superpoints_23_address0 { O 10 vector } patches_superpoints_23_ce0 { O 1 bit } patches_superpoints_23_we0 { O 1 bit } patches_superpoints_23_d0 { O 64 vector } patches_superpoints_23_q0 { I 64 vector } patches_superpoints_23_address1 { O 10 vector } patches_superpoints_23_ce1 { O 1 bit } patches_superpoints_23_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_23'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 648 \
+    name patches_superpoints_24 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_24 \
+    op interface \
+    ports { patches_superpoints_24_address0 { O 10 vector } patches_superpoints_24_ce0 { O 1 bit } patches_superpoints_24_we0 { O 1 bit } patches_superpoints_24_d0 { O 64 vector } patches_superpoints_24_q0 { I 64 vector } patches_superpoints_24_address1 { O 10 vector } patches_superpoints_24_ce1 { O 1 bit } patches_superpoints_24_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_24'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 649 \
+    name patches_superpoints_25 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_25 \
+    op interface \
+    ports { patches_superpoints_25_address0 { O 10 vector } patches_superpoints_25_ce0 { O 1 bit } patches_superpoints_25_we0 { O 1 bit } patches_superpoints_25_d0 { O 64 vector } patches_superpoints_25_q0 { I 64 vector } patches_superpoints_25_address1 { O 10 vector } patches_superpoints_25_ce1 { O 1 bit } patches_superpoints_25_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_25'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 650 \
+    name patches_superpoints_26 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_26 \
+    op interface \
+    ports { patches_superpoints_26_address0 { O 10 vector } patches_superpoints_26_ce0 { O 1 bit } patches_superpoints_26_we0 { O 1 bit } patches_superpoints_26_d0 { O 64 vector } patches_superpoints_26_q0 { I 64 vector } patches_superpoints_26_address1 { O 10 vector } patches_superpoints_26_ce1 { O 1 bit } patches_superpoints_26_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_26'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 651 \
+    name patches_superpoints_27 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_27 \
+    op interface \
+    ports { patches_superpoints_27_address0 { O 10 vector } patches_superpoints_27_ce0 { O 1 bit } patches_superpoints_27_we0 { O 1 bit } patches_superpoints_27_d0 { O 64 vector } patches_superpoints_27_q0 { I 64 vector } patches_superpoints_27_address1 { O 10 vector } patches_superpoints_27_ce1 { O 1 bit } patches_superpoints_27_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_27'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 652 \
+    name patches_superpoints_28 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_28 \
+    op interface \
+    ports { patches_superpoints_28_address0 { O 10 vector } patches_superpoints_28_ce0 { O 1 bit } patches_superpoints_28_we0 { O 1 bit } patches_superpoints_28_d0 { O 64 vector } patches_superpoints_28_q0 { I 64 vector } patches_superpoints_28_address1 { O 10 vector } patches_superpoints_28_ce1 { O 1 bit } patches_superpoints_28_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_28'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 653 \
+    name patches_superpoints_29 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_29 \
+    op interface \
+    ports { patches_superpoints_29_address0 { O 10 vector } patches_superpoints_29_ce0 { O 1 bit } patches_superpoints_29_we0 { O 1 bit } patches_superpoints_29_d0 { O 64 vector } patches_superpoints_29_q0 { I 64 vector } patches_superpoints_29_address1 { O 10 vector } patches_superpoints_29_ce1 { O 1 bit } patches_superpoints_29_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_29'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 654 \
+    name patches_superpoints_30 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_30 \
+    op interface \
+    ports { patches_superpoints_30_address0 { O 10 vector } patches_superpoints_30_ce0 { O 1 bit } patches_superpoints_30_we0 { O 1 bit } patches_superpoints_30_d0 { O 64 vector } patches_superpoints_30_q0 { I 64 vector } patches_superpoints_30_address1 { O 10 vector } patches_superpoints_30_ce1 { O 1 bit } patches_superpoints_30_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_30'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 655 \
+    name patches_superpoints_31 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_superpoints_31 \
+    op interface \
+    ports { patches_superpoints_31_address0 { O 10 vector } patches_superpoints_31_ce0 { O 1 bit } patches_superpoints_31_we0 { O 1 bit } patches_superpoints_31_d0 { O 64 vector } patches_superpoints_31_q0 { I 64 vector } patches_superpoints_31_address1 { O 10 vector } patches_superpoints_31_ce1 { O 1 bit } patches_superpoints_31_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_31'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 656 \
+    name patches_parameters_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_parameters_0 \
+    op interface \
+    ports { patches_parameters_0_address0 { O 10 vector } patches_parameters_0_ce0 { O 1 bit } patches_parameters_0_we0 { O 1 bit } patches_parameters_0_d0 { O 64 vector } patches_parameters_0_address1 { O 10 vector } patches_parameters_0_ce1 { O 1 bit } patches_parameters_0_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 657 \
+    name patches_parameters_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_parameters_1 \
+    op interface \
+    ports { patches_parameters_1_address0 { O 10 vector } patches_parameters_1_ce0 { O 1 bit } patches_parameters_1_we0 { O 1 bit } patches_parameters_1_d0 { O 64 vector } patches_parameters_1_q0 { I 64 vector } patches_parameters_1_address1 { O 10 vector } patches_parameters_1_ce1 { O 1 bit } patches_parameters_1_we1 { O 1 bit } patches_parameters_1_d1 { O 64 vector } patches_parameters_1_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 658 \
+    name patches_parameters_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_parameters_2 \
+    op interface \
+    ports { patches_parameters_2_address0 { O 10 vector } patches_parameters_2_ce0 { O 1 bit } patches_parameters_2_we0 { O 1 bit } patches_parameters_2_d0 { O 64 vector } patches_parameters_2_q0 { I 64 vector } patches_parameters_2_address1 { O 10 vector } patches_parameters_2_ce1 { O 1 bit } patches_parameters_2_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 659 \
+    name patches_parameters_3 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_parameters_3 \
+    op interface \
+    ports { patches_parameters_3_address0 { O 10 vector } patches_parameters_3_ce0 { O 1 bit } patches_parameters_3_we0 { O 1 bit } patches_parameters_3_d0 { O 64 vector } patches_parameters_3_q0 { I 64 vector } patches_parameters_3_address1 { O 10 vector } patches_parameters_3_ce1 { O 1 bit } patches_parameters_3_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_3'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 660 \
+    name patches_parameters_4 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename patches_parameters_4 \
+    op interface \
+    ports { patches_parameters_4_address0 { O 10 vector } patches_parameters_4_ce0 { O 1 bit } patches_parameters_4_we0 { O 1 bit } patches_parameters_4_d0 { O 64 vector } patches_parameters_4_q0 { I 64 vector } patches_parameters_4_address1 { O 10 vector } patches_parameters_4_ce1 { O 1 bit } patches_parameters_4_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_4'"
 }
 }
 
@@ -266,7 +1009,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 164 \
+    id 621 \
     name n_patches \
     type other \
     dir IO \
@@ -281,7 +1024,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 169 \
+    id 661 \
     name apexZ0 \
     type other \
     dir I \
@@ -296,7 +1039,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 170 \
+    id 662 \
     name ppl \
     type other \
     dir I \
@@ -311,7 +1054,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 171 \
+    id 663 \
     name p_read1 \
     type other \
     dir I \
@@ -326,7 +1069,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 172 \
+    id 664 \
     name p_read4 \
     type other \
     dir I \
@@ -341,7 +1084,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 173 \
+    id 665 \
     name z_top_max_read \
     type other \
     dir I \
@@ -356,7 +1099,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 174 \
+    id 666 \
     name p_read7 \
     type other \
     dir I \

@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 137 \
-    name wp_superpoints_2 \
+    id 516 \
+    name patches_superpoints_31 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename wp_superpoints_2 \
+    corename patches_superpoints_31 \
     op interface \
-    ports { wp_superpoints_2_address0 { O 15 vector } wp_superpoints_2_ce0 { O 1 bit } wp_superpoints_2_q0 { I 64 vector } wp_superpoints_2_address1 { O 15 vector } wp_superpoints_2_ce1 { O 1 bit } wp_superpoints_2_q1 { I 64 vector } } \
+    ports { patches_superpoints_31_address0 { O 10 vector } patches_superpoints_31_ce0 { O 1 bit } patches_superpoints_31_q0 { I 64 vector } patches_superpoints_31_address1 { O 10 vector } patches_superpoints_31_ce1 { O 1 bit } patches_superpoints_31_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wp_superpoints_2'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_31'"
 }
 }
 
@@ -30,17 +30,36 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 138 \
-    name wp_parameters_2 \
+    id 517 \
+    name patches_parameters_1 \
     reset_level 1 \
     sync_rst true \
-    dir IO \
-    corename wp_parameters_2 \
+    dir O \
+    corename patches_parameters_1 \
     op interface \
-    ports { wp_parameters_2_address0 { O 12 vector } wp_parameters_2_ce0 { O 1 bit } wp_parameters_2_we0 { O 1 bit } wp_parameters_2_d0 { O 64 vector } wp_parameters_2_q0 { I 64 vector } wp_parameters_2_address1 { O 12 vector } wp_parameters_2_ce1 { O 1 bit } wp_parameters_2_we1 { O 1 bit } wp_parameters_2_d1 { O 64 vector } } \
+    ports { patches_parameters_1_address0 { O 10 vector } patches_parameters_1_ce0 { O 1 bit } patches_parameters_1_we0 { O 1 bit } patches_parameters_1_d0 { O 64 vector } patches_parameters_1_address1 { O 10 vector } patches_parameters_1_ce1 { O 1 bit } patches_parameters_1_we1 { O 1 bit } patches_parameters_1_d1 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wp_parameters_2'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 518 \
+    name patches_parameters_4 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename patches_parameters_4 \
+    op interface \
+    ports { patches_parameters_4_address0 { O 10 vector } patches_parameters_4_ce0 { O 1 bit } patches_parameters_4_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_4'"
 }
 }
 
@@ -48,37 +67,37 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 139 \
-    name wp_superpoints \
+    id 519 \
+    name wp_parameters_1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_wp_superpoints \
+    corename dc_wp_parameters_1 \
     op interface \
-    ports { wp_superpoints { I 5 vector } } \
+    ports { wp_parameters_1 { I 5 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 140 \
-    name wp_parameters \
+    id 520 \
+    name wp_parameters_4 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_wp_parameters \
+    corename dc_wp_parameters_4 \
     op interface \
-    ports { wp_parameters { I 5 vector } } \
+    ports { wp_parameters_4 { I 5 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 141 \
+    id 521 \
     name zTopMin \
     type other \
     dir I \
@@ -93,7 +112,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 142 \
+    id 522 \
     name zTopMax \
     type other \
     dir I \

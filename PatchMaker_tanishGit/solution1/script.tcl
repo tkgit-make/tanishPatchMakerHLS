@@ -17,5 +17,5 @@ config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub
 source "./PatchMaker_tanishGit/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -trace_level all
 export_design -rtl verilog -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip

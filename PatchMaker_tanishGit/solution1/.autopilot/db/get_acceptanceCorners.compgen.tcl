@@ -11,17 +11,74 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 52 \
+    id 59 \
     name wp_parameters \
     reset_level 1 \
     sync_rst true \
-    dir IO \
+    dir I \
     corename wp_parameters \
     op interface \
-    ports { wp_parameters_address0 { O 7 vector } wp_parameters_ce0 { O 1 bit } wp_parameters_we0 { O 1 bit } wp_parameters_d0 { O 64 vector } wp_parameters_q0 { I 64 vector } wp_parameters_address1 { O 7 vector } wp_parameters_ce1 { O 1 bit } wp_parameters_we1 { O 1 bit } wp_parameters_d1 { O 64 vector } wp_parameters_q1 { I 64 vector } } \
+    ports { wp_parameters_address0 { O 5 vector } wp_parameters_ce0 { O 1 bit } wp_parameters_q0 { I 64 vector } wp_parameters_address1 { O 5 vector } wp_parameters_ce1 { O 1 bit } wp_parameters_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wp_parameters'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 60 \
+    name wp_parameters2 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename wp_parameters2 \
+    op interface \
+    ports { wp_parameters2_address0 { O 5 vector } wp_parameters2_ce0 { O 1 bit } wp_parameters2_we0 { O 1 bit } wp_parameters2_d0 { O 64 vector } wp_parameters2_address1 { O 5 vector } wp_parameters2_ce1 { O 1 bit } wp_parameters2_we1 { O 1 bit } wp_parameters2_d1 { O 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wp_parameters2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 61 \
+    name wp_parameters3 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename wp_parameters3 \
+    op interface \
+    ports { wp_parameters3_address0 { O 5 vector } wp_parameters3_ce0 { O 1 bit } wp_parameters3_we0 { O 1 bit } wp_parameters3_d0 { O 1 vector } wp_parameters3_address1 { O 5 vector } wp_parameters3_ce1 { O 1 bit } wp_parameters3_we1 { O 1 bit } wp_parameters3_d1 { O 1 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wp_parameters3'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 62 \
+    name wp_parameters4 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename wp_parameters4 \
+    op interface \
+    ports { wp_parameters4_address0 { O 5 vector } wp_parameters4_ce0 { O 1 bit } wp_parameters4_q0 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wp_parameters4'"
 }
 }
 

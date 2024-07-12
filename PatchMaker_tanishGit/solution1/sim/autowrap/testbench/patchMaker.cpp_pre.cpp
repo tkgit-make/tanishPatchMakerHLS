@@ -68360,6 +68360,8 @@ bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, 
                                          int current_z_top_index, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
 
 bool getSolveNextColumnWhileConditional(long c_corner, int nPatchesInColumn, long projectionOfCornerToBeam);
+void mSP_findStartIndex(long row_list[256], int row_list_size, long projectionToRow, int &start_index, long &start_value);
+void mSP_findLRBounds(int i, long row_list[256], int row_list_size, int &left_bound, int &right_bound);
 # 2 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp" 2
 
 void initWedgeSuperPoint(long (&wsp) [3][16][3], long points[256][3], int pointCount)
@@ -68825,6 +68827,8 @@ getIndexFromZ_loop:
 
 void makePatches_ShadowQuilt_fromEdges(long apexZ0, int stop, int ppl, bool leftRight, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6])
 {
+#pragma HLS array_partition variable=patches_superpoints
+#pragma HLS array_partition variable=patches_parameters
     bool fix42 = true;
     apexZ0 = trapezoid_edges[0];
     long saved_apexZ0;
@@ -68884,7 +68888,7 @@ void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix
     makePatch_alignedToLine(apexZ0, z_top_max, ppl, false, false, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
 
     int lastPatchIndex = n_patches - 1;
-# 549 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 551 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     long original_c = patches_parameters[lastPatchIndex][2][2][1];
     long original_d = patches_parameters[lastPatchIndex][2][3][1];
 
@@ -68892,7 +68896,7 @@ void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix
 
     bool repeat_patch = false;
     bool repeat_original = false;
-# 569 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 571 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     if (n_patches > 2)
     {
         int thirdLastPatchIndex = lastPatchIndex - 2;
@@ -69286,12 +69290,12 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
     {
         z_top_min = new_z_i_atTop[5 - 2];
     }
-# 973 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 975 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     int nPatchesAtComplementary = n_patches;
     lastPatchIndex = n_patches - 1;
     if (nPatchesAtComplementary > nPatchesAtOriginal)
     {
-# 994 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 996 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
         delete_patch(lastPatchIndex, n_patches, patches_superpoints, patches_parameters);
 
     }
@@ -69311,7 +69315,7 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
     previous_white_space_height = white_space_height;
 
     white_space_height = ((original_c - complementary_a) < (original_d - complementary_b) ? (original_d - complementary_b) : (original_c - complementary_a));
-# 1028 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
+# 1030 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
     if ((n_patches > 3) && fix42)
     {
         int lastPatchIdx = n_patches - 1;
@@ -69370,6 +69374,8 @@ void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, 
   }
  }
 
+#pragma HLS array_partition variable=init_patch
+
     int original_ppl = ppl;
     long alignmentAccuracy = static_cast<long>(0.00001 * 1000000);
 
@@ -69395,6 +69401,7 @@ makeSuperpoint_loop:
    }
   }
  }
+#pragma HLS array_partition variable=NPpatches_superpoints
     long NPpatches_parameters[5][5 - 1][6];
     for(int b = 0; b < 5; b++)
  {
@@ -69406,6 +69413,7 @@ makeSuperpoint_loop:
    }
   }
  }
+#pragma HLS array_partition variable=NPpatches_parameters
 
 
     wedgePatch_init(NPpatches_superpoints, NPpatches_parameters, init_patch, init_patch_size, apexZ0);
@@ -69427,38 +69435,13 @@ rowListSet_loop:
 
     long r_max = radii[5 - 1];
     long projectionToRow = static_cast<long>((z_top - apexZ0) * ((y - radii[0]) / (float) (r_max - radii[0])) + apexZ0);
+    int start_index;
+    long start_value;
+    mSP_findStartIndex(row_list, row_list_size, projectionToRow, start_index, start_value);
 
-    int start_index = 0;
-    long start_value = 0x7fffffffL;
-start_value_loop:
-    for (int j = 0; j < row_list_size; j++)
-    {
-        if (fabs(row_list[j] - projectionToRow) < fabs(start_value))
-        {
-            start_index = j;
-            start_value = row_list[j] - projectionToRow;
-        }
-    }
-
-    int left_bound = 0;
-    long lbVal = 0x7fffffffL;
-    int right_bound = 0;
-    long rbVal = 0x7fffffffL;
-LRdiscovery_loop:
-    for (int j = 0; j < row_list_size; j++)
-    {
-        if (static_cast<long>(fabs((row_list[j] + trapezoid_edges[i]))) < lbVal)
-        {
-            left_bound = j;
-            lbVal = static_cast<long>(fabs((row_list[j] + trapezoid_edges[i])));
-        }
-
-        if (static_cast<long>(fabs((row_list[j] - trapezoid_edges[i]))) < rbVal)
-        {
-            right_bound = j;
-            rbVal = static_cast<long>(fabs((row_list[j] - trapezoid_edges[i])));
-        }
-    }
+    int left_bound;
+    int right_bound;
+    mSP_findLRBounds(i, row_list, row_list_size, left_bound, right_bound);
 
     if (float_middleLayers_ppl && i != 0 && i != 5 - 1)
     {
@@ -69546,4 +69529,41 @@ LRdiscovery_loop:
     }
 
     initWedgeSuperPoint(init_patch[init_patch_size++], temp, temp_size);
+}
+
+void mSP_findLRBounds(int i, long row_list[256], int row_list_size, int &left_bound, int &right_bound) {
+    left_bound= 0;
+    right_bound= 0;
+    long lbVal = 0x7fffffffL;
+    long rbVal = 0x7fffffffL;
+    LRdiscovery_loop:
+    for (int j = 0; j < row_list_size; j++)
+    {
+        if (static_cast<long>(fabs((row_list[j] + trapezoid_edges[i]))) < lbVal)
+        {
+            left_bound = j;
+            lbVal = static_cast<long>(fabs((row_list[j] + trapezoid_edges[i])));
+        }
+
+        if (static_cast<long>(fabs((row_list[j] - trapezoid_edges[i]))) < rbVal)
+        {
+            right_bound = j;
+            rbVal = static_cast<long>(fabs((row_list[j] - trapezoid_edges[i])));
+        }
+    }
+}
+
+void
+mSP_findStartIndex(long row_list[256], int row_list_size, long projectionToRow, int &start_index, long &start_value) {
+    start_index= 0;
+    start_value= 0x7fffffffL;
+    start_value_loop:
+    for (int j = 0; j < row_list_size; j++)
+    {
+        if (fabs(row_list[j] - projectionToRow) < fabs(start_value))
+        {
+            start_index = j;
+            start_value = row_list[j] - projectionToRow;
+        }
+    }
 }

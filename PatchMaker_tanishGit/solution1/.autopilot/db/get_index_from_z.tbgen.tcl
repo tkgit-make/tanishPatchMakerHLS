@@ -78,8 +78,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "layer", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z_value", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitodp_64ns_64_2_no_dsp_1_U85", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_1_1_U86", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitodp_64ns_64_2_no_dsp_1_U290", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_1_1_U291", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

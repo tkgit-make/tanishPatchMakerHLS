@@ -451,6 +451,8 @@ getIndexFromZ_loop:
 
 void makePatches_ShadowQuilt_fromEdges(long apexZ0, int stop, int ppl, bool leftRight, index_type &n_patches, GDARRAY, GPATCHES) // TOP-LEVEL FUNCTION FOR VITIS
 {
+#pragma HLS array_partition variable=patches_superpoints
+#pragma HLS array_partition variable=patches_parameters
     bool fix42 = true;
     apexZ0 = trapezoid_edges[0];
     long saved_apexZ0;
@@ -1083,6 +1085,8 @@ void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, 
 		}
 	}
 
+#pragma HLS array_partition variable=init_patch
+
     int original_ppl = ppl;
     long alignmentAccuracy = static_cast<long>(0.00001 * INTEGER_FACTOR_CM);
     // Point row_data[MAX_LAYERS][MAX_POINTS_FOR_DATASET];
@@ -1108,6 +1112,7 @@ makeSuperpoint_loop:
 			}
 		}
 	}
+#pragma HLS array_partition variable=NPpatches_superpoints
     long NPpatches_parameters[5][MAX_PARALLELOGRAMS_PER_PATCH][6];
     for(int b = 0; b < 5; b++)
 	{
@@ -1119,6 +1124,7 @@ makeSuperpoint_loop:
 			}
 		}
 	}
+#pragma HLS array_partition variable=NPpatches_parameters
     //new_patch will disappear from memory once makePatch_alignedToLine terminates, so we don't want wedgePatch_init to point superpoints to it.
     //init_patch will also disappear for the same scope reasons
     wedgePatch_init(NPpatches_superpoints, NPpatches_parameters, init_patch, init_patch_size, apexZ0);
@@ -1236,7 +1242,7 @@ rowListSet_loop:
     initWedgeSuperPoint(init_patch[init_patch_size++], temp, temp_size);
 }
 
-void mSP_findLRBounds(int i, const long *row_list, int row_list_size, int &left_bound, int &right_bound) {
+void mSP_findLRBounds(int i, long row_list[256], int row_list_size, int &left_bound, int &right_bound) {
     left_bound= 0;
     right_bound= 0;
     long lbVal = LONG_MAX;
@@ -1259,7 +1265,7 @@ void mSP_findLRBounds(int i, const long *row_list, int row_list_size, int &left_
 }
 
 void
-mSP_findStartIndex(const long *row_list, int row_list_size, long projectionToRow, int &start_index, long &start_value) {
+mSP_findStartIndex(long row_list[256], int row_list_size, long projectionToRow, int &start_index, long &start_value) {
     start_index= 0;
     start_value= LONG_MAX;
     start_value_loop:

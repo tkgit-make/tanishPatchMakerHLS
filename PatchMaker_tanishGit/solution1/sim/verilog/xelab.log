@@ -1,0 +1,640 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_makePatches_ShadowQuilt_fromEdges_top glbl -prj makePatches_ShadowQuilt_fromEdges.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s makePatches_ShadowQuilt_fromEdges -debug wave 
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/ip/xil_defaultlib/makePatches_ShadowQuilt_fromEdges_ap_dcmp_0_no_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_ap_dcmp_0_no_dsp_64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/ip/xil_defaultlib/makePatches_ShadowQuilt_fromEdges_ap_fadd_1_full_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_ap_fadd_1_full_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/ip/xil_defaultlib/makePatches_ShadowQuilt_fromEdges_ap_fcmp_0_no_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_ap_fcmp_0_no_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/ip/xil_defaultlib/makePatches_ShadowQuilt_fromEdges_ap_fdiv_4_no_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_ap_fdiv_4_no_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/ip/xil_defaultlib/makePatches_ShadowQuilt_fromEdges_ap_fmul_0_max_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_ap_fmul_0_max_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/ip/xil_defaultlib/makePatches_ShadowQuilt_fromEdges_ap_sitodp_0_no_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_ap_sitodp_0_no_dsp_64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/ip/xil_defaultlib/makePatches_ShadowQuilt_fromEdges_ap_sitofp_0_no_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_ap_sitofp_0_no_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/ip/xil_defaultlib/makePatches_ShadowQuilt_fromEdges_ap_sitofp_0_no_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_ap_sitofp_0_no_dsp_64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_GDarray.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_GDarray
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_GDn_points.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_GDn_points
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_parameters_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_parameters_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_parameters_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_parameters_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_parameters_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_parameters_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_parameters_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_parameters_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_parameters_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_parameters_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_15
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_18.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_18
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_19.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_19
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_21
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_22.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_22
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_23
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_24
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_25
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_26
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_27.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_27
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_28
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_29
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_30
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_31
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/AESL_automem_patches_superpoints_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpoints_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_makePatches_ShadowQuilt_fromEdges_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_add_patch8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_add_patch8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_add_patch_111.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_add_patch_111
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_add_patch_214.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_add_patch_214
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_areWedgeSuperPointsEqual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_areWedgeSuperPointsEqual
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_areWedgeSuperPointsEqual_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_areWedgeSuperPointsEqual_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_dcmp_64ns_64ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_delete_patch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_delete_patch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_delete_patch_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_delete_patch_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_fadd_32ns_32ns_32_3_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_fadd_32ns_32ns_32_3_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_fdiv_32ns_32ns_32_6_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_fdiv_32ns_32ns_32_6_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_fmul_32ns_32ns_32_2_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_fmul_32ns_32ns_32_2_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_getShadows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_getShadows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_get_acceptanceCorners.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_get_acceptanceCorners
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_get_index_from_z.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_get_index_from_z
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_1_NPpatches_parameters_128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_1_NPpatches_parameters_128_rom
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_1_NPpatches_parameters_128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_1_rom
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_2_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_3_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_2_NPpatches_parameters_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_init_patch_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_init_patch_0_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_init_patch_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_0_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_137.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_137_rom
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_137
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_238.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_238_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_238
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_339.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_339_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_parameters_339
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_superpoints_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_superpoints_0_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_superpoints_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_radii.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_radii_rom
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_radii
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_row_list.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_row_list_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_row_list
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_trapezoid_edges.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_trapezoid_edges_rom
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_trapezoid_edges
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_makeThirdPatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_makeThirdPatch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_mul_64ns_3ns_66_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mul_64ns_3ns_66_1_1_Multiplier_1
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mul_64ns_3ns_66_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_mul_64ns_66ns_129_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mul_64ns_66ns_129_1_1_Multiplier_0
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mul_64ns_66ns_129_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_mul_64ns_9ns_72_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mul_64ns_9ns_72_1_1_Multiplier_2
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mul_64ns_9ns_72_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_mul_64s_64s_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mul_64s_64s_64_1_1_Multiplier_3
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mul_64s_64s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_mux_42_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mux_42_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_mux_53_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_mux_53_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_sitodp_64ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_sitodp_64ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_sitofp_32ns_32_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_sitofp_32ns_32_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_sitofp_32s_32_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_sitofp_32s_32_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_sitofp_64ns_32_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_sitofp_64ns_32_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_current_z_i_index.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_current_z_i_index_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_current_z_i_index
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_new_z_i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_new_z_i_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_new_z_i
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_new_z_i_index.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_new_z_i_index_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveComplmentaryPatch_new_z_i_index
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_solveNextPatchPair.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveNextPatchPair
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_NPpatches_parameters_229.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_NPpatches_parameters_229_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_NPpatches_parameters_229
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_NPpatches_parameters_330.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_NPpatches_parameters_330_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_NPpatches_parameters_330
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_temp_ram
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_solveNextPatchPair_temp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_straightLineProjectorFromLayerIJtoK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_straightLineProjectorFromLayerIJtoK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges_straightLineProjectorFromLayerIJtoK_radii.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_straightLineProjectorFromLayerIJtoK_radii_rom
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges_straightLineProjectorFromLayerIJtoK_radii
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_exp_table...
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_pkg
+Compiling package floating_point_v7_1_11.flt_utils
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package floating_point_v7_1_11.vt2mutils
+Compiling package floating_point_v7_1_11.vt2mcomps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=24,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=16,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=24,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xcvu19p...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_11.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=5,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=3,length=0)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_11.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=10,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_gt [\compare_gt(c_xdevicefamily="vir...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare [\compare(c_xdevicefamily="virtex...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op [\flt_dec_op(c_xdevicefamily="vir...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_add [\flt_add(c_xdevicefamily="virtex...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_11.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.fix_mult [\fix_mult(c_xdevicefamily="virte...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="v...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_11.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult [\flt_mult(c_xdevicefamily="virte...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=26,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=25,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=26)\]
+Compiling architecture virtex of entity floating_point_v7_1_11.flt_div_mant [\flt_div_mant(c_xdevicefamily="v...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=10,length=0,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=3,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=3,length=3,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,length=3,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_div_exp [\flt_div_exp(c_xdevicefamily="no...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture virtex of entity floating_point_v7_1_11.flt_div [\flt_div(c_xdevicefamily="virtex...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=64,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=16,length=0,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_11.norm_zero_det [\norm_zero_det(data_width=39,nor...]
+Compiling architecture rtl of entity floating_point_v7_1_11.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture rtl of entity floating_point_v7_1_11.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture rtl of entity floating_point_v7_1_11.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture rtl of entity floating_point_v7_1_11.mux4 [\mux4(c_xdevicefamily="virtexupl...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_11.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_11.shift_msb_first [\shift_msb_first(a_width=64,resu...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_11.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_11.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture struct of entity floating_point_v7_1_11.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=22,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq [\compare_eq(c_xdevicefamily="vir...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_gt [\compare_gt(c_xdevicefamily="vir...]
+Compiling architecture rtl of entity floating_point_v7_1_11.fp_cmp [\fp_cmp(c_xdevicefamily="virtexu...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling architecture rtl of entity floating_point_v7_1_11.norm_zero_det [\norm_zero_det(data_width=10,nor...]
+Compiling architecture rtl of entity floating_point_v7_1_11.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_11.shift_msb_first [\shift_msb_first(a_width=64,dist...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=28,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=29,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=54,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_11.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op [\flt_dec_op(c_xdevicefamily="vir...]
+Compiling architecture struct of entity floating_point_v7_1_11.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture rtl of entity floating_point_v7_1_11.norm_zero_det [\norm_zero_det(data_width=7,norm...]
+Compiling architecture rtl of entity floating_point_v7_1_11.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_11.shift_msb_first [\shift_msb_first(a_width=32,resu...]
+Compiling architecture rtl of entity floating_point_v7_1_11.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_11.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture struct of entity floating_point_v7_1_11.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq [\compare_eq(c_xdevicefamily="vir...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="vi...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_gt [\compare_gt(c_xdevicefamily="vir...]
+Compiling architecture rtl of entity floating_point_v7_1_11.fp_cmp [\fp_cmp(c_xdevicefamily="virtexu...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.AESL_automem_GDarray
+Compiling module xil_defaultlib.AESL_automem_GDn_points
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
+Compiling module xil_defaultlib.AESL_automem_patches_parameters_...
+Compiling module xil_defaultlib.AESL_automem_patches_parameters_...
+Compiling module xil_defaultlib.AESL_automem_patches_parameters_...
+Compiling module xil_defaultlib.AESL_automem_patches_parameters_...
+Compiling module xil_defaultlib.AESL_automem_patches_parameters_...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_makePatches_ShadowQuilt_fr...
+Compiling module work.glbl
+Built simulation snapshot makePatches_ShadowQuilt_fromEdges

@@ -30,31 +30,310 @@ port (
     GDn_points_address0 : OUT STD_LOGIC_VECTOR (2 downto 0);
     GDn_points_ce0 : OUT STD_LOGIC;
     GDn_points_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-    patches_superpoints_address0 : OUT STD_LOGIC_VECTOR (14 downto 0);
-    patches_superpoints_ce0 : OUT STD_LOGIC;
-    patches_superpoints_we0 : OUT STD_LOGIC;
-    patches_superpoints_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
-    patches_superpoints_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
-    patches_superpoints_address1 : OUT STD_LOGIC_VECTOR (14 downto 0);
-    patches_superpoints_ce1 : OUT STD_LOGIC;
-    patches_superpoints_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
-    patches_parameters_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
-    patches_parameters_ce0 : OUT STD_LOGIC;
-    patches_parameters_we0 : OUT STD_LOGIC;
-    patches_parameters_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
-    patches_parameters_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
-    patches_parameters_address1 : OUT STD_LOGIC_VECTOR (11 downto 0);
-    patches_parameters_ce1 : OUT STD_LOGIC;
-    patches_parameters_we1 : OUT STD_LOGIC;
-    patches_parameters_d1 : OUT STD_LOGIC_VECTOR (63 downto 0);
-    patches_parameters_q1 : IN STD_LOGIC_VECTOR (63 downto 0) );
+    patches_superpoints_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_0_ce0 : OUT STD_LOGIC;
+    patches_superpoints_0_we0 : OUT STD_LOGIC;
+    patches_superpoints_0_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_0_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_0_ce1 : OUT STD_LOGIC;
+    patches_superpoints_0_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_1_ce0 : OUT STD_LOGIC;
+    patches_superpoints_1_we0 : OUT STD_LOGIC;
+    patches_superpoints_1_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_1_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_1_ce1 : OUT STD_LOGIC;
+    patches_superpoints_1_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_2_ce0 : OUT STD_LOGIC;
+    patches_superpoints_2_we0 : OUT STD_LOGIC;
+    patches_superpoints_2_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_2_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_2_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_2_ce1 : OUT STD_LOGIC;
+    patches_superpoints_2_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_3_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_3_ce0 : OUT STD_LOGIC;
+    patches_superpoints_3_we0 : OUT STD_LOGIC;
+    patches_superpoints_3_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_3_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_3_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_3_ce1 : OUT STD_LOGIC;
+    patches_superpoints_3_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_4_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_4_ce0 : OUT STD_LOGIC;
+    patches_superpoints_4_we0 : OUT STD_LOGIC;
+    patches_superpoints_4_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_4_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_4_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_4_ce1 : OUT STD_LOGIC;
+    patches_superpoints_4_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_5_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_5_ce0 : OUT STD_LOGIC;
+    patches_superpoints_5_we0 : OUT STD_LOGIC;
+    patches_superpoints_5_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_5_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_5_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_5_ce1 : OUT STD_LOGIC;
+    patches_superpoints_5_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_6_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_6_ce0 : OUT STD_LOGIC;
+    patches_superpoints_6_we0 : OUT STD_LOGIC;
+    patches_superpoints_6_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_6_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_6_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_6_ce1 : OUT STD_LOGIC;
+    patches_superpoints_6_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_7_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_7_ce0 : OUT STD_LOGIC;
+    patches_superpoints_7_we0 : OUT STD_LOGIC;
+    patches_superpoints_7_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_7_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_7_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_7_ce1 : OUT STD_LOGIC;
+    patches_superpoints_7_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_8_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_8_ce0 : OUT STD_LOGIC;
+    patches_superpoints_8_we0 : OUT STD_LOGIC;
+    patches_superpoints_8_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_8_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_8_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_8_ce1 : OUT STD_LOGIC;
+    patches_superpoints_8_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_9_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_9_ce0 : OUT STD_LOGIC;
+    patches_superpoints_9_we0 : OUT STD_LOGIC;
+    patches_superpoints_9_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_9_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_9_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_9_ce1 : OUT STD_LOGIC;
+    patches_superpoints_9_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_10_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_10_ce0 : OUT STD_LOGIC;
+    patches_superpoints_10_we0 : OUT STD_LOGIC;
+    patches_superpoints_10_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_10_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_10_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_10_ce1 : OUT STD_LOGIC;
+    patches_superpoints_10_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_11_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_11_ce0 : OUT STD_LOGIC;
+    patches_superpoints_11_we0 : OUT STD_LOGIC;
+    patches_superpoints_11_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_11_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_11_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_11_ce1 : OUT STD_LOGIC;
+    patches_superpoints_11_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_12_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_12_ce0 : OUT STD_LOGIC;
+    patches_superpoints_12_we0 : OUT STD_LOGIC;
+    patches_superpoints_12_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_12_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_12_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_12_ce1 : OUT STD_LOGIC;
+    patches_superpoints_12_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_13_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_13_ce0 : OUT STD_LOGIC;
+    patches_superpoints_13_we0 : OUT STD_LOGIC;
+    patches_superpoints_13_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_13_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_13_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_13_ce1 : OUT STD_LOGIC;
+    patches_superpoints_13_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_14_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_14_ce0 : OUT STD_LOGIC;
+    patches_superpoints_14_we0 : OUT STD_LOGIC;
+    patches_superpoints_14_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_14_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_14_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_14_ce1 : OUT STD_LOGIC;
+    patches_superpoints_14_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_15_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_15_ce0 : OUT STD_LOGIC;
+    patches_superpoints_15_we0 : OUT STD_LOGIC;
+    patches_superpoints_15_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_15_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_15_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_15_ce1 : OUT STD_LOGIC;
+    patches_superpoints_15_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_16_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_16_ce0 : OUT STD_LOGIC;
+    patches_superpoints_16_we0 : OUT STD_LOGIC;
+    patches_superpoints_16_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_16_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_16_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_16_ce1 : OUT STD_LOGIC;
+    patches_superpoints_16_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_17_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_17_ce0 : OUT STD_LOGIC;
+    patches_superpoints_17_we0 : OUT STD_LOGIC;
+    patches_superpoints_17_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_17_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_17_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_17_ce1 : OUT STD_LOGIC;
+    patches_superpoints_17_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_18_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_18_ce0 : OUT STD_LOGIC;
+    patches_superpoints_18_we0 : OUT STD_LOGIC;
+    patches_superpoints_18_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_18_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_18_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_18_ce1 : OUT STD_LOGIC;
+    patches_superpoints_18_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_19_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_19_ce0 : OUT STD_LOGIC;
+    patches_superpoints_19_we0 : OUT STD_LOGIC;
+    patches_superpoints_19_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_19_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_19_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_19_ce1 : OUT STD_LOGIC;
+    patches_superpoints_19_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_20_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_20_ce0 : OUT STD_LOGIC;
+    patches_superpoints_20_we0 : OUT STD_LOGIC;
+    patches_superpoints_20_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_20_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_20_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_20_ce1 : OUT STD_LOGIC;
+    patches_superpoints_20_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_21_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_21_ce0 : OUT STD_LOGIC;
+    patches_superpoints_21_we0 : OUT STD_LOGIC;
+    patches_superpoints_21_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_21_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_21_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_21_ce1 : OUT STD_LOGIC;
+    patches_superpoints_21_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_22_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_22_ce0 : OUT STD_LOGIC;
+    patches_superpoints_22_we0 : OUT STD_LOGIC;
+    patches_superpoints_22_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_22_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_22_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_22_ce1 : OUT STD_LOGIC;
+    patches_superpoints_22_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_23_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_23_ce0 : OUT STD_LOGIC;
+    patches_superpoints_23_we0 : OUT STD_LOGIC;
+    patches_superpoints_23_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_23_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_23_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_23_ce1 : OUT STD_LOGIC;
+    patches_superpoints_23_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_24_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_24_ce0 : OUT STD_LOGIC;
+    patches_superpoints_24_we0 : OUT STD_LOGIC;
+    patches_superpoints_24_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_24_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_24_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_24_ce1 : OUT STD_LOGIC;
+    patches_superpoints_24_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_25_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_25_ce0 : OUT STD_LOGIC;
+    patches_superpoints_25_we0 : OUT STD_LOGIC;
+    patches_superpoints_25_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_25_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_25_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_25_ce1 : OUT STD_LOGIC;
+    patches_superpoints_25_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_26_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_26_ce0 : OUT STD_LOGIC;
+    patches_superpoints_26_we0 : OUT STD_LOGIC;
+    patches_superpoints_26_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_26_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_26_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_26_ce1 : OUT STD_LOGIC;
+    patches_superpoints_26_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_27_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_27_ce0 : OUT STD_LOGIC;
+    patches_superpoints_27_we0 : OUT STD_LOGIC;
+    patches_superpoints_27_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_27_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_27_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_27_ce1 : OUT STD_LOGIC;
+    patches_superpoints_27_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_28_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_28_ce0 : OUT STD_LOGIC;
+    patches_superpoints_28_we0 : OUT STD_LOGIC;
+    patches_superpoints_28_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_28_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_28_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_28_ce1 : OUT STD_LOGIC;
+    patches_superpoints_28_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_29_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_29_ce0 : OUT STD_LOGIC;
+    patches_superpoints_29_we0 : OUT STD_LOGIC;
+    patches_superpoints_29_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_29_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_29_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_29_ce1 : OUT STD_LOGIC;
+    patches_superpoints_29_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_30_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_30_ce0 : OUT STD_LOGIC;
+    patches_superpoints_30_we0 : OUT STD_LOGIC;
+    patches_superpoints_30_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_30_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_30_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_30_ce1 : OUT STD_LOGIC;
+    patches_superpoints_30_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_31_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_31_ce0 : OUT STD_LOGIC;
+    patches_superpoints_31_we0 : OUT STD_LOGIC;
+    patches_superpoints_31_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_31_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_superpoints_31_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_superpoints_31_ce1 : OUT STD_LOGIC;
+    patches_superpoints_31_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_0_ce0 : OUT STD_LOGIC;
+    patches_parameters_0_we0 : OUT STD_LOGIC;
+    patches_parameters_0_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_0_ce1 : OUT STD_LOGIC;
+    patches_parameters_0_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_1_ce0 : OUT STD_LOGIC;
+    patches_parameters_1_we0 : OUT STD_LOGIC;
+    patches_parameters_1_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_1_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_1_ce1 : OUT STD_LOGIC;
+    patches_parameters_1_we1 : OUT STD_LOGIC;
+    patches_parameters_1_d1 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_1_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_2_ce0 : OUT STD_LOGIC;
+    patches_parameters_2_we0 : OUT STD_LOGIC;
+    patches_parameters_2_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_2_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_2_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_2_ce1 : OUT STD_LOGIC;
+    patches_parameters_2_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_3_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_3_ce0 : OUT STD_LOGIC;
+    patches_parameters_3_we0 : OUT STD_LOGIC;
+    patches_parameters_3_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_3_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_3_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_3_ce1 : OUT STD_LOGIC;
+    patches_parameters_3_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_4_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_4_ce0 : OUT STD_LOGIC;
+    patches_parameters_4_we0 : OUT STD_LOGIC;
+    patches_parameters_4_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_4_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+    patches_parameters_4_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    patches_parameters_4_ce1 : OUT STD_LOGIC;
+    patches_parameters_4_q1 : IN STD_LOGIC_VECTOR (63 downto 0) );
 end;
 
 
 architecture behav of makePatches_ShadowQuilt_fromEdges is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "makePatches_ShadowQuilt_fromEdges_makePatches_ShadowQuilt_fromEdges,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu19p-fsvb3824-2-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.322914,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=40,HLS_SYN_DSP=0,HLS_SYN_FF=40083,HLS_SYN_LUT=118940,HLS_VERSION=2020_2}";
+    "makePatches_ShadowQuilt_fromEdges_makePatches_ShadowQuilt_fromEdges,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu19p-fsvb3824-2-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=92,HLS_SYN_DSP=0,HLS_SYN_FF=54063,HLS_SYN_LUT=178684,HLS_VERSION=2020_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (7 downto 0) := "00000001";
@@ -100,98 +379,308 @@ architecture behav of makePatches_ShadowQuilt_fromEdges is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal icmp_ln475_fu_258_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln475_reg_505 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln480_fu_434_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln480_reg_681 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal icmp_ln458_fu_252_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fu_240_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal conv2_i_reg_509 : STD_LOGIC_VECTOR (31 downto 0);
+    signal icmp_ln463_fu_428_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fu_416_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal conv2_i_reg_685 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal grp_fu_235_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal dc_reg_514 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_411_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal dc_reg_690 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal ap_CS_fsm_state8 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
-    signal icmp_ln486_fu_470_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln486_1_fu_476_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_start : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_ap_done : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_ap_idle : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_ap_ready : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_n_patches_o : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_solveNextPatchPair_fu_205_n_patches_o_ap_vld : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_GDarray_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal grp_solveNextPatchPair_fu_205_GDarray_ce0 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_GDn_points_address0 : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_solveNextPatchPair_fu_205_GDn_points_ce0 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_patches_superpoints_address0 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_solveNextPatchPair_fu_205_patches_superpoints_ce0 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_patches_superpoints_we0 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_patches_superpoints_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_patches_superpoints_address1 : STD_LOGIC_VECTOR (14 downto 0);
-    signal grp_solveNextPatchPair_fu_205_patches_superpoints_ce1 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_patches_parameters_address0 : STD_LOGIC_VECTOR (11 downto 0);
-    signal grp_solveNextPatchPair_fu_205_patches_parameters_ce0 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_patches_parameters_we0 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_patches_parameters_d0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_patches_parameters_address1 : STD_LOGIC_VECTOR (11 downto 0);
-    signal grp_solveNextPatchPair_fu_205_patches_parameters_ce1 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_patches_parameters_we1 : STD_LOGIC;
-    signal grp_solveNextPatchPair_fu_205_patches_parameters_d1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_return_0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_return_1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_return_2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_return_3 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_return_4 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_return_5 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_return_6 : STD_LOGIC_VECTOR (63 downto 0);
-    signal ap_phi_mux_z_top_max_19_ph_phi_fu_128_p4 : STD_LOGIC_VECTOR (63 downto 0);
-    signal z_top_max_19_ph_reg_124 : STD_LOGIC_VECTOR (63 downto 0);
-    signal z_top_max_fu_415_p3 : STD_LOGIC_VECTOR (63 downto 0);
+    signal icmp_ln491_fu_646_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln491_1_fu_652_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_solveNextPatchPair_fu_293_ap_start : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_ap_done : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_ap_idle : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_ap_ready : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_n_patches_o : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_solveNextPatchPair_fu_293_n_patches_o_ap_vld : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_GDarray_address0 : STD_LOGIC_VECTOR (10 downto 0);
+    signal grp_solveNextPatchPair_fu_293_GDarray_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_GDn_points_address0 : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_solveNextPatchPair_fu_293_GDn_points_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_0_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_0_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_0_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_0_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_0_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_1_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_1_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_1_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_1_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_2_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_2_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_2_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_2_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_2_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_2_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_3_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_3_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_3_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_3_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_3_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_3_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_4_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_4_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_4_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_4_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_4_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_4_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_5_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_5_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_5_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_5_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_5_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_5_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_6_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_6_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_6_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_6_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_6_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_6_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_7_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_7_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_7_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_7_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_7_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_7_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_8_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_8_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_8_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_8_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_8_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_8_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_9_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_9_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_9_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_9_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_9_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_9_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_10_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_10_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_10_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_10_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_10_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_10_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_11_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_11_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_11_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_11_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_11_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_11_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_12_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_12_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_12_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_12_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_12_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_12_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_13_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_13_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_13_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_13_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_13_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_13_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_14_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_14_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_14_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_14_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_14_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_14_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_15_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_15_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_15_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_15_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_15_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_15_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_16_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_16_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_16_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_16_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_16_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_16_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_17_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_17_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_17_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_17_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_17_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_17_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_18_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_18_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_18_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_18_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_18_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_18_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_19_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_19_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_19_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_19_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_19_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_19_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_20_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_20_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_20_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_20_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_20_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_20_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_21_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_21_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_21_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_21_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_21_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_21_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_22_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_22_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_22_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_22_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_22_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_22_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_23_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_23_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_23_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_23_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_23_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_23_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_24_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_24_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_24_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_24_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_24_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_24_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_25_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_25_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_25_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_25_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_25_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_25_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_26_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_26_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_26_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_26_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_26_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_26_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_27_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_27_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_27_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_27_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_27_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_27_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_28_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_28_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_28_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_28_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_28_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_28_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_29_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_29_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_29_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_29_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_29_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_29_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_30_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_30_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_30_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_30_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_30_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_30_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_31_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_31_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_31_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_31_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_31_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_superpoints_31_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_0_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_0_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_0_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_0_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_0_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_1_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_1_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_1_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_1_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_1_we1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_1_d1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_2_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_2_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_2_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_2_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_2_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_2_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_3_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_3_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_3_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_3_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_3_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_3_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_4_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_4_ce0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_4_we0 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_4_d0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_4_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_solveNextPatchPair_fu_293_patches_parameters_4_ce1 : STD_LOGIC;
+    signal grp_solveNextPatchPair_fu_293_ap_return_0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_ap_return_1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_solveNextPatchPair_fu_293_ap_return_2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_ap_return_3 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_ap_return_4 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_ap_return_5 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_ap_return_6 : STD_LOGIC_VECTOR (63 downto 0);
+    signal ap_phi_mux_z_top_max_19_ph_phi_fu_216_p4 : STD_LOGIC_VECTOR (63 downto 0);
+    signal z_top_max_19_ph_reg_212 : STD_LOGIC_VECTOR (63 downto 0);
+    signal z_top_max_fu_591_p3 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
-    signal phi_ln501_reg_136 : STD_LOGIC_VECTOR (0 downto 0);
-    signal nPatchesInColumn_assign_reg_147 : STD_LOGIC_VECTOR (31 downto 0);
-    signal z_top_max_19_reg_159 : STD_LOGIC_VECTOR (63 downto 0);
-    signal phi_ln501_1_reg_170 : STD_LOGIC_VECTOR (0 downto 0);
-    signal complementary_apexZ0_0_reg_181 : STD_LOGIC_VECTOR (63 downto 0);
-    signal z_top_min_0_reg_193 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_solveNextPatchPair_fu_205_ap_start_reg : STD_LOGIC := '0';
+    signal phi_ln506_reg_224 : STD_LOGIC_VECTOR (0 downto 0);
+    signal nPatchesInColumn_assign_reg_235 : STD_LOGIC_VECTOR (31 downto 0);
+    signal z_top_max_19_reg_247 : STD_LOGIC_VECTOR (63 downto 0);
+    signal phi_ln506_1_reg_258 : STD_LOGIC_VECTOR (0 downto 0);
+    signal complementary_apexZ0_0_reg_269 : STD_LOGIC_VECTOR (63 downto 0);
+    signal z_top_min_0_reg_281 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_solveNextPatchPair_fu_293_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state7 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
-    signal and_ln501_1_fu_436_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal saved_apexZ0_fu_108 : STD_LOGIC_VECTOR (63 downto 0);
+    signal and_ln506_1_fu_612_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal saved_apexZ0_fu_196 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal data_V_fu_264_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_76_fu_285_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal mantissa_fu_289_p4 : STD_LOGIC_VECTOR (24 downto 0);
-    signal tmp_75_fu_275_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal zext_ln341_fu_303_p1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal add_ln341_fu_307_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal sub_ln1311_fu_321_p2 : STD_LOGIC_VECTOR (7 downto 0);
-    signal isNeg_fu_313_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal sext_ln1311_fu_327_p1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal ush_fu_331_p3 : STD_LOGIC_VECTOR (8 downto 0);
-    signal sh_prom_i_i_i_i_i_i_cast_cast_cast_fu_339_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal zext_ln15_fu_299_p1 : STD_LOGIC_VECTOR (110 downto 0);
-    signal sh_prom_i_i_i_i_i_i_cast_cast_cast_cast_fu_343_p1 : STD_LOGIC_VECTOR (110 downto 0);
-    signal r_V_fu_347_p2 : STD_LOGIC_VECTOR (110 downto 0);
-    signal tmp_fu_359_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal r_V_14_fu_353_p2 : STD_LOGIC_VECTOR (110 downto 0);
-    signal zext_ln662_fu_367_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_s_fu_371_p4 : STD_LOGIC_VECTOR (63 downto 0);
-    signal val_fu_381_p3 : STD_LOGIC_VECTOR (63 downto 0);
-    signal p_Result_s_fu_267_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal result_V_17_fu_389_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal result_V_fu_395_p3 : STD_LOGIC_VECTOR (63 downto 0);
-    signal add_ln145_fu_403_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal icmp_ln477_fu_409_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln501_fu_424_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal and_ln501_fu_430_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal data_V_fu_440_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_143_fu_461_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal mantissa_fu_465_p4 : STD_LOGIC_VECTOR (24 downto 0);
+    signal tmp_142_fu_451_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal zext_ln341_fu_479_p1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal add_ln341_fu_483_p2 : STD_LOGIC_VECTOR (8 downto 0);
+    signal sub_ln1311_fu_497_p2 : STD_LOGIC_VECTOR (7 downto 0);
+    signal isNeg_fu_489_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal sext_ln1311_fu_503_p1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal ush_fu_507_p3 : STD_LOGIC_VECTOR (8 downto 0);
+    signal sh_prom_i_i_i_i_i_i_cast_cast_cast_fu_515_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal zext_ln15_fu_475_p1 : STD_LOGIC_VECTOR (110 downto 0);
+    signal sh_prom_i_i_i_i_i_i_cast_cast_cast_cast_fu_519_p1 : STD_LOGIC_VECTOR (110 downto 0);
+    signal r_V_fu_523_p2 : STD_LOGIC_VECTOR (110 downto 0);
+    signal tmp_fu_535_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal r_V_14_fu_529_p2 : STD_LOGIC_VECTOR (110 downto 0);
+    signal zext_ln662_fu_543_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_s_fu_547_p4 : STD_LOGIC_VECTOR (63 downto 0);
+    signal val_fu_557_p3 : STD_LOGIC_VECTOR (63 downto 0);
+    signal p_Result_s_fu_443_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal result_V_17_fu_565_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal result_V_fu_571_p3 : STD_LOGIC_VECTOR (63 downto 0);
+    signal add_ln147_fu_579_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal icmp_ln482_fu_585_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln506_fu_600_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal and_ln506_fu_606_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_ce_reg : STD_LOGIC;
 
@@ -212,24 +701,303 @@ architecture behav of makePatches_ShadowQuilt_fromEdges is
         GDn_points_address0 : OUT STD_LOGIC_VECTOR (2 downto 0);
         GDn_points_ce0 : OUT STD_LOGIC;
         GDn_points_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        patches_superpoints_address0 : OUT STD_LOGIC_VECTOR (14 downto 0);
-        patches_superpoints_ce0 : OUT STD_LOGIC;
-        patches_superpoints_we0 : OUT STD_LOGIC;
-        patches_superpoints_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
-        patches_superpoints_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
-        patches_superpoints_address1 : OUT STD_LOGIC_VECTOR (14 downto 0);
-        patches_superpoints_ce1 : OUT STD_LOGIC;
-        patches_superpoints_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
-        patches_parameters_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
-        patches_parameters_ce0 : OUT STD_LOGIC;
-        patches_parameters_we0 : OUT STD_LOGIC;
-        patches_parameters_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
-        patches_parameters_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
-        patches_parameters_address1 : OUT STD_LOGIC_VECTOR (11 downto 0);
-        patches_parameters_ce1 : OUT STD_LOGIC;
-        patches_parameters_we1 : OUT STD_LOGIC;
-        patches_parameters_d1 : OUT STD_LOGIC_VECTOR (63 downto 0);
-        patches_parameters_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_0_ce0 : OUT STD_LOGIC;
+        patches_superpoints_0_we0 : OUT STD_LOGIC;
+        patches_superpoints_0_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_0_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_0_ce1 : OUT STD_LOGIC;
+        patches_superpoints_0_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_1_ce0 : OUT STD_LOGIC;
+        patches_superpoints_1_we0 : OUT STD_LOGIC;
+        patches_superpoints_1_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_1_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_1_ce1 : OUT STD_LOGIC;
+        patches_superpoints_1_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_2_ce0 : OUT STD_LOGIC;
+        patches_superpoints_2_we0 : OUT STD_LOGIC;
+        patches_superpoints_2_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_2_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_2_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_2_ce1 : OUT STD_LOGIC;
+        patches_superpoints_2_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_3_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_3_ce0 : OUT STD_LOGIC;
+        patches_superpoints_3_we0 : OUT STD_LOGIC;
+        patches_superpoints_3_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_3_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_3_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_3_ce1 : OUT STD_LOGIC;
+        patches_superpoints_3_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_4_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_4_ce0 : OUT STD_LOGIC;
+        patches_superpoints_4_we0 : OUT STD_LOGIC;
+        patches_superpoints_4_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_4_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_4_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_4_ce1 : OUT STD_LOGIC;
+        patches_superpoints_4_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_5_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_5_ce0 : OUT STD_LOGIC;
+        patches_superpoints_5_we0 : OUT STD_LOGIC;
+        patches_superpoints_5_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_5_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_5_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_5_ce1 : OUT STD_LOGIC;
+        patches_superpoints_5_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_6_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_6_ce0 : OUT STD_LOGIC;
+        patches_superpoints_6_we0 : OUT STD_LOGIC;
+        patches_superpoints_6_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_6_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_6_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_6_ce1 : OUT STD_LOGIC;
+        patches_superpoints_6_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_7_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_7_ce0 : OUT STD_LOGIC;
+        patches_superpoints_7_we0 : OUT STD_LOGIC;
+        patches_superpoints_7_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_7_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_7_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_7_ce1 : OUT STD_LOGIC;
+        patches_superpoints_7_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_8_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_8_ce0 : OUT STD_LOGIC;
+        patches_superpoints_8_we0 : OUT STD_LOGIC;
+        patches_superpoints_8_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_8_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_8_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_8_ce1 : OUT STD_LOGIC;
+        patches_superpoints_8_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_9_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_9_ce0 : OUT STD_LOGIC;
+        patches_superpoints_9_we0 : OUT STD_LOGIC;
+        patches_superpoints_9_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_9_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_9_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_9_ce1 : OUT STD_LOGIC;
+        patches_superpoints_9_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_10_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_10_ce0 : OUT STD_LOGIC;
+        patches_superpoints_10_we0 : OUT STD_LOGIC;
+        patches_superpoints_10_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_10_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_10_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_10_ce1 : OUT STD_LOGIC;
+        patches_superpoints_10_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_11_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_11_ce0 : OUT STD_LOGIC;
+        patches_superpoints_11_we0 : OUT STD_LOGIC;
+        patches_superpoints_11_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_11_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_11_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_11_ce1 : OUT STD_LOGIC;
+        patches_superpoints_11_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_12_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_12_ce0 : OUT STD_LOGIC;
+        patches_superpoints_12_we0 : OUT STD_LOGIC;
+        patches_superpoints_12_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_12_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_12_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_12_ce1 : OUT STD_LOGIC;
+        patches_superpoints_12_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_13_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_13_ce0 : OUT STD_LOGIC;
+        patches_superpoints_13_we0 : OUT STD_LOGIC;
+        patches_superpoints_13_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_13_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_13_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_13_ce1 : OUT STD_LOGIC;
+        patches_superpoints_13_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_14_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_14_ce0 : OUT STD_LOGIC;
+        patches_superpoints_14_we0 : OUT STD_LOGIC;
+        patches_superpoints_14_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_14_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_14_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_14_ce1 : OUT STD_LOGIC;
+        patches_superpoints_14_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_15_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_15_ce0 : OUT STD_LOGIC;
+        patches_superpoints_15_we0 : OUT STD_LOGIC;
+        patches_superpoints_15_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_15_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_15_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_15_ce1 : OUT STD_LOGIC;
+        patches_superpoints_15_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_16_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_16_ce0 : OUT STD_LOGIC;
+        patches_superpoints_16_we0 : OUT STD_LOGIC;
+        patches_superpoints_16_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_16_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_16_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_16_ce1 : OUT STD_LOGIC;
+        patches_superpoints_16_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_17_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_17_ce0 : OUT STD_LOGIC;
+        patches_superpoints_17_we0 : OUT STD_LOGIC;
+        patches_superpoints_17_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_17_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_17_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_17_ce1 : OUT STD_LOGIC;
+        patches_superpoints_17_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_18_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_18_ce0 : OUT STD_LOGIC;
+        patches_superpoints_18_we0 : OUT STD_LOGIC;
+        patches_superpoints_18_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_18_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_18_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_18_ce1 : OUT STD_LOGIC;
+        patches_superpoints_18_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_19_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_19_ce0 : OUT STD_LOGIC;
+        patches_superpoints_19_we0 : OUT STD_LOGIC;
+        patches_superpoints_19_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_19_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_19_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_19_ce1 : OUT STD_LOGIC;
+        patches_superpoints_19_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_20_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_20_ce0 : OUT STD_LOGIC;
+        patches_superpoints_20_we0 : OUT STD_LOGIC;
+        patches_superpoints_20_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_20_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_20_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_20_ce1 : OUT STD_LOGIC;
+        patches_superpoints_20_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_21_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_21_ce0 : OUT STD_LOGIC;
+        patches_superpoints_21_we0 : OUT STD_LOGIC;
+        patches_superpoints_21_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_21_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_21_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_21_ce1 : OUT STD_LOGIC;
+        patches_superpoints_21_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_22_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_22_ce0 : OUT STD_LOGIC;
+        patches_superpoints_22_we0 : OUT STD_LOGIC;
+        patches_superpoints_22_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_22_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_22_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_22_ce1 : OUT STD_LOGIC;
+        patches_superpoints_22_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_23_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_23_ce0 : OUT STD_LOGIC;
+        patches_superpoints_23_we0 : OUT STD_LOGIC;
+        patches_superpoints_23_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_23_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_23_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_23_ce1 : OUT STD_LOGIC;
+        patches_superpoints_23_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_24_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_24_ce0 : OUT STD_LOGIC;
+        patches_superpoints_24_we0 : OUT STD_LOGIC;
+        patches_superpoints_24_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_24_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_24_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_24_ce1 : OUT STD_LOGIC;
+        patches_superpoints_24_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_25_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_25_ce0 : OUT STD_LOGIC;
+        patches_superpoints_25_we0 : OUT STD_LOGIC;
+        patches_superpoints_25_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_25_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_25_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_25_ce1 : OUT STD_LOGIC;
+        patches_superpoints_25_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_26_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_26_ce0 : OUT STD_LOGIC;
+        patches_superpoints_26_we0 : OUT STD_LOGIC;
+        patches_superpoints_26_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_26_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_26_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_26_ce1 : OUT STD_LOGIC;
+        patches_superpoints_26_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_27_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_27_ce0 : OUT STD_LOGIC;
+        patches_superpoints_27_we0 : OUT STD_LOGIC;
+        patches_superpoints_27_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_27_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_27_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_27_ce1 : OUT STD_LOGIC;
+        patches_superpoints_27_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_28_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_28_ce0 : OUT STD_LOGIC;
+        patches_superpoints_28_we0 : OUT STD_LOGIC;
+        patches_superpoints_28_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_28_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_28_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_28_ce1 : OUT STD_LOGIC;
+        patches_superpoints_28_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_29_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_29_ce0 : OUT STD_LOGIC;
+        patches_superpoints_29_we0 : OUT STD_LOGIC;
+        patches_superpoints_29_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_29_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_29_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_29_ce1 : OUT STD_LOGIC;
+        patches_superpoints_29_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_30_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_30_ce0 : OUT STD_LOGIC;
+        patches_superpoints_30_we0 : OUT STD_LOGIC;
+        patches_superpoints_30_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_30_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_30_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_30_ce1 : OUT STD_LOGIC;
+        patches_superpoints_30_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_31_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_31_ce0 : OUT STD_LOGIC;
+        patches_superpoints_31_we0 : OUT STD_LOGIC;
+        patches_superpoints_31_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_31_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_superpoints_31_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_superpoints_31_ce1 : OUT STD_LOGIC;
+        patches_superpoints_31_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_0_ce0 : OUT STD_LOGIC;
+        patches_parameters_0_we0 : OUT STD_LOGIC;
+        patches_parameters_0_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_0_ce1 : OUT STD_LOGIC;
+        patches_parameters_0_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_1_ce0 : OUT STD_LOGIC;
+        patches_parameters_1_we0 : OUT STD_LOGIC;
+        patches_parameters_1_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_1_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_1_ce1 : OUT STD_LOGIC;
+        patches_parameters_1_we1 : OUT STD_LOGIC;
+        patches_parameters_1_d1 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_1_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_2_ce0 : OUT STD_LOGIC;
+        patches_parameters_2_we0 : OUT STD_LOGIC;
+        patches_parameters_2_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_2_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_2_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_2_ce1 : OUT STD_LOGIC;
+        patches_parameters_2_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_3_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_3_ce0 : OUT STD_LOGIC;
+        patches_parameters_3_we0 : OUT STD_LOGIC;
+        patches_parameters_3_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_3_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_3_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_3_ce1 : OUT STD_LOGIC;
+        patches_parameters_3_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_4_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_4_ce0 : OUT STD_LOGIC;
+        patches_parameters_4_we0 : OUT STD_LOGIC;
+        patches_parameters_4_d0 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_4_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
+        patches_parameters_4_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        patches_parameters_4_ce1 : OUT STD_LOGIC;
+        patches_parameters_4_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
         apexZ0 : IN STD_LOGIC_VECTOR (63 downto 0);
         ppl : IN STD_LOGIC_VECTOR (31 downto 0);
         p_read1 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -280,56 +1048,335 @@ architecture behav of makePatches_ShadowQuilt_fromEdges is
 
 
 begin
-    grp_solveNextPatchPair_fu_205 : component makePatches_ShadowQuilt_fromEdges_solveNextPatchPair
+    grp_solveNextPatchPair_fu_293 : component makePatches_ShadowQuilt_fromEdges_solveNextPatchPair
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_solveNextPatchPair_fu_205_ap_start,
-        ap_done => grp_solveNextPatchPair_fu_205_ap_done,
-        ap_idle => grp_solveNextPatchPair_fu_205_ap_idle,
-        ap_ready => grp_solveNextPatchPair_fu_205_ap_ready,
+        ap_start => grp_solveNextPatchPair_fu_293_ap_start,
+        ap_done => grp_solveNextPatchPair_fu_293_ap_done,
+        ap_idle => grp_solveNextPatchPair_fu_293_ap_idle,
+        ap_ready => grp_solveNextPatchPair_fu_293_ap_ready,
         n_patches_i => n_patches_i,
-        n_patches_o => grp_solveNextPatchPair_fu_205_n_patches_o,
-        n_patches_o_ap_vld => grp_solveNextPatchPair_fu_205_n_patches_o_ap_vld,
-        GDarray_address0 => grp_solveNextPatchPair_fu_205_GDarray_address0,
-        GDarray_ce0 => grp_solveNextPatchPair_fu_205_GDarray_ce0,
+        n_patches_o => grp_solveNextPatchPair_fu_293_n_patches_o,
+        n_patches_o_ap_vld => grp_solveNextPatchPair_fu_293_n_patches_o_ap_vld,
+        GDarray_address0 => grp_solveNextPatchPair_fu_293_GDarray_address0,
+        GDarray_ce0 => grp_solveNextPatchPair_fu_293_GDarray_ce0,
         GDarray_q0 => GDarray_q0,
-        GDn_points_address0 => grp_solveNextPatchPair_fu_205_GDn_points_address0,
-        GDn_points_ce0 => grp_solveNextPatchPair_fu_205_GDn_points_ce0,
+        GDn_points_address0 => grp_solveNextPatchPair_fu_293_GDn_points_address0,
+        GDn_points_ce0 => grp_solveNextPatchPair_fu_293_GDn_points_ce0,
         GDn_points_q0 => GDn_points_q0,
-        patches_superpoints_address0 => grp_solveNextPatchPair_fu_205_patches_superpoints_address0,
-        patches_superpoints_ce0 => grp_solveNextPatchPair_fu_205_patches_superpoints_ce0,
-        patches_superpoints_we0 => grp_solveNextPatchPair_fu_205_patches_superpoints_we0,
-        patches_superpoints_d0 => grp_solveNextPatchPair_fu_205_patches_superpoints_d0,
-        patches_superpoints_q0 => patches_superpoints_q0,
-        patches_superpoints_address1 => grp_solveNextPatchPair_fu_205_patches_superpoints_address1,
-        patches_superpoints_ce1 => grp_solveNextPatchPair_fu_205_patches_superpoints_ce1,
-        patches_superpoints_q1 => patches_superpoints_q1,
-        patches_parameters_address0 => grp_solveNextPatchPair_fu_205_patches_parameters_address0,
-        patches_parameters_ce0 => grp_solveNextPatchPair_fu_205_patches_parameters_ce0,
-        patches_parameters_we0 => grp_solveNextPatchPair_fu_205_patches_parameters_we0,
-        patches_parameters_d0 => grp_solveNextPatchPair_fu_205_patches_parameters_d0,
-        patches_parameters_q0 => patches_parameters_q0,
-        patches_parameters_address1 => grp_solveNextPatchPair_fu_205_patches_parameters_address1,
-        patches_parameters_ce1 => grp_solveNextPatchPair_fu_205_patches_parameters_ce1,
-        patches_parameters_we1 => grp_solveNextPatchPair_fu_205_patches_parameters_we1,
-        patches_parameters_d1 => grp_solveNextPatchPair_fu_205_patches_parameters_d1,
-        patches_parameters_q1 => patches_parameters_q1,
-        apexZ0 => saved_apexZ0_fu_108,
+        patches_superpoints_0_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_0_address0,
+        patches_superpoints_0_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_0_ce0,
+        patches_superpoints_0_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_0_we0,
+        patches_superpoints_0_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_0_d0,
+        patches_superpoints_0_q0 => patches_superpoints_0_q0,
+        patches_superpoints_0_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_0_address1,
+        patches_superpoints_0_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_0_ce1,
+        patches_superpoints_0_q1 => patches_superpoints_0_q1,
+        patches_superpoints_1_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_1_address0,
+        patches_superpoints_1_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_1_ce0,
+        patches_superpoints_1_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_1_we0,
+        patches_superpoints_1_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_1_d0,
+        patches_superpoints_1_q0 => patches_superpoints_1_q0,
+        patches_superpoints_1_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_1_address1,
+        patches_superpoints_1_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_1_ce1,
+        patches_superpoints_1_q1 => patches_superpoints_1_q1,
+        patches_superpoints_2_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_2_address0,
+        patches_superpoints_2_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_2_ce0,
+        patches_superpoints_2_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_2_we0,
+        patches_superpoints_2_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_2_d0,
+        patches_superpoints_2_q0 => patches_superpoints_2_q0,
+        patches_superpoints_2_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_2_address1,
+        patches_superpoints_2_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_2_ce1,
+        patches_superpoints_2_q1 => patches_superpoints_2_q1,
+        patches_superpoints_3_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_3_address0,
+        patches_superpoints_3_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_3_ce0,
+        patches_superpoints_3_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_3_we0,
+        patches_superpoints_3_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_3_d0,
+        patches_superpoints_3_q0 => patches_superpoints_3_q0,
+        patches_superpoints_3_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_3_address1,
+        patches_superpoints_3_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_3_ce1,
+        patches_superpoints_3_q1 => patches_superpoints_3_q1,
+        patches_superpoints_4_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_4_address0,
+        patches_superpoints_4_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_4_ce0,
+        patches_superpoints_4_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_4_we0,
+        patches_superpoints_4_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_4_d0,
+        patches_superpoints_4_q0 => patches_superpoints_4_q0,
+        patches_superpoints_4_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_4_address1,
+        patches_superpoints_4_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_4_ce1,
+        patches_superpoints_4_q1 => patches_superpoints_4_q1,
+        patches_superpoints_5_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_5_address0,
+        patches_superpoints_5_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_5_ce0,
+        patches_superpoints_5_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_5_we0,
+        patches_superpoints_5_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_5_d0,
+        patches_superpoints_5_q0 => patches_superpoints_5_q0,
+        patches_superpoints_5_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_5_address1,
+        patches_superpoints_5_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_5_ce1,
+        patches_superpoints_5_q1 => patches_superpoints_5_q1,
+        patches_superpoints_6_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_6_address0,
+        patches_superpoints_6_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_6_ce0,
+        patches_superpoints_6_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_6_we0,
+        patches_superpoints_6_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_6_d0,
+        patches_superpoints_6_q0 => patches_superpoints_6_q0,
+        patches_superpoints_6_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_6_address1,
+        patches_superpoints_6_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_6_ce1,
+        patches_superpoints_6_q1 => patches_superpoints_6_q1,
+        patches_superpoints_7_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_7_address0,
+        patches_superpoints_7_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_7_ce0,
+        patches_superpoints_7_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_7_we0,
+        patches_superpoints_7_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_7_d0,
+        patches_superpoints_7_q0 => patches_superpoints_7_q0,
+        patches_superpoints_7_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_7_address1,
+        patches_superpoints_7_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_7_ce1,
+        patches_superpoints_7_q1 => patches_superpoints_7_q1,
+        patches_superpoints_8_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_8_address0,
+        patches_superpoints_8_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_8_ce0,
+        patches_superpoints_8_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_8_we0,
+        patches_superpoints_8_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_8_d0,
+        patches_superpoints_8_q0 => patches_superpoints_8_q0,
+        patches_superpoints_8_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_8_address1,
+        patches_superpoints_8_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_8_ce1,
+        patches_superpoints_8_q1 => patches_superpoints_8_q1,
+        patches_superpoints_9_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_9_address0,
+        patches_superpoints_9_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_9_ce0,
+        patches_superpoints_9_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_9_we0,
+        patches_superpoints_9_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_9_d0,
+        patches_superpoints_9_q0 => patches_superpoints_9_q0,
+        patches_superpoints_9_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_9_address1,
+        patches_superpoints_9_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_9_ce1,
+        patches_superpoints_9_q1 => patches_superpoints_9_q1,
+        patches_superpoints_10_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_10_address0,
+        patches_superpoints_10_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_10_ce0,
+        patches_superpoints_10_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_10_we0,
+        patches_superpoints_10_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_10_d0,
+        patches_superpoints_10_q0 => patches_superpoints_10_q0,
+        patches_superpoints_10_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_10_address1,
+        patches_superpoints_10_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_10_ce1,
+        patches_superpoints_10_q1 => patches_superpoints_10_q1,
+        patches_superpoints_11_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_11_address0,
+        patches_superpoints_11_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_11_ce0,
+        patches_superpoints_11_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_11_we0,
+        patches_superpoints_11_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_11_d0,
+        patches_superpoints_11_q0 => patches_superpoints_11_q0,
+        patches_superpoints_11_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_11_address1,
+        patches_superpoints_11_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_11_ce1,
+        patches_superpoints_11_q1 => patches_superpoints_11_q1,
+        patches_superpoints_12_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_12_address0,
+        patches_superpoints_12_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_12_ce0,
+        patches_superpoints_12_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_12_we0,
+        patches_superpoints_12_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_12_d0,
+        patches_superpoints_12_q0 => patches_superpoints_12_q0,
+        patches_superpoints_12_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_12_address1,
+        patches_superpoints_12_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_12_ce1,
+        patches_superpoints_12_q1 => patches_superpoints_12_q1,
+        patches_superpoints_13_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_13_address0,
+        patches_superpoints_13_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_13_ce0,
+        patches_superpoints_13_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_13_we0,
+        patches_superpoints_13_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_13_d0,
+        patches_superpoints_13_q0 => patches_superpoints_13_q0,
+        patches_superpoints_13_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_13_address1,
+        patches_superpoints_13_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_13_ce1,
+        patches_superpoints_13_q1 => patches_superpoints_13_q1,
+        patches_superpoints_14_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_14_address0,
+        patches_superpoints_14_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_14_ce0,
+        patches_superpoints_14_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_14_we0,
+        patches_superpoints_14_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_14_d0,
+        patches_superpoints_14_q0 => patches_superpoints_14_q0,
+        patches_superpoints_14_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_14_address1,
+        patches_superpoints_14_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_14_ce1,
+        patches_superpoints_14_q1 => patches_superpoints_14_q1,
+        patches_superpoints_15_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_15_address0,
+        patches_superpoints_15_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_15_ce0,
+        patches_superpoints_15_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_15_we0,
+        patches_superpoints_15_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_15_d0,
+        patches_superpoints_15_q0 => patches_superpoints_15_q0,
+        patches_superpoints_15_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_15_address1,
+        patches_superpoints_15_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_15_ce1,
+        patches_superpoints_15_q1 => patches_superpoints_15_q1,
+        patches_superpoints_16_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_16_address0,
+        patches_superpoints_16_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_16_ce0,
+        patches_superpoints_16_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_16_we0,
+        patches_superpoints_16_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_16_d0,
+        patches_superpoints_16_q0 => patches_superpoints_16_q0,
+        patches_superpoints_16_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_16_address1,
+        patches_superpoints_16_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_16_ce1,
+        patches_superpoints_16_q1 => patches_superpoints_16_q1,
+        patches_superpoints_17_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_17_address0,
+        patches_superpoints_17_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_17_ce0,
+        patches_superpoints_17_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_17_we0,
+        patches_superpoints_17_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_17_d0,
+        patches_superpoints_17_q0 => patches_superpoints_17_q0,
+        patches_superpoints_17_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_17_address1,
+        patches_superpoints_17_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_17_ce1,
+        patches_superpoints_17_q1 => patches_superpoints_17_q1,
+        patches_superpoints_18_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_18_address0,
+        patches_superpoints_18_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_18_ce0,
+        patches_superpoints_18_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_18_we0,
+        patches_superpoints_18_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_18_d0,
+        patches_superpoints_18_q0 => patches_superpoints_18_q0,
+        patches_superpoints_18_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_18_address1,
+        patches_superpoints_18_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_18_ce1,
+        patches_superpoints_18_q1 => patches_superpoints_18_q1,
+        patches_superpoints_19_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_19_address0,
+        patches_superpoints_19_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_19_ce0,
+        patches_superpoints_19_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_19_we0,
+        patches_superpoints_19_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_19_d0,
+        patches_superpoints_19_q0 => patches_superpoints_19_q0,
+        patches_superpoints_19_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_19_address1,
+        patches_superpoints_19_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_19_ce1,
+        patches_superpoints_19_q1 => patches_superpoints_19_q1,
+        patches_superpoints_20_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_20_address0,
+        patches_superpoints_20_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_20_ce0,
+        patches_superpoints_20_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_20_we0,
+        patches_superpoints_20_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_20_d0,
+        patches_superpoints_20_q0 => patches_superpoints_20_q0,
+        patches_superpoints_20_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_20_address1,
+        patches_superpoints_20_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_20_ce1,
+        patches_superpoints_20_q1 => patches_superpoints_20_q1,
+        patches_superpoints_21_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_21_address0,
+        patches_superpoints_21_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_21_ce0,
+        patches_superpoints_21_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_21_we0,
+        patches_superpoints_21_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_21_d0,
+        patches_superpoints_21_q0 => patches_superpoints_21_q0,
+        patches_superpoints_21_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_21_address1,
+        patches_superpoints_21_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_21_ce1,
+        patches_superpoints_21_q1 => patches_superpoints_21_q1,
+        patches_superpoints_22_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_22_address0,
+        patches_superpoints_22_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_22_ce0,
+        patches_superpoints_22_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_22_we0,
+        patches_superpoints_22_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_22_d0,
+        patches_superpoints_22_q0 => patches_superpoints_22_q0,
+        patches_superpoints_22_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_22_address1,
+        patches_superpoints_22_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_22_ce1,
+        patches_superpoints_22_q1 => patches_superpoints_22_q1,
+        patches_superpoints_23_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_23_address0,
+        patches_superpoints_23_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_23_ce0,
+        patches_superpoints_23_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_23_we0,
+        patches_superpoints_23_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_23_d0,
+        patches_superpoints_23_q0 => patches_superpoints_23_q0,
+        patches_superpoints_23_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_23_address1,
+        patches_superpoints_23_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_23_ce1,
+        patches_superpoints_23_q1 => patches_superpoints_23_q1,
+        patches_superpoints_24_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_24_address0,
+        patches_superpoints_24_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_24_ce0,
+        patches_superpoints_24_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_24_we0,
+        patches_superpoints_24_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_24_d0,
+        patches_superpoints_24_q0 => patches_superpoints_24_q0,
+        patches_superpoints_24_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_24_address1,
+        patches_superpoints_24_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_24_ce1,
+        patches_superpoints_24_q1 => patches_superpoints_24_q1,
+        patches_superpoints_25_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_25_address0,
+        patches_superpoints_25_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_25_ce0,
+        patches_superpoints_25_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_25_we0,
+        patches_superpoints_25_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_25_d0,
+        patches_superpoints_25_q0 => patches_superpoints_25_q0,
+        patches_superpoints_25_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_25_address1,
+        patches_superpoints_25_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_25_ce1,
+        patches_superpoints_25_q1 => patches_superpoints_25_q1,
+        patches_superpoints_26_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_26_address0,
+        patches_superpoints_26_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_26_ce0,
+        patches_superpoints_26_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_26_we0,
+        patches_superpoints_26_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_26_d0,
+        patches_superpoints_26_q0 => patches_superpoints_26_q0,
+        patches_superpoints_26_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_26_address1,
+        patches_superpoints_26_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_26_ce1,
+        patches_superpoints_26_q1 => patches_superpoints_26_q1,
+        patches_superpoints_27_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_27_address0,
+        patches_superpoints_27_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_27_ce0,
+        patches_superpoints_27_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_27_we0,
+        patches_superpoints_27_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_27_d0,
+        patches_superpoints_27_q0 => patches_superpoints_27_q0,
+        patches_superpoints_27_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_27_address1,
+        patches_superpoints_27_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_27_ce1,
+        patches_superpoints_27_q1 => patches_superpoints_27_q1,
+        patches_superpoints_28_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_28_address0,
+        patches_superpoints_28_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_28_ce0,
+        patches_superpoints_28_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_28_we0,
+        patches_superpoints_28_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_28_d0,
+        patches_superpoints_28_q0 => patches_superpoints_28_q0,
+        patches_superpoints_28_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_28_address1,
+        patches_superpoints_28_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_28_ce1,
+        patches_superpoints_28_q1 => patches_superpoints_28_q1,
+        patches_superpoints_29_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_29_address0,
+        patches_superpoints_29_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_29_ce0,
+        patches_superpoints_29_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_29_we0,
+        patches_superpoints_29_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_29_d0,
+        patches_superpoints_29_q0 => patches_superpoints_29_q0,
+        patches_superpoints_29_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_29_address1,
+        patches_superpoints_29_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_29_ce1,
+        patches_superpoints_29_q1 => patches_superpoints_29_q1,
+        patches_superpoints_30_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_30_address0,
+        patches_superpoints_30_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_30_ce0,
+        patches_superpoints_30_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_30_we0,
+        patches_superpoints_30_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_30_d0,
+        patches_superpoints_30_q0 => patches_superpoints_30_q0,
+        patches_superpoints_30_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_30_address1,
+        patches_superpoints_30_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_30_ce1,
+        patches_superpoints_30_q1 => patches_superpoints_30_q1,
+        patches_superpoints_31_address0 => grp_solveNextPatchPair_fu_293_patches_superpoints_31_address0,
+        patches_superpoints_31_ce0 => grp_solveNextPatchPair_fu_293_patches_superpoints_31_ce0,
+        patches_superpoints_31_we0 => grp_solveNextPatchPair_fu_293_patches_superpoints_31_we0,
+        patches_superpoints_31_d0 => grp_solveNextPatchPair_fu_293_patches_superpoints_31_d0,
+        patches_superpoints_31_q0 => patches_superpoints_31_q0,
+        patches_superpoints_31_address1 => grp_solveNextPatchPair_fu_293_patches_superpoints_31_address1,
+        patches_superpoints_31_ce1 => grp_solveNextPatchPair_fu_293_patches_superpoints_31_ce1,
+        patches_superpoints_31_q1 => patches_superpoints_31_q1,
+        patches_parameters_0_address0 => grp_solveNextPatchPair_fu_293_patches_parameters_0_address0,
+        patches_parameters_0_ce0 => grp_solveNextPatchPair_fu_293_patches_parameters_0_ce0,
+        patches_parameters_0_we0 => grp_solveNextPatchPair_fu_293_patches_parameters_0_we0,
+        patches_parameters_0_d0 => grp_solveNextPatchPair_fu_293_patches_parameters_0_d0,
+        patches_parameters_0_address1 => grp_solveNextPatchPair_fu_293_patches_parameters_0_address1,
+        patches_parameters_0_ce1 => grp_solveNextPatchPair_fu_293_patches_parameters_0_ce1,
+        patches_parameters_0_q1 => patches_parameters_0_q1,
+        patches_parameters_1_address0 => grp_solveNextPatchPair_fu_293_patches_parameters_1_address0,
+        patches_parameters_1_ce0 => grp_solveNextPatchPair_fu_293_patches_parameters_1_ce0,
+        patches_parameters_1_we0 => grp_solveNextPatchPair_fu_293_patches_parameters_1_we0,
+        patches_parameters_1_d0 => grp_solveNextPatchPair_fu_293_patches_parameters_1_d0,
+        patches_parameters_1_q0 => patches_parameters_1_q0,
+        patches_parameters_1_address1 => grp_solveNextPatchPair_fu_293_patches_parameters_1_address1,
+        patches_parameters_1_ce1 => grp_solveNextPatchPair_fu_293_patches_parameters_1_ce1,
+        patches_parameters_1_we1 => grp_solveNextPatchPair_fu_293_patches_parameters_1_we1,
+        patches_parameters_1_d1 => grp_solveNextPatchPair_fu_293_patches_parameters_1_d1,
+        patches_parameters_1_q1 => patches_parameters_1_q1,
+        patches_parameters_2_address0 => grp_solveNextPatchPair_fu_293_patches_parameters_2_address0,
+        patches_parameters_2_ce0 => grp_solveNextPatchPair_fu_293_patches_parameters_2_ce0,
+        patches_parameters_2_we0 => grp_solveNextPatchPair_fu_293_patches_parameters_2_we0,
+        patches_parameters_2_d0 => grp_solveNextPatchPair_fu_293_patches_parameters_2_d0,
+        patches_parameters_2_q0 => patches_parameters_2_q0,
+        patches_parameters_2_address1 => grp_solveNextPatchPair_fu_293_patches_parameters_2_address1,
+        patches_parameters_2_ce1 => grp_solveNextPatchPair_fu_293_patches_parameters_2_ce1,
+        patches_parameters_2_q1 => patches_parameters_2_q1,
+        patches_parameters_3_address0 => grp_solveNextPatchPair_fu_293_patches_parameters_3_address0,
+        patches_parameters_3_ce0 => grp_solveNextPatchPair_fu_293_patches_parameters_3_ce0,
+        patches_parameters_3_we0 => grp_solveNextPatchPair_fu_293_patches_parameters_3_we0,
+        patches_parameters_3_d0 => grp_solveNextPatchPair_fu_293_patches_parameters_3_d0,
+        patches_parameters_3_q0 => patches_parameters_3_q0,
+        patches_parameters_3_address1 => grp_solveNextPatchPair_fu_293_patches_parameters_3_address1,
+        patches_parameters_3_ce1 => grp_solveNextPatchPair_fu_293_patches_parameters_3_ce1,
+        patches_parameters_3_q1 => patches_parameters_3_q1,
+        patches_parameters_4_address0 => grp_solveNextPatchPair_fu_293_patches_parameters_4_address0,
+        patches_parameters_4_ce0 => grp_solveNextPatchPair_fu_293_patches_parameters_4_ce0,
+        patches_parameters_4_we0 => grp_solveNextPatchPair_fu_293_patches_parameters_4_we0,
+        patches_parameters_4_d0 => grp_solveNextPatchPair_fu_293_patches_parameters_4_d0,
+        patches_parameters_4_q0 => patches_parameters_4_q0,
+        patches_parameters_4_address1 => grp_solveNextPatchPair_fu_293_patches_parameters_4_address1,
+        patches_parameters_4_ce1 => grp_solveNextPatchPair_fu_293_patches_parameters_4_ce1,
+        patches_parameters_4_q1 => patches_parameters_4_q1,
+        apexZ0 => saved_apexZ0_fu_196,
         ppl => ppl,
-        p_read1 => nPatchesInColumn_assign_reg_147,
-        p_read4 => z_top_min_0_reg_193,
-        z_top_max_read => z_top_max_19_reg_159,
-        p_read7 => complementary_apexZ0_0_reg_181,
-        ap_return_0 => grp_solveNextPatchPair_fu_205_ap_return_0,
-        ap_return_1 => grp_solveNextPatchPair_fu_205_ap_return_1,
-        ap_return_2 => grp_solveNextPatchPair_fu_205_ap_return_2,
-        ap_return_3 => grp_solveNextPatchPair_fu_205_ap_return_3,
-        ap_return_4 => grp_solveNextPatchPair_fu_205_ap_return_4,
-        ap_return_5 => grp_solveNextPatchPair_fu_205_ap_return_5,
-        ap_return_6 => grp_solveNextPatchPair_fu_205_ap_return_6);
+        p_read1 => nPatchesInColumn_assign_reg_235,
+        p_read4 => z_top_min_0_reg_281,
+        z_top_max_read => z_top_max_19_reg_247,
+        p_read7 => complementary_apexZ0_0_reg_269,
+        ap_return_0 => grp_solveNextPatchPair_fu_293_ap_return_0,
+        ap_return_1 => grp_solveNextPatchPair_fu_293_ap_return_1,
+        ap_return_2 => grp_solveNextPatchPair_fu_293_ap_return_2,
+        ap_return_3 => grp_solveNextPatchPair_fu_293_ap_return_3,
+        ap_return_4 => grp_solveNextPatchPair_fu_293_ap_return_4,
+        ap_return_5 => grp_solveNextPatchPair_fu_293_ap_return_5,
+        ap_return_6 => grp_solveNextPatchPair_fu_293_ap_return_6);
 
-    fmul_32ns_32ns_32_2_max_dsp_1_U175 : component makePatches_ShadowQuilt_fromEdges_fmul_32ns_32ns_32_2_max_dsp_1
+    fmul_32ns_32ns_32_2_max_dsp_1_U667 : component makePatches_ShadowQuilt_fromEdges_fmul_32ns_32ns_32_2_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -339,12 +1386,12 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => conv2_i_reg_509,
+        din0 => conv2_i_reg_685,
         din1 => ap_const_lv32_40A00000,
         ce => ap_const_logic_1,
-        dout => grp_fu_235_p2);
+        dout => grp_fu_411_p2);
 
-    sitofp_64ns_32_2_no_dsp_1_U176 : component makePatches_ShadowQuilt_fromEdges_sitofp_64ns_32_2_no_dsp_1
+    sitofp_64ns_32_2_no_dsp_1_U668 : component makePatches_ShadowQuilt_fromEdges_sitofp_64ns_32_2_no_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -353,9 +1400,9 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => saved_apexZ0_fu_108,
+        din0 => saved_apexZ0_fu_196,
         ce => ap_const_logic_1,
-        dout => grp_fu_240_p1);
+        dout => grp_fu_416_p1);
 
 
 
@@ -373,106 +1420,106 @@ begin
     end process;
 
 
-    grp_solveNextPatchPair_fu_205_ap_start_reg_assign_proc : process(ap_clk)
+    grp_solveNextPatchPair_fu_293_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_solveNextPatchPair_fu_205_ap_start_reg <= ap_const_logic_0;
+                grp_solveNextPatchPair_fu_293_ap_start_reg <= ap_const_logic_0;
             else
-                if (((ap_const_lv1_1 = and_ln501_1_fu_436_p2) and (ap_const_logic_1 = ap_CS_fsm_state7))) then 
-                    grp_solveNextPatchPair_fu_205_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_solveNextPatchPair_fu_205_ap_ready = ap_const_logic_1)) then 
-                    grp_solveNextPatchPair_fu_205_ap_start_reg <= ap_const_logic_0;
+                if (((ap_const_lv1_1 = and_ln506_1_fu_612_p2) and (ap_const_logic_1 = ap_CS_fsm_state7))) then 
+                    grp_solveNextPatchPair_fu_293_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_solveNextPatchPair_fu_293_ap_ready = ap_const_logic_1)) then 
+                    grp_solveNextPatchPair_fu_293_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    complementary_apexZ0_0_reg_181_assign_proc : process (ap_clk)
+    complementary_apexZ0_0_reg_269_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                complementary_apexZ0_0_reg_181 <= ap_const_lv64_0;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_ap_done = ap_const_logic_1))) then 
-                complementary_apexZ0_0_reg_181 <= grp_solveNextPatchPair_fu_205_ap_return_4;
+                complementary_apexZ0_0_reg_269 <= ap_const_lv64_0;
+            elsif (((grp_solveNextPatchPair_fu_293_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+                complementary_apexZ0_0_reg_269 <= grp_solveNextPatchPair_fu_293_ap_return_4;
             end if; 
         end if;
     end process;
 
-    nPatchesInColumn_assign_reg_147_assign_proc : process (ap_clk)
+    nPatchesInColumn_assign_reg_235_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                nPatchesInColumn_assign_reg_147 <= ap_const_lv32_0;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_ap_done = ap_const_logic_1))) then 
-                nPatchesInColumn_assign_reg_147 <= grp_solveNextPatchPair_fu_205_ap_return_1;
+                nPatchesInColumn_assign_reg_235 <= ap_const_lv32_0;
+            elsif (((grp_solveNextPatchPair_fu_293_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+                nPatchesInColumn_assign_reg_235 <= grp_solveNextPatchPair_fu_293_ap_return_1;
             end if; 
         end if;
     end process;
 
-    phi_ln501_1_reg_170_assign_proc : process (ap_clk)
+    phi_ln506_1_reg_258_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                phi_ln501_1_reg_170 <= ap_const_lv1_1;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_ap_done = ap_const_logic_1))) then 
-                phi_ln501_1_reg_170 <= icmp_ln486_fu_470_p2;
+                phi_ln506_1_reg_258 <= ap_const_lv1_1;
+            elsif (((grp_solveNextPatchPair_fu_293_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+                phi_ln506_1_reg_258 <= icmp_ln491_fu_646_p2;
             end if; 
         end if;
     end process;
 
-    phi_ln501_reg_136_assign_proc : process (ap_clk)
+    phi_ln506_reg_224_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                phi_ln501_reg_136 <= ap_const_lv1_1;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_ap_done = ap_const_logic_1))) then 
-                phi_ln501_reg_136 <= icmp_ln486_1_fu_476_p2;
+                phi_ln506_reg_224 <= ap_const_lv1_1;
+            elsif (((grp_solveNextPatchPair_fu_293_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+                phi_ln506_reg_224 <= icmp_ln491_1_fu_652_p2;
             end if; 
         end if;
     end process;
 
-    saved_apexZ0_fu_108_assign_proc : process (ap_clk)
+    saved_apexZ0_fu_196_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then 
-                saved_apexZ0_fu_108 <= ap_const_lv64_14FB1E4;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_ap_done = ap_const_logic_1))) then 
-                saved_apexZ0_fu_108 <= grp_solveNextPatchPair_fu_205_ap_return_0;
+                saved_apexZ0_fu_196 <= ap_const_lv64_14FB1E4;
+            elsif (((grp_solveNextPatchPair_fu_293_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+                saved_apexZ0_fu_196 <= grp_solveNextPatchPair_fu_293_ap_return_0;
             end if; 
         end if;
     end process;
 
-    z_top_max_19_ph_reg_124_assign_proc : process (ap_clk)
+    z_top_max_19_ph_reg_212_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((icmp_ln475_reg_505 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state6))) then 
-                z_top_max_19_ph_reg_124 <= z_top_max_fu_415_p3;
-            elsif (((icmp_ln458_fu_252_p2 = ap_const_lv1_1) and (icmp_ln475_fu_258_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
-                z_top_max_19_ph_reg_124 <= ap_const_lv64_2FAF080;
+            if (((icmp_ln480_reg_681 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state6))) then 
+                z_top_max_19_ph_reg_212 <= z_top_max_fu_591_p3;
+            elsif (((icmp_ln463_fu_428_p2 = ap_const_lv1_1) and (icmp_ln480_fu_434_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+                z_top_max_19_ph_reg_212 <= ap_const_lv64_2FAF080;
             end if; 
         end if;
     end process;
 
-    z_top_max_19_reg_159_assign_proc : process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                z_top_max_19_reg_159 <= ap_phi_mux_z_top_max_19_ph_phi_fu_128_p4;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_ap_done = ap_const_logic_1))) then 
-                z_top_max_19_reg_159 <= grp_solveNextPatchPair_fu_205_ap_return_5;
-            end if; 
-        end if;
-    end process;
-
-    z_top_min_0_reg_193_assign_proc : process (ap_clk)
+    z_top_max_19_reg_247_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
-                z_top_min_0_reg_193 <= ap_const_lv64_FFFFFFFFFD050F80;
-            elsif (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_ap_done = ap_const_logic_1))) then 
-                z_top_min_0_reg_193 <= grp_solveNextPatchPair_fu_205_ap_return_6;
+                z_top_max_19_reg_247 <= ap_phi_mux_z_top_max_19_ph_phi_fu_216_p4;
+            elsif (((grp_solveNextPatchPair_fu_293_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+                z_top_max_19_reg_247 <= grp_solveNextPatchPair_fu_293_ap_return_5;
+            end if; 
+        end if;
+    end process;
+
+    z_top_min_0_reg_281_assign_proc : process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
+                z_top_min_0_reg_281 <= ap_const_lv64_FFFFFFFFFD050F80;
+            elsif (((grp_solveNextPatchPair_fu_293_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+                z_top_min_0_reg_281 <= grp_solveNextPatchPair_fu_293_ap_return_6;
             end if; 
         end if;
     end process;
@@ -480,7 +1527,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state3)) then
-                conv2_i_reg_509 <= grp_fu_240_p1;
+                conv2_i_reg_685 <= grp_fu_416_p1;
             end if;
         end if;
     end process;
@@ -488,20 +1535,20 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state5)) then
-                dc_reg_514 <= grp_fu_235_p2;
+                dc_reg_690 <= grp_fu_411_p2;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((icmp_ln458_fu_252_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
-                icmp_ln475_reg_505 <= icmp_ln475_fu_258_p2;
+            if (((icmp_ln463_fu_428_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                icmp_ln480_reg_681 <= icmp_ln480_fu_434_p2;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, icmp_ln475_fu_258_p2, ap_CS_fsm_state2, icmp_ln458_fu_252_p2, ap_CS_fsm_state8, grp_solveNextPatchPair_fu_205_ap_done, ap_CS_fsm_state7, and_ln501_1_fu_436_p2)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, icmp_ln480_fu_434_p2, ap_CS_fsm_state2, icmp_ln463_fu_428_p2, ap_CS_fsm_state8, grp_solveNextPatchPair_fu_293_ap_done, ap_CS_fsm_state7, and_ln506_1_fu_612_p2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -511,9 +1558,9 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((icmp_ln458_fu_252_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((icmp_ln463_fu_428_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
-                elsif (((icmp_ln458_fu_252_p2 = ap_const_lv1_1) and (icmp_ln475_fu_258_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                elsif (((icmp_ln463_fu_428_p2 = ap_const_lv1_1) and (icmp_ln480_fu_434_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state6;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
@@ -527,13 +1574,13 @@ begin
             when ap_ST_fsm_state6 => 
                 ap_NS_fsm <= ap_ST_fsm_state7;
             when ap_ST_fsm_state7 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state7) and (ap_const_lv1_0 = and_ln501_1_fu_436_p2))) then
+                if (((ap_const_lv1_0 = and_ln506_1_fu_612_p2) and (ap_const_logic_1 = ap_CS_fsm_state7))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state8;
                 end if;
             when ap_ST_fsm_state8 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_ap_done = ap_const_logic_1))) then
+                if (((grp_solveNextPatchPair_fu_293_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then
                     ap_NS_fsm <= ap_ST_fsm_state7;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state8;
@@ -542,14 +1589,14 @@ begin
                 ap_NS_fsm <= "XXXXXXXX";
         end case;
     end process;
-    GDarray_address0 <= grp_solveNextPatchPair_fu_205_GDarray_address0;
-    GDarray_ce0 <= grp_solveNextPatchPair_fu_205_GDarray_ce0;
-    GDn_points_address0 <= grp_solveNextPatchPair_fu_205_GDn_points_address0;
-    GDn_points_ce0 <= grp_solveNextPatchPair_fu_205_GDn_points_ce0;
-    add_ln145_fu_403_p2 <= std_logic_vector(unsigned(result_V_fu_395_p3) + unsigned(ap_const_lv64_3938700));
-    add_ln341_fu_307_p2 <= std_logic_vector(unsigned(zext_ln341_fu_303_p1) + unsigned(ap_const_lv9_181));
-    and_ln501_1_fu_436_p2 <= (phi_ln501_1_reg_170 and and_ln501_fu_430_p2);
-    and_ln501_fu_430_p2 <= (phi_ln501_reg_136 and icmp_ln501_fu_424_p2);
+    GDarray_address0 <= grp_solveNextPatchPair_fu_293_GDarray_address0;
+    GDarray_ce0 <= grp_solveNextPatchPair_fu_293_GDarray_ce0;
+    GDn_points_address0 <= grp_solveNextPatchPair_fu_293_GDn_points_address0;
+    GDn_points_ce0 <= grp_solveNextPatchPair_fu_293_GDn_points_ce0;
+    add_ln147_fu_579_p2 <= std_logic_vector(unsigned(result_V_fu_571_p3) + unsigned(ap_const_lv64_3938700));
+    add_ln341_fu_483_p2 <= std_logic_vector(unsigned(zext_ln341_fu_479_p1) + unsigned(ap_const_lv9_181));
+    and_ln506_1_fu_612_p2 <= (phi_ln506_1_reg_258 and and_ln506_fu_606_p2);
+    and_ln506_fu_606_p2 <= (phi_ln506_reg_224 and icmp_ln506_fu_600_p2);
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
@@ -559,9 +1606,9 @@ begin
     ap_CS_fsm_state7 <= ap_CS_fsm(6);
     ap_CS_fsm_state8 <= ap_CS_fsm(7);
 
-    ap_done_assign_proc : process(ap_CS_fsm_state2, icmp_ln458_fu_252_p2)
+    ap_done_assign_proc : process(ap_CS_fsm_state2, icmp_ln463_fu_428_p2)
     begin
-        if (((icmp_ln458_fu_252_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((icmp_ln463_fu_428_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -579,96 +1626,306 @@ begin
     end process;
 
 
-    ap_phi_mux_z_top_max_19_ph_phi_fu_128_p4_assign_proc : process(icmp_ln475_reg_505, z_top_max_19_ph_reg_124, z_top_max_fu_415_p3, ap_CS_fsm_state6)
+    ap_phi_mux_z_top_max_19_ph_phi_fu_216_p4_assign_proc : process(icmp_ln480_reg_681, z_top_max_19_ph_reg_212, z_top_max_fu_591_p3, ap_CS_fsm_state6)
     begin
-        if (((icmp_ln475_reg_505 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state6))) then 
-            ap_phi_mux_z_top_max_19_ph_phi_fu_128_p4 <= z_top_max_fu_415_p3;
+        if (((icmp_ln480_reg_681 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state6))) then 
+            ap_phi_mux_z_top_max_19_ph_phi_fu_216_p4 <= z_top_max_fu_591_p3;
         else 
-            ap_phi_mux_z_top_max_19_ph_phi_fu_128_p4 <= z_top_max_19_ph_reg_124;
+            ap_phi_mux_z_top_max_19_ph_phi_fu_216_p4 <= z_top_max_19_ph_reg_212;
         end if; 
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state2, icmp_ln458_fu_252_p2)
+    ap_ready_assign_proc : process(ap_CS_fsm_state2, icmp_ln463_fu_428_p2)
     begin
-        if (((icmp_ln458_fu_252_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((icmp_ln463_fu_428_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
         end if; 
     end process;
 
-    data_V_fu_264_p1 <= dc_reg_514;
-    grp_solveNextPatchPair_fu_205_ap_start <= grp_solveNextPatchPair_fu_205_ap_start_reg;
-    icmp_ln458_fu_252_p2 <= "1" when (signed(saved_apexZ0_fu_108) > signed(ap_const_lv64_FFFFFFFFFEB04E1C)) else "0";
-    icmp_ln475_fu_258_p2 <= "1" when (signed(n_patches_i) > signed(ap_const_lv32_0)) else "0";
-    icmp_ln477_fu_409_p2 <= "1" when (signed(add_ln145_fu_403_p2) > signed(ap_const_lv64_2FAF080)) else "0";
-    icmp_ln486_1_fu_476_p2 <= "1" when (signed(grp_solveNextPatchPair_fu_205_ap_return_3) < signed(ap_const_lv64_E4E1C0)) else "0";
-    icmp_ln486_fu_470_p2 <= "1" when (signed(grp_solveNextPatchPair_fu_205_ap_return_2) > signed(ap_const_lv64_FFFFFFFFFD050F1C)) else "0";
-    icmp_ln501_fu_424_p2 <= "1" when (signed(nPatchesInColumn_assign_reg_147) < signed(ap_const_lv32_5F5E100)) else "0";
-    isNeg_fu_313_p3 <= add_ln341_fu_307_p2(8 downto 8);
-    mantissa_fu_289_p4 <= ((ap_const_lv1_1 & tmp_76_fu_285_p1) & ap_const_lv1_0);
+    data_V_fu_440_p1 <= dc_reg_690;
+    grp_solveNextPatchPair_fu_293_ap_start <= grp_solveNextPatchPair_fu_293_ap_start_reg;
+    icmp_ln463_fu_428_p2 <= "1" when (signed(saved_apexZ0_fu_196) > signed(ap_const_lv64_FFFFFFFFFEB04E1C)) else "0";
+    icmp_ln480_fu_434_p2 <= "1" when (signed(n_patches_i) > signed(ap_const_lv32_0)) else "0";
+    icmp_ln482_fu_585_p2 <= "1" when (signed(add_ln147_fu_579_p2) > signed(ap_const_lv64_2FAF080)) else "0";
+    icmp_ln491_1_fu_652_p2 <= "1" when (signed(grp_solveNextPatchPair_fu_293_ap_return_3) < signed(ap_const_lv64_E4E1C0)) else "0";
+    icmp_ln491_fu_646_p2 <= "1" when (signed(grp_solveNextPatchPair_fu_293_ap_return_2) > signed(ap_const_lv64_FFFFFFFFFD050F1C)) else "0";
+    icmp_ln506_fu_600_p2 <= "1" when (signed(nPatchesInColumn_assign_reg_235) < signed(ap_const_lv32_5F5E100)) else "0";
+    isNeg_fu_489_p3 <= add_ln341_fu_483_p2(8 downto 8);
+    mantissa_fu_465_p4 <= ((ap_const_lv1_1 & tmp_143_fu_461_p1) & ap_const_lv1_0);
 
-    n_patches_o_assign_proc : process(n_patches_i, ap_CS_fsm_state8, grp_solveNextPatchPair_fu_205_n_patches_o, grp_solveNextPatchPair_fu_205_n_patches_o_ap_vld)
+    n_patches_o_assign_proc : process(n_patches_i, ap_CS_fsm_state8, grp_solveNextPatchPair_fu_293_n_patches_o, grp_solveNextPatchPair_fu_293_n_patches_o_ap_vld)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state8) and (grp_solveNextPatchPair_fu_205_n_patches_o_ap_vld = ap_const_logic_1))) then 
-            n_patches_o <= grp_solveNextPatchPair_fu_205_n_patches_o;
+        if (((grp_solveNextPatchPair_fu_293_n_patches_o_ap_vld = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+            n_patches_o <= grp_solveNextPatchPair_fu_293_n_patches_o;
         else 
             n_patches_o <= n_patches_i;
         end if; 
     end process;
 
 
-    n_patches_o_ap_vld_assign_proc : process(ap_CS_fsm_state8, grp_solveNextPatchPair_fu_205_n_patches_o_ap_vld)
+    n_patches_o_ap_vld_assign_proc : process(ap_CS_fsm_state8, grp_solveNextPatchPair_fu_293_n_patches_o_ap_vld)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
-            n_patches_o_ap_vld <= grp_solveNextPatchPair_fu_205_n_patches_o_ap_vld;
+            n_patches_o_ap_vld <= grp_solveNextPatchPair_fu_293_n_patches_o_ap_vld;
         else 
             n_patches_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    p_Result_s_fu_267_p3 <= data_V_fu_264_p1(31 downto 31);
-    patches_parameters_address0 <= grp_solveNextPatchPair_fu_205_patches_parameters_address0;
-    patches_parameters_address1 <= grp_solveNextPatchPair_fu_205_patches_parameters_address1;
-    patches_parameters_ce0 <= grp_solveNextPatchPair_fu_205_patches_parameters_ce0;
-    patches_parameters_ce1 <= grp_solveNextPatchPair_fu_205_patches_parameters_ce1;
-    patches_parameters_d0 <= grp_solveNextPatchPair_fu_205_patches_parameters_d0;
-    patches_parameters_d1 <= grp_solveNextPatchPair_fu_205_patches_parameters_d1;
-    patches_parameters_we0 <= grp_solveNextPatchPair_fu_205_patches_parameters_we0;
-    patches_parameters_we1 <= grp_solveNextPatchPair_fu_205_patches_parameters_we1;
-    patches_superpoints_address0 <= grp_solveNextPatchPair_fu_205_patches_superpoints_address0;
-    patches_superpoints_address1 <= grp_solveNextPatchPair_fu_205_patches_superpoints_address1;
-    patches_superpoints_ce0 <= grp_solveNextPatchPair_fu_205_patches_superpoints_ce0;
-    patches_superpoints_ce1 <= grp_solveNextPatchPair_fu_205_patches_superpoints_ce1;
-    patches_superpoints_d0 <= grp_solveNextPatchPair_fu_205_patches_superpoints_d0;
-    patches_superpoints_we0 <= grp_solveNextPatchPair_fu_205_patches_superpoints_we0;
-    r_V_14_fu_353_p2 <= std_logic_vector(shift_left(unsigned(zext_ln15_fu_299_p1),to_integer(unsigned('0' & sh_prom_i_i_i_i_i_i_cast_cast_cast_cast_fu_343_p1(31-1 downto 0)))));
-    r_V_fu_347_p2 <= std_logic_vector(shift_right(unsigned(zext_ln15_fu_299_p1),to_integer(unsigned('0' & sh_prom_i_i_i_i_i_i_cast_cast_cast_cast_fu_343_p1(31-1 downto 0)))));
-    result_V_17_fu_389_p2 <= std_logic_vector(unsigned(ap_const_lv64_0) - unsigned(val_fu_381_p3));
-    result_V_fu_395_p3 <= 
-        result_V_17_fu_389_p2 when (p_Result_s_fu_267_p3(0) = '1') else 
-        val_fu_381_p3;
-        sext_ln1311_fu_327_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(sub_ln1311_fu_321_p2),9));
+    p_Result_s_fu_443_p3 <= data_V_fu_440_p1(31 downto 31);
+    patches_parameters_0_address0 <= grp_solveNextPatchPair_fu_293_patches_parameters_0_address0;
+    patches_parameters_0_address1 <= grp_solveNextPatchPair_fu_293_patches_parameters_0_address1;
+    patches_parameters_0_ce0 <= grp_solveNextPatchPair_fu_293_patches_parameters_0_ce0;
+    patches_parameters_0_ce1 <= grp_solveNextPatchPair_fu_293_patches_parameters_0_ce1;
+    patches_parameters_0_d0 <= grp_solveNextPatchPair_fu_293_patches_parameters_0_d0;
+    patches_parameters_0_we0 <= grp_solveNextPatchPair_fu_293_patches_parameters_0_we0;
+    patches_parameters_1_address0 <= grp_solveNextPatchPair_fu_293_patches_parameters_1_address0;
+    patches_parameters_1_address1 <= grp_solveNextPatchPair_fu_293_patches_parameters_1_address1;
+    patches_parameters_1_ce0 <= grp_solveNextPatchPair_fu_293_patches_parameters_1_ce0;
+    patches_parameters_1_ce1 <= grp_solveNextPatchPair_fu_293_patches_parameters_1_ce1;
+    patches_parameters_1_d0 <= grp_solveNextPatchPair_fu_293_patches_parameters_1_d0;
+    patches_parameters_1_d1 <= grp_solveNextPatchPair_fu_293_patches_parameters_1_d1;
+    patches_parameters_1_we0 <= grp_solveNextPatchPair_fu_293_patches_parameters_1_we0;
+    patches_parameters_1_we1 <= grp_solveNextPatchPair_fu_293_patches_parameters_1_we1;
+    patches_parameters_2_address0 <= grp_solveNextPatchPair_fu_293_patches_parameters_2_address0;
+    patches_parameters_2_address1 <= grp_solveNextPatchPair_fu_293_patches_parameters_2_address1;
+    patches_parameters_2_ce0 <= grp_solveNextPatchPair_fu_293_patches_parameters_2_ce0;
+    patches_parameters_2_ce1 <= grp_solveNextPatchPair_fu_293_patches_parameters_2_ce1;
+    patches_parameters_2_d0 <= grp_solveNextPatchPair_fu_293_patches_parameters_2_d0;
+    patches_parameters_2_we0 <= grp_solveNextPatchPair_fu_293_patches_parameters_2_we0;
+    patches_parameters_3_address0 <= grp_solveNextPatchPair_fu_293_patches_parameters_3_address0;
+    patches_parameters_3_address1 <= grp_solveNextPatchPair_fu_293_patches_parameters_3_address1;
+    patches_parameters_3_ce0 <= grp_solveNextPatchPair_fu_293_patches_parameters_3_ce0;
+    patches_parameters_3_ce1 <= grp_solveNextPatchPair_fu_293_patches_parameters_3_ce1;
+    patches_parameters_3_d0 <= grp_solveNextPatchPair_fu_293_patches_parameters_3_d0;
+    patches_parameters_3_we0 <= grp_solveNextPatchPair_fu_293_patches_parameters_3_we0;
+    patches_parameters_4_address0 <= grp_solveNextPatchPair_fu_293_patches_parameters_4_address0;
+    patches_parameters_4_address1 <= grp_solveNextPatchPair_fu_293_patches_parameters_4_address1;
+    patches_parameters_4_ce0 <= grp_solveNextPatchPair_fu_293_patches_parameters_4_ce0;
+    patches_parameters_4_ce1 <= grp_solveNextPatchPair_fu_293_patches_parameters_4_ce1;
+    patches_parameters_4_d0 <= grp_solveNextPatchPair_fu_293_patches_parameters_4_d0;
+    patches_parameters_4_we0 <= grp_solveNextPatchPair_fu_293_patches_parameters_4_we0;
+    patches_superpoints_0_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_0_address0;
+    patches_superpoints_0_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_0_address1;
+    patches_superpoints_0_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_0_ce0;
+    patches_superpoints_0_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_0_ce1;
+    patches_superpoints_0_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_0_d0;
+    patches_superpoints_0_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_0_we0;
+    patches_superpoints_10_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_10_address0;
+    patches_superpoints_10_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_10_address1;
+    patches_superpoints_10_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_10_ce0;
+    patches_superpoints_10_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_10_ce1;
+    patches_superpoints_10_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_10_d0;
+    patches_superpoints_10_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_10_we0;
+    patches_superpoints_11_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_11_address0;
+    patches_superpoints_11_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_11_address1;
+    patches_superpoints_11_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_11_ce0;
+    patches_superpoints_11_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_11_ce1;
+    patches_superpoints_11_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_11_d0;
+    patches_superpoints_11_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_11_we0;
+    patches_superpoints_12_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_12_address0;
+    patches_superpoints_12_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_12_address1;
+    patches_superpoints_12_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_12_ce0;
+    patches_superpoints_12_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_12_ce1;
+    patches_superpoints_12_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_12_d0;
+    patches_superpoints_12_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_12_we0;
+    patches_superpoints_13_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_13_address0;
+    patches_superpoints_13_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_13_address1;
+    patches_superpoints_13_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_13_ce0;
+    patches_superpoints_13_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_13_ce1;
+    patches_superpoints_13_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_13_d0;
+    patches_superpoints_13_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_13_we0;
+    patches_superpoints_14_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_14_address0;
+    patches_superpoints_14_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_14_address1;
+    patches_superpoints_14_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_14_ce0;
+    patches_superpoints_14_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_14_ce1;
+    patches_superpoints_14_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_14_d0;
+    patches_superpoints_14_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_14_we0;
+    patches_superpoints_15_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_15_address0;
+    patches_superpoints_15_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_15_address1;
+    patches_superpoints_15_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_15_ce0;
+    patches_superpoints_15_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_15_ce1;
+    patches_superpoints_15_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_15_d0;
+    patches_superpoints_15_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_15_we0;
+    patches_superpoints_16_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_16_address0;
+    patches_superpoints_16_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_16_address1;
+    patches_superpoints_16_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_16_ce0;
+    patches_superpoints_16_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_16_ce1;
+    patches_superpoints_16_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_16_d0;
+    patches_superpoints_16_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_16_we0;
+    patches_superpoints_17_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_17_address0;
+    patches_superpoints_17_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_17_address1;
+    patches_superpoints_17_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_17_ce0;
+    patches_superpoints_17_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_17_ce1;
+    patches_superpoints_17_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_17_d0;
+    patches_superpoints_17_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_17_we0;
+    patches_superpoints_18_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_18_address0;
+    patches_superpoints_18_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_18_address1;
+    patches_superpoints_18_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_18_ce0;
+    patches_superpoints_18_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_18_ce1;
+    patches_superpoints_18_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_18_d0;
+    patches_superpoints_18_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_18_we0;
+    patches_superpoints_19_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_19_address0;
+    patches_superpoints_19_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_19_address1;
+    patches_superpoints_19_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_19_ce0;
+    patches_superpoints_19_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_19_ce1;
+    patches_superpoints_19_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_19_d0;
+    patches_superpoints_19_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_19_we0;
+    patches_superpoints_1_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_1_address0;
+    patches_superpoints_1_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_1_address1;
+    patches_superpoints_1_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_1_ce0;
+    patches_superpoints_1_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_1_ce1;
+    patches_superpoints_1_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_1_d0;
+    patches_superpoints_1_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_1_we0;
+    patches_superpoints_20_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_20_address0;
+    patches_superpoints_20_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_20_address1;
+    patches_superpoints_20_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_20_ce0;
+    patches_superpoints_20_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_20_ce1;
+    patches_superpoints_20_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_20_d0;
+    patches_superpoints_20_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_20_we0;
+    patches_superpoints_21_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_21_address0;
+    patches_superpoints_21_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_21_address1;
+    patches_superpoints_21_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_21_ce0;
+    patches_superpoints_21_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_21_ce1;
+    patches_superpoints_21_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_21_d0;
+    patches_superpoints_21_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_21_we0;
+    patches_superpoints_22_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_22_address0;
+    patches_superpoints_22_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_22_address1;
+    patches_superpoints_22_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_22_ce0;
+    patches_superpoints_22_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_22_ce1;
+    patches_superpoints_22_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_22_d0;
+    patches_superpoints_22_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_22_we0;
+    patches_superpoints_23_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_23_address0;
+    patches_superpoints_23_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_23_address1;
+    patches_superpoints_23_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_23_ce0;
+    patches_superpoints_23_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_23_ce1;
+    patches_superpoints_23_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_23_d0;
+    patches_superpoints_23_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_23_we0;
+    patches_superpoints_24_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_24_address0;
+    patches_superpoints_24_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_24_address1;
+    patches_superpoints_24_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_24_ce0;
+    patches_superpoints_24_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_24_ce1;
+    patches_superpoints_24_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_24_d0;
+    patches_superpoints_24_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_24_we0;
+    patches_superpoints_25_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_25_address0;
+    patches_superpoints_25_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_25_address1;
+    patches_superpoints_25_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_25_ce0;
+    patches_superpoints_25_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_25_ce1;
+    patches_superpoints_25_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_25_d0;
+    patches_superpoints_25_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_25_we0;
+    patches_superpoints_26_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_26_address0;
+    patches_superpoints_26_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_26_address1;
+    patches_superpoints_26_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_26_ce0;
+    patches_superpoints_26_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_26_ce1;
+    patches_superpoints_26_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_26_d0;
+    patches_superpoints_26_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_26_we0;
+    patches_superpoints_27_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_27_address0;
+    patches_superpoints_27_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_27_address1;
+    patches_superpoints_27_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_27_ce0;
+    patches_superpoints_27_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_27_ce1;
+    patches_superpoints_27_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_27_d0;
+    patches_superpoints_27_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_27_we0;
+    patches_superpoints_28_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_28_address0;
+    patches_superpoints_28_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_28_address1;
+    patches_superpoints_28_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_28_ce0;
+    patches_superpoints_28_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_28_ce1;
+    patches_superpoints_28_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_28_d0;
+    patches_superpoints_28_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_28_we0;
+    patches_superpoints_29_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_29_address0;
+    patches_superpoints_29_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_29_address1;
+    patches_superpoints_29_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_29_ce0;
+    patches_superpoints_29_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_29_ce1;
+    patches_superpoints_29_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_29_d0;
+    patches_superpoints_29_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_29_we0;
+    patches_superpoints_2_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_2_address0;
+    patches_superpoints_2_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_2_address1;
+    patches_superpoints_2_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_2_ce0;
+    patches_superpoints_2_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_2_ce1;
+    patches_superpoints_2_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_2_d0;
+    patches_superpoints_2_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_2_we0;
+    patches_superpoints_30_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_30_address0;
+    patches_superpoints_30_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_30_address1;
+    patches_superpoints_30_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_30_ce0;
+    patches_superpoints_30_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_30_ce1;
+    patches_superpoints_30_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_30_d0;
+    patches_superpoints_30_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_30_we0;
+    patches_superpoints_31_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_31_address0;
+    patches_superpoints_31_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_31_address1;
+    patches_superpoints_31_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_31_ce0;
+    patches_superpoints_31_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_31_ce1;
+    patches_superpoints_31_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_31_d0;
+    patches_superpoints_31_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_31_we0;
+    patches_superpoints_3_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_3_address0;
+    patches_superpoints_3_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_3_address1;
+    patches_superpoints_3_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_3_ce0;
+    patches_superpoints_3_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_3_ce1;
+    patches_superpoints_3_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_3_d0;
+    patches_superpoints_3_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_3_we0;
+    patches_superpoints_4_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_4_address0;
+    patches_superpoints_4_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_4_address1;
+    patches_superpoints_4_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_4_ce0;
+    patches_superpoints_4_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_4_ce1;
+    patches_superpoints_4_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_4_d0;
+    patches_superpoints_4_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_4_we0;
+    patches_superpoints_5_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_5_address0;
+    patches_superpoints_5_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_5_address1;
+    patches_superpoints_5_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_5_ce0;
+    patches_superpoints_5_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_5_ce1;
+    patches_superpoints_5_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_5_d0;
+    patches_superpoints_5_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_5_we0;
+    patches_superpoints_6_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_6_address0;
+    patches_superpoints_6_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_6_address1;
+    patches_superpoints_6_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_6_ce0;
+    patches_superpoints_6_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_6_ce1;
+    patches_superpoints_6_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_6_d0;
+    patches_superpoints_6_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_6_we0;
+    patches_superpoints_7_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_7_address0;
+    patches_superpoints_7_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_7_address1;
+    patches_superpoints_7_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_7_ce0;
+    patches_superpoints_7_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_7_ce1;
+    patches_superpoints_7_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_7_d0;
+    patches_superpoints_7_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_7_we0;
+    patches_superpoints_8_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_8_address0;
+    patches_superpoints_8_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_8_address1;
+    patches_superpoints_8_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_8_ce0;
+    patches_superpoints_8_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_8_ce1;
+    patches_superpoints_8_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_8_d0;
+    patches_superpoints_8_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_8_we0;
+    patches_superpoints_9_address0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_9_address0;
+    patches_superpoints_9_address1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_9_address1;
+    patches_superpoints_9_ce0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_9_ce0;
+    patches_superpoints_9_ce1 <= grp_solveNextPatchPair_fu_293_patches_superpoints_9_ce1;
+    patches_superpoints_9_d0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_9_d0;
+    patches_superpoints_9_we0 <= grp_solveNextPatchPair_fu_293_patches_superpoints_9_we0;
+    r_V_14_fu_529_p2 <= std_logic_vector(shift_left(unsigned(zext_ln15_fu_475_p1),to_integer(unsigned('0' & sh_prom_i_i_i_i_i_i_cast_cast_cast_cast_fu_519_p1(31-1 downto 0)))));
+    r_V_fu_523_p2 <= std_logic_vector(shift_right(unsigned(zext_ln15_fu_475_p1),to_integer(unsigned('0' & sh_prom_i_i_i_i_i_i_cast_cast_cast_cast_fu_519_p1(31-1 downto 0)))));
+    result_V_17_fu_565_p2 <= std_logic_vector(unsigned(ap_const_lv64_0) - unsigned(val_fu_557_p3));
+    result_V_fu_571_p3 <= 
+        result_V_17_fu_565_p2 when (p_Result_s_fu_443_p3(0) = '1') else 
+        val_fu_557_p3;
+        sext_ln1311_fu_503_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(sub_ln1311_fu_497_p2),9));
 
-    sh_prom_i_i_i_i_i_i_cast_cast_cast_cast_fu_343_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sh_prom_i_i_i_i_i_i_cast_cast_cast_fu_339_p1),111));
-        sh_prom_i_i_i_i_i_i_cast_cast_cast_fu_339_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(ush_fu_331_p3),32));
+    sh_prom_i_i_i_i_i_i_cast_cast_cast_cast_fu_519_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sh_prom_i_i_i_i_i_i_cast_cast_cast_fu_515_p1),111));
+        sh_prom_i_i_i_i_i_i_cast_cast_cast_fu_515_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(ush_fu_507_p3),32));
 
-    sub_ln1311_fu_321_p2 <= std_logic_vector(unsigned(ap_const_lv8_7F) - unsigned(tmp_75_fu_275_p4));
-    tmp_75_fu_275_p4 <= data_V_fu_264_p1(30 downto 23);
-    tmp_76_fu_285_p1 <= data_V_fu_264_p1(23 - 1 downto 0);
-    tmp_fu_359_p3 <= r_V_fu_347_p2(24 downto 24);
-    tmp_s_fu_371_p4 <= r_V_14_fu_353_p2(87 downto 24);
-    ush_fu_331_p3 <= 
-        sext_ln1311_fu_327_p1 when (isNeg_fu_313_p3(0) = '1') else 
-        add_ln341_fu_307_p2;
-    val_fu_381_p3 <= 
-        zext_ln662_fu_367_p1 when (isNeg_fu_313_p3(0) = '1') else 
-        tmp_s_fu_371_p4;
-    z_top_max_fu_415_p3 <= 
-        ap_const_lv64_2FAF080 when (icmp_ln477_fu_409_p2(0) = '1') else 
-        add_ln145_fu_403_p2;
-    zext_ln15_fu_299_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(mantissa_fu_289_p4),111));
-    zext_ln341_fu_303_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_75_fu_275_p4),9));
-    zext_ln662_fu_367_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_359_p3),64));
+    sub_ln1311_fu_497_p2 <= std_logic_vector(unsigned(ap_const_lv8_7F) - unsigned(tmp_142_fu_451_p4));
+    tmp_142_fu_451_p4 <= data_V_fu_440_p1(30 downto 23);
+    tmp_143_fu_461_p1 <= data_V_fu_440_p1(23 - 1 downto 0);
+    tmp_fu_535_p3 <= r_V_fu_523_p2(24 downto 24);
+    tmp_s_fu_547_p4 <= r_V_14_fu_529_p2(87 downto 24);
+    ush_fu_507_p3 <= 
+        sext_ln1311_fu_503_p1 when (isNeg_fu_489_p3(0) = '1') else 
+        add_ln341_fu_483_p2;
+    val_fu_557_p3 <= 
+        zext_ln662_fu_543_p1 when (isNeg_fu_489_p3(0) = '1') else 
+        tmp_s_fu_547_p4;
+    z_top_max_fu_591_p3 <= 
+        ap_const_lv64_2FAF080 when (icmp_ln482_fu_585_p2(0) = '1') else 
+        add_ln147_fu_579_p2;
+    zext_ln15_fu_475_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(mantissa_fu_465_p4),111));
+    zext_ln341_fu_479_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_142_fu_451_p4),9));
+    zext_ln662_fu_543_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_535_p3),64));
 end behav;

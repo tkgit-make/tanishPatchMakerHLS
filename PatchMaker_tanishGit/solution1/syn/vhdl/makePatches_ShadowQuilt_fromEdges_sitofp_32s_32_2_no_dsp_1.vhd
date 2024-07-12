@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity makePatches_ShadowQuilt_fromEdges_sitofp_32s_32_2_no_dsp_1 is
     generic (
-        ID         : integer := 43;
+        ID         : integer := 50;
         NUM_STAGE  : integer := 2;
         din0_WIDTH : integer := 32;
         dout_WIDTH : integer := 32

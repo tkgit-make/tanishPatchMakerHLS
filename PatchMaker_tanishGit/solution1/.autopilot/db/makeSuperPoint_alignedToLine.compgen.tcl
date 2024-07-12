@@ -674,8 +674,99 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
+set id 17
+set name makePatches_ShadowQuilt_fromEdges_mux_53_64_1_1
+set corename simcore_mux
+set op mux
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set din0_width 64
+set din0_signed 0
+set din1_width 64
+set din1_signed 0
+set din2_width 64
+set din2_signed 0
+set din3_width 64
+set din3_signed 0
+set din4_width 64
+set din4_signed 0
+set din5_width 3
+set din5_signed 0
+set dout_width 64
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
+eval "ap_gen_simcore_mux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mux
+set corename Multiplexer
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
+}
+}
+
+
 # Memory (RAM/ROM)  definition:
-set ID 25
+set ID 28
 set hasByteEnable 0
 set MemName makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_radii
 set CoreName ap_simcore_mem
@@ -761,7 +852,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 26
+set ID 29
 set hasByteEnable 0
 set MemName makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_trapezoid_edges
 set CoreName ap_simcore_mem
@@ -847,7 +938,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 27
+set ID 30
 set hasByteEnable 0
 set MemName makePatches_ShadowQuilt_fromEdges_makeSuperPoint_alignedToLine_row_list
 set CoreName ap_simcore_mem
@@ -942,7 +1033,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 28 \
+    id 31 \
     name GDarray \
     reset_level 1 \
     sync_rst true \
@@ -961,7 +1052,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 29 \
+    id 32 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -980,14 +1071,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 35 \
+    id 38 \
     name init_patch \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename init_patch \
     op interface \
-    ports { init_patch_address0 { O 10 vector } init_patch_ce0 { O 1 bit } init_patch_we0 { O 1 bit } init_patch_d0 { O 64 vector } init_patch_q0 { I 64 vector } init_patch_address1 { O 10 vector } init_patch_ce1 { O 1 bit } init_patch_we1 { O 1 bit } init_patch_d1 { O 64 vector } init_patch_q1 { I 64 vector } } \
+    ports { init_patch_address0 { O 8 vector } init_patch_ce0 { O 1 bit } init_patch_we0 { O 1 bit } init_patch_d0 { O 64 vector } init_patch_q0 { I 64 vector } init_patch_address1 { O 8 vector } init_patch_ce1 { O 1 bit } init_patch_we1 { O 1 bit } init_patch_d1 { O 64 vector } init_patch_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'init_patch'"
@@ -999,7 +1090,83 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 37 \
+    id 39 \
+    name init_patch1 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename init_patch1 \
+    op interface \
+    ports { init_patch1_address0 { O 8 vector } init_patch1_ce0 { O 1 bit } init_patch1_we0 { O 1 bit } init_patch1_d0 { O 64 vector } init_patch1_q0 { I 64 vector } init_patch1_address1 { O 8 vector } init_patch1_ce1 { O 1 bit } init_patch1_we1 { O 1 bit } init_patch1_d1 { O 64 vector } init_patch1_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'init_patch1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 40 \
+    name init_patch2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename init_patch2 \
+    op interface \
+    ports { init_patch2_address0 { O 8 vector } init_patch2_ce0 { O 1 bit } init_patch2_we0 { O 1 bit } init_patch2_d0 { O 64 vector } init_patch2_q0 { I 64 vector } init_patch2_address1 { O 8 vector } init_patch2_ce1 { O 1 bit } init_patch2_we1 { O 1 bit } init_patch2_d1 { O 64 vector } init_patch2_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'init_patch2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 41 \
+    name init_patch3 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename init_patch3 \
+    op interface \
+    ports { init_patch3_address0 { O 8 vector } init_patch3_ce0 { O 1 bit } init_patch3_we0 { O 1 bit } init_patch3_d0 { O 64 vector } init_patch3_q0 { I 64 vector } init_patch3_address1 { O 8 vector } init_patch3_ce1 { O 1 bit } init_patch3_we1 { O 1 bit } init_patch3_d1 { O 64 vector } init_patch3_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'init_patch3'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 42 \
+    name init_patch4 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename init_patch4 \
+    op interface \
+    ports { init_patch4_address0 { O 8 vector } init_patch4_ce0 { O 1 bit } init_patch4_we0 { O 1 bit } init_patch4_d0 { O 64 vector } init_patch4_q0 { I 64 vector } init_patch4_address1 { O 8 vector } init_patch4_ce1 { O 1 bit } init_patch4_we1 { O 1 bit } init_patch4_d1 { O 64 vector } init_patch4_q1 { I 64 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'init_patch4'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 44 \
     name temp \
     reset_level 1 \
     sync_rst true \
@@ -1017,7 +1184,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 30 \
+    id 33 \
     name i \
     type other \
     dir I \
@@ -1032,7 +1199,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 31 \
+    id 34 \
     name z_top \
     type other \
     dir I \
@@ -1047,7 +1214,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 32 \
+    id 35 \
     name apexZ0 \
     type other \
     dir I \
@@ -1062,7 +1229,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 33 \
+    id 36 \
     name original_ppl \
     type other \
     dir I \
@@ -1077,22 +1244,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 34 \
-    name leftRight \
+    id 37 \
+    name leftRight_offset \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_leftRight \
+    corename dc_leftRight_offset \
     op interface \
-    ports { leftRight { I 1 vector } } \
+    ports { leftRight_offset { I 1 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 36 \
+    id 43 \
     name p_read1 \
     type other \
     dir I \

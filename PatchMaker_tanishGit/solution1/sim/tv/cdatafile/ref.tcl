@@ -1,0 +1,47 @@
+set depth_list {
+{apexZ0 1}
+{stop 1}
+{ppl 1}
+{leftRight 1}
+{n_patches 1}
+{GDarray 1280}
+{GDn_points 5}
+{patches_superpoints_0 720}
+{patches_superpoints_1 720}
+{patches_superpoints_2 720}
+{patches_superpoints_3 720}
+{patches_superpoints_4 720}
+{patches_superpoints_5 720}
+{patches_superpoints_6 720}
+{patches_superpoints_7 720}
+{patches_superpoints_8 720}
+{patches_superpoints_9 720}
+{patches_superpoints_10 720}
+{patches_superpoints_11 720}
+{patches_superpoints_12 720}
+{patches_superpoints_13 720}
+{patches_superpoints_14 720}
+{patches_superpoints_15 720}
+{patches_superpoints_16 720}
+{patches_superpoints_17 720}
+{patches_superpoints_18 720}
+{patches_superpoints_19 720}
+{patches_superpoints_20 720}
+{patches_superpoints_21 720}
+{patches_superpoints_22 720}
+{patches_superpoints_23 720}
+{patches_superpoints_24 720}
+{patches_superpoints_25 720}
+{patches_superpoints_26 720}
+{patches_superpoints_27 720}
+{patches_superpoints_28 720}
+{patches_superpoints_29 720}
+{patches_superpoints_30 720}
+{patches_superpoints_31 720}
+{patches_parameters_0 768}
+{patches_parameters_1 768}
+{patches_parameters_2 768}
+{patches_parameters_3 768}
+{patches_parameters_4 768}
+}
+set trans_num 1

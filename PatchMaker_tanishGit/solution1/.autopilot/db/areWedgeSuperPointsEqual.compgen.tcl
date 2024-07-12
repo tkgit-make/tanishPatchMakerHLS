@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 80 \
-    name wsp1_2 \
+    id 180 \
+    name patches_superpoints_31 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename wsp1_2 \
+    corename patches_superpoints_31 \
     op interface \
-    ports { wsp1_2_address0 { O 15 vector } wsp1_2_ce0 { O 1 bit } wsp1_2_q0 { I 64 vector } wsp1_2_address1 { O 15 vector } wsp1_2_ce1 { O 1 bit } wsp1_2_q1 { I 64 vector } } \
+    ports { patches_superpoints_31_address0 { O 10 vector } patches_superpoints_31_ce0 { O 1 bit } patches_superpoints_31_q0 { I 64 vector } patches_superpoints_31_address1 { O 10 vector } patches_superpoints_31_ce1 { O 1 bit } patches_superpoints_31_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wsp1_2'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_31'"
 }
 }
 
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 81 \
+    id 181 \
     name wsp1 \
     type other \
     dir I \
@@ -37,29 +37,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_wsp1 \
     op interface \
-    ports { wsp1 { I 5 vector } } \
+    ports { wsp1 { I 3 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 82 \
-    name wsp11 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_wsp11 \
-    op interface \
-    ports { wsp11 { I 3 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 83 \
+    id 182 \
     name wsp2 \
     type other \
     dir I \
@@ -67,22 +52,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_wsp2 \
     op interface \
-    ports { wsp2 { I 5 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 84 \
-    name wsp25 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_wsp25 \
-    op interface \
-    ports { wsp25 { I 3 vector } } \
+    ports { wsp2 { I 3 vector } } \
 } "
 }
 
