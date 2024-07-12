@@ -135,3 +135,22 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // HMemoryUtils.trashcanNow. Engine heap size: 1,022 MB. GUI used memory: 58 MB. Current time: 7/12/24, 3:19:32 PM EDT
 dismissDialog("Sourcing Tcl script 'open_wave.tcl'"); // bz
 // TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// [GUI Memory]: 116 MB (+4788kb) [00:00:21]
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "AESL_inst_makePatches_ShadowQuilt_fromEdges ; makePatches_ShadowQuilt_fromEdges ; Verilog Module", 1, "AESL_inst_makePatches_ShadowQuilt_fromEdges", 0, true); // c - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 122 MB (+207kb) [00:03:27]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 129 MB (+369kb) [00:03:27]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
