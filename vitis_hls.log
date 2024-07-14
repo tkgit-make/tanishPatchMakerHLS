@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Fri Jul 12 14:43:21 -0400 2024
+INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Fri Jul 12 16:09:18 -0400 2024
 INFO: [HLS 200-10] In directory 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS'
 Sourcing Tcl script 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/cosim.tcl'
 INFO: [HLS 200-1510] Running: open_project PatchMaker_tanishGit 
@@ -91,7 +91,7 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'makePatches_Shado
 WARNING: [IP_Flow 19-4832] The IP name 'makePatches_ShadowQuilt_fromEdges_ap_sitofp_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'makePatches_ShadowQuilt_fromEdges_ap_sitofp_0_no_dsp_64'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'makePatches_ShadowQuilt_fromEdges_ap_sitofp_0_no_dsp_64'...
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 12 14:44:39 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 12 16:10:40 2024...
 INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
@@ -746,7 +746,7 @@ Built simulation snapshot makePatches_ShadowQuilt_fromEdges
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/xsim.dir/makePatches_ShadowQuilt_fromEdges/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri Jul 12 14:50:20 2024...
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 12 16:16:05 2024...
 
 ****** xsim v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020

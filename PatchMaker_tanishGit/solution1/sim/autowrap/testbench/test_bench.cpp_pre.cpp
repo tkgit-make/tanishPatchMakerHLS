@@ -68690,8 +68690,8 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
    }
   }
 #pragma HLS array_partition variable=patches_parameters type=complete
+#pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
 
-#pragma HLS stream variable=patches_superpoints
     int n_patches = 0;
 
     for (int z = 0; z < wedges[1]; z++)

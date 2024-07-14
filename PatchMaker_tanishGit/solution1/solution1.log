@@ -9860,3 +9860,30 @@ INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 6 seconds. CPU 
 Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+ERROR: [COSIM 212-366] Cannot delete directory  'sim/report': it is being used by another program. Please close the program and try again.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.382 seconds; current allocated memory: 871.507 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
