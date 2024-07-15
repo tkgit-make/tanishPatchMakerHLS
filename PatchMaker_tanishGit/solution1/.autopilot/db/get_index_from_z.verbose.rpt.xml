@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'get_index_from_z'" level="0">
-<item name = "Date">Thu Jul 11 15:46:44 2024
+<item name = "Date">Sun Jul 14 15:02:45 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -64,8 +64,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_64ns_66ns_129_1_1_U291">mul_64ns_66ns_129_1_1, 0, 8, 0, 50, 0</column>
-<column name="sitodp_64ns_64_2_no_dsp_1_U290">sitodp_64ns_64_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="mul_64ns_66ns_129_1_1_U397">mul_64ns_66ns_129_1_1, 0, 8, 0, 50, 0</column>
+<column name="sitodp_64ns_64_2_no_dsp_1_U396">sitodp_64ns_64_2_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -82,18 +82,18 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln441_fu_220_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln443_fu_334_p2">+, 0, 0, 64, 64, 64</column>
+<column name="add_ln417_fu_220_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln419_fu_334_p2">+, 0, 0, 64, 64, 64</column>
 <column name="add_ln510_fu_400_p2">+, 0, 0, 19, 12, 11</column>
 <column name="add_ln54_fu_265_p2">+, 0, 0, 46, 39, 39</column>
 <column name="sub_ln1311_fu_414_p2">-, 0, 0, 18, 10, 11</column>
-<column name="sub_ln443_1_fu_361_p2">-, 0, 0, 71, 64, 64</column>
-<column name="sub_ln443_fu_328_p2">-, 0, 0, 64, 64, 64</column>
+<column name="sub_ln419_1_fu_361_p2">-, 0, 0, 71, 64, 64</column>
+<column name="sub_ln419_fu_328_p2">-, 0, 0, 64, 64, 64</column>
 <column name="sub_ln54_14_fu_255_p2">-, 0, 0, 45, 38, 38</column>
 <column name="sub_ln54_fu_204_p2">-, 0, 0, 24, 17, 17</column>
-<column name="icmp_ln441_fu_226_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln444_fu_481_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="lshr_ln443_fu_351_p2">lshr, 0, 0, 686, 192, 192</column>
+<column name="icmp_ln417_fu_226_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln420_fu_481_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="lshr_ln419_fu_351_p2">lshr, 0, 0, 686, 192, 192</column>
 <column name="r_V_fu_439_p2">lshr, 0, 0, 591, 169, 169</column>
 <column name="or_ln54_fu_210_p2">or, 0, 0, 17, 17, 5</column>
 <column name="index_1_fu_495_p3">select, 0, 0, 32, 1, 32</column>
@@ -118,8 +118,8 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="GDn_points_load_reg_519">32, 0, 32, 0</column>
-<column name="add_ln441_reg_529">32, 0, 32, 0</column>
-<column name="add_ln443_reg_548">61, 0, 64, 3</column>
+<column name="add_ln417_reg_529">32, 0, 32, 0</column>
+<column name="add_ln419_reg_548">61, 0, 64, 3</column>
 <column name="add_ln54_reg_538">36, 0, 39, 3</column>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
@@ -129,15 +129,15 @@
 <column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
 <column name="i_reg_138">32, 0, 32, 0</column>
-<column name="icmp_ln441_reg_534">1, 0, 1, 0</column>
+<column name="icmp_ln417_reg_534">1, 0, 1, 0</column>
 <column name="index_reg_150">32, 0, 32, 0</column>
 <column name="minVal_reg_162">64, 0, 64, 0</column>
-<column name="sext_ln441_reg_524">28, 0, 39, 11</column>
-<column name="sub_ln443_1_reg_553">64, 0, 64, 0</column>
-<column name="tmp_165_reg_558">11, 0, 11, 0</column>
-<column name="tmp_166_reg_564">52, 0, 52, 0</column>
+<column name="sext_ln417_reg_524">28, 0, 39, 11</column>
+<column name="sub_ln419_1_reg_553">64, 0, 64, 0</column>
+<column name="tmp_182_reg_558">11, 0, 11, 0</column>
+<column name="tmp_183_reg_564">52, 0, 52, 0</column>
 <column name="i_reg_138">64, 32, 32, 0</column>
-<column name="icmp_ln441_reg_534">64, 32, 1, 0</column>
+<column name="icmp_ln417_reg_534">64, 32, 1, 0</column>
 </table>
 </item>
 </section>

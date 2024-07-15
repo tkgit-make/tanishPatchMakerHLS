@@ -6,8 +6,8 @@
 module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_superpoints_0_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
 
 parameter DWIDTH = 64;
-parameter AWIDTH = 8;
-parameter MEM_SIZE = 144;
+parameter AWIDTH = 6;
+parameter MEM_SIZE = 48;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -58,8 +58,8 @@ module makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_super
     q1);
 
 parameter DataWidth = 32'd64;
-parameter AddressRange = 32'd144;
-parameter AddressWidth = 32'd8;
+parameter AddressRange = 32'd48;
+parameter AddressWidth = 32'd6;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'areWedgeSuperPointsEqual'" level="0">
-<item name = "Date">Thu Jul 11 15:46:34 2024
+<item name = "Date">Sun Jul 14 15:02:34 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -47,12 +47,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 2823, -</column>
+<column name="Expression">-, -, 0, 2857, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 51, -</column>
-<column name="Register">-, -, 17, -, -</column>
+<column name="Register">-, -, 11, -, -</column>
 <specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
@@ -63,7 +63,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sitodp_64ns_64_2_no_dsp_1_U179">sitodp_64ns_64_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitodp_64ns_64_2_no_dsp_1_U231">sitodp_64ns_64_2_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -80,28 +80,32 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln36_10_fu_214_p2">+, 0, 0, 17, 10, 7</column>
-<column name="add_ln36_6_fu_156_p2">+, 0, 0, 17, 10, 7</column>
-<column name="add_ln36_7_fu_204_p2">+, 0, 0, 17, 10, 7</column>
-<column name="add_ln36_8_fu_187_p2">+, 0, 0, 17, 10, 10</column>
-<column name="add_ln36_9_fu_193_p2">+, 0, 0, 17, 10, 7</column>
-<column name="add_ln36_fu_150_p2">+, 0, 0, 17, 10, 10</column>
-<column name="add_ln510_3_fu_384_p2">+, 0, 0, 19, 12, 11</column>
-<column name="add_ln510_fu_260_p2">+, 0, 0, 19, 12, 11</column>
-<column name="grp_fu_115_p0">-, 0, 0, 71, 64, 64</column>
-<column name="sub_ln1311_6_fu_398_p2">-, 0, 0, 18, 10, 11</column>
-<column name="sub_ln1311_fu_274_p2">-, 0, 0, 18, 10, 11</column>
+<column name="add_ln23_2_fu_291_p2">+, 0, 0, 19, 8, 2</column>
+<column name="add_ln23_fu_249_p2">+, 0, 0, 19, 8, 2</column>
+<column name="add_ln510_3_fu_462_p2">+, 0, 0, 19, 12, 11</column>
+<column name="add_ln510_fu_338_p2">+, 0, 0, 19, 12, 11</column>
+<column name="grp_fu_121_p0">-, 0, 0, 71, 64, 64</column>
+<column name="sub_ln1311_6_fu_476_p2">-, 0, 0, 18, 10, 11</column>
+<column name="sub_ln1311_fu_352_p2">-, 0, 0, 18, 10, 11</column>
+<column name="sub_ln23_6_fu_243_p2">-, 0, 0, 19, 8, 8</column>
+<column name="sub_ln23_7_fu_201_p2">-, 0, 0, 15, 8, 8</column>
+<column name="sub_ln23_8_fu_285_p2">-, 0, 0, 19, 8, 8</column>
+<column name="sub_ln23_fu_160_p2">-, 0, 0, 15, 8, 8</column>
 <column name="ap_return">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln36_2_fu_466_p2">icmp, 0, 0, 29, 64, 7</column>
-<column name="icmp_ln36_fu_342_p2">icmp, 0, 0, 29, 64, 7</column>
-<column name="r_V_20_fu_424_p2">lshr, 0, 0, 591, 169, 169</column>
-<column name="r_V_fu_300_p2">lshr, 0, 0, 591, 169, 169</column>
-<column name="ush_7_fu_408_p3">select, 0, 0, 12, 1, 12</column>
-<column name="ush_fu_284_p3">select, 0, 0, 12, 1, 12</column>
-<column name="val_7_fu_458_p3">select, 0, 0, 63, 1, 64</column>
-<column name="val_fu_334_p3">select, 0, 0, 63, 1, 64</column>
-<column name="r_V_19_fu_306_p2">shl, 0, 0, 591, 169, 169</column>
-<column name="r_V_21_fu_430_p2">shl, 0, 0, 591, 169, 169</column>
+<column name="icmp_ln23_2_fu_544_p2">icmp, 0, 0, 29, 64, 7</column>
+<column name="icmp_ln23_fu_420_p2">icmp, 0, 0, 29, 64, 7</column>
+<column name="r_V_20_fu_502_p2">lshr, 0, 0, 591, 169, 169</column>
+<column name="r_V_fu_378_p2">lshr, 0, 0, 591, 169, 169</column>
+<column name="or_ln23_4_fu_218_p2">or, 0, 0, 7, 7, 4</column>
+<column name="or_ln23_5_fu_207_p2">or, 0, 0, 8, 8, 2</column>
+<column name="or_ln23_6_fu_260_p2">or, 0, 0, 7, 7, 4</column>
+<column name="or_ln23_fu_166_p2">or, 0, 0, 8, 8, 2</column>
+<column name="ush_7_fu_486_p3">select, 0, 0, 12, 1, 12</column>
+<column name="ush_fu_362_p3">select, 0, 0, 12, 1, 12</column>
+<column name="val_7_fu_536_p3">select, 0, 0, 63, 1, 64</column>
+<column name="val_fu_412_p3">select, 0, 0, 63, 1, 64</column>
+<column name="r_V_19_fu_384_p2">shl, 0, 0, 591, 169, 169</column>
+<column name="r_V_21_fu_508_p2">shl, 0, 0, 591, 169, 169</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -109,18 +113,18 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">14, 3, 1, 3</column>
 <column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
-<column name="patches_superpoints_31_address0">14, 3, 10, 30</column>
-<column name="patches_superpoints_31_address1">14, 3, 10, 30</column>
+<column name="patches_superpoints_31_address0">14, 3, 8, 24</column>
+<column name="patches_superpoints_31_address1">14, 3, 8, 24</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln36_8_reg_487">6, 0, 10, 4</column>
-<column name="add_ln36_reg_477">6, 0, 10, 4</column>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="icmp_ln36_reg_507">1, 0, 1, 0</column>
+<column name="icmp_ln23_reg_585">1, 0, 1, 0</column>
+<column name="tmp_reg_555">3, 0, 7, 4</column>
+<column name="tmp_s_reg_565">3, 0, 7, 4</column>
 </table>
 </item>
 </section>
@@ -137,10 +141,10 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, areWedgeSuperPointsEqual, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, areWedgeSuperPointsEqual, return value</column>
 <column name="ap_return">out, 1, ap_ctrl_hs, areWedgeSuperPointsEqual, return value</column>
-<column name="patches_superpoints_31_address0">out, 10, ap_memory, patches_superpoints_31, array</column>
+<column name="patches_superpoints_31_address0">out, 8, ap_memory, patches_superpoints_31, array</column>
 <column name="patches_superpoints_31_ce0">out, 1, ap_memory, patches_superpoints_31, array</column>
 <column name="patches_superpoints_31_q0">in, 64, ap_memory, patches_superpoints_31, array</column>
-<column name="patches_superpoints_31_address1">out, 10, ap_memory, patches_superpoints_31, array</column>
+<column name="patches_superpoints_31_address1">out, 8, ap_memory, patches_superpoints_31, array</column>
 <column name="patches_superpoints_31_ce1">out, 1, ap_memory, patches_superpoints_31, array</column>
 <column name="patches_superpoints_31_q1">in, 64, ap_memory, patches_superpoints_31, array</column>
 <column name="wsp1">in, 3, ap_none, wsp1, scalar</column>

@@ -12,7 +12,7 @@ set isEnableWaveformDebug 1
 set C_modelName {areWedgeSuperPointsEqual}
 set C_modelType { int 1 }
 set C_modelArgList {
-	{ patches_superpoints_31 int 64 regular {array 720 { 1 1 } 1 1 }  }
+	{ patches_superpoints_31 int 64 regular {array 240 { 1 1 } 1 1 }  }
 	{ wsp1 int 3 regular  }
 	{ wsp2 int 3 regular  }
 }
@@ -30,10 +30,10 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ patches_superpoints_31_address0 sc_out sc_lv 10 signal 0 } 
+	{ patches_superpoints_31_address0 sc_out sc_lv 8 signal 0 } 
 	{ patches_superpoints_31_ce0 sc_out sc_logic 1 signal 0 } 
 	{ patches_superpoints_31_q0 sc_in sc_lv 64 signal 0 } 
-	{ patches_superpoints_31_address1 sc_out sc_lv 10 signal 0 } 
+	{ patches_superpoints_31_address1 sc_out sc_lv 8 signal 0 } 
 	{ patches_superpoints_31_ce1 sc_out sc_logic 1 signal 0 } 
 	{ patches_superpoints_31_q1 sc_in sc_lv 64 signal 0 } 
 	{ wsp1 sc_in sc_lv 3 signal 1 } 
@@ -47,10 +47,10 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "patches_superpoints_31_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "patches_superpoints_31", "role": "address0" }} , 
+ 	{ "name": "patches_superpoints_31_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "patches_superpoints_31", "role": "address0" }} , 
  	{ "name": "patches_superpoints_31_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints_31", "role": "ce0" }} , 
  	{ "name": "patches_superpoints_31_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "patches_superpoints_31", "role": "q0" }} , 
- 	{ "name": "patches_superpoints_31_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "patches_superpoints_31", "role": "address1" }} , 
+ 	{ "name": "patches_superpoints_31_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "patches_superpoints_31", "role": "address1" }} , 
  	{ "name": "patches_superpoints_31_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints_31", "role": "ce1" }} , 
  	{ "name": "patches_superpoints_31_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "patches_superpoints_31", "role": "q1" }} , 
  	{ "name": "wsp1", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "wsp1", "role": "default" }} , 
@@ -75,7 +75,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "patches_superpoints_31", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "wsp1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "wsp2", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitodp_64ns_64_2_no_dsp_1_U179", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitodp_64ns_64_2_no_dsp_1_U231", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -96,7 +96,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	patches_superpoints_31 { ap_memory {  { patches_superpoints_31_address0 mem_address 1 10 }  { patches_superpoints_31_ce0 mem_ce 1 1 }  { patches_superpoints_31_q0 mem_dout 0 64 }  { patches_superpoints_31_address1 MemPortADDR2 1 10 }  { patches_superpoints_31_ce1 MemPortCE2 1 1 }  { patches_superpoints_31_q1 MemPortDOUT2 0 64 } } }
+	patches_superpoints_31 { ap_memory {  { patches_superpoints_31_address0 mem_address 1 8 }  { patches_superpoints_31_ce0 mem_ce 1 1 }  { patches_superpoints_31_q0 mem_dout 0 64 }  { patches_superpoints_31_address1 MemPortADDR2 1 8 }  { patches_superpoints_31_ce1 MemPortCE2 1 1 }  { patches_superpoints_31_q1 MemPortDOUT2 0 64 } } }
 	wsp1 { ap_none {  { wsp1 in_data 0 3 } } }
 	wsp2 { ap_none {  { wsp2 in_data 0 3 } } }
 }

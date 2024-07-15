@@ -23,7 +23,7 @@ int comparePoints(const std::array<long, 3> &pointA, const std::array<long, 3> &
 
 void solve(long apexZ0, int ppl, bool leftRight, index_type &n_patches,
            std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points)[5],
-           long (&patches_superpoints)[MAX_PATCHES][5][3][16][3], long (&patches_parameters)[MAX_PATCHES][5][4][6])
+           long (&patches_superpoints)[MAX_PATCHES][5][16][3], long (&patches_parameters)[MAX_PATCHES][5][4][6])
 {
 solve_loop:
     for (index_type i = 0; i < num_layers; i++)
@@ -287,24 +287,22 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 			GDn_points[a] = 0;
 		}
 
-		long patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][3][MAX_POINTS_IN_SUPERPOINT][3];
+		long patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3];
 
 		for(int a = 0; a < MAX_PATCHES; a++)
 		{
 			for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
 			{
-				for(int c = 0; c < 3; c++)
+				for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
 				{
-					for(int d = 0; d < MAX_POINTS_IN_SUPERPOINT; d++)
+					for(int d = 0; d < 3; d++)
 					{
-						for(int e = 0; e < 3; e++)
-						{
-							patches_superpoints[a][b][c][d][e] = 0;
-						}
+						patches_superpoints[a][b][c][d] = 0;
 					}
 				}
 			}
 		}
+
 #pragma HLS array_partition variable=patches_superpoints type=complete
 		long patches_parameters[MAX_PATCHES][5][MAX_PARALLELOGRAMS_PER_PATCH][6];
 
@@ -322,7 +320,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 			}
 		}
 #pragma HLS array_partition variable=patches_parameters type=complete
-#pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
+//#pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
 //#pragma HLS stream variable=patches_superpoints
     index_type n_patches = 0;
 
@@ -362,13 +360,13 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 			{
 				printf("Superpoint \n");
 				//printf("%d", static_cast<int>(patches_superpoints[i][j][2][0][0]));
-				for (int r = 0; r < static_cast<int>(patches_superpoints[i][j][2][0][0]); r++)
+				for (int r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
 				{
 					printf("%d %.4f %d %.4f\n",
-							patches_superpoints[i][j][0][r][0],
-							patches_superpoints[i][j][0][r][1]  / (float) INTEGER_FACTOR_RAD,
-							(int) (radii[patches_superpoints[i][j][0][r][0] - 1] /  (float) INTEGER_FACTOR_CM),
-							patches_superpoints[i][j][0][r][2] / (float) INTEGER_FACTOR_CM);
+							patches_superpoints[i][j][r][0],
+							patches_superpoints[i][j][r][1]  / (float) INTEGER_FACTOR_RAD,
+							(int) (radii[patches_superpoints[i][j][r][0] - 1] /  (float) INTEGER_FACTOR_CM),
+							patches_superpoints[i][j][r][2] / (float) INTEGER_FACTOR_CM);
 				}
 			}
 		}
@@ -384,13 +382,13 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
             for (int j = 0; j < static_cast<int>(patches_parameters[i][4][1][0]); j++)
             {
                 fprintf(myfile, "Superpoint \n");
-                for (int r = 0; r < static_cast<int>(patches_superpoints[i][j][2][0][0]); r++)
+                for (int r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
                 {
                     fprintf(myfile, "%d %.4f %d %.4f\n",
-                            patches_superpoints[i][j][0][r][0],
-                            patches_superpoints[i][j][0][r][1]  / (float) INTEGER_FACTOR_RAD,
-                            (int) (radii[patches_superpoints[i][j][0][r][0] - 1] /  (float) INTEGER_FACTOR_CM),
-                            patches_superpoints[i][j][0][r][2] / (float) INTEGER_FACTOR_CM);
+                            patches_superpoints[i][j][r][0],
+                            patches_superpoints[i][j][r][1]  / (float) INTEGER_FACTOR_RAD,
+                            (int) (radii[patches_superpoints[i][j][r][0] - 1] /  (float) INTEGER_FACTOR_CM),
+                            patches_superpoints[i][j][r][2] / (float) INTEGER_FACTOR_CM);
                 }
             }
         }
@@ -424,7 +422,7 @@ int main () {
 
     // Call any preliminary functions required to prepare input for the test.
     // Call the top-level function multiple times, passing input stimuli as needed.
-    int wedgesToTest[] = {2176, 2177}; //2176, 2177
+    int wedgesToTest[] = {0, 1}; //2176, 2177
 
     wedge_test(0, 16, wedgesToTest);
 

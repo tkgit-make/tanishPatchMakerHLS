@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 516 \
+    id 730 \
     name patches_superpoints_31 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename patches_superpoints_31 \
     op interface \
-    ports { patches_superpoints_31_address0 { O 10 vector } patches_superpoints_31_ce0 { O 1 bit } patches_superpoints_31_q0 { I 64 vector } patches_superpoints_31_address1 { O 10 vector } patches_superpoints_31_ce1 { O 1 bit } patches_superpoints_31_q1 { I 64 vector } } \
+    ports { patches_superpoints_31_address0 { O 8 vector } patches_superpoints_31_ce0 { O 1 bit } patches_superpoints_31_q0 { I 64 vector } patches_superpoints_31_address1 { O 8 vector } patches_superpoints_31_ce1 { O 1 bit } patches_superpoints_31_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_31'"
@@ -30,36 +30,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 517 \
-    name patches_parameters_1 \
+    id 731 \
+    name patches_parameters_31 \
     reset_level 1 \
     sync_rst true \
-    dir O \
-    corename patches_parameters_1 \
+    dir IO \
+    corename patches_parameters_31 \
     op interface \
-    ports { patches_parameters_1_address0 { O 10 vector } patches_parameters_1_ce0 { O 1 bit } patches_parameters_1_we0 { O 1 bit } patches_parameters_1_d0 { O 64 vector } patches_parameters_1_address1 { O 10 vector } patches_parameters_1_ce1 { O 1 bit } patches_parameters_1_we1 { O 1 bit } patches_parameters_1_d1 { O 64 vector } } \
+    ports { patches_parameters_31_address0 { O 7 vector } patches_parameters_31_ce0 { O 1 bit } patches_parameters_31_we0 { O 1 bit } patches_parameters_31_d0 { O 64 vector } patches_parameters_31_q0 { I 64 vector } patches_parameters_31_address1 { O 7 vector } patches_parameters_31_ce1 { O 1 bit } patches_parameters_31_we1 { O 1 bit } patches_parameters_31_d1 { O 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_1'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 518 \
-    name patches_parameters_4 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename patches_parameters_4 \
-    op interface \
-    ports { patches_parameters_4_address0 { O 10 vector } patches_parameters_4_ce0 { O 1 bit } patches_parameters_4_q0 { I 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_4'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_31'"
 }
 }
 
@@ -67,37 +48,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 519 \
-    name wp_parameters_1 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_wp_parameters_1 \
-    op interface \
-    ports { wp_parameters_1 { I 5 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 520 \
-    name wp_parameters_4 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_wp_parameters_4 \
-    op interface \
-    ports { wp_parameters_4 { I 5 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 521 \
+    id 732 \
     name zTopMin \
     type other \
     dir I \
@@ -112,7 +63,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 522 \
+    id 733 \
     name zTopMax \
     type other \
     dir I \

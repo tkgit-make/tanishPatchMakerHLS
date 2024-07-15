@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makePatches_ShadowQuilt_fromEdges'" level="0">
-<item name = "Date">Thu Jul 11 15:46:05 2024
+<item name = "Date">Sun Jul 14 15:02:06 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.532 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_solveNextPatchPair_fu_293">solveNextPatchPair, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_solveNextPatchPair_fu_347">solveNextPatchPair, ?, ?, ?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

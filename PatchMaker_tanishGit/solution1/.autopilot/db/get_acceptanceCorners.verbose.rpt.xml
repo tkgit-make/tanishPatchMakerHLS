@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'get_acceptanceCorners'" level="0">
-<item name = "Date">Thu Jul 11 15:46:22 2024
+<item name = "Date">Sun Jul 14 15:02:22 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -80,22 +80,22 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln225_fu_374_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln235_fu_431_p2">+, 0, 0, 12, 5, 2</column>
-<column name="add_ln239_fu_441_p2">+, 0, 0, 12, 5, 2</column>
-<column name="sub_ln227_fu_409_p2">-, 0, 0, 12, 5, 5</column>
-<column name="icmp_ln225_fu_380_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln227_fu_451_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln231_fu_465_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln235_fu_479_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln239_fu_493_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln256_fu_507_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln261_fu_513_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln266_fu_519_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln271_fu_525_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln278_fu_531_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln285_fu_537_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="or_ln231_fu_420_p2">or, 0, 0, 5, 5, 1</column>
+<column name="add_ln209_fu_374_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln219_fu_431_p2">+, 0, 0, 12, 5, 2</column>
+<column name="add_ln223_fu_441_p2">+, 0, 0, 12, 5, 2</column>
+<column name="sub_ln211_fu_409_p2">-, 0, 0, 12, 5, 5</column>
+<column name="icmp_ln209_fu_380_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln211_fu_451_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln215_fu_465_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln219_fu_479_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln223_fu_493_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln240_fu_507_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln245_fu_513_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln250_fu_519_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln255_fu_525_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln262_fu_531_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln269_fu_537_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="or_ln215_fu_420_p2">or, 0, 0, 5, 5, 1</column>
 <column name="a_corner_min_1_fu_457_p3">select, 0, 0, 63, 1, 64</column>
 <column name="b_corner_min_2_fu_471_p3">select, 0, 0, 63, 1, 64</column>
 <column name="c_corner_max_1_fu_485_p3">select, 0, 0, 63, 1, 64</column>
@@ -108,12 +108,12 @@
 <column name="a_corner_min_reg_317">9, 2, 64, 128</column>
 <column name="ap_NS_fsm">65, 14, 1, 14</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_phi_mux_empty_106_phi_fu_360_p4">9, 2, 64, 128</column>
+<column name="ap_phi_mux_empty_120_phi_fu_360_p4">9, 2, 64, 128</column>
 <column name="ap_phi_mux_i_phi_fu_297_p4">9, 2, 32, 64</column>
 <column name="b_corner_min_reg_330">9, 2, 64, 128</column>
 <column name="c_corner_max_reg_344">9, 2, 64, 128</column>
 <column name="d_corner_max_reg_304">9, 2, 64, 128</column>
-<column name="empty_106_reg_357">9, 2, 64, 128</column>
+<column name="empty_120_reg_357">9, 2, 64, 128</column>
 <column name="i_reg_293">9, 2, 32, 64</column>
 <column name="wp_parameters2_address0">31, 6, 5, 30</column>
 <column name="wp_parameters2_address1">31, 6, 5, 30</column>
@@ -131,7 +131,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="a_corner_min_1_reg_681">64, 0, 64, 0</column>
 <column name="a_corner_min_reg_317">64, 0, 64, 0</column>
-<column name="add_ln225_reg_646">32, 0, 32, 0</column>
+<column name="add_ln209_reg_646">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">13, 0, 13, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -139,13 +139,13 @@
 <column name="b_corner_min_reg_330">64, 0, 64, 0</column>
 <column name="c_corner_max_reg_344">64, 0, 64, 0</column>
 <column name="d_corner_max_reg_304">64, 0, 64, 0</column>
-<column name="empty_106_reg_357">64, 0, 64, 0</column>
+<column name="empty_120_reg_357">64, 0, 64, 0</column>
 <column name="empty_reg_641">32, 0, 32, 0</column>
 <column name="i_reg_293">32, 0, 32, 0</column>
-<column name="icmp_ln225_reg_651">1, 0, 1, 0</column>
-<column name="icmp_ln278_reg_723">1, 0, 1, 0</column>
-<column name="icmp_ln285_reg_727">1, 0, 1, 0</column>
-<column name="sub_ln227_reg_655">4, 0, 5, 1</column>
+<column name="icmp_ln209_reg_651">1, 0, 1, 0</column>
+<column name="icmp_ln262_reg_723">1, 0, 1, 0</column>
+<column name="icmp_ln269_reg_727">1, 0, 1, 0</column>
+<column name="sub_ln211_reg_655">4, 0, 5, 1</column>
 <column name="wp_parameters_load_1_reg_706">64, 0, 64, 0</column>
 <column name="wp_parameters_load_reg_701">64, 0, 64, 0</column>
 </table>

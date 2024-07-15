@@ -19,13 +19,13 @@ set C_modelArgList {
 	{ apexZ0 int 64 regular  }
 	{ original_ppl int 32 regular  }
 	{ leftRight_offset uint 1 regular  }
-	{ init_patch int 64 regular {array 144 { 2 2 } 1 1 }  }
-	{ init_patch1 int 64 regular {array 144 { 2 2 } 1 1 }  }
-	{ init_patch2 int 64 regular {array 144 { 2 2 } 1 1 }  }
-	{ init_patch3 int 64 regular {array 144 { 2 2 } 1 1 }  }
-	{ init_patch4 int 64 regular {array 144 { 2 2 } 1 1 }  }
+	{ init_patch int 64 regular {array 48 { 0 3 } 0 1 }  }
+	{ init_patch1 int 64 regular {array 48 { 0 3 } 0 1 }  }
+	{ init_patch2 int 64 regular {array 48 { 0 3 } 0 1 }  }
+	{ init_patch3 int 64 regular {array 48 { 0 3 } 0 1 }  }
+	{ init_patch4 int 64 regular {array 48 { 0 3 } 0 1 }  }
 	{ p_read1 int 32 regular  }
-	{ temp int 64 regular {array 768 { 2 1 } 1 1 } {global 2}  }
+	{ temp int 64 regular {array 768 { 2 3 } 1 1 } {global 2}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "GDarray", "interface" : "memory", "bitwidth" : 192, "direction" : "READONLY"} , 
@@ -35,16 +35,16 @@ set C_modelArgMapList {[
  	{ "Name" : "apexZ0", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "original_ppl", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "leftRight_offset", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "init_patch", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
- 	{ "Name" : "init_patch1", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
- 	{ "Name" : "init_patch2", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
- 	{ "Name" : "init_patch3", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
- 	{ "Name" : "init_patch4", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
+ 	{ "Name" : "init_patch", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "init_patch1", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "init_patch2", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "init_patch3", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "init_patch4", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
  	{ "Name" : "p_read1", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "temp", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE", "extern" : 0} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 64} ]}
 # RTL Port declarations: 
-set portNum 78
+set portNum 45
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -63,65 +63,32 @@ set portList {
 	{ apexZ0 sc_in sc_lv 64 signal 4 } 
 	{ original_ppl sc_in sc_lv 32 signal 5 } 
 	{ leftRight_offset sc_in sc_lv 1 signal 6 } 
-	{ init_patch_address0 sc_out sc_lv 8 signal 7 } 
+	{ init_patch_address0 sc_out sc_lv 6 signal 7 } 
 	{ init_patch_ce0 sc_out sc_logic 1 signal 7 } 
 	{ init_patch_we0 sc_out sc_logic 1 signal 7 } 
 	{ init_patch_d0 sc_out sc_lv 64 signal 7 } 
-	{ init_patch_q0 sc_in sc_lv 64 signal 7 } 
-	{ init_patch_address1 sc_out sc_lv 8 signal 7 } 
-	{ init_patch_ce1 sc_out sc_logic 1 signal 7 } 
-	{ init_patch_we1 sc_out sc_logic 1 signal 7 } 
-	{ init_patch_d1 sc_out sc_lv 64 signal 7 } 
-	{ init_patch_q1 sc_in sc_lv 64 signal 7 } 
-	{ init_patch1_address0 sc_out sc_lv 8 signal 8 } 
+	{ init_patch1_address0 sc_out sc_lv 6 signal 8 } 
 	{ init_patch1_ce0 sc_out sc_logic 1 signal 8 } 
 	{ init_patch1_we0 sc_out sc_logic 1 signal 8 } 
 	{ init_patch1_d0 sc_out sc_lv 64 signal 8 } 
-	{ init_patch1_q0 sc_in sc_lv 64 signal 8 } 
-	{ init_patch1_address1 sc_out sc_lv 8 signal 8 } 
-	{ init_patch1_ce1 sc_out sc_logic 1 signal 8 } 
-	{ init_patch1_we1 sc_out sc_logic 1 signal 8 } 
-	{ init_patch1_d1 sc_out sc_lv 64 signal 8 } 
-	{ init_patch1_q1 sc_in sc_lv 64 signal 8 } 
-	{ init_patch2_address0 sc_out sc_lv 8 signal 9 } 
+	{ init_patch2_address0 sc_out sc_lv 6 signal 9 } 
 	{ init_patch2_ce0 sc_out sc_logic 1 signal 9 } 
 	{ init_patch2_we0 sc_out sc_logic 1 signal 9 } 
 	{ init_patch2_d0 sc_out sc_lv 64 signal 9 } 
-	{ init_patch2_q0 sc_in sc_lv 64 signal 9 } 
-	{ init_patch2_address1 sc_out sc_lv 8 signal 9 } 
-	{ init_patch2_ce1 sc_out sc_logic 1 signal 9 } 
-	{ init_patch2_we1 sc_out sc_logic 1 signal 9 } 
-	{ init_patch2_d1 sc_out sc_lv 64 signal 9 } 
-	{ init_patch2_q1 sc_in sc_lv 64 signal 9 } 
-	{ init_patch3_address0 sc_out sc_lv 8 signal 10 } 
+	{ init_patch3_address0 sc_out sc_lv 6 signal 10 } 
 	{ init_patch3_ce0 sc_out sc_logic 1 signal 10 } 
 	{ init_patch3_we0 sc_out sc_logic 1 signal 10 } 
 	{ init_patch3_d0 sc_out sc_lv 64 signal 10 } 
-	{ init_patch3_q0 sc_in sc_lv 64 signal 10 } 
-	{ init_patch3_address1 sc_out sc_lv 8 signal 10 } 
-	{ init_patch3_ce1 sc_out sc_logic 1 signal 10 } 
-	{ init_patch3_we1 sc_out sc_logic 1 signal 10 } 
-	{ init_patch3_d1 sc_out sc_lv 64 signal 10 } 
-	{ init_patch3_q1 sc_in sc_lv 64 signal 10 } 
-	{ init_patch4_address0 sc_out sc_lv 8 signal 11 } 
+	{ init_patch4_address0 sc_out sc_lv 6 signal 11 } 
 	{ init_patch4_ce0 sc_out sc_logic 1 signal 11 } 
 	{ init_patch4_we0 sc_out sc_logic 1 signal 11 } 
 	{ init_patch4_d0 sc_out sc_lv 64 signal 11 } 
-	{ init_patch4_q0 sc_in sc_lv 64 signal 11 } 
-	{ init_patch4_address1 sc_out sc_lv 8 signal 11 } 
-	{ init_patch4_ce1 sc_out sc_logic 1 signal 11 } 
-	{ init_patch4_we1 sc_out sc_logic 1 signal 11 } 
-	{ init_patch4_d1 sc_out sc_lv 64 signal 11 } 
-	{ init_patch4_q1 sc_in sc_lv 64 signal 11 } 
 	{ p_read1 sc_in sc_lv 32 signal 12 } 
 	{ temp_address0 sc_out sc_lv 10 signal 13 } 
 	{ temp_ce0 sc_out sc_logic 1 signal 13 } 
 	{ temp_we0 sc_out sc_logic 1 signal 13 } 
 	{ temp_d0 sc_out sc_lv 64 signal 13 } 
 	{ temp_q0 sc_in sc_lv 64 signal 13 } 
-	{ temp_address1 sc_out sc_lv 10 signal 13 } 
-	{ temp_ce1 sc_out sc_logic 1 signal 13 } 
-	{ temp_q1 sc_in sc_lv 64 signal 13 } 
 	{ ap_return_0 sc_out sc_lv 32 signal -1 } 
 	{ ap_return_1 sc_out sc_lv 32 signal -1 } 
 }
@@ -143,70 +110,37 @@ set NewPortList {[
  	{ "name": "apexZ0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "apexZ0", "role": "default" }} , 
  	{ "name": "original_ppl", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "original_ppl", "role": "default" }} , 
  	{ "name": "leftRight_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "leftRight_offset", "role": "default" }} , 
- 	{ "name": "init_patch_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch", "role": "address0" }} , 
+ 	{ "name": "init_patch_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "init_patch", "role": "address0" }} , 
  	{ "name": "init_patch_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch", "role": "ce0" }} , 
  	{ "name": "init_patch_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch", "role": "we0" }} , 
  	{ "name": "init_patch_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch", "role": "d0" }} , 
- 	{ "name": "init_patch_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch", "role": "q0" }} , 
- 	{ "name": "init_patch_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch", "role": "address1" }} , 
- 	{ "name": "init_patch_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch", "role": "ce1" }} , 
- 	{ "name": "init_patch_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch", "role": "we1" }} , 
- 	{ "name": "init_patch_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch", "role": "d1" }} , 
- 	{ "name": "init_patch_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch", "role": "q1" }} , 
- 	{ "name": "init_patch1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch1", "role": "address0" }} , 
+ 	{ "name": "init_patch1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "init_patch1", "role": "address0" }} , 
  	{ "name": "init_patch1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch1", "role": "ce0" }} , 
  	{ "name": "init_patch1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch1", "role": "we0" }} , 
  	{ "name": "init_patch1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch1", "role": "d0" }} , 
- 	{ "name": "init_patch1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch1", "role": "q0" }} , 
- 	{ "name": "init_patch1_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch1", "role": "address1" }} , 
- 	{ "name": "init_patch1_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch1", "role": "ce1" }} , 
- 	{ "name": "init_patch1_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch1", "role": "we1" }} , 
- 	{ "name": "init_patch1_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch1", "role": "d1" }} , 
- 	{ "name": "init_patch1_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch1", "role": "q1" }} , 
- 	{ "name": "init_patch2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch2", "role": "address0" }} , 
+ 	{ "name": "init_patch2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "init_patch2", "role": "address0" }} , 
  	{ "name": "init_patch2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch2", "role": "ce0" }} , 
  	{ "name": "init_patch2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch2", "role": "we0" }} , 
  	{ "name": "init_patch2_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch2", "role": "d0" }} , 
- 	{ "name": "init_patch2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch2", "role": "q0" }} , 
- 	{ "name": "init_patch2_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch2", "role": "address1" }} , 
- 	{ "name": "init_patch2_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch2", "role": "ce1" }} , 
- 	{ "name": "init_patch2_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch2", "role": "we1" }} , 
- 	{ "name": "init_patch2_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch2", "role": "d1" }} , 
- 	{ "name": "init_patch2_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch2", "role": "q1" }} , 
- 	{ "name": "init_patch3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch3", "role": "address0" }} , 
+ 	{ "name": "init_patch3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "init_patch3", "role": "address0" }} , 
  	{ "name": "init_patch3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch3", "role": "ce0" }} , 
  	{ "name": "init_patch3_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch3", "role": "we0" }} , 
  	{ "name": "init_patch3_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch3", "role": "d0" }} , 
- 	{ "name": "init_patch3_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch3", "role": "q0" }} , 
- 	{ "name": "init_patch3_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch3", "role": "address1" }} , 
- 	{ "name": "init_patch3_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch3", "role": "ce1" }} , 
- 	{ "name": "init_patch3_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch3", "role": "we1" }} , 
- 	{ "name": "init_patch3_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch3", "role": "d1" }} , 
- 	{ "name": "init_patch3_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch3", "role": "q1" }} , 
- 	{ "name": "init_patch4_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch4", "role": "address0" }} , 
+ 	{ "name": "init_patch4_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "init_patch4", "role": "address0" }} , 
  	{ "name": "init_patch4_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch4", "role": "ce0" }} , 
  	{ "name": "init_patch4_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch4", "role": "we0" }} , 
  	{ "name": "init_patch4_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch4", "role": "d0" }} , 
- 	{ "name": "init_patch4_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch4", "role": "q0" }} , 
- 	{ "name": "init_patch4_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "init_patch4", "role": "address1" }} , 
- 	{ "name": "init_patch4_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch4", "role": "ce1" }} , 
- 	{ "name": "init_patch4_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "init_patch4", "role": "we1" }} , 
- 	{ "name": "init_patch4_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch4", "role": "d1" }} , 
- 	{ "name": "init_patch4_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "init_patch4", "role": "q1" }} , 
  	{ "name": "p_read1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_read1", "role": "default" }} , 
  	{ "name": "temp_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "temp", "role": "address0" }} , 
  	{ "name": "temp_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "temp", "role": "ce0" }} , 
  	{ "name": "temp_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "temp", "role": "we0" }} , 
  	{ "name": "temp_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "temp", "role": "d0" }} , 
  	{ "name": "temp_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "temp", "role": "q0" }} , 
- 	{ "name": "temp_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "temp", "role": "address1" }} , 
- 	{ "name": "temp_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "temp", "role": "ce1" }} , 
- 	{ "name": "temp_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "temp", "role": "q1" }} , 
  	{ "name": "ap_return_0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return_0", "role": "default" }} , 
  	{ "name": "ap_return_1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return_1", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"],
 		"CDFG" : "makeSuperPoint_alignedToLine",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -227,11 +161,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "apexZ0", "Type" : "None", "Direction" : "I"},
 			{"Name" : "original_ppl", "Type" : "None", "Direction" : "I"},
 			{"Name" : "leftRight_offset", "Type" : "None", "Direction" : "I"},
-			{"Name" : "init_patch", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "init_patch1", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "init_patch2", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "init_patch3", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "init_patch4", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "init_patch", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "init_patch1", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "init_patch2", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "init_patch3", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "init_patch4", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radii", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "trapezoid_edges", "Type" : "Memory", "Direction" : "I"},
@@ -254,9 +188,7 @@ set RtlHierarchyInfo {[
 	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_1_1_U13", "Parent" : "0"},
 	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_1_1_U14", "Parent" : "0"},
 	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_3ns_66_1_1_U15", "Parent" : "0"},
-	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_1_1_U16", "Parent" : "0"},
-	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_53_64_1_1_U17", "Parent" : "0"},
-	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_53_64_1_1_U18", "Parent" : "0"}]}
+	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_1_1_U16", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -268,15 +200,15 @@ set ArgLastReadFirstWriteLatency {
 		apexZ0 {Type I LastRead 1 FirstWrite -1}
 		original_ppl {Type I LastRead 1 FirstWrite -1}
 		leftRight_offset {Type I LastRead 1 FirstWrite -1}
-		init_patch {Type IO LastRead 27 FirstWrite 24}
-		init_patch1 {Type IO LastRead 27 FirstWrite 24}
-		init_patch2 {Type IO LastRead 27 FirstWrite 24}
-		init_patch3 {Type IO LastRead 27 FirstWrite 24}
-		init_patch4 {Type IO LastRead 27 FirstWrite 24}
+		init_patch {Type O LastRead -1 FirstWrite 26}
+		init_patch1 {Type O LastRead -1 FirstWrite 26}
+		init_patch2 {Type O LastRead -1 FirstWrite 26}
+		init_patch3 {Type O LastRead -1 FirstWrite 26}
+		init_patch4 {Type O LastRead -1 FirstWrite 26}
 		p_read1 {Type I LastRead 1 FirstWrite -1}
 		radii {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges {Type I LastRead -1 FirstWrite -1}
-		temp {Type IO LastRead 28 FirstWrite 24}}}
+		temp {Type IO LastRead 25 FirstWrite 24}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -293,6 +225,7 @@ set PipelineEnableSignalInfo {[
 	{"Pipeline" : "4", "EnableSignal" : "ap_enable_pp4"}
 	{"Pipeline" : "5", "EnableSignal" : "ap_enable_pp5"}
 	{"Pipeline" : "6", "EnableSignal" : "ap_enable_pp6"}
+	{"Pipeline" : "7", "EnableSignal" : "ap_enable_pp7"}
 ]}
 
 set Spec2ImplPortList { 
@@ -303,11 +236,11 @@ set Spec2ImplPortList {
 	apexZ0 { ap_none {  { apexZ0 in_data 0 64 } } }
 	original_ppl { ap_none {  { original_ppl in_data 0 32 } } }
 	leftRight_offset { ap_none {  { leftRight_offset in_data 0 1 } } }
-	init_patch { ap_memory {  { init_patch_address0 mem_address 1 8 }  { init_patch_ce0 mem_ce 1 1 }  { init_patch_we0 mem_we 1 1 }  { init_patch_d0 mem_din 1 64 }  { init_patch_q0 mem_dout 0 64 }  { init_patch_address1 MemPortADDR2 1 8 }  { init_patch_ce1 MemPortCE2 1 1 }  { init_patch_we1 MemPortWE2 1 1 }  { init_patch_d1 MemPortDIN2 1 64 }  { init_patch_q1 MemPortDOUT2 0 64 } } }
-	init_patch1 { ap_memory {  { init_patch1_address0 mem_address 1 8 }  { init_patch1_ce0 mem_ce 1 1 }  { init_patch1_we0 mem_we 1 1 }  { init_patch1_d0 mem_din 1 64 }  { init_patch1_q0 mem_dout 0 64 }  { init_patch1_address1 MemPortADDR2 1 8 }  { init_patch1_ce1 MemPortCE2 1 1 }  { init_patch1_we1 MemPortWE2 1 1 }  { init_patch1_d1 MemPortDIN2 1 64 }  { init_patch1_q1 MemPortDOUT2 0 64 } } }
-	init_patch2 { ap_memory {  { init_patch2_address0 mem_address 1 8 }  { init_patch2_ce0 mem_ce 1 1 }  { init_patch2_we0 mem_we 1 1 }  { init_patch2_d0 mem_din 1 64 }  { init_patch2_q0 mem_dout 0 64 }  { init_patch2_address1 MemPortADDR2 1 8 }  { init_patch2_ce1 MemPortCE2 1 1 }  { init_patch2_we1 MemPortWE2 1 1 }  { init_patch2_d1 MemPortDIN2 1 64 }  { init_patch2_q1 MemPortDOUT2 0 64 } } }
-	init_patch3 { ap_memory {  { init_patch3_address0 mem_address 1 8 }  { init_patch3_ce0 mem_ce 1 1 }  { init_patch3_we0 mem_we 1 1 }  { init_patch3_d0 mem_din 1 64 }  { init_patch3_q0 mem_dout 0 64 }  { init_patch3_address1 MemPortADDR2 1 8 }  { init_patch3_ce1 MemPortCE2 1 1 }  { init_patch3_we1 MemPortWE2 1 1 }  { init_patch3_d1 MemPortDIN2 1 64 }  { init_patch3_q1 MemPortDOUT2 0 64 } } }
-	init_patch4 { ap_memory {  { init_patch4_address0 mem_address 1 8 }  { init_patch4_ce0 mem_ce 1 1 }  { init_patch4_we0 mem_we 1 1 }  { init_patch4_d0 mem_din 1 64 }  { init_patch4_q0 mem_dout 0 64 }  { init_patch4_address1 MemPortADDR2 1 8 }  { init_patch4_ce1 MemPortCE2 1 1 }  { init_patch4_we1 MemPortWE2 1 1 }  { init_patch4_d1 MemPortDIN2 1 64 }  { init_patch4_q1 MemPortDOUT2 0 64 } } }
+	init_patch { ap_memory {  { init_patch_address0 mem_address 1 6 }  { init_patch_ce0 mem_ce 1 1 }  { init_patch_we0 mem_we 1 1 }  { init_patch_d0 mem_din 1 64 } } }
+	init_patch1 { ap_memory {  { init_patch1_address0 mem_address 1 6 }  { init_patch1_ce0 mem_ce 1 1 }  { init_patch1_we0 mem_we 1 1 }  { init_patch1_d0 mem_din 1 64 } } }
+	init_patch2 { ap_memory {  { init_patch2_address0 mem_address 1 6 }  { init_patch2_ce0 mem_ce 1 1 }  { init_patch2_we0 mem_we 1 1 }  { init_patch2_d0 mem_din 1 64 } } }
+	init_patch3 { ap_memory {  { init_patch3_address0 mem_address 1 6 }  { init_patch3_ce0 mem_ce 1 1 }  { init_patch3_we0 mem_we 1 1 }  { init_patch3_d0 mem_din 1 64 } } }
+	init_patch4 { ap_memory {  { init_patch4_address0 mem_address 1 6 }  { init_patch4_ce0 mem_ce 1 1 }  { init_patch4_we0 mem_we 1 1 }  { init_patch4_d0 mem_din 1 64 } } }
 	p_read1 { ap_none {  { p_read1 in_data 0 32 } } }
-	temp { ap_memory {  { temp_address0 mem_address 1 10 }  { temp_ce0 mem_ce 1 1 }  { temp_we0 mem_we 1 1 }  { temp_d0 mem_din 1 64 }  { temp_q0 mem_dout 0 64 }  { temp_address1 MemPortADDR2 1 10 }  { temp_ce1 MemPortCE2 1 1 }  { temp_q1 MemPortDOUT2 0 64 } } }
+	temp { ap_memory {  { temp_address0 mem_address 1 10 }  { temp_ce0 mem_ce 1 1 }  { temp_we0 mem_we 1 1 }  { temp_d0 mem_din 1 64 }  { temp_q0 mem_dout 0 64 } } }
 }

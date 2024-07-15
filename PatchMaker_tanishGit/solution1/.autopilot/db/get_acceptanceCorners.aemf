@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1720727182994">
-  <ports id="1" name="wp_parameters" type="PortType" coreName="RAM" coreId="1818455657" bitwidth="64" iftype="IfTypeRegister" arraysize="24">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1720983743299">
+  <ports id="1" name="wp_parameters" type="PortType" coreName="RAM" coreId="1651076195" bitwidth="64" iftype="IfTypeRegister" arraysize="24">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -12,7 +12,7 @@
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="2" name="wp_parameters2" type="PortType" coreName="RAM" coreId="1764713065" bitwidth="64" direction="DirOut" iftype="IfTypeRegister" arraysize="24">
+  <ports id="2" name="wp_parameters2" type="PortType" coreName="RAM" coreId="1818455657" bitwidth="64" direction="DirOut" iftype="IfTypeRegister" arraysize="24">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
@@ -22,13 +22,13 @@
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="3" name="wp_parameters3" type="PortType" coreName="RAM" coreId="1764714612" bitwidth="1" direction="DirOut" iftype="IfTypeRegister" arraysize="24">
+  <ports id="3" name="wp_parameters3" type="PortType" coreName="RAM" coreId="1752457581" bitwidth="1" direction="DirOut" iftype="IfTypeRegister" arraysize="24">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="4" name="wp_parameters4" type="PortType" coreName="RAM" coreId="1752457581" bitwidth="64" iftype="IfTypeRegister" arraysize="24">
+  <ports id="4" name="wp_parameters4" type="PortType" coreName="RAM" coreId="1764713065" bitwidth="64" iftype="IfTypeRegister" arraysize="24">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
   <edges id="134" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -246,96 +246,96 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_41</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="wp_parameters_addr" lineNumber="246" fileName="patchMaker.cpp" fileDirectory=".." coreId="1869770799" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="246" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="wp_parameters_addr" lineNumber="230" fileName="patchMaker.cpp" fileDirectory=".." coreId="808595300" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="230" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>wp_parameters</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="wp_parameters_addr_1" lineNumber="248" fileName="patchMaker.cpp" fileDirectory=".." coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="248" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="wp_parameters_addr_1" lineNumber="232" fileName="patchMaker.cpp" fileDirectory=".." coreId="1882155363" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="232" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>wp_parameters</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="wp_parameters_addr_2" lineNumber="256" fileName="patchMaker.cpp" fileDirectory=".." coreId="841966703" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="256" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="wp_parameters_addr_2" lineNumber="240" fileName="patchMaker.cpp" fileDirectory=".." coreId="841966703" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="240" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>wp_parameters</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="wp_parameters_addr_7" lineNumber="261" fileName="patchMaker.cpp" fileDirectory=".." coreId="1869770799" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="261" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="wp_parameters_addr_7" lineNumber="245" fileName="patchMaker.cpp" fileDirectory=".." coreId="792359464" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="245" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>wp_parameters</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="wp_parameters_addr_8" lineNumber="266" fileName="patchMaker.cpp" fileDirectory=".." coreId="1915695662" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="266" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
-      <dataInputObjs>wp_parameters</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="wp_parameters_addr_9" lineNumber="271" fileName="patchMaker.cpp" fileDirectory=".." coreId="1882155363" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="271" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
-      <dataInputObjs>wp_parameters</dataInputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="wp_parameters2_addr" lineNumber="246" fileName="patchMaker.cpp" fileDirectory=".." coreId="1919954793" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="246" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
-      <dataOutputObjs>wp_parameters2</dataOutputObjs>
-      <dataOutputObjs>store</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="wp_parameters2_addr_1" lineNumber="247" fileName="patchMaker.cpp" fileDirectory=".." coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="247" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
-      <dataOutputObjs>wp_parameters2</dataOutputObjs>
-      <dataOutputObjs>store</dataOutputObjs>
-      <dataOutputObjs>store</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="wp_parameters2_addr_2" lineNumber="248" fileName="patchMaker.cpp" fileDirectory=".." coreId="1600742514" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="248" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
-      <dataOutputObjs>wp_parameters2</dataOutputObjs>
-      <dataOutputObjs>store</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="wp_parameters2_addr_3" lineNumber="249" fileName="patchMaker.cpp" fileDirectory=".." coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="249" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
-      <dataOutputObjs>wp_parameters2</dataOutputObjs>
-      <dataOutputObjs>store</dataOutputObjs>
-      <dataOutputObjs>store</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="wp_parameters2_addr_4" lineNumber="250" fileName="patchMaker.cpp" fileDirectory=".." coreId="1869770799" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="wp_parameters_addr_8" lineNumber="250" fileName="patchMaker.cpp" fileDirectory=".." coreId="1869770799" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="patchMaker.cpp" linenumber="250" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="wp_parameters_addr_9" lineNumber="255" fileName="patchMaker.cpp" fileDirectory=".." coreId="1600742514" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="255" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <dataInputObjs>wp_parameters</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="wp_parameters2_addr" lineNumber="230" fileName="patchMaker.cpp" fileDirectory=".." coreId="1915695662" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="230" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataOutputObjs>wp_parameters2</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="wp_parameters2_addr_5" lineNumber="251" fileName="patchMaker.cpp" fileDirectory=".." coreId="1919954793" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="251" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="wp_parameters2_addr_1" lineNumber="231" fileName="patchMaker.cpp" fileDirectory=".." coreId="1915695662" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="231" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataOutputObjs>wp_parameters2</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="wp_parameters2_addr_6" lineNumber="252" fileName="patchMaker.cpp" fileDirectory=".." coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="252" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="wp_parameters2_addr_2" lineNumber="232" fileName="patchMaker.cpp" fileDirectory=".." coreId="795111282" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="232" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataOutputObjs>wp_parameters2</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="wp_parameters2_addr_7" lineNumber="253" fileName="patchMaker.cpp" fileDirectory=".." coreId="795111282" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="253" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="wp_parameters2_addr_3" lineNumber="233" fileName="patchMaker.cpp" fileDirectory=".." coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="233" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataOutputObjs>wp_parameters2</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="wp_parameters3_addr" lineNumber="213" fileName="patchMaker.cpp" fileDirectory=".." coreId="808595300" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="213" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="wp_parameters2_addr_4" lineNumber="234" fileName="patchMaker.cpp" fileDirectory=".." coreId="1919954793" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="234" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <dataOutputObjs>wp_parameters2</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="wp_parameters2_addr_5" lineNumber="235" fileName="patchMaker.cpp" fileDirectory=".." coreId="841966703" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="235" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <dataOutputObjs>wp_parameters2</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="wp_parameters2_addr_6" lineNumber="236" fileName="patchMaker.cpp" fileDirectory=".." coreId="29" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="236" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <dataOutputObjs>wp_parameters2</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="wp_parameters2_addr_7" lineNumber="237" fileName="patchMaker.cpp" fileDirectory=".." coreId="808595300" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="237" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <dataOutputObjs>wp_parameters2</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="wp_parameters3_addr" lineNumber="197" fileName="patchMaker.cpp" fileDirectory=".." coreId="795111282" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="197" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataOutputObjs>wp_parameters3</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
@@ -344,52 +344,52 @@
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="wp_parameters3_addr_1" lineNumber="214" fileName="patchMaker.cpp" fileDirectory=".." coreId="1915695662" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="214" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="wp_parameters3_addr_1" lineNumber="198" fileName="patchMaker.cpp" fileDirectory=".." coreId="1919954793" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="198" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataOutputObjs>wp_parameters3</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="wp_parameters3_addr_2" lineNumber="215" fileName="patchMaker.cpp" fileDirectory=".." coreId="1869770799" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="wp_parameters3_addr_2" lineNumber="199" fileName="patchMaker.cpp" fileDirectory=".." coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="199" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataOutputObjs>wp_parameters3</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="wp_parameters3_addr_3" lineNumber="216" fileName="patchMaker.cpp" fileDirectory=".." coreId="841966703" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="216" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="wp_parameters3_addr_3" lineNumber="200" fileName="patchMaker.cpp" fileDirectory=".." coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="200" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataOutputObjs>wp_parameters3</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="wp_parameters4_addr" coreId="1600742514" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="wp_parameters4_addr" coreId="841966703" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>wp_parameters4</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="wp_parameters3_addr_write_ln213" lineNumber="213" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" m_display="0" m_delay="0.63" m_topoIndex="4" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="213" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="wp_parameters3_addr_write_ln197" lineNumber="197" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" m_display="0" m_delay="0.63" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="197" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="wp_parameters3_addr_1_write_ln214" lineNumber="214" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" m_display="0" m_delay="0.63" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="214" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="wp_parameters3_addr_1_write_ln198" lineNumber="198" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" m_display="0" m_delay="0.63" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="198" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="wp_parameters3_addr_2_write_ln215" lineNumber="215" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.63" m_topoIndex="23" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="wp_parameters3_addr_2_write_ln199" lineNumber="199" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.63" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="199" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="wp_parameters3_addr_3_write_ln216" lineNumber="216" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.63" m_topoIndex="24" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="216" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="wp_parameters3_addr_3_write_ln200" lineNumber="200" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.63" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="200" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
@@ -397,32 +397,32 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>trunc</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="empty" rtlName="empty_fu_370_p1" coreId="808595300" bitwidth="32" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="empty" rtlName="empty_fu_370_p1" coreId="2900268885" bitwidth="32" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="br_ln225" lineNumber="225" fileName="patchMaker.cpp" fileDirectory=".." coreId="1600742514" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="26" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="225" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="br_ln209" lineNumber="209" fileName="patchMaker.cpp" fileDirectory=".." coreId="2939786926" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="209" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <controlInputObjs>block_41</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>246</validLinenumbers>
-      <validLinenumbers>248</validLinenumbers>
-      <validLinenumbers>256</validLinenumbers>
-      <validLinenumbers>261</validLinenumbers>
-      <validLinenumbers>266</validLinenumbers>
-      <validLinenumbers>271</validLinenumbers>
-      <validLinenumbers>247</validLinenumbers>
-      <validLinenumbers>249</validLinenumbers>
+      <validLinenumbers>230</validLinenumbers>
+      <validLinenumbers>232</validLinenumbers>
+      <validLinenumbers>240</validLinenumbers>
+      <validLinenumbers>245</validLinenumbers>
       <validLinenumbers>250</validLinenumbers>
-      <validLinenumbers>251</validLinenumbers>
-      <validLinenumbers>252</validLinenumbers>
-      <validLinenumbers>253</validLinenumbers>
-      <validLinenumbers>213</validLinenumbers>
-      <validLinenumbers>214</validLinenumbers>
-      <validLinenumbers>215</validLinenumbers>
-      <validLinenumbers>216</validLinenumbers>
-      <validLinenumbers>225</validLinenumbers>
+      <validLinenumbers>255</validLinenumbers>
+      <validLinenumbers>231</validLinenumbers>
+      <validLinenumbers>233</validLinenumbers>
+      <validLinenumbers>234</validLinenumbers>
+      <validLinenumbers>235</validLinenumbers>
+      <validLinenumbers>236</validLinenumbers>
+      <validLinenumbers>237</validLinenumbers>
+      <validLinenumbers>197</validLinenumbers>
+      <validLinenumbers>198</validLinenumbers>
+      <validLinenumbers>199</validLinenumbers>
+      <validLinenumbers>200</validLinenumbers>
+      <validLinenumbers>209</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="86" name="._crit_edge.loopexit" type="BlockType">
@@ -430,109 +430,109 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge.loopexit._crit_edge</controlOutputObjs>
     <controlOutputObjs>block_90</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="wp_parameters_load" lineNumber="246" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="66" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="246" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="wp_parameters_load" lineNumber="230" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="230" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="wp_parameters2_addr_write_ln246" lineNumber="246" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="7.0" m_display="0" m_delay="0.71" m_topoIndex="70" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="246" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="wp_parameters2_addr_write_ln230" lineNumber="230" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="7.0" m_display="0" m_delay="0.71" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="230" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="wp_parameters2_addr_1_write_ln247" lineNumber="247" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.71" m_topoIndex="64" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="247" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="wp_parameters2_addr_1_write_ln231" lineNumber="231" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.71" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="231" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="wp_parameters_load_1" lineNumber="248" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="67" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="248" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="wp_parameters_load_1" lineNumber="232" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="232" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="wp_parameters2_addr_2_write_ln248" lineNumber="248" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="7.0" m_display="0" m_delay="0.71" m_topoIndex="71" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="248" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="wp_parameters2_addr_2_write_ln232" lineNumber="232" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="7.0" m_display="0" m_delay="0.71" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="232" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="wp_parameters2_addr_3_write_ln249" lineNumber="249" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.71" m_topoIndex="65" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="249" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="wp_parameters2_addr_3_write_ln233" lineNumber="233" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.71" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="233" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="wp_parameters2_addr_4_write_ln250" lineNumber="250" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.71" m_topoIndex="73" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="250" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="wp_parameters2_addr_4_write_ln234" lineNumber="234" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.71" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="234" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="wp_parameters2_addr_5_write_ln251" lineNumber="251" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="6.0" m_display="0" m_delay="0.71" m_topoIndex="68" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="251" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="wp_parameters2_addr_5_write_ln235" lineNumber="235" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="6.0" m_display="0" m_delay="0.71" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="235" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="wp_parameters2_addr_6_write_ln252" lineNumber="252" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.71" m_topoIndex="74" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="252" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="wp_parameters2_addr_6_write_ln236" lineNumber="236" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.71" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="236" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="wp_parameters2_addr_7_write_ln253" lineNumber="253" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="6.0" m_display="0" m_delay="0.71" m_topoIndex="69" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="253" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="wp_parameters2_addr_7_write_ln237" lineNumber="237" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="6.0" m_display="0" m_delay="0.71" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="237" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="wp_parameters_load_2" lineNumber="256" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="72" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="256" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="wp_parameters_load_2" lineNumber="240" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="240" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="icmp_ln256" lineNumber="256" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln256_fu_507_p2" opType="icmp" coreId="4083536825" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="1.06" m_topoIndex="75" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="256" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="icmp_ln240" lineNumber="240" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln240_fu_507_p2" opType="icmp" coreId="2850460797" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="1.06" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="240" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="br_ln256" lineNumber="256" fileName="patchMaker.cpp" fileDirectory=".." coreId="4081243034" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="256" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="br_ln240" lineNumber="240" fileName="patchMaker.cpp" fileDirectory=".." coreId="2885085805" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="240" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_90</controlInputObjs>
       <controlInputObjs>._crit_edge.loopexit._crit_edge</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>246</validLinenumbers>
-      <validLinenumbers>247</validLinenumbers>
-      <validLinenumbers>248</validLinenumbers>
-      <validLinenumbers>249</validLinenumbers>
-      <validLinenumbers>250</validLinenumbers>
-      <validLinenumbers>251</validLinenumbers>
-      <validLinenumbers>252</validLinenumbers>
-      <validLinenumbers>253</validLinenumbers>
-      <validLinenumbers>256</validLinenumbers>
+      <validLinenumbers>230</validLinenumbers>
+      <validLinenumbers>231</validLinenumbers>
+      <validLinenumbers>232</validLinenumbers>
+      <validLinenumbers>233</validLinenumbers>
+      <validLinenumbers>234</validLinenumbers>
+      <validLinenumbers>235</validLinenumbers>
+      <validLinenumbers>236</validLinenumbers>
+      <validLinenumbers>237</validLinenumbers>
+      <validLinenumbers>240</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="90" name="block_90" type="BlockType">
     <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge.loopexit._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="wp_parameters3_addr_write_ln258" lineNumber="258" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.63" m_topoIndex="77" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="258" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="wp_parameters3_addr_write_ln242" lineNumber="242" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.63" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="242" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="wp_parameters3_addr_1_write_ln259" lineNumber="259" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.63" m_topoIndex="78" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="259" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="wp_parameters3_addr_1_write_ln243" lineNumber="243" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.63" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="243" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="br_ln260" lineNumber="260" fileName="patchMaker.cpp" fileDirectory=".." coreId="4046966255" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="260" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="br_ln244" lineNumber="244" fileName="patchMaker.cpp" fileDirectory=".." coreId="2920322439" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="244" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <controlInputObjs>._crit_edge.loopexit._crit_edge</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>258</validLinenumbers>
-      <validLinenumbers>259</validLinenumbers>
-      <validLinenumbers>260</validLinenumbers>
+      <validLinenumbers>242</validLinenumbers>
+      <validLinenumbers>243</validLinenumbers>
+      <validLinenumbers>244</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="94" name="._crit_edge.loopexit._crit_edge" type="BlockType">
@@ -542,49 +542,49 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
     <controlOutputObjs>block_98</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="wp_parameters_load_7" lineNumber="261" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="8.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="80" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="261" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="wp_parameters_load_7" lineNumber="245" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="8.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="245" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="icmp_ln261" lineNumber="261" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln261_fu_513_p2" opType="icmp" coreId="4070822011" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="1.06" m_topoIndex="81" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="261" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="icmp_ln245" lineNumber="245" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln245_fu_513_p2" opType="icmp" coreId="2872634031" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="1.06" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="245" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="br_ln261" lineNumber="261" fileName="patchMaker.cpp" fileDirectory=".." coreId="4103329355" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="261" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="br_ln245" lineNumber="245" fileName="patchMaker.cpp" fileDirectory=".." coreId="2818829208" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="245" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_98</controlInputObjs>
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>261</validLinenumbers>
+      <validLinenumbers>245</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="98" name="block_98" type="BlockType">
     <controlInputObjs>._crit_edge.loopexit._crit_edge</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="wp_parameters3_addr_write_ln263" lineNumber="263" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.63" m_topoIndex="83" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="263" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="wp_parameters3_addr_write_ln247" lineNumber="247" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.63" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="247" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="wp_parameters3_addr_1_write_ln264" lineNumber="264" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.63" m_topoIndex="84" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="264" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="wp_parameters3_addr_1_write_ln248" lineNumber="248" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="9.0" m_display="0" m_delay="0.63" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="248" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="br_ln265" lineNumber="265" fileName="patchMaker.cpp" fileDirectory=".." coreId="4048735626" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="265" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="br_ln249" lineNumber="249" fileName="patchMaker.cpp" fileDirectory=".." coreId="2840433954" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="249" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>263</validLinenumbers>
-      <validLinenumbers>264</validLinenumbers>
-      <validLinenumbers>265</validLinenumbers>
+      <validLinenumbers>247</validLinenumbers>
+      <validLinenumbers>248</validLinenumbers>
+      <validLinenumbers>249</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="102" name="._crit_edge" type="BlockType">
@@ -594,49 +594,49 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge1</controlOutputObjs>
     <controlOutputObjs>block_106</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="wp_parameters_load_8" lineNumber="266" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="86" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="266" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="wp_parameters_load_8" lineNumber="250" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="250" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="icmp_ln266" lineNumber="266" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln266_fu_519_p2" opType="icmp" coreId="4134327472" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="1.06" m_topoIndex="87" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="266" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="icmp_ln250" lineNumber="250" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln250_fu_519_p2" opType="icmp" coreId="2757837043" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="1.06" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="250" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="br_ln266" lineNumber="266" fileName="patchMaker.cpp" fileDirectory=".." coreId="4051029417" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="266" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="br_ln250" lineNumber="250" fileName="patchMaker.cpp" fileDirectory=".." coreId="2772976092" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="250" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_106</controlInputObjs>
       <controlInputObjs>._crit_edge1</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>266</validLinenumbers>
+      <validLinenumbers>250</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="106" name="block_106" type="BlockType">
     <controlInputObjs>._crit_edge</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge1</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="wp_parameters3_addr_write_ln268" lineNumber="268" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.63" m_topoIndex="89" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="268" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="wp_parameters3_addr_write_ln252" lineNumber="252" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.63" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="252" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="wp_parameters3_addr_2_write_ln269" lineNumber="269" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.63" m_topoIndex="90" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="269" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="wp_parameters3_addr_2_write_ln253" lineNumber="253" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.63" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="253" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="br_ln270" lineNumber="270" fileName="patchMaker.cpp" fileDirectory=".." coreId="4114010606" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="270" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="br_ln254" lineNumber="254" fileName="patchMaker.cpp" fileDirectory=".." coreId="2768060527" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="254" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <controlInputObjs>._crit_edge1</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>268</validLinenumbers>
-      <validLinenumbers>269</validLinenumbers>
-      <validLinenumbers>270</validLinenumbers>
+      <validLinenumbers>252</validLinenumbers>
+      <validLinenumbers>253</validLinenumbers>
+      <validLinenumbers>254</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="110" name="._crit_edge1" type="BlockType">
@@ -646,49 +646,49 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge2</controlOutputObjs>
     <controlOutputObjs>block_114</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="wp_parameters_load_9" lineNumber="271" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="92" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="271" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="wp_parameters_load_9" lineNumber="255" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="255" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="icmp_ln271" lineNumber="271" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln271_fu_525_p2" opType="icmp" coreId="4128232663" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="1.06" m_topoIndex="93" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="271" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="icmp_ln255" lineNumber="255" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln255_fu_525_p2" opType="icmp" coreId="2723371717" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="1.06" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="255" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="br_ln271" lineNumber="271" fileName="patchMaker.cpp" fileDirectory=".." coreId="4086879068" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="271" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="br_ln255" lineNumber="255" fileName="patchMaker.cpp" fileDirectory=".." coreId="2763735085" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="255" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_114</controlInputObjs>
       <controlInputObjs>._crit_edge2</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>271</validLinenumbers>
+      <validLinenumbers>255</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="114" name="block_114" type="BlockType">
     <controlInputObjs>._crit_edge1</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge2</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="wp_parameters3_addr_write_ln273" lineNumber="273" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="11.0" m_display="0" m_delay="0.63" m_topoIndex="95" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="273" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="wp_parameters3_addr_write_ln257" lineNumber="257" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="11.0" m_display="0" m_delay="0.63" m_topoIndex="95" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="257" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="wp_parameters3_addr_2_write_ln274" lineNumber="274" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="11.0" m_display="0" m_delay="0.63" m_topoIndex="96" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="274" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="wp_parameters3_addr_2_write_ln258" lineNumber="258" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="11.0" m_display="0" m_delay="0.63" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="258" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="br_ln275" lineNumber="275" fileName="patchMaker.cpp" fileDirectory=".." coreId="4079473663" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="275" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="br_ln259" lineNumber="259" fileName="patchMaker.cpp" fileDirectory=".." coreId="2815706952" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="259" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <controlInputObjs>._crit_edge2</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>273</validLinenumbers>
-      <validLinenumbers>274</validLinenumbers>
-      <validLinenumbers>275</validLinenumbers>
+      <validLinenumbers>257</validLinenumbers>
+      <validLinenumbers>258</validLinenumbers>
+      <validLinenumbers>259</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="117" name="._crit_edge2" type="BlockType">
@@ -699,20 +699,20 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_122</controlOutputObjs>
     <controlOutputObjs>._crit_edge3</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="icmp_ln278" lineNumber="278" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln278_fu_531_p2" opType="icmp" coreId="4042379813" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="1.06" m_topoIndex="98" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="278" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="icmp_ln262" lineNumber="262" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln262_fu_531_p2" opType="icmp" coreId="2817869671" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="1.06" m_topoIndex="98" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="262" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="br_ln278" lineNumber="278" fileName="patchMaker.cpp" fileDirectory=".." coreId="4154185539" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="11.0" m_display="0" m_delay="0.38" m_topoIndex="99" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="278" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="br_ln262" lineNumber="262" fileName="patchMaker.cpp" fileDirectory=".." coreId="2778939701" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="11.0" m_display="0" m_delay="0.38" m_topoIndex="99" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="262" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge3</controlInputObjs>
       <controlInputObjs>block_122</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>278</validLinenumbers>
+      <validLinenumbers>262</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="122" name="block_122" type="BlockType">
@@ -720,30 +720,30 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>._crit_edge3</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="wp_parameters3_addr_3_write_ln280" lineNumber="280" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="12.0" m_display="0" m_delay="0.63" m_topoIndex="102" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="280" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="wp_parameters3_addr_3_write_ln264" lineNumber="264" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="12.0" m_display="0" m_delay="0.63" m_topoIndex="102" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="264" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="wp_parameters2_addr_5_write_ln281" lineNumber="281" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="11.0" m_display="0" m_delay="0.71" m_topoIndex="100" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="281" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="wp_parameters2_addr_5_write_ln265" lineNumber="265" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="11.0" m_display="0" m_delay="0.71" m_topoIndex="100" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="265" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="wp_parameters2_addr_1_write_ln282" lineNumber="282" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="11.0" m_display="0" m_delay="0.71" m_topoIndex="101" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="282" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="wp_parameters2_addr_1_write_ln266" lineNumber="266" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="11.0" m_display="0" m_delay="0.71" m_topoIndex="101" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="266" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="br_ln283" lineNumber="283" fileName="patchMaker.cpp" fileDirectory=".." coreId="4041134598" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="12.0" m_display="0" m_delay="0.38" m_topoIndex="103" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="283" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="br_ln267" lineNumber="267" fileName="patchMaker.cpp" fileDirectory=".." coreId="2761572366" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="12.0" m_display="0" m_delay="0.38" m_topoIndex="103" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="267" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <controlInputObjs>._crit_edge3</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>280</validLinenumbers>
-      <validLinenumbers>281</validLinenumbers>
-      <validLinenumbers>282</validLinenumbers>
-      <validLinenumbers>283</validLinenumbers>
+      <validLinenumbers>264</validLinenumbers>
+      <validLinenumbers>265</validLinenumbers>
+      <validLinenumbers>266</validLinenumbers>
+      <validLinenumbers>267</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="126" name="._crit_edge3" type="BlockType">
@@ -753,7 +753,7 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>block_131</controlOutputObjs>
     <controlOutputObjs>._crit_edge4</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="empty_106" originalName="b_corner_min" coreId="4188722546" bitwidth="64" opcode="phi" nodeLabel="12.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="empty_120" originalName="b_corner_min" coreId="3131785789" bitwidth="64" opcode="phi" nodeLabel="12.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
@@ -761,50 +761,50 @@
       <controlInputObjs>block_122</controlInputObjs>
       <controlInputObjs>._crit_edge2</controlInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="icmp_ln285" lineNumber="285" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln285_fu_537_p2" opType="icmp" coreId="4044672456" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="12.0" m_display="0" m_delay="1.06" m_topoIndex="105" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="285" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="icmp_ln269" lineNumber="269" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln269_fu_537_p2" opType="icmp" coreId="2706064861" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="12.0" m_display="0" m_delay="1.06" m_topoIndex="105" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="269" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="br_ln285" lineNumber="285" fileName="patchMaker.cpp" fileDirectory=".." coreId="4057386254" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="285" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="br_ln269" lineNumber="269" fileName="patchMaker.cpp" fileDirectory=".." coreId="2738248618" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="269" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>._crit_edge4</controlInputObjs>
       <controlInputObjs>block_131</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>285</validLinenumbers>
+      <validLinenumbers>269</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="131" name="block_131" type="BlockType">
     <controlInputObjs>._crit_edge3</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge4</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="wp_parameters3_addr_3_write_ln287" lineNumber="287" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="13.0" m_display="0" m_delay="0.63" m_topoIndex="109" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="287" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="wp_parameters3_addr_3_write_ln271" lineNumber="271" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="13.0" m_display="0" m_delay="0.63" m_topoIndex="109" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="271" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="128" name="wp_parameters2_addr_3_write_ln288" lineNumber="288" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="12.0" m_display="0" m_delay="0.71" m_topoIndex="107" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="288" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="128" name="wp_parameters2_addr_3_write_ln272" lineNumber="272" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="12.0" m_display="0" m_delay="0.71" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="272" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="wp_parameters2_addr_7_write_ln289" lineNumber="289" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="12.0" m_display="0" m_delay="0.71" m_topoIndex="108" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="289" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="wp_parameters2_addr_7_write_ln273" lineNumber="273" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" opcode="store" nodeLabel="12.0" m_display="0" m_delay="0.71" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="273" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="130" name="br_ln290" lineNumber="290" fileName="patchMaker.cpp" fileDirectory=".." coreId="4095727303" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="13.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="290" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="130" name="br_ln274" lineNumber="274" fileName="patchMaker.cpp" fileDirectory=".." coreId="2755674324" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="13.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="274" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
       <controlInputObjs>._crit_edge4</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>287</validLinenumbers>
-      <validLinenumbers>288</validLinenumbers>
-      <validLinenumbers>289</validLinenumbers>
-      <validLinenumbers>290</validLinenumbers>
+      <validLinenumbers>271</validLinenumbers>
+      <validLinenumbers>272</validLinenumbers>
+      <validLinenumbers>273</validLinenumbers>
+      <validLinenumbers>274</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="133" name="._crit_edge4" type="BlockType">
@@ -812,11 +812,11 @@
     <controlInputObjs>block_131</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="_ln291" lineNumber="291" fileName="patchMaker.cpp" fileDirectory=".." coreId="4150581176" contextFuncName="get_acceptanceCorners" opcode="ret" nodeLabel="13.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="291" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="_ln275" lineNumber="275" fileName="patchMaker.cpp" fileDirectory=".." coreId="2703639994" contextFuncName="get_acceptanceCorners" opcode="ret" nodeLabel="13.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="275" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>291</validLinenumbers>
+      <validLinenumbers>275</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" id="587" pipe_depth="3" RegionName="minMaxAcceptanceCorners_loop">
@@ -827,8 +827,8 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="i" lineNumber="225" originalName="i" fileName="patchMaker.cpp" fileDirectory=".." coreId="841966703" contextFuncName="get_acceptanceCorners" bitwidth="32" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="225" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="i" lineNumber="209" originalName="i" fileName="patchMaker.cpp" fileDirectory=".." coreId="2835278709" contextFuncName="get_acceptanceCorners" bitwidth="32" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="209" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -838,7 +838,7 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="d_corner_max" originalName="d_corner_max" coreId="808595300" bitwidth="64" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="d_corner_max" originalName="d_corner_max" coreId="2947913258" bitwidth="64" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -849,7 +849,7 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="a_corner_min" originalName="a_corner_min" coreId="1685204786" bitwidth="64" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="a_corner_min" originalName="a_corner_min" coreId="2870733456" bitwidth="64" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -860,7 +860,7 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="b_corner_min" originalName="b_corner_min" coreId="1882155363" bitwidth="64" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="b_corner_min" originalName="b_corner_min" coreId="2937624207" bitwidth="64" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -874,7 +874,7 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="c_corner_max" originalName="c_corner_max" coreId="841966703" bitwidth="64" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="c_corner_max" originalName="c_corner_max" coreId="2915471453" bitwidth="64" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -886,26 +886,26 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="add_ln225" lineNumber="225" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln225_fu_374_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="get_acceptanceCorners" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="32" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="225" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="add_ln209" lineNumber="209" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln209_fu_374_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="get_acceptanceCorners" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="209" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="icmp_ln225" lineNumber="225" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln225_fu_380_p2" opType="icmp" coreId="1685204786" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="33" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="225" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="icmp_ln209" lineNumber="209" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln209_fu_380_p2" opType="icmp" coreId="2859657705" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="209" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln225" lineNumber="225" fileName="patchMaker.cpp" fileDirectory=".." coreId="1919954793" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="225" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln209" lineNumber="209" fileName="patchMaker.cpp" fileDirectory=".." coreId="2934871365" contextFuncName="get_acceptanceCorners" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="209" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split</controlInputObjs>
         <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="patchMaker.cpp">
-        <validLinenumbers>225</validLinenumbers>
+        <validLinenumbers>209</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="72" name=".split" type="BlockType">
@@ -917,30 +917,30 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_41</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="trunc_ln227" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln227_fu_385_p1" coreId="795111282" contextFuncName="get_acceptanceCorners" bitwidth="2" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="trunc_ln211" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln211_fu_385_p1" coreId="2898106162" contextFuncName="get_acceptanceCorners" bitwidth="2" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="tmp_cast" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_cast_fu_389_p3" coreId="792359464" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="tmp_cast" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_cast_fu_389_p3" coreId="2863655172" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln227_1" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln227_1_fu_397_p1" coreId="795111282" contextFuncName="get_acceptanceCorners" bitwidth="4" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln211_1" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln211_1_fu_397_p1" coreId="2875058898" contextFuncName="get_acceptanceCorners" bitwidth="4" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="tmp_225_cast" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_225_cast_fu_401_p3" coreId="1919954793" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="tmp_136_cast" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_136_cast_fu_401_p3" coreId="2823154650" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="sub_ln227" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln227_fu_409_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="sub" nodeLabel="2.0" m_display="0" m_delay="0.7" m_topoIndex="39" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="sub_ln211" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln211_fu_409_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="sub" nodeLabel="2.0" m_display="0" m_delay="0.7" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -948,156 +948,156 @@
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln227" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln227_fu_415_p1" coreId="792359464" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln211" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln211_fu_415_p1" coreId="2911146011" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="wp_parameters_addr_3" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." coreId="1915695662" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="wp_parameters_addr_3" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." coreId="2887882678" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>wp_parameters</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="or_ln231" lineNumber="231" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln231_fu_420_p2" coreId="795111282" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="231" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="or_ln215" lineNumber="215" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln215_fu_420_p2" coreId="2941949649" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="zext_ln231" lineNumber="231" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln231_fu_426_p1" coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="231" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="zext_ln215" lineNumber="215" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln215_fu_426_p1" coreId="2895943443" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="wp_parameters_addr_4" lineNumber="231" fileName="patchMaker.cpp" fileDirectory=".." coreId="1915695662" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="231" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="wp_parameters_addr_4" lineNumber="215" fileName="patchMaker.cpp" fileDirectory=".." coreId="2880760363" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>wp_parameters</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="add_ln235" lineNumber="235" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln235_fu_431_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.7" m_topoIndex="47" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="235" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="add_ln219" lineNumber="219" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln219_fu_431_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.7" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="219" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln235" lineNumber="235" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln235_fu_436_p1" coreId="792359464" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="235" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln219" lineNumber="219" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln219_fu_436_p1" coreId="2913308730" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="219" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="wp_parameters_addr_5" lineNumber="235" fileName="patchMaker.cpp" fileDirectory=".." coreId="808595300" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="235" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="wp_parameters_addr_5" lineNumber="219" fileName="patchMaker.cpp" fileDirectory=".." coreId="2922485158" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="219" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>wp_parameters</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="add_ln239" lineNumber="239" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln239_fu_441_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.7" m_topoIndex="50" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="239" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="add_ln223" lineNumber="223" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln223_fu_441_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.7" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="223" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="zext_ln239" lineNumber="239" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln239_fu_446_p1" coreId="29" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="239" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="zext_ln223" lineNumber="223" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln223_fu_446_p1" coreId="29" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="223" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="wp_parameters_addr_6" lineNumber="239" fileName="patchMaker.cpp" fileDirectory=".." coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="239" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="wp_parameters_addr_6" lineNumber="223" fileName="patchMaker.cpp" fileDirectory=".." coreId="2876959473" contextFuncName="get_acceptanceCorners" bitwidth="5" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="223" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>wp_parameters</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="wp_parameters_load_3" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="45" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="wp_parameters_load_3" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="icmp_ln227" lineNumber="227" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln227_fu_451_p2" opType="icmp" coreId="1919954793" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="1.06" m_topoIndex="53" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="icmp_ln211" lineNumber="211" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln211_fu_451_p2" opType="icmp" coreId="2857757130" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="1.06" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="a_corner_min_1" lineNumber="227" originalName="a_corner_min" fileName="patchMaker.cpp" fileDirectory=".." rtlName="a_corner_min_1_fu_457_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="select" nodeLabel="3.0" m_display="0" m_delay="0.41" m_topoIndex="54" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="227" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="a_corner_min_1" lineNumber="211" originalName="a_corner_min" fileName="patchMaker.cpp" fileDirectory=".." rtlName="a_corner_min_1_fu_457_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="select" nodeLabel="3.0" m_display="0" m_delay="0.41" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="211" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="b_corner_min_1" lineNumber="231" originalName="b_corner_min" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="46" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="231" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="b_corner_min_1" lineNumber="215" originalName="b_corner_min" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="icmp_ln231" lineNumber="231" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln231_fu_465_p2" opType="icmp" coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="1.06" m_topoIndex="55" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="231" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="icmp_ln215" lineNumber="215" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln215_fu_465_p2" opType="icmp" coreId="2917634172" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="1.06" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="b_corner_min_2" lineNumber="231" originalName="b_corner_min" fileName="patchMaker.cpp" fileDirectory=".." rtlName="b_corner_min_2_fu_471_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="select" nodeLabel="3.0" m_display="0" m_delay="0.41" m_topoIndex="56" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="231" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="b_corner_min_2" lineNumber="215" originalName="b_corner_min" fileName="patchMaker.cpp" fileDirectory=".." rtlName="b_corner_min_2_fu_471_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="select" nodeLabel="3.0" m_display="0" m_delay="0.41" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="wp_parameters_load_5" lineNumber="235" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="1" m_delay="0.71" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="57" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="235" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="wp_parameters_load_5" lineNumber="219" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="1" m_delay="0.71" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="219" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="icmp_ln235" lineNumber="235" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln235_fu_479_p2" opType="icmp" coreId="841966703" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.06" m_topoIndex="59" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="235" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="icmp_ln219" lineNumber="219" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln219_fu_479_p2" opType="icmp" coreId="2842334401" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.06" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="219" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="c_corner_max_1" lineNumber="235" originalName="c_corner_max" fileName="patchMaker.cpp" fileDirectory=".." rtlName="c_corner_max_1_fu_485_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="select" nodeLabel="4.0" m_display="0" m_delay="0.41" m_topoIndex="60" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="235" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="c_corner_max_1" lineNumber="219" originalName="c_corner_max" fileName="patchMaker.cpp" fileDirectory=".." rtlName="c_corner_max_1_fu_485_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="select" nodeLabel="4.0" m_display="0" m_delay="0.41" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="219" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="d_corner_max_1" lineNumber="239" originalName="d_corner_max" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="58" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="239" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="d_corner_max_1" lineNumber="223" originalName="d_corner_max" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="223" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="icmp_ln239" lineNumber="239" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln239_fu_493_p2" opType="icmp" coreId="1768107834" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.06" m_topoIndex="61" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="239" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="icmp_ln223" lineNumber="223" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln223_fu_493_p2" opType="icmp" coreId="2878859788" contextFuncName="get_acceptanceCorners" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.06" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="223" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="d_corner_max_2" lineNumber="239" originalName="d_corner_max" fileName="patchMaker.cpp" fileDirectory=".." rtlName="d_corner_max_2_fu_499_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="select" nodeLabel="4.0" m_display="0" m_delay="0.41" m_topoIndex="62" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="239" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="d_corner_max_2" lineNumber="223" originalName="d_corner_max" fileName="patchMaker.cpp" fileDirectory=".." rtlName="d_corner_max_2_fu_499_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_acceptanceCorners" bitwidth="64" opcode="select" nodeLabel="4.0" m_display="0" m_delay="0.41" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="223" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_acceptanceCorners"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln0" coreId="792359464" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln0" coreId="2950075981" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
         <controlInputObjs>block_41</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="patchMaker.cpp">
-        <validLinenumbers>227</validLinenumbers>
-        <validLinenumbers>231</validLinenumbers>
-        <validLinenumbers>235</validLinenumbers>
-        <validLinenumbers>239</validLinenumbers>
+        <validLinenumbers>211</validLinenumbers>
+        <validLinenumbers>215</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+        <validLinenumbers>223</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
@@ -1118,20 +1118,17 @@
   <regnodes realName="wp_parameters3_addr_reg_543">
     <nodeIds>19</nodeIds>
   </regnodes>
+  <regnodes realName="add_ln209_reg_646">
+    <nodeIds>37</nodeIds>
+  </regnodes>
   <regnodes realName="wp_parameters_load_1_reg_706">
     <nodeIds>76</nodeIds>
   </regnodes>
+  <regnodes realName="sub_ln211_reg_655">
+    <nodeIds>46</nodeIds>
+  </regnodes>
   <regnodes realName="a_corner_min_1_reg_681">
     <nodeIds>61</nodeIds>
-  </regnodes>
-  <regnodes realName="add_ln225_reg_646">
-    <nodeIds>37</nodeIds>
-  </regnodes>
-  <regnodes realName="empty_106_reg_357">
-    <nodeIds>123</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln285_reg_727">
-    <nodeIds>124</nodeIds>
   </regnodes>
   <regnodes realName="c_corner_max_1_reg_691">
     <nodeIds>67</nodeIds>
@@ -1166,6 +1163,9 @@
   <regnodes realName="wp_parameters_addr_7_reg_573">
     <nodeIds>8</nodeIds>
   </regnodes>
+  <regnodes realName="empty_120_reg_357">
+    <nodeIds>123</nodeIds>
+  </regnodes>
   <regnodes realName="wp_parameters_addr_reg_558">
     <nodeIds>5</nodeIds>
   </regnodes>
@@ -1184,6 +1184,9 @@
   <regnodes realName="wp_parameters_addr_6_reg_676">
     <nodeIds>57</nodeIds>
   </regnodes>
+  <regnodes realName="icmp_ln209_reg_651">
+    <nodeIds>39</nodeIds>
+  </regnodes>
   <regnodes realName="wp_parameters_addr_5_reg_671">
     <nodeIds>54</nodeIds>
   </regnodes>
@@ -1192,12 +1195,6 @@
   </regnodes>
   <regnodes realName="wp_parameters2_addr_2_reg_599">
     <nodeIds>13</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln225_reg_651">
-    <nodeIds>39</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln278_reg_723">
-    <nodeIds>115</nodeIds>
   </regnodes>
   <regnodes realName="wp_parameters4_addr_reg_553">
     <nodeIds>23</nodeIds>
@@ -1208,11 +1205,17 @@
   <regnodes realName="wp_parameters_addr_8_reg_578">
     <nodeIds>9</nodeIds>
   </regnodes>
+  <regnodes realName="icmp_ln262_reg_723">
+    <nodeIds>115</nodeIds>
+  </regnodes>
   <regnodes realName="wp_parameters3_addr_3_reg_635">
     <nodeIds>22</nodeIds>
   </regnodes>
   <regnodes realName="wp_parameters_addr_2_reg_568">
     <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln269_reg_727">
+    <nodeIds>124</nodeIds>
   </regnodes>
   <regnodes realName="wp_parameters2_addr_7_reg_625">
     <nodeIds>18</nodeIds>
@@ -1235,29 +1238,17 @@
   <regnodes realName="d_corner_max_2_reg_696">
     <nodeIds>70</nodeIds>
   </regnodes>
-  <regnodes realName="sub_ln227_reg_655">
-    <nodeIds>46</nodeIds>
-  </regnodes>
   <expressionNodes realName="d_corner_max_phi_fu_309">
     <nodeIds>33</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln271_fu_525">
+  <expressionNodes realName="icmp_ln255_fu_525">
     <nodeIds>108</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln227_fu_385">
-    <nodeIds>42</nodeIds>
+  <expressionNodes realName="trunc_ln211_1_fu_397">
+    <nodeIds>44</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln239_fu_441">
-    <nodeIds>55</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="or_ln231_fu_420">
-    <nodeIds>49</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln225_fu_380">
+  <expressionNodes realName="icmp_ln209_fu_380">
     <nodeIds>39</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sub_ln227_fu_409">
-    <nodeIds>46</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters2_addr_2_gep_fu_173">
     <nodeIds>13</nodeIds>
@@ -1268,11 +1259,14 @@
   <expressionNodes realName="wp_parameters2_addr_4_gep_fu_189">
     <nodeIds>15</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="or_ln215_fu_420">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="wp_parameters2_addr_7_gep_fu_213">
     <nodeIds>18</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="empty_106_phi_fu_360">
-    <nodeIds>123</nodeIds>
+  <expressionNodes realName="icmp_ln250_fu_519">
+    <nodeIds>100</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters_addr_gep_fu_109">
     <nodeIds>5</nodeIds>
@@ -1283,8 +1277,14 @@
   <expressionNodes realName="wp_parameters3_addr_1_gep_fu_74">
     <nodeIds>20</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln278_fu_531">
-    <nodeIds>115</nodeIds>
+  <expressionNodes realName="add_ln209_fu_374">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_136_cast_fu_401">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln211_fu_415">
+    <nodeIds>47</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters_addr_3_gep_fu_240">
     <nodeIds>48</nodeIds>
@@ -1292,17 +1292,23 @@
   <expressionNodes realName="tmp_cast_fu_389">
     <nodeIds>43</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln266_fu_519">
-    <nodeIds>100</nodeIds>
+  <expressionNodes realName="icmp_ln245_fu_513">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_120_phi_fu_360">
+    <nodeIds>123</nodeIds>
   </expressionNodes>
   <expressionNodes realName="i_phi_fu_297">
     <nodeIds>32</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="icmp_ln262_fu_531">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="wp_parameters2_addr_6_gep_fu_205">
     <nodeIds>17</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln261_fu_513">
-    <nodeIds>92</nodeIds>
+  <expressionNodes realName="add_ln219_fu_431">
+    <nodeIds>52</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters_addr_2_gep_fu_125">
     <nodeIds>7</nodeIds>
@@ -1316,14 +1322,8 @@
   <expressionNodes realName="wp_parameters_addr_5_gep_fu_265">
     <nodeIds>54</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln225_fu_374">
-    <nodeIds>37</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="c_corner_max_1_fu_485">
     <nodeIds>67</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln235_fu_431">
-    <nodeIds>52</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters_addr_1_gep_fu_117">
     <nodeIds>6</nodeIds>
@@ -1337,8 +1337,11 @@
   <expressionNodes realName="wp_parameters2_addr_gep_fu_157">
     <nodeIds>11</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln231_fu_426">
-    <nodeIds>50</nodeIds>
+  <expressionNodes realName="trunc_ln211_fu_385">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln223_fu_446">
+    <nodeIds>56</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters2_addr_3_gep_fu_181">
     <nodeIds>14</nodeIds>
@@ -1346,20 +1349,17 @@
   <expressionNodes realName="wp_parameters3_addr_gep_fu_66">
     <nodeIds>19</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="zext_ln215_fu_426">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln211_fu_451">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="d_corner_max_2_fu_499">
     <nodeIds>70</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln239_fu_493">
-    <nodeIds>69</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln256_fu_507">
-    <nodeIds>84</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="wp_parameters3_addr_2_gep_fu_221">
     <nodeIds>21</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln239_fu_446">
-    <nodeIds>56</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters_addr_4_gep_fu_247">
     <nodeIds>51</nodeIds>
@@ -1367,10 +1367,19 @@
   <expressionNodes realName="a_corner_min_1_fu_457">
     <nodeIds>61</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln285_fu_537">
+  <expressionNodes realName="sub_ln211_fu_409">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln223_fu_441">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln269_fu_537">
     <nodeIds>124</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln231_fu_465">
+  <expressionNodes realName="zext_ln219_fu_436">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln215_fu_465">
     <nodeIds>63</nodeIds>
   </expressionNodes>
   <expressionNodes realName="a_corner_min_phi_fu_322">
@@ -1379,35 +1388,26 @@
   <expressionNodes realName="wp_parameters2_addr_1_gep_fu_165">
     <nodeIds>12</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln227_1_fu_397">
-    <nodeIds>44</nodeIds>
+  <expressionNodes realName="icmp_ln219_fu_479">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln223_fu_493">
+    <nodeIds>69</nodeIds>
   </expressionNodes>
   <expressionNodes realName="b_corner_min_2_fu_471">
     <nodeIds>64</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln235_fu_479">
-    <nodeIds>66</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln227_fu_415">
-    <nodeIds>47</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln235_fu_436">
-    <nodeIds>53</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="wp_parameters_addr_9_gep_fu_149">
     <nodeIds>10</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="tmp_225_cast_fu_401">
-    <nodeIds>45</nodeIds>
+  <expressionNodes realName="icmp_ln240_fu_507">
+    <nodeIds>84</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters_addr_6_gep_fu_272">
     <nodeIds>57</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters_addr_8_gep_fu_141">
     <nodeIds>9</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln227_fu_451">
-    <nodeIds>60</nodeIds>
   </expressionNodes>
   <expressionNodes realName="wp_parameters2_addr_5_gep_fu_197">
     <nodeIds>16</nodeIds>

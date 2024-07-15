@@ -7,7 +7,7 @@
 
 module makePatches_ShadowQuilt_fromEdges_sitofp_32s_32_2_no_dsp_1
 #(parameter
-    ID         = 50,
+    ID         = 47,
     NUM_STAGE  = 2,
     din0_WIDTH = 32,
     dout_WIDTH = 32

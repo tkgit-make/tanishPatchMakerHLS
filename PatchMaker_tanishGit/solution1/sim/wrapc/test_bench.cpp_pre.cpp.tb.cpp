@@ -68342,26 +68342,26 @@ const long int trapezoid_edges[5] = {static_cast<long>(22.0001 * 1000000),
                                               static_cast<long>(43.0001 * 1000000),
                                               static_cast<long>(50.0001 * 1000000)};
 # 167 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
-void initWedgeSuperPoint(long (&wsp) [3][16][3], long points[256][3], int pointCount);
-int areWedgeSuperPointsEqual(long wsp1[3][16][3], long wsp2[3][16][3]);
-void wedgePatch_init(long (&wp_superpoints) [5][3][16][3], long (&wp_parameters) [5][5 - 1][6], long superpointsI[5][3][16][3], long superpoint_count, long apexZ0I);
+void initWedgeSuperPoint(long (&wsp) [16][3], long points[256][3], int pointCount);
+int areWedgeSuperPointsEqual(long wsp1[16][3], long wsp2[16][3]);
+void wedgePatch_init(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6], long superpointsI[5][16][3], long superpoint_count, long apexZ0I);
 long straightLineProjectorFromLayerIJtoK(long z_i, long z_j, int i, int j, int k);
-void getParallelograms(long (&wp_superpoints) [5][3][16][3], long (&wp_parameters) [5][5 - 1][6]);
-void getShadows(long (&wp_superpoints) [5][3][16][3], long (&wp_parameters) [5][5 - 1][6], long zTopMin, long zTopMax);
-void get_acceptanceCorners(long (&wp_superpoints) [5][3][16][3], long (&wp_parameters) [5][5 - 1][6]);
-void add_patch(long (&wp_superpoints) [5][3][16][3], long (&wp_parameters) [5][5 - 1][6], int &n_patches, long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void delete_patch(int index, int &n_patches, long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void getParallelograms(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6]);
+void getShadows(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6], long zTopMin, long zTopMax);
+void get_acceptanceCorners(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6]);
+void add_patch(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6], int &n_patches, long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void delete_patch(int index, int &n_patches, long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
 int get_index_from_z(int layer, long z_value, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5]);
-void makePatches_ShadowQuilt_fromEdges(long apexZ0, int stop, int ppl, bool leftRight, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void makeThirdPatch(int lastPatchIndex, long z_top_min, long z_top_max, long complementary_apexZ0, long apexZ0, int ppl, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, int &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, int &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[5][3][16][3], int &init_patch_size, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5]);
+void makePatches_ShadowQuilt_fromEdges(long apexZ0, int stop, int ppl, bool leftRight, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void makeThirdPatch(int lastPatchIndex, long z_top_min, long z_top_max, long complementary_apexZ0, long apexZ0, int ppl, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, int &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, int &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, int &n_patches, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[5][16][3], int &init_patch_size, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5]);
 bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, bool repeat_original,
                                          long white_space_height, long previous_white_space_height,
-                                         int current_z_top_index, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][3][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+                                         int current_z_top_index, std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
 
 bool getSolveNextColumnWhileConditional(long c_corner, int nPatchesInColumn, long projectionOfCornerToBeam);
 void mSP_findStartIndex(long row_list[256], int row_list_size, long projectionToRow, int &start_index, long &start_value);
@@ -68393,11 +68393,11 @@ int comparePoints(const std::array<long, 3> &pointA, const std::array<long, 3> &
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_makePatches_ShadowQuilt_fromEdges_sw(long, int, int, bool, int &, std::array<std::array<std::array<long, 3>, 256>, 5> &, int (&)[5], long (&)[32][5][3][16][3], long (&)[32][5][4][6]);
+void apatb_makePatches_ShadowQuilt_fromEdges_sw(long, int, int, bool, int &, std::array<std::array<std::array<long, 3>, 256>, 5> &, int (&)[5], long (&)[32][5][16][3], long (&)[32][5][4][6]);
 # 24 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
 void solve(long apexZ0, int ppl, bool leftRight, int &n_patches,
            std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points)[5],
-           long (&patches_superpoints)[32][5][3][16][3], long (&patches_parameters)[32][5][4][6])
+           long (&patches_superpoints)[32][5][16][3], long (&patches_parameters)[32][5][4][6])
 {
 solve_loop:
     for (int i = 0; i < 5; i++)
@@ -68676,24 +68676,22 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
    GDn_points[a] = 0;
   }
 
-  long patches_superpoints[32][5][3][16][3];
+  long patches_superpoints[32][5][16][3];
 
   for(int a = 0; a < 32; a++)
   {
    for(int b = 0; b < 5; b++)
    {
-    for(int c = 0; c < 3; c++)
+    for(int c = 0; c < 16; c++)
     {
-     for(int d = 0; d < 16; d++)
+     for(int d = 0; d < 3; d++)
      {
-      for(int e = 0; e < 3; e++)
-      {
-       patches_superpoints[a][b][c][d][e] = 0;
-      }
+      patches_superpoints[a][b][c][d] = 0;
      }
     }
    }
   }
+
 #pragma HLS array_partition variable=patches_superpoints type=complete
   long patches_parameters[32][5][5 - 1][6];
 
@@ -68711,7 +68709,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
    }
   }
 #pragma HLS array_partition variable=patches_parameters type=complete
-#pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
+
 
     int n_patches = 0;
 
@@ -68751,17 +68749,17 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
    {
     printf("Superpoint \n");
 
-    for (int r = 0; r < static_cast<int>(patches_superpoints[i][j][2][0][0]); r++)
+    for (int r = 0; r < 16; r++)
     {
      printf("%d %.4f %d %.4f\n",
-       patches_superpoints[i][j][0][r][0],
-       patches_superpoints[i][j][0][r][1] / (float) (pow(10, 7)),
-       (int) (radii[patches_superpoints[i][j][0][r][0] - 1] / (float) 1000000),
-       patches_superpoints[i][j][0][r][2] / (float) 1000000);
+       patches_superpoints[i][j][r][0],
+       patches_superpoints[i][j][r][1] / (float) (pow(10, 7)),
+       (int) (radii[patches_superpoints[i][j][r][0] - 1] / (float) 1000000),
+       patches_superpoints[i][j][r][2] / (float) 1000000);
     }
    }
   }
-# 415 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 413 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
     }
 
     fclose(myfile);
@@ -68774,7 +68772,7 @@ int main () {
 
 
 
-    int wedgesToTest[] = {2176, 2177};
+    int wedgesToTest[] = {0, 1};
 
     wedge_test(0, 16, wedgesToTest);
 

@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 50
+set id 47
 set name makePatches_ShadowQuilt_fromEdges_sitofp_32s_32_2_no_dsp_1
 set corename simcore_sitofp
 set op sitofp
@@ -86,7 +86,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 53
+set ID 50
 set hasByteEnable 0
 set MemName makePatches_ShadowQuilt_fromEdges_straightLineProjectorFromLayerIJtoK_radii
 set CoreName ap_simcore_mem
@@ -181,7 +181,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 54 \
+    id 51 \
     name z_i \
     type other \
     dir I \
@@ -196,7 +196,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 55 \
+    id 52 \
     name z_j \
     type other \
     dir I \
@@ -211,7 +211,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 56 \
+    id 53 \
     name i \
     type other \
     dir I \
@@ -226,7 +226,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 57 \
+    id 54 \
     name j \
     type other \
     dir I \
@@ -241,7 +241,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 58 \
+    id 55 \
     name k \
     type other \
     dir I \

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getShadows'" level="0">
-<item name = "Date">Thu Jul 11 15:45:19 2024
+<item name = "Date">Sun Jul 14 15:00:58 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -31,10 +31,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_270">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_284">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_298">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_312">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_326">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_340">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

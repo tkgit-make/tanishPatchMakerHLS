@@ -10,8 +10,8 @@ use ieee.std_logic_unsigned.all;
 entity makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_superpoints_0_ram is 
     generic(
             DWIDTH     : integer := 64; 
-            AWIDTH     : integer := 8; 
-            MEM_SIZE    : integer := 144
+            AWIDTH     : integer := 6; 
+            MEM_SIZE    : integer := 48
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -92,8 +92,8 @@ use IEEE.std_logic_1164.all;
 entity makePatches_ShadowQuilt_fromEdges_makePatch_alignedToLine_NPpatches_superpoints_0 is
     generic (
         DataWidth : INTEGER := 64;
-        AddressRange : INTEGER := 144;
-        AddressWidth : INTEGER := 8);
+        AddressRange : INTEGER := 48;
+        AddressWidth : INTEGER := 6);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

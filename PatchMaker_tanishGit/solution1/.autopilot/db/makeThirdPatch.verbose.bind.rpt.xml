@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makeThirdPatch'" level="0">
-<item name = "Date">Thu Jul 11 15:45:30 2024
+<item name = "Date">Sun Jul 14 15:01:21 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.532 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -31,11 +31,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makePatch_alignedToLine_1_fu_654">makePatch_alignedToLine_1, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_getShadows_fu_755">getShadows, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_delete_patch_1_fu_868">delete_patch_1, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_950">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_964">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
+<column name="grp_makePatch_alignedToLine_1_fu_2956">makePatch_alignedToLine_1, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_getShadows_fu_3111">getShadows, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_delete_patch_1_fu_3187">delete_patch_1, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_3323">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_3341">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

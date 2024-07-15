@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makePatch_alignedToLine_2'" level="0">
-<item name = "Date">Thu Jul 11 15:45:06 2024
+<item name = "Date">Sun Jul 14 15:00:42 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -31,20 +31,20 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makeSuperPoint_alignedToLine_fu_1085">makeSuperPoint_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_add_patch_214_fu_1113">add_patch_214, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1207">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1221">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_get_acceptanceCorners_fu_1235">get_acceptanceCorners, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_makeSuperPoint_alignedToLine_fu_1057">makeSuperPoint_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_add_patch_214_fu_1085">add_patch_214, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1233">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1247">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
+<column name="grp_get_acceptanceCorners_fu_1261">get_acceptanceCorners, ?, ?, ?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_1077_1_VITIS_LOOP_1081_3_VITIS_LOOP_1083_4">720, 720, 1, 1, 1, 720, yes</column>
+<column name="- VITIS_LOOP_1053_1_VITIS_LOOP_1055_2_VITIS_LOOP_1057_3">240, 240, 1, 1, 1, 240, yes</column>
 <column name="- makeSuperpoint_loop">?, ?, ?, -, -, 5, no</column>
-<column name="- VITIS_LOOP_1105_5_VITIS_LOOP_1109_7_VITIS_LOOP_1111_8">720, 720, 1, 1, 1, 720, yes</column>
-<column name="- VITIS_LOOP_1120_9_VITIS_LOOP_1122_10_VITIS_LOOP_1124_11">120, 120, 1, 1, 1, 120, yes</column>
-<column name="- VITIS_LOOP_93_1_VITIS_LOOP_98_3_VITIS_LOOP_100_4">?, ?, 2, 1, 1, ?, yes</column>
+<column name="- VITIS_LOOP_1078_4_VITIS_LOOP_1080_5_VITIS_LOOP_1082_6">240, 240, 1, 1, 1, 240, yes</column>
+<column name="- VITIS_LOOP_1090_7_VITIS_LOOP_1092_8_VITIS_LOOP_1094_9">120, 120, 1, 1, 1, 120, yes</column>
+<column name="- VITIS_LOOP_80_1_VITIS_LOOP_83_2_VITIS_LOOP_85_3">?, ?, 2, 1, 1, ?, yes</column>
 <column name="- getParallelograms_loop">?, ?, 15, 3, 1, ?, yes</column>
 </table>
 </item>

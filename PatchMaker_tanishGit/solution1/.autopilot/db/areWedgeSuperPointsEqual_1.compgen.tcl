@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 175 \
+    id 227 \
     name patches_superpoints_31 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename patches_superpoints_31 \
     op interface \
-    ports { patches_superpoints_31_address0 { O 10 vector } patches_superpoints_31_ce0 { O 1 bit } patches_superpoints_31_q0 { I 64 vector } patches_superpoints_31_address1 { O 10 vector } patches_superpoints_31_ce1 { O 1 bit } patches_superpoints_31_q1 { I 64 vector } } \
+    ports { patches_superpoints_31_address0 { O 8 vector } patches_superpoints_31_ce0 { O 1 bit } patches_superpoints_31_q0 { I 64 vector } patches_superpoints_31_address1 { O 8 vector } patches_superpoints_31_ce1 { O 1 bit } patches_superpoints_31_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_31'"
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 176 \
+    id 228 \
     name patches_superpoints_30 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename patches_superpoints_30 \
     op interface \
-    ports { patches_superpoints_30_address0 { O 10 vector } patches_superpoints_30_ce0 { O 1 bit } patches_superpoints_30_q0 { I 64 vector } patches_superpoints_30_address1 { O 10 vector } patches_superpoints_30_ce1 { O 1 bit } patches_superpoints_30_q1 { I 64 vector } } \
+    ports { patches_superpoints_30_address0 { O 8 vector } patches_superpoints_30_ce0 { O 1 bit } patches_superpoints_30_q0 { I 64 vector } patches_superpoints_30_address1 { O 8 vector } patches_superpoints_30_ce1 { O 1 bit } patches_superpoints_30_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_30'"
@@ -48,7 +48,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 177 \
+    id 229 \
     name wsp1 \
     type other \
     dir I \
@@ -63,7 +63,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 178 \
+    id 230 \
     name wsp2 \
     type other \
     dir I \

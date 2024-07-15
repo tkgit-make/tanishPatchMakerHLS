@@ -1,43 +1,32 @@
 #include "patchMakerHeader.h"
 
-void initWedgeSuperPoint(long (&wsp) [3][MAX_POINTS_IN_SUPERPOINT][3], long points[MAX_POINTS_PER_LAYER][3], int pointCount)
+void initWedgeSuperPoint(long (&wsp) [MAX_POINTS_IN_SUPERPOINT][3], long points[MAX_POINTS_PER_LAYER][3], int pointCount)
 {
-    wsp[2][0][0] = pointCount;
-    wsp[2][1][0] = LONG_MAX;
-    wsp[2][2][0] = LONG_MIN;
-
     // more efficient approach
     // instead of making a temp array and then transferring contents, add the values directly
     // simultaneously, you can determine the min and max, as opposed to doing it after the fact
 initWedgeSP_loop:
-    for (int i = 0; i < pointCount; i++)
+    for (int i = 0; i < MAX_POINTS_IN_SUPERPOINT; i++)
     {
         for(int z = 0; z < 3; z++)
         {
-            wsp[0][i][z] = points[i][z];
+            wsp[i][z] = points[i][z];
         }
-
-        wsp[1][i][0] = points[i][2];
-
-        if (points[i][2] < wsp[2][1][0])
-            wsp[2][1][0] = points[i][2];
-        if (points[i][2] > wsp[2][2][0])
-            wsp[2][2][0] = points[i][2];
     }
 }
 
 // operator overloading not allowed in C, write separate method to check equality
-int areWedgeSuperPointsEqual(long wsp1[3][MAX_POINTS_IN_SUPERPOINT][3], long wsp2[3][MAX_POINTS_IN_SUPERPOINT][3])
+int areWedgeSuperPointsEqual(long wsp1[MAX_POINTS_IN_SUPERPOINT][3], long wsp2[MAX_POINTS_IN_SUPERPOINT][3])
 {
     //return (wsp1->min == wsp2->min) && (wsp1->max == wsp2->max);
     const long tolerance = static_cast<long>(0.0001 * INTEGER_FACTOR_CM);
-    return (static_cast<long>(fabs(wsp1[2][1][0] - wsp2[2][1][0])) < tolerance) && (static_cast<long>(fabs(wsp1[2][2][0] - wsp2[2][2][0])) < tolerance);
+    return (static_cast<long>(fabs(wsp1[0][2] - wsp2[0][2])) < tolerance) && (static_cast<long>(fabs(wsp1[MAX_POINTS_IN_SUPERPOINT - 1][2] - wsp2[MAX_POINTS_IN_SUPERPOINT - 1][2])) < tolerance);
 }
 
 void getParallelograms(WEDGE_PATCH)
 {
-    long z1_min = max(wp_superpoints[0][2][1][0], -1 * trapezoid_edges[0]);
-    long z1_max = min(wp_superpoints[0][2][2][0], trapezoid_edges[0]);
+    long z1_min = max(wp_superpoints[0][0][2], -1 * trapezoid_edges[0]);
+    long z1_max = min(wp_superpoints[0][MAX_POINTS_IN_SUPERPOINT - 1][2], trapezoid_edges[0]);
 
     if (z1_min > z1_max)
     {
@@ -56,8 +45,8 @@ getParallelograms_loop:
     {
         long j = static_cast<long>(i) + 1;
 
-        long z_j_min = wp_superpoints[i][2][1][0];
-        long z_j_max = wp_superpoints[i][2][2][0];
+        long z_j_min = wp_superpoints[i][0][2];
+        long z_j_max = wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][2];
 
         long a = straightLineProjectorFromLayerIJtoK(z1_min, z_j_max, 1, j, num_layers);
         long b = straightLineProjectorFromLayerIJtoK(z1_max, z_j_max, 1, j, num_layers);
@@ -79,7 +68,7 @@ getParallelograms_loop:
     }
 }
 
-void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][3][MAX_POINTS_IN_SUPERPOINT][3], long superpoint_count, long apexZ0I)
+void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3], long superpoint_count, long apexZ0I)
 {
     wp_parameters[4][0][0] = apexZ0I;
 
@@ -91,14 +80,12 @@ void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][3]
     for (size_t i = 0; i < static_cast<int>(superpoint_count); i++)
     {   // size_t objects should only be non-negative and are more performant than ints
         // wp->superpoints is an array of arrays.
-        for(int a = 0; a < 3; a++)
+        for(int a = 0; a < MAX_POINTS_IN_SUPERPOINT; a++)
         {
-            for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
+            for(int b = 0; b < 3; b++)
             {
-                for(int c = 0; c < 3; c++)
-                {
-                    wp_superpoints[i][a][b][c] = superpointsI[i][a][b][c];
-                }
+                
+                wp_superpoints[i][a][b] = superpointsI[i][a][b];
             }
         }
     }
@@ -168,8 +155,8 @@ getShadows_loop:
     for (int i = 0; i < static_cast<int>(wp_parameters[4][1][0]) - 1; ++i)
     {
         int j = i + 1;
-        long z_j_min = wp_superpoints[i][2][1][0];
-        long z_j_max = wp_superpoints[i][2][2][0];
+        long z_j_min = wp_superpoints[i][0][2];
+        long z_j_max = wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][2];
 
         topL_jL[i] = straightLineProjectorFromLayerIJtoK(zTop_min, z_j_min, num_layers, j, 1);
         topL_jR[i] = straightLineProjectorFromLayerIJtoK(zTop_min, z_j_max, num_layers, j, 1);
@@ -294,14 +281,12 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
         //copy the patch directly
         for(int a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
         {
-            for(int b = 0; b < 3; b++)
+            for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
             {
-                for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+                for(int c = 0; c < 3; c++)
                 {
-                    for(int d = 0; d < 3; d++)
-                    {
-                        patches_superpoints[0][a][b][c][d] = wp_superpoints[a][b][c][d];
-                    }
+                    
+                    patches_superpoints[0][a][b][c] = wp_superpoints[a][b][c];
                 }
             }
         }
@@ -329,8 +314,8 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
 
         for (index_type i = 0; i < static_cast<int>(patches_parameters[n_patches - 1][4][1][0]); i++)
         {
-            if ((patches_superpoints[n_patches - 1][i][2][1][0] != wp_superpoints[i][2][1][0]) ||
-                (patches_superpoints[n_patches - 1][i][2][2][0] != wp_superpoints[i][2][2][0]))
+            if ((patches_superpoints[n_patches - 1][i][0][2] != wp_superpoints[i][0][2]) ||
+                (patches_superpoints[n_patches - 1][i][MAX_POINTS_IN_SUPERPOINT - 1][2] != wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][2]))
             {
                 different = true;
                 break;
@@ -344,14 +329,11 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
             {
                 for(int a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
                 {
-                    for(int b = 0; b < 3; b++)
+                    for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
                     {
-                        for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+                        for(int c = 0; c < 3; c++)
                         {
-                            for(int d = 0; d < 3; d++)
-                            {
-                                patches_superpoints[n_patches][a][b][c][d] = wp_superpoints[a][b][c][d];
-                            }
+                            patches_superpoints[n_patches][a][b][c] = wp_superpoints[a][b][c];
                         }
                     }
                 }
@@ -389,14 +371,11 @@ void delete_patch(int index, index_type &n_patches, GPATCHES)
     {
         for(int a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
         {
-            for(int b = 0; b < 3; b++)
+            for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
             {
-                for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+                for(int c = 0; c < 3; c++)
                 {
-                    for(int d = 0; d < 3; d++)
-                    {
-                        patches_superpoints[i][a][b][c][d] = patches_superpoints[i + 1][a][b][c][d];
-                    }
+                    patches_superpoints[i][a][b][c] = patches_superpoints[i + 1][a][b][c];
                 }
             }
         }
@@ -599,7 +578,7 @@ void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix
 
     if (!notChoppedPatch && (patches_parameters[lastPatchIndex][2][2][1] > -1 * trapezoid_edges[num_layers - 1]) && ((projectionOfCornerToBeam < beam_axis_lim)))
     {
-        complementary_apexZ0 = patches_superpoints[lastPatchIndex][0][2][1][0];
+        complementary_apexZ0 = patches_superpoints[lastPatchIndex][0][0][2];
         if (patches_parameters[lastPatchIndex][3][3][0] && !repeat_original)
         {
             z_top_min = patches_parameters[lastPatchIndex][2][3][1];
@@ -609,7 +588,7 @@ void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix
             #if PRINT_OUTS == true
                 printf("z_top_min before: %ld superpoints[self.env.num_layers-1][2][1][0]: %ld\n", z_top_min, patches_superpoints[lastPatchIndex][num_layers - 1][2][1][0]);
             #endif
-                z_top_min = max(-1 * top_layer_lim, patches_superpoints[lastPatchIndex][num_layers - 1][2][1][0]);
+                z_top_min = max(-1 * top_layer_lim, patches_superpoints[lastPatchIndex][num_layers - 1][0][2]);
 
         }
 
@@ -1069,18 +1048,15 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
 
 void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES)
 {
-    long init_patch[MAX_LAYERS][3][MAX_POINTS_IN_SUPERPOINT][3]; // correct
+    long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3]; // correct
 
     for(int a = 0; a < MAX_LAYERS; a++)
 	{
-		for(int b = 0; b < 3; b++)
+		for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
 		{
-			for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+			for(int c = 0; c < 3; c++)
 			{
-				for(int d = 0; d < 3; d++)
-				{
-					init_patch[a][b][c][d] = 0;
-				}
+				init_patch[a][b][c] = 0;
 			}
 		}
 	}
@@ -1098,17 +1074,14 @@ makeSuperpoint_loop:
     }
 
     // once all points are added to patch new_patch, add the entire patch to the cover (first init it)
-    long NPpatches_superpoints[MAX_SUPERPOINTS_IN_PATCH][3][MAX_POINTS_IN_SUPERPOINT][3];
+    long NPpatches_superpoints[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3];
     for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
 	{
-		for(int c = 0; c < 3; c++)
+		for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
 		{
-			for(int d = 0; d < MAX_POINTS_IN_SUPERPOINT; d++)
+			for(int d = 0; d < 3; d++)
 			{
-				for(int e = 0; e < 3; e++)
-				{
-					NPpatches_superpoints[b][c][d][e] = 0;
-				}
+				NPpatches_superpoints[b][c][d] = 0;
 			}
 		}
 	}
@@ -1133,7 +1106,7 @@ makeSuperpoint_loop:
     add_patch(NPpatches_superpoints, NPpatches_parameters, n_patches, patches_superpoints, patches_parameters);
 }
 
-void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[MAX_LAYERS][3][MAX_POINTS_IN_SUPERPOINT][3], index_type &init_patch_size, GDARRAY)
+void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3], index_type &init_patch_size, GDARRAY)
 {
     long y = radii[i];
     long row_list[MAX_POINTS_PER_LAYER];
