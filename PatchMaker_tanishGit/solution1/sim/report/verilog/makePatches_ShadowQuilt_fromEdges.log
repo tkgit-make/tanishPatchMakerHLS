@@ -1,14 +1,162 @@
 INFO: [COSIM-47] Using XSIM for RTL simulation.
 INFO: [COSIM-14] Instrumenting C test bench ...
    Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
-   Compiling apatb_makePatches_ShadowQuilt_fromEdges_util.cpp
    Compiling test_bench.cpp_pre.cpp.tb.cpp
    Compiling apatb_makePatches_ShadowQuilt_fromEdges.cpp
    Compiling patchMaker.cpp_pre.cpp.tb.cpp
    Compiling apatb_makePatches_ShadowQuilt_fromEdges_ir.ll
    Generating cosim.tv.exe
 INFO: [COSIM-302] Starting C TB testing ... 
-ERROR: [COSIM-360] Aborting co-simulation: C TB simulation failed.
-ERROR: [COSIM-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
-ERROR: [COSIM-5] *** C/RTL co-simulation file generation failed. ***
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+ERROR: [COSIM-379] Detected segmentation violation, please check C tb.
+ERROR: [COSIM-362] Aborting co-simulation: C TB post check failed.
+
+C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\PatchMaker_tanishGit\solution1\sim\verilog>set PATH= 
+
+C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\PatchMaker_tanishGit\solution1\sim\verilog>call C:/Xilinx/Vivado/2020.2/bin/xelab xil_defaultlib.apatb_makePatches_ShadowQuilt_fromEdges_top glbl -prj makePatches_ShadowQuilt_fromEdges.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib "ieee_proposed=./ieee_proposed" -s makePatches_ShadowQuilt_fromEdges -debug wave 
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_makePatches_ShadowQuilt_fromEdges_top glbl -prj makePatches_ShadowQuilt_fromEdges.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s makePatches_ShadowQuilt_fromEdges -debug wave 
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_makePatches_ShadowQuilt_fromEdges_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module makePatches_ShadowQuilt_fromEdges
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.makePatches_ShadowQuilt_fromEdge...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_makePatches_ShadowQuilt_fr...
+Compiling module work.glbl
+Built simulation snapshot makePatches_ShadowQuilt_fromEdges
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/xsim.dir/makePatches_ShadowQuilt_fromEdges/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 15 20:26:40 2024...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/makePatches_ShadowQuilt_fromEdges/xsim_script.tcl
+# xsim {makePatches_ShadowQuilt_fromEdges} -view {{makePatches_ShadowQuilt_fromEdges_dataflow_ana.wcfg}} -tclbatch {makePatches_ShadowQuilt_fromEdges.tcl} -protoinst {makePatches_ShadowQuilt_fromEdges.protoinst}
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file makePatches_ShadowQuilt_fromEdges.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges//AESL_inst_makePatches_ShadowQuilt_fromEdges_activity
+WARNING: [Wavedata 42-559] Protocol instance "/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges//AESL_inst_makePatches_ShadowQuilt_fromEdges_activity" was created but is non-functional for the following reason(s):
+Couldn't find port object "ap_clk" for protocol analyzer port "AP_CLK".
+Couldn't find port object "ap_rst" for protocol analyzer port "AP_RESET".
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+Time resolution is 1 ps
+open_wave_config makePatches_ShadowQuilt_fromEdges_dataflow_ana.wcfg
+WARNING: [Wavedata 42-572] Protocol instance "/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/AESL_inst_makePatches_ShadowQuilt_fromEdges_activity" is non-functional for the following reason(s):
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+WARNING: [Wavedata 42-572] Protocol instance "/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/AESL_inst_makePatches_ShadowQuilt_fromEdges_activity" is non-functional for the following reason(s):
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+source makePatches_ShadowQuilt_fromEdges.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set n_patches_group [add_wave_group n_patches(wire) -into $coutputgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/n_patches_ap_vld -into $n_patches_group -color #ffff00 -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/n_patches -into $n_patches_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set leftRight_group [add_wave_group leftRight(wire) -into $cinputgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/leftRight -into $leftRight_group -radix hex
+## set ppl_group [add_wave_group ppl(wire) -into $cinputgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/ppl -into $ppl_group -radix hex
+## set stop_group [add_wave_group stop(wire) -into $cinputgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/stop -into $stop_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/ap_start -into $blocksiggroup
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/ap_done -into $blocksiggroup
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/ap_idle -into $blocksiggroup
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/LENGTH_stop -into $tb_portdepth_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/LENGTH_ppl -into $tb_portdepth_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/LENGTH_leftRight -into $tb_portdepth_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/LENGTH_n_patches -into $tb_portdepth_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/LENGTH_GDarray -into $tb_portdepth_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/LENGTH_GDn_points -into $tb_portdepth_group -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/LENGTH_patches_superpoints -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_n_patches_group [add_wave_group n_patches(wire) -into $tbcoutputgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/n_patches_ap_vld -into $tb_n_patches_group -color #ffff00 -radix hex
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/n_patches -into $tb_n_patches_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_leftRight_group [add_wave_group leftRight(wire) -into $tbcinputgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/leftRight -into $tb_leftRight_group -radix hex
+## set tb_ppl_group [add_wave_group ppl(wire) -into $tbcinputgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/ppl -into $tb_ppl_group -radix hex
+## set tb_stop_group [add_wave_group stop(wire) -into $tbcinputgroup]
+## add_wave /apatb_makePatches_ShadowQuilt_fromEdges_top/stop -into $tb_stop_group -radix hex
+## save_wave_config makePatches_ShadowQuilt_fromEdges.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "145000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 185 ns : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges.autotb.v" Line 352
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Jul 15 20:26:49 2024...
+ERROR: System recieved a signal named SIGSEGV and the program has to stop immediately!
+This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
+Possible cause of this problem may be: 1) the depth setting of pointer type argument is much larger than it needed; 2)insufficient depth of array argument; 3)null pointer etc.
+Current execution stopped during CodeState = ENTER_WRAPC_PC.
+You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
+
 ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.

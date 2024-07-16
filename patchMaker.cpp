@@ -428,19 +428,63 @@ getIndexFromZ_loop:
     return index;
 }
 
-void makePatches_ShadowQuilt_fromEdges(long apexZ0, int stop, int ppl, bool leftRight, index_type &n_patches, GDARRAY, GPATCHES) // TOP-LEVEL FUNCTION FOR VITIS
+void initializeArrays(GPATCHES)
 {
-#pragma HLS array_partition variable=patches_superpoints
-#pragma HLS array_partition variable=patches_parameters
+	initArraysSPloop1:
+    for(int a = 0; a < MAX_PATCHES; a++)
+    {
+    	initArraysSPloop2:
+        for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
+        {
+        	initArraysSPloop3:
+            for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+            {
+            	initArraysSPloop4:
+                for(int d = 0; d < 3; d++)
+                {
+                    patches_superpoints[a][b][c][d] = 0;
+                }
+            }
+        }
+    }
+
+    initArraysPPloop1:
+    for(int a = 0; a < MAX_PATCHES; a++)
+    {
+    	initArraysPPloop2:
+        for(int b = 0; b < 5; b++)
+        {
+        	initArraysPPloop3:
+            for(int c = 0; c < MAX_PARALLELOGRAMS_PER_PATCH; c++)
+            {
+            	initArraysPPloop4:
+                for(int d = 0; d < 6; d++)
+                {
+                    patches_parameters[a][b][c][d] = 0;
+                }
+            }
+        }
+    }
+}
+
+void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, index_type &n_patches, long (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int (&GDn_points) [MAX_LAYERS], long (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
+{
+#pragma HLS ARRAY_RESHAPE variable=patches_superpoints dim=3 complete
+//#pragma HLS ARRAY_RESHAPE variable=patches_parameters dim=0 complete
     bool fix42 = true;
-    apexZ0 = trapezoid_edges[0];
+    long apexZ0 = trapezoid_edges[0];
     long saved_apexZ0;
+    //initializeArrays(patches_superpoints, patches_parameters);
+    n_patches = 1;
+    //change something in GPATCHES so that VITIS synthesizes
+    return;
+    /*
 shadowQuilt_loop:
     while (apexZ0 > -1 * trapezoid_edges[0]) //consider how this works when we are expanding instead of retracting the trapezoid_edges
     {
-        apexZ0 = solveNextColumn(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
+        apexZ0 = solveNextColumn(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, n_patches, GDarray[0], GDn_points, patches_superpoints, patches_parameters);
         saved_apexZ0 = apexZ0;
-    }
+    } */
 }
 
 long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
@@ -459,7 +503,7 @@ long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42,
                         ));
     }
 
-    index_type nPatchesInColumn = 0;
+    int nPatchesInColumn = 0;
     long projectionOfCornerToBeam = 0;
     //returnArray[6] = {nPatchesInColumn, c_corner, projectionOfCornerToBeam, z_top_min, z_top_max, complementary_apexZ0}
     //remove nPatchesInColumn once debugging finishes
@@ -1215,7 +1259,7 @@ rowListSet_loop:
     initWedgeSuperPoint(init_patch[init_patch_size++], temp, temp_size);
 }
 
-void mSP_findLRBounds(int i, long row_list[256], int row_list_size, int &left_bound, int &right_bound) {
+void mSP_findLRBounds(int i, long row_list[MAX_POINTS_PER_LAYER], int row_list_size, int &left_bound, int &right_bound) {
     left_bound= 0;
     right_bound= 0;
     long lbVal = LONG_MAX;
@@ -1238,7 +1282,7 @@ void mSP_findLRBounds(int i, long row_list[256], int row_list_size, int &left_bo
 }
 
 void
-mSP_findStartIndex(long row_list[256], int row_list_size, long projectionToRow, int &start_index, long &start_value) {
+mSP_findStartIndex(long row_list[MAX_POINTS_PER_LAYER], int row_list_size, long projectionToRow, int &start_index, long &start_value) {
     start_index= 0;
     start_value= LONG_MAX;
     start_value_loop:

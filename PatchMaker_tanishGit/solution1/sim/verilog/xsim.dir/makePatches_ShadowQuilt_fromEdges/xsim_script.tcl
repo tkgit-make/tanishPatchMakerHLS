@@ -1,0 +1,1 @@
+xsim {makePatches_ShadowQuilt_fromEdges} -view {{makePatches_ShadowQuilt_fromEdges_dataflow_ana.wcfg}} -tclbatch {makePatches_ShadowQuilt_fromEdges.tcl} -protoinst {makePatches_ShadowQuilt_fromEdges.protoinst}

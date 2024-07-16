@@ -39,7 +39,7 @@ proc run_exec {fileExe} {
 		return -code error -errorcode 10
 	}
 
-	set ret [catch {eval exec "./$fileExe | tee tmp.log" >&@ stdout} err]
+	set ret [catch {eval exec "./$fileExe verbose | tee tmp.log" >&@ stdout} err]
 
 	cpfilecontent tmp.log ../../.temp11.log
 	set errfile "err.log"
