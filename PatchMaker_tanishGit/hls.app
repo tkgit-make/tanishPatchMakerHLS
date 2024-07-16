@@ -12,7 +12,10 @@
         <file name="patchMaker.cpp" sc="0" tb="false" cflags="-IC:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
-        <solution name="solution1" status="active"/>
+        <solution name="solution1" status="inactive"/>
+        <solution name="solution2" status="inactive"/>
+        <solution name="solution3" status="inactive"/>
+        <solution name="solution4" status="active"/>
     </solutions>
 </project>
 

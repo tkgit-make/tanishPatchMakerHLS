@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 16 14:32:21 2024
+# Process ID: 4848
+# Current directory: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution4/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/makePatches_ShadowQuilt_fromEdges/xsim_script.tcl}
+# Log file: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution4/sim/verilog/xsim.log
+# Journal file: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution4/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/makePatches_ShadowQuilt_fromEdges/xsim_script.tcl
+source makePatches_ShadowQuilt_fromEdges.tcl

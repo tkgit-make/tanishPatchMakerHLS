@@ -1,0 +1,1452 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>virtexuplus</ProductFamily>
+        <Part>xcvu19p-fsvb3824-2-e</Part>
+        <TopModelName>makePatches_ShadowQuilt_fromEdges</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>0.000</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <FF>0</FF>
+            <LUT>0</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>4320</BRAM_18K>
+            <DSP>3840</DSP>
+            <FF>8171520</FF>
+            <LUT>4085760</LUT>
+            <URAM>320</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>makePatches_ShadowQuilt_fromEdges</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>makePatches_ShadowQuilt_fromEdges</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>makePatches_ShadowQuilt_fromEdges</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>makePatches_ShadowQuilt_fromEdges</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>stop</name>
+            <Object>stop</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ppl</name>
+            <Object>ppl</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>leftRight</name>
+            <Object>leftRight</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>n_patches</name>
+            <Object>n_patches</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>n_patches_ap_vld</name>
+            <Object>n_patches</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_address0</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>11</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_ce0</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_we0</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_d0</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_q0</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_address1</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>11</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_ce1</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_we1</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_d1</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDarray_q1</name>
+            <Object>GDarray</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_address0</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_ce0</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_we0</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_d0</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_q0</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_address1</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_ce1</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_we1</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_d1</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>GDn_points_q1</name>
+            <Object>GDn_points</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_address0</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_ce0</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_we0</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_d0</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1024</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_q0</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1024</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_address1</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_ce1</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_we1</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_d1</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1024</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>patches_superpoints_q1</name>
+            <Object>patches_superpoints</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1024</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>makePatches_ShadowQuilt_fromEdges</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>makePatches_ShadowQuilt_fromEdges</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>0.000</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4320</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>3840</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>0</FF>
+                    <AVAIL_FF>8171520</AVAIL_FF>
+                    <UTIL_FF>0</UTIL_FF>
+                    <LUT>0</LUT>
+                    <AVAIL_LUT>4085760</AVAIL_LUT>
+                    <UTIL_LUT>0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>320</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>makePatches_ShadowQuilt_fromEdges</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>makePatches_ShadowQuilt_fromEdges</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>makePatches_ShadowQuilt_fromEdges</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>makePatches_ShadowQuilt_fromEdges</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>stop</name>
+                    <Object>stop</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ppl</name>
+                    <Object>ppl</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>leftRight</name>
+                    <Object>leftRight</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>n_patches</name>
+                    <Object>n_patches</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>n_patches_ap_vld</name>
+                    <Object>n_patches</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_address0</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>11</Bits>
+                    <Attribute>address</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_ce0</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_we0</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_d0</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_q0</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_address1</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>11</Bits>
+                    <Attribute>address</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_ce1</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_we1</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_d1</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDarray_q1</name>
+                    <Object>GDarray</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_address0</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>address</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_ce0</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_we0</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_d0</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_q0</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_address1</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>address</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_ce1</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_we1</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_d1</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>GDn_points_q1</name>
+                    <Object>GDn_points</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_address0</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>address</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_ce0</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_we0</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_d0</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1024</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_q0</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1024</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_address1</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>address</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_ce1</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_we1</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_d1</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1024</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patches_superpoints_q1</name>
+                    <Object>patches_superpoints</Object>
+                    <Type>array</Type>
+                    <Scope/>
+                    <IOProtocol>ap_memory</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1024</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="stop" index="0" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="stop" name="stop" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="ppl" index="1" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="ppl" name="ppl" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="leftRight" index="2" direction="in" srcType="int" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="leftRight" name="leftRight" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="n_patches" index="3" direction="out" srcType="int" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="n_patches" name="n_patches" usage="data" direction="out"/>
+                <hwRef type="port" interface="n_patches_ap_vld" name="n_patches_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="GDarray" index="4" direction="unused" srcType="int" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="GDarray_address0" name="GDarray_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="GDarray_ce0" name="GDarray_ce0" usage="control" direction="unused"/>
+                <hwRef type="port" interface="GDarray_we0" name="GDarray_we0" usage="control" direction="unused"/>
+                <hwRef type="port" interface="GDarray_d0" name="GDarray_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="GDarray_q0" name="GDarray_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="GDarray_address1" name="GDarray_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="GDarray_ce1" name="GDarray_ce1" usage="control" direction="unused"/>
+                <hwRef type="port" interface="GDarray_we1" name="GDarray_we1" usage="control" direction="unused"/>
+                <hwRef type="port" interface="GDarray_d1" name="GDarray_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="GDarray_q1" name="GDarray_q1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="GDn_points" index="5" direction="unused" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="GDn_points_address0" name="GDn_points_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="GDn_points_ce0" name="GDn_points_ce0" usage="control" direction="unused"/>
+                <hwRef type="port" interface="GDn_points_we0" name="GDn_points_we0" usage="control" direction="unused"/>
+                <hwRef type="port" interface="GDn_points_d0" name="GDn_points_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="GDn_points_q0" name="GDn_points_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="GDn_points_address1" name="GDn_points_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="GDn_points_ce1" name="GDn_points_ce1" usage="control" direction="unused"/>
+                <hwRef type="port" interface="GDn_points_we1" name="GDn_points_we1" usage="control" direction="unused"/>
+                <hwRef type="port" interface="GDn_points_d1" name="GDn_points_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="GDn_points_q1" name="GDn_points_q1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="patches_superpoints" index="6" direction="unused" srcType="int" srcSize="1024">
+            <hwRefs>
+                <hwRef type="port" interface="patches_superpoints_address0" name="patches_superpoints_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="patches_superpoints_ce0" name="patches_superpoints_ce0" usage="control" direction="unused"/>
+                <hwRef type="port" interface="patches_superpoints_we0" name="patches_superpoints_we0" usage="control" direction="unused"/>
+                <hwRef type="port" interface="patches_superpoints_d0" name="patches_superpoints_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="patches_superpoints_q0" name="patches_superpoints_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="patches_superpoints_address1" name="patches_superpoints_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="patches_superpoints_ce1" name="patches_superpoints_ce1" usage="control" direction="unused"/>
+                <hwRef type="port" interface="patches_superpoints_we1" name="patches_superpoints_we1" usage="control" direction="unused"/>
+                <hwRef type="port" interface="patches_superpoints_d1" name="patches_superpoints_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="patches_superpoints_q1" name="patches_superpoints_q1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="GDarray_address0" type="data" busTypeName="data" mode="master" dataWidth="11">
+            <portMaps>
+                <portMap portMapName="GDarray_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDarray_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDarray"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDarray_address1" type="data" busTypeName="data" mode="master" dataWidth="11">
+            <portMaps>
+                <portMap portMapName="GDarray_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDarray_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDarray"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDarray_d0" type="data" busTypeName="data" mode="master" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="GDarray_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDarray_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDarray"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDarray_d1" type="data" busTypeName="data" mode="master" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="GDarray_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDarray_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDarray"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDarray_q0" type="data" busTypeName="data" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="GDarray_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDarray_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDarray"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDarray_q1" type="data" busTypeName="data" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="GDarray_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDarray_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDarray"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDn_points_address0" type="data" busTypeName="data" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="GDn_points_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDn_points_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDn_points"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDn_points_address1" type="data" busTypeName="data" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="GDn_points_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDn_points_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDn_points"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDn_points_d0" type="data" busTypeName="data" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="GDn_points_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDn_points_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDn_points"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDn_points_d1" type="data" busTypeName="data" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="GDn_points_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDn_points_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDn_points"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDn_points_q0" type="data" busTypeName="data" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="GDn_points_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDn_points_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDn_points"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="GDn_points_q1" type="data" busTypeName="data" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="GDn_points_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>GDn_points_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="GDn_points"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="leftRight" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="leftRight">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>leftRight</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="leftRight"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="n_patches" type="data" busTypeName="data" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="n_patches">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>n_patches</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="n_patches"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="patches_superpoints_address0" type="data" busTypeName="data" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="patches_superpoints_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>patches_superpoints_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="patches_superpoints"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="patches_superpoints_address1" type="data" busTypeName="data" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="patches_superpoints_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>patches_superpoints_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="patches_superpoints"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="patches_superpoints_d0" type="data" busTypeName="data" mode="master" dataWidth="1024">
+            <portMaps>
+                <portMap portMapName="patches_superpoints_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>patches_superpoints_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="patches_superpoints"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="patches_superpoints_d1" type="data" busTypeName="data" mode="master" dataWidth="1024">
+            <portMaps>
+                <portMap portMapName="patches_superpoints_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>patches_superpoints_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="patches_superpoints"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="patches_superpoints_q0" type="data" busTypeName="data" mode="slave" dataWidth="1024">
+            <portMaps>
+                <portMap portMapName="patches_superpoints_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>patches_superpoints_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="patches_superpoints"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="patches_superpoints_q1" type="data" busTypeName="data" mode="slave" dataWidth="1024">
+            <portMaps>
+                <portMap portMapName="patches_superpoints_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>patches_superpoints_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="patches_superpoints"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ppl" type="data" busTypeName="data" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="ppl">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ppl</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="ppl"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="stop" type="data" busTypeName="data" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="stop">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>stop</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="stop"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="2">Interface, Bitwidth</keys>
+                    <column name="GDarray_address0">11</column>
+                    <column name="GDarray_address1">11</column>
+                    <column name="GDarray_d0">64</column>
+                    <column name="GDarray_d1">64</column>
+                    <column name="GDarray_q0">64</column>
+                    <column name="GDarray_q1">64</column>
+                    <column name="GDn_points_address0">3</column>
+                    <column name="GDn_points_address1">3</column>
+                    <column name="GDn_points_d0">32</column>
+                    <column name="GDn_points_d1">32</column>
+                    <column name="GDn_points_q0">32</column>
+                    <column name="GDn_points_q1">32</column>
+                    <column name="patches_superpoints_address0">8</column>
+                    <column name="patches_superpoints_address1">8</column>
+                    <column name="patches_superpoints_d0">1024</column>
+                    <column name="patches_superpoints_d1">1024</column>
+                    <column name="patches_superpoints_q0">1024</column>
+                    <column name="patches_superpoints_q1">1024</column>
+                </table>
+            </item>
+            <item name="REGISTER">
+                <table>
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="leftRight">ap_none, 1</column>
+                    <column name="n_patches">ap_none, 8</column>
+                    <column name="ppl">ap_none, 32</column>
+                    <column name="stop">ap_none, 32</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="stop">in, int</column>
+                    <column name="ppl">in, int</column>
+                    <column name="leftRight">in, int</column>
+                    <column name="n_patches">out, int</column>
+                    <column name="GDarray">unused, int</column>
+                    <column name="GDn_points">unused, int</column>
+                    <column name="patches_superpoints">unused, int</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="4">Argument, HW Name, HW Type, HW Usage</keys>
+                    <column name="stop">stop, port, </column>
+                    <column name="ppl">ppl, port, </column>
+                    <column name="leftRight">leftRight, port, </column>
+                    <column name="n_patches">n_patches, port, </column>
+                    <column name="n_patches">n_patches_ap_vld, port, </column>
+                    <column name="GDarray">GDarray_address0, port, offset</column>
+                    <column name="GDarray">GDarray_ce0, port, </column>
+                    <column name="GDarray">GDarray_we0, port, </column>
+                    <column name="GDarray">GDarray_d0, port, </column>
+                    <column name="GDarray">GDarray_q0, port, </column>
+                    <column name="GDarray">GDarray_address1, port, offset</column>
+                    <column name="GDarray">GDarray_ce1, port, </column>
+                    <column name="GDarray">GDarray_we1, port, </column>
+                    <column name="GDarray">GDarray_d1, port, </column>
+                    <column name="GDarray">GDarray_q1, port, </column>
+                    <column name="GDn_points">GDn_points_address0, port, offset</column>
+                    <column name="GDn_points">GDn_points_ce0, port, </column>
+                    <column name="GDn_points">GDn_points_we0, port, </column>
+                    <column name="GDn_points">GDn_points_d0, port, </column>
+                    <column name="GDn_points">GDn_points_q0, port, </column>
+                    <column name="GDn_points">GDn_points_address1, port, offset</column>
+                    <column name="GDn_points">GDn_points_ce1, port, </column>
+                    <column name="GDn_points">GDn_points_we1, port, </column>
+                    <column name="GDn_points">GDn_points_d1, port, </column>
+                    <column name="GDn_points">GDn_points_q1, port, </column>
+                    <column name="patches_superpoints">patches_superpoints_address0, port, offset</column>
+                    <column name="patches_superpoints">patches_superpoints_ce0, port, </column>
+                    <column name="patches_superpoints">patches_superpoints_we0, port, </column>
+                    <column name="patches_superpoints">patches_superpoints_d0, port, </column>
+                    <column name="patches_superpoints">patches_superpoints_q0, port, </column>
+                    <column name="patches_superpoints">patches_superpoints_address1, port, offset</column>
+                    <column name="patches_superpoints">patches_superpoints_ce1, port, </column>
+                    <column name="patches_superpoints">patches_superpoints_we1, port, </column>
+                    <column name="patches_superpoints">patches_superpoints_d1, port, </column>
+                    <column name="patches_superpoints">patches_superpoints_q1, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

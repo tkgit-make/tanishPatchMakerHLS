@@ -49,7 +49,7 @@ Built simulation snapshot makePatches_ShadowQuilt_fromEdges
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/xsim.dir/makePatches_ShadowQuilt_fromEdges/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Jul 15 20:36:08 2024...
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 16 12:03:41 2024...
 
 ****** xsim v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -134,4 +134,4 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 185 ns : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges.autotb.v" Line 352
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jul 15 20:36:17 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Jul 16 12:03:50 2024...

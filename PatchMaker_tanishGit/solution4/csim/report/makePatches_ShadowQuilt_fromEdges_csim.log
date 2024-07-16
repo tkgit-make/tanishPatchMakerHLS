@@ -1,0 +1,5 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tanishTestBench/test_bench.cpp in debug mode
+   Compiling ../../../../patchMaker.cpp in debug mode
+   Generating csim.exe

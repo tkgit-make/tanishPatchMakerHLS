@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 16 14:32:21 2024
+# Process ID: 4848
+# Current directory: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution4/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/makePatches_ShadowQuilt_fromEdges/xsim_script.tcl}
+# Log file: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution4/sim/verilog/xsim.log
+# Journal file: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution4/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/makePatches_ShadowQuilt_fromEdges/xsim_script.tcl
+# xsim {makePatches_ShadowQuilt_fromEdges} -autoloadwcfg -tclbatch {makePatches_ShadowQuilt_fromEdges.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source makePatches_ShadowQuilt_fromEdges.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "145000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 185 ns : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution4/sim/verilog/makePatches_ShadowQuilt_fromEdges.autotb.v" Line 352
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Jul 16 14:32:31 2024...

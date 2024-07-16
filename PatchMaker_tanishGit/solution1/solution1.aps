@@ -49,18 +49,12 @@
         <Format formatName="xo"/>
     </ExportDesign>
     <Simulation argv="verbose">
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" enableDataflowProfiling="true" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="auto" waveDebug="false" ldflags="" mflags="" compiledLibrary="">
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" enableDataflowProfiling="true" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>
         </SimFlow>
     </Simulation>
-    <name>
-        <value string="solution1"/>
-    </name>
-    <project>
-        <value string="PatchMaker_tanishGit"/>
-    </project>
     <flowTarget value="vivado"/>
     <targetInfo>
         <TargetInfo value="xcvu19p:-fsvb3824:-2-e"/>
@@ -73,5 +67,11 @@
     <clockList>
         <clock name="default" default="false" period="10"/>
     </clockList>
+    <name>
+        <value string="solution1"/>
+    </name>
+    <project>
+        <value string="PatchMaker_tanishGit"/>
+    </project>
 </solution>
 

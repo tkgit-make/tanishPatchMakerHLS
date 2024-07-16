@@ -1,6 +1,9 @@
 // gdb bin/ProcessInput
 // run < CPP/wedgeData_v3_128.txt
 // bt
+#ifndef HEADER_FILE
+#define HEADER_FILE
+
 #define VITIS_SYNTHESIS false
 #define PRINT_OUTS false
 
@@ -26,6 +29,8 @@
     #include <ios>
     #include <iomanip>
     #include <numeric>
+    #include <cstdint>
+    #include <array>
 #endif
 
 
@@ -35,7 +40,7 @@
 #define min(X, Y) ((X) < (Y) ? (X) : (Y))
 #define max(X, Y) ((X) < (Y) ? (Y) : (X))
 
-#define index_type uint8_t //change to unsigned int once it is verified that there are no errors
+#define index_type int //uint8_t //change to unsigned int once it is verified that there are no errors
 
 #define MAX_LAYERS 5
 #define MAX_POINTS_IN_EVENT 128
@@ -46,8 +51,8 @@
 #define MAX_POINTS_IN_SUPERPOINT 16
 #define MAX_SUPERPOINTS_IN_PATCH 5
 #define MAX_PARALLELOGRAMS_PER_PATCH MAX_LAYERS - 1 // layer 1 is a vertical ribbon, the other 4 layers are sloping, so each intersects with layer 1 to make a parallelogram
-#define MAX_PATCHES 1                              // upper bound, 14-18 average.
-#define PARAMETERS_PER_POINT 3
+#define MAX_PATCHES 32                              // upper bound, 14-18 average.
+#define PARAMETERS_PER_POINT 2
 #define PATCH_PROPERTIES 5
 #define MAX_PATCH_PROPERTY_LENGTH 6
 // #define MAX_LINES __ //only used in visualization
@@ -178,13 +183,13 @@ void get_acceptanceCorners(WEDGE_PATCH);
 void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES);
 void delete_patch(int index, index_type &n_patches, GPATCHES);
 index_type get_index_from_z(int layer, long z_value, GDARRAY);
-void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, index_type &n_patches, long (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int (&GDn_points) [MAX_LAYERS], long (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]);
+void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, index_type &n_patches, long (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET][PARAMETERS_PER_POINT], int (&GDn_points) [MAX_LAYERS], long (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], long (&patches_parameters)[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]); // TOP-LEVEL FUNCTION FOR VITIS
 long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES);
 void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES);
 void makeThirdPatch(index_type lastPatchIndex, long z_top_min, long z_top_max, long complementary_apexZ0, long apexZ0, int ppl, index_type &n_patches, GDARRAY, GPATCHES);
 void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, index_type &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, index_type &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES);
 void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES);
-void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3], index_type &init_patch_size, GDARRAY);
+void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], index_type &init_patch_size, GDARRAY);
 bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, bool repeat_original,
                                          long white_space_height, long previous_white_space_height,
                                          int current_z_top_index, GDARRAY, GPATCHES);
@@ -192,3 +197,5 @@ bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, 
 bool getSolveNextColumnWhileConditional(long c_corner, int nPatchesInColumn, long projectionOfCornerToBeam);
 void mSP_findStartIndex(long row_list[MAX_POINTS_PER_LAYER], int row_list_size, long projectionToRow, int &start_index, long &start_value);
 void mSP_findLRBounds(int i, long row_list[MAX_POINTS_PER_LAYER], int row_list_size, int &left_bound, int &right_bound);
+
+#endif

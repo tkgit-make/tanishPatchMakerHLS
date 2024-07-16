@@ -1,6 +1,6 @@
 #include "patchMakerHeader.h"
 
-void initWedgeSuperPoint(long (&wsp) [MAX_POINTS_IN_SUPERPOINT][3], long points[MAX_POINTS_PER_LAYER][3], int pointCount)
+void initWedgeSuperPoint(long (&wsp) [MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], long points[MAX_POINTS_PER_LAYER][PARAMETERS_PER_POINT], int pointCount)
 {
     // more efficient approach
     // instead of making a temp array and then transferring contents, add the values directly
@@ -8,7 +8,7 @@ void initWedgeSuperPoint(long (&wsp) [MAX_POINTS_IN_SUPERPOINT][3], long points[
 initWedgeSP_loop:
     for (int i = 0; i < MAX_POINTS_IN_SUPERPOINT; i++)
     {
-        for(int z = 0; z < 3; z++)
+        for(int z = 0; z < PARAMETERS_PER_POINT; z++)
         {
             wsp[i][z] = points[i][z];
         }
@@ -16,7 +16,7 @@ initWedgeSP_loop:
 }
 
 // operator overloading not allowed in C, write separate method to check equality
-int areWedgeSuperPointsEqual(long wsp1[MAX_POINTS_IN_SUPERPOINT][3], long wsp2[MAX_POINTS_IN_SUPERPOINT][3])
+int areWedgeSuperPointsEqual(long wsp1[MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], long wsp2[MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT])
 {
     //return (wsp1->min == wsp2->min) && (wsp1->max == wsp2->max);
     const long tolerance = static_cast<long>(0.0001 * INTEGER_FACTOR_CM);
@@ -68,7 +68,7 @@ getParallelograms_loop:
     }
 }
 
-void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3], long superpoint_count, long apexZ0I)
+void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], long superpoint_count, long apexZ0I)
 {
     wp_parameters[4][0][0] = apexZ0I;
 
@@ -82,7 +82,7 @@ void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][MA
         // wp->superpoints is an array of arrays.
         for(int a = 0; a < MAX_POINTS_IN_SUPERPOINT; a++)
         {
-            for(int b = 0; b < 3; b++)
+            for(int b = 0; b < PARAMETERS_PER_POINT; b++)
             {
                 
                 wp_superpoints[i][a][b] = superpointsI[i][a][b];
@@ -283,7 +283,7 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
         {
             for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
             {
-                for(int c = 0; c < 3; c++)
+                for(int c = 0; c < PARAMETERS_PER_POINT; c++)
                 {
                     
                     patches_superpoints[0][a][b][c] = wp_superpoints[a][b][c];
@@ -331,7 +331,7 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
                 {
                     for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
                     {
-                        for(int c = 0; c < 3; c++)
+                        for(int c = 0; c < PARAMETERS_PER_POINT; c++)
                         {
                             patches_superpoints[n_patches][a][b][c] = wp_superpoints[a][b][c];
                         }
@@ -373,7 +373,7 @@ void delete_patch(int index, index_type &n_patches, GPATCHES)
         {
             for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
             {
-                for(int c = 0; c < 3; c++)
+                for(int c = 0; c < PARAMETERS_PER_POINT; c++)
                 {
                     patches_superpoints[i][a][b][c] = patches_superpoints[i + 1][a][b][c];
                 }
@@ -440,7 +440,7 @@ void initializeArrays(GPATCHES)
             for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
             {
             	initArraysSPloop4:
-                for(int d = 0; d < 3; d++)
+                for(int d = 0; d < PARAMETERS_PER_POINT; d++)
                 {
                     patches_superpoints[a][b][c][d] = 0;
                 }
@@ -467,24 +467,25 @@ void initializeArrays(GPATCHES)
     }
 }
 
-void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, index_type &n_patches, long (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int (&GDn_points) [MAX_LAYERS], long (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
+void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, index_type &n_patches, long (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET][PARAMETERS_PER_POINT], int (&GDn_points) [MAX_LAYERS], long (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], long (&patches_parameters)[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]) // TOP-LEVEL FUNCTION FOR VITIS
 {
 #pragma HLS ARRAY_RESHAPE variable=patches_superpoints dim=3 complete
 //#pragma HLS ARRAY_RESHAPE variable=patches_parameters dim=0 complete
+	//long patches_parameters[MAX_PATCHES][5][MAX_PARALLELOGRAMS_PER_PATCH][6];
     bool fix42 = true;
     long apexZ0 = trapezoid_edges[0];
     long saved_apexZ0;
-    //initializeArrays(patches_superpoints, patches_parameters);
-    n_patches = 1;
+    initializeArrays(patches_superpoints, patches_parameters);
+    //n_patches = 1;
     //change something in GPATCHES so that VITIS synthesizes
-    return;
-    /*
+    //return;
+
 shadowQuilt_loop:
     while (apexZ0 > -1 * trapezoid_edges[0]) //consider how this works when we are expanding instead of retracting the trapezoid_edges
     {
-        apexZ0 = solveNextColumn(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, n_patches, GDarray[0], GDn_points, patches_superpoints, patches_parameters);
+        apexZ0 = solveNextColumn(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
         saved_apexZ0 = apexZ0;
-    } */
+    }
 }
 
 long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
@@ -1092,13 +1093,13 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
 
 void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES)
 {
-    long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3]; // correct
+    long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT]; // correct
 
     for(int a = 0; a < MAX_LAYERS; a++)
 	{
 		for(int b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
 		{
-			for(int c = 0; c < 3; c++)
+			for(int c = 0; c < PARAMETERS_PER_POINT; c++)
 			{
 				init_patch[a][b][c] = 0;
 			}
@@ -1118,12 +1119,12 @@ makeSuperpoint_loop:
     }
 
     // once all points are added to patch new_patch, add the entire patch to the cover (first init it)
-    long NPpatches_superpoints[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3];
+    long NPpatches_superpoints[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT];
     for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
 	{
 		for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
 		{
-			for(int d = 0; d < 3; d++)
+			for(int d = 0; d < PARAMETERS_PER_POINT; d++)
 			{
 				NPpatches_superpoints[b][c][d] = 0;
 			}
@@ -1150,7 +1151,7 @@ makeSuperpoint_loop:
     add_patch(NPpatches_superpoints, NPpatches_parameters, n_patches, patches_superpoints, patches_parameters);
 }
 
-void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3], index_type &init_patch_size, GDARRAY)
+void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], index_type &init_patch_size, GDARRAY)
 {
     long y = radii[i];
     long row_list[MAX_POINTS_PER_LAYER];
@@ -1180,7 +1181,7 @@ rowListSet_loop:
         ppl = original_ppl;
     }
 
-    static long temp[MAX_POINTS_PER_LAYER][3]; // check
+    static long temp[MAX_POINTS_PER_LAYER][PARAMETERS_PER_POINT]; // check
     int temp_size = 0;
 
     if (leftRight)
@@ -1194,7 +1195,7 @@ rowListSet_loop:
         {
             for (index_type j = right_bound + 1 - ppl; j <= right_bound; j++)
             {
-                for(int z = 0; z < 3; z++)
+                for(int z = 0; z < PARAMETERS_PER_POINT; z++)
                 {
                     temp[temp_size][z] = GDarray[i][j][z];
                 }
@@ -1206,7 +1207,7 @@ rowListSet_loop:
         {
             for (index_type j = start_index; j < start_index + ppl; j++)
             {
-                for(int z = 0; z < 3; z++)
+                for(int z = 0; z < PARAMETERS_PER_POINT; z++)
                 {
                     temp[temp_size][z] = GDarray[i][j][z];
                 }
@@ -1235,7 +1236,7 @@ rowListSet_loop:
         {
             for (index_type j = left_bound; j < left_bound + ppl; j++)
             {
-                for(int z = 0; z < 3; z++)
+                for(int z = 0; z < PARAMETERS_PER_POINT; z++)
                 {
                     temp[temp_size][z] = GDarray[i][j][z];
                 }
@@ -1247,7 +1248,7 @@ rowListSet_loop:
         {
             for (index_type j = start_index - ppl + 1; j <= start_index; j++)
             {
-                for(int z = 0; z < 3; z++)
+                for(int z = 0; z < PARAMETERS_PER_POINT; z++)
                 {
                     temp[temp_size][z] = GDarray[i][j][z];
                 }

@@ -2,8 +2,8 @@
 # xsim v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul 15 20:36:10 2024
-# Process ID: 7428
+# Start of session at: Tue Jul 16 12:03:43 2024
+# Process ID: 8808
 # Current directory: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/makePatches_ShadowQuilt_fromEdges/xsim_script.tcl}
 # Log file: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/xsim.log
@@ -87,4 +87,4 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 185 ns : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges.autotb.v" Line 352
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jul 15 20:36:17 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Jul 16 12:03:50 2024...

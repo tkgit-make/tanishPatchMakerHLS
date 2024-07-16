@@ -1,0 +1,892 @@
+{
+  "Top": "makePatches_ShadowQuilt_fromEdges",
+  "RtlTop": "makePatches_ShadowQuilt_fromEdges",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "makePatches_ShadowQuilt_fromEdges_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "virtexuplus",
+    "Device": "xcvu19p",
+    "Package": "-fsvb3824",
+    "Speed": "-2-e",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "stop": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "stop",
+          "name": "stop",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "ppl": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "ppl",
+          "name": "ppl",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "leftRight": {
+      "index": "2",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "1",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "leftRight",
+          "name": "leftRight",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "n_patches": {
+      "index": "3",
+      "direction": "out",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "n_patches",
+          "name": "n_patches",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "n_patches_ap_vld",
+          "name": "n_patches_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "GDarray": {
+      "index": "4",
+      "direction": "unused",
+      "srcType": "int",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "GDarray_address0",
+          "name": "GDarray_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_ce0",
+          "name": "GDarray_ce0",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_we0",
+          "name": "GDarray_we0",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_d0",
+          "name": "GDarray_d0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_q0",
+          "name": "GDarray_q0",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_address1",
+          "name": "GDarray_address1",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_ce1",
+          "name": "GDarray_ce1",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_we1",
+          "name": "GDarray_we1",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_d1",
+          "name": "GDarray_d1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_q1",
+          "name": "GDarray_q1",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "GDn_points": {
+      "index": "5",
+      "direction": "unused",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "GDn_points_address0",
+          "name": "GDn_points_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_ce0",
+          "name": "GDn_points_ce0",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_we0",
+          "name": "GDn_points_we0",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_d0",
+          "name": "GDn_points_d0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_q0",
+          "name": "GDn_points_q0",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_address1",
+          "name": "GDn_points_address1",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_ce1",
+          "name": "GDn_points_ce1",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_we1",
+          "name": "GDn_points_we1",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_d1",
+          "name": "GDn_points_d1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDn_points_q1",
+          "name": "GDn_points_q1",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "patches_superpoints": {
+      "index": "6",
+      "direction": "unused",
+      "srcType": "int",
+      "srcSize": "1024",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "patches_superpoints_address0",
+          "name": "patches_superpoints_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_ce0",
+          "name": "patches_superpoints_ce0",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_we0",
+          "name": "patches_superpoints_we0",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_d0",
+          "name": "patches_superpoints_d0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_q0",
+          "name": "patches_superpoints_q0",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_address1",
+          "name": "patches_superpoints_address1",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_ce1",
+          "name": "patches_superpoints_ce1",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_we1",
+          "name": "patches_superpoints_we1",
+          "usage": "control",
+          "direction": "unused"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_d1",
+          "name": "patches_superpoints_d1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "patches_superpoints_q1",
+          "name": "patches_superpoints_q1",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "DirectiveTcl": ["set_directive_top makePatches_ShadowQuilt_fromEdges -name makePatches_ShadowQuilt_fromEdges"],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "makePatches_ShadowQuilt_fromEdges"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "Uncertainty": "2.7",
+    "IsCombinational": "1",
+    "II": "x",
+    "Latency": "0"
+  },
+  "Xdc": {
+    
+  },
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "makePatches_ShadowQuilt_fromEdges",
+    "Version": "1.0",
+    "DisplayName": "Makepatches_shadowquilt_fromedges",
+    "Revision": "",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_makePatches_ShadowQuilt_fromEdges_1_0.zip"
+  },
+  "Files": {
+    "CSource": ["..\/..\/patchMaker.cpp"],
+    "Vhdl": ["impl\/vhdl\/makePatches_ShadowQuilt_fromEdges.vhd"],
+    "Verilog": ["impl\/verilog\/makePatches_ShadowQuilt_fromEdges.v"],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "DesignXml": ".autopilot\/db\/makePatches_ShadowQuilt_fromEdges.design.xml",
+    "DebugDir": ".debug",
+    "ProtoInst": ["C:\/Users\/rapiduser\/Desktop\/tanishGitHub\/tanishPatchMakerHLS\/PatchMaker_tanishGit\/solution4\/.debug\/makePatches_ShadowQuilt_fromEdges.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "GDarray_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "10",
+      "portMap": {"GDarray_address0": "DATA"},
+      "ports": ["GDarray_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_address1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "10",
+      "portMap": {"GDarray_address1": "DATA"},
+      "ports": ["GDarray_address1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"GDarray_d0": "DATA"},
+      "ports": ["GDarray_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_d1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"GDarray_d1": "DATA"},
+      "ports": ["GDarray_d1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"GDarray_q0": "DATA"},
+      "ports": ["GDarray_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_q1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"GDarray_q1": "DATA"},
+      "ports": ["GDarray_q1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDn_points_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "3",
+      "portMap": {"GDn_points_address0": "DATA"},
+      "ports": ["GDn_points_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDn_points"
+        }]
+    },
+    "GDn_points_address1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "3",
+      "portMap": {"GDn_points_address1": "DATA"},
+      "ports": ["GDn_points_address1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDn_points"
+        }]
+    },
+    "GDn_points_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_d0": "DATA"},
+      "ports": ["GDn_points_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDn_points"
+        }]
+    },
+    "GDn_points_d1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_d1": "DATA"},
+      "ports": ["GDn_points_d1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDn_points"
+        }]
+    },
+    "GDn_points_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_q0": "DATA"},
+      "ports": ["GDn_points_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDn_points"
+        }]
+    },
+    "GDn_points_q1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_q1": "DATA"},
+      "ports": ["GDn_points_q1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDn_points"
+        }]
+    },
+    "leftRight": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"leftRight": "DATA"},
+      "ports": ["leftRight"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "leftRight"
+        }]
+    },
+    "n_patches": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"n_patches": "DATA"},
+      "ports": ["n_patches"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "n_patches"
+        }]
+    },
+    "patches_superpoints_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "8",
+      "portMap": {"patches_superpoints_address0": "DATA"},
+      "ports": ["patches_superpoints_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "patches_superpoints"
+        }]
+    },
+    "patches_superpoints_address1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "8",
+      "portMap": {"patches_superpoints_address1": "DATA"},
+      "ports": ["patches_superpoints_address1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "patches_superpoints"
+        }]
+    },
+    "patches_superpoints_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "1024",
+      "portMap": {"patches_superpoints_d0": "DATA"},
+      "ports": ["patches_superpoints_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "patches_superpoints"
+        }]
+    },
+    "patches_superpoints_d1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "1024",
+      "portMap": {"patches_superpoints_d1": "DATA"},
+      "ports": ["patches_superpoints_d1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "patches_superpoints"
+        }]
+    },
+    "patches_superpoints_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1024",
+      "portMap": {"patches_superpoints_q0": "DATA"},
+      "ports": ["patches_superpoints_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "patches_superpoints"
+        }]
+    },
+    "patches_superpoints_q1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "1024",
+      "portMap": {"patches_superpoints_q1": "DATA"},
+      "ports": ["patches_superpoints_q1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "patches_superpoints"
+        }]
+    },
+    "ppl": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"ppl": "DATA"},
+      "ports": ["ppl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "ppl"
+        }]
+    },
+    "stop": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"stop": "DATA"},
+      "ports": ["stop"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "stop"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "stop": {
+      "dir": "in",
+      "width": "32"
+    },
+    "ppl": {
+      "dir": "in",
+      "width": "32"
+    },
+    "leftRight": {
+      "dir": "in",
+      "width": "1"
+    },
+    "n_patches": {
+      "dir": "out",
+      "width": "32"
+    },
+    "n_patches_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_address0": {
+      "dir": "out",
+      "width": "10"
+    },
+    "GDarray_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_d0": {
+      "dir": "out",
+      "width": "64"
+    },
+    "GDarray_q0": {
+      "dir": "in",
+      "width": "64"
+    },
+    "GDarray_address1": {
+      "dir": "out",
+      "width": "10"
+    },
+    "GDarray_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_we1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_d1": {
+      "dir": "out",
+      "width": "64"
+    },
+    "GDarray_q1": {
+      "dir": "in",
+      "width": "64"
+    },
+    "GDn_points_address0": {
+      "dir": "out",
+      "width": "3"
+    },
+    "GDn_points_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDn_points_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDn_points_d0": {
+      "dir": "out",
+      "width": "32"
+    },
+    "GDn_points_q0": {
+      "dir": "in",
+      "width": "32"
+    },
+    "GDn_points_address1": {
+      "dir": "out",
+      "width": "3"
+    },
+    "GDn_points_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDn_points_we1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDn_points_d1": {
+      "dir": "out",
+      "width": "32"
+    },
+    "GDn_points_q1": {
+      "dir": "in",
+      "width": "32"
+    },
+    "patches_superpoints_address0": {
+      "dir": "out",
+      "width": "8"
+    },
+    "patches_superpoints_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "patches_superpoints_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "patches_superpoints_d0": {
+      "dir": "out",
+      "width": "1024"
+    },
+    "patches_superpoints_q0": {
+      "dir": "in",
+      "width": "1024"
+    },
+    "patches_superpoints_address1": {
+      "dir": "out",
+      "width": "8"
+    },
+    "patches_superpoints_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "patches_superpoints_we1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "patches_superpoints_d1": {
+      "dir": "out",
+      "width": "1024"
+    },
+    "patches_superpoints_q1": {
+      "dir": "in",
+      "width": "1024"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {"ModuleName": "makePatches_ShadowQuilt_fromEdges"},
+    "Info": {"makePatches_ShadowQuilt_fromEdges": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      }},
+    "Metrics": {"makePatches_ShadowQuilt_fromEdges": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.70",
+          "Estimate": "0.000"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "0",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "0",
+          "LUT": "0",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      }}
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2024-07-16 14:31:09 -0400",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2020.2"
+  }
+}

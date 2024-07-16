@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "c:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cppStandard": "c++17",
+            "cStandard": "c17",
+            "mergeConfigurations": false,
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "browse": {
+                "path": [
+                    "c:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/**",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "win64",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ]
+        }
+    ],
+    "version": 4
+}
