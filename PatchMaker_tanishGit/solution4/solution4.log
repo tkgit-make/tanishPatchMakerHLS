@@ -375,3 +375,7 @@ INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
 INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.062 seconds; current allocated memory: 92.072 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
