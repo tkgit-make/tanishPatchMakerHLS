@@ -9,9 +9,7 @@
 	<Message severity="INFO" prefix="[COSIM 212-323]" key="COSIM_TCL_323_1195" tag="" content="Starting verilog simulation." resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-15]" key="COSIM_TCL_15_1085" tag="" content="Starting XSIM ..." resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-316]" key="COSIM_TCL_316_1188" tag="" content="Starting C post checking ..." resolution=""/>
-	<Message severity="ERROR" prefix="[COSIM 212-379]" key="COSIM_TCL_379_1250" tag="" content="Detected segmentation violation, please check C tb." resolution=""/>
-	<Message severity="ERROR" prefix="[COSIM 212-362]" key="COSIM_TCL_362_1233" tag="" content="Aborting co-simulation: C TB post check failed." resolution=""/>
-	<Message severity="ERROR" prefix="[COSIM 212-4]" key="COSIM_TCL_4_1074" tag="" content="*** C/RTL co-simulation finished: FAIL ***" resolution=""/>
+	<Message severity="INFO" prefix="[COSIM 212-1000]" key="COSIM_TCL_1000_1070" tag="" content="*** C/RTL co-simulation finished: PASS ***" resolution=""/>
 	<Message severity="INFO" prefix="[COSIM 212-210]" key="COSIM_TCL_210_1173" tag="COSIM" content="Design is translated to an combinational logic. II and Latency will be marked as all 0." resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 43.649 seconds; current allocated memory: 97.667 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 45.71 seconds; current allocated memory: 97.660 MB." resolution=""/>
 </Messages>

@@ -61,7 +61,7 @@ extern "C" void apatb_makePatches_ShadowQuilt_fromEdges_hw(int __xlx_apatb_param
   }
   // Collect __xlx_patches_superpoints__tmp_vec
   vector<sc_bv<1024> >__xlx_patches_superpoints__tmp_vec;
-  for (int j = 0, e = 160; j != e; ++j) {
+  for (int j = 0, e = 5; j != e; ++j) {
     sc_bv<1024> _xlx_tmp_sc;
     _xlx_tmp_sc.range(63, 0) = ((long long*)__xlx_apatb_param_patches_superpoints)[j*16+0];
     _xlx_tmp_sc.range(127, 64) = ((long long*)__xlx_apatb_param_patches_superpoints)[j*16+1];
@@ -81,7 +81,7 @@ extern "C" void apatb_makePatches_ShadowQuilt_fromEdges_hw(int __xlx_apatb_param
     _xlx_tmp_sc.range(1023, 960) = ((long long*)__xlx_apatb_param_patches_superpoints)[j*16+15];
     __xlx_patches_superpoints__tmp_vec.push_back(_xlx_tmp_sc);
   }
-  int __xlx_size_param_patches_superpoints = 160;
+  int __xlx_size_param_patches_superpoints = 5;
   int __xlx_offset_param_patches_superpoints = 0;
   int __xlx_offset_byte_param_patches_superpoints = 0*128;
   __cosim_s80__* __xlx_patches_superpoints__input_buffer= new __cosim_s80__[__xlx_patches_superpoints__tmp_vec.size()];

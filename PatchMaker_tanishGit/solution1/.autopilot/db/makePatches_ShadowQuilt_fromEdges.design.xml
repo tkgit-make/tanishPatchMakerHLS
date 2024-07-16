@@ -398,7 +398,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>3</Bits>
 <Attribute>address</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -458,7 +458,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>3</Bits>
 <Attribute>address</Attribute>
 <CType>int</CType>
 </RtlPorts>

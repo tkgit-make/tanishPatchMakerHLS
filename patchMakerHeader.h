@@ -46,7 +46,7 @@
 #define MAX_POINTS_IN_SUPERPOINT 16
 #define MAX_SUPERPOINTS_IN_PATCH 5
 #define MAX_PARALLELOGRAMS_PER_PATCH MAX_LAYERS - 1 // layer 1 is a vertical ribbon, the other 4 layers are sloping, so each intersects with layer 1 to make a parallelogram
-#define MAX_PATCHES 32                              // upper bound, 14-18 average.
+#define MAX_PATCHES 1                              // upper bound, 14-18 average.
 #define PARAMETERS_PER_POINT 3
 #define PATCH_PROPERTIES 5
 #define MAX_PATCH_PROPERTY_LENGTH 6

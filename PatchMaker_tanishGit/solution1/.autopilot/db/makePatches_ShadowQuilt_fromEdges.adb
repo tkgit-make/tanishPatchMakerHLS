@@ -31,7 +31,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>108784040</coreId>
+              <coreId>599819867</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -64,7 +64,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -163,7 +163,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>2877658200</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -196,7 +196,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1121985603</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -223,19 +223,19 @@
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName>patches_superpoints</originalName>
+              <originalName/>
               <rtlName/>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1030185332</coreId>
             </Obj>
             <bitwidth>1024</bitwidth>
           </Value>
           <direction>3</direction>
           <if_type>1</if_type>
-          <array_size>160</array_size>
+          <array_size>5</array_size>
           <bit_vecs>
             <count>0</count>
             <item_version>0</item_version>
@@ -280,7 +280,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>50</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -335,7 +335,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -377,7 +377,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1973624512</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -408,7 +408,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>663218960</coreId>
+            <coreId>1972597024</coreId>
           </Obj>
           <node_objs>
             <count>2</count>

@@ -18,7 +18,7 @@ set C_modelArgList {
 	{ n_patches int 8 regular {pointer 1}  }
 	{ GDarray int 64 unused {array 640 { } 0 1 }  }
 	{ GDn_points int 32 unused {array 5 { } 0 1 }  }
-	{ patches_superpoints int 1024 unused {array 160 { } 0 1 }  }
+	{ patches_superpoints int 1024 unused {array 5 { } 0 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "stop", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "stop","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
@@ -60,12 +60,12 @@ set portList {
 	{ GDn_points_we1 sc_out sc_logic 1 signal 5 } 
 	{ GDn_points_d1 sc_out sc_lv 32 signal 5 } 
 	{ GDn_points_q1 sc_in sc_lv 32 signal 5 } 
-	{ patches_superpoints_address0 sc_out sc_lv 8 signal 6 } 
+	{ patches_superpoints_address0 sc_out sc_lv 3 signal 6 } 
 	{ patches_superpoints_ce0 sc_out sc_logic 1 signal 6 } 
 	{ patches_superpoints_we0 sc_out sc_logic 1 signal 6 } 
 	{ patches_superpoints_d0 sc_out sc_lv 1024 signal 6 } 
 	{ patches_superpoints_q0 sc_in sc_lv 1024 signal 6 } 
-	{ patches_superpoints_address1 sc_out sc_lv 8 signal 6 } 
+	{ patches_superpoints_address1 sc_out sc_lv 3 signal 6 } 
 	{ patches_superpoints_ce1 sc_out sc_logic 1 signal 6 } 
 	{ patches_superpoints_we1 sc_out sc_logic 1 signal 6 } 
 	{ patches_superpoints_d1 sc_out sc_lv 1024 signal 6 } 
@@ -101,12 +101,12 @@ set NewPortList {[
  	{ "name": "GDn_points_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "GDn_points", "role": "we1" }} , 
  	{ "name": "GDn_points_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "GDn_points", "role": "d1" }} , 
  	{ "name": "GDn_points_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "GDn_points", "role": "q1" }} , 
- 	{ "name": "patches_superpoints_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "address0" }} , 
+ 	{ "name": "patches_superpoints_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "address0" }} , 
  	{ "name": "patches_superpoints_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "ce0" }} , 
  	{ "name": "patches_superpoints_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "we0" }} , 
  	{ "name": "patches_superpoints_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":1024, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "d0" }} , 
  	{ "name": "patches_superpoints_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":1024, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "q0" }} , 
- 	{ "name": "patches_superpoints_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "address1" }} , 
+ 	{ "name": "patches_superpoints_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "address1" }} , 
  	{ "name": "patches_superpoints_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "ce1" }} , 
  	{ "name": "patches_superpoints_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "we1" }} , 
  	{ "name": "patches_superpoints_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":1024, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "d1" }} , 
@@ -163,7 +163,7 @@ set Spec2ImplPortList {
 	n_patches { ap_vld {  { n_patches out_data 1 8 }  { n_patches_ap_vld out_vld 1 1 } } }
 	GDarray { ap_memory {  { GDarray_address0 mem_address 1 10 }  { GDarray_ce0 mem_ce 1 1 }  { GDarray_we0 mem_we 1 1 }  { GDarray_d0 mem_din 1 64 }  { GDarray_q0 mem_dout 0 64 }  { GDarray_address1 MemPortADDR2 1 10 }  { GDarray_ce1 MemPortCE2 1 1 }  { GDarray_we1 MemPortWE2 1 1 }  { GDarray_d1 MemPortDIN2 1 64 }  { GDarray_q1 MemPortDOUT2 0 64 } } }
 	GDn_points { ap_memory {  { GDn_points_address0 mem_address 1 3 }  { GDn_points_ce0 mem_ce 1 1 }  { GDn_points_we0 mem_we 1 1 }  { GDn_points_d0 mem_din 1 32 }  { GDn_points_q0 mem_dout 0 32 }  { GDn_points_address1 MemPortADDR2 1 3 }  { GDn_points_ce1 MemPortCE2 1 1 }  { GDn_points_we1 MemPortWE2 1 1 }  { GDn_points_d1 MemPortDIN2 1 32 }  { GDn_points_q1 MemPortDOUT2 0 32 } } }
-	patches_superpoints { ap_memory {  { patches_superpoints_address0 mem_address 1 8 }  { patches_superpoints_ce0 mem_ce 1 1 }  { patches_superpoints_we0 mem_we 1 1 }  { patches_superpoints_d0 mem_din 1 1024 }  { patches_superpoints_q0 mem_dout 0 1024 }  { patches_superpoints_address1 MemPortADDR2 1 8 }  { patches_superpoints_ce1 MemPortCE2 1 1 }  { patches_superpoints_we1 MemPortWE2 1 1 }  { patches_superpoints_d1 MemPortDIN2 1 1024 }  { patches_superpoints_q1 MemPortDOUT2 0 1024 } } }
+	patches_superpoints { ap_memory {  { patches_superpoints_address0 mem_address 1 3 }  { patches_superpoints_ce0 mem_ce 1 1 }  { patches_superpoints_we0 mem_we 1 1 }  { patches_superpoints_d0 mem_din 1 1024 }  { patches_superpoints_q0 mem_dout 0 1024 }  { patches_superpoints_address1 MemPortADDR2 1 3 }  { patches_superpoints_ce1 MemPortCE2 1 1 }  { patches_superpoints_we1 MemPortWE2 1 1 }  { patches_superpoints_d1 MemPortDIN2 1 1024 }  { patches_superpoints_q1 MemPortDOUT2 0 1024 } } }
 }
 
 set busDeadlockParameterList { 

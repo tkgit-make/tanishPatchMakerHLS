@@ -581,7 +581,7 @@
       "type": "data",
       "busTypeName": "data",
       "mode": "master",
-      "dataWidth": "8",
+      "dataWidth": "3",
       "portMap": {"patches_superpoints_address0": "DATA"},
       "ports": ["patches_superpoints_address0"],
       "constraints": [{
@@ -595,7 +595,7 @@
       "type": "data",
       "busTypeName": "data",
       "mode": "master",
-      "dataWidth": "8",
+      "dataWidth": "3",
       "portMap": {"patches_superpoints_address1": "DATA"},
       "ports": ["patches_superpoints_address1"],
       "constraints": [{
@@ -809,7 +809,7 @@
     },
     "patches_superpoints_address0": {
       "dir": "out",
-      "width": "8"
+      "width": "3"
     },
     "patches_superpoints_ce0": {
       "dir": "out",
@@ -829,7 +829,7 @@
     },
     "patches_superpoints_address1": {
       "dir": "out",
-      "width": "8"
+      "width": "3"
     },
     "patches_superpoints_ce1": {
       "dir": "out",
@@ -893,7 +893,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-07-15 20:24:59 -0400",
+    "Time": "2024-07-15 20:31:11 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

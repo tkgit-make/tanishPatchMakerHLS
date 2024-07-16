@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1721089498040">
-  <ports id="1" name="stop" type="PortType" originalName="stop" coreId="108784040" bitwidth="32"/>
-  <ports id="2" name="ppl" type="PortType" originalName="ppl" coreId="0" bitwidth="32"/>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1721089870054">
+  <ports id="1" name="stop" type="PortType" originalName="stop" coreId="599819867" bitwidth="32"/>
+  <ports id="2" name="ppl" type="PortType" originalName="ppl" coreId="1" bitwidth="32"/>
   <ports id="3" name="leftRight" type="PortType" originalName="leftRight" coreId="1" bitwidth="1"/>
   <ports id="4" name="n_patches" type="PortType" originalName="n_patches" coreId="1" bitwidth="8" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
-  <ports id="5" name="GDarray" type="PortType" originalName="GDarray" coreId="4294967295" bitwidth="64" direction="DirEnd" iftype="IfTypeRegister" arraysize="640"/>
-  <ports id="6" name="GDn_points" type="PortType" coreId="1121985603" bitwidth="32" direction="DirEnd" iftype="IfTypeRegister" arraysize="5"/>
-  <ports id="7" name="patches_superpoints" type="PortType" originalName="patches_superpoints" coreId="0" bitwidth="1024" direction="DirEnd" iftype="IfTypeRegister" arraysize="160"/>
+  <ports id="5" name="GDarray" type="PortType" originalName="GDarray" coreId="2877658200" bitwidth="64" direction="DirEnd" iftype="IfTypeRegister" arraysize="640"/>
+  <ports id="6" name="GDn_points" type="PortType" coreId="0" bitwidth="32" direction="DirEnd" iftype="IfTypeRegister" arraysize="5"/>
+  <ports id="7" name="patches_superpoints" type="PortType" coreId="1030185332" bitwidth="1024" direction="DirEnd" iftype="IfTypeRegister" arraysize="5"/>
   <edges id="28" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@ports.3"/>
   <blocks id="25" name="makePatches_ShadowQuilt_fromEdges" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="n_patches_write_ln478" lineNumber="478" fileName="patchMaker.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="makePatches_ShadowQuilt_fromEdges" opcode="write" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="n_patches_write_ln478" lineNumber="478" fileName="patchMaker.cpp" fileDirectory=".." coreId="50" contextFuncName="makePatches_ShadowQuilt_fromEdges" opcode="write" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="patchMaker.cpp" linenumber="478" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatches_ShadowQuilt_fromEdges"/>
       <dataOutputObjs>n_patches</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln480" lineNumber="480" fileName="patchMaker.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="makePatches_ShadowQuilt_fromEdges" opcode="ret" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln480" lineNumber="480" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="makePatches_ShadowQuilt_fromEdges" opcode="ret" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="patchMaker.cpp" linenumber="480" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatches_ShadowQuilt_fromEdges"/>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">

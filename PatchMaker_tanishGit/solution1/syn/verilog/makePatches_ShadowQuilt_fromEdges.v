@@ -81,12 +81,12 @@ output   GDn_points_ce1;
 output   GDn_points_we1;
 output  [31:0] GDn_points_d1;
 input  [31:0] GDn_points_q1;
-output  [7:0] patches_superpoints_address0;
+output  [2:0] patches_superpoints_address0;
 output   patches_superpoints_ce0;
 output   patches_superpoints_we0;
 output  [1023:0] patches_superpoints_d0;
 input  [1023:0] patches_superpoints_q0;
-output  [7:0] patches_superpoints_address1;
+output  [2:0] patches_superpoints_address1;
 output   patches_superpoints_ce1;
 output   patches_superpoints_we1;
 output  [1023:0] patches_superpoints_d1;
@@ -144,9 +144,9 @@ assign ap_ready = ap_start;
 
 assign n_patches = 8'd1;
 
-assign patches_superpoints_address0 = 8'd0;
+assign patches_superpoints_address0 = 3'd0;
 
-assign patches_superpoints_address1 = 8'd0;
+assign patches_superpoints_address1 = 3'd0;
 
 assign patches_superpoints_ce0 = 1'b0;
 

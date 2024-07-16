@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Mon Jul 15 20:24:39 -0400 2024
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Mon Jul 15 20:30:51 -0400 2024
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
@@ -17,10 +17,10 @@ Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interfa
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.235 sec.
+Command       ap_source done; 0.166 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.311 sec.
+Command     ap_source done; 0.29 sec.
 Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
@@ -37,10 +37,10 @@ Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interfa
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.183 sec.
+Command       ap_source done; 0.146 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.237 sec.
+Command     ap_source done; 0.193 sec.
 Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
@@ -53,22 +53,22 @@ Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interfa
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command       ap_source done; 0.11 sec.
+Command       ap_source done; 0.117 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.228 sec.
+Command       ap_source done; 0.191 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.374 sec.
+Command     ap_source done; 0.386 sec.
 Execute     set_part xcvu19p-fsvb3824-2-e 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
 INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
 Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
 DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
-Command       ap_part_info done; 0.707 sec.
+Command       ap_part_info done; 0.74 sec.
 Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
 Execute         get_default_platform 
@@ -101,12 +101,12 @@ Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command         ap_source done; 0.147 sec.
-Command       add_library done; 0.236 sec.
+Command         ap_source done; 0.135 sec.
+Command       add_library done; 0.246 sec.
 INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
 Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.965 sec.
+Command     set_part done; 1.008 sec.
 Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
 Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
@@ -129,7 +129,7 @@ Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanish
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 2.001 sec.
+Command   open_solution done; 1.947 sec.
 Execute   set_part xcvu19p-fsvb3824-2-e 
 INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
@@ -167,11 +167,11 @@ Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/ut
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.133 sec.
+Command       ap_source done; 0.134 sec.
 Command     add_library done; 0.185 sec.
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.277 sec.
+Command   set_part done; 0.208 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
@@ -192,7 +192,7 @@ Execute     get_config_compile -skip_syncheck
 Execute     get_config_compile -skip_transform 
 Execute     get_config_compile -keep_printf 
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 871.595 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 871.595 MB.
 INFO: [HLS 200-10] Analyzing design file 'patchMaker.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
@@ -201,8 +201,8 @@ Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang patchMaker.cpp -foptimization-record-file=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.patchMaker.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E -IC:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.patchMaker.cpp.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.patchMaker.cpp.err.log 
-Command       ap_eval done; 0.753 sec.
-INFO-FLOW: Done: GCC PP 39 time: 0.8 seconds per iteration
+Command       ap_eval done; 0.802 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.9 seconds per iteration
 Execute       set_directive_top makePatches_ShadowQuilt_fromEdges -name=makePatches_ShadowQuilt_fromEdges 
 INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
 INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
@@ -216,29 +216,29 @@ INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges
 Execute       list_core -type functional_unit 
 Execute       clang_tidy xilinx-systemc-detector C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/.systemc_flag -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.992 sec.
+Command       clang_tidy done; 1.107 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/all.directive.json -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 1.417 sec.
+Command       clang_tidy done; 1.291 sec.
 Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.695 sec.
+Command       clang_tidy done; 0.775 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 2.1 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp std=gnu++14 -target fpga  
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang-tidy.patchMaker.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang-tidy.patchMaker.pp.0.cpp.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang-tidy.patchMaker.pp.0.cpp.err.log 
-Command         ap_eval done; 2.088 sec.
+Command         ap_eval done; 2.279 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
-Command       clang_tidy done; 2.275 sec.
+Command       clang_tidy done; 2.504 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/xilinx-dataflow-lawyer.patchMaker.pp.0.cpp.diag.yml C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/xilinx-dataflow-lawyer.patchMaker.pp.0.cpp.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/xilinx-dataflow-lawyer.patchMaker.pp.0.cpp.err.log 
-Command       ap_eval done; 0.679 sec.
+Command       ap_eval done; 0.572 sec.
 Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 INFO-FLOW: compiling source code to llvm bc
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.patchMaker.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.pp.0.cpp -IC:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.bc > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.patchMaker.pp.0.cpp.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.patchMaker.pp.0.cpp.err.log 
-Command       ap_eval done; 0.977 sec.
+Command       ap_eval done; 1.185 sec.
 WARNING: [HLS 207-5301] unused parameter 'pointCount': patchMaker.cpp:3:72
 WARNING: [HLS 207-5301] unused parameter 'wp_superpoints': patchMaker.cpp:195:35
 WARNING: [HLS 207-5301] unused parameter 'stop': patchMaker.cpp:470:112
@@ -252,37 +252,34 @@ WARNING: [HLS 207-5301] unused parameter 'GDarray': patchMaker.cpp:690:74
 WARNING: [HLS 207-5301] unused parameter 'patches_superpoints': patchMaker.cpp:690:126
 WARNING: [HLS 207-5301] unused parameter 'repeat_patch': patchMaker.cpp:850:381
 WARNING: [HLS 207-5301] unused parameter 'repeat_original': patchMaker.cpp:850:401
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 7.976 seconds; current allocated memory: 93.663 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 8.511 seconds; current allocated memory: 93.663 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.g.bc"  
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/patchMaker.g.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.0.bc > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
-Command         ap_eval done; 0.109 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.112 sec.
 Execute       run_link_or_opt -opt -out C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
 INFO-FLOW: 
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsmc++_39.bc 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsmc++_39.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
-Command         ap_eval done; 3.389 sec.
+Command         ap_eval done; 3.781 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 3.394 sec.
+Command       run_link_or_opt done; 3.784 sec.
 Execute       run_link_or_opt -opt -out C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=makePatches_ShadowQuilt_fromEdges -reflow-float-conversion 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=makePatches_ShadowQuilt_fromEdges -reflow-float-conversion -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
-Command         ap_eval done; 1.411 sec.
+Command         ap_eval done; 1.551 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 1.418 sec.
+Command       run_link_or_opt done; 1.566 sec.
 Execute       run_link_or_opt -out C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libfloatconversion_39.bc 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libfloatconversion_39.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
-Command         ap_eval done; 0.186 sec.
+Command         ap_eval done; 0.171 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.192 sec.
+Command       run_link_or_opt done; 0.175 sec.
 Execute       run_link_or_opt -opt -out C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=makePatches_ShadowQuilt_fromEdges 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=makePatches_ShadowQuilt_fromEdges -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.104 sec.
 Execute       get_solution -flow_target 
 Execute       get_config_export -xo 
 Execute       get_config_export -format 
@@ -321,40 +318,40 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=makePatches_ShadowQuilt_fromEdges -mllvm -hls-db-dir -mllvm C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.lto.bc > C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
-Command       ap_eval done; 0.584 sec.
+Command       ap_eval done; 0.281 sec.
 INFO: [HLS 214-248] complete reshaped array 'patches_superpoints' on dimension 3 (patchMaker.cpp:471:1)
 INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.192 seconds; current allocated memory: 94.842 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 94.842 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.402 seconds; current allocated memory: 94.873 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 94.874 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top makePatches_ShadowQuilt_fromEdges -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.0.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.129 seconds; current allocated memory: 96.447 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.111 seconds; current allocated memory: 96.462 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.1.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 96.845 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 96.859 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.g.1.bc to C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.o.1.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-Command         transform done; 0.118 sec.
+Command         transform done; 0.158 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.205 seconds; current allocated memory: 117.875 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.242 seconds; current allocated memory: 117.887 MB.
 Execute         get_config_compile -enable_loop_extract 
 Execute         get_config_compile -disable_auto_rewind 
 Execute         get_config_compile -enable_auto_rewind 
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.o.2.bc -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 109.987 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 109.997 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.575 sec.
-Command     elaborate done; 14.995 sec.
+Command       opt_and_import_c done; 0.601 sec.
+Command     elaborate done; 15.67 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -380,7 +377,7 @@ Execute       set_default_model makePatches_ShadowQuilt_fromEdges
 Execute       schedule -model makePatches_ShadowQuilt_fromEdges 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 110.161 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 110.172 MB.
 Execute       syn_report -verbosereport -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -393,7 +390,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 110.310 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 110.306 MB.
 Execute       syn_report -verbosereport -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -509,8 +506,8 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'makePatches_ShadowQuilt_from
 WARNING: [RTGEN 206-101] Port 'makePatches_ShadowQuilt_fromEdges/patches_superpoints_q1' has no fanin or fanout and is left dangling.
                Please use C simulation to confirm this function argument can be read from or written to.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'makePatches_ShadowQuilt_fromEdges'.
-Command       create_rtl_model done; 0.511 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.586 seconds; current allocated memory: 110.572 MB.
+Command       create_rtl_model done; 0.51 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.591 seconds; current allocated memory: 110.567 MB.
 Execute       source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
 Execute       gen_rtl makePatches_ShadowQuilt_fromEdges -istop -style xilinx -f -lang vhdl -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/syn/vhdl/makePatches_ShadowQuilt_fromEdges 
 Execute       gen_rtl makePatches_ShadowQuilt_fromEdges -istop -style xilinx -f -lang vlog -o C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/syn/verilog/makePatches_ShadowQuilt_fromEdges 
@@ -583,10 +580,10 @@ Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/inter
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.135 sec.
+Command         ap_source done; 0.143 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.187 sec.
+Command       ap_source done; 0.284 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -598,9 +595,10 @@ Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/inter
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.101 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.145 sec.
+Command       ap_source done; 0.203 sec.
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
 Execute       source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
@@ -634,7 +632,7 @@ Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/ut
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.138 sec.
+Command       ap_source done; 0.151 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -646,10 +644,9 @@ Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/inter
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.122 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.219 sec.
+Command       ap_source done; 0.158 sec.
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=makePatches_ShadowQuilt_fromEdges xml_exists=0
 Execute       source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
 Execute       source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
@@ -714,7 +711,7 @@ Execute       source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS
 Execute       source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_debug -directory 
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.155 seconds; current allocated memory: 117.244 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.935 seconds; current allocated memory: 117.254 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for makePatches_ShadowQuilt_fromEdges.
 INFO: [VLOG 209-307] Generating Verilog RTL for makePatches_ShadowQuilt_fromEdges.
 INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.design.xml
@@ -722,12 +719,12 @@ INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
 INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
 Execute       syn_report -model makePatches_ShadowQuilt_fromEdges -printsummary 
 INFO: [HLS 200-789] **** Estimated Fmax: 0.00 MHz
-Command     autosyn done; 3.192 sec.
-Command   csynth_design done; 18.199 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 18.234 seconds; current allocated memory: 117.538 MB.
-Command ap_source done; 20.747 sec.
+Command     autosyn done; 2.967 sec.
+Command   csynth_design done; 18.651 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 18.698 seconds; current allocated memory: 117.533 MB.
+Command ap_source done; 20.953 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Mon Jul 15 20:26:05 -0400 2024
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Mon Jul 15 20:31:21 -0400 2024
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
@@ -746,9 +743,10 @@ Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interfa
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.102 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.143 sec.
+Command     ap_source done; 0.163 sec.
 Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
@@ -767,14 +765,14 @@ Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.137 sec.
+Command     ap_source done; 0.134 sec.
 Execute     set_part xcvu19p-fsvb3824-2-e 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
 INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
 Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
 DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
-Command       ap_part_info done; 0.835 sec.
+Command       ap_part_info done; 1.053 sec.
 Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
 Execute         get_default_platform 
@@ -794,6 +792,7 @@ Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/i
 Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.123 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -805,14 +804,15 @@ Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/int
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.102 sec.
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command         ap_source done; 0.155 sec.
-Command       add_library done; 0.264 sec.
+Command         ap_source done; 0.178 sec.
+Command       add_library done; 0.354 sec.
 INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
 Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 1.129 sec.
+Command     set_part done; 1.428 sec.
 Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
 Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
@@ -835,7 +835,7 @@ Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanish
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 1.506 sec.
+Command   open_solution done; 1.809 sec.
 Execute   set_part xcvu19p-fsvb3824-2-e 
 INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
 INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
@@ -871,13 +871,14 @@ Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/inter
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.107 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.153 sec.
-Command     add_library done; 0.2 sec.
+Command       ap_source done; 0.156 sec.
+Command     add_library done; 0.264 sec.
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.224 sec.
+Command   set_part done; 0.286 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
@@ -909,9 +910,10 @@ Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interfa
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.119 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.13 sec.
+Command     ap_source done; 0.181 sec.
 Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
@@ -923,10 +925,10 @@ Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interfa
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.167 sec.
+Command       ap_source done; 0.182 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.325 sec.
+Command     ap_source done; 0.319 sec.
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data names -quiet 
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info -quiet 
@@ -941,12 +943,12 @@ Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info
 INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp std=c++11 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
-Command     clang_tidy done; 2.041 sec.
+Command     clang_tidy done; 1.953 sec.
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp std=c++11 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
-Command     clang_tidy done; 1.168 sec.
+Command     clang_tidy done; 1.715 sec.
 Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
 Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
@@ -956,7 +958,7 @@ Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/P
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 Execute     source .run_sim.tcl 
 INFO: [COSIM 212-302] Starting C TB testing ... 
-Command     ap_source done; 3.55 sec.
+Command     ap_source done; 3.217 sec.
 INFO: [COSIM 212-333] Generating C post check test bench ...
 Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
 INFO: [COSIM 212-12] Generating RTL test bench ...
@@ -1003,12 +1005,1147 @@ Execute       source .sim.status.tcl
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
-ERROR: [COSIM 212-379] Detected segmentation violation, please check C tb.
-ERROR: [COSIM 212-362] Aborting co-simulation: C TB post check failed.
-Command     ap_source done; error code: 1; 17.714 sec.
-ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+Command     ap_source done; 18.002 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
-Command   cosim_design done; error code: 2; 43.633 sec.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 43.649 seconds; current allocated memory: 97.667 MB.
-Command ap_source done; error code: 1; 45.451 sec.
+Command   cosim_design done; 47.152 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 47.168 seconds; current allocated memory: 97.675 MB.
+Command ap_source done; 49.367 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Mon Jul 15 20:32:27 -0400 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.156 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.125 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.732 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.135 sec.
+Command       add_library done; 0.244 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.998 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.347 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.157 sec.
+Command     add_library done; 0.212 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.234 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Execute   cosim_design -enable_dataflow_profiling -trace_level all -argv verbose 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling -trace_level all -argv verbose 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.155 sec.
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.13 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.182 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data names -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.586 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.146 sec.
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 3.784 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 17.416 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
+Command   cosim_design done; 43.601 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 43.619 seconds; current allocated memory: 97.660 MB.
+Command ap_source done; 45.273 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Mon Jul 15 20:33:28 -0400 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.15 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.125 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.705 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.133 sec.
+Command       add_library done; 0.239 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.967 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.337 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.143 sec.
+Command     add_library done; 0.243 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.265 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Execute   cosim_design -enable_dataflow_profiling -trace_level all -argv verbose 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling -trace_level all -argv verbose 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.131 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.184 sec.
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.235 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.299 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data names -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.592 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.199 sec.
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 3.352 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 17.201 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
+Command   cosim_design done; 43.223 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 43.239 seconds; current allocated memory: 97.659 MB.
+Command ap_source done; 44.915 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Mon Jul 15 20:34:25 -0400 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.105 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.157 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.126 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.824 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.146 sec.
+Command       add_library done; 0.272 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.117 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.491 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.309 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.456 sec.
+Command     add_library done; 0.854 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.883 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Execute   cosim_design -enable_dataflow_profiling -trace_level all -argv verbose 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling -trace_level all -argv verbose 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.162 sec.
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.148 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.225 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data names -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.634 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.11 sec.
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 3.324 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 17.152 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
+Command   cosim_design done; 43.01 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 43.025 seconds; current allocated memory: 97.661 MB.
+Command ap_source done; 45.473 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Mon Jul 15 20:35:32 -0400 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.164 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.225 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.129 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.818 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.149 sec.
+Command       add_library done; 0.236 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.079 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.517 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.15 sec.
+Command     add_library done; 0.188 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.229 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Execute   cosim_design -enable_dataflow_profiling -trace_level all -argv verbose 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling -trace_level all -argv verbose 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.234 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.287 sec.
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.173 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.235 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data names -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/test_bench.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.654 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO-FLOW: TB processing: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/./sim/autowrap/testbench/patchMaker.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.286 sec.
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 3.603 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/makePatches_ShadowQuilt_fromEdges.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 19.01 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
+Command   cosim_design done; 45.695 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 45.71 seconds; current allocated memory: 97.660 MB.
+Command ap_source done; 47.534 sec.
 Execute cleanup_all 

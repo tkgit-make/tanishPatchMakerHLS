@@ -4,19 +4,17 @@ target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:20
 target triple = "fpga64-xilinx-none"
 
 ; Function Attrs: noinline
-define void @apatb_makePatches_ShadowQuilt_fromEdges_ir(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches, [5 x [128 x i64]]* %GDarray, [5 x i32]* %GDn_points, [32 x [5 x [16 x i64]]]* %patches_superpoints) local_unnamed_addr #0 {
+define void @apatb_makePatches_ShadowQuilt_fromEdges_ir(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches, [5 x [128 x i64]]* %GDarray, [5 x i32]* %GDn_points, [1 x [5 x [16 x i64]]]* %patches_superpoints) local_unnamed_addr #0 {
 entry:
   %n_patches_copy = alloca i8, align 512
   %malloccall = tail call i8* @malloc(i64 5120)
   %GDarray_copy = bitcast i8* %malloccall to [5 x [128 x i64]]*
   %GDn_points_copy = alloca [5 x i32], align 512
-  %malloccall1 = call i8* @malloc(i64 20480)
-  %patches_superpoints_copy2 = bitcast i8* %malloccall1 to [32 x [5 x i1024]]*
-  call void @copy_in(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [128 x i64]]* %GDarray, [5 x [128 x i64]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x i64]]]* %patches_superpoints, [32 x [5 x i1024]]* %patches_superpoints_copy2)
-  call void @apatb_makePatches_ShadowQuilt_fromEdges_hw(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches_copy, [5 x [128 x i64]]* %GDarray_copy, [5 x i32]* %GDn_points_copy, [32 x [5 x i1024]]* %patches_superpoints_copy2)
-  call void @copy_out(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [128 x i64]]* %GDarray, [5 x [128 x i64]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x i64]]]* %patches_superpoints, [32 x [5 x i1024]]* %patches_superpoints_copy2)
+  %patches_superpoints_copy1 = alloca [5 x i1024], align 512
+  call void @copy_in(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [128 x i64]]* %GDarray, [5 x [128 x i64]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [1 x [5 x [16 x i64]]]* %patches_superpoints, [5 x i1024]* nonnull align 512 %patches_superpoints_copy1)
+  call void @apatb_makePatches_ShadowQuilt_fromEdges_hw(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches_copy, [5 x [128 x i64]]* %GDarray_copy, [5 x i32]* %GDn_points_copy, [5 x i1024]* %patches_superpoints_copy1)
+  call void @copy_out(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [128 x i64]]* %GDarray, [5 x [128 x i64]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [1 x [5 x [16 x i64]]]* %patches_superpoints, [5 x i1024]* nonnull align 512 %patches_superpoints_copy1)
   tail call void @free(i8* %malloccall)
-  call void @free(i8* %malloccall1)
   ret void
 }
 
@@ -105,23 +103,19 @@ ret:                                              ; preds = %for.loop, %entry
 declare void @free(i8*) local_unnamed_addr
 
 ; Function Attrs: argmemonly noinline
-define internal void @onebyonecpy_hls.p0a32a5a16i64.2.3([32 x [5 x i1024]]* noalias "orig.arg.no"="0", [32 x [5 x [16 x i64]]]* noalias readonly "orig.arg.no"="1") #1 {
+define internal void @onebyonecpy_hls.p0a1a5a16i64.2.3([5 x i1024]* noalias align 512 "orig.arg.no"="0", [1 x [5 x [16 x i64]]]* noalias readonly "orig.arg.no"="1") #1 {
 entry:
-  %2 = icmp eq [32 x [5 x i1024]]* %0, null
-  %3 = icmp eq [32 x [5 x [16 x i64]]]* %1, null
+  %2 = icmp eq [5 x i1024]* %0, null
+  %3 = icmp eq [1 x [5 x [16 x i64]]]* %1, null
   %4 = or i1 %2, %3
-  br i1 %4, label %ret, label %copy
+  br i1 %4, label %ret, label %for.loop
 
-copy:                                             ; preds = %entry
-  br label %for.loop
-
-for.loop:                                         ; preds = %for.loop.split, %copy
-  %for.loop.idx21 = phi i64 [ 0, %copy ], [ %for.loop.idx.next, %for.loop.split ]
+for.loop:                                         ; preds = %entry
   br label %for.loop2
 
 for.loop2:                                        ; preds = %for.loop2.split, %for.loop
   %for.loop.idx320 = phi i64 [ 0, %for.loop ], [ %for.loop.idx3.next, %for.loop2.split ]
-  %dst.addr1115.gep171 = getelementptr [32 x [5 x i1024]], [32 x [5 x i1024]]* %0, i64 0, i64 %for.loop.idx21, i64 %for.loop.idx320
+  %dst.addr1115.gep171 = getelementptr [5 x i1024], [5 x i1024]* %0, i64 0, i64 %for.loop.idx320
   %dst.addr1115.gep171.promoted = load i1024, i1024* %dst.addr1115.gep171, align 128
   br label %for.loop8
 
@@ -129,7 +123,7 @@ for.loop8:                                        ; preds = %for.loop8, %for.loo
   %5 = phi i1024 [ %dst.addr1115.gep171.promoted, %for.loop2 ], [ %21, %for.loop8 ]
   %for.loop.idx919 = phi i64 [ 0, %for.loop2 ], [ %for.loop.idx9.next, %for.loop8 ]
   %6 = mul nuw nsw i64 64, %for.loop.idx919
-  %src.addr1216.gep18 = getelementptr [32 x [5 x [16 x i64]]], [32 x [5 x [16 x i64]]]* %1, i64 0, i64 %for.loop.idx21, i64 %for.loop.idx320, i64 %for.loop.idx919
+  %src.addr1216.gep18 = getelementptr [1 x [5 x [16 x i64]]], [1 x [5 x [16 x i64]]]* %1, i64 0, i64 0, i64 %for.loop.idx320, i64 %for.loop.idx919
   %7 = load i64, i64* %src.addr1216.gep18, align 8
   %8 = zext i64 %7 to i1024
   %9 = add i64 %6, 63
@@ -153,51 +147,42 @@ for.loop2.split:                                  ; preds = %for.loop8
   store i1024 %21, i1024* %dst.addr1115.gep171, align 128
   %for.loop.idx3.next = add nuw nsw i64 %for.loop.idx320, 1
   %exitcond22 = icmp ne i64 %for.loop.idx3.next, 5
-  br i1 %exitcond22, label %for.loop2, label %for.loop.split
+  br i1 %exitcond22, label %for.loop2, label %ret
 
-for.loop.split:                                   ; preds = %for.loop2.split
-  %for.loop.idx.next = add nuw nsw i64 %for.loop.idx21, 1
-  %exitcond23 = icmp ne i64 %for.loop.idx.next, 32
-  br i1 %exitcond23, label %for.loop, label %ret
-
-ret:                                              ; preds = %for.loop.split, %entry
+ret:                                              ; preds = %for.loop2.split, %entry
   ret void
 }
 
 ; Function Attrs: argmemonly noinline
-define internal void @copy_in(i8* readonly "orig.arg.no"="0", i8* noalias align 512 "orig.arg.no"="1", [5 x [128 x i64]]* readonly "orig.arg.no"="2", [5 x [128 x i64]]* noalias "orig.arg.no"="3", [5 x i32]* readonly "orig.arg.no"="4", [5 x i32]* noalias align 512 "orig.arg.no"="5", [32 x [5 x [16 x i64]]]* readonly "orig.arg.no"="6", [32 x [5 x i1024]]* noalias "orig.arg.no"="7") #3 {
+define internal void @copy_in(i8* readonly "orig.arg.no"="0", i8* noalias align 512 "orig.arg.no"="1", [5 x [128 x i64]]* readonly "orig.arg.no"="2", [5 x [128 x i64]]* noalias "orig.arg.no"="3", [5 x i32]* readonly "orig.arg.no"="4", [5 x i32]* noalias align 512 "orig.arg.no"="5", [1 x [5 x [16 x i64]]]* readonly "orig.arg.no"="6", [5 x i1024]* noalias align 512 "orig.arg.no"="7") #3 {
 entry:
   call fastcc void @onebyonecpy_hls.p0i8(i8* align 512 %1, i8* %0)
   call fastcc void @onebyonecpy_hls.p0a5a128i64([5 x [128 x i64]]* %3, [5 x [128 x i64]]* %2)
   call fastcc void @onebyonecpy_hls.p0a5i32([5 x i32]* align 512 %5, [5 x i32]* %4)
-  call void @onebyonecpy_hls.p0a32a5a16i64.2.3([32 x [5 x i1024]]* %7, [32 x [5 x [16 x i64]]]* %6)
+  call void @onebyonecpy_hls.p0a1a5a16i64.2.3([5 x i1024]* align 512 %7, [1 x [5 x [16 x i64]]]* %6)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline
-define internal void @onebyonecpy_hls.p0a32a5a16i64.8.9([32 x [5 x [16 x i64]]]* noalias "orig.arg.no"="0", [32 x [5 x i1024]]* noalias readonly "orig.arg.no"="1") #1 {
+define internal void @onebyonecpy_hls.p0a1a5a16i64.8.9([1 x [5 x [16 x i64]]]* noalias "orig.arg.no"="0", [5 x i1024]* noalias readonly align 512 "orig.arg.no"="1") #1 {
 entry:
-  %2 = icmp eq [32 x [5 x [16 x i64]]]* %0, null
-  %3 = icmp eq [32 x [5 x i1024]]* %1, null
+  %2 = icmp eq [1 x [5 x [16 x i64]]]* %0, null
+  %3 = icmp eq [5 x i1024]* %1, null
   %4 = or i1 %2, %3
-  br i1 %4, label %ret, label %copy
+  br i1 %4, label %ret, label %for.loop
 
-copy:                                             ; preds = %entry
-  br label %for.loop
-
-for.loop:                                         ; preds = %for.loop.split, %copy
-  %for.loop.idx21 = phi i64 [ 0, %copy ], [ %for.loop.idx.next, %for.loop.split ]
+for.loop:                                         ; preds = %entry
   br label %for.loop2
 
 for.loop2:                                        ; preds = %for.loop2.split, %for.loop
   %for.loop.idx320 = phi i64 [ 0, %for.loop ], [ %for.loop.idx3.next, %for.loop2.split ]
-  %src.addr1216.gep181 = getelementptr [32 x [5 x i1024]], [32 x [5 x i1024]]* %1, i64 0, i64 %for.loop.idx21, i64 %for.loop.idx320
+  %src.addr1216.gep181 = getelementptr [5 x i1024], [5 x i1024]* %1, i64 0, i64 %for.loop.idx320
   %5 = load i1024, i1024* %src.addr1216.gep181, align 128
   br label %for.loop8
 
 for.loop8:                                        ; preds = %for.loop8, %for.loop2
   %for.loop.idx919 = phi i64 [ 0, %for.loop2 ], [ %for.loop.idx9.next, %for.loop8 ]
-  %dst.addr1115.gep17 = getelementptr [32 x [5 x [16 x i64]]], [32 x [5 x [16 x i64]]]* %0, i64 0, i64 %for.loop.idx21, i64 %for.loop.idx320, i64 %for.loop.idx919
+  %dst.addr1115.gep17 = getelementptr [1 x [5 x [16 x i64]]], [1 x [5 x [16 x i64]]]* %0, i64 0, i64 0, i64 %for.loop.idx320, i64 %for.loop.idx919
   %6 = mul nuw nsw i64 64, %for.loop.idx919
   %7 = add i64 %6, 63
   %8 = zext i64 %6 to i1024
@@ -219,39 +204,34 @@ for.loop8:                                        ; preds = %for.loop8, %for.loo
 for.loop2.split:                                  ; preds = %for.loop8
   %for.loop.idx3.next = add nuw nsw i64 %for.loop.idx320, 1
   %exitcond22 = icmp ne i64 %for.loop.idx3.next, 5
-  br i1 %exitcond22, label %for.loop2, label %for.loop.split
+  br i1 %exitcond22, label %for.loop2, label %ret
 
-for.loop.split:                                   ; preds = %for.loop2.split
-  %for.loop.idx.next = add nuw nsw i64 %for.loop.idx21, 1
-  %exitcond23 = icmp ne i64 %for.loop.idx.next, 32
-  br i1 %exitcond23, label %for.loop, label %ret
-
-ret:                                              ; preds = %for.loop.split, %entry
+ret:                                              ; preds = %for.loop2.split, %entry
   ret void
 }
 
 ; Function Attrs: argmemonly noinline
-define internal void @copy_out(i8* "orig.arg.no"="0", i8* noalias readonly align 512 "orig.arg.no"="1", [5 x [128 x i64]]* "orig.arg.no"="2", [5 x [128 x i64]]* noalias readonly "orig.arg.no"="3", [5 x i32]* "orig.arg.no"="4", [5 x i32]* noalias readonly align 512 "orig.arg.no"="5", [32 x [5 x [16 x i64]]]* "orig.arg.no"="6", [32 x [5 x i1024]]* noalias readonly "orig.arg.no"="7") #4 {
+define internal void @copy_out(i8* "orig.arg.no"="0", i8* noalias readonly align 512 "orig.arg.no"="1", [5 x [128 x i64]]* "orig.arg.no"="2", [5 x [128 x i64]]* noalias readonly "orig.arg.no"="3", [5 x i32]* "orig.arg.no"="4", [5 x i32]* noalias readonly align 512 "orig.arg.no"="5", [1 x [5 x [16 x i64]]]* "orig.arg.no"="6", [5 x i1024]* noalias readonly align 512 "orig.arg.no"="7") #4 {
 entry:
   call fastcc void @onebyonecpy_hls.p0i8(i8* %0, i8* align 512 %1)
   call fastcc void @onebyonecpy_hls.p0a5a128i64([5 x [128 x i64]]* %2, [5 x [128 x i64]]* %3)
   call fastcc void @onebyonecpy_hls.p0a5i32([5 x i32]* %4, [5 x i32]* align 512 %5)
-  call void @onebyonecpy_hls.p0a32a5a16i64.8.9([32 x [5 x [16 x i64]]]* %6, [32 x [5 x i1024]]* %7)
+  call void @onebyonecpy_hls.p0a1a5a16i64.8.9([1 x [5 x [16 x i64]]]* %6, [5 x i1024]* align 512 %7)
   ret void
 }
 
-declare void @apatb_makePatches_ShadowQuilt_fromEdges_hw(i32, i32, i1, i8*, [5 x [128 x i64]]*, [5 x i32]*, [32 x [5 x i1024]]*)
+declare void @apatb_makePatches_ShadowQuilt_fromEdges_hw(i32, i32, i1, i8*, [5 x [128 x i64]]*, [5 x i32]*, [5 x i1024]*)
 
-define void @makePatches_ShadowQuilt_fromEdges_hw_stub_wrapper(i32, i32, i1, i8*, [5 x [128 x i64]]*, [5 x i32]*, [32 x [5 x i1024]]*) #5 {
+define void @makePatches_ShadowQuilt_fromEdges_hw_stub_wrapper(i32, i32, i1, i8*, [5 x [128 x i64]]*, [5 x i32]*, [5 x i1024]*) #5 {
 entry:
-  %7 = alloca [32 x [5 x [16 x i64]]]
-  call void @copy_out(i8* null, i8* %3, [5 x [128 x i64]]* null, [5 x [128 x i64]]* %4, [5 x i32]* null, [5 x i32]* %5, [32 x [5 x [16 x i64]]]* %7, [32 x [5 x i1024]]* %6)
-  call void @makePatches_ShadowQuilt_fromEdges_hw_stub(i32 %0, i32 %1, i1 %2, i8* %3, [5 x [128 x i64]]* %4, [5 x i32]* %5, [32 x [5 x [16 x i64]]]* %7)
-  call void @copy_in(i8* null, i8* %3, [5 x [128 x i64]]* null, [5 x [128 x i64]]* %4, [5 x i32]* null, [5 x i32]* %5, [32 x [5 x [16 x i64]]]* %7, [32 x [5 x i1024]]* %6)
+  %7 = alloca [1 x [5 x [16 x i64]]]
+  call void @copy_out(i8* null, i8* %3, [5 x [128 x i64]]* null, [5 x [128 x i64]]* %4, [5 x i32]* null, [5 x i32]* %5, [1 x [5 x [16 x i64]]]* %7, [5 x i1024]* %6)
+  call void @makePatches_ShadowQuilt_fromEdges_hw_stub(i32 %0, i32 %1, i1 %2, i8* %3, [5 x [128 x i64]]* %4, [5 x i32]* %5, [1 x [5 x [16 x i64]]]* %7)
+  call void @copy_in(i8* null, i8* %3, [5 x [128 x i64]]* null, [5 x [128 x i64]]* %4, [5 x i32]* null, [5 x i32]* %5, [1 x [5 x [16 x i64]]]* %7, [5 x i1024]* %6)
   ret void
 }
 
-declare void @makePatches_ShadowQuilt_fromEdges_hw_stub(i32, i32, i1, i8*, [5 x [128 x i64]]*, [5 x i32]*, [32 x [5 x [16 x i64]]]*)
+declare void @makePatches_ShadowQuilt_fromEdges_hw_stub(i32, i32, i1, i8*, [5 x [128 x i64]]*, [5 x i32]*, [1 x [5 x [16 x i64]]]*)
 
 attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline "fpga.wrapper.func"="onebyonecpy_hls" }

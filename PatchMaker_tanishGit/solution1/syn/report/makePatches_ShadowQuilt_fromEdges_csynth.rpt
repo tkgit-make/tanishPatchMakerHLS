@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'makePatches_ShadowQuilt_fromEdges'
 ================================================================
-* Date:           Mon Jul 15 20:24:57 2024
+* Date:           Mon Jul 15 20:31:09 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -127,12 +127,12 @@
 |GDn_points_we1                |  out|     1|   ap_memory|                         GDn_points|         array|
 |GDn_points_d1                 |  out|    32|   ap_memory|                         GDn_points|         array|
 |GDn_points_q1                 |   in|    32|   ap_memory|                         GDn_points|         array|
-|patches_superpoints_address0  |  out|     8|   ap_memory|                patches_superpoints|         array|
+|patches_superpoints_address0  |  out|     3|   ap_memory|                patches_superpoints|         array|
 |patches_superpoints_ce0       |  out|     1|   ap_memory|                patches_superpoints|         array|
 |patches_superpoints_we0       |  out|     1|   ap_memory|                patches_superpoints|         array|
 |patches_superpoints_d0        |  out|  1024|   ap_memory|                patches_superpoints|         array|
 |patches_superpoints_q0        |   in|  1024|   ap_memory|                patches_superpoints|         array|
-|patches_superpoints_address1  |  out|     8|   ap_memory|                patches_superpoints|         array|
+|patches_superpoints_address1  |  out|     3|   ap_memory|                patches_superpoints|         array|
 |patches_superpoints_ce1       |  out|     1|   ap_memory|                patches_superpoints|         array|
 |patches_superpoints_we1       |  out|     1|   ap_memory|                patches_superpoints|         array|
 |patches_superpoints_d1        |  out|  1024|   ap_memory|                patches_superpoints|         array|

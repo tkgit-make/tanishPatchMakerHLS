@@ -68349,19 +68349,19 @@ long straightLineProjectorFromLayerIJtoK(long z_i, long z_j, int i, int j, int k
 void getParallelograms(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6]);
 void getShadows(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6], long zTopMin, long zTopMax);
 void get_acceptanceCorners(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6]);
-void add_patch(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6], uint8_t &n_patches, long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void delete_patch(int index, uint8_t &n_patches, long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void add_patch(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6], uint8_t &n_patches, long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]);
+void delete_patch(int index, uint8_t &n_patches, long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]);
 uint8_t get_index_from_z(int layer, long z_value, long (&GDarray) [5][128][3], int (&GDn_points) [5]);
-void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, uint8_t &n_patches, long (&GDarray) [5][128], int (&GDn_points) [5], long (&patches_superpoints)[32][5][16]);
-long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void makeThirdPatch(uint8_t lastPatchIndex, long z_top_min, long z_top_max, long complementary_apexZ0, long apexZ0, int ppl, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, uint8_t &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, uint8_t &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
-void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, uint8_t &n_patches, long (&GDarray) [5][128], int (&GDn_points) [5], long (&patches_superpoints)[1][5][16]);
+long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]);
+void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]);
+void makeThirdPatch(uint8_t lastPatchIndex, long z_top_min, long z_top_max, long complementary_apexZ0, long apexZ0, int ppl, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]);
+void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, uint8_t &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, uint8_t &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]);
+void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]);
 void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[5][16][3], uint8_t &init_patch_size, long (&GDarray) [5][128][3], int (&GDn_points) [5]);
 bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, bool repeat_original,
                                          long white_space_height, long previous_white_space_height,
-                                         int current_z_top_index, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]);
+                                         int current_z_top_index, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]);
 
 bool getSolveNextColumnWhileConditional(long c_corner, int nPatchesInColumn, long projectionOfCornerToBeam);
 void mSP_findStartIndex(long row_list[128], int row_list_size, long projectionToRow, int &start_index, long &start_value);
@@ -68650,7 +68650,7 @@ minMaxAcceptanceCorners_loop:
     }
 }
 
-void add_patch(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6], uint8_t &n_patches, long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6])
+void add_patch(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 1][6], uint8_t &n_patches, long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6])
 {
     if (n_patches == 0)
     {
@@ -68701,7 +68701,7 @@ void add_patch(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 
 
         if (different)
         {
-            if (n_patches < 32)
+            if (n_patches < 1)
             {
                 for(int a = 0; a < 5; a++)
                 {
@@ -68734,7 +68734,7 @@ void add_patch(long (&wp_superpoints) [5][16][3], long (&wp_parameters) [5][5 - 
     }
 }
 
-void delete_patch(int index, uint8_t &n_patches, long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6])
+void delete_patch(int index, uint8_t &n_patches, long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6])
 {
     if (index < 0 || index >= n_patches)
     {
@@ -68804,10 +68804,10 @@ getIndexFromZ_loop:
     return index;
 }
 
-void initializeArrays(long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6])
+void initializeArrays(long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6])
 {
  initArraysSPloop1:
-    for(int a = 0; a < 32; a++)
+    for(int a = 0; a < 1; a++)
     {
      initArraysSPloop2:
         for(int b = 0; b < 5; b++)
@@ -68825,7 +68825,7 @@ void initializeArrays(long (&patches_superpoints) [32][5][16][3], long (&patches
     }
 
     initArraysPPloop1:
-    for(int a = 0; a < 32; a++)
+    for(int a = 0; a < 1; a++)
     {
      initArraysPPloop2:
         for(int b = 0; b < 5; b++)
@@ -68843,7 +68843,7 @@ void initializeArrays(long (&patches_superpoints) [32][5][16][3], long (&patches
     }
 }
 
-void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, uint8_t &n_patches, long (&GDarray) [5][128], int (&GDn_points) [5], long (&patches_superpoints)[32][5][16])
+void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, uint8_t &n_patches, long (&GDarray) [5][128], int (&GDn_points) [5], long (&patches_superpoints)[1][5][16])
 {
 #pragma HLS ARRAY_RESHAPE variable=patches_superpoints dim=3 complete
 
@@ -68866,18 +68866,18 @@ void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, uint8_
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_makePatches_ShadowQuilt_fromEdges_ir(int, int, bool, unsigned char &, long (&)[5][128], int (&)[5], long (&)[32][5][16]);
+void apatb_makePatches_ShadowQuilt_fromEdges_ir(int, int, bool, unsigned char &, long (&)[5][128], int (&)[5], long (&)[1][5][16]);
 #ifdef __cplusplus
 extern "C"
 #endif
-void makePatches_ShadowQuilt_fromEdges_hw_stub(int stop, int ppl, bool leftRight, unsigned char &n_patches, long (&GDarray)[5][128], int (&GDn_points)[5], long (&patches_superpoints)[32][5][16]){
+void makePatches_ShadowQuilt_fromEdges_hw_stub(int stop, int ppl, bool leftRight, unsigned char &n_patches, long (&GDarray)[5][128], int (&GDn_points)[5], long (&patches_superpoints)[1][5][16]){
 makePatches_ShadowQuilt_fromEdges(stop, ppl, leftRight, n_patches, GDarray, GDn_points, patches_superpoints);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_makePatches_ShadowQuilt_fromEdges_sw(int stop, int ppl, bool leftRight, unsigned char &n_patches, long (&GDarray)[5][128], int (&GDn_points)[5], long (&patches_superpoints)[32][5][16]){
+void apatb_makePatches_ShadowQuilt_fromEdges_sw(int stop, int ppl, bool leftRight, unsigned char &n_patches, long (&GDarray)[5][128], int (&GDn_points)[5], long (&patches_superpoints)[1][5][16]){
 apatb_makePatches_ShadowQuilt_fromEdges_ir(stop, ppl, leftRight, n_patches, GDarray, GDn_points, patches_superpoints);
 return ;
 }
@@ -68885,7 +68885,7 @@ return ;
 # 488 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMaker.cpp"
 
 
-long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6])
+long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6])
 {
     long z_top_min = -1 * (50 * 1000000);
 
@@ -68923,7 +68923,7 @@ solveNextColumn_loop:
 bool getSolveNextColumnWhileConditional(long c_corner, int nPatchesInColumn,
                                         long projectionOfCornerToBeam) { return (c_corner > -1 * trapezoid_edges[5 - 1]) && (nPatchesInColumn < 100000000) && (projectionOfCornerToBeam < (15 * 1000000)); }
 
-void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6])
+void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6])
 {
     nPatchesInColumn++;
 
@@ -69038,7 +69038,7 @@ void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix
 
 bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, bool repeat_original,
                                          long white_space_height, long previous_white_space_height,
-                                         int current_z_top_index, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6]) {
+                                         int current_z_top_index, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6]) {
     return !(white_space_height <= static_cast<long>(0.0000005 * 1000000) && (previous_white_space_height >= 0)) && (fabs(white_space_height) > static_cast<long>(0.000005 * 1000000)) &&
                ((patches_parameters[lastPatchIndex][2][2][1] > -1 * trapezoid_edges[5 - 1]) ||
                     (white_space_height > static_cast<long>(0.000005 * 1000000))) &&
@@ -69046,7 +69046,7 @@ bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, 
                !(repeat_patch) && !(repeat_original);
 }
 
-void makeThirdPatch(uint8_t lastPatchIndex, long z_top_min, long z_top_max, long complementary_apexZ0, long apexZ0, int ppl, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6])
+void makeThirdPatch(uint8_t lastPatchIndex, long z_top_min, long z_top_max, long complementary_apexZ0, long apexZ0, int ppl, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6])
 {
     uint8_t secondLastPatchIndex = lastPatchIndex - 1;
 
@@ -69198,7 +69198,7 @@ thirdPatch_loop:
     }
 }
 
-void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, uint8_t &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, uint8_t &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6])
+void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, uint8_t &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, uint8_t &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6])
 {
 
 
@@ -69401,7 +69401,7 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
     }
 }
 
-void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [32][5][16][3], long (&patches_parameters) [32][5][5 - 1][6])
+void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, uint8_t &n_patches, long (&GDarray) [5][128][3], int (&GDn_points) [5], long (&patches_superpoints) [1][5][16][3], long (&patches_parameters) [1][5][5 - 1][6])
 {
     long init_patch[5][16][3];
 

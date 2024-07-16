@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Mon Jul 15 20:26:05 -0400 2024
+INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Mon Jul 15 20:35:31 -0400 2024
 INFO: [HLS 200-10] In directory 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS'
 Sourcing Tcl script 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/cosim.tcl'
 INFO: [HLS 200-1510] Running: open_project PatchMaker_tanishGit 
@@ -94,7 +94,7 @@ Built simulation snapshot makePatches_ShadowQuilt_fromEdges
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/xsim.dir/makePatches_ShadowQuilt_fromEdges/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Jul 15 20:26:40 2024...
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 15 20:36:08 2024...
 
 ****** xsim v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -179,27 +179,8 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 185 ns : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/sim/verilog/makePatches_ShadowQuilt_fromEdges.autotb.v" Line 352
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jul 15 20:26:49 2024...
+INFO: [Common 17-206] Exiting xsim at Mon Jul 15 20:36:17 2024...
 INFO: [COSIM 212-316] Starting C post checking ...
-ERROR: System recieved a signal named SIGSEGV and the program has to stop immediately!
-This signal was generated when a program tries to read or write outside the memory that is allocated for it, or to write memory that can only be read.
-Possible cause of this problem may be: 1) the depth setting of pointer type argument is much larger than it needed; 2)insufficient depth of array argument; 3)null pointer etc.
-Current execution stopped during CodeState = ENTER_WRAPC_PC.
-You can search CodeState variable name in apatb*.cpp file under ./sim/wrapc dir to locate the position.
-
-ERROR: [COSIM 212-379] Detected segmentation violation, please check C tb.
-ERROR: [COSIM 212-362] Aborting co-simulation: C TB post check failed.
-ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 43.649 seconds; current allocated memory: 97.667 MB.
-command 'ap_source' returned error code
-    while executing
-"source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/cosim.tcl"
-    invoked from within
-"hls::main C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/cosim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$newargs"
-    (procedure "hls_proc" line 16)
-    invoked from within
-"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 45.71 seconds; current allocated memory: 97.660 MB.

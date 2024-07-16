@@ -31,8 +31,8 @@
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="6" access_type="" src_name="patches_superpoints" src_type="int" src_isptr="1" src_bitwidth="1024" src_size_or_depth="160">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints" hw_bitwidth="1024" hw_size_or_depth="160">
+      <arg id="6" access_type="" src_name="patches_superpoints" src_type="int" src_isptr="1" src_bitwidth="1024" src_size_or_depth="5">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints" hw_bitwidth="1024" hw_size_or_depth="5">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>

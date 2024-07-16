@@ -398,7 +398,7 @@
             <IOProtocol>ap_memory</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>8</Bits>
+            <Bits>3</Bits>
             <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -458,7 +458,7 @@
             <IOProtocol>ap_memory</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>8</Bits>
+            <Bits>3</Bits>
             <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -908,7 +908,7 @@
                     <IOProtocol>ap_memory</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>8</Bits>
+                    <Bits>3</Bits>
                     <Attribute>address</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -968,7 +968,7 @@
                     <IOProtocol>ap_memory</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>8</Bits>
+                    <Bits>3</Bits>
                     <Attribute>address</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
@@ -1258,7 +1258,7 @@
                 <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="n_patches"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="patches_superpoints_address0" type="data" busTypeName="data" mode="master" dataWidth="8">
+        <Interface InterfaceName="patches_superpoints_address0" type="data" busTypeName="data" mode="master" dataWidth="3">
             <portMaps>
                 <portMap portMapName="patches_superpoints_address0">DATA</portMap>
             </portMaps>
@@ -1269,7 +1269,7 @@
                 <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="patches_superpoints"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="patches_superpoints_address1" type="data" busTypeName="data" mode="master" dataWidth="8">
+        <Interface InterfaceName="patches_superpoints_address1" type="data" busTypeName="data" mode="master" dataWidth="3">
             <portMaps>
                 <portMap portMapName="patches_superpoints_address1">DATA</portMap>
             </portMaps>
@@ -1364,8 +1364,8 @@
                     <column name="GDn_points_d1">32</column>
                     <column name="GDn_points_q0">32</column>
                     <column name="GDn_points_q1">32</column>
-                    <column name="patches_superpoints_address0">8</column>
-                    <column name="patches_superpoints_address1">8</column>
+                    <column name="patches_superpoints_address0">3</column>
+                    <column name="patches_superpoints_address1">3</column>
                     <column name="patches_superpoints_d0">1024</column>
                     <column name="patches_superpoints_d1">1024</column>
                     <column name="patches_superpoints_q0">1024</column>

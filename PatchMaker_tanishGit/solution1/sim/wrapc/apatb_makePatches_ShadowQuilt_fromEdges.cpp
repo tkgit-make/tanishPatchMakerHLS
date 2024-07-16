@@ -337,7 +337,7 @@ unsigned __xlx_offset_byte_param_patches_superpoints = 0;
   aesl_fh.write(AUTOTB_TVIN_patches_superpoints, __xlx_sprintf_buffer.data());
   {  __xlx_offset_byte_param_patches_superpoints = 0*128;
   if (__xlx_apatb_param_patches_superpoints) {
-    for (int j = 0  - 0, e = 160 - 0; j != e; ++j) {
+    for (int j = 0  - 0, e = 5 - 0; j != e; ++j) {
 sc_bv<1024> __xlx_tmp_lv;
 __xlx_tmp_lv.range(63,0) = ((long long*)__xlx_apatb_param_patches_superpoints)[j*16+0];
 __xlx_tmp_lv.range(127,64) = ((long long*)__xlx_apatb_param_patches_superpoints)[j*16+1];
@@ -361,7 +361,7 @@ __xlx_tmp_lv.range(1023,960) = ((long long*)__xlx_apatb_param_patches_superpoint
       }
   }
 }
-  tcl_file.set_num(160, &tcl_file.patches_superpoints_depth);
+  tcl_file.set_num(5, &tcl_file.patches_superpoints_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_patches_superpoints, __xlx_sprintf_buffer.data());
 }
