@@ -25,8 +25,8 @@ int comparePoints(const std::array<COORDINATE_TYPE, 3> &pointA, const std::array
 //{ for(int i = 0; GDarray.size_t(); ) }
 
 void solve(long apexZ0, int ppl, bool leftRight, index_type &n_patches,
-           std::array<std::array<std::array<COORDINATE_TYPE, PARAMETERS_PER_POINT>, MAX_POINTS_PER_LAYER>, MAX_LAYERS> &GDarray, int (&GDn_points)[MAX_LAYERS],
-           long (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT], long (&patches_parameters)[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH])
+           std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_PER_LAYER>, MAX_LAYERS> &GDarray, int (&GDn_points)[MAX_LAYERS],
+           SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT])
 {
 solve_loop:
     for (index_type i = 0; i < num_layers; i++)
@@ -79,6 +79,23 @@ solve_loop:
     }
 
     makePatches_ShadowQuilt_fromEdges(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
+#if PRINT_OUTS == false
+    cout << "n_patches = " << n_patches << endl;
+
+	for(int a = 0; a < MAX_PATCHES; a++)
+	{
+		for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
+		{
+			for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+			{
+				cout << decodePHIcoordinate(patches_superpoints[a][b][c]) << " " << decodeZcoordinate(patches_superpoints[a][b][c]) << endl;
+			}
+		}
+
+		cout << "END of patch" << endl;
+	}
+#endif
+
 	#if PRINT_OUTS == true
     	cout << "Has not failed after" << endl;
 	#endif
@@ -261,7 +278,7 @@ void addBoundaryPoint(long offset, GDARRAYPRESORT)
         GDarray[i][0][0] = i + 1;
         //is the phi for the boundary points used (answer: no)? so, instead of sorting in importData, we could wait and add boundary points, and then sort, without any shifting of boundary points needed. MlogM vs NlogN + 2N, where M = N+2
         GDarray[i][0][1] = GDarray[i][1][1]; // getting the first phi in the array sorted by z
-        GDarray[i][0][2] = -1 * ((trapezoid_edges[i]) - offset) - offset; //trapezoid edges is constant and initialized with the offset added. to preserve the original statement, we do it like this
+        GDarray[i][0][2] = -((trapezoid_edges[i]) - offset) - offset; //trapezoid edges is constant and initialized with the offset added. to preserve the original statement, we do it like this
 
         // appending at the end
         index_type lastIndex = GDn_points[i] + 1; // after shifting, there's one more point
@@ -318,8 +335,8 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 			GDn_points[a] = 0;
 		}
 
-		long patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
-		long patches_parameters[MAX_PATCHES][5][MAX_PARALLELOGRAMS_PER_PATCH][6];
+		SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
+		COORDINATE_TYPE patches_parameters[MAX_PATCHES][5][MAX_PARALLELOGRAMS_PER_PATCH][6];
         
 #pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
 //#pragma HLS stream variable=patches_superpoints
@@ -344,8 +361,9 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 
         addBoundaryPoint(static_cast<long>(0.0001 * INTEGER_FACTOR_CM), GDarray, GDn_points); // with default param
 
-        solve(apexZ0, ppl, false, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters); // solve modifies cover. false is from the left right align (previously a parameter in wedge test)
-	#if PRINT_OUTS == true
+        solve(apexZ0, ppl, false, n_patches, GDarray, GDn_points, patches_superpoints); // solve modifies cover. false is from the left right align (previously a parameter in wedge test)
+
+#if PRINT_OUTS == true
         printf("Printing First Patch Points \n");
         for (int i = 0; i < 1; i++)
 		{

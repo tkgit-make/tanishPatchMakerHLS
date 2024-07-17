@@ -71,7 +71,7 @@
         <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" period="1"/>
+        <clock name="default" default="false" period="1"/>
     </clockList>
 </solution>
 

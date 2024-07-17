@@ -1,327 +1,2600 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../tanishTestBench/test_bench.cpp in debug mode
-   Compiling ../../../../patchMaker.cpp in debug mode
-csim.mk:78: recipe for target 'obj/patchMaker.o' failed
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:55,
-                 from \Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h:19,
-                 from ../../../../tanishTestBench/test_bench.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
- #define __GMP_LIBGMP_DLL  0
- 
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:55,
-                 from \Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h:19,
-                 from ../../../../tanishTestBench/test_bench.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
- #define __GMP_LIBGMP_DLL 1
- 
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_hotbm_apfixed.h:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_math.h:1065,
-                 from \Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h:20,
-                 from ../../../../tanishTestBench/test_bench.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/utils/x_hls_utils.h:243:40: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
- __attribute__((hls_preserve)) T reg(T d)
-                                        ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:55,
-                 from ../../../../patchMakerHeader.h:19,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
- #define __GMP_LIBGMP_DLL  0
- 
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:55,
-                 from ../../../../patchMakerHeader.h:19,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
- #define __GMP_LIBGMP_DLL 1
- 
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_hotbm_apfixed.h:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_math.h:1065,
-                 from ../../../../patchMakerHeader.h:20,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/utils/x_hls_utils.h:243:40: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
- __attribute__((hls_preserve)) T reg(T d)
-                                        ^
-../../../../patchMaker.cpp: In function 'int areWedgeSuperPointsEqual(ap_int<32> (*)[3], ap_int<32> (*)[3])':
-../../../../patchMaker.cpp:23:59: error: call of overloaded 'fabs(ap_int_base<32, true>::RType<32, true>::minus)' is ambiguous
-     return (static_cast<long>(fabs(wsp1[0][2] - wsp2[0][2])) < tolerance) && (static_cast<long>(fabs(wsp1[MAX_POINTS_IN_SUPERPOINT - 1][2] - wsp2[MAX_POINTS_IN_SUPERPOINT - 1][2])) < tolerance);
-                                                           ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/math.h:204:25: note: candidate: double fabs(double)
-   extern double __cdecl fabs (double _X);
-                         ^~~~
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36:0,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:268:3: note: candidate: constexpr long double std::fabs(long double)
-   fabs(long double __x)
-   ^~~~
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:264:3: note: candidate: constexpr float std::fabs(float)
-   fabs(float __x)
-   ^~~~
-../../../../patchMaker.cpp:23:179: error: call of overloaded 'fabs(ap_int_base<32, true>::RType<32, true>::minus)' is ambiguous
-     return (static_cast<long>(fabs(wsp1[0][2] - wsp2[0][2])) < tolerance) && (static_cast<long>(fabs(wsp1[MAX_POINTS_IN_SUPERPOINT - 1][2] - wsp2[MAX_POINTS_IN_SUPERPOINT - 1][2])) < tolerance);
-                                                                                                                                                                                   ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/math.h:204:25: note: candidate: double fabs(double)
-   extern double __cdecl fabs (double _X);
-                         ^~~~
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36:0,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:268:3: note: candidate: constexpr long double std::fabs(long double)
-   fabs(long double __x)
-   ^~~~
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:264:3: note: candidate: constexpr float std::fabs(float)
-   fabs(float __x)
-   ^~~~
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMaker.cpp: In function 'void getShadows(long int (&)[5][16][3], long int (&)[5][4][6], ap_int<32>, ap_int<32>)':
-../../../../patchMakerHeader.h:41:30: error: operands to ?: have different types 'long int' and 'ap_int<32>'
- #define max(X, Y) ((X) < (Y) ? (Y) : (X))
-                    ~~~~~~~~~~^~~~~~~~~~~
-../../../../patchMaker.cpp:146:20: note: in expansion of macro 'max'
-         zTop_min = max(zTopMin, -trapezoid_edges[num_layers - 1]);
-                    ^~~
-../../../../patchMakerHeader.h:41:30: note:   and each type can be converted to the other
- #define max(X, Y) ((X) < (Y) ? (Y) : (X))
-                    ~~~~~~~~~~^~~~~~~~~~~
-../../../../patchMaker.cpp:146:20: note: in expansion of macro 'max'
-         zTop_min = max(zTopMin, -trapezoid_edges[num_layers - 1]);
-                    ^~~
-../../../../patchMakerHeader.h:40:30: error: operands to ?: have different types 'ap_int<32>' and 'const long int'
- #define min(X, Y) ((X) < (Y) ? (X) : (Y))
-                    ~~~~~~~~~~^~~~~~~~~~~
-../../../../patchMaker.cpp:147:20: note: in expansion of macro 'min'
-         zTop_max = min(zTopMax, trapezoid_edges[num_layers - 1]);
-                    ^~~
-../../../../patchMakerHeader.h:40:30: note:   and each type can be converted to the other
- #define min(X, Y) ((X) < (Y) ? (X) : (Y))
-                    ~~~~~~~~~~^~~~~~~~~~~
-../../../../patchMaker.cpp:147:20: note: in expansion of macro 'min'
-         zTop_max = min(zTopMax, trapezoid_edges[num_layers - 1]);
-                    ^~~
-../../../../patchMaker.cpp: In function 'ap_int<32> solveNextColumn(ap_int<32>, int, int, bool, bool, ap_int<32>, uint8_t&, ap_int<64> (&)[5][128], int (&)[5], long int (&)[1][5][16][3], long int (&)[1][5][4][6])':
-../../../../patchMaker.cpp:503:25: error: call of overloaded 'straightLineProjectorFromLayerIJtoK(int, ap_int<32>&, int, int, int)' is ambiguous
-                         ));
-                         ^
-../../../../patchMakerHeader.h:40:27: note: in definition of macro 'min'
- #define min(X, Y) ((X) < (Y) ? (X) : (Y))
-                           ^
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMakerHeader.h:184:6: note: candidate: long int straightLineProjectorFromLayerIJtoK(long int, long int, int, int, int)
- long straightLineProjectorFromLayerIJtoK(long z_i, long z_j, int i, int j, int k);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp:99:6: note: candidate: long int straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)
- long straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDINATE_TYPE z_j, int i, int j, int k)
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMaker.cpp:503:25: error: call of overloaded 'straightLineProjectorFromLayerIJtoK(int, ap_int<32>&, int, int, int)' is ambiguous
-                         ));
-                         ^
-../../../../patchMakerHeader.h:40:39: note: in definition of macro 'min'
- #define min(X, Y) ((X) < (Y) ? (X) : (Y))
-                                       ^
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMakerHeader.h:184:6: note: candidate: long int straightLineProjectorFromLayerIJtoK(long int, long int, int, int, int)
- long straightLineProjectorFromLayerIJtoK(long z_i, long z_j, int i, int j, int k);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp:99:6: note: candidate: long int straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)
- long straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDINATE_TYPE z_j, int i, int j, int k)
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp:513:248: error: invalid initialization of non-const reference of type 'long int&' from an rvalue of type 'long int'
-         solveNextPatchPair(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, nPatchesInColumn, c_corner, projectionOfCornerToBeam, z_top_min, z_top_max, complementary_apexZ0, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
-                                                                                                                                                                                                                                                        ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:56:0,
-                 from ../../../../patchMakerHeader.h:19,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/ap_int_base.h:534:10: note:   after user-defined conversion: ap_int_base<_AP_W, _AP_S>::operator ap_int_base<_AP_W, _AP_S>::RetType() const [with int _AP_W = 32; bool _AP_S = true; ap_int_base<_AP_W, _AP_S>::RetType = long long int]
-   INLINE operator RetType() const { return (RetType)(Base::V); }
-          ^~~~~~~~
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMakerHeader.h:193:6: note:   initializing argument 6 of 'void solveNextPatchPair(long int, int, int, bool, bool, long int&, int&, long int&, long int&, long int&, long int&, long int&, uint8_t&, ap_int<64> (&)[5][128], int (&)[5], long int (&)[1][5][16][3], long int (&)[1][5][4][6])'
- void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES);
-      ^~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp: In function 'void solveNextPatchPair(ap_int<32>, int, int, bool, bool, ap_int<32>&, int&, ap_int<32>&, long int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, uint8_t&, ap_int<64> (&)[5][128], int (&)[5], long int (&)[1][5][16][3], long int (&)[1][5][4][6])':
-../../../../patchMaker.cpp:665:392: error: invalid initialization of non-const reference of type 'long int&' from an rvalue of type 'long int'
-             solveComplmentaryPatch(previous_white_space_height, ppl, fix42, nPatchesAtOriginal, previous_z_top_min, complementary_apexZ0, white_space_height, lastPatchIndex, original_c, original_d, complementary_a, complementary_b, current_z_top_index, counter, counterUpshift, z_top_min, repeat_patch, repeat_original, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
-                                                                                                                                                                                                                                                                                                                                                                                                        ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:56:0,
-                 from ../../../../patchMakerHeader.h:19,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/ap_int_base.h:534:10: note:   after user-defined conversion: ap_int_base<_AP_W, _AP_S>::operator ap_int_base<_AP_W, _AP_S>::RetType() const [with int _AP_W = 32; bool _AP_S = true; ap_int_base<_AP_W, _AP_S>::RetType = long long int]
-   INLINE operator RetType() const { return (RetType)(Base::V); }
-          ^~~~~~~~
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMakerHeader.h:195:6: note:   initializing argument 5 of 'void solveComplmentaryPatch(long int&, int, bool, int, long int&, long int, long int&, uint8_t&, long int, long int, long int&, long int&, uint8_t&, int&, int&, long int&, bool&, bool&, uint8_t&, ap_int<64> (&)[5][128], int (&)[5], long int (&)[1][5][16][3], long int (&)[1][5][4][6])'
- void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, index_type &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, index_type &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES);
-      ^~~~~~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp:673:139: error: call of overloaded 'straightLineProjectorFromLayerIJtoK(ap_int<32>&, long int&, int, int, int)' is ambiguous
-     projectionOfCornerToBeam = straightLineProjectorFromLayerIJtoK(c_corner, patches_parameters[lastPatchIndex][2][2][0], num_layers, 1, 0);
-                                                                                                                                           ^
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMakerHeader.h:184:6: note: candidate: long int straightLineProjectorFromLayerIJtoK(long int, long int, int, int, int)
- long straightLineProjectorFromLayerIJtoK(long z_i, long z_j, int i, int j, int k);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp:99:6: note: candidate: long int straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)
- long straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDINATE_TYPE z_j, int i, int j, int k)
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp: In function 'void makeThirdPatch(uint8_t, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, uint8_t&, ap_int<64> (&)[5][128], int (&)[5], long int (&)[1][5][16][3], long int (&)[1][5][4][6])':
-../../../../patchMaker.cpp:840:90: error: call of overloaded 'straightLineProjectorFromLayerIJtoK(long int&, ap_int<32>&, int, int, int)' is ambiguous
-         if ((straightLineProjectorFromLayerIJtoK(shifted_Align, newZtop, 1, num_layers, 0) > beam_axis_lim) && shiftOriginal)
-                                                                                          ^
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMakerHeader.h:184:6: note: candidate: long int straightLineProjectorFromLayerIJtoK(long int, long int, int, int, int)
- long straightLineProjectorFromLayerIJtoK(long z_i, long z_j, int i, int j, int k);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp:99:6: note: candidate: long int straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)
- long straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDINATE_TYPE z_j, int i, int j, int k)
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../../patchMaker.cpp: In function 'void solveComplmentaryPatch(long int&, int, bool, int, ap_int<32>&, ap_int<32>, long int&, uint8_t&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, uint8_t&, int&, int&, ap_int<32>&, bool&, bool&, uint8_t&, ap_int<64> (&)[5][128], int (&)[5], long int (&)[1][5][16][3], long int (&)[1][5][4][6])':
-../../../../patchMaker.cpp:948:73: error: call of overloaded 'fabs(ap_int_base<32, true>::RType<32, true>::minus)' is ambiguous
-         if (static_cast<long>(fabs(new_z_i_atTop[i] - previous_z_top_min)) < layerSMin)
-                                                                         ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/math.h:204:25: note: candidate: double fabs(double)
-   extern double __cdecl fabs (double _X);
-                         ^~~~
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36:0,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:268:3: note: candidate: constexpr long double std::fabs(long double)
-   fabs(long double __x)
-   ^~~~
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:264:3: note: candidate: constexpr float std::fabs(float)
-   fabs(float __x)
-   ^~~~
-../../../../patchMaker.cpp:950:85: error: call of overloaded 'fabs(ap_int_base<32, true>::RType<32, true>::minus)' is ambiguous
-             layerSMin = static_cast<long>(fabs(new_z_i_atTop[i] - previous_z_top_min));
-                                                                                     ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/math.h:204:25: note: candidate: double fabs(double)
-   extern double __cdecl fabs (double _X);
-                         ^~~~
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36:0,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:268:3: note: candidate: constexpr long double std::fabs(long double)
-   fabs(long double __x)
-   ^~~~
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:264:3: note: candidate: constexpr float std::fabs(float)
-   fabs(float __x)
-   ^~~~
-../../../../patchMaker.cpp:968:44: error: call of overloaded 'fabs(ap_int_base<32, true>::RType<32, true>::minus)' is ambiguous
-     if (fabs(z_top_min - previous_z_top_min) < static_cast<long>(0.000001 * INTEGER_FACTOR_CM))
-                                            ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/math.h:204:25: note: candidate: double fabs(double)
-   extern double __cdecl fabs (double _X);
-                         ^~~~
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36:0,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:268:3: note: candidate: constexpr long double std::fabs(long double)
-   fabs(long double __x)
-   ^~~~
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:264:3: note: candidate: constexpr float std::fabs(float)
-   fabs(float __x)
-   ^~~~
-../../../../patchMaker.cpp:973:44: error: call of overloaded 'fabs(ap_int_base<32, true>::RType<32, true>::minus)' is ambiguous
-     if (fabs(z_top_min - previous_z_top_min) < static_cast<long>(0.000001 * INTEGER_FACTOR_CM))
-                                            ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/math.h:204:25: note: candidate: double fabs(double)
-   extern double __cdecl fabs (double _X);
-                         ^~~~
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36:0,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:268:3: note: candidate: constexpr long double std::fabs(long double)
-   fabs(long double __x)
-   ^~~~
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:264:3: note: candidate: constexpr float std::fabs(float)
-   fabs(float __x)
-   ^~~~
-../../../../patchMaker.cpp:978:44: error: call of overloaded 'fabs(ap_int_base<32, true>::RType<32, true>::minus)' is ambiguous
-     if (fabs(z_top_min - previous_z_top_min) < static_cast<long>(0.000001 * INTEGER_FACTOR_CM))
-                                            ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/math.h:204:25: note: candidate: double fabs(double)
-   extern double __cdecl fabs (double _X);
-                         ^~~~
-In file included from C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h:36:0,
-                 from ../../../../patchMakerHeader.h:14,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:268:3: note: candidate: constexpr long double std::fabs(long double)
-   fabs(long double __x)
-   ^~~~
-C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath:264:3: note: candidate: constexpr float std::fabs(float)
-   fabs(float __x)
-   ^~~~
-../../../../patchMaker.cpp: In function 'void makePatch_alignedToLine(ap_int<32>, ap_int<32>, int&, bool, bool, uint8_t&, ap_int<64> (&)[5][128], int (&)[5], long int (&)[1][5][16][3], long int (&)[1][5][4][6])':
-../../../../patchMaker.cpp:1117:178: error: cannot convert 'ap_int<32> (*)[16][3]' to 'long int (*)[16][3]' for argument '9' to 'void makeSuperPoint_alignedToLine(int, long int, long int, float, int&, int, bool, long int, long int (*)[16][3], uint8_t&, ap_int<64> (&)[5][128], int (&)[5])'
-         makeSuperPoint_alignedToLine(i, z_top, apexZ0, float_middleLayers_ppl, ppl, original_ppl, leftRight,  alignmentAccuracy, init_patch, init_patch_size, GDarray, GDn_points);
-                                                                                                                                                                                  ^
-../../../../patchMaker.cpp:1147:101: error: no matching function for call to 'wedgePatch_init(ap_int<32> [5][16][3], ap_int<32> [5][4][6], ap_int<32> [5][16][3], uint8_t&, ap_int<32>&)'
-     wedgePatch_init(NPpatches_superpoints, NPpatches_parameters, init_patch, init_patch_size, apexZ0);
-                                                                                                     ^
-In file included from ../../../../patchMaker.cpp:1:0:
-../../../../patchMakerHeader.h:183:6: note: candidate: void wedgePatch_init(long int (&)[5][16][3], long int (&)[5][4][6], long int (*)[16][3], long int, long int)
- void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], long superpoint_count, long apexZ0I);
-      ^~~~~~~~~~~~~~~
-../../../../patchMakerHeader.h:183:6: note:   no known conversion for argument 1 from 'ap_int<32> [5][16][3]' to 'long int (&)[5][16][3]'
-../../../../patchMaker.cpp:71:6: note: candidate: void wedgePatch_init(long int (&)[5][16][3], long int (&)[5][4][6], ap_int<32> (*)[16][3], long int, ap_int<32>)
- void wedgePatch_init(WEDGE_PATCH, COORDINATE_TYPE superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3], long superpoint_count, COORDINATE_TYPE apexZ0I)
-      ^~~~~~~~~~~~~~~
-../../../../patchMaker.cpp:71:6: note:   no known conversion for argument 1 from 'ap_int<32> [5][16][3]' to 'long int (&)[5][16][3]'
-../../../../patchMaker.cpp:1150:110: error: invalid initialization of reference of type 'long int (&)[5][16][3]' from expression of type 'ap_int<32> [5][16][3]'
-     add_patch(NPpatches_superpoints, NPpatches_parameters, n_patches, patches_superpoints, patches_parameters);
-                                                                                                              ^
-../../../../patchMaker.cpp:277:6: note: in passing argument 1 of 'void add_patch(long int (&)[5][16][3], long int (&)[5][4][6], uint8_t&, long int (&)[1][5][16][3], long int (&)[1][5][4][6])'
- void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
-      ^~~~~~~~~
-make: *** [obj/patchMaker.o] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+   Generating csim.exe
+n_patches = 
+
+50802 7757510
+53095 9339570
+416489 10324900
+292384 10657800
+191567 12057300
+318068 12687000
+284199 13004200
+245341 13461300
+62445 13811500
+24908 13879800
+243615 13999800
+246434 15213000
+235453 16014999
+369932 16873300
+201348 21282400
+29983 22000100
+187030 -2091870
+36663 -1801750
+91499 1087730
+391716 2285220
+304885 3427260
+58322 7535950
+106065 8492000
+191700 8820150
+16945 8990010
+232750 9529470
+59272 13002800
+343101 16420799
+64122 20863000
+389075 22865500
+444117 27967700
+4299 29000100
+394124 5547700
+379993 8085410
+366406 12494400
+174838 17938700
+90351 21280900
+60225 23464100
+308024 24318800
+55531 24897600
+88527 28084600
+480207 29870200
+456157 31608900
+485274 31651700
+467000 34281800
+221628 34817300
+391119 35786900
+213550 36000100
+258692 18361800
+170274 20496000
+359976 22747600
+51480 25260400
+257780 28986800
+282236 30276300
+49744 31335500
+204882 31986000
+242967 33797200
+237089 37368800
+207081 39034500
+290614 39096600
+75582 40241300
+436402 42141200
+116488 42432800
+281846 43000100
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+270546 -4529770
+333612 -2076410
+427013 4852670
+106921 8956270
+26577 16759600
+169162 21013500
+443756 35264900
+250678 40405100
+190149 45283100
+445202 45929100
+376712 50000100
+END of patch
+50802 7757510
+53095 9339570
+416489 10324900
+292384 10657800
+191567 12057300
+318068 12687000
+284199 13004200
+245341 13461300
+62445 13811500
+24908 13879800
+243615 13999800
+246434 15213000
+235453 16014999
+369932 16873300
+201348 21282400
+29983 22000100
+187030 -2091870
+36663 -1801750
+91499 1087730
+391716 2285220
+304885 3427260
+58322 7535950
+106065 8492000
+191700 8820150
+16945 8990010
+232750 9529470
+59272 13002800
+343101 16420799
+64122 20863000
+389075 22865500
+444117 27967700
+4299 29000100
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+346851 1314610
+103831 3765700
+394124 5547700
+379993 8085410
+366406 12494400
+174838 17938700
+90351 21280900
+60225 23464100
+308024 24318800
+55531 24897600
+117848 -13799500
+145778 -7884190
+47532 -7361890
+149576 -7334860
+456474 -3312440
+394349 -2068460
+377233 -603195
+441551 -558342
+210273 645253
+202663 1171760
+258491 1455110
+433398 1945130
+218681 4222120
+164547 4879270
+307496 5436720
+418861 7569150
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+270546 -4529770
+333612 -2076410
+427013 4852670
+106921 8956270
+26577 16759600
+169162 21013500
+443756 35264900
+250678 40405100
+190149 45283100
+445202 45929100
+376712 50000100
+END of patch
+50802 7757510
+53095 9339570
+416489 10324900
+292384 10657800
+191567 12057300
+318068 12687000
+284199 13004200
+245341 13461300
+62445 13811500
+24908 13879800
+243615 13999800
+246434 15213000
+235453 16014999
+369932 16873300
+201348 21282400
+29983 22000100
+441436 -8026829
+227930 -6320050
+6443 -4529200
+89892 -2988540
+52811 -2267290
+187030 -2091870
+36663 -1801750
+91499 1087730
+391716 2285220
+304885 3427260
+58322 7535950
+106065 8492000
+191700 8820150
+16945 8990010
+232750 9529470
+59272 13002800
+413075 -31157500
+184605 -30551100
+27226 -26894200
+298926 -24848200
+225699 -23951300
+271783 -19828400
+233874 -18880600
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+346851 1314610
+281846 -43000100
+139071 -39646300
+426058 -37314300
+422604 -36933200
+300896 -34588400
+33403 -34179300
+81677 -30396200
+276075 -28937200
+233458 -22317800
+48229 -20757900
+406554 -19166800
+93394 -18957600
+105080 -18506000
+117848 -13799500
+145778 -7884190
+47532 -7361890
+376712 -50000100
+255257 -39836600
+443288 -38222700
+144328 -37274700
+408173 -35452000
+207975 -33216098
+381119 -30524000
+128145 -29007000
+280712 -28559600
+344159 -25987000
+418090 -21779100
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+END of patch
+411126 -2688180
+63945 -886969
+22390 43533
+185317 207336
+297446 1342960
+183640 1389000
+471045 2203320
+162076 2397010
+416276 4884000
+482258 5797130
+155704 6086700
+458645 6267480
+49531 7110000
+31809 7446980
+53987 7620790
+50802 7757510
+6443 -4529200
+89892 -2988540
+52811 -2267290
+187030 -2091870
+36663 -1801750
+91499 1087730
+391716 2285220
+304885 3427260
+58322 7535950
+106065 8492000
+191700 8820150
+16945 8990010
+232750 9529470
+59272 13002800
+343101 16420799
+64122 20863000
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+346851 1314610
+103831 3765700
+394124 5547700
+379993 8085410
+366406 12494400
+174838 17938700
+90351 21280900
+60225 23464100
+308024 24318800
+55531 24897600
+88527 28084600
+480207 29870200
+124308 12969500
+108783 16195900
+189097 17353700
+258692 18361800
+170274 20496000
+359976 22747600
+51480 25260400
+257780 28986800
+282236 30276300
+49744 31335500
+204882 31986000
+242967 33797200
+237089 37368800
+207081 39034500
+290614 39096600
+75582 40241300
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+270546 -4529770
+333612 -2076410
+427013 4852670
+106921 8956270
+26577 16759600
+169162 21013500
+443756 35264900
+250678 40405100
+190149 45283100
+445202 45929100
+376712 50000100
+END of patch
+411126 -2688180
+63945 -886969
+22390 43533
+185317 207336
+297446 1342960
+183640 1389000
+471045 2203320
+162076 2397010
+416276 4884000
+482258 5797130
+155704 6086700
+458645 6267480
+49531 7110000
+31809 7446980
+53987 7620790
+50802 7757510
+441436 -8026829
+227930 -6320050
+6443 -4529200
+89892 -2988540
+52811 -2267290
+187030 -2091870
+36663 -1801750
+91499 1087730
+391716 2285220
+304885 3427260
+58322 7535950
+106065 8492000
+191700 8820150
+16945 8990010
+232750 9529470
+59272 13002800
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+346851 1314610
+103831 3765700
+394124 5547700
+379993 8085410
+366406 12494400
+174838 17938700
+90351 21280900
+60225 23464100
+308024 24318800
+105080 -18506000
+117848 -13799500
+145778 -7884190
+47532 -7361890
+149576 -7334860
+456474 -3312440
+394349 -2068460
+377233 -603195
+441551 -558342
+210273 645253
+202663 1171760
+258491 1455110
+433398 1945130
+218681 4222120
+164547 4879270
+307496 5436720
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+270546 -4529770
+333612 -2076410
+427013 4852670
+106921 8956270
+26577 16759600
+169162 21013500
+443756 35264900
+250678 40405100
+190149 45283100
+445202 45929100
+376712 50000100
+END of patch
+411126 -2688180
+63945 -886969
+22390 43533
+185317 207336
+297446 1342960
+183640 1389000
+471045 2203320
+162076 2397010
+416276 4884000
+482258 5797130
+155704 6086700
+458645 6267480
+49531 7110000
+31809 7446980
+53987 7620790
+50802 7757510
+385940 -23949100
+349727 -23267900
+168194 -18775200
+195284 -16542400
+64580 -15985300
+288583 -15161800
+273425 -14615300
+22705 -12235600
+441436 -8026829
+227930 -6320050
+6443 -4529200
+89892 -2988540
+52811 -2267290
+187030 -2091870
+36663 -1801750
+91499 1087730
+213550 -36000100
+413075 -31157500
+184605 -30551100
+27226 -26894200
+298926 -24848200
+225699 -23951300
+271783 -19828400
+233874 -18880600
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+281846 -43000100
+139071 -39646300
+426058 -37314300
+422604 -36933200
+300896 -34588400
+33403 -34179300
+81677 -30396200
+276075 -28937200
+233458 -22317800
+48229 -20757900
+406554 -19166800
+93394 -18957600
+105080 -18506000
+117848 -13799500
+145778 -7884190
+47532 -7361890
+376712 -50000100
+255257 -39836600
+443288 -38222700
+144328 -37274700
+408173 -35452000
+207975 -33216098
+381119 -30524000
+128145 -29007000
+280712 -28559600
+344159 -25987000
+418090 -21779100
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+END of patch
+290313 -8516400
+398526 -7457090
+203729 -7435160
+271447 -6658500
+246174 -6477550
+357349 -6433350
+8020 -6333220
+186167 -6006090
+264397 -5467370
+221597 -4595620
+332436 -4265840
+212769 -3999810
+173608 -3574220
+331820 -3536260
+110144 -2747870
+411126 -2688180
+441436 -8026829
+227930 -6320050
+6443 -4529200
+89892 -2988540
+52811 -2267290
+187030 -2091870
+36663 -1801750
+91499 1087730
+391716 2285220
+304885 3427260
+58322 7535950
+106065 8492000
+191700 8820150
+16945 8990010
+232750 9529470
+59272 13002800
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+346851 1314610
+103831 3765700
+394124 5547700
+379993 8085410
+366406 12494400
+174838 17938700
+90351 21280900
+60225 23464100
+418861 7569150
+171300 9225950
+405556 9888220
+124308 12969500
+108783 16195900
+189097 17353700
+258692 18361800
+170274 20496000
+359976 22747600
+51480 25260400
+257780 28986800
+282236 30276300
+49744 31335500
+204882 31986000
+242967 33797200
+237089 37368800
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+270546 -4529770
+333612 -2076410
+427013 4852670
+106921 8956270
+26577 16759600
+169162 21013500
+443756 35264900
+250678 40405100
+190149 45283100
+445202 45929100
+376712 50000100
+END of patch
+290313 -8516400
+398526 -7457090
+203729 -7435160
+271447 -6658500
+246174 -6477550
+357349 -6433350
+8020 -6333220
+186167 -6006090
+264397 -5467370
+221597 -4595620
+332436 -4265840
+212769 -3999810
+173608 -3574220
+331820 -3536260
+110144 -2747870
+411126 -2688180
+22705 -12235600
+441436 -8026829
+227930 -6320050
+6443 -4529200
+89892 -2988540
+52811 -2267290
+187030 -2091870
+36663 -1801750
+91499 1087730
+391716 2285220
+304885 3427260
+58322 7535950
+106065 8492000
+191700 8820150
+16945 8990010
+232750 9529470
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+346851 1314610
+103831 3765700
+394124 5547700
+379993 8085410
+366406 12494400
+174838 17938700
+90351 21280900
+60225 23464100
+105080 -18506000
+117848 -13799500
+145778 -7884190
+47532 -7361890
+149576 -7334860
+456474 -3312440
+394349 -2068460
+377233 -603195
+441551 -558342
+210273 645253
+202663 1171760
+258491 1455110
+433398 1945130
+218681 4222120
+164547 4879270
+307496 5436720
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+270546 -4529770
+333612 -2076410
+427013 4852670
+106921 8956270
+26577 16759600
+169162 21013500
+443756 35264900
+250678 40405100
+190149 45283100
+445202 45929100
+376712 50000100
+END of patch
+290313 -8516400
+398526 -7457090
+203729 -7435160
+271447 -6658500
+246174 -6477550
+357349 -6433350
+8020 -6333220
+186167 -6006090
+264397 -5467370
+221597 -4595620
+332436 -4265840
+212769 -3999810
+173608 -3574220
+331820 -3536260
+110144 -2747870
+411126 -2688180
+4299 -29000100
+188209 -28364400
+359103 -26794700
+275810 -26399400
+262410 -26095300
+385940 -23949100
+349727 -23267900
+168194 -18775200
+195284 -16542400
+64580 -15985300
+288583 -15161800
+273425 -14615300
+22705 -12235600
+441436 -8026829
+227930 -6320050
+6443 -4529200
+213550 -36000100
+413075 -31157500
+184605 -30551100
+27226 -26894200
+298926 -24848200
+225699 -23951300
+271783 -19828400
+233874 -18880600
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+281846 -43000100
+139071 -39646300
+426058 -37314300
+422604 -36933200
+300896 -34588400
+33403 -34179300
+81677 -30396200
+276075 -28937200
+233458 -22317800
+48229 -20757900
+406554 -19166800
+93394 -18957600
+105080 -18506000
+117848 -13799500
+145778 -7884190
+47532 -7361890
+376712 -50000100
+255257 -39836600
+443288 -38222700
+144328 -37274700
+408173 -35452000
+207975 -33216098
+381119 -30524000
+128145 -29007000
+280712 -28559600
+344159 -25987000
+418090 -21779100
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+END of patch
+252196 -20450700
+336510 -19239900
+320703 -18020600
+151049 -16495100
+94716 -15953100
+452079 -15874600
+328301 -15814600
+7947 -14783300
+434440 -14332100
+359494 -14171700
+40767 -14125500
+446834 -13665200
+475091 -12510500
+327951 -10465500
+288482 -9574560
+290313 -8516400
+262410 -26095300
+385940 -23949100
+349727 -23267900
+168194 -18775200
+195284 -16542400
+64580 -15985300
+288583 -15161800
+273425 -14615300
+22705 -12235600
+441436 -8026829
+227930 -6320050
+6443 -4529200
+89892 -2988540
+52811 -2267290
+187030 -2091870
+36663 -1801750
+27226 -26894200
+298926 -24848200
+225699 -23951300
+271783 -19828400
+233874 -18880600
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+346851 1314610
+103831 3765700
+394124 5547700
+149576 -7334860
+456474 -3312440
+394349 -2068460
+377233 -603195
+441551 -558342
+210273 645253
+202663 1171760
+258491 1455110
+433398 1945130
+218681 4222120
+164547 4879270
+307496 5436720
+418861 7569150
+171300 9225950
+405556 9888220
+124308 12969500
+381119 -30524000
+128145 -29007000
+280712 -28559600
+344159 -25987000
+418090 -21779100
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+270546 -4529770
+333612 -2076410
+427013 4852670
+106921 8956270
+26577 16759600
+169162 21013500
+END of patch
+252196 -20450700
+336510 -19239900
+320703 -18020600
+151049 -16495100
+94716 -15953100
+452079 -15874600
+328301 -15814600
+7947 -14783300
+434440 -14332100
+359494 -14171700
+40767 -14125500
+446834 -13665200
+475091 -12510500
+327951 -10465500
+288482 -9574560
+290313 -8516400
+349727 -23267900
+168194 -18775200
+195284 -16542400
+64580 -15985300
+288583 -15161800
+273425 -14615300
+22705 -12235600
+441436 -8026829
+227930 -6320050
+6443 -4529200
+89892 -2988540
+52811 -2267290
+187030 -2091870
+36663 -1801750
+91499 1087730
+391716 2285220
+27226 -26894200
+298926 -24848200
+225699 -23951300
+271783 -19828400
+233874 -18880600
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+346851 1314610
+103831 3765700
+394124 5547700
+276075 -28937200
+233458 -22317800
+48229 -20757900
+406554 -19166800
+93394 -18957600
+105080 -18506000
+117848 -13799500
+145778 -7884190
+47532 -7361890
+149576 -7334860
+456474 -3312440
+394349 -2068460
+377233 -603195
+441551 -558342
+210273 645253
+202663 1171760
+381119 -30524000
+128145 -29007000
+280712 -28559600
+344159 -25987000
+418090 -21779100
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+270546 -4529770
+333612 -2076410
+427013 4852670
+106921 8956270
+26577 16759600
+169162 21013500
+END of patch
+252196 -20450700
+336510 -19239900
+320703 -18020600
+151049 -16495100
+94716 -15953100
+452079 -15874600
+328301 -15814600
+7947 -14783300
+434440 -14332100
+359494 -14171700
+40767 -14125500
+446834 -13665200
+475091 -12510500
+327951 -10465500
+288482 -9574560
+290313 -8516400
+4299 -29000100
+188209 -28364400
+359103 -26794700
+275810 -26399400
+262410 -26095300
+385940 -23949100
+349727 -23267900
+168194 -18775200
+195284 -16542400
+64580 -15985300
+288583 -15161800
+273425 -14615300
+22705 -12235600
+441436 -8026829
+227930 -6320050
+6443 -4529200
+213550 -36000100
+413075 -31157500
+184605 -30551100
+27226 -26894200
+298926 -24848200
+225699 -23951300
+271783 -19828400
+233874 -18880600
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+281846 -43000100
+139071 -39646300
+426058 -37314300
+422604 -36933200
+300896 -34588400
+33403 -34179300
+81677 -30396200
+276075 -28937200
+233458 -22317800
+48229 -20757900
+406554 -19166800
+93394 -18957600
+105080 -18506000
+117848 -13799500
+145778 -7884190
+47532 -7361890
+376712 -50000100
+255257 -39836600
+443288 -38222700
+144328 -37274700
+408173 -35452000
+207975 -33216098
+381119 -30524000
+128145 -29007000
+280712 -28559600
+344159 -25987000
+418090 -21779100
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+END of patch
+29983 -22000100
+332636 -21486900
+473994 -20567800
+252196 -20450700
+336510 -19239900
+320703 -18020600
+151049 -16495100
+94716 -15953100
+452079 -15874600
+328301 -15814600
+7947 -14783300
+434440 -14332100
+359494 -14171700
+40767 -14125500
+446834 -13665200
+475091 -12510500
+4299 -29000100
+188209 -28364400
+359103 -26794700
+275810 -26399400
+262410 -26095300
+385940 -23949100
+349727 -23267900
+168194 -18775200
+195284 -16542400
+64580 -15985300
+288583 -15161800
+273425 -14615300
+22705 -12235600
+441436 -8026829
+227930 -6320050
+6443 -4529200
+213550 -36000100
+413075 -31157500
+184605 -30551100
+27226 -26894200
+298926 -24848200
+225699 -23951300
+271783 -19828400
+233874 -18880600
+178622 -15087300
+88554 -12129600
+347562 -10466700
+386117 -4565360
+27564 -2538490
+338621 -1380570
+203082 -393909
+372757 161288
+281846 -43000100
+139071 -39646300
+426058 -37314300
+422604 -36933200
+300896 -34588400
+33403 -34179300
+81677 -30396200
+276075 -28937200
+233458 -22317800
+48229 -20757900
+406554 -19166800
+93394 -18957600
+105080 -18506000
+117848 -13799500
+145778 -7884190
+47532 -7361890
+376712 -50000100
+255257 -39836600
+443288 -38222700
+144328 -37274700
+408173 -35452000
+207975 -33216098
+381119 -30524000
+128145 -29007000
+280712 -28559600
+344159 -25987000
+418090 -21779100
+173301 -20822800
+35039 -19229200
+445251 -18184200
+37797 -17029800
+275266 -12563500
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+32767 -1380026309
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 0
+0 0
+13767 -597014223
+0 0
+32767 -1422663680
+32767 -1423704064
+32767 -1422663664
+0 4370
+0 0
+32767 -1380026525
+0 0
+32767 -1423703824
+0 0
+32767 -1380196532
+32767 -1422663680
+32767 -1422663664
+0 21692416
+0 21731960
+0 -1073741686
+0 0
+32767 -1422663680
+0 82
+0 4352
+0 21731968
+0 0
+0 1
+0 21731952
+1 85
+0 0
+32767 -1423704064
+0 21692752
+1 0
+0 82
+0 127
+0 21731952
+32767 -1422663664
+0 82
+32767 -1423703824
+32767 -1422663664
+0 20042416
+0 1
+0 3
+0 21692752
+0 82
+0 21693224
+0 21692752
+0 20041144
+0 85
+0 20042768
+0 8
+32767 -1379194400
+0 82
+0 5505106
+32767 -1379194496
+0 0
+0 0
+1280 758216
+0 0
+13767 -597013839
+0 48
+0 4370
+0 0
+0 1
+0 21694294
+0 0
+0 1426063445
+0 2
+32767 33554434
+0 1
+0 1048576
+0 4096
+0 20041240
+32767 -1423703824
+0 33554434
+0 20042408
+0 2
+0 20041344
+0 20042768
+0 20041264
+0 4370
+END of patch
+0 2621440
+0 0
+0 48
+0 32
+0 8
+0 21692416
+0 3
+32767 -1380280201
+0 21692416
+0 2621442
+0 32
+0 0
+0 21693256
+0 20041236
+3 0
+32767 -1422663680
+0 0
+32767 -1380294560
+0 0
+0 0
+0 4980810
+32767 -1379194576
+0 233504
+32767 -1380279303
+0 1
+0 1
+0 198172
+32767 -1380263989
+0 196608
+0 20042496
+0 32
+0 20042496
+32767 -1422728959
+0 20042480
+13767 -597013471
+32767 -1380276259
+0 0
+0 21719440
+0 21731008
+0 21731952
+0 25
+32767 -1380281044
+0 0
+0 21719440
+0 0
+0 0
+0 20041752
+0 0
+0 0
+0 0
+0 0
+0 0
+0 16843008
+16842752 512
+4522053 4980993
+0 0
+37076676 76
+0 512
+9 0
+32767 22
+0 0
+0 0
+0 20042208
+0 21731280
+0 20042968
+0 20052224
+-1 0
+0 37076676
+0 0
+0 0
+0 20042264
+0 21731952
+0 20051440
+0 21731008
+0 21731968
+0 16777292
+0 20042496
+0 1441812
+0 2147352624
+0 1835036
+END of patch
+0 219800
+0 0
+0 0
+0 0
+0 20042208
+0 0
+0 20042284
+0 2621440
+0 20042292
+0 20042292
+0 21719908
+0 21719440
+0 21731968
+0 21719440
+0 20042290
+0 2147352624
+0 0
+0 0
+0 72
+32767 1
+0 0
+0 0
+0 112
+-1 -1
+-1 -1
+32767 -1379797983
+0 0
+32767 -1380196532
+0 21692416
+0 21731752
+0 21692416
+0 21782264
+0 20042384
+0 0
+0 3522560
+0 410
+0 20042240
+0 21782272
+0 0
+0 1
+0 21782256
+0 299
+0 0
+0 4370
+0 21692752
+0 127
+0 282
+0 1023
+0 21782256
+0 20042576
+0 410
+0 327680
+0 2
+3 963516016
+0 1204
+0 128
+0 21692752
+0 410
+0 21734268
+0 21692752
+0 0
+0 427
+0 0
+0 3
+0 333724
+0 410
+0 20042401
+32767 -1380268100
+0 0
+0 0
+0 20042401
+0 20042624
+0 20042428
+0 272
+0 0
+0 1
+1204 21731952
+0 21732146
+0 333724
+3 -1442840149
+END of patch
+0 0
+3 33554434
+0 2
+1 963516016
+0 3522560
+13767 1375731794
+0 20043024
+0 83886085
+0 0
+0 20043168
+0 20042752
+32767 -1380269112
+0 20042944
+0 20044288
+0 0
+0 0
+0 272
+0 258
+0 2
+0 21692416
+0 17
+32767 -1380207539
+0 21692416
+32767 2
+0 258
+0 0
+0 21693368
+0 20042628
+3 256
+248 248
+0 124
+0 34078968
+0 20042976
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+248 0
+0 260
+0 0
+0 20042784
+0 20042784
+0 2
+13767 -597011807
+32767 -1379216880
+0 20043792
+0 0
+0 258
+0 0
+0 8
+0 248
+32767 -1380273608
+0 0
+0 0
+0 20044264
+0 0
+0 20042896
+0 20042944
+2 20043008
+0 20042976
+13767 -597032960
+0 0
+0 34078968
+0 20042976
+0 2
+0 0
+0 20043808
+4 856031534
+0 21782528
+32767 -1380227951
+0 21692416
+0 0
+0 21782256
+0 410
+7602268 410
+0 410
+END of patch
+7602281 4653160
+6029410 7667784
+6881280 6357249
+6357072 6815744
+0 427
+7471205 7012449
+0 21782272
+6488180 6357072
+1 5046376
+7602271 7471205
+0 427
+0 0
+7077999 7536732
+7274601 7602293
+6488156 3211374
+6029421 6881395
+7602291 7929939
+0 21782256
+7471221 7274611
+6029427 6619235
+0 410
+6619256 6619182
+7209077 7143470
+0 427
+0 0
+0 0
+0 0
+0 0
+0 0
+0 427
+0 0
+0 -1694498406
+0 0
+0 83886085
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 20044000
+0 21782256
+0 21782272
+0 0
+0 0
+32767 -1380230239
+0 21692416
+0 21692416
+0 0
+0 21692416
+0 0
+0 0
+0 0
+0 0
+0 0
+32767 -1379895693
+13767 -597011039
+0 0
+0 20044000
+0 0
+0 20043865
+0 20044008
+0 17301512
+0 20043792
+0 20044000
+0 20044008
+0 17301512
+0 0
+0 21782272
+32767 -1380235343
+0 0
+0 21692416
+0 20043865
+0 0
+0 0
+0 20045248
+0 21782272
+32767 -1380021371
+END of patch
+0 -1073741766
+0 8
+0 0
+0 0
+0 5
+0 96
+0 0
+0 0
+0 72
+0 1
+0 0
+0 0
+0 0
+0 0
+0 16908544
+0 21782272
+0 0
+0 0
+0 0
+0 0
+0 48
+0 0
+0 20043792
+32767 64
+0 0
+0 0
+0 1024
+0 2097152
+0 20044232
+0 20044296
+0 4194304
+0 0
+0 20044200
+32767 -1380021806
+0 0
+0 0
+0 20047168
+32767 -1380321001
+0 0
+0 20044016
+0 0
+0 0
+0 0
+32767 -1380156935
+0 20047008
+0 4194304
+-1 -1
+0 0
+0 -1073741766
+32767 -1380167663
+0 0
+0 20046128
+0 20046128
+0 0
+0 62190
+0 1
+0 -1073741766
+0 0
+0 20044200
+0 16777274
+-1073741766 20044544
+16 -219283200
+0 46006520
+0 20045248
+0 4194304
+-1 -1
+702 204
+5 1
+0 20047008
+0 0
+0 0
+0 0
+0 21715204
+0 3932184
+0 20045184
+0 0
+0 0
+0 0
+0 0
+0 0
+END of patch
+0 20046128
+0 0
+0 20047040
+0 0
+0 0
+0 46006272
+0 20045248
+0 0
+0 0
+32767 -1383595800
+0 72
+0 1
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 20044680
+5570652 3801155
+7536754 6619251
+7340129 7471196
+7536757 6553705
+4456540 7471205
+7602283 7536741
+7602268 7340143
+7536745 7209057
+7602281 4653160
+6029410 7667784
+6881390 6357108
+6357072 6815859
+5046376 6488180
+7471205 7012449
+6029395 4980808
+6488180 6357072
+7012449 5046376
+7602271 7471205
+7536745 7209057
+7602281 4653160
+7077999 7536732
+7274601 7602293
+6488156 3211374
+6029421 6881395
+7077993 7667712
+0 6029412
+0 0
+0 0
+0 21754352
+32767 -1380248619
+0 21729088
+32767 -1378893248
+0 21729200
+0 0
+0 20045968
+0 20045064
+0 3
+0 512
+0 20044848
+32767 -1380248992
+0 -160956368
+0 512
+0 20045552
+32767 -1380256377
+0 0
+32767 -1380280201
+0 14155802
+0 20045608
+0 0
+32767 -1379941580
+0 20045064
+32767 -1379985069
+0 512
+0 20045825
+0 1
+0 21729088
+0 21728096
+32767 -1380256265
+0 0
+0 21729088
+END of patch
+0 20046248
+0 512
+0 20045825
+32767 -1380254748
+0 20045184
+0 20045552
+0 20045552
+0 20045552
+0 21728096
+0 20045064
+0 20045184
+32767 -1380290885
+13767 -597008911
+0 21729088
+0 0
+0 20046248
+32767 -1418046000
+0 0
+32767 -1385417568
+32767 -1380291155
+0 20045552
+0 21728096
+0 21728096
+0 20045968
+0 21728096
+0 21728096
+0 20046081
+0 20045184
+512 0
+6619256 6619182
+0 72
+0 1
+0 0
+0 0
+0 112
+-1 -1
+-1 -1
+32767 -1380291361
+32767 -1380291253
+7536757 6553705
+4456540 16777216
+0 20045296
+2949236 7864320
+7798829 7536749
+6750253 7209065
+6553645 6881380
+3211372 2949219
+3145773 3276845
+7077996 6553646
+32767 -1379860480
+6029395 4980808
+6488180 6357072
+7012449 5046376
+7602271 7471205
+7536745 7209057
+7602281 4653160
+0 20045776
+0 0
+0 3522560
+32767 -1380265413
+0 20045820
+32767 -1380267183
+0 20046016
+0 333724
+32767 -1379955040
+6619256 6619182
+7209077 7143470
+0 2621440
+0 2
+0 1023
+13767 -597008575
+32767 -1380227951
+0 3518465
+0 20045968
+0 16777282
+0 20045568
+5701724 3801155
+5177412 5111881
+5439580 5439575
+4522068 5439577
+END of patch
+INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************
