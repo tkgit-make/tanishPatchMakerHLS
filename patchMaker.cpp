@@ -1,6 +1,6 @@
 #include "patchMakerHeader.h"
 
-void initWedgeSuperPoint(long (&wsp) [MAX_POINTS_IN_SUPERPOINT][3], long points[MAX_POINTS_PER_LAYER][3], int pointCount)
+void initWedgeSuperPoint(SPACEPOINT_TYPE (&wsp) [MAX_POINTS_IN_SUPERPOINT], SPACEPOINT_TYPE points[MAX_POINTS_PER_LAYER], int pointCount)
 {
     // more efficient approach
     // instead of making a temp array and then transferring contents, add the values directly
@@ -8,25 +8,22 @@ void initWedgeSuperPoint(long (&wsp) [MAX_POINTS_IN_SUPERPOINT][3], long points[
 initWedgeSP_loop:
     for (int i = 0; i < MAX_POINTS_IN_SUPERPOINT; i++)
     {
-        for(int z = 0; z < 3; z++)
-        {
-            wsp[i][z] = points[i][z];
-        }
+        wsp[i] = points[i];
     }
 }
 
 // operator overloading not allowed in C, write separate method to check equality
-int areWedgeSuperPointsEqual(long wsp1[MAX_POINTS_IN_SUPERPOINT][3], long wsp2[MAX_POINTS_IN_SUPERPOINT][3])
+int areWedgeSuperPointsEqual(SPACEPOINT_TYPE wsp1[MAX_POINTS_IN_SUPERPOINT], SPACEPOINT_TYPE wsp2[MAX_POINTS_IN_SUPERPOINT])
 {
     //return (wsp1->min == wsp2->min) && (wsp1->max == wsp2->max);
     const long tolerance = static_cast<long>(0.0001 * INTEGER_FACTOR_CM);
-    return (static_cast<long>(fabs(wsp1[0][2] - wsp2[0][2])) < tolerance) && (static_cast<long>(fabs(wsp1[MAX_POINTS_IN_SUPERPOINT - 1][2] - wsp2[MAX_POINTS_IN_SUPERPOINT - 1][2])) < tolerance);
+    return (static_cast<long>(fabs((static_cast<long>(decodeZcoordinate(wsp1[0]) - decodeZcoordinate(wsp2[0])))) < tolerance) && (static_cast<long>(fabs((static_cast<long>(decodeZcoordinate(wsp1[MAX_POINTS_IN_SUPERPOINT - 1]) - decodeZcoordinate(wsp2[MAX_POINTS_IN_SUPERPOINT - 1])))) < tolerance);
 }
 
 void getParallelograms(WEDGE_PATCH)
 {
-    long z1_min = max(wp_superpoints[0][0][2], -1 * trapezoid_edges[0]);
-    long z1_max = min(wp_superpoints[0][MAX_POINTS_IN_SUPERPOINT - 1][2], trapezoid_edges[0]);
+    COORDINATE_TYPE z1_min = max(wp_superpoints[0][0][2], -1 * trapezoid_edges[0]);
+    COORDINATE_TYPE z1_max = min(wp_superpoints[0][MAX_POINTS_IN_SUPERPOINT - 1][2], trapezoid_edges[0]);
 
     if (z1_min > z1_max)
     {
@@ -45,8 +42,8 @@ getParallelograms_loop:
     {
         long j = static_cast<long>(i) + 1;
 
-        long z_j_min = wp_superpoints[i][0][2];
-        long z_j_max = wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][2];
+        COORDINATE_TYPE z_j_min = wp_superpoints[i][0][2];
+        COORDINATE_TYPE z_j_max = wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][2];
 
         long a = straightLineProjectorFromLayerIJtoK(z1_min, z_j_max, 1, j, num_layers);
         long b = straightLineProjectorFromLayerIJtoK(z1_max, z_j_max, 1, j, num_layers);
@@ -68,7 +65,7 @@ getParallelograms_loop:
     }
 }
 
-void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3], long superpoint_count, long apexZ0I)
+void wedgePatch_init(WEDGE_PATCH, COORDINATE_TYPE superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3], long superpoint_count, COORDINATE_TYPE apexZ0I)
 {
     wp_parameters[4][0][0] = apexZ0I;
 
@@ -96,7 +93,7 @@ void wedgePatch_init(WEDGE_PATCH, long superpointsI[MAX_SUPERPOINTS_IN_PATCH][MA
     get_acceptanceCorners(wp_superpoints, wp_parameters);
 }
 
-long straightLineProjectorFromLayerIJtoK(long z_i, long z_j, int i, int j, int k)
+long straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDINATE_TYPE z_j, int i, int j, int k)
 {
     long radius_i = 0;
     long radius_j = 0;
@@ -132,10 +129,10 @@ long straightLineProjectorFromLayerIJtoK(long z_i, long z_j, int i, int j, int k
     return z_i + static_cast<long>(z_j * radii_leverArmF) - static_cast<long>(z_i * radii_leverArmF);
 }
 
-void getShadows(WEDGE_PATCH, long zTopMin, long zTopMax)
+void getShadows(WEDGE_PATCH, COORDINATE_TYPE zTopMin, COORDINATE_TYPE zTopMax)
 {
-    long zTop_min;
-    long zTop_max;
+    COORDINATE_TYPE zTop_min;
+    COORDINATE_TYPE zTop_max;
     if (num_layers - 1 < 0)
     {
         zTop_min = zTopMin;
@@ -147,16 +144,16 @@ void getShadows(WEDGE_PATCH, long zTopMin, long zTopMax)
         zTop_max = min(zTopMax, trapezoid_edges[num_layers - 1]);
     }
 
-    long topL_jL[MAX_SUPERPOINTS_IN_PATCH - 1];
-    long topL_jR[MAX_SUPERPOINTS_IN_PATCH - 1];
-    long topR_jL[MAX_SUPERPOINTS_IN_PATCH - 1];
-    long topR_jR[MAX_SUPERPOINTS_IN_PATCH - 1];
+    COORDINATE_TYPE topL_jL[MAX_SUPERPOINTS_IN_PATCH - 1];
+    COORDINATE_TYPE topL_jR[MAX_SUPERPOINTS_IN_PATCH - 1];
+    COORDINATE_TYPE topR_jL[MAX_SUPERPOINTS_IN_PATCH - 1];
+    COORDINATE_TYPE topR_jR[MAX_SUPERPOINTS_IN_PATCH - 1];
 getShadows_loop:
     for (int i = 0; i < static_cast<int>(wp_parameters[4][1][0]) - 1; ++i)
     {
         int j = i + 1;
-        long z_j_min = wp_superpoints[i][0][2];
-        long z_j_max = wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][2];
+        COORDINATE_TYPE z_j_min = wp_superpoints[i][0][2];
+        COORDINATE_TYPE z_j_max = wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][2];
 
         topL_jL[i] = straightLineProjectorFromLayerIJtoK(zTop_min, z_j_min, num_layers, j, 1);
         topL_jR[i] = straightLineProjectorFromLayerIJtoK(zTop_min, z_j_max, num_layers, j, 1);
@@ -199,10 +196,10 @@ void get_acceptanceCorners(WEDGE_PATCH)
     wp_parameters[3][0][0] = true;
     wp_parameters[3][3][0] = false;
 
-    long a_corner_min = LONG_MAX;
-    long b_corner_min = LONG_MAX;
-    long c_corner_max = LONG_MIN;
-    long d_corner_max = LONG_MIN;
+    COORDINATE_TYPE a_corner_min = LONG_MAX;
+    COORDINATE_TYPE b_corner_min = LONG_MAX;
+    COORDINATE_TYPE c_corner_max = LONG_MIN;
+    COORDINATE_TYPE d_corner_max = LONG_MIN;
 
     // getting min or max corners in all parallelograms
 minMaxAcceptanceCorners_loop:
@@ -407,7 +404,7 @@ void delete_patch(int index, index_type &n_patches, GPATCHES)
 }
 
 // can't provide default parameters
-index_type get_index_from_z(int layer, long z_value, GDARRAY)
+index_type get_index_from_z(int layer, COORDINATE_TYPE z_value, GDARRAY)
 {
     // c doesn't support string comparison directly, using integer comparison for effiency
     // CLOSEST = 11, ABOVE = 12, BELOW = 13
@@ -416,7 +413,7 @@ index_type get_index_from_z(int layer, long z_value, GDARRAY)
 getIndexFromZ_loop:
     for (index_type i = 0; i < GDn_points[layer]; i++)
     {
-        long diff = static_cast<long>(fabs(GDarray[layer][i][2] - z_value)); // absolute difference
+        long diff = static_cast<long>(abs(decodeZcoordinate(GDarray[layer][i]) - z_value)); // absolute difference
         if (diff < minVal)
         {
             minVal = diff;
@@ -428,28 +425,72 @@ getIndexFromZ_loop:
     return index;
 }
 
-void makePatches_ShadowQuilt_fromEdges(long apexZ0, int stop, int ppl, bool leftRight, index_type &n_patches, GDARRAY, GPATCHES) // TOP-LEVEL FUNCTION FOR VITIS
+void initializeArrays(GPATCHES)
 {
-#pragma HLS array_partition variable=patches_superpoints
-#pragma HLS array_partition variable=patches_parameters
-    bool fix42 = true;
-    apexZ0 = trapezoid_edges[0];
-    long saved_apexZ0;
-shadowQuilt_loop:
-    while (apexZ0 > -1 * trapezoid_edges[0]) //consider how this works when we are expanding instead of retracting the trapezoid_edges
+	initArraysSPloop1:
+    for(int a = 0; a < MAX_PATCHES; a++)
     {
-        apexZ0 = solveNextColumn(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
-        saved_apexZ0 = apexZ0;
+    	initArraysSPloop2:
+        for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
+        {
+        	initArraysSPloop3:
+            for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+            {
+            	initArraysSPloop4:
+                for(int d = 0; d < 3; d++)
+                {
+                    patches_superpoints[a][b][c][d] = 0;
+                }
+            }
+        }
+    }
+
+    initArraysPPloop1:
+    for(int a = 0; a < MAX_PATCHES; a++)
+    {
+    	initArraysPPloop2:
+        for(int b = 0; b < 5; b++)
+        {
+        	initArraysPPloop3:
+            for(int c = 0; c < MAX_PARALLELOGRAMS_PER_PATCH; c++)
+            {
+            	initArraysPPloop4:
+                for(int d = 0; d < 6; d++)
+                {
+                    patches_parameters[a][b][c][d] = 0;
+                }
+            }
+        }
     }
 }
 
-long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
+void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int (&GDn_points) [MAX_LAYERS], COORDINATE_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
 {
-    long z_top_min = -1 * top_layer_lim;
+#pragma HLS ARRAY_RESHAPE variable=patches_superpoints dim=3 complete
+//#pragma HLS ARRAY_RESHAPE variable=patches_parameters dim=0 complete
+    bool fix42 = true;
+    COORDINATE_TYPE apexZ0 = trapezoid_edges[0];
+    COORDINATE_TYPE saved_apexZ0;
+    //initializeArrays(patches_superpoints, patches_parameters);
+    n_patches = 1;
+    //change something in GPATCHES so that VITIS synthesizes
+    return;
+    /*
+shadowQuilt_loop:
+    while (apexZ0 > -1 * trapezoid_edges[0]) //consider how this works when we are expanding instead of retracting the trapezoid_edges
+    {
+        apexZ0 = solveNextColumn(apexZ0, stop, ppl, leftRight, fix42, saved_apexZ0, n_patches, GDarray[0], GDn_points, patches_superpoints, patches_parameters);
+        saved_apexZ0 = apexZ0;
+    } */
+}
 
-    long complementary_apexZ0 = 0;
+COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int stop, int ppl, bool leftRight, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
+{
+    COORDINATE_TYPE z_top_min = -1 * top_layer_lim;
+
+    COORDINATE_TYPE complementary_apexZ0 = 0;
     index_type first_row_count = 0;
-    long c_corner = LONG_MAX;
+    COORDINATE_TYPE c_corner = LONG_MAX;
 
     long z_top_max = top_layer_lim;
 
@@ -459,7 +500,7 @@ long solveNextColumn(long apexZ0, int stop, int ppl, bool leftRight, bool fix42,
                         ));
     }
 
-    index_type nPatchesInColumn = 0;
+    int nPatchesInColumn = 0;
     long projectionOfCornerToBeam = 0;
     //returnArray[6] = {nPatchesInColumn, c_corner, projectionOfCornerToBeam, z_top_min, z_top_max, complementary_apexZ0}
     //remove nPatchesInColumn once debugging finishes
@@ -478,10 +519,10 @@ solveNextColumn_loop:
     return apexZ0;
 }
 
-bool getSolveNextColumnWhileConditional(long c_corner, int nPatchesInColumn,
+bool getSolveNextColumnWhileConditional(COORDINATE_TYPE c_corner, int nPatchesInColumn,
                                         long projectionOfCornerToBeam) { return (c_corner > -1 * trapezoid_edges[num_layers - 1]) && (nPatchesInColumn < 100000000) && (projectionOfCornerToBeam < beam_axis_lim); }
 
-void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix42, long &saved_apexZ0, int &nPatchesInColumn, long &c_corner, long &projectionOfCornerToBeam, long &z_top_min, long &z_top_max, long &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
+void solveNextPatchPair(COORDINATE_TYPE apexZ0, int stop, int ppl, bool leftRight, bool fix42, COORDINATE_TYPE &saved_apexZ0, int &nPatchesInColumn, COORDINATE_TYPE &c_corner, long &projectionOfCornerToBeam, COORDINATE_TYPE &z_top_min, COORDINATE_TYPE &z_top_max, COORDINATE_TYPE &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
 {
     nPatchesInColumn++;
     #if PRINT_OUTS == true
@@ -527,8 +568,8 @@ void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix
         }
     #endif
 
-    long original_c = patches_parameters[lastPatchIndex][2][2][1];
-    long original_d = patches_parameters[lastPatchIndex][2][3][1];
+    COORDINATE_TYPE original_c = patches_parameters[lastPatchIndex][2][2][1];
+    COORDINATE_TYPE original_d = patches_parameters[lastPatchIndex][2][3][1];
 
     c_corner = original_c;
 
@@ -562,7 +603,7 @@ void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix
         }
     }
 
-    long seed_apexZ0 = apexZ0;
+    COORDINATE_TYPE seed_apexZ0 = apexZ0;
     projectionOfCornerToBeam = straightLineProjectorFromLayerIJtoK(patches_parameters[lastPatchIndex][2][2][1], patches_parameters[lastPatchIndex][2][2][0], num_layers, 1, 0);
     bool squarePatch_alternate1 = (patches_parameters[lastPatchIndex][2][0][1] > z_top_max) && (patches_parameters[lastPatchIndex][2][1][1] > z_top_max) && (patches_parameters[lastPatchIndex][3][0][0]);
     bool squarePatch_alternate2 = (patches_parameters[lastPatchIndex][2][0][1] > z_top_max) && (patches_parameters[lastPatchIndex][3][0][0]);
@@ -605,15 +646,15 @@ void solveNextPatchPair(long apexZ0, int stop, int ppl, bool leftRight, bool fix
             printf("complementary: [%ld, %ld]\n", patches_parameters[lastPatchIndex][2][3][0], patches_parameters[lastPatchIndex][2][3][1]);
         #endif
 
-        long complementary_a = patches_parameters[lastPatchIndex][2][0][1];
-        long complementary_b = patches_parameters[lastPatchIndex][2][1][1];
+        COORDINATE_TYPE complementary_a = patches_parameters[lastPatchIndex][2][0][1];
+        COORDINATE_TYPE complementary_b = patches_parameters[lastPatchIndex][2][1][1];
 
         long white_space_height = max(original_c - complementary_a, original_d - complementary_b);
         long previous_white_space_height = -1 * INTEGER_FACTOR_CM;
         int counter = 0;
         int counterUpshift = 0;
         index_type current_z_top_index = -1;
-        long previous_z_top_min = -999 * INTEGER_FACTOR_CM;
+        COORDINATE_TYPE previous_z_top_min = -999 * INTEGER_FACTOR_CM;
     solvePatchPair_loop:
         while (getSolveNextPatchPairWhileCondition(lastPatchIndex, repeat_patch, repeat_original, white_space_height,
                                                    previous_white_space_height, current_z_top_index, GDarray, GDn_points, patches_superpoints, patches_parameters))
@@ -651,7 +692,7 @@ bool getSolveNextPatchPairWhileCondition(int lastPatchIndex, bool repeat_patch, 
                !(repeat_patch) && !(repeat_original);
 }
 
-void makeThirdPatch(index_type lastPatchIndex, long z_top_min, long z_top_max, long complementary_apexZ0, long apexZ0, int ppl, index_type &n_patches, GDARRAY, GPATCHES)
+void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDINATE_TYPE z_top_max, COORDINATE_TYPE complementary_apexZ0, COORDINATE_TYPE apexZ0, int ppl, index_type &n_patches, GDARRAY, GPATCHES)
 {
     index_type secondLastPatchIndex = lastPatchIndex - 1;
 
@@ -659,35 +700,35 @@ void makeThirdPatch(index_type lastPatchIndex, long z_top_min, long z_top_max, l
     getShadows(patches_superpoints[lastPatchIndex], patches_parameters[lastPatchIndex], z_top_min, z_top_max);
     getShadows(patches_superpoints[secondLastPatchIndex], patches_parameters[secondLastPatchIndex], z_top_min, z_top_max);
 
-    long original_topR_jL = patches_parameters[secondLastPatchIndex][1][2][0];
+    COORDINATE_TYPE original_topR_jL = patches_parameters[secondLastPatchIndex][1][2][0];
     bool originalPartialTop = (original_topR_jL > complementary_apexZ0) && (original_topR_jL < apexZ0) &&
                                 (fabs(straightLineProjectorFromLayerIJtoK(original_topR_jL, z_top_max, 1, num_layers, 0)) < 20 * beam_axis_lim);
 
-    long original_topL_jL = patches_parameters[secondLastPatchIndex][1][0][0];
+    COORDINATE_TYPE original_topL_jL = patches_parameters[secondLastPatchIndex][1][0][0];
 
     bool originalPartialBottom = (original_topL_jL > complementary_apexZ0) && ((original_topL_jL - apexZ0) < static_cast<long>(-0.0001 * INTEGER_FACTOR_CM)) &&
                                     (fabs(straightLineProjectorFromLayerIJtoK(original_topL_jL,z_top_min, 1, num_layers, 0)) < 20 * beam_axis_lim);
 
-    long complementary_topR_jR = patches_parameters[lastPatchIndex][1][3][0];
+    COORDINATE_TYPE complementary_topR_jR = patches_parameters[lastPatchIndex][1][3][0];
 
     bool complementaryPartialTop = ((complementary_topR_jR - complementary_apexZ0) > static_cast<long>(0.00005 * INTEGER_FACTOR_CM)) && (complementary_topR_jR < apexZ0) && // The use of 0.00005 is "hack" to prevent a couple of wedges from creating extra patches,
                                     (fabs(straightLineProjectorFromLayerIJtoK(complementary_topR_jR, z_top_max, 1, num_layers, 0)) < 20 * beam_axis_lim);
 
-    long complementary_topL_jR = patches_parameters[lastPatchIndex][1][1][0];
+    COORDINATE_TYPE complementary_topL_jR = patches_parameters[lastPatchIndex][1][1][0];
 
     bool complementaryPartialBottom = (complementary_topL_jR > complementary_apexZ0) && ((complementary_topL_jR - apexZ0) < static_cast<long>(-0.0001 * INTEGER_FACTOR_CM)) &&
                                         (fabs(straightLineProjectorFromLayerIJtoK(complementary_topL_jR,z_top_min, 1, num_layers, 0)) < 20 * beam_axis_lim);
 
-    long horizontalShiftTop = original_topR_jL - complementary_topR_jR;
-    long horizontalShiftBottom = original_topL_jL - complementary_topL_jR;
+    COORDINATE_TYPE horizontalShiftTop = original_topR_jL - complementary_topR_jR;
+    COORDINATE_TYPE horizontalShiftBottom = original_topL_jL - complementary_topL_jR;
 
-    long complementary_topR_jL = patches_parameters[lastPatchIndex][1][2][0];
-    long complementary_topL_jL = patches_parameters[lastPatchIndex][1][0][0];
-    long original_topR_jR = patches_parameters[secondLastPatchIndex][1][3][0];
-    long original_topL_jR = patches_parameters[secondLastPatchIndex][1][1][0];
+    COORDINATE_TYPE complementary_topR_jL = patches_parameters[lastPatchIndex][1][2][0];
+    COORDINATE_TYPE complementary_topL_jL = patches_parameters[lastPatchIndex][1][0][0];
+    COORDINATE_TYPE original_topR_jR = patches_parameters[secondLastPatchIndex][1][3][0];
+    COORDINATE_TYPE original_topL_jR = patches_parameters[secondLastPatchIndex][1][1][0];
 
-    long horizontalOverlapTop = max(complementary_topR_jL - original_topR_jL, complementary_topR_jR - original_topR_jR);
-    long horizontalOverlapBottom = max(complementary_topL_jL - original_topL_jL, complementary_topL_jR - original_topL_jR);
+    COORDINATE_TYPE horizontalOverlapTop = max(complementary_topR_jL - original_topR_jL, complementary_topR_jR - original_topR_jR);
+    COORDINATE_TYPE horizontalOverlapBottom = max(complementary_topL_jL - original_topL_jL, complementary_topL_jR - original_topL_jR);
 
     horizontalOverlapTop = -1 * INTEGER_FACTOR_CM;
     horizontalOverlapBottom = -1 * INTEGER_FACTOR_CM;
@@ -698,10 +739,10 @@ void makeThirdPatch(index_type lastPatchIndex, long z_top_min, long z_top_max, l
     long shifted_Align = apexZ0;
     bool doShiftedPatch = true;
 
-    long newZtop = 0;
+    COORDINATE_TYPE newZtop = 0;
 
-    long z0_original_bCorner = straightLineProjectorFromLayerIJtoK(apexZ0, z_top_max, 1, num_layers, 0);
-    long z0_complementary_cCorner = straightLineProjectorFromLayerIJtoK(complementary_apexZ0,z_top_min, 1, num_layers, 0);
+    COORDINATE_TYPE z0_original_bCorner = straightLineProjectorFromLayerIJtoK(apexZ0, z_top_max, 1, num_layers, 0);
+    COORDINATE_TYPE z0_complementary_cCorner = straightLineProjectorFromLayerIJtoK(complementary_apexZ0,z_top_min, 1, num_layers, 0);
     bool shiftOriginal = true;
 
     if (z0_original_bCorner < 0)
@@ -803,7 +844,7 @@ thirdPatch_loop:
     }
 }
 
-void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, long &previous_z_top_min, long complementary_apexZ0, long &white_space_height, index_type &lastPatchIndex, long original_c, long original_d, long &complementary_a, long &complementary_b, index_type &current_z_top_index, int &counter, int &counterUpshift, long &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES)
+void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, COORDINATE_TYPE &previous_z_top_min, COORDINATE_TYPE complementary_apexZ0, long &white_space_height, index_type &lastPatchIndex, COORDINATE_TYPE original_c, COORDINATE_TYPE original_d, COORDINATE_TYPE &complementary_a, COORDINATE_TYPE &complementary_b, index_type &current_z_top_index, int &counter, int &counterUpshift, COORDINATE_TYPE &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES)
 {
     #if PRINT_OUTS == true
         printf("\n");
@@ -879,14 +920,14 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
     {
         new_z_i_index[i] = max(new_z_i_index[i], 0.0f);
     }
-    long new_z_i[MAX_LAYERS];
+    COORDINATE_TYPE new_z_i[MAX_LAYERS];
 
     for (index_type i = 0; i < num_layers; i++)
     {
-        new_z_i[i] = GDarray[i][new_z_i_index[i]][2];
+        new_z_i[i] = decodeZcoordinate(GDarray[i][new_z_i_index[i]]);
     }
 
-    long new_z_i_atTop[MAX_LAYERS - 1]; // note: the size is MAX_LAYERS - 1 because the loop starts from 1
+    COORDINATE_TYPE new_z_i_atTop[MAX_LAYERS - 1]; // note: the size is MAX_LAYERS - 1 because the loop starts from 1
     for (index_type i = 1; i < num_layers; i++)
     {
         new_z_i_atTop[i - 1] = straightLineProjectorFromLayerIJtoK(complementary_apexZ0,
@@ -918,22 +959,22 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
         #endif
     }
 
-    z_top_min = GDarray[num_layers - 1][current_z_top_index][2];
+    z_top_min = decodeZcoordinate(GDarray[num_layers - 1][current_z_top_index]);
     z_top_min = new_z_i_atTop[layerWithSmallestShift - 1];
 
     if (fabs(z_top_min - previous_z_top_min) < static_cast<long>(0.000001 * INTEGER_FACTOR_CM))
     {
-        z_top_min = GDarray[num_layers - 1][current_z_top_index][2];
+        z_top_min = decodeZcoordinate(GDarray[num_layers - 1][current_z_top_index]);
     }
 
     if (fabs(z_top_min - previous_z_top_min) < static_cast<long>(0.000001 * INTEGER_FACTOR_CM))
     {
-        z_top_min = GDarray[num_layers - 2][current_z_top_index][2];
+        z_top_min = decodeZcoordinate(GDarray[num_layers - 2][current_z_top_index]);
     }
 
     if (fabs(z_top_min - previous_z_top_min) < static_cast<long>(0.000001 * INTEGER_FACTOR_CM))
     {
-        z_top_min = GDarray[num_layers - 3][current_z_top_index][2];
+        z_top_min = decodeZcoordinate(GDarray[num_layers - 3][current_z_top_index]);
     }
 
     if ((static_cast<long long>(z_top_min - previous_z_top_min) * static_cast<long long>(white_space_height)) < 0)
@@ -941,7 +982,7 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
         z_top_min = new_z_i_atTop[num_layers - 2];
     }
     #if PRINT_OUTS == true
-        printf(" new_def_z_top_min_diff: %ld\n", z_top_min - GDarray[num_layers - 1][current_z_top_index][2]);
+        printf(" new_def_z_top_min_diff: %ld\n", z_top_min - decodeZcoordinate(GDarray[num_layers - 1][current_z_top_index]));
 
         printf(" new_ztop_index: %d new_z_i_index: ", current_z_top_index);
         for (index_type i = 0; i < num_layers; i++)
@@ -1038,7 +1079,7 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
 
             current_z_top_index -= 1;
 
-            z_top_min = GDarray[num_layers - 1][current_z_top_index][2];
+            z_top_min = decodeZcoordinate(GDarray[num_layers - 1][current_z_top_index][2]);
             z_top_min = new_z_i_atTop[layerWithSmallestShift - 1];
 
             makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
@@ -1046,9 +1087,9 @@ void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix
     }
 }
 
-void makePatch_alignedToLine(long apexZ0, long z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES)
+void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES)
 {
-    long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3]; // correct
+    COORDINATE_TYPE init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3]; // correct
 
     for(int a = 0; a < MAX_LAYERS; a++)
 	{
@@ -1074,7 +1115,7 @@ makeSuperpoint_loop:
     }
 
     // once all points are added to patch new_patch, add the entire patch to the cover (first init it)
-    long NPpatches_superpoints[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3];
+    COORDINATE_TYPE NPpatches_superpoints[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3];
     for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
 	{
 		for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
@@ -1086,7 +1127,7 @@ makeSuperpoint_loop:
 		}
 	}
 #pragma HLS array_partition variable=NPpatches_superpoints
-    long NPpatches_parameters[5][MAX_PARALLELOGRAMS_PER_PATCH][6];
+    COORDINATE_TYPE NPpatches_parameters[5][MAX_PARALLELOGRAMS_PER_PATCH][6];
     for(int b = 0; b < 5; b++)
 	{
 		for(int c = 0; c < MAX_PARALLELOGRAMS_PER_PATCH; c++)
@@ -1106,15 +1147,15 @@ makeSuperpoint_loop:
     add_patch(NPpatches_superpoints, NPpatches_parameters, n_patches, patches_superpoints, patches_parameters);
 }
 
-void makeSuperPoint_alignedToLine(int i, long z_top, long apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, long init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3], index_type &init_patch_size, GDARRAY)
+void makeSuperPoint_alignedToLine(int i, COORDINATE_TYPE z_top, COORDINATE_TYPE apexZ0, float float_middleLayers_ppl, int &ppl, int original_ppl, bool leftRight, long alignmentAccuracy, COORDINATE_TYPE init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][3], index_type &init_patch_size, GDARRAY)
 {
     long y = radii[i];
-    long row_list[MAX_POINTS_PER_LAYER];
+    COORDINATE_TYPE row_list[MAX_POINTS_PER_LAYER];
     int row_list_size = 0;
 rowListSet_loop:
     for (index_type j = 0; j < GDn_points[i]; j++)
     {
-        row_list[row_list_size++] = GDarray[i][j][2];
+        row_list[row_list_size++] = decodeZcoordinate(GDarray[i][j]);
     }
 
     long r_max = radii[num_layers - 1];
@@ -1136,7 +1177,7 @@ rowListSet_loop:
         ppl = original_ppl;
     }
 
-    static long temp[MAX_POINTS_PER_LAYER][3]; // check
+    static COORDINATE_TYPE temp[MAX_POINTS_PER_LAYER][3]; // check
     int temp_size = 0;
 
     if (leftRight)
@@ -1150,10 +1191,15 @@ rowListSet_loop:
         {
             for (index_type j = right_bound + 1 - ppl; j <= right_bound; j++)
             {
+                /*
                 for(int z = 0; z < 3; z++)
                 {
                     temp[temp_size][z] = GDarray[i][j][z];
                 }
+                */
+                temp[temp_size][1] = decodePHIcoordinate(GDarray[i][j]); 
+                temp[temp_size][2] = decodeZcoordinate(GDarray[i][j]); 
+
                 temp_size++;
             }
             // similarly
@@ -1162,10 +1208,14 @@ rowListSet_loop:
         {
             for (index_type j = start_index; j < start_index + ppl; j++)
             {
+                /*
                 for(int z = 0; z < 3; z++)
                 {
                     temp[temp_size][z] = GDarray[i][j][z];
-                }
+                } */
+
+                temp[temp_size][1] = decodePHIcoordinate(GDarray[i][j]); 
+                temp[temp_size][2] = decodeZcoordinate(GDarray[i][j]); 
                 temp_size++;
             }
         }
@@ -1191,10 +1241,14 @@ rowListSet_loop:
         {
             for (index_type j = left_bound; j < left_bound + ppl; j++)
             {
+                /*
                 for(int z = 0; z < 3; z++)
                 {
                     temp[temp_size][z] = GDarray[i][j][z];
-                }
+                } */
+
+                temp[temp_size][1] = decodePHIcoordinate(GDarray[i][j]); 
+                temp[temp_size][2] = decodeZcoordinate(GDarray[i][j]); 
                 temp_size++;
             }
             // similarly
@@ -1203,10 +1257,14 @@ rowListSet_loop:
         {
             for (index_type j = start_index - ppl + 1; j <= start_index; j++)
             {
+                /*
                 for(int z = 0; z < 3; z++)
                 {
                     temp[temp_size][z] = GDarray[i][j][z];
-                }
+                }*/
+
+                temp[temp_size][1] = decodePHIcoordinate(GDarray[i][j]); 
+                temp[temp_size][2] = decodeZcoordinate(GDarray[i][j]); 
                 temp_size++;
             }
         }
@@ -1215,7 +1273,7 @@ rowListSet_loop:
     initWedgeSuperPoint(init_patch[init_patch_size++], temp, temp_size);
 }
 
-void mSP_findLRBounds(int i, long row_list[256], int row_list_size, int &left_bound, int &right_bound) {
+void mSP_findLRBounds(int i, COORDINATE_TYPE row_list[MAX_POINTS_PER_LAYER], int row_list_size, int &left_bound, int &right_bound) {
     left_bound= 0;
     right_bound= 0;
     long lbVal = LONG_MAX;
@@ -1223,34 +1281,47 @@ void mSP_findLRBounds(int i, long row_list[256], int row_list_size, int &left_bo
     LRdiscovery_loop:
     for (index_type j = 0; j < row_list_size; j++)
     {
-        if (static_cast<long>(fabs((row_list[j] + trapezoid_edges[i]))) < lbVal)
+        if (static_cast<long>(abs((row_list[j] + trapezoid_edges[i]))) < lbVal)
         {
             left_bound = j;
-            lbVal = static_cast<long>(fabs((row_list[j] + trapezoid_edges[i])));
+            lbVal = static_cast<long>(abs((row_list[j] + trapezoid_edges[i])));
         }
 
-        if (static_cast<long>(fabs((row_list[j] - trapezoid_edges[i]))) < rbVal)
+        if (static_cast<long>(abs((row_list[j] - trapezoid_edges[i]))) < rbVal)
         {
             right_bound = j;
-            rbVal = static_cast<long>(fabs((row_list[j] - trapezoid_edges[i])));
+            rbVal = static_cast<long>(abs((row_list[j] - trapezoid_edges[i])));
         }
     }
 }
 
-void
-mSP_findStartIndex(long row_list[256], int row_list_size, long projectionToRow, int &start_index, long &start_value) {
+void mSP_findStartIndex(COORDINATE_TYPE row_list[MAX_POINTS_PER_LAYER], int row_list_size, long projectionToRow, int &start_index, long &start_value) {
     start_index= 0;
     start_value= LONG_MAX;
     start_value_loop:
     for (index_type j = 0; j < row_list_size; j++)
     {
-        if (fabs(row_list[j] - projectionToRow) < fabs(start_value))
+        if (abs(row_list[j] - projectionToRow) < fabs(start_value))
         {
             start_index = j;
             start_value = row_list[j] - projectionToRow;
         }
     }
 }
+
+COORDINATE_TYPE decodePHIcoordinate(SPACEPOINT_TYPE packedCoordinates)
+{
+    #pragma HLS INLINE
+    return  (COORDINATE_TYPE) ( ((packedCoordinates & SPACEPOINT_MASK)>>COORDINATE_TYPE_SIZE) & SPACEPOINT_MASK);
+}
+
+COORDINATE_TYPE decodeZcoordinate(SPACEPOINT_TYPE packedCoordinates)
+{
+    #pragma HLS INLINE
+    return  (COORDINATE_TYPE) (packedCoordinates & SPACEPOINT_MASK);
+}
+
+
 
 
 

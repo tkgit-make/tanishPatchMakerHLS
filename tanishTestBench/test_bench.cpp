@@ -1,9 +1,9 @@
 #include "\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h"
 
-long master_list[6400][MAX_POINTS_IN_EVENT][3];
+COORDINATE_TYPE master_list[6400][MAX_POINTS_IN_EVENT][3];
 int lastPointArray[6400];
 
-int comparePoints(const std::array<long, 3> &pointA, const std::array<long, 3> &pointB)
+int comparePoints(const std::array<COORDINATE_TYPE, 3> &pointA, const std::array<COORDINATE_TYPE, 3> &pointB)
 {
     //the below line is all that is needed. we perform additional checks to guarentee a unique ordering of points in debugging.
     //return (a_z < b_z) ? -1 : 1;
@@ -19,11 +19,14 @@ int comparePoints(const std::array<long, 3> &pointA, const std::array<long, 3> &
 
     return 0;
 }
+//std::array<long, 3> dummy;
 
+//long foo(std::array<long, 3> dummy)
+//{ for(int i = 0; GDarray.size_t(); ) }
 
 void solve(long apexZ0, int ppl, bool leftRight, index_type &n_patches,
-           std::array<std::array<std::array<long, 3>, 256>, 5> &GDarray, int (&GDn_points)[5],
-           long (&patches_superpoints)[MAX_PATCHES][5][16][3], long (&patches_parameters)[MAX_PATCHES][5][4][6])
+           std::array<std::array<std::array<COORDINATE_TYPE, PARAMETERS_PER_POINT>, MAX_POINTS_PER_LAYER>, MAX_LAYERS> &GDarray, int (&GDn_points)[MAX_LAYERS],
+           long (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT], long (&patches_parameters)[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH])
 {
 solve_loop:
     for (index_type i = 0; i < num_layers; i++)
@@ -52,9 +55,33 @@ solve_loop:
             }
         }
     }
-    cout << "Has not failed" << endl;
-    makePatches_ShadowQuilt_fromEdges(apexZ0, 1, ppl, leftRight, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters);
-    cout << "Has not failed after" << endl;
+#pragma HLS array_partition variable=GDarray
+#pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarray bundle=GDarray_b
+	#if PRINT_OUTS == true
+    	cout << "Has not failed" << endl;
+	#endif
+
+    SPACEPOINT_TYPE GDarrayPostSort[MAX_LAYERS][MAX_POINTS_PER_LAYER];
+
+    for(index_type i = 0; i < MAX_LAYERS; i++)
+    {
+    	for(index_type j = 0; j < MAX_POINTS_PER_LAYER; j++)
+    	{
+    		//for(index_type k = 0; k < PARAMETERS_PER_POINT; k++)
+    		//{
+    			//GDarrayPostSort[i][j] = GDarray[i][j][k];
+
+    			//weightedCoordinates[layer][weightIndex][nodeIndex] = ( ( (spacepointTYPE) xCoordinate )<<16) | ( ( (spacepointTYPE) yCoordinate) & 0x0000FFFF );
+    		//}
+
+    		GDarrayPostSort[i][j] = ( ( (SPACEPOINT_TYPE) GDarray[i][j][1] )<<COORDINATE_TYPE_SIZE) | ( ( (SPACEPOINT_TYPE) GDarray[i][j][2]) & SPACEPOINT_MASK );
+    	}
+    }
+
+    makePatches_ShadowQuilt_fromEdges(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
+	#if PRINT_OUTS == true
+    	cout << "Has not failed after" << endl;
+	#endif
 }
 
 static vector<string> splitString(string str, string splitter = "),(")
@@ -113,8 +140,8 @@ void readFile(string filepath, int stop = 128, bool performance = false)
                 {
                     vector<string> ct = finalTuples[i];
                     master_list[line_index][i][0] = stoi(ct[0]);
-                    master_list[line_index][i][1] = static_cast<long>(stof(ct[2]) * INTEGER_FACTOR_RAD);
-                    master_list[line_index][i][2] = static_cast<long>(stof(ct[3]) * INTEGER_FACTOR_CM);
+                    master_list[line_index][i][1] = static_cast<COORDINATE_TYPE>(stof(ct[2]) * INTEGER_FACTOR_RAD);
+                    master_list[line_index][i][2] = static_cast<COORDINATE_TYPE>(stof(ct[3]) * INTEGER_FACTOR_CM);
                 }
 
                 lastPointArray[line_index] = finalTuples.size();
@@ -132,11 +159,13 @@ void readFile(string filepath, int stop = 128, bool performance = false)
     }
     else
     {
-        cout << "Error opening file." << endl;
+		#if PRINT_OUTS == true
+        	cout << "Error opening file." << endl;
+		#endif
     }
 }
 
-void importData(index_type k, GDARRAY)
+void importData(index_type k, GDARRAYPRESORT)
 {
     memset(GDn_points, 0, sizeof(GDn_points));
 
@@ -168,9 +197,9 @@ void initWedgeCover(index_type &n_patches)
     n_patches = 0;
 }
 
-void adjustPointPositionFront(std::array<std::array<long, 3>, MAX_POINTS_FOR_DATASET> &array, int n_points, int start_index) {
+void adjustPointPositionFront(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET> &array, int n_points, int start_index) {
     // move the point at start_index to its correct position to maintain sorted order
-    std::array<long, 3> toInsert;
+    std::array<COORDINATE_TYPE, 3> toInsert;
     for(int z = 0; z < 3; z++)
     {
         toInsert[z] = array[start_index][z];
@@ -197,9 +226,9 @@ void adjustPointPositionFront(std::array<std::array<long, 3>, MAX_POINTS_FOR_DAT
     } // place the element at its correct position
 }
 
-void adjustPointPositionBack(std::array<std::array<long, 3>, MAX_POINTS_FOR_DATASET> &array, int start_index) {
+void adjustPointPositionBack(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET> &array, int start_index) {
     // move the point at start_index to its correct position to maintain sorted order
-    std::array<long, 3> toInsert;
+    std::array<COORDINATE_TYPE, 3> toInsert;
     for(int z = 0; z < 3; z++)
     {
         toInsert[z] = array[start_index][z];
@@ -223,7 +252,7 @@ void adjustPointPositionBack(std::array<std::array<long, 3>, MAX_POINTS_FOR_DATA
     }  // place the element at its correct position
 }
 
-void addBoundaryPoint(long offset, GDARRAY)
+void addBoundaryPoint(long offset, GDARRAYPRESORT)
 {
     addBoundaryPoint_loop:
     for (index_type i = 0; i < num_layers; i++) {
@@ -260,7 +289,9 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 
     if (myfile == NULL)
     {
-        printf("Error opening file");
+		#if PRINT_OUTS == true
+        	printf("Error opening file");
+		#endif
         return;
     }
 
@@ -268,7 +299,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         readFile("/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/wedgeData_v3_128.txt", wedges[1], false);
     #endif
 
-        std::array<std::array<std::array<long, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> GDarray;
+        std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> GDarray;
 		for(int a = 0; a < MAX_LAYERS; a++)
 		{
 			for(int b = 0; b < MAX_POINTS_FOR_DATASET; b++)
@@ -287,40 +318,10 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 			GDn_points[a] = 0;
 		}
 
-		long patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][3];
-
-		for(int a = 0; a < MAX_PATCHES; a++)
-		{
-			for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
-			{
-				for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
-				{
-					for(int d = 0; d < 3; d++)
-					{
-						patches_superpoints[a][b][c][d] = 0;
-					}
-				}
-			}
-		}
-
-#pragma HLS array_partition variable=patches_superpoints type=complete
+		long patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
 		long patches_parameters[MAX_PATCHES][5][MAX_PARALLELOGRAMS_PER_PATCH][6];
-
-		for(int a = 0; a < MAX_PATCHES; a++)
-		{
-			for(int b = 0; b < 5; b++)
-			{
-				for(int c = 0; c < MAX_PARALLELOGRAMS_PER_PATCH; c++)
-				{
-					for(int d = 0; d < 6; d++)
-					{
-						patches_parameters[a][b][c][d] = 0;
-					}
-				}
-			}
-		}
-#pragma HLS array_partition variable=patches_parameters type=complete
-//#pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
+        
+#pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
 //#pragma HLS stream variable=patches_superpoints
     index_type n_patches = 0;
 
@@ -344,7 +345,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         addBoundaryPoint(static_cast<long>(0.0001 * INTEGER_FACTOR_CM), GDarray, GDn_points); // with default param
 
         solve(apexZ0, ppl, false, n_patches, GDarray, GDn_points, patches_superpoints, patches_parameters); // solve modifies cover. false is from the left right align (previously a parameter in wedge test)
-
+	#if PRINT_OUTS == true
         printf("Printing First Patch Points \n");
         for (int i = 0; i < 1; i++)
 		{
@@ -356,7 +357,9 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 
 			printf("%d \n", static_cast<int>(patches_parameters[i][4][1][0]));
 
-			for (int j = 0; j < static_cast<int>(patches_parameters[i][4][1][0]); j++)
+			printf("%d \n", patches_superpoints[0][0][0][0]);
+
+			for (int j = 0; j < 5; j++)
 			{
 				printf("Superpoint \n");
 				//printf("%d", static_cast<int>(patches_superpoints[i][j][2][0][0]));
@@ -370,7 +373,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 				}
 			}
 		}
-        /*
+
         for (int i = 0; i < n_patches; i++)
         {
             fprintf(myfile, "Patch \n");
@@ -409,7 +412,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
             fprintf(myfile, "\n");
         }
         // instead of making an array of all events and passing them in, we only need access to them individually, so we will loop through and process as we create them.
-		*/
+#endif
     }
 
     fclose(myfile);
@@ -429,6 +432,7 @@ int main () {
     // Capture the output results of the function, write to a file
     // Compare the results of the function against expected results
     return 0;
+#if PRINT_OUTS == true
     ret = system("diff --brief  -w C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/cppOutput.txt C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/cppOutputRef.txt");
 
     printf("%d", ret);
@@ -440,4 +444,5 @@ int main () {
         printf("Test passed !\n");
     }
     return ret;
+#endif
 }
