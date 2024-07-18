@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="makePatches_ShadowQuilt_fromEdges.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_makePatches_ShadowQuilt_fromEdges_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges//AESL_inst_makePatches_ShadowQuilt_fromEdges_activity">
+         <obj_property name="label">AESL_inst_makePatches_ShadowQuilt_fromEdges_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_makePatches_ShadowQuilt_fromEdges_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_makePatches_ShadowQuilt_fromEdges_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges//AESL_inst_makePatches_ShadowQuilt_fromEdges_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges//AESL_inst_makePatches_ShadowQuilt_fromEdges_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges//AESL_inst_makePatches_ShadowQuilt_fromEdges_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveNextPatchPair_fu_324_activity">
+            <obj_property name="label">grp_solveNextPatchPair_fu_324_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_solveNextPatchPair_fu_324_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_solveNextPatchPair_fu_324_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveNextPatchPair_fu_324_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveNextPatchPair_fu_324_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveNextPatchPair_fu_324_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeThirdPatch_fu_538_activity">
+               <obj_property name="label">grp_makeThirdPatch_fu_538_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_makeThirdPatch_fu_538_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_makeThirdPatch_fu_538_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeThirdPatch_fu_538_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeThirdPatch_fu_538_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeThirdPatch_fu_538_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_getShadows_fu_1001_activity">
+                  <obj_property name="label">grp_getShadows_fu_1001_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_getShadows_fu_1001_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_getShadows_fu_1001_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_getShadows_fu_1001_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_getShadows_fu_1001_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_getShadows_fu_1001_activity.dataflowTxTooltipData</obj_property>
+                  <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_straightLineProjectorFromLayerIJtoK_fu_308/grp_straightLineProjectorFromLayerIJtoK_fu_308_activity">
+                     <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_308_activity</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="UseFullPath">true</obj_property>
+                     <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_308_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_308_activity</obj_property>
+                     <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="CustomSignalColor">turquoise</obj_property>
+                     <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                     <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_straightLineProjectorFromLayerIJtoK_fu_308/grp_straightLineProjectorFromLayerIJtoK_fu_308_activity.dataflowTxWaveData.Cycles</obj_property>
+                     <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_straightLineProjectorFromLayerIJtoK_fu_308/grp_straightLineProjectorFromLayerIJtoK_fu_308_activity.dataflowTxWaveData.OutStanding</obj_property>
+                     <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_straightLineProjectorFromLayerIJtoK_fu_308/grp_straightLineProjectorFromLayerIJtoK_fu_308_activity.dataflowTxTooltipData</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_add_patch6_fu_1017/grp_add_patch6_fu_1017_activity">
+                  <obj_property name="label">grp_add_patch6_fu_1017_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_add_patch6_fu_1017_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_add_patch6_fu_1017_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_add_patch6_fu_1017/grp_add_patch6_fu_1017_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_add_patch6_fu_1017/grp_add_patch6_fu_1017_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_add_patch6_fu_1017/grp_add_patch6_fu_1017_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeSuperPoint_alignedToLine8_fu_1038/grp_makeSuperPoint_alignedToLine8_fu_1038_activity">
+                  <obj_property name="label">grp_makeSuperPoint_alignedToLine8_fu_1038_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_makeSuperPoint_alignedToLine8_fu_1038_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_makeSuperPoint_alignedToLine8_fu_1038_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeSuperPoint_alignedToLine8_fu_1038/grp_makeSuperPoint_alignedToLine8_fu_1038_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeSuperPoint_alignedToLine8_fu_1038/grp_makeSuperPoint_alignedToLine8_fu_1038_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeSuperPoint_alignedToLine8_fu_1038/grp_makeSuperPoint_alignedToLine8_fu_1038_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_wedgePatch_init_fu_1065_activity">
+                  <obj_property name="label">grp_wedgePatch_init_fu_1065_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_wedgePatch_init_fu_1065_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_wedgePatch_init_fu_1065_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_wedgePatch_init_fu_1065_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_wedgePatch_init_fu_1065_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_wedgePatch_init_fu_1065_activity.dataflowTxTooltipData</obj_property>
+                  <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity">
+                     <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="UseFullPath">true</obj_property>
+                     <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                     <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="CustomSignalColor">turquoise</obj_property>
+                     <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                     <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxWaveData.Cycles</obj_property>
+                     <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxWaveData.OutStanding</obj_property>
+                     <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxTooltipData</obj_property>
+                  </wvobject>
+                  <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity">
+                     <obj_property name="label">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="UseFullPath">true</obj_property>
+                     <obj_property name="ElementShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                     <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="CustomSignalColor">turquoise</obj_property>
+                     <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                     <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxWaveData.Cycles</obj_property>
+                     <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxWaveData.OutStanding</obj_property>
+                     <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxTooltipData</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_delete_patch_fu_1104/grp_delete_patch_fu_1104_activity">
+                  <obj_property name="label">grp_delete_patch_fu_1104_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_delete_patch_fu_1104_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_delete_patch_fu_1104_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_delete_patch_fu_1104/grp_delete_patch_fu_1104_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_delete_patch_fu_1104/grp_delete_patch_fu_1104_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_delete_patch_fu_1104/grp_delete_patch_fu_1104_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_solveComplmentaryPatch_fu_567_activity">
+               <obj_property name="label">grp_solveComplmentaryPatch_fu_567_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_solveComplmentaryPatch_fu_567_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_solveComplmentaryPatch_fu_567_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_solveComplmentaryPatch_fu_567_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_solveComplmentaryPatch_fu_567_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_solveComplmentaryPatch_fu_567_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makePatch_alignedToLine_fu_830_activity">
+                  <obj_property name="label">grp_makePatch_alignedToLine_fu_830_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_makePatch_alignedToLine_fu_830_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_makePatch_alignedToLine_fu_830_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makePatch_alignedToLine_fu_830_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makePatch_alignedToLine_fu_830_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makePatch_alignedToLine_fu_830_activity.dataflowTxTooltipData</obj_property>
+                  <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity">
+                     <obj_property name="label">grp_add_patch6_fu_636_activity</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="UseFullPath">true</obj_property>
+                     <obj_property name="ElementShortName">grp_add_patch6_fu_636_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_add_patch6_fu_636_activity</obj_property>
+                     <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="CustomSignalColor">turquoise</obj_property>
+                     <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                     <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity.dataflowTxWaveData.Cycles</obj_property>
+                     <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity.dataflowTxWaveData.OutStanding</obj_property>
+                     <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity.dataflowTxTooltipData</obj_property>
+                  </wvobject>
+                  <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity">
+                     <obj_property name="label">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="UseFullPath">true</obj_property>
+                     <obj_property name="ElementShortName">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+                     <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="CustomSignalColor">turquoise</obj_property>
+                     <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                     <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity.dataflowTxWaveData.Cycles</obj_property>
+                     <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity.dataflowTxWaveData.OutStanding</obj_property>
+                     <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity.dataflowTxTooltipData</obj_property>
+                  </wvobject>
+                  <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity">
+                     <obj_property name="label">grp_wedgePatch_init_fu_684_activity</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="UseFullPath">true</obj_property>
+                     <obj_property name="ElementShortName">grp_wedgePatch_init_fu_684_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_wedgePatch_init_fu_684_activity</obj_property>
+                     <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="CustomSignalColor">turquoise</obj_property>
+                     <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                     <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity.dataflowTxWaveData.Cycles</obj_property>
+                     <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity.dataflowTxWaveData.OutStanding</obj_property>
+                     <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity.dataflowTxTooltipData</obj_property>
+                     <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity">
+                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <obj_property name="UseFullPath">true</obj_property>
+                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                        <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                        <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                        <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                        <obj_property name="UseCustomSignalColor">true</obj_property>
+                        <obj_property name="CustomSignalColor">turquoise</obj_property>
+                        <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                        <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxWaveData.Cycles</obj_property>
+                        <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxWaveData.OutStanding</obj_property>
+                        <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxTooltipData</obj_property>
+                     </wvobject>
+                     <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity">
+                        <obj_property name="label">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <obj_property name="UseFullPath">true</obj_property>
+                        <obj_property name="ElementShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                        <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                        <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                        <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                        <obj_property name="UseCustomSignalColor">true</obj_property>
+                        <obj_property name="CustomSignalColor">turquoise</obj_property>
+                        <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                        <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxWaveData.Cycles</obj_property>
+                        <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxWaveData.OutStanding</obj_property>
+                        <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxTooltipData</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_areWedgeSuperPointsEqual_fu_855/grp_areWedgeSuperPointsEqual_fu_855_activity">
+                  <obj_property name="label">grp_areWedgeSuperPointsEqual_fu_855_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_areWedgeSuperPointsEqual_fu_855_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_areWedgeSuperPointsEqual_fu_855_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_areWedgeSuperPointsEqual_fu_855/grp_areWedgeSuperPointsEqual_fu_855_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_areWedgeSuperPointsEqual_fu_855/grp_areWedgeSuperPointsEqual_fu_855_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_areWedgeSuperPointsEqual_fu_855/grp_areWedgeSuperPointsEqual_fu_855_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_delete_patch_fu_881/grp_delete_patch_fu_881_activity">
+                  <obj_property name="label">grp_delete_patch_fu_881_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_delete_patch_fu_881_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_delete_patch_fu_881_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_delete_patch_fu_881/grp_delete_patch_fu_881_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_delete_patch_fu_881/grp_delete_patch_fu_881_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_delete_patch_fu_881/grp_delete_patch_fu_881_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makePatch_alignedToLine_fu_602_activity">
+               <obj_property name="label">grp_makePatch_alignedToLine_fu_602_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_makePatch_alignedToLine_fu_602_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_makePatch_alignedToLine_fu_602_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makePatch_alignedToLine_fu_602_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makePatch_alignedToLine_fu_602_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makePatch_alignedToLine_fu_602_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity">
+                  <obj_property name="label">grp_add_patch6_fu_636_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_add_patch6_fu_636_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_add_patch6_fu_636_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity">
+                  <obj_property name="label">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity">
+                  <obj_property name="label">grp_wedgePatch_init_fu_684_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_wedgePatch_init_fu_684_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_wedgePatch_init_fu_684_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity.dataflowTxTooltipData</obj_property>
+                  <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity">
+                     <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="UseFullPath">true</obj_property>
+                     <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                     <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="CustomSignalColor">turquoise</obj_property>
+                     <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                     <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxWaveData.Cycles</obj_property>
+                     <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxWaveData.OutStanding</obj_property>
+                     <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity.dataflowTxTooltipData</obj_property>
+                  </wvobject>
+                  <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity">
+                     <obj_property name="label">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <obj_property name="UseFullPath">true</obj_property>
+                     <obj_property name="ElementShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                     <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                     <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                     <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                     <obj_property name="UseCustomSignalColor">true</obj_property>
+                     <obj_property name="CustomSignalColor">turquoise</obj_property>
+                     <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                     <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxWaveData.Cycles</obj_property>
+                     <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxWaveData.OutStanding</obj_property>
+                     <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity.dataflowTxTooltipData</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_areWedgeSuperPointsEqual_fu_632/grp_areWedgeSuperPointsEqual_fu_632_activity">
+               <obj_property name="label">grp_areWedgeSuperPointsEqual_fu_632_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_areWedgeSuperPointsEqual_fu_632_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_areWedgeSuperPointsEqual_fu_632_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_areWedgeSuperPointsEqual_fu_632/grp_areWedgeSuperPointsEqual_fu_632_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_areWedgeSuperPointsEqual_fu_632/grp_areWedgeSuperPointsEqual_fu_632_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_areWedgeSuperPointsEqual_fu_632/grp_areWedgeSuperPointsEqual_fu_632_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_644/grp_straightLineProjectorFromLayerIJtoK_fu_644_activity">
+               <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_644_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_644_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_644_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_644/grp_straightLineProjectorFromLayerIJtoK_fu_644_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_644/grp_straightLineProjectorFromLayerIJtoK_fu_644_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_644/grp_straightLineProjectorFromLayerIJtoK_fu_644_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_2008/grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity">
+               <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_2008/grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_2008/grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_2008/grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges//AESL_inst_makePatches_ShadowQuilt_fromEdges_activity">
+      <obj_property name="ElementShortName">AESL_inst_makePatches_ShadowQuilt_fromEdges_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_makePatches_ShadowQuilt_fromEdges_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_makePatches_ShadowQuilt_fromEdges_group">
+      <obj_property name="label">AESL_inst_makePatches_ShadowQuilt_fromEdges</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveNextPatchPair_fu_324_activity">
+         <obj_property name="ElementShortName">grp_solveNextPatchPair_fu_324_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_solveNextPatchPair_fu_324_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_makePatches_ShadowQuilt_fromEdges_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_solveNextPatchPair_fu_324_group">
+         <obj_property name="label">grp_solveNextPatchPair_fu_324</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeThirdPatch_fu_538_activity">
+            <obj_property name="ElementShortName">grp_makeThirdPatch_fu_538_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_makeThirdPatch_fu_538_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_solveComplmentaryPatch_fu_567_activity">
+            <obj_property name="ElementShortName">grp_solveComplmentaryPatch_fu_567_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_solveComplmentaryPatch_fu_567_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makePatch_alignedToLine_fu_602_activity">
+            <obj_property name="ElementShortName">grp_makePatch_alignedToLine_fu_602_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_makePatch_alignedToLine_fu_602_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_areWedgeSuperPointsEqual_fu_632/grp_areWedgeSuperPointsEqual_fu_632_activity">
+            <obj_property name="ElementShortName">grp_areWedgeSuperPointsEqual_fu_632_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_areWedgeSuperPointsEqual_fu_632_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_644/grp_straightLineProjectorFromLayerIJtoK_fu_644_activity">
+            <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_644_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_644_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_2008/grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity">
+            <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_2008_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_solveNextPatchPair_fu_324_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_makeThirdPatch_fu_538_group">
+            <obj_property name="label">grp_makeThirdPatch_fu_538</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_getShadows_fu_1001_activity">
+               <obj_property name="ElementShortName">grp_getShadows_fu_1001_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_getShadows_fu_1001_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_add_patch6_fu_1017/grp_add_patch6_fu_1017_activity">
+               <obj_property name="ElementShortName">grp_add_patch6_fu_1017_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_add_patch6_fu_1017_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeSuperPoint_alignedToLine8_fu_1038/grp_makeSuperPoint_alignedToLine8_fu_1038_activity">
+               <obj_property name="ElementShortName">grp_makeSuperPoint_alignedToLine8_fu_1038_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_makeSuperPoint_alignedToLine8_fu_1038_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_wedgePatch_init_fu_1065_activity">
+               <obj_property name="ElementShortName">grp_wedgePatch_init_fu_1065_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_wedgePatch_init_fu_1065_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_delete_patch_fu_1104/grp_delete_patch_fu_1104_activity">
+               <obj_property name="ElementShortName">grp_delete_patch_fu_1104_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_delete_patch_fu_1104_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_makeThirdPatch_fu_538_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_getShadows_fu_1001_group">
+               <obj_property name="label">grp_getShadows_fu_1001</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_straightLineProjectorFromLayerIJtoK_fu_308/grp_straightLineProjectorFromLayerIJtoK_fu_308_activity">
+                  <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_308_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_308_activity</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_getShadows_fu_1001_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_308_group">
+                  <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_308</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_308_Handshake_group">
+                     <obj_property name="label">Block-level handshake</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_straightLineProjectorFromLayerIJtoK_fu_308/ap_start">
+                        <obj_property name="ElementShortName">ap_start</obj_property>
+                        <obj_property name="ObjectShortName">ap_start</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_straightLineProjectorFromLayerIJtoK_fu_308/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_getShadows_fu_1001/grp_straightLineProjectorFromLayerIJtoK_fu_308/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_add_patch6_fu_1017_group">
+               <obj_property name="label">grp_add_patch6_fu_1017</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_add_patch6_fu_1017_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_add_patch6_fu_1017/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_add_patch6_fu_1017/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_add_patch6_fu_1017/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine8_fu_1038_group">
+               <obj_property name="label">grp_makeSuperPoint_alignedToLine8_fu_1038</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine8_fu_1038_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeSuperPoint_alignedToLine8_fu_1038/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeSuperPoint_alignedToLine8_fu_1038/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_makeSuperPoint_alignedToLine8_fu_1038/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_wedgePatch_init_fu_1065_group">
+               <obj_property name="label">grp_wedgePatch_init_fu_1065</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity">
+                  <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+               </wvobject>
+               <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity">
+                  <obj_property name="ElementShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_wedgePatch_init_fu_1065_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_603_group">
+                  <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_603</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_603_Handshake_group">
+                     <obj_property name="label">Block-level handshake</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_start">
+                        <obj_property name="ElementShortName">ap_start</obj_property>
+                        <obj_property name="ObjectShortName">ap_start</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_get_acceptanceCorners_fu_616_group">
+                  <obj_property name="label">grp_get_acceptanceCorners_fu_616</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="grp_get_acceptanceCorners_fu_616_Handshake_group">
+                     <obj_property name="label">Block-level handshake</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_get_acceptanceCorners_fu_616/ap_start">
+                        <obj_property name="ElementShortName">ap_start</obj_property>
+                        <obj_property name="ObjectShortName">ap_start</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_get_acceptanceCorners_fu_616/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_wedgePatch_init_fu_1065/grp_get_acceptanceCorners_fu_616/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_delete_patch_fu_1104_group">
+               <obj_property name="label">grp_delete_patch_fu_1104</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_delete_patch_fu_1104_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_delete_patch_fu_1104/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_delete_patch_fu_1104/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makeThirdPatch_fu_538/grp_delete_patch_fu_1104/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_solveComplmentaryPatch_fu_567_group">
+            <obj_property name="label">grp_solveComplmentaryPatch_fu_567</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makePatch_alignedToLine_fu_830_activity">
+               <obj_property name="ElementShortName">grp_makePatch_alignedToLine_fu_830_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_makePatch_alignedToLine_fu_830_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_areWedgeSuperPointsEqual_fu_855/grp_areWedgeSuperPointsEqual_fu_855_activity">
+               <obj_property name="ElementShortName">grp_areWedgeSuperPointsEqual_fu_855_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_areWedgeSuperPointsEqual_fu_855_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_delete_patch_fu_881/grp_delete_patch_fu_881_activity">
+               <obj_property name="ElementShortName">grp_delete_patch_fu_881_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_delete_patch_fu_881_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_solveComplmentaryPatch_fu_567_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_makePatch_alignedToLine_fu_830_group">
+               <obj_property name="label">grp_makePatch_alignedToLine_fu_830</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity">
+                  <obj_property name="ElementShortName">grp_add_patch6_fu_636_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_add_patch6_fu_636_activity</obj_property>
+               </wvobject>
+               <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity">
+                  <obj_property name="ElementShortName">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+               </wvobject>
+               <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity">
+                  <obj_property name="ElementShortName">grp_wedgePatch_init_fu_684_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_wedgePatch_init_fu_684_activity</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_makePatch_alignedToLine_fu_830_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_add_patch6_fu_636_group">
+                  <obj_property name="label">grp_add_patch6_fu_636</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="grp_add_patch6_fu_636_Handshake_group">
+                     <obj_property name="label">Block-level handshake</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_add_patch6_fu_636/ap_start">
+                        <obj_property name="ElementShortName">ap_start</obj_property>
+                        <obj_property name="ObjectShortName">ap_start</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_add_patch6_fu_636/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_add_patch6_fu_636/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine8_fu_657_group">
+                  <obj_property name="label">grp_makeSuperPoint_alignedToLine8_fu_657</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine8_fu_657_Handshake_group">
+                     <obj_property name="label">Block-level handshake</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makeSuperPoint_alignedToLine8_fu_657/ap_start">
+                        <obj_property name="ElementShortName">ap_start</obj_property>
+                        <obj_property name="ObjectShortName">ap_start</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makeSuperPoint_alignedToLine8_fu_657/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_makeSuperPoint_alignedToLine8_fu_657/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_wedgePatch_init_fu_684_group">
+                  <obj_property name="label">grp_wedgePatch_init_fu_684</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity">
+                     <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                  </wvobject>
+                  <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity">
+                     <obj_property name="ElementShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                  </wvobject>
+                  <wvobject type="group" fp_name="grp_wedgePatch_init_fu_684_Handshake_group">
+                     <obj_property name="label">Block-level handshake</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/ap_start">
+                        <obj_property name="ElementShortName">ap_start</obj_property>
+                        <obj_property name="ObjectShortName">ap_start</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_603_group">
+                     <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_603</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_603_Handshake_group">
+                        <obj_property name="label">Block-level handshake</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_start">
+                           <obj_property name="ElementShortName">ap_start</obj_property>
+                           <obj_property name="ObjectShortName">ap_start</obj_property>
+                        </wvobject>
+                        <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_ready">
+                           <obj_property name="ElementShortName">ap_ready</obj_property>
+                           <obj_property name="ObjectShortName">ap_ready</obj_property>
+                        </wvobject>
+                        <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_done">
+                           <obj_property name="ElementShortName">ap_done</obj_property>
+                           <obj_property name="ObjectShortName">ap_done</obj_property>
+                        </wvobject>
+                     </wvobject>
+                  </wvobject>
+                  <wvobject type="group" fp_name="grp_get_acceptanceCorners_fu_616_group">
+                     <obj_property name="label">grp_get_acceptanceCorners_fu_616</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="group" fp_name="grp_get_acceptanceCorners_fu_616_Handshake_group">
+                        <obj_property name="label">Block-level handshake</obj_property>
+                        <obj_property name="DisplayName">label</obj_property>
+                        <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/ap_start">
+                           <obj_property name="ElementShortName">ap_start</obj_property>
+                           <obj_property name="ObjectShortName">ap_start</obj_property>
+                        </wvobject>
+                        <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/ap_ready">
+                           <obj_property name="ElementShortName">ap_ready</obj_property>
+                           <obj_property name="ObjectShortName">ap_ready</obj_property>
+                        </wvobject>
+                        <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_makePatch_alignedToLine_fu_830/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/ap_done">
+                           <obj_property name="ElementShortName">ap_done</obj_property>
+                           <obj_property name="ObjectShortName">ap_done</obj_property>
+                        </wvobject>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_areWedgeSuperPointsEqual_fu_855_group">
+               <obj_property name="label">grp_areWedgeSuperPointsEqual_fu_855</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_areWedgeSuperPointsEqual_fu_855_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_areWedgeSuperPointsEqual_fu_855/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_areWedgeSuperPointsEqual_fu_855/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_areWedgeSuperPointsEqual_fu_855/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_delete_patch_fu_881_group">
+               <obj_property name="label">grp_delete_patch_fu_881</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_delete_patch_fu_881_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_delete_patch_fu_881/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_delete_patch_fu_881/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_solveComplmentaryPatch_fu_567/grp_delete_patch_fu_881/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_makePatch_alignedToLine_fu_602_group">
+            <obj_property name="label">grp_makePatch_alignedToLine_fu_602</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_add_patch6_fu_636/grp_add_patch6_fu_636_activity">
+               <obj_property name="ElementShortName">grp_add_patch6_fu_636_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_add_patch6_fu_636_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makeSuperPoint_alignedToLine8_fu_657/grp_makeSuperPoint_alignedToLine8_fu_657_activity">
+               <obj_property name="ElementShortName">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_makeSuperPoint_alignedToLine8_fu_657_activity</obj_property>
+            </wvobject>
+            <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_wedgePatch_init_fu_684_activity">
+               <obj_property name="ElementShortName">grp_wedgePatch_init_fu_684_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_wedgePatch_init_fu_684_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_makePatch_alignedToLine_fu_602_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_add_patch6_fu_636_group">
+               <obj_property name="label">grp_add_patch6_fu_636</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_add_patch6_fu_636_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_add_patch6_fu_636/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_add_patch6_fu_636/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_add_patch6_fu_636/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine8_fu_657_group">
+               <obj_property name="label">grp_makeSuperPoint_alignedToLine8_fu_657</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine8_fu_657_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makeSuperPoint_alignedToLine8_fu_657/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makeSuperPoint_alignedToLine8_fu_657/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_makeSuperPoint_alignedToLine8_fu_657/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_wedgePatch_init_fu_684_group">
+               <obj_property name="label">grp_wedgePatch_init_fu_684</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/grp_straightLineProjectorFromLayerIJtoK_fu_603_activity">
+                  <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_603_activity</obj_property>
+               </wvobject>
+               <wvobject type="protoinst" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/grp_get_acceptanceCorners_fu_616_activity">
+                  <obj_property name="ElementShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_get_acceptanceCorners_fu_616_activity</obj_property>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_wedgePatch_init_fu_684_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_603_group">
+                  <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_603</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_603_Handshake_group">
+                     <obj_property name="label">Block-level handshake</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_start">
+                        <obj_property name="ElementShortName">ap_start</obj_property>
+                        <obj_property name="ObjectShortName">ap_start</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_straightLineProjectorFromLayerIJtoK_fu_603/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grp_get_acceptanceCorners_fu_616_group">
+                  <obj_property name="label">grp_get_acceptanceCorners_fu_616</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="group" fp_name="grp_get_acceptanceCorners_fu_616_Handshake_group">
+                     <obj_property name="label">Block-level handshake</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/ap_start">
+                        <obj_property name="ElementShortName">ap_start</obj_property>
+                        <obj_property name="ObjectShortName">ap_start</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/ap_ready">
+                        <obj_property name="ElementShortName">ap_ready</obj_property>
+                        <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     </wvobject>
+                     <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_makePatch_alignedToLine_fu_602/grp_wedgePatch_init_fu_684/grp_get_acceptanceCorners_fu_616/ap_done">
+                        <obj_property name="ElementShortName">ap_done</obj_property>
+                        <obj_property name="ObjectShortName">ap_done</obj_property>
+                     </wvobject>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_areWedgeSuperPointsEqual_fu_632_group">
+            <obj_property name="label">grp_areWedgeSuperPointsEqual_fu_632</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_areWedgeSuperPointsEqual_fu_632_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_areWedgeSuperPointsEqual_fu_632/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_areWedgeSuperPointsEqual_fu_632/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_areWedgeSuperPointsEqual_fu_632/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_644_group">
+            <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_644</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_644_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_644/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_644/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_644/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_2008_group">
+            <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_2008</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_2008_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_2008/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_2008/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_makePatches_ShadowQuilt_fromEdges_top/AESL_inst_makePatches_ShadowQuilt_fromEdges/grp_solveNextPatchPair_fu_324/grp_straightLineProjectorFromLayerIJtoK_fu_2008/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

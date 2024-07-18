@@ -14433,3 +14433,1995 @@ Command   csim_design done; 23.242 sec.
 INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 23.258 seconds; current allocated memory: 92.120 MB.
 Command ap_source done; 28.936 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 12:21:01 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.141 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.207 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.142 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.139 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.126 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.264 sec.
+Command       add_library done; 0.568 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.819 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 2.708 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Command       ap_part_info done; 2.288 sec.
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Command       ap_part_info done; 0.909 sec.
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Command         ap_source done; 1.539 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command       import_lib done; 1.546 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command         ap_source done; 0.116 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.416 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.567 sec.
+Command     add_library done; 10.023 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 10.208 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Command   create_clock done; 0.103 sec.
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.131 sec.
+Command   ap_source done; 0.133 sec.
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.266 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 29.199 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 29.217 seconds; current allocated memory: 92.104 MB.
+Command ap_source done; 45.629 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 12:28:47 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.156 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.212 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.203 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.373 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.112 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source done; 0.262 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.159 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.49 sec.
+Command       add_library done; 1.182 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.725 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 4.469 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.16 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.228 sec.
+Command     add_library done; 0.538 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.643 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Command   create_clock done; 0.155 sec.
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.107 sec.
+Command   ap_source done; 0.108 sec.
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.766 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 21.051 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 21.069 seconds; current allocated memory: 92.089 MB.
+Command ap_source done; 26.551 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 12:34:41 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.117 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.2 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.133 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.177 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.278 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.27 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.38 sec.
+Command       add_library done; 0.845 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.123 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Command     ap_part_info done; 0.12 sec.
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 3.819 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Command     ap_part_info done; 0.104 sec.
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.154 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.329 sec.
+Command     add_library done; 0.586 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.769 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Command   create_clock done; 1.171 sec.
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.184 sec.
+Command   ap_source done; 0.185 sec.
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.773 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 21.948 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 21.967 seconds; current allocated memory: 92.089 MB.
+Command ap_source done; 28.014 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 12:36:19 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command       ap_source done; 0.133 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.102 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.317 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.137 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.24 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.11 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.187 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.316 sec.
+Command       add_library done; 0.661 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.019 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 3.745 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.156 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.265 sec.
+Command     add_library done; 0.639 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.734 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.105 sec.
+Command   ap_source done; 0.108 sec.
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.852 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 19.544 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.561 seconds; current allocated memory: 92.089 MB.
+Command ap_source done; 25.21 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 12:57:19 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.102 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.202 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.164 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.186 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.717 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source done; 0.241 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source done; 0.119 sec.
+Command           ap_source done; 0.124 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source done; 0.114 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.198 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.736 sec.
+Command       add_library done; 1.635 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.042 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 3.628 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.2 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.301 sec.
+Command     add_library done; 0.591 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.742 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.124 sec.
+Command   ap_source done; 0.127 sec.
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 28.754 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 28.772 seconds; current allocated memory: 92.071 MB.
+Command ap_source done; 33.569 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 13:06:57 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.137 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.222 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.214 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.108 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.104 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.182 sec.
+Command       add_library done; 0.446 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.782 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 3.447 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Command       ap_part_info done; 0.484 sec.
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.142 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.223 sec.
+Command     add_library done; 1.506 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 1.569 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.106 sec.
+Command   ap_source done; 0.116 sec.
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 3.426 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.441 seconds; current allocated memory: 92.087 MB.
+Command ap_source done; 8.873 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 13:16:03 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.113 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.187 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.132 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.374 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.995 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.169 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.449 sec.
+Command       add_library done; 1.629 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.17 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 3.69 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.154 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.288 sec.
+Command     add_library done; 0.546 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.654 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.122 sec.
+Command   ap_source done; 0.125 sec.
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 2.744 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.76 seconds; current allocated memory: 92.087 MB.
+Command ap_source done; 8.489 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 13:17:55 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.112 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.243 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.134 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.306 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.157 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.153 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.307 sec.
+Command       add_library done; 0.716 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.14 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Command     get_config_interface done; 0.227 sec.
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command     config_export done; 0.12 sec.
+Command   open_solution done; 4.193 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Command     ap_part_info done; 0.127 sec.
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.208 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.304 sec.
+Command     add_library done; 1.021 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 1.2 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Command   create_clock done; 0.151 sec.
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.105 sec.
+Command   ap_source done; 0.107 sec.
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 2.701 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.718 seconds; current allocated memory: 92.087 MB.
+Command ap_source done; 8.474 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 13:21:46 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.124 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.188 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.141 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.493 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Command         import_lib done; 0.251 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.242 sec.
+Command       add_library done; 0.651 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.246 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 3.802 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.155 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.242 sec.
+Command     add_library done; 0.472 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.644 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Command   create_clock done; 0.101 sec.
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.943 sec.
+Command   ap_source done; 0.944 sec.
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+ERROR: [SIM 211-100] CSim file generation failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 9.6 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.681 seconds; current allocated memory: 92.138 MB.
+Command ap_source done; error code: 1; 15.334 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 13:24:02 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.206 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.293 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.148 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.213 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.658 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.145 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.193 sec.
+Command       add_library done; 0.606 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.389 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 4.258 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.233 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.314 sec.
+Command     add_library done; 0.562 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.785 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Command   create_clock done; 0.125 sec.
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.104 sec.
+Command   ap_source done; 0.106 sec.
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 28.997 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 29.012 seconds; current allocated memory: 92.071 MB.
+Command ap_source done; 34.834 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1 opened at Thu Jul 18 13:25:25 -0400 2024
+Execute     ap_set_clock -name default -period 1 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Command       ap_source done; 0.126 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.153 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.348 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.241 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.346 sec.
+Execute     set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.592 sec.
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.133 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.243 sec.
+Command       add_library done; 0.515 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.179 sec.
+Execute     ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip
+Execute     config_export -output=C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 4.021 sec.
+Execute   set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data single -quiet 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu19p:-fsvb3824:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu19p-fsvb3824-2-e 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 510720} {LUT 4085760} {FF 8171520} {DSP 3840} {BRAM 4320} {URAM 320} {SLR 4} 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Command       ap_part_info done; 0.103 sec.
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu19p:-fsvb3824:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.235 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.507 sec.
+Command     add_library done; 1.793 sec.
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 1.815 sec.
+Execute   create_clock -period 1 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 1 -name default 
+Command   create_clock done; 0.121 sec.
+Execute   config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/makePatches_ShadowQuilt_fromEdges.zip -rtl verilog 
+Execute   source ./PatchMaker_tanishGit/solution1/directives.tcl 
+Execute     set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO: [HLS 200-1510] Running: set_directive_top -name makePatches_ShadowQuilt_fromEdges makePatches_ShadowQuilt_fromEdges 
+INFO-FLOW: Setting directive 'TOP' name=makePatches_ShadowQuilt_fromEdges 
+Command     set_directive_top done; 0.176 sec.
+Command   ap_source done; 0.178 sec.
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xcvu19p-fsvb3824-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.193 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 30.992 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 31.008 seconds; current allocated memory: 92.089 MB.
+Command ap_source done; 38.403 sec.
+Execute cleanup_all 

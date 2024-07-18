@@ -79,7 +79,7 @@ solve_loop:
     }
 
     makePatches_ShadowQuilt_fromEdges(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
-#if PRINT_OUTS == false
+#if PRINT_OUTS == true
     cout << "n_patches = " << n_patches << endl;
 
 	for(int a = 0; a < MAX_PATCHES; a++)
@@ -336,7 +336,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 		}
 
 		SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
-		COORDINATE_TYPE patches_parameters[MAX_PATCHES][5][MAX_PARALLELOGRAMS_PER_PATCH][6];
+		COORDINATE_TYPE patches_parameters[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
         
 #pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
 //#pragma HLS stream variable=patches_superpoints
@@ -368,12 +368,12 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         for (int i = 0; i < 1; i++)
 		{
 			printf("Patch \n");
-			printf("%ld\n", lround(patches_parameters[i][1][0][0] / (float) INTEGER_FACTOR_CM * 10000));
-			printf("%ld\n", lround(patches_parameters[i][1][1][0] / (float) INTEGER_FACTOR_CM * 10000));
-			printf("%ld\n", lround(patches_parameters[i][1][2][0] / (float) INTEGER_FACTOR_CM * 10000));
-			printf("%ld\n", lround(patches_parameters[i][1][3][0] / (float) INTEGER_FACTOR_CM * 10000));
+			//printf("%ld\n", lround(patches_parameters[i][1][0][0] / (float) INTEGER_FACTOR_CM * 10000));
+			//printf("%ld\n", lround(patches_parameters[i][1][1][0] / (float) INTEGER_FACTOR_CM * 10000));
+			//printf("%ld\n", lround(patches_parameters[i][1][2][0] / (float) INTEGER_FACTOR_CM * 10000));
+			//printf("%ld\n", lround(patches_parameters[i][1][3][0] / (float) INTEGER_FACTOR_CM * 10000));
 
-			printf("%d \n", static_cast<int>(patches_parameters[i][4][1][0]));
+			//printf("%d \n", static_cast<int>(patches_parameters[i][4][1][0]));
 
 			printf("%d \n", patches_superpoints[0][0][0][0]);
 
@@ -384,35 +384,38 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 				for (int r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
 				{
 					printf("%d %.4f %d %.4f\n",
-							patches_superpoints[i][j][r][0],
-							patches_superpoints[i][j][r][1]  / (float) INTEGER_FACTOR_RAD,
-							(int) (radii[patches_superpoints[i][j][r][0] - 1] /  (float) INTEGER_FACTOR_CM),
-							patches_superpoints[i][j][r][2] / (float) INTEGER_FACTOR_CM);
+							r + 1,
+							decodePHIcoordinate(patches_superpoints[i][j][r])  / (float) INTEGER_FACTOR_RAD,
+							(int) (radii[r] /  (float) INTEGER_FACTOR_CM),
+							decodeZcoordinate(patches_superpoints[i][j][r]) / (float) INTEGER_FACTOR_CM);
 				}
 			}
 		}
+#endif
 
+#if PRINT_OUTS == false
         for (int i = 0; i < n_patches; i++)
         {
             fprintf(myfile, "Patch \n");
-            fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][0][0] / (float) INTEGER_FACTOR_CM * 10000));
-            fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][1][0] / (float) INTEGER_FACTOR_CM * 10000));
-            fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][2][0] / (float) INTEGER_FACTOR_CM * 10000));
-            fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][3][0] / (float) INTEGER_FACTOR_CM * 10000));
+            //fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][0][0] / (float) INTEGER_FACTOR_CM * 10000));
+            //fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][1][0] / (float) INTEGER_FACTOR_CM * 10000));
+            //fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][2][0] / (float) INTEGER_FACTOR_CM * 10000));
+            //fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][3][0] / (float) INTEGER_FACTOR_CM * 10000));
 
-            for (int j = 0; j < static_cast<int>(patches_parameters[i][4][1][0]); j++)
+            for (int j = 0; j < 5; j++)
             {
                 fprintf(myfile, "Superpoint \n");
                 for (int r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
                 {
                     fprintf(myfile, "%d %.4f %d %.4f\n",
-                            patches_superpoints[i][j][r][0],
-                            patches_superpoints[i][j][r][1]  / (float) INTEGER_FACTOR_RAD,
-                            (int) (radii[patches_superpoints[i][j][r][0] - 1] /  (float) INTEGER_FACTOR_CM),
-                            patches_superpoints[i][j][r][2] / (float) INTEGER_FACTOR_CM);
+                    		j + 1,
+							decodePHIcoordinate(patches_superpoints[i][j][r])  / (float) INTEGER_FACTOR_RAD,
+							(int) (radii[j] /  (float) INTEGER_FACTOR_CM),
+							decodeZcoordinate(patches_superpoints[i][j][r]) / (float) INTEGER_FACTOR_CM);
                 }
             }
         }
+        /*
         for (int i = 0; i < n_patches; i++)
         {
             fprintf(myfile, "[%ld, %ld]\n",
@@ -428,7 +431,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
                     lround(patches_parameters[i][2][3][0] / (float) INTEGER_FACTOR_CM * 10000),
                     lround(patches_parameters[i][2][3][1] / (float) INTEGER_FACTOR_CM * 10000));
             fprintf(myfile, "\n");
-        }
+        } */
         // instead of making an array of all events and passing them in, we only need access to them individually, so we will loop through and process as we create them.
 #endif
     }

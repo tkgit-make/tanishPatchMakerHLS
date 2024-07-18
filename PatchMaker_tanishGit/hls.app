@@ -2,7 +2,7 @@
     <includePaths/>
     <libraryPaths/>
     <Simulation>
-        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
+        <SimFlow name="csim" csimMode="0" lastCsimMode="2"/>
     </Simulation>
     <files xmlns="">
         <file name="../../tanishTestBench/wedgeData_v3_128.txt" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
@@ -12,7 +12,8 @@
         <file name="patchMaker.cpp" sc="0" tb="false" cflags="-IC:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
-        <solution name="solution1" status="active"/>
+        <solution name="solution1" status="inactive"/>
+        <solution name="solutionTEST" status="active"/>
     </solutions>
 </project>
 

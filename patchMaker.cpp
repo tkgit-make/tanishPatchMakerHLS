@@ -664,7 +664,7 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int stop, int ppl, bool leftRigh
         long previous_white_space_height = -INTEGER_FACTOR_CM;
         int counter = 0;
         int counterUpshift = 0;
-        index_type current_z_top_index = -1;
+        int current_z_top_index = -1;
         COORDINATE_TYPE previous_z_top_min = -999 * INTEGER_FACTOR_CM;
     solvePatchPair_loop:
         while (getSolveNextPatchPairWhileCondition(lastPatchIndex, repeat_patch, repeat_original, white_space_height,
@@ -864,7 +864,9 @@ thirdPatch_loop:
     }
 }
 
-void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, COORDINATE_TYPE &previous_z_top_min, COORDINATE_TYPE complementary_apexZ0, long &white_space_height, index_type &lastPatchIndex, COORDINATE_TYPE original_c, COORDINATE_TYPE original_d, COORDINATE_TYPE &complementary_a, COORDINATE_TYPE &complementary_b, index_type &current_z_top_index, int &counter, int &counterUpshift, COORDINATE_TYPE &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES)
+void solveComplmentaryPatch(long &previous_white_space_height, int ppl, bool fix42, int nPatchesAtOriginal, COORDINATE_TYPE &previous_z_top_min, COORDINATE_TYPE complementary_apexZ0,
+		long &white_space_height, index_type &lastPatchIndex, COORDINATE_TYPE original_c, COORDINATE_TYPE original_d,
+		COORDINATE_TYPE &complementary_a, COORDINATE_TYPE &complementary_b, int &current_z_top_index, int &counter, int &counterUpshift, COORDINATE_TYPE &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES)
 {
     #if PRINT_OUTS == true
         printf("\n");
@@ -1199,7 +1201,7 @@ rowListSet_loop:
         ppl = original_ppl;
     }
 
-    static COORDINATE_TYPE temp[MAX_POINTS_PER_LAYER][PARAMETERS_PER_POINT]; // check
+    static COORDINATE_TYPE temp[MAX_POINTS_PER_LAYER][PARAMETERS_PER_POINT];
     int temp_size = 0;
 
     if (leftRight)

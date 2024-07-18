@@ -1,0 +1,375 @@
+
+
+================================================================
+== Vitis HLS Report for 'wedgePatch_init'
+================================================================
+* Date:           Thu Jul 18 14:10:40 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionTEST (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.069 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                |                                     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                    Instance                    |                Module               |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +------------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_straightLineProjectorFromLayerIJtoK_fu_598  |straightLineProjectorFromLayerIJtoK  |       11|       11|  0.110 us|  0.110 us|    1|    1|      yes|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_612  |straightLineProjectorFromLayerIJtoK  |       11|       11|  0.110 us|  0.110 us|    1|    1|      yes|
+        |grp_get_acceptanceCorners_fu_626                |get_acceptanceCorners                |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+        +------------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                                                   |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |                     Loop Name                     |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_80_1_VITIS_LOOP_83_2_VITIS_LOOP_85_3  |        0|     8160|         2|          1|          1|  0 ~ 8160|       yes|
+        |- getParallelograms_loop                           |        ?|        ?|        15|          3|          1|         ?|       yes|
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      506|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        0|    12|     1842|     5365|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      505|    -|
+|Register             |        -|     -|      876|      128|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|    12|     2718|     6504|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     1|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------+-------------------------------------+---------+----+-----+------+-----+
+    |                    Instance                    |                Module               | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+------+-----+
+    |grp_get_acceptanceCorners_fu_626                |get_acceptanceCorners                |        0|   0|  406|   853|    0|
+    |mux_53_32_1_1_U49                               |mux_53_32_1_1                        |        0|   0|    0|    26|    0|
+    |mux_53_32_1_1_U50                               |mux_53_32_1_1                        |        0|   0|    0|    26|    0|
+    |mux_53_32_1_1_U51                               |mux_53_32_1_1                        |        0|   0|    0|    26|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_598  |straightLineProjectorFromLayerIJtoK  |        0|   6|  718|  2217|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_612  |straightLineProjectorFromLayerIJtoK  |        0|   6|  718|  2217|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+------+-----+
+    |Total                                           |                                     |        0|  12| 1842|  5365|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |add_ln51_fu_976_p2       |         +|   0|  0|  10|           3|           1|
+    |add_ln61_fu_1079_p2      |         +|   0|  0|  12|           5|           2|
+    |add_ln62_fu_1089_p2      |         +|   0|  0|  12|           5|           2|
+    |add_ln63_fu_1013_p2      |         +|   0|  0|  12|           5|           3|
+    |add_ln64_fu_1024_p2      |         +|   0|  0|  12|           5|           3|
+    |add_ln691_fu_1035_p2     |         +|   0|  0|  39|          32|           1|
+    |add_ln80_fu_650_p2       |         +|   0|  0|  20|          13|           1|
+    |add_ln83_1_fu_801_p2     |         +|   0|  0|  14|           7|           1|
+    |add_ln83_fu_711_p2       |         +|   0|  0|  12|           5|           1|
+    |add_ln85_fu_795_p2       |         +|   0|  0|   9|           2|           1|
+    |add_ln87_fu_775_p2       |         +|   0|  0|  12|           5|           5|
+    |i_3_fu_661_p2            |         +|   0|  0|  15|           8|           1|
+    |j_fu_1047_p2             |         +|   0|  0|  15|           8|           1|
+    |sub_ln59_fu_958_p2       |         -|   0|  0|  12|           5|           5|
+    |sub_ln60_fu_1007_p2      |         -|   0|  0|  12|           5|           5|
+    |and_ln80_fu_705_p2       |       and|   0|  0|   2|           1|           1|
+    |icmp_ln44_fu_906_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln57_fu_928_p2      |      icmp|   0|  0|  19|          30|           1|
+    |icmp_ln80_fu_656_p2      |      icmp|   0|  0|  12|          13|          13|
+    |icmp_ln83_fu_667_p2      |      icmp|   0|  0|  10|           7|           6|
+    |icmp_ln85_fu_699_p2      |      icmp|   0|  0|   8|           2|           3|
+    |icmp_ln878_1_fu_858_p2   |      icmp|   0|  0|  20|          32|          25|
+    |icmp_ln878_fu_840_p2     |      icmp|   0|  0|  20|          32|          26|
+    |icmp_ln886_fu_876_p2     |      icmp|   0|  0|  20|          32|          32|
+    |or_ln60_fu_1069_p2       |        or|   0|  0|   5|           5|           1|
+    |or_ln83_fu_717_p2        |        or|   0|  0|   2|           1|           1|
+    |select_ln80_1_fu_681_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln80_2_fu_739_p3  |    select|   0|  0|   4|           1|           1|
+    |select_ln80_fu_673_p3    |    select|   0|  0|   5|           1|           1|
+    |select_ln83_1_fu_747_p3  |    select|   0|  0|   4|           1|           4|
+    |select_ln83_2_fu_763_p3  |    select|   0|  0|   5|           1|           5|
+    |select_ln83_3_fu_807_p3  |    select|   0|  0|   7|           1|           1|
+    |select_ln83_fu_723_p3    |    select|   0|  0|   2|           1|           1|
+    |z1_max_V_1_fu_882_p3     |    select|   0|  0|  26|           1|          25|
+    |z1_max_V_fu_864_p3       |    select|   0|  0|  32|           1|          32|
+    |z1_min_V_1_fu_894_p3     |    select|   0|  0|  26|           1|          25|
+    |z1_min_V_fu_846_p3       |    select|   0|  0|  32|           1|          26|
+    |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_pp1            |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1  |       xor|   0|  0|   2|           2|           1|
+    |xor_ln80_fu_693_p2       |       xor|   0|  0|   2|           1|           2|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0| 506|         292|         286|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |                        Name                        | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |a_reg_564                                           |   9|          2|    5|         10|
+    |ap_NS_fsm                                           |  59|         11|    1|         11|
+    |ap_enable_reg_pp0_iter1                             |  14|          3|    1|          3|
+    |ap_enable_reg_pp1_iter4                             |   9|          2|    1|          2|
+    |ap_phi_mux_i_1_phi_fu_590_p4                        |   9|          2|    8|         16|
+    |ap_phi_mux_i_phi_fu_546_p4                          |   9|          2|    8|         16|
+    |b_reg_575                                           |   9|          2|    2|          4|
+    |empty_70_fu_150                                     |   9|          2|   32|         64|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_598_j    |  14|          3|    3|          9|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_598_z_j  |  14|          3|   32|         96|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_612_j    |  14|          3|    3|          9|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_612_z_j  |  14|          3|   32|         96|
+    |i_1_reg_586                                         |   9|          2|    8|         16|
+    |i_reg_542                                           |   9|          2|    8|         16|
+    |indvar_flatten13_reg_531                            |   9|          2|   13|         26|
+    |indvar_flatten_reg_553                              |   9|          2|    7|         14|
+    |wp_parameters5_address0                             |  14|          3|    5|         15|
+    |wp_parameters5_address1                             |  14|          3|    5|         15|
+    |wp_parameters8_address0                             |  20|          4|    5|         20|
+    |wp_parameters8_address1                             |  14|          3|    5|         15|
+    |wp_parameters8_ce0                                  |  14|          3|    1|          3|
+    |wp_parameters8_d0                                   |  20|          4|   32|        128|
+    |wp_parameters_address0                              |  26|          5|    5|         25|
+    |wp_parameters_address1                              |  26|          5|    5|         25|
+    |wp_parameters_ce0                                   |  14|          3|    1|          3|
+    |wp_parameters_ce1                                   |  14|          3|    1|          3|
+    |wp_parameters_d0                                    |  20|          4|   32|        128|
+    |wp_parameters_d1                                    |  20|          4|   32|        128|
+    |wp_superpoints1_address0                            |  14|          3|    5|         15|
+    |wp_superpoints2_address0                            |  14|          3|    5|         15|
+    |wp_superpoints3_address0                            |  14|          3|    5|         15|
+    |wp_superpoints4_address0                            |  14|          3|    5|         15|
+    |wp_superpoints_address0                             |  14|          3|    5|         15|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                               | 505|        105|  318|        991|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |                             Name                            | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |a_reg_564                                                    |   5|   0|    5|          0|
+    |add_ln51_reg_1348                                            |   3|   0|    3|          0|
+    |ap_CS_fsm                                                    |  10|   0|   10|          0|
+    |ap_enable_reg_pp0_iter0                                      |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                                      |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter0                                      |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter1                                      |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter2                                      |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter3                                      |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter4                                      |   1|   0|    1|          0|
+    |b_reg_575                                                    |   2|   0|    2|          0|
+    |c_V_reg_1366                                                 |  32|   0|   32|          0|
+    |conv_reg_1165                                                |   8|   0|   32|         24|
+    |d_V_reg_1371                                                 |  32|   0|   32|          0|
+    |empty_70_fu_150                                              |  32|   0|   32|          0|
+    |grp_get_acceptanceCorners_fu_626_ap_start_reg                |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_598_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_612_ap_start_reg  |   1|   0|    1|          0|
+    |i_1_reg_586                                                  |   8|   0|    8|          0|
+    |i_reg_542                                                    |   8|   0|    8|          0|
+    |icmp_ln44_reg_1328                                           |   1|   0|    1|          0|
+    |icmp_ln57_reg_1339                                           |   1|   0|    1|          0|
+    |icmp_ln80_reg_1180                                           |   1|   0|    1|          0|
+    |indvar_flatten13_reg_531                                     |  13|   0|   13|          0|
+    |indvar_flatten_reg_553                                       |   7|   0|    7|          0|
+    |j_reg_1361                                                   |   8|   0|    8|          0|
+    |select_ln80_1_reg_1184                                       |   8|   0|    8|          0|
+    |sext_ln28_reg_1282                                           |  32|   0|   32|          0|
+    |sext_ln31_reg_1276                                           |  32|   0|   32|          0|
+    |sub_ln59_reg_1343                                            |   4|   0|    5|          1|
+    |sub_ln60_reg_1354                                            |   4|   0|    5|          1|
+    |tmp_3_reg_1170                                               |   8|   0|   13|          5|
+    |trunc_ln46_reg_1332                                          |   3|   0|    3|          0|
+    |trunc_ln80_reg_1189                                          |   3|   0|    3|          0|
+    |wp_superpoints1_addr_reg_1204                                |   5|   0|    5|          0|
+    |wp_superpoints1_load_1_reg_1308                              |  32|   0|   32|          0|
+    |wp_superpoints1_load_reg_1288                                |  32|   0|   32|          0|
+    |wp_superpoints2_addr_reg_1209                                |   5|   0|    5|          0|
+    |wp_superpoints2_load_1_reg_1313                              |  32|   0|   32|          0|
+    |wp_superpoints2_load_reg_1293                                |  32|   0|   32|          0|
+    |wp_superpoints3_addr_reg_1214                                |   5|   0|    5|          0|
+    |wp_superpoints3_load_1_reg_1318                              |  32|   0|   32|          0|
+    |wp_superpoints3_load_reg_1298                                |  32|   0|   32|          0|
+    |wp_superpoints4_addr_reg_1219                                |   5|   0|    5|          0|
+    |wp_superpoints4_load_1_reg_1323                              |  32|   0|   32|          0|
+    |wp_superpoints4_load_reg_1303                                |  32|   0|   32|          0|
+    |wp_superpoints_addr_2_reg_1199                               |   5|   0|    5|          0|
+    |wp_superpoints_load_1_reg_1271                               |  32|   0|   32|          0|
+    |wp_superpoints_load_reg_1266                                 |  32|   0|   32|          0|
+    |icmp_ln44_reg_1328                                           |  64|  32|    1|          0|
+    |icmp_ln57_reg_1339                                           |  64|  32|    1|          0|
+    |sub_ln59_reg_1343                                            |  64|  32|    5|          1|
+    |sub_ln60_reg_1354                                            |  64|  32|    5|          1|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                        | 876| 128|  663|         33|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++--------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|   wedgePatch_init|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|   wedgePatch_init|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|   wedgePatch_init|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|   wedgePatch_init|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|   wedgePatch_init|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|   wedgePatch_init|  return value|
+|wp_superpoints_address0   |  out|    5|   ap_memory|    wp_superpoints|         array|
+|wp_superpoints_ce0        |  out|    1|   ap_memory|    wp_superpoints|         array|
+|wp_superpoints_we0        |  out|    1|   ap_memory|    wp_superpoints|         array|
+|wp_superpoints_d0         |  out|   32|   ap_memory|    wp_superpoints|         array|
+|wp_superpoints_q0         |   in|   32|   ap_memory|    wp_superpoints|         array|
+|wp_superpoints_address1   |  out|    5|   ap_memory|    wp_superpoints|         array|
+|wp_superpoints_ce1        |  out|    1|   ap_memory|    wp_superpoints|         array|
+|wp_superpoints_q1         |   in|   32|   ap_memory|    wp_superpoints|         array|
+|wp_superpoints1_address0  |  out|    5|   ap_memory|   wp_superpoints1|         array|
+|wp_superpoints1_ce0       |  out|    1|   ap_memory|   wp_superpoints1|         array|
+|wp_superpoints1_we0       |  out|    1|   ap_memory|   wp_superpoints1|         array|
+|wp_superpoints1_d0        |  out|   32|   ap_memory|   wp_superpoints1|         array|
+|wp_superpoints1_q0        |   in|   32|   ap_memory|   wp_superpoints1|         array|
+|wp_superpoints1_address1  |  out|    5|   ap_memory|   wp_superpoints1|         array|
+|wp_superpoints1_ce1       |  out|    1|   ap_memory|   wp_superpoints1|         array|
+|wp_superpoints1_q1        |   in|   32|   ap_memory|   wp_superpoints1|         array|
+|wp_superpoints2_address0  |  out|    5|   ap_memory|   wp_superpoints2|         array|
+|wp_superpoints2_ce0       |  out|    1|   ap_memory|   wp_superpoints2|         array|
+|wp_superpoints2_we0       |  out|    1|   ap_memory|   wp_superpoints2|         array|
+|wp_superpoints2_d0        |  out|   32|   ap_memory|   wp_superpoints2|         array|
+|wp_superpoints2_q0        |   in|   32|   ap_memory|   wp_superpoints2|         array|
+|wp_superpoints2_address1  |  out|    5|   ap_memory|   wp_superpoints2|         array|
+|wp_superpoints2_ce1       |  out|    1|   ap_memory|   wp_superpoints2|         array|
+|wp_superpoints2_q1        |   in|   32|   ap_memory|   wp_superpoints2|         array|
+|wp_superpoints3_address0  |  out|    5|   ap_memory|   wp_superpoints3|         array|
+|wp_superpoints3_ce0       |  out|    1|   ap_memory|   wp_superpoints3|         array|
+|wp_superpoints3_we0       |  out|    1|   ap_memory|   wp_superpoints3|         array|
+|wp_superpoints3_d0        |  out|   32|   ap_memory|   wp_superpoints3|         array|
+|wp_superpoints3_q0        |   in|   32|   ap_memory|   wp_superpoints3|         array|
+|wp_superpoints3_address1  |  out|    5|   ap_memory|   wp_superpoints3|         array|
+|wp_superpoints3_ce1       |  out|    1|   ap_memory|   wp_superpoints3|         array|
+|wp_superpoints3_q1        |   in|   32|   ap_memory|   wp_superpoints3|         array|
+|wp_superpoints4_address0  |  out|    5|   ap_memory|   wp_superpoints4|         array|
+|wp_superpoints4_ce0       |  out|    1|   ap_memory|   wp_superpoints4|         array|
+|wp_superpoints4_we0       |  out|    1|   ap_memory|   wp_superpoints4|         array|
+|wp_superpoints4_d0        |  out|   32|   ap_memory|   wp_superpoints4|         array|
+|wp_superpoints4_q0        |   in|   32|   ap_memory|   wp_superpoints4|         array|
+|wp_superpoints4_address1  |  out|    5|   ap_memory|   wp_superpoints4|         array|
+|wp_superpoints4_ce1       |  out|    1|   ap_memory|   wp_superpoints4|         array|
+|wp_superpoints4_q1        |   in|   32|   ap_memory|   wp_superpoints4|         array|
+|wp_parameters_address0    |  out|    5|   ap_memory|     wp_parameters|         array|
+|wp_parameters_ce0         |  out|    1|   ap_memory|     wp_parameters|         array|
+|wp_parameters_we0         |  out|    1|   ap_memory|     wp_parameters|         array|
+|wp_parameters_d0          |  out|   32|   ap_memory|     wp_parameters|         array|
+|wp_parameters_q0          |   in|   32|   ap_memory|     wp_parameters|         array|
+|wp_parameters_address1    |  out|    5|   ap_memory|     wp_parameters|         array|
+|wp_parameters_ce1         |  out|    1|   ap_memory|     wp_parameters|         array|
+|wp_parameters_we1         |  out|    1|   ap_memory|     wp_parameters|         array|
+|wp_parameters_d1          |  out|   32|   ap_memory|     wp_parameters|         array|
+|wp_parameters_q1          |   in|   32|   ap_memory|     wp_parameters|         array|
+|wp_parameters5_address0   |  out|    5|   ap_memory|    wp_parameters5|         array|
+|wp_parameters5_ce0        |  out|    1|   ap_memory|    wp_parameters5|         array|
+|wp_parameters5_we0        |  out|    1|   ap_memory|    wp_parameters5|         array|
+|wp_parameters5_d0         |  out|    1|   ap_memory|    wp_parameters5|         array|
+|wp_parameters5_address1   |  out|    5|   ap_memory|    wp_parameters5|         array|
+|wp_parameters5_ce1        |  out|    1|   ap_memory|    wp_parameters5|         array|
+|wp_parameters5_we1        |  out|    1|   ap_memory|    wp_parameters5|         array|
+|wp_parameters5_d1         |  out|    1|   ap_memory|    wp_parameters5|         array|
+|wp_parameters6_address0   |  out|    5|   ap_memory|    wp_parameters6|         array|
+|wp_parameters6_ce0        |  out|    1|   ap_memory|    wp_parameters6|         array|
+|wp_parameters6_we0        |  out|    1|   ap_memory|    wp_parameters6|         array|
+|wp_parameters6_d0         |  out|   32|   ap_memory|    wp_parameters6|         array|
+|wp_parameters6_address1   |  out|    5|   ap_memory|    wp_parameters6|         array|
+|wp_parameters6_ce1        |  out|    1|   ap_memory|    wp_parameters6|         array|
+|wp_parameters6_we1        |  out|    1|   ap_memory|    wp_parameters6|         array|
+|wp_parameters6_d1         |  out|   32|   ap_memory|    wp_parameters6|         array|
+|wp_parameters7_address0   |  out|    5|   ap_memory|    wp_parameters7|         array|
+|wp_parameters7_ce0        |  out|    1|   ap_memory|    wp_parameters7|         array|
+|wp_parameters7_we0        |  out|    1|   ap_memory|    wp_parameters7|         array|
+|wp_parameters7_d0         |  out|    1|   ap_memory|    wp_parameters7|         array|
+|wp_parameters7_address1   |  out|    5|   ap_memory|    wp_parameters7|         array|
+|wp_parameters7_ce1        |  out|    1|   ap_memory|    wp_parameters7|         array|
+|wp_parameters7_we1        |  out|    1|   ap_memory|    wp_parameters7|         array|
+|wp_parameters7_d1         |  out|    1|   ap_memory|    wp_parameters7|         array|
+|wp_parameters8_address0   |  out|    5|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_ce0        |  out|    1|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_we0        |  out|    1|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_d0         |  out|   32|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_q0         |   in|   32|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_address1   |  out|    5|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_ce1        |  out|    1|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_we1        |  out|    1|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_d1         |  out|   32|   ap_memory|    wp_parameters8|         array|
+|wp_parameters8_q1         |   in|   32|   ap_memory|    wp_parameters8|         array|
+|superpointsI_address0     |  out|    5|   ap_memory|      superpointsI|         array|
+|superpointsI_ce0          |  out|    1|   ap_memory|      superpointsI|         array|
+|superpointsI_q0           |   in|   32|   ap_memory|      superpointsI|         array|
+|superpointsI9_address0    |  out|    5|   ap_memory|     superpointsI9|         array|
+|superpointsI9_ce0         |  out|    1|   ap_memory|     superpointsI9|         array|
+|superpointsI9_q0          |   in|   32|   ap_memory|     superpointsI9|         array|
+|superpointsI10_address0   |  out|    5|   ap_memory|    superpointsI10|         array|
+|superpointsI10_ce0        |  out|    1|   ap_memory|    superpointsI10|         array|
+|superpointsI10_q0         |   in|   32|   ap_memory|    superpointsI10|         array|
+|superpointsI11_address0   |  out|    5|   ap_memory|    superpointsI11|         array|
+|superpointsI11_ce0        |  out|    1|   ap_memory|    superpointsI11|         array|
+|superpointsI11_q0         |   in|   32|   ap_memory|    superpointsI11|         array|
+|superpointsI12_address0   |  out|    5|   ap_memory|    superpointsI12|         array|
+|superpointsI12_ce0        |  out|    1|   ap_memory|    superpointsI12|         array|
+|superpointsI12_q0         |   in|   32|   ap_memory|    superpointsI12|         array|
+|superpoint_count          |   in|    8|     ap_none|  superpoint_count|        scalar|
+|apexZ0I                   |   in|   32|     ap_none|           apexZ0I|        scalar|
++--------------------------+-----+-----+------------+------------------+--------------+
+
