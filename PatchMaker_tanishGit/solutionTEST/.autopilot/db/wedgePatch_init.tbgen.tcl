@@ -310,8 +310,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "apexZ0I", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radii", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_598", "Port" : "radii"},
-					{"ID" : "10", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_612", "Port" : "radii"}]}]},
+					{"ID" : "10", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_612", "Port" : "radii"},
+					{"ID" : "1", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_598", "Port" : "radii"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_598", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6", "7", "8", "9"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",

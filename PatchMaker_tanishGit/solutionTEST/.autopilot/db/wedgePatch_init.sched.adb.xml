@@ -1437,7 +1437,7 @@
 
 <Node id="93" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split4:35 %specloopname_ln85 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
+.split4:35 %specloopname_ln85 = specloopname void @_ssdm_op_SpecLoopName, void @empty_33
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln85"/></StgValue>
@@ -1717,10 +1717,10 @@ branch4:1 %br_ln87 = br void %.split40
 
 <Node id="122" bw="32" op_0_bw="32">
 <![CDATA[
-._crit_edge.loopexit:0 %empty_70 = alloca i32 1
+._crit_edge.loopexit:0 %empty_72 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_70"/></StgValue>
+<StgValue><ssdm name="empty_72"/></StgValue>
 </operation>
 
 <operation id="123" st_id="5" stage="1" lat="1">
@@ -1912,7 +1912,7 @@ branch4:1 %br_ln87 = br void %.split40
 
 <Node id="146" bw="0" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge.loopexit:24 %store_ln44 = store i32 0, i32 %empty_70
+._crit_edge.loopexit:24 %store_ln44 = store i32 0, i32 %empty_72
 
 ]]></Node>
 <StgValue><ssdm name="store_ln44"/></StgValue>
@@ -2324,7 +2324,7 @@ branch4:1 %br_ln87 = br void %.split40
 
 <Node id="155" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-:1 %p_load221 = load i32 %empty_70
+:1 %p_load221 = load i32 %empty_72
 
 ]]></Node>
 <StgValue><ssdm name="p_load221"/></StgValue>
@@ -2862,7 +2862,7 @@ branch4:1 %br_ln87 = br void %.split40
 
 <Node id="205" bw="0" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-:36 %store_ln67 = store i32 %add_ln691, i32 %empty_70
+:36 %store_ln67 = store i32 %add_ln691, i32 %empty_72
 
 ]]></Node>
 <StgValue><ssdm name="store_ln67"/></StgValue>
@@ -3762,7 +3762,7 @@ branch4:1 %br_ln87 = br void %.split40
 
 <Node id="156" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-:2 %specloopname_ln46 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15
+:2 %specloopname_ln46 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln46"/></StgValue>

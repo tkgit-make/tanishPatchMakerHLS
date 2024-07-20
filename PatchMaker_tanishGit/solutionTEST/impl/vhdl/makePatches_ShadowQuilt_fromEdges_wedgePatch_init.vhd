@@ -365,7 +365,7 @@ attribute shreg_extract : string;
     signal zext_ln60_fu_1074_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln61_fu_1084_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln62_fu_1094_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal empty_70_fu_150 : STD_LOGIC_VECTOR (31 downto 0);
+    signal empty_72_fu_150 : STD_LOGIC_VECTOR (31 downto 0);
     signal add_ln691_fu_1035_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
@@ -816,13 +816,13 @@ begin
         end if;
     end process;
 
-    empty_70_fu_150_assign_proc : process (ap_clk)
+    empty_72_fu_150_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-                empty_70_fu_150 <= ap_const_lv32_0;
+                empty_72_fu_150 <= ap_const_lv32_0;
             elsif (((ap_enable_reg_pp1_iter0 = ap_const_logic_1) and (icmp_ln57_reg_1339 = ap_const_lv1_1) and (icmp_ln44_reg_1328 = ap_const_lv1_1) and (ap_const_boolean_0 = ap_block_pp1_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp1_stage1))) then 
-                empty_70_fu_150 <= add_ln691_fu_1035_p2;
+                empty_72_fu_150 <= add_ln691_fu_1035_p2;
             end if; 
         end if;
     end process;
@@ -1383,7 +1383,7 @@ begin
 
     tmp_3_fu_642_p3 <= (superpoint_count & ap_const_lv5_0);
     tmp_4_cast_fu_755_p3 <= (select_ln83_1_fu_747_p3 & ap_const_lv1_0);
-    tmp_4_fu_918_p4 <= empty_70_fu_150(31 downto 2);
+    tmp_4_fu_918_p4 <= empty_72_fu_150(31 downto 2);
     tmp_5_cast_fu_938_p3 <= (trunc_ln59_fu_934_p1 & ap_const_lv3_0);
     tmp_6_cast_fu_950_p3 <= (trunc_ln59_1_fu_946_p1 & ap_const_lv1_0);
     tmp_7_cast_fu_987_p3 <= (trunc_ln60_fu_983_p1 & ap_const_lv3_0);
@@ -1391,8 +1391,8 @@ begin
     trunc_ln28_fu_854_p1 <= z1_min_V_fu_846_p3(26 - 1 downto 0);
     trunc_ln29_fu_872_p1 <= z1_max_V_fu_864_p3(26 - 1 downto 0);
     trunc_ln46_fu_914_p1 <= ap_phi_mux_i_1_phi_fu_590_p4(3 - 1 downto 0);
-    trunc_ln59_1_fu_946_p1 <= empty_70_fu_150(4 - 1 downto 0);
-    trunc_ln59_fu_934_p1 <= empty_70_fu_150(2 - 1 downto 0);
+    trunc_ln59_1_fu_946_p1 <= empty_72_fu_150(4 - 1 downto 0);
+    trunc_ln59_fu_934_p1 <= empty_72_fu_150(2 - 1 downto 0);
     trunc_ln60_1_fu_995_p1 <= wp_parameters8_q1(4 - 1 downto 0);
     trunc_ln60_fu_983_p1 <= wp_parameters8_q1(2 - 1 downto 0);
     trunc_ln80_fu_689_p1 <= select_ln80_1_fu_681_p3(3 - 1 downto 0);

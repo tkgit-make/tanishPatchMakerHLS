@@ -179,7 +179,7 @@ wire    ap_CS_fsm_state6;
 wire   [1:0] trunc_ln878_fu_377_p1;
 wire   [3:0] trunc_ln878_1_fu_389_p1;
 wire   [4:0] tmp_cast_fu_381_p3;
-wire   [4:0] tmp_113_cast_fu_393_p3;
+wire   [4:0] tmp_121_cast_fu_393_p3;
 wire   [4:0] or_ln878_fu_412_p2;
 wire   [4:0] add_ln886_fu_423_p2;
 wire   [4:0] add_ln886_2_fu_433_p2;
@@ -766,9 +766,9 @@ assign icmp_ln886_fu_471_p2 = (($signed(wp_parameters_q1) > $signed(c_corner_max
 
 assign or_ln878_fu_412_p2 = (sub_ln878_fu_401_p2 | 5'd1);
 
-assign sub_ln878_fu_401_p2 = (tmp_cast_fu_381_p3 - tmp_113_cast_fu_393_p3);
+assign sub_ln878_fu_401_p2 = (tmp_cast_fu_381_p3 - tmp_121_cast_fu_393_p3);
 
-assign tmp_113_cast_fu_393_p3 = {{trunc_ln878_1_fu_389_p1}, {1'd0}};
+assign tmp_121_cast_fu_393_p3 = {{trunc_ln878_1_fu_389_p1}, {1'd0}};
 
 assign tmp_cast_fu_381_p3 = {{trunc_ln878_fu_377_p1}, {3'd0}};
 

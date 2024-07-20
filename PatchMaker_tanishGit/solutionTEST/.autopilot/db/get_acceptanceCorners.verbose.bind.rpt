@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'get_acceptanceCorners'
 ================================================================
-* Date:           Thu Jul 18 14:09:03 2024
+* Date:           Thu Jul 18 17:16:54 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -139,8 +139,8 @@ ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%br_ln208 = br i1 %icmp_ln208, void
 ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln878 = trunc i32 %i"   --->   Operation 50 'trunc' 'trunc_ln878' <Predicate = (!icmp_ln208)> <Delay = 0.00>
 ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_cast = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %trunc_ln878, i3 0"   --->   Operation 51 'bitconcatenate' 'tmp_cast' <Predicate = (!icmp_ln208)> <Delay = 0.00>
 ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln878_1 = trunc i32 %i"   --->   Operation 52 'trunc' 'trunc_ln878_1' <Predicate = (!icmp_ln208)> <Delay = 0.00>
-ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_113_cast = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i4.i1, i4 %trunc_ln878_1, i1 0"   --->   Operation 53 'bitconcatenate' 'tmp_113_cast' <Predicate = (!icmp_ln208)> <Delay = 0.00>
-ST_3 : Operation 54 [1/1] (0.70ns)   --->   "%sub_ln878 = sub i5 %tmp_cast, i5 %tmp_113_cast"   --->   Operation 54 'sub' 'sub_ln878' <Predicate = (!icmp_ln208)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_121_cast = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i4.i1, i4 %trunc_ln878_1, i1 0"   --->   Operation 53 'bitconcatenate' 'tmp_121_cast' <Predicate = (!icmp_ln208)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.70ns)   --->   "%sub_ln878 = sub i5 %tmp_cast, i5 %tmp_121_cast"   --->   Operation 54 'sub' 'sub_ln878' <Predicate = (!icmp_ln208)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln878 = zext i5 %sub_ln878"   --->   Operation 55 'zext' 'zext_ln878' <Predicate = (!icmp_ln208)> <Delay = 0.00>
 ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%wp_parameters_addr_8 = getelementptr i32 %wp_parameters, i64 0, i64 %zext_ln878"   --->   Operation 56 'getelementptr' 'wp_parameters_addr_8' <Predicate = (!icmp_ln208)> <Delay = 0.00>
 ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%or_ln878 = or i5 %sub_ln878, i5 1"   --->   Operation 57 'or' 'or_ln878' <Predicate = (!icmp_ln208)> <Delay = 0.00>
@@ -166,7 +166,7 @@ ST_4 : Operation 74 [2/2] (0.69ns)   --->   "%wp_parameters_load_5 = load i5 %wp
 ST_4 : Operation 75 [2/2] (0.69ns)   --->   "%d_corner_max_V_1 = load i5 %wp_parameters_addr_11"   --->   Operation 75 'load' 'd_corner_max_V_1' <Predicate = (!icmp_ln208)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
 
 State 5 <SV = 4> <Delay = 1.78>
-ST_5 : Operation 76 [1/1] (0.00ns)   --->   "%specloopname_ln201 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [patchMaker.cpp:201]   --->   Operation 76 'specloopname' 'specloopname_ln201' <Predicate = (!icmp_ln208)> <Delay = 0.00>
+ST_5 : Operation 76 [1/1] (0.00ns)   --->   "%specloopname_ln201 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [patchMaker.cpp:201]   --->   Operation 76 'specloopname' 'specloopname_ln201' <Predicate = (!icmp_ln208)> <Delay = 0.00>
 ST_5 : Operation 77 [1/2] (0.69ns)   --->   "%wp_parameters_load_5 = load i5 %wp_parameters_addr_10"   --->   Operation 77 'load' 'wp_parameters_load_5' <Predicate = (!icmp_ln208)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
 ST_5 : Operation 78 [1/1] (0.85ns)   --->   "%icmp_ln886 = icmp_sgt  i32 %wp_parameters_load_5, i32 %c_corner_max_V"   --->   Operation 78 'icmp' 'icmp_ln886' <Predicate = (!icmp_ln208)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 79 [1/1] (0.22ns)   --->   "%c_corner_max_V_1 = select i1 %icmp_ln886, i32 %wp_parameters_load_5, i32 %c_corner_max_V" [patchMaker.cpp:218]   --->   Operation 79 'select' 'c_corner_max_V_1' <Predicate = (!icmp_ln208)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -306,7 +306,7 @@ br_ln208               (br            ) [ 000000000000000]
 trunc_ln878            (trunc         ) [ 000000000000000]
 tmp_cast               (bitconcatenate) [ 000000000000000]
 trunc_ln878_1          (trunc         ) [ 000000000000000]
-tmp_113_cast           (bitconcatenate) [ 000000000000000]
+tmp_121_cast           (bitconcatenate) [ 000000000000000]
 sub_ln878              (sub           ) [ 000010000000000]
 zext_ln878             (zext          ) [ 000000000000000]
 wp_parameters_addr_8   (getelementptr ) [ 000010000000000]
@@ -665,7 +665,7 @@ ret_ln274              (ret           ) [ 000000000000000]
 <pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_20"/></StgValue>
+<StgValue><ssdm name="empty_18"/></StgValue>
 </bind>
 </comp>
 
@@ -1235,7 +1235,7 @@ ret_ln274              (ret           ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="393" class="1004" name="tmp_113_cast_fu_393">
+<comp id="393" class="1004" name="tmp_121_cast_fu_393">
 <pin_list>
 <pin id="394" dir="0" index="0" bw="5" slack="0"/>
 <pin id="395" dir="0" index="1" bw="4" slack="0"/>
@@ -1244,7 +1244,7 @@ ret_ln274              (ret           ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_113_cast/3 "/>
+<opset="tmp_121_cast/3 "/>
 </bind>
 </comp>
 
@@ -2354,7 +2354,7 @@ ret_ln274              (ret           ) [ 000000000000000]
 		trunc_ln878 : 1
 		tmp_cast : 2
 		trunc_ln878_1 : 1
-		tmp_113_cast : 2
+		tmp_121_cast : 2
 		sub_ln878 : 3
 		zext_ln878 : 4
 		wp_parameters_addr_8 : 5
@@ -2440,7 +2440,7 @@ ret_ln274              (ret           ) [ 000000000000000]
 |          |   trunc_ln878_1_fu_389  |    0    |    0    |
 |----------|-------------------------|---------|---------|
 |bitconcatenate|     tmp_cast_fu_381     |    0    |    0    |
-|          |   tmp_113_cast_fu_393   |    0    |    0    |
+|          |   tmp_121_cast_fu_393   |    0    |    0    |
 |----------|-------------------------|---------|---------|
 |          |    zext_ln878_fu_407    |    0    |    0    |
 |   zext   |   zext_ln878_1_fu_418   |    0    |    0    |

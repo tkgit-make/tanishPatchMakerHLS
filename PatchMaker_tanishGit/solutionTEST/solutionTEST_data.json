@@ -267,7 +267,7 @@
       "impl\/vhdl\/makePatches_ShadowQuilt_fromEdges_mul_mul_18ns_20ns_37_4_1.vhd",
       "impl\/vhdl\/makePatches_ShadowQuilt_fromEdges_mux_42_32_1_1.vhd",
       "impl\/vhdl\/makePatches_ShadowQuilt_fromEdges_mux_53_32_1_1.vhd",
-      "impl\/vhdl\/makePatches_ShadowQuilt_fromEdges_patches_parameters.vhd",
+      "impl\/vhdl\/makePatches_ShadowQuilt_fromEdges_patches_parameters_V.vhd",
       "impl\/vhdl\/makePatches_ShadowQuilt_fromEdges_sitodp_32ns_64_2_no_dsp_1.vhd",
       "impl\/vhdl\/makePatches_ShadowQuilt_fromEdges_sitodp_64ns_64_2_no_dsp_1.vhd",
       "impl\/vhdl\/makePatches_ShadowQuilt_fromEdges_sitodp_64s_64_2_no_dsp_1.vhd",
@@ -319,7 +319,7 @@
       "impl\/verilog\/makePatches_ShadowQuilt_fromEdges_mul_mul_18ns_20ns_37_4_1.v",
       "impl\/verilog\/makePatches_ShadowQuilt_fromEdges_mux_42_32_1_1.v",
       "impl\/verilog\/makePatches_ShadowQuilt_fromEdges_mux_53_32_1_1.v",
-      "impl\/verilog\/makePatches_ShadowQuilt_fromEdges_patches_parameters.v",
+      "impl\/verilog\/makePatches_ShadowQuilt_fromEdges_patches_parameters_V.v",
       "impl\/verilog\/makePatches_ShadowQuilt_fromEdges_sitodp_32ns_64_2_no_dsp_1.v",
       "impl\/verilog\/makePatches_ShadowQuilt_fromEdges_sitodp_64ns_64_2_no_dsp_1.v",
       "impl\/verilog\/makePatches_ShadowQuilt_fromEdges_sitodp_64s_64_2_no_dsp_1.v",
@@ -752,7 +752,7 @@
       "ModuleName": "makePatches_ShadowQuilt_fromEdges",
       "Instances": [{
           "ModuleName": "solveNextPatchPair",
-          "InstanceName": "grp_solveNextPatchPair_fu_322",
+          "InstanceName": "grp_solveNextPatchPair_fu_537",
           "Instances": [
             {
               "ModuleName": "makeThirdPatch",
@@ -1747,6 +1747,20 @@
         },
         "Loops": [
           {
+            "Name": "initArraysSPloop1_initArraysSPloop2_initArraysSPloop3",
+            "TripCount": "2560",
+            "Latency": "2560",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "initArraysPPloop1_initArraysPPloop3_initArraysPPloop4",
+            "TripCount": "3840",
+            "Latency": "3840",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          },
+          {
             "Name": "VITIS_LOOP_474_1_VITIS_LOOP_476_2",
             "TripCount": "640",
             "Latency": "640",
@@ -1775,10 +1789,10 @@
           "DSP": "152",
           "AVAIL_DSP": "3840",
           "UTIL_DSP": "3",
-          "FF": "52233",
+          "FF": "52312",
           "AVAIL_FF": "8171520",
           "UTIL_FF": "~0",
-          "LUT": "98300",
+          "LUT": "99061",
           "AVAIL_LUT": "4085760",
           "UTIL_LUT": "2",
           "URAM": "0",
@@ -1791,7 +1805,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-07-18 14:12:01 -0400",
+    "Time": "2024-07-18 17:18:48 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

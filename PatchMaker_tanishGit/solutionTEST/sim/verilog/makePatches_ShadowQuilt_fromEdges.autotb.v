@@ -12,7 +12,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "makePatches_ShadowQuilt_fromEdges.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_makePatches_ShadowQuilt_fromEdges_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 0.50
+`define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
 `define AESL_DEPTH_stop 1
 `define AESL_DEPTH_ppl 1

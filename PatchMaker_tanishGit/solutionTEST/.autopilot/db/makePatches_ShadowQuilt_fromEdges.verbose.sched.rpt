@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'makePatches_ShadowQuilt_fromEdges'
 ================================================================
-* Date:           Thu Jul 18 14:10:21 2024
+* Date:           Thu Jul 18 17:17:39 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -37,14 +37,16 @@
         N/A
 
         * Loop: 
-        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
-        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
-        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_474_1_VITIS_LOOP_476_2  |      640|      640|         2|          1|          1|   640|       yes|
-        |- shadowQuilt_loop                   |        ?|        ?|         ?|          -|          -|     ?|        no|
-        | + solveNextColumn_loop              |        ?|        ?|         ?|          -|          -|     ?|        no|
-        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        +---------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                                         |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |                        Loop Name                        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- initArraysSPloop1_initArraysSPloop2_initArraysSPloop3  |     2560|     2560|         1|          1|          1|  2560|       yes|
+        |- initArraysPPloop1_initArraysPPloop3_initArraysPPloop4  |     3840|     3840|         1|          1|          1|  3840|       yes|
+        |- VITIS_LOOP_474_1_VITIS_LOOP_476_2                      |      640|      640|         2|          1|          1|   640|       yes|
+        |- shadowQuilt_loop                                       |        ?|        ?|         ?|          -|          -|     ?|        no|
+        | + solveNextColumn_loop                                  |        ?|        ?|         ?|          -|          -|     ?|        no|
+        +---------------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -69,178 +71,303 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 2
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+  * Pipeline-1: initiation interval (II) = 1, depth = 1
+  * Pipeline-2: initiation interval (II) = 1, depth = 2
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 11
-* Pipeline : 1
-  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Number of FSM states : 15
+* Pipeline : 3
+  Pipeline-0 : II = 1, D = 1, States = { 2 }
+  Pipeline-1 : II = 1, D = 1, States = { 4 }
+  Pipeline-2 : II = 1, D = 2, States = { 6 7 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
-2 --> 4 3 
-3 --> 2 
-4 --> 5 
-5 --> 6 9 
-6 --> 7 
-7 --> 8 
+2 --> 3 2 
+3 --> 4 
+4 --> 5 4 
+5 --> 6 
+6 --> 8 7 
+7 --> 6 
 8 --> 9 
-9 --> 10 
-10 --> 11 5 
-11 --> 10 
+9 --> 10 13 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 9 
+15 --> 14 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.38>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_9"   --->   Operation 12 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stop"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stop, void @empty_12, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %ppl"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %ppl, void @empty_12, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %leftRight"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %leftRight, void @empty_12, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %n_patches"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %n_patches, void @empty_12, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %GDarray, void @empty_14, i32 0, i32 0, void @empty_13, i32 4294967295, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %GDarray"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_14, i32 0, i32 0, void @empty_13, i32 4294967295, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %GDn_points"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %patches_superpoints, void @empty_14, i32 0, i32 0, void @empty_13, i32 4294967295, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %patches_superpoints"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%ppl_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %ppl"   --->   Operation 27 'read' 'ppl_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%patches_parameters = alloca i64 1"   --->   Operation 28 'alloca' 'patches_parameters' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%GDarrayDecoded_V = alloca i64 1" [patchMaker.cpp:472]   --->   Operation 29 'alloca' 'GDarrayDecoded_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
-ST_1 : Operation 30 [1/1] (0.38ns)   --->   "%br_ln474 = br void" [patchMaker.cpp:474]   --->   Operation 30 'br' 'br_ln474' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_19"   --->   Operation 16 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %stop"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %stop, void @empty_11, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %ppl"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %ppl, void @empty_11, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %leftRight"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %leftRight, void @empty_11, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %n_patches"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %n_patches, void @empty_11, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %GDarray, void @empty_14, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %GDarray"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_14, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %GDn_points"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %patches_superpoints, void @empty_14, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %patches_superpoints"   --->   Operation 30 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%ppl_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %ppl"   --->   Operation 31 'read' 'ppl_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%patches_parameters_V = alloca i64 1" [patchMaker.cpp:465]   --->   Operation 32 'alloca' 'patches_parameters_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3840> <RAM>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%GDarrayDecoded_V = alloca i64 1" [patchMaker.cpp:472]   --->   Operation 33 'alloca' 'GDarrayDecoded_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
+ST_1 : Operation 34 [1/1] (0.38ns)   --->   "%br_ln429 = br void" [patchMaker.cpp:429]   --->   Operation 34 'br' 'br_ln429' <Predicate = true> <Delay = 0.38>
 
-State 2 <SV = 1> <Delay = 2.08>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i10 0, void, i10 %add_ln474_1, void %.split2" [patchMaker.cpp:474]   --->   Operation 31 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%a = phi i3 0, void, i3 %select_ln474_1, void %.split2" [patchMaker.cpp:474]   --->   Operation 32 'phi' 'a' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%b = phi i8 0, void, i8 %add_ln476, void %.split2" [patchMaker.cpp:476]   --->   Operation 33 'phi' 'b' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (0.72ns)   --->   "%add_ln474_1 = add i10 %indvar_flatten, i10 1" [patchMaker.cpp:474]   --->   Operation 34 'add' 'add_ln474_1' <Predicate = true> <Delay = 0.72> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 35 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 36 [1/1] (0.60ns)   --->   "%icmp_ln474 = icmp_eq  i10 %indvar_flatten, i10 640" [patchMaker.cpp:474]   --->   Operation 36 'icmp' 'icmp_ln474' <Predicate = true> <Delay = 0.60> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln474 = br i1 %icmp_ln474, void %.split2, void %.preheader.preheader" [patchMaker.cpp:474]   --->   Operation 37 'br' 'br_ln474' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 38 [1/1] (0.57ns)   --->   "%add_ln474 = add i3 %a, i3 1" [patchMaker.cpp:474]   --->   Operation 38 'add' 'add_ln474' <Predicate = (!icmp_ln474)> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 39 [1/1] (0.58ns)   --->   "%icmp_ln476 = icmp_eq  i8 %b, i8 128" [patchMaker.cpp:476]   --->   Operation 39 'icmp' 'icmp_ln476' <Predicate = (!icmp_ln474)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 40 [1/1] (0.30ns)   --->   "%select_ln474 = select i1 %icmp_ln476, i8 0, i8 %b" [patchMaker.cpp:474]   --->   Operation 40 'select' 'select_ln474' <Predicate = (!icmp_ln474)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 41 [1/1] (0.27ns)   --->   "%select_ln474_1 = select i1 %icmp_ln476, i3 %add_ln474, i3 %a" [patchMaker.cpp:474]   --->   Operation 41 'select' 'select_ln474_1' <Predicate = (!icmp_ln474)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%trunc_ln478 = trunc i8 %select_ln474" [patchMaker.cpp:478]   --->   Operation 42 'trunc' 'trunc_ln478' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_44 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i3.i7, i3 %select_ln474_1, i7 %trunc_ln478" [patchMaker.cpp:478]   --->   Operation 43 'bitconcatenate' 'tmp_44' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln478_1 = zext i10 %tmp_44" [patchMaker.cpp:478]   --->   Operation 44 'zext' 'zext_ln478_1' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%GDarray_addr = getelementptr i64 %GDarray, i64 0, i64 %zext_ln478_1" [patchMaker.cpp:478]   --->   Operation 45 'getelementptr' 'GDarray_addr' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_2 : Operation 46 [2/2] (1.20ns)   --->   "%packedCoordinates_V = load i10 %GDarray_addr" [patchMaker.cpp:478]   --->   Operation 46 'load' 'packedCoordinates_V' <Predicate = (!icmp_ln474)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 640> <RAM>
-ST_2 : Operation 47 [1/1] (0.70ns)   --->   "%add_ln476 = add i8 %select_ln474, i8 1" [patchMaker.cpp:476]   --->   Operation 47 'add' 'add_ln476' <Predicate = (!icmp_ln474)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+State 2 <SV = 1> <Delay = 4.93>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%indvar_flatten13 = phi i12 0, void, i12 %add_ln429_1, void %.split16" [patchMaker.cpp:429]   --->   Operation 35 'phi' 'indvar_flatten13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%a = phi i6 0, void, i6 %select_ln429_1, void %.split16" [patchMaker.cpp:429]   --->   Operation 36 'phi' 'a' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i8 0, void, i8 %select_ln432_2, void %.split16" [patchMaker.cpp:432]   --->   Operation 37 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%b = phi i3 0, void, i3 %select_ln432_1, void %.split16" [patchMaker.cpp:432]   --->   Operation 38 'phi' 'b' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%c = phi i5 0, void, i5 %add_ln435, void %.split16" [patchMaker.cpp:435]   --->   Operation 39 'phi' 'c' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.74ns)   --->   "%add_ln429_1 = add i12 %indvar_flatten13, i12 1" [patchMaker.cpp:429]   --->   Operation 40 'add' 'add_ln429_1' <Predicate = true> <Delay = 0.74> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 41 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.62ns)   --->   "%icmp_ln429 = icmp_eq  i12 %indvar_flatten13, i12 2560" [patchMaker.cpp:429]   --->   Operation 42 'icmp' 'icmp_ln429' <Predicate = true> <Delay = 0.62> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln429 = br i1 %icmp_ln429, void %.split16, void %.preheader1.preheader.preheader" [patchMaker.cpp:429]   --->   Operation 43 'br' 'br_ln429' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.70ns)   --->   "%add_ln429 = add i6 %a, i6 1" [patchMaker.cpp:429]   --->   Operation 44 'add' 'add_ln429' <Predicate = (!icmp_ln429)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @initArraysSPloop1_initArraysSPloop2_initArraysSPloop3_str"   --->   Operation 45 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 2560, i64 2560, i64 2560"   --->   Operation 46 'speclooptripcount' 'empty' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.58ns)   --->   "%icmp_ln432 = icmp_eq  i8 %indvar_flatten, i8 80" [patchMaker.cpp:432]   --->   Operation 47 'icmp' 'icmp_ln432' <Predicate = (!icmp_ln429)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 48 [1/1] (0.27ns)   --->   "%select_ln429 = select i1 %icmp_ln432, i3 0, i3 %b" [patchMaker.cpp:429]   --->   Operation 48 'select' 'select_ln429' <Predicate = (!icmp_ln429)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 49 [1/1] (0.29ns)   --->   "%select_ln429_1 = select i1 %icmp_ln432, i6 %add_ln429, i6 %a" [patchMaker.cpp:429]   --->   Operation 49 'select' 'select_ln429_1' <Predicate = (!icmp_ln429)> <Delay = 0.29> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%zext_ln437 = zext i6 %select_ln429_1" [patchMaker.cpp:437]   --->   Operation 50 'zext' 'zext_ln437' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i6.i2, i6 %select_ln429_1, i2 0" [patchMaker.cpp:437]   --->   Operation 51 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln437 = add i8 %tmp_s, i8 %zext_ln437" [patchMaker.cpp:437]   --->   Operation 52 'add' 'add_ln437' <Predicate = (!icmp_ln429)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.37> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 53 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node and_ln429)   --->   "%xor_ln429 = xor i1 %icmp_ln432, i1 1" [patchMaker.cpp:429]   --->   Operation 54 'xor' 'xor_ln429' <Predicate = (!icmp_ln429)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 55 [1/1] (0.63ns)   --->   "%icmp_ln435 = icmp_eq  i5 %c, i5 16" [patchMaker.cpp:435]   --->   Operation 55 'icmp' 'icmp_ln435' <Predicate = (!icmp_ln429)> <Delay = 0.63> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 56 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln429 = and i1 %icmp_ln435, i1 %xor_ln429" [patchMaker.cpp:429]   --->   Operation 56 'and' 'and_ln429' <Predicate = (!icmp_ln429)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 57 [1/1] (0.57ns)   --->   "%add_ln432 = add i3 %select_ln429, i3 1" [patchMaker.cpp:432]   --->   Operation 57 'add' 'add_ln432' <Predicate = (!icmp_ln429)> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @initArraysSPloop2_initArraysSPloop3_str"   --->   Operation 58 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node select_ln432)   --->   "%or_ln432 = or i1 %and_ln429, i1 %icmp_ln432" [patchMaker.cpp:432]   --->   Operation 59 'or' 'or_ln432' <Predicate = (!icmp_ln429)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 60 [1/1] (0.27ns) (out node of the LUT)   --->   "%select_ln432 = select i1 %or_ln432, i5 0, i5 %c" [patchMaker.cpp:432]   --->   Operation 60 'select' 'select_ln432' <Predicate = (!icmp_ln429)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 61 [1/1] (0.27ns)   --->   "%select_ln432_1 = select i1 %and_ln429, i3 %add_ln432, i3 %select_ln429" [patchMaker.cpp:432]   --->   Operation 61 'select' 'select_ln432_1' <Predicate = (!icmp_ln429)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%zext_ln437_1 = zext i3 %select_ln432_1" [patchMaker.cpp:437]   --->   Operation 62 'zext' 'zext_ln437_1' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.83ns) (root node of TernaryAdder)   --->   "%add_ln437_1 = add i8 %add_ln437, i8 %zext_ln437_1" [patchMaker.cpp:437]   --->   Operation 63 'add' 'add_ln437_1' <Predicate = (!icmp_ln429)> <Delay = 0.83> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.37> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_107_cast = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln437_1, i4 0" [patchMaker.cpp:437]   --->   Operation 64 'bitconcatenate' 'tmp_107_cast' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 65 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%zext_ln437_2 = zext i5 %select_ln432" [patchMaker.cpp:437]   --->   Operation 66 'zext' 'zext_ln437_2' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.74ns)   --->   "%add_ln437_2 = add i12 %tmp_107_cast, i12 %zext_ln437_2" [patchMaker.cpp:437]   --->   Operation 67 'add' 'add_ln437_2' <Predicate = (!icmp_ln429)> <Delay = 0.74> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln437_3 = zext i12 %add_ln437_2" [patchMaker.cpp:437]   --->   Operation 68 'zext' 'zext_ln437_3' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%patches_superpoints_addr = getelementptr i64 %patches_superpoints, i64 0, i64 %zext_ln437_3" [patchMaker.cpp:437]   --->   Operation 69 'getelementptr' 'patches_superpoints_addr' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%specloopname_ln435 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13" [patchMaker.cpp:435]   --->   Operation 70 'specloopname' 'specloopname_ln435' <Predicate = (!icmp_ln429)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (1.64ns)   --->   "%store_ln437 = store i64 0, i12 %patches_superpoints_addr" [patchMaker.cpp:437]   --->   Operation 71 'store' 'store_ln437' <Predicate = (!icmp_ln429)> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_2 : Operation 72 [1/1] (0.70ns)   --->   "%add_ln435 = add i5 %select_ln432, i5 1" [patchMaker.cpp:435]   --->   Operation 72 'add' 'add_ln435' <Predicate = (!icmp_ln429)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 73 [1/1] (0.70ns)   --->   "%add_ln432_1 = add i8 %indvar_flatten, i8 1" [patchMaker.cpp:432]   --->   Operation 73 'add' 'add_ln432_1' <Predicate = (!icmp_ln429)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 74 [1/1] (0.30ns)   --->   "%select_ln432_2 = select i1 %icmp_ln432, i8 1, i8 %add_ln432_1" [patchMaker.cpp:432]   --->   Operation 74 'select' 'select_ln432_2' <Predicate = (!icmp_ln429)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 75 'br' 'br_ln0' <Predicate = (!icmp_ln429)> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 2.40>
-ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_474_1_VITIS_LOOP_476_2_str"   --->   Operation 48 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 640, i64 640, i64 640"   --->   Operation 49 'speclooptripcount' 'empty' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i3.i7, i3 %select_ln474_1, i7 0" [patchMaker.cpp:478]   --->   Operation 50 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_105_cast = zext i10 %tmp_s" [patchMaker.cpp:478]   --->   Operation 51 'zext' 'tmp_105_cast' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 52 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln478 = zext i8 %select_ln474" [patchMaker.cpp:478]   --->   Operation 53 'zext' 'zext_ln478' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 54 [1/1] (0.72ns)   --->   "%add_ln478 = add i11 %tmp_105_cast, i11 %zext_ln478" [patchMaker.cpp:478]   --->   Operation 54 'add' 'add_ln478' <Predicate = (!icmp_ln474)> <Delay = 0.72> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_65 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i11.i1, i11 %add_ln478, i1 0" [patchMaker.cpp:478]   --->   Operation 55 'bitconcatenate' 'tmp_65' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln478_2 = zext i12 %tmp_65" [patchMaker.cpp:478]   --->   Operation 56 'zext' 'zext_ln478_2' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%shl_ln478 = shl i11 %add_ln478, i11 1" [patchMaker.cpp:478]   --->   Operation 57 'shl' 'shl_ln478' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%GDarrayDecoded_V_addr = getelementptr i32 %GDarrayDecoded_V, i64 0, i64 %zext_ln478_2" [patchMaker.cpp:478]   --->   Operation 58 'getelementptr' 'GDarrayDecoded_V_addr' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%or_ln479 = or i11 %shl_ln478, i11 1" [patchMaker.cpp:479]   --->   Operation 59 'or' 'or_ln479' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%zext_ln479 = zext i11 %or_ln479" [patchMaker.cpp:479]   --->   Operation 60 'zext' 'zext_ln479' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%GDarrayDecoded_V_addr_1 = getelementptr i32 %GDarrayDecoded_V, i64 0, i64 %zext_ln479" [patchMaker.cpp:479]   --->   Operation 61 'getelementptr' 'GDarrayDecoded_V_addr_1' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%specloopname_ln476 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22" [patchMaker.cpp:476]   --->   Operation 62 'specloopname' 'specloopname_ln476' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 63 [1/2] (1.20ns)   --->   "%packedCoordinates_V = load i10 %GDarray_addr" [patchMaker.cpp:478]   --->   Operation 63 'load' 'packedCoordinates_V' <Predicate = (!icmp_ln474)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 640> <RAM>
-ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %packedCoordinates_V, i32 32, i32 63"   --->   Operation 64 'partselect' 'trunc_ln' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 65 [1/1] (1.20ns)   --->   "%store_ln478 = store i32 %trunc_ln, i11 %GDarrayDecoded_V_addr" [patchMaker.cpp:478]   --->   Operation 65 'store' 'store_ln478' <Predicate = (!icmp_ln474)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
-ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%trunc_ln69 = trunc i64 %packedCoordinates_V"   --->   Operation 66 'trunc' 'trunc_ln69' <Predicate = (!icmp_ln474)> <Delay = 0.00>
-ST_3 : Operation 67 [1/1] (1.20ns)   --->   "%store_ln479 = store i32 %trunc_ln69, i11 %GDarrayDecoded_V_addr_1" [patchMaker.cpp:479]   --->   Operation 67 'store' 'store_ln479' <Predicate = (!icmp_ln474)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
-ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 68 'br' 'br_ln0' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+State 3 <SV = 2> <Delay = 0.38>
+ST_3 : Operation 76 [1/1] (0.38ns)   --->   "%br_ln443 = br void %.preheader1.preheader" [patchMaker.cpp:443]   --->   Operation 76 'br' 'br_ln443' <Predicate = true> <Delay = 0.38>
 
-State 4 <SV = 2> <Delay = 0.38>
-ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%saved_apexZ0 = alloca i32 1"   --->   Operation 69 'alloca' 'saved_apexZ0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 70 [1/1] (0.38ns)   --->   "%store_ln467 = store i32 22000100, i32 %saved_apexZ0" [patchMaker.cpp:467]   --->   Operation 70 'store' 'store_ln467' <Predicate = true> <Delay = 0.38>
-ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln467 = br void %.preheader" [patchMaker.cpp:467]   --->   Operation 71 'br' 'br_ln467' <Predicate = true> <Delay = 0.00>
+State 4 <SV = 3> <Delay = 5.66>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%indvar_flatten59 = phi i12 %add_ln443_1, void %.preheader1, i12 0, void %.preheader1.preheader.preheader" [patchMaker.cpp:443]   --->   Operation 77 'phi' 'indvar_flatten59' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "%a_1 = phi i6 %select_ln443_1, void %.preheader1, i6 0, void %.preheader1.preheader.preheader" [patchMaker.cpp:443]   --->   Operation 78 'phi' 'a_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%indvar_flatten35 = phi i8 %select_ln446_2, void %.preheader1, i8 0, void %.preheader1.preheader.preheader" [patchMaker.cpp:446]   --->   Operation 79 'phi' 'indvar_flatten35' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "%b_3 = phi i3 %select_ln446_1, void %.preheader1, i3 0, void %.preheader1.preheader.preheader" [patchMaker.cpp:446]   --->   Operation 80 'phi' 'b_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (0.00ns)   --->   "%indvar_flatten21 = phi i6 %select_ln449_2, void %.preheader1, i6 0, void %.preheader1.preheader.preheader" [patchMaker.cpp:449]   --->   Operation 81 'phi' 'indvar_flatten21' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "%c_3 = phi i3 %select_ln449_1, void %.preheader1, i3 0, void %.preheader1.preheader.preheader" [patchMaker.cpp:449]   --->   Operation 82 'phi' 'c_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "%d = phi i3 %add_ln452, void %.preheader1, i3 0, void %.preheader1.preheader.preheader" [patchMaker.cpp:452]   --->   Operation 83 'phi' 'd' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/1] (0.74ns)   --->   "%add_ln443_1 = add i12 %indvar_flatten59, i12 1" [patchMaker.cpp:443]   --->   Operation 84 'add' 'add_ln443_1' <Predicate = true> <Delay = 0.74> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 85 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 86 [1/1] (0.62ns)   --->   "%icmp_ln443 = icmp_eq  i12 %indvar_flatten59, i12 3840" [patchMaker.cpp:443]   --->   Operation 86 'icmp' 'icmp_ln443' <Predicate = true> <Delay = 0.62> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 87 [1/1] (0.00ns)   --->   "%br_ln443 = br i1 %icmp_ln443, void %.preheader1, void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit.preheader.preheader" [patchMaker.cpp:443]   --->   Operation 87 'br' 'br_ln443' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 88 [1/1] (0.70ns)   --->   "%add_ln443 = add i6 %a_1, i6 1" [patchMaker.cpp:443]   --->   Operation 88 'add' 'add_ln443' <Predicate = (!icmp_ln443)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 89 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @initArraysPPloop1_initArraysPPloop3_initArraysPPloop4_str"   --->   Operation 89 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 90 [1/1] (0.00ns)   --->   "%empty_116 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3840, i64 3840, i64 3840"   --->   Operation 90 'speclooptripcount' 'empty_116' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 91 [1/1] (0.58ns)   --->   "%icmp_ln446 = icmp_eq  i8 %indvar_flatten35, i8 120" [patchMaker.cpp:446]   --->   Operation 91 'icmp' 'icmp_ln446' <Predicate = (!icmp_ln443)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 92 [1/1] (0.27ns)   --->   "%select_ln443 = select i1 %icmp_ln446, i3 0, i3 %b_3" [patchMaker.cpp:443]   --->   Operation 92 'select' 'select_ln443' <Predicate = (!icmp_ln443)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 93 [1/1] (0.29ns)   --->   "%select_ln443_1 = select i1 %icmp_ln446, i6 %add_ln443, i6 %a_1" [patchMaker.cpp:443]   --->   Operation 93 'select' 'select_ln443_1' <Predicate = (!icmp_ln443)> <Delay = 0.29> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 94 [1/1] (0.00ns)   --->   "%zext_ln454 = zext i6 %select_ln443_1" [patchMaker.cpp:454]   --->   Operation 94 'zext' 'zext_ln454' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_44 = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i6.i2, i6 %select_ln443_1, i2 0" [patchMaker.cpp:454]   --->   Operation 95 'bitconcatenate' 'tmp_44' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln454_1 = zext i8 %tmp_44" [patchMaker.cpp:454]   --->   Operation 96 'zext' 'zext_ln454_1' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 97 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln454 = add i9 %zext_ln454_1, i9 %zext_ln454" [patchMaker.cpp:454]   --->   Operation 97 'add' 'add_ln454' <Predicate = (!icmp_ln443)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.37> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 98 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 99 [1/1] (0.12ns)   --->   "%xor_ln443 = xor i1 %icmp_ln446, i1 1" [patchMaker.cpp:443]   --->   Operation 99 'xor' 'xor_ln443' <Predicate = (!icmp_ln443)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 100 [1/1] (0.49ns)   --->   "%icmp_ln452 = icmp_eq  i3 %d, i3 6" [patchMaker.cpp:452]   --->   Operation 100 'icmp' 'icmp_ln452' <Predicate = (!icmp_ln443)> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 101 [1/1] (0.00ns) (grouped into LUT with out node and_ln446)   --->   "%and_ln443 = and i1 %icmp_ln452, i1 %xor_ln443" [patchMaker.cpp:443]   --->   Operation 101 'and' 'and_ln443' <Predicate = (!icmp_ln443)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 102 [1/1] (0.61ns)   --->   "%icmp_ln449 = icmp_eq  i6 %indvar_flatten21, i6 24" [patchMaker.cpp:449]   --->   Operation 102 'icmp' 'icmp_ln449' <Predicate = (!icmp_ln443)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 103 [1/1] (0.12ns)   --->   "%and_ln443_1 = and i1 %icmp_ln449, i1 %xor_ln443" [patchMaker.cpp:443]   --->   Operation 103 'and' 'and_ln443_1' <Predicate = (!icmp_ln443)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 104 [1/1] (0.57ns)   --->   "%add_ln446 = add i3 %select_ln443, i3 1" [patchMaker.cpp:446]   --->   Operation 104 'add' 'add_ln446' <Predicate = (!icmp_ln443)> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @initArraysPPloop2_initArraysPPloop3_initArraysPPloop4_str"   --->   Operation 105 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 106 [1/1] (0.12ns)   --->   "%or_ln446 = or i1 %and_ln443_1, i1 %icmp_ln446" [patchMaker.cpp:446]   --->   Operation 106 'or' 'or_ln446' <Predicate = (!icmp_ln443)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 107 [1/1] (0.27ns)   --->   "%select_ln446 = select i1 %or_ln446, i3 0, i3 %c_3" [patchMaker.cpp:446]   --->   Operation 107 'select' 'select_ln446' <Predicate = (!icmp_ln443)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 108 [1/1] (0.27ns)   --->   "%select_ln446_1 = select i1 %and_ln443_1, i3 %add_ln446, i3 %select_ln443" [patchMaker.cpp:446]   --->   Operation 108 'select' 'select_ln446_1' <Predicate = (!icmp_ln443)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 109 [1/1] (0.00ns)   --->   "%zext_ln454_2 = zext i3 %select_ln446_1" [patchMaker.cpp:454]   --->   Operation 109 'zext' 'zext_ln454_2' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 110 [1/1] (0.81ns) (root node of TernaryAdder)   --->   "%add_ln454_1 = add i9 %add_ln454, i9 %zext_ln454_2" [patchMaker.cpp:454]   --->   Operation 110 'add' 'add_ln454_1' <Predicate = (!icmp_ln443)> <Delay = 0.81> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.37> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_4 : Operation 111 [1/1] (0.00ns)   --->   "%tmp_65 = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i9.i2, i9 %add_ln454_1, i2 0" [patchMaker.cpp:449]   --->   Operation 111 'bitconcatenate' 'tmp_65' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 112 [1/1] (0.00ns)   --->   "%zext_ln449 = zext i11 %tmp_65" [patchMaker.cpp:449]   --->   Operation 112 'zext' 'zext_ln449' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 113 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 113 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 114 [1/1] (0.00ns) (grouped into LUT with out node and_ln446)   --->   "%xor_ln446 = xor i1 %icmp_ln449, i1 1" [patchMaker.cpp:446]   --->   Operation 114 'xor' 'xor_ln446' <Predicate = (!icmp_ln443)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 115 [1/1] (0.00ns) (grouped into LUT with out node and_ln446)   --->   "%or_ln446_1 = or i1 %icmp_ln446, i1 %xor_ln446" [patchMaker.cpp:446]   --->   Operation 115 'or' 'or_ln446_1' <Predicate = (!icmp_ln443)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 116 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln446 = and i1 %and_ln443, i1 %or_ln446_1" [patchMaker.cpp:446]   --->   Operation 116 'and' 'and_ln446' <Predicate = (!icmp_ln443)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 117 [1/1] (0.57ns)   --->   "%add_ln449 = add i3 %select_ln446, i3 1" [patchMaker.cpp:449]   --->   Operation 117 'add' 'add_ln449' <Predicate = (!icmp_ln443)> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 118 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @initArraysPPloop3_initArraysPPloop4_str"   --->   Operation 118 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 119 [1/1] (0.00ns) (grouped into LUT with out node select_ln449)   --->   "%or_ln449 = or i1 %and_ln446, i1 %and_ln443_1" [patchMaker.cpp:449]   --->   Operation 119 'or' 'or_ln449' <Predicate = (!icmp_ln443)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node select_ln449)   --->   "%or_ln449_1 = or i1 %or_ln449, i1 %icmp_ln446" [patchMaker.cpp:449]   --->   Operation 120 'or' 'or_ln449_1' <Predicate = (!icmp_ln443)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 121 [1/1] (0.27ns) (out node of the LUT)   --->   "%select_ln449 = select i1 %or_ln449_1, i3 0, i3 %d" [patchMaker.cpp:449]   --->   Operation 121 'select' 'select_ln449' <Predicate = (!icmp_ln443)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 122 [1/1] (0.27ns)   --->   "%select_ln449_1 = select i1 %and_ln446, i3 %add_ln449, i3 %select_ln446" [patchMaker.cpp:449]   --->   Operation 122 'select' 'select_ln449_1' <Predicate = (!icmp_ln443)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%zext_ln454_3 = zext i3 %select_ln449_1" [patchMaker.cpp:454]   --->   Operation 123 'zext' 'zext_ln454_3' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 124 [1/1] (0.73ns)   --->   "%add_ln454_2 = add i63 %zext_ln449, i63 %zext_ln454_3" [patchMaker.cpp:454]   --->   Operation 124 'add' 'add_ln454_2' <Predicate = (!icmp_ln443)> <Delay = 0.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 125 [1/1] (0.00ns)   --->   "%trunc_ln454 = trunc i63 %add_ln454_2" [patchMaker.cpp:454]   --->   Operation 125 'trunc' 'trunc_ln454' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 126 [1/1] (0.00ns)   --->   "%p_shl3_cast = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i9.i3, i9 %trunc_ln454, i3 0" [patchMaker.cpp:454]   --->   Operation 126 'bitconcatenate' 'p_shl3_cast' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 127 [1/1] (0.00ns)   --->   "%trunc_ln454_1 = trunc i63 %add_ln454_2" [patchMaker.cpp:454]   --->   Operation 127 'trunc' 'trunc_ln454_1' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 128 [1/1] (0.00ns)   --->   "%p_shl4_cast = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i11.i1, i11 %trunc_ln454_1, i1 0" [patchMaker.cpp:454]   --->   Operation 128 'bitconcatenate' 'p_shl4_cast' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 129 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln454 = sub i12 %p_shl3_cast, i12 %p_shl4_cast" [patchMaker.cpp:454]   --->   Operation 129 'sub' 'sub_ln454' <Predicate = (!icmp_ln443)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.37> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 130 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%zext_ln454_4 = zext i3 %select_ln449" [patchMaker.cpp:454]   --->   Operation 131 'zext' 'zext_ln454_4' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 132 [1/1] (0.75ns) (root node of TernaryAdder)   --->   "%add_ln454_3 = add i12 %sub_ln454, i12 %zext_ln454_4" [patchMaker.cpp:454]   --->   Operation 132 'add' 'add_ln454_3' <Predicate = (!icmp_ln443)> <Delay = 0.75> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.37> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_4 : Operation 133 [1/1] (0.00ns)   --->   "%zext_ln454_5 = zext i12 %add_ln454_3" [patchMaker.cpp:454]   --->   Operation 133 'zext' 'zext_ln454_5' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%patches_parameters_V_addr = getelementptr i32 %patches_parameters_V, i64 0, i64 %zext_ln454_5" [patchMaker.cpp:454]   --->   Operation 134 'getelementptr' 'patches_parameters_V_addr' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 135 [1/1] (0.00ns)   --->   "%specloopname_ln452 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22" [patchMaker.cpp:452]   --->   Operation 135 'specloopname' 'specloopname_ln452' <Predicate = (!icmp_ln443)> <Delay = 0.00>
+ST_4 : Operation 136 [1/1] (1.64ns)   --->   "%store_ln454 = store i32 0, i12 %patches_parameters_V_addr" [patchMaker.cpp:454]   --->   Operation 136 'store' 'store_ln454' <Predicate = (!icmp_ln443)> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 3840> <RAM>
+ST_4 : Operation 137 [1/1] (0.57ns)   --->   "%add_ln452 = add i3 %select_ln449, i3 1" [patchMaker.cpp:452]   --->   Operation 137 'add' 'add_ln452' <Predicate = (!icmp_ln443)> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 138 [1/1] (0.70ns)   --->   "%add_ln449_1 = add i6 %indvar_flatten21, i6 1" [patchMaker.cpp:449]   --->   Operation 138 'add' 'add_ln449_1' <Predicate = (!icmp_ln443)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 139 [1/1] (0.29ns)   --->   "%select_ln449_2 = select i1 %or_ln446, i6 1, i6 %add_ln449_1" [patchMaker.cpp:449]   --->   Operation 139 'select' 'select_ln449_2' <Predicate = (!icmp_ln443)> <Delay = 0.29> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 140 [1/1] (0.70ns)   --->   "%add_ln446_1 = add i8 %indvar_flatten35, i8 1" [patchMaker.cpp:446]   --->   Operation 140 'add' 'add_ln446_1' <Predicate = (!icmp_ln443)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 141 [1/1] (0.30ns)   --->   "%select_ln446_2 = select i1 %icmp_ln446, i8 1, i8 %add_ln446_1" [patchMaker.cpp:446]   --->   Operation 141 'select' 'select_ln446_2' <Predicate = (!icmp_ln443)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 142 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader1.preheader"   --->   Operation 142 'br' 'br_ln0' <Predicate = (!icmp_ln443)> <Delay = 0.00>
 
-State 5 <SV = 3> <Delay = 4.35>
-ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%apexZ0_V = load i32 %saved_apexZ0"   --->   Operation 72 'load' 'apexZ0_V' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 73 [1/1] (0.85ns)   --->   "%icmp_ln886 = icmp_sgt  i32 %apexZ0_V, i32 4272967196"   --->   Operation 73 'icmp' 'icmp_ln886' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln487 = br i1 %icmp_ln886, void, void" [patchMaker.cpp:487]   --->   Operation 74 'br' 'br_ln487' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5"   --->   Operation 75 'specloopname' 'specloopname_ln0' <Predicate = (icmp_ln886)> <Delay = 0.00>
-ST_5 : Operation 76 [1/1] (0.00ns)   --->   "%n_patches_read = read i8 @_ssdm_op_Read.ap_auto.i8P0A, i8 %n_patches" [patchMaker.cpp:504]   --->   Operation 76 'read' 'n_patches_read' <Predicate = (icmp_ln886)> <Delay = 0.00>
-ST_5 : Operation 77 [1/1] (0.58ns)   --->   "%icmp_ln504 = icmp_eq  i8 %n_patches_read, i8 0" [patchMaker.cpp:504]   --->   Operation 77 'icmp' 'icmp_ln504' <Predicate = (icmp_ln886)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 78 [1/1] (0.38ns)   --->   "%br_ln504 = br i1 %icmp_ln504, void, void %._crit_edge.preheader" [patchMaker.cpp:504]   --->   Operation 78 'br' 'br_ln504' <Predicate = (icmp_ln886)> <Delay = 0.38>
-ST_5 : Operation 79 [2/2] (4.35ns)   --->   "%conv_i_i = sitofp i32 %apexZ0_V"   --->   Operation 79 'sitofp' 'conv_i_i' <Predicate = (icmp_ln886 & !icmp_ln504)> <Delay = 4.35> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 1> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
-ST_5 : Operation 80 [1/1] (0.00ns)   --->   "%ret_ln492 = ret" [patchMaker.cpp:492]   --->   Operation 80 'ret' 'ret_ln492' <Predicate = (!icmp_ln886)> <Delay = 0.00>
+State 5 <SV = 4> <Delay = 0.38>
+ST_5 : Operation 143 [1/1] (0.38ns)   --->   "%br_ln474 = br void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit.preheader" [patchMaker.cpp:474]   --->   Operation 143 'br' 'br_ln474' <Predicate = true> <Delay = 0.38>
 
-State 6 <SV = 4> <Delay = 4.35>
-ST_6 : Operation 81 [1/2] (4.35ns)   --->   "%conv_i_i = sitofp i32 %apexZ0_V"   --->   Operation 81 'sitofp' 'conv_i_i' <Predicate = true> <Delay = 4.35> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 1> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+State 6 <SV = 5> <Delay = 2.08>
+ST_6 : Operation 144 [1/1] (0.00ns)   --->   "%indvar_flatten67 = phi i10 %add_ln474_1, void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit, i10 0, void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit.preheader.preheader" [patchMaker.cpp:474]   --->   Operation 144 'phi' 'indvar_flatten67' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 145 [1/1] (0.00ns)   --->   "%a_2 = phi i3 %select_ln474_1, void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit, i3 0, void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit.preheader.preheader" [patchMaker.cpp:474]   --->   Operation 145 'phi' 'a_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 146 [1/1] (0.00ns)   --->   "%b_4 = phi i8 %add_ln476, void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit, i8 0, void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit.preheader.preheader" [patchMaker.cpp:476]   --->   Operation 146 'phi' 'b_4' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 147 [1/1] (0.72ns)   --->   "%add_ln474_1 = add i10 %indvar_flatten67, i10 1" [patchMaker.cpp:474]   --->   Operation 147 'add' 'add_ln474_1' <Predicate = true> <Delay = 0.72> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 148 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 148 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 149 [1/1] (0.60ns)   --->   "%icmp_ln474 = icmp_eq  i10 %indvar_flatten67, i10 640" [patchMaker.cpp:474]   --->   Operation 149 'icmp' 'icmp_ln474' <Predicate = true> <Delay = 0.60> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 150 [1/1] (0.00ns)   --->   "%br_ln474 = br i1 %icmp_ln474, void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit, void %.preheader.preheader" [patchMaker.cpp:474]   --->   Operation 150 'br' 'br_ln474' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 151 [1/1] (0.57ns)   --->   "%add_ln474 = add i3 %a_2, i3 1" [patchMaker.cpp:474]   --->   Operation 151 'add' 'add_ln474' <Predicate = (!icmp_ln474)> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 152 [1/1] (0.58ns)   --->   "%icmp_ln476 = icmp_eq  i8 %b_4, i8 128" [patchMaker.cpp:476]   --->   Operation 152 'icmp' 'icmp_ln476' <Predicate = (!icmp_ln474)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 153 [1/1] (0.30ns)   --->   "%select_ln474 = select i1 %icmp_ln476, i8 0, i8 %b_4" [patchMaker.cpp:474]   --->   Operation 153 'select' 'select_ln474' <Predicate = (!icmp_ln474)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 154 [1/1] (0.27ns)   --->   "%select_ln474_1 = select i1 %icmp_ln476, i3 %add_ln474, i3 %a_2" [patchMaker.cpp:474]   --->   Operation 154 'select' 'select_ln474_1' <Predicate = (!icmp_ln474)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 155 [1/1] (0.00ns)   --->   "%trunc_ln478 = trunc i8 %select_ln474" [patchMaker.cpp:478]   --->   Operation 155 'trunc' 'trunc_ln478' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_6 : Operation 156 [1/1] (0.00ns)   --->   "%tmp_46 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i3.i7, i3 %select_ln474_1, i7 %trunc_ln478" [patchMaker.cpp:478]   --->   Operation 156 'bitconcatenate' 'tmp_46' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_6 : Operation 157 [1/1] (0.00ns)   --->   "%zext_ln478_1 = zext i10 %tmp_46" [patchMaker.cpp:478]   --->   Operation 157 'zext' 'zext_ln478_1' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_6 : Operation 158 [1/1] (0.00ns)   --->   "%GDarray_addr = getelementptr i64 %GDarray, i64 0, i64 %zext_ln478_1" [patchMaker.cpp:478]   --->   Operation 158 'getelementptr' 'GDarray_addr' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_6 : Operation 159 [2/2] (1.20ns)   --->   "%packedCoordinates_V = load i10 %GDarray_addr" [patchMaker.cpp:478]   --->   Operation 159 'load' 'packedCoordinates_V' <Predicate = (!icmp_ln474)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 640> <RAM>
+ST_6 : Operation 160 [1/1] (0.70ns)   --->   "%add_ln476 = add i8 %select_ln474, i8 1" [patchMaker.cpp:476]   --->   Operation 160 'add' 'add_ln476' <Predicate = (!icmp_ln474)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
-State 7 <SV = 5> <Delay = 4.90>
-ST_7 : Operation 82 [2/2] (4.90ns)   --->   "%dc = fmul i32 %conv_i_i, i32 5"   --->   Operation 82 'fmul' 'dc' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+State 7 <SV = 6> <Delay = 2.40>
+ST_7 : Operation 161 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_474_1_VITIS_LOOP_476_2_str"   --->   Operation 161 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 162 [1/1] (0.00ns)   --->   "%empty_117 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 640, i64 640, i64 640"   --->   Operation 162 'speclooptripcount' 'empty_117' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 163 [1/1] (0.00ns)   --->   "%tmp_45 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i3.i7, i3 %select_ln474_1, i7 0" [patchMaker.cpp:478]   --->   Operation 163 'bitconcatenate' 'tmp_45' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 164 [1/1] (0.00ns)   --->   "%tmp_113_cast = zext i10 %tmp_45" [patchMaker.cpp:478]   --->   Operation 164 'zext' 'tmp_113_cast' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 165 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 165 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 166 [1/1] (0.00ns)   --->   "%zext_ln478 = zext i8 %select_ln474" [patchMaker.cpp:478]   --->   Operation 166 'zext' 'zext_ln478' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 167 [1/1] (0.72ns)   --->   "%add_ln478 = add i11 %tmp_113_cast, i11 %zext_ln478" [patchMaker.cpp:478]   --->   Operation 167 'add' 'add_ln478' <Predicate = (!icmp_ln474)> <Delay = 0.72> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 168 [1/1] (0.00ns)   --->   "%tmp_66 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i11.i1, i11 %add_ln478, i1 0" [patchMaker.cpp:478]   --->   Operation 168 'bitconcatenate' 'tmp_66' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 169 [1/1] (0.00ns)   --->   "%zext_ln478_2 = zext i12 %tmp_66" [patchMaker.cpp:478]   --->   Operation 169 'zext' 'zext_ln478_2' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 170 [1/1] (0.00ns)   --->   "%shl_ln478 = shl i11 %add_ln478, i11 1" [patchMaker.cpp:478]   --->   Operation 170 'shl' 'shl_ln478' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 171 [1/1] (0.00ns)   --->   "%GDarrayDecoded_V_addr = getelementptr i32 %GDarrayDecoded_V, i64 0, i64 %zext_ln478_2" [patchMaker.cpp:478]   --->   Operation 171 'getelementptr' 'GDarrayDecoded_V_addr' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 172 [1/1] (0.00ns)   --->   "%or_ln479 = or i11 %shl_ln478, i11 1" [patchMaker.cpp:479]   --->   Operation 172 'or' 'or_ln479' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 173 [1/1] (0.00ns)   --->   "%zext_ln479 = zext i11 %or_ln479" [patchMaker.cpp:479]   --->   Operation 173 'zext' 'zext_ln479' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 174 [1/1] (0.00ns)   --->   "%GDarrayDecoded_V_addr_1 = getelementptr i32 %GDarrayDecoded_V, i64 0, i64 %zext_ln479" [patchMaker.cpp:479]   --->   Operation 174 'getelementptr' 'GDarrayDecoded_V_addr_1' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 175 [1/1] (0.00ns)   --->   "%specloopname_ln476 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [patchMaker.cpp:476]   --->   Operation 175 'specloopname' 'specloopname_ln476' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 176 [1/2] (1.20ns)   --->   "%packedCoordinates_V = load i10 %GDarray_addr" [patchMaker.cpp:478]   --->   Operation 176 'load' 'packedCoordinates_V' <Predicate = (!icmp_ln474)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 640> <RAM>
+ST_7 : Operation 177 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %packedCoordinates_V, i32 32, i32 63"   --->   Operation 177 'partselect' 'trunc_ln' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 178 [1/1] (1.20ns)   --->   "%store_ln478 = store i32 %trunc_ln, i11 %GDarrayDecoded_V_addr" [patchMaker.cpp:478]   --->   Operation 178 'store' 'store_ln478' <Predicate = (!icmp_ln474)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
+ST_7 : Operation 179 [1/1] (0.00ns)   --->   "%trunc_ln69 = trunc i64 %packedCoordinates_V"   --->   Operation 179 'trunc' 'trunc_ln69' <Predicate = (!icmp_ln474)> <Delay = 0.00>
+ST_7 : Operation 180 [1/1] (1.20ns)   --->   "%store_ln479 = store i32 %trunc_ln69, i11 %GDarrayDecoded_V_addr_1" [patchMaker.cpp:479]   --->   Operation 180 'store' 'store_ln479' <Predicate = (!icmp_ln474)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
+ST_7 : Operation 181 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_Z16initializeArraysRA32_A5_A16_6ap_intILi64EERA32_A5_A4_A6_S_ILi32EE.exit.preheader"   --->   Operation 181 'br' 'br_ln0' <Predicate = (!icmp_ln474)> <Delay = 0.00>
 
-State 8 <SV = 6> <Delay = 4.90>
-ST_8 : Operation 83 [1/2] (4.90ns)   --->   "%dc = fmul i32 %conv_i_i, i32 5"   --->   Operation 83 'fmul' 'dc' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+State 8 <SV = 6> <Delay = 0.38>
+ST_8 : Operation 182 [1/1] (0.00ns)   --->   "%saved_apexZ0 = alloca i32 1"   --->   Operation 182 'alloca' 'saved_apexZ0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 183 [1/1] (0.38ns)   --->   "%store_ln467 = store i32 22000100, i32 %saved_apexZ0" [patchMaker.cpp:467]   --->   Operation 183 'store' 'store_ln467' <Predicate = true> <Delay = 0.38>
+ST_8 : Operation 184 [1/1] (0.00ns)   --->   "%br_ln467 = br void %.preheader" [patchMaker.cpp:467]   --->   Operation 184 'br' 'br_ln467' <Predicate = true> <Delay = 0.00>
 
-State 9 <SV = 7> <Delay = 5.29>
-ST_9 : Operation 84 [1/1] (0.00ns)   --->   "%data_V = bitcast i32 %dc" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:312]   --->   Operation 84 'bitcast' 'data_V' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node add_ln69)   --->   "%p_Result_s = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %data_V, i32 31"   --->   Operation 85 'bitselect' 'p_Result_s' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 86 [1/1] (0.00ns)   --->   "%tmp_68 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %data_V, i32 23, i32 30"   --->   Operation 86 'partselect' 'tmp_68' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_69 = trunc i32 %data_V"   --->   Operation 87 'trunc' 'tmp_69' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%mantissa = bitconcatenate i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1, i1 1, i23 %tmp_69, i1 0"   --->   Operation 88 'bitconcatenate' 'mantissa' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 89 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i25 %mantissa" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15]   --->   Operation 89 'zext' 'zext_ln15' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 90 [1/1] (0.00ns)   --->   "%zext_ln341 = zext i8 %tmp_68" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:341]   --->   Operation 90 'zext' 'zext_ln341' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 91 [1/1] (0.70ns)   --->   "%add_ln341 = add i9 %zext_ln341, i9 385" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:341]   --->   Operation 91 'add' 'add_ln341' <Predicate = (!icmp_ln504)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 92 [1/1] (0.00ns)   --->   "%isNeg = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %add_ln341, i32 8"   --->   Operation 92 'bitselect' 'isNeg' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 93 [1/1] (0.70ns)   --->   "%sub_ln1311 = sub i8 127, i8 %tmp_68"   --->   Operation 93 'sub' 'sub_ln1311' <Predicate = (!icmp_ln504)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 94 [1/1] (0.00ns)   --->   "%sext_ln1311 = sext i8 %sub_ln1311"   --->   Operation 94 'sext' 'sext_ln1311' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 95 [1/1] (0.30ns)   --->   "%ush = select i1 %isNeg, i9 %sext_ln1311, i9 %add_ln341"   --->   Operation 95 'select' 'ush' <Predicate = (!icmp_ln504)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_9 : Operation 96 [1/1] (0.00ns)   --->   "%sh_prom_i_i_i_i_i_i_cast_cast_cast = sext i9 %ush"   --->   Operation 96 'sext' 'sh_prom_i_i_i_i_i_i_cast_cast_cast' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 97 [1/1] (0.00ns)   --->   "%sh_prom_i_i_i_i_i_i_cast_cast_cast_cast = zext i32 %sh_prom_i_i_i_i_i_i_cast_cast_cast"   --->   Operation 97 'zext' 'sh_prom_i_i_i_i_i_i_cast_cast_cast_cast' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%r_V = lshr i111 %zext_ln15, i111 %sh_prom_i_i_i_i_i_i_cast_cast_cast_cast"   --->   Operation 98 'lshr' 'r_V' <Predicate = (!icmp_ln504)> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%r_V_10 = shl i111 %zext_ln15, i111 %sh_prom_i_i_i_i_i_i_cast_cast_cast_cast"   --->   Operation 99 'shl' 'r_V_10' <Predicate = (!icmp_ln504)> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 100 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i111.i32, i111 %r_V, i32 24"   --->   Operation 100 'bitselect' 'tmp' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 101 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%zext_ln662 = zext i1 %tmp"   --->   Operation 101 'zext' 'zext_ln662' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 102 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%tmp_67 = partselect i32 @_ssdm_op_PartSelect.i32.i111.i32.i32, i111 %r_V_10, i32 24, i32 55"   --->   Operation 102 'partselect' 'tmp_67' <Predicate = (!icmp_ln504)> <Delay = 0.00>
-ST_9 : Operation 103 [1/1] (1.05ns) (out node of the LUT)   --->   "%val = select i1 %isNeg, i32 %zext_ln662, i32 %tmp_67"   --->   Operation 103 'select' 'val' <Predicate = (!icmp_ln504)> <Delay = 1.05> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_9 : Operation 104 [1/1] (0.88ns)   --->   "%result_V_6 = sub i32 0, i32 %val"   --->   Operation 104 'sub' 'result_V_6' <Predicate = (!icmp_ln504)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 105 [1/1] (0.00ns) (grouped into LUT with out node add_ln69)   --->   "%select_ln59 = select i1 %p_Result_s, i32 %result_V_6, i32 %val" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59]   --->   Operation 105 'select' 'select_ln59' <Predicate = (!icmp_ln504)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_9 : Operation 106 [1/1] (0.88ns) (out node of the LUT)   --->   "%add_ln69 = add i32 %select_ln59, i32 60000000"   --->   Operation 106 'add' 'add_ln69' <Predicate = (!icmp_ln504)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 107 [1/1] (0.85ns)   --->   "%icmp_ln878 = icmp_sgt  i32 %add_ln69, i32 50000000"   --->   Operation 107 'icmp' 'icmp_ln878' <Predicate = (!icmp_ln504)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 108 [1/1] (0.22ns)   --->   "%select_ln506 = select i1 %icmp_ln878, i32 50000000, i32 %add_ln69" [patchMaker.cpp:506]   --->   Operation 108 'select' 'select_ln506' <Predicate = (!icmp_ln504)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_9 : Operation 109 [1/1] (0.38ns)   --->   "%br_ln506 = br void %._crit_edge.preheader" [patchMaker.cpp:506]   --->   Operation 109 'br' 'br_ln506' <Predicate = (!icmp_ln504)> <Delay = 0.38>
-ST_9 : Operation 110 [1/1] (0.00ns)   --->   "%z_top_max_V_125_ph = phi i32 50000000, void, i32 %select_ln506, void" [patchMaker.cpp:506]   --->   Operation 110 'phi' 'z_top_max_V_125_ph' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 111 [1/1] (0.38ns)   --->   "%br_ln530 = br void %._crit_edge" [patchMaker.cpp:530]   --->   Operation 111 'br' 'br_ln530' <Predicate = true> <Delay = 0.38>
+State 9 <SV = 7> <Delay = 4.35>
+ST_9 : Operation 185 [1/1] (0.00ns)   --->   "%apexZ0_V = load i32 %saved_apexZ0"   --->   Operation 185 'load' 'apexZ0_V' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 186 [1/1] (0.85ns)   --->   "%icmp_ln886 = icmp_sgt  i32 %apexZ0_V, i32 4272967196"   --->   Operation 186 'icmp' 'icmp_ln886' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 187 [1/1] (0.00ns)   --->   "%br_ln487 = br i1 %icmp_ln886, void, void" [patchMaker.cpp:487]   --->   Operation 187 'br' 'br_ln487' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 188 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2"   --->   Operation 188 'specloopname' 'specloopname_ln0' <Predicate = (icmp_ln886)> <Delay = 0.00>
+ST_9 : Operation 189 [1/1] (0.00ns)   --->   "%n_patches_read = read i8 @_ssdm_op_Read.ap_auto.i8P0A, i8 %n_patches" [patchMaker.cpp:504]   --->   Operation 189 'read' 'n_patches_read' <Predicate = (icmp_ln886)> <Delay = 0.00>
+ST_9 : Operation 190 [1/1] (0.58ns)   --->   "%icmp_ln504 = icmp_eq  i8 %n_patches_read, i8 0" [patchMaker.cpp:504]   --->   Operation 190 'icmp' 'icmp_ln504' <Predicate = (icmp_ln886)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 191 [1/1] (0.38ns)   --->   "%br_ln504 = br i1 %icmp_ln504, void, void %._crit_edge.preheader" [patchMaker.cpp:504]   --->   Operation 191 'br' 'br_ln504' <Predicate = (icmp_ln886)> <Delay = 0.38>
+ST_9 : Operation 192 [2/2] (4.35ns)   --->   "%conv_i_i = sitofp i32 %apexZ0_V"   --->   Operation 192 'sitofp' 'conv_i_i' <Predicate = (icmp_ln886 & !icmp_ln504)> <Delay = 4.35> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 1> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 193 [1/1] (0.00ns)   --->   "%ret_ln492 = ret" [patchMaker.cpp:492]   --->   Operation 193 'ret' 'ret_ln492' <Predicate = (!icmp_ln886)> <Delay = 0.00>
 
-State 10 <SV = 8> <Delay = 4.82>
-ST_10 : Operation 112 [1/1] (0.00ns)   --->   "%nPatchesInColumn = phi i32 %nPatchesInColumn_1, void, i32 0, void %._crit_edge.preheader"   --->   Operation 112 'phi' 'nPatchesInColumn' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 113 [1/1] (0.00ns)   --->   "%phi_ln531 = phi i1 %icmp_ln515_1, void, i1 1, void %._crit_edge.preheader" [patchMaker.cpp:531]   --->   Operation 113 'phi' 'phi_ln531' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 114 [1/1] (0.00ns)   --->   "%z_top_max_V_125 = phi i32 %z_top_max_V, void, i32 %z_top_max_V_125_ph, void %._crit_edge.preheader"   --->   Operation 114 'phi' 'z_top_max_V_125' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 115 [1/1] (0.00ns)   --->   "%phi_ln886 = phi i1 %icmp_ln515, void, i1 1, void %._crit_edge.preheader"   --->   Operation 115 'phi' 'phi_ln886' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 116 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V_0 = phi i32 %complementary_apexZ0_V, void, i32 0, void %._crit_edge.preheader"   --->   Operation 116 'phi' 'complementary_apexZ0_V_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 117 [1/1] (0.00ns)   --->   "%z_top_min_V_0 = phi i32 %z_top_min_V, void, i32 4244967296, void %._crit_edge.preheader"   --->   Operation 117 'phi' 'z_top_min_V_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 118 [1/1] (0.85ns)   --->   "%icmp_ln531 = icmp_slt  i32 %nPatchesInColumn, i32 100000000" [patchMaker.cpp:531]   --->   Operation 118 'icmp' 'icmp_ln531' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_10 : Operation 119 [1/1] (0.00ns) (grouped into LUT with out node and_ln531_1)   --->   "%and_ln531 = and i1 %icmp_ln531, i1 %phi_ln531" [patchMaker.cpp:531]   --->   Operation 119 'and' 'and_ln531' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_10 : Operation 120 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln531_1 = and i1 %and_ln531, i1 %phi_ln886" [patchMaker.cpp:531]   --->   Operation 120 'and' 'and_ln531_1' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%br_ln531 = br i1 %and_ln531_1, void %_Z15solveNextColumn6ap_intILi32EEiibbS0_RhRA5_A128_A2_S0_RA5_iRA32_A5_A16_S_ILi64EERA32_A5_A4_A6_S0_.exit, void" [patchMaker.cpp:531]   --->   Operation 121 'br' 'br_ln531' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 122 [2/2] (3.84ns)   --->   "%call_ret1 = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i64 %patches_superpoints, i32 %apexZ0_V, i32 %ppl_read, i32 %nPatchesInColumn, i32 %z_top_min_V_0, i32 %z_top_max_V_125, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded_V, i32 %patches_parameters, i25 %radii, i26 %trapezoid_edges_V, i32 %temp_V" [patchMaker.cpp:517]   --->   Operation 122 'call' 'call_ret1' <Predicate = (and_ln531_1)> <Delay = 3.84> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 123 [1/1] (0.00ns)   --->   "%br_ln487 = br void %.preheader" [patchMaker.cpp:487]   --->   Operation 123 'br' 'br_ln487' <Predicate = (!and_ln531_1)> <Delay = 0.00>
+State 10 <SV = 8> <Delay = 4.35>
+ST_10 : Operation 194 [1/2] (4.35ns)   --->   "%conv_i_i = sitofp i32 %apexZ0_V"   --->   Operation 194 'sitofp' 'conv_i_i' <Predicate = true> <Delay = 4.35> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 1> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
 
-State 11 <SV = 9> <Delay = 0.85>
-ST_11 : Operation 124 [1/1] (0.00ns)   --->   "%specloopname_ln517 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [patchMaker.cpp:517]   --->   Operation 124 'specloopname' 'specloopname_ln517' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 125 [1/2] (0.00ns)   --->   "%call_ret1 = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i64 %patches_superpoints, i32 %apexZ0_V, i32 %ppl_read, i32 %nPatchesInColumn, i32 %z_top_min_V_0, i32 %z_top_max_V_125, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded_V, i32 %patches_parameters, i25 %radii, i26 %trapezoid_edges_V, i32 %temp_V" [patchMaker.cpp:517]   --->   Operation 125 'call' 'call_ret1' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 126 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 126 'extractvalue' 'complementary_apexZ0_V' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln515_1)   --->   "%projectionOfCornerToBeam_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 127 'extractvalue' 'projectionOfCornerToBeam_V' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln515)   --->   "%c_corner_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 128 'extractvalue' 'c_corner_V' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 129 [1/1] (0.00ns)   --->   "%nPatchesInColumn_1 = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 129 'extractvalue' 'nPatchesInColumn_1' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 130 [1/1] (0.00ns)   --->   "%agg_tmp58109_ret = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 130 'extractvalue' 'agg_tmp58109_ret' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 131 [1/1] (0.00ns)   --->   "%z_top_max_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 131 'extractvalue' 'z_top_max_V' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 132 [1/1] (0.00ns)   --->   "%z_top_min_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 132 'extractvalue' 'z_top_min_V' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 133 [1/1] (0.85ns) (out node of the LUT)   --->   "%icmp_ln515 = icmp_sgt  i32 %c_corner_V, i32 4244967196" [patchMaker.cpp:515]   --->   Operation 133 'icmp' 'icmp_ln515' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 134 [1/1] (0.85ns) (out node of the LUT)   --->   "%icmp_ln515_1 = icmp_slt  i32 %projectionOfCornerToBeam_V, i32 15000000" [patchMaker.cpp:515]   --->   Operation 134 'icmp' 'icmp_ln515_1' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 135 [1/1] (0.38ns)   --->   "%store_ln515 = store i32 %agg_tmp58109_ret, i32 %saved_apexZ0" [patchMaker.cpp:515]   --->   Operation 135 'store' 'store_ln515' <Predicate = true> <Delay = 0.38>
-ST_11 : Operation 136 [1/1] (0.00ns)   --->   "%br_ln515 = br void %._crit_edge" [patchMaker.cpp:515]   --->   Operation 136 'br' 'br_ln515' <Predicate = true> <Delay = 0.00>
+State 11 <SV = 9> <Delay = 4.90>
+ST_11 : Operation 195 [2/2] (4.90ns)   --->   "%dc = fmul i32 %conv_i_i, i32 5"   --->   Operation 195 'fmul' 'dc' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 10> <Delay = 4.90>
+ST_12 : Operation 196 [1/2] (4.90ns)   --->   "%dc = fmul i32 %conv_i_i, i32 5"   --->   Operation 196 'fmul' 'dc' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 11> <Delay = 5.29>
+ST_13 : Operation 197 [1/1] (0.00ns)   --->   "%data_V = bitcast i32 %dc" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:312]   --->   Operation 197 'bitcast' 'data_V' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 198 [1/1] (0.00ns) (grouped into LUT with out node add_ln69)   --->   "%p_Result_s = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %data_V, i32 31"   --->   Operation 198 'bitselect' 'p_Result_s' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 199 [1/1] (0.00ns)   --->   "%tmp_69 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %data_V, i32 23, i32 30"   --->   Operation 199 'partselect' 'tmp_69' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 200 [1/1] (0.00ns)   --->   "%tmp_70 = trunc i32 %data_V"   --->   Operation 200 'trunc' 'tmp_70' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 201 [1/1] (0.00ns)   --->   "%mantissa = bitconcatenate i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1, i1 1, i23 %tmp_70, i1 0"   --->   Operation 201 'bitconcatenate' 'mantissa' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 202 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i25 %mantissa" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15]   --->   Operation 202 'zext' 'zext_ln15' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 203 [1/1] (0.00ns)   --->   "%zext_ln341 = zext i8 %tmp_69" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:341]   --->   Operation 203 'zext' 'zext_ln341' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 204 [1/1] (0.70ns)   --->   "%add_ln341 = add i9 %zext_ln341, i9 385" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:341]   --->   Operation 204 'add' 'add_ln341' <Predicate = (!icmp_ln504)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 205 [1/1] (0.00ns)   --->   "%isNeg = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %add_ln341, i32 8"   --->   Operation 205 'bitselect' 'isNeg' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 206 [1/1] (0.70ns)   --->   "%sub_ln1311 = sub i8 127, i8 %tmp_69"   --->   Operation 206 'sub' 'sub_ln1311' <Predicate = (!icmp_ln504)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 207 [1/1] (0.00ns)   --->   "%sext_ln1311 = sext i8 %sub_ln1311"   --->   Operation 207 'sext' 'sext_ln1311' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 208 [1/1] (0.30ns)   --->   "%ush = select i1 %isNeg, i9 %sext_ln1311, i9 %add_ln341"   --->   Operation 208 'select' 'ush' <Predicate = (!icmp_ln504)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_13 : Operation 209 [1/1] (0.00ns)   --->   "%sh_prom_i_i_i_i_i_i_cast_cast_cast = sext i9 %ush"   --->   Operation 209 'sext' 'sh_prom_i_i_i_i_i_i_cast_cast_cast' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 210 [1/1] (0.00ns)   --->   "%sh_prom_i_i_i_i_i_i_cast_cast_cast_cast = zext i32 %sh_prom_i_i_i_i_i_i_cast_cast_cast"   --->   Operation 210 'zext' 'sh_prom_i_i_i_i_i_i_cast_cast_cast_cast' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 211 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%r_V = lshr i111 %zext_ln15, i111 %sh_prom_i_i_i_i_i_i_cast_cast_cast_cast"   --->   Operation 211 'lshr' 'r_V' <Predicate = (!icmp_ln504)> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 212 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%r_V_10 = shl i111 %zext_ln15, i111 %sh_prom_i_i_i_i_i_i_cast_cast_cast_cast"   --->   Operation 212 'shl' 'r_V_10' <Predicate = (!icmp_ln504)> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 213 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i111.i32, i111 %r_V, i32 24"   --->   Operation 213 'bitselect' 'tmp' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 214 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%zext_ln662 = zext i1 %tmp"   --->   Operation 214 'zext' 'zext_ln662' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 215 [1/1] (0.00ns) (grouped into LUT with out node val)   --->   "%tmp_68 = partselect i32 @_ssdm_op_PartSelect.i32.i111.i32.i32, i111 %r_V_10, i32 24, i32 55"   --->   Operation 215 'partselect' 'tmp_68' <Predicate = (!icmp_ln504)> <Delay = 0.00>
+ST_13 : Operation 216 [1/1] (1.05ns) (out node of the LUT)   --->   "%val = select i1 %isNeg, i32 %zext_ln662, i32 %tmp_68"   --->   Operation 216 'select' 'val' <Predicate = (!icmp_ln504)> <Delay = 1.05> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_13 : Operation 217 [1/1] (0.88ns)   --->   "%result_V_6 = sub i32 0, i32 %val"   --->   Operation 217 'sub' 'result_V_6' <Predicate = (!icmp_ln504)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 218 [1/1] (0.00ns) (grouped into LUT with out node add_ln69)   --->   "%select_ln59 = select i1 %p_Result_s, i32 %result_V_6, i32 %val" [r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59]   --->   Operation 218 'select' 'select_ln59' <Predicate = (!icmp_ln504)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_13 : Operation 219 [1/1] (0.88ns) (out node of the LUT)   --->   "%add_ln69 = add i32 %select_ln59, i32 60000000"   --->   Operation 219 'add' 'add_ln69' <Predicate = (!icmp_ln504)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 220 [1/1] (0.85ns)   --->   "%icmp_ln878 = icmp_sgt  i32 %add_ln69, i32 50000000"   --->   Operation 220 'icmp' 'icmp_ln878' <Predicate = (!icmp_ln504)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 221 [1/1] (0.22ns)   --->   "%select_ln506 = select i1 %icmp_ln878, i32 50000000, i32 %add_ln69" [patchMaker.cpp:506]   --->   Operation 221 'select' 'select_ln506' <Predicate = (!icmp_ln504)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_13 : Operation 222 [1/1] (0.38ns)   --->   "%br_ln506 = br void %._crit_edge.preheader" [patchMaker.cpp:506]   --->   Operation 222 'br' 'br_ln506' <Predicate = (!icmp_ln504)> <Delay = 0.38>
+ST_13 : Operation 223 [1/1] (0.00ns)   --->   "%z_top_max_V_125_ph = phi i32 50000000, void, i32 %select_ln506, void" [patchMaker.cpp:506]   --->   Operation 223 'phi' 'z_top_max_V_125_ph' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 224 [1/1] (0.38ns)   --->   "%br_ln530 = br void %._crit_edge" [patchMaker.cpp:530]   --->   Operation 224 'br' 'br_ln530' <Predicate = true> <Delay = 0.38>
+
+State 14 <SV = 12> <Delay = 4.82>
+ST_14 : Operation 225 [1/1] (0.00ns)   --->   "%nPatchesInColumn = phi i32 %nPatchesInColumn_1, void, i32 0, void %._crit_edge.preheader"   --->   Operation 225 'phi' 'nPatchesInColumn' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 226 [1/1] (0.00ns)   --->   "%phi_ln531 = phi i1 %icmp_ln515_1, void, i1 1, void %._crit_edge.preheader" [patchMaker.cpp:531]   --->   Operation 226 'phi' 'phi_ln531' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 227 [1/1] (0.00ns)   --->   "%z_top_max_V_125 = phi i32 %z_top_max_V, void, i32 %z_top_max_V_125_ph, void %._crit_edge.preheader"   --->   Operation 227 'phi' 'z_top_max_V_125' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 228 [1/1] (0.00ns)   --->   "%phi_ln886 = phi i1 %icmp_ln515, void, i1 1, void %._crit_edge.preheader"   --->   Operation 228 'phi' 'phi_ln886' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 229 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V_0 = phi i32 %complementary_apexZ0_V, void, i32 0, void %._crit_edge.preheader"   --->   Operation 229 'phi' 'complementary_apexZ0_V_0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 230 [1/1] (0.00ns)   --->   "%z_top_min_V_0 = phi i32 %z_top_min_V, void, i32 4244967296, void %._crit_edge.preheader"   --->   Operation 230 'phi' 'z_top_min_V_0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 231 [1/1] (0.85ns)   --->   "%icmp_ln531 = icmp_slt  i32 %nPatchesInColumn, i32 100000000" [patchMaker.cpp:531]   --->   Operation 231 'icmp' 'icmp_ln531' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 232 [1/1] (0.00ns) (grouped into LUT with out node and_ln531_1)   --->   "%and_ln531 = and i1 %icmp_ln531, i1 %phi_ln531" [patchMaker.cpp:531]   --->   Operation 232 'and' 'and_ln531' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 233 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln531_1 = and i1 %and_ln531, i1 %phi_ln886" [patchMaker.cpp:531]   --->   Operation 233 'and' 'and_ln531_1' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 234 [1/1] (0.00ns)   --->   "%br_ln531 = br i1 %and_ln531_1, void %_Z15solveNextColumn6ap_intILi32EEiibbS0_RhRA5_A128_A2_S0_RA5_iRA32_A5_A16_S_ILi64EERA32_A5_A4_A6_S0_.exit, void" [patchMaker.cpp:531]   --->   Operation 234 'br' 'br_ln531' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 235 [2/2] (3.84ns)   --->   "%call_ret1 = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i64 %patches_superpoints, i32 %apexZ0_V, i32 %ppl_read, i32 %nPatchesInColumn, i32 %z_top_min_V_0, i32 %z_top_max_V_125, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded_V, i32 %patches_parameters_V, i25 %radii, i26 %trapezoid_edges_V, i32 %temp_V" [patchMaker.cpp:517]   --->   Operation 235 'call' 'call_ret1' <Predicate = (and_ln531_1)> <Delay = 3.84> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 236 [1/1] (0.00ns)   --->   "%br_ln487 = br void %.preheader" [patchMaker.cpp:487]   --->   Operation 236 'br' 'br_ln487' <Predicate = (!and_ln531_1)> <Delay = 0.00>
+
+State 15 <SV = 13> <Delay = 0.85>
+ST_15 : Operation 237 [1/1] (0.00ns)   --->   "%specloopname_ln517 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [patchMaker.cpp:517]   --->   Operation 237 'specloopname' 'specloopname_ln517' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 238 [1/2] (0.00ns)   --->   "%call_ret1 = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i64 %patches_superpoints, i32 %apexZ0_V, i32 %ppl_read, i32 %nPatchesInColumn, i32 %z_top_min_V_0, i32 %z_top_max_V_125, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded_V, i32 %patches_parameters_V, i25 %radii, i26 %trapezoid_edges_V, i32 %temp_V" [patchMaker.cpp:517]   --->   Operation 238 'call' 'call_ret1' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 239 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 239 'extractvalue' 'complementary_apexZ0_V' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 240 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln515_1)   --->   "%projectionOfCornerToBeam_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 240 'extractvalue' 'projectionOfCornerToBeam_V' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 241 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln515)   --->   "%c_corner_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 241 'extractvalue' 'c_corner_V' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 242 [1/1] (0.00ns)   --->   "%nPatchesInColumn_1 = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 242 'extractvalue' 'nPatchesInColumn_1' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 243 [1/1] (0.00ns)   --->   "%agg_tmp58110_ret = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 243 'extractvalue' 'agg_tmp58110_ret' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 244 [1/1] (0.00ns)   --->   "%z_top_max_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 244 'extractvalue' 'z_top_max_V' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 245 [1/1] (0.00ns)   --->   "%z_top_min_V = extractvalue i224 %call_ret1" [patchMaker.cpp:517]   --->   Operation 245 'extractvalue' 'z_top_min_V' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 246 [1/1] (0.85ns) (out node of the LUT)   --->   "%icmp_ln515 = icmp_sgt  i32 %c_corner_V, i32 4244967196" [patchMaker.cpp:515]   --->   Operation 246 'icmp' 'icmp_ln515' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 247 [1/1] (0.85ns) (out node of the LUT)   --->   "%icmp_ln515_1 = icmp_slt  i32 %projectionOfCornerToBeam_V, i32 15000000" [patchMaker.cpp:515]   --->   Operation 247 'icmp' 'icmp_ln515_1' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 248 [1/1] (0.38ns)   --->   "%store_ln515 = store i32 %agg_tmp58110_ret, i32 %saved_apexZ0" [patchMaker.cpp:515]   --->   Operation 248 'store' 'store_ln515' <Predicate = true> <Delay = 0.38>
+ST_15 : Operation 249 [1/1] (0.00ns)   --->   "%br_ln515 = br void %._crit_edge" [patchMaker.cpp:515]   --->   Operation 249 'br' 'br_ln515' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -250,67 +377,101 @@ Target clock period: 10ns, clock uncertainty: 2.7ns.
 
  <State 1>: 0.387ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('indvar_flatten', patchMaker.cpp:474) with incoming values : ('add_ln474_1', patchMaker.cpp:474) [34]  (0.387 ns)
+	multiplexor before 'phi' operation ('indvar_flatten13', patchMaker.cpp:429) with incoming values : ('add_ln429_1', patchMaker.cpp:429) [34]  (0.387 ns)
 
- <State 2>: 2.08ns
+ <State 2>: 4.94ns
 The critical path consists of the following:
-	'phi' operation ('b', patchMaker.cpp:476) with incoming values : ('add_ln476', patchMaker.cpp:476) [36]  (0 ns)
-	'icmp' operation ('icmp_ln476', patchMaker.cpp:476) [45]  (0.581 ns)
-	'select' operation ('select_ln474', patchMaker.cpp:474) [46]  (0.303 ns)
-	'getelementptr' operation ('GDarray_addr', patchMaker.cpp:478) [64]  (0 ns)
-	'load' operation ('packedCoordinates.V', patchMaker.cpp:478) on array 'GDarray' [65]  (1.2 ns)
+	'phi' operation ('indvar_flatten', patchMaker.cpp:432) with incoming values : ('select_ln432_2', patchMaker.cpp:432) [36]  (0 ns)
+	'icmp' operation ('icmp_ln432', patchMaker.cpp:432) [47]  (0.581 ns)
+	'select' operation ('select_ln429', patchMaker.cpp:429) [48]  (0.278 ns)
+	'add' operation ('add_ln432', patchMaker.cpp:432) [57]  (0.572 ns)
+	'select' operation ('select_ln432_1', patchMaker.cpp:432) [61]  (0.278 ns)
+	'add' operation ('add_ln437_1', patchMaker.cpp:437) [63]  (0.838 ns)
+	'add' operation ('add_ln437_2', patchMaker.cpp:437) [67]  (0.745 ns)
+	'getelementptr' operation ('patches_superpoints_addr', patchMaker.cpp:437) [69]  (0 ns)
+	'store' operation ('store_ln437', patchMaker.cpp:437) of constant 0 on array 'patches_superpoints' [71]  (1.65 ns)
 
- <State 3>: 2.4ns
+ <State 3>: 0.387ns
 The critical path consists of the following:
-	'load' operation ('packedCoordinates.V', patchMaker.cpp:478) on array 'GDarray' [65]  (1.2 ns)
-	'store' operation ('store_ln478', patchMaker.cpp:478) of variable 'trunc_ln' on array 'GDarrayDecoded.V', patchMaker.cpp:472 [67]  (1.2 ns)
+	multiplexor before 'phi' operation ('indvar_flatten59', patchMaker.cpp:443) with incoming values : ('add_ln443_1', patchMaker.cpp:443) [79]  (0.387 ns)
 
- <State 4>: 0.387ns
+ <State 4>: 5.66ns
 The critical path consists of the following:
-	'alloca' operation ('saved_apexZ0') [73]  (0 ns)
-	'store' operation ('store_ln467', patchMaker.cpp:467) of constant 22000100 on local variable 'saved_apexZ0' [74]  (0.387 ns)
+	'phi' operation ('indvar_flatten35', patchMaker.cpp:446) with incoming values : ('select_ln446_2', patchMaker.cpp:446) [81]  (0 ns)
+	'icmp' operation ('icmp_ln446', patchMaker.cpp:446) [94]  (0.581 ns)
+	'select' operation ('select_ln443', patchMaker.cpp:443) [95]  (0.278 ns)
+	'add' operation ('add_ln446', patchMaker.cpp:446) [107]  (0.572 ns)
+	'select' operation ('select_ln446_1', patchMaker.cpp:446) [111]  (0.278 ns)
+	'add' operation ('add_ln454_1', patchMaker.cpp:454) [113]  (0.818 ns)
+	'add' operation ('add_ln454_2', patchMaker.cpp:454) [127]  (0.735 ns)
+	'sub' operation ('sub_ln454', patchMaker.cpp:454) [132]  (0 ns)
+	'add' operation ('add_ln454_3', patchMaker.cpp:454) [135]  (0.756 ns)
+	'getelementptr' operation ('patches_parameters_V_addr', patchMaker.cpp:454) [137]  (0 ns)
+	'store' operation ('store_ln454', patchMaker.cpp:454) of constant 0 on array 'patches_parameters.V', patchMaker.cpp:465 [139]  (1.65 ns)
 
- <State 5>: 4.35ns
+ <State 5>: 0.387ns
 The critical path consists of the following:
-	'load' operation ('apexZ0.V') on local variable 'saved_apexZ0' [77]  (0 ns)
-	'sitofp' operation ('conv_i_i') [86]  (4.35 ns)
+	multiplexor before 'phi' operation ('indvar_flatten67', patchMaker.cpp:474) with incoming values : ('add_ln474_1', patchMaker.cpp:474) [149]  (0.387 ns)
 
- <State 6>: 4.35ns
+ <State 6>: 2.08ns
 The critical path consists of the following:
-	'sitofp' operation ('conv_i_i') [86]  (4.35 ns)
+	'phi' operation ('b', patchMaker.cpp:476) with incoming values : ('add_ln476', patchMaker.cpp:476) [151]  (0 ns)
+	'icmp' operation ('icmp_ln476', patchMaker.cpp:476) [160]  (0.581 ns)
+	'select' operation ('select_ln474', patchMaker.cpp:474) [161]  (0.303 ns)
+	'getelementptr' operation ('GDarray_addr', patchMaker.cpp:478) [179]  (0 ns)
+	'load' operation ('packedCoordinates.V', patchMaker.cpp:478) on array 'GDarray' [180]  (1.2 ns)
 
- <State 7>: 4.9ns
+ <State 7>: 2.4ns
 The critical path consists of the following:
-	'fmul' operation ('x') [87]  (4.9 ns)
+	'load' operation ('packedCoordinates.V', patchMaker.cpp:478) on array 'GDarray' [180]  (1.2 ns)
+	'store' operation ('store_ln478', patchMaker.cpp:478) of variable 'trunc_ln' on array 'GDarrayDecoded.V', patchMaker.cpp:472 [182]  (1.2 ns)
 
- <State 8>: 4.9ns
+ <State 8>: 0.387ns
 The critical path consists of the following:
-	'fmul' operation ('x') [87]  (4.9 ns)
+	'alloca' operation ('saved_apexZ0') [188]  (0 ns)
+	'store' operation ('store_ln467', patchMaker.cpp:467) of constant 22000100 on local variable 'saved_apexZ0' [189]  (0.387 ns)
 
- <State 9>: 5.29ns
+ <State 9>: 4.35ns
 The critical path consists of the following:
-	'sub' operation ('sub_ln1311') [97]  (0.705 ns)
-	'select' operation ('ush') [99]  (0.303 ns)
-	'lshr' operation ('r.V') [102]  (0 ns)
-	'select' operation ('val') [107]  (1.05 ns)
-	'sub' operation ('result.V') [108]  (0.88 ns)
-	'select' operation ('select_ln59', r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) [109]  (0 ns)
-	'add' operation ('this.V') [110]  (0.88 ns)
-	'icmp' operation ('icmp_ln878') [111]  (0.859 ns)
-	'select' operation ('select_ln506', patchMaker.cpp:506) [112]  (0.227 ns)
-	multiplexor before 'phi' operation ('z_top_max_V_125_ph', patchMaker.cpp:506) with incoming values : ('select_ln506', patchMaker.cpp:506) [115]  (0.387 ns)
-	'phi' operation ('z_top_max_V_125_ph', patchMaker.cpp:506) with incoming values : ('select_ln506', patchMaker.cpp:506) [115]  (0 ns)
+	'load' operation ('apexZ0.V') on local variable 'saved_apexZ0' [192]  (0 ns)
+	'sitofp' operation ('conv_i_i') [201]  (4.35 ns)
 
- <State 10>: 4.82ns
+ <State 10>: 4.35ns
 The critical path consists of the following:
-	'phi' operation ('nPatchesInColumn') with incoming values : ('nPatchesInColumn', patchMaker.cpp:517) [118]  (0 ns)
-	'call' operation ('call_ret1', patchMaker.cpp:517) to 'solveNextPatchPair' [130]  (3.84 ns)
+	'sitofp' operation ('conv_i_i') [201]  (4.35 ns)
+
+ <State 11>: 4.9ns
+The critical path consists of the following:
+	'fmul' operation ('x') [202]  (4.9 ns)
+
+ <State 12>: 4.9ns
+The critical path consists of the following:
+	'fmul' operation ('x') [202]  (4.9 ns)
+
+ <State 13>: 5.29ns
+The critical path consists of the following:
+	'add' operation ('sh', r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:341) [210]  (0.705 ns)
+	'select' operation ('ush') [214]  (0.303 ns)
+	'lshr' operation ('r.V') [217]  (0 ns)
+	'select' operation ('val') [222]  (1.05 ns)
+	'sub' operation ('result.V') [223]  (0.88 ns)
+	'select' operation ('select_ln59', r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) [224]  (0 ns)
+	'add' operation ('this.V') [225]  (0.88 ns)
+	'icmp' operation ('icmp_ln878') [226]  (0.859 ns)
+	'select' operation ('select_ln506', patchMaker.cpp:506) [227]  (0.227 ns)
+	multiplexor before 'phi' operation ('z_top_max_V_125_ph', patchMaker.cpp:506) with incoming values : ('select_ln506', patchMaker.cpp:506) [230]  (0.387 ns)
+	'phi' operation ('z_top_max_V_125_ph', patchMaker.cpp:506) with incoming values : ('select_ln506', patchMaker.cpp:506) [230]  (0 ns)
+
+ <State 14>: 4.82ns
+The critical path consists of the following:
+	'phi' operation ('nPatchesInColumn') with incoming values : ('nPatchesInColumn', patchMaker.cpp:517) [233]  (0 ns)
+	'call' operation ('call_ret1', patchMaker.cpp:517) to 'solveNextPatchPair' [245]  (3.84 ns)
 	blocking operation 0.981 ns on control path)
 
- <State 11>: 0.859ns
+ <State 15>: 0.859ns
 The critical path consists of the following:
-	'call' operation ('call_ret1', patchMaker.cpp:517) to 'solveNextPatchPair' [130]  (0 ns)
-	'icmp' operation ('icmp_ln515', patchMaker.cpp:515) [138]  (0.859 ns)
+	'call' operation ('call_ret1', patchMaker.cpp:517) to 'solveNextPatchPair' [245]  (0 ns)
+	'icmp' operation ('icmp_ln515', patchMaker.cpp:515) [253]  (0.859 ns)
 
 
 ============================================================
@@ -332,6 +493,10 @@ N/A
 	State 9
 	State 10
 	State 11
+	State 12
+	State 13
+	State 14
+	State 15
 
 
 ============================================================

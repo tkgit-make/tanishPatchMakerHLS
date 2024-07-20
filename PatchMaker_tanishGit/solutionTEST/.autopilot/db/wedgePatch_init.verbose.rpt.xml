@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'wedgePatch_init'" level="0">
-<item name = "Date">Thu Jul 18 14:10:40 2024
+<item name = "Date">Thu Jul 18 17:17:55 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -142,7 +142,7 @@
 <column name="ap_phi_mux_i_1_phi_fu_590_p4">9, 2, 8, 16</column>
 <column name="ap_phi_mux_i_phi_fu_546_p4">9, 2, 8, 16</column>
 <column name="b_reg_575">9, 2, 2, 4</column>
-<column name="empty_70_fu_150">9, 2, 32, 64</column>
+<column name="empty_72_fu_150">9, 2, 32, 64</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_598_j">14, 3, 3, 9</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_598_z_j">14, 3, 32, 96</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_612_j">14, 3, 3, 9</column>
@@ -186,7 +186,7 @@
 <column name="c_V_reg_1366">32, 0, 32, 0</column>
 <column name="conv_reg_1165">8, 0, 32, 24</column>
 <column name="d_V_reg_1371">32, 0, 32, 0</column>
-<column name="empty_70_fu_150">32, 0, 32, 0</column>
+<column name="empty_72_fu_150">32, 0, 32, 0</column>
 <column name="grp_get_acceptanceCorners_fu_626_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_598_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_612_ap_start_reg">1, 0, 1, 0</column>

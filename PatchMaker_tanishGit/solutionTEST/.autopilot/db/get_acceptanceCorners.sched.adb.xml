@@ -685,10 +685,10 @@
 
 <Node id="44" bw="5" op_0_bw="5" op_1_bw="4" op_2_bw="1">
 <![CDATA[
-.split:3 %tmp_113_cast = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i4.i1, i4 %trunc_ln878_1, i1 0
+.split:3 %tmp_121_cast = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i4.i1, i4 %trunc_ln878_1, i1 0
 
 ]]></Node>
-<StgValue><ssdm name="tmp_113_cast"/></StgValue>
+<StgValue><ssdm name="tmp_121_cast"/></StgValue>
 </operation>
 
 <operation id="54" st_id="3" stage="1" lat="1">
@@ -701,7 +701,7 @@
 
 <Node id="45" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-.split:4 %sub_ln878 = sub i5 %tmp_cast, i5 %tmp_113_cast
+.split:4 %sub_ln878 = sub i5 %tmp_cast, i5 %tmp_121_cast
 
 ]]></Node>
 <StgValue><ssdm name="sub_ln878"/></StgValue>
@@ -1059,7 +1059,7 @@
 
 <Node id="57" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split:16 %specloopname_ln201 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20
+.split:16 %specloopname_ln201 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln201"/></StgValue>

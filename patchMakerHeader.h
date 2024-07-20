@@ -3,12 +3,7 @@
 // bt
 #define VITIS_SYNTHESIS false
 #define PRINT_OUTS false
-#define DATA_TESTING false
-
-#if DATA_TESTING == true
-    #undef PRINT_OUTS
-    #define PRINTOUTS false
-#endif
+#define LOGIC_VALIDATION true //Set to true if comparing to the Standalone, validated CPP, for validation of VITIS code
 
 #include <stdio.h>
 #include <limits.h>
@@ -49,20 +44,12 @@
 #define index_type uint8_t //change to unsigned int once it is verified that there are no errors
 
 #define MAX_LAYERS 5
-#define MAX_POINTS_IN_EVENT 128
-#define MAX_POINTS_PER_LAYER 128    // max size of vector of points "vect" in CPP. equivalent to MAX_POINTS_PER_DATASET
-#define MAX_POINTS_FOR_DATASET MAX_POINTS_PER_LAYER    // max size of vector of points "vect" in CPP
+#define MAX_POINTS_IN_WEDGE 512
 
 #define MAX_POINTS_IN_LINE MAX_LAYERS // a point on the line is calculated for each layer in the environment.
 #define MAX_POINTS_IN_SUPERPOINT 16
 #define MAX_SUPERPOINTS_IN_PATCH 5
 #define MAX_PARALLELOGRAMS_PER_PATCH MAX_LAYERS - 1 // layer 1 is a vertical ribbon, the other 4 layers are sloping, so each intersects with layer 1 to make a parallelogram
-
-#if DATA_TESTING == true
-    #define MAX_PATCHES 1                             // upper bound, 14-18 average.
-#else
-    #define MAX_PATCHES 32  
-#endif
 
 #define PARAMETERS_PER_POINT 2
 #define PATCH_PROPERTIES 5
@@ -84,11 +71,23 @@
 #define INTEGER_FACTOR_CM 1000000
 #define INTEGER_FACTOR_RAD (pow(10, 7))
 
+#if LOGIC_VALIDATION == true
+    #define MAX_PATCHES 32
+    #define MAX_POINTS_PER_LAYER 128
+#else
+    #define MAX_PATCHES 1                             // upper bound, 14-18 average.
+    #define MAX_POINTS_PER_LAYER 128
+#endif
+
+#define MAX_POINTS_FOR_DATASET MAX_POINTS_PER_LAYER    // max size of vector of points "vect" in CPP
+
 #define WEDGE_PATCH COORDINATE_TYPE (&wp_superpoints) [MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]
 #define GDARRAY COORDINATE_TYPE (&GDarrayDecoded) [MAX_LAYERS][MAX_POINTS_FOR_DATASET][PARAMETERS_PER_POINT], int (&GDn_points) [MAX_LAYERS]
 #define GDARRAYPRESORT std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> &GDarray, int (&GDn_points) [MAX_LAYERS]
 #define GPATCHES SPACEPOINT_TYPE (&patches_superpoints) [MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]
 #define WEDGE_PATCH_GET_SHADOWS SPACEPOINT_TYPE (&wp_superpoints) [MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]
+
+
 
 /*
 std::array<std::array<std::array<long, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> GDarray;

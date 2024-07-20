@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'makePatches_ShadowQuilt_fromEdges'
 ================================================================
 + General Information: 
-    * Date:           Thu Jul 18 14:11:44 2024
+    * Date:           Thu Jul 18 17:18:39 2024
     * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
     * Project:        PatchMaker_tanishGit
     * Solution:       solutionTEST (Vivado IP Flow Target)
@@ -19,8 +19,8 @@
     |                           Modules                           |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |         |          |             |             |     |
     |                           & Loops                           |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |    DSP   |      FF     |     LUT     | URAM|
     +-------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+----------+-------------+-------------+-----+
-    |+ makePatches_ShadowQuilt_fromEdges                          |  Timing|   0.00|        -|          -|         -|        -|     -|        no|  5 (~0%)|  152 (3%)|  52233 (~0%)|   98300 (2%)|    -|
-    | + grp_solveNextPatchPair_fu_322                             |  Timing|   0.00|        -|          -|         -|        -|     -|        no|  1 (~0%)|  149 (3%)|  51800 (~0%)|   96796 (2%)|    -|
+    |+ makePatches_ShadowQuilt_fromEdges                          |  Timing|   0.00|        -|          -|         -|        -|     -|        no|  5 (~0%)|  152 (3%)|  52312 (~0%)|   99061 (2%)|    -|
+    | + grp_solveNextPatchPair_fu_537                             |  Timing|   0.00|        -|          -|         -|        -|     -|        no|  1 (~0%)|  149 (3%)|  51800 (~0%)|   96796 (2%)|    -|
     |  + grp_makeThirdPatch_fu_537                                |  Timing|   0.00|        -|          -|         -|        -|     -|        no|        -|   55 (1%)|  17529 (~0%)|  29840 (~0%)|    -|
     |   + grp_add_patch6_fu_986                                   |       -|  -0.30|        -|          -|         -|        -|     -|        no|        -|  16 (~0%)|   7821 (~0%)|   7642 (~0%)|    -|
     |    o VITIS_LOOP_287_1_VITIS_LOOP_289_2                      |       -|  -7.30|       80|    800.000|         2|        1|    80|       yes|        -|         -|            -|            -|    -|
@@ -140,6 +140,8 @@
     |  + grp_straightLineProjectorFromLayerIJtoK_fu_643           |      II|  -0.23|       11|    110.000|         -|        1|     -|       yes|        -|   6 (~0%)|    718 (~0%)|   2217 (~0%)|    -|
     |  o superPointEqualCheck_loop                                |       -|  -7.30|      137|  1.370e+03|        23|        -|     5|        no|        -|         -|            -|            -|    -|
     |  o solvePatchPair_loop                                      |       -|  -7.30|        -|          -|         -|        -|     -|        no|        -|         -|            -|            -|    -|
+    | o initArraysSPloop1_initArraysSPloop2_initArraysSPloop3     |       -|  -7.30|     2560|  2.560e+04|         1|        1|  2560|       yes|        -|         -|            -|            -|    -|
+    | o initArraysPPloop1_initArraysPPloop3_initArraysPPloop4     |       -|  -7.30|     3840|  3.840e+04|         1|        1|  3840|       yes|        -|         -|            -|            -|    -|
     | o VITIS_LOOP_474_1_VITIS_LOOP_476_2                         |       -|  -7.30|      640|  6.400e+03|         2|        1|   640|       yes|        -|         -|            -|            -|    -|
     | o shadowQuilt_loop                                          |       -|  -7.30|        -|          -|         -|        -|     -|        no|        -|         -|            -|            -|    -|
     |  o solveNextColumn_loop                                     |       -|  -7.30|        -|          -|         -|        -|     -|        no|        -|         -|            -|            -|    -|

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'solveComplmentaryPatch'
 ================================================================
-* Date:           Thu Jul 18 14:10:57 2024
+* Date:           Thu Jul 18 17:18:06 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -304,8 +304,8 @@
     |ap_enable_reg_pp9_iter1                             |    9|          2|    1|          2|
     |ap_enable_reg_pp9_iter2                             |    9|          2|    1|          2|
     |ap_phi_mux_current_z_top_index_0_phi_fu_811_p6      |    9|          2|   32|         64|
-    |ap_phi_mux_empty_73_phi_fu_659_p4                   |    9|          2|    9|         18|
-    |ap_phi_mux_empty_76_phi_fu_699_p4                   |   14|          3|   10|         30|
+    |ap_phi_mux_empty_75_phi_fu_659_p4                   |    9|          2|    9|         18|
+    |ap_phi_mux_empty_78_phi_fu_699_p4                   |   14|          3|   10|         30|
     |ap_phi_mux_i_12_phi_fu_742_p4                       |    9|          2|    3|          6|
     |ap_phi_mux_i_15_phi_fu_754_p4                       |    9|          2|    3|          6|
     |ap_phi_mux_i_5_phi_fu_613_p4                        |    9|          2|    8|         16|
@@ -323,7 +323,7 @@
     |counter_0_reg_676                                   |    9|          2|   32|         64|
     |current_z_i_index_address0                          |   26|          5|    3|         15|
     |current_z_top_index_0_reg_808                       |    9|          2|   32|         64|
-    |empty_73_reg_656                                    |    9|          2|    9|         18|
+    |empty_75_reg_656                                    |    9|          2|    9|         18|
     |grp_delete_patch_fu_882_index                       |   14|          3|    9|         27|
     |grp_fu_899_p0                                       |   14|          3|   32|         96|
     |grp_fu_906_p0                                       |   14|          3|   32|         96|
@@ -446,7 +446,7 @@
     |counterUpshift_0_reg_686                                     |  32|   0|   32|          0|
     |counter_0_reg_676                                            |  32|   0|   32|          0|
     |current_z_top_index_0_reg_808                                |  32|   0|   32|          0|
-    |empty_73_reg_656                                             |   9|   0|    9|          0|
+    |empty_75_reg_656                                             |   9|   0|    9|          0|
     |grp_areWedgeSuperPointsEqual_fu_855_ap_start_reg             |   1|   0|    1|          0|
     |grp_delete_patch_fu_882_ap_start_reg                         |   1|   0|    1|          0|
     |grp_makePatch_alignedToLine_fu_830_ap_start_reg              |   1|   0|    1|          0|

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makeThirdPatch'" level="0">
-<item name = "Date">Thu Jul 18 14:11:11 2024
+<item name = "Date">Thu Jul 18 17:18:14 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -177,10 +177,10 @@
 <column name="ap_block_state83_on_subcall_done">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_3137">and, 0, 0, 2, 1, 1</column>
 <column name="ap_predicate_op728_call_state124">and, 0, 0, 2, 1, 1</column>
-<column name="empty_84_fu_1377_p2">and, 0, 0, 2, 1, 1</column>
-<column name="empty_89_fu_1455_p2">and, 0, 0, 2, 1, 1</column>
-<column name="empty_94_fu_1539_p2">and, 0, 0, 2, 1, 1</column>
-<column name="empty_99_fu_1617_p2">and, 0, 0, 2, 1, 1</column>
+<column name="empty_101_fu_1617_p2">and, 0, 0, 2, 1, 1</column>
+<column name="empty_86_fu_1377_p2">and, 0, 0, 2, 1, 1</column>
+<column name="empty_91_fu_1455_p2">and, 0, 0, 2, 1, 1</column>
+<column name="empty_96_fu_1539_p2">and, 0, 0, 2, 1, 1</column>
 <column name="leftRight_fu_1712_p2">and, 0, 0, 2, 1, 1</column>
 <column name="grp_fu_1123_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="grp_fu_1129_p2">icmp, 0, 0, 20, 32, 32</column>
@@ -217,10 +217,10 @@
 <column name="notrhs38_fu_1445_p2">icmp, 0, 0, 24, 52, 1</column>
 <column name="notrhs40_fu_1367_p2">icmp, 0, 0, 24, 52, 1</column>
 <column name="notrhs_fu_1607_p2">icmp, 0, 0, 24, 52, 1</column>
-<column name="empty_83_fu_1373_p2">or, 0, 0, 2, 1, 1</column>
-<column name="empty_88_fu_1451_p2">or, 0, 0, 2, 1, 1</column>
-<column name="empty_93_fu_1535_p2">or, 0, 0, 2, 1, 1</column>
-<column name="empty_98_fu_1613_p2">or, 0, 0, 2, 1, 1</column>
+<column name="empty_100_fu_1613_p2">or, 0, 0, 2, 1, 1</column>
+<column name="empty_85_fu_1373_p2">or, 0, 0, 2, 1, 1</column>
+<column name="empty_90_fu_1451_p2">or, 0, 0, 2, 1, 1</column>
+<column name="empty_95_fu_1535_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln1118_fu_1914_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln1143_fu_2103_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln1155_fu_2260_p2">or, 0, 0, 2, 1, 1</column>
@@ -265,10 +265,10 @@
 <column name="shifted_Align_5_fu_1828_p3">select, 0, 0, 63, 1, 64</column>
 <column name="shifted_Align_fu_1671_p3">select, 0, 0, 32, 1, 32</column>
 <column name="cmp_i_i297_not_fu_1706_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="empty_100_fu_1623_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="empty_85_fu_1383_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="empty_90_fu_1461_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="empty_95_fu_1545_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="empty_102_fu_1623_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="empty_87_fu_1383_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="empty_92_fu_1461_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="empty_97_fu_1545_p2">xor, 0, 0, 2, 1, 2</column>
 <column name="shiftOriginal_fu_1677_p2">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln1116_fu_1882_p2">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln1141_fu_2071_p2">xor, 0, 0, 2, 1, 2</column>
@@ -352,12 +352,12 @@
 <column name="complementary_topR_jR_V_reg_682">9, 2, 32, 64</column>
 <column name="d_1_reg_975">9, 2, 3, 6</column>
 <column name="d_reg_920">9, 2, 2, 4</column>
-<column name="empty_101_reg_650">9, 2, 1, 2</column>
-<column name="empty_102_reg_664">9, 2, 32, 64</column>
-<column name="empty_103_reg_673">9, 2, 32, 64</column>
-<column name="empty_86_reg_611">9, 2, 1, 2</column>
-<column name="empty_91_reg_623">9, 2, 1, 2</column>
-<column name="empty_96_reg_638">9, 2, 1, 2</column>
+<column name="empty_103_reg_650">9, 2, 1, 2</column>
+<column name="empty_104_reg_664">9, 2, 32, 64</column>
+<column name="empty_105_reg_673">9, 2, 32, 64</column>
+<column name="empty_88_reg_611">9, 2, 1, 2</column>
+<column name="empty_93_reg_623">9, 2, 1, 2</column>
+<column name="empty_98_reg_638">9, 2, 1, 2</column>
 <column name="grp_delete_patch_fu_1103_index">14, 3, 9, 27</column>
 <column name="grp_fu_1115_p0">26, 5, 64, 320</column>
 <column name="grp_getShadows_fu_1058_wp_parameters_offset">20, 4, 5, 20</column>
@@ -449,12 +449,12 @@
 <column name="complementary_topR_jR_V_reg_682">32, 0, 32, 0</column>
 <column name="d_1_reg_975">3, 0, 3, 0</column>
 <column name="d_reg_920">2, 0, 2, 0</column>
-<column name="empty_101_reg_650">1, 0, 1, 0</column>
-<column name="empty_102_reg_664">32, 0, 32, 0</column>
-<column name="empty_103_reg_673">32, 0, 32, 0</column>
-<column name="empty_86_reg_611">1, 0, 1, 0</column>
-<column name="empty_91_reg_623">1, 0, 1, 0</column>
-<column name="empty_96_reg_638">1, 0, 1, 0</column>
+<column name="empty_103_reg_650">1, 0, 1, 0</column>
+<column name="empty_104_reg_664">32, 0, 32, 0</column>
+<column name="empty_105_reg_673">32, 0, 32, 0</column>
+<column name="empty_88_reg_611">1, 0, 1, 0</column>
+<column name="empty_93_reg_623">1, 0, 1, 0</column>
+<column name="empty_98_reg_638">1, 0, 1, 0</column>
 <column name="grp_add_patch6_fu_986_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_delete_patch_fu_1103_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_getShadows_fu_1058_ap_start_reg">1, 0, 1, 0</column>

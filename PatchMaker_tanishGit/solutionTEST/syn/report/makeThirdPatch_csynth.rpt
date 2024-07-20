@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'makeThirdPatch'
 ================================================================
-* Date:           Thu Jul 18 14:11:10 2024
+* Date:           Thu Jul 18 17:18:13 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -200,10 +200,10 @@
     |ap_block_state83_on_subcall_done        |       and|   0|  0|   2|           1|           1|
     |ap_condition_3137                       |       and|   0|  0|   2|           1|           1|
     |ap_predicate_op728_call_state124        |       and|   0|  0|   2|           1|           1|
-    |empty_84_fu_1377_p2                     |       and|   0|  0|   2|           1|           1|
-    |empty_89_fu_1455_p2                     |       and|   0|  0|   2|           1|           1|
-    |empty_94_fu_1539_p2                     |       and|   0|  0|   2|           1|           1|
-    |empty_99_fu_1617_p2                     |       and|   0|  0|   2|           1|           1|
+    |empty_101_fu_1617_p2                    |       and|   0|  0|   2|           1|           1|
+    |empty_86_fu_1377_p2                     |       and|   0|  0|   2|           1|           1|
+    |empty_91_fu_1455_p2                     |       and|   0|  0|   2|           1|           1|
+    |empty_96_fu_1539_p2                     |       and|   0|  0|   2|           1|           1|
     |leftRight_fu_1712_p2                    |       and|   0|  0|   2|           1|           1|
     |grp_fu_1123_p2                          |      icmp|   0|  0|  20|          32|          32|
     |grp_fu_1129_p2                          |      icmp|   0|  0|  20|          32|          32|
@@ -240,10 +240,10 @@
     |notrhs38_fu_1445_p2                     |      icmp|   0|  0|  24|          52|           1|
     |notrhs40_fu_1367_p2                     |      icmp|   0|  0|  24|          52|           1|
     |notrhs_fu_1607_p2                       |      icmp|   0|  0|  24|          52|           1|
-    |empty_83_fu_1373_p2                     |        or|   0|  0|   2|           1|           1|
-    |empty_88_fu_1451_p2                     |        or|   0|  0|   2|           1|           1|
-    |empty_93_fu_1535_p2                     |        or|   0|  0|   2|           1|           1|
-    |empty_98_fu_1613_p2                     |        or|   0|  0|   2|           1|           1|
+    |empty_100_fu_1613_p2                    |        or|   0|  0|   2|           1|           1|
+    |empty_85_fu_1373_p2                     |        or|   0|  0|   2|           1|           1|
+    |empty_90_fu_1451_p2                     |        or|   0|  0|   2|           1|           1|
+    |empty_95_fu_1535_p2                     |        or|   0|  0|   2|           1|           1|
     |or_ln1118_fu_1914_p2                    |        or|   0|  0|   2|           1|           1|
     |or_ln1143_fu_2103_p2                    |        or|   0|  0|   2|           1|           1|
     |or_ln1155_fu_2260_p2                    |        or|   0|  0|   2|           1|           1|
@@ -288,10 +288,10 @@
     |shifted_Align_5_fu_1828_p3              |    select|   0|  0|  63|           1|          64|
     |shifted_Align_fu_1671_p3                |    select|   0|  0|  32|           1|          32|
     |cmp_i_i297_not_fu_1706_p2               |       xor|   0|  0|   2|           1|           2|
-    |empty_100_fu_1623_p2                    |       xor|   0|  0|   2|           1|           2|
-    |empty_85_fu_1383_p2                     |       xor|   0|  0|   2|           1|           2|
-    |empty_90_fu_1461_p2                     |       xor|   0|  0|   2|           1|           2|
-    |empty_95_fu_1545_p2                     |       xor|   0|  0|   2|           1|           2|
+    |empty_102_fu_1623_p2                    |       xor|   0|  0|   2|           1|           2|
+    |empty_87_fu_1383_p2                     |       xor|   0|  0|   2|           1|           2|
+    |empty_92_fu_1461_p2                     |       xor|   0|  0|   2|           1|           2|
+    |empty_97_fu_1545_p2                     |       xor|   0|  0|   2|           1|           2|
     |shiftOriginal_fu_1677_p2                |       xor|   0|  0|   2|           1|           2|
     |xor_ln1116_fu_1882_p2                   |       xor|   0|  0|   2|           1|           2|
     |xor_ln1141_fu_2071_p2                   |       xor|   0|  0|   2|           1|           2|
@@ -379,12 +379,12 @@
     |complementary_topR_jR_V_reg_682                      |    9|          2|   32|         64|
     |d_1_reg_975                                          |    9|          2|    3|          6|
     |d_reg_920                                            |    9|          2|    2|          4|
-    |empty_101_reg_650                                    |    9|          2|    1|          2|
-    |empty_102_reg_664                                    |    9|          2|   32|         64|
-    |empty_103_reg_673                                    |    9|          2|   32|         64|
-    |empty_86_reg_611                                     |    9|          2|    1|          2|
-    |empty_91_reg_623                                     |    9|          2|    1|          2|
-    |empty_96_reg_638                                     |    9|          2|    1|          2|
+    |empty_103_reg_650                                    |    9|          2|    1|          2|
+    |empty_104_reg_664                                    |    9|          2|   32|         64|
+    |empty_105_reg_673                                    |    9|          2|   32|         64|
+    |empty_88_reg_611                                     |    9|          2|    1|          2|
+    |empty_93_reg_623                                     |    9|          2|    1|          2|
+    |empty_98_reg_638                                     |    9|          2|    1|          2|
     |grp_delete_patch_fu_1103_index                       |   14|          3|    9|         27|
     |grp_fu_1115_p0                                       |   26|          5|   64|        320|
     |grp_getShadows_fu_1058_wp_parameters_offset          |   20|          4|    5|         20|
@@ -480,12 +480,12 @@
     |complementary_topR_jR_V_reg_682                               |   32|   0|   32|          0|
     |d_1_reg_975                                                   |    3|   0|    3|          0|
     |d_reg_920                                                     |    2|   0|    2|          0|
-    |empty_101_reg_650                                             |    1|   0|    1|          0|
-    |empty_102_reg_664                                             |   32|   0|   32|          0|
-    |empty_103_reg_673                                             |   32|   0|   32|          0|
-    |empty_86_reg_611                                              |    1|   0|    1|          0|
-    |empty_91_reg_623                                              |    1|   0|    1|          0|
-    |empty_96_reg_638                                              |    1|   0|    1|          0|
+    |empty_103_reg_650                                             |    1|   0|    1|          0|
+    |empty_104_reg_664                                             |   32|   0|   32|          0|
+    |empty_105_reg_673                                             |   32|   0|   32|          0|
+    |empty_88_reg_611                                              |    1|   0|    1|          0|
+    |empty_93_reg_623                                              |    1|   0|    1|          0|
+    |empty_98_reg_638                                              |    1|   0|    1|          0|
     |grp_add_patch6_fu_986_ap_start_reg                            |    1|   0|    1|          0|
     |grp_delete_patch_fu_1103_ap_start_reg                         |    1|   0|    1|          0|
     |grp_getShadows_fu_1058_ap_start_reg                           |    1|   0|    1|          0|

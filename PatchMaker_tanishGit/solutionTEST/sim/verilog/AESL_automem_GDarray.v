@@ -29,7 +29,7 @@ localparam
 parameter DATA_WIDTH = 32'd 64;
 parameter ADDR_WIDTH = 32'd 10;
 parameter DEPTH = 32'd 640;
-parameter DLY = 0.01;
+parameter DLY = 0.1;
 
 // Input and Output
 input clk;
@@ -56,8 +56,6 @@ initial begin : initialize_mem
     end
 end
 reg writed_flag;
-reg [DATA_WIDTH - 1 : 0] dout0_delay1;
-reg [DATA_WIDTH - 1 : 0] dout1_delay1;
 event write_process_done;
 //------------------------Task and function--------------
 task read_token;
@@ -134,14 +132,10 @@ always @ (posedge clk or rst) begin
         dout0 <= 0;
     end
     else begin
-        if((we0[0] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[0] == 1) && (address0 == address1)) begin
-            dout0_delay1[0*8+7:0*8] <= #DLY din1[0*8+7:0*8];
-            dout0[0*8+7:0*8] <= #DLY dout0_delay1[0*8+7:0*8];
-        end
-        else if (ce0 == 1) begin
-            dout0_delay1[0*8+7:0*8] <= #DLY mem[address0][0*8+7:0*8];
-            dout0[0*8+7:0*8] <= #DLY dout0_delay1[0*8+7:0*8];
-        end
+	  if((we0[0] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[0] == 1) && (address0 == address1))
+	      dout0[0*8+7:0*8] <= #DLY din1[0*8+7:0*8];
+	  else if (ce0 == 1)
+	      dout0[0*8+7:0*8] <= #DLY mem[address0][0*8+7:0*8];
         else ;
     end
 end
@@ -151,14 +145,10 @@ always @ (posedge clk or rst) begin
         dout1 <= 0;
     end
     else begin
-        if((we0[0] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[0] == 0) && (address0 == address1)) begin
-            dout1_delay1[0*8+7:0*8] <= #DLY din0[0*8+7:0*8];
-            dout1[0*8+7:0*8] <= #DLY dout1_delay1[0*8+7:0*8];
-        end
-        else if (ce1 == 1) begin
-            dout1_delay1[0*8+7:0*8] <= #DLY mem[address1][0*8+7:0*8];
-            dout1[0*8+7:0*8] <= #DLY dout1_delay1[0*8+7:0*8];
-        end
+	  if((we0[0] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[0] == 0) && (address0 == address1))
+            dout1[0*8+7:0*8] <= #DLY din0[0*8+7:0*8];
+	  else if (ce1 == 1)
+            dout1[0*8+7:0*8] <= #DLY mem[address1][0*8+7:0*8];
         else ;
     end
 end
@@ -167,14 +157,10 @@ always @ (posedge clk or rst) begin
         dout0 <= 0;
     end
     else begin
-        if((we0[1] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[1] == 1) && (address0 == address1)) begin
-            dout0_delay1[1*8+7:1*8] <= #DLY din1[1*8+7:1*8];
-            dout0[1*8+7:1*8] <= #DLY dout0_delay1[1*8+7:1*8];
-        end
-        else if (ce0 == 1) begin
-            dout0_delay1[1*8+7:1*8] <= #DLY mem[address0][1*8+7:1*8];
-            dout0[1*8+7:1*8] <= #DLY dout0_delay1[1*8+7:1*8];
-        end
+	  if((we0[1] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[1] == 1) && (address0 == address1))
+	      dout0[1*8+7:1*8] <= #DLY din1[1*8+7:1*8];
+	  else if (ce0 == 1)
+	      dout0[1*8+7:1*8] <= #DLY mem[address0][1*8+7:1*8];
         else ;
     end
 end
@@ -184,14 +170,10 @@ always @ (posedge clk or rst) begin
         dout1 <= 0;
     end
     else begin
-        if((we0[1] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[1] == 0) && (address0 == address1)) begin
-            dout1_delay1[1*8+7:1*8] <= #DLY din0[1*8+7:1*8];
-            dout1[1*8+7:1*8] <= #DLY dout1_delay1[1*8+7:1*8];
-        end
-        else if (ce1 == 1) begin
-            dout1_delay1[1*8+7:1*8] <= #DLY mem[address1][1*8+7:1*8];
-            dout1[1*8+7:1*8] <= #DLY dout1_delay1[1*8+7:1*8];
-        end
+	  if((we0[1] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[1] == 0) && (address0 == address1))
+            dout1[1*8+7:1*8] <= #DLY din0[1*8+7:1*8];
+	  else if (ce1 == 1)
+            dout1[1*8+7:1*8] <= #DLY mem[address1][1*8+7:1*8];
         else ;
     end
 end
@@ -200,14 +182,10 @@ always @ (posedge clk or rst) begin
         dout0 <= 0;
     end
     else begin
-        if((we0[2] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[2] == 1) && (address0 == address1)) begin
-            dout0_delay1[2*8+7:2*8] <= #DLY din1[2*8+7:2*8];
-            dout0[2*8+7:2*8] <= #DLY dout0_delay1[2*8+7:2*8];
-        end
-        else if (ce0 == 1) begin
-            dout0_delay1[2*8+7:2*8] <= #DLY mem[address0][2*8+7:2*8];
-            dout0[2*8+7:2*8] <= #DLY dout0_delay1[2*8+7:2*8];
-        end
+	  if((we0[2] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[2] == 1) && (address0 == address1))
+	      dout0[2*8+7:2*8] <= #DLY din1[2*8+7:2*8];
+	  else if (ce0 == 1)
+	      dout0[2*8+7:2*8] <= #DLY mem[address0][2*8+7:2*8];
         else ;
     end
 end
@@ -217,14 +195,10 @@ always @ (posedge clk or rst) begin
         dout1 <= 0;
     end
     else begin
-        if((we0[2] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[2] == 0) && (address0 == address1)) begin
-            dout1_delay1[2*8+7:2*8] <= #DLY din0[2*8+7:2*8];
-            dout1[2*8+7:2*8] <= #DLY dout1_delay1[2*8+7:2*8];
-        end
-        else if (ce1 == 1) begin
-            dout1_delay1[2*8+7:2*8] <= #DLY mem[address1][2*8+7:2*8];
-            dout1[2*8+7:2*8] <= #DLY dout1_delay1[2*8+7:2*8];
-        end
+	  if((we0[2] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[2] == 0) && (address0 == address1))
+            dout1[2*8+7:2*8] <= #DLY din0[2*8+7:2*8];
+	  else if (ce1 == 1)
+            dout1[2*8+7:2*8] <= #DLY mem[address1][2*8+7:2*8];
         else ;
     end
 end
@@ -233,14 +207,10 @@ always @ (posedge clk or rst) begin
         dout0 <= 0;
     end
     else begin
-        if((we0[3] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[3] == 1) && (address0 == address1)) begin
-            dout0_delay1[3*8+7:3*8] <= #DLY din1[3*8+7:3*8];
-            dout0[3*8+7:3*8] <= #DLY dout0_delay1[3*8+7:3*8];
-        end
-        else if (ce0 == 1) begin
-            dout0_delay1[3*8+7:3*8] <= #DLY mem[address0][3*8+7:3*8];
-            dout0[3*8+7:3*8] <= #DLY dout0_delay1[3*8+7:3*8];
-        end
+	  if((we0[3] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[3] == 1) && (address0 == address1))
+	      dout0[3*8+7:3*8] <= #DLY din1[3*8+7:3*8];
+	  else if (ce0 == 1)
+	      dout0[3*8+7:3*8] <= #DLY mem[address0][3*8+7:3*8];
         else ;
     end
 end
@@ -250,14 +220,10 @@ always @ (posedge clk or rst) begin
         dout1 <= 0;
     end
     else begin
-        if((we0[3] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[3] == 0) && (address0 == address1)) begin
-            dout1_delay1[3*8+7:3*8] <= #DLY din0[3*8+7:3*8];
-            dout1[3*8+7:3*8] <= #DLY dout1_delay1[3*8+7:3*8];
-        end
-        else if (ce1 == 1) begin
-            dout1_delay1[3*8+7:3*8] <= #DLY mem[address1][3*8+7:3*8];
-            dout1[3*8+7:3*8] <= #DLY dout1_delay1[3*8+7:3*8];
-        end
+	  if((we0[3] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[3] == 0) && (address0 == address1))
+            dout1[3*8+7:3*8] <= #DLY din0[3*8+7:3*8];
+	  else if (ce1 == 1)
+            dout1[3*8+7:3*8] <= #DLY mem[address1][3*8+7:3*8];
         else ;
     end
 end
@@ -266,14 +232,10 @@ always @ (posedge clk or rst) begin
         dout0 <= 0;
     end
     else begin
-        if((we0[4] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[4] == 1) && (address0 == address1)) begin
-            dout0_delay1[4*8+7:4*8] <= #DLY din1[4*8+7:4*8];
-            dout0[4*8+7:4*8] <= #DLY dout0_delay1[4*8+7:4*8];
-        end
-        else if (ce0 == 1) begin
-            dout0_delay1[4*8+7:4*8] <= #DLY mem[address0][4*8+7:4*8];
-            dout0[4*8+7:4*8] <= #DLY dout0_delay1[4*8+7:4*8];
-        end
+	  if((we0[4] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[4] == 1) && (address0 == address1))
+	      dout0[4*8+7:4*8] <= #DLY din1[4*8+7:4*8];
+	  else if (ce0 == 1)
+	      dout0[4*8+7:4*8] <= #DLY mem[address0][4*8+7:4*8];
         else ;
     end
 end
@@ -283,14 +245,10 @@ always @ (posedge clk or rst) begin
         dout1 <= 0;
     end
     else begin
-        if((we0[4] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[4] == 0) && (address0 == address1)) begin
-            dout1_delay1[4*8+7:4*8] <= #DLY din0[4*8+7:4*8];
-            dout1[4*8+7:4*8] <= #DLY dout1_delay1[4*8+7:4*8];
-        end
-        else if (ce1 == 1) begin
-            dout1_delay1[4*8+7:4*8] <= #DLY mem[address1][4*8+7:4*8];
-            dout1[4*8+7:4*8] <= #DLY dout1_delay1[4*8+7:4*8];
-        end
+	  if((we0[4] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[4] == 0) && (address0 == address1))
+            dout1[4*8+7:4*8] <= #DLY din0[4*8+7:4*8];
+	  else if (ce1 == 1)
+            dout1[4*8+7:4*8] <= #DLY mem[address1][4*8+7:4*8];
         else ;
     end
 end
@@ -299,14 +257,10 @@ always @ (posedge clk or rst) begin
         dout0 <= 0;
     end
     else begin
-        if((we0[5] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[5] == 1) && (address0 == address1)) begin
-            dout0_delay1[5*8+7:5*8] <= #DLY din1[5*8+7:5*8];
-            dout0[5*8+7:5*8] <= #DLY dout0_delay1[5*8+7:5*8];
-        end
-        else if (ce0 == 1) begin
-            dout0_delay1[5*8+7:5*8] <= #DLY mem[address0][5*8+7:5*8];
-            dout0[5*8+7:5*8] <= #DLY dout0_delay1[5*8+7:5*8];
-        end
+	  if((we0[5] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[5] == 1) && (address0 == address1))
+	      dout0[5*8+7:5*8] <= #DLY din1[5*8+7:5*8];
+	  else if (ce0 == 1)
+	      dout0[5*8+7:5*8] <= #DLY mem[address0][5*8+7:5*8];
         else ;
     end
 end
@@ -316,14 +270,10 @@ always @ (posedge clk or rst) begin
         dout1 <= 0;
     end
     else begin
-        if((we0[5] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[5] == 0) && (address0 == address1)) begin
-            dout1_delay1[5*8+7:5*8] <= #DLY din0[5*8+7:5*8];
-            dout1[5*8+7:5*8] <= #DLY dout1_delay1[5*8+7:5*8];
-        end
-        else if (ce1 == 1) begin
-            dout1_delay1[5*8+7:5*8] <= #DLY mem[address1][5*8+7:5*8];
-            dout1[5*8+7:5*8] <= #DLY dout1_delay1[5*8+7:5*8];
-        end
+	  if((we0[5] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[5] == 0) && (address0 == address1))
+            dout1[5*8+7:5*8] <= #DLY din0[5*8+7:5*8];
+	  else if (ce1 == 1)
+            dout1[5*8+7:5*8] <= #DLY mem[address1][5*8+7:5*8];
         else ;
     end
 end
@@ -332,14 +282,10 @@ always @ (posedge clk or rst) begin
         dout0 <= 0;
     end
     else begin
-        if((we0[6] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[6] == 1) && (address0 == address1)) begin
-            dout0_delay1[6*8+7:6*8] <= #DLY din1[6*8+7:6*8];
-            dout0[6*8+7:6*8] <= #DLY dout0_delay1[6*8+7:6*8];
-        end
-        else if (ce0 == 1) begin
-            dout0_delay1[6*8+7:6*8] <= #DLY mem[address0][6*8+7:6*8];
-            dout0[6*8+7:6*8] <= #DLY dout0_delay1[6*8+7:6*8];
-        end
+	  if((we0[6] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[6] == 1) && (address0 == address1))
+	      dout0[6*8+7:6*8] <= #DLY din1[6*8+7:6*8];
+	  else if (ce0 == 1)
+	      dout0[6*8+7:6*8] <= #DLY mem[address0][6*8+7:6*8];
         else ;
     end
 end
@@ -349,14 +295,10 @@ always @ (posedge clk or rst) begin
         dout1 <= 0;
     end
     else begin
-        if((we0[6] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[6] == 0) && (address0 == address1)) begin
-            dout1_delay1[6*8+7:6*8] <= #DLY din0[6*8+7:6*8];
-            dout1[6*8+7:6*8] <= #DLY dout1_delay1[6*8+7:6*8];
-        end
-        else if (ce1 == 1) begin
-            dout1_delay1[6*8+7:6*8] <= #DLY mem[address1][6*8+7:6*8];
-            dout1[6*8+7:6*8] <= #DLY dout1_delay1[6*8+7:6*8];
-        end
+	  if((we0[6] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[6] == 0) && (address0 == address1))
+            dout1[6*8+7:6*8] <= #DLY din0[6*8+7:6*8];
+	  else if (ce1 == 1)
+            dout1[6*8+7:6*8] <= #DLY mem[address1][6*8+7:6*8];
         else ;
     end
 end
@@ -365,14 +307,10 @@ always @ (posedge clk or rst) begin
         dout0 <= 0;
     end
     else begin
-        if((we0[7] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[7] == 1) && (address0 == address1)) begin
-            dout0_delay1[7*8+7:7*8] <= #DLY din1[7*8+7:7*8];
-            dout0[7*8+7:7*8] <= #DLY dout0_delay1[7*8+7:7*8];
-        end
-        else if (ce0 == 1) begin
-            dout0_delay1[7*8+7:7*8] <= #DLY mem[address0][7*8+7:7*8];
-            dout0[7*8+7:7*8] <= #DLY dout0_delay1[7*8+7:7*8];
-        end
+	  if((we0[7] == 0) && (ce0 == 1) && (ce1 == 1) && (we1[7] == 1) && (address0 == address1))
+	      dout0[7*8+7:7*8] <= #DLY din1[7*8+7:7*8];
+	  else if (ce0 == 1)
+	      dout0[7*8+7:7*8] <= #DLY mem[address0][7*8+7:7*8];
         else ;
     end
 end
@@ -382,14 +320,10 @@ always @ (posedge clk or rst) begin
         dout1 <= 0;
     end
     else begin
-        if((we0[7] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[7] == 0) && (address0 == address1)) begin
-            dout1_delay1[7*8+7:7*8] <= #DLY din0[7*8+7:7*8];
-            dout1[7*8+7:7*8] <= #DLY dout1_delay1[7*8+7:7*8];
-        end
-        else if (ce1 == 1) begin
-            dout1_delay1[7*8+7:7*8] <= #DLY mem[address1][7*8+7:7*8];
-            dout1[7*8+7:7*8] <= #DLY dout1_delay1[7*8+7:7*8];
-        end
+	  if((we0[7] == 1) && (ce0 == 1) && (ce1 == 1) && (we1[7] == 0) && (address0 == address1))
+            dout1[7*8+7:7*8] <= #DLY din0[7*8+7:7*8];
+	  else if (ce1 == 1)
+            dout1[7*8+7:7*8] <= #DLY mem[address1][7*8+7:7*8];
         else ;
     end
 end

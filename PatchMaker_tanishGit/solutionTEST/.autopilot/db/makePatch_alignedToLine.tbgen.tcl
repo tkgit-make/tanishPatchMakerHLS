@@ -161,8 +161,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "16", "SubInstance" : "grp_add_patch6_fu_624", "Port" : "patches_parameters"}]},
 			{"Name" : "radii", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "28", "SubInstance" : "grp_makeSuperPoint_alignedToLine8_fu_645", "Port" : "radii"},
-					{"ID" : "38", "SubInstance" : "grp_wedgePatch_init_fu_672", "Port" : "radii"}]},
+					{"ID" : "38", "SubInstance" : "grp_wedgePatch_init_fu_672", "Port" : "radii"},
+					{"ID" : "28", "SubInstance" : "grp_makeSuperPoint_alignedToLine8_fu_645", "Port" : "radii"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "28", "SubInstance" : "grp_makeSuperPoint_alignedToLine8_fu_645", "Port" : "trapezoid_edges_V"}]},
@@ -303,8 +303,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "apexZ0I", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radii", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "39", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_598", "Port" : "radii"},
-					{"ID" : "48", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_612", "Port" : "radii"}]}]},
+					{"ID" : "48", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_612", "Port" : "radii"},
+					{"ID" : "39", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_598", "Port" : "radii"}]}]},
 	{"ID" : "39", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_wedgePatch_init_fu_672.grp_straightLineProjectorFromLayerIJtoK_fu_598", "Parent" : "38", "Child" : ["40", "41", "42", "43", "44", "45", "46", "47"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",

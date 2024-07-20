@@ -88738,7 +88738,7 @@ __attribute__((sdx_kernel("makePatches_ShadowQuilt_fromEdges", 0))) void makePat
     bool fix42 = true;
     ap_int<32> apexZ0 = trapezoid_edges[0];
     ap_int<32> saved_apexZ0;
-
+    initializeArrays(patches_superpoints, patches_parameters);
 
 
     ap_int<32> GDarrayDecoded[5][128][2];

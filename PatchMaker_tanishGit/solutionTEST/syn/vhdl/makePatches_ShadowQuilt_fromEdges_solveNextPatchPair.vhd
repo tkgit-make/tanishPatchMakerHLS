@@ -367,7 +367,7 @@ attribute shreg_extract : string;
     signal or_ln700_fu_1326_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state77 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state77 : signal is "none";
-    signal empty_71_fu_1403_p1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal empty_73_fu_1403_p1 : STD_LOGIC_VECTOR (4 downto 0);
     signal ap_CS_fsm_state80 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state80 : signal is "none";
     signal xor_ln670_fu_1439_p2 : STD_LOGIC_VECTOR (0 downto 0);
@@ -1768,7 +1768,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((grp_solveComplmentaryPatch_fu_566_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state80))) then 
-                lastPatchIndex_0_reg_402 <= empty_71_fu_1403_p1;
+                lastPatchIndex_0_reg_402 <= empty_73_fu_1403_p1;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state73)) then 
                 lastPatchIndex_0_reg_402 <= lastPatchIndex_1_reg_1704;
             end if; 
@@ -2533,7 +2533,7 @@ begin
     ap_return_6 <= z_top_min_1_reg_512;
     bitcast_ln521_fu_1240_p1 <= p_Result_s_fu_1232_p3;
     data_V_fu_1220_p1 <= grp_fu_665_p1;
-    empty_71_fu_1403_p1 <= grp_solveComplmentaryPatch_fu_566_ap_return_1(5 - 1 downto 0);
+    empty_73_fu_1403_p1 <= grp_solveComplmentaryPatch_fu_566_ap_return_1(5 - 1 downto 0);
     grp_areWedgeSuperPointsEqual_fu_631_ap_start <= grp_areWedgeSuperPointsEqual_fu_631_ap_start_reg;
 
     grp_fu_1016_ap_start_assign_proc : process(ap_CS_fsm_state54, or_ln634_fu_992_p2)

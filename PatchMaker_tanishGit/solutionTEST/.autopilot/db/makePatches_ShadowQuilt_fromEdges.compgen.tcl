@@ -3,7 +3,7 @@
 # Memory (RAM/ROM)  definition:
 set ID 214
 set hasByteEnable 0
-set MemName makePatches_ShadowQuilt_fromEdges_patches_parameters
+set MemName makePatches_ShadowQuilt_fromEdges_patches_parameters_V
 set CoreName ap_simcore_mem
 set PortList { 2 2 }
 set DataWd 32

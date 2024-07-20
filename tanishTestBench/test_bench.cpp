@@ -1,6 +1,6 @@
 #include "\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h"
 
-COORDINATE_TYPE master_list[6400][MAX_POINTS_IN_EVENT][3];
+COORDINATE_TYPE master_list[6400][MAX_POINTS_IN_WEDGE][3];
 int lastPointArray[6400];
 
 int comparePoints(const std::array<COORDINATE_TYPE, 3> &pointA, const std::array<COORDINATE_TYPE, 3> &pointB)
@@ -41,13 +41,13 @@ solve_loop:
             {
                 if (GDarray[i][x][2] == GDarray[i][x + 1][2])
                 {
-                    GDarray[i][x + 1][2] += static_cast<long>(0.00001 * INTEGER_FACTOR_CM);
+                    GDarray[i][x + 1][2] += static_cast<COORDINATE_TYPE>(0.00001 * INTEGER_FACTOR_CM);
                     foundIdentical = true;
                 }
             }
 
             firstTime = false;
-            long sample[3];
+            COORDINATE_TYPE sample[3];
             if (foundIdentical)
             {
                 qsort(&GDarray[i][0], GDn_points[i], sizeof(sample),
@@ -55,8 +55,7 @@ solve_loop:
             }
         }
     }
-#pragma HLS array_partition variable=GDarray
-#pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarray bundle=GDarray_b
+
 	#if PRINT_OUTS == true
     	cout << "Has not failed" << endl;
 	#endif
@@ -74,9 +73,12 @@ solve_loop:
     			//weightedCoordinates[layer][weightIndex][nodeIndex] = ( ( (spacepointTYPE) xCoordinate )<<16) | ( ( (spacepointTYPE) yCoordinate) & 0x0000FFFF );
     		//}
 
+    		//cout << GDarray[i][j][1] << " " << GDarray[i][j][2] << endl;
     		GDarrayPostSort[i][j] = ( ( (SPACEPOINT_TYPE) GDarray[i][j][1] )<<COORDINATE_TYPE_SIZE) | ( ( (SPACEPOINT_TYPE) GDarray[i][j][2]) & SPACEPOINT_MASK );
     	}
     }
+#pragma HLS array_partition variable=GDarrayPostSort
+#pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarrayPostSort bundle=GDarrayPostSort_b
 
     makePatches_ShadowQuilt_fromEdges(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
 #if PRINT_OUTS == true
@@ -182,11 +184,10 @@ void readFile(string filepath, int stop = 128, bool performance = false)
     }
 }
 
-void importData(index_type k, GDARRAYPRESORT)
+void importData(int k, GDARRAYPRESORT)
 {
     memset(GDn_points, 0, sizeof(GDn_points));
 
-    index_type n = 0;
     char ch = ',';
     // read points until a non-comma is encountered or maximum points are read
     importData_loop:
@@ -195,12 +196,26 @@ void importData(index_type k, GDARRAYPRESORT)
         index_type layer = master_list[k][i][0] - 1;
         for(int z = 0; z < 3; z++)
         {
+        	//cout << master_list[k][i][z] << endl;
             GDarray[layer][GDn_points[layer]+1][z] = master_list[k][i][z]; //+1 leaves blank spot for the first boundary point
         }
 
         GDn_points[layer]++; //here n_points is not counting the blank spot at index 0.
     }
-    long sample[3];
+#if PRINTOUTS == true
+    for(int i = 0; i < lastPointArray[k]; i++)
+	{
+		index_type layer = master_list[k][i][0] - 1;
+		for(int z = 0; z < 3; z++)
+		{
+			cout << master_list[k][i][z] << " ";
+		}
+		cout << endl;
+	}
+
+    cout << "END OF WEDGE" << endl;
+#endif
+    COORDINATE_TYPE sample[3];
     for (index_type i = 0; i < num_layers; i++)
     {
         //sorts the points in the ith layer
@@ -316,7 +331,17 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         readFile("/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/wedgeData_v3_128.txt", wedges[1], false);
     #endif
 
-        std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> GDarray;
+    std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> GDarray;
+    int GDn_points[MAX_LAYERS];
+
+    SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
+    //COORDINATE_TYPE patches_parameters[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
+
+    #pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
+    //#pragma HLS stream variable=patches_superpoints
+
+    for (int wedgeCounter = 0; wedgeCounter < wedges[1]; wedgeCounter++)
+    {
 		for(int a = 0; a < MAX_LAYERS; a++)
 		{
 			for(int b = 0; b < MAX_POINTS_FOR_DATASET; b++)
@@ -328,35 +353,26 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 			}
 		}
 
-		int GDn_points[MAX_LAYERS];
-
 		for(int a = 0; a < MAX_LAYERS; a++)
 		{
 			GDn_points[a] = 0;
 		}
 
-		SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
-		COORDINATE_TYPE patches_parameters[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
-        
-#pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
-//#pragma HLS stream variable=patches_superpoints
-    index_type n_patches = 0;
+		index_type n_patches = 0;
 
-    for (index_type z = 0; z < wedges[1]; z++)
-    {
-        if(z<wedges[0]) continue;
+        if(wedgeCounter<wedges[0]) continue;
 		#if PRINT_OUTS == true
-        	printf("wedge %d\n", z); //main print
+        	printf("wedge %d\n", wedgeCounter); //main print
 		#endif
 
-        //fprintf(myfile, "wedge %d\n", z); //file to diff
+        fprintf(myfile, "wedge %d\n", wedgeCounter); //file to diff
 
         initWedgeCover(n_patches);
 
         #if VITIS_SYNTHESIS == true
             importData(GDarray, GDn_points);
         #else
-            importData(z, GDarray, GDn_points);
+            importData(wedgeCounter, GDarray, GDn_points);
         #endif
 
         addBoundaryPoint(static_cast<long>(0.0001 * INTEGER_FACTOR_CM), GDarray, GDn_points); // with default param
@@ -407,7 +423,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
                 fprintf(myfile, "Superpoint \n");
                 for (int r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
                 {
-                    fprintf(myfile, "%d %.4f %d %.4f\n",
+                    fprintf(myfile, "%d %.6f %d %.6f\n",
                     		j + 1,
 							decodePHIcoordinate(patches_superpoints[i][j][r])  / (float) INTEGER_FACTOR_RAD,
 							(int) (radii[j] /  (float) INTEGER_FACTOR_CM),
@@ -415,6 +431,9 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
                 }
             }
         }
+#if LOGIC_VALIDATION == true
+        cout << wedgeCounter << endl;
+#endif
         /*
         for (int i = 0; i < n_patches; i++)
         {
@@ -434,7 +453,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         } */
         // instead of making an array of all events and passing them in, we only need access to them individually, so we will loop through and process as we create them.
 #endif
-    }
+    } // END OF WEDGE LOOP
 
     fclose(myfile);
 }
@@ -446,7 +465,7 @@ int main () {
 
     // Call any preliminary functions required to prepare input for the test.
     // Call the top-level function multiple times, passing input stimuli as needed.
-    int wedgesToTest[] = {0, 1}; //2176, 2177
+    int wedgesToTest[] = {4633, 6400}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
 
     wedge_test(0, 16, wedgesToTest);
 

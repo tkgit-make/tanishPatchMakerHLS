@@ -102745,7 +102745,7 @@ void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, uint8_
     bool fix42 = true;
     ap_int<32> apexZ0 = trapezoid_edges[0];
     ap_int<32> saved_apexZ0;
-
+    initializeArrays(patches_superpoints, patches_parameters);
 
 
     ap_int<32> GDarrayDecoded[5][128][2];

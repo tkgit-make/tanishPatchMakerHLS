@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'solveNextPatchPair'
 ================================================================
-* Date:           Thu Jul 18 14:10:11 2024
+* Date:           Thu Jul 18 17:17:32 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -211,8 +211,8 @@ State 4 <SV = 3> <Delay = 1.64>
 ST_4 : Operation 114 [1/1] (0.00ns)   --->   "%p_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read7"   --->   Operation 114 'read' 'p_read' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 115 [1/1] (0.00ns)   --->   "%p_read_1 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read4"   --->   Operation 115 'read' 'p_read_1' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 116 [1/1] (0.00ns)   --->   "%p_read_2 = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %p_read1"   --->   Operation 116 'read' 'p_read_2' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %patches_superpoints, void @empty_14, i32 0, i32 0, void @empty_13, i32 4294967295, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 117 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 118 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_14, i32 0, i32 0, void @empty_13, i32 4294967295, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13"   --->   Operation 118 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %patches_superpoints, void @empty_14, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 117 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 118 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_14, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 118 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 119 [1/1] (0.88ns)   --->   "%add_ln537 = add i32 %p_read_2, i32 1" [patchMaker.cpp:537]   --->   Operation 119 'add' 'add_ln537' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i8.i7, i8 %lastPatchIndex, i7 0" [patchMaker.cpp:582]   --->   Operation 120 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 121 [1/1] (0.74ns)   --->   "%add_ln582 = add i12 %sub_ln582, i12 60" [patchMaker.cpp:582]   --->   Operation 121 'add' 'add_ln582' <Predicate = true> <Delay = 0.74> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -307,7 +307,7 @@ State 26 <SV = 25> <Delay = 7.19>
 ST_26 : Operation 166 [1/20] (7.19ns)   --->   "%tmp4 = call i1 @areWedgeSuperPointsEqual, i64 %patches_superpoints, i8 %lastPatchIndex, i3 %i, i8 %thirdLastPatchIndex, i3 %i" [patchMaker.cpp:609]   --->   Operation 166 'call' 'tmp4' <Predicate = true> <Delay = 7.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 27 <SV = 26> <Delay = 1.64>
-ST_27 : Operation 167 [1/1] (0.00ns)   --->   "%specloopname_ln607 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [patchMaker.cpp:607]   --->   Operation 167 'specloopname' 'specloopname_ln607' <Predicate = (icmp_ln602 & icmp_ln607)> <Delay = 0.00>
+ST_27 : Operation 167 [1/1] (0.00ns)   --->   "%specloopname_ln607 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24" [patchMaker.cpp:607]   --->   Operation 167 'specloopname' 'specloopname_ln607' <Predicate = (icmp_ln602 & icmp_ln607)> <Delay = 0.00>
 ST_27 : Operation 168 [1/1] (0.38ns)   --->   "%br_ln609 = br i1 %tmp4, void %.loopexit_ifconv.loopexit, void" [patchMaker.cpp:609]   --->   Operation 168 'br' 'br_ln609' <Predicate = (icmp_ln602 & icmp_ln607)> <Delay = 0.38>
 ST_27 : Operation 169 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 169 'br' 'br_ln0' <Predicate = (icmp_ln602 & icmp_ln607 & tmp4)> <Delay = 0.00>
 ST_27 : Operation 170 [1/1] (0.00ns)   --->   "%repeat_original_ph = phi i1 1, void, i1 0, void %.split"   --->   Operation 170 'phi' 'repeat_original_ph' <Predicate = (icmp_ln602 & !tmp4) | (icmp_ln602 & !icmp_ln607)> <Delay = 0.00>
@@ -552,7 +552,7 @@ ST_73 : Operation 316 [1/1] (0.00ns)   --->   "%GDn_points_addr = getelementptr 
 ST_73 : Operation 317 [1/1] (0.38ns)   --->   "%br_ln670 = br void" [patchMaker.cpp:670]   --->   Operation 317 'br' 'br_ln670' <Predicate = true> <Delay = 0.38>
 
 State 74 <SV = 73> <Delay = 4.65>
-ST_74 : Operation 318 [1/1] (0.00ns)   --->   "%lastPatchIndex_0 = phi i5 %lastPatchIndex_1, void %._crit_edge1, i5 %empty_71, void"   --->   Operation 318 'phi' 'lastPatchIndex_0' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 318 [1/1] (0.00ns)   --->   "%lastPatchIndex_0 = phi i5 %lastPatchIndex_1, void %._crit_edge1, i5 %empty_73, void"   --->   Operation 318 'phi' 'lastPatchIndex_0' <Predicate = true> <Delay = 0.00>
 ST_74 : Operation 319 [1/1] (0.00ns)   --->   "%p_x_assign = phi i64 %sext_ln534, void %._crit_edge1, i64 %white_space_height_1, void"   --->   Operation 319 'phi' 'p_x_assign' <Predicate = true> <Delay = 0.00>
 ST_74 : Operation 320 [1/1] (0.00ns)   --->   "%phi_ln699 = phi i1 0, void %._crit_edge1, i1 %xor_ln670, void" [patchMaker.cpp:699]   --->   Operation 320 'phi' 'phi_ln699' <Predicate = true> <Delay = 0.00>
 ST_74 : Operation 321 [1/1] (0.00ns)   --->   "%counter_0 = phi i32 0, void %._crit_edge1, i32 %counter, void"   --->   Operation 321 'phi' 'counter_0' <Predicate = true> <Delay = 0.00>
@@ -578,7 +578,7 @@ ST_75 : Operation 338 [1/1] (0.98ns)   --->   "%icmp_ln699_2 = icmp_eq  i52 %tru
 ST_75 : Operation 339 [2/2] (2.01ns)   --->   "%tmp_9 = fcmp_ogt  i64 %bitcast_ln521, i64 5" [patchMaker.cpp:699]   --->   Operation 339 'dcmp' 'tmp_9' <Predicate = true> <Delay = 2.01> <CoreInst = "DCompare">   --->   Core 38 'DCompare' <Latency = 1> <II = 1> <Delay = 2.01> <FuncUnit> <Opcode : 'dcmp'> <InPorts = 2> <OutPorts = 1>
 
 State 76 <SV = 75> <Delay = 2.40>
-ST_76 : Operation 340 [1/1] (0.00ns)   --->   "%specloopname_ln276 = specloopname void @_ssdm_op_SpecLoopName, void @empty_23" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cmath:276]   --->   Operation 340 'specloopname' 'specloopname_ln276' <Predicate = true> <Delay = 0.00>
+ST_76 : Operation 340 [1/1] (0.00ns)   --->   "%specloopname_ln276 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cmath:276]   --->   Operation 340 'specloopname' 'specloopname_ln276' <Predicate = true> <Delay = 0.00>
 ST_76 : Operation 341 [1/1] (0.00ns) (grouped into LUT with out node and_ln699_1)   --->   "%or_ln699 = or i1 %icmp_ln699_2, i1 %icmp_ln699_1" [patchMaker.cpp:699]   --->   Operation 341 'or' 'or_ln699' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_76 : Operation 342 [1/2] (2.01ns)   --->   "%tmp_9 = fcmp_ogt  i64 %bitcast_ln521, i64 5" [patchMaker.cpp:699]   --->   Operation 342 'dcmp' 'tmp_9' <Predicate = true> <Delay = 2.01> <CoreInst = "DCompare">   --->   Core 38 'DCompare' <Latency = 1> <II = 1> <Delay = 2.01> <FuncUnit> <Opcode : 'dcmp'> <InPorts = 2> <OutPorts = 1>
 ST_76 : Operation 343 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln699_1 = and i1 %or_ln699, i1 %tmp_9" [patchMaker.cpp:699]   --->   Operation 343 'and' 'and_ln699_1' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -629,7 +629,7 @@ State 80 <SV = 79> <Delay = 0.50>
 ST_80 : Operation 380 [1/2] (0.38ns)   --->   "%call_ret = call i296 @solveComplmentaryPatch, i8 %n_patches, i32 %GDn_points, i64 %patches_superpoints, i32 %ppl_assign_s, i8 %nPatchesAtOriginal, i32 %previous_z_top_min_V_0, i32 %trunc_ln69, i64 %p_x_assign, i32 %original_c_V, i32 %original_d_V, i32 %counter_0, i32 %counterUpshift_0, i32 %z_top_min_0, i32 %GDarrayDecoded, i32 %patches_parameters, i25 %radii, i26 %trapezoid_edges_V, i32 %temp_V" [patchMaker.cpp:673]   --->   Operation 380 'call' 'call_ret' <Predicate = true> <Delay = 0.38> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_80 : Operation 381 [1/1] (0.00ns) (grouped into LUT with out node xor_ln670)   --->   "%previous_white_space_height = extractvalue i296 %call_ret" [patchMaker.cpp:673]   --->   Operation 381 'extractvalue' 'previous_white_space_height' <Predicate = true> <Delay = 0.00>
 ST_80 : Operation 382 [1/1] (0.00ns)   --->   "%lastPatchIndex_2 = extractvalue i296 %call_ret" [patchMaker.cpp:673]   --->   Operation 382 'extractvalue' 'lastPatchIndex_2' <Predicate = true> <Delay = 0.00>
-ST_80 : Operation 383 [1/1] (0.00ns)   --->   "%empty_71 = trunc i8 %lastPatchIndex_2" [patchMaker.cpp:673]   --->   Operation 383 'trunc' 'empty_71' <Predicate = true> <Delay = 0.00>
+ST_80 : Operation 383 [1/1] (0.00ns)   --->   "%empty_73 = trunc i8 %lastPatchIndex_2" [patchMaker.cpp:673]   --->   Operation 383 'trunc' 'empty_73' <Predicate = true> <Delay = 0.00>
 ST_80 : Operation 384 [1/1] (0.00ns)   --->   "%current_z_top_index = extractvalue i296 %call_ret" [patchMaker.cpp:673]   --->   Operation 384 'extractvalue' 'current_z_top_index' <Predicate = true> <Delay = 0.00>
 ST_80 : Operation 385 [1/1] (0.00ns)   --->   "%counter = extractvalue i296 %call_ret" [patchMaker.cpp:673]   --->   Operation 385 'extractvalue' 'counter' <Predicate = true> <Delay = 0.00>
 ST_80 : Operation 386 [1/1] (0.00ns)   --->   "%counterUpshift = extractvalue i296 %call_ret" [patchMaker.cpp:673]   --->   Operation 386 'extractvalue' 'counterUpshift' <Predicate = true> <Delay = 0.00>
@@ -933,7 +933,7 @@ patches_parameters_addr_11  (getelementptr    ) [ 000000000000000000000000000000
 call_ret                    (call             ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 previous_white_space_height (extractvalue     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
 lastPatchIndex_2            (extractvalue     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]
-empty_71                    (trunc            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000111111110000000000000]
+empty_73                    (trunc            ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000111111110000000000000]
 current_z_top_index         (extractvalue     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000111111110000000000000]
 counter                     (extractvalue     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000111111110000000000000]
 counterUpshift              (extractvalue     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000111111110000000000000]
@@ -1239,7 +1239,7 @@ ret_ln694                   (ret              ) [ 000000000000000000000000000000
 <pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_13"/></StgValue>
+<StgValue><ssdm name="empty_12"/></StgValue>
 </bind>
 </comp>
 
@@ -1410,7 +1410,7 @@ ret_ln694                   (ret              ) [ 000000000000000000000000000000
 <pin id="97" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_2"/></StgValue>
+<StgValue><ssdm name="empty_24"/></StgValue>
 </bind>
 </comp>
 
@@ -1725,7 +1725,7 @@ ret_ln694                   (ret              ) [ 000000000000000000000000000000
 <pin id="167" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_20"/></StgValue>
 </bind>
 </comp>
 
@@ -4138,14 +4138,14 @@ ret_ln694                   (ret              ) [ 000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="1403" class="1004" name="empty_71_fu_1403">
+<comp id="1403" class="1004" name="empty_73_fu_1403">
 <pin_list>
 <pin id="1404" dir="0" index="0" bw="8" slack="0"/>
 <pin id="1405" dir="1" index="1" bw="5" slack="1"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_71/80 "/>
+<opset="empty_73/80 "/>
 </bind>
 </comp>
 
@@ -4888,13 +4888,13 @@ ret_ln694                   (ret              ) [ 000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="1779" class="1005" name="empty_71_reg_1779">
+<comp id="1779" class="1005" name="empty_73_reg_1779">
 <pin_list>
 <pin id="1780" dir="0" index="0" bw="5" slack="1"/>
 <pin id="1781" dir="1" index="1" bw="5" slack="1"/>
 </pin_list>
 <bind>
-<opset="empty_71 "/>
+<opset="empty_73 "/>
 </bind>
 </comp>
 
@@ -6317,7 +6317,7 @@ ret_ln694                   (ret              ) [ 000000000000000000000000000000
 	State 80
 		previous_white_space_height : 1
 		lastPatchIndex_2 : 1
-		empty_71 : 2
+		empty_73 : 2
 		current_z_top_index : 1
 		counter : 1
 		counterUpshift : 1
@@ -6457,7 +6457,7 @@ ret_ln694                   (ret              ) [ 000000000000000000000000000000
 |          |               trunc_ln368_fu_1224              |    0    |    0    |    0    |    0    |    0    |
 |          |               trunc_ln699_fu_1228              |    0    |    0    |    0    |    0    |    0    |
 |          |               trunc_ln679_fu_1343              |    0    |    0    |    0    |    0    |    0    |
-|          |                empty_71_fu_1403                |    0    |    0    |    0    |    0    |    0    |
+|          |                empty_73_fu_1403                |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
 |          |                 tmp_cast_fu_698                |    0    |    0    |    0    |    0    |    0    |
 |          |                  tmp_s_fu_706                  |    0    |    0    |    0    |    0    |    0    |
@@ -6562,7 +6562,7 @@ N/A
 |          counter_reg_1789         |   32   |
 |   current_z_top_index_0_reg_457   |   32   |
 |    current_z_top_index_reg_1784   |   32   |
-|         empty_71_reg_1779         |    5   |
+|         empty_73_reg_1779         |    5   |
 |             i_reg_354             |    3   |
 |        icmp_ln602_reg_1594        |    1   |
 |        icmp_ln607_reg_1603        |    1   |

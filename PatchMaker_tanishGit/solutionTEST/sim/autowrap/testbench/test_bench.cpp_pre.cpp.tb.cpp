@@ -102318,13 +102318,13 @@ solve_loop:
             {
                 if (GDarray[i][x][2] == GDarray[i][x + 1][2])
                 {
-                    GDarray[i][x + 1][2] += static_cast<long>(0.00001 * 1000000);
+                    GDarray[i][x + 1][2] += static_cast<ap_int<32> >(0.00001 * 1000000);
                     foundIdentical = true;
                 }
             }
 
             firstTime = false;
-            long sample[3];
+            ap_int<32> sample[3];
             if (foundIdentical)
             {
                 qsort(&GDarray[i][0], GDn_points[i], sizeof(sample),
@@ -102344,13 +102344,7 @@ solve_loop:
     {
      for(uint8_t j = 0; j < 128; j++)
      {
-
-
-
-
-
-
-
+# 78 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
       GDarrayPostSort[i][j] = ( ( (ap_int<(2 * 32)>) GDarray[i][j][1] )<<32) | ( ( (ap_int<(2 * 32)>) GDarray[i][j][2]) & 0x00000000FFFFFFFF );
      }
     }
@@ -102359,15 +102353,15 @@ solve_loop:
 #ifndef HLS_FASTSIM
 #define makePatches_ShadowQuilt_fromEdges apatb_makePatches_ShadowQuilt_fromEdges_sw
 #endif
-# 81 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 82 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
 makePatches_ShadowQuilt_fromEdges(1, ppl, leftRight, n_patches, GDarrayPostSort, GDn_points, patches_superpoints);
 #undef makePatches_ShadowQuilt_fromEdges
-# 81 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 82 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
 
-# 102 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 103 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
 }
 #endif
-# 102 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 103 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
 
 
 static vector<string> splitString(string str, string splitter = "),(")
@@ -102464,12 +102458,13 @@ void importData(uint8_t k, std::array<std::array<std::array<ap_int<32>, 3>, 128>
         uint8_t layer = master_list[k][i][0] - 1;
         for(int z = 0; z < 3; z++)
         {
+
             GDarray[layer][GDn_points[layer]+1][z] = master_list[k][i][z];
         }
 
         GDn_points[layer]++;
     }
-    long sample[3];
+    ap_int<32> sample[3];
     for (uint8_t i = 0; i < 5; i++)
     {
 
@@ -102574,9 +102569,9 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
     myfile = fopen("/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/cppOutput.txt", "w");
 
     if (myfile == 
-# 307 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp" 3 4
+# 309 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp" 3 4
                  __null
-# 307 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 309 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
                      )
     {
 
@@ -102589,6 +102584,8 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         readFile("/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/wedgeData_v3_128.txt", wedges[1], false);
 
 
+    for (uint8_t z = 0; z < wedges[1]; z++)
+    {
         std::array<std::array<std::array<ap_int<32>, 3>, 128>, 5> GDarray;
   for(int a = 0; a < 5; a++)
   {
@@ -102609,14 +102606,12 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
   }
 
   ap_int<(2 * 32)> patches_superpoints[32][5][16];
-  ap_int<32> patches_parameters[32][5][5 - 1][6];
+
 
 #pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
 
-    uint8_t n_patches = 0;
+  uint8_t n_patches = 0;
 
-    for (uint8_t z = 0; z < wedges[1]; z++)
-    {
         if(z<wedges[0]) continue;
 
 
@@ -102635,29 +102630,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         addBoundaryPoint(static_cast<long>(0.0001 * 1000000), GDarray, GDn_points);
 
         solve(apexZ0, ppl, false, n_patches, GDarray, GDn_points, patches_superpoints);
-# 397 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
-        for (int i = 0; i < n_patches; i++)
-        {
-            fprintf(myfile, "Patch \n");
-
-
-
-
-
-            for (int j = 0; j < 5; j++)
-            {
-                fprintf(myfile, "Superpoint \n");
-                for (int r = 0; r < 16; r++)
-                {
-                    fprintf(myfile, "%d %.4f %d %.4f\n",
-                      j + 1,
-       decodePHIcoordinate(patches_superpoints[i][j][r]) / (float) (pow(10, 7)),
-       (int) (radii[j] / (float) 1000000),
-       decodeZcoordinate(patches_superpoints[i][j][r]) / (float) 1000000);
-                }
-            }
-        }
-# 437 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 439 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
     }
 
     fclose(myfile);
@@ -102677,5 +102650,5 @@ int main () {
 
 
     return 0;
-# 469 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 471 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
 }

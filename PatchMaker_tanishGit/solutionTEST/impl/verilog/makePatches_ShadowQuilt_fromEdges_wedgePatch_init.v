@@ -457,7 +457,7 @@ wire   [63:0] zext_ln59_fu_1065_p1;
 wire   [63:0] zext_ln60_fu_1074_p1;
 wire   [63:0] zext_ln61_fu_1084_p1;
 wire   [63:0] zext_ln62_fu_1094_p1;
-reg   [31:0] empty_70_fu_150;
+reg   [31:0] empty_72_fu_150;
 wire   [31:0] add_ln691_fu_1035_p2;
 wire    ap_CS_fsm_state5;
 wire   [31:0] tmp_2_fu_815_p7;
@@ -792,9 +792,9 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        empty_70_fu_150 <= 32'd0;
+        empty_72_fu_150 <= 32'd0;
     end else if (((ap_enable_reg_pp1_iter0 == 1'b1) & (icmp_ln57_reg_1339 == 1'd1) & (icmp_ln44_reg_1328 == 1'd1) & (1'b0 == ap_block_pp1_stage1_11001) & (1'b1 == ap_CS_fsm_pp1_stage1))) begin
-        empty_70_fu_150 <= add_ln691_fu_1035_p2;
+        empty_72_fu_150 <= add_ln691_fu_1035_p2;
     end
 end
 
@@ -1729,7 +1729,7 @@ assign tmp_3_fu_642_p3 = {{superpoint_count}, {5'd0}};
 
 assign tmp_4_cast_fu_755_p3 = {{select_ln83_1_fu_747_p3}, {1'd0}};
 
-assign tmp_4_fu_918_p4 = {{empty_70_fu_150[31:2]}};
+assign tmp_4_fu_918_p4 = {{empty_72_fu_150[31:2]}};
 
 assign tmp_5_cast_fu_938_p3 = {{trunc_ln59_fu_934_p1}, {3'd0}};
 
@@ -1745,9 +1745,9 @@ assign trunc_ln29_fu_872_p1 = z1_max_V_fu_864_p3[25:0];
 
 assign trunc_ln46_fu_914_p1 = ap_phi_mux_i_1_phi_fu_590_p4[2:0];
 
-assign trunc_ln59_1_fu_946_p1 = empty_70_fu_150[3:0];
+assign trunc_ln59_1_fu_946_p1 = empty_72_fu_150[3:0];
 
-assign trunc_ln59_fu_934_p1 = empty_70_fu_150[1:0];
+assign trunc_ln59_fu_934_p1 = empty_72_fu_150[1:0];
 
 assign trunc_ln60_1_fu_995_p1 = wp_parameters8_q1[3:0];
 

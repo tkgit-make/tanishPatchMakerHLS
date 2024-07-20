@@ -292,11 +292,11 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
             }
         }
 
-        for(int a = 0; a < 5; a++)
+        for(int a = 0; a < PATCH_PROPERTIES; a++)
         {
             for(int b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
             {
-                for(int c = 0; c < 6; c++)
+                for(int c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
                 {
                     patches_parameters[0][a][b][c] = wp_parameters[a][b][c];
                 }
@@ -336,11 +336,11 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
                     }
                 }
 
-                for(int a = 0; a < 5; a++)
+                for(int a = 0; a < PATCH_PROPERTIES; a++)
                 {
                     for(int b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
                     {
-                        for(int c = 0; c < 6; c++)
+                        for(int c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
                         {
                             patches_parameters[n_patches][a][b][c] = wp_parameters[a][b][c];
                         }
@@ -375,11 +375,11 @@ void delete_patch(int index, index_type &n_patches, GPATCHES)
             }
         }
 
-        for(int a = 0; a < 5; a++)
+        for(int a = 0; a < PATCH_PROPERTIES; a++)
         {
             for(int b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
             {
-                for(int c = 0; c < 6; c++)
+                for(int c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
                 {
                     patches_parameters[i][a][b][c] = patches_parameters[i + 1][a][b][c];
                 }
@@ -443,13 +443,13 @@ void initializeArrays(GPATCHES)
     for(int a = 0; a < MAX_PATCHES; a++)
     {
     	initArraysPPloop2:
-        for(int b = 0; b < 5; b++)
+        for(int b = 0; b < PATCH_PROPERTIES; b++)
         {
         	initArraysPPloop3:
             for(int c = 0; c < MAX_PARALLELOGRAMS_PER_PATCH; c++)
             {
             	initArraysPPloop4:
-                for(int d = 0; d < 6; d++)
+                for(int d = 0; d < MAX_PATCH_PROPERTY_LENGTH; d++)
                 {
                     patches_parameters[a][b][c][d] = 0;
                 }
@@ -458,15 +458,16 @@ void initializeArrays(GPATCHES)
     }
 }
 
-void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
+void makePatches_ShadowQuilt_fromEdges(int stop, int ppl, bool leftRight, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET],
+		int (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
 {
 #pragma HLS ARRAY_RESHAPE variable=patches_superpoints dim=3 complete
 //#pragma HLS ARRAY_RESHAPE variable=patches_parameters dim=0 complete
-    COORDINATE_TYPE patches_parameters[MAX_PATCHES][5][MAX_PARALLELOGRAMS_PER_PATCH][6];
+    COORDINATE_TYPE patches_parameters[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
     bool fix42 = true;
     COORDINATE_TYPE apexZ0 = trapezoid_edges[0];
     COORDINATE_TYPE saved_apexZ0;
-    //initializeArrays(patches_superpoints, patches_parameters);
+    initializeArrays(patches_superpoints, patches_parameters);
     //n_patches = 1;
 
     COORDINATE_TYPE GDarrayDecoded[MAX_LAYERS][MAX_POINTS_FOR_DATASET][PARAMETERS_PER_POINT]; 
@@ -1149,12 +1150,12 @@ makeSuperpoint_loop:
 		}
 	}
 #pragma HLS array_partition variable=NPpatches_superpoints
-    COORDINATE_TYPE NPpatches_parameters[5][MAX_PARALLELOGRAMS_PER_PATCH][6];
-    for(int b = 0; b < 5; b++)
+    COORDINATE_TYPE NPpatches_parameters[PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
+    for(int b = 0; b < PATCH_PROPERTIES; b++)
 	{
 		for(int c = 0; c < MAX_PARALLELOGRAMS_PER_PATCH; c++)
 		{
-			for(int d = 0; d < 6; d++)
+			for(int d = 0; d < MAX_PATCH_PROPERTY_LENGTH; d++)
 			{
 				NPpatches_parameters[b][c][d] = 0;
 			}

@@ -327,7 +327,7 @@ wire   [0:0] and_ln699_1_fu_1271_p2;
 wire    ap_CS_fsm_state76;
 wire   [0:0] or_ln700_fu_1326_p2;
 wire    ap_CS_fsm_state77;
-wire   [4:0] empty_71_fu_1403_p1;
+wire   [4:0] empty_73_fu_1403_p1;
 wire    ap_CS_fsm_state80;
 wire   [0:0] xor_ln670_fu_1439_p2;
 wire   [31:0] grp_straightLineProjectorFromLayerIJtoK_fu_643_ap_return;
@@ -1279,7 +1279,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((grp_solveComplmentaryPatch_fu_566_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state80))) begin
-        lastPatchIndex_0_reg_402 <= empty_71_fu_1403_p1;
+        lastPatchIndex_0_reg_402 <= empty_73_fu_1403_p1;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         lastPatchIndex_0_reg_402 <= lastPatchIndex_1_reg_1704;
     end
@@ -2651,7 +2651,7 @@ assign bitcast_ln521_fu_1240_p1 = p_Result_s_fu_1232_p3;
 
 assign data_V_fu_1220_p1 = grp_fu_665_p1;
 
-assign empty_71_fu_1403_p1 = grp_solveComplmentaryPatch_fu_566_ap_return_1[4:0];
+assign empty_73_fu_1403_p1 = grp_solveComplmentaryPatch_fu_566_ap_return_1[4:0];
 
 assign grp_areWedgeSuperPointsEqual_fu_631_ap_start = grp_areWedgeSuperPointsEqual_fu_631_ap_start_reg;
 

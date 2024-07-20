@@ -29,7 +29,7 @@ localparam
 parameter DATA_WIDTH = 32'd 32;
 parameter ADDR_WIDTH = 32'd 3;
 parameter DEPTH = 32'd 5;
-parameter DLY = 0.01;
+parameter DLY = 0.1;
 
 // Input and Output
 input clk;
