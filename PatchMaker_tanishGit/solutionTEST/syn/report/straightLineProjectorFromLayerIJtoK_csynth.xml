@@ -9,8 +9,8 @@
 <ProductFamily>virtexuplus</ProductFamily>
 <Part>xcvu19p-fsvb3824-2-e</Part>
 <TopModelName>straightLineProjectorFromLayerIJtoK</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>5.00</TargetClockPeriod>
+<ClockUncertainty>1.35</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
@@ -19,18 +19,18 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.069</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.627</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>11</Best-caseLatency>
-<Average-caseLatency>11</Average-caseLatency>
-<Worst-caseLatency>11</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>19</Best-caseLatency>
+<Average-caseLatency>19</Average-caseLatency>
+<Worst-caseLatency>19</Worst-caseLatency>
+<Best-caseRealTimeLatency>95.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>95.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>95.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>12</PipelineDepth>
+<PipelineDepth>20</PipelineDepth>
 <Interval-min>1</Interval-min>
 <Interval-max>1</Interval-max>
 </SummaryOfOverallLatency>
@@ -40,8 +40,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP>6</DSP>
-<FF>718</FF>
-<LUT>2217</LUT>
+<FF>812</FF>
+<LUT>2219</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

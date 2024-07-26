@@ -1,0 +1,164 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mSP_findStartIndex'" level="0">
+<item name = "Date">Thu Jul 25 15:00:30 2024
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">PatchMaker_tanishGit</item>
+<item name = "Solution">solutionTEST (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu19p-fsvb3824-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.490 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- mSP_findStartIndex_startValue">?, ?, 9, 6, 1, ?, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 502, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 117, -</column>
+<column name="Register">-, -, 593, -, -</column>
+<specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="dcmp_64ns_64ns_1_2_no_dsp_1_U157">dcmp_64ns_64ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitodp_64ns_64_4_no_dsp_1_U158">sitodp_64ns_64_4_no_dsp_1, 0, 0, 0, 0, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln1537_fu_168_p2">+, 0, 0, 39, 32, 1</column>
+<column name="sub_ln180_fu_148_p2">-, 0, 0, 71, 1, 64</column>
+<column name="sub_ln534_fu_143_p2">-, 0, 0, 71, 64, 64</column>
+<column name="and_ln1539_1_fu_263_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln1539_fu_257_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln1537_fu_129_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln1539_1_fu_231_p2">icmp, 0, 0, 24, 52, 1</column>
+<column name="icmp_ln1539_2_fu_237_p2">icmp, 0, 0, 11, 11, 2</column>
+<column name="icmp_ln1539_3_fu_243_p2">icmp, 0, 0, 24, 52, 1</column>
+<column name="icmp_ln1539_fu_225_p2">icmp, 0, 0, 11, 11, 2</column>
+<column name="or_ln1539_1_fu_253_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln1539_fu_249_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln1539_1_fu_277_p3">select, 0, 0, 63, 1, 64</column>
+<column name="select_ln1539_2_fu_284_p3">select, 0, 0, 63, 1, 64</column>
+<column name="select_ln1539_fu_269_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln180_fu_162_p3">select, 0, 0, 63, 1, 64</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">49, 9, 1, 9</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_phi_mux_j_phi_fu_77_p4">9, 2, 32, 64</column>
+<column name="grp_fu_125_p0">14, 3, 64, 192</column>
+<column name="j_reg_73">9, 2, 32, 64</column>
+<column name="p_x_assign_1_reg_85">9, 2, 64, 128</column>
+<column name="start_index_write_assign_reg_97">9, 2, 32, 64</column>
+<column name="start_value_write_assign_reg_109">9, 2, 64, 128</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln1537_reg_344">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">8, 0, 8, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="conv_reg_349">64, 0, 64, 0</column>
+<column name="dc_reg_355">64, 0, 64, 0</column>
+<column name="icmp_ln1537_reg_313">1, 0, 1, 0</column>
+<column name="icmp_ln1537_reg_313_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln1539_1_reg_370">1, 0, 1, 0</column>
+<column name="icmp_ln1539_2_reg_375">1, 0, 1, 0</column>
+<column name="icmp_ln1539_3_reg_380">1, 0, 1, 0</column>
+<column name="icmp_ln1539_reg_365">1, 0, 1, 0</column>
+<column name="j_reg_73">32, 0, 32, 0</column>
+<column name="j_reg_73_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="p_x_assign_1_reg_85">64, 0, 64, 0</column>
+<column name="start_index_write_assign_reg_97">32, 0, 32, 0</column>
+<column name="start_value_write_assign_reg_109">64, 0, 64, 0</column>
+<column name="sub_ln180_reg_329">64, 0, 64, 0</column>
+<column name="sub_ln534_reg_322">64, 0, 64, 0</column>
+<column name="sub_ln534_reg_322_pp0_iter1_reg">64, 0, 64, 0</column>
+<column name="tmp_reg_334">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, mSP_findStartIndex, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, mSP_findStartIndex, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, mSP_findStartIndex, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, mSP_findStartIndex, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, mSP_findStartIndex, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, mSP_findStartIndex, return value</column>
+<column name="ap_return_0">out, 32, ap_ctrl_hs, mSP_findStartIndex, return value</column>
+<column name="ap_return_1">out, 64, ap_ctrl_hs, mSP_findStartIndex, return value</column>
+<column name="row_list_address0">out, 8, ap_memory, row_list, array</column>
+<column name="row_list_ce0">out, 1, ap_memory, row_list, array</column>
+<column name="row_list_q0">in, 32, ap_memory, row_list, array</column>
+<column name="row_list_size">in, 32, ap_none, row_list_size, scalar</column>
+<column name="projectionToRow">in, 64, ap_none, projectionToRow, scalar</column>
+</table>
+</item>
+</section>
+</profile>

@@ -27,6 +27,21 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>ap_int.h</name>
+			<type>1</type>
+			<location>C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h</location>
+		</link>
+		<link>
+			<name>ap_int_base.h</name>
+			<type>1</type>
+			<location>C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h</location>
+		</link>
+		<link>
+			<name>cmath</name>
+			<type>1</type>
+			<location>C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt/lib/gcc/x86_64-w64-mingw32/6.2.0/include/c++/cmath</location>
+		</link>
+		<link>
 			<name>source</name>
 			<type>2</type>
 			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/.apc/.src</location>

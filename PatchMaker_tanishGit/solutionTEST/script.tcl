@@ -12,7 +12,7 @@ add_files -tb tanishTestBench/cppOutputRef.txt -cflags "-Wno-unknown-pragmas" -c
 add_files -tb tanishTestBench/cppOutput.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solutionTEST" -flow_target vivado
 set_part {xcvu19p-fsvb3824-2-e}
-create_clock -period 10 -name default
+create_clock -period 5 -name default
 source "./PatchMaker_tanishGit/solutionTEST/directives.tcl"
 csim_design
 csynth_design

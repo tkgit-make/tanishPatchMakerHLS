@@ -7,7 +7,7 @@
 
 module makePatches_ShadowQuilt_fromEdges_dcmp_64ns_64ns_1_2_no_dsp_1
 #(parameter
-    ID         = 5,
+    ID         = 157,
     NUM_STAGE  = 2,
     din0_WIDTH = 64,
     din1_WIDTH = 64,

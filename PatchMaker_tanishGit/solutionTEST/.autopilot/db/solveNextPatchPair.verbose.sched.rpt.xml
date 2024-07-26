@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveNextPatchPair'" level="0">
-<item name = "Date">Thu Jul 18 17:17:24 2024
+<item name = "Date">Thu Jul 25 14:53:12 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">5.00 ns, 3.650 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- superPointEqualCheck_loop">23, 137, 23, -, -, 1 ~ 5, no</column>
+<column name="- solveNextPatchPair_superPointEqualCheck">30, 179, 30, -, -, 1 ~ 5, no</column>
 <column name="- solvePatchPair_loop">?, ?, ?, -, -, ?, no</column>
 </table>
 </item>

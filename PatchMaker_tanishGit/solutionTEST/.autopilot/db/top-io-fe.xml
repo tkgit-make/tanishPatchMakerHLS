@@ -11,28 +11,123 @@
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="2" access_type="r" src_name="leftRight" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+      <arg id="2" access_type="r" src_name="leftRight" src_type="int" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="leftRight" hw_bitwidth="1" hw_size_or_depth="1">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="3" access_type="rw" src_name="n_patches" src_type="unsigned char&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+      <arg id="3" access_type="rw" src_name="n_patches" src_type="int" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="n_patches" hw_bitwidth="8" hw_size_or_depth="1">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="4" access_type="r" src_name="GDarray" src_type="ap_int&lt;64&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="640">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="GDarray" hw_bitwidth="64" hw_size_or_depth="640">
+      <arg id="4" access_type="r" src_name="GDarray" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="1280">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="GDarray" hw_bitwidth="64" hw_size_or_depth="1280">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="5" access_type="r" src_name="GDn_points" src_type="int&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="5">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="GDn_points" hw_bitwidth="32" hw_size_or_depth="5">
+      <arg id="5" access_type="r" src_name="GDn_points_0" src_type="int" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="GDn_points_0" hw_bitwidth="32" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="6" access_type="r" src_name="GDn_points_1" src_type="int" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="GDn_points_1" hw_bitwidth="32" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="7" access_type="r" src_name="GDn_points_2" src_type="int" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="GDn_points_2" hw_bitwidth="32" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="8" access_type="r" src_name="GDn_points_3" src_type="int" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="GDn_points_3" hw_bitwidth="32" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="9" access_type="r" src_name="GDn_points_4" src_type="int" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="GDn_points_4" hw_bitwidth="32" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="10" access_type="rw" src_name="patches_superpoints_0" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_0" hw_bitwidth="64" hw_size_or_depth="160">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="6" access_type="rw" src_name="patches_superpoints" src_type="ap_int&lt;64&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="2560">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints" hw_bitwidth="64" hw_size_or_depth="2560">
+      <arg id="11" access_type="rw" src_name="patches_superpoints_1" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_1" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="12" access_type="rw" src_name="patches_superpoints_2" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_2" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="13" access_type="rw" src_name="patches_superpoints_3" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_3" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="14" access_type="rw" src_name="patches_superpoints_4" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_4" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="15" access_type="rw" src_name="patches_superpoints_5" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_5" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="16" access_type="rw" src_name="patches_superpoints_6" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_6" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="17" access_type="rw" src_name="patches_superpoints_7" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_7" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="18" access_type="rw" src_name="patches_superpoints_8" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_8" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="19" access_type="rw" src_name="patches_superpoints_9" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_9" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="20" access_type="rw" src_name="patches_superpoints_10" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_10" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="21" access_type="rw" src_name="patches_superpoints_11" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_11" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="22" access_type="rw" src_name="patches_superpoints_12" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_12" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="23" access_type="rw" src_name="patches_superpoints_13" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_13" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="24" access_type="rw" src_name="patches_superpoints_14" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_14" hw_bitwidth="64" hw_size_or_depth="160">
+          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="25" access_type="rw" src_name="patches_superpoints_15" src_type="int" src_isptr="1" src_bitwidth="64" src_size_or_depth="160">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpoints_15" hw_bitwidth="64" hw_size_or_depth="160">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>

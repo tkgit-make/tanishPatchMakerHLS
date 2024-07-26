@@ -27,8 +27,8 @@ localparam
     TV_OUT = "../tv/rtldatafile/rtl.makePatches_ShadowQuilt_fromEdges.autotvout_GDarray.dat"; 
 //------------------------Local signal-------------------
 parameter DATA_WIDTH = 32'd 64;
-parameter ADDR_WIDTH = 32'd 10;
-parameter DEPTH = 32'd 640;
+parameter ADDR_WIDTH = 32'd 11;
+parameter DEPTH = 32'd 1280;
 parameter DLY = 0.1;
 
 // Input and Output

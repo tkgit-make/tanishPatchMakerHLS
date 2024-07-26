@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makePatch_alignedToLine'" level="0">
-<item name = "Date">Thu Jul 18 17:17:02 2024
+<item name = "Date">Thu Jul 25 14:49:52 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.069 ns, 2.70 ns</column>
+<column name="ap_clk">5.00 ns, 3.627 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -31,17 +31,13 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_add_patch6_fu_624">add_patch6, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_makeSuperPoint_alignedToLine8_fu_645">makeSuperPoint_alignedToLine8, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_wedgePatch_init_fu_672">wedgePatch_init, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_makeSuperPoint_alignedToLine_fu_20858">makeSuperPoint_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_wedgePatch_init_fu_26328">wedgePatch_init, 195, 195, 0.975 us, 0.975 us, 195, 195, none</column>
+<column name="grp_add_patch_fu_26495">add_patch, ?, ?, ?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_1116_1_VITIS_LOOP_1118_2_VITIS_LOOP_1120_3">160, 160, 1, 1, 1, 160, yes</column>
-<column name="- makeSuperpoint_loop">?, ?, ?, -, -, 5, no</column>
-<column name="- VITIS_LOOP_1141_4_VITIS_LOOP_1143_5_VITIS_LOOP_1145_6">160, 160, 1, 1, 1, 160, yes</column>
-<column name="- VITIS_LOOP_1153_7_VITIS_LOOP_1155_8_VITIS_LOOP_1157_9">120, 120, 1, 1, 1, 120, yes</column>
 </table>
 </item>
 </section>

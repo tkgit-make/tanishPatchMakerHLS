@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'delete_patch'" level="0">
-<item name = "Date">Thu Jul 18 17:17:06 2024
+<item name = "Date">Thu Jul 25 14:51:03 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 4.873 ns, 2.70 ns</column>
+<column name="ap_clk">5.00 ns, 3.318 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -35,9 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_368_1">?, ?, 205, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_370_2_VITIS_LOOP_372_3">80, 80, 2, 1, 1, 80, yes</column>
-<column name=" + VITIS_LOOP_378_4_VITIS_LOOP_380_5_VITIS_LOOP_382_6">120, 120, 2, 1, 1, 120, yes</column>
+<column name="- delete_patch_perPatch">?, ?, 5, -, -, ?, no</column>
 <column name="- Loop 2">80, 80, 1, 1, 1, 80, yes</column>
 <column name="- Loop 3">120, 120, 1, 1, 1, 120, yes</column>
 </table>

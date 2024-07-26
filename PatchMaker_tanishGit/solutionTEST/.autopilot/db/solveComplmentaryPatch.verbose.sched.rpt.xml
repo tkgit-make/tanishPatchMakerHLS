@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveComplmentaryPatch'" level="0">
-<item name = "Date">Thu Jul 18 17:17:08 2024
+<item name = "Date">Thu Jul 25 14:52:09 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">5.00 ns, 3.650 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -35,18 +35,16 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- getIndexFromZ_loop">?, ?, 2, 1, 1, ?, yes</column>
-<column name="- VITIS_LOOP_899_1">?, ?, ?, -, -, 5, no</column>
-<column name=" + getIndexFromZ_loop">?, ?, 2, 1, 1, ?, yes</column>
-<column name="- VITIS_LOOP_907_2">5, 5, 2, 1, 1, 5, yes</column>
-<column name="- VITIS_LOOP_919_3">5, 5, 2, 1, 1, 5, yes</column>
-<column name="- VITIS_LOOP_928_4">5, 5, 2, 1, 1, 5, yes</column>
-<column name="- VITIS_LOOP_936_5">11, 11, 8, 1, 1, 5, yes</column>
-<column name="- VITIS_LOOP_941_6">7, 7, 4, 1, 1, 5, yes</column>
-<column name="- VITIS_LOOP_947_7">6, 6, 3, 1, 1, 5, yes</column>
-<column name="- VITIS_LOOP_953_8">15, 15, 13, 1, 1, 4, yes</column>
-<column name="- VITIS_LOOP_965_9">5, 5, 3, 1, 1, 4, yes</column>
-<column name="- superpointEqualCheck_2_loop">41, 125, 21, 21, 1, 1 ~ 5, yes</column>
+<column name="- solveComplmentaryPatch_fillCurrent_z_i_index">?, ?, ?, -, -, 5, no</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_index0">5, 5, 2, 1, 1, 5, yes</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_index1">5, 5, 2, 1, 1, 5, yes</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_index2">5, 5, 2, 1, 1, 5, yes</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_index3">15, 15, 12, 1, 1, 5, yes</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_index4">11, 11, 8, 1, 1, 5, yes</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_index5">5, 5, 2, 1, 1, 5, yes</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_atTop">23, 23, 21, 1, 1, 4, yes</column>
+<column name="- solveComplmentaryPatch_findlayerWithSmallestShift">8, 8, 6, 1, 1, 4, yes</column>
+<column name="- solveComplmentaryPatch_superpointEqualCheck_2">57, 173, 29, 29, 1, 1 ~ 5, yes</column>
 </table>
 </item>
 </section>

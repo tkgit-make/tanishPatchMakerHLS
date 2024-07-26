@@ -2,8 +2,8 @@
 # xsim v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jul 18 16:59:44 2024
-# Process ID: 104
+# Start of session at: Thu Jul 25 15:56:44 2024
+# Process ID: 10180
 # Current directory: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionTEST/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/makePatches_ShadowQuilt_fromEdges/xsim_script.tcl}
 # Log file: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionTEST/sim/verilog/xsim.log
@@ -21,4 +21,10 @@ source makePatches_ShadowQuilt_fromEdges.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 0 / 1 [n/a] @ "113000"
+// RTL Simulation : 1 / 1 [n/a] @ "29495568000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 29495587500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionTEST/sim/verilog/makePatches_ShadowQuilt_fromEdges.autotb.v" Line 2056
+run: Time (s): cpu = 00:00:01 ; elapsed = 03:40:44 . Memory (MB): peak = 916.094 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jul 25 19:37:49 2024...

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'wedgePatch_init'" level="0">
-<item name = "Date">Thu Jul 18 17:16:56 2024
+<item name = "Date">Thu Jul 25 14:49:18 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.069 ns, 2.70 ns</column>
+<column name="ap_clk">5.00 ns, 3.627 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,22 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, none</column>
+<column name="">195, 195, 0.975 us, 0.975 us, 195, 195, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_598">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_612">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_get_acceptanceCorners_fu_626">get_acceptanceCorners, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_getParallelograms_fu_2683">getParallelograms, 25, 25, 0.125 us, 0.125 us, 25, 25, none</column>
+<column name="grp_get_acceptanceCorners_fu_2699">get_acceptanceCorners, 6, 6, 30.000 ns, 30.000 ns, 6, 6, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_80_1_VITIS_LOOP_83_2_VITIS_LOOP_85_3">0, 8160, 2, 1, 1, 0 ~ 8160, yes</column>
-<column name="- getParallelograms_loop">?, ?, 15, 3, 1, ?, yes</column>
+<column name="- wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter">160, 160, 1, 1, 1, 160, yes</column>
 </table>
 </item>
 </section>

@@ -1,4 +1,7 @@
-Running: xsim.dir/makePatches_ShadowQuilt_fromEdges/xsimk.exe -simmode gui -wdb makePatches_ShadowQuilt_fromEdges.wdb -simrunnum 0 -socket 49919
+Running: xsim.dir/makePatches_ShadowQuilt_fromEdges/xsimk.exe -simmode gui -wdb makePatches_ShadowQuilt_fromEdges.wdb -simrunnum 0 -socket 57054
 Design successfully loaded
-Design Loading Memory Usage: 72372 KB (Peak: 72372 KB)
-Design Loading CPU Usage: 280 ms
+Design Loading Memory Usage: 235888 KB (Peak: 235888 KB)
+Design Loading CPU Usage: 780 ms
+Simulation completed
+Simulation Memory Usage: 251196 KB (Peak: 251196 KB)
+Simulation CPU Usage: 13104561 ms

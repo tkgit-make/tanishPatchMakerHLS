@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makeThirdPatch'" level="0">
-<item name = "Date">Thu Jul 18 17:17:21 2024
+<item name = "Date">Thu Jul 25 14:53:02 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">5.00 ns, 3.650 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -31,22 +31,15 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_add_patch6_fu_986">add_patch6, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_makeSuperPoint_alignedToLine8_fu_1007">makeSuperPoint_alignedToLine8, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_wedgePatch_init_fu_1034">wedgePatch_init, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_getShadows_fu_1058">getShadows, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1074">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1088">straightLineProjectorFromLayerIJtoK, 11, 11, 0.110 us, 0.110 us, 1, 1, yes</column>
-<column name="grp_delete_patch_fu_1103">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_makePatch_alignedToLine_1_fu_21289">makePatch_alignedToLine_1, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_delete_patch_1_fu_24141">delete_patch_1, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_getShadows_fu_24421">getShadows, 585, 585, 2.925 us, 2.925 us, 585, 585, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_24446">straightLineProjectorFromLayerIJtoK, 19, 19, 95.000 ns, 95.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- thirdPatch_loop">?, ?, ?, -, -, ?, no</column>
-<column name=" + VITIS_LOOP_1116_1_VITIS_LOOP_1118_2_VITIS_LOOP_1120_3">160, 160, 1, 1, 1, 160, yes</column>
-<column name=" + makeSuperpoint_loop">?, ?, ?, -, -, 5, no</column>
-<column name=" + VITIS_LOOP_1141_4_VITIS_LOOP_1143_5_VITIS_LOOP_1145_6">160, 160, 1, 1, 1, 160, yes</column>
-<column name=" + VITIS_LOOP_1153_7_VITIS_LOOP_1155_8_VITIS_LOOP_1157_9">120, 120, 1, 1, 1, 120, yes</column>
 </table>
 </item>
 </section>

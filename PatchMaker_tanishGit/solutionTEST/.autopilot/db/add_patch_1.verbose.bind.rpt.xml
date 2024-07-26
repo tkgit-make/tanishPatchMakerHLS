@@ -1,0 +1,78 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'add_patch_1'" level="0">
+<item name = "Date">Thu Jul 25 14:50:26 2024
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">PatchMaker_tanishGit</item>
+<item name = "Solution">solutionTEST (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu19p-fsvb3824-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.612 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_encodeCoordinates_fu_6219">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6228">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6237">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6246">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6255">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6264">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6273">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6282">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6291">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6300">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6309">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6318">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6327">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6336">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6345">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6354">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6363">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6372">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6381">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6390">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6399">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6408">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6417">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6426">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6435">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6444">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6453">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6462">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6471">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6480">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6489">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_encodeCoordinates_fu_6498">encodeCoordinates, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- add_patch_checkDiff">?, ?, 67, 67, 1, ?, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

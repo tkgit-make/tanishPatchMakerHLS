@@ -1,9 +1,9 @@
 #include "\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h"
 
 COORDINATE_TYPE master_list[6400][MAX_POINTS_IN_WEDGE][3];
-int lastPointArray[6400];
+int_type lastPointArray[6400];
 
-int comparePoints(const std::array<COORDINATE_TYPE, 3> &pointA, const std::array<COORDINATE_TYPE, 3> &pointB)
+int_type comparePoints(const std::array<COORDINATE_TYPE, 3> &pointA, const std::array<COORDINATE_TYPE, 3> &pointB)
 {
     //the below line is all that is needed. we perform additional checks to guarentee a unique ordering of points in debugging.
     //return (a_z < b_z) ? -1 : 1;
@@ -22,10 +22,10 @@ int comparePoints(const std::array<COORDINATE_TYPE, 3> &pointA, const std::array
 //std::array<long, 3> dummy;
 
 //long foo(std::array<long, 3> dummy)
-//{ for(int i = 0; GDarray.size_t(); ) }
+//{ for(int_type i = 0; GDarray.size_t(); ) }
 
-void solve(long apexZ0, int ppl, bool leftRight, index_type &n_patches,
-           std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_PER_LAYER>, MAX_LAYERS> &GDarray, int (&GDn_points)[MAX_LAYERS],
+void solve(long_type apexZ0, int_type ppl, bool leftRight, index_type &n_patches,
+           std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_PER_LAYER>, MAX_LAYERS> &GDarray, int_type (&GDn_points)[MAX_LAYERS],
            SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT])
 {
 solve_loop:
@@ -37,7 +37,7 @@ solve_loop:
         while (foundIdentical || firstTime)
         {
             foundIdentical = false;
-            for (index_type x = 0; x < GDn_points[i] - 1; x++)
+            for (int_type x = 0; x < GDn_points[i] - 1; x++)
             {
                 if (GDarray[i][x][2] == GDarray[i][x + 1][2])
                 {
@@ -51,7 +51,7 @@ solve_loop:
             if (foundIdentical)
             {
                 qsort(&GDarray[i][0], GDn_points[i], sizeof(sample),
-                      reinterpret_cast<int (*)(const void *, const void *)>(comparePoints)); // Chip will ultimately have sorted data coming through, not needed for synthesis
+                      reinterpret_cast<int_type (*)(const void *, const void *)>(comparePoints)); // Chip will ultimately have sorted data coming through, not needed for synthesis
             }
         }
     }
@@ -64,7 +64,7 @@ solve_loop:
 
     for(index_type i = 0; i < MAX_LAYERS; i++)
     {
-    	for(index_type j = 0; j < MAX_POINTS_PER_LAYER; j++)
+    	for(int_type j = 0; j < MAX_POINTS_PER_LAYER; j++)
     	{
     		//for(index_type k = 0; k < PARAMETERS_PER_POINT; k++)
     		//{
@@ -84,11 +84,11 @@ solve_loop:
 #if PRINT_OUTS == true
     cout << "n_patches = " << n_patches << endl;
 
-	for(int a = 0; a < MAX_PATCHES; a++)
+	for(int_type a = 0; a < MAX_PATCHES; a++)
 	{
-		for(int b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
+		for(int_type b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
 		{
-			for(int c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+			for(int_type c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
 			{
 				cout << decodePHIcoordinate(patches_superpoints[a][b][c]) << " " << decodeZcoordinate(patches_superpoints[a][b][c]) << endl;
 			}
@@ -107,10 +107,10 @@ static vector<string> splitString(string str, string splitter = "),(")
 {
     vector<string> result;
     string currentStr = "";
-    for (int i = 0; i < str.size() - splitter.size() + 1; i++)
+    for (int_type i = 0; i < str.size() - splitter.size() + 1; i++)
     {
         bool flag = true;
-        for (int j = 0; j < splitter.size(); j++)
+        for (int_type j = 0; j < splitter.size(); j++)
         {
             if (str[i + j] != splitter[j]) flag = false;
         }
@@ -130,17 +130,18 @@ static vector<string> splitString(string str, string splitter = "),(")
     return result;
 }
 
-void readFile(string filepath, int stop = 128, bool performance = false)
+void readFile(string filepath, int_type stop = 128, bool performance = false)
 {
     ifstream currentFile;
     currentFile.open(filepath);
     string line;
     if(currentFile.is_open())
     {
-        int line_index = 0;
+        int_type line_index = 0;
 
         while(getline(currentFile, line))
         {
+        	cout << line_index << endl;
             line = regex_replace(line, regex("(^[ ]+)|([ ]+$)"),"");
             if(!line.empty())
             {
@@ -149,13 +150,13 @@ void readFile(string filepath, int stop = 128, bool performance = false)
                 vector<string> tuples = splitString(line);
                 vector< vector<string> > finalTuples;
 
-                for(int i = 0; i < tuples.size(); i++)
+                for(int_type i = 0; i < tuples.size(); i++)
                 {
                     vector<string> temp = splitString(tuples[i], ",");
                     finalTuples.push_back(temp);
                 }
 
-                for(int i = 0; i < finalTuples.size(); i++)
+                for(int_type i = 0; i < finalTuples.size(); i++)
                 {
                     vector<string> ct = finalTuples[i];
                     master_list[line_index][i][0] = stoi(ct[0]);
@@ -184,17 +185,17 @@ void readFile(string filepath, int stop = 128, bool performance = false)
     }
 }
 
-void importData(int k, GDARRAYPRESORT)
+void importData(int_type k, GDARRAYPRESORT)
 {
     memset(GDn_points, 0, sizeof(GDn_points));
 
     char ch = ',';
     // read points until a non-comma is encountered or maximum points are read
     importData_loop:
-    for(int i = 0; i < lastPointArray[k]; i++)
+    for(int_type i = 0; i < lastPointArray[k]; i++)
     {
         index_type layer = master_list[k][i][0] - 1;
-        for(int z = 0; z < 3; z++)
+        for(int_type z = 0; z < 3; z++)
         {
         	//cout << master_list[k][i][z] << endl;
             GDarray[layer][GDn_points[layer]+1][z] = master_list[k][i][z]; //+1 leaves blank spot for the first boundary point
@@ -203,10 +204,10 @@ void importData(int k, GDARRAYPRESORT)
         GDn_points[layer]++; //here n_points is not counting the blank spot at index 0.
     }
 #if PRINTOUTS == true
-    for(int i = 0; i < lastPointArray[k]; i++)
+    for(int_type i = 0; i < lastPointArray[k]; i++)
 	{
 		index_type layer = master_list[k][i][0] - 1;
-		for(int z = 0; z < 3; z++)
+		for(int_type z = 0; z < 3; z++)
 		{
 			cout << master_list[k][i][z] << " ";
 		}
@@ -220,7 +221,7 @@ void importData(int k, GDARRAYPRESORT)
     {
         //sorts the points in the ith layer
         qsort(&GDarray[i][1], GDn_points[i], sizeof(sample),
-              reinterpret_cast<int (*)(const void *, const void *)>(comparePoints));
+              reinterpret_cast<int_type (*)(const void *, const void *)>(comparePoints));
     }
 }
 
@@ -229,22 +230,22 @@ void initWedgeCover(index_type &n_patches)
     n_patches = 0;
 }
 
-void adjustPointPositionFront(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET> &array, int n_points, int start_index) {
+void adjustPointPositionFront(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET> &array, int_type n_points, int_type start_index) {
     // move the point at start_index to its correct position to maintain sorted order
     std::array<COORDINATE_TYPE, 3> toInsert;
-    for(int z = 0; z < 3; z++)
+    for(int_type z = 0; z < 3; z++)
     {
         toInsert[z] = array[start_index][z];
     }
 
-    int j = start_index;
-    //by checking if j < n_points-2, we are not going to the last index, thus, we will never have a situation where the end boundary point gets shifted before we position it
+    int_type j = start_index;
+    //by checking if j < n_points-2, we are not going to the last index, thus, we will never have a situation where the end boundary point_type gets shifted before we position it
     //we check n_points-2 instead of n_points-1 because we have j+1 logic, j is the baseline and the comparison is with the next index, so we need j+1 to be not the end, but 1 away from it.
     //this is a valid cutoff because the z is the primary (first [and only in the case of the implementation, non-debugging comparator]) comparison in the comparator, and the trapezoid edges are always positive integers, so -x < x when x is a positive integer.
     //it cannot be 0, so there is no possible equality as well, which could affect the debugging comparator.
     adjustPointFront_loop:
     while (j < n_points - 2 && comparePoints(array[j + 1], toInsert) < 0) { // once we find one element does not need to be moved, we can stop, because the array is monotonic because it is sorted
-        for(int z = 0; z < 3; z++)
+        for(int_type z = 0; z < 3; z++)
         {
             array[j][z] = array[j + 1][z];
         }
@@ -252,25 +253,25 @@ void adjustPointPositionFront(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POI
         j++;
     }
 
-    for(int z = 0; z < 3; z++)
+    for(int_type z = 0; z < 3; z++)
     {
         array[j][z] = toInsert[z];
     } // place the element at its correct position
 }
 
-void adjustPointPositionBack(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET> &array, int start_index) {
+void adjustPointPositionBack(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET> &array, int_type start_index) {
     // move the point at start_index to its correct position to maintain sorted order
     std::array<COORDINATE_TYPE, 3> toInsert;
-    for(int z = 0; z < 3; z++)
+    for(int_type z = 0; z < 3; z++)
     {
         toInsert[z] = array[start_index][z];
     }
-    int j = start_index;
+    int_type j = start_index;
     //similarly, j > 1 ensures it doesn't reach the first index [j will end at 1 after checking if 2 should swap with 1], which while it wouldn't throw off the front position such that the adjustFront method doesn't work because that has already been called,
     //it is beneficial not to check the first index because it is a pointless computation. we can guarentee it will not shift.
     adjustPointBack_loop:
     while (j > 1 && comparePoints(array[j - 1], toInsert) > 0) { // once we find one element does not need to be moved, we can stop, because the array is monotonic because it is sorted
-        for(int z = 0; z < 3; z++)
+        for(int_type z = 0; z < 3; z++)
         {
             array[j][z] = array[j - 1][z];
         }
@@ -278,13 +279,13 @@ void adjustPointPositionBack(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POIN
         j--;
     }
 
-    for(int z = 0; z < 3; z++)
+    for(int_type z = 0; z < 3; z++)
     {
         array[j][z] = toInsert[z];
     }  // place the element at its correct position
 }
 
-void addBoundaryPoint(long offset, GDARRAYPRESORT)
+void addBoundaryPoint(long_type offset, GDARRAYPRESORT)
 {
     addBoundaryPoint_loop:
     for (index_type i = 0; i < num_layers; i++) {
@@ -314,7 +315,7 @@ void addBoundaryPoint(long offset, GDARRAYPRESORT)
 
 }
 
-void wedge_test(long apexZ0, int ppl, int wedges[])
+void wedge_test(long_type apexZ0, int_type ppl, int_type wedges[])
 {
     FILE *myfile;
     myfile = fopen("/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/cppOutput.txt", "w");
@@ -332,7 +333,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
     #endif
 
     std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> GDarray;
-    int GDn_points[MAX_LAYERS];
+    int_type GDn_points[MAX_LAYERS];
 
     SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
     //COORDINATE_TYPE patches_parameters[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
@@ -340,20 +341,20 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
     #pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
     //#pragma HLS stream variable=patches_superpoints
 
-    for (int wedgeCounter = 0; wedgeCounter < wedges[1]; wedgeCounter++)
+    for (int_type wedgeCounter = 0; wedgeCounter < wedges[1]; wedgeCounter++)
     {
-		for(int a = 0; a < MAX_LAYERS; a++)
+		for(int_type a = 0; a < MAX_LAYERS; a++)
 		{
-			for(int b = 0; b < MAX_POINTS_FOR_DATASET; b++)
+			for(int_type b = 0; b < MAX_POINTS_FOR_DATASET; b++)
 			{
-				for(int c = 0; c < 3; c++)
+				for(int_type c = 0; c < 3; c++)
 				{
 					GDarray[a][b][c] = 0;
 				}
 			}
 		}
 
-		for(int a = 0; a < MAX_LAYERS; a++)
+		for(int_type a = 0; a < MAX_LAYERS; a++)
 		{
 			GDn_points[a] = 0;
 		}
@@ -375,13 +376,13 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
             importData(wedgeCounter, GDarray, GDn_points);
         #endif
 
-        addBoundaryPoint(static_cast<long>(0.0001 * INTEGER_FACTOR_CM), GDarray, GDn_points); // with default param
+        addBoundaryPoint(static_cast<long_type>(0.0001 * INTEGER_FACTOR_CM), GDarray, GDn_points); // with default param
 
         solve(apexZ0, ppl, false, n_patches, GDarray, GDn_points, patches_superpoints); // solve modifies cover. false is from the left right align (previously a parameter in wedge test)
 
 #if PRINT_OUTS == true
         printf("Printing First Patch Points \n");
-        for (int i = 0; i < 1; i++)
+        for (int_type i = 0; i < 1; i++)
 		{
 			printf("Patch \n");
 			//printf("%ld\n", lround(patches_parameters[i][1][0][0] / (float) INTEGER_FACTOR_CM * 10000));
@@ -393,11 +394,11 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 
 			printf("%d \n", patches_superpoints[0][0][0][0]);
 
-			for (int j = 0; j < 5; j++)
+			for (int_type j = 0; j < 5; j++)
 			{
 				printf("Superpoint \n");
 				//printf("%d", static_cast<int>(patches_superpoints[i][j][2][0][0]));
-				for (int r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
+				for (int_type r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
 				{
 					printf("%d %.4f %d %.4f\n",
 							r + 1,
@@ -410,7 +411,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
 #endif
 
 #if PRINT_OUTS == false
-        for (int i = 0; i < n_patches; i++)
+        for (int_type i = 0; i < n_patches; i++)
         {
             fprintf(myfile, "Patch \n");
             //fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][0][0] / (float) INTEGER_FACTOR_CM * 10000));
@@ -418,10 +419,10 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
             //fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][2][0] / (float) INTEGER_FACTOR_CM * 10000));
             //fprintf(myfile, "%ld\n", lround(patches_parameters[i][1][3][0] / (float) INTEGER_FACTOR_CM * 10000));
 
-            for (int j = 0; j < 5; j++)
+            for (int_type j = 0; j < 5; j++)
             {
                 fprintf(myfile, "Superpoint \n");
-                for (int r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
+                for (int_type r = 0; r < MAX_POINTS_IN_SUPERPOINT; r++)
                 {
                     fprintf(myfile, "%d %.6f %d %.6f\n",
                     		j + 1,
@@ -435,7 +436,7 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
         cout << wedgeCounter << endl;
 #endif
         /*
-        for (int i = 0; i < n_patches; i++)
+        for (int_type i = 0; i < n_patches; i++)
         {
             fprintf(myfile, "[%ld, %ld]\n",
                     lround(patches_parameters[i][2][0][0] / (float) INTEGER_FACTOR_CM * 10000),
@@ -458,14 +459,14 @@ void wedge_test(long apexZ0, int ppl, int wedges[])
     fclose(myfile);
 }
 
-int main () {
+int_type main () {
 
     //Establish an initial return value. 0 = success
-    int ret = 0;
+    int_type ret = 0;
 
     // Call any preliminary functions required to prepare input for the test.
     // Call the top-level function multiple times, passing input stimuli as needed.
-    int wedgesToTest[] = {4633, 6400}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
+    int_type wedgesToTest[] = {0, 1}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
 
     wedge_test(0, 16, wedgesToTest);
 
