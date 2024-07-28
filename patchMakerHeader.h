@@ -212,7 +212,7 @@ typedef struct
 
 
 //void initWedgeSuperPoint(COORDINATE_TYPE (&wsp) [MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], COORDINATE_TYPE points[MAX_POINTS_PER_LAYER][PARAMETERS_PER_POINT], int_type pointCount);
-int_type areWedgeSuperPointsEqual(SPACEPOINT_TYPE wsp1[MAX_POINTS_IN_SUPERPOINT], SPACEPOINT_TYPE wsp2[MAX_POINTS_IN_SUPERPOINT]);
+bool areWedgeSuperPointsEqual(SPACEPOINT_TYPE wsp1[MAX_POINTS_IN_SUPERPOINT], SPACEPOINT_TYPE wsp2[MAX_POINTS_IN_SUPERPOINT]);
 void wedgePatch_init(WEDGE_PATCH, COORDINATE_TYPE superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], long_type superpoint_count, COORDINATE_TYPE apexZ0I);
 COORDINATE_TYPE straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDINATE_TYPE z_j, int_type i, int_type j, int_type k);
 void getParallelograms(WEDGE_PATCH);
@@ -227,7 +227,7 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, boo
 void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDINATE_TYPE z_top_max, COORDINATE_TYPE complementary_apexZ0, COORDINATE_TYPE apexZ0, int_type ppl, index_type &n_patches, GDARRAY, GPATCHES);
 void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl, bool fix42, int_type nPatchesAtOriginal, COORDINATE_TYPE &previous_z_top_min, COORDINATE_TYPE complementary_apexZ0, long_type &white_space_height, index_type &lastPatchIndex, COORDINATE_TYPE original_c, COORDINATE_TYPE original_d, COORDINATE_TYPE &complementary_a, COORDINATE_TYPE &complementary_b, int_type &current_z_top_index, int_type &counter, int_type &counterUpshift, COORDINATE_TYPE &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES);
 void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int_type &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES);
-void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_TYPE apexZ0, float float_middleLayers_ppl, int_type &ppl, int_type original_ppl, bool leftRight, long_type alignmentAccuracy, COORDINATE_TYPE (&init_patch) [MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], GDARRAY);
+void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_TYPE apexZ0, bool float_middleLayers_ppl, int_type &ppl, int_type original_ppl, bool leftRight, long_type alignmentAccuracy, COORDINATE_TYPE (&init_patch) [MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], GDARRAY);
 bool getSolveNextPatchPairWhileCondition(int_type lastPatchIndex, bool repeat_patch, bool repeat_original,
                                          long_type white_space_height, long_type previous_white_space_height,
                                          int_type current_z_top_index, GDARRAY, GPATCHES);

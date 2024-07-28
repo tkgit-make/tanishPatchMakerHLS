@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makeThirdPatch'" level="0">
-<item name = "Date">Sat Jun 27 14:15:12 2020
+<item name = "Date">Sat Jul 27 22:49:47 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.650 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.868 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -31,11 +31,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makePatch_alignedToLine_fu_503">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_getShadows_fu_526">getShadows, 1290, 1290, 6.450 us, 6.450 us, 1290, 1290, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_542">straightLineProjectorFromLayerIJtoK, 63, 63, 0.315 us, 0.315 us, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_556">straightLineProjectorFromLayerIJtoK, 63, 63, 0.315 us, 0.315 us, 1, 1, yes</column>
-<column name="grp_delete_patch_fu_572">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_makePatch_alignedToLine_fu_493">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_getShadows_fu_516">getShadows, 334, 334, 1.670 us, 1.670 us, 334, 334, none</column>
+<column name="grp_delete_patch_fu_532">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_544">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_558">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

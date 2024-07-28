@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getParallelograms'" level="0">
-<item name = "Date">Sat Jun 27 14:15:47 2020
+<item name = "Date">Sat Jul 27 22:50:25 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.484 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.548 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, none</column>
+<column name="">30, 42, 0.150 us, 0.210 us, 30, 42, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_210">straightLineProjectorFromLayerIJtoK, 63, 63, 0.315 us, 0.315 us, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_202">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_215">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_228">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_241">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- getParallelograms_settingWPparameters">?, ?, 71, 6, 1, ?, yes</column>
+<column name="- getParallelograms_settingWPparameters">28, 40, 7 ~ 10, -, -, 4, no</column>
 </table>
 </item>
 </section>
@@ -49,23 +52,26 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 514, -</column>
+<column name="Expression">-, -, 0, 391, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 2, 14463, 11082, -</column>
+<column name="Instance">0, 0, 1444, 1648, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 280, -</column>
-<column name="Register">-, -, 746, 160, -</column>
+<column name="Multiplexer">-, -, -, 220, -</column>
+<column name="Register">-, -, 367, -, -</column>
 <specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, ~0, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
-<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_210">straightLineProjectorFromLayerIJtoK, 0, 2, 14463, 11082, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_202">straightLineProjectorFromLayerIJtoK, 0, 0, 361, 412, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_215">straightLineProjectorFromLayerIJtoK, 0, 0, 361, 412, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_228">straightLineProjectorFromLayerIJtoK, 0, 0, 361, 412, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_241">straightLineProjectorFromLayerIJtoK, 0, 0, 361, 412, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -82,44 +88,37 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln60_fu_394_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln691_fu_513_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln70_fu_545_p2">+, 0, 0, 14, 7, 2</column>
-<column name="add_ln71_fu_555_p2">+, 0, 0, 14, 7, 2</column>
-<column name="add_ln72_fu_461_p2">+, 0, 0, 14, 7, 3</column>
-<column name="add_ln73_fu_502_p2">+, 0, 0, 16, 7, 3</column>
-<column name="j_fu_525_p2">+, 0, 0, 71, 64, 1</column>
-<column name="sub_ln68_fu_384_p2">-, 0, 0, 14, 7, 7</column>
-<column name="sub_ln69_fu_425_p2">-, 0, 0, 14, 7, 7</column>
-<column name="sub_ln71_fu_455_p2">-, 0, 0, 14, 7, 7</column>
-<column name="sub_ln73_fu_496_p2">-, 0, 0, 16, 7, 7</column>
-<column name="icmp_ln53_fu_335_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln66_fu_354_p2">icmp, 0, 0, 19, 30, 1</column>
-<column name="icmp_ln878_14_fu_249_p2">icmp, 0, 0, 20, 32, 25</column>
-<column name="icmp_ln878_fu_231_p2">icmp, 0, 0, 20, 32, 26</column>
-<column name="icmp_ln886_fu_267_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="or_ln57_fu_309_p2">or, 0, 0, 8, 8, 1</column>
-<column name="or_ln58_fu_320_p2">or, 0, 0, 8, 8, 5</column>
-<column name="or_ln69_fu_535_p2">or, 0, 0, 7, 7, 1</column>
-<column name="z1_max_V_1_fu_273_p3">select, 0, 0, 26, 1, 25</column>
-<column name="z1_max_V_fu_255_p3">select, 0, 0, 32, 1, 32</column>
-<column name="z1_min_V_1_fu_285_p3">select, 0, 0, 26, 1, 25</column>
-<column name="z1_min_V_fu_237_p3">select, 0, 0, 32, 1, 26</column>
-<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="add_ln64_fu_369_p2">+, 0, 0, 10, 3, 1</column>
+<column name="add_ln691_fu_568_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln74_fu_498_p2">+, 0, 0, 14, 7, 2</column>
+<column name="add_ln75_fu_544_p2">+, 0, 0, 14, 7, 2</column>
+<column name="add_ln76_fu_554_p2">+, 0, 0, 14, 7, 3</column>
+<column name="add_ln77_fu_538_p2">+, 0, 0, 16, 7, 3</column>
+<column name="sub_ln72_fu_418_p2">-, 0, 0, 14, 7, 7</column>
+<column name="sub_ln73_fu_452_p2">-, 0, 0, 14, 7, 7</column>
+<column name="sub_ln75_fu_482_p2">-, 0, 0, 14, 7, 7</column>
+<column name="sub_ln77_fu_532_p2">-, 0, 0, 16, 7, 7</column>
+<column name="icmp_ln59_fu_363_p2">icmp, 0, 0, 8, 3, 3</column>
+<column name="icmp_ln70_fu_388_p2">icmp, 0, 0, 19, 30, 1</column>
+<column name="icmp_ln878_14_fu_277_p2">icmp, 0, 0, 20, 32, 25</column>
+<column name="icmp_ln878_fu_259_p2">icmp, 0, 0, 20, 32, 26</column>
+<column name="icmp_ln886_fu_295_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="or_ln61_fu_333_p2">or, 0, 0, 8, 8, 1</column>
+<column name="or_ln62_fu_348_p2">or, 0, 0, 8, 8, 5</column>
+<column name="or_ln73_fu_488_p2">or, 0, 0, 7, 7, 1</column>
+<column name="z1_max_V_1_fu_301_p3">select, 0, 0, 26, 1, 25</column>
+<column name="z1_max_V_fu_283_p3">select, 0, 0, 32, 1, 32</column>
+<column name="z1_min_V_1_fu_313_p3">select, 0, 0, 26, 1, 25</column>
+<column name="z1_min_V_fu_265_p3">select, 0, 0, 32, 1, 26</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">54, 10, 1, 10</column>
-<column name="ap_enable_reg_pp0_iter11">9, 2, 1, 2</column>
-<column name="ap_phi_mux_i_phi_fu_202_p4">9, 2, 64, 128</column>
+<column name="ap_NS_fsm">65, 13, 1, 13</column>
 <column name="empty_fu_76">9, 2, 32, 64</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_210_j">14, 3, 32, 96</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_210_z_i">14, 3, 32, 96</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_210_z_j">20, 4, 32, 128</column>
-<column name="i_reg_198">9, 2, 64, 128</column>
+<column name="i_reg_190">9, 2, 3, 6</column>
 <column name="wp_parameters_address0">31, 6, 7, 42</column>
-<column name="wp_parameters_address1">31, 6, 7, 42</column>
+<column name="wp_parameters_address1">26, 5, 7, 35</column>
 <column name="wp_parameters_d0">26, 5, 32, 160</column>
 <column name="wp_parameters_d1">26, 5, 32, 160</column>
 <column name="wp_superpoints_address0">14, 3, 8, 24</column>
@@ -128,40 +127,28 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln60_reg_638">32, 0, 32, 0</column>
-<column name="ap_CS_fsm">9, 0, 9, 0</column>
-<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter10">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter11">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter7">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter8">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter9">1, 0, 1, 0</column>
-<column name="c_V_reg_659">32, 0, 32, 0</column>
-<column name="d_V_reg_664">32, 0, 32, 0</column>
+<column name="a_V_reg_650">32, 0, 32, 0</column>
+<column name="add_ln64_reg_629">3, 0, 3, 0</column>
+<column name="add_ln77_reg_696">6, 0, 7, 1</column>
+<column name="ap_CS_fsm">12, 0, 12, 0</column>
+<column name="b_V_reg_655">32, 0, 32, 0</column>
+<column name="c_V_reg_660">32, 0, 32, 0</column>
+<column name="d_V_reg_665">32, 0, 32, 0</column>
 <column name="empty_fu_76">32, 0, 32, 0</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_210_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_reg_198">64, 0, 64, 0</column>
-<column name="icmp_ln53_reg_615">1, 0, 1, 0</column>
-<column name="icmp_ln66_reg_619">1, 0, 1, 0</column>
-<column name="j_reg_654">64, 0, 64, 0</column>
-<column name="sext_ln37_reg_599">32, 0, 32, 0</column>
-<column name="sext_ln40_reg_593">32, 0, 32, 0</column>
-<column name="sub_ln68_reg_623">6, 0, 7, 1</column>
-<column name="sub_ln69_reg_643">6, 0, 7, 1</column>
-<column name="sub_ln71_reg_649">6, 0, 7, 1</column>
-<column name="wp_superpoints_load_2_reg_628">32, 0, 32, 0</column>
-<column name="wp_superpoints_load_3_reg_633">32, 0, 32, 0</column>
-<column name="icmp_ln53_reg_615">64, 32, 1, 0</column>
-<column name="icmp_ln66_reg_619">64, 32, 1, 0</column>
-<column name="sub_ln68_reg_623">64, 32, 7, 1</column>
-<column name="sub_ln69_reg_643">64, 32, 7, 1</column>
-<column name="sub_ln71_reg_649">64, 32, 7, 1</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_202_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_215_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_228_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_241_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_reg_190">3, 0, 3, 0</column>
+<column name="icmp_ln70_reg_670">1, 0, 1, 0</column>
+<column name="sext_ln43_reg_609">32, 0, 32, 0</column>
+<column name="sext_ln46_reg_602">32, 0, 32, 0</column>
+<column name="sub_ln72_reg_674">6, 0, 7, 1</column>
+<column name="sub_ln73_reg_679">6, 0, 7, 1</column>
+<column name="sub_ln75_reg_685">6, 0, 7, 1</column>
+<column name="wp_parameters_load_15_reg_691">32, 0, 32, 0</column>
+<column name="wp_superpoints_load_2_reg_638">32, 0, 32, 0</column>
+<column name="wp_superpoints_load_3_reg_644">32, 0, 32, 0</column>
 </table>
 </item>
 </section>

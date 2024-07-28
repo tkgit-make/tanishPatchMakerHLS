@@ -85,7 +85,7 @@ set NewPortList {[
  	{ "name": "apexZ0I", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "apexZ0I", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "8"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "18"],
 		"CDFG" : "wedgePatch_init",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -104,20 +104,20 @@ set RtlHierarchyInfo {[
 					{"ID" : "1", "SubInstance" : "grp_getParallelograms_fu_240", "Port" : "wp_superpoints"}]},
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "8", "SubInstance" : "grp_get_acceptanceCorners_fu_250", "Port" : "wp_parameters"},
-					{"ID" : "1", "SubInstance" : "grp_getParallelograms_fu_240", "Port" : "wp_parameters"}]},
+					{"ID" : "1", "SubInstance" : "grp_getParallelograms_fu_240", "Port" : "wp_parameters"},
+					{"ID" : "18", "SubInstance" : "grp_get_acceptanceCorners_fu_250", "Port" : "wp_parameters"}]},
 			{"Name" : "superpointsI", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "apexZ0I", "Type" : "None", "Direction" : "I"},
-			{"Name" : "radii", "Type" : "Memory", "Direction" : "I",
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_getParallelograms_fu_240", "Port" : "radii"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240", "Parent" : "0", "Child" : ["2"],
+					{"ID" : "1", "SubInstance" : "grp_getParallelograms_fu_240", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240", "Parent" : "0", "Child" : ["2", "6", "10", "14"],
 		"CDFG" : "getParallelograms",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "30", "EstimateLatencyMax" : "42",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -127,16 +127,19 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "wp_superpoints", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "radii", "Type" : "Memory", "Direction" : "I",
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_210", "Port" : "radii"}]}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_210", "Parent" : "1", "Child" : ["3", "4", "5", "6", "7"],
+					{"ID" : "10", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_228", "Port" : "radiiDivisionList"},
+					{"ID" : "2", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_202", "Port" : "radiiDivisionList"},
+					{"ID" : "14", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_241", "Port" : "radiiDivisionList"},
+					{"ID" : "6", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_215", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_202", "Parent" : "1", "Child" : ["3", "4", "5"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "1",
-		"VariableLatency" : "0", "ExactLatency" : "63", "EstimateLatencyMin" : "63", "EstimateLatencyMax" : "63",
+		"VariableLatency" : "0", "ExactLatency" : "3", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "1",
@@ -149,13 +152,80 @@ set RtlHierarchyInfo {[
 			{"Name" : "i", "Type" : "None", "Direction" : "I"},
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
-			{"Name" : "radii", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_210.radii_U", "Parent" : "2"},
-	{"ID" : "4", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_210.mul_26s_32s_57_1_1_U3", "Parent" : "2"},
-	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_210.mul_26s_32s_57_1_1_U4", "Parent" : "2"},
-	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_210.sdiv_57ns_26s_32_61_1_U5", "Parent" : "2"},
-	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_210.sdiv_57ns_26s_32_61_1_U6", "Parent" : "2"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_get_acceptanceCorners_fu_250", "Parent" : "0",
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_202.radiiDivisionList_U", "Parent" : "2"},
+	{"ID" : "4", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_202.mul_4s_4s_8_1_1_U3", "Parent" : "2"},
+	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_202.mul_35ns_33s_64_1_1_U4", "Parent" : "2"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_215", "Parent" : "1", "Child" : ["7", "8", "9"],
+		"CDFG" : "straightLineProjectorFromLayerIJtoK",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "1",
+		"VariableLatency" : "0", "ExactLatency" : "3", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "1",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "z_i", "Type" : "None", "Direction" : "I"},
+			{"Name" : "z_j", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i", "Type" : "None", "Direction" : "I"},
+			{"Name" : "j", "Type" : "None", "Direction" : "I"},
+			{"Name" : "k", "Type" : "None", "Direction" : "I"},
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_215.radiiDivisionList_U", "Parent" : "6"},
+	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_215.mul_4s_4s_8_1_1_U3", "Parent" : "6"},
+	{"ID" : "9", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_215.mul_35ns_33s_64_1_1_U4", "Parent" : "6"},
+	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_228", "Parent" : "1", "Child" : ["11", "12", "13"],
+		"CDFG" : "straightLineProjectorFromLayerIJtoK",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "1",
+		"VariableLatency" : "0", "ExactLatency" : "3", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "1",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "z_i", "Type" : "None", "Direction" : "I"},
+			{"Name" : "z_j", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i", "Type" : "None", "Direction" : "I"},
+			{"Name" : "j", "Type" : "None", "Direction" : "I"},
+			{"Name" : "k", "Type" : "None", "Direction" : "I"},
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_228.radiiDivisionList_U", "Parent" : "10"},
+	{"ID" : "12", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_228.mul_4s_4s_8_1_1_U3", "Parent" : "10"},
+	{"ID" : "13", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_228.mul_35ns_33s_64_1_1_U4", "Parent" : "10"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_241", "Parent" : "1", "Child" : ["15", "16", "17"],
+		"CDFG" : "straightLineProjectorFromLayerIJtoK",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "1",
+		"VariableLatency" : "0", "ExactLatency" : "3", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "1",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "z_i", "Type" : "None", "Direction" : "I"},
+			{"Name" : "z_j", "Type" : "None", "Direction" : "I"},
+			{"Name" : "i", "Type" : "None", "Direction" : "I"},
+			{"Name" : "j", "Type" : "None", "Direction" : "I"},
+			{"Name" : "k", "Type" : "None", "Direction" : "I"},
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "15", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_241.radiiDivisionList_U", "Parent" : "14"},
+	{"ID" : "16", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_241.mul_4s_4s_8_1_1_U3", "Parent" : "14"},
+	{"ID" : "17", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_getParallelograms_fu_240.grp_straightLineProjectorFromLayerIJtoK_fu_241.mul_35ns_33s_64_1_1_U4", "Parent" : "14"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_get_acceptanceCorners_fu_250", "Parent" : "0",
 		"CDFG" : "get_acceptanceCorners",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -174,22 +244,43 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	wedgePatch_init {
-		wp_superpoints {Type IO LastRead 4 FirstWrite -1}
+		wp_superpoints {Type IO LastRead 3 FirstWrite -1}
 		wp_parameters {Type IO LastRead 14 FirstWrite 0}
 		superpointsI {Type I LastRead 4 FirstWrite -1}
 		apexZ0I {Type I LastRead 0 FirstWrite -1}
-		radii {Type I LastRead -1 FirstWrite -1}}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
 	getParallelograms {
-		wp_superpoints {Type I LastRead 4 FirstWrite -1}
-		wp_parameters {Type IO LastRead 5 FirstWrite 1}
-		radii {Type I LastRead -1 FirstWrite -1}}
+		wp_superpoints {Type I LastRead 3 FirstWrite -1}
+		wp_parameters {Type IO LastRead 9 FirstWrite 1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
 	straightLineProjectorFromLayerIJtoK {
 		z_i {Type I LastRead 0 FirstWrite -1}
 		z_j {Type I LastRead 0 FirstWrite -1}
 		i {Type I LastRead 0 FirstWrite -1}
 		j {Type I LastRead 0 FirstWrite -1}
 		k {Type I LastRead 0 FirstWrite -1}
-		radii {Type I LastRead -1 FirstWrite -1}}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
+	straightLineProjectorFromLayerIJtoK {
+		z_i {Type I LastRead 0 FirstWrite -1}
+		z_j {Type I LastRead 0 FirstWrite -1}
+		i {Type I LastRead 0 FirstWrite -1}
+		j {Type I LastRead 0 FirstWrite -1}
+		k {Type I LastRead 0 FirstWrite -1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
+	straightLineProjectorFromLayerIJtoK {
+		z_i {Type I LastRead 0 FirstWrite -1}
+		z_j {Type I LastRead 0 FirstWrite -1}
+		i {Type I LastRead 0 FirstWrite -1}
+		j {Type I LastRead 0 FirstWrite -1}
+		k {Type I LastRead 0 FirstWrite -1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
+	straightLineProjectorFromLayerIJtoK {
+		z_i {Type I LastRead 0 FirstWrite -1}
+		z_j {Type I LastRead 0 FirstWrite -1}
+		i {Type I LastRead 0 FirstWrite -1}
+		j {Type I LastRead 0 FirstWrite -1}
+		k {Type I LastRead 0 FirstWrite -1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
 	get_acceptanceCorners {
 		wp_parameters {Type IO LastRead 14 FirstWrite 1}}}
 

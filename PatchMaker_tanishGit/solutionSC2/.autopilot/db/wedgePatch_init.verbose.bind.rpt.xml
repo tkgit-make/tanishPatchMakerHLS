@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'wedgePatch_init'" level="0">
-<item name = "Date">Sat Jun 27 14:14:44 2020
+<item name = "Date">Sat Jul 27 22:49:23 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.484 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.548 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_getParallelograms_fu_240">getParallelograms, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_getParallelograms_fu_240">getParallelograms, 30, 42, 0.150 us, 0.210 us, 30, 42, none</column>
 <column name="grp_get_acceptanceCorners_fu_250">get_acceptanceCorners, ?, ?, ?, ?, ?, ?, none</column>
 </table>
 </item>

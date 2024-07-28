@@ -11,28 +11,42 @@
 <ID>217</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_solveNextPatchPair_fu_188</InstName>
+<InstName>grp_solveNextPatchPair_fu_190</InstName>
 <ModuleName>solveNextPatchPair</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>188</ID>
+<ID>190</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_makeThirdPatch_fu_512</InstName>
+<InstName>grp_makeThirdPatch_fu_513</InstName>
 <ModuleName>makeThirdPatch</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>512</ID>
+<ID>513</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_makePatch_alignedToLine_fu_503</InstName>
+<InstName>grp_makePatch_alignedToLine_fu_493</InstName>
 <ModuleName>makePatch_alignedToLine</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>503</ID>
+<ID>493</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_wedgePatch_init_fu_404</InstName>
-<ModuleName>wedgePatch_init</ModuleName>
+<InstName>grp_add_patch9_fu_404</InstName>
+<ModuleName>add_patch9</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>404</ID>
+<InstancesList>
+<Instance>
+<InstName>grp_encodeCoordinates_fu_533</InstName>
+<ModuleName>encodeCoordinates</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>533</ID>
+</Instance>
+</InstancesList>
+</Instance>
+<Instance>
+<InstName>grp_wedgePatch_init_fu_417</InstName>
+<ModuleName>wedgePatch_init</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>417</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_getParallelograms_fu_240</InstName>
@@ -41,10 +55,28 @@
 <ID>240</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_210</InstName>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_202</InstName>
 <ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>210</ID>
+<ID>202</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_215</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>215</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_228</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>228</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_241</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>241</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -57,46 +89,32 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_add_patch9_fu_414</InstName>
-<ModuleName>add_patch9</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>414</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_encodeCoordinates_fu_533</InstName>
-<ModuleName>encodeCoordinates</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>533</ID>
-</Instance>
-</InstancesList>
-</Instance>
-<Instance>
 <InstName>grp_makeSuperPoint_alignedToLine11_fu_427</InstName>
 <ModuleName>makeSuperPoint_alignedToLine11</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>427</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_mSP_findStartIndex_fu_289</InstName>
-<ModuleName>mSP_findStartIndex</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>289</ID>
-</Instance>
-<Instance>
-<InstName>grp_mSP_findLRBounds_fu_297</InstName>
+<InstName>grp_mSP_findLRBounds_fu_284</InstName>
 <ModuleName>mSP_findLRBounds</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>297</ID>
+<ID>284</ID>
+</Instance>
+<Instance>
+<InstName>grp_mSP_findStartIndex_fu_294</InstName>
+<ModuleName>mSP_findStartIndex</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>294</ID>
 </Instance>
 </InstancesList>
 </Instance>
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_getShadows_fu_526</InstName>
+<InstName>grp_getShadows_fu_516</InstName>
 <ModuleName>getShadows</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>526</ID>
+<ID>516</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_straightLineProjectorFromLayerIJtoK_fu_297</InstName>
@@ -107,42 +125,56 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_542</InstName>
-<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>542</ID>
-</Instance>
-<Instance>
-<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_556</InstName>
-<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>556</ID>
-</Instance>
-<Instance>
-<InstName>grp_delete_patch_fu_572</InstName>
+<InstName>grp_delete_patch_fu_532</InstName>
 <ModuleName>delete_patch</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>572</ID>
+<ID>532</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_544</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>544</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_558</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>558</ID>
 </Instance>
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_solveComplmentaryPatch_fu_539</InstName>
+<InstName>grp_solveComplmentaryPatch_fu_540</InstName>
 <ModuleName>solveComplmentaryPatch</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>539</ID>
+<ID>540</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_makePatch_alignedToLine_fu_721</InstName>
+<InstName>grp_makePatch_alignedToLine_fu_699</InstName>
 <ModuleName>makePatch_alignedToLine</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>721</ID>
+<ID>699</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_wedgePatch_init_fu_404</InstName>
-<ModuleName>wedgePatch_init</ModuleName>
+<InstName>grp_add_patch9_fu_404</InstName>
+<ModuleName>add_patch9</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>404</ID>
+<InstancesList>
+<Instance>
+<InstName>grp_encodeCoordinates_fu_533</InstName>
+<ModuleName>encodeCoordinates</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>533</ID>
+</Instance>
+</InstancesList>
+</Instance>
+<Instance>
+<InstName>grp_wedgePatch_init_fu_417</InstName>
+<ModuleName>wedgePatch_init</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>417</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_getParallelograms_fu_240</InstName>
@@ -151,10 +183,28 @@
 <ID>240</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_210</InstName>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_202</InstName>
 <ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>210</ID>
+<ID>202</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_215</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>215</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_228</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>228</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_241</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>241</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -167,78 +217,78 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_add_patch9_fu_414</InstName>
-<ModuleName>add_patch9</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>414</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_encodeCoordinates_fu_533</InstName>
-<ModuleName>encodeCoordinates</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>533</ID>
-</Instance>
-</InstancesList>
-</Instance>
-<Instance>
 <InstName>grp_makeSuperPoint_alignedToLine11_fu_427</InstName>
 <ModuleName>makeSuperPoint_alignedToLine11</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>427</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_mSP_findStartIndex_fu_289</InstName>
-<ModuleName>mSP_findStartIndex</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>289</ID>
-</Instance>
-<Instance>
-<InstName>grp_mSP_findLRBounds_fu_297</InstName>
+<InstName>grp_mSP_findLRBounds_fu_284</InstName>
 <ModuleName>mSP_findLRBounds</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>297</ID>
-</Instance>
-</InstancesList>
-</Instance>
-</InstancesList>
+<ID>284</ID>
 </Instance>
 <Instance>
-<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_744</InstName>
-<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<InstName>grp_mSP_findStartIndex_fu_294</InstName>
+<ModuleName>mSP_findStartIndex</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>744</ID>
+<ID>294</ID>
+</Instance>
+</InstancesList>
+</Instance>
+</InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_areWedgeSuperPointsEqual_fu_759</InstName>
+<InstName>grp_areWedgeSuperPointsEqual_fu_722</InstName>
 <ModuleName>areWedgeSuperPointsEqual</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>759</ID>
+<ID>722</ID>
 </Instance>
 <Instance>
-<InstName>grp_delete_patch_fu_771</InstName>
+<InstName>grp_delete_patch_fu_734</InstName>
 <ModuleName>delete_patch</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>771</ID>
+<ID>734</ID>
 </Instance>
 <Instance>
-<InstName>grp_get_index_from_z_fu_783</InstName>
+<InstName>grp_get_index_from_z_fu_746</InstName>
 <ModuleName>get_index_from_z</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>783</ID>
+<ID>746</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_760</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>760</ID>
 </Instance>
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_makePatch_alignedToLine_fu_572</InstName>
+<InstName>grp_makePatch_alignedToLine_fu_573</InstName>
 <ModuleName>makePatch_alignedToLine</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>572</ID>
+<ID>573</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_wedgePatch_init_fu_404</InstName>
-<ModuleName>wedgePatch_init</ModuleName>
+<InstName>grp_add_patch9_fu_404</InstName>
+<ModuleName>add_patch9</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>404</ID>
+<InstancesList>
+<Instance>
+<InstName>grp_encodeCoordinates_fu_533</InstName>
+<ModuleName>encodeCoordinates</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>533</ID>
+</Instance>
+</InstancesList>
+</Instance>
+<Instance>
+<InstName>grp_wedgePatch_init_fu_417</InstName>
+<ModuleName>wedgePatch_init</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>417</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_getParallelograms_fu_240</InstName>
@@ -247,10 +297,28 @@
 <ID>240</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_210</InstName>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_202</InstName>
 <ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>210</ID>
+<ID>202</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_215</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>215</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_228</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>228</ID>
+</Instance>
+<Instance>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_241</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>241</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -263,72 +331,58 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_add_patch9_fu_414</InstName>
-<ModuleName>add_patch9</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>414</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_encodeCoordinates_fu_533</InstName>
-<ModuleName>encodeCoordinates</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>533</ID>
-</Instance>
-</InstancesList>
-</Instance>
-<Instance>
 <InstName>grp_makeSuperPoint_alignedToLine11_fu_427</InstName>
 <ModuleName>makeSuperPoint_alignedToLine11</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>427</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_mSP_findStartIndex_fu_289</InstName>
-<ModuleName>mSP_findStartIndex</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>289</ID>
-</Instance>
-<Instance>
-<InstName>grp_mSP_findLRBounds_fu_297</InstName>
+<InstName>grp_mSP_findLRBounds_fu_284</InstName>
 <ModuleName>mSP_findLRBounds</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>297</ID>
-</Instance>
-</InstancesList>
-</Instance>
-</InstancesList>
+<ID>284</ID>
 </Instance>
 <Instance>
-<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_600</InstName>
-<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<InstName>grp_mSP_findStartIndex_fu_294</InstName>
+<ModuleName>mSP_findStartIndex</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>600</ID>
+<ID>294</ID>
+</Instance>
+</InstancesList>
+</Instance>
+</InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_areWedgeSuperPointsEqual_fu_616</InstName>
+<InstName>grp_areWedgeSuperPointsEqual_fu_601</InstName>
 <ModuleName>areWedgeSuperPointsEqual</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>616</ID>
+<ID>601</ID>
 </Instance>
 <Instance>
-<InstName>grp_getSolveNextPatchPairWhileCondition_fu_628</InstName>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_613</InstName>
+<ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>613</ID>
+</Instance>
+<Instance>
+<InstName>grp_getSolveNextPatchPairWhileCondition_fu_627</InstName>
 <ModuleName>getSolveNextPatchPairWhileCondition</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>628</ID>
+<ID>627</ID>
 </Instance>
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_216</InstName>
+<InstName>grp_straightLineProjectorFromLayerIJtoK_fu_218</InstName>
 <ModuleName>straightLineProjectorFromLayerIJtoK</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>216</ID>
+<ID>218</ID>
 </Instance>
 <Instance>
-<InstName>tmp_getSolveNextColumnWhileConditional_fu_232</InstName>
+<InstName>tmp_getSolveNextColumnWhileConditional_fu_234</InstName>
 <ModuleName>getSolveNextColumnWhileConditional</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>232</ID>
+<ID>234</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -563,17 +617,17 @@
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
-<EstimatedClockPeriod>3.170</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.095</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>63</Best-caseLatency>
-<Average-caseLatency>63</Average-caseLatency>
-<Worst-caseLatency>63</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.315 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.315 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.315 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>3</Best-caseLatency>
+<Average-caseLatency>3</Average-caseLatency>
+<Worst-caseLatency>3</Worst-caseLatency>
+<Best-caseRealTimeLatency>15.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>15.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>15.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>64</PipelineDepth>
+<PipelineDepth>4</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -582,13 +636,13 @@
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<DSP>2</DSP>
+<DSP>0</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
-<UTIL_DSP>~0</UTIL_DSP>
-<FF>14463</FF>
+<UTIL_DSP>0</UTIL_DSP>
+<FF>361</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>11082</LUT>
+<LUT>412</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -726,7 +780,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>3</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -844,7 +898,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.225</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.341</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -862,17 +916,17 @@
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
-<PipelineII>6</PipelineII>
-<PipelineDepth>9</PipelineDepth>
+<PipelineII>1</PipelineII>
+<PipelineDepth>3</PipelineDepth>
 </mSP_findStartIndex_startValue>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>502</FF>
+<FF>296</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>530</LUT>
+<LUT>595</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1027,7 +1081,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>34</Bits>
+<Bits>37</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>
@@ -1268,13 +1322,13 @@
 <BRAM_18K>1</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<DSP>1</DSP>
+<DSP>0</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
-<UTIL_DSP>~0</UTIL_DSP>
-<FF>1551</FF>
+<UTIL_DSP>0</UTIL_DSP>
+<FF>1195</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>2636</LUT>
+<LUT>2507</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -1358,50 +1412,6 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1065_p_din0</name>
-<Object>makeSuperPoint_alignedToLine11</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>58</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1065_p_din1</name>
-<Object>makeSuperPoint_alignedToLine11</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>60</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1065_p_dout0</name>
-<Object>makeSuperPoint_alignedToLine11</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>117</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1065_p_ce</name>
-<Object>makeSuperPoint_alignedToLine11</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1577,26 +1587,31 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.484</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.548</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>undef</Best-caseLatency>
-<Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>undef</Worst-caseLatency>
-<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>undef</PipelineInitiationInterval>
+<Best-caseLatency>30</Best-caseLatency>
+<Average-caseLatency>38</Average-caseLatency>
+<Worst-caseLatency>42</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.150 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.190 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>30 ~ 42</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <getParallelograms_settingWPparameters>
 <Name>getParallelograms_settingWPparameters</Name>
-<TripCount>undef</TripCount>
-<Latency>undef</Latency>
-<AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
-<PipelineII>6</PipelineII>
-<PipelineDepth>71</PipelineDepth>
+<TripCount>4</TripCount>
+<Latency>28 ~ 40</Latency>
+<AbsoluteTimeLatency>0.140 us ~ 0.200 us</AbsoluteTimeLatency>
+<IterationLatency>
+<range>
+<min>7</min>
+<max>10</max>
+</range>
+</IterationLatency>
+<PipelineDepth>7 ~ 10</PipelineDepth>
 </getParallelograms_settingWPparameters>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -1605,13 +1620,13 @@
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<DSP>2</DSP>
+<DSP>0</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
-<UTIL_DSP>~0</UTIL_DSP>
-<FF>15209</FF>
+<UTIL_DSP>0</UTIL_DSP>
+<FF>1811</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>12036</LUT>
+<LUT>2259</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -2097,7 +2112,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.484</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.548</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -2125,13 +2140,13 @@
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<DSP>2</DSP>
+<DSP>0</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
-<UTIL_DSP>~0</UTIL_DSP>
-<FF>15652</FF>
+<UTIL_DSP>0</UTIL_DSP>
+<FF>2254</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>13401</LUT>
+<LUT>3624</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -2685,6 +2700,50 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>grp_fu_1065_p_din0</name>
+<Object>add_patch9</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>64</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_1065_p_din1</name>
+<Object>add_patch9</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>66</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_1065_p_dout0</name>
+<Object>add_patch9</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>129</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_1065_p_ce</name>
+<Object>add_patch9</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>grp_fu_1069_p_din0</name>
 <Object>add_patch9</Object>
 <Type>return value</Type>
@@ -2719,50 +2778,6 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_1069_p_ce</name>
-<Object>add_patch9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1073_p_din0</name>
-<Object>add_patch9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1073_p_din1</name>
-<Object>add_patch9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>66</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1073_p_dout0</name>
-<Object>add_patch9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>129</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1073_p_ce</name>
 <Object>add_patch9</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -3074,13 +3089,13 @@
 <BRAM_18K>3</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<DSP>23</DSP>
+<DSP>16</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>25792</FF>
+<FF>11881</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>24823</LUT>
+<LUT>14799</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -3428,17 +3443,17 @@
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
-<EstimatedClockPeriod>3.442</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.097</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>19</Best-caseLatency>
-<Average-caseLatency>19</Average-caseLatency>
-<Worst-caseLatency>19</Worst-caseLatency>
-<Best-caseRealTimeLatency>95.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>95.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>95.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>18</Best-caseLatency>
+<Average-caseLatency>18</Average-caseLatency>
+<Worst-caseLatency>18</Worst-caseLatency>
+<Best-caseRealTimeLatency>90.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>90.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>90.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>2</PipelineInitiationInterval>
-<PipelineDepth>20</PipelineDepth>
+<PipelineDepth>19</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -3447,10 +3462,10 @@
 <DSP>2</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>1037</FF>
+<FF>962</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>1036</LUT>
+<LUT>989</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -3657,25 +3672,25 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>2.626</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.748</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>5</Best-caseLatency>
-<Average-caseLatency>5</Average-caseLatency>
-<Worst-caseLatency>5</Worst-caseLatency>
-<Best-caseRealTimeLatency>25.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>25.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>25.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>5</PipelineInitiationInterval>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
+<Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>1</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>75</FF>
+<FF>3</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>231</LUT>
+<LUT>332</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -3758,94 +3773,6 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_din0</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_din1</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_opcode</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>5</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_dout0</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_ce</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1632_p_din0</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1632_p_dout0</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1632_p_ce</name>
 <Object>getSolveNextPatchPairWhileCondition</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4595,10 +4522,10 @@
 <solveComplmentaryPatch_fillNew_z_i_index3>
 <Name>solveComplmentaryPatch_fillNew_z_i_index3</Name>
 <TripCount>5</TripCount>
-<Latency>16</Latency>
-<AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+<Latency>5</Latency>
+<AbsoluteTimeLatency>25.000 ns</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>13</PipelineDepth>
+<PipelineDepth>2</PipelineDepth>
 </solveComplmentaryPatch_fillNew_z_i_index3>
 <solveComplmentaryPatch_fillNew_z_i_index4>
 <Name>solveComplmentaryPatch_fillNew_z_i_index4</Name>
@@ -4619,18 +4546,18 @@
 <solveComplmentaryPatch_fillNew_z_i_atTop>
 <Name>solveComplmentaryPatch_fillNew_z_i_atTop</Name>
 <TripCount>4</TripCount>
-<Latency>67</Latency>
-<AbsoluteTimeLatency>0.335 us</AbsoluteTimeLatency>
+<Latency>8</Latency>
+<AbsoluteTimeLatency>40.000 ns</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>65</PipelineDepth>
+<PipelineDepth>6</PipelineDepth>
 </solveComplmentaryPatch_fillNew_z_i_atTop>
 <solveComplmentaryPatch_findlayerWithSmallestShift>
 <Name>solveComplmentaryPatch_findlayerWithSmallestShift</Name>
 <TripCount>4</TripCount>
-<Latency>9</Latency>
-<AbsoluteTimeLatency>45.000 ns</AbsoluteTimeLatency>
+<Latency>4</Latency>
+<AbsoluteTimeLatency>20.000 ns</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>6</PipelineDepth>
+<PipelineDepth>2</PipelineDepth>
 </solveComplmentaryPatch_findlayerWithSmallestShift>
 <solveComplmentaryPatch_superpointEqualCheck_2>
 <Name>solveComplmentaryPatch_superpointEqualCheck_2</Name>
@@ -4640,10 +4567,10 @@
 <max>5</max>
 </range>
 </TripCount>
-<Latency>41 ~ 125</Latency>
-<AbsoluteTimeLatency>0.205 us ~ 0.625 us</AbsoluteTimeLatency>
-<PipelineII>21</PipelineII>
-<PipelineDepth>21</PipelineDepth>
+<Latency>39 ~ 119</Latency>
+<AbsoluteTimeLatency>0.195 us ~ 0.595 us</AbsoluteTimeLatency>
+<PipelineII>20</PipelineII>
+<PipelineDepth>20</PipelineDepth>
 </solveComplmentaryPatch_superpointEqualCheck_2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -4652,13 +4579,13 @@
 <BRAM_18K>3</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<DSP>27</DSP>
+<DSP>18</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>29930</FF>
+<FF>15108</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>33178</LUT>
+<LUT>20772</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -4822,7 +4749,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_din1</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_din1</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4833,7 +4760,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_din2</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_din2</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4844,7 +4771,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_din3</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_din3</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4855,18 +4782,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_din4</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_din5</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_din4</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4877,7 +4793,18 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_dout0</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_din5</name>
+<Object>solveComplmentaryPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>3</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_dout0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4888,7 +4815,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_ce</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_ce</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4899,7 +4826,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_start</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_start</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4910,7 +4837,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_ready</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_ready</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4921,7 +4848,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_done</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_done</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4932,7 +4859,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_600_p_idle</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_613_p_idle</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -4943,95 +4870,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1628_p_din0</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_din1</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_opcode</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>5</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_dout0</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_ce</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1635_p_din0</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1635_p_dout0</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1635_p_ce</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1638_p_din0</name>
+<name>grp_fu_1631_p_din0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -5042,7 +4881,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1638_p_din1</name>
+<name>grp_fu_1631_p_din1</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -5053,7 +4892,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1638_p_dout0</name>
+<name>grp_fu_1631_p_dout0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -5064,7 +4903,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1638_p_ce</name>
+<name>grp_fu_1631_p_ce</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -5467,26 +5306,26 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.623</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.612</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>1290</Best-caseLatency>
-<Average-caseLatency>1290</Average-caseLatency>
-<Worst-caseLatency>1290</Worst-caseLatency>
-<Best-caseRealTimeLatency>6.450 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>6.450 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>6.450 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1290</PipelineInitiationInterval>
+<Best-caseLatency>334</Best-caseLatency>
+<Average-caseLatency>334</Average-caseLatency>
+<Worst-caseLatency>334</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.670 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.670 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.670 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>334</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <getShadows_settingtopArrays>
 <Name>getShadows_settingtopArrays</Name>
 <TripCount>4</TripCount>
-<Latency>1260</Latency>
-<AbsoluteTimeLatency>6.300 us</AbsoluteTimeLatency>
-<IterationLatency>315</IterationLatency>
-<PipelineDepth>315</PipelineDepth>
+<Latency>304</Latency>
+<AbsoluteTimeLatency>1.520 us</AbsoluteTimeLatency>
+<IterationLatency>76</IterationLatency>
+<PipelineDepth>76</PipelineDepth>
 </getShadows_settingtopArrays>
 <getShadows_maxFinding_loop>
 <Name>getShadows_maxFinding_loop</Name>
@@ -5503,13 +5342,13 @@
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<DSP>18</DSP>
+<DSP>16</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>17199</FF>
+<FF>2858</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>14400</LUT>
+<LUT>2402</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -5768,7 +5607,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.650</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.868</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -5796,15 +5635,15 @@
 <BRAM_18K>3</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<DSP>41</DSP>
+<DSP>32</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
-<UTIL_DSP>1</UTIL_DSP>
-<FF>45385</FF>
+<UTIL_DSP>~0</UTIL_DSP>
+<FF>16585</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>45483</LUT>
+<LUT>21137</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
-<UTIL_LUT>1</UTIL_LUT>
+<UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>320</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
@@ -5878,7 +5717,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_din1</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_din1</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -5889,7 +5728,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_din2</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_din2</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -5900,7 +5739,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_din3</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_din3</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -5911,18 +5750,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_din4</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_din5</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_din4</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -5933,95 +5761,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_dout0</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_ce</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_start</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_ready</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_done</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1642_p_idle</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_din1</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_din2</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_din3</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_din5</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -6032,7 +5772,73 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_din4</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_dout0</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_ce</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_start</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_ready</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_done</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1635_p_idle</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_din1</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -6043,7 +5849,18 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_din5</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_din2</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_din3</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -6054,7 +5871,29 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_dout0</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_din4</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>3</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_din5</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>3</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_dout0</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -6065,7 +5904,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_ce</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_ce</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -6076,7 +5915,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_start</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_start</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -6087,7 +5926,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_ready</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_ready</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -6098,7 +5937,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_done</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_done</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -6109,101 +5948,13 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1651_p_idle</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1644_p_idle</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_din0</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_din1</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_opcode</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>5</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_dout0</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_ce</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1660_p_din0</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1660_p_dout0</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1660_p_ce</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
@@ -6578,7 +6329,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.650</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.868</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -6599,10 +6350,10 @@
 <max>5</max>
 </range>
 </TripCount>
-<Latency>22 ~ 131</Latency>
-<AbsoluteTimeLatency>0.110 us ~ 0.655 us</AbsoluteTimeLatency>
-<IterationLatency>22</IterationLatency>
-<PipelineDepth>22</PipelineDepth>
+<Latency>21 ~ 125</Latency>
+<AbsoluteTimeLatency>0.105 us ~ 0.625 us</AbsoluteTimeLatency>
+<IterationLatency>21</IterationLatency>
+<PipelineDepth>21</PipelineDepth>
 </solveNextPatchPair_superPointEqualCheck>
 <solvePatchPair_loop>
 <Name>solvePatchPair_loop</Name>
@@ -6619,15 +6370,15 @@
 <BRAM_18K>9</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<DSP>103</DSP>
+<DSP>72</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
-<UTIL_DSP>2</UTIL_DSP>
-<FF>147306</FF>
+<UTIL_DSP>1</UTIL_DSP>
+<FF>47233</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
-<UTIL_FF>1</UTIL_FF>
-<LUT>141107</LUT>
+<UTIL_FF>~0</UTIL_FF>
+<LUT>61605</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
-<UTIL_LUT>3</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>320</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
@@ -7148,7 +6899,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.650</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.868</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -7176,15 +6927,15 @@
 <BRAM_18K>9</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<DSP>105</DSP>
+<DSP>72</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
-<UTIL_DSP>2</UTIL_DSP>
-<FF>162226</FF>
+<UTIL_DSP>1</UTIL_DSP>
+<FF>47990</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
-<UTIL_FF>1</UTIL_FF>
-<LUT>152808</LUT>
+<UTIL_FF>~0</UTIL_FF>
+<LUT>62383</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
-<UTIL_LUT>3</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>320</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
@@ -7595,7 +7346,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.650</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.868</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -7639,15 +7390,15 @@
 <BRAM_18K>9</BRAM_18K>
 <AVAIL_BRAM>4320</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<DSP>105</DSP>
+<DSP>72</DSP>
 <AVAIL_DSP>3840</AVAIL_DSP>
-<UTIL_DSP>2</UTIL_DSP>
-<FF>162541</FF>
+<UTIL_DSP>1</UTIL_DSP>
+<FF>48306</FF>
 <AVAIL_FF>8171520</AVAIL_FF>
-<UTIL_FF>1</UTIL_FF>
-<LUT>154034</LUT>
+<UTIL_FF>~0</UTIL_FF>
+<LUT>63614</LUT>
 <AVAIL_LUT>4085760</AVAIL_LUT>
-<UTIL_LUT>3</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>320</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>

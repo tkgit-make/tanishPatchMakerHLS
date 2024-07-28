@@ -20,7 +20,7 @@ void initWedgeSuperPoint(COORDINATE_TYPE (&wsp) [MAX_POINTS_IN_SUPERPOINT][PARAM
 */
 
 // operator overloading not allowed in C, write separate method to check equality
-int_type areWedgeSuperPointsEqual(SPACEPOINT_TYPE wsp1[MAX_POINTS_IN_SUPERPOINT], SPACEPOINT_TYPE wsp2[MAX_POINTS_IN_SUPERPOINT])
+bool areWedgeSuperPointsEqual(SPACEPOINT_TYPE wsp1[MAX_POINTS_IN_SUPERPOINT], SPACEPOINT_TYPE wsp2[MAX_POINTS_IN_SUPERPOINT])
 {
 #pragma HLS INLINE OFF
     //return (wsp1->min == wsp2->min) && (wsp1->max == wsp2->max);
@@ -28,7 +28,13 @@ int_type areWedgeSuperPointsEqual(SPACEPOINT_TYPE wsp1[MAX_POINTS_IN_SUPERPOINT]
     //return (abs(decodeZcoordinate(wsp1[0]) - decodeZcoordinate(wsp2[0])) < tolerance) &&
     //		(abs(decodeZcoordinate(wsp1[MAX_POINTS_IN_SUPERPOINT - 1]) - decodeZcoordinate(wsp2[MAX_POINTS_IN_SUPERPOINT - 1])) < tolerance);
 
-	return wsp1[0] ^ wsp2[0] == 0 && wsp1[MAX_POINTS_IN_SUPERPOINT - 1] ^ wsp2[MAX_POINTS_IN_SUPERPOINT - 1] == 0;
+	//cout << wsp1[0] ^ wsp2[0] << endl;
+	//cout << (wsp1[MAX_POINTS_IN_SUPERPOINT - 1] ^ wsp2[MAX_POINTS_IN_SUPERPOINT - 1]) << endl;
+
+	//cout << (wsp1[0] ^ wsp2[0] == 0) << endl;
+	//cout << (wsp1[MAX_POINTS_IN_SUPERPOINT - 1] ^ wsp2[MAX_POINTS_IN_SUPERPOINT - 1] == 0) << endl;
+
+	return (wsp1[0] == wsp2[0]) && (wsp1[MAX_POINTS_IN_SUPERPOINT - 1] == wsp2[MAX_POINTS_IN_SUPERPOINT - 1]);
 }
 
 void getParallelograms(WEDGE_PATCH)
@@ -50,17 +56,15 @@ void getParallelograms(WEDGE_PATCH)
     // }
     wp_parameters[4][2][0] = 0; // we want to start at index 0 regardless and overwrite any old elements in the array to replicate the functionality of assigning a temp array.
     getParallelograms_settingWPparameters:
-    for (int_type i = 1; i < static_cast<int>(wp_parameters[4][1][0]); i++)
+    for (int_type i = 1; i < MAX_LAYERS; i++)
     {
-        long_type j = static_cast<long_type>(i) + 1;
-
         COORDINATE_TYPE z_j_min = wp_superpoints[i][0][1];
         COORDINATE_TYPE z_j_max = wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][1];
 
-        COORDINATE_TYPE a = straightLineProjectorFromLayerIJtoK(z1_min, z_j_max, 1, j, num_layers);
-        COORDINATE_TYPE b = straightLineProjectorFromLayerIJtoK(z1_max, z_j_max, 1, j, num_layers);
-        COORDINATE_TYPE c = straightLineProjectorFromLayerIJtoK(z1_min, z_j_min, 1, j, num_layers);
-        COORDINATE_TYPE d = straightLineProjectorFromLayerIJtoK(z1_max, z_j_min, 1, j, num_layers);
+        COORDINATE_TYPE a = straightLineProjectorFromLayerIJtoK(z1_min, z_j_max, 1, i + 1, num_layers);
+        COORDINATE_TYPE b = straightLineProjectorFromLayerIJtoK(z1_max, z_j_max, 1, i + 1, num_layers);
+        COORDINATE_TYPE c = straightLineProjectorFromLayerIJtoK(z1_min, z_j_min, 1, i + 1, num_layers);
+        COORDINATE_TYPE d = straightLineProjectorFromLayerIJtoK(z1_max, z_j_min, 1, i + 1, num_layers);
 
         // directly assign the values to the array
         if (static_cast<int>(wp_parameters[4][2][0]) < MAX_PARALLELOGRAMS_PER_PATCH)
@@ -138,22 +142,22 @@ COORDINATE_TYPE straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDIN
     {
         radius_k = radii[k - 1];
     }
-    /*
+
     if((k - i) * (j - i) < 0)
     {
-    	COORDINATE_TYPE returnVal = z_i - static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
-        cout << returnVal << endl;
+    	//COORDINATE_TYPE returnVal = z_i - static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
+        //cout << returnVal << endl;
 
     	return z_i - static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
     }
     else
     {
-    	COORDINATE_TYPE returnVal = z_i + static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
-        cout << returnVal << endl;
+    	//COORDINATE_TYPE returnVal = z_i + static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
+        //cout << returnVal << endl;
 
     	return z_i + static_cast<COORDINATE_TYPE>((static_cast<long_type>(z_j) * radiiDivisionList[abs(k - i)][abs(j - i)] - static_cast<long_type>(z_i) * radiiDivisionList[abs(k - i)][abs(j - i)]) >> RIGHT_SHIFT_FACTOR);
     }
-
+	/*
     //float radii_leverArmF = ((float) (radius_k - radius_i)) / (float) (radius_j - radius_i);
 
     //return static_cast<COORDINATE_TYPE> (z_i + static_cast<long_type>((z_j * (radius_k - radius_i)) / (radius_j - radius_i)) - static_cast<long_type>((z_i * (radius_k - radius_i)) / (radius_j - radius_i)));
@@ -163,7 +167,7 @@ COORDINATE_TYPE straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDIN
     return returnVal;
     */
 
-    return static_cast<COORDINATE_TYPE> (z_i + static_cast<long_type>((z_j * (radius_k - radius_i)) / (radius_j - radius_i)) - static_cast<long_type>((z_i * (radius_k - radius_i)) / (radius_j - radius_i)));
+    //return static_cast<COORDINATE_TYPE> (z_i + static_cast<long_type>((z_j * (radius_k - radius_i)) / (radius_j - radius_i)) - static_cast<long_type>((z_i * (radius_k - radius_i)) / (radius_j - radius_i)));
 }
 
 void getShadows(WEDGE_PATCH_GET_SHADOWS, COORDINATE_TYPE zTopMin, COORDINATE_TYPE zTopMax)
@@ -886,7 +890,7 @@ bool getSolveNextPatchPairWhileCondition(int_type lastPatchIndex, bool repeat_pa
                                          int_type current_z_top_index, GDARRAY, GPATCHES)
 {
 #pragma HLS INLINE OFF
-    return !(white_space_height <= static_cast<long_type>(0.0000005 * INTEGER_FACTOR_CM) && (previous_white_space_height >= 0)) && (fabs(white_space_height) > static_cast<long_type>(0.000005 * INTEGER_FACTOR_CM)) &&
+    return !(white_space_height <= static_cast<long_type>(0.0000005 * INTEGER_FACTOR_CM) && (previous_white_space_height >= 0)) && (abs(white_space_height) > static_cast<long_type>(0.000005 * INTEGER_FACTOR_CM)) &&
                ((patches_parameters[lastPatchIndex][2][2][1] > -trapezoid_edges[num_layers - 1]) ||
                     (white_space_height > static_cast<long_type>(0.000005 * INTEGER_FACTOR_CM))) &&
                (current_z_top_index < (int)(GDn_points[num_layers - 1])) &&
@@ -913,22 +917,22 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
 
     COORDINATE_TYPE original_topR_jL = patches_parameters[secondLastPatchIndex][1][2][0];
     bool originalPartialTop = (original_topR_jL > complementary_apexZ0) && (original_topR_jL < apexZ0) &&
-                                (fabs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topR_jL, z_top_max, 1, num_layers, 0))) < 20 * beam_axis_lim);
+                                (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topR_jL, z_top_max, 1, num_layers, 0))) < 20 * beam_axis_lim);
 
     COORDINATE_TYPE original_topL_jL = patches_parameters[secondLastPatchIndex][1][0][0];
 
     bool originalPartialBottom = (original_topL_jL > complementary_apexZ0) && ((original_topL_jL - apexZ0) < static_cast<long_type>(-0.0001 * INTEGER_FACTOR_CM)) &&
-                                    (fabs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topL_jL,z_top_min, 1, num_layers, 0))) < 20 * beam_axis_lim);
+                                    (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topL_jL,z_top_min, 1, num_layers, 0))) < 20 * beam_axis_lim);
 
     COORDINATE_TYPE complementary_topR_jR = patches_parameters[lastPatchIndex][1][3][0];
 
     bool complementaryPartialTop = ((complementary_topR_jR - complementary_apexZ0) > static_cast<long_type>(0.00005 * INTEGER_FACTOR_CM)) && (complementary_topR_jR < apexZ0) && // The use of 0.00005 is "hack" to prevent a couple of wedges from creating extra patches,
-                                    (fabs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(complementary_topR_jR, z_top_max, 1, num_layers, 0))) < 20 * beam_axis_lim);
+                                    (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(complementary_topR_jR, z_top_max, 1, num_layers, 0))) < 20 * beam_axis_lim);
 
     COORDINATE_TYPE complementary_topL_jR = patches_parameters[lastPatchIndex][1][1][0];
 
     bool complementaryPartialBottom = (complementary_topL_jR > complementary_apexZ0) && ((complementary_topL_jR - apexZ0) < static_cast<long_type>(-0.0001 * INTEGER_FACTOR_CM)) &&
-                                        (fabs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(complementary_topL_jR,z_top_min, 1, num_layers, 0))) < 20 * beam_axis_lim);
+                                        (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(complementary_topL_jR,z_top_min, 1, num_layers, 0))) < 20 * beam_axis_lim);
 
     COORDINATE_TYPE horizontalShiftTop = original_topR_jL - complementary_topR_jR;
     COORDINATE_TYPE horizontalShiftBottom = original_topL_jL - complementary_topL_jR;
@@ -1144,7 +1148,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     solveComplmentaryPatch_fillNew_z_i_index3:
     for (index_type i = 0; i < num_layers; i++)
     {
-        new_z_i_index[i] = min(new_z_i_index[i], (float)GDn_points[i] - 1);
+        new_z_i_index[i] = min(new_z_i_index[i], GDn_points[i] - 1);
     }
 
     solveComplmentaryPatch_fillNew_z_i_index4:
@@ -1178,9 +1182,9 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     solveComplmentaryPatch_findlayerWithSmallestShift: 
     for (index_type i = 0; i < num_layers - 1; i++)
     {
-        if (static_cast<long_type>(fabs(static_cast<long_type>(new_z_i_atTop[i]) - static_cast<long_type>(previous_z_top_min))) < layerSMin)
+        if (static_cast<long_type>(abs(static_cast<long_type>(new_z_i_atTop[i]) - static_cast<long_type>(previous_z_top_min))) < layerSMin)
         { // fabs is for floats. abs is only int
-            layerSMin = static_cast<long_type>(fabs(static_cast<long_type>(new_z_i_atTop[i]) - static_cast<long_type>(previous_z_top_min)));
+            layerSMin = static_cast<long_type>(abs(static_cast<long_type>(new_z_i_atTop[i]) - static_cast<long_type>(previous_z_top_min)));
             layerWithSmallestShift = i;
         }
     }
@@ -1198,17 +1202,17 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     z_top_min = GDarrayDecoded[num_layers - 1][current_z_top_index][1];
     z_top_min = new_z_i_atTop[layerWithSmallestShift - 1];
 
-    if (fabs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
+    if (abs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
     {
         z_top_min = GDarrayDecoded[num_layers - 1][current_z_top_index][1];
     }
 
-    if (fabs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
+    if (abs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
     {
         z_top_min = GDarrayDecoded[num_layers - 2][current_z_top_index][1];
     }
 
-    if (fabs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
+    if (abs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
     {
         z_top_min = GDarrayDecoded[num_layers - 3][current_z_top_index][1];
     }
@@ -1437,12 +1441,11 @@ void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int_
     add_patch(NPpatches_superpoints, NPpatches_parameters, n_patches, patches_superpoints, patches_parameters);
 }
 
-void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_TYPE apexZ0, float float_middleLayers_ppl,
+void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_TYPE apexZ0, bool float_middleLayers_ppl,
 		int_type &ppl, int_type original_ppl, bool leftRight, long_type alignmentAccuracy,
 		COORDINATE_TYPE (&init_patch) [MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], GDARRAY)
 {
 #pragma HLS INLINE OFF
-    long_type y = radii[i];
     COORDINATE_TYPE row_list[MAX_POINTS_PER_LAYER];
     int_type row_list_size = 0;
 
@@ -1452,8 +1455,7 @@ void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_
         row_list[row_list_size++] = GDarrayDecoded[i][j][1];
     }
 
-    long_type r_max = radii[num_layers - 1];
-    long_type projectionToRow = static_cast<long_type>(((z_top - apexZ0) * (y - radii[0])) / (r_max - radii[0]) + apexZ0);
+    long_type projectionToRow = static_cast<long_type>(((z_top - apexZ0) * (radiiDivisionList[i][MAX_LAYERS - 1]) >> RIGHT_SHIFT_FACTOR) + apexZ0);
     int_type start_index;
     long_type start_value;
     mSP_findStartIndex(row_list, row_list_size, projectionToRow, start_index, start_value);
@@ -1643,7 +1645,7 @@ void mSP_findStartIndex(COORDINATE_TYPE row_list[MAX_POINTS_PER_LAYER], int_type
     mSP_findStartIndex_startValue:
     for (int_type j = 0; j < row_list_size; j++)
     {
-        if (abs(row_list[j] - projectionToRow) < fabs(start_value))
+        if (abs(row_list[j] - projectionToRow) < abs(start_value))
         {
             start_index = j;
             start_value = row_list[j] - projectionToRow;

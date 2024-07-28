@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 195
+set ID 170
 set hasByteEnable 0
 set MemName MPSQ_patches_parameters_V
 set CoreName ap_simcore_mem
@@ -86,7 +86,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 196
+set ID 171
 set hasByteEnable 0
 set MemName MPSQ_GDarrayDecoded_V
 set CoreName ap_simcore_mem
@@ -182,7 +182,7 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 199 \
+    id 174 \
     name GDarray \
     reset_level 1 \
     sync_rst true \
@@ -201,7 +201,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 200 \
+    id 175 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -220,7 +220,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 201 \
+    id 176 \
     name patches_superpoints \
     reset_level 1 \
     sync_rst true \
@@ -238,7 +238,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 197 \
+    id 172 \
     name ppl \
     type other \
     dir I \
@@ -253,7 +253,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 198 \
+    id 173 \
     name n_patches \
     type other \
     dir IO \

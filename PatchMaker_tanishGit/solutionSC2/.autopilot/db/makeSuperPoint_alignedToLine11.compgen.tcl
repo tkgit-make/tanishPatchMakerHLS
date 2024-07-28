@@ -1,17 +1,17 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 29
-set name MPSQ_mul_25ns_33s_58_1_1
+set id 23
+set name MPSQ_mul_35ns_33s_68_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
 set max_latency -1
 set registered_input 1
-set in0_width 25
+set in0_width 35
 set in0_signed 0
 set in1_width 33
 set in1_signed 1
-set out_width 58
+set out_width 68
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -67,179 +67,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 30
-set name MPSQ_mul_58s_60ns_117_2_1
-set corename simcore_mul
-set op mul
-set stage_num 2
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 58
-set in0_signed 1
-set in1_width 60
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 117
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mul
-set corename Multiplier
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul] == "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 33
-set hasByteEnable 0
-set MemName MPSQ_makeSuperPoint_alignedToLine11_radii
-set CoreName ap_simcore_mem
-set PortList { 1 }
-set DataWd 25
-set AddrRange 5
-set AddrWd 3
-set impl_style auto
-set TrueReset 0
-set IsROM 1
-set ROMData { "0010011000100101101000000" "0100110001001011010000000" "0111001001110000111000000" "1001100010010110100000000" "1011111010111100001000000" }
-set HasInitializer 1
-set Initializer $ROMData
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 0.699
-set ClkPeriod 5
-set RegisteredInput 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-} else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
-}
-
-
-set CoreName ROM
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
-  }
-}
-
-
-# Memory (RAM/ROM)  definition:
-set ID 34
+set ID 25
 set hasByteEnable 0
 set MemName MPSQ_makeSuperPoint_alignedToLine11_row_list_V
 set CoreName ap_simcore_mem
@@ -334,7 +163,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 35 \
+    id 26 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -353,7 +182,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 41 \
+    id 32 \
     name init_patch \
     reset_level 1 \
     sync_rst true \
@@ -372,7 +201,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 42 \
+    id 33 \
     name GDarrayDecoded \
     reset_level 1 \
     sync_rst true \
@@ -390,7 +219,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 36 \
+    id 27 \
     name i \
     type other \
     dir I \
@@ -405,7 +234,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 37 \
+    id 28 \
     name z_top \
     type other \
     dir I \
@@ -420,7 +249,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 38 \
+    id 29 \
     name apexZ0 \
     type other \
     dir I \
@@ -435,7 +264,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 39 \
+    id 30 \
     name original_ppl \
     type other \
     dir I \
@@ -450,7 +279,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 40 \
+    id 31 \
     name leftRight \
     type other \
     dir I \

@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 78
+set id 68
 set name MPSQ_urem_11ns_4ns_8_15_1
 set corename simcore_urem
 set op urem
@@ -85,7 +85,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your pla
 }
 
 
-set id 80
+set id 70
 set name MPSQ_mul_mul_18ns_20ns_37_4_1
 set corename simcore_mul
 set op mul
@@ -190,7 +190,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 84 \
+    id 74 \
     name wsp1_2 \
     reset_level 1 \
     sync_rst true \
@@ -208,7 +208,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 85 \
+    id 75 \
     name wsp1 \
     type other \
     dir I \
@@ -223,7 +223,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 86 \
+    id 76 \
     name wsp11 \
     type other \
     dir I \
@@ -238,7 +238,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 87 \
+    id 77 \
     name wsp2 \
     type other \
     dir I \
@@ -253,7 +253,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 88 \
+    id 78 \
     name wsp23 \
     type other \
     dir I \

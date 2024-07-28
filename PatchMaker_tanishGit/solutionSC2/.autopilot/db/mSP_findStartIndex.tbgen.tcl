@@ -14,12 +14,12 @@ set C_modelType { int 96 }
 set C_modelArgList {
 	{ row_list int 32 regular {array 256 { 1 3 } 1 1 }  }
 	{ row_list_size int 32 regular  }
-	{ projectionToRow int 34 regular  }
+	{ projectionToRow int 37 regular  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "row_list", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "row_list_size", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "projectionToRow", "interface" : "wire", "bitwidth" : 34, "direction" : "READONLY"} , 
+ 	{ "Name" : "projectionToRow", "interface" : "wire", "bitwidth" : 37, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 96} ]}
 # RTL Port declarations: 
 set portNum 13
@@ -34,7 +34,7 @@ set portList {
 	{ row_list_ce0 sc_out sc_logic 1 signal 0 } 
 	{ row_list_q0 sc_in sc_lv 32 signal 0 } 
 	{ row_list_size sc_in sc_lv 32 signal 1 } 
-	{ projectionToRow sc_in sc_lv 34 signal 2 } 
+	{ projectionToRow sc_in sc_lv 37 signal 2 } 
 	{ ap_return_0 sc_out sc_lv 32 signal -1 } 
 	{ ap_return_1 sc_out sc_lv 64 signal -1 } 
 }
@@ -49,12 +49,12 @@ set NewPortList {[
  	{ "name": "row_list_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "row_list", "role": "ce0" }} , 
  	{ "name": "row_list_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "row_list", "role": "q0" }} , 
  	{ "name": "row_list_size", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "row_list_size", "role": "default" }} , 
- 	{ "name": "projectionToRow", "direction": "in", "datatype": "sc_lv", "bitwidth":34, "type": "signal", "bundle":{"name": "projectionToRow", "role": "default" }} , 
+ 	{ "name": "projectionToRow", "direction": "in", "datatype": "sc_lv", "bitwidth":37, "type": "signal", "bundle":{"name": "projectionToRow", "role": "default" }} , 
  	{ "name": "ap_return_0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return_0", "role": "default" }} , 
  	{ "name": "ap_return_1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "ap_return_1", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
 		"CDFG" : "mSP_findStartIndex",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -70,9 +70,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
-			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dcmp_64ns_64ns_1_2_no_dsp_1_U18", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitodp_64s_64_4_no_dsp_1_U19", "Parent" : "0"}]}
+			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -95,5 +93,5 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	row_list { ap_memory {  { row_list_address0 mem_address 1 8 }  { row_list_ce0 mem_ce 1 1 }  { row_list_q0 mem_dout 0 32 } } }
 	row_list_size { ap_none {  { row_list_size in_data 0 32 } } }
-	projectionToRow { ap_none {  { projectionToRow in_data 0 34 } } }
+	projectionToRow { ap_none {  { projectionToRow in_data 0 37 } } }
 }

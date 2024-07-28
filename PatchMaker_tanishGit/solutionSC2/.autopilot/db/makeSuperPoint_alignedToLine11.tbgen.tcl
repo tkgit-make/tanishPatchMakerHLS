@@ -32,7 +32,7 @@ set C_modelArgMapList {[
  	{ "Name" : "GDarrayDecoded", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
-set portNum 26
+set portNum 22
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -56,10 +56,6 @@ set portList {
 	{ GDarrayDecoded_ce0 sc_out sc_logic 1 signal 7 } 
 	{ GDarrayDecoded_q0 sc_in sc_lv 32 signal 7 } 
 	{ ap_return sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_1065_p_din0 sc_out sc_lv 58 signal -1 } 
-	{ grp_fu_1065_p_din1 sc_out sc_lv 60 signal -1 } 
-	{ grp_fu_1065_p_dout0 sc_in sc_lv 117 signal -1 } 
-	{ grp_fu_1065_p_ce sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -83,14 +79,10 @@ set NewPortList {[
  	{ "name": "GDarrayDecoded_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "GDarrayDecoded", "role": "address0" }} , 
  	{ "name": "GDarrayDecoded_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "GDarrayDecoded", "role": "ce0" }} , 
  	{ "name": "GDarrayDecoded_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "GDarrayDecoded", "role": "q0" }} , 
- 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }} , 
- 	{ "name": "grp_fu_1065_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":58, "type": "signal", "bundle":{"name": "grp_fu_1065_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_1065_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":60, "type": "signal", "bundle":{"name": "grp_fu_1065_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_1065_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":117, "type": "signal", "bundle":{"name": "grp_fu_1065_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_1065_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_1065_p_ce", "role": "default" }}  ]}
+ 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "6", "8"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "5", "6"],
 		"CDFG" : "makeSuperPoint_alignedToLine11",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -112,32 +104,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "init_patch", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "radii", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "6", "SubInstance" : "grp_mSP_findLRBounds_fu_297", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.radii_U", "Parent" : "0"},
+					{"ID" : "3", "SubInstance" : "grp_mSP_findLRBounds_fu_284", "Port" : "trapezoid_edges_V"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.radiiDivisionList_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.row_list_V_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findStartIndex_fu_289", "Parent" : "0", "Child" : ["4", "5"],
-		"CDFG" : "mSP_findStartIndex",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
-			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findStartIndex_fu_289.dcmp_64ns_64ns_1_2_no_dsp_1_U18", "Parent" : "3"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findStartIndex_fu_289.sitodp_64s_64_4_no_dsp_1_U19", "Parent" : "3"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findLRBounds_fu_297", "Parent" : "0", "Child" : ["7"],
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findLRBounds_fu_284", "Parent" : "0", "Child" : ["4"],
 		"CDFG" : "mSP_findLRBounds",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -155,8 +128,25 @@ set RtlHierarchyInfo {[
 			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findLRBounds_fu_297.trapezoid_edges_V_U", "Parent" : "6"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_25ns_33s_58_1_1_U29", "Parent" : "0"}]}
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findLRBounds_fu_284.trapezoid_edges_V_U", "Parent" : "3"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findStartIndex_fu_294", "Parent" : "0",
+		"CDFG" : "mSP_findStartIndex",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
+			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_35ns_33s_68_1_1_U23", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -167,19 +157,19 @@ set ArgLastReadFirstWriteLatency {
 		apexZ0 {Type I LastRead 1 FirstWrite -1}
 		original_ppl {Type I LastRead 1 FirstWrite -1}
 		leftRight {Type I LastRead 1 FirstWrite -1}
-		init_patch {Type O LastRead -1 FirstWrite 13}
-		GDarrayDecoded {Type I LastRead 12 FirstWrite -1}
-		radii {Type I LastRead -1 FirstWrite -1}
+		init_patch {Type O LastRead -1 FirstWrite 12}
+		GDarrayDecoded {Type I LastRead 11 FirstWrite -1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
-	mSP_findStartIndex {
-		row_list {Type I LastRead 1 FirstWrite -1}
-		row_list_size {Type I LastRead 0 FirstWrite -1}
-		projectionToRow {Type I LastRead 0 FirstWrite -1}}
 	mSP_findLRBounds {
 		i {Type I LastRead 0 FirstWrite -1}
 		row_list {Type I LastRead 2 FirstWrite -1}
 		row_list_size {Type I LastRead 1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}}
+		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
+	mSP_findStartIndex {
+		row_list {Type I LastRead 1 FirstWrite -1}
+		row_list_size {Type I LastRead 0 FirstWrite -1}
+		projectionToRow {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 

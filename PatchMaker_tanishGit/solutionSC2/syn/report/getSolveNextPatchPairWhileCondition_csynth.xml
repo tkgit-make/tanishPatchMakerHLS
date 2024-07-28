@@ -18,25 +18,25 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.626</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.748</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>5</Best-caseLatency>
-<Average-caseLatency>5</Average-caseLatency>
-<Worst-caseLatency>5</Worst-caseLatency>
-<Best-caseRealTimeLatency>25.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>25.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>25.000 ns</Worst-caseRealTimeLatency>
-<Interval-min>5</Interval-min>
-<Interval-max>5</Interval-max>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
+<Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
+<Interval-min>1</Interval-min>
+<Interval-max>1</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>75</FF>
-<LUT>231</LUT>
+<FF>3</FF>
+<LUT>332</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -119,94 +119,6 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_din0</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_din1</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_opcode</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>5</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_dout0</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1628_p_ce</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1632_p_din0</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1632_p_dout0</name>
-<Object>getSolveNextPatchPairWhileCondition</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_1632_p_ce</name>
 <Object>getSolveNextPatchPairWhileCondition</Object>
 <Type>return value</Type>
 <Scope></Scope>

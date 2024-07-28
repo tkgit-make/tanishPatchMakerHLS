@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'get_index_from_z'" level="0">
-<item name = "Date">Sat Jun 27 14:15:55 2020
+<item name = "Date">Sat Jul 27 22:50:36 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -83,8 +83,8 @@
 <column name="i_fu_139_p2">+, 0, 0, 15, 8, 1</column>
 <column name="ret_fu_182_p2">-, 0, 0, 40, 33, 33</column>
 <column name="sub_ln180_fu_195_p2">-, 0, 0, 40, 1, 33</column>
-<column name="icmp_ln518_fu_149_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln521_fu_210_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln522_fu_149_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln525_fu_210_p2">icmp, 0, 0, 29, 64, 64</column>
 <column name="or_ln215_fu_163_p2">or, 0, 0, 12, 12, 1</column>
 <column name="diff_fu_200_p3">select, 0, 0, 33, 1, 33</column>
 <column name="index_1_fu_224_p3">select, 0, 0, 8, 1, 8</column>
@@ -113,13 +113,13 @@
 <column name="i_04_reg_94">8, 0, 8, 0</column>
 <column name="i_04_reg_94_pp0_iter1_reg">8, 0, 8, 0</column>
 <column name="i_reg_252">8, 0, 8, 0</column>
-<column name="icmp_ln518_reg_257">1, 0, 1, 0</column>
-<column name="icmp_ln518_reg_257_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln522_reg_257">1, 0, 1, 0</column>
+<column name="icmp_ln522_reg_257_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="index_reg_106">8, 0, 8, 0</column>
 <column name="minVal_reg_118">64, 0, 64, 0</column>
 <column name="ret_reg_266">33, 0, 33, 0</column>
 <column name="rhs_reg_247">33, 0, 33, 0</column>
-<column name="tmp_47_reg_272">1, 0, 1, 0</column>
+<column name="tmp_35_reg_272">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

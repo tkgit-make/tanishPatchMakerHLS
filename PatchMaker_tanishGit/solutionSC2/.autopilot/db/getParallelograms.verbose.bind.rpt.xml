@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getParallelograms'" level="0">
-<item name = "Date">Sat Jun 27 14:14:41 2020
+<item name = "Date">Sat Jul 27 22:49:19 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.484 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.548 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, none</column>
+<column name="">30, 42, 0.150 us, 0.210 us, 30, 42, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_210">straightLineProjectorFromLayerIJtoK, 63, 63, 0.315 us, 0.315 us, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_202">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_215">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_228">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_241">straightLineProjectorFromLayerIJtoK, 3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- getParallelograms_settingWPparameters">?, ?, 71, 6, 1, ?, yes</column>
+<column name="- getParallelograms_settingWPparameters">28, 40, 7 ~ 10, -, -, 4, no</column>
 </table>
 </item>
 </section>

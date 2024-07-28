@@ -1,17 +1,17 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 3
-set name MPSQ_mul_26s_32s_57_1_1
+set name MPSQ_mul_4s_4s_8_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
 set max_latency -1
 set registered_input 1
-set in0_width 26
+set in0_width 4
 set in0_signed 1
-set in1_width 32
+set in1_width 4
 set in1_signed 1
-set out_width 57
+set out_width 8
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -67,27 +67,21 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 5
-set name MPSQ_sdiv_57ns_26s_32_61_1
-set corename simcore_sdiv
-set op sdiv
-set stage_num 61
+set id 4
+set name MPSQ_mul_35ns_33s_64_1_1
+set corename simcore_mul
+set op mul
+set stage_num 1
 set max_latency -1
 set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 57
+set in0_width 35
 set in0_signed 0
-set in1_width 26
+set in1_width 33
 set in1_signed 1
-set ce_width 1
-set ce_signed 0
-set out_width 32
+set out_width 64
 if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_sdiv] == "ap_gen_simcore_sdiv"} {
-eval "ap_gen_simcore_sdiv { \
+if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
+eval "ap_gen_simcore_mul { \
     id ${id} \
     name ${name} \
     corename ${corename} \
@@ -97,20 +91,14 @@ eval "ap_gen_simcore_sdiv { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_sdiv, check your AutoPilot builtin lib"
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
 }
 }
 
@@ -120,11 +108,11 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set op sdiv
-set corename Divider
+set op mul
+set corename Multiplier
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_div] == "::AESL_LIB_VIRTEX::xil_gen_div"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_div { \
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul] == "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul { \
     id ${id} \
     name ${name} \
     corename ${corename} \
@@ -134,42 +122,36 @@ eval "::AESL_LIB_VIRTEX::xil_gen_div { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your platform lib"
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, check your platform lib"
 }
 }
 
 
 # Memory (RAM/ROM)  definition:
-set ID 9
+set ID 7
 set hasByteEnable 0
-set MemName MPSQ_straightLineProjectorFromLayerIJtoK_radii
+set MemName MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList
 set CoreName ap_simcore_mem
-set PortList { 1 1 1 }
-set DataWd 25
-set AddrRange 5
-set AddrWd 3
+set PortList { 1 }
+set DataWd 35
+set AddrRange 36
+set AddrWd 6
 set impl_style auto
 set TrueReset 0
 set IsROM 1
-set ROMData { "0010011000100101101000000" "0100110001001011010000000" "0111001001110000111000000" "1001100010010110100000000" "1011111010111100001000000" }
+set ROMData { "00000000000000000000000000000000000" "00000000000000000000000000000000000" "00000000000000000000000000000000000" "00000000000000000000000000000000000" "00000000000000000000000000000000000" "00000000000000000000000000000000000" "00000000000000000000000000000000000" "00100000000000000000000000000000000" "00010000000000000000000000000000000" "00001010101010101010101010101010101" "00001000000000000000000000000000000" "00000110011001100110011001100110011" "00000000000000000000000000000000000" "01000000000000000000000000000000000" "00100000000000000000000000000000000" "00010101010101010101010101010101010" "00010000000000000000000000000000000" "00001100110011001100110011001100110" "00000000000000000000000000000000000" "01100000000000000000000000000000000" "00110000000000000000000000000000000" "00100000000000000000000000000000000" "00011000000000000000000000000000000" "00010011001100110011001100110011001" "00000000000000000000000000000000000" "10000000000000000000000000000000000" "01000000000000000000000000000000000" "00101010101010101010101010101010101" "00100000000000000000000000000000000" "00011001100110011001100110011001100" "00000000000000000000000000000000000" "10100000000000000000000000000000000" "01010000000000000000000000000000000" "00110101010101010101010101010101010" "00101000000000000000000000000000000" "00100000000000000000000000000000000" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 0.699
+set DelayBudget 0.714
 set ClkPeriod 5
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
@@ -184,7 +166,7 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
     sync_rst true \
     stage_num ${NumOfStage}  \
     registered_input ${RegisteredInput} \
-    port_num 3 \
+    port_num 1 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -220,7 +202,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
     sync_rst true \
     stage_num ${NumOfStage}  \
     registered_input ${RegisteredInput} \
-    port_num 3 \
+    port_num 1 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -248,7 +230,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10 \
+    id 8 \
     name z_i \
     type other \
     dir I \
@@ -263,7 +245,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
+    id 9 \
     name z_j \
     type other \
     dir I \
@@ -278,7 +260,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 12 \
+    id 10 \
     name i \
     type other \
     dir I \
@@ -293,7 +275,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 13 \
+    id 11 \
     name j \
     type other \
     dir I \
@@ -301,14 +283,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_j \
     op interface \
-    ports { j { I 32 vector } } \
+    ports { j { I 3 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 14 \
+    id 12 \
     name k \
     type other \
     dir I \

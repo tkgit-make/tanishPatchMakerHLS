@@ -31,7 +31,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1752457581</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -200,7 +200,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>9</bitwidth>
 				</Value>
@@ -240,7 +240,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -264,10 +264,10 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>tmp_52</name>
+						<name>tmp_42</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>440</lineNumber>
+						<lineNumber>444</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -283,7 +283,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>440</second>
+										<second>444</second>
 									</item>
 								</second>
 							</item>
@@ -294,7 +294,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1768190511</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -319,10 +319,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>br_ln440</name>
+						<name>br_ln444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>440</lineNumber>
+						<lineNumber>444</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -338,7 +338,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>440</second>
+										<second>444</second>
 									</item>
 								</second>
 							</item>
@@ -349,7 +349,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>841966703</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -374,10 +374,10 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>zext_ln440</name>
+						<name>zext_ln444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>440</lineNumber>
+						<lineNumber>444</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -393,7 +393,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>440</second>
+										<second>444</second>
 									</item>
 								</second>
 							</item>
@@ -404,7 +404,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769238127</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>9</bitwidth>
 				</Value>
@@ -427,10 +427,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>icmp_ln440</name>
+						<name>icmp_ln444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>440</lineNumber>
+						<lineNumber>444</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -446,7 +446,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>440</second>
+										<second>444</second>
 									</item>
 								</second>
 							</item>
@@ -457,7 +457,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768190511</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -481,10 +481,10 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>br_ln440</name>
+						<name>br_ln444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>440</lineNumber>
+						<lineNumber>444</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -500,7 +500,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>440</second>
+										<second>444</second>
 									</item>
 								</second>
 							</item>
@@ -511,7 +511,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -539,7 +539,7 @@
 						<name>i</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>449</lineNumber>
+						<lineNumber>453</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -555,7 +555,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>449</second>
+										<second>453</second>
 									</item>
 								</second>
 							</item>
@@ -566,7 +566,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>795111282</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -605,7 +605,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1768190511</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -629,10 +629,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>br_ln449</name>
+						<name>br_ln453</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>449</lineNumber>
+						<lineNumber>453</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -648,7 +648,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>449</second>
+										<second>453</second>
 									</item>
 								</second>
 							</item>
@@ -724,10 +724,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>icmp_ln449</name>
+						<name>icmp_ln453</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>449</lineNumber>
+						<lineNumber>453</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -743,7 +743,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>449</second>
+										<second>453</second>
 									</item>
 								</second>
 							</item>
@@ -754,7 +754,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -778,10 +778,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>br_ln449</name>
+						<name>br_ln453</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>449</lineNumber>
+						<lineNumber>453</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -797,7 +797,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>449</second>
+										<second>453</second>
 									</item>
 								</second>
 							</item>
@@ -808,7 +808,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -833,10 +833,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>trunc_ln449</name>
+						<name>trunc_ln453</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>449</lineNumber>
+						<lineNumber>453</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -852,7 +852,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>449</second>
+										<second>453</second>
 									</item>
 								</second>
 							</item>
@@ -889,7 +889,7 @@
 						<name>add</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>449</lineNumber>
+						<lineNumber>453</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -905,7 +905,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>449</second>
+										<second>453</second>
 									</item>
 								</second>
 							</item>
@@ -916,7 +916,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768107834</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -940,10 +940,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>zext_ln466</name>
+						<name>zext_ln470</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -959,7 +959,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -996,7 +996,7 @@
 						<name>tmp</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1012,7 +1012,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -1048,10 +1048,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>zext_ln466_1</name>
+						<name>zext_ln470_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1067,7 +1067,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -1078,7 +1078,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>795111282</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -1101,10 +1101,10 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>add_ln466</name>
+						<name>add_ln470</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1120,7 +1120,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -1131,7 +1131,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -1155,10 +1155,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>zext_ln466_2</name>
+						<name>zext_ln470_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1174,7 +1174,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -1185,7 +1185,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>795111282</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -1211,7 +1211,7 @@
 						<name>tmp_s</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1227,7 +1227,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -1238,7 +1238,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768190511</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>10</bitwidth>
 				</Value>
@@ -1263,10 +1263,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>zext_ln466_3</name>
+						<name>zext_ln470_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1282,7 +1282,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -1316,10 +1316,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>add_ln466_1</name>
+						<name>add_ln470_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1335,7 +1335,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -1346,7 +1346,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1768190511</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -1370,10 +1370,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>br_ln455</name>
+						<name>br_ln459</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1389,7 +1389,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1426,7 +1426,7 @@
 						<name>indvar_flatten</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1442,7 +1442,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1453,7 +1453,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -1482,7 +1482,7 @@
 						<name>a</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1498,7 +1498,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1538,7 +1538,7 @@
 						<name>b</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>461</lineNumber>
+						<lineNumber>465</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1554,7 +1554,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>461</second>
+										<second>465</second>
 									</item>
 								</second>
 							</item>
@@ -1591,10 +1591,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>add_ln455_1</name>
+						<name>add_ln459_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1610,7 +1610,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1621,7 +1621,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -1645,10 +1645,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>icmp_ln455</name>
+						<name>icmp_ln459</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1664,7 +1664,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1675,7 +1675,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1699,10 +1699,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>br_ln455</name>
+						<name>br_ln459</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1718,7 +1718,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1729,7 +1729,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768107834</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1754,10 +1754,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>add_ln455</name>
+						<name>add_ln459</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1773,7 +1773,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1784,7 +1784,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769238127</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -1808,10 +1808,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>icmp_ln461</name>
+						<name>icmp_ln465</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>461</lineNumber>
+						<lineNumber>465</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1827,7 +1827,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>461</second>
+										<second>465</second>
 									</item>
 								</second>
 							</item>
@@ -1838,7 +1838,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1862,10 +1862,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>select_ln455</name>
+						<name>select_ln459</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1881,7 +1881,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1892,7 +1892,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -1917,10 +1917,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>select_ln455_1</name>
+						<name>select_ln459_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>455</lineNumber>
+						<lineNumber>459</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1936,7 +1936,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>455</second>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -1947,7 +1947,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769238127</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -1972,10 +1972,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>zext_ln466_4</name>
+						<name>zext_ln470_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -1991,7 +1991,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2002,7 +2002,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1852793647</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -2025,10 +2025,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>add_ln466_2</name>
+						<name>add_ln470_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2044,7 +2044,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2055,7 +2055,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769238127</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -2079,10 +2079,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>tmp_111_cast</name>
+						<name>tmp_86_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2098,7 +2098,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2109,7 +2109,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -2134,10 +2134,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>trunc_ln466</name>
+						<name>trunc_ln470</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2153,7 +2153,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2164,7 +2164,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685204786</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -2187,10 +2187,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>zext_ln466_5</name>
+						<name>zext_ln470_5</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2206,7 +2206,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2217,7 +2217,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852793647</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -2240,10 +2240,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>add_ln466_3</name>
+						<name>add_ln470_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2259,7 +2259,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2270,7 +2270,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>841966703</coreId>
+						<coreId>1768190511</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -2294,10 +2294,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>tmp_113_cast</name>
+						<name>tmp_88_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2313,7 +2313,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2324,7 +2324,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -2349,10 +2349,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>zext_ln466_6</name>
+						<name>zext_ln470_6</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2368,7 +2368,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2379,7 +2379,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -2402,10 +2402,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>add_ln466_4</name>
+						<name>add_ln470_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2421,7 +2421,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2456,10 +2456,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>zext_ln466_7</name>
+						<name>zext_ln470_7</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2475,7 +2475,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2486,7 +2486,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>795111282</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2512,7 +2512,7 @@
 						<name>patches_superpoints_addr_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2528,7 +2528,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2539,7 +2539,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1919954793</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -2564,10 +2564,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>add_ln466_5</name>
+						<name>add_ln470_5</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2583,7 +2583,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2594,7 +2594,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -2618,10 +2618,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>zext_ln466_8</name>
+						<name>zext_ln470_8</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2637,7 +2637,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2648,7 +2648,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1852793647</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2674,7 +2674,7 @@
 						<name>patches_superpoints_addr_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2690,7 +2690,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2701,7 +2701,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>29</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -2729,7 +2729,7 @@
 						<name>patches_superpoints_load</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2745,7 +2745,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2756,7 +2756,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685204786</coreId>
+						<coreId>29</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2779,10 +2779,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>patches_superpoints_addr_4_write_ln466</name>
+						<name>patches_superpoints_addr_4_write_ln470</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>466</lineNumber>
+						<lineNumber>470</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2798,7 +2798,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>466</second>
+										<second>470</second>
 									</item>
 								</second>
 							</item>
@@ -2834,10 +2834,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>add_ln461</name>
+						<name>add_ln465</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>461</lineNumber>
+						<lineNumber>465</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2853,7 +2853,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>461</second>
+										<second>465</second>
 									</item>
 								</second>
 							</item>
@@ -2864,7 +2864,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685204786</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -2904,7 +2904,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2927,10 +2927,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>br_ln471</name>
+						<name>br_ln475</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2946,7 +2946,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -2957,7 +2957,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>795111282</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2983,7 +2983,7 @@
 						<name>indvar_flatten21</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -2999,7 +2999,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -3010,7 +3010,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768190511</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3039,7 +3039,7 @@
 						<name>a_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3055,7 +3055,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -3066,7 +3066,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1919954793</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3095,7 +3095,7 @@
 						<name>indvar_flatten7</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3111,7 +3111,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -3151,7 +3151,7 @@
 						<name>b_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3167,7 +3167,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -3207,7 +3207,7 @@
 						<name>c</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>483</lineNumber>
+						<lineNumber>487</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3223,7 +3223,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>483</second>
+										<second>487</second>
 									</item>
 								</second>
 							</item>
@@ -3234,7 +3234,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3260,10 +3260,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>add_ln471_1</name>
+						<name>add_ln475_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3279,7 +3279,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -3290,7 +3290,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1935762015</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3314,10 +3314,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>icmp_ln471</name>
+						<name>icmp_ln475</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3333,7 +3333,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -3344,7 +3344,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852139296</coreId>
+						<coreId>1768190511</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3368,10 +3368,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>br_ln471</name>
+						<name>br_ln475</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3387,7 +3387,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -3398,7 +3398,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885414953</coreId>
+						<coreId>1769238127</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3423,10 +3423,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>add_ln471</name>
+						<name>add_ln475</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3442,7 +3442,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -3453,7 +3453,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869438831</coreId>
+						<coreId>1869770799</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3477,10 +3477,10 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>icmp_ln477</name>
+						<name>icmp_ln481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3496,7 +3496,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -3507,7 +3507,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>840979276</coreId>
+						<coreId>1768190511</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3531,10 +3531,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>select_ln471</name>
+						<name>select_ln475</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3550,7 +3550,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -3561,7 +3561,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1634082860</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3586,10 +3586,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>select_ln471_1</name>
+						<name>select_ln475_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3605,7 +3605,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -3616,7 +3616,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885414944</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3641,10 +3641,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>zext_ln488</name>
+						<name>zext_ln492</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3660,7 +3660,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -3671,7 +3671,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>909128543</coreId>
+						<coreId>539782255</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -3694,10 +3694,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>zext_ln488_1</name>
+						<name>zext_ln492_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3713,7 +3713,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -3724,7 +3724,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>674985063</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3747,10 +3747,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>add_ln488</name>
+						<name>add_ln492</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3766,7 +3766,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -3777,7 +3777,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885415483</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3801,10 +3801,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>tmp_53</name>
+						<name>tmp_43</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3820,7 +3820,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -3831,7 +3831,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>2020173407</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>10</bitwidth>
 				</Value>
@@ -3856,10 +3856,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>zext_ln488_2</name>
+						<name>zext_ln492_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3875,7 +3875,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -3886,7 +3886,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852383291</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>63</bitwidth>
 				</Value>
@@ -3909,10 +3909,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>add_ln488_1</name>
+						<name>add_ln492_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3928,7 +3928,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -3939,7 +3939,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>858350948</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -3963,10 +3963,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>tmp_54</name>
+						<name>tmp_44</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -3982,7 +3982,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -3993,7 +3993,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1768843628</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>13</bitwidth>
 				</Value>
@@ -4018,10 +4018,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>zext_ln477</name>
+						<name>zext_ln481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4037,7 +4037,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -4048,7 +4048,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1835083380</coreId>
+						<coreId>536870958</coreId>
 					</Obj>
 					<bitwidth>63</bitwidth>
 				</Value>
@@ -4071,10 +4071,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>xor_ln471</name>
+						<name>xor_ln475</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4090,7 +4090,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -4101,7 +4101,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>825046065</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4125,10 +4125,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>icmp_ln483</name>
+						<name>icmp_ln487</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>483</lineNumber>
+						<lineNumber>487</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4144,7 +4144,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>483</second>
+										<second>487</second>
 									</item>
 								</second>
 							</item>
@@ -4155,7 +4155,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1730572897</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4179,10 +4179,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>and_ln471</name>
+						<name>and_ln475</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>471</lineNumber>
+						<lineNumber>475</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4198,7 +4198,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>471</second>
+										<second>475</second>
 									</item>
 								</second>
 							</item>
@@ -4209,7 +4209,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885420403</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4233,10 +4233,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>add_ln477</name>
+						<name>add_ln481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4252,7 +4252,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -4263,7 +4263,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>544108393</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -4287,10 +4287,10 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>or_ln477</name>
+						<name>or_ln481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4306,7 +4306,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -4317,7 +4317,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1902080097</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4341,10 +4341,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>select_ln477</name>
+						<name>select_ln481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4360,7 +4360,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -4371,7 +4371,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852793647</coreId>
+						<coreId>539782255</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -4396,10 +4396,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>select_ln477_1</name>
+						<name>select_ln481_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4415,7 +4415,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -4426,7 +4426,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1030185332</coreId>
+						<coreId>997223777</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -4451,10 +4451,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>zext_ln488_3</name>
+						<name>zext_ln492_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4470,7 +4470,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4481,7 +4481,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1952542572</coreId>
+						<coreId>657477712</coreId>
 					</Obj>
 					<bitwidth>63</bitwidth>
 				</Value>
@@ -4504,10 +4504,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>add_ln488_2</name>
+						<name>add_ln492_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4523,7 +4523,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4534,7 +4534,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>694510703</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>63</bitwidth>
 				</Value>
@@ -4558,10 +4558,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>trunc_ln488</name>
+						<name>trunc_ln492</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4577,7 +4577,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4588,7 +4588,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1918986339</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>9</bitwidth>
 				</Value>
@@ -4614,7 +4614,7 @@
 						<name>p_shl4_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4630,7 +4630,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4641,7 +4641,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539767593</coreId>
+						<coreId>1764249939</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -4666,10 +4666,10 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>trunc_ln488_1</name>
+						<name>trunc_ln492_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4685,7 +4685,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4696,7 +4696,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1646275700</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -4722,7 +4722,7 @@
 						<name>p_shl5_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4738,7 +4738,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4749,7 +4749,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1814459491</coreId>
+						<coreId>1633820726</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -4774,10 +4774,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>sub_ln488</name>
+						<name>sub_ln492</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4793,7 +4793,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4804,7 +4804,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1936618811</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -4828,10 +4828,10 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>add_ln488_3</name>
+						<name>add_ln492_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4847,7 +4847,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4858,7 +4858,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1634692166</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>63</bitwidth>
 				</Value>
@@ -4882,10 +4882,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>trunc_ln488_2</name>
+						<name>trunc_ln492_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4901,7 +4901,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4912,7 +4912,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852387170</coreId>
+						<coreId>776077358</coreId>
 					</Obj>
 					<bitwidth>9</bitwidth>
 				</Value>
@@ -4938,7 +4938,7 @@
 						<name>p_shl2_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -4954,7 +4954,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -4965,7 +4965,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885415456</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -4990,10 +4990,10 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>trunc_ln488_3</name>
+						<name>trunc_ln492_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5009,7 +5009,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5020,7 +5020,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1730555936</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -5046,7 +5046,7 @@
 						<name>p_shl3_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5062,7 +5062,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5073,7 +5073,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1634082860</coreId>
+						<coreId>1315242030</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5098,10 +5098,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>sub_ln488_1</name>
+						<name>sub_ln492_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5117,7 +5117,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5128,7 +5128,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>858350948</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5152,10 +5152,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>zext_ln488_4</name>
+						<name>zext_ln492_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5171,7 +5171,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5182,7 +5182,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1932485490</coreId>
+						<coreId>775648111</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5205,10 +5205,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>add_ln488_4</name>
+						<name>add_ln492_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5224,7 +5224,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5235,7 +5235,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1814445426</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5259,10 +5259,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>zext_ln488_5</name>
+						<name>zext_ln492_5</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5278,7 +5278,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5289,7 +5289,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1701082476</coreId>
+						<coreId>1349674352</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5315,7 +5315,7 @@
 						<name>patches_parameters_V_addr_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5331,7 +5331,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5342,7 +5342,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1814445426</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5367,10 +5367,10 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>add_ln488_5</name>
+						<name>add_ln492_5</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5386,7 +5386,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5397,7 +5397,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>825319216</coreId>
+						<coreId>1735289204</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5421,10 +5421,10 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>zext_ln488_6</name>
+						<name>zext_ln492_6</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5440,7 +5440,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5451,7 +5451,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1747871091</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5477,7 +5477,7 @@
 						<name>patches_parameters_V_addr_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5493,7 +5493,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5504,7 +5504,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>840979276</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5532,7 +5532,7 @@
 						<name>patches_parameters_V_load</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5548,7 +5548,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5559,7 +5559,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1936484447</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -5582,10 +5582,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>patches_parameters_V_addr_2_write_ln488</name>
+						<name>patches_parameters_V_addr_2_write_ln492</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>488</lineNumber>
+						<lineNumber>492</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5601,7 +5601,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>488</second>
+										<second>492</second>
 									</item>
 								</second>
 							</item>
@@ -5612,7 +5612,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>875639328</coreId>
+						<coreId>1601465961</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5637,10 +5637,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>add_ln483</name>
+						<name>add_ln487</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>483</lineNumber>
+						<lineNumber>487</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5656,7 +5656,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>483</second>
+										<second>487</second>
 									</item>
 								</second>
 							</item>
@@ -5667,7 +5667,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539119430</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5691,10 +5691,10 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>add_ln477_1</name>
+						<name>add_ln481_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5710,7 +5710,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -5721,7 +5721,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953392991</coreId>
+						<coreId>1936683105</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -5745,10 +5745,10 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>select_ln477_2</name>
+						<name>select_ln481_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>477</lineNumber>
+						<lineNumber>481</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5764,7 +5764,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>477</second>
+										<second>481</second>
 									</item>
 								</second>
 							</item>
@@ -5775,7 +5775,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1634235183</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -5816,7 +5816,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1886216486</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5842,7 +5842,7 @@
 						<name>i_13</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>449</lineNumber>
+						<lineNumber>453</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -5858,7 +5858,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>449</second>
+										<second>453</second>
 									</item>
 								</second>
 							</item>
@@ -5869,7 +5869,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1752457581</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -5909,7 +5909,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1651076195</coreId>
+						<coreId>997195822</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5932,7 +5932,7 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>empty_115</name>
+						<name>empty_99</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -5948,7 +5948,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685204786</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -5971,7 +5971,7 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>tmp_106_cast</name>
+						<name>tmp_81_cast</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -5987,7 +5987,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1684371561</coreId>
+						<coreId>1751326820</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6012,7 +6012,7 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>tmp_40</name>
+						<name>tmp_29</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6028,7 +6028,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1684371561</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6053,7 +6053,7 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>empty_116</name>
+						<name>empty_100</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6069,7 +6069,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>540767335</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6093,7 +6093,7 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>empty_117</name>
+						<name>empty_101</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6109,7 +6109,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>543516513</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -6132,7 +6132,7 @@
 					<Obj>
 						<type>0</type>
 						<id>144</id>
-						<name>tmp_108_cast</name>
+						<name>tmp_83_cast</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6148,7 +6148,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1601200424</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6173,7 +6173,7 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>tmp_41</name>
+						<name>tmp_30</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6189,7 +6189,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>909587510</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -6214,7 +6214,7 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>tmp_109_cast</name>
+						<name>tmp_84_cast</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6230,7 +6230,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1702129263</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6253,7 +6253,7 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>empty_118</name>
+						<name>empty_102</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6269,7 +6269,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1684370017</coreId>
+						<coreId>539782255</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6293,10 +6293,10 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>br_ln499</name>
+						<name>br_ln503</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>499</lineNumber>
+						<lineNumber>503</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -6312,7 +6312,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>499</second>
+										<second>503</second>
 									</item>
 								</second>
 							</item>
@@ -6323,7 +6323,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852795252</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6346,7 +6346,7 @@
 					<Obj>
 						<type>0</type>
 						<id>150</id>
-						<name>empty_119</name>
+						<name>empty_103</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6362,7 +6362,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1684370017</coreId>
+						<coreId>1953392991</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6388,7 +6388,7 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>empty_120</name>
+						<name>empty_104</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6404,7 +6404,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953067621</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6444,7 +6444,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>741681509</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -6484,7 +6484,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>842019375</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6525,7 +6525,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869966953</coreId>
+						<coreId>1852399472</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6548,7 +6548,7 @@
 					<Obj>
 						<type>0</type>
 						<id>158</id>
-						<name>empty_122</name>
+						<name>empty_106</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6564,7 +6564,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1869770799</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6604,7 +6604,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539767347</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6643,7 +6643,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1701080941</coreId>
+						<coreId>1936417647</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6684,7 +6684,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>807414832</coreId>
+						<coreId>1634885968</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6724,7 +6724,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1601200424</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6763,7 +6763,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1031301478</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6786,7 +6786,7 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>empty_123</name>
+						<name>empty_107</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6802,7 +6802,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1630019628</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6828,7 +6828,7 @@
 					<Obj>
 						<type>0</type>
 						<id>167</id>
-						<name>empty_124</name>
+						<name>empty_108</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -6844,7 +6844,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885415456</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6884,7 +6884,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1969188961</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -6924,7 +6924,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>808595315</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6965,7 +6965,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1936482662</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6988,7 +6988,7 @@
 					<Obj>
 						<type>0</type>
 						<id>174</id>
-						<name>empty_126</name>
+						<name>empty_110</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7004,7 +7004,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1702195828</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -7044,7 +7044,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1919950882</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -7083,7 +7083,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1226980729</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -7124,7 +7124,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>674985063</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7164,7 +7164,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1952917093</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7187,10 +7187,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>n_patches_write_ln505</name>
+						<name>n_patches_write_ln509</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>505</lineNumber>
+						<lineNumber>509</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -7206,7 +7206,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>505</second>
+										<second>509</second>
 									</item>
 								</second>
 							</item>
@@ -7217,7 +7217,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1769300575</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7242,10 +7242,10 @@
 					<Obj>
 						<type>0</type>
 						<id>181</id>
-						<name>br_ln506</name>
+						<name>br_ln510</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>506</lineNumber>
+						<lineNumber>510</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -7261,7 +7261,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>506</second>
+										<second>510</second>
 									</item>
 								</second>
 							</item>
@@ -7272,7 +7272,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953394531</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7295,10 +7295,10 @@
 					<Obj>
 						<type>0</type>
 						<id>183</id>
-						<name>_ln506</name>
+						<name>_ln510</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>506</lineNumber>
+						<lineNumber>510</lineNumber>
 						<contextFuncName>delete_patch</contextFuncName>
 						<contextNormFuncName>delete_patch</contextNormFuncName>
 						<inlineStackInfo>
@@ -7314,7 +7314,7 @@
 											<first>patchMaker.cpp</first>
 											<second>delete_patch</second>
 										</first>
-										<second>506</second>
+										<second>510</second>
 									</item>
 								</second>
 							</item>
@@ -7325,7 +7325,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1701273971</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7367,7 +7367,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1651076195</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -7395,7 +7395,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1651076195</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -7423,7 +7423,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685417059</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -7451,7 +7451,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1752457581</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -7507,7 +7507,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1651076195</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -7535,7 +7535,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1651076195</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -7591,7 +7591,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1651076195</coreId>
+						<coreId>1685417059</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -7647,7 +7647,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1752457581</coreId>
+						<coreId>1685417059</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -7675,7 +7675,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1752457581</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>4</bitwidth>
 				</Value>
@@ -7759,7 +7759,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1651076195</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -7787,7 +7787,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1685417059</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -7815,7 +7815,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1685417059</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -7843,7 +7843,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685417059</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -7899,7 +7899,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685417059</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -7927,7 +7927,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1685417059</coreId>
+						<coreId>673201714</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -8047,7 +8047,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1702060387</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>3</count>
@@ -8077,7 +8077,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>825242426</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>3</count>
@@ -8107,7 +8107,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>825898289</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>11</count>
@@ -8145,7 +8145,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1886337594</coreId>
+					<coreId>1702060387</coreId>
 				</Obj>
 				<node_objs>
 					<count>6</count>
@@ -8178,7 +8178,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>691286586</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>22</count>
@@ -8227,7 +8227,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1601465961</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -8255,7 +8255,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>539768105</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>8</count>
@@ -8290,7 +8290,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>979661939</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>45</count>
@@ -8362,7 +8362,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>960245618</coreId>
+					<coreId>1668571504</coreId>
 				</Obj>
 				<node_objs>
 					<count>2</count>
@@ -8391,7 +8391,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1885415456</coreId>
+					<coreId>740703794</coreId>
 				</Obj>
 				<node_objs>
 					<count>10</count>
@@ -8428,7 +8428,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1130722924</coreId>
+					<coreId>1885413420</coreId>
 				</Obj>
 				<node_objs>
 					<count>4</count>
@@ -8459,7 +8459,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1702060386</coreId>
+					<coreId>1769172597</coreId>
 				</Obj>
 				<node_objs>
 					<count>6</count>
@@ -8492,7 +8492,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1650420068</coreId>
+					<coreId>1819242338</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -8520,7 +8520,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1952542067</coreId>
+					<coreId>1701734249</coreId>
 				</Obj>
 				<node_objs>
 					<count>4</count>
@@ -8551,7 +8551,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>874640726</coreId>
+					<coreId>939534640</coreId>
 				</Obj>
 				<node_objs>
 					<count>6</count>
@@ -8584,7 +8584,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>942759729</coreId>
+					<coreId>1953523295</coreId>
 				</Obj>
 				<node_objs>
 					<count>2</count>
@@ -8613,7 +8613,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1970234400</coreId>
+					<coreId>741487420</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>

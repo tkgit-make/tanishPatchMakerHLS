@@ -22,20 +22,20 @@ input  [31:0] nPatchesInColumn;
 input  [31:0] projectionOfCornerToBeam;
 output  [0:0] ap_return;
 
-wire   [0:0] icmp_ln710_fu_38_p2;
-wire   [0:0] icmp_ln710_1_fu_44_p2;
-wire   [0:0] and_ln710_fu_50_p2;
+wire   [0:0] icmp_ln714_fu_38_p2;
+wire   [0:0] icmp_ln714_1_fu_44_p2;
+wire   [0:0] and_ln714_fu_50_p2;
 wire   [0:0] icmp_ln886_fu_32_p2;
 
-assign and_ln710_fu_50_p2 = (icmp_ln710_fu_38_p2 & icmp_ln710_1_fu_44_p2);
+assign and_ln714_fu_50_p2 = (icmp_ln714_fu_38_p2 & icmp_ln714_1_fu_44_p2);
 
 assign ap_ready = 1'b1;
 
-assign ap_return = (icmp_ln886_fu_32_p2 & and_ln710_fu_50_p2);
+assign ap_return = (icmp_ln886_fu_32_p2 & and_ln714_fu_50_p2);
 
-assign icmp_ln710_1_fu_44_p2 = (($signed(projectionOfCornerToBeam) < $signed(32'd15000000)) ? 1'b1 : 1'b0);
+assign icmp_ln714_1_fu_44_p2 = (($signed(projectionOfCornerToBeam) < $signed(32'd15000000)) ? 1'b1 : 1'b0);
 
-assign icmp_ln710_fu_38_p2 = (($signed(nPatchesInColumn) < $signed(32'd100000000)) ? 1'b1 : 1'b0);
+assign icmp_ln714_fu_38_p2 = (($signed(nPatchesInColumn) < $signed(32'd100000000)) ? 1'b1 : 1'b0);
 
 assign icmp_ln886_fu_32_p2 = (($signed(c_corner) > $signed(32'd4244967196)) ? 1'b1 : 1'b0);
 

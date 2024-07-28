@@ -77,13 +77,13 @@ set NewPortList {[
  	{ "name": "zTopMax", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "zTopMax", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "7", "8", "9", "10", "11", "12"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "5", "6", "7", "8", "9", "10"],
 		"CDFG" : "getShadows",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1290", "EstimateLatencyMax" : "1290",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "334", "EstimateLatencyMax" : "334",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -97,16 +97,16 @@ set RtlHierarchyInfo {[
 			{"Name" : "wp_parameters_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zTopMin", "Type" : "None", "Direction" : "I"},
 			{"Name" : "zTopMax", "Type" : "None", "Direction" : "I"},
-			{"Name" : "radii", "Type" : "Memory", "Direction" : "I",
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_297", "Port" : "radii"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6"],
+					{"ID" : "1", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_297", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297", "Parent" : "0", "Child" : ["2", "3", "4"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "1",
-		"VariableLatency" : "0", "ExactLatency" : "63", "EstimateLatencyMin" : "63", "EstimateLatencyMax" : "63",
+		"VariableLatency" : "0", "ExactLatency" : "3", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "1",
@@ -119,42 +119,40 @@ set RtlHierarchyInfo {[
 			{"Name" : "i", "Type" : "None", "Direction" : "I"},
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
-			{"Name" : "radii", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297.radii_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297.mul_26s_32s_57_1_1_U3", "Parent" : "1"},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297.mul_26s_32s_57_1_1_U4", "Parent" : "1"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297.sdiv_57ns_26s_32_61_1_U5", "Parent" : "1"},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297.sdiv_57ns_26s_32_61_1_U6", "Parent" : "1"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.urem_57s_4ns_57_61_seq_1_U140", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_2_1_U141", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_2_1_U142", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_42_32_1_1_U143", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_42_32_1_1_U144", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_42_32_1_1_U145", "Parent" : "0"}]}
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297.radiiDivisionList_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297.mul_4s_4s_8_1_1_U3", "Parent" : "1"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_straightLineProjectorFromLayerIJtoK_fu_297.mul_35ns_33s_64_1_1_U4", "Parent" : "1"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.urem_57s_4ns_57_61_seq_1_U122", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_2_1_U123", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_64ns_66ns_129_2_1_U124", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_42_32_1_1_U125", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_42_32_1_1_U126", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_42_32_1_1_U127", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	getShadows {
-		patches_superpoints {Type I LastRead 125 FirstWrite -1}
+		patches_superpoints {Type I LastRead 65 FirstWrite -1}
 		wp_superpoints {Type I LastRead 0 FirstWrite -1}
 		wp_parameters {Type IO LastRead 9 FirstWrite 1}
 		wp_parameters_offset {Type I LastRead 0 FirstWrite -1}
 		zTopMin {Type I LastRead 0 FirstWrite -1}
 		zTopMax {Type I LastRead 0 FirstWrite -1}
-		radii {Type I LastRead -1 FirstWrite -1}}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
 	straightLineProjectorFromLayerIJtoK {
 		z_i {Type I LastRead 0 FirstWrite -1}
 		z_j {Type I LastRead 0 FirstWrite -1}
 		i {Type I LastRead 0 FirstWrite -1}
 		j {Type I LastRead 0 FirstWrite -1}
 		k {Type I LastRead 0 FirstWrite -1}
-		radii {Type I LastRead -1 FirstWrite -1}}}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1290", "Max" : "1290"}
-	, {"Name" : "Interval", "Min" : "1290", "Max" : "1290"}
+	{"Name" : "Latency", "Min" : "334", "Max" : "334"}
+	, {"Name" : "Interval", "Min" : "334", "Max" : "334"}
 ]}
 
 set PipelineEnableSignalInfo {[

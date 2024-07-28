@@ -1,90 +1,5 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 90
-set name MPSQ_sitodp_64ns_64_4_no_dsp_1
-set corename simcore_sitodp
-set op sitodp
-set stage_num 4
-set max_latency -1
-set registered_input 1
-set impl_style no_dsp
-set Futype4reduceCEFanout 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 64
-set in0_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 64
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_sitodp] == "ap_gen_simcore_sitodp"} {
-eval "ap_gen_simcore_sitodp { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    style ${impl_style} \
-    Futype4reduceCEFanout ${Futype4reduceCEFanout} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_sitodp, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op sitodp
-set corename Int2Double
-if {${::AESL::PGuard_autocg_gen} && (${::AESL::PGuard_autocg_fpip} || ${::AESL::PGuard_autocg_fpv6en} || ${::AESL::PGuard_autocg_hpen})} {
-if {[info proc ::AESL_LIB_XILINX_FPV6::fpv6_gen] == "::AESL_LIB_XILINX_FPV6::fpv6_gen"} {
-eval "::AESL_LIB_XILINX_FPV6::fpv6_gen { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    style ${impl_style} \
-    Futype4reduceCEFanout ${Futype4reduceCEFanout} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your platform lib"
-}
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -96,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 92 \
+    id 79 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -115,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 98 \
+    id 85 \
     name patches_parameters \
     reset_level 1 \
     sync_rst true \
@@ -133,7 +48,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 93 \
+    id 80 \
     name lastPatchIndex \
     type other \
     dir I \
@@ -148,7 +63,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 94 \
+    id 81 \
     name repeat_original \
     type other \
     dir I \
@@ -163,7 +78,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 95 \
+    id 82 \
     name white_space_height \
     type other \
     dir I \
@@ -178,7 +93,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 96 \
+    id 83 \
     name previous_white_space_height \
     type other \
     dir I \
@@ -193,7 +108,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 97 \
+    id 84 \
     name current_z_top_index \
     type other \
     dir I \

@@ -18,7 +18,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.650</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.868</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -41,17 +41,17 @@
 </TripCount>
 <Latency>
 <range>
-<min>22</min>
-<max>131</max>
+<min>21</min>
+<max>125</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
-<min>110</min>
-<max>655</max>
+<min>105</min>
+<max>625</max>
 </range>
 </AbsoluteTimeLatency>
-<IterationLatency>22</IterationLatency>
+<IterationLatency>21</IterationLatency>
 </solveNextPatchPair_superPointEqualCheck>
 <solvePatchPair_loop>
 <TripCount>undef</TripCount>
@@ -65,9 +65,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>9</BRAM_18K>
-<DSP>103</DSP>
-<FF>147306</FF>
-<LUT>141107</LUT>
+<DSP>72</DSP>
+<FF>47233</FF>
+<LUT>61605</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

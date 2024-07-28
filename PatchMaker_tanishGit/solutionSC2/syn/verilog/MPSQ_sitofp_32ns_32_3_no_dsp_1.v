@@ -7,7 +7,7 @@
 
 module MPSQ_sitofp_32ns_32_3_no_dsp_1
 #(parameter
-    ID         = 109,
+    ID         = 95,
     NUM_STAGE  = 3,
     din0_WIDTH = 32,
     dout_WIDTH = 32

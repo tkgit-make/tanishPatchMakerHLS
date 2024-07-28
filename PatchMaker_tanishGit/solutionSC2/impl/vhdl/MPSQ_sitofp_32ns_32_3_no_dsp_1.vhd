@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity MPSQ_sitofp_32ns_32_3_no_dsp_1 is
     generic (
-        ID         : integer := 109;
+        ID         : integer := 95;
         NUM_STAGE  : integer := 3;
         din0_WIDTH : integer := 32;
         dout_WIDTH : integer := 32
