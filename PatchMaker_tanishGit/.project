@@ -72,6 +72,11 @@
 			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC3/.tcls</location>
 		</link>
 		<link>
+			<name>solutionSC4/constraints</name>
+			<type>2</type>
+			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/.tcls</location>
+		</link>
+		<link>
 			<name>solutionTEST/constraints</name>
 			<type>2</type>
 			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionTEST/.tcls</location>
@@ -160,6 +165,21 @@
 			<name>solutionSC3/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC3/script.tcl</location>
+		</link>
+		<link>
+			<name>solutionSC4/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/solutionSC4.directive</location>
+		</link>
+		<link>
+			<name>solutionSC4/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/directives.tcl</location>
+		</link>
+		<link>
+			<name>solutionSC4/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/script.tcl</location>
 		</link>
 		<link>
 			<name>solutionTEST/constraints/.xml.directive</name>

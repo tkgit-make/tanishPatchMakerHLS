@@ -80,7 +80,38 @@ solve_loop:
 #pragma HLS array_partition variable=GDarrayPostSort
 #pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarrayPostSort bundle=GDarrayPostSort_b
 
-    MPSQ(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
+    long tempArray[200];
+
+    for(int i = 0; i < 200; i++)
+	{
+		tempArray[i] = 0;
+	}
+
+    MPSQ(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints, tempArray);
+
+    for(int i = 0; i < 200; i++)
+    {
+		cout << tempArray[i] << endl;
+    }
+    /*
+
+    SPACEPOINT_TYPE currentVal2 = 0;
+    tempStream.read(currentVal2);
+
+    cout << currentVal2 << endl;
+
+    for(int_type i = 20; i < 21; i++)
+    {
+        for(int j = 0; j < 7; j++)
+        {
+            SPACEPOINT_TYPE currentVal = 0;
+            tempStream.read(currentVal);
+
+            cout << currentVal << endl; 
+        }
+        cout << "---" << endl;
+    }*/
+
 #if PRINT_OUTS == true
     cout << "n_patches = " << n_patches << endl;
 

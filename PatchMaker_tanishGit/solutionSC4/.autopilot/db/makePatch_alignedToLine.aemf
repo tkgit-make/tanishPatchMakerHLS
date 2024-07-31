@@ -1,0 +1,1973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722395201782">
+  <ports id="1" name="n_patches" type="PortType" coreId="2612090640" bitwidth="8" direction="DirInOut">
+    <dataInputObjs>read</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="GDn_points" type="PortType" coreName="RAM" coreId="1869881447" bitwidth="32" iftype="IfTypeRegister" arraysize="5">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="z_top" type="PortType" coreId="8" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="p_read" type="PortType" coreId="1601200416" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="GDarrayDecoded" type="PortType" coreName="RAM" coreId="2611198561" bitwidth="32" iftype="IfTypeRegister" arraysize="2560">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="6" name="patches_superpoints" type="PortType" coreName="RAM" coreId="2612083784" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="2560">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="7" name="patches_parameters" type="PortType" coreName="RAM" coreId="2611199043" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="3840">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <edges id="172" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="174" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="179" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="187" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="189" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="192" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="199" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="202" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="205" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="208" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="211" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="212" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="213" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="214" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="215" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="221" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="223" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="224" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="232" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="233" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="239" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="244" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="248" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="250" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="253" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="257" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="258" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="259" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="260" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="261" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="264" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="268" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="271" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="274" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="276" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="278" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0" is_back_edge="1"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.0" is_back_edge="1"/>
+  <edges id="281" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="282" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="284" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="287" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="288" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="289" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="290" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="293" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="294" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="295" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="296" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="297" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="298" source_obj="//@ports.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="299" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="300" source_obj="//@regions.1/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="301" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="303" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="304" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="305" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="307" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="308" source_obj="//@regions.1/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="309" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="311" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="312" source_obj="//@regions.1/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="315" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="316" source_obj="//@regions.1/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="317" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="319" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.4"/>
+  <edges id="320" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.5"/>
+  <edges id="322" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.6"/>
+  <edges id="324" source_obj="//@regions.1/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.7"/>
+  <edges id="325" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.7"/>
+  <edges id="326" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.7"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="328" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="330" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="332" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="334" source_obj="//@regions.1/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="335" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="336" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="337" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="339" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="341" source_obj="//@regions.1/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <edges id="342" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.6"/>
+  <edges id="344" source_obj="//@regions.1/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.7"/>
+  <edges id="346" source_obj="//@regions.1/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.8"/>
+  <edges id="347" source_obj="//@regions.1/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.8"/>
+  <edges id="348" source_obj="//@regions.1/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.9"/>
+  <edges id="350" source_obj="//@regions.1/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.10"/>
+  <edges id="351" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.10"/>
+  <edges id="352" source_obj="//@regions.1/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.11"/>
+  <edges id="354" source_obj="//@regions.1/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.11"/>
+  <edges id="355" source_obj="//@regions.1/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.12"/>
+  <edges id="356" source_obj="//@regions.1/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.12"/>
+  <edges id="357" source_obj="//@regions.1/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.12"/>
+  <edges id="358" source_obj="//@regions.1/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.13"/>
+  <edges id="359" source_obj="//@regions.1/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.14"/>
+  <edges id="360" source_obj="//@regions.1/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.14"/>
+  <edges id="361" source_obj="//@regions.1/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.15"/>
+  <edges id="363" source_obj="//@regions.1/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.16"/>
+  <edges id="364" source_obj="//@regions.1/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.17"/>
+  <edges id="365" source_obj="//@regions.1/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.17"/>
+  <edges id="366" source_obj="//@regions.1/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.18"/>
+  <edges id="367" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.19"/>
+  <edges id="369" source_obj="//@regions.1/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.19"/>
+  <edges id="371" source_obj="//@regions.1/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.20"/>
+  <edges id="372" source_obj="//@regions.1/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.21"/>
+  <edges id="374" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.22"/>
+  <edges id="376" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.23"/>
+  <edges id="378" source_obj="//@regions.1/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.23"/>
+  <edges id="379" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.24"/>
+  <edges id="380" source_obj="//@regions.2/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="381" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="383" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.0"/>
+  <edges id="384" source_obj="//@regions.2/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="385" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="387" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.1"/>
+  <edges id="388" source_obj="//@regions.2/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="389" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="392" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.2"/>
+  <edges id="393" source_obj="//@regions.2/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="394" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.3" is_back_edge="1"/>
+  <edges id="396" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.3"/>
+  <edges id="397" source_obj="//@regions.2/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="398" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4" is_back_edge="1"/>
+  <edges id="400" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.4"/>
+  <edges id="401" source_obj="//@regions.2/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.5"/>
+  <edges id="403" source_obj="//@regions.2/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.6"/>
+  <edges id="406" source_obj="//@regions.2/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.7"/>
+  <edges id="407" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.7"/>
+  <edges id="408" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@regions.2/@basic_blocks.0/@node_objs.7"/>
+  <edges id="409" source_obj="//@regions.2/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.0"/>
+  <edges id="411" source_obj="//@regions.2/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.1"/>
+  <edges id="414" source_obj="//@regions.2/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.2"/>
+  <edges id="416" source_obj="//@regions.2/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.2"/>
+  <edges id="417" source_obj="//@regions.2/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.3"/>
+  <edges id="418" source_obj="//@regions.2/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.3"/>
+  <edges id="419" source_obj="//@regions.2/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.3"/>
+  <edges id="422" source_obj="//@regions.2/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.4"/>
+  <edges id="424" source_obj="//@regions.2/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.5"/>
+  <edges id="425" source_obj="//@regions.2/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.6"/>
+  <edges id="427" source_obj="//@regions.2/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.7"/>
+  <edges id="430" source_obj="//@regions.2/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.8"/>
+  <edges id="431" source_obj="//@regions.2/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.8"/>
+  <edges id="432" source_obj="//@regions.2/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.9"/>
+  <edges id="434" source_obj="//@regions.2/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.10"/>
+  <edges id="435" source_obj="//@regions.2/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.10"/>
+  <edges id="436" source_obj="//@regions.2/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.11"/>
+  <edges id="438" source_obj="//@regions.2/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.11"/>
+  <edges id="439" source_obj="//@regions.2/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.12"/>
+  <edges id="440" source_obj="//@regions.2/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.12"/>
+  <edges id="441" source_obj="//@regions.2/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.12"/>
+  <edges id="442" source_obj="//@regions.2/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.13"/>
+  <edges id="443" source_obj="//@regions.2/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.14"/>
+  <edges id="444" source_obj="//@regions.2/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.14"/>
+  <edges id="445" source_obj="//@regions.2/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.15"/>
+  <edges id="448" source_obj="//@regions.2/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.16"/>
+  <edges id="452" source_obj="//@regions.2/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.17"/>
+  <edges id="455" source_obj="//@regions.2/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.18"/>
+  <edges id="456" source_obj="//@regions.2/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.18"/>
+  <edges id="457" source_obj="//@regions.2/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.19"/>
+  <edges id="458" source_obj="//@regions.2/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.20"/>
+  <edges id="459" source_obj="//@regions.2/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.20"/>
+  <edges id="460" source_obj="//@regions.2/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.21"/>
+  <edges id="461" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.22"/>
+  <edges id="463" source_obj="//@regions.2/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.22"/>
+  <edges id="465" source_obj="//@regions.2/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.23"/>
+  <edges id="466" source_obj="//@regions.2/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.24"/>
+  <edges id="468" source_obj="//@regions.2/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.25"/>
+  <edges id="471" source_obj="//@regions.2/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.26"/>
+  <edges id="473" source_obj="//@regions.2/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.26"/>
+  <edges id="474" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@regions.2/@basic_blocks.1/@node_objs.27"/>
+  <edges id="477" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="478" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="479" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="482" source_obj="//@ports.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="485" source_obj="//@ports.0" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="486" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="487" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="488" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="489" source_obj="//@ports.5" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="490" source_obj="//@ports.6" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="491" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="492" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="493" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="635" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="636" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="637" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="638" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="639" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="640" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="641" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="642" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2" is_back_edge="1"/>
+  <edges id="643" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="644" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="645" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="646" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="647" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.2/@basic_blocks.0"/>
+  <edges id="648" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@blocks.6"/>
+  <edges id="649" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.0" sink_obj="//@regions.2/@basic_blocks.1"/>
+  <edges id="650" edge_type="CtrlEdge" source_obj="//@regions.2/@basic_blocks.1" sink_obj="//@regions.2/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="651" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="652" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="653" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="-482" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@ports.0"/>
+  <edges id="-485" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@ports.0"/>
+  <edges id="-489" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@ports.5"/>
+  <edges id="-490" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@ports.6"/>
+  <blocks id="19" name="block_19" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_29</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="p_read_1" coreId="2147483647" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>p_read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="z_top_read" coreId="2612289616" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>z_top</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="init_patch_V" lineNumber="1406" originalName="init_patch.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="init_patch_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="makePatch_alignedToLine" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1406" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="NPpatches_superpoints_V" lineNumber="1449" originalName="NPpatches_superpoints.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="NPpatches_superpoints_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="makePatch_alignedToLine" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1449" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="NPpatches_parameters_V" lineNumber="1479" originalName="NPpatches_parameters.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="NPpatches_parameters_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="makePatch_alignedToLine" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1479" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="br_ln1414" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="makePatch_alignedToLine" opcode="br" m_display="0" m_delay="0.38" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <controlInputObjs>block_29</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>1406</validLinenumbers>
+      <validLinenumbers>1449</validLinenumbers>
+      <validLinenumbers>1479</validLinenumbers>
+      <validLinenumbers>1414</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="63" name=".preheader2.preheader" type="BlockType">
+    <controlInputObjs>block_29</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln1440" lineNumber="1440" fileName="patchMaker.cpp" fileDirectory=".." coreId="4127434966" contextFuncName="makePatch_alignedToLine" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1440" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <controlInputObjs>.preheader2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>1440</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="69" name=".preheader2" type="BlockType">
+    <controlInputObjs>.preheader2.preheader</controlInputObjs>
+    <controlInputObjs>.split14</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader1.preheader.preheader</controlOutputObjs>
+    <controlOutputObjs>.split14</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="i" lineNumber="1440" originalName="i" fileName="patchMaker.cpp" fileDirectory=".." coreId="4088763744" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1440" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <controlInputObjs>.split14</controlInputObjs>
+      <controlInputObjs>.preheader2.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="add_ln1440" lineNumber="1440" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1440_fu_564_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.57" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1440" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="icmp_ln1440" lineNumber="1440" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1440_fu_570_p2" opType="icmp" coreId="4129466613" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.49" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1440" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln1440" lineNumber="1440" fileName="patchMaker.cpp" fileDirectory=".." coreId="4050098098" contextFuncName="makePatch_alignedToLine" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1440" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split14</controlInputObjs>
+      <controlInputObjs>.preheader1.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>1440</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="73" name=".split14" type="BlockType">
+    <controlInputObjs>.preheader2</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="_ln1445" lineNumber="1445" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_makeSuperPoint_alignedToLine7_fu_376" coreId="4131498132" contextFuncName="makePatch_alignedToLine" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="0.69" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1445" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataInputObjs>GDn_points</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>GDarrayDecoded</dataInputObjs>
+      <constName>makeSuperPoint_alignedToLine7</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln0" coreId="4074542095" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>1445</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="75" name=".preheader1.preheader.preheader" type="BlockType">
+    <controlInputObjs>.preheader2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader1.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="br_ln1457" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." coreId="4070478921" contextFuncName="makePatch_alignedToLine" opcode="br" nodeLabel="3.0" m_display="0" m_delay="0.38" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <controlInputObjs>.preheader1.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>1457</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="119" name=".preheader.preheader.preheader" type="BlockType">
+    <controlInputObjs>.preheader1.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="br_ln1487" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." coreId="4223118690" contextFuncName="makePatch_alignedToLine" opcode="br" nodeLabel="6.0" m_display="0" m_delay="0.38" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>1487</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="169" name="block_169" type="BlockType">
+    <controlInputObjs>.preheader.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="_ln1511" lineNumber="1511" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_wedgePatch_init_fu_393" coreId="4210928680" contextFuncName="makePatch_alignedToLine" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1511" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>wedgePatch_init</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="166" name="n_patches_read" lineNumber="1514" fileName="patchMaker.cpp" fileDirectory=".." coreId="4257719058" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="read" nodeLabel="9.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1514" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataInputObjs>n_patches</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>n_patches</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="167" name="_ln1514" lineNumber="1514" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_add_patch5_fu_402" coreId="4180389886" contextFuncName="makePatch_alignedToLine" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="3.1" m_topoIndex="120" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1514" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+      <dataInputObjs>n_patches</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>patches_superpoints</dataInputObjs>
+      <dataInputObjs>patches_parameters</dataInputObjs>
+      <dataOutputObjs>n_patches</dataOutputObjs>
+      <dataOutputObjs>patches_superpoints</dataOutputObjs>
+      <dataOutputObjs>patches_parameters</dataOutputObjs>
+      <constName>add_patch5</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="168" name="_ln0" coreId="4231242470" opcode="ret" nodeLabel="11.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1"/>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>1511</validLinenumbers>
+      <validLinenumbers>1514</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="658" pipe_depth="1" RegionName="makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter">
+    <basic_blocks id="29" name="block_29" type="BlockType">
+      <controlInputObjs>block_19</controlInputObjs>
+      <controlInputObjs>.split20</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader2.preheader</controlOutputObjs>
+      <controlOutputObjs>.split20</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="indvar_flatten13" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." coreId="2609796688" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>block_19</controlInputObjs>
+        <controlInputObjs>.split20</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="a" lineNumber="1414" originalName="a" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>block_19</controlInputObjs>
+        <controlInputObjs>.split20</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="indvar_flatten" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." coreId="1835365481" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>block_19</controlInputObjs>
+        <controlInputObjs>.split20</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="b" lineNumber="1420" originalName="b" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>block_19</controlInputObjs>
+        <controlInputObjs>.split20</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="c" lineNumber="1426" originalName="c" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="makePatch_alignedToLine" bitwidth="2" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1426" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>block_19</controlInputObjs>
+        <controlInputObjs>.split20</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="add_ln1414_1" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1414_1_fu_415_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.7" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="icmp_ln1414" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1414_fu_421_p2" opType="icmp" coreId="4115245980" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.58" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln1414" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." coreId="4123372304" contextFuncName="makePatch_alignedToLine" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split20</controlInputObjs>
+        <controlInputObjs>.preheader2.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="patchMaker.cpp">
+        <validLinenumbers>1414</validLinenumbers>
+        <validLinenumbers>1420</validLinenumbers>
+        <validLinenumbers>1426</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="61" name=".split20" type="BlockType">
+      <controlInputObjs>block_29</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_29</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="add_ln1414" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1414_fu_427_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.57" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="icmp_ln1420" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1420_fu_433_p2" opType="icmp" coreId="4155943265" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.59" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="select_ln1414" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1414_fu_439_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.27" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="select_ln1414_1" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1414_1_fu_447_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.27" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="tmp" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_fu_455_p3" coreId="4117277619" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="zext_ln1420" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1420_fu_463_p1" coreId="4035876441" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="xor_ln1414" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." rtlName="xor_ln1414_fu_467_p2" opType="xor" coreId="4084700578" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="icmp_ln1426" lineNumber="1426" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1426_fu_473_p2" opType="icmp" coreId="4107119128" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.34" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1426" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="and_ln1414" lineNumber="1414" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln1414_fu_479_p2" opType="and" coreId="4121340785" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_delay="0.12" m_topoIndex="23" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1414" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="add_ln1420" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1420_fu_485_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.7" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="or_ln1420" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln1420_fu_491_p2" opType="or" coreId="4109150783" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="select_ln1420" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1420_fu_497_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="2" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.27" m_topoIndex="26" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="select_ln1420_1" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1420_1_fu_505_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.27" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="zext_ln1431" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1431_fu_513_p1" coreId="4048066451" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="add_ln1431" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1431_fu_517_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.7" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>shl</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="empty_34" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." rtlName="empty_34_fu_523_p2" coreId="4046034940" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="shl" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln1431_1" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1431_1_fu_529_p1" coreId="4080637420" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="add_ln1431_1" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1431_1_fu_533_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.7" m_topoIndex="32" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>shl</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln1431_2" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1431_2_fu_539_p1" coreId="4119309138" contextFuncName="makePatch_alignedToLine" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="init_patch_V_addr" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." coreId="4125403959" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="init_patch_V_addr_write_ln1431" lineNumber="1431" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="makePatch_alignedToLine" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.19" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1431" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="add_ln1426" lineNumber="1426" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1426_fu_544_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="2" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.43" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1426" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="add_ln1420_1" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1420_1_fu_550_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.7" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="select_ln1420_2" lineNumber="1420" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1420_2_fu_556_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.3" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1420" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="br_ln0" coreId="4037908088" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_29</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="patchMaker.cpp">
+        <validLinenumbers>1414</validLinenumbers>
+        <validLinenumbers>1420</validLinenumbers>
+        <validLinenumbers>1431</validLinenumbers>
+        <validLinenumbers>1426</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="659" pipe_depth="1" RegionName="makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter">
+    <basic_blocks id="85" name=".preheader1.preheader" type="BlockType">
+      <controlInputObjs>.preheader1.preheader.preheader</controlInputObjs>
+      <controlInputObjs>.preheader1</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader.preheader.preheader</controlOutputObjs>
+      <controlOutputObjs>.preheader1</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="indvar_flatten35" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." coreId="4153911618" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>.preheader1</controlInputObjs>
+        <controlInputObjs>.preheader1.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="b_1" lineNumber="1457" originalName="b" fileName="patchMaker.cpp" fileDirectory=".." coreId="4149848460" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader1</controlInputObjs>
+        <controlInputObjs>.preheader1.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="indvar_flatten21" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." coreId="4062287092" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>.preheader1</controlInputObjs>
+        <controlInputObjs>.preheader1.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="c_1" lineNumber="1463" originalName="c" fileName="patchMaker.cpp" fileDirectory=".." coreId="4029716123" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader1</controlInputObjs>
+        <controlInputObjs>.preheader1.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="d" lineNumber="1469" originalName="d" fileName="patchMaker.cpp" fileDirectory=".." coreId="4162039494" contextFuncName="makePatch_alignedToLine" bitwidth="2" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1469" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader1</controlInputObjs>
+        <controlInputObjs>.preheader1.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="add_ln1457_1" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1457_1_fu_576_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.7" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="icmp_ln1457" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1457_fu_582_p2" opType="icmp" coreId="4133529771" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.58" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="br_ln1457" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." coreId="4060255445" contextFuncName="makePatch_alignedToLine" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.preheader1</controlInputObjs>
+        <controlInputObjs>.preheader.preheader.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="patchMaker.cpp">
+        <validLinenumbers>1457</validLinenumbers>
+        <validLinenumbers>1463</validLinenumbers>
+        <validLinenumbers>1469</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="117" name=".preheader1" type="BlockType">
+      <controlInputObjs>.preheader1.preheader</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader1.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="add_ln1457" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1457_fu_588_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.57" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="icmp_ln1463" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1463_fu_594_p2" opType="icmp" coreId="4137658442" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.59" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="select_ln1457" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1457_fu_600_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.27" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="select_ln1457_1" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1457_1_fu_608_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.27" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="tmp_s" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_s_fu_616_p3" coreId="4056192791" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="bitconcatenate" nodeLabel="5.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="zext_ln1463" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1463_fu_624_p1" coreId="4139690089" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="xor_ln1457" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." rtlName="xor_ln1457_fu_628_p2" opType="xor" coreId="4064318603" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="xor" nodeLabel="5.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="icmp_ln1469" lineNumber="1469" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1469_fu_634_p2" opType="icmp" coreId="4143753263" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.34" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1469" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="and_ln1457" lineNumber="1457" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln1457_fu_640_p2" opType="and" coreId="4072510568" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="and" nodeLabel="5.0" m_display="0" m_delay="0.12" m_topoIndex="64" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1457" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="add_ln1463" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1463_fu_646_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.7" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="or_ln1463" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln1463_fu_652_p2" opType="or" coreId="4041971262" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="select_ln1463" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1463_fu_658_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="2" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.27" m_topoIndex="67" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="select_ln1463_1" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1463_1_fu_666_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.27" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="zext_ln1474" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1474_fu_674_p1" coreId="4141721608" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="add_ln1474" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1474_fu_678_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.7" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>shl</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="empty_37" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." rtlName="empty_37_fu_684_p2" coreId="4103055962" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="shl" nodeLabel="5.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="zext_ln1474_1" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1474_1_fu_690_p1" coreId="4157974784" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="add_ln1474_1" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1474_1_fu_694_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.7" m_topoIndex="73" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>shl</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="zext_ln1474_2" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1474_2_fu_700_p1" coreId="4151880099" contextFuncName="makePatch_alignedToLine" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="NPpatches_superpoints_V_addr" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." coreId="4164071141" contextFuncName="makePatch_alignedToLine" bitwidth="8" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="NPpatches_superpoints_V_addr_write_ln1474" lineNumber="1474" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="makePatch_alignedToLine" opcode="store" nodeLabel="5.0" m_display="0" m_delay="1.19" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1474" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="add_ln1469" lineNumber="1469" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1469_fu_705_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="2" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.43" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1469" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="add_ln1463_1" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1463_1_fu_711_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.7" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="select_ln1463_2" lineNumber="1463" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1463_2_fu_717_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.3" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1463" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="br_ln0" coreId="4245529560" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <controlInputObjs>.preheader1.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="patchMaker.cpp">
+        <validLinenumbers>1457</validLinenumbers>
+        <validLinenumbers>1463</validLinenumbers>
+        <validLinenumbers>1474</validLinenumbers>
+        <validLinenumbers>1469</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="660" pipe_depth="1" RegionName="makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength">
+    <basic_blocks id="129" name=".preheader.preheader" type="BlockType">
+      <controlInputObjs>.preheader.preheader.preheader</controlInputObjs>
+      <controlInputObjs>.preheader</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_169</controlOutputObjs>
+      <controlOutputObjs>.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="indvar_flatten57" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." coreId="4178358239" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>.preheader.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="b_2" lineNumber="1487" originalName="b" fileName="patchMaker.cpp" fileDirectory=".." coreId="4182421405" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>.preheader.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="indvar_flatten43" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." coreId="4196642038" contextFuncName="makePatch_alignedToLine" bitwidth="6" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>.preheader.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="c_2" lineNumber="1493" originalName="c" fileName="patchMaker.cpp" fileDirectory=".." coreId="4249592734" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>.preheader.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="d_1" lineNumber="1499" originalName="d" fileName="patchMaker.cpp" fileDirectory=".." coreId="4263813367" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="phi" nodeLabel="7.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1499" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>.preheader.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="add_ln1487_1" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1487_1_fu_725_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.7" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="icmp_ln1487" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1487_fu_731_p2" opType="icmp" coreId="4237337211" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.59" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="br_ln1487" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." coreId="4212960719" contextFuncName="makePatch_alignedToLine" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>block_169</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="patchMaker.cpp">
+        <validLinenumbers>1487</validLinenumbers>
+        <validLinenumbers>1493</validLinenumbers>
+        <validLinenumbers>1499</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="164" name=".preheader" type="BlockType">
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="add_ln1487" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1487_fu_737_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.57" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="icmp_ln1493" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1493_fu_743_p2" opType="icmp" coreId="4186484563" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.61" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="select_ln1487" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1487_fu_749_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.27" m_topoIndex="92" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="select_ln1487_1" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1487_1_fu_757_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.27" m_topoIndex="93" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="tmp_1" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_1_fu_765_p3" coreId="4225150209" contextFuncName="makePatch_alignedToLine" bitwidth="5" opcode="bitconcatenate" nodeLabel="7.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="zext_ln1493" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1493_fu_773_p1" coreId="4176326200" contextFuncName="makePatch_alignedToLine" bitwidth="6" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="xor_ln1487" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." rtlName="xor_ln1487_fu_777_p2" opType="xor" coreId="4280132040" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="xor" nodeLabel="7.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="7">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="icmp_ln1499" lineNumber="1499" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1499_fu_783_p2" opType="icmp" coreId="4200705204" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.49" m_topoIndex="97" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1499" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="and_ln1487" lineNumber="1487" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln1487_fu_789_p2" opType="and" coreId="4227181856" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="and" nodeLabel="7.0" m_display="0" m_delay="0.12" m_topoIndex="98" m_clusterGroupNumber="7">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1487" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="142" name="add_ln1493" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1493_fu_795_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.57" m_topoIndex="99" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="or_ln1493" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln1493_fu_801_p2" opType="or" coreId="4229210823" contextFuncName="makePatch_alignedToLine" bitwidth="1" opcode="or" nodeLabel="7.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="8">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="145" name="select_ln1493" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1493_fu_807_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.27" m_topoIndex="101" m_clusterGroupNumber="8">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="146" name="select_ln1493_1" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1493_1_fu_815_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.27" m_topoIndex="102" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="zext_ln1504" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1504_fu_823_p1" coreId="4194610391" contextFuncName="makePatch_alignedToLine" bitwidth="6" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="148" name="add_ln1504" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1504_fu_827_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="6" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.7" m_topoIndex="104" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="149" name="trunc_ln1504" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln1504_fu_833_p1" coreId="4286226861" contextFuncName="makePatch_alignedToLine" bitwidth="4" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="p_shl_cast" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="p_shl_cast_fu_837_p3" coreId="4192579376" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="bitconcatenate" nodeLabel="7.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="151" name="p_shl1_cast" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="p_shl1_cast_fu_845_p3" coreId="4276068362" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="bitconcatenate" nodeLabel="7.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="sub_ln1504" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln1504_fu_853_p2" coreName="TAddSub" implIndex="tadder" control="auto" opType="add" coreId="10" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="sub" nodeLabel="7.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="154" name="zext_ln1504_1" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1504_1_fu_859_p1" coreId="4219055532" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="155" name="add_ln1504_1" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1504_1_fu_863_p2" coreName="TAddSub" implIndex="tadder" control="auto" opType="add" coreId="10" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.72" m_topoIndex="110" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="156" name="zext_ln1504_2" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln1504_2_fu_869_p1" coreId="4271939691" contextFuncName="makePatch_alignedToLine" bitwidth="64" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="157" name="NPpatches_parameters_V_addr" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." coreId="4172263034" contextFuncName="makePatch_alignedToLine" bitwidth="7" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="159" name="NPpatches_parameters_V_addr_write_ln1504" lineNumber="1504" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="makePatch_alignedToLine" opcode="store" nodeLabel="7.0" m_display="0" m_delay="0.6" m_topoIndex="113" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1504" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="160" name="add_ln1499" lineNumber="1499" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1499_fu_874_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="3" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.57" m_topoIndex="114" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1499" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="161" name="add_ln1493_1" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1493_1_fu_880_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="makePatch_alignedToLine" bitwidth="6" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.7" m_topoIndex="115" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="162" name="select_ln1493_2" lineNumber="1493" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1493_2_fu_886_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="makePatch_alignedToLine" bitwidth="6" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.29" m_topoIndex="116" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1493" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="makePatch_alignedToLine"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="163" name="br_ln0" coreId="4206865514" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="patchMaker.cpp">
+        <validLinenumbers>1487</validLinenumbers>
+        <validLinenumbers>1493</validLinenumbers>
+        <validLinenumbers>1504</validLinenumbers>
+        <validLinenumbers>1499</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <regnodes realName="select_ln1420_2_reg_927">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1463_2_reg_964">
+    <nodeIds>115</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln1499_reg_987">
+    <nodeIds>160</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_254">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1493_1_reg_982">
+    <nodeIds>146</nodeIds>
+  </regnodes>
+  <regnodes realName="z_top_read_reg_899">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="d_reg_310">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln1440_reg_932">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="b_2_reg_332">
+    <nodeIds>121</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1457_1_reg_949">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="b_1_reg_277">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="c_reg_243">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="p_read_1_reg_894">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten43_reg_343">
+    <nodeIds>122</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1463_1_reg_954">
+    <nodeIds>102</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten57_reg_321">
+    <nodeIds>120</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1487_1_reg_977">
+    <nodeIds>135</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln1440_reg_937">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten13_reg_199">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln1469_reg_959">
+    <nodeIds>113</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1493_2_reg_992">
+    <nodeIds>162</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1414_1_reg_912">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten21_reg_288">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1420_1_reg_917">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="c_2_reg_354">
+    <nodeIds>123</nodeIds>
+  </regnodes>
+  <regnodes realName="d_1_reg_365">
+    <nodeIds>124</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln1487_1_reg_969">
+    <nodeIds>125</nodeIds>
+  </regnodes>
+  <regnodes realName="c_1_reg_299">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln1457_1_reg_941">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="b_reg_232">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln1414_1_reg_904">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten35_reg_266">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="a_reg_210">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="n_patches_read_reg_997">
+    <nodeIds>166</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln1426_reg_922">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_reg_221">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <expressionNodes realName="a_phi_fu_214">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1487_1_fu_725">
+    <nodeIds>125</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1493_1_fu_880">
+    <nodeIds>161</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="NPpatches_superpoints_V_alloca_fu_134">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1493_2_fu_886">
+    <nodeIds>162</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1440_fu_570">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten35_phi_fu_270">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1474_fu_678">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln1457_fu_640">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1493_fu_807">
+    <nodeIds>145</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1487_fu_737">
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1474_fu_674">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_1_phi_fu_303">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln1414_fu_479">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1487_fu_749">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1426_fu_544">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln1487_fu_777">
+    <nodeIds>139</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1440_fu_564">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1499_fu_874">
+    <nodeIds>160</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten13_phi_fu_203">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_765">
+    <nodeIds>136</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_258">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1493_1_fu_815">
+    <nodeIds>146</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1431_1_fu_529">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1493_fu_743">
+    <nodeIds>133</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1469_fu_705">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1487_fu_731">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln1463_fu_652">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1420_1_fu_505">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1414_1_fu_415">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_37_fu_684">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1463_2_fu_717">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1499_fu_783">
+    <nodeIds>140</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1420_2_fu_556">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1457_fu_588">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1504_fu_853">
+    <nodeIds>152</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_34_fu_523">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1457_fu_582">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_phi_fu_247">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln1420_fu_491">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1463_1_fu_666">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1420_fu_485">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1457_fu_600">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten43_phi_fu_347">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln1493_fu_801">
+    <nodeIds>144</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1493_fu_773">
+    <nodeIds>137</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1463_fu_658">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="b_phi_fu_236">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1469_fu_634">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1431_fu_517">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten57_phi_fu_325">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_616">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="NPpatches_parameters_V_alloca_fu_138">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1504_2_fu_869">
+    <nodeIds>156</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1504_fu_823">
+    <nodeIds>147</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1431_fu_513">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1457_1_fu_576">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_455">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1504_1_fu_863">
+    <nodeIds>155</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="init_patch_V_addr_gep_fu_160">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln1487_fu_789">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln1414_fu_467">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1414_fu_427">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="d_1_phi_fu_369">
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten21_phi_fu_292">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1493_fu_795">
+    <nodeIds>142</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="b_1_phi_fu_281">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="NPpatches_superpoints_V_addr_gep_fu_173">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1457_1_fu_608">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="b_2_phi_fu_336">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_cast_fu_837">
+    <nodeIds>150</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1504_1_fu_859">
+    <nodeIds>154</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1474_1_fu_690">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1414_fu_421">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln1457_fu_628">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1504_fu_827">
+    <nodeIds>148</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1463_fu_624">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1426_fu_473">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="d_phi_fu_314">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1431_2_fu_539">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="NPpatches_parameters_V_addr_gep_fu_186">
+    <nodeIds>157</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="init_patch_V_alloca_fu_130">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1420_fu_433">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1463_1_fu_711">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1431_1_fu_533">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1474_1_fu_694">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1474_2_fu_700">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1414_fu_439">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_phi_fu_225">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_2_phi_fu_358">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1420_fu_497">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1420_fu_463">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1414_1_fu_447">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1463_fu_646">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1504_fu_833">
+    <nodeIds>149</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl1_cast_fu_845">
+    <nodeIds>151</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1487_1_fu_757">
+    <nodeIds>135</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1420_1_fu_550">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1463_fu_594">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_add_patch5_fu_402">
+    <nodeIds>167</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_wedgePatch_init_fu_393">
+    <nodeIds>165</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_makeSuperPoint_alignedToLine7_fu_376">
+    <nodeIds>71</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="n_patches_read_read_fu_154">
+    <nodeIds>166</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_read_1_read_fu_142">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="z_top_read_read_fu_148">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="NPpatches_parameters_V">
+    <nodeIds>159</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="NPpatches_parameters_V" portID="100">
+    <nodeIds>165</nodeIds>
+    <nodeIds>167</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="NPpatches_superpoints_V">
+    <nodeIds>112</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="NPpatches_superpoints_V" portID="100">
+    <nodeIds>165</nodeIds>
+    <nodeIds>167</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="init_patch_V">
+    <nodeIds>56</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="init_patch_V" portID="100">
+    <nodeIds>71</nodeIds>
+    <nodeIds>165</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="radiiDivisionList" portID="100">
+    <nodeIds>71</nodeIds>
+    <nodeIds>165</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="trapezoid_edges_V" portID="100">
+    <nodeIds>71</nodeIds>
+  </memoryPorts>
+  <ioPorts name="n_patches">
+    <contents name="call">
+      <nodeIds>167</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>166</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_read">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="z_top">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="71" stage="2" latency="2"/>
+      <operations id="74" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="2"/>
+      <operations id="72" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="118" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="162" stage="1" latency="1"/>
+      <operations id="163" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="165" stage="2" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="165" stage="1" latency="2"/>
+      <operations id="166" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="167" stage="2" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="167" stage="1" latency="2"/>
+      <operations id="168" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="8">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="makePatch_alignedToLine" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <subRegions>9</subRegions>
+      <subRegions>10</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>19</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter" mII="1" mDepth="1" mMinTripCount="160" mMaxTripCount="160" mMinLatency="160" mMaxLatency="160" mType="1">
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>61</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>63</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="makePatch_alignedToLine_makeSuperpoint_loop" mII="-1" mDepth="-1" mMinTripCount="5" mMaxTripCount="5" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>69</basicBlocks>
+      <basicBlocks>73</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>75</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter" mII="1" mDepth="1" mMinTripCount="160" mMaxTripCount="160" mMinLatency="160" mMaxLatency="160" mType="1">
+      <basicBlocks>85</basicBlocks>
+      <basicBlocks>117</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>119</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength" mII="1" mDepth="1" mMinTripCount="120" mMaxTripCount="120" mMinLatency="120" mMaxLatency="120" mType="1">
+      <basicBlocks>129</basicBlocks>
+      <basicBlocks>164</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-2" mMaxLatency="-2">
+      <basicBlocks>169</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
