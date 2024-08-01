@@ -448,10 +448,10 @@
 
 <Node id="38" bw="6" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-:30 %empty_55 = add i6 %empty, i6 %abs5_cast
+:30 %empty_54 = add i6 %empty, i6 %abs5_cast
 
 ]]></Node>
-<StgValue><ssdm name="empty_55"/></StgValue>
+<StgValue><ssdm name="empty_54"/></StgValue>
 </operation>
 
 <operation id="35" st_id="2" stage="1" lat="1">
@@ -463,7 +463,7 @@
 
 <Node id="39" bw="64" op_0_bw="6">
 <![CDATA[
-:31 %p_cast = zext i6 %empty_55
+:31 %p_cast = zext i6 %empty_54
 
 ]]></Node>
 <StgValue><ssdm name="p_cast"/></StgValue>

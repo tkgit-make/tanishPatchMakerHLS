@@ -33,7 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_areWedgeSuperPointsEqual_fu_600/grp_areWedgeSuperPointsEqual_fu_600_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_areWedgeSuperPointsEqual_fu_561/grp_areWedgeSuperPointsEqual_fu_561_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -43,7 +43,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_getSolveNextPatchPairWhileCondition_fu_582/grp_getSolveNextPatchPairWhileCondition_fu_582_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_getSolveNextPatchPairWhileCondition_fu_545/grp_getSolveNextPatchPairWhileCondition_fu_545_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -53,7 +53,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -63,7 +63,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makePatch_alignedToLine_fu_541_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_add_patch9_fu_433/grp_add_patch_patches_parameters14_fu_297/grp_add_patch_patches_parameters14_fu_297_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -73,7 +73,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_makePatch_alignedToLine_fu_504_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -83,7 +83,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -93,7 +93,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -103,7 +103,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -113,7 +113,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -123,7 +123,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -133,7 +133,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -143,7 +143,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -153,7 +153,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -163,7 +163,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_wedgePatch_init_fu_404_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -173,7 +173,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_delete_patch_fu_533/grp_delete_patch_fu_533_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_504/grp_wedgePatch_init_fu_404/grp_wedgePatch_init_fu_404_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -183,7 +183,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_getShadows_fu_517_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_delete_patch_fu_522/grp_delete_patch_fu_522_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -193,7 +193,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/grp_straightLineProjectorFromLayerIJtoK_fu_261_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_delete_patch_fu_522/grp_delete_patch_patches_parameters_fu_233/grp_delete_patch_patches_parameters_fu_233_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -203,7 +203,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_getShadows_fu_505/grp_getShadows_fu_505_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -213,7 +213,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makePatch_alignedToLine_fu_494_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_getShadows_fu_505/grp_straightLineProjectorFromLayerIJtoK_fu_275/grp_straightLineProjectorFromLayerIJtoK_fu_275_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -223,7 +223,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -233,7 +233,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_add_patch9_fu_433/grp_add_patch_patches_parameters14_fu_297/grp_add_patch_patches_parameters14_fu_297_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -243,7 +243,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_makePatch_alignedToLine_fu_482_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -253,7 +253,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -263,7 +263,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -273,7 +273,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -283,7 +283,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -293,7 +293,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -303,7 +303,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -313,7 +313,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_wedgePatch_init_fu_404_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -323,7 +323,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makeThirdPatch_fu_481_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -333,7 +333,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_areWedgeSuperPointsEqual_fu_712/grp_areWedgeSuperPointsEqual_fu_712_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -343,7 +343,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_delete_patch_fu_672/grp_delete_patch_fu_672_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makePatch_alignedToLine_fu_482/grp_wedgePatch_init_fu_404/grp_wedgePatch_init_fu_404_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -353,7 +353,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_get_index_from_z_fu_698/grp_get_index_from_z_fu_698_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_444/grp_makeThirdPatch_fu_444_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -363,7 +363,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_areWedgeSuperPointsEqual_fu_706/grp_areWedgeSuperPointsEqual_fu_706_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -373,7 +373,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makePatch_alignedToLine_fu_649_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_delete_patch_fu_666/grp_delete_patch_fu_666_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -383,7 +383,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_delete_patch_fu_666/grp_delete_patch_patches_parameters_fu_233/grp_delete_patch_patches_parameters_fu_233_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -393,7 +393,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_get_index_from_z_fu_692/grp_get_index_from_z_fu_692_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -403,7 +403,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -413,7 +413,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_add_patch9_fu_433/grp_add_patch_patches_parameters14_fu_297/grp_add_patch_patches_parameters14_fu_297_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -423,7 +423,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_makePatch_alignedToLine_fu_643_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -433,7 +433,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -443,7 +443,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -453,7 +453,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -463,7 +463,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -473,7 +473,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_wedgePatch_init_fu_404_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -483,7 +483,57 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_solveComplmentaryPatch_fu_508_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_makePatch_alignedToLine_fu_643/grp_wedgePatch_init_fu_404/grp_wedgePatch_init_fu_404_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_471/grp_solveComplmentaryPatch_fu_471_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -503,7 +553,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_1464/grp_straightLineProjectorFromLayerIJtoK_fu_1464_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_1148/grp_straightLineProjectorFromLayerIJtoK_fu_1148_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -513,7 +563,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_568/grp_straightLineProjectorFromLayerIJtoK_fu_568_activity": {
+				"grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_531/grp_straightLineProjectorFromLayerIJtoK_fu_531_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

@@ -194,7 +194,7 @@ attribute shreg_extract : string;
     signal zext_ln95_fu_368_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal zext_ln100_fu_372_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal add_ln100_fu_375_p2 : STD_LOGIC_VECTOR (7 downto 0);
-    signal empty_54_fu_381_p2 : STD_LOGIC_VECTOR (7 downto 0);
+    signal empty_53_fu_381_p2 : STD_LOGIC_VECTOR (7 downto 0);
     signal zext_ln100_1_fu_387_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_idle_pp0 : STD_LOGIC;
@@ -577,7 +577,7 @@ begin
                 ap_NS_fsm <= "XXXXXXXXX";
         end case;
     end process;
-    add_ln100_1_fu_390_p2 <= std_logic_vector(unsigned(empty_54_fu_381_p2) + unsigned(zext_ln100_1_fu_387_p1));
+    add_ln100_1_fu_390_p2 <= std_logic_vector(unsigned(empty_53_fu_381_p2) + unsigned(zext_ln100_1_fu_387_p1));
     add_ln100_fu_375_p2 <= std_logic_vector(unsigned(zext_ln95_fu_368_p1) + unsigned(zext_ln100_fu_372_p1));
     add_ln91_1_fu_255_p2 <= std_logic_vector(unsigned(indvar_flatten13_reg_184) + unsigned(ap_const_lv8_1));
     add_ln91_fu_267_p2 <= std_logic_vector(unsigned(ap_phi_mux_i_phi_fu_199_p4) + unsigned(ap_const_lv3_1));
@@ -673,7 +673,7 @@ begin
         end if; 
     end process;
 
-    empty_54_fu_381_p2 <= std_logic_vector(shift_left(unsigned(add_ln100_fu_375_p2),to_integer(unsigned('0' & ap_const_lv8_1(8-1 downto 0)))));
+    empty_53_fu_381_p2 <= std_logic_vector(shift_left(unsigned(add_ln100_fu_375_p2),to_integer(unsigned('0' & ap_const_lv8_1(8-1 downto 0)))));
     grp_getParallelograms_fu_239_ap_start <= grp_getParallelograms_fu_239_ap_start_reg;
     grp_get_acceptanceCorners_fu_249_ap_start <= grp_get_acceptanceCorners_fu_249_ap_start_reg;
     icmp_ln91_fu_261_p2 <= "1" when (indvar_flatten13_reg_184 = ap_const_lv8_A0) else "0";

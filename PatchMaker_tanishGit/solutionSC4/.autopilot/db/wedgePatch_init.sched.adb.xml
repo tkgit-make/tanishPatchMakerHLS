@@ -730,10 +730,10 @@
 
 <Node id="50" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-.split4:19 %empty_54 = shl i8 %add_ln100, i8 1
+.split4:19 %empty_53 = shl i8 %add_ln100, i8 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_54"/></StgValue>
+<StgValue><ssdm name="empty_53"/></StgValue>
 </operation>
 
 <operation id="55" st_id="5" stage="1" lat="1">
@@ -762,7 +762,7 @@
 
 <Node id="53" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-.split4:22 %add_ln100_1 = add i8 %empty_54, i8 %zext_ln100_1
+.split4:22 %add_ln100_1 = add i8 %empty_53, i8 %zext_ln100_1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln100_1"/></StgValue>
@@ -947,7 +947,7 @@
 
 <Node id="57" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split4:26 %specloopname_ln98 = specloopname void @_ssdm_op_SpecLoopName, void @empty_29
+.split4:26 %specloopname_ln98 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln98"/></StgValue>

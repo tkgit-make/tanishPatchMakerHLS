@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'straightLineProjectorFromLayerIJtoK'
 ================================================================
-* Date:           Wed Jul 31 23:36:45 2024
+* Date:           Thu Aug  1 00:46:56 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -113,8 +113,8 @@ ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_3 = bitconcatenate i4 @_ssdm_o
 ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_3_cast = zext i4 %tmp_3" [patchMaker.cpp:143]   --->   Operation 31 'zext' 'tmp_3_cast' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 32 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%empty = sub i6 %tmp, i6 %tmp_3_cast" [patchMaker.cpp:143]   --->   Operation 32 'sub' 'empty' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
 ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%abs5_cast = sext i4 %abs5" [patchMaker.cpp:143]   --->   Operation 33 'sext' 'abs5_cast' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (0.60ns) (root node of TernaryAdder)   --->   "%empty_55 = add i6 %empty, i6 %abs5_cast" [patchMaker.cpp:143]   --->   Operation 34 'add' 'empty_55' <Predicate = true> <Delay = 0.60> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_cast = zext i6 %empty_55" [patchMaker.cpp:143]   --->   Operation 35 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.60ns) (root node of TernaryAdder)   --->   "%empty_54 = add i6 %empty, i6 %abs5_cast" [patchMaker.cpp:143]   --->   Operation 34 'add' 'empty_54' <Predicate = true> <Delay = 0.60> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_cast = zext i6 %empty_54" [patchMaker.cpp:143]   --->   Operation 35 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%radiiDivisionList_addr = getelementptr i35 %radiiDivisionList, i64 0, i64 %p_cast" [patchMaker.cpp:143]   --->   Operation 36 'getelementptr' 'radiiDivisionList_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 37 [2/2] (0.71ns)   --->   "%radiiDivisionList_load = load i6 %radiiDivisionList_addr" [patchMaker.cpp:143]   --->   Operation 37 'load' 'radiiDivisionList_load' <Predicate = true> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 35> <Depth = 36> <ROM>
 
@@ -158,7 +158,7 @@ The critical path consists of the following:
  <State 2>: 1.32ns
 The critical path consists of the following:
 	'sub' operation ('empty', patchMaker.cpp:143) [33]  (0 ns)
-	'add' operation ('empty_55', patchMaker.cpp:143) [38]  (0.608 ns)
+	'add' operation ('empty_54', patchMaker.cpp:143) [38]  (0.608 ns)
 	'getelementptr' operation ('radiiDivisionList_addr', patchMaker.cpp:143) [40]  (0 ns)
 	'load' operation ('radiiDivisionList_load', patchMaker.cpp:143) on array 'radiiDivisionList' [41]  (0.714 ns)
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makePatch_alignedToLine'" level="0">
-<item name = "Date">Wed Jul 31 23:37:06 2024
+<item name = "Date">Thu Aug  1 00:47:14 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -33,7 +33,7 @@
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_wedgePatch_init_fu_404">wedgePatch_init, 243, 244, 0.729 us, 0.732 us, 243, 244, none</column>
 <column name="grp_makeSuperPoint_alignedToLine11_fu_414">makeSuperPoint_alignedToLine11, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_add_patch9_fu_433">add_patch9, 14, 245, 42.000 ns, 0.735 us, 14, 245, none</column>
+<column name="grp_add_patch9_fu_433">add_patch9, 14, 490, 42.000 ns, 1.470 us, 14, 490, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

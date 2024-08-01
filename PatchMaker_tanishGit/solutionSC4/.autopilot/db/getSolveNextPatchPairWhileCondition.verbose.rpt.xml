@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getSolveNextPatchPairWhileCondition'" level="0">
-<item name = "Date">Wed Jul 31 23:38:14 2024
+<item name = "Date">Thu Aug  1 00:48:23 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 1.680 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 2.055 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3, 3, 9.000 ns, 9.000 ns, 3, 3, none</column>
+<column name="">2, 2, 6.000 ns, 6.000 ns, 2, 2, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -47,12 +47,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 311, -</column>
+<column name="Expression">-, -, 0, 277, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 35, -</column>
-<column name="Register">-, -, 110, -, -</column>
+<column name="Multiplexer">-, -, -, 29, -</column>
+<column name="Register">-, -, 69, -, -</column>
 <specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
@@ -79,38 +79,35 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln886_fu_141_p2">+, 0, 0, 17, 12, 6</column>
-<column name="sub_ln180_fu_151_p2">-, 0, 0, 71, 1, 64</column>
-<column name="sub_ln886_fu_135_p2">-, 0, 0, 17, 12, 12</column>
-<column name="and_ln952_fu_176_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln958_1_fu_247_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln958_fu_217_p2">and, 0, 0, 2, 1, 1</column>
-<column name="exp4_fu_195_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln952_fu_157_p2">icmp, 0, 0, 29, 64, 1</column>
-<column name="icmp_ln958_1_fu_207_p2">icmp, 0, 0, 20, 32, 27</column>
-<column name="icmp_ln958_2_fu_212_p2">icmp, 0, 0, 29, 64, 3</column>
-<column name="icmp_ln958_fu_201_p2">icmp, 0, 0, 29, 64, 3</column>
-<column name="or_ln958_1_fu_229_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln958_2_fu_235_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln958_fu_223_p2">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln180_fu_189_p3">select, 0, 0, 63, 1, 64</column>
-<column name="xor_ln952_fu_170_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln958_fu_241_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="sub_ln180_fu_98_p2">-, 0, 0, 71, 1, 64</column>
+<column name="and_ln977_fu_129_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln983_1_fu_194_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln983_fu_165_p2">and, 0, 0, 2, 1, 1</column>
+<column name="exp4_fu_148_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln977_fu_110_p2">icmp, 0, 0, 29, 64, 1</column>
+<column name="icmp_ln983_1_fu_104_p2">icmp, 0, 0, 20, 32, 27</column>
+<column name="icmp_ln983_2_fu_160_p2">icmp, 0, 0, 29, 64, 3</column>
+<column name="icmp_ln983_fu_154_p2">icmp, 0, 0, 29, 64, 3</column>
+<column name="or_ln983_1_fu_176_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln983_2_fu_182_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln983_fu_170_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln180_fu_142_p3">select, 0, 0, 63, 1, 64</column>
+<column name="xor_ln977_fu_123_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln983_fu_188_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">26, 5, 1, 5</column>
+<column name="ap_NS_fsm">20, 4, 1, 4</column>
 <column name="ap_return">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln886_reg_253">9, 0, 12, 3</column>
-<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_return_preg">1, 0, 1, 0</column>
-<column name="patches_parameters_load_reg_276">32, 0, 32, 0</column>
-<column name="sub_ln180_reg_271">64, 0, 64, 0</column>
+<column name="icmp_ln983_1_reg_223">1, 0, 1, 0</column>
+<column name="sub_ln180_reg_213">64, 0, 64, 0</column>
 </table>
 </item>
 </section>
@@ -130,12 +127,11 @@
 <column name="GDn_points_address0">out, 3, ap_memory, GDn_points, array</column>
 <column name="GDn_points_ce0">out, 1, ap_memory, GDn_points, array</column>
 <column name="GDn_points_q0">in, 32, ap_memory, GDn_points, array</column>
-<column name="lastPatchIndex">in, 5, ap_none, lastPatchIndex, scalar</column>
 <column name="repeat_original">in, 1, ap_none, repeat_original, scalar</column>
 <column name="white_space_height">in, 64, ap_none, white_space_height, scalar</column>
 <column name="previous_white_space_height">in, 64, ap_none, previous_white_space_height, scalar</column>
 <column name="current_z_top_index">in, 32, ap_none, current_z_top_index, scalar</column>
-<column name="patches_parameters_address0">out, 12, ap_memory, patches_parameters, array</column>
+<column name="patches_parameters_address0">out, 9, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_ce0">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_q0">in, 32, ap_memory, patches_parameters, array</column>
 </table>

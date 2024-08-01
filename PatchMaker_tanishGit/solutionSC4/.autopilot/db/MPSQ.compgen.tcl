@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 143
+set ID 147
 set hasByteEnable 0
 set MemName MPSQ_patches_superpoints_V
 set CoreName ap_simcore_mem
@@ -86,14 +86,14 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 144
+set ID 148
 set hasByteEnable 0
 set MemName MPSQ_patches_parameters_V
 set CoreName ap_simcore_mem
 set PortList { 2 2 }
 set DataWd 32
-set AddrRange 3840
-set AddrWd 12
+set AddrRange 360
+set AddrWd 9
 set impl_style auto
 set TrueReset 0
 set HasInitializer 0
@@ -101,7 +101,7 @@ set IsROM 0
 set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 1.645
+set DelayBudget 1.196
 set ClkPeriod 3
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
@@ -171,7 +171,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 145
+set ID 149
 set hasByteEnable 0
 set MemName MPSQ_GDarrayDecoded_V
 set CoreName ap_simcore_mem
@@ -267,7 +267,7 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 148 \
+    id 152 \
     name GDarray \
     reset_level 1 \
     sync_rst true \
@@ -286,7 +286,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 149 \
+    id 153 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -305,7 +305,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 150 \
+    id 154 \
     name patches_superpointsOUTPUT \
     reset_level 1 \
     sync_rst true \
@@ -323,7 +323,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 146 \
+    id 150 \
     name ppl \
     type other \
     dir I \
@@ -338,7 +338,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 147 \
+    id 151 \
     name n_patches \
     type other \
     dir IO \

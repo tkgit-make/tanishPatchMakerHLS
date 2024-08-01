@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'areWedgeSuperPointsEqual'" level="0">
-<item name = "Date">Wed Jul 31 23:38:13 2024
+<item name = "Date">Thu Aug  1 00:48:22 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -110,8 +110,8 @@
 <column name="icmp_ln870_reg_258">1, 0, 1, 0</column>
 <column name="reg_91">64, 0, 64, 0</column>
 <column name="reg_95">64, 0, 64, 0</column>
-<column name="tmp_32_reg_228">8, 0, 12, 4</column>
-<column name="tmp_33_reg_238">8, 0, 12, 4</column>
+<column name="tmp_38_reg_228">8, 0, 12, 4</column>
+<column name="tmp_39_reg_238">8, 0, 12, 4</column>
 </table>
 </item>
 </section>

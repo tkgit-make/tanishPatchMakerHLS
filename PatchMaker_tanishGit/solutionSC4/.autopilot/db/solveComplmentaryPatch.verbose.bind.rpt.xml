@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveComplmentaryPatch'" level="0">
-<item name = "Date">Wed Jul 31 23:37:19 2024
+<item name = "Date">Thu Aug  1 00:47:26 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -31,11 +31,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makePatch_alignedToLine_fu_649">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_delete_patch_fu_672">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_684">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
-<column name="grp_get_index_from_z_fu_698">get_index_from_z, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_areWedgeSuperPointsEqual_fu_712">areWedgeSuperPointsEqual, 4, 4, 12.000 ns, 12.000 ns, 2, 2, yes</column>
+<column name="grp_makePatch_alignedToLine_fu_643">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_delete_patch_fu_666">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_678">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_get_index_from_z_fu_692">get_index_from_z, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_areWedgeSuperPointsEqual_fu_706">areWedgeSuperPointsEqual, 4, 4, 12.000 ns, 12.000 ns, 2, 2, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

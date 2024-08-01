@@ -10,8 +10,8 @@ use ieee.std_logic_unsigned.all;
 entity MPSQ_patches_parameters_V_ram is 
     generic(
             DWIDTH     : integer := 32; 
-            AWIDTH     : integer := 12; 
-            MEM_SIZE    : integer := 3840
+            AWIDTH     : integer := 9; 
+            MEM_SIZE    : integer := 360
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -97,8 +97,8 @@ use IEEE.std_logic_1164.all;
 entity MPSQ_patches_parameters_V is
     generic (
         DataWidth : INTEGER := 32;
-        AddressRange : INTEGER := 3840;
-        AddressWidth : INTEGER := 12);
+        AddressRange : INTEGER := 360;
+        AddressWidth : INTEGER := 9);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

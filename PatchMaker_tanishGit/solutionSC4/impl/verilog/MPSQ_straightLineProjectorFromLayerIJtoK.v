@@ -105,7 +105,7 @@ wire   [5:0] tmp_fu_171_p3;
 wire   [5:0] tmp_3_cast_fu_185_p1;
 wire   [5:0] empty_fu_189_p2;
 wire  signed [5:0] abs5_cast_fu_195_p1;
-wire   [5:0] empty_55_fu_198_p2;
+wire   [5:0] empty_54_fu_198_p2;
 wire  signed [32:0] sext_ln215_fu_209_p1;
 wire  signed [32:0] sext_ln215_1_fu_212_p1;
 wire   [34:0] grp_fu_227_p0;
@@ -384,7 +384,7 @@ assign ap_enable_reg_pp0_iter0 = ap_start;
 
 assign ap_return = ((tmp_1_reg_270_pp0_iter5_reg[0:0] == 1'b1) ? sub_ln69_fu_247_p2 : add_ln69_fu_243_p2);
 
-assign empty_55_fu_198_p2 = ($signed(empty_fu_189_p2) + $signed(abs5_cast_fu_195_p1));
+assign empty_54_fu_198_p2 = ($signed(empty_fu_189_p2) + $signed(abs5_cast_fu_195_p1));
 
 assign empty_fu_189_p2 = (tmp_fu_171_p3 - tmp_3_cast_fu_185_p1);
 
@@ -402,7 +402,7 @@ assign neg3_fu_151_p2 = ($signed(4'd0) - $signed(sub_ln143_1_fu_107_p2));
 
 assign neg_fu_131_p2 = (3'd0 - trunc_ln143_fu_99_p1);
 
-assign p_cast_fu_204_p1 = empty_55_fu_198_p2;
+assign p_cast_fu_204_p1 = empty_54_fu_198_p2;
 
 assign radiiDivisionList_address0 = p_cast_fu_204_p1;
 

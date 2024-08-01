@@ -136,7 +136,7 @@ reg    grp_straightLineProjectorFromLayerIJtoK_fu_190_ap_start_reg;
 reg    grp_straightLineProjectorFromLayerIJtoK_fu_204_ap_start_reg;
 reg    grp_straightLineProjectorFromLayerIJtoK_fu_217_ap_start_reg;
 wire   [63:0] tmp_s_fu_320_p3;
-wire   [63:0] tmp_24_fu_335_p3;
+wire   [63:0] tmp_4_fu_335_p3;
 wire   [63:0] zext_ln75_fu_396_p1;
 wire   [63:0] zext_ln76_fu_407_p1;
 wire  signed [63:0] sext_ln71_fu_412_p1;
@@ -153,8 +153,8 @@ wire   [25:0] z1_min_V_1_fu_294_p3;
 wire   [7:0] tmp_fu_306_p3;
 wire   [7:0] or_ln61_fu_314_p2;
 wire   [7:0] or_ln62_fu_329_p2;
-wire   [5:0] tmp_25_fu_362_p3;
-wire   [3:0] tmp_26_fu_373_p3;
+wire   [5:0] tmp_5_fu_362_p3;
+wire   [3:0] tmp_6_fu_373_p3;
 wire   [6:0] zext_ln71_fu_369_p1;
 wire   [6:0] zext_ln71_1_fu_380_p1;
 wire   [6:0] add_ln75_fu_390_p2;
@@ -449,7 +449,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        wp_superpoints_address0 = tmp_24_fu_335_p3;
+        wp_superpoints_address0 = tmp_4_fu_335_p3;
     end else if ((1'b1 == ap_CS_fsm_state1)) begin
         wp_superpoints_address0 = 64'd31;
     end else begin
@@ -600,11 +600,11 @@ assign sext_ln72_fu_421_p1 = $signed(or_ln72_fu_416_p2);
 
 assign sub_ln71_fu_384_p2 = (zext_ln71_fu_369_p1 - zext_ln71_1_fu_380_p1);
 
-assign tmp_24_fu_335_p3 = {{56'd0}, {or_ln62_fu_329_p2}};
+assign tmp_4_fu_335_p3 = {{56'd0}, {or_ln62_fu_329_p2}};
 
-assign tmp_25_fu_362_p3 = {{add_ln71_reg_502}, {3'd0}};
+assign tmp_5_fu_362_p3 = {{add_ln71_reg_502}, {3'd0}};
 
-assign tmp_26_fu_373_p3 = {{add_ln71_reg_502}, {1'd0}};
+assign tmp_6_fu_373_p3 = {{add_ln71_reg_502}, {1'd0}};
 
 assign tmp_fu_306_p3 = {{i_reg_164}, {5'd0}};
 
@@ -622,9 +622,9 @@ assign z1_min_V_1_fu_294_p3 = ((icmp_ln886_fu_276_p2[0:0] == 1'b1) ? 26'd2300010
 
 assign z1_min_V_fu_254_p3 = ((icmp_ln878_reg_456[0:0] == 1'b1) ? 32'd4272967196 : reg_230);
 
-assign zext_ln71_1_fu_380_p1 = tmp_26_fu_373_p3;
+assign zext_ln71_1_fu_380_p1 = tmp_6_fu_373_p3;
 
-assign zext_ln71_fu_369_p1 = tmp_25_fu_362_p3;
+assign zext_ln71_fu_369_p1 = tmp_5_fu_362_p3;
 
 assign zext_ln73_fu_431_p1 = add_ln73_fu_426_p2;
 

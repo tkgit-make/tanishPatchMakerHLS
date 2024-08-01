@@ -45,8 +45,8 @@
 <Resources>
 <BRAM_18K>3</BRAM_18K>
 <DSP>0</DSP>
-<FF>10254</FF>
-<LUT>14871</LUT>
+<FF>10143</FF>
+<LUT>15326</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -126,7 +126,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_din1</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din1</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -137,7 +137,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_din2</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din2</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -148,7 +148,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_din3</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din3</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -159,7 +159,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_din4</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din4</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -170,7 +170,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_din5</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din5</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -181,7 +181,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_dout0</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_dout0</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -192,7 +192,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_ce</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_ce</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -203,7 +203,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_start</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_start</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -214,7 +214,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_ready</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_ready</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -225,7 +225,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_done</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_done</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -236,7 +236,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1464_p_idle</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_idle</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -507,7 +507,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>9</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -562,7 +562,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>9</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>

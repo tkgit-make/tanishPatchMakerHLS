@@ -7,4 +7,4 @@ set depth_list {
 {GDn_points 5}
 {patches_superpointsOUTPUT 2560}
 }
-set trans_num 1
+set trans_num 10

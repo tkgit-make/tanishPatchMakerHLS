@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MPSQ'" level="0">
-<item name = "Date">Wed Jul 31 23:37:52 2024
+<item name = "Date">Thu Aug  1 00:48:00 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_solveNextColumn_fu_328">solveNextColumn, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_initializeArrays_fu_346">initializeArrays, 6407, 6407, 19.221 us, 19.221 us, 6407, 6407, none</column>
+<column name="grp_initializeArrays_fu_346">initializeArrays, 2926, 2926, 8.778 us, 8.778 us, 2926, 2926, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

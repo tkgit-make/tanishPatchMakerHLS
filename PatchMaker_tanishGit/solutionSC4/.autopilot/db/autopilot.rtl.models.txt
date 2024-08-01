@@ -24,11 +24,13 @@ getParallelograms
 get_acceptanceCorners
 wedgePatch_init
 encodeCoordinates
+add_patch_patches_parameters14
 add_patch9
 makePatch_alignedToLine
 areWedgeSuperPointsEqual
 getSolveNextPatchPairWhileCondition
 get_index_from_z
+delete_patch_patches_parameters
 delete_patch
 solveComplmentaryPatch
 getShadows

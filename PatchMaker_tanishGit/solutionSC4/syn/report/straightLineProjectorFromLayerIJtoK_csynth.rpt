@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'straightLineProjectorFromLayerIJtoK'
 ================================================================
-* Date:           Wed Jul 31 23:37:59 2024
+* Date:           Thu Aug  1 00:48:07 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -98,7 +98,7 @@
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
     |add_ln69_fu_243_p2     |         +|   0|  0|  39|          32|          32|
-    |empty_55_fu_198_p2     |         +|   0|  0|  13|           6|           6|
+    |empty_54_fu_198_p2     |         +|   0|  0|  13|           6|           6|
     |empty_fu_189_p2        |         -|   0|  0|  13|           6|           6|
     |neg3_fu_151_p2         |         -|   0|  0|  12|           1|           4|
     |neg_fu_131_p2          |         -|   0|  0|  10|           1|           3|

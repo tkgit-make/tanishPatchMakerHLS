@@ -61,10 +61,10 @@ void getParallelograms(WEDGE_PATCH)
         COORDINATE_TYPE z_j_min = wp_superpoints[i][0][1];
         COORDINATE_TYPE z_j_max = wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][1];
 
-        COORDINATE_TYPE a = straightLineProjectorFromLayerIJtoK(z1_min, z_j_max, 1, i + 1, num_layers);
-        COORDINATE_TYPE b = straightLineProjectorFromLayerIJtoK(z1_max, z_j_max, 1, i + 1, num_layers);
-        COORDINATE_TYPE c = straightLineProjectorFromLayerIJtoK(z1_min, z_j_min, 1, i + 1, num_layers);
-        COORDINATE_TYPE d = straightLineProjectorFromLayerIJtoK(z1_max, z_j_min, 1, i + 1, num_layers);
+        COORDINATE_TYPE a = straightLineProjectorFromLayerIJtoK(z1_min, z_j_max, 1, i + 1, MAX_LAYERS);
+        COORDINATE_TYPE b = straightLineProjectorFromLayerIJtoK(z1_max, z_j_max, 1, i + 1, MAX_LAYERS);
+        COORDINATE_TYPE c = straightLineProjectorFromLayerIJtoK(z1_min, z_j_min, 1, i + 1, MAX_LAYERS);
+        COORDINATE_TYPE d = straightLineProjectorFromLayerIJtoK(z1_max, z_j_min, 1, i + 1, MAX_LAYERS);
 
         // directly assign the values to the array
 
@@ -172,15 +172,15 @@ void getShadows(WEDGE_PATCH_GET_SHADOWS, COORDINATE_TYPE zTopMin, COORDINATE_TYP
 #pragma HLS INLINE OFF
     COORDINATE_TYPE zTop_min;
     COORDINATE_TYPE zTop_max;
-    if (num_layers - 1 < 0)
+    if (MAX_LAYERS - 1 < 0)
     {
         zTop_min = zTopMin;
         zTop_max = zTopMax;
     }
     else
     {
-        zTop_min = max(zTopMin, trapezoid_edgesNEGATIVE[num_layers - 1]);
-        zTop_max = min(zTopMax, trapezoid_edges[num_layers - 1]);
+        zTop_min = max(zTopMin, trapezoid_edgesNEGATIVE[MAX_LAYERS - 1]);
+        zTop_max = min(zTopMax, trapezoid_edges[MAX_LAYERS - 1]);
     }
 
     COORDINATE_TYPE topL_jL[MAX_SUPERPOINTS_IN_PATCH - 1];
@@ -194,10 +194,10 @@ void getShadows(WEDGE_PATCH_GET_SHADOWS, COORDINATE_TYPE zTopMin, COORDINATE_TYP
         COORDINATE_TYPE z_j_min = decodeZcoordinate(wp_superpoints[i][0]);
         COORDINATE_TYPE z_j_max = decodeZcoordinate(wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1]);
 
-        topL_jL[i] = straightLineProjectorFromLayerIJtoK(zTop_min, z_j_min, num_layers, i + 1, 1);
-        topL_jR[i] = straightLineProjectorFromLayerIJtoK(zTop_min, z_j_max, num_layers, i + 1, 1);
-        topR_jL[i] = straightLineProjectorFromLayerIJtoK(zTop_max, z_j_min, num_layers, i + 1, 1);
-        topR_jR[i] = straightLineProjectorFromLayerIJtoK(zTop_max, z_j_max, num_layers, i + 1, 1);
+        topL_jL[i] = straightLineProjectorFromLayerIJtoK(zTop_min, z_j_min, MAX_LAYERS, i + 1, 1);
+        topL_jR[i] = straightLineProjectorFromLayerIJtoK(zTop_min, z_j_max, MAX_LAYERS, i + 1, 1);
+        topR_jL[i] = straightLineProjectorFromLayerIJtoK(zTop_max, z_j_min, MAX_LAYERS, i + 1, 1);
+        topR_jR[i] = straightLineProjectorFromLayerIJtoK(zTop_max, z_j_max, MAX_LAYERS, i + 1, 1);
     }
 
     wp_parameters[1][0][0] = topL_jL[0];
@@ -274,22 +274,22 @@ void get_acceptanceCorners(WEDGE_PATCH)
     wp_parameters[2][3][1] = d_corner_max;
 
     // the nth element of shadow_bottom is the same as the nth element in the corner lists in CPP
-    if (a_corner_min != wp_parameters[0][num_layers - 2][0])
+    if (a_corner_min != wp_parameters[0][MAX_LAYERS - 2][0])
     {
         wp_parameters[3][2][0] = false;
         wp_parameters[3][1][0] = false;
     }
-    if (b_corner_min != wp_parameters[0][num_layers - 2][1])
+    if (b_corner_min != wp_parameters[0][MAX_LAYERS - 2][1])
     {
         wp_parameters[3][2][0] = false;
         wp_parameters[3][1][0] = false;
     }
-    if (c_corner_max != wp_parameters[0][num_layers - 2][2])
+    if (c_corner_max != wp_parameters[0][MAX_LAYERS - 2][2])
     {
         wp_parameters[3][2][0] = false;
         wp_parameters[3][0][0] = false;
     }
-    if (d_corner_max != wp_parameters[0][num_layers - 2][3])
+    if (d_corner_max != wp_parameters[0][MAX_LAYERS - 2][3])
     {
         wp_parameters[3][2][0] = false;
         wp_parameters[3][0][0] = false;
@@ -318,6 +318,62 @@ SPACEPOINT_TYPE encodeCoordinates(COORDINATE_TYPE phi, COORDINATE_TYPE z)
     return ( ( (SPACEPOINT_TYPE) phi )<<COORDINATE_TYPE_SIZE) | ( ( (SPACEPOINT_TYPE) z) & SPACEPOINT_MASK );
 }
 
+void add_patch_patches_parameters(COORDINATE_TYPE wp_parameters[PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH])
+{
+#pragma HLS INLINE OFF
+	for(int i = MAX_PATCHES_BUFFER - 1; i > 0; i--)
+	{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+		add_patch_perPropertyTypePP0:
+		for(int_type a = 0; a < PATCH_PROPERTIES; a++)
+		{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+			add_patch_perParallelogramPP0:
+			for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
+			{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+				add_patch_perPropertyLengthPP0:
+				for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
+				{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+					patches_parameters[i][a][b][c] = patches_parameters[i - 1][a][b][c];
+				}
+			}
+		}
+	}
+
+	add_patch_perPropertyTypePP1:
+	for(int_type a = 0; a < PATCH_PROPERTIES; a++)
+	{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+		add_patch_perParallelogramPP1:
+		for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
+		{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+			add_patch_perPropertyLengthPP1:
+			for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
+			{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+				patches_parameters[0][a][b][c] = wp_parameters[a][b][c];
+			}
+		}
+	}
+}
+
 void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
 {
 #pragma HLS INLINE OFF
@@ -340,28 +396,7 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
             }
         }
 
-        add_patch_perPropertyTypePP0:
-        for(int_type a = 0; a < PATCH_PROPERTIES; a++)
-        {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-            add_patch_perParallelogramPP0:
-            for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
-            {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-                add_patch_perPropertyLengthPP0:
-                for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
-                {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-                    patches_parameters[0][a][b][c] = wp_parameters[a][b][c];
-                }
-            }
-        }
+        add_patch_patches_parameters(wp_parameters, patches_parameters);
 
         //cover->all_patches[0] = curr_patch;
         #if KEEP_DELETED_PATCHES == true
@@ -405,28 +440,7 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
                     }
                 }
                 
-                add_patch_perPropertyTypePP1:
-                for(int_type a = 0; a < PATCH_PROPERTIES; a++)
-                {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-                    add_patch_perParallelogramPP1:
-                    for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
-                    {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-                        add_patch_perPropertyLengthPP1:
-                        for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
-                        {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-                            patches_parameters[n_patches][a][b][c] = wp_parameters[a][b][c];
-                        }
-                    }
-                }
+                add_patch_patches_parameters(wp_parameters, patches_parameters);
                 //cover->all_patches[cover->n_patches] = curr_patch;
                 #if KEEP_DELETED_PATCHES == true
                     cover->real_patch_list[cover->n_patches] = true;
@@ -435,6 +449,60 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
             }
         }
     }
+}
+
+void delete_patch_patches_parameters(int_type index, int_type n_patches, COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH])
+{
+#pragma HLS INLINE OFF
+	int_type true_index = (n_patches - index) - 1;
+	for (index_type i = true_index; i < MAX_PATCHES_BUFFER - 1; i++)
+	{
+		delete_patch_perPropertyTypePP0:
+		for(int_type a = 0; a < PATCH_PROPERTIES; a++)
+		{
+#if SMALL_CIRCUIT == false
+	#pragma HLS UNROLL
+#endif
+			delete_patch_perParallelogramPP0:
+			for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
+			{
+#if SMALL_CIRCUIT == false
+	#pragma HLS UNROLL
+#endif
+				delete_patch_perPropertyLengthPP0:
+				for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
+				{
+#if SMALL_CIRCUIT == false
+	#pragma HLS UNROLL
+#endif
+					patches_parameters[i][a][b][c] = patches_parameters[i + 1][a][b][c];
+				}
+			}
+		}
+	}
+
+	delete_patch_perPropertyTypePP1:
+	for(int_type a = 0; a < PATCH_PROPERTIES; a++)
+	{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+		delete_patch_perParallelogramPP1:
+		for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
+		{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+			delete_patch_perPropertyLengthPP1:
+			for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
+			{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+				patches_parameters[MAX_PATCHES_BUFFER - 1][a][b][c] = 0;
+			}
+		}
+	}
 }
 
 void delete_patch(int_type index, index_type &n_patches, GPATCHES)
@@ -469,29 +537,6 @@ void delete_patch(int_type index, index_type &n_patches, GPATCHES)
                 patches_superpoints[i][a][b] = patches_superpoints[i + 1][a][b];
             }
         }
-
-        delete_patch_perPropertyTypePP: 
-        for(int_type a = 0; a < PATCH_PROPERTIES; a++)
-        {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-            delete_patch_perParallelogramPP:
-            for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
-            {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-                delete_patch_perPropertyLengthPP: 
-                for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
-                {
-#if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
-#endif
-                    patches_parameters[i][a][b][c] = patches_parameters[i + 1][a][b][c];
-                }
-            }
-        }
         #if KEEP_DELETED_PATCHES == true
             cover->real_patch_list[i] = cover->real_patch_list[i + 1];
         #endif
@@ -515,28 +560,8 @@ void delete_patch(int_type index, index_type &n_patches, GPATCHES)
 		}
 	}
 
-	delete_patch_perPropertyTypePPLP:
-	for(int_type a = 0; a < PATCH_PROPERTIES; a++)
-	{
-#if SMALL_CIRCUIT == false
-#pragma HLS UNROLL
-#endif
-		delete_patch_perParallelogramPPLP:
-		for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
-		{
-#if SMALL_CIRCUIT == false
-#pragma HLS UNROLL
-#endif
-			delete_patch_perPropertyLengthPPLP:
-			for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
-			{
-#if SMALL_CIRCUIT == false
-#pragma HLS UNROLL
-#endif
-				patches_parameters[n_patches - 1][a][b][c] = 0;
-			}
-		}
-	}
+	delete_patch_patches_parameters(index, n_patches, patches_parameters);
+
 	#if KEEP_DELETED_PATCHES == true
 		cover->real_patch_list[i] = cover->real_patch_list[i + 1];
 	#endif
@@ -598,7 +623,7 @@ void initializeArrays(GPATCHES)
     }
 
     initArraysPPloop1:
-    for(int_type a = 0; a < MAX_PATCHES; a++)
+    for(int_type a = 0; a < MAX_PATCHES_BUFFER; a++)
     {
 //#pragma HLS UNROLL
     	initArraysPPloop2:
@@ -636,7 +661,7 @@ void MPSQ(int_type stop, int_type ppl, bool leftRight, index_type &n_patches, SP
     #pragma HLS ARRAY_PARTITION variable=patches_superpoints dim=2 complete
 #endif
 //#pragma HLS ARRAY_RESHAPE variable=patches_parameters dim=0 complete
-    COORDINATE_TYPE patches_parameters[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
+    COORDINATE_TYPE patches_parameters[MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
 #if SMALL_CIRCUIT == false
     #pragma HLS ARRAY_PARTITION variable=patches_parameters dim=4 complete
     #pragma HLS ARRAY_PARTITION variable=patches_parameters dim=3 complete
@@ -726,7 +751,7 @@ COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type stop, int_type 
 
     if (n_patches > 0)
     {
-        z_top_max = min(z_top_max, straightLineProjectorFromLayerIJtoK(static_cast<COORDINATE_TYPE> (-beam_axis_lim), apexZ0, 0, 1, num_layers // includes passing a pointer to the last patch
+        z_top_max = min(z_top_max, straightLineProjectorFromLayerIJtoK(static_cast<COORDINATE_TYPE> (-beam_axis_lim), apexZ0, 0, 1, MAX_LAYERS // includes passing a pointer to the last patch
                         ));
     }
 
@@ -766,7 +791,7 @@ bool getSolveNextColumnWhileConditional(COORDINATE_TYPE c_corner, int_type nPatc
                                         COORDINATE_TYPE projectionOfCornerToBeam)
 {
 #pragma HLS INLINE OFF
-	return (c_corner > trapezoid_edgesNEGATIVE[num_layers - 1]) && (nPatchesInColumn < 100000000) && (static_cast<long_type>(projectionOfCornerToBeam) < beam_axis_lim);
+	return (c_corner > trapezoid_edgesNEGATIVE[MAX_LAYERS - 1]) && (nPatchesInColumn < 100000000) && (static_cast<long_type>(projectionOfCornerToBeam) < beam_axis_lim);
 }
 
 void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, bool leftRight, bool fix42, COORDINATE_TYPE &saved_apexZ0,
@@ -787,24 +812,24 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, boo
 
     #if PRINT_OUTS == true
         printf("top layer from %ld to %ld z_top_max: %ld\n",
-                patches_superpoints[lastPatchIndex][num_layers - 1][2][2][0],
-                patches_superpoints[lastPatchIndex][num_layers - 1][2][1][0],
+                patches_superpoints[lastPatchIndex][MAX_LAYERS - 1][2][2][0],
+                patches_superpoints[lastPatchIndex][MAX_LAYERS - 1][2][1][0],
                 z_top_max);
         printf("original: [%ld, %ld] for patch %d\n",
-                patches_parameters[lastPatchIndex][2][0][0],
-                patches_parameters[lastPatchIndex][2][0][1],
+                patches_parameters[0][2][0][0],
+                patches_parameters[0][2][0][1],
                 n_patches);
         printf("original: [%ld, %ld]\n",
-                patches_parameters[lastPatchIndex][2][1][0],
-                patches_parameters[lastPatchIndex][2][1][1]);
+                patches_parameters[0][2][1][0],
+                patches_parameters[0][2][1][1]);
 
         printf("original: [%ld, %ld]\n",
-                patches_parameters[lastPatchIndex][2][2][0],
-                patches_parameters[lastPatchIndex][2][2][1]);
+                patches_parameters[0][2][2][0],
+                patches_parameters[0][2][2][1]);
 
         printf("original: [%ld, %ld]\n",
-                patches_parameters[lastPatchIndex][2][3][0],
-                patches_parameters[lastPatchIndex][2][3][1]);
+                patches_parameters[0][2][3][0],
+                patches_parameters[0][2][3][1]);
 
         for (index_type i = 1; i < static_cast<int>(patches_parameters[lastPatchIndex][4][1][0]) - 1; i++)
         {
@@ -813,15 +838,15 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, boo
                     j,
                     patches_superpoints[lastPatchIndex][i][2][1][0],
                     patches_superpoints[lastPatchIndex][i][2][2][0],
-                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][2][0], patches_superpoints[lastPatchIndex][i][2][1][0], 1, j, num_layers),
-                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][2][0], patches_superpoints[lastPatchIndex][i][2][2][0], 1, j, num_layers),
-                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][1][0], patches_superpoints[lastPatchIndex][i][2][1][0], 1, j, num_layers),
-                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][1][0], patches_superpoints[lastPatchIndex][i][2][2][0], 1, j, num_layers));
+                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][2][0], patches_superpoints[lastPatchIndex][i][2][1][0], 1, j, MAX_LAYERS),
+                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][2][0], patches_superpoints[lastPatchIndex][i][2][2][0], 1, j, MAX_LAYERS),
+                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][1][0], patches_superpoints[lastPatchIndex][i][2][1][0], 1, j, MAX_LAYERS),
+                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][1][0], patches_superpoints[lastPatchIndex][i][2][2][0], 1, j, MAX_LAYERS));
         }
     #endif
 
-    COORDINATE_TYPE original_c = patches_parameters[lastPatchIndex][2][2][1];
-    COORDINATE_TYPE original_d = patches_parameters[lastPatchIndex][2][3][1];
+    COORDINATE_TYPE original_c = patches_parameters[0][2][2][1];
+    COORDINATE_TYPE original_d = patches_parameters[0][2][3][1];
 
     c_corner = original_c;
 
@@ -832,7 +857,7 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, boo
     /*
     if (cover->n_patches > 2) {
         int_type thirdLastPatchIndex = lastPatchIndex - 2;
-        repeat_original = (cover->patches[lastPatchIndex].superpoints[num_layers - 1] == cover->patches[thirdLastPatchIndex].superpoints[num_layers - 1]) &&
+        repeat_original = (cover->patches[lastPatchIndex].superpoints[MAX_LAYERS - 1] == cover->patches[thirdLastPatchIndex].superpoints[MAX_LAYERS - 1]) &&
                 (cover->patches[lastPatchIndex].superpoints[0] == cover->patches[thirdLastPatchIndex].superpoints[0]) &&
                 (cover->patches[lastPatchIndex].superpoints[1] == cover->patches[thirdLastPatchIndex].superpoints[1]) &&
                 (cover->patches[lastPatchIndex].superpoints[2] == cover->patches[thirdLastPatchIndex].superpoints[2]) &&
@@ -856,32 +881,32 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, boo
     }
 
     COORDINATE_TYPE seed_apexZ0 = apexZ0;
-    projectionOfCornerToBeam = straightLineProjectorFromLayerIJtoK(patches_parameters[lastPatchIndex][2][2][1], patches_parameters[lastPatchIndex][2][2][0], num_layers, 1, 0);
-    bool squarePatch_alternate1 = (patches_parameters[lastPatchIndex][2][0][1] > z_top_max) && (patches_parameters[lastPatchIndex][2][1][1] > z_top_max) && (patches_parameters[lastPatchIndex][3][0][0]);
-    bool squarePatch_alternate2 = (patches_parameters[lastPatchIndex][2][0][1] > z_top_max) && (patches_parameters[lastPatchIndex][3][0][0]);
+    projectionOfCornerToBeam = straightLineProjectorFromLayerIJtoK(patches_parameters[0][2][2][1], patches_parameters[0][2][2][0], MAX_LAYERS, 1, 0);
+    bool squarePatch_alternate1 = (patches_parameters[0][2][0][1] > z_top_max) && (patches_parameters[0][2][1][1] > z_top_max) && (patches_parameters[0][3][0][0]);
+    bool squarePatch_alternate2 = (patches_parameters[0][2][0][1] > z_top_max) && (patches_parameters[0][3][0][0]);
 
-    bool notChoppedPatch = (patches_parameters[lastPatchIndex][3][2][0]) || squarePatch_alternate1 || squarePatch_alternate2;
+    bool notChoppedPatch = (patches_parameters[0][3][2][0]) || squarePatch_alternate1 || squarePatch_alternate2;
     bool madeComplementaryPatch = false;
 
     int_type nPatchesAtOriginal = n_patches;
     #if PRINT_OUTS == true
     printf("squareAcceptance: %d triangleAcceptance: %d projectionOfCornerToBeam: %ld notChoppedPatch %d\n",
-           patches_parameters[lastPatchIndex][3][2][0], patches_parameters[lastPatchIndex][3][3][0],projectionOfCornerToBeam, notChoppedPatch);
+           patches_parameters[0][3][2][0], patches_parameters[lastPatchIndex][3][3][0],projectionOfCornerToBeam, notChoppedPatch);
     #endif
 
-    if (!notChoppedPatch && (patches_parameters[lastPatchIndex][2][2][1] > trapezoid_edgesNEGATIVE[num_layers - 1]) && ((static_cast<long_type>(projectionOfCornerToBeam) < beam_axis_lim)))
+    if (!notChoppedPatch && (patches_parameters[0][2][2][1] > trapezoid_edgesNEGATIVE[MAX_LAYERS - 1]) && ((static_cast<long_type>(projectionOfCornerToBeam) < beam_axis_lim)))
     {
         complementary_apexZ0 = decodeZcoordinate(patches_superpoints[lastPatchIndex][0][0]);
-        if (patches_parameters[lastPatchIndex][3][3][0] && !repeat_original)
+        if (patches_parameters[0][3][3][0] && !repeat_original)
         {
-            z_top_min = patches_parameters[lastPatchIndex][2][3][1];
+            z_top_min = patches_parameters[0][2][3][1];
         }
         else
         {
             #if PRINT_OUTS == true
-                printf("z_top_min before: %ld superpoints[self.env.num_layers-1][2][1][0]: %ld\n", z_top_min, patches_superpoints[lastPatchIndex][num_layers - 1][2][1][0]);
+                printf("z_top_min before: %ld superpoints[self.env.MAX_LAYERS-1][2][1][0]: %ld\n", z_top_min, patches_superpoints[lastPatchIndex][MAX_LAYERS - 1][2][1][0]);
             #endif
-                z_top_min = max(static_cast<COORDINATE_TYPE>(-top_layer_lim), decodeZcoordinate(patches_superpoints[lastPatchIndex][num_layers - 1][0]));
+                z_top_min = max(static_cast<COORDINATE_TYPE>(-top_layer_lim), decodeZcoordinate(patches_superpoints[lastPatchIndex][MAX_LAYERS - 1][0]));
         }
 
         makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
@@ -892,14 +917,14 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, boo
 
         madeComplementaryPatch = true;
         #if PRINT_OUTS == true
-            printf("complementary: [%ld, %ld] for z_top_min: %ld\n", patches_parameters[lastPatchIndex][2][0][0], patches_parameters[lastPatchIndex][2][0][1], z_top_min);
-            printf("complementary: [%ld, %ld] for patch %d\n", patches_parameters[lastPatchIndex][2][1][0], patches_parameters[lastPatchIndex][2][1][1], n_patches);
-            printf("complementary: [%ld, %ld]\n", patches_parameters[lastPatchIndex][2][2][0], patches_parameters[lastPatchIndex][2][2][1]);
-            printf("complementary: [%ld, %ld]\n", patches_parameters[lastPatchIndex][2][3][0], patches_parameters[lastPatchIndex][2][3][1]);
+            printf("complementary: [%ld, %ld] for z_top_min: %ld\n", patches_parameters[0][2][0][0], patches_parameters[0][2][0][1], z_top_min);
+            printf("complementary: [%ld, %ld] for patch %d\n", patches_parameters[0][2][1][0], patches_parameters[0][2][1][1], n_patches);
+            printf("complementary: [%ld, %ld]\n", patches_parameters[0][2][2][0], patches_parameters[0][2][2][1]);
+            printf("complementary: [%ld, %ld]\n", patches_parameters[0][2][3][0], patches_parameters[0][2][3][1]);
         #endif
 
-        COORDINATE_TYPE complementary_a = patches_parameters[lastPatchIndex][2][0][1];
-        COORDINATE_TYPE complementary_b = patches_parameters[lastPatchIndex][2][1][1];
+        COORDINATE_TYPE complementary_a = patches_parameters[0][2][0][1];
+        COORDINATE_TYPE complementary_b = patches_parameters[0][2][1][1];
 
         long_type white_space_height = max(original_c - complementary_a, original_d - complementary_b);
         long_type previous_white_space_height = -INTEGER_FACTOR_CM;
@@ -923,11 +948,11 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, boo
     }
 
     lastPatchIndex = n_patches - 1; // just to keep fresh in case we use it
-    c_corner = patches_parameters[lastPatchIndex][2][2][1];
+    c_corner = patches_parameters[0][2][2][1];
 
-    projectionOfCornerToBeam = straightLineProjectorFromLayerIJtoK(c_corner, patches_parameters[lastPatchIndex][2][2][0], num_layers, 1, 0);
+    projectionOfCornerToBeam = straightLineProjectorFromLayerIJtoK(c_corner, patches_parameters[0][2][2][0], MAX_LAYERS, 1, 0);
 
-    saved_apexZ0 = patches_parameters[lastPatchIndex][2][2][0];
+    saved_apexZ0 = patches_parameters[0][2][2][0];
 
     if (madeComplementaryPatch) // Create separate function for this
     {
@@ -951,17 +976,17 @@ bool getSolveNextPatchPairWhileCondition(int_type lastPatchIndex, bool repeat_pa
 
 	bool exp1 = !(white_space_height <= WHITE_SPACE_THRESHOLD1 && (previous_white_space_height >= 0));
 	bool exp2 = (abs(white_space_height) > WHITE_SPACE_THRESHOLD2);
-	bool exp3 = ((patches_parameters[lastPatchIndex][2][2][1] > trapezoid_edgesNEGATIVE[num_layers - 1]) || (white_space_height > WHITE_SPACE_THRESHOLD2));
-	bool exp4 = (current_z_top_index < (GDn_points[num_layers - 1]));
+	bool exp3 = ((patches_parameters[0][2][2][1] > trapezoid_edgesNEGATIVE[MAX_LAYERS - 1]) || (white_space_height > WHITE_SPACE_THRESHOLD2));
+	bool exp4 = (current_z_top_index < (GDn_points[MAX_LAYERS - 1]));
 	bool exp5 = !(repeat_patch) && !(repeat_original);
 
 	return exp1 && exp2 && exp3 && exp4 && exp5;
 
 	/*
     return !(white_space_height <= static_cast<long_type>(0.0000005 * INTEGER_FACTOR_CM) && (previous_white_space_height >= 0)) && (abs(white_space_height) > static_cast<long_type>(0.000005 * INTEGER_FACTOR_CM)) &&
-               ((patches_parameters[lastPatchIndex][2][2][1] > trapezoid_edgesNEGATIVE[num_layers - 1]) ||
+               ((patches_parameters[lastPatchIndex][2][2][1] > trapezoid_edgesNEGATIVE[MAX_LAYERS - 1]) ||
                     (white_space_height > static_cast<long_type>(0.000005 * INTEGER_FACTOR_CM))) &&
-               (current_z_top_index < (int)(GDn_points[num_layers - 1])) &&
+               (current_z_top_index < (int)(GDn_points[MAX_LAYERS - 1])) &&
                !(repeat_patch) && !(repeat_original);
     */
 }
@@ -970,46 +995,49 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
 {
 #pragma HLS INLINE OFF
 	index_type secondLastPatchIndex;
+	index_type secondLastPatchIndexPP;
 
 	if (lastPatchIndex == 0)
 	{
 		secondLastPatchIndex = 0;
+		secondLastPatchIndexPP = 0;
 	}
 	else
 	{
 		secondLastPatchIndex = lastPatchIndex - 1;
+		secondLastPatchIndexPP = 1;
 	}
 
     // modifying patches, not adding patches, so index variables do not need to be updated.
-    getShadows(patches_superpoints[lastPatchIndex], patches_parameters[lastPatchIndex], z_top_min, z_top_max);
-    getShadows(patches_superpoints[secondLastPatchIndex], patches_parameters[secondLastPatchIndex], z_top_min, z_top_max);
+    getShadows(patches_superpoints[lastPatchIndex], patches_parameters[0], z_top_min, z_top_max);
+    getShadows(patches_superpoints[secondLastPatchIndex], patches_parameters[secondLastPatchIndexPP], z_top_min, z_top_max);
 
-    COORDINATE_TYPE original_topR_jL = patches_parameters[secondLastPatchIndex][1][2][0];
+    COORDINATE_TYPE original_topR_jL = patches_parameters[secondLastPatchIndexPP][1][2][0];
     bool originalPartialTop = (original_topR_jL > complementary_apexZ0) && (original_topR_jL < apexZ0) &&
-                                (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topR_jL, z_top_max, 1, num_layers, 0))) < 20 * beam_axis_lim);
+                                (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topR_jL, z_top_max, 1, MAX_LAYERS, 0))) < 20 * beam_axis_lim);
 
-    COORDINATE_TYPE original_topL_jL = patches_parameters[secondLastPatchIndex][1][0][0];
+    COORDINATE_TYPE original_topL_jL = patches_parameters[secondLastPatchIndexPP][1][0][0];
 
     bool originalPartialBottom = (original_topL_jL > complementary_apexZ0) && ((original_topL_jL - apexZ0) < static_cast<long_type>(-0.0001 * INTEGER_FACTOR_CM)) &&
-                                    (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topL_jL,z_top_min, 1, num_layers, 0))) < 20 * beam_axis_lim);
+                                    (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topL_jL,z_top_min, 1, MAX_LAYERS, 0))) < 20 * beam_axis_lim);
 
-    COORDINATE_TYPE complementary_topR_jR = patches_parameters[lastPatchIndex][1][3][0];
+    COORDINATE_TYPE complementary_topR_jR = patches_parameters[0][1][3][0];
 
     bool complementaryPartialTop = ((complementary_topR_jR - complementary_apexZ0) > static_cast<long_type>(0.00005 * INTEGER_FACTOR_CM)) && (complementary_topR_jR < apexZ0) && // The use of 0.00005 is "hack" to prevent a couple of wedges from creating extra patches,
-                                    (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(complementary_topR_jR, z_top_max, 1, num_layers, 0))) < 20 * beam_axis_lim);
+                                    (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(complementary_topR_jR, z_top_max, 1, MAX_LAYERS, 0))) < 20 * beam_axis_lim);
 
-    COORDINATE_TYPE complementary_topL_jR = patches_parameters[lastPatchIndex][1][1][0];
+    COORDINATE_TYPE complementary_topL_jR = patches_parameters[0][1][1][0];
 
     bool complementaryPartialBottom = (complementary_topL_jR > complementary_apexZ0) && ((complementary_topL_jR - apexZ0) < static_cast<long_type>(-0.0001 * INTEGER_FACTOR_CM)) &&
-                                        (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(complementary_topL_jR,z_top_min, 1, num_layers, 0))) < 20 * beam_axis_lim);
+                                        (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(complementary_topL_jR,z_top_min, 1, MAX_LAYERS, 0))) < 20 * beam_axis_lim);
 
     COORDINATE_TYPE horizontalShiftTop = original_topR_jL - complementary_topR_jR;
     COORDINATE_TYPE horizontalShiftBottom = original_topL_jL - complementary_topL_jR;
 
-    COORDINATE_TYPE complementary_topR_jL = patches_parameters[lastPatchIndex][1][2][0];
-    COORDINATE_TYPE complementary_topL_jL = patches_parameters[lastPatchIndex][1][0][0];
-    COORDINATE_TYPE original_topR_jR = patches_parameters[secondLastPatchIndex][1][3][0];
-    COORDINATE_TYPE original_topL_jR = patches_parameters[secondLastPatchIndex][1][1][0];
+    COORDINATE_TYPE complementary_topR_jL = patches_parameters[0][1][2][0];
+    COORDINATE_TYPE complementary_topL_jL = patches_parameters[0][1][0][0];
+    COORDINATE_TYPE original_topR_jR = patches_parameters[secondLastPatchIndexPP][1][3][0];
+    COORDINATE_TYPE original_topL_jR = patches_parameters[secondLastPatchIndexPP][1][1][0];
 
     COORDINATE_TYPE horizontalOverlapTop = max(complementary_topR_jL - original_topR_jL, complementary_topR_jR - original_topR_jR);
     COORDINATE_TYPE horizontalOverlapBottom = max(complementary_topL_jL - original_topL_jL, complementary_topL_jR - original_topL_jR);
@@ -1025,8 +1053,8 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
 
     COORDINATE_TYPE newZtop = 0;
 
-    COORDINATE_TYPE z0_original_bCorner = straightLineProjectorFromLayerIJtoK(apexZ0, z_top_max, 1, num_layers, 0);
-    COORDINATE_TYPE z0_complementary_cCorner = straightLineProjectorFromLayerIJtoK(complementary_apexZ0,z_top_min, 1, num_layers, 0);
+    COORDINATE_TYPE z0_original_bCorner = straightLineProjectorFromLayerIJtoK(apexZ0, z_top_max, 1, MAX_LAYERS, 0);
+    COORDINATE_TYPE z0_complementary_cCorner = straightLineProjectorFromLayerIJtoK(complementary_apexZ0,z_top_min, 1, MAX_LAYERS, 0);
     bool shiftOriginal = true;
 
     if (z0_original_bCorner < 0)
@@ -1081,27 +1109,27 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
 
         makePatch_alignedToLine(shifted_Align, newZtop, ppl, !shiftOriginal, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
 
-        getShadows(patches_superpoints[n_patches - 1], patches_parameters[n_patches - 1], z_top_min, z_top_max);
+        getShadows(patches_superpoints[n_patches - 1], patches_parameters[0], z_top_min, z_top_max);
 
         if (shiftOriginal)
         {
-            original_topR_jL = patches_parameters[n_patches - 1][1][2][0];
-            original_topL_jL = patches_parameters[n_patches - 1][1][0][0];
-            original_topR_jR = patches_parameters[n_patches - 1][1][3][0];
-            original_topL_jR = patches_parameters[n_patches - 1][1][1][0];
+            original_topR_jL = patches_parameters[0][1][2][0];
+            original_topL_jL = patches_parameters[0][1][0][0];
+            original_topR_jR = patches_parameters[0][1][3][0];
+            original_topL_jR = patches_parameters[0][1][1][0];
         }
         else
         {
-            complementary_topR_jR = patches_parameters[n_patches - 1][1][3][0];
-            complementary_topL_jR = patches_parameters[n_patches - 1][1][1][0];
-            complementary_topR_jL = patches_parameters[n_patches - 1][1][2][0];
-            complementary_topL_jL = patches_parameters[n_patches - 1][1][0][0];
+            complementary_topR_jR = patches_parameters[0][1][3][0];
+            complementary_topL_jR = patches_parameters[0][1][1][0];
+            complementary_topR_jL = patches_parameters[0][1][2][0];
+            complementary_topL_jL = patches_parameters[0][1][0][0];
         }
 
         horizontalShiftTop = original_topR_jL - complementary_topR_jR;
         horizontalShiftBottom = original_topL_jL - complementary_topL_jR;
 
-        if (shiftOriginal && straightLineProjectorFromLayerIJtoK(original_topR_jR, z_top_max, 1, num_layers, 0) < beam_axis_lim)
+        if (shiftOriginal && straightLineProjectorFromLayerIJtoK(original_topR_jR, z_top_max, 1, MAX_LAYERS, 0) < beam_axis_lim)
         {
             horizontalOverlapTop = max(complementary_topR_jL - original_topR_jL, complementary_topR_jR - original_topR_jR);
             horizontalOverlapBottom = max(complementary_topL_jL - original_topL_jL, complementary_topL_jR - original_topL_jR);
@@ -1130,7 +1158,7 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
     }
     if (makeHorizontallyShiftedPatch)
     {
-        if ((straightLineProjectorFromLayerIJtoK(shifted_Align, newZtop, 1, num_layers, 0) > beam_axis_lim) && shiftOriginal)
+        if ((straightLineProjectorFromLayerIJtoK(shifted_Align, newZtop, 1, MAX_LAYERS, 0) > beam_axis_lim) && shiftOriginal)
         {
             if (n_patches > 2)
             {
@@ -1153,17 +1181,17 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         index_type secondLastPatchIndex = lastPatchIndex - 1;
         #if PRINT_OUTS == true
             printf("original c: %ld %ld || original d: %ld %ld\n",
-                original_c, patches_parameters[secondLastPatchIndex][2][2][1],
-                original_d, patches_parameters[secondLastPatchIndex][2][3][1]);
+                original_c, patches_parameters[secondLastPatchIndexPP][2][2][1],
+                original_d, patches_parameters[secondLastPatchIndexPP][2][3][1]);
         #endif
     }
     #if PRINT_OUTS == true
         printf("complementary_a: %ld %ld || complementary_b: %ld %ld\n",
-            complementary_a, patches_parameters[lastPatchIndex][2][0][1],
-            complementary_b, patches_parameters[lastPatchIndex][2][1][1]);
+            complementary_a, patches_parameters[0][2][0][1],
+            complementary_b, patches_parameters[0][2][1][1]);
     #endif
 
-    current_z_top_index = get_index_from_z(num_layers - 1,z_top_min, GDarrayDecoded, GDn_points);
+    current_z_top_index = get_index_from_z(MAX_LAYERS - 1,z_top_min, GDarrayDecoded, GDn_points);
     #if PRINT_OUTS == true
         printf("current white_space_height: %ld\n", white_space_height);
         printf("counter: %d counterUpshift: %d\n", counter, counterUpshift);
@@ -1176,7 +1204,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     solveComplmentaryPatch_fillCurrent_z_i_index:
     for (index_type i = 0; i < MAX_LAYERS; i++)
     {
-        current_z_i_index[i] = get_index_from_z(i, straightLineProjectorFromLayerIJtoK(complementary_apexZ0,z_top_min, 1, num_layers, i + 1), GDarrayDecoded, GDn_points);
+        current_z_i_index[i] = get_index_from_z(i, straightLineProjectorFromLayerIJtoK(complementary_apexZ0,z_top_min, 1, MAX_LAYERS, i + 1), GDarrayDecoded, GDn_points);
     }
 
     if (z_top_min == previous_z_top_min)
@@ -1212,7 +1240,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         }
     }
 
-    current_z_top_index = min(current_z_top_index, GDn_points[num_layers - 1] - 1); // n_points is an array of the sizes of each element of 'array'
+    current_z_top_index = min(current_z_top_index, GDn_points[MAX_LAYERS - 1] - 1); // n_points is an array of the sizes of each element of 'array'
 
     solveComplmentaryPatch_fillNew_z_i_index3:
     for (index_type i = 0; i < MAX_LAYERS; i++)
@@ -1242,7 +1270,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
                                                                     new_z_i[i],
                                                                     1,
                                                                     i + 1,
-                                                                    num_layers);
+                                                                    MAX_LAYERS);
     }
 
     index_type layerWithSmallestShift = 0;
@@ -1294,7 +1322,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         printf(" new_def_z_top_min_diff: %ld\n", z_top_min - GDarrayDecoded[MAX_LAYERS  - 1][current_z_top_index][1]);
 
         printf(" new_ztop_index: %d new_z_i_index: ", current_z_top_index);
-        for (index_type i = 0; i < num_layers; i++)
+        for (index_type i = 0; i < MAX_LAYERS; i++)
         {
             printf("%u ", new_z_i_index[i]);
         }
@@ -1307,18 +1335,18 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     {
         #if PRINT_OUTS == true
             printf("deleted complementary: [%ld, %ld] for patch %d\n",
-                    patches_parameters[lastPatchIndex][2][0][0],
-                    patches_parameters[lastPatchIndex][2][0][1],
+                    patches_parameters[0][2][0][0],
+                    patches_parameters[0][2][0][1],
                     n_patches);
             printf("deleted complementary: [%ld, %ld]\n",
-                    patches_parameters[lastPatchIndex][2][1][0],
-                    patches_parameters[lastPatchIndex][2][1][1]);
+                    patches_parameters[0][2][1][0],
+                    patches_parameters[0][2][1][1]);
             printf("deleted complementary: [%ld, %ld]\n",
-                    patches_parameters[lastPatchIndex][2][2][0],
-                    patches_parameters[lastPatchIndex][2][2][1]);
+                    patches_parameters[0][2][2][0],
+                    patches_parameters[0][2][2][1]);
             printf("deleted complementary: [%ld, %ld]\n",
-                    patches_parameters[lastPatchIndex][2][3][0],
-                    patches_parameters[lastPatchIndex][2][3][1]);
+                    patches_parameters[0][2][3][0],
+                    patches_parameters[0][2][3][1]);
         #endif
 
         // Call delete_patch to remove the last patch
@@ -1334,8 +1362,8 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     lastPatchIndex = n_patches - 1;
 
     // retrieve the a and b corner values from the latest patch.
-    complementary_a = patches_parameters[lastPatchIndex][2][0][1];
-    complementary_b = patches_parameters[lastPatchIndex][2][1][1];
+    complementary_a = patches_parameters[0][2][0][1];
+    complementary_b = patches_parameters[0][2][1][1];
 
     // update the previous white space height for the next iteration.
     previous_white_space_height = white_space_height;
@@ -1343,17 +1371,17 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     white_space_height = max(original_c - complementary_a, original_d - complementary_b);
     #if PRINT_OUTS == true
         printf("complementary_a: %ld %ld || complementary_b: %ld %ld new z_top_min: %ld\n",
-                complementary_a, patches_parameters[lastPatchIndex][2][0][1],
-                complementary_b, patches_parameters[lastPatchIndex][2][1][1],z_top_min);
+                complementary_a, patches_parameters[0][2][0][1],
+                complementary_b, patches_parameters[0][2][1][1],z_top_min);
         printf("new white_space_height: %ld\n", white_space_height);
         printf("adjusted complementary: [%ld, %ld] for z_top_min: %ld\n",
-               patches_parameters[lastPatchIndex][2][0][0], patches_parameters[lastPatchIndex][2][0][1],z_top_min);
+               patches_parameters[0][2][0][0], patches_parameters[0][2][0][1],z_top_min);
         printf("adjusted complementary: [%ld, %ld] for patch %d\n",
-               patches_parameters[lastPatchIndex][2][1][0], patches_parameters[lastPatchIndex][2][1][1], n_patches);
+               patches_parameters[0][2][1][0], patches_parameters[0][2][1][1], n_patches);
         printf("adjusted complementary: [%ld, %ld]\n",
-               patches_parameters[lastPatchIndex][2][2][0], patches_parameters[lastPatchIndex][2][2][1]);
+               patches_parameters[0][2][2][0], patches_parameters[0][2][2][1]);
         printf("adjusted complementary: [%ld, %ld]\n",
-               patches_parameters[lastPatchIndex][2][3][0], patches_parameters[lastPatchIndex][2][3][1]);
+               patches_parameters[0][2][3][0], patches_parameters[0][2][3][1]);
     #endif
 
     if ((n_patches > 3) && fix42)
@@ -1363,7 +1391,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
 
         // checking if the superpoints of the last and third last patches are the same
         bool repeat_patch = true;
-        // turned this into a for loop, dynamic. if ((patches[patches.size() - 1].superpoints[env.num_layers - 1] == patches[patches.size() - 3].superpoints[env.num_layers - 1]) && (patches[patches.size() - 1].superpoints[0] == patches[patches.size() - 3].superpoints[0]) && (patches[patches.size() - 1].superpoints[1] == patches[patches.size() - 3].superpoints[1]) && (patches[patches.size() - 1].superpoints[2] == patches[patches.size() - 3].superpoints[2]) && (patches[patches.size() - 1].superpoints[3] == patches[patches.size() - 3].superpoints[3]))
+        // turned this into a for loop, dynamic. if ((patches[patches.size() - 1].superpoints[env.MAX_LAYERS - 1] == patches[patches.size() - 3].superpoints[env.MAX_LAYERS - 1]) && (patches[patches.size() - 1].superpoints[0] == patches[patches.size() - 3].superpoints[0]) && (patches[patches.size() - 1].superpoints[1] == patches[patches.size() - 3].superpoints[1]) && (patches[patches.size() - 1].superpoints[2] == patches[patches.size() - 3].superpoints[2]) && (patches[patches.size() - 1].superpoints[3] == patches[patches.size() - 3].superpoints[3]))
         // that code checked 0 to 4
         solveComplmentaryPatch_superpointEqualCheck_2:
         for (index_type i = 0; i < MAX_LAYERS; i++)
@@ -1533,7 +1561,7 @@ void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_
     int_type right_bound;
     mSP_findLRBounds(i, row_list, row_list_size, left_bound, right_bound);
 
-    if ((float_middleLayers_ppl) && (i != 0) && (i != num_layers - 1))
+    if ((float_middleLayers_ppl) && (i != 0) && (i != MAX_LAYERS - 1))
     {
         ppl = original_ppl * 2 - 1;
     }

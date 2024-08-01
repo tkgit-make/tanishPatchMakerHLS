@@ -188,7 +188,7 @@ wire   [6:0] tmp_fu_361_p3;
 wire   [7:0] zext_ln95_fu_368_p1;
 wire   [7:0] zext_ln100_fu_372_p1;
 wire   [7:0] add_ln100_fu_375_p2;
-wire   [7:0] empty_54_fu_381_p2;
+wire   [7:0] empty_53_fu_381_p2;
 wire   [7:0] zext_ln100_1_fu_387_p1;
 reg   [8:0] ap_NS_fsm;
 reg    ap_idle_pp0;
@@ -686,7 +686,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln100_1_fu_390_p2 = (empty_54_fu_381_p2 + zext_ln100_1_fu_387_p1);
+assign add_ln100_1_fu_390_p2 = (empty_53_fu_381_p2 + zext_ln100_1_fu_387_p1);
 
 assign add_ln100_fu_375_p2 = (zext_ln95_fu_368_p1 + zext_ln100_fu_372_p1);
 
@@ -738,7 +738,7 @@ assign ap_block_state8_pp0_stage0_iter4 = ~(1'b1 == 1'b1);
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign empty_54_fu_381_p2 = add_ln100_fu_375_p2 << 8'd1;
+assign empty_53_fu_381_p2 = add_ln100_fu_375_p2 << 8'd1;
 
 assign grp_getParallelograms_fu_239_ap_start = grp_getParallelograms_fu_239_ap_start_reg;
 

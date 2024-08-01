@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'straightLineProjectorFromLayerIJtoK'
 ================================================================
-* Date:           Wed Jul 31 23:36:47 2024
+* Date:           Thu Aug  1 00:46:57 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -113,8 +113,8 @@ ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_3 = bitconcatenate i4 @_ssdm_o
 ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_3_cast = zext i4 %tmp_3" [patchMaker.cpp:143]   --->   Operation 31 'zext' 'tmp_3_cast' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 32 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%empty = sub i6 %tmp, i6 %tmp_3_cast" [patchMaker.cpp:143]   --->   Operation 32 'sub' 'empty' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
 ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%abs5_cast = sext i4 %abs5" [patchMaker.cpp:143]   --->   Operation 33 'sext' 'abs5_cast' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (0.60ns) (root node of TernaryAdder)   --->   "%empty_55 = add i6 %empty, i6 %abs5_cast" [patchMaker.cpp:143]   --->   Operation 34 'add' 'empty_55' <Predicate = true> <Delay = 0.60> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_cast = zext i6 %empty_55" [patchMaker.cpp:143]   --->   Operation 35 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.60ns) (root node of TernaryAdder)   --->   "%empty_54 = add i6 %empty, i6 %abs5_cast" [patchMaker.cpp:143]   --->   Operation 34 'add' 'empty_54' <Predicate = true> <Delay = 0.60> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_cast = zext i6 %empty_54" [patchMaker.cpp:143]   --->   Operation 35 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%radiiDivisionList_addr = getelementptr i35 %radiiDivisionList, i64 0, i64 %p_cast" [patchMaker.cpp:143]   --->   Operation 36 'getelementptr' 'radiiDivisionList_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 37 [2/2] (0.71ns)   --->   "%radiiDivisionList_load = load i6 %radiiDivisionList_addr" [patchMaker.cpp:143]   --->   Operation 37 'load' 'radiiDivisionList_load' <Predicate = true> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 35> <Depth = 36> <ROM>
 
@@ -192,7 +192,7 @@ tmp_3                       (bitconcatenate) [ 00000000]
 tmp_3_cast                  (zext          ) [ 00000000]
 empty                       (sub           ) [ 00000000]
 abs5_cast                   (sext          ) [ 00000000]
-empty_55                    (add           ) [ 00000000]
+empty_54                    (add           ) [ 00000000]
 p_cast                      (zext          ) [ 00000000]
 radiiDivisionList_addr      (getelementptr ) [ 01010000]
 sext_ln215                  (sext          ) [ 00000000]
@@ -719,7 +719,7 @@ ret_ln168                   (ret           ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="198" class="1004" name="empty_55_fu_198">
+<comp id="198" class="1004" name="empty_54_fu_198">
 <pin_list>
 <pin id="199" dir="0" index="0" bw="6" slack="0"/>
 <pin id="200" dir="0" index="1" bw="4" slack="0"/>
@@ -727,7 +727,7 @@ ret_ln168                   (ret           ) [ 00000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="empty_55/2 "/>
+<opset="empty_54/2 "/>
 </bind>
 </comp>
 
@@ -1184,7 +1184,7 @@ ret_ln168                   (ret           ) [ 00000000]
 	State 2
 		tmp_3_cast : 1
 		empty : 2
-		empty_55 : 3
+		empty_54 : 3
 		p_cast : 4
 		radiiDivisionList_addr : 5
 		radiiDivisionList_load : 6
@@ -1219,7 +1219,7 @@ ret_ln168                   (ret           ) [ 00000000]
 |          |             ret_fu_215             |    0    |    0    |    39   |
 |          |           sub_ln69_fu_247          |    0    |    0    |    39   |
 |----------|------------------------------------|---------|---------|---------|
-|    add   |           empty_55_fu_198          |    0    |    0    |    13   |
+|    add   |           empty_54_fu_198          |    0    |    0    |    13   |
 |          |           add_ln69_fu_243          |    0    |    0    |    39   |
 |----------|------------------------------------|---------|---------|---------|
 |          |             abs_fu_143             |    0    |    0    |    3    |

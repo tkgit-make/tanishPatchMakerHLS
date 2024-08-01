@@ -64,7 +64,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1183088620</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -97,7 +97,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1869901417</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -130,7 +130,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>828071221</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -163,7 +163,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>540946995</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -196,7 +196,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>744305243</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -229,7 +229,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>691222586</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -262,7 +262,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>539784302</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -295,13 +295,13 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1751326820</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
-				<direction>1</direction>
+				<direction>2</direction>
 				<if_type>1</if_type>
-				<array_size>3840</array_size>
+				<array_size>360</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -479,7 +479,7 @@
 						<name>init_patch_V</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1402</lineNumber>
+						<lineNumber>1430</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -495,7 +495,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1402</second>
+										<second>1430</second>
 									</item>
 								</second>
 							</item>
@@ -532,7 +532,7 @@
 						<name>NPpatches_superpoints_V</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1445</lineNumber>
+						<lineNumber>1473</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -548,7 +548,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1445</second>
+										<second>1473</second>
 									</item>
 								</second>
 							</item>
@@ -585,7 +585,7 @@
 						<name>NPpatches_parameters_V</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1475</lineNumber>
+						<lineNumber>1503</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -601,7 +601,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1475</second>
+										<second>1503</second>
 									</item>
 								</second>
 							</item>
@@ -635,10 +635,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>br_ln1410</name>
+						<name>br_ln1438</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -654,7 +654,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -691,7 +691,7 @@
 						<name>indvar_flatten13</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -707,7 +707,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -747,7 +747,7 @@
 						<name>a</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -763,7 +763,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -803,7 +803,7 @@
 						<name>indvar_flatten</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -819,7 +819,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -859,7 +859,7 @@
 						<name>b</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -875,7 +875,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -915,7 +915,7 @@
 						<name>c</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1422</lineNumber>
+						<lineNumber>1450</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -931,7 +931,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1422</second>
+										<second>1450</second>
 									</item>
 								</second>
 							</item>
@@ -968,10 +968,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>add_ln1410_1</name>
+						<name>add_ln1438_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -987,7 +987,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -1022,10 +1022,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>icmp_ln1410</name>
+						<name>icmp_ln1438</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1041,7 +1041,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -1076,10 +1076,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>br_ln1410</name>
+						<name>br_ln1438</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1095,7 +1095,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -1131,10 +1131,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>add_ln1410</name>
+						<name>add_ln1438</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1150,7 +1150,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -1185,10 +1185,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>icmp_ln1416</name>
+						<name>icmp_ln1444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1204,7 +1204,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -1239,10 +1239,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>select_ln1410</name>
+						<name>select_ln1438</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1258,7 +1258,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -1269,7 +1269,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>29</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -1294,10 +1294,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>select_ln1410_1</name>
+						<name>select_ln1438_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1313,7 +1313,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -1352,7 +1352,7 @@
 						<name>tmp</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1368,7 +1368,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -1404,10 +1404,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>zext_ln1416</name>
+						<name>zext_ln1444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1423,7 +1423,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -1457,10 +1457,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>xor_ln1410</name>
+						<name>xor_ln1438</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1476,7 +1476,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -1511,10 +1511,10 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>icmp_ln1422</name>
+						<name>icmp_ln1450</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1422</lineNumber>
+						<lineNumber>1450</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1530,7 +1530,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1422</second>
+										<second>1450</second>
 									</item>
 								</second>
 							</item>
@@ -1565,10 +1565,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>and_ln1410</name>
+						<name>and_ln1438</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1410</lineNumber>
+						<lineNumber>1438</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1584,7 +1584,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1410</second>
+										<second>1438</second>
 									</item>
 								</second>
 							</item>
@@ -1619,10 +1619,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>add_ln1416</name>
+						<name>add_ln1444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1638,7 +1638,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -1673,10 +1673,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>or_ln1416</name>
+						<name>or_ln1444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1692,7 +1692,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -1727,10 +1727,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>select_ln1416</name>
+						<name>select_ln1444</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1746,7 +1746,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -1782,10 +1782,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>select_ln1416_1</name>
+						<name>select_ln1444_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1801,7 +1801,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -1837,10 +1837,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>zext_ln1427</name>
+						<name>zext_ln1455</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1856,7 +1856,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -1890,10 +1890,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>add_ln1427</name>
+						<name>add_ln1455</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1909,7 +1909,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -1944,10 +1944,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>empty_76</name>
+						<name>empty_74</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1963,7 +1963,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -1998,10 +1998,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>zext_ln1427_1</name>
+						<name>zext_ln1455_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2017,7 +2017,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -2051,10 +2051,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>add_ln1427_1</name>
+						<name>add_ln1455_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2070,7 +2070,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -2105,10 +2105,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>zext_ln1427_2</name>
+						<name>zext_ln1455_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2124,7 +2124,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -2161,7 +2161,7 @@
 						<name>init_patch_V_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2177,7 +2177,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -2213,10 +2213,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>init_patch_V_addr_write_ln1427</name>
+						<name>init_patch_V_addr_write_ln1455</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1427</lineNumber>
+						<lineNumber>1455</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2232,7 +2232,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1427</second>
+										<second>1455</second>
 									</item>
 								</second>
 							</item>
@@ -2243,7 +2243,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>29</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2267,10 +2267,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>add_ln1422</name>
+						<name>add_ln1450</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1422</lineNumber>
+						<lineNumber>1450</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2286,7 +2286,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1422</second>
+										<second>1450</second>
 									</item>
 								</second>
 							</item>
@@ -2297,7 +2297,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>112</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -2321,10 +2321,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>add_ln1416_1</name>
+						<name>add_ln1444_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2340,7 +2340,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -2375,10 +2375,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>select_ln1416_2</name>
+						<name>select_ln1444_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1416</lineNumber>
+						<lineNumber>1444</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2394,7 +2394,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1416</second>
+										<second>1444</second>
 									</item>
 								</second>
 							</item>
@@ -2405,7 +2405,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>112</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -2469,10 +2469,10 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>br_ln1436</name>
+						<name>br_ln1464</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1436</lineNumber>
+						<lineNumber>1464</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2488,7 +2488,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1436</second>
+										<second>1464</second>
 									</item>
 								</second>
 							</item>
@@ -2525,7 +2525,7 @@
 						<name>ppl_0</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1441</lineNumber>
+						<lineNumber>1469</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2541,7 +2541,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1441</second>
+										<second>1469</second>
 									</item>
 								</second>
 							</item>
@@ -2581,7 +2581,7 @@
 						<name>i</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1436</lineNumber>
+						<lineNumber>1464</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2597,7 +2597,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1436</second>
+										<second>1464</second>
 									</item>
 								</second>
 							</item>
@@ -2634,10 +2634,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>add_ln1436</name>
+						<name>add_ln1464</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1436</lineNumber>
+						<lineNumber>1464</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2653,7 +2653,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1436</second>
+										<second>1464</second>
 									</item>
 								</second>
 							</item>
@@ -2688,10 +2688,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>icmp_ln1436</name>
+						<name>icmp_ln1464</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1436</lineNumber>
+						<lineNumber>1464</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2707,7 +2707,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1436</second>
+										<second>1464</second>
 									</item>
 								</second>
 							</item>
@@ -2742,10 +2742,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>br_ln1436</name>
+						<name>br_ln1464</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1436</lineNumber>
+						<lineNumber>1464</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2761,7 +2761,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1436</second>
+										<second>1464</second>
 									</item>
 								</second>
 							</item>
@@ -2800,7 +2800,7 @@
 						<name>call_ret1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1441</lineNumber>
+						<lineNumber>1469</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2816,7 +2816,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1441</second>
+										<second>1469</second>
 									</item>
 								</second>
 							</item>
@@ -2827,7 +2827,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1414708751</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2876,7 +2876,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1410186798</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2899,10 +2899,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>br_ln1453</name>
+						<name>br_ln1481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2918,7 +2918,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -2929,7 +2929,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1416871504</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2955,7 +2955,7 @@
 						<name>indvar_flatten35</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2971,7 +2971,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -2982,7 +2982,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>29</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3011,7 +3011,7 @@
 						<name>b_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3027,7 +3027,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3038,7 +3038,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1835083304</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3067,7 +3067,7 @@
 						<name>indvar_flatten21</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3083,7 +3083,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -3094,7 +3094,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>673201012</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3123,7 +3123,7 @@
 						<name>c_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3139,7 +3139,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -3150,7 +3150,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1215364205</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -3179,7 +3179,7 @@
 						<name>d</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1465</lineNumber>
+						<lineNumber>1493</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3195,7 +3195,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1465</second>
+										<second>1493</second>
 									</item>
 								</second>
 							</item>
@@ -3206,7 +3206,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>859534444</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -3232,10 +3232,10 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>add_ln1453_1</name>
+						<name>add_ln1481_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3251,7 +3251,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3262,7 +3262,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>673201012</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3286,10 +3286,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>icmp_ln1453</name>
+						<name>icmp_ln1481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3305,7 +3305,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3316,7 +3316,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1953392991</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3340,10 +3340,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>br_ln1453</name>
+						<name>br_ln1481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3359,7 +3359,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3370,7 +3370,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1278132235</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3395,10 +3395,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>add_ln1453</name>
+						<name>add_ln1481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3414,7 +3414,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3425,7 +3425,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1236008328</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3449,10 +3449,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>icmp_ln1459</name>
+						<name>icmp_ln1487</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3468,7 +3468,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -3479,7 +3479,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>779249003</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3503,10 +3503,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>select_ln1453</name>
+						<name>select_ln1481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3522,7 +3522,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3533,7 +3533,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>640163899</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -3558,10 +3558,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>select_ln1453_1</name>
+						<name>select_ln1481_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3577,7 +3577,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3588,7 +3588,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1730556467</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3616,7 +3616,7 @@
 						<name>tmp_s</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3632,7 +3632,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -3643,7 +3643,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1323630273</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3668,10 +3668,10 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>zext_ln1459</name>
+						<name>zext_ln1487</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3687,7 +3687,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -3698,7 +3698,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1869357159</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3721,10 +3721,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>xor_ln1453</name>
+						<name>xor_ln1481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3740,7 +3740,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3751,7 +3751,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1183592097</coreId>
+						<coreId>1936683105</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3775,10 +3775,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>icmp_ln1465</name>
+						<name>icmp_ln1493</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1465</lineNumber>
+						<lineNumber>1493</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3794,7 +3794,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1465</second>
+										<second>1493</second>
 									</item>
 								</second>
 							</item>
@@ -3805,7 +3805,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1100294586</coreId>
+						<coreId>1629498427</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3829,10 +3829,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>and_ln1453</name>
+						<name>and_ln1481</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1453</lineNumber>
+						<lineNumber>1481</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3848,7 +3848,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1453</second>
+										<second>1481</second>
 									</item>
 								</second>
 							</item>
@@ -3859,7 +3859,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1106913755</coreId>
+						<coreId>1225194787</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3883,10 +3883,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>add_ln1459</name>
+						<name>add_ln1487</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3902,7 +3902,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -3913,7 +3913,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1584801375</coreId>
+						<coreId>1701536109</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -3937,10 +3937,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>or_ln1459</name>
+						<name>or_ln1487</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3956,7 +3956,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -3967,7 +3967,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1582769784</coreId>
+						<coreId>976894836</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3991,10 +3991,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>select_ln1459</name>
+						<name>select_ln1487</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4010,7 +4010,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -4021,7 +4021,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1086072977</coreId>
+						<coreId>1885413420</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -4046,10 +4046,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>select_ln1459_1</name>
+						<name>select_ln1487_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4065,7 +4065,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -4076,7 +4076,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1161506068</coreId>
+						<coreId>1869901417</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -4101,10 +4101,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>zext_ln1470</name>
+						<name>zext_ln1498</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4120,7 +4120,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -4131,7 +4131,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1191718693</coreId>
+						<coreId>742092909</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -4154,10 +4154,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>add_ln1470</name>
+						<name>add_ln1498</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4173,7 +4173,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -4184,7 +4184,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1199845289</coreId>
+						<coreId>1885420403</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -4208,10 +4208,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>empty_79</name>
+						<name>empty_77</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4227,7 +4227,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -4238,7 +4238,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1140861997</coreId>
+						<coreId>1261959956</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -4262,10 +4262,10 @@
 					<Obj>
 						<type>0</type>
 						<id>112</id>
-						<name>zext_ln1470_1</name>
+						<name>zext_ln1498_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4281,7 +4281,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -4292,7 +4292,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1196306279</coreId>
+						<coreId>1970435104</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -4315,10 +4315,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>add_ln1470_1</name>
+						<name>add_ln1498_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4334,7 +4334,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -4345,7 +4345,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1116547746</coreId>
+						<coreId>677929844</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -4369,10 +4369,10 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>zext_ln1470_2</name>
+						<name>zext_ln1498_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4388,7 +4388,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -4399,7 +4399,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1118579329</coreId>
+						<coreId>542329928</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -4425,7 +4425,7 @@
 						<name>NPpatches_superpoints_V_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4441,7 +4441,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -4452,7 +4452,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1204432875</coreId>
+						<coreId>691761261</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -4477,10 +4477,10 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>NPpatches_superpoints_V_addr_write_ln1470</name>
+						<name>NPpatches_superpoints_V_addr_write_ln1498</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1470</lineNumber>
+						<lineNumber>1498</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4496,7 +4496,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1470</second>
+										<second>1498</second>
 									</item>
 								</second>
 							</item>
@@ -4507,7 +4507,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1137388516</coreId>
+						<coreId>1563832667</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4531,10 +4531,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>add_ln1465</name>
+						<name>add_ln1493</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1465</lineNumber>
+						<lineNumber>1493</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4550,7 +4550,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1465</second>
+										<second>1493</second>
 									</item>
 								</second>
 							</item>
@@ -4561,7 +4561,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1198075718</coreId>
+						<coreId>1300873638</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -4585,10 +4585,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>add_ln1459_1</name>
+						<name>add_ln1487_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4604,7 +4604,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -4615,7 +4615,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1129261920</coreId>
+						<coreId>1031301478</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -4639,10 +4639,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>select_ln1459_2</name>
+						<name>select_ln1487_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1459</lineNumber>
+						<lineNumber>1487</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4658,7 +4658,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1459</second>
+										<second>1487</second>
 									</item>
 								</second>
 							</item>
@@ -4669,7 +4669,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1145449583</coreId>
+						<coreId>1885413420</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -4710,7 +4710,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1171926523</coreId>
+						<coreId>1814459502</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4733,10 +4733,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>br_ln1483</name>
+						<name>br_ln1511</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4752,7 +4752,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -4763,7 +4763,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1131293511</coreId>
+						<coreId>1952917042</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4789,7 +4789,7 @@
 						<name>indvar_flatten57</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4805,7 +4805,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -4816,7 +4816,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1132800938</coreId>
+						<coreId>691761261</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -4845,7 +4845,7 @@
 						<name>b_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4861,7 +4861,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -4872,7 +4872,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1124674342</coreId>
+						<coreId>1852383276</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -4901,7 +4901,7 @@
 						<name>indvar_flatten43</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4917,7 +4917,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -4928,7 +4928,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1177693923</coreId>
+						<coreId>1730556467</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -4957,7 +4957,7 @@
 						<name>c_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4973,7 +4973,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -4984,7 +4984,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1114712670</coreId>
+						<coreId>1247935070</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5013,7 +5013,7 @@
 						<name>d_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1495</lineNumber>
+						<lineNumber>1523</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5029,7 +5029,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1495</second>
+										<second>1523</second>
 									</item>
 								</second>
 							</item>
@@ -5040,7 +5040,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1126705925</coreId>
+						<coreId>1885413420</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5066,10 +5066,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>add_ln1483_1</name>
+						<name>add_ln1511_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5085,7 +5085,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -5096,7 +5096,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1173695962</coreId>
+						<coreId>539778354</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -5120,10 +5120,10 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>icmp_ln1483</name>
+						<name>icmp_ln1511</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5139,7 +5139,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -5150,7 +5150,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1185885824</coreId>
+						<coreId>691761261</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5174,10 +5174,10 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>br_ln1483</name>
+						<name>br_ln1511</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5193,7 +5193,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -5204,7 +5204,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1167338937</coreId>
+						<coreId>742093927</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -5229,10 +5229,10 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>add_ln1483</name>
+						<name>add_ln1511</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5248,7 +5248,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -5259,7 +5259,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1143155724</coreId>
+						<coreId>1314913916</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5283,10 +5283,10 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>icmp_ln1489</name>
+						<name>icmp_ln1517</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5302,7 +5302,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -5313,7 +5313,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1165569366</coreId>
+						<coreId>573649713</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5337,10 +5337,10 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>select_ln1483</name>
+						<name>select_ln1511</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5356,7 +5356,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -5367,7 +5367,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1169632664</coreId>
+						<coreId>1952542760</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5392,10 +5392,10 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>select_ln1483_1</name>
+						<name>select_ln1511_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5411,7 +5411,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -5422,7 +5422,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1151085745</coreId>
+						<coreId>1814459502</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5447,10 +5447,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>tmp_22</name>
+						<name>tmp_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5466,7 +5466,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -5477,7 +5477,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1189949122</coreId>
+						<coreId>1869833586</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -5502,10 +5502,10 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>zext_ln1489</name>
+						<name>zext_ln1517</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5521,7 +5521,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -5532,7 +5532,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1206202314</coreId>
+						<coreId>1948265522</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -5555,10 +5555,10 @@
 					<Obj>
 						<type>0</type>
 						<id>144</id>
-						<name>xor_ln1483</name>
+						<name>xor_ln1511</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5574,7 +5574,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -5585,7 +5585,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1202139016</coreId>
+						<coreId>1337655191</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5609,10 +5609,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>icmp_ln1495</name>
+						<name>icmp_ln1523</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1495</lineNumber>
+						<lineNumber>1523</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5628,7 +5628,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1495</second>
+										<second>1523</second>
 									</item>
 								</second>
 							</item>
@@ -5639,7 +5639,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1153576179</coreId>
+						<coreId>980447331</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5663,10 +5663,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>and_ln1483</name>
+						<name>and_ln1511</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1483</lineNumber>
+						<lineNumber>1511</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5682,7 +5682,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1483</second>
+										<second>1511</second>
 									</item>
 								</second>
 							</item>
@@ -5693,7 +5693,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1194012420</coreId>
+						<coreId>859191858</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5717,10 +5717,10 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>add_ln1489</name>
+						<name>add_ln1517</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5736,7 +5736,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -5747,7 +5747,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1147219022</coreId>
+						<coreId>1814459502</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5771,10 +5771,10 @@
 					<Obj>
 						<type>0</type>
 						<id>149</id>
-						<name>or_ln1489</name>
+						<name>or_ln1517</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5790,7 +5790,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -5801,7 +5801,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1163799927</coreId>
+						<coreId>1326841650</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -5825,10 +5825,10 @@
 					<Obj>
 						<type>0</type>
 						<id>150</id>
-						<name>select_ln1489</name>
+						<name>select_ln1517</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5844,7 +5844,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -5855,7 +5855,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1139420107</coreId>
+						<coreId>1885413420</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5880,10 +5880,10 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>select_ln1489_1</name>
+						<name>select_ln1517_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5899,7 +5899,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -5910,7 +5910,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1157442770</coreId>
+						<coreId>1750361451</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -5935,10 +5935,10 @@
 					<Obj>
 						<type>0</type>
 						<id>152</id>
-						<name>zext_ln1500</name>
+						<name>zext_ln1528</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5954,7 +5954,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -5965,7 +5965,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1578182206</coreId>
+						<coreId>1869898098</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -5988,10 +5988,10 @@
 					<Obj>
 						<type>0</type>
 						<id>153</id>
-						<name>add_ln1500</name>
+						<name>add_ln1528</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6007,7 +6007,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6018,7 +6018,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1134832521</coreId>
+						<coreId>2019905125</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -6042,10 +6042,10 @@
 					<Obj>
 						<type>0</type>
 						<id>154</id>
-						<name>trunc_ln1500</name>
+						<name>trunc_ln1528</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6061,7 +6061,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6072,7 +6072,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1108355645</coreId>
+						<coreId>842218356</coreId>
 					</Obj>
 					<bitwidth>4</bitwidth>
 				</Value>
@@ -6098,7 +6098,7 @@
 						<name>p_shl_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6114,7 +6114,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6125,7 +6125,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1153379472</coreId>
+						<coreId>2037672306</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6153,7 +6153,7 @@
 						<name>p_shl2_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6169,7 +6169,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6180,7 +6180,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1580213789</coreId>
+						<coreId>1272773625</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6205,10 +6205,10 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>sub_ln1500</name>
+						<name>sub_ln1528</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6224,7 +6224,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6235,7 +6235,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1112943231</coreId>
+						<coreId>1953392991</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6259,10 +6259,10 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>zext_ln1500_1</name>
+						<name>zext_ln1528_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6278,7 +6278,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6289,7 +6289,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1078405224</coreId>
+						<coreId>859599982</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6312,10 +6312,10 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>add_ln1500_1</name>
+						<name>add_ln1528_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6331,7 +6331,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6342,7 +6342,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1080436815</coreId>
+						<coreId>1031040613</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6366,10 +6366,10 @@
 					<Obj>
 						<type>0</type>
 						<id>161</id>
-						<name>zext_ln1500_2</name>
+						<name>zext_ln1528_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6385,7 +6385,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6396,7 +6396,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1159212341</coreId>
+						<coreId>673195817</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6422,7 +6422,7 @@
 						<name>NPpatches_parameters_V_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6438,7 +6438,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6449,7 +6449,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1073817646</coreId>
+						<coreId>1701273971</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -6474,10 +6474,10 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>NPpatches_parameters_V_addr_write_ln1500</name>
+						<name>NPpatches_parameters_V_addr_write_ln1528</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1500</lineNumber>
+						<lineNumber>1528</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6493,7 +6493,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1500</second>
+										<second>1528</second>
 									</item>
 								</second>
 							</item>
@@ -6504,7 +6504,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1110649372</coreId>
+						<coreId>1869182051</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6528,10 +6528,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>add_ln1495</name>
+						<name>add_ln1523</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1495</lineNumber>
+						<lineNumber>1523</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6547,7 +6547,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1495</second>
+										<second>1523</second>
 									</item>
 								</second>
 							</item>
@@ -6558,7 +6558,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1121069763</coreId>
+						<coreId>1074578473</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -6582,10 +6582,10 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>add_ln1489_1</name>
+						<name>add_ln1517_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6601,7 +6601,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -6612,7 +6612,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1075849229</coreId>
+						<coreId>1819044215</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -6636,10 +6636,10 @@
 					<Obj>
 						<type>0</type>
 						<id>167</id>
-						<name>select_ln1489_2</name>
+						<name>select_ln1517_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1489</lineNumber>
+						<lineNumber>1517</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6655,7 +6655,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1489</second>
+										<second>1517</second>
 									</item>
 								</second>
 							</item>
@@ -6666,7 +6666,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1086531820</coreId>
+						<coreId>1162201442</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -6707,7 +6707,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1102326169</coreId>
+						<coreId>774332781</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6730,10 +6730,10 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>_ln1507</name>
+						<name>_ln1535</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1507</lineNumber>
+						<lineNumber>1535</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6749,7 +6749,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1507</second>
+										<second>1535</second>
 									</item>
 								</second>
 							</item>
@@ -6760,7 +6760,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1088563411</coreId>
+						<coreId>1819044215</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6791,7 +6791,7 @@
 						<name>n_patches_read</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1510</lineNumber>
+						<lineNumber>1538</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6807,7 +6807,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1510</second>
+										<second>1538</second>
 									</item>
 								</second>
 							</item>
@@ -6818,7 +6818,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1084041394</coreId>
+						<coreId>1852399472</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -6842,10 +6842,10 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>_ln1510</name>
+						<name>_ln1538</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1510</lineNumber>
+						<lineNumber>1538</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6861,7 +6861,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1510</second>
+										<second>1538</second>
 									</item>
 								</second>
 							</item>
@@ -6872,7 +6872,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1096755568</coreId>
+						<coreId>1198966611</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6904,10 +6904,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>_ln1511</name>
+						<name>_ln1539</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1511</lineNumber>
+						<lineNumber>1539</lineNumber>
 						<contextFuncName>makePatch_alignedToLine</contextFuncName>
 						<contextNormFuncName>makePatch_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6923,7 +6923,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makePatch_alignedToLine</second>
 										</first>
-										<second>1511</second>
+										<second>1539</second>
 									</item>
 								</second>
 							</item>
@@ -6934,7 +6934,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1098787159</coreId>
+						<coreId>1087489166</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6977,7 +6977,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1632462947</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -7005,7 +7005,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1014263401</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -7033,7 +7033,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1014263401</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -7061,7 +7061,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1885413420</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -7089,7 +7089,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1751348321</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -7117,7 +7117,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1767862369</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -7145,7 +7145,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>539783777</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -7173,7 +7173,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>909931630</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -7201,7 +7201,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1853187616</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -7229,7 +7229,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1751348321</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -7257,7 +7257,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1767862369</coreId>
 					</Obj>
 					<bitwidth>4</bitwidth>
 				</Value>
@@ -7285,7 +7285,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>539778358</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -7313,7 +7313,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1563833650</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -7341,7 +7341,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>740717683</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -7369,7 +7369,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1633836916</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -7397,7 +7397,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1918989422</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -7425,7 +7425,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>740703794</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -7453,7 +7453,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>690366496</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -7481,7 +7481,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1014263401</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -7509,7 +7509,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1885413420</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -7537,7 +7537,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1881677863</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -7565,7 +7565,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1751326820</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -7593,7 +7593,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1186235370</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -7621,7 +7621,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1702195828</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -7649,7 +7649,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1970435104</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -7677,7 +7677,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>742273587</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -7705,7 +7705,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1701978146</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7733,7 +7733,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>584869160</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -7764,7 +7764,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>8</count>
@@ -7799,7 +7799,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>8</count>
@@ -7834,7 +7834,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>25</count>
@@ -7886,7 +7886,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -7914,7 +7914,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>5</count>
@@ -7946,7 +7946,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>2</count>
@@ -7975,7 +7975,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -8003,7 +8003,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>8</count>
@@ -8038,7 +8038,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>25</count>
@@ -8090,7 +8090,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1414675002</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>
@@ -8118,7 +8118,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>693974619</coreId>
 				</Obj>
 				<node_objs>
 					<count>8</count>
@@ -8153,7 +8153,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>859599982</coreId>
 				</Obj>
 				<node_objs>
 					<count>28</count>
@@ -8208,7 +8208,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>673215598</coreId>
 				</Obj>
 				<node_objs>
 					<count>4</count>
@@ -10643,7 +10643,7 @@
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
 			<mMinLatency>260</mMinLatency>
-			<mMaxLatency>492</mMaxLatency>
+			<mMaxLatency>737</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

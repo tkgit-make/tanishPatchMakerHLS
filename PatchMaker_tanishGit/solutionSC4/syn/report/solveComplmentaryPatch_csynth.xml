@@ -116,8 +116,8 @@
 <Resources>
 <BRAM_18K>3</BRAM_18K>
 <DSP>0</DSP>
-<FF>9411</FF>
-<LUT>14074</LUT>
+<FF>9376</FF>
+<LUT>14659</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -215,7 +215,7 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -259,7 +259,7 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>64</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -270,11 +270,11 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>64</Bits>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ap_return_7</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din1</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -285,7 +285,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_din1</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din2</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -296,18 +296,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_din2</name>
-<Object>solveComplmentaryPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_din3</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din3</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -318,7 +307,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_din4</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din4</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -329,7 +318,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_din5</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din5</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -340,7 +329,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_dout0</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_dout0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -351,7 +340,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_ce</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_ce</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -362,7 +351,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_start</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_start</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -373,7 +362,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_ready</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_ready</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -384,7 +373,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_done</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_done</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -395,7 +384,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_568_p_idle</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_idle</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -406,7 +395,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1460_p_din0</name>
+<name>grp_fu_1144_p_din0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -417,7 +406,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1460_p_din1</name>
+<name>grp_fu_1144_p_din1</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -428,7 +417,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1460_p_dout0</name>
+<name>grp_fu_1144_p_dout0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -439,7 +428,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1460_p_ce</name>
+<name>grp_fu_1144_p_ce</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -754,7 +743,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>9</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -809,7 +798,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>9</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>

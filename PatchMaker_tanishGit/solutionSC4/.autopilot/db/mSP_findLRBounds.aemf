@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722483481703">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722487689786">
   <ports id="1" name="i" type="PortType" originalName="i" coreId="673201714" bitwidth="3">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
@@ -125,37 +125,37 @@
       <dataOutputObjs>add</dataOutputObjs>
       <dataOutputObjs>sub</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln1694" lineNumber="1694" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1694" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln1722" lineNumber="1722" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1722" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
       <controlInputObjs>block_23</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>1694</validLinenumbers>
+      <validLinenumbers>1722</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="50" name="._crit_edge.loopexit" type="BlockType">
     <controlInputObjs>block_23</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="mrv" lineNumber="1708" fileName="patchMaker.cpp" fileDirectory=".." coreId="1124184106" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="insertvalue" nodeLabel="6.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1708" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="mrv" lineNumber="1736" fileName="patchMaker.cpp" fileDirectory=".." coreId="1198673747" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="insertvalue" nodeLabel="6.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1736" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>insertvalue</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="mrv_1" lineNumber="1708" fileName="patchMaker.cpp" fileDirectory=".." coreId="1115271970" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="insertvalue" nodeLabel="6.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1708" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="mrv_1" lineNumber="1736" fileName="patchMaker.cpp" fileDirectory=".." coreId="1141854248" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="insertvalue" nodeLabel="6.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1736" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
       <dataInputObjs>insertvalue</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>ret</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln1708" lineNumber="1708" fileName="patchMaker.cpp" fileDirectory=".." coreId="1076408593" contextFuncName="mSP_findLRBounds" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1708" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln1736" lineNumber="1736" fileName="patchMaker.cpp" fileDirectory=".." coreId="1108888121" contextFuncName="mSP_findLRBounds" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="1736" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
       <dataInputObjs>insertvalue</dataInputObjs>
       <dataOutputObjs>ap_return_0</dataOutputObjs>
       <dataOutputObjs>ap_return_1</dataOutputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>1708</validLinenumbers>
+      <validLinenumbers>1736</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="205" pipe_depth="4" RegionName="mSP_findLRBounds_LRdiscovery">
@@ -166,8 +166,8 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="left_bound_write_assign" lineNumber="1696" originalName="left_bound" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1696" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="left_bound_write_assign" lineNumber="1724" originalName="left_bound" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1724" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
@@ -175,8 +175,8 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="right_bound_write_assign" lineNumber="1702" originalName="right_bound" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1702" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="right_bound_write_assign" lineNumber="1730" originalName="right_bound" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1730" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
@@ -184,8 +184,8 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="j" lineNumber="1698" originalName="j" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1698" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="j" lineNumber="1726" originalName="j" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1726" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -212,29 +212,29 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="add_ln1694" lineNumber="1694" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1694_fu_145_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="9" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1694" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="add_ln1722" lineNumber="1722" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln1722_fu_145_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1722" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="icmp_ln1694" lineNumber="1694" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1694_fu_151_p2" opType="icmp" coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="10" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1694" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="icmp_ln1722" lineNumber="1722" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1722_fu_151_p2" opType="icmp" coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1722" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln1694" lineNumber="1694" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1694" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln1722" lineNumber="1722" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="mSP_findLRBounds" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1722" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split</controlInputObjs>
         <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="patchMaker.cpp">
-        <validLinenumbers>1696</validLinenumbers>
-        <validLinenumbers>1702</validLinenumbers>
-        <validLinenumbers>1698</validLinenumbers>
-        <validLinenumbers>1694</validLinenumbers>
+        <validLinenumbers>1724</validLinenumbers>
+        <validLinenumbers>1730</validLinenumbers>
+        <validLinenumbers>1726</validLinenumbers>
+        <validLinenumbers>1722</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="46" name=".split" type="BlockType">
@@ -246,12 +246,12 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_23</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="trunc_ln1698_cast" lineNumber="1698" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln1698_cast_fu_156_p1" coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1698" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="trunc_ln1726_cast" lineNumber="1726" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln1726_cast_fu_156_p1" coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1726" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="row_list_addr" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="2147483647" contextFuncName="ap_int_base_32_true_s" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="row_list_addr" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="ap_int_base_32_true_s" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>row_list</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -263,7 +263,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="sext_ln215" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln215_fu_161_p1" coreId="1146008947" contextFuncName="ap_int_base_32_true_s" bitwidth="33" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="sext_ln215" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln215_fu_161_p1" coreId="1532835163" contextFuncName="ap_int_base_32_true_s" bitwidth="33" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -283,7 +283,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="tmp_fu_175_p3" coreId="1100861118" contextFuncName="abs" bitwidth="1" opcode="bitselect" nodeLabel="4.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="tmp_fu_175_p3" coreId="1532835163" contextFuncName="abs" bitwidth="1" opcode="bitselect" nodeLabel="4.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" linenumber="180" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="abs"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -296,28 +296,28 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="sext_ln1690" lineNumber="1690" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln1690_fu_218_p1" coreId="1150596533" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1690" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="sext_ln1718" lineNumber="1718" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln1718_fu_218_p1" coreId="1532835163" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1718" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln1696" lineNumber="1696" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1696_fu_221_p2" opType="icmp" coreId="1128771684" contextFuncName="mSP_findLRBounds" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.06" m_topoIndex="29" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1696" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln1724" lineNumber="1724" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1724_fu_221_p2" opType="icmp" coreId="2147483647" contextFuncName="mSP_findLRBounds" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.06" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1724" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="select_ln1696" lineNumber="1696" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1696_fu_227_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.22" m_topoIndex="30" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1696" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="select_ln1724" lineNumber="1724" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1724_fu_227_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.22" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1724" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="lbVal_2" lineNumber="1696" originalName="lbVal" fileName="patchMaker.cpp" fileDirectory=".." rtlName="lbVal_2_fu_235_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.41" m_topoIndex="31" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1696" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="lbVal_2" lineNumber="1724" originalName="lbVal" fileName="patchMaker.cpp" fileDirectory=".." rtlName="lbVal_2_fu_235_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.41" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1724" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
@@ -337,7 +337,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="tmp_22" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="tmp_22_fu_202_p3" coreId="1203942639" contextFuncName="abs" bitwidth="1" opcode="bitselect" nodeLabel="4.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="tmp_24" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="tmp_24_fu_202_p3" coreId="1111050778" contextFuncName="abs" bitwidth="1" opcode="bitselect" nodeLabel="4.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" linenumber="180" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="abs"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -350,44 +350,44 @@
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="sext_ln1702" lineNumber="1702" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln1702_fu_243_p1" coreId="1113502531" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1702" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="sext_ln1730" lineNumber="1730" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln1730_fu_243_p1" coreId="1200836532" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1730" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="icmp_ln1702" lineNumber="1702" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1702_fu_246_p2" opType="icmp" coreId="1206760654" contextFuncName="mSP_findLRBounds" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.06" m_topoIndex="33" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1702" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="icmp_ln1730" lineNumber="1730" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln1730_fu_246_p2" opType="icmp" coreId="1125141297" contextFuncName="mSP_findLRBounds" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.06" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1730" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="select_ln1702" lineNumber="1702" originalName="right_bound" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1702_fu_252_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.22" m_topoIndex="34" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1702" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="select_ln1730" lineNumber="1730" originalName="right_bound" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln1730_fu_252_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="mSP_findLRBounds" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.22" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1730" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="rbVal_2" lineNumber="1702" originalName="rbVal" fileName="patchMaker.cpp" fileDirectory=".." rtlName="rbVal_2_fu_260_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.41" m_topoIndex="35" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1702" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="rbVal_2" lineNumber="1730" originalName="rbVal" fileName="patchMaker.cpp" fileDirectory=".." rtlName="rbVal_2_fu_260_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="mSP_findLRBounds" bitwidth="64" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.41" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="1730" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="mSP_findLRBounds"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="br_ln0" coreId="1143715088" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="br_ln0" coreId="1078611051" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <controlInputObjs>block_23</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib">
         <validLinenumbers>180</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="patchMaker.cpp">
-        <validLinenumbers>1698</validLinenumbers>
-        <validLinenumbers>1690</validLinenumbers>
-        <validLinenumbers>1696</validLinenumbers>
-        <validLinenumbers>1702</validLinenumbers>
+        <validLinenumbers>1726</validLinenumbers>
+        <validLinenumbers>1718</validLinenumbers>
+        <validLinenumbers>1724</validLinenumbers>
+        <validLinenumbers>1730</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h">
         <validLinenumbers>215</validLinenumbers>
@@ -403,23 +403,23 @@
   <ScheduleInfo time="4"/>
   <ScheduleInfo time="5"/>
   <ScheduleInfo time="6"/>
+  <regnodes realName="select_ln1730_reg_335">
+    <nodeIds>43</nodeIds>
+  </regnodes>
   <regnodes realName="lbVal_reg_124">
     <nodeIds>18</nodeIds>
   </regnodes>
   <regnodes realName="lbVal_1_reg_315">
     <nodeIds>32</nodeIds>
   </regnodes>
+  <regnodes realName="select_ln1724_reg_325">
+    <nodeIds>35</nodeIds>
+  </regnodes>
   <regnodes realName="rbVal_1_reg_320">
     <nodeIds>40</nodeIds>
   </regnodes>
-  <regnodes realName="select_ln1702_reg_335">
-    <nodeIds>43</nodeIds>
-  </regnodes>
   <regnodes realName="lbVal_2_reg_330">
     <nodeIds>36</nodeIds>
-  </regnodes>
-  <regnodes realName="add_ln1694_reg_296">
-    <nodeIds>19</nodeIds>
   </regnodes>
   <regnodes realName="lhs_reg_310">
     <nodeIds>27</nodeIds>
@@ -430,14 +430,14 @@
   <regnodes realName="right_bound_write_assign_reg_100">
     <nodeIds>15</nodeIds>
   </regnodes>
+  <regnodes realName="add_ln1722_reg_296">
+    <nodeIds>19</nodeIds>
+  </regnodes>
   <regnodes realName="rhs_reg_290">
     <nodeIds>11</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln1694_reg_301">
+  <regnodes realName="icmp_ln1722_reg_301">
     <nodeIds>21</nodeIds>
-  </regnodes>
-  <regnodes realName="select_ln1696_reg_325">
-    <nodeIds>35</nodeIds>
   </regnodes>
   <regnodes realName="row_list_size_read_reg_285">
     <nodeIds>6</nodeIds>
@@ -472,6 +472,9 @@
   <expressionNodes realName="rhs_fu_141">
     <nodeIds>11</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="select_ln1724_fu_227">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="rbVal_1_fu_210">
     <nodeIds>40</nodeIds>
   </expressionNodes>
@@ -481,23 +484,20 @@
   <expressionNodes realName="row_list_addr_gep_fu_63">
     <nodeIds>26</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln1696_fu_227">
-    <nodeIds>35</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln1694_fu_145">
-    <nodeIds>19</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sext_ln1690_fu_218">
-    <nodeIds>33</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="tmp_fu_175">
     <nodeIds>31</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln1698_cast_fu_156">
+  <expressionNodes realName="sext_ln1730_fu_243">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1726_cast_fu_156">
     <nodeIds>24</nodeIds>
   </expressionNodes>
   <expressionNodes realName="mrv_1_fu_274">
     <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1722_fu_151">
+    <nodeIds>21</nodeIds>
   </expressionNodes>
   <expressionNodes realName="ret_13_fu_191">
     <nodeIds>37</nodeIds>
@@ -505,17 +505,17 @@
   <expressionNodes realName="lbVal_1_fu_183">
     <nodeIds>32</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln1694_fu_151">
-    <nodeIds>21</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="sub_ln180_fu_169">
     <nodeIds>30</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln1702_fu_252">
-    <nodeIds>43</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="sub_ln180_8_fu_196">
     <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1730_fu_252">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln1722_fu_145">
+    <nodeIds>19</nodeIds>
   </expressionNodes>
   <expressionNodes realName="lbVal_phi_fu_128">
     <nodeIds>18</nodeIds>
@@ -526,14 +526,20 @@
   <expressionNodes realName="sext_ln215_fu_161">
     <nodeIds>28</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="sext_ln1718_fu_218">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="rbVal_2_fu_260">
     <nodeIds>44</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln1702_fu_246">
+  <expressionNodes realName="icmp_ln1730_fu_246">
     <nodeIds>42</nodeIds>
   </expressionNodes>
   <expressionNodes realName="mrv_fu_268">
     <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1724_fu_221">
+    <nodeIds>34</nodeIds>
   </expressionNodes>
   <expressionNodes realName="j_phi_fu_80">
     <nodeIds>16</nodeIds>
@@ -541,13 +547,7 @@
   <expressionNodes realName="trapezoid_edges_V_addr_gep_fu_50">
     <nodeIds>9</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln1702_fu_243">
-    <nodeIds>41</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln1696_fu_221">
-    <nodeIds>34</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_22_fu_202">
+  <expressionNodes realName="tmp_24_fu_202">
     <nodeIds>39</nodeIds>
   </expressionNodes>
   <ioNodes realName="row_list_size_read_read_fu_44">

@@ -6,8 +6,8 @@
 module MPSQ_patches_parameters_V_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
 parameter DWIDTH = 32;
-parameter AWIDTH = 12;
-parameter MEM_SIZE = 3840;
+parameter AWIDTH = 9;
+parameter MEM_SIZE = 360;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -64,8 +64,8 @@ module MPSQ_patches_parameters_V(
     q1);
 
 parameter DataWidth = 32'd32;
-parameter AddressRange = 32'd3840;
-parameter AddressWidth = 32'd12;
+parameter AddressRange = 32'd360;
+parameter AddressWidth = 32'd9;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

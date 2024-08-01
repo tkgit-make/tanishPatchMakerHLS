@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Wed Jul 31 23:54:06 -0400 2024
+INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Thu Aug 01 00:54:21 -0400 2024
 INFO: [HLS 200-10] In directory 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS'
 Sourcing Tcl script 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/cosim.tcl'
 INFO: [HLS 200-1510] Running: open_project PatchMaker_tanishGit 
@@ -39,6 +39,15 @@ INFO: [COSIM 212-14] Instrumenting C test bench ...
    Generating cosim.tv.exe
 INFO: [COSIM 212-302] Starting C TB testing ... 
 0
+1
+2
+3
+4
+5
+6
+7
+8
+9
 INFO: [COSIM 212-333] Generating C post check test bench ...
 INFO: [COSIM 212-12] Generating RTL test bench ...
 INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
@@ -65,10 +74,14 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/ta
 INFO: [VRFC 10-311] analyzing module MPSQ
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_add_patch9.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_add_patch9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_add_patch_patches_parameters14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_add_patch_patches_parameters14
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_areWedgeSuperPointsEqual.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_areWedgeSuperPointsEqual
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_delete_patch.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_delete_patch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_delete_patch_patches_parameters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_delete_patch_patches_parameters
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_encodeCoordinates.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_encodeCoordinates
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_GDarrayDecoded_V.v" into library xil_defaultlib
@@ -206,11 +219,13 @@ Compiling module xil_defaultlib.MPSQ_mSP_findLRBounds_trapezoid_...
 Compiling module xil_defaultlib.MPSQ_mSP_findLRBounds
 Compiling module xil_defaultlib.MPSQ_mSP_findStartIndex
 Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
+Compiling module xil_defaultlib.MPSQ_add_patch_patches_parameter...
 Compiling module xil_defaultlib.MPSQ_encodeCoordinates
 Compiling module xil_defaultlib.MPSQ_add_patch9
 Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine
 Compiling module xil_defaultlib.MPSQ_mux_42_32_1_1(ID=1,din4_WID...
 Compiling module xil_defaultlib.MPSQ_getShadows
+Compiling module xil_defaultlib.MPSQ_delete_patch_patches_parame...
 Compiling module xil_defaultlib.MPSQ_delete_patch
 Compiling module xil_defaultlib.MPSQ_makeThirdPatch
 Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_curr...
@@ -245,7 +260,7 @@ Built simulation snapshot MPSQ
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/xsim.dir/MPSQ/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Jul 31 23:55:40 2024...
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug  1 00:55:57 2024...
 
 ****** xsim v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -264,15 +279,32 @@ source MPSQ.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [n/a] @ "107000"
-// RTL Simulation : 1 / 1 [n/a] @ "538454000"
+// RTL Simulation : 0 / 10 [n/a] @ "107000"
+// RTL Simulation : 1 / 10 [n/a] @ "579407000"
+// RTL Simulation : 2 / 10 [n/a] @ "1514252000"
+// RTL Simulation : 3 / 10 [n/a] @ "2726099000"
+// RTL Simulation : 4 / 10 [n/a] @ "3496733000"
+// RTL Simulation : 5 / 10 [n/a] @ "4612619000"
+// RTL Simulation : 6 / 10 [n/a] @ "6079091000"
+// RTL Simulation : 7 / 10 [n/a] @ "7537037000"
+// RTL Simulation : 8 / 10 [n/a] @ "8552618000"
+// RTL Simulation : 9 / 10 [n/a] @ "10038842000"
+// RTL Simulation : 10 / 10 [n/a] @ "11806589000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 538465500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 524
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:43 . Memory (MB): peak = 923.672 ; gain = 0.000
+$finish called at time : 11806600500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 524
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:15:33 . Memory (MB): peak = 923.855 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Jul 31 23:56:32 2024...
+INFO: [Common 17-206] Exiting xsim at Thu Aug  1 01:11:39 2024...
 INFO: [COSIM 212-316] Starting C post checking ...
 0
+1
+2
+3
+4
+5
+6
+7
+8
+9
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 4 seconds. CPU system time: 2 seconds. Elapsed time: 146.745 seconds; current allocated memory: 99.010 MB.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 1038.39 seconds; current allocated memory: 99.108 MB.

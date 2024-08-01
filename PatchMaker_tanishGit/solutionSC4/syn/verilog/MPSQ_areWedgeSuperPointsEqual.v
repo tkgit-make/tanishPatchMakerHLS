@@ -77,10 +77,10 @@ wire   [7:0] add_ln869_1_fu_131_p2;
 reg   [7:0] add_ln869_1_reg_218;
 wire   [7:0] add_ln0_1_fu_163_p2;
 reg   [7:0] add_ln0_1_reg_223;
-wire   [11:0] tmp_32_fu_169_p3;
-reg   [11:0] tmp_32_reg_228;
-wire   [11:0] tmp_33_fu_181_p3;
-reg   [11:0] tmp_33_reg_238;
+wire   [11:0] tmp_38_fu_169_p3;
+reg   [11:0] tmp_38_reg_228;
+wire   [11:0] tmp_39_fu_181_p3;
+reg   [11:0] tmp_39_reg_238;
 wire   [0:0] grp_fu_99_p2;
 reg   [0:0] icmp_ln870_reg_258;
 reg    ap_enable_reg_pp0_iter0_reg;
@@ -180,8 +180,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        tmp_32_reg_228[11 : 4] <= tmp_32_fu_169_p3[11 : 4];
-        tmp_33_reg_238[11 : 4] <= tmp_33_fu_181_p3[11 : 4];
+        tmp_38_reg_228[11 : 4] <= tmp_38_fu_169_p3[11 : 4];
+        tmp_39_reg_238[11 : 4] <= tmp_39_fu_181_p3[11 : 4];
     end
 end
 
@@ -349,13 +349,13 @@ assign ap_return = (icmp_ln870_reg_258 & grp_fu_99_p2);
 
 assign grp_fu_99_p2 = ((reg_91 == reg_95) ? 1'b1 : 1'b0);
 
-assign or_ln870_1_fu_203_p2 = (tmp_33_reg_238 | 12'd15);
+assign or_ln870_1_fu_203_p2 = (tmp_39_reg_238 | 12'd15);
 
-assign or_ln870_fu_193_p2 = (tmp_32_reg_228 | 12'd15);
+assign or_ln870_fu_193_p2 = (tmp_38_reg_228 | 12'd15);
 
-assign tmp_32_fu_169_p3 = {{add_ln869_1_reg_218}, {4'd0}};
+assign tmp_38_fu_169_p3 = {{add_ln869_1_reg_218}, {4'd0}};
 
-assign tmp_33_fu_181_p3 = {{add_ln0_1_reg_223}, {4'd0}};
+assign tmp_39_fu_181_p3 = {{add_ln0_1_reg_223}, {4'd0}};
 
 assign tmp_fu_113_p3 = {{wsp2_offset}, {2'd0}};
 
@@ -367,13 +367,13 @@ assign wsp2_offset3_cast23_fu_105_p1 = wsp2_offset3;
 
 assign zext_ln0_1_fu_153_p1 = tmp_s_fu_145_p3;
 
-assign zext_ln0_2_fu_188_p1 = tmp_33_fu_181_p3;
+assign zext_ln0_2_fu_188_p1 = tmp_39_fu_181_p3;
 
 assign zext_ln0_fu_141_p1 = wsp1_offset;
 
 assign zext_ln869_1_fu_121_p1 = tmp_fu_113_p3;
 
-assign zext_ln869_2_fu_176_p1 = tmp_32_fu_169_p3;
+assign zext_ln869_2_fu_176_p1 = tmp_38_fu_169_p3;
 
 assign zext_ln869_fu_109_p1 = wsp2_offset;
 
@@ -382,8 +382,8 @@ assign zext_ln870_1_fu_208_p1 = or_ln870_1_fu_203_p2;
 assign zext_ln870_fu_198_p1 = or_ln870_fu_193_p2;
 
 always @ (posedge ap_clk) begin
-    tmp_32_reg_228[3:0] <= 4'b0000;
-    tmp_33_reg_238[3:0] <= 4'b0000;
+    tmp_38_reg_228[3:0] <= 4'b0000;
+    tmp_39_reg_238[3:0] <= 4'b0000;
 end
 
 endmodule //MPSQ_areWedgeSuperPointsEqual

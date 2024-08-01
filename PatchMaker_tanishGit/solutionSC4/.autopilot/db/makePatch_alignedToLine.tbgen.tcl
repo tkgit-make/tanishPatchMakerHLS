@@ -20,7 +20,7 @@ set C_modelArgList {
 	{ leftRight uint 1 regular  }
 	{ GDarrayDecoded int 32 regular {array 2560 { 1 3 } 1 1 }  }
 	{ patches_superpoints int 64 regular {array 2560 { 2 3 } 1 1 }  }
-	{ patches_parameters int 32 regular {array 3840 { 0 3 } 0 1 }  }
+	{ patches_parameters int 32 regular {array 360 { 0 1 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "n_patches", "interface" : "wire", "bitwidth" : 8, "direction" : "READWRITE"} , 
@@ -31,10 +31,10 @@ set C_modelArgMapList {[
  	{ "Name" : "leftRight", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "GDarrayDecoded", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "patches_superpoints", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
- 	{ "Name" : "patches_parameters", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "patches_parameters", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
-set portNum 29
+set portNum 32
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -60,10 +60,13 @@ set portList {
 	{ patches_superpoints_we0 sc_out sc_logic 1 signal 7 } 
 	{ patches_superpoints_d0 sc_out sc_lv 64 signal 7 } 
 	{ patches_superpoints_q0 sc_in sc_lv 64 signal 7 } 
-	{ patches_parameters_address0 sc_out sc_lv 12 signal 8 } 
+	{ patches_parameters_address0 sc_out sc_lv 9 signal 8 } 
 	{ patches_parameters_ce0 sc_out sc_logic 1 signal 8 } 
 	{ patches_parameters_we0 sc_out sc_logic 1 signal 8 } 
 	{ patches_parameters_d0 sc_out sc_lv 32 signal 8 } 
+	{ patches_parameters_address1 sc_out sc_lv 9 signal 8 } 
+	{ patches_parameters_ce1 sc_out sc_logic 1 signal 8 } 
+	{ patches_parameters_q1 sc_in sc_lv 32 signal 8 } 
 	{ ap_return sc_out sc_lv 32 signal -1 } 
 }
 set NewPortList {[ 
@@ -91,10 +94,13 @@ set NewPortList {[
  	{ "name": "patches_superpoints_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "we0" }} , 
  	{ "name": "patches_superpoints_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "d0" }} , 
  	{ "name": "patches_superpoints_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "q0" }} , 
- 	{ "name": "patches_parameters_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address0" }} , 
+ 	{ "name": "patches_parameters_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address0" }} , 
  	{ "name": "patches_parameters_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "ce0" }} , 
  	{ "name": "patches_parameters_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "we0" }} , 
  	{ "name": "patches_parameters_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "patches_parameters", "role": "d0" }} , 
+ 	{ "name": "patches_parameters_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address1" }} , 
+ 	{ "name": "patches_parameters_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "ce1" }} , 
+ 	{ "name": "patches_parameters_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "patches_parameters", "role": "q1" }} , 
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
@@ -128,13 +134,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "30", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "patches_superpoints"}]},
-			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "O",
+			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "30", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "patches_parameters"}]},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "23", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "radiiDivisionList"},
-					{"ID" : "4", "SubInstance" : "grp_wedgePatch_init_fu_404", "Port" : "radiiDivisionList"}]},
+					{"ID" : "4", "SubInstance" : "grp_wedgePatch_init_fu_404", "Port" : "radiiDivisionList"},
+					{"ID" : "23", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "radiiDivisionList"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "23", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "trapezoid_edges_V"}]}]},
@@ -186,8 +192,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "6", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_176", "Port" : "radiiDivisionList"},
-					{"ID" : "14", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_204", "Port" : "radiiDivisionList"},
 					{"ID" : "10", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_190", "Port" : "radiiDivisionList"},
+					{"ID" : "14", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_204", "Port" : "radiiDivisionList"},
 					{"ID" : "18", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_217", "Port" : "radiiDivisionList"}]}]},
 	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176", "Parent" : "5", "Child" : ["7", "8", "9"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
@@ -361,13 +367,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
 			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
 	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_makeSuperPoint_alignedToLine11_fu_414.mul_35ns_33s_64_3_1_U23", "Parent" : "23"},
-	{"ID" : "30", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_add_patch9_fu_433", "Parent" : "0", "Child" : ["31"],
+	{"ID" : "30", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_add_patch9_fu_433", "Parent" : "0", "Child" : ["31", "32"],
 		"CDFG" : "add_patch9",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "14", "EstimateLatencyMax" : "245",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "14", "EstimateLatencyMax" : "490",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -378,10 +384,30 @@ set RtlHierarchyInfo {[
 			{"Name" : "n_patches", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "n_patches_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "wp_superpoints", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "31", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "wp_parameters"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_add_patch9_fu_433.grp_encodeCoordinates_fu_485", "Parent" : "30",
+			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "31", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "patches_parameters"}]}]},
+	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_add_patch9_fu_433.grp_add_patch_patches_parameters14_fu_297", "Parent" : "30",
+		"CDFG" : "add_patch_patches_parameters14",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "368", "EstimateLatencyMax" : "368",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO"}]},
+	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_add_patch9_fu_433.grp_encodeCoordinates_fu_305", "Parent" : "30",
 		"CDFG" : "encodeCoordinates",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -401,7 +427,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	makePatch_alignedToLine {
-		n_patches {Type IO LastRead 8 FirstWrite 4}
+		n_patches {Type IO LastRead 8 FirstWrite 3}
 		GDn_points {Type I LastRead 0 FirstWrite -1}
 		apexZ0 {Type I LastRead 0 FirstWrite -1}
 		z_top {Type I LastRead 0 FirstWrite -1}
@@ -409,7 +435,7 @@ set ArgLastReadFirstWriteLatency {
 		leftRight {Type I LastRead 0 FirstWrite -1}
 		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
 		patches_superpoints {Type IO LastRead 4 FirstWrite 4}
-		patches_parameters {Type O LastRead -1 FirstWrite 6}
+		patches_parameters {Type IO LastRead 3 FirstWrite 5}
 		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
 	wedgePatch_init {
@@ -473,12 +499,15 @@ set ArgLastReadFirstWriteLatency {
 		row_list_size {Type I LastRead 0 FirstWrite -1}
 		projectionToRow {Type I LastRead 0 FirstWrite -1}}
 	add_patch9 {
-		n_patches {Type O LastRead -1 FirstWrite 4}
+		n_patches {Type O LastRead -1 FirstWrite 3}
 		n_patches_read {Type I LastRead 0 FirstWrite -1}
 		wp_superpoints {Type I LastRead 10 FirstWrite -1}
-		wp_parameters {Type I LastRead 11 FirstWrite -1}
+		wp_parameters {Type I LastRead 4 FirstWrite -1}
 		patches_superpoints {Type IO LastRead 4 FirstWrite 4}
-		patches_parameters {Type O LastRead -1 FirstWrite 6}}
+		patches_parameters {Type IO LastRead 3 FirstWrite 5}}
+	add_patch_patches_parameters14 {
+		wp_parameters {Type I LastRead 4 FirstWrite -1}
+		patches_parameters {Type IO LastRead 3 FirstWrite 5}}
 	encodeCoordinates {
 		phi {Type I LastRead 0 FirstWrite -1}
 		z {Type I LastRead 0 FirstWrite -1}}}
@@ -505,5 +534,5 @@ set Spec2ImplPortList {
 	leftRight { ap_none {  { leftRight in_data 0 1 } } }
 	GDarrayDecoded { ap_memory {  { GDarrayDecoded_address0 mem_address 1 12 }  { GDarrayDecoded_ce0 mem_ce 1 1 }  { GDarrayDecoded_q0 mem_dout 0 32 } } }
 	patches_superpoints { ap_memory {  { patches_superpoints_address0 mem_address 1 12 }  { patches_superpoints_ce0 mem_ce 1 1 }  { patches_superpoints_we0 mem_we 1 1 }  { patches_superpoints_d0 mem_din 1 64 }  { patches_superpoints_q0 mem_dout 0 64 } } }
-	patches_parameters { ap_memory {  { patches_parameters_address0 mem_address 1 12 }  { patches_parameters_ce0 mem_ce 1 1 }  { patches_parameters_we0 mem_we 1 1 }  { patches_parameters_d0 mem_din 1 32 } } }
+	patches_parameters { ap_memory {  { patches_parameters_address0 mem_address 1 9 }  { patches_parameters_ce0 mem_ce 1 1 }  { patches_parameters_we0 mem_we 1 1 }  { patches_parameters_d0 mem_din 1 32 }  { patches_parameters_address1 MemPortADDR2 1 9 }  { patches_parameters_ce1 MemPortCE2 1 1 }  { patches_parameters_q1 MemPortDOUT2 0 32 } } }
 }

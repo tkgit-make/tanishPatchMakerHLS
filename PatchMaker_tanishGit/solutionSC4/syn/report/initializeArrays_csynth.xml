@@ -18,18 +18,18 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>1.990</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.075</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>6407</Best-caseLatency>
-<Average-caseLatency>6407</Average-caseLatency>
-<Worst-caseLatency>6407</Worst-caseLatency>
-<Best-caseRealTimeLatency>19.221 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>19.221 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>19.221 us</Worst-caseRealTimeLatency>
-<Interval-min>6407</Interval-min>
-<Interval-max>6407</Interval-max>
+<Best-caseLatency>2926</Best-caseLatency>
+<Average-caseLatency>2926</Average-caseLatency>
+<Worst-caseLatency>2926</Worst-caseLatency>
+<Best-caseRealTimeLatency>8.778 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>8.778 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>8.778 us</Worst-caseRealTimeLatency>
+<Interval-min>2926</Interval-min>
+<Interval-max>2926</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <initArraysSPloop1_initArraysSPloop2_initArraysSPloop3>
@@ -40,19 +40,19 @@
 <PipelineDepth>3</PipelineDepth>
 </initArraysSPloop1_initArraysSPloop2_initArraysSPloop3>
 <initArraysPPloop1_initArraysPPloop3_initArraysPPloop4>
-<TripCount>3840</TripCount>
-<Latency>3842</Latency>
-<AbsoluteTimeLatency>11526</AbsoluteTimeLatency>
+<TripCount>360</TripCount>
+<Latency>361</Latency>
+<AbsoluteTimeLatency>1083</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>4</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 </initArraysPPloop1_initArraysPPloop3_initArraysPPloop4>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>217</FF>
-<LUT>766</LUT>
+<FF>129</FF>
+<LUT>730</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -185,7 +185,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>9</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>

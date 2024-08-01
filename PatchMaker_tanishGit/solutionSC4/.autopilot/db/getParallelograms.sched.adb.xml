@@ -467,10 +467,10 @@
 
 <Node id="28" bw="64" op_0_bw="64" op_1_bw="56" op_2_bw="8">
 <![CDATA[
-:6 %tmp_24 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i56.i8, i56 0, i8 %or_ln62
+:6 %tmp_4 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i56.i8, i56 0, i8 %or_ln62
 
 ]]></Node>
-<StgValue><ssdm name="tmp_24"/></StgValue>
+<StgValue><ssdm name="tmp_4"/></StgValue>
 </operation>
 
 <operation id="39" st_id="4" stage="1" lat="1">
@@ -482,7 +482,7 @@
 
 <Node id="29" bw="8" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:7 %wp_superpoints_addr_4 = getelementptr i32 %wp_superpoints, i64 0, i64 %tmp_24
+:7 %wp_superpoints_addr_4 = getelementptr i32 %wp_superpoints, i64 0, i64 %tmp_4
 
 ]]></Node>
 <StgValue><ssdm name="wp_superpoints_addr_4"/></StgValue>
@@ -716,10 +716,10 @@
 
 <Node id="43" bw="6" op_0_bw="6" op_1_bw="3" op_2_bw="3">
 <![CDATA[
-.split:9 %tmp_25 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %add_ln71, i3 0
+.split:9 %tmp_5 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %add_ln71, i3 0
 
 ]]></Node>
-<StgValue><ssdm name="tmp_25"/></StgValue>
+<StgValue><ssdm name="tmp_5"/></StgValue>
 </operation>
 
 <operation id="55" st_id="6" stage="1" lat="1">
@@ -731,7 +731,7 @@
 
 <Node id="44" bw="7" op_0_bw="6">
 <![CDATA[
-.split:10 %zext_ln71 = zext i6 %tmp_25
+.split:10 %zext_ln71 = zext i6 %tmp_5
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln71"/></StgValue>
@@ -746,10 +746,10 @@
 
 <Node id="45" bw="4" op_0_bw="4" op_1_bw="3" op_2_bw="1">
 <![CDATA[
-.split:11 %tmp_26 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i3.i1, i3 %add_ln71, i1 0
+.split:11 %tmp_6 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i3.i1, i3 %add_ln71, i1 0
 
 ]]></Node>
-<StgValue><ssdm name="tmp_26"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 
 <operation id="57" st_id="6" stage="1" lat="1">
@@ -761,7 +761,7 @@
 
 <Node id="46" bw="7" op_0_bw="4">
 <![CDATA[
-.split:12 %zext_ln71_1 = zext i4 %tmp_26
+.split:12 %zext_ln71_1 = zext i4 %tmp_6
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln71_1"/></StgValue>
@@ -1397,7 +1397,7 @@
 
 <Node id="35" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split:1 %specloopname_ln59 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10
+.split:1 %specloopname_ln59 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln59"/></StgValue>

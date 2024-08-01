@@ -29,7 +29,7 @@ void solve(long_type apexZ0, int_type ppl, bool leftRight, index_type &n_patches
            SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT])
 {
 solve_loop:
-    for (index_type i = 0; i < num_layers; i++)
+    for (index_type i = 0; i < MAX_LAYERS; i++)
     {
         bool foundIdentical = false;
         bool firstTime = true;
@@ -241,7 +241,7 @@ void importData(int_type k, GDARRAYPRESORT)
     cout << "END OF WEDGE" << endl;
 #endif
     COORDINATE_TYPE sample[3];
-    for (index_type i = 0; i < num_layers; i++)
+    for (index_type i = 0; i < MAX_LAYERS; i++)
     {
         //sorts the points in the ith layer
         qsort(&GDarray[i][1], GDn_points[i], sizeof(sample),
@@ -312,7 +312,7 @@ void adjustPointPositionBack(std::array<std::array<COORDINATE_TYPE, 3>, MAX_POIN
 void addBoundaryPoint(long_type offset, GDARRAYPRESORT)
 {
     addBoundaryPoint_loop:
-    for (index_type i = 0; i < num_layers; i++) {
+    for (index_type i = 0; i < MAX_LAYERS; i++) {
         //adding two boundary points in each layer
         // inserting at the beginning
         GDarray[i][0][0] = i + 1;
@@ -490,7 +490,7 @@ int_type main () {
 
     // Call any preliminary functions required to prepare input for the test.
     // Call the top-level function multiple times, passing input stimuli as needed.
-    int_type wedgesToTest[] = {0, 1}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
+    int_type wedgesToTest[] = {0, 10}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
 
     wedge_test(0, 16, wedgesToTest);
 

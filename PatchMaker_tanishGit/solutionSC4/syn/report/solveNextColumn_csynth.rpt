@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'solveNextColumn'
 ================================================================
-* Date:           Wed Jul 31 23:38:33 2024
+* Date:           Thu Aug  1 00:48:42 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -63,12 +63,12 @@
 |DSP                  |        -|     -|        -|        -|    -|
 |Expression           |        -|     -|        0|      124|    -|
 |FIFO                 |        -|     -|        -|        -|    -|
-|Instance             |        9|     2|    29315|    41903|    -|
+|Instance             |        9|     2|    28980|    42806|    -|
 |Memory               |        -|     -|        -|        -|    -|
 |Multiplexer          |        -|     -|        -|      200|    -|
 |Register             |        -|     -|      432|        -|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        9|     2|    29747|    42227|    0|
+|Total                |        9|     2|    29412|    43130|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1080|   960|  2042880|  1021440|   80|
 +---------------------+---------+------+---------+---------+-----+
@@ -85,10 +85,10 @@
     |                    Instance                    |                Module               | BRAM_18K| DSP|   FF  |  LUT  | URAM|
     +------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
     |tmp_getSolveNextColumnWhileConditional_fu_234   |getSolveNextColumnWhileConditional   |        0|   0|      0|     64|    0|
-    |grp_solveNextPatchPair_fu_190                   |solveNextPatchPair                   |        9|   2|  28713|  41382|    0|
+    |grp_solveNextPatchPair_fu_190                   |solveNextPatchPair                   |        9|   2|  28378|  42285|    0|
     |grp_straightLineProjectorFromLayerIJtoK_fu_218  |straightLineProjectorFromLayerIJtoK  |        0|   0|    602|    457|    0|
     +------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
-    |Total                                           |                                     |        9|   2|  29315|  41903|    0|
+    |Total                                           |                                     |        9|   2|  28980|  42806|    0|
     +------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
 
     * DSP: 
@@ -106,10 +106,10 @@
     +----------------------------------+----------+----+---+----+------------+------------+
     |loopCounter_1_fu_263_p2           |         +|   0|  0|  39|          32|           1|
     |ap_block_state11_on_subcall_done  |       and|   0|  0|   2|           1|           1|
-    |icmp_ln727_fu_244_p2              |      icmp|   0|  0|  11|           8|           1|
-    |icmp_ln747_fu_269_p2              |      icmp|   0|  0|  20|          32|           5|
+    |icmp_ln752_fu_244_p2              |      icmp|   0|  0|  11|           8|           1|
+    |icmp_ln772_fu_269_p2              |      icmp|   0|  0|  20|          32|           5|
     |icmp_ln878_fu_250_p2              |      icmp|   0|  0|  20|          32|          26|
-    |select_ln729_fu_255_p3            |    select|   0|  0|  32|           1|          26|
+    |select_ln754_fu_255_p3            |    select|   0|  0|  32|           1|          26|
     +----------------------------------+----------+----+---+----+------------+------------+
     |Total                             |          |   0|  0| 124|         106|          60|
     +----------------------------------+----------+----+---+----+------------+------------+
@@ -148,8 +148,8 @@
     |complementary_apexZ0_V_0_reg_112                             |  32|   0|   32|          0|
     |grp_solveNextPatchPair_fu_190_ap_start_reg                   |   1|   0|    1|          0|
     |grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_start_reg  |   1|   0|    1|          0|
-    |icmp_ln727_reg_304                                           |   1|   0|    1|          0|
-    |icmp_ln747_reg_335                                           |   1|   0|    1|          0|
+    |icmp_ln752_reg_304                                           |   1|   0|    1|          0|
+    |icmp_ln772_reg_335                                           |   1|   0|    1|          0|
     |loopCounter_1_reg_330                                        |  32|   0|   32|          0|
     |loopCounter_reg_169                                          |  32|   0|   32|          0|
     |nPatchesInColumn_0_reg_136                                   |  32|   0|   32|          0|
@@ -200,12 +200,12 @@
 |patches_superpoints_address1  |  out|   12|   ap_memory|  patches_superpoints|         array|
 |patches_superpoints_ce1       |  out|    1|   ap_memory|  patches_superpoints|         array|
 |patches_superpoints_q1        |   in|   64|   ap_memory|  patches_superpoints|         array|
-|patches_parameters_address0   |  out|   12|   ap_memory|   patches_parameters|         array|
+|patches_parameters_address0   |  out|    9|   ap_memory|   patches_parameters|         array|
 |patches_parameters_ce0        |  out|    1|   ap_memory|   patches_parameters|         array|
 |patches_parameters_we0        |  out|    1|   ap_memory|   patches_parameters|         array|
 |patches_parameters_d0         |  out|   32|   ap_memory|   patches_parameters|         array|
 |patches_parameters_q0         |   in|   32|   ap_memory|   patches_parameters|         array|
-|patches_parameters_address1   |  out|   12|   ap_memory|   patches_parameters|         array|
+|patches_parameters_address1   |  out|    9|   ap_memory|   patches_parameters|         array|
 |patches_parameters_ce1        |  out|    1|   ap_memory|   patches_parameters|         array|
 |patches_parameters_we1        |  out|    1|   ap_memory|   patches_parameters|         array|
 |patches_parameters_d1         |  out|   32|   ap_memory|   patches_parameters|         array|

@@ -40,7 +40,7 @@
 `define AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 1;
+parameter AUTOTB_TRANSACTION_NUM = 10;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = -1;
 parameter LENGTH_stop = 1;

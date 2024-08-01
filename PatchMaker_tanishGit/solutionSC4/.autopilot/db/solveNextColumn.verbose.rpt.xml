@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveNextColumn'" level="0">
-<item name = "Date">Wed Jul 31 23:38:33 2024
+<item name = "Date">Thu Aug  1 00:48:42 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -53,7 +53,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 124, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">9, 2, 29315, 41903, -</column>
+<column name="Instance">9, 2, 28980, 42806, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 200, -</column>
 <column name="Register">-, -, 432, -, -</column>
@@ -68,7 +68,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="tmp_getSolveNextColumnWhileConditional_fu_234">getSolveNextColumnWhileConditional, 0, 0, 0, 64, 0</column>
-<column name="grp_solveNextPatchPair_fu_190">solveNextPatchPair, 9, 2, 28713, 41382, 0</column>
+<column name="grp_solveNextPatchPair_fu_190">solveNextPatchPair, 9, 2, 28378, 42285, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_218">straightLineProjectorFromLayerIJtoK, 0, 0, 602, 457, 0</column>
 </table>
 </item>
@@ -88,10 +88,10 @@
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="loopCounter_1_fu_263_p2">+, 0, 0, 39, 32, 1</column>
 <column name="ap_block_state11_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln727_fu_244_p2">icmp, 0, 0, 11, 8, 1</column>
-<column name="icmp_ln747_fu_269_p2">icmp, 0, 0, 20, 32, 5</column>
+<column name="icmp_ln752_fu_244_p2">icmp, 0, 0, 11, 8, 1</column>
+<column name="icmp_ln772_fu_269_p2">icmp, 0, 0, 20, 32, 5</column>
 <column name="icmp_ln878_fu_250_p2">icmp, 0, 0, 20, 32, 26</column>
-<column name="select_ln729_fu_255_p3">select, 0, 0, 32, 1, 26</column>
+<column name="select_ln754_fu_255_p3">select, 0, 0, 32, 1, 26</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -122,8 +122,8 @@
 <column name="complementary_apexZ0_V_0_reg_112">32, 0, 32, 0</column>
 <column name="grp_solveNextPatchPair_fu_190_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_start_reg">1, 0, 1, 0</column>
-<column name="icmp_ln727_reg_304">1, 0, 1, 0</column>
-<column name="icmp_ln747_reg_335">1, 0, 1, 0</column>
+<column name="icmp_ln752_reg_304">1, 0, 1, 0</column>
+<column name="icmp_ln772_reg_335">1, 0, 1, 0</column>
 <column name="loopCounter_1_reg_330">32, 0, 32, 0</column>
 <column name="loopCounter_reg_169">32, 0, 32, 0</column>
 <column name="nPatchesInColumn_0_reg_136">32, 0, 32, 0</column>
@@ -170,12 +170,12 @@
 <column name="patches_superpoints_address1">out, 12, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_ce1">out, 1, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_q1">in, 64, ap_memory, patches_superpoints, array</column>
-<column name="patches_parameters_address0">out, 12, ap_memory, patches_parameters, array</column>
+<column name="patches_parameters_address0">out, 9, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_ce0">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_we0">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_d0">out, 32, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_q0">in, 32, ap_memory, patches_parameters, array</column>
-<column name="patches_parameters_address1">out, 12, ap_memory, patches_parameters, array</column>
+<column name="patches_parameters_address1">out, 9, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_ce1">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_we1">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_d1">out, 32, ap_memory, patches_parameters, array</column>

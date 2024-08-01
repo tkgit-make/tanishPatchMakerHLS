@@ -196,7 +196,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1868782181</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -229,7 +229,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1286964039</coreId>
+						<coreId>673215598</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -262,7 +262,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1751348321</coreId>
+						<coreId>1853187616</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -525,7 +525,7 @@
 						<name>row_list_V</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1518</lineNumber>
+						<lineNumber>1546</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -541,7 +541,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1518</second>
+										<second>1546</second>
 									</item>
 								</second>
 							</item>
@@ -575,10 +575,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>zext_ln1519</name>
+						<name>zext_ln1547</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1519</lineNumber>
+						<lineNumber>1547</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -594,7 +594,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1519</second>
+										<second>1547</second>
 									</item>
 								</second>
 							</item>
@@ -631,7 +631,7 @@
 						<name>tmp</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -647,7 +647,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -658,7 +658,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>29</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -686,7 +686,7 @@
 						<name>tmp_s</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -702,7 +702,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -738,10 +738,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>zext_ln1527_1</name>
+						<name>zext_ln1555_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -757,7 +757,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -791,10 +791,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>sub_ln1527</name>
+						<name>sub_ln1555</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -810,7 +810,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -821,7 +821,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -845,10 +845,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>add_ln1527</name>
+						<name>add_ln1555</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -864,7 +864,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -899,10 +899,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>zext_ln1527_2</name>
+						<name>zext_ln1555_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -918,7 +918,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -955,7 +955,7 @@
 						<name>radiiDivisionList_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -971,7 +971,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -1007,10 +1007,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>tmp_20</name>
+						<name>tmp_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1026,7 +1026,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -1062,10 +1062,10 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>zext_ln1524</name>
+						<name>zext_ln1552</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1081,7 +1081,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -1115,10 +1115,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>tmp_21</name>
+						<name>tmp_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1134,7 +1134,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -1170,10 +1170,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>zext_ln1519_1</name>
+						<name>zext_ln1547_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1519</lineNumber>
+						<lineNumber>1547</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1189,7 +1189,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1519</second>
+										<second>1547</second>
 									</item>
 								</second>
 							</item>
@@ -1226,7 +1226,7 @@
 						<name>GDn_points_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1519</lineNumber>
+						<lineNumber>1547</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1242,7 +1242,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1519</second>
+										<second>1547</second>
 									</item>
 								</second>
 							</item>
@@ -1281,7 +1281,7 @@
 						<name>row_list_size</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1519</lineNumber>
+						<lineNumber>1547</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1297,7 +1297,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1519</second>
+										<second>1547</second>
 									</item>
 								</second>
 							</item>
@@ -1331,10 +1331,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>br_ln1522</name>
+						<name>br_ln1550</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1522</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1350,7 +1350,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1522</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -1361,7 +1361,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1387,7 +1387,7 @@
 						<name>j</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1522</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1403,7 +1403,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1522</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -1440,10 +1440,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>add_ln1522</name>
+						<name>add_ln1550</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1522</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1459,7 +1459,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1522</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -1494,10 +1494,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>icmp_ln1522</name>
+						<name>icmp_ln1550</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1522</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1513,7 +1513,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1522</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -1548,10 +1548,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>br_ln1522</name>
+						<name>br_ln1550</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1522</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1567,7 +1567,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1522</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -1606,7 +1606,7 @@
 						<name>j_cast</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1522</lineNumber>
+						<lineNumber>1550</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1622,7 +1622,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1522</second>
+										<second>1550</second>
 									</item>
 								</second>
 							</item>
@@ -1656,10 +1656,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>zext_ln1524_1</name>
+						<name>zext_ln1552_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1675,7 +1675,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -1709,10 +1709,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>add_ln1524</name>
+						<name>add_ln1552</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1728,7 +1728,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -1763,10 +1763,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>shl_ln1524</name>
+						<name>shl_ln1552</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1782,7 +1782,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -1817,10 +1817,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>or_ln1524</name>
+						<name>or_ln1552</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1836,7 +1836,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -1871,10 +1871,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>zext_ln1524_2</name>
+						<name>zext_ln1552_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1890,7 +1890,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -1927,7 +1927,7 @@
 						<name>GDarrayDecoded_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1943,7 +1943,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -1954,7 +1954,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>29</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -1982,7 +1982,7 @@
 						<name>row_list_V_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -1998,7 +1998,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -2037,7 +2037,7 @@
 						<name>GDarrayDecoded_load</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2053,7 +2053,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -2064,7 +2064,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>29</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2087,10 +2087,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>row_list_V_addr_write_ln1524</name>
+						<name>row_list_V_addr_write_ln1552</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1524</lineNumber>
+						<lineNumber>1552</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2106,7 +2106,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1524</second>
+										<second>1552</second>
 									</item>
 								</second>
 							</item>
@@ -2396,7 +2396,7 @@
 						<name>radiiDivisionList_load</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2412,7 +2412,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -2446,10 +2446,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>zext_ln1527</name>
+						<name>zext_ln1555</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2465,7 +2465,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -2476,7 +2476,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1587924870</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2499,10 +2499,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>mul_ln1527</name>
+						<name>mul_ln1555</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2518,7 +2518,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -2529,7 +2529,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1591463872</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2556,7 +2556,7 @@
 						<name>i_op_assign</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1527</lineNumber>
+						<lineNumber>1555</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2572,7 +2572,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1527</second>
+										<second>1555</second>
 									</item>
 								</second>
 							</item>
@@ -2583,7 +2583,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1593495463</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2639,7 +2639,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1258534952</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>33</bitwidth>
 				</Value>
@@ -2692,7 +2692,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1317453739</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>33</bitwidth>
 				</Value>
@@ -2719,7 +2719,7 @@
 						<name>call_ret5</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1530</lineNumber>
+						<lineNumber>1558</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2735,7 +2735,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1530</second>
+										<second>1558</second>
 									</item>
 								</second>
 							</item>
@@ -2746,7 +2746,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1230091898</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>96</bitwidth>
 				</Value>
@@ -2775,7 +2775,7 @@
 						<name>start_index</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1530</lineNumber>
+						<lineNumber>1558</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2791,7 +2791,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1530</second>
+										<second>1558</second>
 									</item>
 								</second>
 							</item>
@@ -2802,7 +2802,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1232123481</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2828,7 +2828,7 @@
 						<name>start_value</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1530</lineNumber>
+						<lineNumber>1558</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2844,7 +2844,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1530</second>
+										<second>1558</second>
 									</item>
 								</second>
 							</item>
@@ -2855,7 +2855,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1311096582</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2881,7 +2881,7 @@
 						<name>call_ret</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1534</lineNumber>
+						<lineNumber>1562</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2897,7 +2897,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1534</second>
+										<second>1562</second>
 									</item>
 								</second>
 							</item>
@@ -2908,7 +2908,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1306311421</coreId>
+						<coreId>1259488051</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2940,7 +2940,7 @@
 						<name>left_bound</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1534</lineNumber>
+						<lineNumber>1562</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -2956,7 +2956,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1534</second>
+										<second>1562</second>
 									</item>
 								</second>
 							</item>
@@ -2967,7 +2967,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1217903028</coreId>
+						<coreId>1341671385</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2993,7 +2993,7 @@
 						<name>right_bound</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1534</lineNumber>
+						<lineNumber>1562</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3009,7 +3009,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1534</second>
+										<second>1562</second>
 									</item>
 								</second>
 							</item>
@@ -3020,7 +3020,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1254472678</coreId>
+						<coreId>1231897926</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3043,10 +3043,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>icmp_ln1555</name>
+						<name>icmp_ln1583</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1555</lineNumber>
+						<lineNumber>1583</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3062,7 +3062,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1555</second>
+										<second>1583</second>
 									</item>
 								</second>
 							</item>
@@ -3073,7 +3073,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1260566543</coreId>
+						<coreId>1303267719</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3097,10 +3097,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>icmp_ln1555_1</name>
+						<name>icmp_ln1583_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1555</lineNumber>
+						<lineNumber>1583</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3116,7 +3116,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1555</second>
+										<second>1583</second>
 									</item>
 								</second>
 							</item>
@@ -3127,7 +3127,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1321517029</coreId>
+						<coreId>1272464377</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3151,10 +3151,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>and_ln1555</name>
+						<name>and_ln1583</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1555</lineNumber>
+						<lineNumber>1583</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3170,7 +3170,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1555</second>
+										<second>1583</second>
 									</item>
 								</second>
 							</item>
@@ -3181,7 +3181,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1241298653</coreId>
+						<coreId>1215579245</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3208,7 +3208,7 @@
 						<name>start_index_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1557</lineNumber>
+						<lineNumber>1585</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3224,7 +3224,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1557</second>
+										<second>1585</second>
 									</item>
 								</second>
 							</item>
@@ -3235,7 +3235,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1256504261</coreId>
+						<coreId>1277839371</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3259,10 +3259,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>select_ln1555</name>
+						<name>select_ln1583</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1555</lineNumber>
+						<lineNumber>1583</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3278,7 +3278,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1555</second>
+										<second>1583</second>
 									</item>
 								</second>
 							</item>
@@ -3289,7 +3289,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1271773422</coreId>
+						<coreId>1229735269</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3314,10 +3314,10 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>trunc_ln1560</name>
+						<name>trunc_ln1588</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1560</lineNumber>
+						<lineNumber>1588</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3333,7 +3333,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1560</second>
+										<second>1588</second>
 									</item>
 								</second>
 							</item>
@@ -3344,7 +3344,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1208727856</coreId>
+						<coreId>1337870231</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -3367,10 +3367,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>add_ln1560</name>
+						<name>add_ln1588</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1560</lineNumber>
+						<lineNumber>1588</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3386,7 +3386,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1560</second>
+										<second>1588</second>
 									</item>
 								</second>
 							</item>
@@ -3397,7 +3397,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1247329089</coreId>
+						<coreId>1270825880</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3421,10 +3421,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>trunc_ln1560_1</name>
+						<name>trunc_ln1588_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1560</lineNumber>
+						<lineNumber>1588</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3440,7 +3440,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1560</second>
+										<second>1588</second>
 									</item>
 								</second>
 							</item>
@@ -3451,7 +3451,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1323810756</coreId>
+						<coreId>1307068873</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -3474,10 +3474,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>add_ln1560_1</name>
+						<name>add_ln1588_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1560</lineNumber>
+						<lineNumber>1588</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3493,7 +3493,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1560</second>
+										<second>1588</second>
 									</item>
 								</second>
 							</item>
@@ -3504,7 +3504,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1291304404</coreId>
+						<coreId>1227048196</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3528,10 +3528,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>add_ln1560_2</name>
+						<name>add_ln1588_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1560</lineNumber>
+						<lineNumber>1588</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3547,7 +3547,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1560</second>
+										<second>1588</second>
 									</item>
 								</second>
 							</item>
@@ -3558,7 +3558,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1304017762</coreId>
+						<coreId>1268663223</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -3582,10 +3582,10 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>icmp_ln1560</name>
+						<name>icmp_ln1588</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1560</lineNumber>
+						<lineNumber>1588</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3601,7 +3601,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1560</second>
+										<second>1588</second>
 									</item>
 								</second>
 							</item>
@@ -3612,7 +3612,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1180284738</coreId>
+						<coreId>1317357246</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3636,10 +3636,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>sub_ln1579</name>
+						<name>sub_ln1607</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1579</lineNumber>
+						<lineNumber>1607</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3655,7 +3655,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1579</second>
+										<second>1607</second>
 									</item>
 								</second>
 							</item>
@@ -3666,7 +3666,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1219934619</coreId>
+						<coreId>1245397532</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -3690,10 +3690,10 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>select_ln1560</name>
+						<name>select_ln1588</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1560</lineNumber>
+						<lineNumber>1588</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3709,7 +3709,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1560</second>
+										<second>1588</second>
 									</item>
 								</second>
 							</item>
@@ -3720,7 +3720,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1237235555</coreId>
+						<coreId>1264337781</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -3745,10 +3745,10 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>add_ln1606</name>
+						<name>add_ln1634</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1606</lineNumber>
+						<lineNumber>1634</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3764,7 +3764,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1606</second>
+										<second>1634</second>
 									</item>
 								</second>
 							</item>
@@ -3775,7 +3775,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1279835505</coreId>
+						<coreId>1321682656</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3799,10 +3799,10 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>icmp_ln1606</name>
+						<name>icmp_ln1634</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1606</lineNumber>
+						<lineNumber>1634</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3818,7 +3818,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1606</second>
+										<second>1634</second>
 									</item>
 								</second>
 							</item>
@@ -3829,7 +3829,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1249622816</coreId>
+						<coreId>1319519903</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3853,10 +3853,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>icmp_ln1611</name>
+						<name>icmp_ln1639</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1611</lineNumber>
+						<lineNumber>1639</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3872,7 +3872,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1611</second>
+										<second>1639</second>
 									</item>
 								</second>
 							</item>
@@ -3883,7 +3883,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1273805005</coreId>
+						<coreId>1294092547</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3907,10 +3907,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>and_ln1606</name>
+						<name>and_ln1634</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1606</lineNumber>
+						<lineNumber>1634</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3926,7 +3926,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1606</second>
+										<second>1634</second>
 									</item>
 								</second>
 							</item>
@@ -3937,7 +3937,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1243265799</coreId>
+						<coreId>1286949038</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3964,7 +3964,7 @@
 						<name>start_index_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1613</lineNumber>
+						<lineNumber>1641</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -3980,7 +3980,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1613</second>
+										<second>1641</second>
 									</item>
 								</second>
 							</item>
@@ -3991,7 +3991,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1284947387</coreId>
+						<coreId>1222067440</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -4015,10 +4015,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>select_ln1606</name>
+						<name>select_ln1634</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1606</lineNumber>
+						<lineNumber>1634</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4034,7 +4034,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1606</second>
+										<second>1634</second>
 									</item>
 								</second>
 							</item>
@@ -4045,7 +4045,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1250409380</coreId>
+						<coreId>1340033016</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -4070,10 +4070,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>sub_ln1621</name>
+						<name>sub_ln1649</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1621</lineNumber>
+						<lineNumber>1649</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4089,7 +4089,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1621</second>
+										<second>1649</second>
 									</item>
 								</second>
 							</item>
@@ -4100,7 +4100,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1252440971</coreId>
+						<coreId>1284786253</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -4124,10 +4124,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>trunc_ln1621</name>
+						<name>trunc_ln1649</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1621</lineNumber>
+						<lineNumber>1649</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4143,7 +4143,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1621</second>
+										<second>1649</second>
 									</item>
 								</second>
 							</item>
@@ -4154,7 +4154,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1226028600</coreId>
+						<coreId>1219904687</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -4177,10 +4177,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>add_ln1621</name>
+						<name>add_ln1649</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1621</lineNumber>
+						<lineNumber>1649</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4196,7 +4196,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1621</second>
+										<second>1649</second>
 									</item>
 								</second>
 							</item>
@@ -4207,7 +4207,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1314635584</coreId>
+						<coreId>1252475520</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -4231,10 +4231,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>icmp_ln1621</name>
+						<name>icmp_ln1649</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1621</lineNumber>
+						<lineNumber>1649</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4250,7 +4250,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1621</second>
+										<second>1649</second>
 									</item>
 								</second>
 							</item>
@@ -4261,7 +4261,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1286716826</coreId>
+						<coreId>1224885539</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4285,10 +4285,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>trunc_ln1642</name>
+						<name>trunc_ln1670</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1642</lineNumber>
+						<lineNumber>1670</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4304,7 +4304,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1642</second>
+										<second>1670</second>
 									</item>
 								</second>
 							</item>
@@ -4315,7 +4315,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1212791154</coreId>
+						<coreId>1333544789</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -4338,10 +4338,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>add_ln1642</name>
+						<name>add_ln1670</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1642</lineNumber>
+						<lineNumber>1670</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4357,7 +4357,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1642</second>
+										<second>1670</second>
 									</item>
 								</second>
 							</item>
@@ -4368,7 +4368,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1316667175</coreId>
+						<coreId>1315194461</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -4392,10 +4392,10 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>select_ln1642</name>
+						<name>select_ln1670</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1642</lineNumber>
+						<lineNumber>1670</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4411,7 +4411,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1642</second>
+										<second>1670</second>
 									</item>
 								</second>
 							</item>
@@ -4422,7 +4422,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1235203772</coreId>
+						<coreId>1330857844</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -4450,7 +4450,7 @@
 						<name>temp_start</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1553</lineNumber>
+						<lineNumber>1581</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4466,7 +4466,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1553</second>
+										<second>1581</second>
 									</item>
 								</second>
 							</item>
@@ -4477,7 +4477,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1267710124</coreId>
+						<coreId>1256276674</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -4502,10 +4502,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>br_ln1667</name>
+						<name>br_ln1695</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4521,7 +4521,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -4532,7 +4532,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1338817773</coreId>
+						<coreId>1298942277</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4558,7 +4558,7 @@
 						<name>indvar_flatten</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4574,7 +4574,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -4585,7 +4585,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1297136249</coreId>
+						<coreId>1243234875</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -4614,7 +4614,7 @@
 						<name>j_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4630,7 +4630,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -4641,7 +4641,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1293072959</coreId>
+						<coreId>1314604668</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -4670,7 +4670,7 @@
 						<name>z</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1673</lineNumber>
+						<lineNumber>1701</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4686,7 +4686,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1673</second>
+										<second>1701</second>
 									</item>
 								</second>
 							</item>
@@ -4697,7 +4697,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1299429976</coreId>
+						<coreId>1301105062</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -4723,10 +4723,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>add_ln1667_2</name>
+						<name>add_ln1695_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4742,7 +4742,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -4753,7 +4753,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1228060191</coreId>
+						<coreId>1421295760</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -4777,10 +4777,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>icmp_ln1667</name>
+						<name>icmp_ln1695</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4796,7 +4796,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -4807,7 +4807,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1282129232</coreId>
+						<coreId>1254114017</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4831,10 +4831,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>br_ln1667</name>
+						<name>br_ln1695</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4850,7 +4850,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -4861,7 +4861,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1239267070</coreId>
+						<coreId>1217741902</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4886,10 +4886,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>add_ln1667</name>
+						<name>add_ln1695</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4905,7 +4905,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -4916,7 +4916,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1262598250</coreId>
+						<coreId>1335707574</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -4940,10 +4940,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>icmp_ln1673</name>
+						<name>icmp_ln1701</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1673</lineNumber>
+						<lineNumber>1701</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -4959,7 +4959,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1673</second>
+										<second>1701</second>
 									</item>
 								</second>
 							</item>
@@ -4970,7 +4970,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1319223178</coreId>
+						<coreId>1240024522</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -4994,10 +4994,10 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>select_ln1667</name>
+						<name>select_ln1695</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5013,7 +5013,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -5024,7 +5024,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1308605148</coreId>
+						<coreId>1274627034</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -5049,10 +5049,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>select_ln1667_1</name>
+						<name>select_ln1695_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5068,7 +5068,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -5079,7 +5079,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1269741715</coreId>
+						<coreId>1210795020</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -5104,10 +5104,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>zext_ln1678</name>
+						<name>zext_ln1706</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5123,7 +5123,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5134,7 +5134,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1214822737</coreId>
+						<coreId>1323321025</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -5157,10 +5157,10 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>add_ln1678</name>
+						<name>add_ln1706</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5176,7 +5176,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5187,7 +5187,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1289010677</coreId>
+						<coreId>1419133007</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -5211,10 +5211,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>shl_ln1667</name>
+						<name>shl_ln1695</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5230,7 +5230,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -5241,7 +5241,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1210759447</coreId>
+						<coreId>1326532402</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -5265,10 +5265,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>zext_ln1667</name>
+						<name>zext_ln1695</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5284,7 +5284,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -5295,7 +5295,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1264629833</coreId>
+						<coreId>1312441883</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -5318,10 +5318,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>add_ln1667_1</name>
+						<name>add_ln1695_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1667</lineNumber>
+						<lineNumber>1695</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5337,7 +5337,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1667</second>
+										<second>1695</second>
 									</item>
 								</second>
 							</item>
@@ -5348,7 +5348,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1182316321</coreId>
+						<coreId>1266500438</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -5372,10 +5372,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>zext_ln1678_1</name>
+						<name>zext_ln1706_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5391,7 +5391,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5402,7 +5402,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1295890974</coreId>
+						<coreId>1328695059</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5425,10 +5425,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>add_ln1678_1</name>
+						<name>add_ln1706_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5444,7 +5444,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5455,7 +5455,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1221966326</coreId>
+						<coreId>1280002156</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5479,10 +5479,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>empty_75</name>
+						<name>empty_73</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5498,7 +5498,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5509,7 +5509,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1325579311</coreId>
+						<coreId>1275676714</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5533,10 +5533,10 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>zext_ln1678_2</name>
+						<name>zext_ln1706_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5552,7 +5552,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5563,7 +5563,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1223997909</coreId>
+						<coreId>1261650708</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5586,10 +5586,10 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>zext_ln1678_3</name>
+						<name>zext_ln1706_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5605,7 +5605,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5616,7 +5616,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1334754483</coreId>
+						<coreId>1291929890</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -5639,10 +5639,10 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>add_ln1678_2</name>
+						<name>add_ln1706_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5658,7 +5658,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5669,7 +5669,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1329642601</coreId>
+						<coreId>1296255332</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -5693,10 +5693,10 @@
 					<Obj>
 						<type>0</type>
 						<id>128</id>
-						<name>zext_ln1678_4</name>
+						<name>zext_ln1706_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5712,7 +5712,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5723,7 +5723,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1331936328</coreId>
+						<coreId>1236223368</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5749,7 +5749,7 @@
 						<name>init_patch_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5765,7 +5765,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5776,7 +5776,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1328397326</coreId>
+						<coreId>1237861865</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -5801,10 +5801,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>add_ln1678_3</name>
+						<name>add_ln1706_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5820,7 +5820,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5831,7 +5831,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1341111500</coreId>
+						<coreId>1223705809</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5855,10 +5855,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>zext_ln1678_5</name>
+						<name>zext_ln1706_5</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5874,7 +5874,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5885,7 +5885,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1302248067</coreId>
+						<coreId>1250312895</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -5911,7 +5911,7 @@
 						<name>GDarrayDecoded_addr_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5927,7 +5927,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5938,7 +5938,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1336523922</coreId>
+						<coreId>1310279226</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -5966,7 +5966,7 @@
 						<name>GDarrayDecoded_load_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -5982,7 +5982,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -5993,7 +5993,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1275772215</coreId>
+						<coreId>1425096914</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -6016,10 +6016,10 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>init_patch_addr_write_ln1678</name>
+						<name>init_patch_addr_write_ln1706</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1678</lineNumber>
+						<lineNumber>1706</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6035,7 +6035,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1678</second>
+										<second>1706</second>
 									</item>
 								</second>
 							</item>
@@ -6046,7 +6046,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1278590230</coreId>
+						<coreId>1422934257</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6070,10 +6070,10 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>add_ln1673</name>
+						<name>add_ln1701</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1673</lineNumber>
+						<lineNumber>1701</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6089,7 +6089,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1673</second>
+										<second>1701</second>
 									</item>
 								</second>
 							</item>
@@ -6100,7 +6100,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>29</coreId>
+						<coreId>1305430504</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -6140,7 +6140,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>29</coreId>
+						<coreId>1208632363</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6163,10 +6163,10 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>_ln1683</name>
+						<name>_ln1711</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>1683</lineNumber>
+						<lineNumber>1711</lineNumber>
 						<contextFuncName>makeSuperPoint_alignedToLine</contextFuncName>
 						<contextNormFuncName>makeSuperPoint_alignedToLine</contextNormFuncName>
 						<inlineStackInfo>
@@ -6182,7 +6182,7 @@
 											<first>patchMaker.cpp</first>
 											<second>makeSuperPoint_alignedToLine</second>
 										</first>
-										<second>1683</second>
+										<second>1711</second>
 									</item>
 								</second>
 							</item>
@@ -6193,7 +6193,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1108880188</coreId>
+						<coreId>1234060711</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -6236,7 +6236,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>691484474</coreId>
+						<coreId>1885413420</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6264,7 +6264,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1014263401</coreId>
+						<coreId>1885413420</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -6292,7 +6292,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1629498406</coreId>
+						<coreId>1183058922</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -6320,7 +6320,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852399472</coreId>
+						<coreId>1869901417</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -6348,7 +6348,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1702195828</coreId>
+						<coreId>1751326820</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6376,7 +6376,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1767862369</coreId>
+						<coreId>1633836916</coreId>
 					</Obj>
 					<bitwidth>4</bitwidth>
 				</Value>
@@ -6404,7 +6404,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852399472</coreId>
+						<coreId>691156282</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -6432,7 +6432,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>540946995</coreId>
+						<coreId>1852793632</coreId>
 					</Obj>
 					<bitwidth>9</bitwidth>
 				</Value>
@@ -6460,7 +6460,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1298686836</coreId>
+						<coreId>1885548146</coreId>
 					</Obj>
 					<bitwidth>9</bitwidth>
 				</Value>
@@ -6488,7 +6488,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1646275700</coreId>
+						<coreId>1014263401</coreId>
 					</Obj>
 					<bitwidth>9</bitwidth>
 				</Value>
@@ -6516,7 +6516,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1767862369</coreId>
+						<coreId>1702195828</coreId>
 					</Obj>
 					<bitwidth>12</bitwidth>
 				</Value>
@@ -6544,7 +6544,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>859581810</coreId>
+						<coreId>1767862369</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -6572,7 +6572,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539783777</coreId>
+						<coreId>842226464</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -6600,7 +6600,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885413420</coreId>
+						<coreId>740703794</coreId>
 					</Obj>
 					<bitwidth>96</bitwidth>
 				</Value>
@@ -6628,7 +6628,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673215598</coreId>
+						<coreId>859599982</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6656,7 +6656,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1633836916</coreId>
+						<coreId>543450478</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -6684,7 +6684,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1953392991</coreId>
+						<coreId>1852383276</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6712,7 +6712,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201716</coreId>
+						<coreId>1735290732</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -6740,7 +6740,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>842218612</coreId>
+						<coreId>859451952</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -6768,7 +6768,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1852793632</coreId>
+						<coreId>1155482866</coreId>
 					</Obj>
 					<bitwidth>11</bitwidth>
 				</Value>
@@ -6796,7 +6796,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>741487420</coreId>
+						<coreId>844848438</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -6824,7 +6824,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>859599982</coreId>
+						<coreId>895180083</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -6852,7 +6852,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1563833650</coreId>
+						<coreId>1853187616</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -6880,7 +6880,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1630040681</coreId>
+						<coreId>1528834342</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -6908,7 +6908,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1014263401</coreId>
+						<coreId>1629498482</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -6936,7 +6936,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1316495454</coreId>
+						<coreId>1601200416</coreId>
 					</Obj>
 					<bitwidth>6</bitwidth>
 				</Value>
@@ -6964,7 +6964,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>543450478</coreId>
+						<coreId>1751348321</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -6992,7 +6992,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>740717683</coreId>
+						<coreId>1633836916</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -7020,7 +7020,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>740703794</coreId>
+						<coreId>1918989422</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -7048,7 +7048,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1014263401</coreId>
+						<coreId>1735290732</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -7079,7 +7079,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1563646752</coreId>
 				</Obj>
 				<node_objs>
 					<count>22</count>
@@ -7128,7 +7128,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1852399472</coreId>
 				</Obj>
 				<node_objs>
 					<count>4</count>
@@ -7159,7 +7159,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1986817119</coreId>
 				</Obj>
 				<node_objs>
 					<count>11</count>
@@ -7197,7 +7197,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1886216486</coreId>
 				</Obj>
 				<node_objs>
 					<count>44</count>
@@ -7268,7 +7268,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1629498406</coreId>
 				</Obj>
 				<node_objs>
 					<count>6</count>
@@ -7301,7 +7301,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>677737569</coreId>
 				</Obj>
 				<node_objs>
 					<count>24</count>
@@ -7352,7 +7352,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>1668571504</coreId>
+					<coreId>1634887024</coreId>
 				</Obj>
 				<node_objs>
 					<count>1</count>

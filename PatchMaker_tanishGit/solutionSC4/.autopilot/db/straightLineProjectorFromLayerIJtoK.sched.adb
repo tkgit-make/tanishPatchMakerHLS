@@ -1686,7 +1686,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>empty_55</name>
+						<name>empty_54</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>143</lineNumber>
@@ -2202,7 +2202,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>280518424</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2440,7 +2440,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>0</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2468,7 +2468,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>740703794</coreId>
+						<coreId>41</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -2499,7 +2499,7 @@
 					<opType></opType>
 					<implIndex></implIndex>
 					<coreName></coreName>
-					<coreId>0</coreId>
+					<coreId>1751348321</coreId>
 				</Obj>
 				<node_objs>
 					<count>41</count>

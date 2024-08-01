@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'wedgePatch_init'
 ================================================================
-* Date:           Wed Jul 31 23:36:58 2024
+* Date:           Thu Aug  1 00:47:06 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -150,9 +150,9 @@ ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_
 ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln95 = zext i7 %tmp" [patchMaker.cpp:95]   --->   Operation 51 'zext' 'zext_ln95' <Predicate = (!icmp_ln91)> <Delay = 0.00>
 ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln100 = zext i5 %select_ln95_1" [patchMaker.cpp:100]   --->   Operation 52 'zext' 'zext_ln100' <Predicate = (!icmp_ln91)> <Delay = 0.00>
 ST_5 : Operation 53 [1/1] (0.70ns)   --->   "%add_ln100 = add i8 %zext_ln95, i8 %zext_ln100" [patchMaker.cpp:100]   --->   Operation 53 'add' 'add_ln100' <Predicate = (!icmp_ln91)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node add_ln100_1)   --->   "%empty_54 = shl i8 %add_ln100, i8 1" [patchMaker.cpp:100]   --->   Operation 54 'shl' 'empty_54' <Predicate = (!icmp_ln91)> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node add_ln100_1)   --->   "%empty_53 = shl i8 %add_ln100, i8 1" [patchMaker.cpp:100]   --->   Operation 54 'shl' 'empty_53' <Predicate = (!icmp_ln91)> <Delay = 0.00>
 ST_5 : Operation 55 [1/1] (0.00ns) (grouped into LUT with out node add_ln100_1)   --->   "%zext_ln100_1 = zext i2 %select_ln95" [patchMaker.cpp:100]   --->   Operation 55 'zext' 'zext_ln100_1' <Predicate = (!icmp_ln91)> <Delay = 0.00>
-ST_5 : Operation 56 [1/1] (0.70ns) (out node of the LUT)   --->   "%add_ln100_1 = add i8 %empty_54, i8 %zext_ln100_1" [patchMaker.cpp:100]   --->   Operation 56 'add' 'add_ln100_1' <Predicate = (!icmp_ln91)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 56 [1/1] (0.70ns) (out node of the LUT)   --->   "%add_ln100_1 = add i8 %empty_53, i8 %zext_ln100_1" [patchMaker.cpp:100]   --->   Operation 56 'add' 'add_ln100_1' <Predicate = (!icmp_ln91)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 1.19>
 ST_6 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln100_2 = zext i8 %add_ln100_1" [patchMaker.cpp:100]   --->   Operation 57 'zext' 'zext_ln100_2' <Predicate = (!icmp_ln91)> <Delay = 0.00>
@@ -169,7 +169,7 @@ ST_8 : Operation 63 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline vo
 ST_8 : Operation 64 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @wedgePatch_init_perPoint_wedgePatch_init_perParameter_str"   --->   Operation 64 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln91)> <Delay = 0.00>
 ST_8 : Operation 65 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 65 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln91)> <Delay = 0.00>
 ST_8 : Operation 66 [1/1] (0.00ns)   --->   "%wp_superpoints_addr = getelementptr i32 %wp_superpoints, i64 0, i64 %zext_ln100_2" [patchMaker.cpp:100]   --->   Operation 66 'getelementptr' 'wp_superpoints_addr' <Predicate = (!icmp_ln91)> <Delay = 0.00>
-ST_8 : Operation 67 [1/1] (0.00ns)   --->   "%specloopname_ln98 = specloopname void @_ssdm_op_SpecLoopName, void @empty_29" [patchMaker.cpp:98]   --->   Operation 67 'specloopname' 'specloopname_ln98' <Predicate = (!icmp_ln91)> <Delay = 0.00>
+ST_8 : Operation 67 [1/1] (0.00ns)   --->   "%specloopname_ln98 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [patchMaker.cpp:98]   --->   Operation 67 'specloopname' 'specloopname_ln98' <Predicate = (!icmp_ln91)> <Delay = 0.00>
 ST_8 : Operation 68 [1/1] (1.19ns)   --->   "%store_ln100 = store i32 %superpointsI_load, i8 %wp_superpoints_addr" [patchMaker.cpp:100]   --->   Operation 68 'store' 'store_ln100' <Predicate = (!icmp_ln91)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
 ST_8 : Operation 69 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 69 'br' 'br_ln0' <Predicate = (!icmp_ln91)> <Delay = 0.00>
 
@@ -252,7 +252,7 @@ tmp                  (bitconcatenate   ) [ 00000000000000]
 zext_ln95            (zext             ) [ 00000000000000]
 zext_ln100           (zext             ) [ 00000000000000]
 add_ln100            (add              ) [ 00000000000000]
-empty_54             (shl              ) [ 00000000000000]
+empty_53             (shl              ) [ 00000000000000]
 zext_ln100_1         (zext             ) [ 00000000000000]
 add_ln100_1          (add              ) [ 00001010000000]
 zext_ln100_2         (zext             ) [ 00001001100000]
@@ -636,7 +636,7 @@ ret_ln109            (ret              ) [ 00000000000000]
 <pin id="79" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_29"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 
@@ -1216,7 +1216,7 @@ ret_ln109            (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="381" class="1004" name="empty_54_fu_381">
+<comp id="381" class="1004" name="empty_53_fu_381">
 <pin_list>
 <pin id="382" dir="0" index="0" bw="8" slack="0"/>
 <pin id="383" dir="0" index="1" bw="1" slack="0"/>
@@ -1224,7 +1224,7 @@ ret_ln109            (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="shl(20) " fcode="shl"/>
-<opset="empty_54/5 "/>
+<opset="empty_53/5 "/>
 </bind>
 </comp>
 
@@ -1676,7 +1676,7 @@ ret_ln109            (ret              ) [ 00000000000000]
 	State 5
 		zext_ln95 : 1
 		add_ln100 : 2
-		empty_54 : 3
+		empty_53 : 3
 		add_ln100_1 : 3
 	State 6
 		superpointsI_addr : 1
@@ -1735,7 +1735,7 @@ ret_ln109            (ret              ) [ 00000000000000]
 |          |        zext_ln100_1_fu_387       |    0    |    0    |    0    |    0    |
 |          |        zext_ln100_2_fu_396       |    0    |    0    |    0    |    0    |
 |----------|----------------------------------|---------|---------|---------|---------|
-|    shl   |          empty_54_fu_381         |    0    |    0    |    0    |    0    |
+|    shl   |          empty_53_fu_381         |    0    |    0    |    0    |    0    |
 |----------|----------------------------------|---------|---------|---------|---------|
 |   Total  |                                  |    0    | 10.0639 |   2869  |   2559  |
 |----------|----------------------------------|---------|---------|---------|---------|
