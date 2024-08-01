@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'solveNextPatchPair'
 ================================================================
-* Date:           Wed Jul 31 13:59:16 2024
+* Date:           Wed Jul 31 23:38:27 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -52,7 +52,7 @@
         |                 Loop Name                 |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
         +-------------------------------------------+---------+---------+----------+-----------+-----------+-------+----------+
         |- solveNextPatchPair_superPointEqualCheck  |        7|       41|         7|          -|          -|  1 ~ 5|        no|
-        |- VITIS_LOOP_872_1                         |        ?|        ?|         ?|          -|          -|      ?|        no|
+        |- VITIS_LOOP_911_1                         |        ?|        ?|         ?|          -|          -|      ?|        no|
         +-------------------------------------------+---------+---------+----------+-----------+-----------+-------+----------+
 
 
@@ -67,12 +67,12 @@
 |DSP                  |        -|     -|        -|        -|    -|
 |Expression           |        -|     -|        0|      806|    -|
 |FIFO                 |        -|     -|        -|        -|    -|
-|Instance             |        9|     2|    28308|    39857|    -|
+|Instance             |        9|     2|    27673|    39551|    -|
 |Memory               |        -|     -|        -|        -|    -|
 |Multiplexer          |        -|     -|        -|     1025|    -|
 |Register             |        -|     -|     1040|        -|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        9|     2|    29348|    41688|    0|
+|Total                |        9|     2|    28713|    41382|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1080|   960|  2042880|  1021440|   80|
 +---------------------+---------+------+---------+---------+-----+
@@ -90,14 +90,14 @@
     +-------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
     |grp_areWedgeSuperPointsEqual_fu_600              |areWedgeSuperPointsEqual             |        0|   0|    166|    193|    0|
     |grp_getSolveNextPatchPairWhileCondition_fu_582   |getSolveNextPatchPairWhileCondition  |        0|   0|    110|    346|    0|
-    |grp_makePatch_alignedToLine_fu_541               |makePatch_alignedToLine              |        3|   0|   6382|   9216|    0|
-    |grp_makeThirdPatch_fu_481                        |makeThirdPatch                       |        3|   0|  10348|  14865|    0|
+    |grp_makePatch_alignedToLine_fu_541               |makePatch_alignedToLine              |        3|   0|   6087|   8904|    0|
+    |grp_makeThirdPatch_fu_481                        |makeThirdPatch                       |        3|   0|  10254|  14871|    0|
     |mul_33s_64s_64_5_1_U124                          |mul_33s_64s_64_5_1                   |        0|   2|    441|    249|    0|
-    |grp_solveComplmentaryPatch_fu_508                |solveComplmentaryPatch               |        3|   0|   9657|  14074|    0|
+    |grp_solveComplmentaryPatch_fu_508                |solveComplmentaryPatch               |        3|   0|   9411|  14074|    0|
     |grp_straightLineProjectorFromLayerIJtoK_fu_568   |straightLineProjectorFromLayerIJtoK  |        0|   0|    602|    457|    0|
     |grp_straightLineProjectorFromLayerIJtoK_fu_1464  |straightLineProjectorFromLayerIJtoK  |        0|   0|    602|    457|    0|
     +-------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
-    |Total                                            |                                     |        9|   2|  28308|  39857|    0|
+    |Total                                            |                                     |        9|   2|  27673|  39551|    0|
     +-------------------------------------------------+-------------------------------------+---------+----+-------+-------+-----+
 
     * DSP: 
@@ -116,49 +116,49 @@
     |add_ln534_1_fu_771_p2             |         +|   0|  0|  19|          12|           7|
     |add_ln534_2_fu_781_p2             |         +|   0|  0|  19|          12|           7|
     |add_ln534_fu_761_p2               |         +|   0|  0|  19|          12|           7|
-    |add_ln738_fu_691_p2               |         +|   0|  0|  39|          32|           1|
-    |add_ln784_1_fu_671_p2             |         +|   0|  0|  19|          12|           6|
-    |add_ln784_fu_741_p2               |         +|   0|  0|  19|          12|           6|
-    |add_ln785_fu_677_p2               |         +|   0|  0|  19|          12|           7|
-    |add_ln809_fu_807_p2               |         +|   0|  0|  10|           3|           1|
-    |add_ln835_fu_719_p2               |         +|   0|  0|  19|          12|          12|
-    |add_ln845_fu_730_p2               |         +|   0|  0|  19|          12|           7|
-    |add_ln862_fu_944_p2               |         +|   0|  0|  19|          12|           6|
-    |add_ln863_fu_950_p2               |         +|   0|  0|  19|          12|           6|
+    |add_ln777_fu_691_p2               |         +|   0|  0|  39|          32|           1|
+    |add_ln823_1_fu_671_p2             |         +|   0|  0|  19|          12|           6|
+    |add_ln823_fu_741_p2               |         +|   0|  0|  19|          12|           6|
+    |add_ln824_fu_677_p2               |         +|   0|  0|  19|          12|           7|
+    |add_ln848_fu_807_p2               |         +|   0|  0|  10|           3|           1|
+    |add_ln874_fu_719_p2               |         +|   0|  0|  19|          12|          12|
+    |add_ln884_fu_730_p2               |         +|   0|  0|  19|          12|           7|
     |add_ln886_fu_751_p2               |         +|   0|  0|  19|          12|           6|
-    |add_ln888_1_fu_1097_p2            |         +|   0|  0|  19|          12|           6|
-    |add_ln888_fu_1091_p2              |         +|   0|  0|  19|          12|           6|
+    |add_ln901_fu_944_p2               |         +|   0|  0|  19|          12|           6|
+    |add_ln902_fu_950_p2               |         +|   0|  0|  19|          12|           6|
+    |add_ln926_1_fu_1097_p2            |         +|   0|  0|  19|          12|           6|
+    |add_ln926_fu_1091_p2              |         +|   0|  0|  19|          12|           6|
     |lastPatchIndex_1_fu_914_p2        |         +|   0|  0|  12|           5|           2|
     |lastPatchIndex_3_fu_1057_p2       |         +|   0|  0|  15|           8|           2|
     |lastPatchIndex_fu_641_p2          |         +|   0|  0|  12|           5|           2|
     |thirdLastPatchIndex_fu_796_p2     |         +|   0|  0|  12|           5|           3|
     |ret_1_fu_992_p2                   |         -|   0|  0|  40|          33|          33|
     |ret_fu_978_p2                     |         -|   0|  0|  40|          33|          33|
-    |sub_ln784_fu_665_p2               |         -|   0|  0|  19|          12|          12|
-    |sub_ln862_fu_938_p2               |         -|   0|  0|  19|          12|          12|
-    |sub_ln888_fu_1085_p2              |         -|   0|  0|  19|          12|          12|
-    |and_ln833_1_fu_863_p2             |       and|   0|  0|   2|           1|           1|
-    |and_ln833_fu_857_p2               |       and|   0|  0|   2|           1|           1|
+    |sub_ln823_fu_665_p2               |         -|   0|  0|  19|          12|          12|
+    |sub_ln901_fu_938_p2               |         -|   0|  0|  19|          12|          12|
+    |sub_ln926_fu_1085_p2              |         -|   0|  0|  19|          12|          12|
+    |and_ln872_1_fu_863_p2             |       and|   0|  0|   2|           1|           1|
+    |and_ln872_fu_857_p2               |       and|   0|  0|   2|           1|           1|
     |and_ln886_fu_830_p2               |       and|   0|  0|   2|           1|           1|
     |ap_block_state47_on_subcall_done  |       and|   0|  0|   2|           1|           1|
-    |icmp_ln804_fu_791_p2              |      icmp|   0|  0|  11|           8|           2|
-    |icmp_ln809_fu_801_p2              |      icmp|   0|  0|   8|           3|           3|
-    |icmp_ln824_fu_824_p2              |      icmp|   0|  0|  20|          32|           1|
-    |icmp_ln833_fu_851_p2              |      icmp|   0|  0|  20|          32|          24|
-    |icmp_ln836_fu_877_p2              |      icmp|   0|  0|  20|          32|           1|
-    |icmp_ln877_fu_1051_p2             |      icmp|   0|  0|  20|          32|           5|
+    |icmp_ln843_fu_791_p2              |      icmp|   0|  0|  11|           8|           2|
+    |icmp_ln848_fu_801_p2              |      icmp|   0|  0|   8|           3|           3|
+    |icmp_ln863_fu_824_p2              |      icmp|   0|  0|  20|          32|           1|
+    |icmp_ln872_fu_851_p2              |      icmp|   0|  0|  20|          32|          24|
+    |icmp_ln875_fu_877_p2              |      icmp|   0|  0|  20|          32|           1|
     |icmp_ln878_1_fu_998_p2            |      icmp|   0|  0|  20|          33|          33|
     |icmp_ln878_fu_889_p2              |      icmp|   0|  0|  20|          32|          27|
     |icmp_ln886_1_fu_845_p2            |      icmp|   0|  0|  20|          32|          27|
     |icmp_ln886_fu_813_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln916_fu_1051_p2             |      icmp|   0|  0|  20|          32|           5|
     |squarePatch_alternate2_fu_818_p2  |      icmp|   0|  0|  20|          32|           1|
     |notChoppedPatch_fu_834_p2         |        or|   0|  0|   2|           1|           1|
-    |or_ln836_fu_883_p2                |        or|   0|  0|   2|           1|           1|
-    |or_ln862_fu_956_p2                |        or|   0|  0|  12|           1|          12|
-    |select_ln836_fu_901_p3            |    select|   0|  0|  32|           1|          32|
-    |select_ln845_fu_894_p3            |    select|   0|  0|  32|           1|          32|
+    |or_ln875_fu_883_p2                |        or|   0|  0|   2|           1|           1|
+    |or_ln901_fu_956_p2                |        or|   0|  0|  12|           1|          12|
+    |select_ln875_fu_901_p3            |    select|   0|  0|  32|           1|          32|
+    |select_ln884_fu_894_p3            |    select|   0|  0|  32|           1|          32|
     |white_space_height_fu_1004_p3     |    select|   0|  0|  33|           1|          33|
-    |xor_ln833_fu_839_p2               |       xor|   0|  0|   2|           1|           2|
+    |xor_ln872_fu_839_p2               |       xor|   0|  0|   2|           1|           2|
     +----------------------------------+----------+----+---+----+------------+------------+
     |Total                             |          |   0|  0| 806|         627|         475|
     +----------------------------------+----------+----+---+----+------------+------------+
@@ -228,15 +228,15 @@
     +-------------------------------------------------------------+----+----+-----+-----------+
     |                             Name                            | FF | LUT| Bits| Const Bits|
     +-------------------------------------------------------------+----+----+-----+-----------+
-    |add_ln738_reg_1234                                           |  32|   0|   32|          0|
-    |add_ln784_1_reg_1204                                         |   9|   0|   12|          3|
-    |add_ln785_reg_1209                                           |   9|   0|   12|          3|
-    |add_ln809_reg_1287                                           |   3|   0|    3|          0|
-    |add_ln862_reg_1346                                           |   9|   0|   12|          3|
-    |add_ln863_reg_1351                                           |   9|   0|   12|          3|
-    |add_ln888_1_reg_1440                                         |   9|   0|   12|          3|
-    |add_ln888_reg_1435                                           |   9|   0|   12|          3|
-    |and_ln833_1_reg_1310                                         |   1|   0|    1|          0|
+    |add_ln777_reg_1234                                           |  32|   0|   32|          0|
+    |add_ln823_1_reg_1204                                         |   9|   0|   12|          3|
+    |add_ln824_reg_1209                                           |   9|   0|   12|          3|
+    |add_ln848_reg_1287                                           |   3|   0|    3|          0|
+    |add_ln901_reg_1346                                           |   9|   0|   12|          3|
+    |add_ln902_reg_1351                                           |   9|   0|   12|          3|
+    |add_ln926_1_reg_1440                                         |   9|   0|   12|          3|
+    |add_ln926_reg_1435                                           |   9|   0|   12|          3|
+    |and_ln872_1_reg_1310                                         |   1|   0|    1|          0|
     |ap_CS_fsm                                                    |  47|   0|   47|          0|
     |complementary_apexZ0_0_reg_446                               |  32|   0|   32|          0|
     |counterUpshift_0_reg_391                                     |  32|   0|   32|          0|
@@ -249,9 +249,9 @@
     |grp_solveComplmentaryPatch_fu_508_ap_start_reg               |   1|   0|    1|          0|
     |grp_straightLineProjectorFromLayerIJtoK_fu_568_ap_start_reg  |   1|   0|    1|          0|
     |i_reg_297                                                    |   3|   0|    3|          0|
-    |icmp_ln804_reg_1274                                          |   1|   0|    1|          0|
-    |icmp_ln809_reg_1283                                          |   1|   0|    1|          0|
-    |icmp_ln824_reg_1305                                          |   1|   0|    1|          0|
+    |icmp_ln843_reg_1274                                          |   1|   0|    1|          0|
+    |icmp_ln848_reg_1283                                          |   1|   0|    1|          0|
+    |icmp_ln863_reg_1305                                          |   1|   0|    1|          0|
     |icmp_ln886_reg_1295                                          |   1|   0|    1|          0|
     |lastPatchIndex_0_reg_335                                     |   5|   0|    5|          0|
     |lastPatchIndex_1_reg_1339                                    |   5|   0|    5|          0|
@@ -278,15 +278,15 @@
     |reg_632                                                      |  32|   0|   32|          0|
     |repeat_original_ph_reg_309                                   |   1|   0|    1|          0|
     |repeat_original_reg_322                                      |   1|   0|    1|          0|
-    |select_ln836_reg_1327                                        |  32|   0|   32|          0|
+    |select_ln875_reg_1327                                        |  32|   0|   32|          0|
     |squarePatch_alternate2_reg_1300                              |   1|   0|    1|          0|
-    |sub_ln784_reg_1195                                           |   9|   0|   12|          3|
+    |sub_ln823_reg_1195                                           |   9|   0|   12|          3|
     |thirdLastPatchIndex_reg_1278                                 |   5|   0|    5|          0|
     |tmp_s_reg_1376                                               |   1|   0|    1|          0|
     |trunc_ln69_1_reg_1321                                        |  32|   0|   32|          0|
     |trunc_ln69_reg_1314                                          |  32|   0|   32|          0|
-    |trunc_ln747_reg_1181                                         |   5|   0|    5|          0|
-    |trunc_ln888_reg_1430                                         |   5|   0|    5|          0|
+    |trunc_ln786_reg_1181                                         |   5|   0|    5|          0|
+    |trunc_ln926_reg_1430                                         |   5|   0|    5|          0|
     |white_space_height_0_reg_345                                 |  64|   0|   64|          0|
     |white_space_height_reg_1366                                  |  33|   0|   33|          0|
     |z_top_min_0_reg_415                                          |  32|   0|   32|          0|

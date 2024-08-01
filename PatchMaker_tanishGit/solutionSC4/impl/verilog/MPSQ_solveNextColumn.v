@@ -104,8 +104,8 @@ reg[31:0] ap_return;
 
 (* fsm_encoding = "none" *) reg   [10:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [0:0] icmp_ln688_fu_244_p2;
-reg   [0:0] icmp_ln688_reg_304;
+wire   [0:0] icmp_ln727_fu_244_p2;
+reg   [0:0] icmp_ln727_reg_304;
 wire    ap_CS_fsm_state2;
 wire   [31:0] grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_return;
 reg   [31:0] op2_V_reg_320;
@@ -115,8 +115,8 @@ reg   [0:0] tmp_reg_326;
 wire    ap_CS_fsm_state10;
 wire   [31:0] loopCounter_1_fu_263_p2;
 reg   [31:0] loopCounter_1_reg_330;
-wire   [0:0] icmp_ln708_fu_269_p2;
-reg   [0:0] icmp_ln708_reg_335;
+wire   [0:0] icmp_ln747_fu_269_p2;
+reg   [0:0] icmp_ln747_reg_335;
 wire    ap_CS_fsm_state11;
 wire    grp_solveNextPatchPair_fu_190_ap_start;
 wire    grp_solveNextPatchPair_fu_190_ap_done;
@@ -156,7 +156,7 @@ wire    grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_ready;
 wire    tmp_getSolveNextColumnWhileConditional_fu_234_ap_ready;
 reg   [31:0] ap_phi_mux_z_top_max_V_16_ph_phi_fu_82_p4;
 reg   [31:0] z_top_max_V_16_ph_reg_78;
-wire   [31:0] select_ln690_fu_255_p3;
+wire   [31:0] select_ln729_fu_255_p3;
 wire    ap_CS_fsm_state9;
 reg   [31:0] z_top_max_V_16_reg_90;
 reg    ap_block_state11_on_subcall_done;
@@ -270,7 +270,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_preg <= 32'd0;
     end else begin
-        if (((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln708_reg_335 == 1'd1)))) begin
+        if (((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln747_reg_335 == 1'd1)))) begin
             ap_return_preg <= ap_phi_mux_saved_apexZ0_buf_1_phi_fu_183_p4;
         end
     end
@@ -292,7 +292,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln688_fu_244_p2 == 1'd0) & (1'b1 == ap_NS_fsm_state2) & (1'b1 == ap_CS_fsm_state1))) begin
+        if (((icmp_ln727_fu_244_p2 == 1'd0) & (1'b1 == ap_NS_fsm_state2) & (1'b1 == ap_CS_fsm_state1))) begin
             grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_start_reg <= 1'b1;
         end else if ((grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_ready == 1'b1)) begin
             grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_start_reg <= 1'b0;
@@ -303,7 +303,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         c_corner_V_0_reg_101 <= 32'd4294967295;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
         c_corner_V_0_reg_101 <= grp_solveNextPatchPair_fu_190_ap_return_2;
     end
 end
@@ -311,7 +311,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         complementary_apexZ0_V_0_reg_112 <= 32'd0;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
         complementary_apexZ0_V_0_reg_112 <= grp_solveNextPatchPair_fu_190_ap_return_4;
     end
 end
@@ -319,7 +319,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         loopCounter_reg_169 <= 32'd0;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
         loopCounter_reg_169 <= loopCounter_1_reg_330;
     end
 end
@@ -327,7 +327,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         nPatchesInColumn_0_reg_136 <= 32'd0;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
         nPatchesInColumn_0_reg_136 <= grp_solveNextPatchPair_fu_190_ap_return_1;
     end
 end
@@ -335,7 +335,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         projectionOfCornerToBeam_V_0_reg_148 <= 32'd0;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
         projectionOfCornerToBeam_V_0_reg_148 <= grp_solveNextPatchPair_fu_190_ap_return_3;
     end
 end
@@ -343,7 +343,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         saved_apexZ0_buf_0_reg_159 <= apexZ0;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
         saved_apexZ0_buf_0_reg_159 <= grp_solveNextPatchPair_fu_190_ap_return_0;
     end
 end
@@ -351,15 +351,15 @@ end
 always @ (posedge ap_clk) begin
     if (((tmp_getSolveNextColumnWhileConditional_fu_234_ap_return == 1'd0) & (1'b1 == ap_CS_fsm_state10))) begin
         saved_apexZ0_buf_1_reg_180 <= saved_apexZ0_buf_0_reg_159;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd1))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd1))) begin
         saved_apexZ0_buf_1_reg_180 <= grp_solveNextPatchPair_fu_190_ap_return_0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln688_reg_304 == 1'd0) & (1'b1 == ap_CS_fsm_state9))) begin
-        z_top_max_V_16_ph_reg_78 <= select_ln690_fu_255_p3;
-    end else if (((icmp_ln688_reg_304 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((icmp_ln727_reg_304 == 1'd0) & (1'b1 == ap_CS_fsm_state9))) begin
+        z_top_max_V_16_ph_reg_78 <= select_ln729_fu_255_p3;
+    end else if (((icmp_ln727_reg_304 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         z_top_max_V_16_ph_reg_78 <= 32'd50000000;
     end
 end
@@ -367,7 +367,7 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         z_top_max_V_16_reg_90 <= ap_phi_mux_z_top_max_V_16_ph_phi_fu_82_p4;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
         z_top_max_V_16_reg_90 <= grp_solveNextPatchPair_fu_190_ap_return_5;
     end
 end
@@ -375,20 +375,20 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state9)) begin
         z_top_min_V_0_reg_124 <= 32'd4244967296;
-    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+    end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
         z_top_min_V_0_reg_124 <= grp_solveNextPatchPair_fu_190_ap_return_6;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state1)) begin
-        icmp_ln688_reg_304 <= icmp_ln688_fu_244_p2;
+        icmp_ln727_reg_304 <= icmp_ln727_fu_244_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((tmp_getSolveNextColumnWhileConditional_fu_234_ap_return == 1'd1) & (1'b1 == ap_CS_fsm_state10))) begin
-        icmp_ln708_reg_335 <= icmp_ln708_fu_269_p2;
+        icmp_ln747_reg_335 <= icmp_ln747_fu_269_p2;
     end
 end
 
@@ -406,7 +406,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (*) begin
-    if ((((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) | ((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln708_reg_335 == 1'd1))))) begin
+    if ((((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) | ((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln747_reg_335 == 1'd1))))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -422,7 +422,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_reg_326 == 1'd1) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd1))) begin
+    if (((tmp_reg_326 == 1'd1) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd1))) begin
         ap_phi_mux_saved_apexZ0_buf_1_phi_fu_183_p4 = grp_solveNextPatchPair_fu_190_ap_return_0;
     end else begin
         ap_phi_mux_saved_apexZ0_buf_1_phi_fu_183_p4 = saved_apexZ0_buf_1_reg_180;
@@ -430,15 +430,15 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln688_reg_304 == 1'd0) & (1'b1 == ap_CS_fsm_state9))) begin
-        ap_phi_mux_z_top_max_V_16_ph_phi_fu_82_p4 = select_ln690_fu_255_p3;
+    if (((icmp_ln727_reg_304 == 1'd0) & (1'b1 == ap_CS_fsm_state9))) begin
+        ap_phi_mux_z_top_max_V_16_ph_phi_fu_82_p4 = select_ln729_fu_255_p3;
     end else begin
         ap_phi_mux_z_top_max_V_16_ph_phi_fu_82_p4 = z_top_max_V_16_ph_reg_78;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln708_reg_335 == 1'd1)))) begin
+    if (((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln747_reg_335 == 1'd1)))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -446,7 +446,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln708_reg_335 == 1'd1)))) begin
+    if (((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln747_reg_335 == 1'd1)))) begin
         ap_return = ap_phi_mux_saved_apexZ0_buf_1_phi_fu_183_p4;
     end else begin
         ap_return = ap_return_preg;
@@ -479,7 +479,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((icmp_ln688_reg_304 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((icmp_ln727_reg_304 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state9;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -510,9 +510,9 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state11;
         end
         ap_ST_fsm_state11 : begin
-            if (((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln708_reg_335 == 1'd1)))) begin
+            if (((1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & ((tmp_reg_326 == 1'd0) | (icmp_ln747_reg_335 == 1'd1)))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
-            end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln708_reg_335 == 1'd0))) begin
+            end else if (((tmp_reg_326 == 1'd1) & (1'b0 == ap_block_state11_on_subcall_done) & (1'b1 == ap_CS_fsm_state11) & (icmp_ln747_reg_335 == 1'd0))) begin
                 ap_NS_fsm = ap_ST_fsm_state10;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state11;
@@ -554,9 +554,9 @@ assign grp_solveNextPatchPair_fu_190_ap_start = grp_solveNextPatchPair_fu_190_ap
 
 assign grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_start = grp_straightLineProjectorFromLayerIJtoK_fu_218_ap_start_reg;
 
-assign icmp_ln688_fu_244_p2 = ((n_patches_i == 8'd0) ? 1'b1 : 1'b0);
+assign icmp_ln727_fu_244_p2 = ((n_patches_i == 8'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln708_fu_269_p2 = (($signed(loopCounter_reg_169) > $signed(32'd25)) ? 1'b1 : 1'b0);
+assign icmp_ln747_fu_269_p2 = (($signed(loopCounter_reg_169) > $signed(32'd25)) ? 1'b1 : 1'b0);
 
 assign icmp_ln878_fu_250_p2 = (($signed(op2_V_reg_320) > $signed(32'd50000000)) ? 1'b1 : 1'b0);
 
@@ -590,6 +590,6 @@ assign patches_superpoints_d0 = grp_solveNextPatchPair_fu_190_patches_superpoint
 
 assign patches_superpoints_we0 = grp_solveNextPatchPair_fu_190_patches_superpoints_we0;
 
-assign select_ln690_fu_255_p3 = ((icmp_ln878_fu_250_p2[0:0] == 1'b1) ? 32'd50000000 : op2_V_reg_320);
+assign select_ln729_fu_255_p3 = ((icmp_ln878_fu_250_p2[0:0] == 1'b1) ? 32'd50000000 : op2_V_reg_320);
 
 endmodule //MPSQ_solveNextColumn

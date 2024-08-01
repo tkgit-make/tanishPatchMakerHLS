@@ -79,10 +79,10 @@
 
 <Node id="8" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:4 %icmp_ln730 = icmp_slt  i32 %nPatchesInColumn_read, i32 100000000
+._crit_edge:4 %icmp_ln769 = icmp_slt  i32 %nPatchesInColumn_read, i32 100000000
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln730"/></StgValue>
+<StgValue><ssdm name="icmp_ln769"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -94,10 +94,10 @@
 
 <Node id="9" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:5 %icmp_ln730_1 = icmp_slt  i32 %projectionOfCornerToBeam_read, i32 15000000
+._crit_edge:5 %icmp_ln769_1 = icmp_slt  i32 %projectionOfCornerToBeam_read, i32 15000000
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln730_1"/></StgValue>
+<StgValue><ssdm name="icmp_ln769_1"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -109,10 +109,10 @@
 
 <Node id="10" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-._crit_edge:6 %and_ln730 = and i1 %icmp_ln730, i1 %icmp_ln730_1
+._crit_edge:6 %and_ln769 = and i1 %icmp_ln769, i1 %icmp_ln769_1
 
 ]]></Node>
-<StgValue><ssdm name="and_ln730"/></StgValue>
+<StgValue><ssdm name="and_ln769"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -124,10 +124,10 @@
 
 <Node id="11" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-._crit_edge:7 %and_ln730_1 = and i1 %and_ln730, i1 %icmp_ln886
+._crit_edge:7 %and_ln769_1 = and i1 %and_ln769, i1 %icmp_ln886
 
 ]]></Node>
-<StgValue><ssdm name="and_ln730_1"/></StgValue>
+<StgValue><ssdm name="and_ln769_1"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -139,10 +139,10 @@
 
 <Node id="12" bw="0" op_0_bw="1">
 <![CDATA[
-._crit_edge:8 %ret_ln730 = ret i1 %and_ln730_1
+._crit_edge:8 %ret_ln769 = ret i1 %and_ln769_1
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln730"/></StgValue>
+<StgValue><ssdm name="ret_ln769"/></StgValue>
 </operation>
 </state>
 </state_list>

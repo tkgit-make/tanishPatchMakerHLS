@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'delete_patch'" level="0">
-<item name = "Date">Wed Jul 31 13:58:02 2024
+<item name = "Date">Wed Jul 31 23:37:13 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -38,8 +38,8 @@
 <column name="- delete_patch_perPatch">?, ?, 211, -, -, ?, no</column>
 <column name=" + delete_patch_perSuperpointSP_delete_patch_perPointSP">83, 83, 5, 1, 1, 80, yes</column>
 <column name=" + delete_patch_perPropertyTypePP_delete_patch_perParallelogramPP_delete_patch_perPropertyLengthPP">123, 123, 5, 1, 1, 120, yes</column>
-<column name="- Loop 2">80, 80, 2, 1, 1, 80, yes</column>
-<column name="- Loop 3">120, 120, 2, 1, 1, 120, yes</column>
+<column name="- delete_patch_perSuperpointSPLP_delete_patch_perPointSPLP">81, 81, 3, 1, 1, 80, yes</column>
+<column name="- delete_patch_perPropertyTypePPLP_delete_patch_perParallelogramPPLP_delete_patch_perPropertyLengthPPLP">121, 121, 3, 1, 1, 120, yes</column>
 </table>
 </item>
 </section>

@@ -108351,15 +108351,8 @@ solve_loop:
 #pragma HLS array_partition variable=GDarrayPostSort
 #pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarrayPostSort bundle=GDarrayPostSort_b
 
-    long tempArray[200];
-
-    for(int i = 0; i < 200; i++)
- {
-  tempArray[i] = 0;
- }
-
     MPSQ(1, ppl, leftRight, n_patches, GDarrayPostSort, GDn_points, patches_superpoints);
-# 131 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 124 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
 }
 
 static vector<string> splitString(string str, string splitter = "),(")
@@ -108384,6 +108377,10 @@ static vector<string> splitString(string str, string splitter = "),(")
         {
             currentStr += str[i];
         }
+    }
+    if(splitter == "),(")
+    {
+     currentStr = currentStr + str[str.size() - 2] + str[str.size() - 1];
     }
     result.push_back(currentStr);
     return result;
@@ -108462,7 +108459,7 @@ void importData(int32_t k, std::array<std::array<std::array<ap_int<32>, 3>, 256>
 
         GDn_points[layer]++;
     }
-# 246 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 243 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
     ap_int<32> sample[3];
     for (uint8_t i = 0; i < 5; i++)
     {
@@ -108568,9 +108565,9 @@ void wedge_test(int64_t apexZ0, int32_t ppl, int32_t wedges[])
     myfile = fopen("/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/cppOutput.txt", "w");
 
     if (myfile == 
-# 350 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp" 3 4
+# 347 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp" 3 4
                  __null
-# 350 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 347 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
                      )
     {
 
@@ -108630,7 +108627,7 @@ void wedge_test(int64_t apexZ0, int32_t ppl, int32_t wedges[])
         addBoundaryPoint(static_cast<int64_t>(0.0001 * 1000000), GDarray, GDn_points);
 
         solve(apexZ0, ppl, false, n_patches, GDarray, GDn_points, patches_superpoints);
-# 441 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 438 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
         for (int32_t i = 0; i < n_patches; i++)
         {
             fprintf(myfile, "Patch \n");
@@ -108652,7 +108649,7 @@ void wedge_test(int64_t apexZ0, int32_t ppl, int32_t wedges[])
                 }
             }
         }
-# 484 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 481 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
     }
 
     fclose(myfile);
@@ -108672,5 +108669,5 @@ int32_t main () {
 
 
     return 0;
-# 516 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
+# 513 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp"
 }

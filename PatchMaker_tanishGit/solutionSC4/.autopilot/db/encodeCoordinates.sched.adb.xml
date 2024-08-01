@@ -64,10 +64,10 @@
 
 <Node id="6" bw="0" op_0_bw="64">
 <![CDATA[
-:3 %ret_ln320 = ret i64 %ret
+:3 %ret_ln318 = ret i64 %ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln320"/></StgValue>
+<StgValue><ssdm name="ret_ln318"/></StgValue>
 </operation>
 </state>
 </state_list>

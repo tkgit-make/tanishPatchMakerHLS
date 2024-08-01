@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mSP_findLRBounds'
 ================================================================
-* Date:           Wed Jul 31 13:57:40 2024
+* Date:           Wed Jul 31 23:36:50 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -99,52 +99,52 @@ State 2 <SV = 1> <Delay = 0.69>
 ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%row_list_size_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %row_list_size"   --->   Operation 12 'read' 'row_list_size_read' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 13 [1/2] (0.69ns)   --->   "%rhs_10 = load i3 %trapezoid_edges_V_addr"   --->   Operation 13 'load' 'rhs_10' <Predicate = true> <Delay = 0.69> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 26> <Depth = 5> <ROM>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%rhs = zext i26 %rhs_10"   --->   Operation 14 'zext' 'rhs' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.38ns)   --->   "%br_ln1656 = br void" [patchMaker.cpp:1656]   --->   Operation 15 'br' 'br_ln1656' <Predicate = true> <Delay = 0.38>
+ST_2 : Operation 15 [1/1] (0.38ns)   --->   "%br_ln1694 = br void" [patchMaker.cpp:1694]   --->   Operation 15 'br' 'br_ln1694' <Predicate = true> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 1.19>
-ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%j = phi i32 0, void %.lr.ph, i32 %add_ln1656, void %.split" [patchMaker.cpp:1660]   --->   Operation 16 'phi' 'j' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 17 [1/1] (0.88ns)   --->   "%add_ln1656 = add i32 %j, i32 1" [patchMaker.cpp:1656]   --->   Operation 17 'add' 'add_ln1656' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 18 [1/1] (0.85ns)   --->   "%icmp_ln1656 = icmp_eq  i32 %j, i32 %row_list_size_read" [patchMaker.cpp:1656]   --->   Operation 18 'icmp' 'icmp_ln1656' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln1660_cast = zext i32 %j" [patchMaker.cpp:1660]   --->   Operation 19 'zext' 'trunc_ln1660_cast' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
-ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%row_list_addr = getelementptr i32 %row_list, i64 0, i64 %trunc_ln1660_cast"   --->   Operation 20 'getelementptr' 'row_list_addr' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
-ST_3 : Operation 21 [2/2] (1.19ns)   --->   "%lhs = load i8 %row_list_addr"   --->   Operation 21 'load' 'lhs' <Predicate = (!icmp_ln1656)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%j = phi i32 0, void %.lr.ph, i32 %add_ln1694, void %.split" [patchMaker.cpp:1698]   --->   Operation 16 'phi' 'j' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.88ns)   --->   "%add_ln1694 = add i32 %j, i32 1" [patchMaker.cpp:1694]   --->   Operation 17 'add' 'add_ln1694' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 18 [1/1] (0.85ns)   --->   "%icmp_ln1694 = icmp_eq  i32 %j, i32 %row_list_size_read" [patchMaker.cpp:1694]   --->   Operation 18 'icmp' 'icmp_ln1694' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln1698_cast = zext i32 %j" [patchMaker.cpp:1698]   --->   Operation 19 'zext' 'trunc_ln1698_cast' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%row_list_addr = getelementptr i32 %row_list, i64 0, i64 %trunc_ln1698_cast"   --->   Operation 20 'getelementptr' 'row_list_addr' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
+ST_3 : Operation 21 [2/2] (1.19ns)   --->   "%lhs = load i8 %row_list_addr"   --->   Operation 21 'load' 'lhs' <Predicate = (!icmp_ln1694)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
 
 State 4 <SV = 3> <Delay = 1.19>
-ST_4 : Operation 22 [1/2] (1.19ns)   --->   "%lhs = load i8 %row_list_addr"   --->   Operation 22 'load' 'lhs' <Predicate = (!icmp_ln1656)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 22 [1/2] (1.19ns)   --->   "%lhs = load i8 %row_list_addr"   --->   Operation 22 'load' 'lhs' <Predicate = (!icmp_ln1694)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
 
 State 5 <SV = 4> <Delay = 1.99>
-ST_5 : Operation 23 [1/1] (0.00ns)   --->   "%left_bound_write_assign = phi i32 0, void %.lr.ph, i32 %select_ln1658, void %.split" [patchMaker.cpp:1658]   --->   Operation 23 'phi' 'left_bound_write_assign' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%right_bound_write_assign = phi i32 0, void %.lr.ph, i32 %select_ln1664, void %.split" [patchMaker.cpp:1664]   --->   Operation 24 'phi' 'right_bound_write_assign' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 23 [1/1] (0.00ns)   --->   "%left_bound_write_assign = phi i32 0, void %.lr.ph, i32 %select_ln1696, void %.split" [patchMaker.cpp:1696]   --->   Operation 23 'phi' 'left_bound_write_assign' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%right_bound_write_assign = phi i32 0, void %.lr.ph, i32 %select_ln1702, void %.split" [patchMaker.cpp:1702]   --->   Operation 24 'phi' 'right_bound_write_assign' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 25 [1/1] (0.00ns)   --->   "%rbVal = phi i64 9223372036854775807, void %.lr.ph, i64 %rbVal_2, void %.split"   --->   Operation 25 'phi' 'rbVal' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%lbVal = phi i64 9223372036854775807, void %.lr.ph, i64 %lbVal_2, void %.split"   --->   Operation 26 'phi' 'lbVal' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 27 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln1656 = br i1 %icmp_ln1656, void %.split, void %._crit_edge.loopexit" [patchMaker.cpp:1656]   --->   Operation 28 'br' 'br_ln1656' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%sext_ln215 = sext i32 %lhs"   --->   Operation 29 'sext' 'sext_ln215' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
-ST_5 : Operation 30 [1/1] (0.88ns)   --->   "%ret = add i33 %sext_ln215, i33 %rhs"   --->   Operation 30 'add' 'ret' <Predicate = (!icmp_ln1656)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 31 [1/1] (0.89ns)   --->   "%sub_ln180 = sub i33 0, i33 %ret" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 31 'sub' 'sub_ln180' <Predicate = (!icmp_ln1656)> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 32 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %ret, i32 32" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 32 'bitselect' 'tmp' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
-ST_5 : Operation 33 [1/1] (0.22ns)   --->   "%lbVal_1 = select i1 %tmp, i33 %sub_ln180, i33 %ret" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 33 'select' 'lbVal_1' <Predicate = (!icmp_ln1656)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 34 [1/1] (0.88ns)   --->   "%ret_13 = sub i33 %sext_ln215, i33 %rhs"   --->   Operation 34 'sub' 'ret_13' <Predicate = (!icmp_ln1656)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 35 [1/1] (0.89ns)   --->   "%sub_ln180_8 = sub i33 0, i33 %ret_13" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 35 'sub' 'sub_ln180_8' <Predicate = (!icmp_ln1656)> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_22 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %ret_13, i32 32" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 36 'bitselect' 'tmp_22' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
-ST_5 : Operation 37 [1/1] (0.22ns)   --->   "%rbVal_1 = select i1 %tmp_22, i33 %sub_ln180_8, i33 %ret_13" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 37 'select' 'rbVal_1' <Predicate = (!icmp_ln1656)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln1694 = br i1 %icmp_ln1694, void %.split, void %._crit_edge.loopexit" [patchMaker.cpp:1694]   --->   Operation 28 'br' 'br_ln1694' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%sext_ln215 = sext i32 %lhs"   --->   Operation 29 'sext' 'sext_ln215' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
+ST_5 : Operation 30 [1/1] (0.88ns)   --->   "%ret = add i33 %sext_ln215, i33 %rhs"   --->   Operation 30 'add' 'ret' <Predicate = (!icmp_ln1694)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 31 [1/1] (0.89ns)   --->   "%sub_ln180 = sub i33 0, i33 %ret" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 31 'sub' 'sub_ln180' <Predicate = (!icmp_ln1694)> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 32 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %ret, i32 32" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 32 'bitselect' 'tmp' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
+ST_5 : Operation 33 [1/1] (0.22ns)   --->   "%lbVal_1 = select i1 %tmp, i33 %sub_ln180, i33 %ret" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 33 'select' 'lbVal_1' <Predicate = (!icmp_ln1694)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 34 [1/1] (0.88ns)   --->   "%ret_13 = sub i33 %sext_ln215, i33 %rhs"   --->   Operation 34 'sub' 'ret_13' <Predicate = (!icmp_ln1694)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 35 [1/1] (0.89ns)   --->   "%sub_ln180_8 = sub i33 0, i33 %ret_13" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 35 'sub' 'sub_ln180_8' <Predicate = (!icmp_ln1694)> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_22 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %ret_13, i32 32" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 36 'bitselect' 'tmp_22' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.22ns)   --->   "%rbVal_1 = select i1 %tmp_22, i33 %sub_ln180_8, i33 %ret_13" [C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180]   --->   Operation 37 'select' 'rbVal_1' <Predicate = (!icmp_ln1694)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 1.47>
-ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln1652 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [patchMaker.cpp:1652]   --->   Operation 38 'specloopname' 'specloopname_ln1652' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
-ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln1652 = sext i33 %lbVal_1" [patchMaker.cpp:1652]   --->   Operation 39 'sext' 'sext_ln1652' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
-ST_6 : Operation 40 [1/1] (1.06ns)   --->   "%icmp_ln1658 = icmp_slt  i64 %sext_ln1652, i64 %lbVal" [patchMaker.cpp:1658]   --->   Operation 40 'icmp' 'icmp_ln1658' <Predicate = (!icmp_ln1656)> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 41 [1/1] (0.22ns)   --->   "%select_ln1658 = select i1 %icmp_ln1658, i32 %j, i32 %left_bound_write_assign" [patchMaker.cpp:1658]   --->   Operation 41 'select' 'select_ln1658' <Predicate = (!icmp_ln1656)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_6 : Operation 42 [1/1] (0.41ns)   --->   "%lbVal_2 = select i1 %icmp_ln1658, i64 %sext_ln1652, i64 %lbVal" [patchMaker.cpp:1658]   --->   Operation 42 'select' 'lbVal_2' <Predicate = (!icmp_ln1656)> <Delay = 0.41> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_6 : Operation 43 [1/1] (0.00ns)   --->   "%sext_ln1664 = sext i33 %rbVal_1" [patchMaker.cpp:1664]   --->   Operation 43 'sext' 'sext_ln1664' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
-ST_6 : Operation 44 [1/1] (1.06ns)   --->   "%icmp_ln1664 = icmp_slt  i64 %sext_ln1664, i64 %rbVal" [patchMaker.cpp:1664]   --->   Operation 44 'icmp' 'icmp_ln1664' <Predicate = (!icmp_ln1656)> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 45 [1/1] (0.22ns)   --->   "%select_ln1664 = select i1 %icmp_ln1664, i32 %j, i32 %right_bound_write_assign" [patchMaker.cpp:1664]   --->   Operation 45 'select' 'select_ln1664' <Predicate = (!icmp_ln1656)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_6 : Operation 46 [1/1] (0.41ns)   --->   "%rbVal_2 = select i1 %icmp_ln1664, i64 %sext_ln1664, i64 %rbVal" [patchMaker.cpp:1664]   --->   Operation 46 'select' 'rbVal_2' <Predicate = (!icmp_ln1656)> <Delay = 0.41> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 47 'br' 'br_ln0' <Predicate = (!icmp_ln1656)> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln1690 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [patchMaker.cpp:1690]   --->   Operation 38 'specloopname' 'specloopname_ln1690' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln1690 = sext i33 %lbVal_1" [patchMaker.cpp:1690]   --->   Operation 39 'sext' 'sext_ln1690' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (1.06ns)   --->   "%icmp_ln1696 = icmp_slt  i64 %sext_ln1690, i64 %lbVal" [patchMaker.cpp:1696]   --->   Operation 40 'icmp' 'icmp_ln1696' <Predicate = (!icmp_ln1694)> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 41 [1/1] (0.22ns)   --->   "%select_ln1696 = select i1 %icmp_ln1696, i32 %j, i32 %left_bound_write_assign" [patchMaker.cpp:1696]   --->   Operation 41 'select' 'select_ln1696' <Predicate = (!icmp_ln1694)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 42 [1/1] (0.41ns)   --->   "%lbVal_2 = select i1 %icmp_ln1696, i64 %sext_ln1690, i64 %lbVal" [patchMaker.cpp:1696]   --->   Operation 42 'select' 'lbVal_2' <Predicate = (!icmp_ln1694)> <Delay = 0.41> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 43 [1/1] (0.00ns)   --->   "%sext_ln1702 = sext i33 %rbVal_1" [patchMaker.cpp:1702]   --->   Operation 43 'sext' 'sext_ln1702' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
+ST_6 : Operation 44 [1/1] (1.06ns)   --->   "%icmp_ln1702 = icmp_slt  i64 %sext_ln1702, i64 %rbVal" [patchMaker.cpp:1702]   --->   Operation 44 'icmp' 'icmp_ln1702' <Predicate = (!icmp_ln1694)> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 45 [1/1] (0.22ns)   --->   "%select_ln1702 = select i1 %icmp_ln1702, i32 %j, i32 %right_bound_write_assign" [patchMaker.cpp:1702]   --->   Operation 45 'select' 'select_ln1702' <Predicate = (!icmp_ln1694)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 46 [1/1] (0.41ns)   --->   "%rbVal_2 = select i1 %icmp_ln1702, i64 %sext_ln1702, i64 %rbVal" [patchMaker.cpp:1702]   --->   Operation 46 'select' 'rbVal_2' <Predicate = (!icmp_ln1694)> <Delay = 0.41> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.41> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 47 'br' 'br_ln0' <Predicate = (!icmp_ln1694)> <Delay = 0.00>
 
 State 7 <SV = 5> <Delay = 0.00>
-ST_7 : Operation 48 [1/1] (0.00ns)   --->   "%mrv = insertvalue i64 <undef>, i32 %left_bound_write_assign" [patchMaker.cpp:1670]   --->   Operation 48 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 49 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i64 %mrv, i32 %right_bound_write_assign" [patchMaker.cpp:1670]   --->   Operation 49 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 50 [1/1] (0.00ns)   --->   "%ret_ln1670 = ret i64 %mrv_1" [patchMaker.cpp:1670]   --->   Operation 50 'ret' 'ret_ln1670' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 48 [1/1] (0.00ns)   --->   "%mrv = insertvalue i64 <undef>, i32 %left_bound_write_assign" [patchMaker.cpp:1708]   --->   Operation 48 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 49 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i64 %mrv, i32 %right_bound_write_assign" [patchMaker.cpp:1708]   --->   Operation 49 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 50 [1/1] (0.00ns)   --->   "%ret_ln1708 = ret i64 %mrv_1" [patchMaker.cpp:1708]   --->   Operation 50 'ret' 'ret_ln1708' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -164,7 +164,7 @@ The critical path consists of the following:
 
  <State 3>: 1.2ns
 The critical path consists of the following:
-	'phi' operation ('j', patchMaker.cpp:1660) with incoming values : ('add_ln1656', patchMaker.cpp:1656) [16]  (0 ns)
+	'phi' operation ('j', patchMaker.cpp:1698) with incoming values : ('add_ln1694', patchMaker.cpp:1694) [16]  (0 ns)
 	'getelementptr' operation ('row_list_addr') [26]  (0 ns)
 	'load' operation ('lhs') on array 'row_list' [27]  (1.2 ns)
 
@@ -180,8 +180,8 @@ The critical path consists of the following:
 
  <State 6>: 1.48ns
 The critical path consists of the following:
-	'icmp' operation ('icmp_ln1658', patchMaker.cpp:1658) [34]  (1.06 ns)
-	'select' operation ('lbVal', patchMaker.cpp:1658) [36]  (0.411 ns)
+	'icmp' operation ('icmp_ln1696', patchMaker.cpp:1696) [34]  (1.06 ns)
+	'select' operation ('lbVal', patchMaker.cpp:1696) [36]  (0.411 ns)
 
  <State 7>: 0ns
 The critical path consists of the following:

@@ -75,21 +75,21 @@ wire   [11:0] tmp_fu_115_p3;
 wire   [11:0] zext_ln886_fu_131_p1;
 wire   [11:0] sub_ln886_fu_135_p2;
 wire   [0:0] tmp_25_fu_162_p3;
-wire   [0:0] icmp_ln914_fu_157_p2;
-wire   [0:0] xor_ln914_fu_170_p2;
+wire   [0:0] icmp_ln952_fu_157_p2;
+wire   [0:0] xor_ln952_fu_170_p2;
 wire   [0:0] tmp_26_fu_182_p3;
 wire   [63:0] select_ln180_fu_189_p3;
-wire   [0:0] icmp_ln920_2_fu_212_p2;
-wire   [0:0] icmp_ln920_1_fu_207_p2;
-wire   [0:0] icmp_ln920_fu_201_p2;
-wire   [0:0] and_ln920_fu_217_p2;
-wire   [0:0] or_ln920_fu_223_p2;
-wire   [0:0] and_ln914_fu_176_p2;
-wire   [0:0] or_ln920_1_fu_229_p2;
-wire   [0:0] or_ln920_2_fu_235_p2;
+wire   [0:0] icmp_ln958_2_fu_212_p2;
+wire   [0:0] icmp_ln958_1_fu_207_p2;
+wire   [0:0] icmp_ln958_fu_201_p2;
+wire   [0:0] and_ln958_fu_217_p2;
+wire   [0:0] or_ln958_fu_223_p2;
+wire   [0:0] and_ln952_fu_176_p2;
+wire   [0:0] or_ln958_1_fu_229_p2;
+wire   [0:0] or_ln958_2_fu_235_p2;
 wire   [0:0] exp4_fu_195_p2;
-wire   [0:0] xor_ln920_fu_241_p2;
-wire   [0:0] and_ln920_1_fu_247_p2;
+wire   [0:0] xor_ln958_fu_241_p2;
+wire   [0:0] and_ln958_1_fu_247_p2;
 reg   [0:0] ap_return_preg;
 reg   [3:0] ap_NS_fsm;
 wire    ap_ce_reg;
@@ -113,7 +113,7 @@ always @ (posedge ap_clk) begin
         ap_return_preg <= 1'd0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state4)) begin
-            ap_return_preg <= and_ln920_1_fu_247_p2;
+            ap_return_preg <= and_ln958_1_fu_247_p2;
         end
     end
 end
@@ -165,7 +165,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        ap_return = and_ln920_1_fu_247_p2;
+        ap_return = and_ln958_1_fu_247_p2;
     end else begin
         ap_return = ap_return_preg;
     end
@@ -207,11 +207,11 @@ assign GDn_points_address0 = 64'd4;
 
 assign add_ln886_fu_141_p2 = (sub_ln886_fu_135_p2 + 12'd61);
 
-assign and_ln914_fu_176_p2 = (xor_ln914_fu_170_p2 & icmp_ln914_fu_157_p2);
+assign and_ln952_fu_176_p2 = (xor_ln952_fu_170_p2 & icmp_ln952_fu_157_p2);
 
-assign and_ln920_1_fu_247_p2 = (xor_ln920_fu_241_p2 & exp4_fu_195_p2);
+assign and_ln958_1_fu_247_p2 = (xor_ln958_fu_241_p2 & exp4_fu_195_p2);
 
-assign and_ln920_fu_217_p2 = (icmp_ln920_2_fu_212_p2 & icmp_ln920_1_fu_207_p2);
+assign and_ln958_fu_217_p2 = (icmp_ln958_2_fu_212_p2 & icmp_ln958_1_fu_207_p2);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -223,19 +223,19 @@ assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
 assign exp4_fu_195_p2 = (($signed(GDn_points_q0) > $signed(current_z_top_index)) ? 1'b1 : 1'b0);
 
-assign icmp_ln914_fu_157_p2 = (($signed(white_space_height) < $signed(64'd1)) ? 1'b1 : 1'b0);
+assign icmp_ln952_fu_157_p2 = (($signed(white_space_height) < $signed(64'd1)) ? 1'b1 : 1'b0);
 
-assign icmp_ln920_1_fu_207_p2 = (($signed(patches_parameters_load_reg_276) < $signed(32'd4244967197)) ? 1'b1 : 1'b0);
+assign icmp_ln958_1_fu_207_p2 = (($signed(patches_parameters_load_reg_276) < $signed(32'd4244967197)) ? 1'b1 : 1'b0);
 
-assign icmp_ln920_2_fu_212_p2 = (($signed(white_space_height) < $signed(64'd6)) ? 1'b1 : 1'b0);
+assign icmp_ln958_2_fu_212_p2 = (($signed(white_space_height) < $signed(64'd6)) ? 1'b1 : 1'b0);
 
-assign icmp_ln920_fu_201_p2 = (($signed(select_ln180_fu_189_p3) < $signed(64'd6)) ? 1'b1 : 1'b0);
+assign icmp_ln958_fu_201_p2 = (($signed(select_ln180_fu_189_p3) < $signed(64'd6)) ? 1'b1 : 1'b0);
 
-assign or_ln920_1_fu_229_p2 = (or_ln920_fu_223_p2 | and_ln914_fu_176_p2);
+assign or_ln958_1_fu_229_p2 = (or_ln958_fu_223_p2 | and_ln952_fu_176_p2);
 
-assign or_ln920_2_fu_235_p2 = (repeat_original | or_ln920_1_fu_229_p2);
+assign or_ln958_2_fu_235_p2 = (repeat_original | or_ln958_1_fu_229_p2);
 
-assign or_ln920_fu_223_p2 = (icmp_ln920_fu_201_p2 | and_ln920_fu_217_p2);
+assign or_ln958_fu_223_p2 = (icmp_ln958_fu_201_p2 | and_ln958_fu_217_p2);
 
 assign patches_parameters_address0 = zext_ln886_2_fu_147_p1;
 
@@ -253,9 +253,9 @@ assign tmp_fu_115_p3 = {{lastPatchIndex}, {7'd0}};
 
 assign tmp_s_fu_123_p3 = {{lastPatchIndex}, {3'd0}};
 
-assign xor_ln914_fu_170_p2 = (tmp_25_fu_162_p3 ^ 1'd1);
+assign xor_ln952_fu_170_p2 = (tmp_25_fu_162_p3 ^ 1'd1);
 
-assign xor_ln920_fu_241_p2 = (or_ln920_2_fu_235_p2 ^ 1'd1);
+assign xor_ln958_fu_241_p2 = (or_ln958_2_fu_235_p2 ^ 1'd1);
 
 assign zext_ln886_2_fu_147_p1 = add_ln886_reg_253;
 

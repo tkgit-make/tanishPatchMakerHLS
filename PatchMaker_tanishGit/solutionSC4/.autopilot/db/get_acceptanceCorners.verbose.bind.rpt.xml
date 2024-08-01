@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'get_acceptanceCorners'" level="0">
-<item name = "Date">Wed Jul 31 13:57:46 2024
+<item name = "Date">Wed Jul 31 23:36:56 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">27, 28, 81.000 ns, 84.000 ns, 27, 28, none</column>
+<column name="">29, 30, 87.000 ns, 90.000 ns, 29, 30, none</column>
 </table>
 </item>
 <item name = "Detail">

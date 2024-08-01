@@ -154,7 +154,7 @@
 						<name>apexZ0I_read</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>84</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -170,7 +170,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>87</second>
+										<second>84</second>
 									</item>
 								</second>
 							</item>
@@ -208,7 +208,7 @@
 						<name>wp_parameters_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<lineNumber>84</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -224,7 +224,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>87</second>
+										<second>84</second>
 									</item>
 								</second>
 							</item>
@@ -263,7 +263,7 @@
 						<name>wp_parameters_addr_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>89</lineNumber>
+						<lineNumber>86</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -279,7 +279,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>89</second>
+										<second>86</second>
 									</item>
 								</second>
 							</item>
@@ -318,7 +318,7 @@
 						<name>wp_parameters_addr_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>90</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -334,7 +334,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>90</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -373,7 +373,7 @@
 						<name>wp_parameters_addr_3</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<lineNumber>88</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -389,7 +389,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>91</second>
+										<second>88</second>
 									</item>
 								</second>
 							</item>
@@ -428,7 +428,7 @@
 						<name>wp_parameters_addr_4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -444,7 +444,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>92</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -483,7 +483,7 @@
 						<name>wp_parameters_addr_5</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -499,7 +499,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>107</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -535,7 +535,115 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>wp_parameters_addr_write_ln87</name>
+						<name>wp_parameters_addr_write_ln84</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>84</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>84</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>29</coreId>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>98</item>
+					<item>99</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.60</m_delay>
+				<m_topoIndex>4</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_13">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>15</id>
+						<name>wp_parameters_addr_1_write_ln86</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>86</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>86</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1532835163</coreId>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>101</item>
+					<item>102</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.60</m_delay>
+				<m_topoIndex>5</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_14">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>16</id>
+						<name>wp_parameters_addr_2_write_ln87</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>87</lineNumber>
@@ -572,8 +680,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>98</item>
-					<item>99</item>
+					<item>103</item>
+					<item>104</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -581,15 +689,69 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.60</m_delay>
-				<m_topoIndex>4</m_topoIndex>
+				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_13">
+			<item class_id_reference="9" object_id="_15">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>15</id>
-						<name>wp_parameters_addr_1_write_ln89</name>
+						<id>17</id>
+						<name>wp_parameters_addr_3_write_ln88</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>88</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>88</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1532835163</coreId>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>105</item>
+					<item>106</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.60</m_delay>
+				<m_topoIndex>9</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_16">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>18</id>
+						<name>wp_parameters_addr_4_write_ln89</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>89</lineNumber>
@@ -626,8 +788,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>101</item>
-					<item>102</item>
+					<item>107</item>
+					<item>108</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -635,69 +797,15 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.60</m_delay>
-				<m_topoIndex>5</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_14">
+			<item class_id_reference="9" object_id="_17">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>16</id>
-						<name>wp_parameters_addr_2_write_ln90</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>90</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>90</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>103</item>
-					<item>104</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.60</m_delay>
-				<m_topoIndex>8</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_15">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>17</id>
-						<name>wp_parameters_addr_3_write_ln91</name>
+						<id>19</id>
+						<name>br_ln91</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>91</lineNumber>
@@ -717,114 +825,6 @@
 											<second>wedgePatch_init</second>
 										</first>
 										<second>91</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>105</item>
-					<item>106</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.60</m_delay>
-				<m_topoIndex>9</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_16">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>18</id>
-						<name>wp_parameters_addr_4_write_ln92</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>92</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>92</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>107</item>
-					<item>108</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.60</m_delay>
-				<m_topoIndex>12</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_17">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>19</id>
-						<name>br_ln94</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>94</second>
 									</item>
 								</second>
 							</item>
@@ -861,7 +861,7 @@
 						<name>indvar_flatten13</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -877,7 +877,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>94</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -888,7 +888,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1167083193</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -917,7 +917,7 @@
 						<name>i</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -933,7 +933,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>94</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -944,7 +944,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1204701419</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -973,7 +973,7 @@
 						<name>indvar_flatten</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>98</lineNumber>
+						<lineNumber>95</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -989,7 +989,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>98</second>
+										<second>95</second>
 									</item>
 								</second>
 							</item>
@@ -1000,7 +1000,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1153845747</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -1029,7 +1029,7 @@
 						<name>a</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>98</lineNumber>
+						<lineNumber>95</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -1045,7 +1045,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>98</second>
+										<second>95</second>
 									</item>
 								</second>
 							</item>
@@ -1056,7 +1056,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1092436534</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -1085,7 +1085,7 @@
 						<name>b</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>101</lineNumber>
+						<lineNumber>98</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -1101,7 +1101,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>101</second>
+										<second>98</second>
 									</item>
 								</second>
 							</item>
@@ -1112,7 +1112,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1107182299</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -1138,10 +1138,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>add_ln94</name>
+						<name>add_ln91_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -1157,7 +1157,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>94</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1168,7 +1168,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1110918940</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -1192,10 +1192,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>icmp_ln94</name>
+						<name>icmp_ln91</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -1211,7 +1211,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>94</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1222,7 +1222,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1189694402</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1246,10 +1246,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>br_ln94</name>
+						<name>br_ln91</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -1265,7 +1265,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>94</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1276,7 +1276,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1175931708</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -1301,10 +1301,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>i_2</name>
+						<name>add_ln91</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -1320,18 +1320,18 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>94</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>i</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1108625213</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -1355,6 +1355,332 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
+						<name>icmp_ln95</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>95</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>95</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1102070425</coreId>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>147</item>
+					<item>149</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.59</m_delay>
+				<m_topoIndex>23</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_28">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>35</id>
+						<name>select_ln91</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>91</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>91</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1194280964</coreId>
+					</Obj>
+					<bitwidth>5</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>150</item>
+					<item>151</item>
+					<item>152</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.27</m_delay>
+				<m_topoIndex>24</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_29">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>36</id>
+						<name>select_ln91_1</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>91</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>91</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1150831025</coreId>
+					</Obj>
+					<bitwidth>3</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>153</item>
+					<item>154</item>
+					<item>155</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.27</m_delay>
+				<m_topoIndex>25</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_30">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>37</id>
+						<name>tmp</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1114982238</coreId>
+					</Obj>
+					<bitwidth>7</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>157</item>
+					<item>158</item>
+					<item>160</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>36</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_31">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>38</id>
+						<name>zext_ln95</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>95</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>95</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1165837910</coreId>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>161</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>37</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_32">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>40</id>
+						<name>xor_ln91</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>91</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>91</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1085818257</coreId>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>162</item>
+					<item>164</item>
+				</oprand_edges>
+				<opcode>xor</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>26</m_topoIndex>
+				<m_clusterGroupNumber>1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_33">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>41</id>
 						<name>icmp_ln98</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
@@ -1385,333 +1711,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>147</item>
-					<item>149</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.59</m_delay>
-				<m_topoIndex>23</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_28">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>35</id>
-						<name>select_ln94</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>94</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>5</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>150</item>
-					<item>151</item>
-					<item>152</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.27</m_delay>
-				<m_topoIndex>24</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_29">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>36</id>
-						<name>select_ln94_1</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>94</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>3</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>153</item>
-					<item>154</item>
-					<item>155</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.27</m_delay>
-				<m_topoIndex>25</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_30">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>37</id>
-						<name>tmp</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>7</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>157</item>
-					<item>158</item>
-					<item>160</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>36</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_31">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>38</id>
-						<name>zext_ln98</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>98</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>98</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>161</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>37</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_32">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>40</id>
-						<name>xor_ln94</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>94</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>162</item>
-					<item>164</item>
-				</oprand_edges>
-				<opcode>xor</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>26</m_topoIndex>
-				<m_clusterGroupNumber>1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_33">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>41</id>
-						<name>icmp_ln101</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>101</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>101</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1083786674</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1735,10 +1735,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>and_ln94</name>
+						<name>and_ln91</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>91</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -1754,7 +1754,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>94</second>
+										<second>91</second>
 									</item>
 								</second>
 							</item>
@@ -1765,7 +1765,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1169376920</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1789,6 +1789,762 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
+						<name>add_ln95</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>95</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>95</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1139688651</coreId>
+					</Obj>
+					<bitwidth>5</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>170</item>
+					<item>172</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.70</m_delay>
+				<m_topoIndex>29</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_36">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>45</id>
+						<name>or_ln95</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>95</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>95</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1582515064</coreId>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>173</item>
+					<item>174</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>30</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_37">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>46</id>
+						<name>select_ln95</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>95</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>95</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1580483357</coreId>
+					</Obj>
+					<bitwidth>2</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>175</item>
+					<item>176</item>
+					<item>177</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.27</m_delay>
+				<m_topoIndex>31</m_topoIndex>
+				<m_clusterGroupNumber>2</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_38">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>47</id>
+						<name>select_ln95_1</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>95</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>95</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1584546655</coreId>
+					</Obj>
+					<bitwidth>5</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>178</item>
+					<item>179</item>
+					<item>180</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.27</m_delay>
+				<m_topoIndex>32</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_39">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>48</id>
+						<name>zext_ln100</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1100038842</coreId>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>181</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>38</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_40">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>49</id>
+						<name>add_ln100</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1094468117</coreId>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>182</item>
+					<item>183</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.70</m_delay>
+				<m_topoIndex>39</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_41">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>50</id>
+						<name>empty_54</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1191987237</coreId>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>184</item>
+					<item>185</item>
+				</oprand_edges>
+				<opcode>shl</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>40</m_topoIndex>
+				<m_clusterGroupNumber>3</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_42">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>52</id>
+						<name>zext_ln100_1</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1141131565</coreId>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>186</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>41</m_topoIndex>
+				<m_clusterGroupNumber>3</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_43">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>53</id>
+						<name>add_ln100_1</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1205946570</coreId>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>187</item>
+					<item>188</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.70</m_delay>
+				<m_topoIndex>42</m_topoIndex>
+				<m_clusterGroupNumber>3</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_44">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>54</id>
+						<name>zext_ln100_2</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1078150504</coreId>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>189</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>43</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_45">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>55</id>
+						<name>wp_superpoints_addr</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1143425292</coreId>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>190</item>
+					<item>191</item>
+					<item>192</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>46</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_46">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>56</id>
+						<name>superpointsI_addr</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1126974469</coreId>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>193</item>
+					<item>194</item>
+					<item>195</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>44</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_47">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>58</id>
+						<name>superpointsI_load</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1578451774</coreId>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>196</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.19</m_delay>
+				<m_topoIndex>45</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_48">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>59</id>
+						<name>wp_superpoints_addr_write_ln100</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>100</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>100</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1199589545</coreId>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>197</item>
+					<item>198</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.19</m_delay>
+				<m_topoIndex>47</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_49">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>60</id>
 						<name>add_ln98</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
@@ -1819,763 +2575,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>5</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>170</item>
-					<item>172</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
-				<m_topoIndex>29</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_36">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>45</id>
-						<name>or_ln98</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>98</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>98</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>173</item>
-					<item>174</item>
-				</oprand_edges>
-				<opcode>or</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>30</m_topoIndex>
-				<m_clusterGroupNumber>2</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_37">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>46</id>
-						<name>select_ln98</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>98</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>98</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>2</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>175</item>
-					<item>176</item>
-					<item>177</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.27</m_delay>
-				<m_topoIndex>31</m_topoIndex>
-				<m_clusterGroupNumber>2</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_38">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>47</id>
-						<name>select_ln98_1</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>98</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>98</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>5</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>178</item>
-					<item>179</item>
-					<item>180</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.27</m_delay>
-				<m_topoIndex>32</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_39">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>48</id>
-						<name>zext_ln103</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>181</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>38</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_40">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>49</id>
-						<name>add_ln103</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>182</item>
-					<item>183</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
-				<m_topoIndex>39</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_41">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>50</id>
-						<name>empty_52</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>184</item>
-					<item>185</item>
-				</oprand_edges>
-				<opcode>shl</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>40</m_topoIndex>
-				<m_clusterGroupNumber>3</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_42">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>52</id>
-						<name>zext_ln103_1</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>186</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>41</m_topoIndex>
-				<m_clusterGroupNumber>3</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_43">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>53</id>
-						<name>add_ln103_1</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>187</item>
-					<item>188</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.70</m_delay>
-				<m_topoIndex>42</m_topoIndex>
-				<m_clusterGroupNumber>3</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_44">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>54</id>
-						<name>zext_ln103_2</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>189</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>43</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_45">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>55</id>
-						<name>wp_superpoints_addr</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>190</item>
-					<item>191</item>
-					<item>192</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>46</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_46">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>56</id>
-						<name>superpointsI_addr</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>193</item>
-					<item>194</item>
-					<item>195</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>44</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_47">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>58</id>
-						<name>superpointsI_load</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>196</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.19</m_delay>
-				<m_topoIndex>45</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_48">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>59</id>
-						<name>wp_superpoints_addr_write_ln103</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>103</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>103</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>197</item>
-					<item>198</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.19</m_delay>
-				<m_topoIndex>47</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_49">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>60</id>
-						<name>add_ln101</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>101</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>101</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1201883272</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -2599,10 +2599,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>add_ln98_1</name>
+						<name>add_ln95_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>98</lineNumber>
+						<lineNumber>95</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -2618,7 +2618,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>98</second>
+										<second>95</second>
 									</item>
 								</second>
 							</item>
@@ -2629,7 +2629,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1183337377</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -2653,10 +2653,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>select_ln98_2</name>
+						<name>select_ln95_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>98</lineNumber>
+						<lineNumber>95</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -2672,7 +2672,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>98</second>
+										<second>95</second>
 									</item>
 								</second>
 							</item>
@@ -2683,7 +2683,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1145194863</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -2724,7 +2724,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1121339331</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2747,10 +2747,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>wp_parameters_addr_5_write_ln107</name>
+						<name>wp_parameters_addr_5_write_ln104</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>104</lineNumber>
 						<contextFuncName>wedgePatch_init</contextFuncName>
 						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
 						<inlineStackInfo>
@@ -2766,7 +2766,7 @@
 											<first>patchMaker.cpp</first>
 											<second>wedgePatch_init</second>
 										</first>
-										<second>107</second>
+										<second>104</second>
 									</item>
 								</second>
 							</item>
@@ -2777,7 +2777,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>29</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -2801,6 +2801,119 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
+						<name>_ln106</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>106</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>106</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1185631104</coreId>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>5</count>
+					<item_version>0</item_version>
+					<item>213</item>
+					<item>214</item>
+					<item>215</item>
+					<item>219</item>
+					<item>267</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>50</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_55">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>67</id>
+						<name>_ln108</name>
+						<fileName>patchMaker.cpp</fileName>
+						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
+						<lineNumber>108</lineNumber>
+						<contextFuncName>wedgePatch_init</contextFuncName>
+						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>patchMaker.cpp</first>
+											<second>wedgePatch_init</second>
+										</first>
+										<second>108</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<coreId>1131037767</coreId>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>217</item>
+					<item>218</item>
+					<item>266</item>
+					<item>268</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>51</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_56">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>68</id>
 						<name>_ln109</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
@@ -2831,120 +2944,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>5</count>
-					<item_version>0</item_version>
-					<item>213</item>
-					<item>214</item>
-					<item>215</item>
-					<item>219</item>
-					<item>267</item>
-				</oprand_edges>
-				<opcode>call</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>50</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_55">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>67</id>
-						<name>_ln111</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>111</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>111</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>217</item>
-					<item>218</item>
-					<item>266</item>
-					<item>268</item>
-				</oprand_edges>
-				<opcode>call</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>51</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_56">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>68</id>
-						<name>_ln112</name>
-						<fileName>patchMaker.cpp</fileName>
-						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>112</lineNumber>
-						<contextFuncName>wedgePatch_init</contextFuncName>
-						<contextNormFuncName>wedgePatch_init</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>patchMaker.cpp</first>
-											<second>wedgePatch_init</second>
-										</first>
-										<second>112</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>1163544183</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3322,7 +3322,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>1852793632</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -3350,7 +3350,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>842226464</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3378,7 +3378,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>744305243</coreId>
 					</Obj>
 					<bitwidth>8</bitwidth>
 				</Value>
@@ -3406,7 +3406,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1633836916</coreId>
+						<coreId>1335249155</coreId>
 					</Obj>
 					<bitwidth>3</bitwidth>
 				</Value>
@@ -3434,7 +3434,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539778358</coreId>
+						<coreId>540946995</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3462,7 +3462,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1885413420</coreId>
+						<coreId>1331972305</coreId>
 					</Obj>
 					<bitwidth>4</bitwidth>
 				</Value>
@@ -3490,7 +3490,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>859581810</coreId>
+						<coreId>539783777</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -3518,7 +3518,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>678650465</coreId>
+						<coreId>1751348321</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -3546,7 +3546,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>740703794</coreId>
+						<coreId>745303919</coreId>
 					</Obj>
 					<bitwidth>5</bitwidth>
 				</Value>
@@ -3574,7 +3574,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673195817</coreId>
+						<coreId>1767862369</coreId>
 					</Obj>
 					<bitwidth>2</bitwidth>
 				</Value>
@@ -3602,7 +3602,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1767862369</coreId>
+						<coreId>842414643</coreId>
 					</Obj>
 					<bitwidth>7</bitwidth>
 				</Value>
@@ -3630,7 +3630,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1751348321</coreId>
+						<coreId>539437428</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -3658,7 +3658,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>4047909116</coreId>
+						<coreId>1751326820</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -3686,7 +3686,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>842218612</coreId>
+						<coreId>1630040681</coreId>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
@@ -4775,8 +4775,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>241</mMinLatency>
-			<mMaxLatency>254</mMaxLatency>
+			<mMinLatency>243</mMinLatency>
+			<mMaxLatency>244</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4845,8 +4845,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>74</mMinLatency>
-			<mMaxLatency>87</mMaxLatency>
+			<mMinLatency>76</mMinLatency>
+			<mMaxLatency>77</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

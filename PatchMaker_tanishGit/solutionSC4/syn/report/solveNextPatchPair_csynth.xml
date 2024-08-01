@@ -53,12 +53,12 @@
 </AbsoluteTimeLatency>
 <IterationLatency>7</IterationLatency>
 </solveNextPatchPair_superPointEqualCheck>
-<VITIS_LOOP_872_1>
+<VITIS_LOOP_911_1>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <IterationLatency>undef</IterationLatency>
-</VITIS_LOOP_872_1>
+</VITIS_LOOP_911_1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
@@ -66,8 +66,8 @@
 <Resources>
 <BRAM_18K>9</BRAM_18K>
 <DSP>2</DSP>
-<FF>29348</FF>
-<LUT>41688</LUT>
+<FF>28713</FF>
+<LUT>41382</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

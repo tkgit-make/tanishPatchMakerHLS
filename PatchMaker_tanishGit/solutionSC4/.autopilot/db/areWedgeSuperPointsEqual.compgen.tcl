@@ -12,16 +12,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 60 \
-    name wsp2_V \
+    name wsp2 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename wsp2_V \
+    corename wsp2 \
     op interface \
-    ports { wsp2_V_address0 { O 12 vector } wsp2_V_ce0 { O 1 bit } wsp2_V_q0 { I 64 vector } wsp2_V_address1 { O 12 vector } wsp2_V_ce1 { O 1 bit } wsp2_V_q1 { I 64 vector } } \
+    ports { wsp2_address0 { O 12 vector } wsp2_ce0 { O 1 bit } wsp2_q0 { I 64 vector } wsp2_address1 { O 12 vector } wsp2_ce1 { O 1 bit } wsp2_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wsp2_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wsp2'"
 }
 }
 
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 61 \
-    name wsp1_V_offset \
+    name wsp1_offset \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_wsp1_V_offset \
+    corename dc_wsp1_offset \
     op interface \
-    ports { wsp1_V_offset { I 5 vector } } \
+    ports { wsp1_offset { I 5 vector } } \
 } "
 }
 
@@ -45,14 +45,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 62 \
-    name wsp1_V_offset1 \
+    name wsp1_offset1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_wsp1_V_offset1 \
+    corename dc_wsp1_offset1 \
     op interface \
-    ports { wsp1_V_offset1 { I 3 vector } } \
+    ports { wsp1_offset1 { I 3 vector } } \
 } "
 }
 
@@ -60,14 +60,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 63 \
-    name wsp2_V_offset \
+    name wsp2_offset \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_wsp2_V_offset \
+    corename dc_wsp2_offset \
     op interface \
-    ports { wsp2_V_offset { I 5 vector } } \
+    ports { wsp2_offset { I 5 vector } } \
 } "
 }
 
@@ -75,14 +75,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 64 \
-    name wsp2_V_offset3 \
+    name wsp2_offset3 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_wsp2_V_offset3 \
+    corename dc_wsp2_offset3 \
     op interface \
-    ports { wsp2_V_offset3 { I 3 vector } } \
+    ports { wsp2_offset3 { I 3 vector } } \
 } "
 }
 

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'straightLineProjectorFromLayerIJtoK'
 ================================================================
-* Date:           Wed Jul 31 13:58:47 2024
+* Date:           Wed Jul 31 23:37:59 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -98,13 +98,13 @@
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
     |add_ln69_fu_243_p2     |         +|   0|  0|  39|          32|          32|
-    |empty_53_fu_198_p2     |         +|   0|  0|  13|           6|           6|
+    |empty_55_fu_198_p2     |         +|   0|  0|  13|           6|           6|
     |empty_fu_189_p2        |         -|   0|  0|  13|           6|           6|
     |neg3_fu_151_p2         |         -|   0|  0|  12|           1|           4|
     |neg_fu_131_p2          |         -|   0|  0|  10|           1|           3|
     |ret_fu_215_p2          |         -|   0|  0|  40|          33|          33|
-    |sub_ln146_1_fu_107_p2  |         -|   0|  0|  12|           4|           4|
-    |sub_ln146_fu_93_p2     |         -|   0|  0|  12|           4|           4|
+    |sub_ln143_1_fu_107_p2  |         -|   0|  0|  12|           4|           4|
+    |sub_ln143_fu_93_p2     |         -|   0|  0|  12|           4|           4|
     |sub_ln69_fu_247_p2     |         -|   0|  0|  39|          32|          32|
     |abscond4_fu_157_p2     |      icmp|   0|  0|   9|           4|           1|
     |abscond_fu_137_p2      |      icmp|   0|  0|   9|           4|           1|
@@ -223,54 +223,54 @@ ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%z_i_read = read i32 @_ssdm_op_Read
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%j_cast = zext i3 %j_read"   --->   Operation 13 'zext' 'j_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i_cast = zext i3 %i_read"   --->   Operation 14 'zext' 'i_cast' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%k_cast = zext i3 %k_read"   --->   Operation 15 'zext' 'k_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.57ns)   --->   "%sub_ln146 = sub i4 %k_cast, i4 %i_cast" [patchMaker.cpp:146]   --->   Operation 16 'sub' 'sub_ln146' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%trunc_ln146 = trunc i4 %sub_ln146" [patchMaker.cpp:146]   --->   Operation 17 'trunc' 'trunc_ln146' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%sext_ln146 = sext i4 %sub_ln146" [patchMaker.cpp:146]   --->   Operation 18 'sext' 'sext_ln146' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.57ns)   --->   "%sub_ln146_1 = sub i4 %j_cast, i4 %i_cast" [patchMaker.cpp:146]   --->   Operation 19 'sub' 'sub_ln146_1' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%sext_ln146_1 = sext i4 %sub_ln146_1" [patchMaker.cpp:146]   --->   Operation 20 'sext' 'sext_ln146_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.78ns)   --->   "%mul_ln146 = mul i8 %sext_ln146, i8 %sext_ln146_1" [patchMaker.cpp:146]   --->   Operation 21 'mul' 'mul_ln146' <Predicate = true> <Delay = 0.78> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %mul_ln146, i32 7" [patchMaker.cpp:146]   --->   Operation 22 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.57ns)   --->   "%neg = sub i3 0, i3 %trunc_ln146" [patchMaker.cpp:146]   --->   Operation 23 'sub' 'neg' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 24 [1/1] (0.65ns)   --->   "%abscond = icmp_sgt  i4 %sub_ln146, i4 0" [patchMaker.cpp:146]   --->   Operation 24 'icmp' 'abscond' <Predicate = true> <Delay = 0.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.65> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 25 [1/1] (0.27ns)   --->   "%abs = select i1 %abscond, i3 %trunc_ln146, i3 %neg" [patchMaker.cpp:146]   --->   Operation 25 'select' 'abs' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 26 [1/1] (0.70ns)   --->   "%neg3 = sub i4 0, i4 %sub_ln146_1" [patchMaker.cpp:146]   --->   Operation 26 'sub' 'neg3' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 27 [1/1] (0.65ns)   --->   "%abscond4 = icmp_sgt  i4 %sub_ln146_1, i4 0" [patchMaker.cpp:146]   --->   Operation 27 'icmp' 'abscond4' <Predicate = true> <Delay = 0.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.65> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 28 [1/1] (0.35ns)   --->   "%abs5 = select i1 %abscond4, i4 %sub_ln146_1, i4 %neg3" [patchMaker.cpp:146]   --->   Operation 28 'select' 'abs5' <Predicate = true> <Delay = 0.35> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.57ns)   --->   "%sub_ln143 = sub i4 %k_cast, i4 %i_cast" [patchMaker.cpp:143]   --->   Operation 16 'sub' 'sub_ln143' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%trunc_ln143 = trunc i4 %sub_ln143" [patchMaker.cpp:143]   --->   Operation 17 'trunc' 'trunc_ln143' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%sext_ln143 = sext i4 %sub_ln143" [patchMaker.cpp:143]   --->   Operation 18 'sext' 'sext_ln143' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.57ns)   --->   "%sub_ln143_1 = sub i4 %j_cast, i4 %i_cast" [patchMaker.cpp:143]   --->   Operation 19 'sub' 'sub_ln143_1' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%sext_ln143_1 = sext i4 %sub_ln143_1" [patchMaker.cpp:143]   --->   Operation 20 'sext' 'sext_ln143_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.78ns)   --->   "%mul_ln143 = mul i8 %sext_ln143, i8 %sext_ln143_1" [patchMaker.cpp:143]   --->   Operation 21 'mul' 'mul_ln143' <Predicate = true> <Delay = 0.78> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i8.i32, i8 %mul_ln143, i32 7" [patchMaker.cpp:143]   --->   Operation 22 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.57ns)   --->   "%neg = sub i3 0, i3 %trunc_ln143" [patchMaker.cpp:143]   --->   Operation 23 'sub' 'neg' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.65ns)   --->   "%abscond = icmp_sgt  i4 %sub_ln143, i4 0" [patchMaker.cpp:143]   --->   Operation 24 'icmp' 'abscond' <Predicate = true> <Delay = 0.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.65> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.27ns)   --->   "%abs = select i1 %abscond, i3 %trunc_ln143, i3 %neg" [patchMaker.cpp:143]   --->   Operation 25 'select' 'abs' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.70ns)   --->   "%neg3 = sub i4 0, i4 %sub_ln143_1" [patchMaker.cpp:143]   --->   Operation 26 'sub' 'neg3' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.65ns)   --->   "%abscond4 = icmp_sgt  i4 %sub_ln143_1, i4 0" [patchMaker.cpp:143]   --->   Operation 27 'icmp' 'abscond4' <Predicate = true> <Delay = 0.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.65> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.35ns)   --->   "%abs5 = select i1 %abscond4, i4 %sub_ln143_1, i4 %neg3" [patchMaker.cpp:143]   --->   Operation 28 'select' 'abs5' <Predicate = true> <Delay = 0.35> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 2 <SV = 1> <Delay = 1.32>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %abs, i3 0" [patchMaker.cpp:146]   --->   Operation 29 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_3 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i3.i1, i3 %abs, i1 0" [patchMaker.cpp:146]   --->   Operation 30 'bitconcatenate' 'tmp_3' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_3_cast = zext i4 %tmp_3" [patchMaker.cpp:146]   --->   Operation 31 'zext' 'tmp_3_cast' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%empty = sub i6 %tmp, i6 %tmp_3_cast" [patchMaker.cpp:146]   --->   Operation 32 'sub' 'empty' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%abs5_cast = sext i4 %abs5" [patchMaker.cpp:146]   --->   Operation 33 'sext' 'abs5_cast' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (0.60ns) (root node of TernaryAdder)   --->   "%empty_53 = add i6 %empty, i6 %abs5_cast" [patchMaker.cpp:146]   --->   Operation 34 'add' 'empty_53' <Predicate = true> <Delay = 0.60> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_cast = zext i6 %empty_53" [patchMaker.cpp:146]   --->   Operation 35 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%radiiDivisionList_addr = getelementptr i35 %radiiDivisionList, i64 0, i64 %p_cast" [patchMaker.cpp:146]   --->   Operation 36 'getelementptr' 'radiiDivisionList_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 37 [2/2] (0.71ns)   --->   "%radiiDivisionList_load = load i6 %radiiDivisionList_addr" [patchMaker.cpp:146]   --->   Operation 37 'load' 'radiiDivisionList_load' <Predicate = true> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 35> <Depth = 36> <ROM>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %abs, i3 0" [patchMaker.cpp:143]   --->   Operation 29 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_3 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i3.i1, i3 %abs, i1 0" [patchMaker.cpp:143]   --->   Operation 30 'bitconcatenate' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_3_cast = zext i4 %tmp_3" [patchMaker.cpp:143]   --->   Operation 31 'zext' 'tmp_3_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%empty = sub i6 %tmp, i6 %tmp_3_cast" [patchMaker.cpp:143]   --->   Operation 32 'sub' 'empty' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%abs5_cast = sext i4 %abs5" [patchMaker.cpp:143]   --->   Operation 33 'sext' 'abs5_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.60ns) (root node of TernaryAdder)   --->   "%empty_55 = add i6 %empty, i6 %abs5_cast" [patchMaker.cpp:143]   --->   Operation 34 'add' 'empty_55' <Predicate = true> <Delay = 0.60> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.30> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_cast = zext i6 %empty_55" [patchMaker.cpp:143]   --->   Operation 35 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%radiiDivisionList_addr = getelementptr i35 %radiiDivisionList, i64 0, i64 %p_cast" [patchMaker.cpp:143]   --->   Operation 36 'getelementptr' 'radiiDivisionList_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [2/2] (0.71ns)   --->   "%radiiDivisionList_load = load i6 %radiiDivisionList_addr" [patchMaker.cpp:143]   --->   Operation 37 'load' 'radiiDivisionList_load' <Predicate = true> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 35> <Depth = 36> <ROM>
 
 State 3 <SV = 2> <Delay = 0.88>
 ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%sext_ln215 = sext i32 %z_j_read"   --->   Operation 38 'sext' 'sext_ln215' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln215_1 = sext i32 %z_i_read"   --->   Operation 39 'sext' 'sext_ln215_1' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 40 [1/1] (0.88ns)   --->   "%ret = sub i33 %sext_ln215, i33 %sext_ln215_1"   --->   Operation 40 'sub' 'ret' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 41 [1/2] (0.71ns)   --->   "%radiiDivisionList_load = load i6 %radiiDivisionList_addr" [patchMaker.cpp:146]   --->   Operation 41 'load' 'radiiDivisionList_load' <Predicate = true> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 35> <Depth = 36> <ROM>
+ST_3 : Operation 41 [1/2] (0.71ns)   --->   "%radiiDivisionList_load = load i6 %radiiDivisionList_addr" [patchMaker.cpp:143]   --->   Operation 41 'load' 'radiiDivisionList_load' <Predicate = true> <Delay = 0.71> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 35> <Depth = 36> <ROM>
 
 State 4 <SV = 3> <Delay = 2.10>
 ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%sext_ln534 = sext i33 %ret"   --->   Operation 42 'sext' 'sext_ln534' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%radiiDivisionList_load_cast = zext i35 %radiiDivisionList_load" [patchMaker.cpp:146]   --->   Operation 43 'zext' 'radiiDivisionList_load_cast' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 44 [3/3] (2.10ns)   --->   "%mul21 = mul i64 %radiiDivisionList_load_cast, i64 %sext_ln534" [patchMaker.cpp:146]   --->   Operation 44 'mul' 'mul21' <Predicate = true> <Delay = 2.10> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%radiiDivisionList_load_cast = zext i35 %radiiDivisionList_load" [patchMaker.cpp:143]   --->   Operation 43 'zext' 'radiiDivisionList_load_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [3/3] (2.10ns)   --->   "%mul21 = mul i64 %radiiDivisionList_load_cast, i64 %sext_ln534" [patchMaker.cpp:143]   --->   Operation 44 'mul' 'mul21' <Predicate = true> <Delay = 2.10> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 2.10>
-ST_5 : Operation 45 [2/3] (2.10ns)   --->   "%mul21 = mul i64 %radiiDivisionList_load_cast, i64 %sext_ln534" [patchMaker.cpp:146]   --->   Operation 45 'mul' 'mul21' <Predicate = true> <Delay = 2.10> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 45 [2/3] (2.10ns)   --->   "%mul21 = mul i64 %radiiDivisionList_load_cast, i64 %sext_ln534" [patchMaker.cpp:143]   --->   Operation 45 'mul' 'mul21' <Predicate = true> <Delay = 2.10> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 2.10>
-ST_6 : Operation 46 [1/3] (2.10ns)   --->   "%mul21 = mul i64 %radiiDivisionList_load_cast, i64 %sext_ln534" [patchMaker.cpp:146]   --->   Operation 46 'mul' 'mul21' <Predicate = true> <Delay = 2.10> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 46 [1/3] (2.10ns)   --->   "%mul21 = mul i64 %radiiDivisionList_load_cast, i64 %sext_ln534" [patchMaker.cpp:143]   --->   Operation 46 'mul' 'mul21' <Predicate = true> <Delay = 2.10> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 2> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %mul21, i32 32, i32 63"   --->   Operation 47 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
 
 State 7 <SV = 6> <Delay = 1.10>
 ST_7 : Operation 48 [1/1] (0.88ns)   --->   "%add_ln69 = add i32 %trunc_ln1, i32 %z_i_read"   --->   Operation 48 'add' 'add_ln69' <Predicate = (!tmp_1)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 49 [1/1] (0.88ns)   --->   "%sub_ln69 = sub i32 %z_i_read, i32 %trunc_ln1"   --->   Operation 49 'sub' 'sub_ln69' <Predicate = (tmp_1)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 50 [1/1] (0.22ns)   --->   "%select_ln146 = select i1 %tmp_1, i32 %sub_ln69, i32 %add_ln69" [patchMaker.cpp:146]   --->   Operation 50 'select' 'select_ln146' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_7 : Operation 51 [1/1] (0.00ns)   --->   "%ret_ln171 = ret i32 %select_ln146" [patchMaker.cpp:171]   --->   Operation 51 'ret' 'ret_ln171' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 50 [1/1] (0.22ns)   --->   "%select_ln143 = select i1 %tmp_1, i32 %sub_ln69, i32 %add_ln69" [patchMaker.cpp:143]   --->   Operation 50 'select' 'select_ln143' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 51 [1/1] (0.00ns)   --->   "%ret_ln168 = ret i32 %select_ln143" [patchMaker.cpp:168]   --->   Operation 51 'ret' 'ret_ln168' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -304,12 +304,12 @@ z_i_read                    (read          ) [ 01111111]
 j_cast                      (zext          ) [ 00000000]
 i_cast                      (zext          ) [ 00000000]
 k_cast                      (zext          ) [ 00000000]
-sub_ln146                   (sub           ) [ 00000000]
-trunc_ln146                 (trunc         ) [ 00000000]
-sext_ln146                  (sext          ) [ 00000000]
-sub_ln146_1                 (sub           ) [ 00000000]
-sext_ln146_1                (sext          ) [ 00000000]
-mul_ln146                   (mul           ) [ 00000000]
+sub_ln143                   (sub           ) [ 00000000]
+trunc_ln143                 (trunc         ) [ 00000000]
+sext_ln143                  (sext          ) [ 00000000]
+sub_ln143_1                 (sub           ) [ 00000000]
+sext_ln143_1                (sext          ) [ 00000000]
+mul_ln143                   (mul           ) [ 00000000]
 tmp_1                       (bitselect     ) [ 01111111]
 neg                         (sub           ) [ 00000000]
 abscond                     (icmp          ) [ 00000000]
@@ -322,7 +322,7 @@ tmp_3                       (bitconcatenate) [ 00000000]
 tmp_3_cast                  (zext          ) [ 00000000]
 empty                       (sub           ) [ 00000000]
 abs5_cast                   (sext          ) [ 00000000]
-empty_53                    (add           ) [ 00000000]
+empty_55                    (add           ) [ 00000000]
 p_cast                      (zext          ) [ 00000000]
 radiiDivisionList_addr      (getelementptr ) [ 01010000]
 sext_ln215                  (sext          ) [ 00000000]
@@ -335,8 +335,8 @@ mul21                       (mul           ) [ 00000000]
 trunc_ln1                   (partselect    ) [ 01000001]
 add_ln69                    (add           ) [ 00000000]
 sub_ln69                    (sub           ) [ 00000000]
-select_ln146                (select        ) [ 00000000]
-ret_ln171                   (ret           ) [ 00000000]
+select_ln143                (select        ) [ 00000000]
+ret_ln168                   (ret           ) [ 00000000]
 </LifeTime>
 
 <model>
@@ -633,7 +633,7 @@ ret_ln171                   (ret           ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="93" class="1004" name="sub_ln146_fu_93">
+<comp id="93" class="1004" name="sub_ln143_fu_93">
 <pin_list>
 <pin id="94" dir="0" index="0" bw="3" slack="0"/>
 <pin id="95" dir="0" index="1" bw="3" slack="0"/>
@@ -641,33 +641,33 @@ ret_ln171                   (ret           ) [ 00000000]
 </pin_list>
 <bind>
 <opcode="sub(10) " fcode="sub"/>
-<opset="sub_ln146/1 "/>
+<opset="sub_ln143/1 "/>
 </bind>
 </comp>
 
-<comp id="99" class="1004" name="trunc_ln146_fu_99">
+<comp id="99" class="1004" name="trunc_ln143_fu_99">
 <pin_list>
 <pin id="100" dir="0" index="0" bw="4" slack="0"/>
 <pin id="101" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln146/1 "/>
+<opset="trunc_ln143/1 "/>
 </bind>
 </comp>
 
-<comp id="103" class="1004" name="sext_ln146_fu_103">
+<comp id="103" class="1004" name="sext_ln143_fu_103">
 <pin_list>
 <pin id="104" dir="0" index="0" bw="4" slack="0"/>
 <pin id="105" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln146/1 "/>
+<opset="sext_ln143/1 "/>
 </bind>
 </comp>
 
-<comp id="107" class="1004" name="sub_ln146_1_fu_107">
+<comp id="107" class="1004" name="sub_ln143_1_fu_107">
 <pin_list>
 <pin id="108" dir="0" index="0" bw="3" slack="0"/>
 <pin id="109" dir="0" index="1" bw="3" slack="0"/>
@@ -675,22 +675,22 @@ ret_ln171                   (ret           ) [ 00000000]
 </pin_list>
 <bind>
 <opcode="sub(10) " fcode="sub"/>
-<opset="sub_ln146_1/1 "/>
+<opset="sub_ln143_1/1 "/>
 </bind>
 </comp>
 
-<comp id="113" class="1004" name="sext_ln146_1_fu_113">
+<comp id="113" class="1004" name="sext_ln143_1_fu_113">
 <pin_list>
 <pin id="114" dir="0" index="0" bw="4" slack="0"/>
 <pin id="115" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln146_1/1 "/>
+<opset="sext_ln143_1/1 "/>
 </bind>
 </comp>
 
-<comp id="117" class="1004" name="mul_ln146_fu_117">
+<comp id="117" class="1004" name="mul_ln143_fu_117">
 <pin_list>
 <pin id="118" dir="0" index="0" bw="4" slack="0"/>
 <pin id="119" dir="0" index="1" bw="4" slack="0"/>
@@ -698,7 +698,7 @@ ret_ln171                   (ret           ) [ 00000000]
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
-<opset="mul_ln146/1 "/>
+<opset="mul_ln143/1 "/>
 </bind>
 </comp>
 
@@ -849,7 +849,7 @@ ret_ln171                   (ret           ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="198" class="1004" name="empty_53_fu_198">
+<comp id="198" class="1004" name="empty_55_fu_198">
 <pin_list>
 <pin id="199" dir="0" index="0" bw="6" slack="0"/>
 <pin id="200" dir="0" index="1" bw="4" slack="0"/>
@@ -857,7 +857,7 @@ ret_ln171                   (ret           ) [ 00000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="empty_53/2 "/>
+<opset="empty_55/2 "/>
 </bind>
 </comp>
 
@@ -978,7 +978,7 @@ ret_ln171                   (ret           ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="251" class="1004" name="select_ln146_fu_251">
+<comp id="251" class="1004" name="select_ln143_fu_251">
 <pin_list>
 <pin id="252" dir="0" index="0" bw="1" slack="6"/>
 <pin id="253" dir="0" index="1" bw="32" slack="0"/>
@@ -987,7 +987,7 @@ ret_ln171                   (ret           ) [ 00000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln146/7 "/>
+<opset="select_ln143/7 "/>
 </bind>
 </comp>
 
@@ -1303,12 +1303,12 @@ ret_ln171                   (ret           ) [ 00000000]
 	Port: straightLineProjectorFromLayerIJtoK : radiiDivisionList | {2 3 }
   - Chain level:
 	State 1
-		sub_ln146 : 1
-		trunc_ln146 : 2
-		sext_ln146 : 2
-		sub_ln146_1 : 1
-		sext_ln146_1 : 2
-		mul_ln146 : 3
+		sub_ln143 : 1
+		trunc_ln143 : 2
+		sext_ln143 : 2
+		sub_ln143_1 : 1
+		sext_ln143_1 : 2
+		mul_ln143 : 3
 		tmp_1 : 4
 		neg : 3
 		abscond : 2
@@ -1319,7 +1319,7 @@ ret_ln171                   (ret           ) [ 00000000]
 	State 2
 		tmp_3_cast : 1
 		empty : 2
-		empty_53 : 3
+		empty_55 : 3
 		p_cast : 4
 		radiiDivisionList_addr : 5
 		radiiDivisionList_load : 6
@@ -1331,8 +1331,8 @@ ret_ln171                   (ret           ) [ 00000000]
 	State 6
 		trunc_ln1 : 1
 	State 7
-		select_ln146 : 1
-		ret_ln171 : 2
+		select_ln143 : 1
+		ret_ln168 : 2
 
 
 ============================================================
@@ -1343,23 +1343,23 @@ ret_ln171                   (ret           ) [ 00000000]
 |----------|------------------------------------|---------|---------|---------|
 | Operation|           Functional Unit          |   DSP   |    FF   |   LUT   |
 |----------|------------------------------------|---------|---------|---------|
-|    mul   |          mul_ln146_fu_117          |    0    |    0    |    11   |
+|    mul   |          mul_ln143_fu_117          |    0    |    0    |    11   |
 |          |             grp_fu_227             |    0    |   199   |    68   |
 |----------|------------------------------------|---------|---------|---------|
-|          |           sub_ln146_fu_93          |    0    |    0    |    10   |
-|          |         sub_ln146_1_fu_107         |    0    |    0    |    10   |
+|          |           sub_ln143_fu_93          |    0    |    0    |    10   |
+|          |         sub_ln143_1_fu_107         |    0    |    0    |    10   |
 |          |             neg_fu_131             |    0    |    0    |    10   |
 |    sub   |             neg3_fu_151            |    0    |    0    |    12   |
 |          |            empty_fu_189            |    0    |    0    |    13   |
 |          |             ret_fu_215             |    0    |    0    |    39   |
 |          |           sub_ln69_fu_247          |    0    |    0    |    39   |
 |----------|------------------------------------|---------|---------|---------|
-|    add   |           empty_53_fu_198          |    0    |    0    |    13   |
+|    add   |           empty_55_fu_198          |    0    |    0    |    13   |
 |          |           add_ln69_fu_243          |    0    |    0    |    39   |
 |----------|------------------------------------|---------|---------|---------|
 |          |             abs_fu_143             |    0    |    0    |    3    |
 |  select  |             abs5_fu_163            |    0    |    0    |    4    |
-|          |         select_ln146_fu_251        |    0    |    0    |    32   |
+|          |         select_ln143_fu_251        |    0    |    0    |    32   |
 |----------|------------------------------------|---------|---------|---------|
 |   icmp   |           abscond_fu_137           |    0    |    0    |    9    |
 |          |           abscond4_fu_157          |    0    |    0    |    9    |
@@ -1377,10 +1377,10 @@ ret_ln171                   (ret           ) [ 00000000]
 |          |            p_cast_fu_204           |    0    |    0    |    0    |
 |          | radiiDivisionList_load_cast_fu_224 |    0    |    0    |    0    |
 |----------|------------------------------------|---------|---------|---------|
-|   trunc  |          trunc_ln146_fu_99         |    0    |    0    |    0    |
+|   trunc  |          trunc_ln143_fu_99         |    0    |    0    |    0    |
 |----------|------------------------------------|---------|---------|---------|
-|          |          sext_ln146_fu_103         |    0    |    0    |    0    |
-|          |         sext_ln146_1_fu_113        |    0    |    0    |    0    |
+|          |          sext_ln143_fu_103         |    0    |    0    |    0    |
+|          |         sext_ln143_1_fu_113        |    0    |    0    |    0    |
 |   sext   |          abs5_cast_fu_195          |    0    |    0    |    0    |
 |          |          sext_ln215_fu_209         |    0    |    0    |    0    |
 |          |         sext_ln215_1_fu_212        |    0    |    0    |    0    |

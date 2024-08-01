@@ -34,10 +34,10 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     name wp_parameters \
     reset_level 1 \
     sync_rst true \
-    dir IO \
+    dir O \
     corename wp_parameters \
     op interface \
-    ports { wp_parameters_address0 { O 12 vector } wp_parameters_ce0 { O 1 bit } wp_parameters_we0 { O 1 bit } wp_parameters_d0 { O 32 vector } wp_parameters_q0 { I 32 vector } wp_parameters_address1 { O 12 vector } wp_parameters_ce1 { O 1 bit } wp_parameters_we1 { O 1 bit } wp_parameters_d1 { O 32 vector } } \
+    ports { wp_parameters_address0 { O 12 vector } wp_parameters_ce0 { O 1 bit } wp_parameters_we0 { O 1 bit } wp_parameters_d0 { O 32 vector } wp_parameters_address1 { O 12 vector } wp_parameters_ce1 { O 1 bit } wp_parameters_we1 { O 1 bit } wp_parameters_d1 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wp_parameters'"

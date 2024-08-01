@@ -80,13 +80,6 @@ solve_loop:
 #pragma HLS array_partition variable=GDarrayPostSort
 #pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarrayPostSort bundle=GDarrayPostSort_b
 
-    long tempArray[200];
-
-    for(int i = 0; i < 200; i++)
-	{
-		tempArray[i] = 0;
-	}
-
     MPSQ(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
 
     /*
@@ -152,6 +145,10 @@ static vector<string> splitString(string str, string splitter = "),(")
         {
             currentStr += str[i];
         }
+    }
+    if(splitter == "),(")
+    {
+    	currentStr = currentStr + str[str.size() - 2] + str[str.size() - 1];
     }
     result.push_back(currentStr);
     return result;

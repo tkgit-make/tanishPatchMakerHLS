@@ -54,7 +54,7 @@ void getParallelograms(WEDGE_PATCH)
     //     printf("Instead of assigning a temp array, we are overwriting the first superpoint_count-1 elements in the parallelogam array. If the current number of elements in the array is greater than superpoint_count-1, then we will have remaining elements that need to be deleted to replicate the functionality correctly");
     //     //exit(8);
     // }
-    wp_parameters[4][2][0] = 0; // we want to start at index 0 regardless and overwrite any old elements in the array to replicate the functionality of assigning a temp array.
+    //wp_parameters[4][2][0] = 0; // we want to start at index 0 regardless and overwrite any old elements in the array to replicate the functionality of assigning a temp array.
     getParallelograms_settingWPparameters:
     for (int_type i = 1; i < MAX_LAYERS; i++)
     {
@@ -67,17 +67,14 @@ void getParallelograms(WEDGE_PATCH)
         COORDINATE_TYPE d = straightLineProjectorFromLayerIJtoK(z1_max, z_j_min, 1, i + 1, num_layers);
 
         // directly assign the values to the array
-        if (static_cast<int>(wp_parameters[4][2][0]) < MAX_PARALLELOGRAMS_PER_PATCH)
-        {
-            wp_parameters[0][static_cast<int>(wp_parameters[4][2][0])][0] = a;
-            wp_parameters[0][static_cast<int>(wp_parameters[4][2][0])][1] = b;
-            wp_parameters[0][static_cast<int>(wp_parameters[4][2][0])][2] = c;
-            wp_parameters[0][static_cast<int>(wp_parameters[4][2][0])][3] = d;
-            wp_parameters[0][static_cast<int>(wp_parameters[4][2][0])][4] = z1_min;
-            wp_parameters[0][static_cast<int>(wp_parameters[4][2][0])][5] = z1_max;
 
-            wp_parameters[4][2][0] += 1;
-        }
+		wp_parameters[0][i - 1][0] = a;
+		wp_parameters[0][i - 1][1] = b;
+		wp_parameters[0][i - 1][2] = c;
+		wp_parameters[0][i - 1][3] = d;
+		wp_parameters[0][i - 1][4] = z1_min;
+		wp_parameters[0][i - 1][5] = z1_max;
+
     }
 }
 
@@ -91,7 +88,7 @@ void wedgePatch_init(WEDGE_PATCH, COORDINATE_TYPE superpointsI[MAX_SUPERPOINTS_I
     wp_parameters[1][2][0] = 0;
     wp_parameters[1][3][0] = 0;
     wedgePatch_init_perSuperpoint:
-    for (size_t i = 0; i < static_cast<int>(superpoint_count); i++)
+    for (int_type i = 0; i < MAX_SUPERPOINTS_IN_PATCH; i++)
     {   // size_t objects should only be non-negative and are more performant than ints
         // wp->superpoints is an array of arrays.
         wedgePatch_init_perPoint:
@@ -190,6 +187,7 @@ void getShadows(WEDGE_PATCH_GET_SHADOWS, COORDINATE_TYPE zTopMin, COORDINATE_TYP
     COORDINATE_TYPE topL_jR[MAX_SUPERPOINTS_IN_PATCH - 1];
     COORDINATE_TYPE topR_jL[MAX_SUPERPOINTS_IN_PATCH - 1];
     COORDINATE_TYPE topR_jR[MAX_SUPERPOINTS_IN_PATCH - 1];
+
     getShadows_settingtopArrays:
     for (int_type i = 0; i < MAX_SUPERPOINTS_IN_PATCH - 1; ++i)
     {
@@ -238,10 +236,10 @@ void get_acceptanceCorners(WEDGE_PATCH)
     wp_parameters[3][0][0] = true;
     wp_parameters[3][3][0] = false;
 
-    COORDINATE_TYPE a_corner_min = 100 * INTEGER_FACTOR_CM;
-    COORDINATE_TYPE b_corner_min = 100 * INTEGER_FACTOR_CM;
-    COORDINATE_TYPE c_corner_max = -100 * INTEGER_FACTOR_CM;
-    COORDINATE_TYPE d_corner_max = -100 * INTEGER_FACTOR_CM;
+    COORDINATE_TYPE a_corner_min = wp_parameters[0][0][0];
+    COORDINATE_TYPE b_corner_min = wp_parameters[0][0][1];
+    COORDINATE_TYPE c_corner_max = wp_parameters[0][0][2];
+    COORDINATE_TYPE d_corner_max = wp_parameters[0][0][3];
 
     // getting min or max corners in all parallelograms
     get_acceptanceCorners_minMaxFinding:
@@ -376,7 +374,7 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
         bool different = false;
 
         add_patch_checkDiff:
-        for (index_type i = 0; i < static_cast<int>(patches_parameters[n_patches - 1][4][1][0]); i++)
+        for (index_type i = 0; i < MAX_SUPERPOINTS_IN_PATCH; i++)
         {
             if ((decodeZcoordinate(patches_superpoints[n_patches - 1][i][0]) != wp_superpoints[i][0][1]) ||
                 (decodeZcoordinate(patches_superpoints[n_patches - 1][i][MAX_POINTS_IN_SUPERPOINT - 1]) != wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][1]))
@@ -501,8 +499,49 @@ void delete_patch(int_type index, index_type &n_patches, GPATCHES)
 
     // resetting the last elements
 
-    memset(&patches_superpoints[n_patches - 1], 0, sizeof(patches_superpoints[n_patches - 1]));
-    memset(&patches_parameters[n_patches - 1], 0, sizeof(patches_parameters[n_patches - 1]));
+	delete_patch_perSuperpointSPLP:
+	for(int_type a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
+	{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+		delete_patch_perPointSPLP:
+		for(int_type b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
+		{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+			patches_superpoints[n_patches - 1][a][b] = 0;
+		}
+	}
+
+	delete_patch_perPropertyTypePPLP:
+	for(int_type a = 0; a < PATCH_PROPERTIES; a++)
+	{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+		delete_patch_perParallelogramPPLP:
+		for(int_type b = 0; b < MAX_PARALLELOGRAMS_PER_PATCH; b++)
+		{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+			delete_patch_perPropertyLengthPPLP:
+			for(int_type c = 0; c < MAX_PATCH_PROPERTY_LENGTH; c++)
+			{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+				patches_parameters[n_patches - 1][a][b][c] = 0;
+			}
+		}
+	}
+	#if KEEP_DELETED_PATCHES == true
+		cover->real_patch_list[i] = cover->real_patch_list[i + 1];
+	#endif
+    //memset(&patches_superpoints[n_patches - 1], 0, sizeof(patches_superpoints[n_patches - 1]));
+    //memset(&patches_parameters[n_patches - 1], 0, sizeof(patches_parameters[n_patches - 1]));
     #if KEEP_DELETED_PATCHES == true
         cover->real_patch_list[cover->n_patches - 1] = false;
     #endif
@@ -677,7 +716,7 @@ void MPSQ(int_type stop, int_type ppl, bool leftRight, index_type &n_patches, SP
 COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type stop, int_type ppl, bool leftRight, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
 {
 #pragma HLS INLINE OFF
-    COORDINATE_TYPE z_top_min = static_cast<COORDINATE_TYPE> (-top_layer_lim);
+    COORDINATE_TYPE z_top_min = static_cast<COORDINATE_TYPE>(-top_layer_lim);
 
     COORDINATE_TYPE complementary_apexZ0 = 0;
     index_type first_row_count = 0;
@@ -1135,7 +1174,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     index_type new_z_i_index[MAX_LAYERS];
 
     solveComplmentaryPatch_fillCurrent_z_i_index:
-    for (index_type i = 0; i < num_layers; i++)
+    for (index_type i = 0; i < MAX_LAYERS; i++)
     {
         current_z_i_index[i] = get_index_from_z(i, straightLineProjectorFromLayerIJtoK(complementary_apexZ0,z_top_min, 1, num_layers, i + 1), GDarrayDecoded, GDn_points);
     }
@@ -1144,7 +1183,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     {
         current_z_top_index += 1;
         solveComplmentaryPatch_fillNew_z_i_index0:
-        for (index_type i = 0; i < num_layers; i++)
+        for (index_type i = 0; i < MAX_LAYERS; i++)
         {
             new_z_i_index[i] = current_z_i_index[i] + 1;
         }
@@ -1157,7 +1196,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         counter += 1;
         current_z_top_index -= 1;
         solveComplmentaryPatch_fillNew_z_i_index1:
-        for (index_type i = 0; i < num_layers; i++)
+        for (index_type i = 0; i < MAX_LAYERS; i++)
         {
             new_z_i_index[i] = current_z_i_index[i] - 1;
         }
@@ -1167,7 +1206,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         counterUpshift += 1;
         current_z_top_index += 1;
         solveComplmentaryPatch_fillNew_z_i_index2:
-        for (index_type i = 0; i < num_layers; i++)
+        for (index_type i = 0; i < MAX_LAYERS; i++)
         {
             new_z_i_index[i] = current_z_i_index[i] + 1;
         }
@@ -1176,20 +1215,20 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     current_z_top_index = min(current_z_top_index, GDn_points[num_layers - 1] - 1); // n_points is an array of the sizes of each element of 'array'
 
     solveComplmentaryPatch_fillNew_z_i_index3:
-    for (index_type i = 0; i < num_layers; i++)
+    for (index_type i = 0; i < MAX_LAYERS; i++)
     {
         new_z_i_index[i] = min(new_z_i_index[i], GDn_points[i] - 1);
     }
 
     solveComplmentaryPatch_fillNew_z_i_index4:
-    for (index_type i = 0; i < num_layers; i++)
+    for (index_type i = 0; i < MAX_LAYERS; i++)
     {
         new_z_i_index[i] = max(new_z_i_index[i], 0);
     }
     COORDINATE_TYPE new_z_i[MAX_LAYERS];
 
     solveComplmentaryPatch_fillNew_z_i_index5:
-    for (index_type i = 0; i < num_layers; i++)
+    for (index_type i = 0; i < MAX_LAYERS; i++)
     {
         new_z_i[i] = GDarrayDecoded[i][new_z_i_index[i]][1];
     }
@@ -1197,7 +1236,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     COORDINATE_TYPE new_z_i_atTop[MAX_LAYERS - 1]; // note: the size is MAX_LAYERS - 1 because the loop starts from 1
 
     solveComplmentaryPatch_fillNew_z_i_atTop:
-    for (index_type i = 1; i < num_layers; i++)
+    for (index_type i = 1; i < MAX_LAYERS; i++)
     {
         new_z_i_atTop[i - 1] = straightLineProjectorFromLayerIJtoK(complementary_apexZ0,
                                                                     new_z_i[i],
@@ -1210,7 +1249,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     long_type layerSMin = LONG_MAX;
 
     solveComplmentaryPatch_findlayerWithSmallestShift: 
-    for (index_type i = 0; i < num_layers - 1; i++)
+    for (index_type i = 0; i < MAX_LAYERS - 1; i++)
     {
         if (static_cast<long_type>(abs(static_cast<long_type>(new_z_i_atTop[i]) - static_cast<long_type>(previous_z_top_min))) < layerSMin)
         { // fabs is for floats. abs is only int
@@ -1222,37 +1261,37 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
     layerWithSmallestShift += 1;
 
     #if PRINT_OUTS == true
-        for (index_type i = 0; i < num_layers - 1; i++)
+        for (index_type i = 0; i < MAX_LAYERS - 1; i++)
         {
             printf("%u new_z_i_atTop: %ld shift_i_ztop: %ld layerWithSmallestShift: %u\n",
                 i + 1, new_z_i_atTop[i], new_z_i_atTop[i] - previous_z_top_min, layerWithSmallestShift + 1);   
         }
     #endif
 
-    z_top_min = GDarrayDecoded[num_layers - 1][current_z_top_index][1];
+    z_top_min = GDarrayDecoded[MAX_LAYERS - 1][current_z_top_index][1];
     z_top_min = new_z_i_atTop[layerWithSmallestShift - 1];
 
     if (abs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
     {
-        z_top_min = GDarrayDecoded[num_layers - 1][current_z_top_index][1];
+        z_top_min = GDarrayDecoded[MAX_LAYERS - 1][current_z_top_index][1];
     }
 
     if (abs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
     {
-        z_top_min = GDarrayDecoded[num_layers - 2][current_z_top_index][1];
+        z_top_min = GDarrayDecoded[MAX_LAYERS - 2][current_z_top_index][1];
     }
 
     if (abs(static_cast<long_type>(z_top_min - previous_z_top_min)) < static_cast<long_type>(0.000001 * INTEGER_FACTOR_CM))
     {
-        z_top_min = GDarrayDecoded[num_layers - 3][current_z_top_index][1];
+        z_top_min = GDarrayDecoded[MAX_LAYERS - 3][current_z_top_index][1];
     }
 
     if ((static_cast<long_type>(z_top_min - previous_z_top_min) * static_cast<long_type>(white_space_height)) < 0)
     {
-        z_top_min = new_z_i_atTop[num_layers - 2];
+        z_top_min = new_z_i_atTop[MAX_LAYERS - 2];
     }
     #if PRINT_OUTS == true
-        printf(" new_def_z_top_min_diff: %ld\n", z_top_min - GDarrayDecoded[num_layers - 1][current_z_top_index][1]);
+        printf(" new_def_z_top_min_diff: %ld\n", z_top_min - GDarrayDecoded[MAX_LAYERS  - 1][current_z_top_index][1]);
 
         printf(" new_ztop_index: %d new_z_i_index: ", current_z_top_index);
         for (index_type i = 0; i < num_layers; i++)
@@ -1327,7 +1366,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         // turned this into a for loop, dynamic. if ((patches[patches.size() - 1].superpoints[env.num_layers - 1] == patches[patches.size() - 3].superpoints[env.num_layers - 1]) && (patches[patches.size() - 1].superpoints[0] == patches[patches.size() - 3].superpoints[0]) && (patches[patches.size() - 1].superpoints[1] == patches[patches.size() - 3].superpoints[1]) && (patches[patches.size() - 1].superpoints[2] == patches[patches.size() - 3].superpoints[2]) && (patches[patches.size() - 1].superpoints[3] == patches[patches.size() - 3].superpoints[3]))
         // that code checked 0 to 4
         solveComplmentaryPatch_superpointEqualCheck_2:
-        for (index_type i = 0; i < num_layers; i++)
+        for (index_type i = 0; i < MAX_LAYERS; i++)
         {
             if (!areWedgeSuperPointsEqual(patches_superpoints[lastPatchIdx][i], patches_superpoints[thirdLastPatchIdx][i]))
             {
@@ -1340,8 +1379,8 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         {
             #if PRINT_OUTS == true
                 printf("%ld %ld repeat_patch: %d\n",
-                    patches_superpoints[lastPatchIdx][num_layers - 1][2][1][0],
-                    patches_superpoints[lastPatchIdx][num_layers - 1][2][2][0],
+                    patches_superpoints[lastPatchIdx][MAX_LAYERS - 1][2][1][0],
+                    patches_superpoints[lastPatchIdx][MAX_LAYERS - 1][2][2][0],
                     repeat_patch);
             #endif
 
@@ -1349,7 +1388,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
 
             current_z_top_index -= 1;
 
-            z_top_min = GDarrayDecoded[num_layers - 1][current_z_top_index][1];
+            z_top_min = GDarrayDecoded[MAX_LAYERS - 1][current_z_top_index][1];
             z_top_min = new_z_i_atTop[layerWithSmallestShift - 1];
 
             makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
@@ -1477,12 +1516,12 @@ void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_
 {
 #pragma HLS INLINE OFF
     COORDINATE_TYPE row_list[MAX_POINTS_PER_LAYER];
-    int_type row_list_size = 0;
+    int_type row_list_size = GDn_points[i];
 
     makeSuperPoint_alignedToLine_rowListSet_loop:
-    for (int_type j = 0; j < GDn_points[i]; j++)
+    for (int_type j = 0; j < MAX_POINTS_PER_LAYER; j++)
     {
-        row_list[row_list_size++] = GDarrayDecoded[i][j][1];
+        row_list[j] = GDarrayDecoded[i][j][1];
     }
 
     long_type projectionToRow = ((static_cast<long_type>(z_top - apexZ0) * (radiiDivisionList[i][MAX_LAYERS - 1]) >> RIGHT_SHIFT_FACTOR) + apexZ0);

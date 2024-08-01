@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makeThirdPatch'" level="0">
-<item name = "Date">Wed Jul 31 13:58:14 2024
+<item name = "Date">Wed Jul 31 23:37:27 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_makePatch_alignedToLine_fu_494">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_getShadows_fu_517">getShadows, 154, 154, 0.462 us, 0.462 us, 154, 154, none</column>
+<column name="grp_getShadows_fu_517">getShadows, 130, 130, 0.390 us, 0.390 us, 130, 130, none</column>
 <column name="grp_delete_patch_fu_533">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_545">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
 </table>

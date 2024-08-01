@@ -91,11 +91,11 @@ reg    ap_block_pp0_stage0_subdone;
 wire   [63:0] p_cast_fu_204_p1;
 wire   [3:0] k_cast_fu_89_p1;
 wire   [3:0] i_cast_fu_85_p1;
-wire  signed [3:0] sub_ln146_fu_93_p2;
+wire  signed [3:0] sub_ln143_fu_93_p2;
 wire   [3:0] j_cast_fu_81_p1;
-wire  signed [3:0] sub_ln146_1_fu_107_p2;
-wire   [7:0] mul_ln146_fu_117_p2;
-wire   [2:0] trunc_ln146_fu_99_p1;
+wire  signed [3:0] sub_ln143_1_fu_107_p2;
+wire   [7:0] mul_ln143_fu_117_p2;
+wire   [2:0] trunc_ln143_fu_99_p1;
 wire   [0:0] abscond_fu_137_p2;
 wire   [2:0] neg_fu_131_p2;
 wire   [0:0] abscond4_fu_157_p2;
@@ -105,7 +105,7 @@ wire   [5:0] tmp_fu_171_p3;
 wire   [5:0] tmp_3_cast_fu_185_p1;
 wire   [5:0] empty_fu_189_p2;
 wire  signed [5:0] abs5_cast_fu_195_p1;
-wire   [5:0] empty_53_fu_198_p2;
+wire   [5:0] empty_55_fu_198_p2;
 wire  signed [32:0] sext_ln215_fu_209_p1;
 wire  signed [32:0] sext_ln215_1_fu_212_p1;
 wire   [34:0] grp_fu_227_p0;
@@ -150,9 +150,9 @@ MPSQ_mul_4s_4s_8_1_1 #(
     .din1_WIDTH( 4 ),
     .dout_WIDTH( 8 ))
 mul_4s_4s_8_1_1_U3(
-    .din0(sub_ln146_fu_93_p2),
-    .din1(sub_ln146_1_fu_107_p2),
-    .dout(mul_ln146_fu_117_p2)
+    .din0(sub_ln143_fu_93_p2),
+    .din1(sub_ln143_1_fu_107_p2),
+    .dout(mul_ln143_fu_117_p2)
 );
 
 MPSQ_mul_35ns_33s_64_3_1 #(
@@ -242,7 +242,7 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         abs5_reg_281 <= abs5_fu_163_p3;
         abs_reg_275 <= abs_fu_143_p3;
-        tmp_1_reg_270 <= mul_ln146_fu_117_p2[32'd7];
+        tmp_1_reg_270 <= mul_ln143_fu_117_p2[32'd7];
         tmp_1_reg_270_pp0_iter1_reg <= tmp_1_reg_270;
         z_i_read_reg_263 <= z_i;
         z_i_read_reg_263_pp0_iter1_reg <= z_i_read_reg_263;
@@ -344,13 +344,13 @@ end
 
 assign abs5_cast_fu_195_p1 = $signed(abs5_reg_281);
 
-assign abs5_fu_163_p3 = ((abscond4_fu_157_p2[0:0] == 1'b1) ? sub_ln146_1_fu_107_p2 : neg3_fu_151_p2);
+assign abs5_fu_163_p3 = ((abscond4_fu_157_p2[0:0] == 1'b1) ? sub_ln143_1_fu_107_p2 : neg3_fu_151_p2);
 
-assign abs_fu_143_p3 = ((abscond_fu_137_p2[0:0] == 1'b1) ? trunc_ln146_fu_99_p1 : neg_fu_131_p2);
+assign abs_fu_143_p3 = ((abscond_fu_137_p2[0:0] == 1'b1) ? trunc_ln143_fu_99_p1 : neg_fu_131_p2);
 
-assign abscond4_fu_157_p2 = (($signed(sub_ln146_1_fu_107_p2) > $signed(4'd0)) ? 1'b1 : 1'b0);
+assign abscond4_fu_157_p2 = (($signed(sub_ln143_1_fu_107_p2) > $signed(4'd0)) ? 1'b1 : 1'b0);
 
-assign abscond_fu_137_p2 = (($signed(sub_ln146_fu_93_p2) > $signed(4'd0)) ? 1'b1 : 1'b0);
+assign abscond_fu_137_p2 = (($signed(sub_ln143_fu_93_p2) > $signed(4'd0)) ? 1'b1 : 1'b0);
 
 assign add_ln69_fu_243_p2 = ($signed(trunc_ln1_reg_311) + $signed(z_i_read_reg_263_pp0_iter5_reg));
 
@@ -384,7 +384,7 @@ assign ap_enable_reg_pp0_iter0 = ap_start;
 
 assign ap_return = ((tmp_1_reg_270_pp0_iter5_reg[0:0] == 1'b1) ? sub_ln69_fu_247_p2 : add_ln69_fu_243_p2);
 
-assign empty_53_fu_198_p2 = ($signed(empty_fu_189_p2) + $signed(abs5_cast_fu_195_p1));
+assign empty_55_fu_198_p2 = ($signed(empty_fu_189_p2) + $signed(abs5_cast_fu_195_p1));
 
 assign empty_fu_189_p2 = (tmp_fu_171_p3 - tmp_3_cast_fu_185_p1);
 
@@ -398,11 +398,11 @@ assign j_cast_fu_81_p1 = j;
 
 assign k_cast_fu_89_p1 = k;
 
-assign neg3_fu_151_p2 = ($signed(4'd0) - $signed(sub_ln146_1_fu_107_p2));
+assign neg3_fu_151_p2 = ($signed(4'd0) - $signed(sub_ln143_1_fu_107_p2));
 
-assign neg_fu_131_p2 = (3'd0 - trunc_ln146_fu_99_p1);
+assign neg_fu_131_p2 = (3'd0 - trunc_ln143_fu_99_p1);
 
-assign p_cast_fu_204_p1 = empty_53_fu_198_p2;
+assign p_cast_fu_204_p1 = empty_55_fu_198_p2;
 
 assign radiiDivisionList_address0 = p_cast_fu_204_p1;
 
@@ -412,9 +412,9 @@ assign sext_ln215_1_fu_212_p1 = z_i_read_reg_263_pp0_iter1_reg;
 
 assign sext_ln215_fu_209_p1 = $signed(z_j_read_reg_258_pp0_iter1_reg);
 
-assign sub_ln146_1_fu_107_p2 = (j_cast_fu_81_p1 - i_cast_fu_85_p1);
+assign sub_ln143_1_fu_107_p2 = (j_cast_fu_81_p1 - i_cast_fu_85_p1);
 
-assign sub_ln146_fu_93_p2 = (k_cast_fu_89_p1 - i_cast_fu_85_p1);
+assign sub_ln143_fu_93_p2 = (k_cast_fu_89_p1 - i_cast_fu_85_p1);
 
 assign sub_ln69_fu_247_p2 = ($signed(z_i_read_reg_263_pp0_iter5_reg) - $signed(trunc_ln1_reg_311));
 
@@ -424,6 +424,6 @@ assign tmp_3_fu_178_p3 = {{abs_reg_275}, {1'd0}};
 
 assign tmp_fu_171_p3 = {{abs_reg_275}, {3'd0}};
 
-assign trunc_ln146_fu_99_p1 = sub_ln146_fu_93_p2[2:0];
+assign trunc_ln143_fu_99_p1 = sub_ln143_fu_93_p2[2:0];
 
 endmodule //MPSQ_straightLineProjectorFromLayerIJtoK

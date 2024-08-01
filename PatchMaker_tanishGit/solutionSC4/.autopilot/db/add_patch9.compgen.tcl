@@ -72,10 +72,10 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     name patches_parameters \
     reset_level 1 \
     sync_rst true \
-    dir IO \
+    dir O \
     corename patches_parameters \
     op interface \
-    ports { patches_parameters_address0 { O 12 vector } patches_parameters_ce0 { O 1 bit } patches_parameters_we0 { O 1 bit } patches_parameters_d0 { O 32 vector } patches_parameters_q0 { I 32 vector } } \
+    ports { patches_parameters_address0 { O 12 vector } patches_parameters_ce0 { O 1 bit } patches_parameters_we0 { O 1 bit } patches_parameters_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters'"

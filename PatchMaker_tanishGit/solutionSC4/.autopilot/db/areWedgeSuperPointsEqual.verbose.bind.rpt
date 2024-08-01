@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'areWedgeSuperPointsEqual'
 ================================================================
-* Date:           Wed Jul 31 13:57:58 2024
+* Date:           Wed Jul 31 23:37:08 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -83,52 +83,52 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.83>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%wsp2_V_offset3_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp2_V_offset3"   --->   Operation 6 'read' 'wsp2_V_offset3_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%wsp2_V_offset_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %wsp2_V_offset"   --->   Operation 7 'read' 'wsp2_V_offset_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%wsp1_V_offset1_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp1_V_offset1"   --->   Operation 8 'read' 'wsp1_V_offset1_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%wsp1_V_offset_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %wsp1_V_offset"   --->   Operation 9 'read' 'wsp1_V_offset_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%wsp2_V_offset3_cast23 = zext i3 %wsp2_V_offset3_read"   --->   Operation 10 'zext' 'wsp2_V_offset3_cast23' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln23 = zext i5 %wsp2_V_offset_read" [patchMaker.cpp:23]   --->   Operation 11 'zext' 'zext_ln23' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i5.i2, i5 %wsp2_V_offset_read, i2 0" [patchMaker.cpp:23]   --->   Operation 12 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln23_1 = zext i7 %tmp" [patchMaker.cpp:23]   --->   Operation 13 'zext' 'zext_ln23_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln23 = add i8 %zext_ln23_1, i8 %zext_ln23" [patchMaker.cpp:23]   --->   Operation 14 'add' 'add_ln23' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_1 : Operation 15 [1/1] (0.83ns) (root node of TernaryAdder)   --->   "%add_ln23_1 = add i8 %add_ln23, i8 %wsp2_V_offset3_cast23" [patchMaker.cpp:23]   --->   Operation 15 'add' 'add_ln23_1' <Predicate = true> <Delay = 0.83> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%wsp1_V_offset1_cast25 = zext i3 %wsp1_V_offset1_read"   --->   Operation 16 'zext' 'wsp1_V_offset1_cast25' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln23_3 = zext i5 %wsp1_V_offset_read" [patchMaker.cpp:23]   --->   Operation 17 'zext' 'zext_ln23_3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i5.i2, i5 %wsp1_V_offset_read, i2 0" [patchMaker.cpp:23]   --->   Operation 18 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln23_4 = zext i7 %tmp_s" [patchMaker.cpp:23]   --->   Operation 19 'zext' 'zext_ln23_4' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln23_2 = add i8 %zext_ln23_4, i8 %zext_ln23_3" [patchMaker.cpp:23]   --->   Operation 20 'add' 'add_ln23_2' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_1 : Operation 21 [1/1] (0.83ns) (root node of TernaryAdder)   --->   "%add_ln23_3 = add i8 %add_ln23_2, i8 %wsp1_V_offset1_cast25" [patchMaker.cpp:23]   --->   Operation 21 'add' 'add_ln23_3' <Predicate = true> <Delay = 0.83> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%wsp2_offset3_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp2_offset3"   --->   Operation 6 'read' 'wsp2_offset3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%wsp2_offset_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %wsp2_offset"   --->   Operation 7 'read' 'wsp2_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%wsp1_offset1_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp1_offset1"   --->   Operation 8 'read' 'wsp1_offset1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%wsp1_offset_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %wsp1_offset"   --->   Operation 9 'read' 'wsp1_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%wsp2_offset3_cast23 = zext i3 %wsp2_offset3_read"   --->   Operation 10 'zext' 'wsp2_offset3_cast23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln869 = zext i5 %wsp2_offset_read"   --->   Operation 11 'zext' 'zext_ln869' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i5.i2, i5 %wsp2_offset_read, i2 0"   --->   Operation 12 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln869_1 = zext i7 %tmp"   --->   Operation 13 'zext' 'zext_ln869_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln869 = add i8 %zext_ln869_1, i8 %zext_ln869"   --->   Operation 14 'add' 'add_ln869' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_1 : Operation 15 [1/1] (0.83ns) (root node of TernaryAdder)   --->   "%add_ln869_1 = add i8 %add_ln869, i8 %wsp2_offset3_cast23"   --->   Operation 15 'add' 'add_ln869_1' <Predicate = true> <Delay = 0.83> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%wsp1_offset1_cast25 = zext i3 %wsp1_offset1_read"   --->   Operation 16 'zext' 'wsp1_offset1_cast25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln0 = zext i5 %wsp1_offset_read"   --->   Operation 17 'zext' 'zext_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i5.i2, i5 %wsp1_offset_read, i2 0"   --->   Operation 18 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln0_1 = zext i7 %tmp_s"   --->   Operation 19 'zext' 'zext_ln0_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln0 = add i8 %zext_ln0_1, i8 %zext_ln0"   --->   Operation 20 'add' 'add_ln0' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_1 : Operation 21 [1/1] (0.83ns) (root node of TernaryAdder)   --->   "%add_ln0_1 = add i8 %add_ln0, i8 %wsp1_offset1_cast25"   --->   Operation 21 'add' 'add_ln0_1' <Predicate = true> <Delay = 0.83> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
 
 State 2 <SV = 1> <Delay = 1.64>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_32 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln23_1, i4 0" [patchMaker.cpp:23]   --->   Operation 22 'bitconcatenate' 'tmp_32' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln23_2 = zext i12 %tmp_32" [patchMaker.cpp:23]   --->   Operation 23 'zext' 'zext_ln23_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%wsp2_V_addr = getelementptr i64 %wsp2_V, i64 0, i64 %zext_ln23_2" [patchMaker.cpp:23]   --->   Operation 24 'getelementptr' 'wsp2_V_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_33 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln23_3, i4 0" [patchMaker.cpp:23]   --->   Operation 25 'bitconcatenate' 'tmp_33' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln23_5 = zext i12 %tmp_33" [patchMaker.cpp:23]   --->   Operation 26 'zext' 'zext_ln23_5' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%wsp2_V_addr_1 = getelementptr i64 %wsp2_V, i64 0, i64 %zext_ln23_5" [patchMaker.cpp:23]   --->   Operation 27 'getelementptr' 'wsp2_V_addr_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 28 [2/2] (1.64ns)   --->   "%wsp2_V_load_2 = load i12 %wsp2_V_addr_1"   --->   Operation 28 'load' 'wsp2_V_load_2' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_2 : Operation 29 [2/2] (1.64ns)   --->   "%wsp2_V_load = load i12 %wsp2_V_addr"   --->   Operation 29 'load' 'wsp2_V_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_32 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln869_1, i4 0"   --->   Operation 22 'bitconcatenate' 'tmp_32' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln869_2 = zext i12 %tmp_32"   --->   Operation 23 'zext' 'zext_ln869_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%wsp2_addr = getelementptr i64 %wsp2, i64 0, i64 %zext_ln869_2"   --->   Operation 24 'getelementptr' 'wsp2_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_33 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln0_1, i4 0"   --->   Operation 25 'bitconcatenate' 'tmp_33' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln0_2 = zext i12 %tmp_33"   --->   Operation 26 'zext' 'zext_ln0_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%wsp2_addr_1 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln0_2"   --->   Operation 27 'getelementptr' 'wsp2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [2/2] (1.64ns)   --->   "%wsp2_load_2 = load i12 %wsp2_addr_1"   --->   Operation 28 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_2 : Operation 29 [2/2] (1.64ns)   --->   "%wsp2_load = load i12 %wsp2_addr"   --->   Operation 29 'load' 'wsp2_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
 
 State 3 <SV = 2> <Delay = 1.64>
 ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%or_ln870 = or i12 %tmp_32, i12 15"   --->   Operation 30 'or' 'or_ln870' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln870 = zext i12 %or_ln870"   --->   Operation 31 'zext' 'zext_ln870' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%wsp2_V_addr_3 = getelementptr i64 %wsp2_V, i64 0, i64 %zext_ln870"   --->   Operation 32 'getelementptr' 'wsp2_V_addr_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%wsp2_addr_3 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870"   --->   Operation 32 'getelementptr' 'wsp2_addr_3' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%or_ln870_1 = or i12 %tmp_33, i12 15"   --->   Operation 33 'or' 'or_ln870_1' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln870_1 = zext i12 %or_ln870_1"   --->   Operation 34 'zext' 'zext_ln870_1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%wsp2_V_addr_2 = getelementptr i64 %wsp2_V, i64 0, i64 %zext_ln870_1"   --->   Operation 35 'getelementptr' 'wsp2_V_addr_2' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 36 [1/2] (1.64ns)   --->   "%wsp2_V_load_2 = load i12 %wsp2_V_addr_1"   --->   Operation 36 'load' 'wsp2_V_load_2' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_3 : Operation 37 [1/2] (1.64ns)   --->   "%wsp2_V_load = load i12 %wsp2_V_addr"   --->   Operation 37 'load' 'wsp2_V_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_3 : Operation 38 [2/2] (1.64ns)   --->   "%wsp2_V_load_3 = load i12 %wsp2_V_addr_2"   --->   Operation 38 'load' 'wsp2_V_load_3' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_3 : Operation 39 [2/2] (1.64ns)   --->   "%wsp2_V_load_1 = load i12 %wsp2_V_addr_3"   --->   Operation 39 'load' 'wsp2_V_load_1' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%wsp2_addr_2 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870_1"   --->   Operation 35 'getelementptr' 'wsp2_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/2] (1.64ns)   --->   "%wsp2_load_2 = load i12 %wsp2_addr_1"   --->   Operation 36 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_3 : Operation 37 [1/2] (1.64ns)   --->   "%wsp2_load = load i12 %wsp2_addr"   --->   Operation 37 'load' 'wsp2_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_3 : Operation 38 [2/2] (1.64ns)   --->   "%wsp2_load_3 = load i12 %wsp2_addr_2"   --->   Operation 38 'load' 'wsp2_load_3' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_3 : Operation 39 [2/2] (1.64ns)   --->   "%wsp2_load_1 = load i12 %wsp2_addr_3"   --->   Operation 39 'load' 'wsp2_load_1' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
 
 State 4 <SV = 3> <Delay = 1.64>
-ST_4 : Operation 40 [1/1] (1.06ns)   --->   "%icmp_ln870 = icmp_eq  i64 %wsp2_V_load_2, i64 %wsp2_V_load"   --->   Operation 40 'icmp' 'icmp_ln870' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 41 [1/2] (1.64ns)   --->   "%wsp2_V_load_3 = load i12 %wsp2_V_addr_2"   --->   Operation 41 'load' 'wsp2_V_load_3' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_4 : Operation 42 [1/2] (1.64ns)   --->   "%wsp2_V_load_1 = load i12 %wsp2_V_addr_3"   --->   Operation 42 'load' 'wsp2_V_load_1' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_4 : Operation 40 [1/1] (1.06ns)   --->   "%icmp_ln870 = icmp_eq  i64 %wsp2_load_2, i64 %wsp2_load"   --->   Operation 40 'icmp' 'icmp_ln870' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/2] (1.64ns)   --->   "%wsp2_load_3 = load i12 %wsp2_addr_2"   --->   Operation 41 'load' 'wsp2_load_3' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+ST_4 : Operation 42 [1/2] (1.64ns)   --->   "%wsp2_load_1 = load i12 %wsp2_addr_3"   --->   Operation 42 'load' 'wsp2_load_1' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
 
 State 5 <SV = 4> <Delay = 1.18>
-ST_5 : Operation 43 [1/1] (1.06ns)   --->   "%icmp_ln870_1 = icmp_eq  i64 %wsp2_V_load_3, i64 %wsp2_V_load_1"   --->   Operation 43 'icmp' 'icmp_ln870_1' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 43 [1/1] (1.06ns)   --->   "%icmp_ln870_1 = icmp_eq  i64 %wsp2_load_3, i64 %wsp2_load_1"   --->   Operation 43 'icmp' 'icmp_ln870_1' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 44 [1/1] (0.12ns)   --->   "%and_ln870 = and i1 %icmp_ln870, i1 %icmp_ln870_1"   --->   Operation 44 'and' 'and_ln870' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%ret_ln37 = ret i1 %and_ln870" [patchMaker.cpp:37]   --->   Operation 45 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
 
@@ -144,101 +144,101 @@ STG Binding:
 - Is pipelined: 1
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ wsp2_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ wsp1_V_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ wsp1_V_offset1]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ wsp2_V_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ wsp2_V_offset3]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ wsp2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ wsp1_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ wsp1_offset1]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ wsp2_offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ wsp2_offset3]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
 
 <LifeTime>
 <method=bitvector/>
-wsp2_V_offset3_read   (read          ) [ 000000]
-wsp2_V_offset_read    (read          ) [ 000000]
-wsp1_V_offset1_read   (read          ) [ 000000]
-wsp1_V_offset_read    (read          ) [ 000000]
-wsp2_V_offset3_cast23 (zext          ) [ 000000]
-zext_ln23             (zext          ) [ 000000]
-tmp                   (bitconcatenate) [ 000000]
-zext_ln23_1           (zext          ) [ 000000]
-add_ln23              (add           ) [ 000000]
-add_ln23_1            (add           ) [ 001000]
-wsp1_V_offset1_cast25 (zext          ) [ 000000]
-zext_ln23_3           (zext          ) [ 000000]
-tmp_s                 (bitconcatenate) [ 000000]
-zext_ln23_4           (zext          ) [ 000000]
-add_ln23_2            (add           ) [ 000000]
-add_ln23_3            (add           ) [ 001000]
-tmp_32                (bitconcatenate) [ 010100]
-zext_ln23_2           (zext          ) [ 000000]
-wsp2_V_addr           (getelementptr ) [ 010100]
-tmp_33                (bitconcatenate) [ 010100]
-zext_ln23_5           (zext          ) [ 000000]
-wsp2_V_addr_1         (getelementptr ) [ 010100]
-or_ln870              (or            ) [ 000000]
-zext_ln870            (zext          ) [ 000000]
-wsp2_V_addr_3         (getelementptr ) [ 001010]
-or_ln870_1            (or            ) [ 000000]
-zext_ln870_1          (zext          ) [ 000000]
-wsp2_V_addr_2         (getelementptr ) [ 001010]
-wsp2_V_load_2         (load          ) [ 001010]
-wsp2_V_load           (load          ) [ 001010]
-icmp_ln870            (icmp          ) [ 010001]
-wsp2_V_load_3         (load          ) [ 010001]
-wsp2_V_load_1         (load          ) [ 010001]
-icmp_ln870_1          (icmp          ) [ 000000]
-and_ln870             (and           ) [ 000000]
-ret_ln37              (ret           ) [ 000000]
+wsp2_offset3_read   (read          ) [ 000000]
+wsp2_offset_read    (read          ) [ 000000]
+wsp1_offset1_read   (read          ) [ 000000]
+wsp1_offset_read    (read          ) [ 000000]
+wsp2_offset3_cast23 (zext          ) [ 000000]
+zext_ln869          (zext          ) [ 000000]
+tmp                 (bitconcatenate) [ 000000]
+zext_ln869_1        (zext          ) [ 000000]
+add_ln869           (add           ) [ 000000]
+add_ln869_1         (add           ) [ 001000]
+wsp1_offset1_cast25 (zext          ) [ 000000]
+zext_ln0            (zext          ) [ 000000]
+tmp_s               (bitconcatenate) [ 000000]
+zext_ln0_1          (zext          ) [ 000000]
+add_ln0             (add           ) [ 000000]
+add_ln0_1           (add           ) [ 001000]
+tmp_32              (bitconcatenate) [ 010100]
+zext_ln869_2        (zext          ) [ 000000]
+wsp2_addr           (getelementptr ) [ 010100]
+tmp_33              (bitconcatenate) [ 010100]
+zext_ln0_2          (zext          ) [ 000000]
+wsp2_addr_1         (getelementptr ) [ 010100]
+or_ln870            (or            ) [ 000000]
+zext_ln870          (zext          ) [ 000000]
+wsp2_addr_3         (getelementptr ) [ 001010]
+or_ln870_1          (or            ) [ 000000]
+zext_ln870_1        (zext          ) [ 000000]
+wsp2_addr_2         (getelementptr ) [ 001010]
+wsp2_load_2         (load          ) [ 001010]
+wsp2_load           (load          ) [ 001010]
+icmp_ln870          (icmp          ) [ 010001]
+wsp2_load_3         (load          ) [ 010001]
+wsp2_load_1         (load          ) [ 010001]
+icmp_ln870_1        (icmp          ) [ 000000]
+and_ln870           (and           ) [ 000000]
+ret_ln37            (ret           ) [ 000000]
 </LifeTime>
 
 <model>
 
 <comp_list>
-<comp id="0" class="1000" name="wsp2_V">
+<comp id="0" class="1000" name="wsp2">
 <pin_list>
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="wsp2_V"/><MemPortTyVec>1 1 </MemPortTyVec>
+<StgValue><ssdm name="wsp2"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="wsp1_V_offset">
+<comp id="2" class="1000" name="wsp1_offset">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="wsp1_V_offset"/></StgValue>
+<StgValue><ssdm name="wsp1_offset"/></StgValue>
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="wsp1_V_offset1">
+<comp id="4" class="1000" name="wsp1_offset1">
 <pin_list>
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="wsp1_V_offset1"/></StgValue>
+<StgValue><ssdm name="wsp1_offset1"/></StgValue>
 </bind>
 </comp>
 
-<comp id="6" class="1000" name="wsp2_V_offset">
+<comp id="6" class="1000" name="wsp2_offset">
 <pin_list>
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="wsp2_V_offset"/></StgValue>
+<StgValue><ssdm name="wsp2_offset"/></StgValue>
 </bind>
 </comp>
 
-<comp id="8" class="1000" name="wsp2_V_offset3">
+<comp id="8" class="1000" name="wsp2_offset3">
 <pin_list>
 <pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="wsp2_V_offset3"/></StgValue>
+<StgValue><ssdm name="wsp2_offset3"/></StgValue>
 </bind>
 </comp>
 
@@ -314,7 +314,7 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="26" class="1004" name="wsp2_V_offset3_read_read_fu_26">
+<comp id="26" class="1004" name="wsp2_offset3_read_read_fu_26">
 <pin_list>
 <pin id="27" dir="0" index="0" bw="3" slack="0"/>
 <pin id="28" dir="0" index="1" bw="3" slack="0"/>
@@ -322,11 +322,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="wsp2_V_offset3_read/1 "/>
+<opset="wsp2_offset3_read/1 "/>
 </bind>
 </comp>
 
-<comp id="32" class="1004" name="wsp2_V_offset_read_read_fu_32">
+<comp id="32" class="1004" name="wsp2_offset_read_read_fu_32">
 <pin_list>
 <pin id="33" dir="0" index="0" bw="5" slack="0"/>
 <pin id="34" dir="0" index="1" bw="5" slack="0"/>
@@ -334,11 +334,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="wsp2_V_offset_read/1 "/>
+<opset="wsp2_offset_read/1 "/>
 </bind>
 </comp>
 
-<comp id="38" class="1004" name="wsp1_V_offset1_read_read_fu_38">
+<comp id="38" class="1004" name="wsp1_offset1_read_read_fu_38">
 <pin_list>
 <pin id="39" dir="0" index="0" bw="3" slack="0"/>
 <pin id="40" dir="0" index="1" bw="3" slack="0"/>
@@ -346,11 +346,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="wsp1_V_offset1_read/1 "/>
+<opset="wsp1_offset1_read/1 "/>
 </bind>
 </comp>
 
-<comp id="44" class="1004" name="wsp1_V_offset_read_read_fu_44">
+<comp id="44" class="1004" name="wsp1_offset_read_read_fu_44">
 <pin_list>
 <pin id="45" dir="0" index="0" bw="5" slack="0"/>
 <pin id="46" dir="0" index="1" bw="5" slack="0"/>
@@ -358,11 +358,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="wsp1_V_offset_read/1 "/>
+<opset="wsp1_offset_read/1 "/>
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="wsp2_V_addr_gep_fu_50">
+<comp id="50" class="1004" name="wsp2_addr_gep_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="64" slack="0"/>
 <pin id="52" dir="0" index="1" bw="1" slack="0"/>
@@ -371,11 +371,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="wsp2_V_addr/2 "/>
+<opset="wsp2_addr/2 "/>
 </bind>
 </comp>
 
-<comp id="57" class="1004" name="wsp2_V_addr_1_gep_fu_57">
+<comp id="57" class="1004" name="wsp2_addr_1_gep_fu_57">
 <pin_list>
 <pin id="58" dir="0" index="0" bw="64" slack="0"/>
 <pin id="59" dir="0" index="1" bw="1" slack="0"/>
@@ -384,7 +384,7 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="wsp2_V_addr_1/2 "/>
+<opset="wsp2_addr_1/2 "/>
 </bind>
 </comp>
 
@@ -401,11 +401,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="wsp2_V_load_2/2 wsp2_V_load/2 wsp2_V_load_3/3 wsp2_V_load_1/3 "/>
+<opset="wsp2_load_2/2 wsp2_load/2 wsp2_load_3/3 wsp2_load_1/3 "/>
 </bind>
 </comp>
 
-<comp id="75" class="1004" name="wsp2_V_addr_3_gep_fu_75">
+<comp id="75" class="1004" name="wsp2_addr_3_gep_fu_75">
 <pin_list>
 <pin id="76" dir="0" index="0" bw="64" slack="0"/>
 <pin id="77" dir="0" index="1" bw="1" slack="0"/>
@@ -414,11 +414,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="wsp2_V_addr_3/3 "/>
+<opset="wsp2_addr_3/3 "/>
 </bind>
 </comp>
 
-<comp id="82" class="1004" name="wsp2_V_addr_2_gep_fu_82">
+<comp id="82" class="1004" name="wsp2_addr_2_gep_fu_82">
 <pin_list>
 <pin id="83" dir="0" index="0" bw="64" slack="0"/>
 <pin id="84" dir="0" index="1" bw="1" slack="0"/>
@@ -427,7 +427,7 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="wsp2_V_addr_2/3 "/>
+<opset="wsp2_addr_2/3 "/>
 </bind>
 </comp>
 
@@ -437,7 +437,7 @@ ret_ln37              (ret           ) [ 000000]
 <pin id="93" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="wsp2_V_load_2 wsp2_V_load_3 "/>
+<opset="wsp2_load_2 wsp2_load_3 "/>
 </bind>
 </comp>
 
@@ -447,7 +447,7 @@ ret_ln37              (ret           ) [ 000000]
 <pin id="97" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="wsp2_V_load wsp2_V_load_1 "/>
+<opset="wsp2_load wsp2_load_1 "/>
 </bind>
 </comp>
 
@@ -463,25 +463,25 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="105" class="1004" name="wsp2_V_offset3_cast23_fu_105">
+<comp id="105" class="1004" name="wsp2_offset3_cast23_fu_105">
 <pin_list>
 <pin id="106" dir="0" index="0" bw="3" slack="0"/>
 <pin id="107" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="wsp2_V_offset3_cast23/1 "/>
+<opset="wsp2_offset3_cast23/1 "/>
 </bind>
 </comp>
 
-<comp id="109" class="1004" name="zext_ln23_fu_109">
+<comp id="109" class="1004" name="zext_ln869_fu_109">
 <pin_list>
 <pin id="110" dir="0" index="0" bw="5" slack="0"/>
 <pin id="111" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln23/1 "/>
+<opset="zext_ln869/1 "/>
 </bind>
 </comp>
 
@@ -498,18 +498,18 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="121" class="1004" name="zext_ln23_1_fu_121">
+<comp id="121" class="1004" name="zext_ln869_1_fu_121">
 <pin_list>
 <pin id="122" dir="0" index="0" bw="7" slack="0"/>
 <pin id="123" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln23_1/1 "/>
+<opset="zext_ln869_1/1 "/>
 </bind>
 </comp>
 
-<comp id="125" class="1004" name="add_ln23_fu_125">
+<comp id="125" class="1004" name="add_ln869_fu_125">
 <pin_list>
 <pin id="126" dir="0" index="0" bw="7" slack="0"/>
 <pin id="127" dir="0" index="1" bw="5" slack="0"/>
@@ -517,11 +517,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln23/1 "/>
+<opset="add_ln869/1 "/>
 </bind>
 </comp>
 
-<comp id="131" class="1004" name="add_ln23_1_fu_131">
+<comp id="131" class="1004" name="add_ln869_1_fu_131">
 <pin_list>
 <pin id="132" dir="0" index="0" bw="8" slack="0"/>
 <pin id="133" dir="0" index="1" bw="3" slack="0"/>
@@ -529,29 +529,29 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln23_1/1 "/>
+<opset="add_ln869_1/1 "/>
 </bind>
 </comp>
 
-<comp id="137" class="1004" name="wsp1_V_offset1_cast25_fu_137">
+<comp id="137" class="1004" name="wsp1_offset1_cast25_fu_137">
 <pin_list>
 <pin id="138" dir="0" index="0" bw="3" slack="0"/>
 <pin id="139" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="wsp1_V_offset1_cast25/1 "/>
+<opset="wsp1_offset1_cast25/1 "/>
 </bind>
 </comp>
 
-<comp id="141" class="1004" name="zext_ln23_3_fu_141">
+<comp id="141" class="1004" name="zext_ln0_fu_141">
 <pin_list>
 <pin id="142" dir="0" index="0" bw="5" slack="0"/>
 <pin id="143" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln23_3/1 "/>
+<opset="zext_ln0/1 "/>
 </bind>
 </comp>
 
@@ -568,18 +568,18 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="153" class="1004" name="zext_ln23_4_fu_153">
+<comp id="153" class="1004" name="zext_ln0_1_fu_153">
 <pin_list>
 <pin id="154" dir="0" index="0" bw="7" slack="0"/>
 <pin id="155" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln23_4/1 "/>
+<opset="zext_ln0_1/1 "/>
 </bind>
 </comp>
 
-<comp id="157" class="1004" name="add_ln23_2_fu_157">
+<comp id="157" class="1004" name="add_ln0_fu_157">
 <pin_list>
 <pin id="158" dir="0" index="0" bw="7" slack="0"/>
 <pin id="159" dir="0" index="1" bw="5" slack="0"/>
@@ -587,11 +587,11 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln23_2/1 "/>
+<opset="add_ln0/1 "/>
 </bind>
 </comp>
 
-<comp id="163" class="1004" name="add_ln23_3_fu_163">
+<comp id="163" class="1004" name="add_ln0_1_fu_163">
 <pin_list>
 <pin id="164" dir="0" index="0" bw="8" slack="0"/>
 <pin id="165" dir="0" index="1" bw="3" slack="0"/>
@@ -599,7 +599,7 @@ ret_ln37              (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln23_3/1 "/>
+<opset="add_ln0_1/1 "/>
 </bind>
 </comp>
 
@@ -616,14 +616,14 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="176" class="1004" name="zext_ln23_2_fu_176">
+<comp id="176" class="1004" name="zext_ln869_2_fu_176">
 <pin_list>
 <pin id="177" dir="0" index="0" bw="12" slack="0"/>
 <pin id="178" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln23_2/2 "/>
+<opset="zext_ln869_2/2 "/>
 </bind>
 </comp>
 
@@ -640,14 +640,14 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="188" class="1004" name="zext_ln23_5_fu_188">
+<comp id="188" class="1004" name="zext_ln0_2_fu_188">
 <pin_list>
 <pin id="189" dir="0" index="0" bw="12" slack="0"/>
 <pin id="190" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln23_5/2 "/>
+<opset="zext_ln0_2/2 "/>
 </bind>
 </comp>
 
@@ -709,23 +709,23 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="218" class="1005" name="add_ln23_1_reg_218">
+<comp id="218" class="1005" name="add_ln869_1_reg_218">
 <pin_list>
 <pin id="219" dir="0" index="0" bw="8" slack="1"/>
 <pin id="220" dir="1" index="1" bw="8" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln23_1 "/>
+<opset="add_ln869_1 "/>
 </bind>
 </comp>
 
-<comp id="223" class="1005" name="add_ln23_3_reg_223">
+<comp id="223" class="1005" name="add_ln0_1_reg_223">
 <pin_list>
 <pin id="224" dir="0" index="0" bw="8" slack="1"/>
 <pin id="225" dir="1" index="1" bw="8" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln23_3 "/>
+<opset="add_ln0_1 "/>
 </bind>
 </comp>
 
@@ -739,13 +739,13 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="233" class="1005" name="wsp2_V_addr_reg_233">
+<comp id="233" class="1005" name="wsp2_addr_reg_233">
 <pin_list>
 <pin id="234" dir="0" index="0" bw="12" slack="1"/>
 <pin id="235" dir="1" index="1" bw="12" slack="1"/>
 </pin_list>
 <bind>
-<opset="wsp2_V_addr "/>
+<opset="wsp2_addr "/>
 </bind>
 </comp>
 
@@ -759,33 +759,33 @@ ret_ln37              (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="243" class="1005" name="wsp2_V_addr_1_reg_243">
+<comp id="243" class="1005" name="wsp2_addr_1_reg_243">
 <pin_list>
 <pin id="244" dir="0" index="0" bw="12" slack="1"/>
 <pin id="245" dir="1" index="1" bw="12" slack="1"/>
 </pin_list>
 <bind>
-<opset="wsp2_V_addr_1 "/>
+<opset="wsp2_addr_1 "/>
 </bind>
 </comp>
 
-<comp id="248" class="1005" name="wsp2_V_addr_3_reg_248">
+<comp id="248" class="1005" name="wsp2_addr_3_reg_248">
 <pin_list>
 <pin id="249" dir="0" index="0" bw="12" slack="1"/>
 <pin id="250" dir="1" index="1" bw="12" slack="1"/>
 </pin_list>
 <bind>
-<opset="wsp2_V_addr_3 "/>
+<opset="wsp2_addr_3 "/>
 </bind>
 </comp>
 
-<comp id="253" class="1005" name="wsp2_V_addr_2_reg_253">
+<comp id="253" class="1005" name="wsp2_addr_2_reg_253">
 <pin_list>
 <pin id="254" dir="0" index="0" bw="12" slack="1"/>
 <pin id="255" dir="1" index="1" bw="12" slack="1"/>
 </pin_list>
 <bind>
-<opset="wsp2_V_addr_2 "/>
+<opset="wsp2_addr_2 "/>
 </bind>
 </comp>
 
@@ -964,31 +964,31 @@ ret_ln37              (ret           ) [ 000000]
 * FSMD analyzer results:
   - Output states:
  - Input state : 
-	Port: areWedgeSuperPointsEqual : wsp2_V | {2 3 4 }
-	Port: areWedgeSuperPointsEqual : wsp1_V_offset | {1 }
-	Port: areWedgeSuperPointsEqual : wsp1_V_offset1 | {1 }
-	Port: areWedgeSuperPointsEqual : wsp2_V_offset | {1 }
-	Port: areWedgeSuperPointsEqual : wsp2_V_offset3 | {1 }
+	Port: areWedgeSuperPointsEqual : wsp2 | {2 3 4 }
+	Port: areWedgeSuperPointsEqual : wsp1_offset | {1 }
+	Port: areWedgeSuperPointsEqual : wsp1_offset1 | {1 }
+	Port: areWedgeSuperPointsEqual : wsp2_offset | {1 }
+	Port: areWedgeSuperPointsEqual : wsp2_offset3 | {1 }
   - Chain level:
 	State 1
-		zext_ln23_1 : 1
-		add_ln23 : 2
-		add_ln23_1 : 3
-		zext_ln23_4 : 1
-		add_ln23_2 : 2
-		add_ln23_3 : 3
+		zext_ln869_1 : 1
+		add_ln869 : 2
+		add_ln869_1 : 3
+		zext_ln0_1 : 1
+		add_ln0 : 2
+		add_ln0_1 : 3
 	State 2
-		zext_ln23_2 : 1
-		wsp2_V_addr : 2
-		zext_ln23_5 : 1
-		wsp2_V_addr_1 : 2
-		wsp2_V_load_2 : 3
-		wsp2_V_load : 3
+		zext_ln869_2 : 1
+		wsp2_addr : 2
+		zext_ln0_2 : 1
+		wsp2_addr_1 : 2
+		wsp2_load_2 : 3
+		wsp2_load : 3
 	State 3
-		wsp2_V_addr_3 : 1
-		wsp2_V_addr_2 : 1
-		wsp2_V_load_3 : 2
-		wsp2_V_load_1 : 2
+		wsp2_addr_3 : 1
+		wsp2_addr_2 : 1
+		wsp2_load_3 : 2
+		wsp2_load_1 : 2
 	State 4
 	State 5
 		and_ln870 : 1
@@ -1000,66 +1000,66 @@ ret_ln37              (ret           ) [ 000000]
 ============================================================
 
 * Functional unit list:
-|----------|--------------------------------|---------|---------|
-| Operation|         Functional Unit        |    FF   |   LUT   |
-|----------|--------------------------------|---------|---------|
-|          |         add_ln23_fu_125        |    0    |    19   |
-|    add   |        add_ln23_1_fu_131       |    0    |    19   |
-|          |        add_ln23_2_fu_157       |    0    |    19   |
-|          |        add_ln23_3_fu_163       |    0    |    19   |
-|----------|--------------------------------|---------|---------|
-|   icmp   |            grp_fu_99           |    0    |    29   |
-|----------|--------------------------------|---------|---------|
-|    and   |        and_ln870_fu_213        |    0    |    2    |
-|----------|--------------------------------|---------|---------|
-|          | wsp2_V_offset3_read_read_fu_26 |    0    |    0    |
-|   read   |  wsp2_V_offset_read_read_fu_32 |    0    |    0    |
-|          | wsp1_V_offset1_read_read_fu_38 |    0    |    0    |
-|          |  wsp1_V_offset_read_read_fu_44 |    0    |    0    |
-|----------|--------------------------------|---------|---------|
-|          |  wsp2_V_offset3_cast23_fu_105  |    0    |    0    |
-|          |        zext_ln23_fu_109        |    0    |    0    |
-|          |       zext_ln23_1_fu_121       |    0    |    0    |
-|          |  wsp1_V_offset1_cast25_fu_137  |    0    |    0    |
-|   zext   |       zext_ln23_3_fu_141       |    0    |    0    |
-|          |       zext_ln23_4_fu_153       |    0    |    0    |
-|          |       zext_ln23_2_fu_176       |    0    |    0    |
-|          |       zext_ln23_5_fu_188       |    0    |    0    |
-|          |        zext_ln870_fu_198       |    0    |    0    |
-|          |       zext_ln870_1_fu_208      |    0    |    0    |
-|----------|--------------------------------|---------|---------|
-|          |           tmp_fu_113           |    0    |    0    |
-|bitconcatenate|          tmp_s_fu_145          |    0    |    0    |
-|          |          tmp_32_fu_169         |    0    |    0    |
-|          |          tmp_33_fu_181         |    0    |    0    |
-|----------|--------------------------------|---------|---------|
-|    or    |         or_ln870_fu_193        |    0    |    0    |
-|          |        or_ln870_1_fu_203       |    0    |    0    |
-|----------|--------------------------------|---------|---------|
-|   Total  |                                |    0    |   107   |
-|----------|--------------------------------|---------|---------|
+|----------|------------------------------|---------|---------|
+| Operation|        Functional Unit       |    FF   |   LUT   |
+|----------|------------------------------|---------|---------|
+|          |       add_ln869_fu_125       |    0    |    19   |
+|    add   |      add_ln869_1_fu_131      |    0    |    19   |
+|          |        add_ln0_fu_157        |    0    |    19   |
+|          |       add_ln0_1_fu_163       |    0    |    19   |
+|----------|------------------------------|---------|---------|
+|   icmp   |           grp_fu_99          |    0    |    29   |
+|----------|------------------------------|---------|---------|
+|    and   |       and_ln870_fu_213       |    0    |    2    |
+|----------|------------------------------|---------|---------|
+|          | wsp2_offset3_read_read_fu_26 |    0    |    0    |
+|   read   |  wsp2_offset_read_read_fu_32 |    0    |    0    |
+|          | wsp1_offset1_read_read_fu_38 |    0    |    0    |
+|          |  wsp1_offset_read_read_fu_44 |    0    |    0    |
+|----------|------------------------------|---------|---------|
+|          |  wsp2_offset3_cast23_fu_105  |    0    |    0    |
+|          |       zext_ln869_fu_109      |    0    |    0    |
+|          |      zext_ln869_1_fu_121     |    0    |    0    |
+|          |  wsp1_offset1_cast25_fu_137  |    0    |    0    |
+|   zext   |        zext_ln0_fu_141       |    0    |    0    |
+|          |       zext_ln0_1_fu_153      |    0    |    0    |
+|          |      zext_ln869_2_fu_176     |    0    |    0    |
+|          |       zext_ln0_2_fu_188      |    0    |    0    |
+|          |       zext_ln870_fu_198      |    0    |    0    |
+|          |      zext_ln870_1_fu_208     |    0    |    0    |
+|----------|------------------------------|---------|---------|
+|          |          tmp_fu_113          |    0    |    0    |
+|bitconcatenate|         tmp_s_fu_145         |    0    |    0    |
+|          |         tmp_32_fu_169        |    0    |    0    |
+|          |         tmp_33_fu_181        |    0    |    0    |
+|----------|------------------------------|---------|---------|
+|    or    |        or_ln870_fu_193       |    0    |    0    |
+|          |       or_ln870_1_fu_203      |    0    |    0    |
+|----------|------------------------------|---------|---------|
+|   Total  |                              |    0    |   107   |
+|----------|------------------------------|---------|---------|
 
 Memories:
 N/A
 
 * Register list:
-+---------------------+--------+
-|                     |   FF   |
-+---------------------+--------+
-|  add_ln23_1_reg_218 |    8   |
-|  add_ln23_3_reg_223 |    8   |
-|  icmp_ln870_reg_258 |    1   |
-|        reg_91       |   64   |
-|        reg_95       |   64   |
-|    tmp_32_reg_228   |   12   |
-|    tmp_33_reg_238   |   12   |
-|wsp2_V_addr_1_reg_243|   12   |
-|wsp2_V_addr_2_reg_253|   12   |
-|wsp2_V_addr_3_reg_248|   12   |
-| wsp2_V_addr_reg_233 |   12   |
-+---------------------+--------+
-|        Total        |   217  |
-+---------------------+--------+
++-------------------+--------+
+|                   |   FF   |
++-------------------+--------+
+| add_ln0_1_reg_223 |    8   |
+|add_ln869_1_reg_218|    8   |
+| icmp_ln870_reg_258|    1   |
+|       reg_91      |   64   |
+|       reg_95      |   64   |
+|   tmp_32_reg_228  |   12   |
+|   tmp_33_reg_238  |   12   |
+|wsp2_addr_1_reg_243|   12   |
+|wsp2_addr_2_reg_253|   12   |
+|wsp2_addr_3_reg_248|   12   |
+| wsp2_addr_reg_233 |   12   |
++-------------------+--------+
+|       Total       |   217  |
++-------------------+--------+
 
 * Multiplexer (MUX) list: 
 |------------------|------|------|------|--------||---------||---------|

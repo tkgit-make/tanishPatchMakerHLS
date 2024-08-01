@@ -13,6 +13,7 @@ add_files -tb tanishTestBench/cppOutput.txt -cflags "-Wno-unknown-pragmas" -csim
 open_solution "solutionSC4" -flow_target vivado
 set_part {xcvu19p-fsvb3824-2-e}
 create_clock -period 3 -name default
+config_export -format ip_catalog -rtl verilog
 source "./PatchMaker_tanishGit/solutionSC4/directives.tcl"
 csim_design
 csynth_design

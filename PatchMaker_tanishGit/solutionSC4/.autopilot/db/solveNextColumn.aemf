@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722448766491">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722483518309">
   <ports id="1" name="n_patches" type="PortType" coreId="673201714" bitwidth="8" direction="DirInOut">
     <dataInputObjs>read</dataInputObjs>
     <dataInputObjs>call</dataInputObjs>
@@ -12,17 +12,17 @@
   <ports id="3" name="apexZ0" type="PortType" coreId="673201714" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="ppl" type="PortType" coreId="673201714" bitwidth="32">
+  <ports id="4" name="ppl" type="PortType" coreId="1294316379" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="GDarrayDecoded" type="PortType" coreName="RAM" coreId="673201714" bitwidth="32" iftype="IfTypeRegister" arraysize="2560">
+  <ports id="5" name="GDarrayDecoded" type="PortType" coreName="RAM" coreId="2826892896" bitwidth="32" iftype="IfTypeRegister" arraysize="2560">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="6" name="patches_superpoints" type="PortType" coreName="RAM" coreId="0" bitwidth="64" direction="DirInOut" iftype="IfTypeRegister" arraysize="2560">
+  <ports id="6" name="patches_superpoints" type="PortType" coreName="RAM" coreId="1324201187" bitwidth="64" direction="DirInOut" iftype="IfTypeRegister" arraysize="2560">
     <dataInputObjs>call</dataInputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="7" name="patches_parameters" type="PortType" coreName="RAM" coreId="4055729878" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="3840">
+  <ports id="7" name="patches_parameters" type="PortType" coreName="RAM" coreId="1277342288" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="3840">
     <dataInputObjs>call</dataInputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
@@ -138,26 +138,26 @@
       <dataOutputObjs>phi</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="n_patches_read" lineNumber="688" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="8" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="688" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="n_patches_read" lineNumber="727" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="8" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="727" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>n_patches</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>n_patches</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="icmp_ln688" lineNumber="688" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln688_fu_244_p2" opType="icmp" coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.58" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="688" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="icmp_ln727" lineNumber="727" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln727_fu_244_p2" opType="icmp" coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.58" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="727" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln688" lineNumber="688" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="688" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln727" lineNumber="727" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="727" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_23</controlInputObjs>
       <controlInputObjs>._crit_edge.preheader</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>688</validLinenumbers>
+      <validLinenumbers>727</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="23" name="block_23" type="BlockType">
@@ -165,8 +165,8 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>._crit_edge.preheader</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="op2_V" lineNumber="690" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_straightLineProjectorFromLayerIJtoK_fu_218" coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="call" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="1.63" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="690" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="op2_V" lineNumber="729" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_straightLineProjectorFromLayerIJtoK_fu_218" coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="call" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="1.63" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="729" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>select</dataOutputObjs>
@@ -179,19 +179,19 @@
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="select_ln690" lineNumber="690" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln690_fu_255_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="solveNextColumn" bitwidth="32" opcode="select" nodeLabel="8.0" m_display="0" m_delay="0.22" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="690" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="select_ln729" lineNumber="729" fileName="patchMaker.cpp" fileDirectory=".." rtlName="select_ln729_fu_255_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="solveNextColumn" bitwidth="32" opcode="select" nodeLabel="8.0" m_display="0" m_delay="0.22" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="729" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>icmp</dataInputObjs>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln690" lineNumber="690" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="br" nodeLabel="8.0" m_display="0" m_delay="0.38" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="690" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln729" lineNumber="729" fileName="patchMaker.cpp" fileDirectory=".." coreId="808529205" contextFuncName="solveNextColumn" opcode="br" nodeLabel="8.0" m_display="0" m_delay="0.38" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="729" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <controlInputObjs>._crit_edge.preheader</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>690</validLinenumbers>
+      <validLinenumbers>729</validLinenumbers>
     </fileValidLineNumbers>
     <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h">
       <validLinenumbers>878</validLinenumbers>
@@ -211,21 +211,21 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="z_top_max_V_16_ph" lineNumber="690" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="690" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="z_top_max_V_16_ph" lineNumber="729" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="729" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <controlInputObjs>block_18</controlInputObjs>
       <controlInputObjs>block_23</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln697" lineNumber="697" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="br" nodeLabel="8.0" m_display="0" m_delay="0.38" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="697" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln736" lineNumber="736" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="br" nodeLabel="8.0" m_display="0" m_delay="0.38" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="736" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>690</validLinenumbers>
-      <validLinenumbers>697</validLinenumbers>
+      <validLinenumbers>729</validLinenumbers>
+      <validLinenumbers>736</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="38" name="._crit_edge" type="BlockType">
@@ -236,7 +236,7 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>block_50</controlOutputObjs>
     <controlOutputObjs>.loopexit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="z_top_max_V_16" originalName="z_top_max.V" coreId="1532835163" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="z_top_max_V_16" originalName="z_top_max.V" coreId="1988331248" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
       <dataInputObjs>extractvalue</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -257,14 +257,14 @@
       <controlInputObjs>._crit_edge.preheader</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="z_top_min_V_0" originalName="z_top_min.V" coreId="0" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="z_top_min_V_0" originalName="z_top_min.V" coreId="1532835163" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
       <dataInputObjs>extractvalue</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <controlInputObjs>block_52</controlInputObjs>
       <controlInputObjs>._crit_edge.preheader</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="nPatchesInColumn_0" originalName="nPatchesInColumn" coreId="0" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="nPatchesInColumn_0" originalName="nPatchesInColumn" coreId="1532835163" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
       <dataInputObjs>extractvalue</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -272,22 +272,22 @@
       <controlInputObjs>._crit_edge.preheader</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="projectionOfCornerToBeam_V_0" originalName="projectionOfCornerToBeam.V" coreId="0" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="projectionOfCornerToBeam_V_0" originalName="projectionOfCornerToBeam.V" coreId="1532835163" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
       <dataInputObjs>extractvalue</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <controlInputObjs>block_52</controlInputObjs>
       <controlInputObjs>._crit_edge.preheader</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="saved_apexZ0_buf_0" lineNumber="704" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="saved_apexZ0_buf_0" lineNumber="743" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>extractvalue</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <controlInputObjs>block_52</controlInputObjs>
       <controlInputObjs>._crit_edge.preheader</controlInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="loopCounter" originalName="loopCounter" coreId="0" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="loopCounter" originalName="loopCounter" coreId="1532835163" bitwidth="32" opcode="phi" nodeLabel="9.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
@@ -295,30 +295,30 @@
       <controlInputObjs>._crit_edge.preheader</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="tmp" lineNumber="702" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_getSolveNextColumnWhileConditional_fu_234" coreId="0" contextFuncName="solveNextColumn" bitwidth="1" opcode="call" nodeLabel="9.0" m_display="0" m_delay="0.98" m_topoIndex="20" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="702" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="tmp" lineNumber="741" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_getSolveNextColumnWhileConditional_fu_234" coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="1" opcode="call" nodeLabel="9.0" m_display="0" m_delay="0.98" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="741" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>getSolveNextColumnWhileConditional</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="loopCounter_1" lineNumber="713" originalName="loopCounter" fileName="patchMaker.cpp" fileDirectory=".." rtlName="loopCounter_1_fu_263_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="solveNextColumn" bitwidth="32" opcode="add" nodeLabel="9.0" m_display="0" m_delay="0.88" m_topoIndex="21" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="713" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="loopCounter_1" lineNumber="752" originalName="loopCounter" fileName="patchMaker.cpp" fileDirectory=".." rtlName="loopCounter_1_fu_263_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="solveNextColumn" bitwidth="32" opcode="add" nodeLabel="9.0" m_display="0" m_delay="0.88" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="752" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln702" lineNumber="702" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" opcode="br" nodeLabel="9.0" m_display="0" m_delay="0.38" m_topoIndex="22" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="702" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln741" lineNumber="741" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="br" nodeLabel="9.0" m_display="0" m_delay="0.38" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="741" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>call</dataInputObjs>
       <controlInputObjs>.loopexit</controlInputObjs>
       <controlInputObjs>block_50</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>704</validLinenumbers>
-      <validLinenumbers>702</validLinenumbers>
-      <validLinenumbers>713</validLinenumbers>
+      <validLinenumbers>743</validLinenumbers>
+      <validLinenumbers>741</validLinenumbers>
+      <validLinenumbers>752</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="50" name="block_50" type="BlockType">
@@ -327,8 +327,8 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>.loopexit</controlOutputObjs>
     <controlOutputObjs>block_52</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="call_ret" lineNumber="704" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_solveNextPatchPair_fu_190" coreId="3507433060" contextFuncName="solveNextColumn" bitwidth="224" opcode="call" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="0.88" m_topoIndex="23" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="call_ret" lineNumber="743" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_solveNextPatchPair_fu_190" coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="224" opcode="call" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="0.88" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>n_patches</dataInputObjs>
       <dataInputObjs>GDn_points</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
@@ -352,57 +352,57 @@
       <dataOutputObjs>patches_parameters</dataOutputObjs>
       <constName>solveNextPatchPair</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="complementary_apexZ0_V" lineNumber="704" originalName="complementary_apexZ0.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="complementary_apexZ0_V" lineNumber="743" originalName="complementary_apexZ0.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="projectionOfCornerToBeam_V" lineNumber="704" originalName="projectionOfCornerToBeam.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="3491180412" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="projectionOfCornerToBeam_V" lineNumber="743" originalName="projectionOfCornerToBeam.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="c_corner_V" lineNumber="704" originalName="c_corner.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="c_corner_V" lineNumber="743" originalName="c_corner.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="nPatchesInColumn" lineNumber="704" originalName="nPatchesInColumn" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="nPatchesInColumn" lineNumber="743" originalName="nPatchesInColumn" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="saved_apexZ0_ret" lineNumber="704" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="saved_apexZ0_ret" lineNumber="743" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="z_top_max_V" lineNumber="704" originalName="z_top_max.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="z_top_max_V" lineNumber="743" originalName="z_top_max.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="z_top_min_V" lineNumber="704" originalName="z_top_min.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="z_top_min_V" lineNumber="743" originalName="z_top_min.V" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="extractvalue" nodeLabel="10.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>call</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="icmp_ln708" lineNumber="708" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln708_fu_269_p2" opType="icmp" coreId="0" contextFuncName="solveNextColumn" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="0.85" m_topoIndex="24" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="708" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="icmp_ln747" lineNumber="747" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln747_fu_269_p2" opType="icmp" coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="1" opcode="icmp" nodeLabel="9.0" m_display="0" m_delay="0.85" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="747" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln708" lineNumber="708" fileName="patchMaker.cpp" fileDirectory=".." coreId="28271" contextFuncName="solveNextColumn" opcode="br" nodeLabel="10.0" m_display="0" m_delay="0.38" m_topoIndex="32" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="708" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln747" lineNumber="747" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="br" nodeLabel="10.0" m_display="0" m_delay="0.38" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="747" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>block_52</controlInputObjs>
       <controlInputObjs>.loopexit</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>704</validLinenumbers>
-      <validLinenumbers>708</validLinenumbers>
+      <validLinenumbers>743</validLinenumbers>
+      <validLinenumbers>747</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="52" name="block_52" type="BlockType">
@@ -417,12 +417,12 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>._crit_edge</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln702" lineNumber="702" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="702" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln741" lineNumber="741" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="741" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>702</validLinenumbers>
+      <validLinenumbers>741</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="55" name=".loopexit" type="BlockType">
@@ -430,22 +430,22 @@
     <controlInputObjs>block_50</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="saved_apexZ0_buf_1" lineNumber="704" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" bitwidth="32" opcode="phi" nodeLabel="10.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="704" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="saved_apexZ0_buf_1" lineNumber="743" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" bitwidth="32" opcode="phi" nodeLabel="10.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="743" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>extractvalue</dataInputObjs>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>ret</dataOutputObjs>
       <controlInputObjs>block_50</controlInputObjs>
       <controlInputObjs>._crit_edge</controlInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="_ln723" lineNumber="723" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="solveNextColumn" opcode="ret" nodeLabel="10.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="723" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="_ln762" lineNumber="762" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="solveNextColumn" opcode="ret" nodeLabel="10.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="762" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="solveNextColumn"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>ap_return</dataOutputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>704</validLinenumbers>
-      <validLinenumbers>723</validLinenumbers>
+      <validLinenumbers>743</validLinenumbers>
+      <validLinenumbers>762</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <ScheduleInfo time="0"/>
@@ -477,9 +477,6 @@
   <regnodes realName="z_top_max_V_16_reg_90">
     <nodeIds>27</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln688_reg_304">
-    <nodeIds>16</nodeIds>
-  </regnodes>
   <regnodes realName="z_top_min_V_reg_369">
     <nodeIds>47</nodeIds>
   </regnodes>
@@ -492,6 +489,9 @@
   <regnodes realName="saved_apexZ0_buf_0_reg_159">
     <nodeIds>33</nodeIds>
   </regnodes>
+  <regnodes realName="icmp_ln747_reg_335">
+    <nodeIds>48</nodeIds>
+  </regnodes>
   <regnodes realName="projectionOfCornerToBeam_V_0_reg_148">
     <nodeIds>32</nodeIds>
   </regnodes>
@@ -500,9 +500,6 @@
   </regnodes>
   <regnodes realName="c_corner_V_reg_349">
     <nodeIds>43</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln708_reg_335">
-    <nodeIds>48</nodeIds>
   </regnodes>
   <regnodes realName="ppl_read_reg_308">
     <nodeIds>12</nodeIds>
@@ -522,6 +519,9 @@
   <regnodes realName="tmp_reg_326">
     <nodeIds>35</nodeIds>
   </regnodes>
+  <regnodes realName="icmp_ln727_reg_304">
+    <nodeIds>16</nodeIds>
+  </regnodes>
   <regnodes realName="nPatchesInColumn_reg_354">
     <nodeIds>44</nodeIds>
   </regnodes>
@@ -540,6 +540,9 @@
   <expressionNodes realName="saved_apexZ0_buf_1_phi_fu_183">
     <nodeIds>53</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="icmp_ln747_fu_269">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="z_top_min_V_0_phi_fu_128">
     <nodeIds>30</nodeIds>
   </expressionNodes>
@@ -548,6 +551,9 @@
   </expressionNodes>
   <expressionNodes realName="projectionOfCornerToBeam_V_fu_279">
     <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln729_fu_255">
+    <nodeIds>21</nodeIds>
   </expressionNodes>
   <expressionNodes realName="saved_apexZ0_buf_0_phi_fu_162">
     <nodeIds>33</nodeIds>
@@ -564,14 +570,11 @@
   <expressionNodes realName="nPatchesInColumn_fu_287">
     <nodeIds>44</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln708_fu_269">
-    <nodeIds>48</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="select_ln690_fu_255">
-    <nodeIds>21</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="c_corner_V_0_phi_fu_105">
     <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln727_fu_244">
+    <nodeIds>16</nodeIds>
   </expressionNodes>
   <expressionNodes realName="loopCounter_phi_fu_173">
     <nodeIds>34</nodeIds>
@@ -581,9 +584,6 @@
   </expressionNodes>
   <expressionNodes realName="z_top_max_V_16_phi_fu_93">
     <nodeIds>27</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln688_fu_244">
-    <nodeIds>16</nodeIds>
   </expressionNodes>
   <expressionNodes realName="nPatchesInColumn_0_phi_fu_140">
     <nodeIds>31</nodeIds>

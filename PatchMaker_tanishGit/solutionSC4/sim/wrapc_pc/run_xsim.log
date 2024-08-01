@@ -200,7 +200,7 @@ Built simulation snapshot MPSQ
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/xsim.dir/MPSQ/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Jul 31 14:01:38 2024...
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 31 23:55:40 2024...
 
 ****** xsim v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -220,10 +220,10 @@ source MPSQ.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [n/a] @ "107000"
-// RTL Simulation : 1 / 1 [n/a] @ "420413000"
+// RTL Simulation : 1 / 1 [n/a] @ "538454000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 420424500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 524
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 923.578 ; gain = 0.000
+$finish called at time : 538465500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 524
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:43 . Memory (MB): peak = 923.672 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Jul 31 14:02:16 2024...
+INFO: [Common 17-206] Exiting xsim at Wed Jul 31 23:56:32 2024...
 0

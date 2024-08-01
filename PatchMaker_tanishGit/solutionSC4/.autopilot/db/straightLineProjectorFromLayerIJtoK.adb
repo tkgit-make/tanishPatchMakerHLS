@@ -97,7 +97,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>5</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -130,7 +130,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>740703794</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -163,7 +163,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1767862369</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -200,7 +200,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -240,7 +240,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4066950874</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -280,7 +280,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -320,7 +320,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -360,7 +360,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1885420090</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -400,7 +400,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>774332781</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -439,7 +439,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -478,7 +478,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1948279909</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -501,10 +501,10 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>sub_ln146</name>
+              <name>sub_ln143</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -520,13 +520,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln146_fu_93_p2</rtlName>
+              <rtlName>sub_ln143_fu_93_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -555,10 +555,10 @@
             <Obj>
               <type>0</type>
               <id>17</id>
-              <name>trunc_ln146</name>
+              <name>trunc_ln143</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -574,18 +574,18 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln146_fu_99_p1</rtlName>
+              <rtlName>trunc_ln143_fu_99_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>673195817</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -608,10 +608,10 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>sext_ln146</name>
+              <name>sext_ln143</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -627,7 +627,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -638,7 +638,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>673195817</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -661,10 +661,10 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>sub_ln146_1</name>
+              <name>sub_ln143_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -680,13 +680,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sub_ln146_1_fu_107_p2</rtlName>
+              <rtlName>sub_ln143_1_fu_107_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -715,10 +715,10 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>sext_ln146_1</name>
+              <name>sext_ln143_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -734,7 +734,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -745,7 +745,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4102467616</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -768,10 +768,10 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>mul_ln146</name>
+              <name>mul_ln143</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -787,7 +787,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -798,7 +798,7 @@
               <opType>mul</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1852399472</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -825,7 +825,7 @@
               <name>tmp_1</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -841,7 +841,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -852,7 +852,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3834512688</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -907,7 +907,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1445951598</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>33</bitwidth>
           </Value>
@@ -960,7 +960,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4139102737</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>33</bitwidth>
           </Value>
@@ -1067,7 +1067,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1093,7 +1093,7 @@
               <name>neg</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1109,7 +1109,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1147,7 +1147,7 @@
               <name>abscond</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1163,7 +1163,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1174,7 +1174,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1201,7 +1201,7 @@
               <name>abs</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1217,7 +1217,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1256,7 +1256,7 @@
               <name>tmp</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1272,7 +1272,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1283,7 +1283,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1819044215</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>6</bitwidth>
           </Value>
@@ -1311,7 +1311,7 @@
               <name>tmp_3</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1327,7 +1327,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1338,7 +1338,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -1366,7 +1366,7 @@
               <name>tmp_3_cast</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1382,7 +1382,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1393,7 +1393,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>138</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>6</bitwidth>
           </Value>
@@ -1419,7 +1419,7 @@
               <name>empty</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1435,7 +1435,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1473,7 +1473,7 @@
               <name>neg3</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1489,7 +1489,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1527,7 +1527,7 @@
               <name>abscond4</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1543,7 +1543,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1554,7 +1554,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1852793632</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1581,7 +1581,7 @@
               <name>abs5</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1597,7 +1597,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1636,7 +1636,7 @@
               <name>abs5_cast</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1652,7 +1652,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1663,7 +1663,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4125339975</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>6</bitwidth>
           </Value>
@@ -1686,10 +1686,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>empty_53</name>
+              <name>empty_55</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1705,13 +1705,13 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_53_fu_198_p2</rtlName>
+              <rtlName>empty_55_fu_198_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>tadder</implIndex>
@@ -1743,7 +1743,7 @@
               <name>p_cast</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1759,7 +1759,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1770,7 +1770,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4145198004</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1796,7 +1796,7 @@
               <name>radiiDivisionList_addr</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1812,7 +1812,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1823,7 +1823,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>186</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>6</bitwidth>
           </Value>
@@ -1851,7 +1851,7 @@
               <name>radiiDivisionList_load</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1867,7 +1867,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1904,7 +1904,7 @@
               <name>radiiDivisionList_load_cast</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1920,7 +1920,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1931,7 +1931,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>673195817</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -1957,7 +1957,7 @@
               <name>mul21</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -1973,7 +1973,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -1984,7 +1984,7 @@
               <opType>mul</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1769169253</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2038,7 +2038,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>744305243</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2172,10 +2172,10 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>select_ln146</name>
+              <name>select_ln143</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>143</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -2191,7 +2191,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>146</second>
+                      <second>143</second>
                     </item>
                   </second>
                 </item>
@@ -2227,10 +2227,10 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>_ln171</name>
+              <name>_ln168</name>
               <fileName>patchMaker.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>171</lineNumber>
+              <lineNumber>168</lineNumber>
               <contextFuncName>straightLineProjectorFromLayerIJtoK</contextFuncName>
               <contextNormFuncName>straightLineProjectorFromLayerIJtoK</contextNormFuncName>
               <inlineStackInfo>
@@ -2246,7 +2246,7 @@
                         <first>patchMaker.cpp</first>
                         <second>straightLineProjectorFromLayerIJtoK</second>
                       </first>
-                      <second>171</second>
+                      <second>168</second>
                     </item>
                   </second>
                 </item>
@@ -2257,7 +2257,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>104</coreId>
+              <coreId>1532835163</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -2300,7 +2300,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1014263401</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2328,7 +2328,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>740717683</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -2356,7 +2356,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>673195817</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -2384,7 +2384,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>892492637</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2412,7 +2412,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>644640623</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2440,7 +2440,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>842218612</coreId>
+              <coreId>673201714</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2468,7 +2468,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>539778358</coreId>
+              <coreId>740703794</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2499,7 +2499,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>1668571504</coreId>
+            <coreId>0</coreId>
           </Obj>
           <node_objs>
             <count>41</count>
@@ -3638,7 +3638,7 @@
           </second>
         </item>
         <item>
-          <first>empty_53_fu_198_p2 ( + ) </first>
+          <first>empty_55_fu_198_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3753,7 +3753,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln146_1_fu_107_p2 ( - ) </first>
+          <first>sub_ln143_1_fu_107_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3776,7 +3776,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln146_fu_93_p2 ( - ) </first>
+          <first>sub_ln143_fu_93_p2 ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4267,7 +4267,7 @@
           </second>
         </item>
         <item>
-          <first>empty_53_fu_198_p2 ( + ) </first>
+          <first>empty_55_fu_198_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4307,7 +4307,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln146_1_fu_107_p2 ( - ) </first>
+          <first>sub_ln143_1_fu_107_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4315,7 +4315,7 @@
           </second>
         </item>
         <item>
-          <first>sub_ln146_fu_93_p2 ( - ) </first>
+          <first>sub_ln143_fu_93_p2 ( - ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5049,7 +5049,7 @@
         </second>
       </item>
       <item>
-        <first>empty_53_fu_198</first>
+        <first>empty_55_fu_198</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5089,7 +5089,7 @@
         </second>
       </item>
       <item>
-        <first>mul_ln146_fu_117</first>
+        <first>mul_ln143_fu_117</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5145,7 +5145,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln146_fu_251</first>
+        <first>select_ln143_fu_251</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5153,7 +5153,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln146_1_fu_113</first>
+        <first>sext_ln143_1_fu_113</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5161,7 +5161,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln146_fu_103</first>
+        <first>sext_ln143_fu_103</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5193,7 +5193,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln146_1_fu_107</first>
+        <first>sub_ln143_1_fu_107</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5201,7 +5201,7 @@
         </second>
       </item>
       <item>
-        <first>sub_ln146_fu_93</first>
+        <first>sub_ln143_fu_93</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5249,7 +5249,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln146_fu_99</first>
+        <first>trunc_ln143_fu_99</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

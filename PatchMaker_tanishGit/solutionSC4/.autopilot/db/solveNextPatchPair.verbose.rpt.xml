@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveNextPatchPair'" level="0">
-<item name = "Date">Wed Jul 31 13:59:16 2024
+<item name = "Date">Wed Jul 31 23:38:28 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -42,7 +42,7 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- solveNextPatchPair_superPointEqualCheck">7, 41, 7, -, -, 1 ~ 5, no</column>
-<column name="- VITIS_LOOP_872_1">?, ?, ?, -, -, ?, no</column>
+<column name="- VITIS_LOOP_911_1">?, ?, ?, -, -, ?, no</column>
 </table>
 </item>
 </section>
@@ -57,7 +57,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 806, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">9, 2, 28308, 39857, -</column>
+<column name="Instance">9, 2, 27673, 39551, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 1025, -</column>
 <column name="Register">-, -, 1040, -, -</column>
@@ -73,10 +73,10 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_areWedgeSuperPointsEqual_fu_600">areWedgeSuperPointsEqual, 0, 0, 166, 193, 0</column>
 <column name="grp_getSolveNextPatchPairWhileCondition_fu_582">getSolveNextPatchPairWhileCondition, 0, 0, 110, 346, 0</column>
-<column name="grp_makePatch_alignedToLine_fu_541">makePatch_alignedToLine, 3, 0, 6382, 9216, 0</column>
-<column name="grp_makeThirdPatch_fu_481">makeThirdPatch, 3, 0, 10348, 14865, 0</column>
+<column name="grp_makePatch_alignedToLine_fu_541">makePatch_alignedToLine, 3, 0, 6087, 8904, 0</column>
+<column name="grp_makeThirdPatch_fu_481">makeThirdPatch, 3, 0, 10254, 14871, 0</column>
 <column name="mul_33s_64s_64_5_1_U124">mul_33s_64s_64_5_1, 0, 2, 441, 249, 0</column>
-<column name="grp_solveComplmentaryPatch_fu_508">solveComplmentaryPatch, 3, 0, 9657, 14074, 0</column>
+<column name="grp_solveComplmentaryPatch_fu_508">solveComplmentaryPatch, 3, 0, 9411, 14074, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_568">straightLineProjectorFromLayerIJtoK, 0, 0, 602, 457, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_1464">straightLineProjectorFromLayerIJtoK, 0, 0, 602, 457, 0</column>
 </table>
@@ -98,49 +98,49 @@
 <column name="add_ln534_1_fu_771_p2">+, 0, 0, 19, 12, 7</column>
 <column name="add_ln534_2_fu_781_p2">+, 0, 0, 19, 12, 7</column>
 <column name="add_ln534_fu_761_p2">+, 0, 0, 19, 12, 7</column>
-<column name="add_ln738_fu_691_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln784_1_fu_671_p2">+, 0, 0, 19, 12, 6</column>
-<column name="add_ln784_fu_741_p2">+, 0, 0, 19, 12, 6</column>
-<column name="add_ln785_fu_677_p2">+, 0, 0, 19, 12, 7</column>
-<column name="add_ln809_fu_807_p2">+, 0, 0, 10, 3, 1</column>
-<column name="add_ln835_fu_719_p2">+, 0, 0, 19, 12, 12</column>
-<column name="add_ln845_fu_730_p2">+, 0, 0, 19, 12, 7</column>
-<column name="add_ln862_fu_944_p2">+, 0, 0, 19, 12, 6</column>
-<column name="add_ln863_fu_950_p2">+, 0, 0, 19, 12, 6</column>
+<column name="add_ln777_fu_691_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln823_1_fu_671_p2">+, 0, 0, 19, 12, 6</column>
+<column name="add_ln823_fu_741_p2">+, 0, 0, 19, 12, 6</column>
+<column name="add_ln824_fu_677_p2">+, 0, 0, 19, 12, 7</column>
+<column name="add_ln848_fu_807_p2">+, 0, 0, 10, 3, 1</column>
+<column name="add_ln874_fu_719_p2">+, 0, 0, 19, 12, 12</column>
+<column name="add_ln884_fu_730_p2">+, 0, 0, 19, 12, 7</column>
 <column name="add_ln886_fu_751_p2">+, 0, 0, 19, 12, 6</column>
-<column name="add_ln888_1_fu_1097_p2">+, 0, 0, 19, 12, 6</column>
-<column name="add_ln888_fu_1091_p2">+, 0, 0, 19, 12, 6</column>
+<column name="add_ln901_fu_944_p2">+, 0, 0, 19, 12, 6</column>
+<column name="add_ln902_fu_950_p2">+, 0, 0, 19, 12, 6</column>
+<column name="add_ln926_1_fu_1097_p2">+, 0, 0, 19, 12, 6</column>
+<column name="add_ln926_fu_1091_p2">+, 0, 0, 19, 12, 6</column>
 <column name="lastPatchIndex_1_fu_914_p2">+, 0, 0, 12, 5, 2</column>
 <column name="lastPatchIndex_3_fu_1057_p2">+, 0, 0, 15, 8, 2</column>
 <column name="lastPatchIndex_fu_641_p2">+, 0, 0, 12, 5, 2</column>
 <column name="thirdLastPatchIndex_fu_796_p2">+, 0, 0, 12, 5, 3</column>
 <column name="ret_1_fu_992_p2">-, 0, 0, 40, 33, 33</column>
 <column name="ret_fu_978_p2">-, 0, 0, 40, 33, 33</column>
-<column name="sub_ln784_fu_665_p2">-, 0, 0, 19, 12, 12</column>
-<column name="sub_ln862_fu_938_p2">-, 0, 0, 19, 12, 12</column>
-<column name="sub_ln888_fu_1085_p2">-, 0, 0, 19, 12, 12</column>
-<column name="and_ln833_1_fu_863_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln833_fu_857_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sub_ln823_fu_665_p2">-, 0, 0, 19, 12, 12</column>
+<column name="sub_ln901_fu_938_p2">-, 0, 0, 19, 12, 12</column>
+<column name="sub_ln926_fu_1085_p2">-, 0, 0, 19, 12, 12</column>
+<column name="and_ln872_1_fu_863_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln872_fu_857_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln886_fu_830_p2">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state47_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln804_fu_791_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln809_fu_801_p2">icmp, 0, 0, 8, 3, 3</column>
-<column name="icmp_ln824_fu_824_p2">icmp, 0, 0, 20, 32, 1</column>
-<column name="icmp_ln833_fu_851_p2">icmp, 0, 0, 20, 32, 24</column>
-<column name="icmp_ln836_fu_877_p2">icmp, 0, 0, 20, 32, 1</column>
-<column name="icmp_ln877_fu_1051_p2">icmp, 0, 0, 20, 32, 5</column>
+<column name="icmp_ln843_fu_791_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln848_fu_801_p2">icmp, 0, 0, 8, 3, 3</column>
+<column name="icmp_ln863_fu_824_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="icmp_ln872_fu_851_p2">icmp, 0, 0, 20, 32, 24</column>
+<column name="icmp_ln875_fu_877_p2">icmp, 0, 0, 20, 32, 1</column>
 <column name="icmp_ln878_1_fu_998_p2">icmp, 0, 0, 20, 33, 33</column>
 <column name="icmp_ln878_fu_889_p2">icmp, 0, 0, 20, 32, 27</column>
 <column name="icmp_ln886_1_fu_845_p2">icmp, 0, 0, 20, 32, 27</column>
 <column name="icmp_ln886_fu_813_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln916_fu_1051_p2">icmp, 0, 0, 20, 32, 5</column>
 <column name="squarePatch_alternate2_fu_818_p2">icmp, 0, 0, 20, 32, 1</column>
 <column name="notChoppedPatch_fu_834_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln836_fu_883_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln862_fu_956_p2">or, 0, 0, 12, 1, 12</column>
-<column name="select_ln836_fu_901_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln845_fu_894_p3">select, 0, 0, 32, 1, 32</column>
+<column name="or_ln875_fu_883_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln901_fu_956_p2">or, 0, 0, 12, 1, 12</column>
+<column name="select_ln875_fu_901_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln884_fu_894_p3">select, 0, 0, 32, 1, 32</column>
 <column name="white_space_height_fu_1004_p3">select, 0, 0, 33, 1, 33</column>
-<column name="xor_ln833_fu_839_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln872_fu_839_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -202,15 +202,15 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln738_reg_1234">32, 0, 32, 0</column>
-<column name="add_ln784_1_reg_1204">9, 0, 12, 3</column>
-<column name="add_ln785_reg_1209">9, 0, 12, 3</column>
-<column name="add_ln809_reg_1287">3, 0, 3, 0</column>
-<column name="add_ln862_reg_1346">9, 0, 12, 3</column>
-<column name="add_ln863_reg_1351">9, 0, 12, 3</column>
-<column name="add_ln888_1_reg_1440">9, 0, 12, 3</column>
-<column name="add_ln888_reg_1435">9, 0, 12, 3</column>
-<column name="and_ln833_1_reg_1310">1, 0, 1, 0</column>
+<column name="add_ln777_reg_1234">32, 0, 32, 0</column>
+<column name="add_ln823_1_reg_1204">9, 0, 12, 3</column>
+<column name="add_ln824_reg_1209">9, 0, 12, 3</column>
+<column name="add_ln848_reg_1287">3, 0, 3, 0</column>
+<column name="add_ln901_reg_1346">9, 0, 12, 3</column>
+<column name="add_ln902_reg_1351">9, 0, 12, 3</column>
+<column name="add_ln926_1_reg_1440">9, 0, 12, 3</column>
+<column name="add_ln926_reg_1435">9, 0, 12, 3</column>
+<column name="and_ln872_1_reg_1310">1, 0, 1, 0</column>
 <column name="ap_CS_fsm">47, 0, 47, 0</column>
 <column name="complementary_apexZ0_0_reg_446">32, 0, 32, 0</column>
 <column name="counterUpshift_0_reg_391">32, 0, 32, 0</column>
@@ -223,9 +223,9 @@
 <column name="grp_solveComplmentaryPatch_fu_508_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_568_ap_start_reg">1, 0, 1, 0</column>
 <column name="i_reg_297">3, 0, 3, 0</column>
-<column name="icmp_ln804_reg_1274">1, 0, 1, 0</column>
-<column name="icmp_ln809_reg_1283">1, 0, 1, 0</column>
-<column name="icmp_ln824_reg_1305">1, 0, 1, 0</column>
+<column name="icmp_ln843_reg_1274">1, 0, 1, 0</column>
+<column name="icmp_ln848_reg_1283">1, 0, 1, 0</column>
+<column name="icmp_ln863_reg_1305">1, 0, 1, 0</column>
 <column name="icmp_ln886_reg_1295">1, 0, 1, 0</column>
 <column name="lastPatchIndex_0_reg_335">5, 0, 5, 0</column>
 <column name="lastPatchIndex_1_reg_1339">5, 0, 5, 0</column>
@@ -252,15 +252,15 @@
 <column name="reg_632">32, 0, 32, 0</column>
 <column name="repeat_original_ph_reg_309">1, 0, 1, 0</column>
 <column name="repeat_original_reg_322">1, 0, 1, 0</column>
-<column name="select_ln836_reg_1327">32, 0, 32, 0</column>
+<column name="select_ln875_reg_1327">32, 0, 32, 0</column>
 <column name="squarePatch_alternate2_reg_1300">1, 0, 1, 0</column>
-<column name="sub_ln784_reg_1195">9, 0, 12, 3</column>
+<column name="sub_ln823_reg_1195">9, 0, 12, 3</column>
 <column name="thirdLastPatchIndex_reg_1278">5, 0, 5, 0</column>
 <column name="tmp_s_reg_1376">1, 0, 1, 0</column>
 <column name="trunc_ln69_1_reg_1321">32, 0, 32, 0</column>
 <column name="trunc_ln69_reg_1314">32, 0, 32, 0</column>
-<column name="trunc_ln747_reg_1181">5, 0, 5, 0</column>
-<column name="trunc_ln888_reg_1430">5, 0, 5, 0</column>
+<column name="trunc_ln786_reg_1181">5, 0, 5, 0</column>
+<column name="trunc_ln926_reg_1430">5, 0, 5, 0</column>
 <column name="white_space_height_0_reg_345">64, 0, 64, 0</column>
 <column name="white_space_height_reg_1366">33, 0, 33, 0</column>
 <column name="z_top_min_0_reg_415">32, 0, 32, 0</column>

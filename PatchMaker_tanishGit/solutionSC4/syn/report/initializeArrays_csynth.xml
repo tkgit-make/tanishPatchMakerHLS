@@ -134,8 +134,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_superpoints_V_address0</name>
-<Object>patches_superpoints_V</Object>
+<name>patches_superpoints_address0</name>
+<Object>patches_superpoints</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -145,8 +145,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_superpoints_V_ce0</name>
-<Object>patches_superpoints_V</Object>
+<name>patches_superpoints_ce0</name>
+<Object>patches_superpoints</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -156,8 +156,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_superpoints_V_we0</name>
-<Object>patches_superpoints_V</Object>
+<name>patches_superpoints_we0</name>
+<Object>patches_superpoints</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -167,8 +167,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_superpoints_V_d0</name>
-<Object>patches_superpoints_V</Object>
+<name>patches_superpoints_d0</name>
+<Object>patches_superpoints</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -178,8 +178,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_parameters_V_address0</name>
-<Object>patches_parameters_V</Object>
+<name>patches_parameters_address0</name>
+<Object>patches_parameters</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -189,8 +189,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_parameters_V_ce0</name>
-<Object>patches_parameters_V</Object>
+<name>patches_parameters_ce0</name>
+<Object>patches_parameters</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -200,8 +200,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_parameters_V_we0</name>
-<Object>patches_parameters_V</Object>
+<name>patches_parameters_we0</name>
+<Object>patches_parameters</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -211,8 +211,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_parameters_V_d0</name>
-<Object>patches_parameters_V</Object>
+<name>patches_parameters_d0</name>
+<Object>patches_parameters</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mSP_findLRBounds'" level="0">
-<item name = "Date">Wed Jul 31 13:58:51 2024
+<item name = "Date">Wed Jul 31 23:38:01 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -81,20 +81,20 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln1656_fu_145_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln1694_fu_145_p2">+, 0, 0, 39, 32, 1</column>
 <column name="ret_fu_164_p2">+, 0, 0, 40, 33, 33</column>
 <column name="ret_13_fu_191_p2">-, 0, 0, 40, 33, 33</column>
 <column name="sub_ln180_8_fu_196_p2">-, 0, 0, 40, 1, 33</column>
 <column name="sub_ln180_fu_169_p2">-, 0, 0, 40, 1, 33</column>
-<column name="icmp_ln1656_fu_151_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln1658_fu_221_p2">icmp, 0, 0, 29, 64, 64</column>
-<column name="icmp_ln1664_fu_246_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln1694_fu_151_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln1696_fu_221_p2">icmp, 0, 0, 29, 64, 64</column>
+<column name="icmp_ln1702_fu_246_p2">icmp, 0, 0, 29, 64, 64</column>
 <column name="lbVal_1_fu_183_p3">select, 0, 0, 33, 1, 33</column>
 <column name="lbVal_2_fu_235_p3">select, 0, 0, 63, 1, 64</column>
 <column name="rbVal_1_fu_210_p3">select, 0, 0, 33, 1, 33</column>
 <column name="rbVal_2_fu_260_p3">select, 0, 0, 63, 1, 64</column>
-<column name="select_ln1658_fu_227_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln1664_fu_252_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln1696_fu_227_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln1702_fu_252_p3">select, 0, 0, 32, 1, 32</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -113,13 +113,13 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln1656_reg_296">32, 0, 32, 0</column>
+<column name="add_ln1694_reg_296">32, 0, 32, 0</column>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
-<column name="icmp_ln1656_reg_301">1, 0, 1, 0</column>
+<column name="icmp_ln1694_reg_301">1, 0, 1, 0</column>
 <column name="j_reg_76">32, 0, 32, 0</column>
 <column name="lbVal_1_reg_315">33, 0, 33, 0</column>
 <column name="lbVal_reg_124">64, 0, 64, 0</column>
@@ -129,7 +129,7 @@
 <column name="rbVal_reg_112">64, 0, 64, 0</column>
 <column name="rhs_reg_290">26, 0, 33, 7</column>
 <column name="right_bound_write_assign_reg_100">32, 0, 32, 0</column>
-<column name="icmp_ln1656_reg_301">64, 32, 1, 0</column>
+<column name="icmp_ln1694_reg_301">64, 32, 1, 0</column>
 <column name="j_reg_76">64, 32, 32, 0</column>
 </table>
 </item>

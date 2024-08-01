@@ -12,16 +12,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 79 \
-    name patches_superpoints_V \
+    name patches_superpoints \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename patches_superpoints_V \
+    corename patches_superpoints \
     op interface \
-    ports { patches_superpoints_V_address0 { O 12 vector } patches_superpoints_V_ce0 { O 1 bit } patches_superpoints_V_we0 { O 1 bit } patches_superpoints_V_d0 { O 64 vector } patches_superpoints_V_address1 { O 12 vector } patches_superpoints_V_ce1 { O 1 bit } patches_superpoints_V_q1 { I 64 vector } } \
+    ports { patches_superpoints_address0 { O 12 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 64 vector } patches_superpoints_address1 { O 12 vector } patches_superpoints_ce1 { O 1 bit } patches_superpoints_q1 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints'"
 }
 }
 
@@ -31,16 +31,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 80 \
-    name patches_parameters_V \
+    name patches_parameters \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename patches_parameters_V \
+    corename patches_parameters \
     op interface \
-    ports { patches_parameters_V_address0 { O 12 vector } patches_parameters_V_ce0 { O 1 bit } patches_parameters_V_we0 { O 1 bit } patches_parameters_V_d0 { O 32 vector } patches_parameters_V_address1 { O 12 vector } patches_parameters_V_ce1 { O 1 bit } patches_parameters_V_q1 { I 32 vector } } \
+    ports { patches_parameters_address0 { O 12 vector } patches_parameters_ce0 { O 1 bit } patches_parameters_we0 { O 1 bit } patches_parameters_d0 { O 32 vector } patches_parameters_address1 { O 12 vector } patches_parameters_ce1 { O 1 bit } patches_parameters_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_parameters'"
 }
 }
 

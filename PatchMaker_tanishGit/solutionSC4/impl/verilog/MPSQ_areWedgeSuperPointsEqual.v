@@ -14,16 +14,16 @@ module MPSQ_areWedgeSuperPointsEqual (
         ap_done,
         ap_idle,
         ap_ready,
-        wsp2_V_address0,
-        wsp2_V_ce0,
-        wsp2_V_q0,
-        wsp2_V_address1,
-        wsp2_V_ce1,
-        wsp2_V_q1,
-        wsp1_V_offset,
-        wsp1_V_offset1,
-        wsp2_V_offset,
-        wsp2_V_offset3,
+        wsp2_address0,
+        wsp2_ce0,
+        wsp2_q0,
+        wsp2_address1,
+        wsp2_ce1,
+        wsp2_q1,
+        wsp1_offset,
+        wsp1_offset1,
+        wsp2_offset,
+        wsp2_offset3,
         ap_return
 );
 
@@ -36,25 +36,25 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [11:0] wsp2_V_address0;
-output   wsp2_V_ce0;
-input  [63:0] wsp2_V_q0;
-output  [11:0] wsp2_V_address1;
-output   wsp2_V_ce1;
-input  [63:0] wsp2_V_q1;
-input  [4:0] wsp1_V_offset;
-input  [2:0] wsp1_V_offset1;
-input  [4:0] wsp2_V_offset;
-input  [2:0] wsp2_V_offset3;
+output  [11:0] wsp2_address0;
+output   wsp2_ce0;
+input  [63:0] wsp2_q0;
+output  [11:0] wsp2_address1;
+output   wsp2_ce1;
+input  [63:0] wsp2_q1;
+input  [4:0] wsp1_offset;
+input  [2:0] wsp1_offset1;
+input  [4:0] wsp2_offset;
+input  [2:0] wsp2_offset3;
 output  [0:0] ap_return;
 
 reg ap_done;
 reg ap_idle;
 reg ap_ready;
-reg[11:0] wsp2_V_address0;
-reg wsp2_V_ce0;
-reg[11:0] wsp2_V_address1;
-reg wsp2_V_ce1;
+reg[11:0] wsp2_address0;
+reg wsp2_ce0;
+reg[11:0] wsp2_address1;
+reg wsp2_ce1;
 
 (* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_pp0_stage0;
@@ -73,10 +73,10 @@ wire    ap_block_state3_pp0_stage0_iter1;
 wire    ap_block_state5_pp0_stage0_iter2;
 wire    ap_block_pp0_stage0_11001;
 reg   [63:0] reg_95;
-wire   [7:0] add_ln23_1_fu_131_p2;
-reg   [7:0] add_ln23_1_reg_218;
-wire   [7:0] add_ln23_3_fu_163_p2;
-reg   [7:0] add_ln23_3_reg_223;
+wire   [7:0] add_ln869_1_fu_131_p2;
+reg   [7:0] add_ln869_1_reg_218;
+wire   [7:0] add_ln0_1_fu_163_p2;
+reg   [7:0] add_ln0_1_reg_223;
 wire   [11:0] tmp_32_fu_169_p3;
 reg   [11:0] tmp_32_reg_228;
 wire   [11:0] tmp_33_fu_181_p3;
@@ -86,21 +86,21 @@ reg   [0:0] icmp_ln870_reg_258;
 reg    ap_enable_reg_pp0_iter0_reg;
 wire    ap_block_pp0_stage1_subdone;
 wire    ap_block_pp0_stage0_subdone;
-wire   [63:0] zext_ln23_2_fu_176_p1;
+wire   [63:0] zext_ln869_2_fu_176_p1;
 wire    ap_block_pp0_stage1;
-wire   [63:0] zext_ln23_5_fu_188_p1;
+wire   [63:0] zext_ln0_2_fu_188_p1;
 wire   [63:0] zext_ln870_fu_198_p1;
 wire   [63:0] zext_ln870_1_fu_208_p1;
 wire   [6:0] tmp_fu_113_p3;
-wire   [7:0] zext_ln23_1_fu_121_p1;
-wire   [7:0] zext_ln23_fu_109_p1;
-wire   [7:0] add_ln23_fu_125_p2;
-wire   [7:0] wsp2_V_offset3_cast23_fu_105_p1;
+wire   [7:0] zext_ln869_1_fu_121_p1;
+wire   [7:0] zext_ln869_fu_109_p1;
+wire   [7:0] add_ln869_fu_125_p2;
+wire   [7:0] wsp2_offset3_cast23_fu_105_p1;
 wire   [6:0] tmp_s_fu_145_p3;
-wire   [7:0] zext_ln23_4_fu_153_p1;
-wire   [7:0] zext_ln23_3_fu_141_p1;
-wire   [7:0] add_ln23_2_fu_157_p2;
-wire   [7:0] wsp1_V_offset1_cast25_fu_137_p1;
+wire   [7:0] zext_ln0_1_fu_153_p1;
+wire   [7:0] zext_ln0_fu_141_p1;
+wire   [7:0] add_ln0_fu_157_p2;
+wire   [7:0] wsp1_offset1_cast25_fu_137_p1;
 wire   [11:0] or_ln870_fu_193_p2;
 wire   [11:0] or_ln870_1_fu_203_p2;
 reg   [1:0] ap_NS_fsm;
@@ -160,8 +160,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        add_ln23_1_reg_218 <= add_ln23_1_fu_131_p2;
-        add_ln23_3_reg_223 <= add_ln23_3_fu_163_p2;
+        add_ln0_1_reg_223 <= add_ln0_1_fu_163_p2;
+        add_ln869_1_reg_218 <= add_ln869_1_fu_131_p2;
     end
 end
 
@@ -173,8 +173,8 @@ end
 
 always @ (posedge ap_clk) begin
     if ((((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1)))) begin
-        reg_91 <= wsp2_V_q1;
-        reg_95 <= wsp2_V_q0;
+        reg_91 <= wsp2_q1;
+        reg_95 <= wsp2_q0;
     end
 end
 
@@ -251,37 +251,37 @@ end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        wsp2_V_address0 = zext_ln870_fu_198_p1;
+        wsp2_address0 = zext_ln870_fu_198_p1;
     end else if (((1'b0 == ap_block_pp0_stage1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-        wsp2_V_address0 = zext_ln23_2_fu_176_p1;
+        wsp2_address0 = zext_ln869_2_fu_176_p1;
     end else begin
-        wsp2_V_address0 = 'bx;
+        wsp2_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        wsp2_V_address1 = zext_ln870_1_fu_208_p1;
+        wsp2_address1 = zext_ln870_1_fu_208_p1;
     end else if (((1'b0 == ap_block_pp0_stage1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-        wsp2_V_address1 = zext_ln23_5_fu_188_p1;
+        wsp2_address1 = zext_ln0_2_fu_188_p1;
     end else begin
-        wsp2_V_address1 = 'bx;
+        wsp2_address1 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0)) | ((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1)))) begin
-        wsp2_V_ce0 = 1'b1;
+        wsp2_ce0 = 1'b1;
     end else begin
-        wsp2_V_ce0 = 1'b0;
+        wsp2_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0)) | ((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1) & (ap_enable_reg_pp0_iter0 == 1'b1)))) begin
-        wsp2_V_ce1 = 1'b1;
+        wsp2_ce1 = 1'b1;
     end else begin
-        wsp2_V_ce1 = 1'b0;
+        wsp2_ce1 = 1'b0;
     end
 end
 
@@ -309,13 +309,13 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln23_1_fu_131_p2 = (add_ln23_fu_125_p2 + wsp2_V_offset3_cast23_fu_105_p1);
+assign add_ln0_1_fu_163_p2 = (add_ln0_fu_157_p2 + wsp1_offset1_cast25_fu_137_p1);
 
-assign add_ln23_2_fu_157_p2 = (zext_ln23_4_fu_153_p1 + zext_ln23_3_fu_141_p1);
+assign add_ln0_fu_157_p2 = (zext_ln0_1_fu_153_p1 + zext_ln0_fu_141_p1);
 
-assign add_ln23_3_fu_163_p2 = (add_ln23_2_fu_157_p2 + wsp1_V_offset1_cast25_fu_137_p1);
+assign add_ln869_1_fu_131_p2 = (add_ln869_fu_125_p2 + wsp2_offset3_cast23_fu_105_p1);
 
-assign add_ln23_fu_125_p2 = (zext_ln23_1_fu_121_p1 + zext_ln23_fu_109_p1);
+assign add_ln869_fu_125_p2 = (zext_ln869_1_fu_121_p1 + zext_ln869_fu_109_p1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -353,29 +353,29 @@ assign or_ln870_1_fu_203_p2 = (tmp_33_reg_238 | 12'd15);
 
 assign or_ln870_fu_193_p2 = (tmp_32_reg_228 | 12'd15);
 
-assign tmp_32_fu_169_p3 = {{add_ln23_1_reg_218}, {4'd0}};
+assign tmp_32_fu_169_p3 = {{add_ln869_1_reg_218}, {4'd0}};
 
-assign tmp_33_fu_181_p3 = {{add_ln23_3_reg_223}, {4'd0}};
+assign tmp_33_fu_181_p3 = {{add_ln0_1_reg_223}, {4'd0}};
 
-assign tmp_fu_113_p3 = {{wsp2_V_offset}, {2'd0}};
+assign tmp_fu_113_p3 = {{wsp2_offset}, {2'd0}};
 
-assign tmp_s_fu_145_p3 = {{wsp1_V_offset}, {2'd0}};
+assign tmp_s_fu_145_p3 = {{wsp1_offset}, {2'd0}};
 
-assign wsp1_V_offset1_cast25_fu_137_p1 = wsp1_V_offset1;
+assign wsp1_offset1_cast25_fu_137_p1 = wsp1_offset1;
 
-assign wsp2_V_offset3_cast23_fu_105_p1 = wsp2_V_offset3;
+assign wsp2_offset3_cast23_fu_105_p1 = wsp2_offset3;
 
-assign zext_ln23_1_fu_121_p1 = tmp_fu_113_p3;
+assign zext_ln0_1_fu_153_p1 = tmp_s_fu_145_p3;
 
-assign zext_ln23_2_fu_176_p1 = tmp_32_fu_169_p3;
+assign zext_ln0_2_fu_188_p1 = tmp_33_fu_181_p3;
 
-assign zext_ln23_3_fu_141_p1 = wsp1_V_offset;
+assign zext_ln0_fu_141_p1 = wsp1_offset;
 
-assign zext_ln23_4_fu_153_p1 = tmp_s_fu_145_p3;
+assign zext_ln869_1_fu_121_p1 = tmp_fu_113_p3;
 
-assign zext_ln23_5_fu_188_p1 = tmp_33_fu_181_p3;
+assign zext_ln869_2_fu_176_p1 = tmp_32_fu_169_p3;
 
-assign zext_ln23_fu_109_p1 = wsp2_V_offset;
+assign zext_ln869_fu_109_p1 = wsp2_offset;
 
 assign zext_ln870_1_fu_208_p1 = or_ln870_1_fu_203_p2;
 

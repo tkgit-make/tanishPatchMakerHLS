@@ -12,12 +12,12 @@ set isEnableWaveformDebug 1
 set C_modelName {initializeArrays}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ patches_superpoints_V int 64 regular {array 2560 { 0 3 } 0 1 }  }
-	{ patches_parameters_V int 32 regular {array 3840 { 0 3 } 0 1 }  }
+	{ patches_superpoints int 64 regular {array 2560 { 0 3 } 0 1 }  }
+	{ patches_parameters int 32 regular {array 3840 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "patches_superpoints_V", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "patches_parameters_V", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
+	{ "Name" : "patches_superpoints", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "patches_parameters", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 14
 set portList { 
@@ -27,14 +27,14 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ patches_superpoints_V_address0 sc_out sc_lv 12 signal 0 } 
-	{ patches_superpoints_V_ce0 sc_out sc_logic 1 signal 0 } 
-	{ patches_superpoints_V_we0 sc_out sc_logic 1 signal 0 } 
-	{ patches_superpoints_V_d0 sc_out sc_lv 64 signal 0 } 
-	{ patches_parameters_V_address0 sc_out sc_lv 12 signal 1 } 
-	{ patches_parameters_V_ce0 sc_out sc_logic 1 signal 1 } 
-	{ patches_parameters_V_we0 sc_out sc_logic 1 signal 1 } 
-	{ patches_parameters_V_d0 sc_out sc_lv 32 signal 1 } 
+	{ patches_superpoints_address0 sc_out sc_lv 12 signal 0 } 
+	{ patches_superpoints_ce0 sc_out sc_logic 1 signal 0 } 
+	{ patches_superpoints_we0 sc_out sc_logic 1 signal 0 } 
+	{ patches_superpoints_d0 sc_out sc_lv 64 signal 0 } 
+	{ patches_parameters_address0 sc_out sc_lv 12 signal 1 } 
+	{ patches_parameters_ce0 sc_out sc_logic 1 signal 1 } 
+	{ patches_parameters_we0 sc_out sc_logic 1 signal 1 } 
+	{ patches_parameters_d0 sc_out sc_lv 32 signal 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -43,14 +43,14 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "patches_superpoints_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "patches_superpoints_V", "role": "address0" }} , 
- 	{ "name": "patches_superpoints_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints_V", "role": "ce0" }} , 
- 	{ "name": "patches_superpoints_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints_V", "role": "we0" }} , 
- 	{ "name": "patches_superpoints_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "patches_superpoints_V", "role": "d0" }} , 
- 	{ "name": "patches_parameters_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "patches_parameters_V", "role": "address0" }} , 
- 	{ "name": "patches_parameters_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters_V", "role": "ce0" }} , 
- 	{ "name": "patches_parameters_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters_V", "role": "we0" }} , 
- 	{ "name": "patches_parameters_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "patches_parameters_V", "role": "d0" }}  ]}
+ 	{ "name": "patches_superpoints_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "address0" }} , 
+ 	{ "name": "patches_superpoints_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "ce0" }} , 
+ 	{ "name": "patches_superpoints_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "we0" }} , 
+ 	{ "name": "patches_superpoints_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "d0" }} , 
+ 	{ "name": "patches_parameters_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address0" }} , 
+ 	{ "name": "patches_parameters_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "ce0" }} , 
+ 	{ "name": "patches_parameters_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "we0" }} , 
+ 	{ "name": "patches_parameters_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "patches_parameters", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -67,14 +67,14 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
-			{"Name" : "patches_superpoints_V", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "patches_parameters_V", "Type" : "Memory", "Direction" : "O"}]}]}
+			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "O"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	initializeArrays {
-		patches_superpoints_V {Type O LastRead -1 FirstWrite 3}
-		patches_parameters_V {Type O LastRead -1 FirstWrite 6}}}
+		patches_superpoints {Type O LastRead -1 FirstWrite 3}
+		patches_parameters {Type O LastRead -1 FirstWrite 6}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -89,6 +89,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	patches_superpoints_V { ap_memory {  { patches_superpoints_V_address0 mem_address 1 12 }  { patches_superpoints_V_ce0 mem_ce 1 1 }  { patches_superpoints_V_we0 mem_we 1 1 }  { patches_superpoints_V_d0 mem_din 1 64 } } }
-	patches_parameters_V { ap_memory {  { patches_parameters_V_address0 mem_address 1 12 }  { patches_parameters_V_ce0 mem_ce 1 1 }  { patches_parameters_V_we0 mem_we 1 1 }  { patches_parameters_V_d0 mem_din 1 32 } } }
+	patches_superpoints { ap_memory {  { patches_superpoints_address0 mem_address 1 12 }  { patches_superpoints_ce0 mem_ce 1 1 }  { patches_superpoints_we0 mem_we 1 1 }  { patches_superpoints_d0 mem_din 1 64 } } }
+	patches_parameters { ap_memory {  { patches_parameters_address0 mem_address 1 12 }  { patches_parameters_ce0 mem_ce 1 1 }  { patches_parameters_we0 mem_we 1 1 }  { patches_parameters_d0 mem_din 1 32 } } }
 }

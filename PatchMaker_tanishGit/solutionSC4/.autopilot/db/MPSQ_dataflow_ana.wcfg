@@ -127,69 +127,69 @@
                            <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxWaveData.Cycles</obj_property>
                            <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxWaveData.OutStanding</obj_property>
                            <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxTooltipData</obj_property>
-                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity">
-                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity">
+                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
                               <obj_property name="UseFullPath">true</obj_property>
-                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
-                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
+                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                               <obj_property name="UseCustomSignalColor">true</obj_property>
                               <obj_property name="CustomSignalColor">turquoise</obj_property>
                               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxWaveData.Cycles</obj_property>
-                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxWaveData.OutStanding</obj_property>
-                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxTooltipData</obj_property>
+                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxWaveData.Cycles</obj_property>
+                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxWaveData.OutStanding</obj_property>
+                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxTooltipData</obj_property>
                            </wvobject>
-                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity">
-                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity">
+                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
                               <obj_property name="UseFullPath">true</obj_property>
-                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
-                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
+                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                               <obj_property name="UseCustomSignalColor">true</obj_property>
                               <obj_property name="CustomSignalColor">turquoise</obj_property>
                               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxWaveData.Cycles</obj_property>
-                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxWaveData.OutStanding</obj_property>
-                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxTooltipData</obj_property>
+                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxWaveData.Cycles</obj_property>
+                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxWaveData.OutStanding</obj_property>
+                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxTooltipData</obj_property>
                            </wvobject>
-                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity">
-                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity">
+                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
                               <obj_property name="UseFullPath">true</obj_property>
-                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
-                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
+                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                               <obj_property name="UseCustomSignalColor">true</obj_property>
                               <obj_property name="CustomSignalColor">turquoise</obj_property>
                               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxWaveData.Cycles</obj_property>
-                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxWaveData.OutStanding</obj_property>
-                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxTooltipData</obj_property>
+                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxWaveData.Cycles</obj_property>
+                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxWaveData.OutStanding</obj_property>
+                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxTooltipData</obj_property>
                            </wvobject>
-                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity">
-                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity">
+                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
                               <obj_property name="UseFullPath">true</obj_property>
-                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
-                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
+                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                               <obj_property name="UseCustomSignalColor">true</obj_property>
                               <obj_property name="CustomSignalColor">turquoise</obj_property>
                               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxWaveData.Cycles</obj_property>
-                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxWaveData.OutStanding</obj_property>
-                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxTooltipData</obj_property>
+                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxWaveData.Cycles</obj_property>
+                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxWaveData.OutStanding</obj_property>
+                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxTooltipData</obj_property>
                            </wvobject>
                         </wvobject>
                         <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity">
@@ -224,37 +224,37 @@
                         <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxWaveData.Cycles</obj_property>
                         <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxWaveData.OutStanding</obj_property>
                         <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxTooltipData</obj_property>
-                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity">
-                           <obj_property name="label">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity">
+                           <obj_property name="label">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
                            <obj_property name="UseFullPath">true</obj_property>
-                           <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                           <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                            <obj_property name="UseCustomSignalColor">true</obj_property>
                            <obj_property name="CustomSignalColor">turquoise</obj_property>
                            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxWaveData.Cycles</obj_property>
-                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxWaveData.OutStanding</obj_property>
-                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxTooltipData</obj_property>
+                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxWaveData.Cycles</obj_property>
+                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxWaveData.OutStanding</obj_property>
+                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxTooltipData</obj_property>
                         </wvobject>
-                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity">
-                           <obj_property name="label">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity">
+                           <obj_property name="label">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
                            <obj_property name="UseFullPath">true</obj_property>
-                           <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                           <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                            <obj_property name="UseCustomSignalColor">true</obj_property>
                            <obj_property name="CustomSignalColor">turquoise</obj_property>
                            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxWaveData.Cycles</obj_property>
-                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxWaveData.OutStanding</obj_property>
-                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxTooltipData</obj_property>
+                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxWaveData.Cycles</obj_property>
+                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxWaveData.OutStanding</obj_property>
+                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxTooltipData</obj_property>
                         </wvobject>
                      </wvobject>
                      <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity">
@@ -289,21 +289,21 @@
                      <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_getShadows_fu_517_activity.dataflowTxWaveData.Cycles</obj_property>
                      <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_getShadows_fu_517_activity.dataflowTxWaveData.OutStanding</obj_property>
                      <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_getShadows_fu_517_activity.dataflowTxTooltipData</obj_property>
-                     <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_245/grp_straightLineProjectorFromLayerIJtoK_fu_245_activity">
-                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_245_activity</obj_property>
+                     <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/grp_straightLineProjectorFromLayerIJtoK_fu_261_activity">
+                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_261_activity</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
                         <obj_property name="UseFullPath">true</obj_property>
-                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_245_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_245_activity</obj_property>
+                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_261_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_261_activity</obj_property>
                         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                         <obj_property name="UseCustomSignalColor">true</obj_property>
                         <obj_property name="CustomSignalColor">turquoise</obj_property>
                         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                        <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_245/grp_straightLineProjectorFromLayerIJtoK_fu_245_activity.dataflowTxWaveData.Cycles</obj_property>
-                        <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_245/grp_straightLineProjectorFromLayerIJtoK_fu_245_activity.dataflowTxWaveData.OutStanding</obj_property>
-                        <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_245/grp_straightLineProjectorFromLayerIJtoK_fu_245_activity.dataflowTxTooltipData</obj_property>
+                        <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/grp_straightLineProjectorFromLayerIJtoK_fu_261_activity.dataflowTxWaveData.Cycles</obj_property>
+                        <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/grp_straightLineProjectorFromLayerIJtoK_fu_261_activity.dataflowTxWaveData.OutStanding</obj_property>
+                        <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/grp_straightLineProjectorFromLayerIJtoK_fu_261_activity.dataflowTxTooltipData</obj_property>
                      </wvobject>
                   </wvobject>
                   <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_delete_patch_fu_533/grp_delete_patch_fu_533_activity">
@@ -383,69 +383,69 @@
                            <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxWaveData.Cycles</obj_property>
                            <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxWaveData.OutStanding</obj_property>
                            <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxTooltipData</obj_property>
-                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity">
-                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity">
+                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
                               <obj_property name="UseFullPath">true</obj_property>
-                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
-                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
+                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                               <obj_property name="UseCustomSignalColor">true</obj_property>
                               <obj_property name="CustomSignalColor">turquoise</obj_property>
                               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxWaveData.Cycles</obj_property>
-                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxWaveData.OutStanding</obj_property>
-                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxTooltipData</obj_property>
+                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxWaveData.Cycles</obj_property>
+                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxWaveData.OutStanding</obj_property>
+                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxTooltipData</obj_property>
                            </wvobject>
-                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity">
-                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity">
+                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
                               <obj_property name="UseFullPath">true</obj_property>
-                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
-                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
+                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                               <obj_property name="UseCustomSignalColor">true</obj_property>
                               <obj_property name="CustomSignalColor">turquoise</obj_property>
                               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxWaveData.Cycles</obj_property>
-                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxWaveData.OutStanding</obj_property>
-                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxTooltipData</obj_property>
+                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxWaveData.Cycles</obj_property>
+                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxWaveData.OutStanding</obj_property>
+                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxTooltipData</obj_property>
                            </wvobject>
-                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity">
-                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity">
+                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
                               <obj_property name="UseFullPath">true</obj_property>
-                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
-                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
+                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                               <obj_property name="UseCustomSignalColor">true</obj_property>
                               <obj_property name="CustomSignalColor">turquoise</obj_property>
                               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxWaveData.Cycles</obj_property>
-                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxWaveData.OutStanding</obj_property>
-                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxTooltipData</obj_property>
+                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxWaveData.Cycles</obj_property>
+                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxWaveData.OutStanding</obj_property>
+                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxTooltipData</obj_property>
                            </wvobject>
-                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity">
-                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                           <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity">
+                              <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
                               <obj_property name="UseFullPath">true</obj_property>
-                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
-                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                              <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
+                              <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                               <obj_property name="UseCustomSignalColor">true</obj_property>
                               <obj_property name="CustomSignalColor">turquoise</obj_property>
                               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxWaveData.Cycles</obj_property>
-                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxWaveData.OutStanding</obj_property>
-                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxTooltipData</obj_property>
+                              <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxWaveData.Cycles</obj_property>
+                              <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxWaveData.OutStanding</obj_property>
+                              <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxTooltipData</obj_property>
                            </wvobject>
                         </wvobject>
                         <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity">
@@ -480,37 +480,37 @@
                         <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxWaveData.Cycles</obj_property>
                         <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxWaveData.OutStanding</obj_property>
                         <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxTooltipData</obj_property>
-                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity">
-                           <obj_property name="label">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity">
+                           <obj_property name="label">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
                            <obj_property name="UseFullPath">true</obj_property>
-                           <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                           <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                            <obj_property name="UseCustomSignalColor">true</obj_property>
                            <obj_property name="CustomSignalColor">turquoise</obj_property>
                            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxWaveData.Cycles</obj_property>
-                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxWaveData.OutStanding</obj_property>
-                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxTooltipData</obj_property>
+                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxWaveData.Cycles</obj_property>
+                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxWaveData.OutStanding</obj_property>
+                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxTooltipData</obj_property>
                         </wvobject>
-                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity">
-                           <obj_property name="label">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity">
+                           <obj_property name="label">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
                            <obj_property name="UseFullPath">true</obj_property>
-                           <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                           <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                            <obj_property name="UseCustomSignalColor">true</obj_property>
                            <obj_property name="CustomSignalColor">turquoise</obj_property>
                            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxWaveData.Cycles</obj_property>
-                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxWaveData.OutStanding</obj_property>
-                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxTooltipData</obj_property>
+                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxWaveData.Cycles</obj_property>
+                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxWaveData.OutStanding</obj_property>
+                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxTooltipData</obj_property>
                         </wvobject>
                      </wvobject>
                      <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity">
@@ -624,69 +624,69 @@
                         <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxWaveData.Cycles</obj_property>
                         <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxWaveData.OutStanding</obj_property>
                         <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_getParallelograms_fu_239_activity.dataflowTxTooltipData</obj_property>
-                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
                            <obj_property name="UseFullPath">true</obj_property>
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                            <obj_property name="UseCustomSignalColor">true</obj_property>
                            <obj_property name="CustomSignalColor">turquoise</obj_property>
                            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxWaveData.Cycles</obj_property>
-                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxWaveData.OutStanding</obj_property>
-                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity.dataflowTxTooltipData</obj_property>
+                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxWaveData.Cycles</obj_property>
+                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxWaveData.OutStanding</obj_property>
+                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity.dataflowTxTooltipData</obj_property>
                         </wvobject>
-                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
                            <obj_property name="UseFullPath">true</obj_property>
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                            <obj_property name="UseCustomSignalColor">true</obj_property>
                            <obj_property name="CustomSignalColor">turquoise</obj_property>
                            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxWaveData.Cycles</obj_property>
-                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxWaveData.OutStanding</obj_property>
-                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity.dataflowTxTooltipData</obj_property>
+                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxWaveData.Cycles</obj_property>
+                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxWaveData.OutStanding</obj_property>
+                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity.dataflowTxTooltipData</obj_property>
                         </wvobject>
-                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
                            <obj_property name="UseFullPath">true</obj_property>
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                            <obj_property name="UseCustomSignalColor">true</obj_property>
                            <obj_property name="CustomSignalColor">turquoise</obj_property>
                            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxWaveData.Cycles</obj_property>
-                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxWaveData.OutStanding</obj_property>
-                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity.dataflowTxTooltipData</obj_property>
+                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxWaveData.Cycles</obj_property>
+                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxWaveData.OutStanding</obj_property>
+                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity.dataflowTxTooltipData</obj_property>
                         </wvobject>
-                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                        <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
                            <obj_property name="UseFullPath">true</obj_property>
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                            <obj_property name="UseCustomSignalColor">true</obj_property>
                            <obj_property name="CustomSignalColor">turquoise</obj_property>
                            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxWaveData.Cycles</obj_property>
-                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxWaveData.OutStanding</obj_property>
-                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity.dataflowTxTooltipData</obj_property>
+                           <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxWaveData.Cycles</obj_property>
+                           <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxWaveData.OutStanding</obj_property>
+                           <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity.dataflowTxTooltipData</obj_property>
                         </wvobject>
                      </wvobject>
                      <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_get_acceptanceCorners_fu_249/grp_get_acceptanceCorners_fu_249_activity">
@@ -721,37 +721,37 @@
                      <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxWaveData.Cycles</obj_property>
                      <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxWaveData.OutStanding</obj_property>
                      <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_makeSuperPoint_alignedToLine11_fu_414_activity.dataflowTxTooltipData</obj_property>
-                     <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity">
-                        <obj_property name="label">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                     <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity">
+                        <obj_property name="label">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
                         <obj_property name="UseFullPath">true</obj_property>
-                        <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                        <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                         <obj_property name="UseCustomSignalColor">true</obj_property>
                         <obj_property name="CustomSignalColor">turquoise</obj_property>
                         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                        <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxWaveData.Cycles</obj_property>
-                        <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxWaveData.OutStanding</obj_property>
-                        <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity.dataflowTxTooltipData</obj_property>
+                        <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxWaveData.Cycles</obj_property>
+                        <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxWaveData.OutStanding</obj_property>
+                        <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity.dataflowTxTooltipData</obj_property>
                      </wvobject>
-                     <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity">
-                        <obj_property name="label">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                     <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity">
+                        <obj_property name="label">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
                         <obj_property name="UseFullPath">true</obj_property>
-                        <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                        <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                         <obj_property name="UseCustomSignalColor">true</obj_property>
                         <obj_property name="CustomSignalColor">turquoise</obj_property>
                         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                        <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxWaveData.Cycles</obj_property>
-                        <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxWaveData.OutStanding</obj_property>
-                        <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity.dataflowTxTooltipData</obj_property>
+                        <obj_property name="Render_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxWaveData.Cycles</obj_property>
+                        <obj_property name="Value_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxWaveData.OutStanding</obj_property>
+                        <obj_property name="Detail_Data">/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity.dataflowTxTooltipData</obj_property>
                      </wvobject>
                   </wvobject>
                   <wvobject type="group" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_add_patch9_fu_433/grp_add_patch9_fu_433_activity">
@@ -1068,21 +1068,21 @@
                      <wvobject type="group" fp_name="grp_getParallelograms_fu_239_group">
                         <obj_property name="label">grp_getParallelograms_fu_239</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity">
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity">
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                         </wvobject>
-                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity">
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity">
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                         </wvobject>
-                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity">
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity">
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                         </wvobject>
-                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity">
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity">
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                         </wvobject>
                         <wvobject type="group" fp_name="grp_getParallelograms_fu_239_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
@@ -1100,81 +1100,81 @@
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
                         </wvobject>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_202_group">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_202</obj_property>
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_176_group">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_176</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_202_Handshake_group">
+                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_176_Handshake_group">
                               <obj_property name="label">Block-level handshake</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_start">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_start">
                                  <obj_property name="ElementShortName">ap_start</obj_property>
                                  <obj_property name="ObjectShortName">ap_start</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_ready">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_ready">
                                  <obj_property name="ElementShortName">ap_ready</obj_property>
                                  <obj_property name="ObjectShortName">ap_ready</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_done">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_done">
                                  <obj_property name="ElementShortName">ap_done</obj_property>
                                  <obj_property name="ObjectShortName">ap_done</obj_property>
                               </wvobject>
                            </wvobject>
                         </wvobject>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_215_group">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_215</obj_property>
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_190_group">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_190</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_215_Handshake_group">
+                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_190_Handshake_group">
                               <obj_property name="label">Block-level handshake</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_start">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_start">
                                  <obj_property name="ElementShortName">ap_start</obj_property>
                                  <obj_property name="ObjectShortName">ap_start</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_ready">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_ready">
                                  <obj_property name="ElementShortName">ap_ready</obj_property>
                                  <obj_property name="ObjectShortName">ap_ready</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_done">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_done">
                                  <obj_property name="ElementShortName">ap_done</obj_property>
                                  <obj_property name="ObjectShortName">ap_done</obj_property>
                               </wvobject>
                            </wvobject>
                         </wvobject>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_228_group">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_228</obj_property>
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_204_group">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_204</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_228_Handshake_group">
+                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_204_Handshake_group">
                               <obj_property name="label">Block-level handshake</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_start">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_start">
                                  <obj_property name="ElementShortName">ap_start</obj_property>
                                  <obj_property name="ObjectShortName">ap_start</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_ready">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_ready">
                                  <obj_property name="ElementShortName">ap_ready</obj_property>
                                  <obj_property name="ObjectShortName">ap_ready</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_done">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_done">
                                  <obj_property name="ElementShortName">ap_done</obj_property>
                                  <obj_property name="ObjectShortName">ap_done</obj_property>
                               </wvobject>
                            </wvobject>
                         </wvobject>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_241_group">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_241</obj_property>
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_217_group">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_217</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_241_Handshake_group">
+                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_217_Handshake_group">
                               <obj_property name="label">Block-level handshake</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_start">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_start">
                                  <obj_property name="ElementShortName">ap_start</obj_property>
                                  <obj_property name="ObjectShortName">ap_start</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_ready">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_ready">
                                  <obj_property name="ElementShortName">ap_ready</obj_property>
                                  <obj_property name="ObjectShortName">ap_ready</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_done">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_done">
                                  <obj_property name="ElementShortName">ap_done</obj_property>
                                  <obj_property name="ObjectShortName">ap_done</obj_property>
                               </wvobject>
@@ -1205,13 +1205,13 @@
                   <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine11_fu_414_group">
                      <obj_property name="label">grp_makeSuperPoint_alignedToLine11_fu_414</obj_property>
                      <obj_property name="DisplayName">label</obj_property>
-                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity">
-                        <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity">
+                        <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                      </wvobject>
-                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity">
-                        <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity">
+                        <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                      </wvobject>
                      <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine11_fu_414_Handshake_group">
                         <obj_property name="label">Block-level handshake</obj_property>
@@ -1229,41 +1229,41 @@
                            <obj_property name="ObjectShortName">ap_done</obj_property>
                         </wvobject>
                      </wvobject>
-                     <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_282_group">
-                        <obj_property name="label">grp_mSP_findLRBounds_fu_282</obj_property>
+                     <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_270_group">
+                        <obj_property name="label">grp_mSP_findLRBounds_fu_270</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_282_Handshake_group">
+                        <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_270_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_start">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_start">
                               <obj_property name="ElementShortName">ap_start</obj_property>
                               <obj_property name="ObjectShortName">ap_start</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_ready">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_ready">
                               <obj_property name="ElementShortName">ap_ready</obj_property>
                               <obj_property name="ObjectShortName">ap_ready</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_done">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_done">
                               <obj_property name="ElementShortName">ap_done</obj_property>
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
                         </wvobject>
                      </wvobject>
-                     <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_292_group">
-                        <obj_property name="label">grp_mSP_findStartIndex_fu_292</obj_property>
+                     <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_279_group">
+                        <obj_property name="label">grp_mSP_findStartIndex_fu_279</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_292_Handshake_group">
+                        <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_279_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_start">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_start">
                               <obj_property name="ElementShortName">ap_start</obj_property>
                               <obj_property name="ObjectShortName">ap_start</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_ready">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_ready">
                               <obj_property name="ElementShortName">ap_ready</obj_property>
                               <obj_property name="ObjectShortName">ap_ready</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_done">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_makePatch_alignedToLine_fu_494/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_done">
                               <obj_property name="ElementShortName">ap_done</obj_property>
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
@@ -1294,9 +1294,9 @@
                <wvobject type="group" fp_name="grp_getShadows_fu_517_group">
                   <obj_property name="label">grp_getShadows_fu_517</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_245/grp_straightLineProjectorFromLayerIJtoK_fu_245_activity">
-                     <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_245_activity</obj_property>
-                     <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_245_activity</obj_property>
+                  <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/grp_straightLineProjectorFromLayerIJtoK_fu_261_activity">
+                     <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_261_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_261_activity</obj_property>
                   </wvobject>
                   <wvobject type="group" fp_name="grp_getShadows_fu_517_Handshake_group">
                      <obj_property name="label">Block-level handshake</obj_property>
@@ -1314,21 +1314,21 @@
                         <obj_property name="ObjectShortName">ap_done</obj_property>
                      </wvobject>
                   </wvobject>
-                  <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_245_group">
-                     <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_245</obj_property>
+                  <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_261_group">
+                     <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_261</obj_property>
                      <obj_property name="DisplayName">label</obj_property>
-                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_245_Handshake_group">
+                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_261_Handshake_group">
                         <obj_property name="label">Block-level handshake</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_245/ap_start">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/ap_start">
                            <obj_property name="ElementShortName">ap_start</obj_property>
                            <obj_property name="ObjectShortName">ap_start</obj_property>
                         </wvobject>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_245/ap_ready">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/ap_ready">
                            <obj_property name="ElementShortName">ap_ready</obj_property>
                            <obj_property name="ObjectShortName">ap_ready</obj_property>
                         </wvobject>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_245/ap_done">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makeThirdPatch_fu_481/grp_getShadows_fu_517/grp_straightLineProjectorFromLayerIJtoK_fu_261/ap_done">
                            <obj_property name="ElementShortName">ap_done</obj_property>
                            <obj_property name="ObjectShortName">ap_done</obj_property>
                         </wvobject>
@@ -1452,21 +1452,21 @@
                      <wvobject type="group" fp_name="grp_getParallelograms_fu_239_group">
                         <obj_property name="label">grp_getParallelograms_fu_239</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity">
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity">
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                         </wvobject>
-                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity">
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity">
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                         </wvobject>
-                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity">
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity">
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                         </wvobject>
-                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity">
-                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
-                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                        <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity">
+                           <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
+                           <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                         </wvobject>
                         <wvobject type="group" fp_name="grp_getParallelograms_fu_239_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
@@ -1484,81 +1484,81 @@
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
                         </wvobject>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_202_group">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_202</obj_property>
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_176_group">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_176</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_202_Handshake_group">
+                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_176_Handshake_group">
                               <obj_property name="label">Block-level handshake</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_start">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_start">
                                  <obj_property name="ElementShortName">ap_start</obj_property>
                                  <obj_property name="ObjectShortName">ap_start</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_ready">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_ready">
                                  <obj_property name="ElementShortName">ap_ready</obj_property>
                                  <obj_property name="ObjectShortName">ap_ready</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_done">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_done">
                                  <obj_property name="ElementShortName">ap_done</obj_property>
                                  <obj_property name="ObjectShortName">ap_done</obj_property>
                               </wvobject>
                            </wvobject>
                         </wvobject>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_215_group">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_215</obj_property>
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_190_group">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_190</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_215_Handshake_group">
+                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_190_Handshake_group">
                               <obj_property name="label">Block-level handshake</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_start">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_start">
                                  <obj_property name="ElementShortName">ap_start</obj_property>
                                  <obj_property name="ObjectShortName">ap_start</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_ready">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_ready">
                                  <obj_property name="ElementShortName">ap_ready</obj_property>
                                  <obj_property name="ObjectShortName">ap_ready</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_done">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_done">
                                  <obj_property name="ElementShortName">ap_done</obj_property>
                                  <obj_property name="ObjectShortName">ap_done</obj_property>
                               </wvobject>
                            </wvobject>
                         </wvobject>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_228_group">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_228</obj_property>
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_204_group">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_204</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_228_Handshake_group">
+                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_204_Handshake_group">
                               <obj_property name="label">Block-level handshake</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_start">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_start">
                                  <obj_property name="ElementShortName">ap_start</obj_property>
                                  <obj_property name="ObjectShortName">ap_start</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_ready">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_ready">
                                  <obj_property name="ElementShortName">ap_ready</obj_property>
                                  <obj_property name="ObjectShortName">ap_ready</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_done">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_done">
                                  <obj_property name="ElementShortName">ap_done</obj_property>
                                  <obj_property name="ObjectShortName">ap_done</obj_property>
                               </wvobject>
                            </wvobject>
                         </wvobject>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_241_group">
-                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_241</obj_property>
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_217_group">
+                           <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_217</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_241_Handshake_group">
+                           <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_217_Handshake_group">
                               <obj_property name="label">Block-level handshake</obj_property>
                               <obj_property name="DisplayName">label</obj_property>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_start">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_start">
                                  <obj_property name="ElementShortName">ap_start</obj_property>
                                  <obj_property name="ObjectShortName">ap_start</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_ready">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_ready">
                                  <obj_property name="ElementShortName">ap_ready</obj_property>
                                  <obj_property name="ObjectShortName">ap_ready</obj_property>
                               </wvobject>
-                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_done">
+                              <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_done">
                                  <obj_property name="ElementShortName">ap_done</obj_property>
                                  <obj_property name="ObjectShortName">ap_done</obj_property>
                               </wvobject>
@@ -1589,13 +1589,13 @@
                   <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine11_fu_414_group">
                      <obj_property name="label">grp_makeSuperPoint_alignedToLine11_fu_414</obj_property>
                      <obj_property name="DisplayName">label</obj_property>
-                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity">
-                        <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity">
+                        <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                      </wvobject>
-                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity">
-                        <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity">
+                        <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                      </wvobject>
                      <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine11_fu_414_Handshake_group">
                         <obj_property name="label">Block-level handshake</obj_property>
@@ -1613,41 +1613,41 @@
                            <obj_property name="ObjectShortName">ap_done</obj_property>
                         </wvobject>
                      </wvobject>
-                     <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_282_group">
-                        <obj_property name="label">grp_mSP_findLRBounds_fu_282</obj_property>
+                     <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_270_group">
+                        <obj_property name="label">grp_mSP_findLRBounds_fu_270</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_282_Handshake_group">
+                        <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_270_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_start">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_start">
                               <obj_property name="ElementShortName">ap_start</obj_property>
                               <obj_property name="ObjectShortName">ap_start</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_ready">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_ready">
                               <obj_property name="ElementShortName">ap_ready</obj_property>
                               <obj_property name="ObjectShortName">ap_ready</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_done">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_done">
                               <obj_property name="ElementShortName">ap_done</obj_property>
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
                         </wvobject>
                      </wvobject>
-                     <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_292_group">
-                        <obj_property name="label">grp_mSP_findStartIndex_fu_292</obj_property>
+                     <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_279_group">
+                        <obj_property name="label">grp_mSP_findStartIndex_fu_279</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_292_Handshake_group">
+                        <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_279_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_start">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_start">
                               <obj_property name="ElementShortName">ap_start</obj_property>
                               <obj_property name="ObjectShortName">ap_start</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_ready">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_ready">
                               <obj_property name="ElementShortName">ap_ready</obj_property>
                               <obj_property name="ObjectShortName">ap_ready</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_done">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_solveComplmentaryPatch_fu_508/grp_makePatch_alignedToLine_fu_649/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_done">
                               <obj_property name="ElementShortName">ap_done</obj_property>
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
@@ -1797,21 +1797,21 @@
                   <wvobject type="group" fp_name="grp_getParallelograms_fu_239_group">
                      <obj_property name="label">grp_getParallelograms_fu_239</obj_property>
                      <obj_property name="DisplayName">label</obj_property>
-                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/grp_straightLineProjectorFromLayerIJtoK_fu_202_activity">
-                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_202_activity</obj_property>
+                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/grp_straightLineProjectorFromLayerIJtoK_fu_176_activity">
+                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_176_activity</obj_property>
                      </wvobject>
-                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/grp_straightLineProjectorFromLayerIJtoK_fu_215_activity">
-                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_215_activity</obj_property>
+                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/grp_straightLineProjectorFromLayerIJtoK_fu_190_activity">
+                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_190_activity</obj_property>
                      </wvobject>
-                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/grp_straightLineProjectorFromLayerIJtoK_fu_228_activity">
-                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_228_activity</obj_property>
+                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/grp_straightLineProjectorFromLayerIJtoK_fu_204_activity">
+                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_204_activity</obj_property>
                      </wvobject>
-                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/grp_straightLineProjectorFromLayerIJtoK_fu_241_activity">
-                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
-                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_241_activity</obj_property>
+                     <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/grp_straightLineProjectorFromLayerIJtoK_fu_217_activity">
+                        <obj_property name="ElementShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
+                        <obj_property name="ObjectShortName">grp_straightLineProjectorFromLayerIJtoK_fu_217_activity</obj_property>
                      </wvobject>
                      <wvobject type="group" fp_name="grp_getParallelograms_fu_239_Handshake_group">
                         <obj_property name="label">Block-level handshake</obj_property>
@@ -1829,81 +1829,81 @@
                            <obj_property name="ObjectShortName">ap_done</obj_property>
                         </wvobject>
                      </wvobject>
-                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_202_group">
-                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_202</obj_property>
+                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_176_group">
+                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_176</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_202_Handshake_group">
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_176_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_start">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_start">
                               <obj_property name="ElementShortName">ap_start</obj_property>
                               <obj_property name="ObjectShortName">ap_start</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_ready">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_ready">
                               <obj_property name="ElementShortName">ap_ready</obj_property>
                               <obj_property name="ObjectShortName">ap_ready</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_202/ap_done">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_176/ap_done">
                               <obj_property name="ElementShortName">ap_done</obj_property>
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
                         </wvobject>
                      </wvobject>
-                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_215_group">
-                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_215</obj_property>
+                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_190_group">
+                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_190</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_215_Handshake_group">
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_190_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_start">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_start">
                               <obj_property name="ElementShortName">ap_start</obj_property>
                               <obj_property name="ObjectShortName">ap_start</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_ready">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_ready">
                               <obj_property name="ElementShortName">ap_ready</obj_property>
                               <obj_property name="ObjectShortName">ap_ready</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_215/ap_done">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_190/ap_done">
                               <obj_property name="ElementShortName">ap_done</obj_property>
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
                         </wvobject>
                      </wvobject>
-                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_228_group">
-                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_228</obj_property>
+                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_204_group">
+                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_204</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_228_Handshake_group">
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_204_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_start">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_start">
                               <obj_property name="ElementShortName">ap_start</obj_property>
                               <obj_property name="ObjectShortName">ap_start</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_ready">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_ready">
                               <obj_property name="ElementShortName">ap_ready</obj_property>
                               <obj_property name="ObjectShortName">ap_ready</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_228/ap_done">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_204/ap_done">
                               <obj_property name="ElementShortName">ap_done</obj_property>
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
                         </wvobject>
                      </wvobject>
-                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_241_group">
-                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_241</obj_property>
+                     <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_217_group">
+                        <obj_property name="label">grp_straightLineProjectorFromLayerIJtoK_fu_217</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_241_Handshake_group">
+                        <wvobject type="group" fp_name="grp_straightLineProjectorFromLayerIJtoK_fu_217_Handshake_group">
                            <obj_property name="label">Block-level handshake</obj_property>
                            <obj_property name="DisplayName">label</obj_property>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_start">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_start">
                               <obj_property name="ElementShortName">ap_start</obj_property>
                               <obj_property name="ObjectShortName">ap_start</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_ready">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_ready">
                               <obj_property name="ElementShortName">ap_ready</obj_property>
                               <obj_property name="ObjectShortName">ap_ready</obj_property>
                            </wvobject>
-                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_241/ap_done">
+                           <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_wedgePatch_init_fu_404/grp_getParallelograms_fu_239/grp_straightLineProjectorFromLayerIJtoK_fu_217/ap_done">
                               <obj_property name="ElementShortName">ap_done</obj_property>
                               <obj_property name="ObjectShortName">ap_done</obj_property>
                            </wvobject>
@@ -1934,13 +1934,13 @@
                <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine11_fu_414_group">
                   <obj_property name="label">grp_makeSuperPoint_alignedToLine11_fu_414</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/grp_mSP_findLRBounds_fu_282_activity">
-                     <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
-                     <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_282_activity</obj_property>
+                  <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/grp_mSP_findLRBounds_fu_270_activity">
+                     <obj_property name="ElementShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_mSP_findLRBounds_fu_270_activity</obj_property>
                   </wvobject>
-                  <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/grp_mSP_findStartIndex_fu_292_activity">
-                     <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
-                     <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_292_activity</obj_property>
+                  <wvobject type="protoinst" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/grp_mSP_findStartIndex_fu_279_activity">
+                     <obj_property name="ElementShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
+                     <obj_property name="ObjectShortName">grp_mSP_findStartIndex_fu_279_activity</obj_property>
                   </wvobject>
                   <wvobject type="group" fp_name="grp_makeSuperPoint_alignedToLine11_fu_414_Handshake_group">
                      <obj_property name="label">Block-level handshake</obj_property>
@@ -1958,41 +1958,41 @@
                         <obj_property name="ObjectShortName">ap_done</obj_property>
                      </wvobject>
                   </wvobject>
-                  <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_282_group">
-                     <obj_property name="label">grp_mSP_findLRBounds_fu_282</obj_property>
+                  <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_270_group">
+                     <obj_property name="label">grp_mSP_findLRBounds_fu_270</obj_property>
                      <obj_property name="DisplayName">label</obj_property>
-                     <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_282_Handshake_group">
+                     <wvobject type="group" fp_name="grp_mSP_findLRBounds_fu_270_Handshake_group">
                         <obj_property name="label">Block-level handshake</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_start">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_start">
                            <obj_property name="ElementShortName">ap_start</obj_property>
                            <obj_property name="ObjectShortName">ap_start</obj_property>
                         </wvobject>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_ready">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_ready">
                            <obj_property name="ElementShortName">ap_ready</obj_property>
                            <obj_property name="ObjectShortName">ap_ready</obj_property>
                         </wvobject>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_282/ap_done">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findLRBounds_fu_270/ap_done">
                            <obj_property name="ElementShortName">ap_done</obj_property>
                            <obj_property name="ObjectShortName">ap_done</obj_property>
                         </wvobject>
                      </wvobject>
                   </wvobject>
-                  <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_292_group">
-                     <obj_property name="label">grp_mSP_findStartIndex_fu_292</obj_property>
+                  <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_279_group">
+                     <obj_property name="label">grp_mSP_findStartIndex_fu_279</obj_property>
                      <obj_property name="DisplayName">label</obj_property>
-                     <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_292_Handshake_group">
+                     <wvobject type="group" fp_name="grp_mSP_findStartIndex_fu_279_Handshake_group">
                         <obj_property name="label">Block-level handshake</obj_property>
                         <obj_property name="DisplayName">label</obj_property>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_start">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_start">
                            <obj_property name="ElementShortName">ap_start</obj_property>
                            <obj_property name="ObjectShortName">ap_start</obj_property>
                         </wvobject>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_ready">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_ready">
                            <obj_property name="ElementShortName">ap_ready</obj_property>
                            <obj_property name="ObjectShortName">ap_ready</obj_property>
                         </wvobject>
-                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_292/ap_done">
+                        <wvobject type="logic" fp_name="/apatb_MPSQ_top/AESL_inst_MPSQ/grp_solveNextColumn_fu_328/grp_solveNextPatchPair_fu_190/grp_makePatch_alignedToLine_fu_541/grp_makeSuperPoint_alignedToLine11_fu_414/grp_mSP_findStartIndex_fu_279/ap_done">
                            <obj_property name="ElementShortName">ap_done</obj_property>
                            <obj_property name="ObjectShortName">ap_done</obj_property>
                         </wvobject>
