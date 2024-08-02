@@ -11,14 +11,14 @@
 
 <trans id="57" from="2" to="3">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln752" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln748" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="58" from="2" to="9">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln752" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln748" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -74,7 +74,7 @@
 <trans id="69" from="11" to="10">
 <condition id="-1">
 <or_exp><and_exp><literal name="tmp" val="1"/>
-<literal name="icmp_ln772" val="0"/>
+<literal name="icmp_ln768" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -93,7 +93,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="8" op_0_bw="8" op_1_bw="8">
+<Node id="17" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
 :3 %n_patches_read = read i8 @_ssdm_op_Read.ap_auto.i8P0A, i8 %n_patches
 
@@ -108,12 +108,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="1" op_0_bw="8" op_1_bw="8">
+<Node id="18" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-:4 %icmp_ln752 = icmp_eq  i8 %n_patches_read, i8 0
+:4 %icmp_ln748 = icmp_eq  i8 %n_patches_read, i8 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln752"/></StgValue>
+<StgValue><ssdm name="icmp_ln748"/></StgValue>
 </operation>
 </state>
 
@@ -126,7 +126,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="12" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="14" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 :0 %ppl_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %ppl
 
@@ -141,7 +141,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="15" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 :1 %apexZ0_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %apexZ0
 
@@ -156,9 +156,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_13, i32 0, i32 0, void @empty_2, i32 4294967295, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2
+:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_33, i32 0, i32 0, void @empty_2, i32 4294967295, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -171,23 +171,23 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="19" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:5 %br_ln752 = br i1 %icmp_ln752, void, void %._crit_edge.preheader
+:5 %br_ln748 = br i1 %icmp_ln748, void, void %._crit_edge.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln752"/></StgValue>
+<StgValue><ssdm name="br_ln748"/></StgValue>
 </operation>
 
 <operation id="18" st_id="2" stage="7" lat="7">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln752" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln748" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
+<Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
 <![CDATA[
 :0 %op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList
 
@@ -205,7 +205,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
+<Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
 <![CDATA[
 :0 %op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList
 
@@ -223,7 +223,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
+<Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
 <![CDATA[
 :0 %op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList
 
@@ -241,7 +241,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
+<Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
 <![CDATA[
 :0 %op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList
 
@@ -259,7 +259,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
+<Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
 <![CDATA[
 :0 %op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList
 
@@ -277,7 +277,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
+<Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
 <![CDATA[
 :0 %op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList
 
@@ -295,7 +295,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
+<Node id="21" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="3" op_4_bw="3" op_5_bw="3" op_6_bw="35">
 <![CDATA[
 :0 %op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList
 
@@ -310,11 +310,11 @@
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln752" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln748" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="1" op_0_bw="32" op_1_bw="32">
+<Node id="22" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 :1 %icmp_ln878 = icmp_sgt  i32 %op2_V, i32 50000000
 
@@ -326,32 +326,32 @@
 <core>Sel</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln752" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln748" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<Node id="23" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-:2 %select_ln754 = select i1 %icmp_ln878, i32 50000000, i32 %op2_V
+:2 %select_ln750 = select i1 %icmp_ln878, i32 50000000, i32 %op2_V
 
 ]]></Node>
-<StgValue><ssdm name="select_ln754"/></StgValue>
+<StgValue><ssdm name="select_ln750"/></StgValue>
 </operation>
 
 <operation id="27" st_id="9" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln752" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln748" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="0">
+<Node id="24" bw="0" op_0_bw="0">
 <![CDATA[
-:3 %br_ln754 = br void %._crit_edge.preheader
+:3 %br_ln750 = br void %._crit_edge.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln754"/></StgValue>
+<StgValue><ssdm name="br_ln750"/></StgValue>
 </operation>
 
 <operation id="28" st_id="9" stage="1" lat="1">
@@ -361,9 +361,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="26" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-._crit_edge.preheader:0 %z_top_max_V_16_ph = phi i32 50000000, void, i32 %select_ln754, void
+._crit_edge.preheader:0 %z_top_max_V_16_ph = phi i32 50000000, void, i32 %select_ln750, void
 
 ]]></Node>
 <StgValue><ssdm name="z_top_max_V_16_ph"/></StgValue>
@@ -376,12 +376,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="0" op_0_bw="0">
+<Node id="27" bw="0" op_0_bw="0">
 <![CDATA[
-._crit_edge.preheader:1 %br_ln761 = br void %._crit_edge
+._crit_edge.preheader:1 %br_ln757 = br void %._crit_edge
 
 ]]></Node>
-<StgValue><ssdm name="br_ln761"/></StgValue>
+<StgValue><ssdm name="br_ln757"/></StgValue>
 </operation>
 </state>
 
@@ -394,7 +394,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="29" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 ._crit_edge:0 %z_top_max_V_16 = phi i32 %z_top_max_V, void, i32 %z_top_max_V_16_ph, void %._crit_edge.preheader
 
@@ -409,7 +409,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="30" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 ._crit_edge:1 %c_corner_V_0 = phi i32 %c_corner_V, void, i32 4294967295, void %._crit_edge.preheader
 
@@ -424,7 +424,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="31" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 ._crit_edge:2 %complementary_apexZ0_V_0 = phi i32 %complementary_apexZ0_V, void, i32 0, void %._crit_edge.preheader
 
@@ -439,7 +439,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="32" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 ._crit_edge:3 %z_top_min_V_0 = phi i32 %z_top_min_V, void, i32 4244967296, void %._crit_edge.preheader
 
@@ -454,7 +454,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="33" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 ._crit_edge:4 %nPatchesInColumn_0 = phi i32 %nPatchesInColumn, void, i32 0, void %._crit_edge.preheader
 
@@ -469,7 +469,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="34" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 ._crit_edge:5 %projectionOfCornerToBeam_V_0 = phi i32 %projectionOfCornerToBeam_V, void, i32 0, void %._crit_edge.preheader
 
@@ -484,7 +484,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="35" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 ._crit_edge:6 %saved_apexZ0_buf_0 = phi i32 %saved_apexZ0_ret, void, i32 %apexZ0_read, void %._crit_edge.preheader
 
@@ -499,7 +499,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="36" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 ._crit_edge:7 %loopCounter = phi i32 %loopCounter_1, void, i32 0, void %._crit_edge.preheader
 
@@ -514,7 +514,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="32">
+<Node id="37" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
 ._crit_edge:8 %tmp = call i1 @getSolveNextColumnWhileConditional, i32 %c_corner_V_0, i32 %nPatchesInColumn_0, i32 %projectionOfCornerToBeam_V_0
 
@@ -529,7 +529,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="38" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 ._crit_edge:9 %loopCounter_1 = add i32 %loopCounter, i32 1
 
@@ -544,12 +544,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="39" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-._crit_edge:10 %br_ln766 = br i1 %tmp, void %.loopexit, void
+._crit_edge:10 %br_ln762 = br i1 %tmp, void %.loopexit, void
 
 ]]></Node>
-<StgValue><ssdm name="br_ln766"/></StgValue>
+<StgValue><ssdm name="br_ln762"/></StgValue>
 </operation>
 
 <operation id="41" st_id="10" stage="2" lat="2">
@@ -560,9 +560,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="224" op_0_bw="224" op_1_bw="8" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="64" op_11_bw="32" op_12_bw="35" op_13_bw="26" op_14_bw="0">
+<Node id="42" bw="224" op_0_bw="224" op_1_bw="8" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="64" op_11_bw="32" op_12_bw="33" op_13_bw="26" op_14_bw="35" op_15_bw="0">
 <![CDATA[
-:1 %call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i35 %radiiDivisionList, i26 %trapezoid_edges_V
+:1 %call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i33 %radiiDivisionList_1_4, i26 %trapezoid_edges_V, i35 %radiiDivisionList
 
 ]]></Node>
 <StgValue><ssdm name="call_ret"/></StgValue>
@@ -576,12 +576,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="48" bw="1" op_0_bw="32" op_1_bw="32">
+<Node id="50" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:9 %icmp_ln772 = icmp_sgt  i32 %loopCounter, i32 25
+:9 %icmp_ln768 = icmp_sgt  i32 %loopCounter, i32 25
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln772"/></StgValue>
+<StgValue><ssdm name="icmp_ln768"/></StgValue>
 </operation>
 </state>
 
@@ -595,12 +595,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="41" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-:0 %specloopname_ln768 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20
+:0 %specloopname_ln764 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln768"/></StgValue>
+<StgValue><ssdm name="specloopname_ln764"/></StgValue>
 </operation>
 
 <operation id="44" st_id="11" stage="1" lat="2">
@@ -611,9 +611,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="224" op_0_bw="224" op_1_bw="8" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="64" op_11_bw="32" op_12_bw="35" op_13_bw="26" op_14_bw="0">
+<Node id="42" bw="224" op_0_bw="224" op_1_bw="8" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="64" op_11_bw="32" op_12_bw="33" op_13_bw="26" op_14_bw="35" op_15_bw="0">
 <![CDATA[
-:1 %call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i35 %radiiDivisionList, i26 %trapezoid_edges_V
+:1 %call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i33 %radiiDivisionList_1_4, i26 %trapezoid_edges_V, i35 %radiiDivisionList
 
 ]]></Node>
 <StgValue><ssdm name="call_ret"/></StgValue>
@@ -627,7 +627,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="32" op_0_bw="224">
+<Node id="43" bw="32" op_0_bw="224">
 <![CDATA[
 :2 %complementary_apexZ0_V = extractvalue i224 %call_ret
 
@@ -643,7 +643,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="32" op_0_bw="224">
+<Node id="44" bw="32" op_0_bw="224">
 <![CDATA[
 :3 %projectionOfCornerToBeam_V = extractvalue i224 %call_ret
 
@@ -659,7 +659,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="32" op_0_bw="224">
+<Node id="45" bw="32" op_0_bw="224">
 <![CDATA[
 :4 %c_corner_V = extractvalue i224 %call_ret
 
@@ -675,7 +675,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="32" op_0_bw="224">
+<Node id="46" bw="32" op_0_bw="224">
 <![CDATA[
 :5 %nPatchesInColumn = extractvalue i224 %call_ret
 
@@ -691,7 +691,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="32" op_0_bw="224">
+<Node id="47" bw="32" op_0_bw="224">
 <![CDATA[
 :6 %saved_apexZ0_ret = extractvalue i224 %call_ret
 
@@ -707,7 +707,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="32" op_0_bw="224">
+<Node id="48" bw="32" op_0_bw="224">
 <![CDATA[
 :7 %z_top_max_V = extractvalue i224 %call_ret
 
@@ -723,7 +723,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="32" op_0_bw="224">
+<Node id="49" bw="32" op_0_bw="224">
 <![CDATA[
 :8 %z_top_min_V = extractvalue i224 %call_ret
 
@@ -739,12 +739,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="49" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="51" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:10 %br_ln772 = br i1 %icmp_ln772, void, void %.loopexit
+:10 %br_ln768 = br i1 %icmp_ln768, void, void %.loopexit
 
 ]]></Node>
-<StgValue><ssdm name="br_ln772"/></StgValue>
+<StgValue><ssdm name="br_ln768"/></StgValue>
 </operation>
 
 <operation id="53" st_id="11" stage="1" lat="1">
@@ -752,28 +752,28 @@
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="tmp" val="1"/>
-<literal name="icmp_ln772" val="0"/>
+<literal name="icmp_ln768" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="0" op_0_bw="0">
+<Node id="53" bw="0" op_0_bw="0">
 <![CDATA[
-:0 %br_ln766 = br void %._crit_edge
+:0 %br_ln762 = br void %._crit_edge
 
 ]]></Node>
-<StgValue><ssdm name="br_ln766"/></StgValue>
+<StgValue><ssdm name="br_ln762"/></StgValue>
 </operation>
 
 <operation id="54" st_id="11" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln772" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln768" val="1"/>
 </and_exp><and_exp><literal name="tmp" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="55" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 .loopexit:0 %saved_apexZ0_buf_1 = phi i32 %saved_apexZ0_ret, void, i32 %saved_apexZ0_buf_0, void %._crit_edge
 
@@ -785,17 +785,17 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln772" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln768" val="1"/>
 </and_exp><and_exp><literal name="tmp" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="0" op_0_bw="32">
+<Node id="56" bw="0" op_0_bw="32">
 <![CDATA[
-.loopexit:1 %ret_ln787 = ret i32 %saved_apexZ0_buf_1
+.loopexit:1 %ret_ln783 = ret i32 %saved_apexZ0_buf_1
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln787"/></StgValue>
+<StgValue><ssdm name="ret_ln783"/></StgValue>
 </operation>
 </state>
 </state_list>

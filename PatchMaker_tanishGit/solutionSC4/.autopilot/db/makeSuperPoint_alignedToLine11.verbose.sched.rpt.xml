@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makeSuperPoint_alignedToLine11'" level="0">
-<item name = "Date">Thu Aug  1 00:47:00 2024
+<item name = "Date">Thu Aug  1 23:30:37 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, none</column>
+<column name="">306, ?, 0.918 us, ?, 306, ?, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,6 +36,8 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- makeSuperPoint_alignedToLine_rowListSet_loop">258, 258, 4, 1, 1, 256, yes</column>
+<column name="- mSP_findStartIndex_startValue">3, ?, 4, 1, 1, 1 ~ ?, yes</column>
+<column name="- mSP_findLRBounds_LRdiscovery">3, ?, 4, 1, 1, 1 ~ ?, yes</column>
 <column name="- makeSuperPoint_alignedToLine_initSP_perPoint_makeSuperPoint_alignedToLine_initSP_perParameter">35, 35, 5, 1, 1, 32, yes</column>
 </table>
 </item>

@@ -8,7 +8,7 @@ target triple = "fpga64-xilinx-none"
 %struct.ssdm_int.2 = type { i64 }
 
 ; Function Attrs: noinline
-define void @apatb_MPSQ_ir(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x i32]* %GDn_points, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT) local_unnamed_addr #0 {
+define void @apatb_MPSQ_ir(i32 %ppl, i8* %n_patches, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x i32]* %GDn_points, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT) local_unnamed_addr #0 {
 entry:
   %n_patches_copy = alloca i8, align 512
   %malloccall = tail call i8* @malloc(i64 10240)
@@ -17,7 +17,7 @@ entry:
   %malloccall1 = tail call i8* @malloc(i64 20480)
   %patches_superpointsOUTPUT_copy = bitcast i8* %malloccall1 to [32 x [5 x [16 x %struct.ap_int.0]]]*
   call fastcc void @copy_in(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
-  call void @apatb_MPSQ_hw(i32 %stop, i32 %ppl, i1 %leftRight, i8* %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
+  call void @apatb_MPSQ_hw(i32 %ppl, i8* %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
   call fastcc void @copy_out(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
   tail call void @free(i8* %malloccall)
   tail call void @free(i8* %malloccall1)
@@ -330,17 +330,17 @@ entry:
 
 declare void @free(i8*) local_unnamed_addr
 
-declare void @apatb_MPSQ_hw(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*)
+declare void @apatb_MPSQ_hw(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*)
 
-define void @MPSQ_hw_stub_wrapper(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*) #7 {
+define void @MPSQ_hw_stub_wrapper(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*) #7 {
 entry:
-  call void @copy_out(i8* null, i8* %3, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* null, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %6)
-  call void @MPSQ_hw_stub(i32 %0, i32 %1, i1 %2, i8* %3, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* %6)
-  call void @copy_in(i8* null, i8* %3, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %4, [5 x i32]* null, [5 x i32]* %5, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %6)
+  call void @copy_out(i8* null, i8* %1, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* null, [5 x i32]* %3, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %4)
+  call void @MPSQ_hw_stub(i32 %0, i8* %1, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* %3, [32 x [5 x [16 x %struct.ap_int.0]]]* %4)
+  call void @copy_in(i8* null, i8* %1, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* null, [5 x i32]* %3, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %4)
   ret void
 }
 
-declare void @MPSQ_hw_stub(i32, i32, i1, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*)
+declare void @MPSQ_hw_stub(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*)
 
 declare i1 @fpga_fifo_not_empty_8(i8*)
 

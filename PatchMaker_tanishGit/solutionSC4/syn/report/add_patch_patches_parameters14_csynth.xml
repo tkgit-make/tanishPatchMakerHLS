@@ -32,13 +32,13 @@
 <Interval-max>368</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_324_1_add_patch_perParallelogramPP0_add_patch_perPropertyLengthPP0>
+<VITIS_LOOP_320_1_add_patch_perParallelogramPP0_add_patch_perPropertyLengthPP0>
 <TripCount>240</TripCount>
 <Latency>243</Latency>
 <AbsoluteTimeLatency>729</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>5</PipelineDepth>
-</VITIS_LOOP_324_1_add_patch_perParallelogramPP0_add_patch_perPropertyLengthPP0>
+</VITIS_LOOP_320_1_add_patch_perParallelogramPP0_add_patch_perPropertyLengthPP0>
 <add_patch_perPropertyTypePP1_add_patch_perParallelogramPP1_add_patch_perPropertyLengthPP1>
 <TripCount>120</TripCount>
 <Latency>121</Latency>

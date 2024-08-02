@@ -42,6 +42,11 @@
 			<location>C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt/lib/gcc/x86_64-w64-mingw32/6.2.0/include/c++/cmath</location>
 		</link>
 		<link>
+			<name>cstdlib</name>
+			<type>1</type>
+			<location>C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt/lib/gcc/x86_64-w64-mingw32/6.2.0/include/c++/cstdlib</location>
+		</link>
+		<link>
 			<name>source</name>
 			<type>2</type>
 			<location>C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/.apc/.src</location>

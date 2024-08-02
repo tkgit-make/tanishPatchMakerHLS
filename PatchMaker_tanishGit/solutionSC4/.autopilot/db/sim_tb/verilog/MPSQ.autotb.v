@@ -14,9 +14,7 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 1.50
 
-`define AESL_DEPTH_stop 1
 `define AESL_DEPTH_ppl 1
-`define AESL_DEPTH_leftRight 1
 `define AESL_DEPTH_n_patches 1
 `define AESL_MEM_GDarray AESL_automem_GDarray
 `define AESL_MEM_INST_GDarray mem_inst_GDarray
@@ -40,12 +38,10 @@
 `define AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc  "./impl_rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 10;
+parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = -1;
-parameter LENGTH_stop = 1;
 parameter LENGTH_ppl = 1;
-parameter LENGTH_leftRight = 1;
 parameter LENGTH_n_patches = 1;
 parameter LENGTH_GDarray = 1280;
 parameter LENGTH_GDn_points = 5;
@@ -137,9 +133,7 @@ wire ap_start;
 wire ap_done;
 wire ap_idle;
 wire ap_ready;
-wire [31 : 0] stop;
 wire [31 : 0] ppl;
-wire  leftRight;
 wire [7 : 0] n_patches_i;
 wire [7 : 0] n_patches_o;
 wire  n_patches_o_ap_vld;
@@ -174,9 +168,7 @@ wire ap_rst_n;
     .ap_done(ap_done),
     .ap_idle(ap_idle),
     .ap_ready(ap_ready),
-    .stop(stop),
     .ppl(ppl),
-    .leftRight(leftRight),
     .n_patches_i(n_patches_i),
     .n_patches_o(n_patches_o),
     .n_patches_o_ap_vld(n_patches_o_ap_vld),
@@ -221,10 +213,6 @@ assign AESL_continue = tb_continue;
             end
         end
     end
-// The signal of port stop
-reg [31: 0] AESL_REG_stop = 0;
-assign stop = AESL_REG_stop;
-
 // The signal of port ppl
 reg [31: 0] AESL_REG_ppl = 0;
 assign ppl = AESL_REG_ppl;
@@ -278,10 +266,6 @@ initial begin : read_file_process_ppl
     $fclose(fp);
 end
 
-
-// The signal of port leftRight
-reg [0: 0] AESL_REG_leftRight = 0;
-assign leftRight = AESL_REG_leftRight;
 
 // The signal of port n_patches_i
 reg [7: 0] AESL_REG_n_patches_i = 0;

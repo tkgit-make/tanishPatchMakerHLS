@@ -1,37 +1,27 @@
 <root versionMajor = "1" versionMinor = "5">
   <kernel src_name="MPSQ" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
     <args>
-      <arg id="0" access_type="r" src_name="stop" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="Register" hw_name="stop" hw_bitwidth="32" hw_size_or_depth="1">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
-        </hw>
-      </arg>
-      <arg id="1" access_type="r" src_name="ppl" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
+      <arg id="0" access_type="r" src_name="ppl" src_type="int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="ppl" hw_bitwidth="32" hw_size_or_depth="1">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="2" access_type="r" src_name="leftRight" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="Register" hw_name="leftRight" hw_bitwidth="1" hw_size_or_depth="1">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
-        </hw>
-      </arg>
-      <arg id="3" access_type="rw" src_name="n_patches" src_type="unsigned char&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+      <arg id="1" access_type="rw" src_name="n_patches" src_type="unsigned char&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="n_patches" hw_bitwidth="8" hw_size_or_depth="1">
           <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
         </hw>
       </arg>
-      <arg id="4" access_type="r" src_name="GDarray" src_type="ap_int&lt;64&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="1280">
+      <arg id="2" access_type="r" src_name="GDarray" src_type="ap_int&lt;64&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="1280">
         <hw hw_usage="data" hw_interface="BRAM" hw_name="GDarray" hw_bitwidth="64" hw_size_or_depth="1280">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="5" access_type="r" src_name="GDn_points" src_type="int&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="5">
+      <arg id="3" access_type="r" src_name="GDn_points" src_type="int&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="5">
         <hw hw_usage="data" hw_interface="BRAM" hw_name="GDn_points" hw_bitwidth="32" hw_size_or_depth="5">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="6" access_type="w" src_name="patches_superpointsOUTPUT" src_type="ap_int&lt;64&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="2560">
+      <arg id="4" access_type="w" src_name="patches_superpointsOUTPUT" src_type="ap_int&lt;64&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="2560">
         <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpointsOUTPUT" hw_bitwidth="64" hw_size_or_depth="2560">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>

@@ -12,24 +12,20 @@ set isEnableWaveformDebug 1
 set C_modelName {MPSQ}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ stop int 32 unused  }
 	{ ppl int 32 regular  }
-	{ leftRight uint 1 unused  }
 	{ n_patches int 8 regular {pointer 2}  }
 	{ GDarray int 64 regular {array 1280 { 1 3 } 1 1 }  }
 	{ GDn_points int 32 regular {array 5 { 1 3 } 1 1 }  }
 	{ patches_superpointsOUTPUT int 64 regular {array 2560 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "stop", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "stop","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "ppl", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "ppl","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "leftRight", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "leftRight","cData": "int1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+	{ "Name" : "ppl", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "ppl","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "n_patches", "interface" : "wire", "bitwidth" : 8, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "n_patches","cData": "char","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "GDarray", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "GDarray","cData": "long","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "GDn_points", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "GDn_points","cData": "int","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "patches_superpointsOUTPUT", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "patches_superpointsOUTPUT","cData": "long","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 22
+set portNum 20
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -37,22 +33,20 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ stop sc_in sc_lv 32 signal 0 } 
-	{ ppl sc_in sc_lv 32 signal 1 } 
-	{ leftRight sc_in sc_logic 1 signal 2 } 
-	{ n_patches_i sc_in sc_lv 8 signal 3 } 
-	{ n_patches_o sc_out sc_lv 8 signal 3 } 
-	{ n_patches_o_ap_vld sc_out sc_logic 1 outvld 3 } 
-	{ GDarray_address0 sc_out sc_lv 11 signal 4 } 
-	{ GDarray_ce0 sc_out sc_logic 1 signal 4 } 
-	{ GDarray_q0 sc_in sc_lv 64 signal 4 } 
-	{ GDn_points_address0 sc_out sc_lv 3 signal 5 } 
-	{ GDn_points_ce0 sc_out sc_logic 1 signal 5 } 
-	{ GDn_points_q0 sc_in sc_lv 32 signal 5 } 
-	{ patches_superpointsOUTPUT_address0 sc_out sc_lv 12 signal 6 } 
-	{ patches_superpointsOUTPUT_ce0 sc_out sc_logic 1 signal 6 } 
-	{ patches_superpointsOUTPUT_we0 sc_out sc_logic 1 signal 6 } 
-	{ patches_superpointsOUTPUT_d0 sc_out sc_lv 64 signal 6 } 
+	{ ppl sc_in sc_lv 32 signal 0 } 
+	{ n_patches_i sc_in sc_lv 8 signal 1 } 
+	{ n_patches_o sc_out sc_lv 8 signal 1 } 
+	{ n_patches_o_ap_vld sc_out sc_logic 1 outvld 1 } 
+	{ GDarray_address0 sc_out sc_lv 11 signal 2 } 
+	{ GDarray_ce0 sc_out sc_logic 1 signal 2 } 
+	{ GDarray_q0 sc_in sc_lv 64 signal 2 } 
+	{ GDn_points_address0 sc_out sc_lv 3 signal 3 } 
+	{ GDn_points_ce0 sc_out sc_logic 1 signal 3 } 
+	{ GDn_points_q0 sc_in sc_lv 32 signal 3 } 
+	{ patches_superpointsOUTPUT_address0 sc_out sc_lv 12 signal 4 } 
+	{ patches_superpointsOUTPUT_ce0 sc_out sc_logic 1 signal 4 } 
+	{ patches_superpointsOUTPUT_we0 sc_out sc_logic 1 signal 4 } 
+	{ patches_superpointsOUTPUT_d0 sc_out sc_lv 64 signal 4 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -61,9 +55,7 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "stop", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "stop", "role": "default" }} , 
  	{ "name": "ppl", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ppl", "role": "default" }} , 
- 	{ "name": "leftRight", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "leftRight", "role": "default" }} , 
  	{ "name": "n_patches_i", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "n_patches", "role": "i" }} , 
  	{ "name": "n_patches_o", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "n_patches", "role": "o" }} , 
  	{ "name": "n_patches_o_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "n_patches", "role": "o_ap_vld" }} , 
@@ -79,7 +71,7 @@ set NewPortList {[
  	{ "name": "patches_superpointsOUTPUT_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "patches_superpointsOUTPUT", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "142"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "136"],
 		"CDFG" : "MPSQ",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -93,27 +85,28 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
-			{"Name" : "stop", "Type" : "None", "Direction" : "I"},
 			{"Name" : "ppl", "Type" : "None", "Direction" : "I"},
-			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "n_patches", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_328", "Port" : "n_patches"}]},
+					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_326", "Port" : "n_patches"}]},
 			{"Name" : "GDarray", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_328", "Port" : "GDn_points"}]},
+					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_326", "Port" : "GDn_points"}]},
 			{"Name" : "patches_superpointsOUTPUT", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_328", "Port" : "radiiDivisionList"}]},
+					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_326", "Port" : "radiiDivisionList"}]},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_326", "Port" : "radiiDivisionList_1_4"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_328", "Port" : "trapezoid_edges_V"}]}]},
+					{"ID" : "4", "SubInstance" : "grp_solveNextColumn_fu_326", "Port" : "trapezoid_edges_V"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.patches_superpoints_V_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.patches_parameters_V_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.GDarrayDecoded_V_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328", "Parent" : "0", "Child" : ["5", "137", "141"],
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326", "Parent" : "0", "Child" : ["5", "131", "135"],
 		"CDFG" : "solveNextColumn",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -129,29 +122,32 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "n_patches", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_190", "Port" : "n_patches"}]},
+					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_192", "Port" : "n_patches"}]},
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_190", "Port" : "GDn_points"}]},
+					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_192", "Port" : "GDn_points"}]},
 			{"Name" : "apexZ0", "Type" : "None", "Direction" : "I"},
 			{"Name" : "ppl", "Type" : "None", "Direction" : "I"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_190", "Port" : "GDarrayDecoded"}]},
+					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_192", "Port" : "GDarrayDecoded"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_190", "Port" : "patches_superpoints"}]},
+					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_192", "Port" : "patches_superpoints"}]},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_190", "Port" : "patches_parameters"}]},
+					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_192", "Port" : "patches_parameters"}]},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_190", "Port" : "radiiDivisionList"},
-					{"ID" : "137", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_218", "Port" : "radiiDivisionList"}]},
+					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_192", "Port" : "radiiDivisionList"},
+					{"ID" : "131", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_222", "Port" : "radiiDivisionList"}]},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_192", "Port" : "radiiDivisionList_1_4"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_190", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190", "Parent" : "4", "Child" : ["6", "50", "93", "126", "130", "131", "132", "136"],
+					{"ID" : "5", "SubInstance" : "grp_solveNextPatchPair_fu_192", "Port" : "trapezoid_edges_V"}]}]},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192", "Parent" : "4", "Child" : ["6", "48", "89", "120", "124", "125", "126", "130"],
 		"CDFG" : "solveNextPatchPair",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -167,15 +163,15 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "n_patches", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_solveComplmentaryPatch_fu_471", "Port" : "n_patches"},
-					{"ID" : "93", "SubInstance" : "grp_makePatch_alignedToLine_fu_504", "Port" : "n_patches"},
-					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_444", "Port" : "n_patches"}]},
+					{"ID" : "48", "SubInstance" : "grp_solveComplmentaryPatch_fu_475", "Port" : "n_patches"},
+					{"ID" : "89", "SubInstance" : "grp_makePatch_alignedToLine_fu_510", "Port" : "n_patches"},
+					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_446", "Port" : "n_patches"}]},
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_solveComplmentaryPatch_fu_471", "Port" : "GDn_points"},
-					{"ID" : "93", "SubInstance" : "grp_makePatch_alignedToLine_fu_504", "Port" : "GDn_points"},
-					{"ID" : "130", "SubInstance" : "grp_getSolveNextPatchPairWhileCondition_fu_545", "Port" : "GDn_points"},
-					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_444", "Port" : "GDn_points"}]},
+					{"ID" : "48", "SubInstance" : "grp_solveComplmentaryPatch_fu_475", "Port" : "GDn_points"},
+					{"ID" : "89", "SubInstance" : "grp_makePatch_alignedToLine_fu_510", "Port" : "GDn_points"},
+					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_446", "Port" : "GDn_points"},
+					{"ID" : "124", "SubInstance" : "grp_getSolveNextPatchPairWhileCondition_fu_553", "Port" : "GDn_points"}]},
 			{"Name" : "apexZ0", "Type" : "None", "Direction" : "I"},
 			{"Name" : "ppl", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read1", "Type" : "None", "Direction" : "I"},
@@ -184,33 +180,38 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_read7", "Type" : "None", "Direction" : "I"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_solveComplmentaryPatch_fu_471", "Port" : "GDarrayDecoded"},
-					{"ID" : "93", "SubInstance" : "grp_makePatch_alignedToLine_fu_504", "Port" : "GDarrayDecoded"},
-					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_444", "Port" : "GDarrayDecoded"}]},
+					{"ID" : "48", "SubInstance" : "grp_solveComplmentaryPatch_fu_475", "Port" : "GDarrayDecoded"},
+					{"ID" : "89", "SubInstance" : "grp_makePatch_alignedToLine_fu_510", "Port" : "GDarrayDecoded"},
+					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_446", "Port" : "GDarrayDecoded"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_solveComplmentaryPatch_fu_471", "Port" : "patches_superpoints"},
-					{"ID" : "93", "SubInstance" : "grp_makePatch_alignedToLine_fu_504", "Port" : "patches_superpoints"},
-					{"ID" : "131", "SubInstance" : "grp_areWedgeSuperPointsEqual_fu_561", "Port" : "wsp2"},
-					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_444", "Port" : "patches_superpoints"}]},
+					{"ID" : "48", "SubInstance" : "grp_solveComplmentaryPatch_fu_475", "Port" : "patches_superpoints"},
+					{"ID" : "89", "SubInstance" : "grp_makePatch_alignedToLine_fu_510", "Port" : "patches_superpoints"},
+					{"ID" : "125", "SubInstance" : "grp_areWedgeSuperPointsEqual_fu_569", "Port" : "wsp2"},
+					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_446", "Port" : "patches_superpoints"}]},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_solveComplmentaryPatch_fu_471", "Port" : "patches_parameters"},
-					{"ID" : "93", "SubInstance" : "grp_makePatch_alignedToLine_fu_504", "Port" : "patches_parameters"},
-					{"ID" : "130", "SubInstance" : "grp_getSolveNextPatchPairWhileCondition_fu_545", "Port" : "patches_parameters"},
-					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_444", "Port" : "patches_parameters"}]},
-			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
+					{"ID" : "48", "SubInstance" : "grp_solveComplmentaryPatch_fu_475", "Port" : "patches_parameters"},
+					{"ID" : "89", "SubInstance" : "grp_makePatch_alignedToLine_fu_510", "Port" : "patches_parameters"},
+					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_446", "Port" : "patches_parameters"},
+					{"ID" : "124", "SubInstance" : "grp_getSolveNextPatchPairWhileCondition_fu_553", "Port" : "patches_parameters"}]},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_solveComplmentaryPatch_fu_471", "Port" : "radiiDivisionList"},
-					{"ID" : "93", "SubInstance" : "grp_makePatch_alignedToLine_fu_504", "Port" : "radiiDivisionList"},
-					{"ID" : "126", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_531", "Port" : "radiiDivisionList"},
-					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_444", "Port" : "radiiDivisionList"}]},
+					{"ID" : "48", "SubInstance" : "grp_solveComplmentaryPatch_fu_475", "Port" : "radiiDivisionList_1_4"},
+					{"ID" : "89", "SubInstance" : "grp_makePatch_alignedToLine_fu_510", "Port" : "radiiDivisionList_1_4"},
+					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_446", "Port" : "radiiDivisionList_1_4"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_solveComplmentaryPatch_fu_471", "Port" : "trapezoid_edges_V"},
-					{"ID" : "93", "SubInstance" : "grp_makePatch_alignedToLine_fu_504", "Port" : "trapezoid_edges_V"},
-					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_444", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444", "Parent" : "5", "Child" : ["7", "40", "48"],
+					{"ID" : "48", "SubInstance" : "grp_solveComplmentaryPatch_fu_475", "Port" : "trapezoid_edges_V"},
+					{"ID" : "89", "SubInstance" : "grp_makePatch_alignedToLine_fu_510", "Port" : "trapezoid_edges_V"},
+					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_446", "Port" : "trapezoid_edges_V"}]},
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "48", "SubInstance" : "grp_solveComplmentaryPatch_fu_475", "Port" : "radiiDivisionList"},
+					{"ID" : "89", "SubInstance" : "grp_makePatch_alignedToLine_fu_510", "Port" : "radiiDivisionList"},
+					{"ID" : "120", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_539", "Port" : "radiiDivisionList"},
+					{"ID" : "6", "SubInstance" : "grp_makeThirdPatch_fu_446", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446", "Parent" : "5", "Child" : ["7", "38", "46"],
 		"CDFG" : "makeThirdPatch",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -226,11 +227,11 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "n_patches", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_482", "Port" : "n_patches"},
-					{"ID" : "48", "SubInstance" : "grp_delete_patch_fu_522", "Port" : "n_patches"}]},
+					{"ID" : "46", "SubInstance" : "grp_delete_patch_fu_526", "Port" : "n_patches"},
+					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_484", "Port" : "n_patches"}]},
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_482", "Port" : "GDn_points"}]},
+					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_484", "Port" : "GDn_points"}]},
 			{"Name" : "lastPatchIndex", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z_top_min", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z_top_max", "Type" : "None", "Direction" : "I"},
@@ -239,31 +240,34 @@ set RtlHierarchyInfo {[
 			{"Name" : "ppl", "Type" : "None", "Direction" : "I"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_482", "Port" : "GDarrayDecoded"}]},
+					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_484", "Port" : "GDarrayDecoded"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_482", "Port" : "patches_superpoints"},
-					{"ID" : "48", "SubInstance" : "grp_delete_patch_fu_522", "Port" : "patches_superpoints"},
-					{"ID" : "40", "SubInstance" : "grp_getShadows_fu_505", "Port" : "wp_superpoints"}]},
+					{"ID" : "46", "SubInstance" : "grp_delete_patch_fu_526", "Port" : "patches_superpoints"},
+					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_484", "Port" : "patches_superpoints"},
+					{"ID" : "38", "SubInstance" : "grp_getShadows_fu_509", "Port" : "wp_superpoints"}]},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_482", "Port" : "patches_parameters"},
-					{"ID" : "48", "SubInstance" : "grp_delete_patch_fu_522", "Port" : "patches_parameters"},
-					{"ID" : "40", "SubInstance" : "grp_getShadows_fu_505", "Port" : "wp_parameters"}]},
+					{"ID" : "46", "SubInstance" : "grp_delete_patch_fu_526", "Port" : "patches_parameters"},
+					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_484", "Port" : "patches_parameters"},
+					{"ID" : "38", "SubInstance" : "grp_getShadows_fu_509", "Port" : "wp_parameters"}]},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_482", "Port" : "radiiDivisionList"},
-					{"ID" : "40", "SubInstance" : "grp_getShadows_fu_505", "Port" : "radiiDivisionList"}]},
+					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_484", "Port" : "radiiDivisionList"},
+					{"ID" : "38", "SubInstance" : "grp_getShadows_fu_509", "Port" : "radiiDivisionList"}]},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_484", "Port" : "radiiDivisionList_1_4"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_482", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "7", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482", "Parent" : "6", "Child" : ["8", "9", "10", "11", "30", "37"],
+					{"ID" : "7", "SubInstance" : "grp_makePatch_alignedToLine_fu_484", "Port" : "trapezoid_edges_V"}]}]},
+	{"ID" : "7", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484", "Parent" : "6", "Child" : ["8", "9", "10", "11", "30", "35"],
 		"CDFG" : "makePatch_alignedToLine",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2249", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -273,34 +277,36 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "n_patches", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "37", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "n_patches"}]},
+					{"ID" : "35", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "n_patches"}]},
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "30", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "GDn_points"}]},
+					{"ID" : "30", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "GDn_points"}]},
 			{"Name" : "apexZ0", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z_top", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "30", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "GDarrayDecoded"}]},
+					{"ID" : "30", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "GDarrayDecoded"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "37", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "patches_superpoints"}]},
+					{"ID" : "35", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "patches_superpoints"}]},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "37", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "patches_parameters"}]},
-			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
+					{"ID" : "35", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "patches_parameters"}]},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_wedgePatch_init_fu_404", "Port" : "radiiDivisionList"},
-					{"ID" : "30", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "radiiDivisionList"}]},
+					{"ID" : "30", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "radiiDivisionList_1_4"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "30", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "8", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.init_patch_V_U", "Parent" : "7"},
-	{"ID" : "9", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.NPpatches_superpoints_V_U", "Parent" : "7"},
-	{"ID" : "10", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.NPpatches_parameters_V_U", "Parent" : "7"},
-	{"ID" : "11", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404", "Parent" : "7", "Child" : ["12", "29"],
+					{"ID" : "30", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "trapezoid_edges_V"}]},
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "11", "SubInstance" : "grp_wedgePatch_init_fu_406", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "8", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.init_patch_V_U", "Parent" : "7"},
+	{"ID" : "9", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.NPpatches_superpoints_V_U", "Parent" : "7"},
+	{"ID" : "10", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.NPpatches_parameters_V_U", "Parent" : "7"},
+	{"ID" : "11", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406", "Parent" : "7", "Child" : ["12", "29"],
 		"CDFG" : "wedgePatch_init",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -326,7 +332,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "12", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "radiiDivisionList"}]}]},
-	{"ID" : "12", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239", "Parent" : "11", "Child" : ["13", "17", "21", "25"],
+	{"ID" : "12", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239", "Parent" : "11", "Child" : ["13", "17", "21", "25"],
 		"CDFG" : "getParallelograms",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -344,11 +350,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
+					{"ID" : "25", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_217", "Port" : "radiiDivisionList"},
 					{"ID" : "13", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_176", "Port" : "radiiDivisionList"},
 					{"ID" : "17", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_190", "Port" : "radiiDivisionList"},
-					{"ID" : "21", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_204", "Port" : "radiiDivisionList"},
-					{"ID" : "25", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_217", "Port" : "radiiDivisionList"}]}]},
-	{"ID" : "13", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176", "Parent" : "12", "Child" : ["14", "15", "16"],
+					{"ID" : "21", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_204", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "13", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176", "Parent" : "12", "Child" : ["14", "15", "16"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -368,10 +374,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "14", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.radiiDivisionList_U", "Parent" : "13"},
-	{"ID" : "15", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_4s_4s_8_1_1_U3", "Parent" : "13"},
-	{"ID" : "16", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_35ns_33s_64_3_1_U4", "Parent" : "13"},
-	{"ID" : "17", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190", "Parent" : "12", "Child" : ["18", "19", "20"],
+	{"ID" : "14", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.radiiDivisionList_U", "Parent" : "13"},
+	{"ID" : "15", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_4s_4s_8_1_1_U3", "Parent" : "13"},
+	{"ID" : "16", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_35ns_33s_64_3_1_U4", "Parent" : "13"},
+	{"ID" : "17", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190", "Parent" : "12", "Child" : ["18", "19", "20"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -391,10 +397,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "18", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.radiiDivisionList_U", "Parent" : "17"},
-	{"ID" : "19", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_4s_4s_8_1_1_U3", "Parent" : "17"},
-	{"ID" : "20", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_35ns_33s_64_3_1_U4", "Parent" : "17"},
-	{"ID" : "21", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204", "Parent" : "12", "Child" : ["22", "23", "24"],
+	{"ID" : "18", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.radiiDivisionList_U", "Parent" : "17"},
+	{"ID" : "19", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_4s_4s_8_1_1_U3", "Parent" : "17"},
+	{"ID" : "20", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_35ns_33s_64_3_1_U4", "Parent" : "17"},
+	{"ID" : "21", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204", "Parent" : "12", "Child" : ["22", "23", "24"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -414,10 +420,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "22", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.radiiDivisionList_U", "Parent" : "21"},
-	{"ID" : "23", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_4s_4s_8_1_1_U3", "Parent" : "21"},
-	{"ID" : "24", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_35ns_33s_64_3_1_U4", "Parent" : "21"},
-	{"ID" : "25", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217", "Parent" : "12", "Child" : ["26", "27", "28"],
+	{"ID" : "22", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.radiiDivisionList_U", "Parent" : "21"},
+	{"ID" : "23", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_4s_4s_8_1_1_U3", "Parent" : "21"},
+	{"ID" : "24", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_35ns_33s_64_3_1_U4", "Parent" : "21"},
+	{"ID" : "25", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217", "Parent" : "12", "Child" : ["26", "27", "28"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -437,10 +443,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "26", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.radiiDivisionList_U", "Parent" : "25"},
-	{"ID" : "27", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_4s_4s_8_1_1_U3", "Parent" : "25"},
-	{"ID" : "28", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_35ns_33s_64_3_1_U4", "Parent" : "25"},
-	{"ID" : "29", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_wedgePatch_init_fu_404.grp_get_acceptanceCorners_fu_249", "Parent" : "11",
+	{"ID" : "26", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.radiiDivisionList_U", "Parent" : "25"},
+	{"ID" : "27", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_4s_4s_8_1_1_U3", "Parent" : "25"},
+	{"ID" : "28", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_35ns_33s_64_3_1_U4", "Parent" : "25"},
+	{"ID" : "29", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_wedgePatch_init_fu_406.grp_get_acceptanceCorners_fu_249", "Parent" : "11",
 		"CDFG" : "get_acceptanceCorners",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -455,13 +461,13 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "30", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_makeSuperPoint_alignedToLine11_fu_414", "Parent" : "7", "Child" : ["31", "32", "33", "35", "36"],
+	{"ID" : "30", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_makeSuperPoint_alignedToLine11_fu_416", "Parent" : "7", "Child" : ["31", "32", "33", "34"],
 		"CDFG" : "makeSuperPoint_alignedToLine11",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "306", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -477,50 +483,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "init_patch", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "33", "SubInstance" : "grp_mSP_findLRBounds_fu_270", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "31", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_makeSuperPoint_alignedToLine11_fu_414.radiiDivisionList_U", "Parent" : "30"},
-	{"ID" : "32", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_makeSuperPoint_alignedToLine11_fu_414.row_list_V_U", "Parent" : "30"},
-	{"ID" : "33", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findLRBounds_fu_270", "Parent" : "30", "Child" : ["34"],
-		"CDFG" : "mSP_findLRBounds",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "i", "Type" : "None", "Direction" : "I"},
-			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "34", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findLRBounds_fu_270.trapezoid_edges_V_U", "Parent" : "33"},
-	{"ID" : "35", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findStartIndex_fu_279", "Parent" : "30",
-		"CDFG" : "mSP_findStartIndex",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
-			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "36", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_makeSuperPoint_alignedToLine11_fu_414.mul_35ns_33s_64_3_1_U23", "Parent" : "30"},
-	{"ID" : "37", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_add_patch9_fu_433", "Parent" : "7", "Child" : ["38", "39"],
+	{"ID" : "31", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_makeSuperPoint_alignedToLine11_fu_416.radiiDivisionList_1_4_U", "Parent" : "30"},
+	{"ID" : "32", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_makeSuperPoint_alignedToLine11_fu_416.trapezoid_edges_V_U", "Parent" : "30"},
+	{"ID" : "33", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_makeSuperPoint_alignedToLine11_fu_416.row_list_V_U", "Parent" : "30"},
+	{"ID" : "34", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_makeSuperPoint_alignedToLine11_fu_416.mul_33ns_33s_64_3_1_U16", "Parent" : "30"},
+	{"ID" : "35", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_add_patch9_fu_435", "Parent" : "7", "Child" : ["36", "37"],
 		"CDFG" : "add_patch9",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -539,12 +508,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "wp_superpoints", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "38", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "wp_parameters"}]},
+					{"ID" : "36", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "wp_parameters"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "38", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "patches_parameters"}]}]},
-	{"ID" : "38", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_add_patch9_fu_433.grp_add_patch_patches_parameters14_fu_297", "Parent" : "37",
+					{"ID" : "36", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "patches_parameters"}]}]},
+	{"ID" : "36", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_add_patch9_fu_435.grp_add_patch_patches_parameters14_fu_297", "Parent" : "35",
 		"CDFG" : "add_patch_patches_parameters14",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -560,7 +529,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "39", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_makePatch_alignedToLine_fu_482.grp_add_patch9_fu_433.grp_encodeCoordinates_fu_305", "Parent" : "37",
+	{"ID" : "37", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_makePatch_alignedToLine_fu_484.grp_add_patch9_fu_435.grp_encodeCoordinates_fu_305", "Parent" : "35",
 		"CDFG" : "encodeCoordinates",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -576,7 +545,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "phi", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "40", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_getShadows_fu_505", "Parent" : "6", "Child" : ["41", "45", "46", "47"],
+	{"ID" : "38", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_getShadows_fu_509", "Parent" : "6", "Child" : ["39", "43", "44", "45"],
 		"CDFG" : "getShadows",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -598,8 +567,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "zTopMax", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "41", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_275", "Port" : "radiiDivisionList"}]}]},
-	{"ID" : "41", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_getShadows_fu_505.grp_straightLineProjectorFromLayerIJtoK_fu_275", "Parent" : "40", "Child" : ["42", "43", "44"],
+					{"ID" : "39", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_275", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "39", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_getShadows_fu_509.grp_straightLineProjectorFromLayerIJtoK_fu_275", "Parent" : "38", "Child" : ["40", "41", "42"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -619,13 +588,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "42", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_getShadows_fu_505.grp_straightLineProjectorFromLayerIJtoK_fu_275.radiiDivisionList_U", "Parent" : "41"},
-	{"ID" : "43", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_getShadows_fu_505.grp_straightLineProjectorFromLayerIJtoK_fu_275.mul_4s_4s_8_1_1_U3", "Parent" : "41"},
-	{"ID" : "44", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_getShadows_fu_505.grp_straightLineProjectorFromLayerIJtoK_fu_275.mul_35ns_33s_64_3_1_U4", "Parent" : "41"},
-	{"ID" : "45", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_getShadows_fu_505.mux_42_32_1_1_U108", "Parent" : "40"},
-	{"ID" : "46", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_getShadows_fu_505.mux_42_32_1_1_U109", "Parent" : "40"},
-	{"ID" : "47", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_getShadows_fu_505.mux_42_32_1_1_U110", "Parent" : "40"},
-	{"ID" : "48", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_delete_patch_fu_522", "Parent" : "6", "Child" : ["49"],
+	{"ID" : "40", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_getShadows_fu_509.grp_straightLineProjectorFromLayerIJtoK_fu_275.radiiDivisionList_U", "Parent" : "39"},
+	{"ID" : "41", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_getShadows_fu_509.grp_straightLineProjectorFromLayerIJtoK_fu_275.mul_4s_4s_8_1_1_U3", "Parent" : "39"},
+	{"ID" : "42", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_getShadows_fu_509.grp_straightLineProjectorFromLayerIJtoK_fu_275.mul_35ns_33s_64_3_1_U4", "Parent" : "39"},
+	{"ID" : "43", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_getShadows_fu_509.mux_42_32_1_1_U104", "Parent" : "38"},
+	{"ID" : "44", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_getShadows_fu_509.mux_42_32_1_1_U105", "Parent" : "38"},
+	{"ID" : "45", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_getShadows_fu_509.mux_42_32_1_1_U106", "Parent" : "38"},
+	{"ID" : "46", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_delete_patch_fu_526", "Parent" : "6", "Child" : ["47"],
 		"CDFG" : "delete_patch",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -645,8 +614,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "49", "SubInstance" : "grp_delete_patch_patches_parameters_fu_233", "Port" : "patches_parameters"}]}]},
-	{"ID" : "49", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makeThirdPatch_fu_444.grp_delete_patch_fu_522.grp_delete_patch_patches_parameters_fu_233", "Parent" : "48",
+					{"ID" : "47", "SubInstance" : "grp_delete_patch_patches_parameters_fu_233", "Port" : "patches_parameters"}]}]},
+	{"ID" : "47", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makeThirdPatch_fu_446.grp_delete_patch_fu_526.grp_delete_patch_patches_parameters_fu_233", "Parent" : "46",
 		"CDFG" : "delete_patch_patches_parameters",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -663,7 +632,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "index", "Type" : "None", "Direction" : "I"},
 			{"Name" : "n_patches", "Type" : "None", "Direction" : "I"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "50", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471", "Parent" : "5", "Child" : ["51", "52", "53", "54", "87", "89", "90", "91", "92"],
+	{"ID" : "48", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475", "Parent" : "5", "Child" : ["49", "50", "51", "52", "83", "85", "86", "87", "88"],
 		"CDFG" : "solveComplmentaryPatch",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -679,12 +648,12 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "n_patches", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "87", "SubInstance" : "grp_delete_patch_fu_666", "Port" : "n_patches"},
-					{"ID" : "54", "SubInstance" : "grp_makePatch_alignedToLine_fu_643", "Port" : "n_patches"}]},
+					{"ID" : "83", "SubInstance" : "grp_delete_patch_fu_670", "Port" : "n_patches"},
+					{"ID" : "52", "SubInstance" : "grp_makePatch_alignedToLine_fu_645", "Port" : "n_patches"}]},
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "89", "SubInstance" : "grp_get_index_from_z_fu_692", "Port" : "GDn_points"},
-					{"ID" : "54", "SubInstance" : "grp_makePatch_alignedToLine_fu_643", "Port" : "GDn_points"}]},
+					{"ID" : "52", "SubInstance" : "grp_makePatch_alignedToLine_fu_645", "Port" : "GDn_points"},
+					{"ID" : "85", "SubInstance" : "grp_get_index_from_z_fu_696", "Port" : "GDn_points"}]},
 			{"Name" : "ppl", "Type" : "None", "Direction" : "I"},
 			{"Name" : "nPatchesAtOriginal", "Type" : "None", "Direction" : "I"},
 			{"Name" : "previous_z_top_min_read", "Type" : "None", "Direction" : "I"},
@@ -697,33 +666,36 @@ set RtlHierarchyInfo {[
 			{"Name" : "z_top_min_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "89", "SubInstance" : "grp_get_index_from_z_fu_692", "Port" : "GDarrayDecoded"},
-					{"ID" : "54", "SubInstance" : "grp_makePatch_alignedToLine_fu_643", "Port" : "GDarrayDecoded"}]},
+					{"ID" : "52", "SubInstance" : "grp_makePatch_alignedToLine_fu_645", "Port" : "GDarrayDecoded"},
+					{"ID" : "85", "SubInstance" : "grp_get_index_from_z_fu_696", "Port" : "GDarrayDecoded"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "87", "SubInstance" : "grp_delete_patch_fu_666", "Port" : "patches_superpoints"},
-					{"ID" : "90", "SubInstance" : "grp_areWedgeSuperPointsEqual_fu_706", "Port" : "wsp2"},
-					{"ID" : "54", "SubInstance" : "grp_makePatch_alignedToLine_fu_643", "Port" : "patches_superpoints"}]},
+					{"ID" : "83", "SubInstance" : "grp_delete_patch_fu_670", "Port" : "patches_superpoints"},
+					{"ID" : "52", "SubInstance" : "grp_makePatch_alignedToLine_fu_645", "Port" : "patches_superpoints"},
+					{"ID" : "86", "SubInstance" : "grp_areWedgeSuperPointsEqual_fu_710", "Port" : "wsp2"}]},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "87", "SubInstance" : "grp_delete_patch_fu_666", "Port" : "patches_parameters"},
-					{"ID" : "54", "SubInstance" : "grp_makePatch_alignedToLine_fu_643", "Port" : "patches_parameters"}]},
+					{"ID" : "83", "SubInstance" : "grp_delete_patch_fu_670", "Port" : "patches_parameters"},
+					{"ID" : "52", "SubInstance" : "grp_makePatch_alignedToLine_fu_645", "Port" : "patches_parameters"}]},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_makePatch_alignedToLine_fu_643", "Port" : "radiiDivisionList"}]},
+					{"ID" : "52", "SubInstance" : "grp_makePatch_alignedToLine_fu_645", "Port" : "radiiDivisionList"}]},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "52", "SubInstance" : "grp_makePatch_alignedToLine_fu_645", "Port" : "radiiDivisionList_1_4"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_makePatch_alignedToLine_fu_643", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "51", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.current_z_i_index_U", "Parent" : "50"},
-	{"ID" : "52", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.new_z_i_index_U", "Parent" : "50"},
-	{"ID" : "53", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.new_z_i_V_U", "Parent" : "50"},
-	{"ID" : "54", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643", "Parent" : "50", "Child" : ["55", "56", "57", "58", "77", "84"],
+					{"ID" : "52", "SubInstance" : "grp_makePatch_alignedToLine_fu_645", "Port" : "trapezoid_edges_V"}]}]},
+	{"ID" : "49", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.current_z_i_index_U", "Parent" : "48"},
+	{"ID" : "50", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.new_z_i_index_U", "Parent" : "48"},
+	{"ID" : "51", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.new_z_i_V_U", "Parent" : "48"},
+	{"ID" : "52", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645", "Parent" : "48", "Child" : ["53", "54", "55", "56", "75", "80"],
 		"CDFG" : "makePatch_alignedToLine",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2249", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -733,34 +705,36 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "n_patches", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "n_patches"}]},
+					{"ID" : "80", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "n_patches"}]},
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "77", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "GDn_points"}]},
+					{"ID" : "75", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "GDn_points"}]},
 			{"Name" : "apexZ0", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z_top", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "77", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "GDarrayDecoded"}]},
+					{"ID" : "75", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "GDarrayDecoded"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "patches_superpoints"}]},
+					{"ID" : "80", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "patches_superpoints"}]},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "patches_parameters"}]},
-			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
+					{"ID" : "80", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "patches_parameters"}]},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "58", "SubInstance" : "grp_wedgePatch_init_fu_404", "Port" : "radiiDivisionList"},
-					{"ID" : "77", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "radiiDivisionList"}]},
+					{"ID" : "75", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "radiiDivisionList_1_4"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "77", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "55", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.init_patch_V_U", "Parent" : "54"},
-	{"ID" : "56", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.NPpatches_superpoints_V_U", "Parent" : "54"},
-	{"ID" : "57", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.NPpatches_parameters_V_U", "Parent" : "54"},
-	{"ID" : "58", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404", "Parent" : "54", "Child" : ["59", "76"],
+					{"ID" : "75", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "trapezoid_edges_V"}]},
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "56", "SubInstance" : "grp_wedgePatch_init_fu_406", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "53", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.init_patch_V_U", "Parent" : "52"},
+	{"ID" : "54", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.NPpatches_superpoints_V_U", "Parent" : "52"},
+	{"ID" : "55", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.NPpatches_parameters_V_U", "Parent" : "52"},
+	{"ID" : "56", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406", "Parent" : "52", "Child" : ["57", "74"],
 		"CDFG" : "wedgePatch_init",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -776,17 +750,17 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "wp_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "59", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "wp_superpoints"}]},
+					{"ID" : "57", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "wp_superpoints"}]},
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "59", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "wp_parameters"},
-					{"ID" : "76", "SubInstance" : "grp_get_acceptanceCorners_fu_249", "Port" : "wp_parameters"}]},
+					{"ID" : "57", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "wp_parameters"},
+					{"ID" : "74", "SubInstance" : "grp_get_acceptanceCorners_fu_249", "Port" : "wp_parameters"}]},
 			{"Name" : "superpointsI", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "apexZ0I", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "59", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "radiiDivisionList"}]}]},
-	{"ID" : "59", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239", "Parent" : "58", "Child" : ["60", "64", "68", "72"],
+					{"ID" : "57", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "57", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239", "Parent" : "56", "Child" : ["58", "62", "66", "70"],
 		"CDFG" : "getParallelograms",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -804,11 +778,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "60", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_176", "Port" : "radiiDivisionList"},
-					{"ID" : "64", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_190", "Port" : "radiiDivisionList"},
-					{"ID" : "68", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_204", "Port" : "radiiDivisionList"},
-					{"ID" : "72", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_217", "Port" : "radiiDivisionList"}]}]},
-	{"ID" : "60", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176", "Parent" : "59", "Child" : ["61", "62", "63"],
+					{"ID" : "70", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_217", "Port" : "radiiDivisionList"},
+					{"ID" : "58", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_176", "Port" : "radiiDivisionList"},
+					{"ID" : "62", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_190", "Port" : "radiiDivisionList"},
+					{"ID" : "66", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_204", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "58", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176", "Parent" : "57", "Child" : ["59", "60", "61"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -828,10 +802,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "61", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.radiiDivisionList_U", "Parent" : "60"},
-	{"ID" : "62", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_4s_4s_8_1_1_U3", "Parent" : "60"},
-	{"ID" : "63", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_35ns_33s_64_3_1_U4", "Parent" : "60"},
-	{"ID" : "64", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190", "Parent" : "59", "Child" : ["65", "66", "67"],
+	{"ID" : "59", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.radiiDivisionList_U", "Parent" : "58"},
+	{"ID" : "60", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_4s_4s_8_1_1_U3", "Parent" : "58"},
+	{"ID" : "61", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_35ns_33s_64_3_1_U4", "Parent" : "58"},
+	{"ID" : "62", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190", "Parent" : "57", "Child" : ["63", "64", "65"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -851,10 +825,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "65", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.radiiDivisionList_U", "Parent" : "64"},
-	{"ID" : "66", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_4s_4s_8_1_1_U3", "Parent" : "64"},
-	{"ID" : "67", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_35ns_33s_64_3_1_U4", "Parent" : "64"},
-	{"ID" : "68", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204", "Parent" : "59", "Child" : ["69", "70", "71"],
+	{"ID" : "63", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.radiiDivisionList_U", "Parent" : "62"},
+	{"ID" : "64", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_4s_4s_8_1_1_U3", "Parent" : "62"},
+	{"ID" : "65", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_35ns_33s_64_3_1_U4", "Parent" : "62"},
+	{"ID" : "66", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204", "Parent" : "57", "Child" : ["67", "68", "69"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -874,10 +848,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "69", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.radiiDivisionList_U", "Parent" : "68"},
-	{"ID" : "70", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_4s_4s_8_1_1_U3", "Parent" : "68"},
-	{"ID" : "71", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_35ns_33s_64_3_1_U4", "Parent" : "68"},
-	{"ID" : "72", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217", "Parent" : "59", "Child" : ["73", "74", "75"],
+	{"ID" : "67", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.radiiDivisionList_U", "Parent" : "66"},
+	{"ID" : "68", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_4s_4s_8_1_1_U3", "Parent" : "66"},
+	{"ID" : "69", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_35ns_33s_64_3_1_U4", "Parent" : "66"},
+	{"ID" : "70", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217", "Parent" : "57", "Child" : ["71", "72", "73"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -897,10 +871,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "73", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.radiiDivisionList_U", "Parent" : "72"},
-	{"ID" : "74", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_4s_4s_8_1_1_U3", "Parent" : "72"},
-	{"ID" : "75", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_35ns_33s_64_3_1_U4", "Parent" : "72"},
-	{"ID" : "76", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_wedgePatch_init_fu_404.grp_get_acceptanceCorners_fu_249", "Parent" : "58",
+	{"ID" : "71", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.radiiDivisionList_U", "Parent" : "70"},
+	{"ID" : "72", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_4s_4s_8_1_1_U3", "Parent" : "70"},
+	{"ID" : "73", "Level" : "8", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_35ns_33s_64_3_1_U4", "Parent" : "70"},
+	{"ID" : "74", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_wedgePatch_init_fu_406.grp_get_acceptanceCorners_fu_249", "Parent" : "56",
 		"CDFG" : "get_acceptanceCorners",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -915,13 +889,13 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "77", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_makeSuperPoint_alignedToLine11_fu_414", "Parent" : "54", "Child" : ["78", "79", "80", "82", "83"],
+	{"ID" : "75", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_makeSuperPoint_alignedToLine11_fu_416", "Parent" : "52", "Child" : ["76", "77", "78", "79"],
 		"CDFG" : "makeSuperPoint_alignedToLine11",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "306", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -937,50 +911,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "init_patch", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "80", "SubInstance" : "grp_mSP_findLRBounds_fu_270", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "78", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_makeSuperPoint_alignedToLine11_fu_414.radiiDivisionList_U", "Parent" : "77"},
-	{"ID" : "79", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_makeSuperPoint_alignedToLine11_fu_414.row_list_V_U", "Parent" : "77"},
-	{"ID" : "80", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findLRBounds_fu_270", "Parent" : "77", "Child" : ["81"],
-		"CDFG" : "mSP_findLRBounds",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "i", "Type" : "None", "Direction" : "I"},
-			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "81", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findLRBounds_fu_270.trapezoid_edges_V_U", "Parent" : "80"},
-	{"ID" : "82", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findStartIndex_fu_279", "Parent" : "77",
-		"CDFG" : "mSP_findStartIndex",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
-			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "83", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_makeSuperPoint_alignedToLine11_fu_414.mul_35ns_33s_64_3_1_U23", "Parent" : "77"},
-	{"ID" : "84", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_add_patch9_fu_433", "Parent" : "54", "Child" : ["85", "86"],
+	{"ID" : "76", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_makeSuperPoint_alignedToLine11_fu_416.radiiDivisionList_1_4_U", "Parent" : "75"},
+	{"ID" : "77", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_makeSuperPoint_alignedToLine11_fu_416.trapezoid_edges_V_U", "Parent" : "75"},
+	{"ID" : "78", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_makeSuperPoint_alignedToLine11_fu_416.row_list_V_U", "Parent" : "75"},
+	{"ID" : "79", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_makeSuperPoint_alignedToLine11_fu_416.mul_33ns_33s_64_3_1_U16", "Parent" : "75"},
+	{"ID" : "80", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_add_patch9_fu_435", "Parent" : "52", "Child" : ["81", "82"],
 		"CDFG" : "add_patch9",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -999,12 +936,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "wp_superpoints", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "85", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "wp_parameters"}]},
+					{"ID" : "81", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "wp_parameters"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "85", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "patches_parameters"}]}]},
-	{"ID" : "85", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_add_patch9_fu_433.grp_add_patch_patches_parameters14_fu_297", "Parent" : "84",
+					{"ID" : "81", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "patches_parameters"}]}]},
+	{"ID" : "81", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_add_patch9_fu_435.grp_add_patch_patches_parameters14_fu_297", "Parent" : "80",
 		"CDFG" : "add_patch_patches_parameters14",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1020,7 +957,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "86", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_makePatch_alignedToLine_fu_643.grp_add_patch9_fu_433.grp_encodeCoordinates_fu_305", "Parent" : "84",
+	{"ID" : "82", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_makePatch_alignedToLine_fu_645.grp_add_patch9_fu_435.grp_encodeCoordinates_fu_305", "Parent" : "80",
 		"CDFG" : "encodeCoordinates",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -1036,7 +973,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "phi", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "87", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_delete_patch_fu_666", "Parent" : "50", "Child" : ["88"],
+	{"ID" : "83", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_delete_patch_fu_670", "Parent" : "48", "Child" : ["84"],
 		"CDFG" : "delete_patch",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1056,8 +993,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "88", "SubInstance" : "grp_delete_patch_patches_parameters_fu_233", "Port" : "patches_parameters"}]}]},
-	{"ID" : "88", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_delete_patch_fu_666.grp_delete_patch_patches_parameters_fu_233", "Parent" : "87",
+					{"ID" : "84", "SubInstance" : "grp_delete_patch_patches_parameters_fu_233", "Port" : "patches_parameters"}]}]},
+	{"ID" : "84", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_delete_patch_fu_670.grp_delete_patch_patches_parameters_fu_233", "Parent" : "83",
 		"CDFG" : "delete_patch_patches_parameters",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1074,7 +1011,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "index", "Type" : "None", "Direction" : "I"},
 			{"Name" : "n_patches", "Type" : "None", "Direction" : "I"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "89", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_get_index_from_z_fu_692", "Parent" : "50",
+	{"ID" : "85", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_get_index_from_z_fu_696", "Parent" : "48",
 		"CDFG" : "get_index_from_z",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1092,7 +1029,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "layer", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z_value", "Type" : "None", "Direction" : "I"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "90", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.grp_areWedgeSuperPointsEqual_fu_706", "Parent" : "50",
+	{"ID" : "86", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.grp_areWedgeSuperPointsEqual_fu_710", "Parent" : "48",
 		"CDFG" : "areWedgeSuperPointsEqual",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1111,15 +1048,15 @@ set RtlHierarchyInfo {[
 			{"Name" : "wsp1_offset1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "wsp2_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "wsp2_offset3", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "91", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.mux_42_32_1_1_U85", "Parent" : "50"},
-	{"ID" : "92", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_solveComplmentaryPatch_fu_471.mux_42_32_1_1_U86", "Parent" : "50"},
-	{"ID" : "93", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504", "Parent" : "5", "Child" : ["94", "95", "96", "97", "116", "123"],
+	{"ID" : "87", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.mux_42_32_1_1_U81", "Parent" : "48"},
+	{"ID" : "88", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_solveComplmentaryPatch_fu_475.mux_42_32_1_1_U82", "Parent" : "48"},
+	{"ID" : "89", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510", "Parent" : "5", "Child" : ["90", "91", "92", "93", "112", "117"],
 		"CDFG" : "makePatch_alignedToLine",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2249", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -1129,34 +1066,36 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "n_patches", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "123", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "n_patches"}]},
+					{"ID" : "117", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "n_patches"}]},
 			{"Name" : "GDn_points", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "116", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "GDn_points"}]},
+					{"ID" : "112", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "GDn_points"}]},
 			{"Name" : "apexZ0", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z_top", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "116", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "GDarrayDecoded"}]},
+					{"ID" : "112", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "GDarrayDecoded"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "123", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "patches_superpoints"}]},
+					{"ID" : "117", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "patches_superpoints"}]},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "123", "SubInstance" : "grp_add_patch9_fu_433", "Port" : "patches_parameters"}]},
-			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
+					{"ID" : "117", "SubInstance" : "grp_add_patch9_fu_435", "Port" : "patches_parameters"}]},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "97", "SubInstance" : "grp_wedgePatch_init_fu_404", "Port" : "radiiDivisionList"},
-					{"ID" : "116", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "radiiDivisionList"}]},
+					{"ID" : "112", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "radiiDivisionList_1_4"}]},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "116", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_414", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "94", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.init_patch_V_U", "Parent" : "93"},
-	{"ID" : "95", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.NPpatches_superpoints_V_U", "Parent" : "93"},
-	{"ID" : "96", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.NPpatches_parameters_V_U", "Parent" : "93"},
-	{"ID" : "97", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404", "Parent" : "93", "Child" : ["98", "115"],
+					{"ID" : "112", "SubInstance" : "grp_makeSuperPoint_alignedToLine11_fu_416", "Port" : "trapezoid_edges_V"}]},
+			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "93", "SubInstance" : "grp_wedgePatch_init_fu_406", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "90", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.init_patch_V_U", "Parent" : "89"},
+	{"ID" : "91", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.NPpatches_superpoints_V_U", "Parent" : "89"},
+	{"ID" : "92", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.NPpatches_parameters_V_U", "Parent" : "89"},
+	{"ID" : "93", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406", "Parent" : "89", "Child" : ["94", "111"],
 		"CDFG" : "wedgePatch_init",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1172,17 +1111,17 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "wp_superpoints", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "98", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "wp_superpoints"}]},
+					{"ID" : "94", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "wp_superpoints"}]},
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "98", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "wp_parameters"},
-					{"ID" : "115", "SubInstance" : "grp_get_acceptanceCorners_fu_249", "Port" : "wp_parameters"}]},
+					{"ID" : "94", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "wp_parameters"},
+					{"ID" : "111", "SubInstance" : "grp_get_acceptanceCorners_fu_249", "Port" : "wp_parameters"}]},
 			{"Name" : "superpointsI", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "apexZ0I", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "98", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "radiiDivisionList"}]}]},
-	{"ID" : "98", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239", "Parent" : "97", "Child" : ["99", "103", "107", "111"],
+					{"ID" : "94", "SubInstance" : "grp_getParallelograms_fu_239", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "94", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239", "Parent" : "93", "Child" : ["95", "99", "103", "107"],
 		"CDFG" : "getParallelograms",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1200,11 +1139,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "99", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_176", "Port" : "radiiDivisionList"},
-					{"ID" : "103", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_190", "Port" : "radiiDivisionList"},
-					{"ID" : "107", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_204", "Port" : "radiiDivisionList"},
-					{"ID" : "111", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_217", "Port" : "radiiDivisionList"}]}]},
-	{"ID" : "99", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176", "Parent" : "98", "Child" : ["100", "101", "102"],
+					{"ID" : "107", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_217", "Port" : "radiiDivisionList"},
+					{"ID" : "95", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_176", "Port" : "radiiDivisionList"},
+					{"ID" : "99", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_190", "Port" : "radiiDivisionList"},
+					{"ID" : "103", "SubInstance" : "grp_straightLineProjectorFromLayerIJtoK_fu_204", "Port" : "radiiDivisionList"}]}]},
+	{"ID" : "95", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176", "Parent" : "94", "Child" : ["96", "97", "98"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1224,10 +1163,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "100", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.radiiDivisionList_U", "Parent" : "99"},
-	{"ID" : "101", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_4s_4s_8_1_1_U3", "Parent" : "99"},
-	{"ID" : "102", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_35ns_33s_64_3_1_U4", "Parent" : "99"},
-	{"ID" : "103", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190", "Parent" : "98", "Child" : ["104", "105", "106"],
+	{"ID" : "96", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.radiiDivisionList_U", "Parent" : "95"},
+	{"ID" : "97", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_4s_4s_8_1_1_U3", "Parent" : "95"},
+	{"ID" : "98", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_176.mul_35ns_33s_64_3_1_U4", "Parent" : "95"},
+	{"ID" : "99", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190", "Parent" : "94", "Child" : ["100", "101", "102"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1247,10 +1186,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "104", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.radiiDivisionList_U", "Parent" : "103"},
-	{"ID" : "105", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_4s_4s_8_1_1_U3", "Parent" : "103"},
-	{"ID" : "106", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_35ns_33s_64_3_1_U4", "Parent" : "103"},
-	{"ID" : "107", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204", "Parent" : "98", "Child" : ["108", "109", "110"],
+	{"ID" : "100", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.radiiDivisionList_U", "Parent" : "99"},
+	{"ID" : "101", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_4s_4s_8_1_1_U3", "Parent" : "99"},
+	{"ID" : "102", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_190.mul_35ns_33s_64_3_1_U4", "Parent" : "99"},
+	{"ID" : "103", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204", "Parent" : "94", "Child" : ["104", "105", "106"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1270,10 +1209,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "108", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.radiiDivisionList_U", "Parent" : "107"},
-	{"ID" : "109", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_4s_4s_8_1_1_U3", "Parent" : "107"},
-	{"ID" : "110", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_35ns_33s_64_3_1_U4", "Parent" : "107"},
-	{"ID" : "111", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217", "Parent" : "98", "Child" : ["112", "113", "114"],
+	{"ID" : "104", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.radiiDivisionList_U", "Parent" : "103"},
+	{"ID" : "105", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_4s_4s_8_1_1_U3", "Parent" : "103"},
+	{"ID" : "106", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_204.mul_35ns_33s_64_3_1_U4", "Parent" : "103"},
+	{"ID" : "107", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217", "Parent" : "94", "Child" : ["108", "109", "110"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1293,10 +1232,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "112", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.radiiDivisionList_U", "Parent" : "111"},
-	{"ID" : "113", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_4s_4s_8_1_1_U3", "Parent" : "111"},
-	{"ID" : "114", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_35ns_33s_64_3_1_U4", "Parent" : "111"},
-	{"ID" : "115", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_wedgePatch_init_fu_404.grp_get_acceptanceCorners_fu_249", "Parent" : "97",
+	{"ID" : "108", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.radiiDivisionList_U", "Parent" : "107"},
+	{"ID" : "109", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_4s_4s_8_1_1_U3", "Parent" : "107"},
+	{"ID" : "110", "Level" : "7", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_getParallelograms_fu_239.grp_straightLineProjectorFromLayerIJtoK_fu_217.mul_35ns_33s_64_3_1_U4", "Parent" : "107"},
+	{"ID" : "111", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_wedgePatch_init_fu_406.grp_get_acceptanceCorners_fu_249", "Parent" : "93",
 		"CDFG" : "get_acceptanceCorners",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1311,13 +1250,13 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "116", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_makeSuperPoint_alignedToLine11_fu_414", "Parent" : "93", "Child" : ["117", "118", "119", "121", "122"],
+	{"ID" : "112", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_makeSuperPoint_alignedToLine11_fu_416", "Parent" : "89", "Child" : ["113", "114", "115", "116"],
 		"CDFG" : "makeSuperPoint_alignedToLine11",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "306", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -1333,50 +1272,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "init_patch", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "119", "SubInstance" : "grp_mSP_findLRBounds_fu_270", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "117", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_makeSuperPoint_alignedToLine11_fu_414.radiiDivisionList_U", "Parent" : "116"},
-	{"ID" : "118", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_makeSuperPoint_alignedToLine11_fu_414.row_list_V_U", "Parent" : "116"},
-	{"ID" : "119", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findLRBounds_fu_270", "Parent" : "116", "Child" : ["120"],
-		"CDFG" : "mSP_findLRBounds",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "i", "Type" : "None", "Direction" : "I"},
-			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "120", "Level" : "6", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findLRBounds_fu_270.trapezoid_edges_V_U", "Parent" : "119"},
-	{"ID" : "121", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_makeSuperPoint_alignedToLine11_fu_414.grp_mSP_findStartIndex_fu_279", "Parent" : "116",
-		"CDFG" : "mSP_findStartIndex",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
-			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "122", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_makeSuperPoint_alignedToLine11_fu_414.mul_35ns_33s_64_3_1_U23", "Parent" : "116"},
-	{"ID" : "123", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_add_patch9_fu_433", "Parent" : "93", "Child" : ["124", "125"],
+	{"ID" : "113", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_makeSuperPoint_alignedToLine11_fu_416.radiiDivisionList_1_4_U", "Parent" : "112"},
+	{"ID" : "114", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_makeSuperPoint_alignedToLine11_fu_416.trapezoid_edges_V_U", "Parent" : "112"},
+	{"ID" : "115", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_makeSuperPoint_alignedToLine11_fu_416.row_list_V_U", "Parent" : "112"},
+	{"ID" : "116", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_makeSuperPoint_alignedToLine11_fu_416.mul_33ns_33s_64_3_1_U16", "Parent" : "112"},
+	{"ID" : "117", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_add_patch9_fu_435", "Parent" : "89", "Child" : ["118", "119"],
 		"CDFG" : "add_patch9",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1395,12 +1297,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "wp_superpoints", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "124", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "wp_parameters"}]},
+					{"ID" : "118", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "wp_parameters"}]},
 			{"Name" : "patches_superpoints", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "124", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "patches_parameters"}]}]},
-	{"ID" : "124", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_add_patch9_fu_433.grp_add_patch_patches_parameters14_fu_297", "Parent" : "123",
+					{"ID" : "118", "SubInstance" : "grp_add_patch_patches_parameters14_fu_297", "Port" : "patches_parameters"}]}]},
+	{"ID" : "118", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_add_patch9_fu_435.grp_add_patch_patches_parameters14_fu_297", "Parent" : "117",
 		"CDFG" : "add_patch_patches_parameters14",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1416,7 +1318,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "wp_parameters", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "IO"}]},
-	{"ID" : "125", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_makePatch_alignedToLine_fu_504.grp_add_patch9_fu_433.grp_encodeCoordinates_fu_305", "Parent" : "123",
+	{"ID" : "119", "Level" : "5", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_makePatch_alignedToLine_fu_510.grp_add_patch9_fu_435.grp_encodeCoordinates_fu_305", "Parent" : "117",
 		"CDFG" : "encodeCoordinates",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -1432,7 +1334,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "phi", "Type" : "None", "Direction" : "I"},
 			{"Name" : "z", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "126", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_straightLineProjectorFromLayerIJtoK_fu_531", "Parent" : "5", "Child" : ["127", "128", "129"],
+	{"ID" : "120", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_straightLineProjectorFromLayerIJtoK_fu_539", "Parent" : "5", "Child" : ["121", "122", "123"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1452,10 +1354,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "127", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_straightLineProjectorFromLayerIJtoK_fu_531.radiiDivisionList_U", "Parent" : "126"},
-	{"ID" : "128", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_straightLineProjectorFromLayerIJtoK_fu_531.mul_4s_4s_8_1_1_U3", "Parent" : "126"},
-	{"ID" : "129", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_straightLineProjectorFromLayerIJtoK_fu_531.mul_35ns_33s_64_3_1_U4", "Parent" : "126"},
-	{"ID" : "130", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_getSolveNextPatchPairWhileCondition_fu_545", "Parent" : "5",
+	{"ID" : "121", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_straightLineProjectorFromLayerIJtoK_fu_539.radiiDivisionList_U", "Parent" : "120"},
+	{"ID" : "122", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_straightLineProjectorFromLayerIJtoK_fu_539.mul_4s_4s_8_1_1_U3", "Parent" : "120"},
+	{"ID" : "123", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_straightLineProjectorFromLayerIJtoK_fu_539.mul_35ns_33s_64_3_1_U4", "Parent" : "120"},
+	{"ID" : "124", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_getSolveNextPatchPairWhileCondition_fu_553", "Parent" : "5",
 		"CDFG" : "getSolveNextPatchPairWhileCondition",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1475,7 +1377,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "previous_white_space_height", "Type" : "None", "Direction" : "I"},
 			{"Name" : "current_z_top_index", "Type" : "None", "Direction" : "I"},
 			{"Name" : "patches_parameters", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "131", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_areWedgeSuperPointsEqual_fu_561", "Parent" : "5",
+	{"ID" : "125", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_areWedgeSuperPointsEqual_fu_569", "Parent" : "5",
 		"CDFG" : "areWedgeSuperPointsEqual",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1494,7 +1396,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "wsp1_offset1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "wsp2_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "wsp2_offset3", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "132", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_straightLineProjectorFromLayerIJtoK_fu_1148", "Parent" : "5", "Child" : ["133", "134", "135"],
+	{"ID" : "126", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_straightLineProjectorFromLayerIJtoK_fu_1156", "Parent" : "5", "Child" : ["127", "128", "129"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1514,11 +1416,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "133", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_straightLineProjectorFromLayerIJtoK_fu_1148.radiiDivisionList_U", "Parent" : "132"},
-	{"ID" : "134", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_straightLineProjectorFromLayerIJtoK_fu_1148.mul_4s_4s_8_1_1_U3", "Parent" : "132"},
-	{"ID" : "135", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.grp_straightLineProjectorFromLayerIJtoK_fu_1148.mul_35ns_33s_64_3_1_U4", "Parent" : "132"},
-	{"ID" : "136", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_solveNextPatchPair_fu_190.mul_33s_64s_64_5_1_U128", "Parent" : "5"},
-	{"ID" : "137", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_straightLineProjectorFromLayerIJtoK_fu_218", "Parent" : "4", "Child" : ["138", "139", "140"],
+	{"ID" : "127", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_straightLineProjectorFromLayerIJtoK_fu_1156.radiiDivisionList_U", "Parent" : "126"},
+	{"ID" : "128", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_straightLineProjectorFromLayerIJtoK_fu_1156.mul_4s_4s_8_1_1_U3", "Parent" : "126"},
+	{"ID" : "129", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.grp_straightLineProjectorFromLayerIJtoK_fu_1156.mul_35ns_33s_64_3_1_U4", "Parent" : "126"},
+	{"ID" : "130", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_solveNextPatchPair_fu_192.mul_33s_64s_64_5_1_U124", "Parent" : "5"},
+	{"ID" : "131", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_straightLineProjectorFromLayerIJtoK_fu_222", "Parent" : "4", "Child" : ["132", "133", "134"],
 		"CDFG" : "straightLineProjectorFromLayerIJtoK",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1538,10 +1440,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "j", "Type" : "None", "Direction" : "I"},
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "138", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_straightLineProjectorFromLayerIJtoK_fu_218.radiiDivisionList_U", "Parent" : "137"},
-	{"ID" : "139", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_straightLineProjectorFromLayerIJtoK_fu_218.mul_4s_4s_8_1_1_U3", "Parent" : "137"},
-	{"ID" : "140", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.grp_straightLineProjectorFromLayerIJtoK_fu_218.mul_35ns_33s_64_3_1_U4", "Parent" : "137"},
-	{"ID" : "141", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_328.tmp_getSolveNextColumnWhileConditional_fu_234", "Parent" : "4",
+	{"ID" : "132", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_straightLineProjectorFromLayerIJtoK_fu_222.radiiDivisionList_U", "Parent" : "131"},
+	{"ID" : "133", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_straightLineProjectorFromLayerIJtoK_fu_222.mul_4s_4s_8_1_1_U3", "Parent" : "131"},
+	{"ID" : "134", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.grp_straightLineProjectorFromLayerIJtoK_fu_222.mul_35ns_33s_64_3_1_U4", "Parent" : "131"},
+	{"ID" : "135", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_solveNextColumn_fu_326.tmp_getSolveNextColumnWhileConditional_fu_238", "Parent" : "4",
 		"CDFG" : "getSolveNextColumnWhileConditional",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -1558,7 +1460,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "c_corner", "Type" : "None", "Direction" : "I"},
 			{"Name" : "nPatchesInColumn", "Type" : "None", "Direction" : "I"},
 			{"Name" : "projectionOfCornerToBeam", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "142", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_initializeArrays_fu_346", "Parent" : "0",
+	{"ID" : "136", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_initializeArrays_fu_346", "Parent" : "0",
 		"CDFG" : "initializeArrays",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1578,14 +1480,13 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	MPSQ {
-		stop {Type I LastRead -1 FirstWrite -1}
 		ppl {Type I LastRead 1 FirstWrite -1}
-		leftRight {Type I LastRead -1 FirstWrite -1}
 		n_patches {Type IO LastRead 78 FirstWrite 3}
 		GDarray {Type I LastRead 3 FirstWrite -1}
 		GDn_points {Type I LastRead 9 FirstWrite -1}
 		patches_superpointsOUTPUT {Type O LastRead -1 FirstWrite 11}
 		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
 	solveNextColumn {
 		n_patches {Type IO LastRead 78 FirstWrite 3}
@@ -1596,6 +1497,7 @@ set ArgLastReadFirstWriteLatency {
 		patches_superpoints {Type IO LastRead 21 FirstWrite -1}
 		patches_parameters {Type IO LastRead 62 FirstWrite -1}
 		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
 	solveNextPatchPair {
 		n_patches {Type IO LastRead 78 FirstWrite 3}
@@ -1609,8 +1511,9 @@ set ArgLastReadFirstWriteLatency {
 		GDarrayDecoded {Type I LastRead 20 FirstWrite -1}
 		patches_superpoints {Type IO LastRead 21 FirstWrite -1}
 		patches_parameters {Type IO LastRead 62 FirstWrite -1}
-		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
+		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
 	makeThirdPatch {
 		n_patches {Type IO LastRead 78 FirstWrite 3}
 		GDn_points {Type I LastRead 0 FirstWrite -1}
@@ -1620,10 +1523,11 @@ set ArgLastReadFirstWriteLatency {
 		complementary_apexZ0 {Type I LastRead 5 FirstWrite -1}
 		apexZ0 {Type I LastRead 5 FirstWrite -1}
 		ppl {Type I LastRead 6 FirstWrite -1}
-		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
+		GDarrayDecoded {Type I LastRead 18 FirstWrite -1}
 		patches_superpoints {Type IO LastRead 8 FirstWrite -1}
 		patches_parameters {Type IO LastRead 62 FirstWrite 1}
 		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
 	makePatch_alignedToLine {
 		n_patches {Type IO LastRead 8 FirstWrite 3}
@@ -1632,11 +1536,12 @@ set ArgLastReadFirstWriteLatency {
 		z_top {Type I LastRead 0 FirstWrite -1}
 		p_read {Type I LastRead 0 FirstWrite -1}
 		leftRight {Type I LastRead 0 FirstWrite -1}
-		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
+		GDarrayDecoded {Type I LastRead 18 FirstWrite -1}
 		patches_superpoints {Type IO LastRead 4 FirstWrite 4}
 		patches_parameters {Type IO LastRead 3 FirstWrite 5}
-		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
+		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
 	wedgePatch_init {
 		wp_superpoints {Type IO LastRead 4 FirstWrite -1}
 		wp_parameters {Type IO LastRead 14 FirstWrite 0}
@@ -1684,19 +1589,10 @@ set ArgLastReadFirstWriteLatency {
 		apexZ0 {Type I LastRead 1 FirstWrite -1}
 		original_ppl {Type I LastRead 1 FirstWrite -1}
 		leftRight {Type I LastRead 1 FirstWrite -1}
-		init_patch {Type O LastRead -1 FirstWrite 16}
-		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
-		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
+		init_patch {Type O LastRead -1 FirstWrite 20}
+		GDarrayDecoded {Type I LastRead 18 FirstWrite -1}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
-	mSP_findLRBounds {
-		i {Type I LastRead 0 FirstWrite -1}
-		row_list {Type I LastRead 2 FirstWrite -1}
-		row_list_size {Type I LastRead 1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
-	mSP_findStartIndex {
-		row_list {Type I LastRead 1 FirstWrite -1}
-		row_list_size {Type I LastRead 0 FirstWrite -1}
-		projectionToRow {Type I LastRead 0 FirstWrite -1}}
 	add_patch9 {
 		n_patches {Type O LastRead -1 FirstWrite 3}
 		n_patches_read {Type I LastRead 0 FirstWrite -1}
@@ -1752,6 +1648,7 @@ set ArgLastReadFirstWriteLatency {
 		patches_superpoints {Type IO LastRead 4 FirstWrite -1}
 		patches_parameters {Type IO LastRead 33 FirstWrite 5}
 		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
 	makePatch_alignedToLine {
 		n_patches {Type IO LastRead 8 FirstWrite 3}
@@ -1760,11 +1657,12 @@ set ArgLastReadFirstWriteLatency {
 		z_top {Type I LastRead 0 FirstWrite -1}
 		p_read {Type I LastRead 0 FirstWrite -1}
 		leftRight {Type I LastRead 0 FirstWrite -1}
-		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
+		GDarrayDecoded {Type I LastRead 18 FirstWrite -1}
 		patches_superpoints {Type IO LastRead 4 FirstWrite 4}
 		patches_parameters {Type IO LastRead 3 FirstWrite 5}
-		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
+		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
 	wedgePatch_init {
 		wp_superpoints {Type IO LastRead 4 FirstWrite -1}
 		wp_parameters {Type IO LastRead 14 FirstWrite 0}
@@ -1812,19 +1710,10 @@ set ArgLastReadFirstWriteLatency {
 		apexZ0 {Type I LastRead 1 FirstWrite -1}
 		original_ppl {Type I LastRead 1 FirstWrite -1}
 		leftRight {Type I LastRead 1 FirstWrite -1}
-		init_patch {Type O LastRead -1 FirstWrite 16}
-		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
-		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
+		init_patch {Type O LastRead -1 FirstWrite 20}
+		GDarrayDecoded {Type I LastRead 18 FirstWrite -1}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
-	mSP_findLRBounds {
-		i {Type I LastRead 0 FirstWrite -1}
-		row_list {Type I LastRead 2 FirstWrite -1}
-		row_list_size {Type I LastRead 1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
-	mSP_findStartIndex {
-		row_list {Type I LastRead 1 FirstWrite -1}
-		row_list_size {Type I LastRead 0 FirstWrite -1}
-		projectionToRow {Type I LastRead 0 FirstWrite -1}}
 	add_patch9 {
 		n_patches {Type O LastRead -1 FirstWrite 3}
 		n_patches_read {Type I LastRead 0 FirstWrite -1}
@@ -1866,11 +1755,12 @@ set ArgLastReadFirstWriteLatency {
 		z_top {Type I LastRead 0 FirstWrite -1}
 		p_read {Type I LastRead 0 FirstWrite -1}
 		leftRight {Type I LastRead 0 FirstWrite -1}
-		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
+		GDarrayDecoded {Type I LastRead 18 FirstWrite -1}
 		patches_superpoints {Type IO LastRead 4 FirstWrite 4}
 		patches_parameters {Type IO LastRead 3 FirstWrite 5}
-		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
+		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList {Type I LastRead -1 FirstWrite -1}}
 	wedgePatch_init {
 		wp_superpoints {Type IO LastRead 4 FirstWrite -1}
 		wp_parameters {Type IO LastRead 14 FirstWrite 0}
@@ -1918,19 +1808,10 @@ set ArgLastReadFirstWriteLatency {
 		apexZ0 {Type I LastRead 1 FirstWrite -1}
 		original_ppl {Type I LastRead 1 FirstWrite -1}
 		leftRight {Type I LastRead 1 FirstWrite -1}
-		init_patch {Type O LastRead -1 FirstWrite 16}
-		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
-		radiiDivisionList {Type I LastRead -1 FirstWrite -1}
+		init_patch {Type O LastRead -1 FirstWrite 20}
+		GDarrayDecoded {Type I LastRead 18 FirstWrite -1}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
-	mSP_findLRBounds {
-		i {Type I LastRead 0 FirstWrite -1}
-		row_list {Type I LastRead 2 FirstWrite -1}
-		row_list_size {Type I LastRead 1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
-	mSP_findStartIndex {
-		row_list {Type I LastRead 1 FirstWrite -1}
-		row_list_size {Type I LastRead 0 FirstWrite -1}
-		projectionToRow {Type I LastRead 0 FirstWrite -1}}
 	add_patch9 {
 		n_patches {Type O LastRead -1 FirstWrite 3}
 		n_patches_read {Type I LastRead 0 FirstWrite -1}
@@ -1999,9 +1880,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	stop { ap_none {  { stop in_data 0 32 } } }
 	ppl { ap_none {  { ppl in_data 0 32 } } }
-	leftRight { ap_none {  { leftRight in_data 0 1 } } }
 	n_patches { ap_ovld {  { n_patches_i in_data 0 8 }  { n_patches_o out_data 1 8 }  { n_patches_o_ap_vld out_vld 1 1 } } }
 	GDarray { ap_memory {  { GDarray_address0 mem_address 1 11 }  { GDarray_ce0 mem_ce 1 1 }  { GDarray_q0 mem_dout 0 64 } } }
 	GDn_points { ap_memory {  { GDn_points_address0 mem_address 1 3 }  { GDn_points_ce0 mem_ce 1 1 }  { GDn_points_q0 mem_dout 0 32 } } }

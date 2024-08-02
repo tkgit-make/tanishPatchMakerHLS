@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveNextPatchPair'" level="0">
-<item name = "Date">Thu Aug  1 00:47:43 2024
+<item name = "Date">Thu Aug  1 23:31:19 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -31,18 +31,18 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makeThirdPatch_fu_444">makeThirdPatch, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_solveComplmentaryPatch_fu_471">solveComplmentaryPatch, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_makePatch_alignedToLine_fu_504">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
-<column name="grp_getSolveNextPatchPairWhileCondition_fu_545">getSolveNextPatchPairWhileCondition, 2, 2, 6.000 ns, 6.000 ns, 2, 2, none</column>
-<column name="grp_areWedgeSuperPointsEqual_fu_561">areWedgeSuperPointsEqual, 4, 4, 12.000 ns, 12.000 ns, 2, 2, yes</column>
+<column name="grp_makeThirdPatch_fu_446">makeThirdPatch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_solveComplmentaryPatch_fu_475">solveComplmentaryPatch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_makePatch_alignedToLine_fu_510">makePatch_alignedToLine, 2249, ?, 6.747 us, ?, 2249, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_539">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_getSolveNextPatchPairWhileCondition_fu_553">getSolveNextPatchPairWhileCondition, 2, 2, 6.000 ns, 6.000 ns, 2, 2, none</column>
+<column name="grp_areWedgeSuperPointsEqual_fu_569">areWedgeSuperPointsEqual, 4, 4, 12.000 ns, 12.000 ns, 2, 2, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- solveNextPatchPair_superPointEqualCheck">7, 41, 7, -, -, 1 ~ 5, no</column>
-<column name="- VITIS_LOOP_936_1">?, ?, ?, -, -, ?, no</column>
+<column name="- VITIS_LOOP_932_1">?, ?, ?, -, -, ?, no</column>
 </table>
 </item>
 </section>

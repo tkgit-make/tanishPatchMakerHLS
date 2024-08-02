@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'getSolveNextColumnWhileConditional'
 ================================================================
-* Date:           Thu Aug  1 00:46:57 2024
+* Date:           Thu Aug  1 23:30:36 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -75,15 +75,15 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.98>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %projectionOfCornerToBeam" [patchMaker.cpp:790]   --->   Operation 2 'read' 'projectionOfCornerToBeam_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%nPatchesInColumn_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %nPatchesInColumn" [patchMaker.cpp:790]   --->   Operation 3 'read' 'nPatchesInColumn_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%c_corner_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %c_corner" [patchMaker.cpp:790]   --->   Operation 4 'read' 'c_corner_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %projectionOfCornerToBeam" [patchMaker.cpp:786]   --->   Operation 2 'read' 'projectionOfCornerToBeam_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%nPatchesInColumn_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %nPatchesInColumn" [patchMaker.cpp:786]   --->   Operation 3 'read' 'nPatchesInColumn_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%c_corner_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %c_corner" [patchMaker.cpp:786]   --->   Operation 4 'read' 'c_corner_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.85ns)   --->   "%icmp_ln886 = icmp_sgt  i32 %c_corner_read, i32 4244967196"   --->   Operation 5 'icmp' 'icmp_ln886' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 6 [1/1] (0.85ns)   --->   "%icmp_ln794 = icmp_slt  i32 %nPatchesInColumn_read, i32 100000000" [patchMaker.cpp:794]   --->   Operation 6 'icmp' 'icmp_ln794' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 7 [1/1] (0.85ns)   --->   "%icmp_ln794_1 = icmp_slt  i32 %projectionOfCornerToBeam_read, i32 15000000" [patchMaker.cpp:794]   --->   Operation 7 'icmp' 'icmp_ln794_1' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 8 [1/1] (0.00ns) (grouped into LUT with out node and_ln794_1)   --->   "%and_ln794 = and i1 %icmp_ln794, i1 %icmp_ln794_1" [patchMaker.cpp:794]   --->   Operation 8 'and' 'and_ln794' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 9 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln794_1 = and i1 %and_ln794, i1 %icmp_ln886" [patchMaker.cpp:794]   --->   Operation 9 'and' 'and_ln794_1' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%ret_ln794 = ret i1 %and_ln794_1" [patchMaker.cpp:794]   --->   Operation 10 'ret' 'ret_ln794' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.85ns)   --->   "%icmp_ln790 = icmp_slt  i32 %nPatchesInColumn_read, i32 100000000" [patchMaker.cpp:790]   --->   Operation 6 'icmp' 'icmp_ln790' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.85ns)   --->   "%icmp_ln790_1 = icmp_slt  i32 %projectionOfCornerToBeam_read, i32 15000000" [patchMaker.cpp:790]   --->   Operation 7 'icmp' 'icmp_ln790_1' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns) (grouped into LUT with out node and_ln790_1)   --->   "%and_ln790 = and i1 %icmp_ln790, i1 %icmp_ln790_1" [patchMaker.cpp:790]   --->   Operation 8 'and' 'and_ln790' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln790_1 = and i1 %and_ln790, i1 %icmp_ln886" [patchMaker.cpp:790]   --->   Operation 9 'and' 'and_ln790_1' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%ret_ln790 = ret i1 %and_ln790_1" [patchMaker.cpp:790]   --->   Operation 10 'ret' 'ret_ln790' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -110,11 +110,11 @@ projectionOfCornerToBeam_read (read) [ 00]
 nPatchesInColumn_read         (read) [ 00]
 c_corner_read                 (read) [ 00]
 icmp_ln886                    (icmp) [ 00]
-icmp_ln794                    (icmp) [ 00]
-icmp_ln794_1                  (icmp) [ 00]
-and_ln794                     (and ) [ 00]
-and_ln794_1                   (and ) [ 00]
-ret_ln794                     (ret ) [ 00]
+icmp_ln790                    (icmp) [ 00]
+icmp_ln790_1                  (icmp) [ 00]
+and_ln790                     (and ) [ 00]
+and_ln790_1                   (and ) [ 00]
+ret_ln790                     (ret ) [ 00]
 </LifeTime>
 
 <model>
@@ -231,7 +231,7 @@ ret_ln794                     (ret ) [ 00]
 </bind>
 </comp>
 
-<comp id="38" class="1004" name="icmp_ln794_fu_38">
+<comp id="38" class="1004" name="icmp_ln790_fu_38">
 <pin_list>
 <pin id="39" dir="0" index="0" bw="32" slack="0"/>
 <pin id="40" dir="0" index="1" bw="28" slack="0"/>
@@ -239,11 +239,11 @@ ret_ln794                     (ret ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln794/1 "/>
+<opset="icmp_ln790/1 "/>
 </bind>
 </comp>
 
-<comp id="44" class="1004" name="icmp_ln794_1_fu_44">
+<comp id="44" class="1004" name="icmp_ln790_1_fu_44">
 <pin_list>
 <pin id="45" dir="0" index="0" bw="32" slack="0"/>
 <pin id="46" dir="0" index="1" bw="25" slack="0"/>
@@ -251,11 +251,11 @@ ret_ln794                     (ret ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln794_1/1 "/>
+<opset="icmp_ln790_1/1 "/>
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="and_ln794_fu_50">
+<comp id="50" class="1004" name="and_ln790_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="1" slack="0"/>
 <pin id="52" dir="0" index="1" bw="1" slack="0"/>
@@ -263,11 +263,11 @@ ret_ln794                     (ret ) [ 00]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln794/1 "/>
+<opset="and_ln790/1 "/>
 </bind>
 </comp>
 
-<comp id="56" class="1004" name="and_ln794_1_fu_56">
+<comp id="56" class="1004" name="and_ln790_1_fu_56">
 <pin_list>
 <pin id="57" dir="0" index="0" bw="1" slack="0"/>
 <pin id="58" dir="0" index="1" bw="1" slack="0"/>
@@ -275,7 +275,7 @@ ret_ln794                     (ret ) [ 00]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln794_1/1 "/>
+<opset="and_ln790_1/1 "/>
 </bind>
 </comp>
 
@@ -327,9 +327,9 @@ ret_ln794                     (ret ) [ 00]
 	Port: getSolveNextColumnWhileConditional : projectionOfCornerToBeam | {1 }
   - Chain level:
 	State 1
-		and_ln794 : 1
-		and_ln794_1 : 1
-		ret_ln794 : 1
+		and_ln790 : 1
+		and_ln790_1 : 1
+		ret_ln790 : 1
 
 
 ============================================================
@@ -341,11 +341,11 @@ ret_ln794                     (ret ) [ 00]
 | Operation|              Functional Unit             |    FF   |   LUT   |
 |----------|------------------------------------------|---------|---------|
 |          |             icmp_ln886_fu_32             |    0    |    20   |
-|   icmp   |             icmp_ln794_fu_38             |    0    |    20   |
-|          |            icmp_ln794_1_fu_44            |    0    |    20   |
+|   icmp   |             icmp_ln790_fu_38             |    0    |    20   |
+|          |            icmp_ln790_1_fu_44            |    0    |    20   |
 |----------|------------------------------------------|---------|---------|
-|    and   |              and_ln794_fu_50             |    0    |    2    |
-|          |             and_ln794_1_fu_56            |    0    |    2    |
+|    and   |              and_ln790_fu_50             |    0    |    2    |
+|          |             and_ln790_1_fu_56            |    0    |    2    |
 |----------|------------------------------------------|---------|---------|
 |          | projectionOfCornerToBeam_read_read_fu_14 |    0    |    0    |
 |   read   |     nPatchesInColumn_read_read_fu_20     |    0    |    0    |

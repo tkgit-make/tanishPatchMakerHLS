@@ -24,7 +24,7 @@ int_type comparePoints(const std::array<COORDINATE_TYPE, 3> &pointA, const std::
 //long foo(std::array<long, 3> dummy)
 //{ for(int_type i = 0; GDarray.size_t(); ) }
 
-void solve(long_type apexZ0, int_type ppl, bool leftRight, index_type &n_patches,
+void solve(long_type apexZ0, int_type ppl, index_type &n_patches,
            std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_PER_LAYER>, MAX_LAYERS> &GDarray, int_type (&GDn_points)[MAX_LAYERS],
            SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT])
 {
@@ -77,10 +77,10 @@ solve_loop:
     		GDarrayPostSort[i][j] = ( ( (SPACEPOINT_TYPE) GDarray[i][j][1] )<<COORDINATE_TYPE_SIZE) | ( ( (SPACEPOINT_TYPE) GDarray[i][j][2]) & SPACEPOINT_MASK );
     	}
     }
-#pragma HLS array_partition variable=GDarrayPostSort
-#pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarrayPostSort bundle=GDarrayPostSort_b
+//#pragma HLS array_partition variable=GDarrayPostSort
+//#pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarrayPostSort bundle=GDarrayPostSort_b
 
-    MPSQ(1, ppl, leftRight, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
+    MPSQ(ppl, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
 
     /*
 
@@ -362,7 +362,7 @@ void wedge_test(long_type apexZ0, int_type ppl, int_type wedges[])
     SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
     //COORDINATE_TYPE patches_parameters[MAX_PATCHES][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH];
 
-    #pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
+    //#pragma HLS INTERFACE mode=ap_memory depth=100 port=patches_superpoints bundle=patches_superpoints_b
     //#pragma HLS stream variable=patches_superpoints
 
     for (int_type wedgeCounter = 0; wedgeCounter < wedges[1]; wedgeCounter++)
@@ -402,7 +402,7 @@ void wedge_test(long_type apexZ0, int_type ppl, int_type wedges[])
 
         addBoundaryPoint(static_cast<long_type>(0.0001 * INTEGER_FACTOR_CM), GDarray, GDn_points); // with default param
 
-        solve(apexZ0, ppl, false, n_patches, GDarray, GDn_points, patches_superpoints); // solve modifies cover. false is from the left right align (previously a parameter in wedge test)
+        solve(apexZ0, ppl, n_patches, GDarray, GDn_points, patches_superpoints); // solve modifies cover. false is from the left right align (previously a parameter in wedge test)
 
 #if PRINT_OUTS == true
         printf("Printing First Patch Points \n");
@@ -490,7 +490,7 @@ int_type main () {
 
     // Call any preliminary functions required to prepare input for the test.
     // Call the top-level function multiple times, passing input stimuli as needed.
-    int_type wedgesToTest[] = {0, 10}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
+    int_type wedgesToTest[] = {0, 1}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
 
     wedge_test(0, 16, wedgesToTest);
 

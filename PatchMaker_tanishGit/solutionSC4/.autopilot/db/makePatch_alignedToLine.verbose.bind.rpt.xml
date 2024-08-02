@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makePatch_alignedToLine'" level="0">
-<item name = "Date">Thu Aug  1 00:47:14 2024
+<item name = "Date">Thu Aug  1 23:30:52 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,22 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, none</column>
+<column name="">2249, ?, 6.747 us, ?, 2249, ?, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_wedgePatch_init_fu_404">wedgePatch_init, 243, 244, 0.729 us, 0.732 us, 243, 244, none</column>
-<column name="grp_makeSuperPoint_alignedToLine11_fu_414">makeSuperPoint_alignedToLine11, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_add_patch9_fu_433">add_patch9, 14, 490, 42.000 ns, 1.470 us, 14, 490, none</column>
+<column name="grp_wedgePatch_init_fu_406">wedgePatch_init, 243, 244, 0.729 us, 0.732 us, 243, 244, none</column>
+<column name="grp_makeSuperPoint_alignedToLine11_fu_416">makeSuperPoint_alignedToLine11, 306, ?, 0.918 us, ?, 306, ?, none</column>
+<column name="grp_add_patch9_fu_435">add_patch9, 14, 490, 42.000 ns, 1.470 us, 14, 490, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter">161, 161, 3, 1, 1, 160, yes</column>
-<column name="- makePatch_alignedToLine_makeSuperpoint_loop">?, ?, ?, -, -, 5, no</column>
+<column name="- makePatch_alignedToLine_makeSuperpoint_loop">1540, ?, 308 ~ ?, -, -, 5, no</column>
 <column name="- makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter">161, 161, 3, 1, 1, 160, yes</column>
 <column name="- makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength">120, 120, 2, 1, 1, 120, yes</column>
 </table>

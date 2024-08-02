@@ -286,10 +286,10 @@ _ifconv:21 %add_ln0_1 = add i8 %add_ln0, i8 %wsp1_offset1_cast25
 
 <Node id="16" bw="12" op_0_bw="12" op_1_bw="8" op_2_bw="4">
 <![CDATA[
-_ifconv:10 %tmp_38 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln869_1, i4 0
+_ifconv:10 %tmp_39 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln869_1, i4 0
 
 ]]></Node>
-<StgValue><ssdm name="tmp_38"/></StgValue>
+<StgValue><ssdm name="tmp_39"/></StgValue>
 </operation>
 
 <operation id="23" st_id="2" stage="1" lat="1">
@@ -301,7 +301,7 @@ _ifconv:10 %tmp_38 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %
 
 <Node id="17" bw="64" op_0_bw="12">
 <![CDATA[
-_ifconv:11 %zext_ln869_2 = zext i12 %tmp_38
+_ifconv:11 %zext_ln869_2 = zext i12 %tmp_39
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln869_2"/></StgValue>
@@ -331,10 +331,10 @@ _ifconv:12 %wsp2_addr = getelementptr i64 %wsp2, i64 0, i64 %zext_ln869_2
 
 <Node id="28" bw="12" op_0_bw="12" op_1_bw="8" op_2_bw="4">
 <![CDATA[
-_ifconv:22 %tmp_39 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln0_1, i4 0
+_ifconv:22 %tmp_40 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln0_1, i4 0
 
 ]]></Node>
-<StgValue><ssdm name="tmp_39"/></StgValue>
+<StgValue><ssdm name="tmp_40"/></StgValue>
 </operation>
 
 <operation id="26" st_id="2" stage="1" lat="1">
@@ -346,7 +346,7 @@ _ifconv:22 %tmp_39 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %
 
 <Node id="29" bw="64" op_0_bw="12">
 <![CDATA[
-_ifconv:23 %zext_ln0_2 = zext i12 %tmp_39
+_ifconv:23 %zext_ln0_2 = zext i12 %tmp_40
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln0_2"/></StgValue>
@@ -409,7 +409,7 @@ _ifconv:29 %wsp2_load = load i12 %wsp2_addr
 
 <Node id="19" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-_ifconv:13 %or_ln870 = or i12 %tmp_38, i12 15
+_ifconv:13 %or_ln870 = or i12 %tmp_39, i12 15
 
 ]]></Node>
 <StgValue><ssdm name="or_ln870"/></StgValue>
@@ -454,7 +454,7 @@ _ifconv:15 %wsp2_addr_3 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870
 
 <Node id="31" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-_ifconv:25 %or_ln870_1 = or i12 %tmp_39, i12 15
+_ifconv:25 %or_ln870_1 = or i12 %tmp_40, i12 15
 
 ]]></Node>
 <StgValue><ssdm name="or_ln870_1"/></StgValue>

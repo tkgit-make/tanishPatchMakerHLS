@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'get_acceptanceCorners'" level="0">
-<item name = "Date">Thu Aug  1 00:48:13 2024
+<item name = "Date">Thu Aug  1 23:31:47 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -80,11 +80,11 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln246_fu_384_p2">+, 0, 0, 10, 3, 1</column>
+<column name="add_ln242_fu_384_p2">+, 0, 0, 10, 3, 1</column>
 <column name="add_ln886_1_fu_447_p2">+, 0, 0, 14, 7, 2</column>
 <column name="add_ln886_fu_436_p2">+, 0, 0, 14, 7, 2</column>
 <column name="sub_ln878_fu_414_p2">-, 0, 0, 14, 7, 7</column>
-<column name="icmp_ln246_fu_458_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln242_fu_458_p2">icmp, 0, 0, 9, 3, 4</column>
 <column name="icmp_ln874_1_fu_526_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="icmp_ln874_2_fu_532_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="icmp_ln874_3_fu_538_p2">icmp, 0, 0, 20, 32, 32</column>
@@ -121,7 +121,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="a_corner_min_V_1_reg_346">32, 0, 32, 0</column>
 <column name="a_corner_min_V_2_reg_708">32, 0, 32, 0</column>
-<column name="add_ln246_reg_680">3, 0, 3, 0</column>
+<column name="add_ln242_reg_680">3, 0, 3, 0</column>
 <column name="ap_CS_fsm">21, 0, 21, 0</column>
 <column name="arrayidx1877219_load_0_reg_357">32, 0, 32, 0</column>
 <column name="b_corner_min_V_1_reg_334">32, 0, 32, 0</column>

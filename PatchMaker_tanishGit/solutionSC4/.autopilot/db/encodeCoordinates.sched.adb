@@ -31,7 +31,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>690366496</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -64,7 +64,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>673201714</coreId>
+						<coreId>3051009145</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -248,10 +248,10 @@
 					<Obj>
 						<type>0</type>
 						<id>6</id>
-						<name>_ln318</name>
+						<name>_ln314</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>314</lineNumber>
 						<contextFuncName>encodeCoordinates</contextFuncName>
 						<contextNormFuncName>encodeCoordinates</contextNormFuncName>
 						<inlineStackInfo>
@@ -267,7 +267,7 @@
 											<first>patchMaker.cpp</first>
 											<second>encodeCoordinates</second>
 										</first>
-										<second>318</second>
+										<second>314</second>
 									</item>
 								</second>
 							</item>

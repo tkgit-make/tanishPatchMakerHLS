@@ -32,8 +32,8 @@ class AESL_RUNTIME_BC {
     fstream file_token;
     string mName;
 };
-extern "C" void MPSQ(int, int, char, volatile void *, long long*, int*, long long*);
-extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_stop, int __xlx_apatb_param_ppl, char __xlx_apatb_param_leftRight, volatile void * __xlx_apatb_param_n_patches, volatile void * __xlx_apatb_param_GDarray, volatile void * __xlx_apatb_param_GDn_points, volatile void * __xlx_apatb_param_patches_superpointsOUTPUT) {
+extern "C" void MPSQ(int, volatile void *, long long*, int*, long long*);
+extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_ppl, volatile void * __xlx_apatb_param_n_patches, volatile void * __xlx_apatb_param_GDarray, volatile void * __xlx_apatb_param_GDn_points, volatile void * __xlx_apatb_param_patches_superpointsOUTPUT) {
   // Collect __xlx_GDarray__tmp_vec
   vector<sc_bv<64> >__xlx_GDarray__tmp_vec;
   for (int j = 0, e = 1280; j != e; ++j) {
@@ -71,7 +71,7 @@ extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_stop, int __xlx_apatb_param_
     __xlx_patches_superpointsOUTPUT__input_buffer[i] = __xlx_patches_superpointsOUTPUT__tmp_vec[i].range(63, 0).to_uint64();
   }
   // DUT call
-  MPSQ(__xlx_apatb_param_stop, __xlx_apatb_param_ppl, __xlx_apatb_param_leftRight, __xlx_apatb_param_n_patches, __xlx_GDarray__input_buffer, __xlx_GDn_points__input_buffer, __xlx_patches_superpointsOUTPUT__input_buffer);
+  MPSQ(__xlx_apatb_param_ppl, __xlx_apatb_param_n_patches, __xlx_GDarray__input_buffer, __xlx_GDn_points__input_buffer, __xlx_patches_superpointsOUTPUT__input_buffer);
 // print __xlx_apatb_param_GDarray
   sc_bv<64>*__xlx_GDarray_output_buffer = new sc_bv<64>[__xlx_size_param_GDarray];
   for (int i = 0; i < __xlx_size_param_GDarray; ++i) {

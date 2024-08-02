@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'areWedgeSuperPointsEqual'
 ================================================================
-* Date:           Thu Aug  1 00:47:16 2024
+* Date:           Thu Aug  1 23:30:54 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -101,20 +101,20 @@ ST_1 : Operation 20 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln
 ST_1 : Operation 21 [1/1] (0.83ns) (root node of TernaryAdder)   --->   "%add_ln0_1 = add i8 %add_ln0, i8 %wsp1_offset1_cast25"   --->   Operation 21 'add' 'add_ln0_1' <Predicate = true> <Delay = 0.83> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
 
 State 2 <SV = 1> <Delay = 1.64>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_38 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln869_1, i4 0"   --->   Operation 22 'bitconcatenate' 'tmp_38' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln869_2 = zext i12 %tmp_38"   --->   Operation 23 'zext' 'zext_ln869_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_39 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln869_1, i4 0"   --->   Operation 22 'bitconcatenate' 'tmp_39' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln869_2 = zext i12 %tmp_39"   --->   Operation 23 'zext' 'zext_ln869_2' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%wsp2_addr = getelementptr i64 %wsp2, i64 0, i64 %zext_ln869_2"   --->   Operation 24 'getelementptr' 'wsp2_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_39 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln0_1, i4 0"   --->   Operation 25 'bitconcatenate' 'tmp_39' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln0_2 = zext i12 %tmp_39"   --->   Operation 26 'zext' 'zext_ln0_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_40 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln0_1, i4 0"   --->   Operation 25 'bitconcatenate' 'tmp_40' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln0_2 = zext i12 %tmp_40"   --->   Operation 26 'zext' 'zext_ln0_2' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%wsp2_addr_1 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln0_2"   --->   Operation 27 'getelementptr' 'wsp2_addr_1' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [2/2] (1.64ns)   --->   "%wsp2_load_2 = load i12 %wsp2_addr_1"   --->   Operation 28 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
 ST_2 : Operation 29 [2/2] (1.64ns)   --->   "%wsp2_load = load i12 %wsp2_addr"   --->   Operation 29 'load' 'wsp2_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
 
 State 3 <SV = 2> <Delay = 1.64>
-ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%or_ln870 = or i12 %tmp_38, i12 15"   --->   Operation 30 'or' 'or_ln870' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%or_ln870 = or i12 %tmp_39, i12 15"   --->   Operation 30 'or' 'or_ln870' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln870 = zext i12 %or_ln870"   --->   Operation 31 'zext' 'zext_ln870' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%wsp2_addr_3 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870"   --->   Operation 32 'getelementptr' 'wsp2_addr_3' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%or_ln870_1 = or i12 %tmp_39, i12 15"   --->   Operation 33 'or' 'or_ln870_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%or_ln870_1 = or i12 %tmp_40, i12 15"   --->   Operation 33 'or' 'or_ln870_1' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln870_1 = zext i12 %or_ln870_1"   --->   Operation 34 'zext' 'zext_ln870_1' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%wsp2_addr_2 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870_1"   --->   Operation 35 'getelementptr' 'wsp2_addr_2' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 36 [1/2] (1.64ns)   --->   "%wsp2_load_2 = load i12 %wsp2_addr_1"   --->   Operation 36 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
@@ -171,10 +171,10 @@ tmp_s               (bitconcatenate) [ 000000]
 zext_ln0_1          (zext          ) [ 000000]
 add_ln0             (add           ) [ 000000]
 add_ln0_1           (add           ) [ 001000]
-tmp_38              (bitconcatenate) [ 010100]
+tmp_39              (bitconcatenate) [ 010100]
 zext_ln869_2        (zext          ) [ 000000]
 wsp2_addr           (getelementptr ) [ 010100]
-tmp_39              (bitconcatenate) [ 010100]
+tmp_40              (bitconcatenate) [ 010100]
 zext_ln0_2          (zext          ) [ 000000]
 wsp2_addr_1         (getelementptr ) [ 010100]
 or_ln870            (or            ) [ 000000]
@@ -603,7 +603,7 @@ ret_ln37            (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="169" class="1004" name="tmp_38_fu_169">
+<comp id="169" class="1004" name="tmp_39_fu_169">
 <pin_list>
 <pin id="170" dir="0" index="0" bw="12" slack="0"/>
 <pin id="171" dir="0" index="1" bw="8" slack="1"/>
@@ -612,7 +612,7 @@ ret_ln37            (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_38/2 "/>
+<opset="tmp_39/2 "/>
 </bind>
 </comp>
 
@@ -627,7 +627,7 @@ ret_ln37            (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="181" class="1004" name="tmp_39_fu_181">
+<comp id="181" class="1004" name="tmp_40_fu_181">
 <pin_list>
 <pin id="182" dir="0" index="0" bw="12" slack="0"/>
 <pin id="183" dir="0" index="1" bw="8" slack="1"/>
@@ -636,7 +636,7 @@ ret_ln37            (ret           ) [ 000000]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_39/2 "/>
+<opset="tmp_40/2 "/>
 </bind>
 </comp>
 
@@ -729,13 +729,13 @@ ret_ln37            (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="228" class="1005" name="tmp_38_reg_228">
+<comp id="228" class="1005" name="tmp_39_reg_228">
 <pin_list>
 <pin id="229" dir="0" index="0" bw="12" slack="1"/>
 <pin id="230" dir="1" index="1" bw="12" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_38 "/>
+<opset="tmp_39 "/>
 </bind>
 </comp>
 
@@ -749,13 +749,13 @@ ret_ln37            (ret           ) [ 000000]
 </bind>
 </comp>
 
-<comp id="238" class="1005" name="tmp_39_reg_238">
+<comp id="238" class="1005" name="tmp_40_reg_238">
 <pin_list>
 <pin id="239" dir="0" index="0" bw="12" slack="1"/>
 <pin id="240" dir="1" index="1" bw="12" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_39 "/>
+<opset="tmp_40 "/>
 </bind>
 </comp>
 
@@ -1030,8 +1030,8 @@ ret_ln37            (ret           ) [ 000000]
 |----------|------------------------------|---------|---------|
 |          |          tmp_fu_113          |    0    |    0    |
 |bitconcatenate|         tmp_s_fu_145         |    0    |    0    |
-|          |         tmp_38_fu_169        |    0    |    0    |
-|          |         tmp_39_fu_181        |    0    |    0    |
+|          |         tmp_39_fu_169        |    0    |    0    |
+|          |         tmp_40_fu_181        |    0    |    0    |
 |----------|------------------------------|---------|---------|
 |    or    |        or_ln870_fu_193       |    0    |    0    |
 |          |       or_ln870_1_fu_203      |    0    |    0    |
@@ -1051,8 +1051,8 @@ N/A
 | icmp_ln870_reg_258|    1   |
 |       reg_91      |   64   |
 |       reg_95      |   64   |
-|   tmp_38_reg_228  |   12   |
-|   tmp_39_reg_238  |   12   |
+|   tmp_39_reg_228  |   12   |
+|   tmp_40_reg_238  |   12   |
 |wsp2_addr_1_reg_243|   12   |
 |wsp2_addr_2_reg_253|   12   |
 |wsp2_addr_3_reg_248|   12   |

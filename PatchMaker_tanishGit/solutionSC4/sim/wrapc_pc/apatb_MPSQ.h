@@ -4,9 +4,7 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_MPSQ (
-int stop,
 int ppl,
-char leftRight,
 volatile void* n_patches,
 volatile void* GDarray,
 volatile void* GDn_points,

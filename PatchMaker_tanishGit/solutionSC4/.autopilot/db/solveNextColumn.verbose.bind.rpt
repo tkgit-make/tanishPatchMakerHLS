@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'solveNextColumn'
 ================================================================
-* Date:           Thu Aug  1 00:47:51 2024
+* Date:           Thu Aug  1 23:31:27 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -38,9 +38,9 @@
         |                                                |                                     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
         |                    Instance                    |                Module               |   min   |   max   |    min    |    max    | min | max |   Type  |
         +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
-        |grp_solveNextPatchPair_fu_190                   |solveNextPatchPair                   |        ?|        ?|          ?|          ?|    ?|    ?|     none|
-        |grp_straightLineProjectorFromLayerIJtoK_fu_218  |straightLineProjectorFromLayerIJtoK  |        6|        6|  18.000 ns|  18.000 ns|    1|    1|      yes|
-        |tmp_getSolveNextColumnWhileConditional_fu_234   |getSolveNextColumnWhileConditional   |        0|        0|       0 ns|       0 ns|    0|    0|     none|
+        |grp_solveNextPatchPair_fu_192                   |solveNextPatchPair                   |        ?|        ?|          ?|          ?|    ?|    ?|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_222  |straightLineProjectorFromLayerIJtoK  |        6|        6|  18.000 ns|  18.000 ns|    1|    1|      yes|
+        |tmp_getSolveNextColumnWhileConditional_fu_238   |getSolveNextColumnWhileConditional   |        0|        0|       0 ns|       0 ns|    0|    0|     none|
         +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
 
         * Loop: 
@@ -97,40 +97,40 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.58>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%n_patches_read = read i8 @_ssdm_op_Read.ap_auto.i8P0A, i8 %n_patches" [patchMaker.cpp:752]   --->   Operation 12 'read' 'n_patches_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.58ns)   --->   "%icmp_ln752 = icmp_eq  i8 %n_patches_read, i8 0" [patchMaker.cpp:752]   --->   Operation 13 'icmp' 'icmp_ln752' <Predicate = true> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%n_patches_read = read i8 @_ssdm_op_Read.ap_auto.i8P0A, i8 %n_patches" [patchMaker.cpp:748]   --->   Operation 12 'read' 'n_patches_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.58ns)   --->   "%icmp_ln748 = icmp_eq  i8 %n_patches_read, i8 0" [patchMaker.cpp:748]   --->   Operation 13 'icmp' 'icmp_ln748' <Predicate = true> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 
 State 2 <SV = 1> <Delay = 1.63>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%ppl_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %ppl"   --->   Operation 14 'read' 'ppl_read' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%apexZ0_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %apexZ0"   --->   Operation 15 'read' 'apexZ0_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_13, i32 0, i32 0, void @empty_2, i32 4294967295, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.38ns)   --->   "%br_ln752 = br i1 %icmp_ln752, void, void %._crit_edge.preheader" [patchMaker.cpp:752]   --->   Operation 17 'br' 'br_ln752' <Predicate = true> <Delay = 0.38>
-ST_2 : Operation 18 [7/7] (1.63ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:754]   --->   Operation 18 'call' 'op2_V' <Predicate = (!icmp_ln752)> <Delay = 1.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_33, i32 0, i32 0, void @empty_2, i32 4294967295, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.38ns)   --->   "%br_ln748 = br i1 %icmp_ln748, void, void %._crit_edge.preheader" [patchMaker.cpp:748]   --->   Operation 17 'br' 'br_ln748' <Predicate = true> <Delay = 0.38>
+ST_2 : Operation 18 [7/7] (1.63ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 18 'call' 'op2_V' <Predicate = (!icmp_ln748)> <Delay = 1.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 2.10>
-ST_3 : Operation 19 [6/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:754]   --->   Operation 19 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 19 [6/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 19 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 2.10>
-ST_4 : Operation 20 [5/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:754]   --->   Operation 20 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 20 [5/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 20 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 2.10>
-ST_5 : Operation 21 [4/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:754]   --->   Operation 21 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 21 [4/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 21 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 2.10>
-ST_6 : Operation 22 [3/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:754]   --->   Operation 22 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 22 [3/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 22 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 2.10>
-ST_7 : Operation 23 [2/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:754]   --->   Operation 23 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 23 [2/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 23 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 1.10>
-ST_8 : Operation 24 [1/7] (1.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:754]   --->   Operation 24 'call' 'op2_V' <Predicate = true> <Delay = 1.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 24 [1/7] (1.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 24 'call' 'op2_V' <Predicate = true> <Delay = 1.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 9 <SV = 8> <Delay = 1.47>
-ST_9 : Operation 25 [1/1] (0.85ns)   --->   "%icmp_ln878 = icmp_sgt  i32 %op2_V, i32 50000000"   --->   Operation 25 'icmp' 'icmp_ln878' <Predicate = (!icmp_ln752)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 26 [1/1] (0.22ns)   --->   "%select_ln754 = select i1 %icmp_ln878, i32 50000000, i32 %op2_V" [patchMaker.cpp:754]   --->   Operation 26 'select' 'select_ln754' <Predicate = (!icmp_ln752)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_9 : Operation 27 [1/1] (0.38ns)   --->   "%br_ln754 = br void %._crit_edge.preheader" [patchMaker.cpp:754]   --->   Operation 27 'br' 'br_ln754' <Predicate = (!icmp_ln752)> <Delay = 0.38>
-ST_9 : Operation 28 [1/1] (0.00ns)   --->   "%z_top_max_V_16_ph = phi i32 50000000, void, i32 %select_ln754, void" [patchMaker.cpp:754]   --->   Operation 28 'phi' 'z_top_max_V_16_ph' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 29 [1/1] (0.38ns)   --->   "%br_ln761 = br void %._crit_edge" [patchMaker.cpp:761]   --->   Operation 29 'br' 'br_ln761' <Predicate = true> <Delay = 0.38>
+ST_9 : Operation 25 [1/1] (0.85ns)   --->   "%icmp_ln878 = icmp_sgt  i32 %op2_V, i32 50000000"   --->   Operation 25 'icmp' 'icmp_ln878' <Predicate = (!icmp_ln748)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 26 [1/1] (0.22ns)   --->   "%select_ln750 = select i1 %icmp_ln878, i32 50000000, i32 %op2_V" [patchMaker.cpp:750]   --->   Operation 26 'select' 'select_ln750' <Predicate = (!icmp_ln748)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 27 [1/1] (0.38ns)   --->   "%br_ln750 = br void %._crit_edge.preheader" [patchMaker.cpp:750]   --->   Operation 27 'br' 'br_ln750' <Predicate = (!icmp_ln748)> <Delay = 0.38>
+ST_9 : Operation 28 [1/1] (0.00ns)   --->   "%z_top_max_V_16_ph = phi i32 50000000, void, i32 %select_ln750, void" [patchMaker.cpp:750]   --->   Operation 28 'phi' 'z_top_max_V_16_ph' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 29 [1/1] (0.38ns)   --->   "%br_ln757 = br void %._crit_edge" [patchMaker.cpp:757]   --->   Operation 29 'br' 'br_ln757' <Predicate = true> <Delay = 0.38>
 
 State 10 <SV = 9> <Delay = 1.94>
 ST_10 : Operation 30 [1/1] (0.00ns)   --->   "%z_top_max_V_16 = phi i32 %z_top_max_V, void, i32 %z_top_max_V_16_ph, void %._crit_edge.preheader"   --->   Operation 30 'phi' 'z_top_max_V_16' <Predicate = true> <Delay = 0.00>
@@ -139,28 +139,28 @@ ST_10 : Operation 32 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V_0 = phi i3
 ST_10 : Operation 33 [1/1] (0.00ns)   --->   "%z_top_min_V_0 = phi i32 %z_top_min_V, void, i32 4244967296, void %._crit_edge.preheader"   --->   Operation 33 'phi' 'z_top_min_V_0' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 34 [1/1] (0.00ns)   --->   "%nPatchesInColumn_0 = phi i32 %nPatchesInColumn, void, i32 0, void %._crit_edge.preheader"   --->   Operation 34 'phi' 'nPatchesInColumn_0' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 35 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_V_0 = phi i32 %projectionOfCornerToBeam_V, void, i32 0, void %._crit_edge.preheader"   --->   Operation 35 'phi' 'projectionOfCornerToBeam_V_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 36 [1/1] (0.00ns)   --->   "%saved_apexZ0_buf_0 = phi i32 %saved_apexZ0_ret, void, i32 %apexZ0_read, void %._crit_edge.preheader" [patchMaker.cpp:768]   --->   Operation 36 'phi' 'saved_apexZ0_buf_0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 36 [1/1] (0.00ns)   --->   "%saved_apexZ0_buf_0 = phi i32 %saved_apexZ0_ret, void, i32 %apexZ0_read, void %._crit_edge.preheader" [patchMaker.cpp:764]   --->   Operation 36 'phi' 'saved_apexZ0_buf_0' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 37 [1/1] (0.00ns)   --->   "%loopCounter = phi i32 %loopCounter_1, void, i32 0, void %._crit_edge.preheader"   --->   Operation 37 'phi' 'loopCounter' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 38 [1/1] (0.98ns)   --->   "%tmp = call i1 @getSolveNextColumnWhileConditional, i32 %c_corner_V_0, i32 %nPatchesInColumn_0, i32 %projectionOfCornerToBeam_V_0" [patchMaker.cpp:766]   --->   Operation 38 'call' 'tmp' <Predicate = true> <Delay = 0.98> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 39 [1/1] (0.88ns)   --->   "%loopCounter_1 = add i32 %loopCounter, i32 1" [patchMaker.cpp:777]   --->   Operation 39 'add' 'loopCounter_1' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_10 : Operation 40 [1/1] (0.38ns)   --->   "%br_ln766 = br i1 %tmp, void %.loopexit, void" [patchMaker.cpp:766]   --->   Operation 40 'br' 'br_ln766' <Predicate = true> <Delay = 0.38>
-ST_10 : Operation 41 [2/2] (0.96ns)   --->   "%call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i35 %radiiDivisionList, i26 %trapezoid_edges_V" [patchMaker.cpp:768]   --->   Operation 41 'call' 'call_ret' <Predicate = (tmp)> <Delay = 0.96> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 42 [1/1] (0.85ns)   --->   "%icmp_ln772 = icmp_sgt  i32 %loopCounter, i32 25" [patchMaker.cpp:772]   --->   Operation 42 'icmp' 'icmp_ln772' <Predicate = (tmp)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 38 [1/1] (0.98ns)   --->   "%tmp = call i1 @getSolveNextColumnWhileConditional, i32 %c_corner_V_0, i32 %nPatchesInColumn_0, i32 %projectionOfCornerToBeam_V_0" [patchMaker.cpp:762]   --->   Operation 38 'call' 'tmp' <Predicate = true> <Delay = 0.98> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 39 [1/1] (0.88ns)   --->   "%loopCounter_1 = add i32 %loopCounter, i32 1" [patchMaker.cpp:773]   --->   Operation 39 'add' 'loopCounter_1' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 40 [1/1] (0.38ns)   --->   "%br_ln762 = br i1 %tmp, void %.loopexit, void" [patchMaker.cpp:762]   --->   Operation 40 'br' 'br_ln762' <Predicate = true> <Delay = 0.38>
+ST_10 : Operation 41 [2/2] (0.96ns)   --->   "%call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i33 %radiiDivisionList_1_4, i26 %trapezoid_edges_V, i35 %radiiDivisionList" [patchMaker.cpp:764]   --->   Operation 41 'call' 'call_ret' <Predicate = (tmp)> <Delay = 0.96> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 42 [1/1] (0.85ns)   --->   "%icmp_ln768 = icmp_sgt  i32 %loopCounter, i32 25" [patchMaker.cpp:768]   --->   Operation 42 'icmp' 'icmp_ln768' <Predicate = (tmp)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 
 State 11 <SV = 10> <Delay = 0.38>
-ST_11 : Operation 43 [1/1] (0.00ns)   --->   "%specloopname_ln768 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [patchMaker.cpp:768]   --->   Operation 43 'specloopname' 'specloopname_ln768' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 44 [1/2] (0.00ns)   --->   "%call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i35 %radiiDivisionList, i26 %trapezoid_edges_V" [patchMaker.cpp:768]   --->   Operation 44 'call' 'call_ret' <Predicate = (tmp)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 45 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V = extractvalue i224 %call_ret" [patchMaker.cpp:768]   --->   Operation 45 'extractvalue' 'complementary_apexZ0_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 46 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_V = extractvalue i224 %call_ret" [patchMaker.cpp:768]   --->   Operation 46 'extractvalue' 'projectionOfCornerToBeam_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 47 [1/1] (0.00ns)   --->   "%c_corner_V = extractvalue i224 %call_ret" [patchMaker.cpp:768]   --->   Operation 47 'extractvalue' 'c_corner_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 48 [1/1] (0.00ns)   --->   "%nPatchesInColumn = extractvalue i224 %call_ret" [patchMaker.cpp:768]   --->   Operation 48 'extractvalue' 'nPatchesInColumn' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 49 [1/1] (0.00ns)   --->   "%saved_apexZ0_ret = extractvalue i224 %call_ret" [patchMaker.cpp:768]   --->   Operation 49 'extractvalue' 'saved_apexZ0_ret' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 50 [1/1] (0.00ns)   --->   "%z_top_max_V = extractvalue i224 %call_ret" [patchMaker.cpp:768]   --->   Operation 50 'extractvalue' 'z_top_max_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 51 [1/1] (0.00ns)   --->   "%z_top_min_V = extractvalue i224 %call_ret" [patchMaker.cpp:768]   --->   Operation 51 'extractvalue' 'z_top_min_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 52 [1/1] (0.38ns)   --->   "%br_ln772 = br i1 %icmp_ln772, void, void %.loopexit" [patchMaker.cpp:772]   --->   Operation 52 'br' 'br_ln772' <Predicate = (tmp)> <Delay = 0.38>
-ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln766 = br void %._crit_edge" [patchMaker.cpp:766]   --->   Operation 53 'br' 'br_ln766' <Predicate = (tmp & !icmp_ln772)> <Delay = 0.00>
-ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%saved_apexZ0_buf_1 = phi i32 %saved_apexZ0_ret, void, i32 %saved_apexZ0_buf_0, void %._crit_edge" [patchMaker.cpp:768]   --->   Operation 54 'phi' 'saved_apexZ0_buf_1' <Predicate = (icmp_ln772) | (!tmp)> <Delay = 0.00>
-ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln787 = ret i32 %saved_apexZ0_buf_1" [patchMaker.cpp:787]   --->   Operation 55 'ret' 'ret_ln787' <Predicate = (icmp_ln772) | (!tmp)> <Delay = 0.00>
+ST_11 : Operation 43 [1/1] (0.00ns)   --->   "%specloopname_ln764 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22" [patchMaker.cpp:764]   --->   Operation 43 'specloopname' 'specloopname_ln764' <Predicate = (tmp)> <Delay = 0.00>
+ST_11 : Operation 44 [1/2] (0.00ns)   --->   "%call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i33 %radiiDivisionList_1_4, i26 %trapezoid_edges_V, i35 %radiiDivisionList" [patchMaker.cpp:764]   --->   Operation 44 'call' 'call_ret' <Predicate = (tmp)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 45 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 45 'extractvalue' 'complementary_apexZ0_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_11 : Operation 46 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 46 'extractvalue' 'projectionOfCornerToBeam_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_11 : Operation 47 [1/1] (0.00ns)   --->   "%c_corner_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 47 'extractvalue' 'c_corner_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_11 : Operation 48 [1/1] (0.00ns)   --->   "%nPatchesInColumn = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 48 'extractvalue' 'nPatchesInColumn' <Predicate = (tmp)> <Delay = 0.00>
+ST_11 : Operation 49 [1/1] (0.00ns)   --->   "%saved_apexZ0_ret = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 49 'extractvalue' 'saved_apexZ0_ret' <Predicate = (tmp)> <Delay = 0.00>
+ST_11 : Operation 50 [1/1] (0.00ns)   --->   "%z_top_max_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 50 'extractvalue' 'z_top_max_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_11 : Operation 51 [1/1] (0.00ns)   --->   "%z_top_min_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 51 'extractvalue' 'z_top_min_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_11 : Operation 52 [1/1] (0.38ns)   --->   "%br_ln768 = br i1 %icmp_ln768, void, void %.loopexit" [patchMaker.cpp:768]   --->   Operation 52 'br' 'br_ln768' <Predicate = (tmp)> <Delay = 0.38>
+ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln762 = br void %._crit_edge" [patchMaker.cpp:762]   --->   Operation 53 'br' 'br_ln762' <Predicate = (tmp & !icmp_ln768)> <Delay = 0.00>
+ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%saved_apexZ0_buf_1 = phi i32 %saved_apexZ0_ret, void, i32 %saved_apexZ0_buf_0, void %._crit_edge" [patchMaker.cpp:764]   --->   Operation 54 'phi' 'saved_apexZ0_buf_1' <Predicate = (icmp_ln768) | (!tmp)> <Delay = 0.00>
+ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln783 = ret i32 %saved_apexZ0_buf_1" [patchMaker.cpp:783]   --->   Operation 55 'ret' 'ret_ln783' <Predicate = (icmp_ln768) | (!tmp)> <Delay = 0.00>
 
 
 ============================================================
@@ -182,6 +182,7 @@ Port [ GDarrayDecoded]:  wired=1; compound=1; hidden=0; nouse=0; global=0; stati
 Port [ patches_superpoints]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ patches_parameters]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
 Port [ radiiDivisionList]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ radiiDivisionList_1_4]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ trapezoid_edges_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
@@ -190,17 +191,17 @@ Port [ trapezoid_edges_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; st
 <LifeTime>
 <method=bitvector/>
 n_patches_read               (read         ) [ 000000000000]
-icmp_ln752                   (icmp         ) [ 001111111100]
+icmp_ln748                   (icmp         ) [ 001111111100]
 ppl_read                     (read         ) [ 000111111111]
 apexZ0_read                  (read         ) [ 000111111111]
 specinterface_ln0            (specinterface) [ 000000000000]
-br_ln752                     (br           ) [ 001111111100]
+br_ln748                     (br           ) [ 001111111100]
 op2_V                        (call         ) [ 000000000100]
 icmp_ln878                   (icmp         ) [ 000000000000]
-select_ln754                 (select       ) [ 000000000000]
-br_ln754                     (br           ) [ 000000000000]
+select_ln750                 (select       ) [ 000000000000]
+br_ln750                     (br           ) [ 000000000000]
 z_top_max_V_16_ph            (phi          ) [ 000111111111]
-br_ln761                     (br           ) [ 000000000111]
+br_ln757                     (br           ) [ 000000000111]
 z_top_max_V_16               (phi          ) [ 000000000011]
 c_corner_V_0                 (phi          ) [ 000000000010]
 complementary_apexZ0_V_0     (phi          ) [ 000000000011]
@@ -211,9 +212,9 @@ saved_apexZ0_buf_0           (phi          ) [ 000000000011]
 loopCounter                  (phi          ) [ 000000000010]
 tmp                          (call         ) [ 000000000011]
 loopCounter_1                (add          ) [ 000000000111]
-br_ln766                     (br           ) [ 000000000011]
-icmp_ln772                   (icmp         ) [ 000000000001]
-specloopname_ln768           (specloopname ) [ 000000000000]
+br_ln762                     (br           ) [ 000000000011]
+icmp_ln768                   (icmp         ) [ 000000000001]
+specloopname_ln764           (specloopname ) [ 000000000000]
 call_ret                     (call         ) [ 000000000000]
 complementary_apexZ0_V       (extractvalue ) [ 000000000111]
 projectionOfCornerToBeam_V   (extractvalue ) [ 000000000111]
@@ -222,10 +223,10 @@ nPatchesInColumn             (extractvalue ) [ 000000000111]
 saved_apexZ0_ret             (extractvalue ) [ 000000000111]
 z_top_max_V                  (extractvalue ) [ 000000000111]
 z_top_min_V                  (extractvalue ) [ 000000000111]
-br_ln772                     (br           ) [ 000000000000]
-br_ln766                     (br           ) [ 000000000111]
+br_ln768                     (br           ) [ 000000000000]
+br_ln762                     (br           ) [ 000000000111]
 saved_apexZ0_buf_1           (phi          ) [ 000000000001]
-ret_ln787                    (ret          ) [ 000000000000]
+ret_ln783                    (ret          ) [ 000000000000]
 </LifeTime>
 
 <model>
@@ -308,22 +309,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="16" class="1000" name="trapezoid_edges_V">
+<comp id="16" class="1000" name="radiiDivisionList_1_4">
 <pin_list>
 <pin id="17" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="trapezoid_edges_V"/><MemPortTyVec>1 </MemPortTyVec>
+<StgValue><ssdm name="radiiDivisionList_1_4"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
 
-<comp id="18" class="1001" name="const_18">
+<comp id="18" class="1000" name="trapezoid_edges_V">
 <pin_list>
 <pin id="19" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8P0A"/></StgValue>
+<StgValue><ssdm name="trapezoid_edges_V"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
 </bind>
 </comp>
 
@@ -332,7 +334,7 @@ ret_ln787                    (ret          ) [ 000000000000]
 <pin id="21" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8P0A"/></StgValue>
 </bind>
 </comp>
 
@@ -341,16 +343,16 @@ ret_ln787                    (ret          ) [ 000000000000]
 <pin id="23" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
 <comp id="24" class="1001" name="const_24">
 <pin_list>
-<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
 </bind>
 </comp>
 
@@ -359,43 +361,43 @@ ret_ln787                    (ret          ) [ 000000000000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_13"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
 </bind>
 </comp>
 
 <comp id="28" class="1001" name="const_28">
 <pin_list>
-<pin id="29" dir="1" index="0" bw="1" slack="1"/>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_33"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
-<comp id="30" class="1001" name="const_30">
+<comp id="32" class="1001" name="const_32">
 <pin_list>
-<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
-<comp id="32" class="1001" name="const_32">
+<comp id="34" class="1001" name="const_34">
 <pin_list>
-<pin id="33" dir="1" index="0" bw="1" slack="1"/>
+<pin id="35" dir="1" index="0" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
-</bind>
-</comp>
-
-<comp id="34" class="1001" name="const_34">
-<pin_list>
-<pin id="35" dir="1" index="0" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="straightLineProjectorFromLayerIJtoK"/></StgValue>
 </bind>
 </comp>
 
@@ -404,7 +406,7 @@ ret_ln787                    (ret          ) [ 000000000000]
 <pin id="37" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="straightLineProjectorFromLayerIJtoK"/></StgValue>
 </bind>
 </comp>
 
@@ -446,7 +448,7 @@ ret_ln787                    (ret          ) [ 000000000000]
 
 <comp id="46" class="1001" name="const_46">
 <pin_list>
-<pin id="47" dir="1" index="0" bw="1" slack="1"/>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
@@ -455,10 +457,10 @@ ret_ln787                    (ret          ) [ 000000000000]
 
 <comp id="48" class="1001" name="const_48">
 <pin_list>
-<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+<pin id="49" dir="1" index="0" bw="1" slack="1"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="getSolveNextColumnWhileConditional"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -467,7 +469,7 @@ ret_ln787                    (ret          ) [ 000000000000]
 <pin id="51" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="getSolveNextColumnWhileConditional"/></StgValue>
 </bind>
 </comp>
 
@@ -476,7 +478,7 @@ ret_ln787                    (ret          ) [ 000000000000]
 <pin id="53" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="solveNextPatchPair"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -485,16 +487,16 @@ ret_ln787                    (ret          ) [ 000000000000]
 <pin id="55" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="solveNextPatchPair"/></StgValue>
 </bind>
 </comp>
 
 <comp id="56" class="1001" name="const_56">
 <pin_list>
-<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -503,15 +505,24 @@ ret_ln787                    (ret          ) [ 000000000000]
 <pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_20"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
 </bind>
 </comp>
 
-<comp id="60" class="1004" name="n_patches_read_read_fu_60">
+<comp id="60" class="1001" name="const_60">
 <pin_list>
-<pin id="61" dir="0" index="0" bw="8" slack="0"/>
-<pin id="62" dir="0" index="1" bw="8" slack="0"/>
-<pin id="63" dir="1" index="2" bw="8" slack="0"/>
+<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_22"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="n_patches_read_read_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="8" slack="0"/>
+<pin id="64" dir="0" index="1" bw="8" slack="0"/>
+<pin id="65" dir="1" index="2" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -519,11 +530,11 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="66" class="1004" name="ppl_read_read_fu_66">
+<comp id="68" class="1004" name="ppl_read_read_fu_68">
 <pin_list>
-<pin id="67" dir="0" index="0" bw="32" slack="0"/>
-<pin id="68" dir="0" index="1" bw="32" slack="0"/>
-<pin id="69" dir="1" index="2" bw="32" slack="8"/>
+<pin id="69" dir="0" index="0" bw="32" slack="0"/>
+<pin id="70" dir="0" index="1" bw="32" slack="0"/>
+<pin id="71" dir="1" index="2" bw="32" slack="8"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -531,11 +542,11 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="72" class="1004" name="apexZ0_read_read_fu_72">
+<comp id="74" class="1004" name="apexZ0_read_read_fu_74">
 <pin_list>
-<pin id="73" dir="0" index="0" bw="32" slack="0"/>
-<pin id="74" dir="0" index="1" bw="32" slack="0"/>
-<pin id="75" dir="1" index="2" bw="32" slack="0"/>
+<pin id="75" dir="0" index="0" bw="32" slack="0"/>
+<pin id="76" dir="0" index="1" bw="32" slack="0"/>
+<pin id="77" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -543,23 +554,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="78" class="1005" name="z_top_max_V_16_ph_reg_78">
+<comp id="80" class="1005" name="z_top_max_V_16_ph_reg_80">
 <pin_list>
-<pin id="79" dir="0" index="0" bw="32" slack="1"/>
-<pin id="80" dir="1" index="1" bw="32" slack="1"/>
+<pin id="81" dir="0" index="0" bw="32" slack="1"/>
+<pin id="82" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="z_top_max_V_16_ph (phireg) "/>
 </bind>
 </comp>
 
-<comp id="82" class="1004" name="z_top_max_V_16_ph_phi_fu_82">
+<comp id="84" class="1004" name="z_top_max_V_16_ph_phi_fu_84">
 <pin_list>
-<pin id="83" dir="0" index="0" bw="27" slack="7"/>
-<pin id="84" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="85" dir="0" index="2" bw="32" slack="0"/>
-<pin id="86" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="87" dir="1" index="4" bw="32" slack="1"/>
+<pin id="85" dir="0" index="0" bw="27" slack="7"/>
+<pin id="86" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="87" dir="0" index="2" bw="32" slack="0"/>
+<pin id="88" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="89" dir="1" index="4" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -567,23 +578,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="90" class="1005" name="z_top_max_V_16_reg_90">
+<comp id="92" class="1005" name="z_top_max_V_16_reg_92">
 <pin_list>
-<pin id="91" dir="0" index="0" bw="32" slack="1"/>
-<pin id="92" dir="1" index="1" bw="32" slack="2147483647"/>
+<pin id="93" dir="0" index="0" bw="32" slack="1"/>
+<pin id="94" dir="1" index="1" bw="32" slack="2147483647"/>
 </pin_list>
 <bind>
 <opset="z_top_max_V_16 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="93" class="1004" name="z_top_max_V_16_phi_fu_93">
+<comp id="95" class="1004" name="z_top_max_V_16_phi_fu_95">
 <pin_list>
-<pin id="94" dir="0" index="0" bw="32" slack="1"/>
-<pin id="95" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="96" dir="0" index="2" bw="32" slack="1"/>
-<pin id="97" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="98" dir="1" index="4" bw="32" slack="0"/>
+<pin id="96" dir="0" index="0" bw="32" slack="1"/>
+<pin id="97" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="98" dir="0" index="2" bw="32" slack="1"/>
+<pin id="99" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="100" dir="1" index="4" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -591,23 +602,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="101" class="1005" name="c_corner_V_0_reg_101">
+<comp id="103" class="1005" name="c_corner_V_0_reg_103">
 <pin_list>
-<pin id="102" dir="0" index="0" bw="32" slack="1"/>
-<pin id="103" dir="1" index="1" bw="32" slack="1"/>
+<pin id="104" dir="0" index="0" bw="32" slack="1"/>
+<pin id="105" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="c_corner_V_0 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="105" class="1004" name="c_corner_V_0_phi_fu_105">
+<comp id="107" class="1004" name="c_corner_V_0_phi_fu_107">
 <pin_list>
-<pin id="106" dir="0" index="0" bw="32" slack="1"/>
-<pin id="107" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="108" dir="0" index="2" bw="1" slack="1"/>
-<pin id="109" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="110" dir="1" index="4" bw="32" slack="0"/>
+<pin id="108" dir="0" index="0" bw="32" slack="1"/>
+<pin id="109" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="110" dir="0" index="2" bw="1" slack="1"/>
+<pin id="111" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="112" dir="1" index="4" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -615,23 +626,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="112" class="1005" name="complementary_apexZ0_V_0_reg_112">
+<comp id="114" class="1005" name="complementary_apexZ0_V_0_reg_114">
 <pin_list>
-<pin id="113" dir="0" index="0" bw="32" slack="1"/>
-<pin id="114" dir="1" index="1" bw="32" slack="1"/>
+<pin id="115" dir="0" index="0" bw="32" slack="1"/>
+<pin id="116" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="complementary_apexZ0_V_0 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="116" class="1004" name="complementary_apexZ0_V_0_phi_fu_116">
+<comp id="118" class="1004" name="complementary_apexZ0_V_0_phi_fu_118">
 <pin_list>
-<pin id="117" dir="0" index="0" bw="32" slack="1"/>
-<pin id="118" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="119" dir="0" index="2" bw="1" slack="1"/>
-<pin id="120" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="121" dir="1" index="4" bw="32" slack="0"/>
+<pin id="119" dir="0" index="0" bw="32" slack="1"/>
+<pin id="120" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="121" dir="0" index="2" bw="1" slack="1"/>
+<pin id="122" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="123" dir="1" index="4" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -639,23 +650,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="124" class="1005" name="z_top_min_V_0_reg_124">
+<comp id="126" class="1005" name="z_top_min_V_0_reg_126">
 <pin_list>
-<pin id="125" dir="0" index="0" bw="32" slack="1"/>
-<pin id="126" dir="1" index="1" bw="32" slack="1"/>
+<pin id="127" dir="0" index="0" bw="32" slack="1"/>
+<pin id="128" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="z_top_min_V_0 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="128" class="1004" name="z_top_min_V_0_phi_fu_128">
+<comp id="130" class="1004" name="z_top_min_V_0_phi_fu_130">
 <pin_list>
-<pin id="129" dir="0" index="0" bw="32" slack="1"/>
-<pin id="130" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="131" dir="0" index="2" bw="27" slack="1"/>
-<pin id="132" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="133" dir="1" index="4" bw="32" slack="0"/>
+<pin id="131" dir="0" index="0" bw="32" slack="1"/>
+<pin id="132" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="133" dir="0" index="2" bw="27" slack="1"/>
+<pin id="134" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="135" dir="1" index="4" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -663,23 +674,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="136" class="1005" name="nPatchesInColumn_0_reg_136">
+<comp id="138" class="1005" name="nPatchesInColumn_0_reg_138">
 <pin_list>
-<pin id="137" dir="0" index="0" bw="32" slack="1"/>
-<pin id="138" dir="1" index="1" bw="32" slack="1"/>
+<pin id="139" dir="0" index="0" bw="32" slack="1"/>
+<pin id="140" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="nPatchesInColumn_0 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="140" class="1004" name="nPatchesInColumn_0_phi_fu_140">
+<comp id="142" class="1004" name="nPatchesInColumn_0_phi_fu_142">
 <pin_list>
-<pin id="141" dir="0" index="0" bw="32" slack="1"/>
-<pin id="142" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="143" dir="0" index="2" bw="1" slack="1"/>
-<pin id="144" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="145" dir="1" index="4" bw="32" slack="0"/>
+<pin id="143" dir="0" index="0" bw="32" slack="1"/>
+<pin id="144" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="145" dir="0" index="2" bw="1" slack="1"/>
+<pin id="146" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="147" dir="1" index="4" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -687,23 +698,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="148" class="1005" name="projectionOfCornerToBeam_V_0_reg_148">
+<comp id="150" class="1005" name="projectionOfCornerToBeam_V_0_reg_150">
 <pin_list>
-<pin id="149" dir="0" index="0" bw="32" slack="1"/>
-<pin id="150" dir="1" index="1" bw="32" slack="1"/>
+<pin id="151" dir="0" index="0" bw="32" slack="1"/>
+<pin id="152" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="projectionOfCornerToBeam_V_0 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="152" class="1004" name="projectionOfCornerToBeam_V_0_phi_fu_152">
+<comp id="154" class="1004" name="projectionOfCornerToBeam_V_0_phi_fu_154">
 <pin_list>
-<pin id="153" dir="0" index="0" bw="32" slack="1"/>
-<pin id="154" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="155" dir="0" index="2" bw="1" slack="1"/>
-<pin id="156" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="157" dir="1" index="4" bw="32" slack="0"/>
+<pin id="155" dir="0" index="0" bw="32" slack="1"/>
+<pin id="156" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="157" dir="0" index="2" bw="1" slack="1"/>
+<pin id="158" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="159" dir="1" index="4" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -711,23 +722,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="159" class="1005" name="saved_apexZ0_buf_0_reg_159">
+<comp id="161" class="1005" name="saved_apexZ0_buf_0_reg_161">
 <pin_list>
-<pin id="160" dir="0" index="0" bw="32" slack="1"/>
-<pin id="161" dir="1" index="1" bw="32" slack="1"/>
+<pin id="162" dir="0" index="0" bw="32" slack="1"/>
+<pin id="163" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="saved_apexZ0_buf_0 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="162" class="1004" name="saved_apexZ0_buf_0_phi_fu_162">
+<comp id="164" class="1004" name="saved_apexZ0_buf_0_phi_fu_164">
 <pin_list>
-<pin id="163" dir="0" index="0" bw="32" slack="1"/>
-<pin id="164" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="165" dir="0" index="2" bw="32" slack="8"/>
-<pin id="166" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="167" dir="1" index="4" bw="32" slack="1"/>
+<pin id="165" dir="0" index="0" bw="32" slack="1"/>
+<pin id="166" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="167" dir="0" index="2" bw="32" slack="8"/>
+<pin id="168" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="169" dir="1" index="4" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -735,23 +746,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="169" class="1005" name="loopCounter_reg_169">
+<comp id="171" class="1005" name="loopCounter_reg_171">
 <pin_list>
-<pin id="170" dir="0" index="0" bw="32" slack="1"/>
-<pin id="171" dir="1" index="1" bw="32" slack="1"/>
+<pin id="172" dir="0" index="0" bw="32" slack="1"/>
+<pin id="173" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="loopCounter (phireg) "/>
 </bind>
 </comp>
 
-<comp id="173" class="1004" name="loopCounter_phi_fu_173">
+<comp id="175" class="1004" name="loopCounter_phi_fu_175">
 <pin_list>
-<pin id="174" dir="0" index="0" bw="32" slack="0"/>
-<pin id="175" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="176" dir="0" index="2" bw="1" slack="1"/>
-<pin id="177" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="178" dir="1" index="4" bw="32" slack="0"/>
+<pin id="176" dir="0" index="0" bw="32" slack="0"/>
+<pin id="177" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="178" dir="0" index="2" bw="1" slack="1"/>
+<pin id="179" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="180" dir="1" index="4" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -759,23 +770,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="180" class="1005" name="saved_apexZ0_buf_1_reg_180">
+<comp id="182" class="1005" name="saved_apexZ0_buf_1_reg_182">
 <pin_list>
-<pin id="181" dir="0" index="0" bw="32" slack="2147483647"/>
-<pin id="182" dir="1" index="1" bw="32" slack="2147483647"/>
+<pin id="183" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="184" dir="1" index="1" bw="32" slack="2147483647"/>
 </pin_list>
 <bind>
 <opset="saved_apexZ0_buf_1 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="183" class="1004" name="saved_apexZ0_buf_1_phi_fu_183">
+<comp id="185" class="1004" name="saved_apexZ0_buf_1_phi_fu_185">
 <pin_list>
-<pin id="184" dir="0" index="0" bw="32" slack="0"/>
-<pin id="185" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="186" dir="0" index="2" bw="32" slack="1"/>
-<pin id="187" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="188" dir="1" index="4" bw="32" slack="2147483647"/>
+<pin id="186" dir="0" index="0" bw="32" slack="0"/>
+<pin id="187" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="188" dir="0" index="2" bw="32" slack="1"/>
+<pin id="189" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="190" dir="1" index="4" bw="32" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -783,23 +794,24 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="190" class="1004" name="grp_solveNextPatchPair_fu_190">
+<comp id="192" class="1004" name="grp_solveNextPatchPair_fu_192">
 <pin_list>
-<pin id="191" dir="0" index="0" bw="224" slack="0"/>
-<pin id="192" dir="0" index="1" bw="8" slack="0"/>
-<pin id="193" dir="0" index="2" bw="32" slack="0"/>
-<pin id="194" dir="0" index="3" bw="32" slack="8"/>
-<pin id="195" dir="0" index="4" bw="32" slack="8"/>
-<pin id="196" dir="0" index="5" bw="32" slack="0"/>
-<pin id="197" dir="0" index="6" bw="32" slack="0"/>
-<pin id="198" dir="0" index="7" bw="32" slack="0"/>
-<pin id="199" dir="0" index="8" bw="32" slack="0"/>
-<pin id="200" dir="0" index="9" bw="32" slack="0"/>
-<pin id="201" dir="0" index="10" bw="64" slack="0"/>
-<pin id="202" dir="0" index="11" bw="32" slack="0"/>
-<pin id="203" dir="0" index="12" bw="35" slack="0"/>
-<pin id="204" dir="0" index="13" bw="26" slack="0"/>
-<pin id="205" dir="1" index="14" bw="224" slack="0"/>
+<pin id="193" dir="0" index="0" bw="224" slack="0"/>
+<pin id="194" dir="0" index="1" bw="8" slack="0"/>
+<pin id="195" dir="0" index="2" bw="32" slack="0"/>
+<pin id="196" dir="0" index="3" bw="32" slack="8"/>
+<pin id="197" dir="0" index="4" bw="32" slack="8"/>
+<pin id="198" dir="0" index="5" bw="32" slack="0"/>
+<pin id="199" dir="0" index="6" bw="32" slack="0"/>
+<pin id="200" dir="0" index="7" bw="32" slack="0"/>
+<pin id="201" dir="0" index="8" bw="32" slack="0"/>
+<pin id="202" dir="0" index="9" bw="32" slack="0"/>
+<pin id="203" dir="0" index="10" bw="64" slack="0"/>
+<pin id="204" dir="0" index="11" bw="32" slack="0"/>
+<pin id="205" dir="0" index="12" bw="33" slack="0"/>
+<pin id="206" dir="0" index="13" bw="26" slack="0"/>
+<pin id="207" dir="0" index="14" bw="35" slack="0"/>
+<pin id="208" dir="1" index="15" bw="224" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -807,16 +819,16 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="218" class="1004" name="grp_straightLineProjectorFromLayerIJtoK_fu_218">
+<comp id="222" class="1004" name="grp_straightLineProjectorFromLayerIJtoK_fu_222">
 <pin_list>
-<pin id="219" dir="0" index="0" bw="32" slack="0"/>
-<pin id="220" dir="0" index="1" bw="25" slack="0"/>
-<pin id="221" dir="0" index="2" bw="32" slack="0"/>
-<pin id="222" dir="0" index="3" bw="1" slack="0"/>
-<pin id="223" dir="0" index="4" bw="1" slack="0"/>
-<pin id="224" dir="0" index="5" bw="3" slack="0"/>
-<pin id="225" dir="0" index="6" bw="35" slack="0"/>
-<pin id="226" dir="1" index="7" bw="32" slack="1"/>
+<pin id="223" dir="0" index="0" bw="32" slack="0"/>
+<pin id="224" dir="0" index="1" bw="25" slack="0"/>
+<pin id="225" dir="0" index="2" bw="32" slack="0"/>
+<pin id="226" dir="0" index="3" bw="1" slack="0"/>
+<pin id="227" dir="0" index="4" bw="1" slack="0"/>
+<pin id="228" dir="0" index="5" bw="3" slack="0"/>
+<pin id="229" dir="0" index="6" bw="35" slack="0"/>
+<pin id="230" dir="1" index="7" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -824,13 +836,13 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="234" class="1004" name="tmp_getSolveNextColumnWhileConditional_fu_234">
+<comp id="238" class="1004" name="tmp_getSolveNextColumnWhileConditional_fu_238">
 <pin_list>
-<pin id="235" dir="0" index="0" bw="1" slack="0"/>
-<pin id="236" dir="0" index="1" bw="32" slack="0"/>
-<pin id="237" dir="0" index="2" bw="32" slack="0"/>
-<pin id="238" dir="0" index="3" bw="32" slack="0"/>
-<pin id="239" dir="1" index="4" bw="1" slack="1"/>
+<pin id="239" dir="0" index="0" bw="1" slack="0"/>
+<pin id="240" dir="0" index="1" bw="32" slack="0"/>
+<pin id="241" dir="0" index="2" bw="32" slack="0"/>
+<pin id="242" dir="0" index="3" bw="32" slack="0"/>
+<pin id="243" dir="1" index="4" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -838,23 +850,23 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="244" class="1004" name="icmp_ln752_fu_244">
+<comp id="248" class="1004" name="icmp_ln748_fu_248">
 <pin_list>
-<pin id="245" dir="0" index="0" bw="8" slack="0"/>
-<pin id="246" dir="0" index="1" bw="1" slack="0"/>
-<pin id="247" dir="1" index="2" bw="1" slack="1"/>
+<pin id="249" dir="0" index="0" bw="8" slack="0"/>
+<pin id="250" dir="0" index="1" bw="1" slack="0"/>
+<pin id="251" dir="1" index="2" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln752/1 "/>
+<opset="icmp_ln748/1 "/>
 </bind>
 </comp>
 
-<comp id="250" class="1004" name="icmp_ln878_fu_250">
+<comp id="254" class="1004" name="icmp_ln878_fu_254">
 <pin_list>
-<pin id="251" dir="0" index="0" bw="32" slack="1"/>
-<pin id="252" dir="0" index="1" bw="27" slack="0"/>
-<pin id="253" dir="1" index="2" bw="1" slack="0"/>
+<pin id="255" dir="0" index="0" bw="32" slack="1"/>
+<pin id="256" dir="0" index="1" bw="27" slack="0"/>
+<pin id="257" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
@@ -862,24 +874,24 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="255" class="1004" name="select_ln754_fu_255">
+<comp id="259" class="1004" name="select_ln750_fu_259">
 <pin_list>
-<pin id="256" dir="0" index="0" bw="1" slack="0"/>
-<pin id="257" dir="0" index="1" bw="27" slack="0"/>
-<pin id="258" dir="0" index="2" bw="32" slack="1"/>
-<pin id="259" dir="1" index="3" bw="32" slack="0"/>
+<pin id="260" dir="0" index="0" bw="1" slack="0"/>
+<pin id="261" dir="0" index="1" bw="27" slack="0"/>
+<pin id="262" dir="0" index="2" bw="32" slack="1"/>
+<pin id="263" dir="1" index="3" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln754/9 "/>
+<opset="select_ln750/9 "/>
 </bind>
 </comp>
 
-<comp id="263" class="1004" name="loopCounter_1_fu_263">
+<comp id="267" class="1004" name="loopCounter_1_fu_267">
 <pin_list>
-<pin id="264" dir="0" index="0" bw="32" slack="0"/>
-<pin id="265" dir="0" index="1" bw="1" slack="0"/>
-<pin id="266" dir="1" index="2" bw="32" slack="0"/>
+<pin id="268" dir="0" index="0" bw="32" slack="0"/>
+<pin id="269" dir="0" index="1" bw="1" slack="0"/>
+<pin id="270" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
@@ -887,22 +899,22 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="269" class="1004" name="icmp_ln772_fu_269">
+<comp id="273" class="1004" name="icmp_ln768_fu_273">
 <pin_list>
-<pin id="270" dir="0" index="0" bw="32" slack="0"/>
-<pin id="271" dir="0" index="1" bw="6" slack="0"/>
-<pin id="272" dir="1" index="2" bw="1" slack="1"/>
+<pin id="274" dir="0" index="0" bw="32" slack="0"/>
+<pin id="275" dir="0" index="1" bw="6" slack="0"/>
+<pin id="276" dir="1" index="2" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln772/10 "/>
+<opset="icmp_ln768/10 "/>
 </bind>
 </comp>
 
-<comp id="275" class="1004" name="complementary_apexZ0_V_fu_275">
+<comp id="279" class="1004" name="complementary_apexZ0_V_fu_279">
 <pin_list>
-<pin id="276" dir="0" index="0" bw="224" slack="0"/>
-<pin id="277" dir="1" index="1" bw="32" slack="1"/>
+<pin id="280" dir="0" index="0" bw="224" slack="0"/>
+<pin id="281" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -910,10 +922,10 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="279" class="1004" name="projectionOfCornerToBeam_V_fu_279">
+<comp id="283" class="1004" name="projectionOfCornerToBeam_V_fu_283">
 <pin_list>
-<pin id="280" dir="0" index="0" bw="224" slack="0"/>
-<pin id="281" dir="1" index="1" bw="32" slack="1"/>
+<pin id="284" dir="0" index="0" bw="224" slack="0"/>
+<pin id="285" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -921,10 +933,10 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="283" class="1004" name="c_corner_V_fu_283">
+<comp id="287" class="1004" name="c_corner_V_fu_287">
 <pin_list>
-<pin id="284" dir="0" index="0" bw="224" slack="0"/>
-<pin id="285" dir="1" index="1" bw="32" slack="1"/>
+<pin id="288" dir="0" index="0" bw="224" slack="0"/>
+<pin id="289" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -932,10 +944,10 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="287" class="1004" name="nPatchesInColumn_fu_287">
+<comp id="291" class="1004" name="nPatchesInColumn_fu_291">
 <pin_list>
-<pin id="288" dir="0" index="0" bw="224" slack="0"/>
-<pin id="289" dir="1" index="1" bw="32" slack="1"/>
+<pin id="292" dir="0" index="0" bw="224" slack="0"/>
+<pin id="293" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -943,10 +955,10 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="291" class="1004" name="saved_apexZ0_ret_fu_291">
+<comp id="295" class="1004" name="saved_apexZ0_ret_fu_295">
 <pin_list>
-<pin id="292" dir="0" index="0" bw="224" slack="0"/>
-<pin id="293" dir="1" index="1" bw="32" slack="0"/>
+<pin id="296" dir="0" index="0" bw="224" slack="0"/>
+<pin id="297" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -954,10 +966,10 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="296" class="1004" name="z_top_max_V_fu_296">
+<comp id="300" class="1004" name="z_top_max_V_fu_300">
 <pin_list>
-<pin id="297" dir="0" index="0" bw="224" slack="0"/>
-<pin id="298" dir="1" index="1" bw="32" slack="1"/>
+<pin id="301" dir="0" index="0" bw="224" slack="0"/>
+<pin id="302" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -965,10 +977,10 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="300" class="1004" name="z_top_min_V_fu_300">
+<comp id="304" class="1004" name="z_top_min_V_fu_304">
 <pin_list>
-<pin id="301" dir="0" index="0" bw="224" slack="0"/>
-<pin id="302" dir="1" index="1" bw="32" slack="1"/>
+<pin id="305" dir="0" index="0" bw="224" slack="0"/>
+<pin id="306" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -976,140 +988,140 @@ ret_ln787                    (ret          ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="304" class="1005" name="icmp_ln752_reg_304">
+<comp id="308" class="1005" name="icmp_ln748_reg_308">
 <pin_list>
-<pin id="305" dir="0" index="0" bw="1" slack="1"/>
-<pin id="306" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="309" dir="0" index="0" bw="1" slack="1"/>
+<pin id="310" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln752 "/>
+<opset="icmp_ln748 "/>
 </bind>
 </comp>
 
-<comp id="308" class="1005" name="ppl_read_reg_308">
+<comp id="312" class="1005" name="ppl_read_reg_312">
 <pin_list>
-<pin id="309" dir="0" index="0" bw="32" slack="8"/>
-<pin id="310" dir="1" index="1" bw="32" slack="8"/>
+<pin id="313" dir="0" index="0" bw="32" slack="8"/>
+<pin id="314" dir="1" index="1" bw="32" slack="8"/>
 </pin_list>
 <bind>
 <opset="ppl_read "/>
 </bind>
 </comp>
 
-<comp id="313" class="1005" name="apexZ0_read_reg_313">
+<comp id="317" class="1005" name="apexZ0_read_reg_317">
 <pin_list>
-<pin id="314" dir="0" index="0" bw="32" slack="1"/>
-<pin id="315" dir="1" index="1" bw="32" slack="1"/>
+<pin id="318" dir="0" index="0" bw="32" slack="1"/>
+<pin id="319" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="apexZ0_read "/>
 </bind>
 </comp>
 
-<comp id="320" class="1005" name="op2_V_reg_320">
+<comp id="324" class="1005" name="op2_V_reg_324">
 <pin_list>
-<pin id="321" dir="0" index="0" bw="32" slack="1"/>
-<pin id="322" dir="1" index="1" bw="32" slack="1"/>
+<pin id="325" dir="0" index="0" bw="32" slack="1"/>
+<pin id="326" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="op2_V "/>
 </bind>
 </comp>
 
-<comp id="326" class="1005" name="tmp_reg_326">
+<comp id="330" class="1005" name="tmp_reg_330">
 <pin_list>
-<pin id="327" dir="0" index="0" bw="1" slack="1"/>
-<pin id="328" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="331" dir="0" index="0" bw="1" slack="1"/>
+<pin id="332" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opset="tmp "/>
 </bind>
 </comp>
 
-<comp id="330" class="1005" name="loopCounter_1_reg_330">
+<comp id="334" class="1005" name="loopCounter_1_reg_334">
 <pin_list>
-<pin id="331" dir="0" index="0" bw="32" slack="0"/>
-<pin id="332" dir="1" index="1" bw="32" slack="0"/>
+<pin id="335" dir="0" index="0" bw="32" slack="0"/>
+<pin id="336" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opset="loopCounter_1 "/>
 </bind>
 </comp>
 
-<comp id="335" class="1005" name="icmp_ln772_reg_335">
+<comp id="339" class="1005" name="icmp_ln768_reg_339">
 <pin_list>
-<pin id="336" dir="0" index="0" bw="1" slack="1"/>
-<pin id="337" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="340" dir="0" index="0" bw="1" slack="1"/>
+<pin id="341" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln772 "/>
+<opset="icmp_ln768 "/>
 </bind>
 </comp>
 
-<comp id="339" class="1005" name="complementary_apexZ0_V_reg_339">
+<comp id="343" class="1005" name="complementary_apexZ0_V_reg_343">
 <pin_list>
-<pin id="340" dir="0" index="0" bw="32" slack="1"/>
-<pin id="341" dir="1" index="1" bw="32" slack="1"/>
+<pin id="344" dir="0" index="0" bw="32" slack="1"/>
+<pin id="345" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="complementary_apexZ0_V "/>
 </bind>
 </comp>
 
-<comp id="344" class="1005" name="projectionOfCornerToBeam_V_reg_344">
+<comp id="348" class="1005" name="projectionOfCornerToBeam_V_reg_348">
 <pin_list>
-<pin id="345" dir="0" index="0" bw="32" slack="1"/>
-<pin id="346" dir="1" index="1" bw="32" slack="1"/>
+<pin id="349" dir="0" index="0" bw="32" slack="1"/>
+<pin id="350" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="projectionOfCornerToBeam_V "/>
 </bind>
 </comp>
 
-<comp id="349" class="1005" name="c_corner_V_reg_349">
+<comp id="353" class="1005" name="c_corner_V_reg_353">
 <pin_list>
-<pin id="350" dir="0" index="0" bw="32" slack="1"/>
-<pin id="351" dir="1" index="1" bw="32" slack="1"/>
+<pin id="354" dir="0" index="0" bw="32" slack="1"/>
+<pin id="355" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="c_corner_V "/>
 </bind>
 </comp>
 
-<comp id="354" class="1005" name="nPatchesInColumn_reg_354">
+<comp id="358" class="1005" name="nPatchesInColumn_reg_358">
 <pin_list>
-<pin id="355" dir="0" index="0" bw="32" slack="1"/>
-<pin id="356" dir="1" index="1" bw="32" slack="1"/>
+<pin id="359" dir="0" index="0" bw="32" slack="1"/>
+<pin id="360" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="nPatchesInColumn "/>
 </bind>
 </comp>
 
-<comp id="359" class="1005" name="saved_apexZ0_ret_reg_359">
+<comp id="363" class="1005" name="saved_apexZ0_ret_reg_363">
 <pin_list>
-<pin id="360" dir="0" index="0" bw="32" slack="1"/>
-<pin id="361" dir="1" index="1" bw="32" slack="1"/>
+<pin id="364" dir="0" index="0" bw="32" slack="1"/>
+<pin id="365" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="saved_apexZ0_ret "/>
 </bind>
 </comp>
 
-<comp id="364" class="1005" name="z_top_max_V_reg_364">
+<comp id="368" class="1005" name="z_top_max_V_reg_368">
 <pin_list>
-<pin id="365" dir="0" index="0" bw="32" slack="1"/>
-<pin id="366" dir="1" index="1" bw="32" slack="1"/>
+<pin id="369" dir="0" index="0" bw="32" slack="1"/>
+<pin id="370" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="z_top_max_V "/>
 </bind>
 </comp>
 
-<comp id="369" class="1005" name="z_top_min_V_reg_369">
+<comp id="373" class="1005" name="z_top_min_V_reg_373">
 <pin_list>
-<pin id="370" dir="0" index="0" bw="32" slack="1"/>
-<pin id="371" dir="1" index="1" bw="32" slack="1"/>
+<pin id="374" dir="0" index="0" bw="32" slack="1"/>
+<pin id="375" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="z_top_min_V "/>
@@ -1119,199 +1131,201 @@ ret_ln787                    (ret          ) [ 000000000000]
 </comp_list>
 
 <net_list>
-<net id="64"><net_src comp="18" pin="0"/><net_sink comp="60" pin=0"/></net>
+<net id="66"><net_src comp="20" pin="0"/><net_sink comp="62" pin=0"/></net>
 
-<net id="65"><net_src comp="0" pin="0"/><net_sink comp="60" pin=1"/></net>
+<net id="67"><net_src comp="0" pin="0"/><net_sink comp="62" pin=1"/></net>
 
-<net id="70"><net_src comp="22" pin="0"/><net_sink comp="66" pin=0"/></net>
+<net id="72"><net_src comp="24" pin="0"/><net_sink comp="68" pin=0"/></net>
 
-<net id="71"><net_src comp="6" pin="0"/><net_sink comp="66" pin=1"/></net>
+<net id="73"><net_src comp="6" pin="0"/><net_sink comp="68" pin=1"/></net>
 
-<net id="76"><net_src comp="22" pin="0"/><net_sink comp="72" pin=0"/></net>
+<net id="78"><net_src comp="24" pin="0"/><net_sink comp="74" pin=0"/></net>
 
-<net id="77"><net_src comp="4" pin="0"/><net_sink comp="72" pin=1"/></net>
+<net id="79"><net_src comp="4" pin="0"/><net_sink comp="74" pin=1"/></net>
 
-<net id="81"><net_src comp="44" pin="0"/><net_sink comp="78" pin=0"/></net>
+<net id="83"><net_src comp="46" pin="0"/><net_sink comp="80" pin=0"/></net>
 
-<net id="88"><net_src comp="78" pin="1"/><net_sink comp="82" pin=0"/></net>
+<net id="90"><net_src comp="80" pin="1"/><net_sink comp="84" pin=0"/></net>
 
-<net id="89"><net_src comp="82" pin="4"/><net_sink comp="78" pin=0"/></net>
+<net id="91"><net_src comp="84" pin="4"/><net_sink comp="80" pin=0"/></net>
 
-<net id="99"><net_src comp="78" pin="1"/><net_sink comp="93" pin=2"/></net>
+<net id="101"><net_src comp="80" pin="1"/><net_sink comp="95" pin=2"/></net>
 
-<net id="100"><net_src comp="93" pin="4"/><net_sink comp="90" pin=0"/></net>
+<net id="102"><net_src comp="95" pin="4"/><net_sink comp="92" pin=0"/></net>
 
-<net id="104"><net_src comp="32" pin="0"/><net_sink comp="101" pin=0"/></net>
+<net id="106"><net_src comp="34" pin="0"/><net_sink comp="103" pin=0"/></net>
 
-<net id="111"><net_src comp="101" pin="1"/><net_sink comp="105" pin=2"/></net>
+<net id="113"><net_src comp="103" pin="1"/><net_sink comp="107" pin=2"/></net>
 
-<net id="115"><net_src comp="28" pin="0"/><net_sink comp="112" pin=0"/></net>
+<net id="117"><net_src comp="30" pin="0"/><net_sink comp="114" pin=0"/></net>
 
-<net id="122"><net_src comp="112" pin="1"/><net_sink comp="116" pin=2"/></net>
+<net id="124"><net_src comp="114" pin="1"/><net_sink comp="118" pin=2"/></net>
 
-<net id="123"><net_src comp="116" pin="4"/><net_sink comp="112" pin=0"/></net>
+<net id="125"><net_src comp="118" pin="4"/><net_sink comp="114" pin=0"/></net>
 
-<net id="127"><net_src comp="46" pin="0"/><net_sink comp="124" pin=0"/></net>
+<net id="129"><net_src comp="48" pin="0"/><net_sink comp="126" pin=0"/></net>
 
-<net id="134"><net_src comp="124" pin="1"/><net_sink comp="128" pin=2"/></net>
+<net id="136"><net_src comp="126" pin="1"/><net_sink comp="130" pin=2"/></net>
 
-<net id="135"><net_src comp="128" pin="4"/><net_sink comp="124" pin=0"/></net>
+<net id="137"><net_src comp="130" pin="4"/><net_sink comp="126" pin=0"/></net>
 
-<net id="139"><net_src comp="28" pin="0"/><net_sink comp="136" pin=0"/></net>
+<net id="141"><net_src comp="30" pin="0"/><net_sink comp="138" pin=0"/></net>
 
-<net id="146"><net_src comp="136" pin="1"/><net_sink comp="140" pin=2"/></net>
+<net id="148"><net_src comp="138" pin="1"/><net_sink comp="142" pin=2"/></net>
 
-<net id="147"><net_src comp="140" pin="4"/><net_sink comp="136" pin=0"/></net>
+<net id="149"><net_src comp="142" pin="4"/><net_sink comp="138" pin=0"/></net>
 
-<net id="151"><net_src comp="28" pin="0"/><net_sink comp="148" pin=0"/></net>
+<net id="153"><net_src comp="30" pin="0"/><net_sink comp="150" pin=0"/></net>
 
-<net id="158"><net_src comp="148" pin="1"/><net_sink comp="152" pin=2"/></net>
+<net id="160"><net_src comp="150" pin="1"/><net_sink comp="154" pin=2"/></net>
 
-<net id="168"><net_src comp="162" pin="4"/><net_sink comp="159" pin=0"/></net>
+<net id="170"><net_src comp="164" pin="4"/><net_sink comp="161" pin=0"/></net>
 
-<net id="172"><net_src comp="28" pin="0"/><net_sink comp="169" pin=0"/></net>
+<net id="174"><net_src comp="30" pin="0"/><net_sink comp="171" pin=0"/></net>
 
-<net id="179"><net_src comp="169" pin="1"/><net_sink comp="173" pin=2"/></net>
+<net id="181"><net_src comp="171" pin="1"/><net_sink comp="175" pin=2"/></net>
 
-<net id="189"><net_src comp="159" pin="1"/><net_sink comp="183" pin=2"/></net>
+<net id="191"><net_src comp="161" pin="1"/><net_sink comp="185" pin=2"/></net>
 
-<net id="206"><net_src comp="52" pin="0"/><net_sink comp="190" pin=0"/></net>
+<net id="209"><net_src comp="54" pin="0"/><net_sink comp="192" pin=0"/></net>
 
-<net id="207"><net_src comp="0" pin="0"/><net_sink comp="190" pin=1"/></net>
+<net id="210"><net_src comp="0" pin="0"/><net_sink comp="192" pin=1"/></net>
 
-<net id="208"><net_src comp="2" pin="0"/><net_sink comp="190" pin=2"/></net>
+<net id="211"><net_src comp="2" pin="0"/><net_sink comp="192" pin=2"/></net>
 
-<net id="209"><net_src comp="140" pin="4"/><net_sink comp="190" pin=5"/></net>
+<net id="212"><net_src comp="142" pin="4"/><net_sink comp="192" pin=5"/></net>
 
-<net id="210"><net_src comp="128" pin="4"/><net_sink comp="190" pin=6"/></net>
+<net id="213"><net_src comp="130" pin="4"/><net_sink comp="192" pin=6"/></net>
 
-<net id="211"><net_src comp="93" pin="4"/><net_sink comp="190" pin=7"/></net>
+<net id="214"><net_src comp="95" pin="4"/><net_sink comp="192" pin=7"/></net>
 
-<net id="212"><net_src comp="116" pin="4"/><net_sink comp="190" pin=8"/></net>
+<net id="215"><net_src comp="118" pin="4"/><net_sink comp="192" pin=8"/></net>
 
-<net id="213"><net_src comp="8" pin="0"/><net_sink comp="190" pin=9"/></net>
+<net id="216"><net_src comp="8" pin="0"/><net_sink comp="192" pin=9"/></net>
 
-<net id="214"><net_src comp="10" pin="0"/><net_sink comp="190" pin=10"/></net>
+<net id="217"><net_src comp="10" pin="0"/><net_sink comp="192" pin=10"/></net>
 
-<net id="215"><net_src comp="12" pin="0"/><net_sink comp="190" pin=11"/></net>
+<net id="218"><net_src comp="12" pin="0"/><net_sink comp="192" pin=11"/></net>
 
-<net id="216"><net_src comp="14" pin="0"/><net_sink comp="190" pin=12"/></net>
+<net id="219"><net_src comp="16" pin="0"/><net_sink comp="192" pin=12"/></net>
 
-<net id="217"><net_src comp="16" pin="0"/><net_sink comp="190" pin=13"/></net>
+<net id="220"><net_src comp="18" pin="0"/><net_sink comp="192" pin=13"/></net>
 
-<net id="227"><net_src comp="34" pin="0"/><net_sink comp="218" pin=0"/></net>
+<net id="221"><net_src comp="14" pin="0"/><net_sink comp="192" pin=14"/></net>
 
-<net id="228"><net_src comp="36" pin="0"/><net_sink comp="218" pin=1"/></net>
+<net id="231"><net_src comp="36" pin="0"/><net_sink comp="222" pin=0"/></net>
 
-<net id="229"><net_src comp="72" pin="2"/><net_sink comp="218" pin=2"/></net>
+<net id="232"><net_src comp="38" pin="0"/><net_sink comp="222" pin=1"/></net>
 
-<net id="230"><net_src comp="38" pin="0"/><net_sink comp="218" pin=3"/></net>
+<net id="233"><net_src comp="74" pin="2"/><net_sink comp="222" pin=2"/></net>
 
-<net id="231"><net_src comp="40" pin="0"/><net_sink comp="218" pin=4"/></net>
+<net id="234"><net_src comp="40" pin="0"/><net_sink comp="222" pin=3"/></net>
 
-<net id="232"><net_src comp="42" pin="0"/><net_sink comp="218" pin=5"/></net>
+<net id="235"><net_src comp="42" pin="0"/><net_sink comp="222" pin=4"/></net>
 
-<net id="233"><net_src comp="14" pin="0"/><net_sink comp="218" pin=6"/></net>
+<net id="236"><net_src comp="44" pin="0"/><net_sink comp="222" pin=5"/></net>
 
-<net id="240"><net_src comp="48" pin="0"/><net_sink comp="234" pin=0"/></net>
+<net id="237"><net_src comp="14" pin="0"/><net_sink comp="222" pin=6"/></net>
 
-<net id="241"><net_src comp="105" pin="4"/><net_sink comp="234" pin=1"/></net>
+<net id="244"><net_src comp="50" pin="0"/><net_sink comp="238" pin=0"/></net>
 
-<net id="242"><net_src comp="140" pin="4"/><net_sink comp="234" pin=2"/></net>
+<net id="245"><net_src comp="107" pin="4"/><net_sink comp="238" pin=1"/></net>
 
-<net id="243"><net_src comp="152" pin="4"/><net_sink comp="234" pin=3"/></net>
+<net id="246"><net_src comp="142" pin="4"/><net_sink comp="238" pin=2"/></net>
 
-<net id="248"><net_src comp="60" pin="2"/><net_sink comp="244" pin=0"/></net>
+<net id="247"><net_src comp="154" pin="4"/><net_sink comp="238" pin=3"/></net>
 
-<net id="249"><net_src comp="20" pin="0"/><net_sink comp="244" pin=1"/></net>
+<net id="252"><net_src comp="62" pin="2"/><net_sink comp="248" pin=0"/></net>
 
-<net id="254"><net_src comp="44" pin="0"/><net_sink comp="250" pin=1"/></net>
+<net id="253"><net_src comp="22" pin="0"/><net_sink comp="248" pin=1"/></net>
 
-<net id="260"><net_src comp="250" pin="2"/><net_sink comp="255" pin=0"/></net>
+<net id="258"><net_src comp="46" pin="0"/><net_sink comp="254" pin=1"/></net>
 
-<net id="261"><net_src comp="44" pin="0"/><net_sink comp="255" pin=1"/></net>
+<net id="264"><net_src comp="254" pin="2"/><net_sink comp="259" pin=0"/></net>
 
-<net id="262"><net_src comp="255" pin="3"/><net_sink comp="82" pin=2"/></net>
+<net id="265"><net_src comp="46" pin="0"/><net_sink comp="259" pin=1"/></net>
 
-<net id="267"><net_src comp="173" pin="4"/><net_sink comp="263" pin=0"/></net>
+<net id="266"><net_src comp="259" pin="3"/><net_sink comp="84" pin=2"/></net>
 
-<net id="268"><net_src comp="50" pin="0"/><net_sink comp="263" pin=1"/></net>
+<net id="271"><net_src comp="175" pin="4"/><net_sink comp="267" pin=0"/></net>
 
-<net id="273"><net_src comp="173" pin="4"/><net_sink comp="269" pin=0"/></net>
+<net id="272"><net_src comp="52" pin="0"/><net_sink comp="267" pin=1"/></net>
 
-<net id="274"><net_src comp="54" pin="0"/><net_sink comp="269" pin=1"/></net>
+<net id="277"><net_src comp="175" pin="4"/><net_sink comp="273" pin=0"/></net>
 
-<net id="278"><net_src comp="190" pin="14"/><net_sink comp="275" pin=0"/></net>
+<net id="278"><net_src comp="56" pin="0"/><net_sink comp="273" pin=1"/></net>
 
-<net id="282"><net_src comp="190" pin="14"/><net_sink comp="279" pin=0"/></net>
+<net id="282"><net_src comp="192" pin="15"/><net_sink comp="279" pin=0"/></net>
 
-<net id="286"><net_src comp="190" pin="14"/><net_sink comp="283" pin=0"/></net>
+<net id="286"><net_src comp="192" pin="15"/><net_sink comp="283" pin=0"/></net>
 
-<net id="290"><net_src comp="190" pin="14"/><net_sink comp="287" pin=0"/></net>
+<net id="290"><net_src comp="192" pin="15"/><net_sink comp="287" pin=0"/></net>
 
-<net id="294"><net_src comp="190" pin="14"/><net_sink comp="291" pin=0"/></net>
+<net id="294"><net_src comp="192" pin="15"/><net_sink comp="291" pin=0"/></net>
 
-<net id="295"><net_src comp="291" pin="1"/><net_sink comp="183" pin=0"/></net>
+<net id="298"><net_src comp="192" pin="15"/><net_sink comp="295" pin=0"/></net>
 
-<net id="299"><net_src comp="190" pin="14"/><net_sink comp="296" pin=0"/></net>
+<net id="299"><net_src comp="295" pin="1"/><net_sink comp="185" pin=0"/></net>
 
-<net id="303"><net_src comp="190" pin="14"/><net_sink comp="300" pin=0"/></net>
+<net id="303"><net_src comp="192" pin="15"/><net_sink comp="300" pin=0"/></net>
 
-<net id="307"><net_src comp="244" pin="2"/><net_sink comp="304" pin=0"/></net>
+<net id="307"><net_src comp="192" pin="15"/><net_sink comp="304" pin=0"/></net>
 
-<net id="311"><net_src comp="66" pin="2"/><net_sink comp="308" pin=0"/></net>
+<net id="311"><net_src comp="248" pin="2"/><net_sink comp="308" pin=0"/></net>
 
-<net id="312"><net_src comp="308" pin="1"/><net_sink comp="190" pin=4"/></net>
+<net id="315"><net_src comp="68" pin="2"/><net_sink comp="312" pin=0"/></net>
 
-<net id="316"><net_src comp="72" pin="2"/><net_sink comp="313" pin=0"/></net>
+<net id="316"><net_src comp="312" pin="1"/><net_sink comp="192" pin=4"/></net>
 
-<net id="317"><net_src comp="313" pin="1"/><net_sink comp="218" pin=2"/></net>
+<net id="320"><net_src comp="74" pin="2"/><net_sink comp="317" pin=0"/></net>
 
-<net id="318"><net_src comp="313" pin="1"/><net_sink comp="162" pin=2"/></net>
+<net id="321"><net_src comp="317" pin="1"/><net_sink comp="222" pin=2"/></net>
 
-<net id="319"><net_src comp="313" pin="1"/><net_sink comp="190" pin=3"/></net>
+<net id="322"><net_src comp="317" pin="1"/><net_sink comp="164" pin=2"/></net>
 
-<net id="323"><net_src comp="218" pin="7"/><net_sink comp="320" pin=0"/></net>
+<net id="323"><net_src comp="317" pin="1"/><net_sink comp="192" pin=3"/></net>
 
-<net id="324"><net_src comp="320" pin="1"/><net_sink comp="250" pin=0"/></net>
+<net id="327"><net_src comp="222" pin="7"/><net_sink comp="324" pin=0"/></net>
 
-<net id="325"><net_src comp="320" pin="1"/><net_sink comp="255" pin=2"/></net>
+<net id="328"><net_src comp="324" pin="1"/><net_sink comp="254" pin=0"/></net>
 
-<net id="329"><net_src comp="234" pin="4"/><net_sink comp="326" pin=0"/></net>
+<net id="329"><net_src comp="324" pin="1"/><net_sink comp="259" pin=2"/></net>
 
-<net id="333"><net_src comp="263" pin="2"/><net_sink comp="330" pin=0"/></net>
+<net id="333"><net_src comp="238" pin="4"/><net_sink comp="330" pin=0"/></net>
 
-<net id="334"><net_src comp="330" pin="1"/><net_sink comp="173" pin=0"/></net>
+<net id="337"><net_src comp="267" pin="2"/><net_sink comp="334" pin=0"/></net>
 
-<net id="338"><net_src comp="269" pin="2"/><net_sink comp="335" pin=0"/></net>
+<net id="338"><net_src comp="334" pin="1"/><net_sink comp="175" pin=0"/></net>
 
-<net id="342"><net_src comp="275" pin="1"/><net_sink comp="339" pin=0"/></net>
+<net id="342"><net_src comp="273" pin="2"/><net_sink comp="339" pin=0"/></net>
 
-<net id="343"><net_src comp="339" pin="1"/><net_sink comp="116" pin=0"/></net>
+<net id="346"><net_src comp="279" pin="1"/><net_sink comp="343" pin=0"/></net>
 
-<net id="347"><net_src comp="279" pin="1"/><net_sink comp="344" pin=0"/></net>
+<net id="347"><net_src comp="343" pin="1"/><net_sink comp="118" pin=0"/></net>
 
-<net id="348"><net_src comp="344" pin="1"/><net_sink comp="152" pin=0"/></net>
+<net id="351"><net_src comp="283" pin="1"/><net_sink comp="348" pin=0"/></net>
 
-<net id="352"><net_src comp="283" pin="1"/><net_sink comp="349" pin=0"/></net>
+<net id="352"><net_src comp="348" pin="1"/><net_sink comp="154" pin=0"/></net>
 
-<net id="353"><net_src comp="349" pin="1"/><net_sink comp="105" pin=0"/></net>
+<net id="356"><net_src comp="287" pin="1"/><net_sink comp="353" pin=0"/></net>
 
-<net id="357"><net_src comp="287" pin="1"/><net_sink comp="354" pin=0"/></net>
+<net id="357"><net_src comp="353" pin="1"/><net_sink comp="107" pin=0"/></net>
 
-<net id="358"><net_src comp="354" pin="1"/><net_sink comp="140" pin=0"/></net>
+<net id="361"><net_src comp="291" pin="1"/><net_sink comp="358" pin=0"/></net>
 
-<net id="362"><net_src comp="291" pin="1"/><net_sink comp="359" pin=0"/></net>
+<net id="362"><net_src comp="358" pin="1"/><net_sink comp="142" pin=0"/></net>
 
-<net id="363"><net_src comp="359" pin="1"/><net_sink comp="162" pin=0"/></net>
+<net id="366"><net_src comp="295" pin="1"/><net_sink comp="363" pin=0"/></net>
 
-<net id="367"><net_src comp="296" pin="1"/><net_sink comp="364" pin=0"/></net>
+<net id="367"><net_src comp="363" pin="1"/><net_sink comp="164" pin=0"/></net>
 
-<net id="368"><net_src comp="364" pin="1"/><net_sink comp="93" pin=0"/></net>
+<net id="371"><net_src comp="300" pin="1"/><net_sink comp="368" pin=0"/></net>
 
-<net id="372"><net_src comp="300" pin="1"/><net_sink comp="369" pin=0"/></net>
+<net id="372"><net_src comp="368" pin="1"/><net_sink comp="95" pin=0"/></net>
 
-<net id="373"><net_src comp="369" pin="1"/><net_sink comp="128" pin=0"/></net>
+<net id="376"><net_src comp="304" pin="1"/><net_sink comp="373" pin=0"/></net>
+
+<net id="377"><net_src comp="373" pin="1"/><net_sink comp="130" pin=0"/></net>
 
 </net_list>
 
@@ -1332,6 +1346,7 @@ ret_ln787                    (ret          ) [ 000000000000]
 	Port: solveNextColumn : patches_superpoints | {10 11 }
 	Port: solveNextColumn : patches_parameters | {10 11 }
 	Port: solveNextColumn : radiiDivisionList | {3 4 10 11 }
+	Port: solveNextColumn : radiiDivisionList_1_4 | {10 11 }
 	Port: solveNextColumn : trapezoid_edges_V | {10 11 }
   - Chain level:
 	State 1
@@ -1343,14 +1358,14 @@ ret_ln787                    (ret          ) [ 000000000000]
 	State 7
 	State 8
 	State 9
-		select_ln754 : 1
+		select_ln750 : 1
 		z_top_max_V_16_ph : 2
 	State 10
 		tmp : 1
 		loopCounter_1 : 1
-		br_ln766 : 2
+		br_ln762 : 2
 		call_ret : 1
-		icmp_ln772 : 1
+		icmp_ln768 : 1
 	State 11
 		complementary_apexZ0_V : 1
 		projectionOfCornerToBeam_V : 1
@@ -1360,7 +1375,7 @@ ret_ln787                    (ret          ) [ 000000000000]
 		z_top_max_V : 1
 		z_top_min_V : 1
 		saved_apexZ0_buf_1 : 2
-		ret_ln787 : 3
+		ret_ln783 : 3
 
 
 ============================================================
@@ -1371,31 +1386,31 @@ ret_ln787                    (ret          ) [ 000000000000]
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
 | Operation|                 Functional Unit                |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
-|          |          grp_solveNextPatchPair_fu_190         |    9    |    2    | 112.374 |  30295  |  29731  |
-|   call   | grp_straightLineProjectorFromLayerIJtoK_fu_218 |    0    |    0    |  1.161  |   505   |   348   |
-|          |  tmp_getSolveNextColumnWhileConditional_fu_234 |    0    |    0    |    0    |    0    |    64   |
+|          |          grp_solveNextPatchPair_fu_192         |    9    |    2    | 110.348 |  29980  |  29212  |
+|   call   | grp_straightLineProjectorFromLayerIJtoK_fu_222 |    0    |    0    |  1.161  |   505   |   348   |
+|          |  tmp_getSolveNextColumnWhileConditional_fu_238 |    0    |    0    |    0    |    0    |    64   |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
-|          |                icmp_ln752_fu_244               |    0    |    0    |    0    |    0    |    11   |
-|   icmp   |                icmp_ln878_fu_250               |    0    |    0    |    0    |    0    |    20   |
-|          |                icmp_ln772_fu_269               |    0    |    0    |    0    |    0    |    20   |
+|          |                icmp_ln748_fu_248               |    0    |    0    |    0    |    0    |    11   |
+|   icmp   |                icmp_ln878_fu_254               |    0    |    0    |    0    |    0    |    20   |
+|          |                icmp_ln768_fu_273               |    0    |    0    |    0    |    0    |    20   |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
-|    add   |              loopCounter_1_fu_263              |    0    |    0    |    0    |    0    |    39   |
+|    add   |              loopCounter_1_fu_267              |    0    |    0    |    0    |    0    |    39   |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
-|  select  |               select_ln754_fu_255              |    0    |    0    |    0    |    0    |    32   |
+|  select  |               select_ln750_fu_259              |    0    |    0    |    0    |    0    |    32   |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
-|          |            n_patches_read_read_fu_60           |    0    |    0    |    0    |    0    |    0    |
-|   read   |               ppl_read_read_fu_66              |    0    |    0    |    0    |    0    |    0    |
-|          |             apexZ0_read_read_fu_72             |    0    |    0    |    0    |    0    |    0    |
+|          |            n_patches_read_read_fu_62           |    0    |    0    |    0    |    0    |    0    |
+|   read   |               ppl_read_read_fu_68              |    0    |    0    |    0    |    0    |    0    |
+|          |             apexZ0_read_read_fu_74             |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
-|          |          complementary_apexZ0_V_fu_275         |    0    |    0    |    0    |    0    |    0    |
-|          |        projectionOfCornerToBeam_V_fu_279       |    0    |    0    |    0    |    0    |    0    |
-|          |                c_corner_V_fu_283               |    0    |    0    |    0    |    0    |    0    |
-|extractvalue|             nPatchesInColumn_fu_287            |    0    |    0    |    0    |    0    |    0    |
-|          |             saved_apexZ0_ret_fu_291            |    0    |    0    |    0    |    0    |    0    |
-|          |               z_top_max_V_fu_296               |    0    |    0    |    0    |    0    |    0    |
-|          |               z_top_min_V_fu_300               |    0    |    0    |    0    |    0    |    0    |
+|          |          complementary_apexZ0_V_fu_279         |    0    |    0    |    0    |    0    |    0    |
+|          |        projectionOfCornerToBeam_V_fu_283       |    0    |    0    |    0    |    0    |    0    |
+|          |                c_corner_V_fu_287               |    0    |    0    |    0    |    0    |    0    |
+|extractvalue|             nPatchesInColumn_fu_291            |    0    |    0    |    0    |    0    |    0    |
+|          |             saved_apexZ0_ret_fu_295            |    0    |    0    |    0    |    0    |    0    |
+|          |               z_top_max_V_fu_300               |    0    |    0    |    0    |    0    |    0    |
+|          |               z_top_min_V_fu_304               |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
-|   Total  |                                                |    9    |    2    | 113.535 |  30800  |  30265  |
+|   Total  |                                                |    9    |    2    | 111.509 |  30485  |  29746  |
 |----------|------------------------------------------------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -1405,30 +1420,30 @@ N/A
 +------------------------------------+--------+
 |                                    |   FF   |
 +------------------------------------+--------+
-|         apexZ0_read_reg_313        |   32   |
-|        c_corner_V_0_reg_101        |   32   |
-|         c_corner_V_reg_349         |   32   |
-|  complementary_apexZ0_V_0_reg_112  |   32   |
-|   complementary_apexZ0_V_reg_339   |   32   |
-|         icmp_ln752_reg_304         |    1   |
-|         icmp_ln772_reg_335         |    1   |
-|        loopCounter_1_reg_330       |   32   |
-|         loopCounter_reg_169        |   32   |
-|     nPatchesInColumn_0_reg_136     |   32   |
-|      nPatchesInColumn_reg_354      |   32   |
-|            op2_V_reg_320           |   32   |
-|          ppl_read_reg_308          |   32   |
-|projectionOfCornerToBeam_V_0_reg_148|   32   |
-| projectionOfCornerToBeam_V_reg_344 |   32   |
-|     saved_apexZ0_buf_0_reg_159     |   32   |
-|     saved_apexZ0_buf_1_reg_180     |   32   |
-|      saved_apexZ0_ret_reg_359      |   32   |
-|             tmp_reg_326            |    1   |
-|      z_top_max_V_16_ph_reg_78      |   32   |
-|        z_top_max_V_16_reg_90       |   32   |
-|         z_top_max_V_reg_364        |   32   |
-|        z_top_min_V_0_reg_124       |   32   |
-|         z_top_min_V_reg_369        |   32   |
+|         apexZ0_read_reg_317        |   32   |
+|        c_corner_V_0_reg_103        |   32   |
+|         c_corner_V_reg_353         |   32   |
+|  complementary_apexZ0_V_0_reg_114  |   32   |
+|   complementary_apexZ0_V_reg_343   |   32   |
+|         icmp_ln748_reg_308         |    1   |
+|         icmp_ln768_reg_339         |    1   |
+|        loopCounter_1_reg_334       |   32   |
+|         loopCounter_reg_171        |   32   |
+|     nPatchesInColumn_0_reg_138     |   32   |
+|      nPatchesInColumn_reg_358      |   32   |
+|            op2_V_reg_324           |   32   |
+|          ppl_read_reg_312          |   32   |
+|projectionOfCornerToBeam_V_0_reg_150|   32   |
+| projectionOfCornerToBeam_V_reg_348 |   32   |
+|     saved_apexZ0_buf_0_reg_161     |   32   |
+|     saved_apexZ0_buf_1_reg_182     |   32   |
+|      saved_apexZ0_ret_reg_363      |   32   |
+|             tmp_reg_330            |    1   |
+|      z_top_max_V_16_ph_reg_80      |   32   |
+|        z_top_max_V_16_reg_92       |   32   |
+|         z_top_max_V_reg_368        |   32   |
+|        z_top_min_V_0_reg_126       |   32   |
+|         z_top_min_V_reg_373        |   32   |
 +------------------------------------+--------+
 |                Total               |   675  |
 +------------------------------------+--------+
@@ -1437,11 +1452,11 @@ N/A
 |------------------------------------------------|------|------|------|--------||---------||---------|
 |                      Comp                      |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
 |------------------------------------------------|------|------|------|--------||---------||---------|
-|            z_top_max_V_16_ph_reg_78            |  p0  |   2  |  32  |   64   ||    9    |
-|        complementary_apexZ0_V_0_reg_112        |  p0  |   2  |  32  |   64   ||    9    |
-|              z_top_min_V_0_reg_124             |  p0  |   2  |  32  |   64   ||    9    |
-|           nPatchesInColumn_0_reg_136           |  p0  |   2  |  32  |   64   ||    9    |
-| grp_straightLineProjectorFromLayerIJtoK_fu_218 |  p2  |   2  |  32  |   64   ||    9    |
+|            z_top_max_V_16_ph_reg_80            |  p0  |   2  |  32  |   64   ||    9    |
+|        complementary_apexZ0_V_0_reg_114        |  p0  |   2  |  32  |   64   ||    9    |
+|              z_top_min_V_0_reg_126             |  p0  |   2  |  32  |   64   ||    9    |
+|           nPatchesInColumn_0_reg_138           |  p0  |   2  |  32  |   64   ||    9    |
+| grp_straightLineProjectorFromLayerIJtoK_fu_222 |  p2  |   2  |  32  |   64   ||    9    |
 |------------------------------------------------|------|------|------|--------||---------||---------|
 |                      Total                     |      |      |      |   320  ||  1.935  ||    45   |
 |------------------------------------------------|------|------|------|--------||---------||---------|
@@ -1452,10 +1467,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    9   |    2   |   113  |  30800 |  30265 |
+|  Function |    9   |    2   |   111  |  30485 |  29746 |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    1   |    -   |   45   |
 |  Register |    -   |    -   |    -   |   675  |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    9   |    2   |   115  |  31475 |  30310 |
+|   Total   |    9   |    2   |   113  |  31160 |  29791 |
 +-----------+--------+--------+--------+--------+--------+

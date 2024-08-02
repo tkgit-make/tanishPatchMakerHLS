@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getShadows'" level="0">
-<item name = "Date">Thu Aug  1 00:48:31 2024
+<item name = "Date">Thu Aug  1 23:32:05 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -66,9 +66,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mux_42_32_1_1_U108">mux_42_32_1_1, 0, 0, 0, 20, 0</column>
-<column name="mux_42_32_1_1_U109">mux_42_32_1_1, 0, 0, 0, 20, 0</column>
-<column name="mux_42_32_1_1_U110">mux_42_32_1_1, 0, 0, 0, 20, 0</column>
+<column name="mux_42_32_1_1_U104">mux_42_32_1_1, 0, 0, 0, 20, 0</column>
+<column name="mux_42_32_1_1_U105">mux_42_32_1_1, 0, 0, 0, 20, 0</column>
+<column name="mux_42_32_1_1_U106">mux_42_32_1_1, 0, 0, 0, 20, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_275">straightLineProjectorFromLayerIJtoK, 0, 0, 602, 457, 0</column>
 </table>
 </item>
@@ -86,33 +86,33 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln194_1_fu_518_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln194_fu_460_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln197_1_fu_584_p2">+, 0, 0, 10, 3, 1</column>
-<column name="add_ln197_fu_494_p2">+, 0, 0, 10, 3, 1</column>
-<column name="add_ln210_fu_839_p2">+, 0, 0, 10, 3, 1</column>
-<column name="sub_ln203_fu_304_p2">-, 0, 0, 16, 9, 9</column>
-<column name="sub_ln204_fu_347_p2">-, 0, 0, 16, 9, 9</column>
-<column name="sub_ln205_fu_390_p2">-, 0, 0, 16, 9, 9</column>
-<column name="sub_ln206_fu_433_p2">-, 0, 0, 16, 9, 9</column>
-<column name="icmp_ln192_fu_547_p2">icmp, 0, 0, 9, 3, 4</column>
-<column name="icmp_ln210_fu_674_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="add_ln190_1_fu_518_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln190_fu_460_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln193_1_fu_584_p2">+, 0, 0, 10, 3, 1</column>
+<column name="add_ln193_fu_494_p2">+, 0, 0, 10, 3, 1</column>
+<column name="add_ln206_fu_839_p2">+, 0, 0, 10, 3, 1</column>
+<column name="sub_ln199_fu_304_p2">-, 0, 0, 16, 9, 9</column>
+<column name="sub_ln200_fu_347_p2">-, 0, 0, 16, 9, 9</column>
+<column name="sub_ln201_fu_390_p2">-, 0, 0, 16, 9, 9</column>
+<column name="sub_ln202_fu_433_p2">-, 0, 0, 16, 9, 9</column>
+<column name="icmp_ln188_fu_547_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln206_fu_674_p2">icmp, 0, 0, 9, 3, 4</column>
 <column name="icmp_ln878_11_fu_480_p2">icmp, 0, 0, 20, 32, 26</column>
 <column name="icmp_ln878_12_fu_759_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="icmp_ln878_13_fu_829_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="icmp_ln878_fu_466_p2">icmp, 0, 0, 20, 32, 27</column>
-<column name="icmp_ln886_10_fu_710_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="icmp_ln886_11_fu_794_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln886_10_fu_794_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln886_11_fu_710_p2">icmp, 0, 0, 8, 2, 1</column>
 <column name="icmp_ln886_9_fu_696_p2">icmp, 0, 0, 8, 2, 3</column>
 <column name="icmp_ln886_fu_724_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="or_ln195_fu_536_p2">or, 0, 0, 12, 12, 4</column>
-<column name="select_ln182_fu_472_p3">select, 0, 0, 32, 1, 27</column>
-<column name="select_ln183_fu_486_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln203_1_fu_296_p3">select, 0, 0, 6, 1, 6</column>
-<column name="select_ln203_fu_288_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln204_fu_315_p3">select, 0, 0, 4, 1, 4</column>
-<column name="select_ln205_fu_358_p3">select, 0, 0, 4, 1, 4</column>
-<column name="select_ln206_fu_401_p3">select, 0, 0, 4, 1, 4</column>
+<column name="or_ln191_fu_536_p2">or, 0, 0, 12, 12, 4</column>
+<column name="select_ln178_fu_472_p3">select, 0, 0, 32, 1, 27</column>
+<column name="select_ln179_fu_486_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln199_1_fu_296_p3">select, 0, 0, 6, 1, 6</column>
+<column name="select_ln199_fu_288_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln200_fu_315_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln201_fu_358_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln202_fu_401_p3">select, 0, 0, 4, 1, 4</column>
 <column name="topL_jL_V_3_8_fu_716_p3">select, 0, 0, 32, 1, 32</column>
 <column name="topL_jL_V_3_fu_702_p3">select, 0, 0, 32, 1, 32</column>
 </table>
@@ -120,9 +120,9 @@
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">162, 36, 1, 36</column>
-<column name="empty_80_fu_160">9, 2, 32, 64</column>
-<column name="empty_81_fu_164">9, 2, 32, 64</column>
-<column name="empty_82_fu_168">9, 2, 32, 64</column>
+<column name="empty_82_fu_160">9, 2, 32, 64</column>
+<column name="empty_83_fu_164">9, 2, 32, 64</column>
+<column name="empty_84_fu_168">9, 2, 32, 64</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_275_z_i">14, 3, 32, 96</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_275_z_j">14, 3, 32, 96</column>
 <column name="i_9_reg_263">9, 2, 3, 6</column>
@@ -137,25 +137,25 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln194_reg_965">8, 0, 8, 0</column>
-<column name="add_ln197_1_reg_1046">3, 0, 3, 0</column>
-<column name="add_ln197_reg_980">3, 0, 3, 0</column>
+<column name="add_ln190_reg_965">8, 0, 8, 0</column>
+<column name="add_ln193_1_reg_1046">3, 0, 3, 0</column>
+<column name="add_ln193_reg_980">3, 0, 3, 0</column>
 <column name="ap_CS_fsm">35, 0, 35, 0</column>
-<column name="empty_80_fu_160">32, 0, 32, 0</column>
-<column name="empty_81_fu_164">32, 0, 32, 0</column>
-<column name="empty_82_fu_168">32, 0, 32, 0</column>
+<column name="empty_82_fu_160">32, 0, 32, 0</column>
+<column name="empty_83_fu_164">32, 0, 32, 0</column>
+<column name="empty_84_fu_168">32, 0, 32, 0</column>
 <column name="grp_straightLineProjectorFromLayerIJtoK_fu_275_ap_start_reg">1, 0, 1, 0</column>
 <column name="i_9_reg_263">3, 0, 3, 0</column>
 <column name="i_reg_252">3, 0, 3, 0</column>
 <column name="icmp_ln878_12_reg_1082">1, 0, 1, 0</column>
 <column name="icmp_ln878_13_reg_1102">1, 0, 1, 0</column>
-<column name="icmp_ln886_11_reg_1092">1, 0, 1, 0</column>
+<column name="icmp_ln886_10_reg_1092">1, 0, 1, 0</column>
 <column name="icmp_ln886_reg_1072">1, 0, 1, 0</column>
 <column name="phi_ln878_1_reg_1096">32, 0, 32, 0</column>
 <column name="phi_ln886_1_reg_1086">32, 0, 32, 0</column>
 <column name="phi_ln_reg_1076">32, 0, 32, 0</column>
-<column name="select_ln182_reg_970">32, 0, 32, 0</column>
-<column name="select_ln183_reg_975">32, 0, 32, 0</column>
+<column name="select_ln178_reg_970">32, 0, 32, 0</column>
+<column name="select_ln179_reg_975">32, 0, 32, 0</column>
 <column name="topL_jL_V_3_1_fu_92">32, 0, 32, 0</column>
 <column name="topL_jL_V_3_2_fu_108">32, 0, 32, 0</column>
 <column name="topL_jL_V_3_4_fu_112">32, 0, 32, 0</column>
@@ -176,7 +176,7 @@
 <column name="topR_jR_V_3_3_fu_152">32, 0, 32, 0</column>
 <column name="topR_jR_V_3_fu_104">32, 0, 32, 0</column>
 <column name="topR_jR_V_3_load_reg_990">32, 0, 32, 0</column>
-<column name="trunc_ln197_reg_1008">2, 0, 2, 0</column>
+<column name="trunc_ln193_reg_1008">2, 0, 2, 0</column>
 <column name="trunc_ln886_reg_1059">2, 0, 2, 0</column>
 <column name="wp_parameters_addr_31_reg_947">6, 0, 9, 3</column>
 <column name="wp_parameters_addr_32_reg_953">6, 0, 9, 3</column>

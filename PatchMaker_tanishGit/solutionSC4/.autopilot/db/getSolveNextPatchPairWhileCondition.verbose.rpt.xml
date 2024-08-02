@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getSolveNextPatchPairWhileCondition'" level="0">
-<item name = "Date">Thu Aug  1 00:48:23 2024
+<item name = "Date">Thu Aug  1 23:31:56 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -80,20 +80,20 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="sub_ln180_fu_98_p2">-, 0, 0, 71, 1, 64</column>
-<column name="and_ln977_fu_129_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln983_1_fu_194_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln983_fu_165_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln973_fu_129_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln979_1_fu_194_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln979_fu_165_p2">and, 0, 0, 2, 1, 1</column>
 <column name="exp4_fu_148_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln977_fu_110_p2">icmp, 0, 0, 29, 64, 1</column>
-<column name="icmp_ln983_1_fu_104_p2">icmp, 0, 0, 20, 32, 27</column>
-<column name="icmp_ln983_2_fu_160_p2">icmp, 0, 0, 29, 64, 3</column>
-<column name="icmp_ln983_fu_154_p2">icmp, 0, 0, 29, 64, 3</column>
-<column name="or_ln983_1_fu_176_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln983_2_fu_182_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln983_fu_170_p2">or, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln973_fu_110_p2">icmp, 0, 0, 29, 64, 1</column>
+<column name="icmp_ln979_1_fu_104_p2">icmp, 0, 0, 20, 32, 27</column>
+<column name="icmp_ln979_2_fu_160_p2">icmp, 0, 0, 29, 64, 3</column>
+<column name="icmp_ln979_fu_154_p2">icmp, 0, 0, 29, 64, 3</column>
+<column name="or_ln979_1_fu_176_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln979_2_fu_182_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln979_fu_170_p2">or, 0, 0, 2, 1, 1</column>
 <column name="select_ln180_fu_142_p3">select, 0, 0, 63, 1, 64</column>
-<column name="xor_ln977_fu_123_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln983_fu_188_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln973_fu_123_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln979_fu_188_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -106,7 +106,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_return_preg">1, 0, 1, 0</column>
-<column name="icmp_ln983_1_reg_223">1, 0, 1, 0</column>
+<column name="icmp_ln979_1_reg_223">1, 0, 1, 0</column>
 <column name="sub_ln180_reg_213">64, 0, 64, 0</column>
 </table>
 </item>
