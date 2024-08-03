@@ -5,6 +5,11 @@
                 <option name="name" value="MPSQ"/>
             </pragma>
         </directive>
+        <directive functionName="MPSQ" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="MPSQ"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

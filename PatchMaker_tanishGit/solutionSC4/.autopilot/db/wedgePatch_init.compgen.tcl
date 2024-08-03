@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 32 \
+    id 41 \
     name wp_superpoints \
     reset_level 1 \
     sync_rst true \
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 33 \
+    id 42 \
     name wp_parameters \
     reset_level 1 \
     sync_rst true \
-    dir IO \
+    dir O \
     corename wp_parameters \
     op interface \
-    ports { wp_parameters_address0 { O 7 vector } wp_parameters_ce0 { O 1 bit } wp_parameters_we0 { O 1 bit } wp_parameters_d0 { O 32 vector } wp_parameters_q0 { I 32 vector } wp_parameters_address1 { O 7 vector } wp_parameters_ce1 { O 1 bit } wp_parameters_we1 { O 1 bit } wp_parameters_d1 { O 32 vector } wp_parameters_q1 { I 32 vector } } \
+    ports { wp_parameters_address0 { O 5 vector } wp_parameters_ce0 { O 1 bit } wp_parameters_we0 { O 1 bit } wp_parameters_d0 { O 32 vector } wp_parameters_address1 { O 5 vector } wp_parameters_ce1 { O 1 bit } wp_parameters_we1 { O 1 bit } wp_parameters_d1 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wp_parameters'"
@@ -49,7 +49,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 34 \
+    id 43 \
     name superpointsI \
     reset_level 1 \
     sync_rst true \
@@ -63,21 +63,6 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 }
 
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 35 \
-    name apexZ0I \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_apexZ0I \
-    op interface \
-    ports { apexZ0I { I 32 vector } } \
-} "
-}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

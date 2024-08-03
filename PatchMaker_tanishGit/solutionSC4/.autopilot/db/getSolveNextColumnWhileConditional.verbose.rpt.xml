@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getSolveNextColumnWhileConditional'" level="0">
-<item name = "Date">Thu Aug  1 23:31:43 2024
+<item name = "Date">Sat Aug  3 00:46:37 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -79,10 +79,10 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="and_ln790_fu_50_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln786_fu_50_p2">and, 0, 0, 2, 1, 1</column>
 <column name="ap_return">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln790_1_fu_44_p2">icmp, 0, 0, 20, 32, 24</column>
-<column name="icmp_ln790_fu_38_p2">icmp, 0, 0, 20, 32, 27</column>
+<column name="icmp_ln786_1_fu_44_p2">icmp, 0, 0, 20, 32, 24</column>
+<column name="icmp_ln786_fu_38_p2">icmp, 0, 0, 20, 32, 27</column>
 <column name="icmp_ln886_fu_32_p2">icmp, 0, 0, 20, 32, 27</column>
 </table>
 </item>

@@ -82,13 +82,13 @@ set NewPortList {[
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "5", "6"],
 		"CDFG" : "makeSuperPoint_alignedToLine11",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "306", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -104,12 +104,49 @@ set RtlHierarchyInfo {[
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "init_patch", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "radiiDivisionList_4", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "3", "SubInstance" : "grp_mSP_findLRBounds_fu_261", "Port" : "trapezoid_edges_V"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.radiiDivisionList_4_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.row_list_V_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findLRBounds_fu_261", "Parent" : "0", "Child" : ["4"],
+		"CDFG" : "mSP_findLRBounds",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "i", "Type" : "None", "Direction" : "I"},
+			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.radiiDivisionList_1_4_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.trapezoid_edges_V_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.row_list_V_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_33ns_33s_64_3_1_U16", "Parent" : "0"}]}
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findLRBounds_fu_261.trapezoid_edges_V_U", "Parent" : "3"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findStartIndex_fu_270", "Parent" : "0",
+		"CDFG" : "mSP_findStartIndex",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
+			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_33ns_33s_64_3_1_U22", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -120,23 +157,30 @@ set ArgLastReadFirstWriteLatency {
 		apexZ0 {Type I LastRead 1 FirstWrite -1}
 		original_ppl {Type I LastRead 1 FirstWrite -1}
 		leftRight {Type I LastRead 1 FirstWrite -1}
-		init_patch {Type O LastRead -1 FirstWrite 20}
-		GDarrayDecoded {Type I LastRead 18 FirstWrite -1}
-		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
-		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}}
+		init_patch {Type O LastRead -1 FirstWrite 16}
+		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
+		radiiDivisionList_4 {Type I LastRead -1 FirstWrite -1}
+		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
+	mSP_findLRBounds {
+		i {Type I LastRead 0 FirstWrite -1}
+		row_list {Type I LastRead 2 FirstWrite -1}
+		row_list_size {Type I LastRead 1 FirstWrite -1}
+		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
+	mSP_findStartIndex {
+		row_list {Type I LastRead 1 FirstWrite -1}
+		row_list_size {Type I LastRead 0 FirstWrite -1}
+		projectionToRow {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "306", "Max" : "-1"}
-	, {"Name" : "Interval", "Min" : "306", "Max" : "-1"}
+	{"Name" : "Latency", "Min" : "-1", "Max" : "-1"}
+	, {"Name" : "Interval", "Min" : "-1", "Max" : "-1"}
 ]}
 
 set PipelineEnableSignalInfo {[
 	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 	{"Pipeline" : "1", "EnableSignal" : "ap_enable_pp1"}
-	{"Pipeline" : "2", "EnableSignal" : "ap_enable_pp2"}
-	{"Pipeline" : "3", "EnableSignal" : "ap_enable_pp3"}
 ]}
 
 set Spec2ImplPortList { 

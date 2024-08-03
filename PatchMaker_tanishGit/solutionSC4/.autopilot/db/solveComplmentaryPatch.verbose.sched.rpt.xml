@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveComplmentaryPatch'" level="0">
-<item name = "Date">Thu Aug  1 23:31:01 2024
+<item name = "Date">Sat Aug  3 00:45:56 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -41,8 +41,8 @@
 <column name="- solveComplmentaryPatch_fillNew_z_i_index2">5, 5, 2, 1, 1, 5, yes</column>
 <column name="- solveComplmentaryPatch_fillNew_z_i_index3">6, 6, 3, 1, 1, 5, yes</column>
 <column name="- solveComplmentaryPatch_fillNew_z_i_index5">8, 8, 5, 1, 1, 5, yes</column>
-<column name="- solveComplmentaryPatch_fillNew_z_i_atTop">11, 11, 9, 1, 1, 4, yes</column>
-<column name="- solveComplmentaryPatch_findlayerWithSmallestShift">5, 5, 3, 1, 1, 4, yes</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_atTop">49, 49, 47, 1, 1, 4, yes</column>
+<column name="- solveComplmentaryPatch_findlayerWithSmallestShift">6, 6, 3, 1, 1, 4, yes</column>
 <column name="- solveComplmentaryPatch_superpointEqualCheck_2">11, 35, 6, 6, 1, 1 ~ 5, yes</column>
 </table>
 </item>

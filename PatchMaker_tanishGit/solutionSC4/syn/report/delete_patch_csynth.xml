@@ -51,8 +51,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>659</FF>
-<LUT>1893</LUT>
+<FF>568</FF>
+<LUT>1671</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -262,7 +262,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -306,7 +306,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>

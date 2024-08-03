@@ -14,7 +14,7 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ index int 8 regular  }
 	{ n_patches int 8 regular  }
-	{ patches_parameters int 32 regular {array 360 { 0 1 } 1 1 }  }
+	{ patches_parameters int 32 regular {array 72 { 0 1 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "index", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
@@ -31,11 +31,11 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ index sc_in sc_lv 8 signal 0 } 
 	{ n_patches sc_in sc_lv 8 signal 1 } 
-	{ patches_parameters_address0 sc_out sc_lv 9 signal 2 } 
+	{ patches_parameters_address0 sc_out sc_lv 7 signal 2 } 
 	{ patches_parameters_ce0 sc_out sc_logic 1 signal 2 } 
 	{ patches_parameters_we0 sc_out sc_logic 1 signal 2 } 
 	{ patches_parameters_d0 sc_out sc_lv 32 signal 2 } 
-	{ patches_parameters_address1 sc_out sc_lv 9 signal 2 } 
+	{ patches_parameters_address1 sc_out sc_lv 7 signal 2 } 
 	{ patches_parameters_ce1 sc_out sc_logic 1 signal 2 } 
 	{ patches_parameters_q1 sc_in sc_lv 32 signal 2 } 
 }
@@ -48,11 +48,11 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "index", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "index", "role": "default" }} , 
  	{ "name": "n_patches", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "n_patches", "role": "default" }} , 
- 	{ "name": "patches_parameters_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address0" }} , 
+ 	{ "name": "patches_parameters_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address0" }} , 
  	{ "name": "patches_parameters_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "ce0" }} , 
  	{ "name": "patches_parameters_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "we0" }} , 
  	{ "name": "patches_parameters_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "patches_parameters", "role": "d0" }} , 
- 	{ "name": "patches_parameters_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address1" }} , 
+ 	{ "name": "patches_parameters_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address1" }} , 
  	{ "name": "patches_parameters_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "ce1" }} , 
  	{ "name": "patches_parameters_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "patches_parameters", "role": "q1" }}  ]}
 
@@ -80,7 +80,7 @@ set ArgLastReadFirstWriteLatency {
 	delete_patch_patches_parameters {
 		index {Type I LastRead 0 FirstWrite -1}
 		n_patches {Type I LastRead 0 FirstWrite -1}
-		patches_parameters {Type IO LastRead 4 FirstWrite 6}}}
+		patches_parameters {Type IO LastRead 4 FirstWrite 5}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -97,5 +97,5 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	index { ap_none {  { index in_data 0 8 } } }
 	n_patches { ap_none {  { n_patches in_data 0 8 } } }
-	patches_parameters { ap_memory {  { patches_parameters_address0 mem_address 1 9 }  { patches_parameters_ce0 mem_ce 1 1 }  { patches_parameters_we0 mem_we 1 1 }  { patches_parameters_d0 mem_din 1 32 }  { patches_parameters_address1 MemPortADDR2 1 9 }  { patches_parameters_ce1 MemPortCE2 1 1 }  { patches_parameters_q1 MemPortDOUT2 0 32 } } }
+	patches_parameters { ap_memory {  { patches_parameters_address0 mem_address 1 7 }  { patches_parameters_ce0 mem_ce 1 1 }  { patches_parameters_we0 mem_we 1 1 }  { patches_parameters_d0 mem_din 1 32 }  { patches_parameters_address1 MemPortADDR2 1 7 }  { patches_parameters_ce1 MemPortCE2 1 1 }  { patches_parameters_q1 MemPortDOUT2 0 32 } } }
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'add_patch9'" level="0">
-<item name = "Date">Thu Aug  1 23:30:49 2024
+<item name = "Date">Sat Aug  3 00:45:44 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.125 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 1.902 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">14, 490, 42.000 ns, 1.470 us, 14, 490, none</column>
+<column name="">14, 362, 42.000 ns, 1.086 us, 14, 362, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_add_patch_patches_parameters14_fu_297">add_patch_patches_parameters14, 368, 368, 1.104 us, 1.104 us, 368, 368, none</column>
+<column name="grp_add_patch_patches_parameters13_fu_297">add_patch_patches_parameters13, 240, 240, 0.720 us, 0.720 us, 240, 240, none</column>
 <column name="grp_encodeCoordinates_fu_305">encodeCoordinates, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
 </table>
 </item>

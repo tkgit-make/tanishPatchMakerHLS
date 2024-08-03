@@ -1,7 +1,7 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Thu Aug 01 23:33:10 -0400 2024
+INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Sat Aug 03 00:44:07 -0400 2024
 INFO: [HLS 200-10] In directory 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS'
-Sourcing Tcl script 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/cosim.tcl'
+Sourcing Tcl script 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/csynth.tcl'
 INFO: [HLS 200-1510] Running: open_project PatchMaker_tanishGit 
 INFO: [HLS 200-10] Opening project 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit'.
 INFO: [HLS 200-1510] Running: set_top MPSQ 
@@ -27,262 +27,995 @@ INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e
 INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 INFO: [HLS 200-1510] Running: set_directive_top -name MPSQ MPSQ 
-INFO: [HLS 200-1510] Running: cosim_design 
-INFO: [COSIM 212-47] Using XSIM for RTL simulation.
-INFO: [COSIM 212-14] Instrumenting C test bench ...
-   Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
-   Compiling patchMaker.cpp_pre.cpp.tb.cpp
-   Compiling apatb_MPSQ.cpp
-   Compiling test_bench.cpp_pre.cpp.tb.cpp
-   Compiling apatb_MPSQ_util.cpp
-   Compiling apatb_MPSQ_ir.ll
-   Generating cosim.tv.exe
-INFO: [COSIM 212-302] Starting C TB testing ... 
-0
-INFO: [COSIM 212-333] Generating C post check test bench ...
-INFO: [COSIM 212-12] Generating RTL test bench ...
-INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
-INFO: [COSIM 212-323] Starting verilog simulation. 
-INFO: [COSIM 212-15] Starting XSIM ...
-
-C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\PatchMaker_tanishGit\solutionSC4\sim\verilog>set PATH= 
-
-C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\PatchMaker_tanishGit\solutionSC4\sim\verilog>call C:/Xilinx/Vivado/2020.2/bin/xelab xil_defaultlib.apatb_MPSQ_top glbl -prj MPSQ.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib "ieee_proposed=./ieee_proposed" -s MPSQ  
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_MPSQ_top glbl -prj MPSQ.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s MPSQ 
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/glbl.v" into library work
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/AESL_automem_GDarray.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_GDarray
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/AESL_automem_GDn_points.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_GDn_points
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/AESL_automem_patches_superpointsOUTPUT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_patches_superpointsOUTPUT
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module apatb_MPSQ_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_add_patch9.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_add_patch9
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_add_patch_patches_parameters14.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_add_patch_patches_parameters14
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_areWedgeSuperPointsEqual.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_areWedgeSuperPointsEqual
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_delete_patch.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_delete_patch
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_delete_patch_patches_parameters.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_delete_patch_patches_parameters
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_encodeCoordinates.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_encodeCoordinates
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_GDarrayDecoded_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_GDarrayDecoded_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_GDarrayDecoded_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_getParallelograms.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_getParallelograms
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_getShadows.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_getShadows
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_getSolveNextColumnWhileConditional.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_getSolveNextColumnWhileConditional
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_getSolveNextPatchPairWhileCondition.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_getSolveNextPatchPairWhileCondition
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_get_acceptanceCorners.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_get_acceptanceCorners
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_get_index_from_z.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_get_index_from_z
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_initializeArrays.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_initializeArrays
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine_init_patch_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_init_patch_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_init_patch_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine_NPpatches_parameters_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_NPpatches_parameters_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_NPpatches_parameters_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine11.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine11_radiiDivisionList_1_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_radiiDivisionList_1_4_rom
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_radiiDivisionList_1_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine11_row_list_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_row_list_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_row_list_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine11_trapezoid_edges_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_trapezoid_edges_V_rom
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_trapezoid_edges_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeThirdPatch.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makeThirdPatch
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mul_33ns_33s_64_3_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_mul_33ns_33s_64_3_1_Multiplier_2
-INFO: [VRFC 10-311] analyzing module MPSQ_mul_33ns_33s_64_3_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mul_33s_64s_64_5_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_mul_33s_64s_64_5_1_Multiplier_3
-INFO: [VRFC 10-311] analyzing module MPSQ_mul_33s_64s_64_5_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mul_35ns_33s_64_3_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_mul_35ns_33s_64_3_1_Multiplier_1
-INFO: [VRFC 10-311] analyzing module MPSQ_mul_35ns_33s_64_3_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mul_4s_4s_8_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_mul_4s_4s_8_1_1_Multiplier_0
-INFO: [VRFC 10-311] analyzing module MPSQ_mul_4s_4s_8_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_42_32_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_mux_42_32_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_patches_parameters_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_patches_parameters_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_patches_parameters_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_patches_superpoints_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_patches_superpoints_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_patches_superpoints_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_solveComplmentaryPatch.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_solveComplmentaryPatch
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_solveComplmentaryPatch_current_z_i_index.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_solveComplmentaryPatch_current_z_i_index_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_solveComplmentaryPatch_current_z_i_index
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_solveComplmentaryPatch_new_z_i_index.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_solveComplmentaryPatch_new_z_i_index_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_solveComplmentaryPatch_new_z_i_index
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_solveComplmentaryPatch_new_z_i_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_solveComplmentaryPatch_new_z_i_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_solveComplmentaryPatch_new_z_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_solveNextColumn.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_solveNextColumn
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_solveNextPatchPair.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_solveNextPatchPair
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_straightLineProjectorFromLayerIJtoK.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_straightLineProjectorFromLayerIJtoK
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList_rom
-INFO: [VRFC 10-311] analyzing module MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_wedgePatch_init.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_wedgePatch_init
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module dataflow_monitor
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/df_fifo_interface.sv:4]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/df_fifo_interface.sv:4]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/df_process_interface.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/df_process_interface.sv:4]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/df_process_interface.sv:4]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/nodf_module_interface.sv:4]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/nodf_module_interface.sv:4]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/sample_agent.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/sample_manager.sv" into library xil_defaultlib
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
-Compiling module xil_defaultlib.MPSQ_patches_superpoints_V_ram
-Compiling module xil_defaultlib.MPSQ_patches_superpoints_V(DataW...
-Compiling module xil_defaultlib.MPSQ_patches_parameters_V_ram
-Compiling module xil_defaultlib.MPSQ_patches_parameters_V(DataWi...
-Compiling module xil_defaultlib.MPSQ_GDarrayDecoded_V_ram
-Compiling module xil_defaultlib.MPSQ_GDarrayDecoded_V(DataWidth=...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_ini...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_ini...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_NPp...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_NPp...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_NPp...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_NPp...
-Compiling module xil_defaultlib.MPSQ_straightLineProjectorFromLa...
-Compiling module xil_defaultlib.MPSQ_straightLineProjectorFromLa...
-Compiling module xil_defaultlib.MPSQ_mul_4s_4s_8_1_1_Multiplier_...
-Compiling module xil_defaultlib.MPSQ_mul_4s_4s_8_1_1(ID=1,NUM_ST...
-Compiling module xil_defaultlib.MPSQ_mul_35ns_33s_64_3_1_Multipl...
-Compiling module xil_defaultlib.MPSQ_mul_35ns_33s_64_3_1(ID=1,NU...
-Compiling module xil_defaultlib.MPSQ_straightLineProjectorFromLa...
-Compiling module xil_defaultlib.MPSQ_getParallelograms
-Compiling module xil_defaultlib.MPSQ_get_acceptanceCorners
-Compiling module xil_defaultlib.MPSQ_wedgePatch_init
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_mul_33ns_33s_64_3_1_Multipl...
-Compiling module xil_defaultlib.MPSQ_mul_33ns_33s_64_3_1(ID=1,NU...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_add_patch_patches_parameter...
-Compiling module xil_defaultlib.MPSQ_encodeCoordinates
-Compiling module xil_defaultlib.MPSQ_add_patch9
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine
-Compiling module xil_defaultlib.MPSQ_mux_42_32_1_1(ID=1,din4_WID...
-Compiling module xil_defaultlib.MPSQ_getShadows
-Compiling module xil_defaultlib.MPSQ_delete_patch_patches_parame...
-Compiling module xil_defaultlib.MPSQ_delete_patch
-Compiling module xil_defaultlib.MPSQ_makeThirdPatch
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_curr...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_curr...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
-Compiling module xil_defaultlib.MPSQ_get_index_from_z
-Compiling module xil_defaultlib.MPSQ_areWedgeSuperPointsEqual
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch
-Compiling module xil_defaultlib.MPSQ_getSolveNextPatchPairWhileC...
-Compiling module xil_defaultlib.MPSQ_mul_33s_64s_64_5_1_Multipli...
-Compiling module xil_defaultlib.MPSQ_mul_33s_64s_64_5_1(ID=1,NUM...
-Compiling module xil_defaultlib.MPSQ_solveNextPatchPair
-Compiling module xil_defaultlib.MPSQ_getSolveNextColumnWhileCond...
-Compiling module xil_defaultlib.MPSQ_solveNextColumn
-Compiling module xil_defaultlib.MPSQ_initializeArrays
-Compiling module xil_defaultlib.MPSQ
-Compiling module xil_defaultlib.AESL_automem_GDarray
-Compiling module xil_defaultlib.AESL_automem_GDn_points
-Compiling module xil_defaultlib.AESL_automem_patches_superpoints...
-Compiling module xil_defaultlib.nodf_module_intf
-Compiling module xil_defaultlib.dataflow_monitor_1
-Compiling module xil_defaultlib.apatb_MPSQ_top
-Compiling module work.glbl
-Built simulation snapshot MPSQ
-
-****** Webtalk v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/xsim.dir/MPSQ/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Thu Aug  1 23:34:51 2024...
-
-****** xsim v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source xsim.dir/MPSQ/xsim_script.tcl
-# xsim {MPSQ} -autoloadwcfg -tclbatch {MPSQ.tcl}
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-source MPSQ.tcl
-## run all
-////////////////////////////////////////////////////////////////////////////////////
-// Inter-Transaction Progress: Completed Transaction / Total Transaction
-// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
-//
-// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
-////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [n/a] @ "107000"
-// RTL Simulation : 1 / 1 [n/a] @ "498710000"
-////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 498721500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 508
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:38 . Memory (MB): peak = 923.633 ; gain = 0.000
-## quit
-INFO: [Common 17-206] Exiting xsim at Thu Aug  1 23:35:37 2024...
-INFO: [COSIM 212-316] Starting C post checking ...
-0
-INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 148.001 seconds; current allocated memory: 98.979 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 871.688 MB.
+INFO: [HLS 200-10] Analyzing design file 'patchMaker.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5301] unused parameter 'superpoint_count': patchMaker.cpp:160:145
+WARNING: [HLS 207-5301] unused parameter 'apexZ0I': patchMaker.cpp:160:174
+WARNING: [HLS 207-5301] unused parameter 'repeat_patch': patchMaker.cpp:1166:163
+WARNING: [HLS 207-5301] unused parameter 'repeat_original': patchMaker.cpp:1166:183
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 35.916 seconds; current allocated memory: 94.876 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.1' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:121:40)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.1' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:125:47)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.1' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:124:47)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.1' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:123:47)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.1' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:122:47)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.2' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:127:48)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.2' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:131:47)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.2' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:130:47)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.2' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:129:47)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into '__cxx_global_var_init.2' (C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/patchMakerHeader.h:128:47)
+INFO: [HLS 214-131] Inlining function 'ap_int<64>::ap_int(int)' into 'initializeArrays(ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:612:45)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'initializeArrays(ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:639:54)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<64, true>::RType<64, false>::logic operator&<64, true, 64, false>(ap_int_base<64, true> const&, ap_int_base<64, false> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1348:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<64, true>::RType<64, false>::logic operator&<64, true, 64, false>(ap_int_base<64, true> const&, ap_int_base<64, false> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1348:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, false>(ap_int_base<64, false> const&)' into 'ap_int_base<64, true>::RType<64, false>::logic operator&<64, true, 64, false>(ap_int_base<64, true> const&, ap_int_base<64, false> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1348:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, false>::ap_int_base(unsigned long)' into 'ap_int_base<64, true>::RType<($_0)64, false>::logic operator&<64, true>(ap_int_base<64, true> const&, unsigned long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1464:3264)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<64, false>::logic operator&<64, true, 64, false>(ap_int_base<64, true> const&, ap_int_base<64, false> const&)' into 'ap_int_base<64, true>::RType<($_0)64, false>::logic operator&<64, true>(ap_int_base<64, true> const&, unsigned long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1464:3262)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<65, true>::RType<65, true>::arg1 operator>><65, true>(ap_int_base<65, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1497:650)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<65, true>::RType<32, false>::logic operator&<65, true, 32, false>(ap_int_base<65, true> const&, ap_int_base<32, false> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1348:430)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<65, true>::RType<32, false>::logic operator&<65, true, 32, false>(ap_int_base<65, true> const&, ap_int_base<32, false> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1348:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(unsigned int)' into 'ap_int_base<65, true>::RType<($_0)32, false>::logic operator&<65, true>(ap_int_base<65, true> const&, unsigned int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1462:3229)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<32, false>::logic operator&<65, true, 32, false>(ap_int_base<65, true> const&, ap_int_base<32, false> const&)' into 'ap_int_base<65, true>::RType<($_0)32, false>::logic operator&<65, true>(ap_int_base<65, true> const&, unsigned int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1462:3227)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<($_0)64, false>::logic operator&<64, true>(ap_int_base<64, true> const&, unsigned long)' into 'decodePHIcoordinate(ap_int<64>)' (patchMaker.cpp:1762:44)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<65>(ap_int<65> const&)' into 'decodePHIcoordinate(ap_int<64>)' (patchMaker.cpp:1762:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, false>::logic operator&<65, true>(ap_int_base<65, true> const&, unsigned int)' into 'decodePHIcoordinate(ap_int<64>)' (patchMaker.cpp:1762:71)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<65, true>::arg1 operator>><65, true>(ap_int_base<65, true> const&, int)' into 'decodePHIcoordinate(ap_int<64>)' (patchMaker.cpp:1762:65)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<64, true>::RType<32, false>::logic operator&<64, true, 32, false>(ap_int_base<64, true> const&, ap_int_base<32, false> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1348:430)
+INFO: [HLS 214-131] Inlining function 'ap_int<64>::ap_int<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<64, true>::RType<32, false>::logic operator&<64, true, 32, false>(ap_int_base<64, true> const&, ap_int_base<32, false> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1348:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(unsigned int)' into 'ap_int_base<64, true>::RType<($_0)32, false>::logic operator&<64, true>(ap_int_base<64, true> const&, unsigned int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1462:3229)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<32, false>::logic operator&<64, true, 32, false>(ap_int_base<64, true> const&, ap_int_base<32, false> const&)' into 'ap_int_base<64, true>::RType<($_0)32, false>::logic operator&<64, true>(ap_int_base<64, true> const&, unsigned int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1462:3227)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<($_0)32, false>::logic operator&<64, true>(ap_int_base<64, true> const&, unsigned int)' into 'decodeZcoordinate(ap_int<64>)' (patchMaker.cpp:1768:41)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<64>(ap_int<64> const&)' into 'decodeZcoordinate(ap_int<64>)' (patchMaker.cpp:1768:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::mult operator*<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::mult operator*<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::mult operator*<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<33, true>::RType<($_0)32, true>::mult operator*<33, true>(ap_int_base<33, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<32, true>::mult operator*<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<33, true>::RType<($_0)32, true>::mult operator*<33, true>(ap_int_base<33, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:481)
+INFO: [HLS 214-131] Inlining function 'ap_int<66>::ap_int<66, true>(ap_int_base<66, true> const&)' into 'ap_int_base<65, true>::RType<32, true>::div operator/<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1364:371)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<65, true>::RType<($_0)32, true>::div operator/<65, true>(ap_int_base<65, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:2052)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<32, true>::div operator/<65, true, 32, true>(ap_int_base<65, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<65, true>::RType<($_0)32, true>::div operator/<65, true>(ap_int_base<65, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:2050)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<64, true>::plus operator+<32, true, 64, true>(ap_int_base<32, true> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<32, true>::RType<64, true>::plus operator+<32, true, 64, true>(ap_int_base<32, true> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<32, true>::RType<64, true>::plus operator+<32, true, 64, true>(ap_int_base<32, true> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long long)' into 'ap_int_base<32, true>::RType<($_0)64, true>::plus operator+<32, true>(ap_int_base<32, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1465:1061)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<64, true>::plus operator+<32, true, 64, true>(ap_int_base<32, true> const&, ap_int_base<64, true> const&)' into 'ap_int_base<32, true>::RType<($_0)64, true>::plus operator+<32, true>(ap_int_base<32, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1465:1059)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)' (patchMaker.cpp:241:67)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<65>(ap_int<65> const&)' into 'straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)' (patchMaker.cpp:241:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)64, true>::plus operator+<32, true>(ap_int_base<32, true> const&, long long)' into 'straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)' (patchMaker.cpp:241:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<66, true>::operator long long() const' into 'straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)' (patchMaker.cpp:241:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::RType<($_0)32, true>::div operator/<65, true>(ap_int_base<65, true> const&, int)' into 'straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)' (patchMaker.cpp:241:85)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<($_0)32, true>::mult operator*<33, true>(ap_int_base<33, true> const&, int)' into 'straightLineProjectorFromLayerIJtoK(ap_int<32>, ap_int<32>, int, int, int)' (patchMaker.cpp:241:74)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'getSolveNextColumnWhileConditional(ap_int<32>, int, ap_int<32>)' (patchMaker.cpp:786:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'getSolveNextColumnWhileConditional(ap_int<32>, int, ap_int<32>)' (patchMaker.cpp:786:112)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<64, true>::RType<32, true>::plus operator+<64, true, 32, true>(ap_int_base<64, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<64, true>::RType<32, true>::plus operator+<64, true, 32, true>(ap_int_base<64, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<64, true>::RType<32, true>::plus operator+<64, true, 32, true>(ap_int_base<64, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long long)' into 'ap_int_base<32, true>::RType<($_0)64, true>::plus operator+<32, true>(long long, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1465:779)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<32, true>::plus operator+<64, true, 32, true>(ap_int_base<64, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<($_0)64, true>::plus operator+<32, true>(long long, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1465:822)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<64, true>::minus operator-<32, true, 64, true>(ap_int_base<32, true> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<32, true>::RType<64, true>::minus operator-<32, true, 64, true>(ap_int_base<32, true> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<32, true>::RType<64, true>::minus operator-<32, true, 64, true>(ap_int_base<32, true> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long long)' into 'ap_int_base<32, true>::RType<($_0)64, true>::minus operator-<32, true>(ap_int_base<32, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1465:1616)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<64, true>::minus operator-<32, true, 64, true>(ap_int_base<32, true> const&, ap_int_base<64, true> const&)' into 'ap_int_base<32, true>::RType<($_0)64, true>::minus operator-<32, true>(ap_int_base<32, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1465:1614)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)64, true>::minus operator-<32, true>(ap_int_base<32, true> const&, long long)' into 'mSP_findStartIndex(ap_int<32>*, int, long long, int&, long long&)' (patchMaker.cpp:1750:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::operator long long() const' into 'mSP_findStartIndex(ap_int<32>*, int, long long, int&, long long&)' (patchMaker.cpp:1750:26)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1346:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'mSP_findLRBounds(int, ap_int<32>*, int, int&, int&)' (patchMaker.cpp:1724:65)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'mSP_findLRBounds(int, ap_int<32>*, int, int&, int&)' (patchMaker.cpp:1724:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'mSP_findLRBounds(int, ap_int<32>*, int, int&, int&)' (patchMaker.cpp:1725:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'mSP_findLRBounds(int, ap_int<32>*, int, int&, int&)' (patchMaker.cpp:1725:65)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeSuperPoint_alignedToLine(int, ap_int<32>, ap_int<32>, bool, int&, int, bool, long long, ap_int<32> (&) [5][16][2], ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:1555:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::operator long long() const' into 'makeSuperPoint_alignedToLine(int, ap_int<32>, ap_int<32>, bool, int&, int, bool, long long, ap_int<32> (&) [5][16][2], ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:1642:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)64, true>::minus operator-<32, true>(ap_int_base<32, true> const&, long long)' into 'makeSuperPoint_alignedToLine(int, ap_int<32>, ap_int<32>, bool, int&, int, bool, long long, ap_int<32> (&) [5][16][2], ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:1642:53)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'makeSuperPoint_alignedToLine(int, ap_int<32>, ap_int<32>, bool, int&, int, bool, long long, ap_int<32> (&) [5][16][2], ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:1555:54)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)64, true>::plus operator+<32, true>(long long, ap_int_base<32, true> const&)' into 'makeSuperPoint_alignedToLine(int, ap_int<32>, ap_int<32>, bool, int&, int, bool, long long, ap_int<32> (&) [5][16][2], ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:1555:109)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::operator long long() const' into 'makeSuperPoint_alignedToLine(int, ap_int<32>, ap_int<32>, bool, int&, int, bool, long long, ap_int<32> (&) [5][16][2], ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:1555:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<($_0)32, true>::plus operator+<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<($_0)32, true>::plus operator+<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:1004)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:43:49)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:154:28)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:152:29)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:147:28)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:145:29)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:141:28)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:140:28)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:138:19)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:136:28)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:135:28)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:133:19)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:131:28)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:130:28)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:128:19)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:126:28)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:125:28)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:123:19)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:106:32)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:102:32)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:98:32)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:94:32)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:83:27)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:82:27)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:81:27)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(bool)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:80:30)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:44:57)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:48:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)32, true>::plus operator+<32, true>(ap_int_base<32, true> const&, int)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:50:37)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'getParallelogramsAndAcceptanceCorners(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2])' (patchMaker.cpp:50:18)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'wedgePatch_init(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2], ap_int<32> (*) [16][2], long long, ap_int<32>)' (patchMaker.cpp:165:27)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'wedgePatch_init(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2], ap_int<32> (*) [16][2], long long, ap_int<32>)' (patchMaker.cpp:166:30)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'wedgePatch_init(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2], ap_int<32> (*) [16][2], long long, ap_int<32>)' (patchMaker.cpp:168:30)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'wedgePatch_init(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2], ap_int<32> (*) [16][2], long long, ap_int<32>)' (patchMaker.cpp:167:30)
+INFO: [HLS 214-131] Inlining function 'ap_int<64>::ap_int<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<64, true>::RType<64, true>::arg1 operator<<<64, true>(ap_int_base<64, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1497:323)
+INFO: [HLS 214-131] Inlining function 'ap_int<64>::ap_int<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<64, true>::RType<64, true>::logic operator|<64, true, 64, true>(ap_int_base<64, true> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1349:555)
+INFO: [HLS 214-131] Inlining function 'ap_int<64>::ap_int<32>(ap_int<32> const&)' into 'encodeCoordinates(ap_int<32>, ap_int<32>)' (patchMaker.cpp:310:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<64, true>::logic operator|<64, true, 64, true>(ap_int_base<64, true> const&, ap_int_base<64, true> const&)' into 'encodeCoordinates(ap_int<32>, ap_int<32>)' (patchMaker.cpp:310:43)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<($_0)32, false>::logic operator&<64, true>(ap_int_base<64, true> const&, unsigned int)' into 'encodeCoordinates(ap_int<32>, ap_int<32>)' (patchMaker.cpp:310:71)
+INFO: [HLS 214-131] Inlining function 'ap_int<64>::ap_int<32>(ap_int<32> const&)' into 'encodeCoordinates(ap_int<32>, ap_int<32>)' (patchMaker.cpp:310:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::RType<64, true>::arg1 operator<<<64, true>(ap_int_base<64, true> const&, int)' into 'encodeCoordinates(ap_int<32>, ap_int<32>)' (patchMaker.cpp:310:37)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(ap_int<64>)' into 'add_patch(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2], unsigned char&, ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:406:18)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'add_patch(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2], unsigned char&, ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:406:78)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(ap_int<64>)' into 'add_patch(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2], unsigned char&, ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:407:18)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'add_patch(ap_int<32> (&) [5][16][2], ap_int<32> (&) [3][4][2], unsigned char&, ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:407:83)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'makePatch_alignedToLine(ap_int<32>, ap_int<32>, int&, bool, bool, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1448:27)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'makePatch_alignedToLine(ap_int<32>, ap_int<32>, int&, bool, bool, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1491:50)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'makePatch_alignedToLine(ap_int<32>, ap_int<32>, int&, bool, bool, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1521:37)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<64, true>::operator==<64, true>(ap_int_base<64, true> const&) const' into 'areWedgeSuperPointsEqual(ap_int<64>*, ap_int<64>*)' (patchMaker.cpp:37:18)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<64, true>::operator==<64, true>(ap_int_base<64, true> const&) const' into 'areWedgeSuperPointsEqual(ap_int<64>*, ap_int<64>*)' (patchMaker.cpp:37:47)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'getSolveNextPatchPairWhileCondition(bool, bool, long long, long long, int, int (&) [5], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:972:47)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'get_index_from_z(int, ap_int<32>, ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:581:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'get_index_from_z(int, ap_int<32>, ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:581:49)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'delete_patch_patches_parameters(int, int, ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:494:42)
+INFO: [HLS 214-131] Inlining function 'ap_int<64>::ap_int(int)' into 'delete_patch(int, unsigned char&, ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:551:47)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1203:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1275:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1275:100)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1277:71)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1364:26)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1364:138)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1364:105)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, true>::operator<<33, true>(ap_int_base<33, true> const&) const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1364:58)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1364:72)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1364:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1277:112)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1295:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1310:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1310:41)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1295:34)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1305:34)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1305:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1300:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1300:34)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getShadows(ap_int<64> (&) [5][16], ap_int<32> (&) [3][4][2], ap_int<32>, ap_int<32>)' (patchMaker.cpp:258:31)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getShadows(ap_int<64> (&) [5][16], ap_int<32> (&) [3][4][2], ap_int<32>, ap_int<32>)' (patchMaker.cpp:300:24)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'getShadows(ap_int<64> (&) [5][16], ap_int<32> (&) [3][4][2], ap_int<32>, ap_int<32>)' (patchMaker.cpp:296:24)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getShadows(ap_int<64> (&) [5][16], ap_int<32> (&) [3][4][2], ap_int<32>, ap_int<32>)' (patchMaker.cpp:292:24)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'getShadows(ap_int<64> (&) [5][16], ap_int<32> (&) [3][4][2], ap_int<32>, ap_int<32>)' (patchMaker.cpp:288:24)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'getShadows(ap_int<64> (&) [5][16], ap_int<32> (&) [3][4][2], ap_int<32>, ap_int<32>)' (patchMaker.cpp:259:31)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(ap_int<64>)' into 'getShadows(ap_int<64> (&) [5][16], ap_int<32> (&) [3][4][2], ap_int<32>, ap_int<32>)' (patchMaker.cpp:270:30)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(ap_int<64>)' into 'getShadows(ap_int<64> (&) [5][16], ap_int<32> (&) [3][4][2], ap_int<32>, ap_int<32>)' (patchMaker.cpp:271:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long long)' into 'bool operator<<33, true>(ap_int_base<33, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1620:748)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, true>::operator<<64, true>(ap_int_base<64, true> const&) const' into 'bool operator<<33, true>(ap_int_base<33, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1620:746)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long long)' into 'bool operator><33, true>(ap_int_base<33, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1620:352)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, true>::operator><64, true>(ap_int_base<64, true> const&) const' into 'bool operator><33, true>(ap_int_base<33, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1620:350)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:711)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator><32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:337)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'bool operator><32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:335)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long long)' into 'bool operator><32, true>(ap_int_base<32, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1620:352)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><64, true>(ap_int_base<64, true> const&) const' into 'bool operator><32, true>(ap_int_base<32, true> const&, long long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1620:350)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<=<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:1473)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<=<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:1470)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1009:49)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1009:94)
+INFO: [HLS 214-131] Inlining function 'bool operator><32, true>(ap_int_base<32, true> const&, int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1154:83)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1010:59)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1154:50)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1128:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1128:198)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1128:153)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, true>::operator<<33, true>(ap_int_base<33, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1128:83)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1128:108)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1128:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1127:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1127:195)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1127:150)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, true>::operator<<33, true>(ap_int_base<33, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1127:80)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1127:105)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1127:60)
+INFO: [HLS 214-131] Inlining function 'bool operator<<32, true>(ap_int_base<32, true> const&, int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1125:104)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1014:52)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1123:33)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1123:50)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1122:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1122:47)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1014:98)
+INFO: [HLS 214-131] Inlining function 'bool operator<<33, true>(ap_int_base<33, true> const&, long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1014:108)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1103:33)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1015:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1093:30)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1093:52)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1089:30)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1089:52)
+INFO: [HLS 214-131] Inlining function 'bool operator<=<32, true>(ap_int_base<32, true> const&, int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1079:329)
+INFO: [HLS 214-131] Inlining function 'bool operator<=<32, true>(ap_int_base<32, true> const&, int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1079:295)
+INFO: [HLS 214-131] Inlining function 'bool operator><32, true>(ap_int_base<32, true> const&, long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1079:153)
+INFO: [HLS 214-131] Inlining function 'bool operator><32, true>(ap_int_base<32, true> const&, long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1079:34)
+INFO: [HLS 214-131] Inlining function 'bool operator><32, true>(ap_int_base<32, true> const&, int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1066:94)
+INFO: [HLS 214-131] Inlining function 'bool operator><32, true>(ap_int_base<32, true> const&, long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1066:28)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1062:25)
+INFO: [HLS 214-131] Inlining function 'bool operator><32, true>(ap_int_base<32, true> const&, int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1059:34)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1056:25)
+INFO: [HLS 214-131] Inlining function 'bool operator<<32, true>(ap_int_base<32, true> const&, int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1053:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1019:60)
+INFO: [HLS 214-131] Inlining function 'bool operator><33, true>(ap_int_base<33, true> const&, long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1019:84)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1047:26)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1044:29)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1039:31)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1038:28)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1036:42)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1036:201)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1036:156)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, true>::operator<<33, true>(ap_int_base<33, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1036:86)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1036:111)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1036:66)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1035:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1035:198)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1035:153)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, true>::operator<<33, true>(ap_int_base<33, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1035:83)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1035:108)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1035:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1028:40)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1028:57)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int<33>(ap_int<33> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1027:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1027:54)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1019:153)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1025:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1020:63)
+INFO: [HLS 214-131] Inlining function 'bool operator<<33, true>(ap_int_base<33, true> const&, long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1024:123)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1024:113)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1024:62)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:877:67)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:877:115)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:877:131)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:878:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:878:83)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:926:41)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:921:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:921:150)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:921:117)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, true>::operator<<33, true>(ap_int_base<33, true> const&) const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:921:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:921:84)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::minus operator-<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:921:51)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:880:28)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:901:215)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(ap_int<64>)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:901:146)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:901:74)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(ap_int<64>)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:901:77)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:901:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:892:13)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(ap_int<64>)' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:891:32)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:889:121)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'solveNextPatchPair(ap_int<32>, int, bool, ap_int<32>&, int&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, ap_int<32>&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:889:61)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextColumn(ap_int<32>, int, bool, ap_int<32>, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:736:25)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextColumn(ap_int<32>, int, bool, ap_int<32>, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:738:39)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextColumn(ap_int<32>, int, bool, ap_int<32>, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:740:27)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextColumn(ap_int<32>, int, bool, ap_int<32>, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:751:43)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextColumn(ap_int<32>, int, bool, ap_int<32>, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:742:28)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextColumn(ap_int<32>, int, bool, ap_int<32>, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:746:189)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'solveNextColumn(ap_int<32>, int, bool, ap_int<32>, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:746:34)
+INFO: [HLS 214-131] Inlining function 'ap_int<32>::ap_int(int)' into 'solveNextColumn(ap_int<32>, int, bool, ap_int<32>, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:746:73)
+INFO: [HLS 214-131] Inlining function 'decodePHIcoordinate(ap_int<64>)' into 'MPSQ(int, unsigned char&, ap_int<64> (&) [5][256], int (&) [5], ap_int<64> (&) [32][5][16])' (patchMaker.cpp:691:39)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(ap_int<64>)' into 'MPSQ(int, unsigned char&, ap_int<64> (&) [5][256], int (&) [5], ap_int<64> (&) [32][5][16])' (patchMaker.cpp:692:39)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const' into 'MPSQ(int, unsigned char&, ap_int<64> (&) [5][256], int (&) [5], ap_int<64> (&) [32][5][16])' (patchMaker.cpp:702:19)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'mSP_findStartIndex(ap_int<32>*, int, long long, int&, long long&)' (patchMaker.cpp:1742:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'mSP_findLRBounds(int, ap_int<32>*, int, int&, int&)' (patchMaker.cpp:1714:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'getSolveNextPatchPairWhileCondition(bool, bool, long long, long long, int, int (&) [5], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:964:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'get_index_from_z(int, ap_int<32>, ap_int<32> (&) [5][256][2], int (&) [5])' (patchMaker.cpp:571:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'solveComplmentaryPatch(long long&, int, bool, int, ap_int<32>&, ap_int<32>, long long&, unsigned char&, ap_int<32>, ap_int<32>, ap_int<32>&, ap_int<32>&, int&, int&, int&, ap_int<32>&, bool&, bool&, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:1167:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'makeThirdPatch(unsigned char, ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>, int, unsigned char&, ap_int<32> (&) [5][256][2], int (&) [5], ap_int<64> (&) [32][5][16], ap_int<32> (&) [3][3][4][2])' (patchMaker.cpp:988:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_ints' into 'MPSQ(int, unsigned char&, ap_int<64> (&) [5][256], int (&) [5], ap_int<64> (&) [32][5][16])'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_int.0s' into 'MPSQ(int, unsigned char&, ap_int<64> (&) [5][256], int (&) [5], ap_int<64> (&) [32][5][16])' (patchMaker.cpp:726:40)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 21.908 seconds; current allocated memory: 103.491 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 103.492 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.431 seconds; current allocated memory: 111.257 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.368 seconds; current allocated memory: 117.974 MB.
+INFO: [XFORM 203-510] Pipelining loop 'mSP_findStartIndex_startValue' (patchMaker.cpp:1748) in function 'mSP_findStartIndex' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'mSP_findLRBounds_LRdiscovery' (patchMaker.cpp:1718) in function 'mSP_findLRBounds' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:465) in function 'delete_patch_patches_parameters' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:489) in function 'delete_patch_patches_parameters' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'makeSuperPoint_alignedToLine_rowListSet_loop' (patchMaker.cpp:1547) in function 'makeSuperPoint_alignedToLine' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1701) in function 'makeSuperPoint_alignedToLine' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'wedgePatch_init_perParameter' (patchMaker.cpp:177) in function 'wedgePatch_init' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'add_patch_perPointSP0' (patchMaker.cpp:382) in function 'add_patch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'add_patch_checkDiff' (patchMaker.cpp:404) in function 'add_patch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'add_patch_perPointSP1' (patchMaker.cpp:426) in function 'add_patch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'delete_patch_perPointSP' (patchMaker.cpp:524) in function 'delete_patch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'delete_patch_perPointSPLP' (patchMaker.cpp:546) in function 'delete_patch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'getIndexFromZ_perPoint' (patchMaker.cpp:575) in function 'get_index_from_z' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1443) in function 'makePatch_alignedToLine' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'makePatch_alignedToLine_initSP_perParameter' (patchMaker.cpp:1486) in function 'makePatch_alignedToLine' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1516) in function 'makePatch_alignedToLine' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index0' (patchMaker.cpp:1207) in function 'solveComplmentaryPatch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index1' (patchMaker.cpp:1220) in function 'solveComplmentaryPatch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index2' (patchMaker.cpp:1230) in function 'solveComplmentaryPatch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index3' (patchMaker.cpp:1239) in function 'solveComplmentaryPatch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index5' (patchMaker.cpp:1252) in function 'solveComplmentaryPatch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_atTop' (patchMaker.cpp:1260) in function 'solveComplmentaryPatch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'solveComplmentaryPatch_findlayerWithSmallestShift' (patchMaker.cpp:1269) in function 'solveComplmentaryPatch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'solveComplmentaryPatch_superpointEqualCheck_2' (patchMaker.cpp:1390) in function 'solveComplmentaryPatch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'initArraysSPloop3' (patchMaker.cpp:607) in function 'initializeArrays' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'initArraysPPloop4' (patchMaker.cpp:634) in function 'initializeArrays' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'initGDarrayDecoded_perPoint' (patchMaker.cpp:686) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'finalSPOutputInit_perPoint' (patchMaker.cpp:724) in function 'MPSQ' automatically.
+INFO: [XFORM 203-102] Partitioning array 'parallelogramsList.V' (patchMaker.cpp:46) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'radiiDivisionList' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'new_z_i_atTop.V' (patchMaker.cpp:1257) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'parallelogramsList.V.0' (patchMaker.cpp:46) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'parallelogramsList.V.1' (patchMaker.cpp:46) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'parallelogramsList.V.2' (patchMaker.cpp:46) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'parallelogramsList.V.3' (patchMaker.cpp:46) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'parallelogramsList.V.4' (patchMaker.cpp:46) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'parallelogramsList.V.5' (patchMaker.cpp:46) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'topL_jL.V' (patchMaker.cpp:262) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'topL_jR.V' (patchMaker.cpp:263) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'topR_jL.V' (patchMaker.cpp:264) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'topR_jR.V' (patchMaker.cpp:265) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'new_z_i_atTop.V' (patchMaker.cpp:1257) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'parallelogramsList.V.0' (patchMaker.cpp:46) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'parallelogramsList.V.1' (patchMaker.cpp:46) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'parallelogramsList.V.2' (patchMaker.cpp:46) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'parallelogramsList.V.3' (patchMaker.cpp:46) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'parallelogramsList.V.4' (patchMaker.cpp:46) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'parallelogramsList.V.5' (patchMaker.cpp:46) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topL_jL.V' (patchMaker.cpp:262) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topL_jR.V' (patchMaker.cpp:263) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topR_jL.V' (patchMaker.cpp:264) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topR_jR.V' (patchMaker.cpp:265) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:846:10) to (patchMaker.cpp:889:26) in function 'solveNextPatchPair'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:891:50) to (patchMaker.cpp:929:9) in function 'solveNextPatchPair'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:1282:28) to (patchMaker.cpp:1327:9) in function 'solveComplmentaryPatch'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:1695:5) in function 'makeSuperPoint_alignedToLine'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:976:2) in function 'getSolveNextPatchPairWhileCondition'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:286:18) to (patchMaker.cpp:288:13) in function 'getShadows'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:37:2) in function 'areWedgeSuperPointsEqual'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 7.773 seconds; current allocated memory: 146.707 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'wedgePatch_init_perPoint' (patchMaker.cpp:174:21) in function 'wedgePatch_init'.
+INFO: [XFORM 203-541] Flattening a loop nest 'wedgePatch_init_perSuperpoint' (patchMaker.cpp:170:18) in function 'wedgePatch_init'.
+INFO: [XFORM 203-541] Flattening a loop nest 'makeSuperPoint_alignedToLine_initSP_perPoint' (patchMaker.cpp:1695:13) in function 'makeSuperPoint_alignedToLine'.
+INFO: [XFORM 203-541] Flattening a loop nest 'makePatch_alignedToLine_initPatch_perPoint' (patchMaker.cpp:1437:15) in function 'makePatch_alignedToLine'.
+INFO: [XFORM 203-541] Flattening a loop nest 'makePatch_alignedToLine_initPatch_perLayer' (patchMaker.cpp:1431:17) in function 'makePatch_alignedToLine'.
+INFO: [XFORM 203-541] Flattening a loop nest 'makePatch_alignedToLine_initSP_perPoint' (patchMaker.cpp:1480:15) in function 'makePatch_alignedToLine'.
+INFO: [XFORM 203-541] Flattening a loop nest 'makePatch_alignedToLine_initSP_perSuperpoint' (patchMaker.cpp:1474:17) in function 'makePatch_alignedToLine'.
+INFO: [XFORM 203-541] Flattening a loop nest 'makePatch_alignedToLine_initPP_perParallelogram' (patchMaker.cpp:1510:15) in function 'makePatch_alignedToLine'.
+INFO: [XFORM 203-541] Flattening a loop nest 'makePatch_alignedToLine_initPP_perPropertyType' (patchMaker.cpp:1504:17) in function 'makePatch_alignedToLine'.
+INFO: [XFORM 203-541] Flattening a loop nest 'initArraysSPloop2' (patchMaker.cpp:601:21) in function 'initializeArrays'.
+INFO: [XFORM 203-541] Flattening a loop nest 'initArraysSPloop1' (patchMaker.cpp:597:17) in function 'initializeArrays'.
+INFO: [XFORM 203-541] Flattening a loop nest 'initArraysPPloop3' (patchMaker.cpp:628:25) in function 'initializeArrays'.
+INFO: [XFORM 203-541] Flattening a loop nest 'initArraysPPloop2' (patchMaker.cpp:622:21) in function 'initializeArrays'.
+INFO: [XFORM 203-541] Flattening a loop nest 'initArraysPPloop1' (patchMaker.cpp:618:17) in function 'initializeArrays'.
+INFO: [XFORM 203-541] Flattening a loop nest 'delete_patch_perParallelogramPP0' (patchMaker.cpp:459:16) in function 'delete_patch_patches_parameters'.
+INFO: [XFORM 203-541] Flattening a loop nest 'delete_patch_perPropertyTypePP0' (patchMaker.cpp:453:15) in function 'delete_patch_patches_parameters'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_450_1' (patchMaker.cpp:450:33) in function 'delete_patch_patches_parameters'.
+INFO: [XFORM 203-541] Flattening a loop nest 'delete_patch_perParallelogramPP1' (patchMaker.cpp:483:15) in function 'delete_patch_patches_parameters'.
+INFO: [XFORM 203-541] Flattening a loop nest 'delete_patch_perPropertyTypePP1' (patchMaker.cpp:477:14) in function 'delete_patch_patches_parameters'.
+INFO: [XFORM 203-541] Flattening a loop nest 'delete_patch_perSuperpointSP' (patchMaker.cpp:518:21) in function 'delete_patch'.
+INFO: [XFORM 203-541] Flattening a loop nest 'delete_patch_perPatch' (patchMaker.cpp:512:18) in function 'delete_patch'.
+INFO: [XFORM 203-541] Flattening a loop nest 'delete_patch_perSuperpointSPLP' (patchMaker.cpp:540:14) in function 'delete_patch'.
+INFO: [XFORM 203-541] Flattening a loop nest 'add_patch_perSuperpointSP0' (patchMaker.cpp:376:21) in function 'add_patch'.
+INFO: [XFORM 203-541] Flattening a loop nest 'add_patch_perSuperpointSP1' (patchMaker.cpp:420:29) in function 'add_patch'.
+INFO: [XFORM 203-541] Flattening a loop nest 'initGDarrayDecoded_perLayer' (patchMaker.cpp:680:17) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutputInit_perSuperpoint' (patchMaker.cpp:721:15) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutputInit_perPatch' (patchMaker.cpp:718:14) in function 'MPSQ'.
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:165:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:166:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:167:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:168:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_superpoints' (patchMaker.cpp:179:41)
+INFO: [HLS 200-472] Inferring partial write operation for 'current_z_i_index' (patchMaker.cpp:1200:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'new_z_i_index' (patchMaker.cpp:1209:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'new_z_i_index' (patchMaker.cpp:1222:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'new_z_i_index' (patchMaker.cpp:1232:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'new_z_i_index' (patchMaker.cpp:1241:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'new_z_i.V' (patchMaker.cpp:1254:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'row_list.V' (patchMaker.cpp:1552:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'init_patch' (patchMaker.cpp:1706:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'init_patch.V' (patchMaker.cpp:1448:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'NPpatches_superpoints.V' (patchMaker.cpp:1491:48)
+INFO: [HLS 200-472] Inferring partial write operation for 'NPpatches_parameters.V' (patchMaker.cpp:1521:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_superpoints' (patchMaker.cpp:612:43)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_parameters' (patchMaker.cpp:639:52)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:279:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:280:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:281:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:282:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:290:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:294:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:298:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:302:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:80:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:81:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:82:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:83:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:113:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:114:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:115:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:116:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:117:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:118:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:119:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:120:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:125:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:126:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:130:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:131:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:135:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:136:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:140:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:141:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:147:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:148:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:149:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:154:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:155:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'wp_parameters' (patchMaker.cpp:156:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_parameters' (patchMaker.cpp:470:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_parameters' (patchMaker.cpp:494:40)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_superpoints' (patchMaker.cpp:529:46)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_superpoints' (patchMaker.cpp:551:45)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_parameters' (patchMaker.cpp:339:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_parameters' (patchMaker.cpp:363:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_superpoints' (patchMaker.cpp:387:46)
+INFO: [HLS 200-472] Inferring partial write operation for 'patches_superpoints' (patchMaker.cpp:431:62)
+INFO: [HLS 200-472] Inferring partial write operation for 'GDarrayDecoded.V' (patchMaker.cpp:691:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'GDarrayDecoded.V' (patchMaker.cpp:692:37)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 8.887 seconds; current allocated memory: 364.688 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MPSQ' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'initializeArrays' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'initArraysSPloop1_initArraysSPloop2_initArraysSPloop3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'initArraysSPloop1_initArraysSPloop2_initArraysSPloop3'
+INFO: [SCHED 204-61] Pipelining loop 'initArraysPPloop1_initArraysPPloop3_initArraysPPloop4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'initArraysPPloop1_initArraysPPloop3_initArraysPPloop4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.566 seconds; current allocated memory: 365.413 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.587 seconds; current allocated memory: 365.827 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'straightLineProjectorFromLayerIJtoK' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'straightLineProjectorFromLayerIJtoK'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 45, function 'straightLineProjectorFromLayerIJtoK'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.955 seconds; current allocated memory: 365.986 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.508 seconds; current allocated memory: 366.131 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getSolveNextColumnWhileConditional' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.383 seconds; current allocated memory: 366.183 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.205 seconds; current allocated memory: 366.262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mSP_findStartIndex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'mSP_findStartIndex_startValue'.
+WARNING: [HLS 200-880] The II Violation in module 'mSP_findStartIndex' (loop 'mSP_findStartIndex_startValue'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'icmp' operation ('icmp_ln1751', patchMaker.cpp:1751) and 'sub' operation ('sub_ln180_7', C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib:180).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 4, loop 'mSP_findStartIndex_startValue'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.493 seconds; current allocated memory: 366.421 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.299 seconds; current allocated memory: 366.581 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mSP_findLRBounds' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'mSP_findLRBounds_LRdiscovery'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'mSP_findLRBounds_LRdiscovery'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.527 seconds; current allocated memory: 366.722 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.506 seconds; current allocated memory: 366.896 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makeSuperPoint_alignedToLine11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'makeSuperPoint_alignedToLine_rowListSet_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'makeSuperPoint_alignedToLine_rowListSet_loop'
+INFO: [SCHED 204-61] Pipelining loop 'makeSuperPoint_alignedToLine_initSP_perPoint_makeSuperPoint_alignedToLine_initSP_perParameter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'makeSuperPoint_alignedToLine_initSP_perPoint_makeSuperPoint_alignedToLine_initSP_perParameter'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.733 seconds; current allocated memory: 367.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.563 seconds; current allocated memory: 367.693 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getParallelogramsAndAcceptanceCorners' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.026 seconds; current allocated memory: 368.443 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.064 seconds; current allocated memory: 369.569 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wedgePatch_init' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.919 seconds; current allocated memory: 369.744 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.604 seconds; current allocated memory: 369.986 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'encodeCoordinates' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'encodeCoordinates'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'encodeCoordinates'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.55 seconds; current allocated memory: 370.022 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.5 seconds; current allocated memory: 370.060 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'add_patch_patches_parameters13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.357 seconds; current allocated memory: 370.329 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.358 seconds; current allocated memory: 370.619 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'add_patch9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'add_patch_checkDiff'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln874')) in the first pipeline iteration (II = 1 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln874')) in the first pipeline iteration (II = 2 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln874')) in the first pipeline iteration (II = 3 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln874_4')) in the first pipeline iteration (II = 4 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln874_4')) in the first pipeline iteration (II = 5 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 6, loop 'add_patch_checkDiff'
+INFO: [SCHED 204-61] Pipelining loop 'add_patch_perSuperpointSP1_add_patch_perPointSP1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'add_patch_perSuperpointSP1_add_patch_perPointSP1'
+INFO: [SCHED 204-61] Pipelining loop 'add_patch_perSuperpointSP0_add_patch_perPointSP0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'add_patch_perSuperpointSP0_add_patch_perPointSP0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.186 seconds; current allocated memory: 371.061 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.611 seconds; current allocated memory: 371.523 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makePatch_alignedToLine' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter'
+INFO: [SCHED 204-61] Pipelining loop 'makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter'
+INFO: [SCHED 204-61] Pipelining loop 'makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.177 seconds; current allocated memory: 371.934 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.201 seconds; current allocated memory: 372.449 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'areWedgeSuperPointsEqual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'areWedgeSuperPointsEqual'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('wsp2_load_3') on array 'wsp2' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'wsp2'.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 5, function 'areWedgeSuperPointsEqual'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.42 seconds; current allocated memory: 372.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.333 seconds; current allocated memory: 372.728 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getSolveNextPatchPairWhileCondition' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.514 seconds; current allocated memory: 372.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.407 seconds; current allocated memory: 372.951 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'get_index_from_z' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'getIndexFromZ_perPoint'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'getIndexFromZ_perPoint'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.589 seconds; current allocated memory: 373.097 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 373.279 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'delete_patch_patches_parameters' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_450_1_delete_patch_perParallelogramPP0_delete_patch_perPropertyLengthPP0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_450_1_delete_patch_perParallelogramPP0_delete_patch_perPropertyLengthPP0'
+INFO: [SCHED 204-61] Pipelining loop 'delete_patch_perPropertyTypePP1_delete_patch_perParallelogramPP1_delete_patch_perPropertyLengthPP1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'delete_patch_perPropertyTypePP1_delete_patch_perParallelogramPP1_delete_patch_perPropertyLengthPP1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.552 seconds; current allocated memory: 373.662 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.467 seconds; current allocated memory: 374.122 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'delete_patch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'delete_patch_perPatch_delete_patch_perSuperpointSP_delete_patch_perPointSP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'delete_patch_perPatch_delete_patch_perSuperpointSP_delete_patch_perPointSP'
+INFO: [SCHED 204-61] Pipelining loop 'delete_patch_perSuperpointSPLP_delete_patch_perPointSPLP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'delete_patch_perSuperpointSPLP_delete_patch_perPointSPLP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.154 seconds; current allocated memory: 374.412 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.585 seconds; current allocated memory: 374.783 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'solveComplmentaryPatch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'solveComplmentaryPatch_fillNew_z_i_index0'
+INFO: [SCHED 204-61] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'solveComplmentaryPatch_fillNew_z_i_index2'
+INFO: [SCHED 204-61] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'solveComplmentaryPatch_fillNew_z_i_index1'
+INFO: [SCHED 204-61] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'solveComplmentaryPatch_fillNew_z_i_index3'
+INFO: [SCHED 204-61] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_index5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'solveComplmentaryPatch_fillNew_z_i_index5'
+INFO: [SCHED 204-61] Pipelining loop 'solveComplmentaryPatch_fillNew_z_i_atTop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 47, loop 'solveComplmentaryPatch_fillNew_z_i_atTop'
+INFO: [SCHED 204-61] Pipelining loop 'solveComplmentaryPatch_findlayerWithSmallestShift'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'solveComplmentaryPatch_findlayerWithSmallestShift'
+INFO: [SCHED 204-61] Pipelining loop 'solveComplmentaryPatch_superpointEqualCheck_2'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('call' operation ('tmp_1', patchMaker.cpp:1392) to 'areWedgeSuperPointsEqual') in the first pipeline iteration (II = 2 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-875] II = 3 is infeasible due to multiple pipeline iteration latency = 5 and incompatible II = 2 of 'call' operation ('tmp_1', patchMaker.cpp:1392) to 'areWedgeSuperPointsEqual'.
+Resolution: For help on HLS 200-875 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-875.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('call' operation ('tmp_1', patchMaker.cpp:1392) to 'areWedgeSuperPointsEqual') in the first pipeline iteration (II = 4 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('call' operation ('tmp_1', patchMaker.cpp:1392) to 'areWedgeSuperPointsEqual') in the first pipeline iteration (II = 5 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-878.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 6, loop 'solveComplmentaryPatch_superpointEqualCheck_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.351 seconds; current allocated memory: 375.849 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.688 seconds; current allocated memory: 377.324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getShadows' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.442 seconds; current allocated memory: 378.060 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.444 seconds; current allocated memory: 379.124 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makeThirdPatch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.667 seconds; current allocated memory: 380.343 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.348 seconds; current allocated memory: 382.665 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'solveNextPatchPair' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.4 seconds; current allocated memory: 383.218 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 5.434 seconds; current allocated memory: 384.079 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'solveNextColumn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.105 seconds; current allocated memory: 384.275 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.444 seconds; current allocated memory: 384.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MPSQ' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint'
+INFO: [SCHED 204-61] Pipelining loop 'finalSPOutputInit_perPatch_finalSPOutputInit_perSuperpoint_finalSPOutputInit_perPoint'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'finalSPOutputInit_perPatch_finalSPOutputInit_perSuperpoint_finalSPOutputInit_perPoint'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.136 seconds; current allocated memory: 384.940 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.464 seconds; current allocated memory: 385.362 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'initializeArrays' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'initializeArrays'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 4.246 seconds; current allocated memory: 386.111 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'straightLineProjectorFromLayerIJtoK' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_33s_4s_37_3_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_37ns_4s_32_41_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'straightLineProjectorFromLayerIJtoK'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.582 seconds; current allocated memory: 387.984 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getSolveNextColumnWhileConditional' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getSolveNextColumnWhileConditional'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.592 seconds; current allocated memory: 388.517 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mSP_findStartIndex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mSP_findStartIndex'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.445 seconds; current allocated memory: 389.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mSP_findLRBounds' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mSP_findLRBounds'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.506 seconds; current allocated memory: 390.089 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makeSuperPoint_alignedToLine11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_33ns_33s_64_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makeSuperPoint_alignedToLine11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.809 seconds; current allocated memory: 391.747 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getParallelogramsAndAcceptanceCorners' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getParallelogramsAndAcceptanceCorners' is 6676 from HDL expression: ((1'b1 == ap_CS_fsm_state1) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state60) | (1'b1 == ap_CS_fsm_state59) | (1'b1 == ap_CS_fsm_state58) | (1'b1 == ap_CS_fsm_state57) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state2))
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getParallelogramsAndAcceptanceCorners'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.846 seconds; current allocated memory: 394.831 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wedgePatch_init' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wedgePatch_init'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.519 seconds; current allocated memory: 398.189 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'encodeCoordinates' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'encodeCoordinates'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.836 seconds; current allocated memory: 399.093 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'add_patch_patches_parameters13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'add_patch_patches_parameters13'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.443 seconds; current allocated memory: 399.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'add_patch9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'add_patch9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.123 seconds; current allocated memory: 401.892 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makePatch_alignedToLine' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makePatch_alignedToLine'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.589 seconds; current allocated memory: 404.886 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'areWedgeSuperPointsEqual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'areWedgeSuperPointsEqual'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.976 seconds; current allocated memory: 407.140 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getSolveNextPatchPairWhileCondition' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getSolveNextPatchPairWhileCondition'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.625 seconds; current allocated memory: 407.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'get_index_from_z' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'get_index_from_z'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.748 seconds; current allocated memory: 408.696 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'delete_patch_patches_parameters' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'delete_patch_patches_parameters'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.576 seconds; current allocated memory: 410.096 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'delete_patch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'delete_patch'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.52 seconds; current allocated memory: 412.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'solveComplmentaryPatch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_33s_64s_64_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'solveComplmentaryPatch'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.959 seconds; current allocated memory: 417.769 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getShadows' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getShadows'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.633 seconds; current allocated memory: 424.143 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makeThirdPatch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makeThirdPatch'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.416 seconds; current allocated memory: 430.931 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'solveNextPatchPair' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_33s_64s_64_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'solveNextPatchPair'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.621 seconds; current allocated memory: 437.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'solveNextColumn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'solveNextColumn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 4.95 seconds; current allocated memory: 440.577 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MPSQ' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/ppl' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/n_patches' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/patches_superpointsOUTPUT' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MPSQ' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MPSQ'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 4.585 seconds; current allocated memory: 442.301 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'MPSQ_mul_33s_4s_37_3_0_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'MPSQ_sdiv_37ns_4s_32_41_0_div'
+INFO: [RTMG 210-279] Implementing memory 'MPSQ_mSP_findLRBounds_trapezoid_edges_V_rom' using auto ROMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'MPSQ_mul_33ns_33s_64_3_1_Multiplier_1'
+INFO: [RTMG 210-279] Implementing memory 'MPSQ_makeSuperPoint_alignedToLine11_radiiDivisionList_4_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_makeSuperPoint_alignedToLine11_row_list_V_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_makePatch_alignedToLine_init_patch_V_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_makePatch_alignedToLine_NPpatches_parameters_V_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'MPSQ_mul_33s_64s_64_5_1_Multiplier_2'
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_solveComplmentaryPatch_current_z_i_index_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_solveComplmentaryPatch_new_z_i_index_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_solveComplmentaryPatch_new_z_i_V_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_patches_superpoints_V_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_patches_parameters_V_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_GDarrayDecoded_V_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 8 seconds. CPU system time: 2 seconds. Elapsed time: 15.065 seconds; current allocated memory: 449.608 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MPSQ.
+INFO: [VLOG 209-307] Generating Verilog RTL for MPSQ.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 456.62 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 92 seconds. CPU system time: 10 seconds. Elapsed time: 196.435 seconds; current allocated memory: 451.584 MB.
+INFO: [HLS 200-112] Total CPU user time: 94 seconds. Total CPU system time: 12 seconds. Total elapsed time: 202.575 seconds; peak allocated memory: 871.688 MB.

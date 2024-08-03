@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveNextColumn'" level="0">
-<item name = "Date">Thu Aug  1 23:32:16 2024
+<item name = "Date">Sat Aug  3 00:47:08 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -31,9 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_solveNextPatchPair_fu_192">solveNextPatchPair, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_222">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
-<column name="tmp_getSolveNextColumnWhileConditional_fu_238">getSolveNextColumnWhileConditional, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_solveNextPatchPair_fu_190">solveNextPatchPair, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_218">straightLineProjectorFromLayerIJtoK, 44, 44, 0.132 us, 0.132 us, 1, 1, yes</column>
+<column name="tmp_getSolveNextColumnWhileConditional_fu_232">getSolveNextColumnWhileConditional, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -53,23 +53,23 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 124, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">9, 2, 29037, 42476, -</column>
+<column name="Instance">9, 2, 81417, 78756, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 200, -</column>
-<column name="Register">-, -, 432, -, -</column>
+<column name="Multiplexer">-, -, -, 352, -</column>
+<column name="Register">-, -, 469, -, -</column>
 <specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
-<specialColumn name="Utilization SLR (%)">~0, ~0, 1, 4, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">~0, ~0, 4, 7, 0</specialColumn>
 <specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
-<specialColumn name="Utilization (%)">~0, ~0, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, 1, 1, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="tmp_getSolveNextColumnWhileConditional_fu_238">getSolveNextColumnWhileConditional, 0, 0, 0, 64, 0</column>
-<column name="grp_solveNextPatchPair_fu_192">solveNextPatchPair, 9, 2, 28435, 41955, 0</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_222">straightLineProjectorFromLayerIJtoK, 0, 0, 602, 457, 0</column>
+<column name="tmp_getSolveNextColumnWhileConditional_fu_232">getSolveNextColumnWhileConditional, 0, 0, 0, 64, 0</column>
+<column name="grp_solveNextPatchPair_fu_190">solveNextPatchPair, 9, 2, 77865, 76147, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_218">straightLineProjectorFromLayerIJtoK, 0, 0, 3552, 2545, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -86,55 +86,54 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="loopCounter_1_fu_267_p2">+, 0, 0, 39, 32, 1</column>
-<column name="ap_block_state11_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln748_fu_248_p2">icmp, 0, 0, 11, 8, 1</column>
-<column name="icmp_ln768_fu_273_p2">icmp, 0, 0, 20, 32, 5</column>
-<column name="icmp_ln878_fu_254_p2">icmp, 0, 0, 20, 32, 26</column>
-<column name="select_ln750_fu_259_p3">select, 0, 0, 32, 1, 26</column>
+<column name="loopCounter_1_fu_261_p2">+, 0, 0, 39, 32, 1</column>
+<column name="ap_block_state49_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln744_fu_242_p2">icmp, 0, 0, 11, 8, 1</column>
+<column name="icmp_ln764_fu_267_p2">icmp, 0, 0, 20, 32, 5</column>
+<column name="icmp_ln878_fu_248_p2">icmp, 0, 0, 20, 32, 26</column>
+<column name="select_ln746_fu_253_p3">select, 0, 0, 32, 1, 26</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">65, 12, 1, 12</column>
-<column name="ap_phi_mux_saved_apexZ0_buf_1_phi_fu_185_p4">9, 2, 32, 64</column>
-<column name="ap_phi_mux_z_top_max_V_16_ph_phi_fu_84_p4">9, 2, 32, 64</column>
+<column name="ap_NS_fsm">217, 50, 1, 50</column>
+<column name="ap_phi_mux_saved_apexZ0_buf_1_phi_fu_183_p4">9, 2, 32, 64</column>
+<column name="ap_phi_mux_z_top_max_V_16_ph_phi_fu_82_p4">9, 2, 32, 64</column>
 <column name="ap_return">9, 2, 32, 64</column>
-<column name="c_corner_V_0_reg_103">9, 2, 32, 64</column>
-<column name="complementary_apexZ0_V_0_reg_114">9, 2, 32, 64</column>
-<column name="loopCounter_reg_171">9, 2, 32, 64</column>
-<column name="nPatchesInColumn_0_reg_138">9, 2, 32, 64</column>
+<column name="c_corner_V_0_reg_101">9, 2, 32, 64</column>
+<column name="complementary_apexZ0_V_0_reg_112">9, 2, 32, 64</column>
+<column name="loopCounter_reg_169">9, 2, 32, 64</column>
+<column name="nPatchesInColumn_0_reg_136">9, 2, 32, 64</column>
 <column name="n_patches_o">9, 2, 8, 16</column>
 <column name="n_patches_o_ap_vld">9, 2, 1, 2</column>
-<column name="projectionOfCornerToBeam_V_0_reg_150">9, 2, 32, 64</column>
-<column name="saved_apexZ0_buf_0_reg_161">9, 2, 32, 64</column>
-<column name="saved_apexZ0_buf_1_reg_182">9, 2, 32, 64</column>
-<column name="z_top_max_V_16_ph_reg_80">9, 2, 32, 64</column>
-<column name="z_top_max_V_16_reg_92">9, 2, 32, 64</column>
-<column name="z_top_min_V_0_reg_126">9, 2, 32, 64</column>
+<column name="projectionOfCornerToBeam_V_0_reg_148">9, 2, 32, 64</column>
+<column name="saved_apexZ0_buf_0_reg_159">9, 2, 32, 64</column>
+<column name="saved_apexZ0_buf_1_reg_180">9, 2, 32, 64</column>
+<column name="z_top_max_V_16_ph_reg_78">9, 2, 32, 64</column>
+<column name="z_top_max_V_16_reg_90">9, 2, 32, 64</column>
+<column name="z_top_min_V_0_reg_124">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">11, 0, 11, 0</column>
+<column name="ap_CS_fsm">49, 0, 49, 0</column>
 <column name="ap_return_preg">32, 0, 32, 0</column>
-<column name="c_corner_V_0_reg_103">32, 0, 32, 0</column>
-<column name="complementary_apexZ0_V_0_reg_114">32, 0, 32, 0</column>
-<column name="grp_solveNextPatchPair_fu_192_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_222_ap_start_reg">1, 0, 1, 0</column>
-<column name="icmp_ln748_reg_308">1, 0, 1, 0</column>
-<column name="icmp_ln768_reg_339">1, 0, 1, 0</column>
-<column name="loopCounter_1_reg_334">32, 0, 32, 0</column>
-<column name="loopCounter_reg_171">32, 0, 32, 0</column>
-<column name="nPatchesInColumn_0_reg_138">32, 0, 32, 0</column>
-<column name="op2_V_reg_324">32, 0, 32, 0</column>
-<column name="projectionOfCornerToBeam_V_0_reg_150">32, 0, 32, 0</column>
-<column name="saved_apexZ0_buf_0_reg_161">32, 0, 32, 0</column>
-<column name="saved_apexZ0_buf_1_reg_182">32, 0, 32, 0</column>
-<column name="tmp_reg_330">1, 0, 1, 0</column>
-<column name="z_top_max_V_16_ph_reg_80">32, 0, 32, 0</column>
-<column name="z_top_max_V_16_reg_92">32, 0, 32, 0</column>
-<column name="z_top_min_V_0_reg_126">32, 0, 32, 0</column>
+<column name="c_corner_V_0_reg_101">32, 0, 32, 0</column>
+<column name="complementary_apexZ0_V_0_reg_112">32, 0, 32, 0</column>
+<column name="grp_solveNextPatchPair_fu_190_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln744_reg_314">1, 0, 1, 0</column>
+<column name="icmp_ln764_reg_333">1, 0, 1, 0</column>
+<column name="loopCounter_1_reg_328">32, 0, 32, 0</column>
+<column name="loopCounter_reg_169">32, 0, 32, 0</column>
+<column name="nPatchesInColumn_0_reg_136">32, 0, 32, 0</column>
+<column name="op2_V_reg_318">32, 0, 32, 0</column>
+<column name="projectionOfCornerToBeam_V_0_reg_148">32, 0, 32, 0</column>
+<column name="saved_apexZ0_buf_0_reg_159">32, 0, 32, 0</column>
+<column name="saved_apexZ0_buf_1_reg_180">32, 0, 32, 0</column>
+<column name="tmp_reg_324">1, 0, 1, 0</column>
+<column name="z_top_max_V_16_ph_reg_78">32, 0, 32, 0</column>
+<column name="z_top_max_V_16_reg_90">32, 0, 32, 0</column>
+<column name="z_top_min_V_0_reg_124">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -170,12 +169,12 @@
 <column name="patches_superpoints_address1">out, 12, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_ce1">out, 1, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_q1">in, 64, ap_memory, patches_superpoints, array</column>
-<column name="patches_parameters_address0">out, 9, ap_memory, patches_parameters, array</column>
+<column name="patches_parameters_address0">out, 7, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_ce0">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_we0">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_d0">out, 32, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_q0">in, 32, ap_memory, patches_parameters, array</column>
-<column name="patches_parameters_address1">out, 9, ap_memory, patches_parameters, array</column>
+<column name="patches_parameters_address1">out, 7, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_ce1">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_we1">out, 1, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_d1">out, 32, ap_memory, patches_parameters, array</column>

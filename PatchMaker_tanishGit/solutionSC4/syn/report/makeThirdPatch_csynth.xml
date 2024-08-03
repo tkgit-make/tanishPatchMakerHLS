@@ -45,8 +45,8 @@
 <Resources>
 <BRAM_18K>3</BRAM_18K>
 <DSP>0</DSP>
-<FF>10162</FF>
-<LUT>15216</LUT>
+<FF>25613</FF>
+<LUT>26925</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -126,6 +126,83 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din1</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din2</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din3</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>3</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din4</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>3</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_din5</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>3</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_dout0</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_1148_p_ce</name>
+<Object>makeThirdPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>grp_straightLineProjectorFromLayerIJtoK_fu_1156_p_din1</name>
 <Object>makeThirdPatch</Object>
 <Type>return value</Type>
@@ -199,50 +276,6 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1156_p_start</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1156_p_ready</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1156_p_done</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_1156_p_idle</name>
-<Object>makeThirdPatch</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
@@ -507,7 +540,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -562,7 +595,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>

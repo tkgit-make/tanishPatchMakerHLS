@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722569516943">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722660410252">
   <ports id="1" name="GDn_points" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="5">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="2" name="repeat_original" type="PortType" coreId="0" bitwidth="1">
+  <ports id="2" name="repeat_original" type="PortType" coreId="1970435104" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="white_space_height" type="PortType" coreId="1563833650" bitwidth="64">
+  <ports id="3" name="white_space_height" type="PortType" coreId="1767862369" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="previous_white_space_height" type="PortType" coreId="1633836916" bitwidth="64">
+  <ports id="4" name="previous_white_space_height" type="PortType" coreId="690366496" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="current_z_top_index" type="PortType" coreId="539770418" bitwidth="32">
+  <ports id="5" name="current_z_top_index" type="PortType" coreId="741487420" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="6" name="patches_parameters" type="PortType" coreName="RAM" coreId="1014263401" bitwidth="32" iftype="IfTypeRegister" arraysize="360">
+  <ports id="6" name="patches_parameters" type="PortType" coreName="RAM" coreId="1014263401" bitwidth="32" iftype="IfTypeRegister" arraysize="72">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
   <ports id="16" name="ap_return" direction="DirOut">
@@ -58,17 +58,17 @@
   <edges id="100" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.25"/>
   <edges source_obj="//@blocks.0/@node_objs.25" sink_obj="//@ports.6"/>
   <blocks id="34" name="getSolveNextPatchPairWhileCondition" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="current_z_top_index_read" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="current_z_top_index_read" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="88" contextFuncName="operator_gt_32_true" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="886" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;gt;&amp;lt;32, true&amp;gt;"/>
       <dataInputObjs>current_z_top_index</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="previous_white_space_height_read" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="64" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="previous_white_space_height_read" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="64" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="886" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;gt;&amp;lt;32, true&amp;gt;"/>
       <dataInputObjs>previous_white_space_height</dataInputObjs>
       <dataOutputObjs>bitselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="white_space_height_read" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="64" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="white_space_height_read" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="886" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;gt;&amp;lt;32, true&amp;gt;"/>
       <dataInputObjs>white_space_height</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
@@ -77,138 +77,138 @@
       <dataOutputObjs>select</dataOutputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="repeat_original_read" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="1" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="repeat_original_read" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="1" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="886" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;gt;&amp;lt;32, true&amp;gt;"/>
       <dataInputObjs>repeat_original</dataInputObjs>
       <dataOutputObjs>or</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="patches_parameters_addr" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="9" opcode="getelementptr" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="patches_parameters_addr" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="operator_gt_32_true" bitwidth="7" opcode="getelementptr" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="886" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;gt;&amp;lt;32, true&amp;gt;"/>
       <dataInputObjs>patches_parameters</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln973" lineNumber="973" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln973_fu_110_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.06" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="973" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln970" lineNumber="970" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln970_fu_104_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.06" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="970" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>and</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="tmp" lineNumber="973" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_fu_115_p3" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="bitselect" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="973" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="tmp" lineNumber="970" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_fu_109_p3" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="970" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>xor</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="xor_ln973" lineNumber="973" fileName="patchMaker.cpp" fileDirectory=".." rtlName="xor_ln973_fu_123_p2" opType="xor" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="xor" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="973" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="xor_ln970" lineNumber="970" fileName="patchMaker.cpp" fileDirectory=".." rtlName="xor_ln970_fu_117_p2" opType="xor" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="970" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>bitselect</dataInputObjs>
       <dataOutputObjs>and</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="and_ln973" lineNumber="973" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln973_fu_129_p2" opType="and" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="and" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="973" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="and_ln970" lineNumber="970" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln970_fu_123_p2" opType="and" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="970" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>icmp</dataInputObjs>
       <dataInputObjs>xor</dataInputObjs>
       <dataOutputObjs>or</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sub_ln180" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="sub_ln180_fu_98_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="abs" bitwidth="64" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.14" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sub_ln180" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="sub_ln180_fu_98_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="abs" bitwidth="64" opcode="sub" m_display="0" m_delay="1.14" m_topoIndex="3" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" linenumber="180" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="abs"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_28" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="tmp_28_fu_135_p3" coreId="1532835163" contextFuncName="abs" bitwidth="1" opcode="bitselect" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="2">
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_20" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="tmp_20_fu_129_p3" coreId="1532835163" contextFuncName="abs" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="2">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" linenumber="180" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="abs"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>select</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="select_ln180" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="select_ln180_fu_142_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="abs" bitwidth="64" opcode="select" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="2">
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="select_ln180" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="select_ln180_fu_136_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="abs" bitwidth="64" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="2">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" linenumber="180" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="abs"/>
       <dataInputObjs>bitselect</dataInputObjs>
       <dataInputObjs>sub</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="patches_parameters_load" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="operator_gt_32_true" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="1.19" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="patches_parameters_load" lineNumber="886" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="operator_gt_32_true" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="0.6" m_topoIndex="4" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="886" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator&amp;gt;&amp;lt;32, true&amp;gt;"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="GDn_points_addr" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="3" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="GDn_points_addr" lineNumber="973" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="973" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>GDn_points</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="GDn_points_load" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.69" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="GDn_points_load" lineNumber="973" fileName="patchMaker.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="83" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="0.69" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="973" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="exp4" lineNumber="976" originalName="exp4" fileName="patchMaker.cpp" fileDirectory=".." rtlName="exp4_fu_148_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="17" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="exp4" lineNumber="973" originalName="exp4" fileName="patchMaker.cpp" fileDirectory=".." rtlName="exp4_fu_142_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.85" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="973" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>and</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="icmp_ln979" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln979_fu_154_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.06" m_topoIndex="18" m_clusterGroupNumber="2">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="icmp_ln976" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln976_fu_148_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.06" m_topoIndex="17" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>select</dataInputObjs>
       <dataOutputObjs>or</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln979_1" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln979_1_fu_104_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.85" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln976_1" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln976_1_fu_154_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.85" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>and</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln979_2" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln979_2_fu_160_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.06" m_topoIndex="19" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln976_2" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln976_2_fu_160_p2" opType="icmp" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.06" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>and</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="and_ln979" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln979_fu_165_p2" opType="and" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="and" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="and_ln976" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln976_fu_165_p2" opType="and" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>icmp</dataInputObjs>
       <dataInputObjs>icmp</dataInputObjs>
       <dataOutputObjs>or</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="or_ln979" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln979_fu_170_p2" opType="or" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="or_ln976" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln976_fu_171_p2" opType="or" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>icmp</dataInputObjs>
       <dataInputObjs>and</dataInputObjs>
       <dataOutputObjs>or</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="or_ln979_1" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln979_1_fu_176_p2" opType="or" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="or_ln976_1" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln976_1_fu_177_p2" opType="or" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>or</dataInputObjs>
       <dataInputObjs>and</dataInputObjs>
       <dataOutputObjs>or</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="or_ln979_2" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln979_2_fu_182_p2" opType="or" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="or_ln976_2" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln976_2_fu_183_p2" opType="or" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>or</dataInputObjs>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>xor</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="xor_ln979" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="xor_ln979_fu_188_p2" opType="xor" coreId="1882143754" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="xor" nodeLabel="2.0" m_display="0" m_delay="0.12" m_topoIndex="24" m_clusterGroupNumber="1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="xor_ln976" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="xor_ln976_fu_189_p2" opType="xor" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="xor" nodeLabel="1.0" m_display="0" m_delay="0.12" m_topoIndex="24" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>and</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="and_ln979_1" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln979_1_fu_194_p2" opType="and" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="and" nodeLabel="2.0" m_display="0" m_delay="0.12" m_topoIndex="25" m_clusterGroupNumber="3">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="and_ln976_1" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln976_1_fu_195_p2" opType="and" coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_delay="0.12" m_topoIndex="25" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>icmp</dataInputObjs>
       <dataInputObjs>xor</dataInputObjs>
       <dataOutputObjs>ret</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln979" lineNumber="979" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="979" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln976" lineNumber="976" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="getSolveNextPatchPairWhileCondition" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="976" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="getSolveNextPatchPairWhileCondition"/>
       <dataInputObjs>and</dataInputObjs>
       <dataOutputObjs>ap_return</dataOutputObjs>
     </node_objs>
@@ -216,9 +216,9 @@
       <validLinenumbers>180</validLinenumbers>
     </fileValidLineNumbers>
     <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>970</validLinenumbers>
       <validLinenumbers>973</validLinenumbers>
       <validLinenumbers>976</validLinenumbers>
-      <validLinenumbers>979</validLinenumbers>
     </fileValidLineNumbers>
     <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h">
       <validLinenumbers>886</validLinenumbers>
@@ -226,42 +226,38 @@
   </blocks>
   <ScheduleInfo time="0"/>
   <ScheduleInfo time="1"/>
-  <ScheduleInfo time="2"/>
-  <regnodes realName="sub_ln180_reg_213">
-    <nodeIds>17</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln979_1_reg_223">
-    <nodeIds>25</nodeIds>
-  </regnodes>
-  <regnodes realName="GDn_points_addr_reg_218">
-    <nodeIds>21</nodeIds>
-  </regnodes>
-  <regnodes realName="patches_parameters_addr_reg_200">
+  <regnodes realName="patches_parameters_addr_reg_209">
     <nodeIds>11</nodeIds>
   </regnodes>
-  <regnodes realName="white_space_height_read_reg_205">
+  <regnodes realName="sub_ln180_reg_214">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="GDn_points_addr_reg_219">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="white_space_height_read_reg_201">
     <nodeIds>9</nodeIds>
   </regnodes>
-  <expressionNodes realName="or_ln979_2_fu_182">
+  <expressionNodes realName="or_ln976_2_fu_183">
     <nodeIds>30</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln180_fu_142">
+  <expressionNodes realName="tmp_20_fu_129">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln970_fu_117">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln976_fu_171">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln180_fu_136">
     <nodeIds>19</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln979_fu_154">
-    <nodeIds>24</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="xor_ln979_fu_188">
+  <expressionNodes realName="xor_ln976_fu_189">
     <nodeIds>31</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln979_1_fu_104">
-    <nodeIds>25</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_fu_115">
-    <nodeIds>14</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln973_fu_110">
-    <nodeIds>13</nodeIds>
+  <expressionNodes realName="and_ln976_1_fu_195">
+    <nodeIds>32</nodeIds>
   </expressionNodes>
   <expressionNodes realName="patches_parameters_addr_gep_fu_70">
     <nodeIds>11</nodeIds>
@@ -269,35 +265,35 @@
   <expressionNodes realName="GDn_points_addr_gep_fu_84">
     <nodeIds>21</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln979_2_fu_160">
+  <expressionNodes realName="icmp_ln970_fu_104">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exp4_fu_142">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln976_2_fu_160">
     <nodeIds>26</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="xor_ln973_fu_123">
-    <nodeIds>15</nodeIds>
+  <expressionNodes realName="icmp_ln976_fu_148">
+    <nodeIds>24</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="or_ln979_fu_170">
-    <nodeIds>28</nodeIds>
+  <expressionNodes realName="icmp_ln976_1_fu_154">
+    <nodeIds>25</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="and_ln979_1_fu_194">
-    <nodeIds>32</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="and_ln973_fu_129">
-    <nodeIds>16</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_28_fu_135">
-    <nodeIds>18</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="or_ln979_1_fu_176">
+  <expressionNodes realName="or_ln976_1_fu_177">
     <nodeIds>29</nodeIds>
   </expressionNodes>
   <expressionNodes realName="sub_ln180_fu_98">
     <nodeIds>17</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="exp4_fu_148">
-    <nodeIds>23</nodeIds>
+  <expressionNodes realName="tmp_fu_109">
+    <nodeIds>14</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="and_ln979_fu_165">
+  <expressionNodes realName="and_ln976_fu_165">
     <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln970_fu_123">
+    <nodeIds>16</nodeIds>
   </expressionNodes>
   <ioNodes realName="white_space_height_read_read_fu_46">
     <nodeIds>9</nodeIds>
@@ -354,18 +350,14 @@
   </ioPorts>
   <fsm>
     <states id="1">
-      <operations id="11" stage="1" latency="1"/>
-      <operations id="20" stage="2" latency="2"/>
-    </states>
-    <states id="2">
       <operations id="9" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
       <operations id="17" stage="1" latency="1"/>
-      <operations id="20" stage="1" latency="2"/>
+      <operations id="20" stage="2" latency="2"/>
       <operations id="21" stage="1" latency="1"/>
       <operations id="22" stage="2" latency="2"/>
-      <operations id="25" stage="1" latency="1"/>
     </states>
-    <states id="3">
+    <states id="2">
       <operations id="7" stage="1" latency="1"/>
       <operations id="8" stage="1" latency="1"/>
       <operations id="10" stage="1" latency="1"/>
@@ -376,9 +368,11 @@
       <operations id="16" stage="1" latency="1"/>
       <operations id="18" stage="1" latency="1"/>
       <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="2"/>
       <operations id="22" stage="1" latency="2"/>
       <operations id="23" stage="1" latency="1"/>
       <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
       <operations id="26" stage="1" latency="1"/>
       <operations id="27" stage="1" latency="1"/>
       <operations id="28" stage="1" latency="1"/>
@@ -391,12 +385,9 @@
     <transitions inState="1" outState="2">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="2" outState="3">
-      <condition id="-1"/>
-    </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="getSolveNextPatchPairWhileCondition" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="2">
+    <cfgRegions mId="1" mTag="getSolveNextPatchPairWhileCondition" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
       <basicBlocks>34</basicBlocks>
       <mDfPipe/>
     </cfgRegions>

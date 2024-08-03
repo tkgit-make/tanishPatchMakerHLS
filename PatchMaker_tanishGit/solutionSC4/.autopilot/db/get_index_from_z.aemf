@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722569517894">
-  <ports id="1" name="GDn_points" type="PortType" coreName="RAM" coreId="58" bitwidth="32" iftype="IfTypeRegister" arraysize="5">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722660410757">
+  <ports id="1" name="GDn_points" type="PortType" coreName="RAM" coreId="1563777824" bitwidth="32" iftype="IfTypeRegister" arraysize="5">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="2" name="layer" type="PortType" originalName="layer" coreId="2975182719" bitwidth="3">
+  <ports id="2" name="layer" type="PortType" originalName="layer" coreId="1952542760" bitwidth="3">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="z_value" type="PortType" originalName="rhs" coreId="0" bitwidth="32">
+  <ports id="3" name="z_value" type="PortType" originalName="rhs" coreId="539437350" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="GDarrayDecoded" type="PortType" originalName="GDarrayDecoded.V" coreName="RAM" coreId="690366496" bitwidth="32" iftype="IfTypeRegister" arraysize="2560">
+  <ports id="4" name="GDarrayDecoded" type="PortType" originalName="GDarrayDecoded.V" coreName="RAM" coreId="2670072497" bitwidth="32" iftype="IfTypeRegister" arraysize="2560">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
   <ports id="14" name="ap_return" direction="DirOut">
@@ -88,7 +88,7 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="GDn_points_addr" coreId="639659892" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="GDn_points_addr" coreId="1532835163" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>GDn_points</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -98,28 +98,28 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="rhs" rtlName="rhs_fu_135_p1" coreId="543516513" bitwidth="33" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="rhs" rtlName="rhs_fu_135_p1" coreId="2468521413" bitwidth="33" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sub</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln583" lineNumber="583" fileName="patchMaker.cpp" fileDirectory=".." coreId="574451311" contextFuncName="get_index_from_z" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="583" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln579" lineNumber="579" fileName="patchMaker.cpp" fileDirectory=".." coreId="2507646870" contextFuncName="get_index_from_z" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.38" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="579" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
       <controlInputObjs>block_22</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>583</validLinenumbers>
+      <validLinenumbers>579</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="41" name="._crit_edge.loopexit" type="BlockType">
     <controlInputObjs>block_22</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln594" lineNumber="594" fileName="patchMaker.cpp" fileDirectory=".." coreId="1699560457" contextFuncName="get_index_from_z" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="patchMaker.cpp" linenumber="594" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln590" lineNumber="590" fileName="patchMaker.cpp" fileDirectory=".." coreId="2531506178" contextFuncName="get_index_from_z" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="590" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>ap_return</dataOutputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="patchMaker.cpp">
-      <validLinenumbers>594</validLinenumbers>
+      <validLinenumbers>590</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="168" pipe_depth="4" RegionName="getIndexFromZ_perPoint">
@@ -130,7 +130,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
       <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i_04" originalName="i" coreId="808531253" bitwidth="8" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i_04" originalName="i" coreId="2533538277" bitwidth="8" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -140,7 +140,7 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="index" originalName="index" coreId="1948265522" bitwidth="8" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="index" originalName="index" coreId="2418713293" bitwidth="8" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>ret</dataOutputObjs>
@@ -148,7 +148,7 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="minVal" originalName="minVal" coreId="1532835163" bitwidth="64" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="minVal" originalName="minVal" coreId="2423038607" bitwidth="64" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -156,31 +156,31 @@
         <controlInputObjs>.split</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="i" lineNumber="583" originalName="i" fileName="patchMaker.cpp" fileDirectory=".." rtlName="i_fu_139_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="get_index_from_z" bitwidth="8" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.7" m_topoIndex="9" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="583" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="i" lineNumber="579" originalName="i" fileName="patchMaker.cpp" fileDirectory=".." rtlName="i_fu_139_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="get_index_from_z" bitwidth="8" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.7" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="579" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="zext_ln583" lineNumber="583" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln583_fu_145_p1" coreId="1532835163" contextFuncName="get_index_from_z" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="583" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="zext_ln579" lineNumber="579" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln579_fu_145_p1" coreId="2436015061" contextFuncName="get_index_from_z" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="579" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="icmp_ln583" lineNumber="583" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln583_fu_149_p2" opType="icmp" coreId="1532835163" contextFuncName="get_index_from_z" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="11" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="583" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="icmp_ln579" lineNumber="579" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln579_fu_149_p2" opType="icmp" coreId="2509678457" contextFuncName="get_index_from_z" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="579" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln583" lineNumber="583" fileName="patchMaker.cpp" fileDirectory=".." coreId="1532835163" contextFuncName="get_index_from_z" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="583" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln579" lineNumber="579" fileName="patchMaker.cpp" fileDirectory=".." coreId="2475140454" contextFuncName="get_index_from_z" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="579" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
         <controlInputObjs>.split</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="patchMaker.cpp">
-        <validLinenumbers>583</validLinenumbers>
+        <validLinenumbers>579</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="39" name=".split" type="BlockType">
@@ -190,26 +190,26 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_22</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="tmp" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="tmp_fu_154_p4" coreId="1532835163" contextFuncName="ap_int_base_32_true_s" bitwidth="12" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="tmp" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="tmp_fu_154_p4" coreId="2511972184" contextFuncName="ap_int_base_32_true_s" bitwidth="12" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="or_ln215" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="or_ln215_fu_163_p2" coreId="1532835163" contextFuncName="ap_int_base_32_true_s" bitwidth="12" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="or_ln215" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="or_ln215_fu_163_p2" coreId="2431689235" contextFuncName="ap_int_base_32_true_s" bitwidth="12" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_s" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="tmp_s_fu_169_p3" coreId="1953244788" contextFuncName="ap_int_base_32_true_s" bitwidth="64" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_s" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="tmp_s_fu_169_p3" coreId="2444665689" contextFuncName="ap_int_base_32_true_s" bitwidth="64" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="GDarrayDecoded_addr" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1532835163" contextFuncName="ap_int_base_32_true_s" bitwidth="12" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="GDarrayDecoded_addr" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="2492376689" contextFuncName="ap_int_base_32_true_s" bitwidth="12" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>GDarrayDecoded</dataInputObjs>
         <dataInputObjs>bitconcatenate</dataInputObjs>
@@ -221,7 +221,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="sext_ln215" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln215_fu_178_p1" coreId="1684957538" contextFuncName="ap_int_base_32_true_s" bitwidth="33" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="sext_ln215" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln215_fu_178_p1" coreId="2477172041" contextFuncName="ap_int_base_32_true_s" bitwidth="33" opcode="sext" nodeLabel="4.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -240,7 +240,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp_27" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="tmp_27_fu_192_p3" coreId="1701978146" contextFuncName="abs" bitwidth="1" opcode="bitselect" nodeLabel="4.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp_19" lineNumber="180" fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" fileDirectory=".." rtlName="tmp_19_fu_192_p3" coreId="2496702003" contextFuncName="abs" bitwidth="1" opcode="bitselect" nodeLabel="4.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib" linenumber="180" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="abs"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -253,42 +253,42 @@
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="sext_ln585" lineNumber="585" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln585_fu_208_p1" coreId="1532835163" contextFuncName="get_index_from_z" bitwidth="64" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="585" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="sext_ln581" lineNumber="581" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln581_fu_208_p1" coreId="2546514219" contextFuncName="get_index_from_z" bitwidth="64" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="581" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln586" lineNumber="586" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln586_fu_211_p2" opType="icmp" coreId="997420912" contextFuncName="get_index_from_z" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.06" m_topoIndex="26" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="586" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln582" lineNumber="582" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln582_fu_211_p2" opType="icmp" coreId="2514003771" contextFuncName="get_index_from_z" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.06" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="582" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="minVal_1" lineNumber="586" originalName="minVal" fileName="patchMaker.cpp" fileDirectory=".." rtlName="minVal_1_fu_217_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_index_from_z" bitwidth="64" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.41" m_topoIndex="27" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="586" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="minVal_1" lineNumber="582" originalName="minVal" fileName="patchMaker.cpp" fileDirectory=".." rtlName="minVal_1_fu_217_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_index_from_z" bitwidth="64" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.41" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="582" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="index_1" lineNumber="586" originalName="index" fileName="patchMaker.cpp" fileDirectory=".." rtlName="index_1_fu_225_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_index_from_z" bitwidth="8" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.3" m_topoIndex="28" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="patchMaker.cpp" linenumber="586" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="index_1" lineNumber="582" originalName="index" fileName="patchMaker.cpp" fileDirectory=".." rtlName="index_1_fu_225_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="get_index_from_z" bitwidth="8" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.3" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="patchMaker.cpp" linenumber="582" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="get_index_from_z"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln0" coreId="1634740256" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln0" coreId="2438308788" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
         <controlInputObjs>block_22</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib">
         <validLinenumbers>180</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="patchMaker.cpp">
-        <validLinenumbers>585</validLinenumbers>
-        <validLinenumbers>586</validLinenumbers>
+        <validLinenumbers>581</validLinenumbers>
+        <validLinenumbers>582</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h">
         <validLinenumbers>215</validLinenumbers>
@@ -315,7 +315,7 @@
   <regnodes realName="GDn_points_load_reg_243">
     <nodeIds>10</nodeIds>
   </regnodes>
-  <regnodes realName="icmp_ln583_reg_258">
+  <regnodes realName="icmp_ln579_reg_258">
     <nodeIds>20</nodeIds>
   </regnodes>
   <regnodes realName="minVal_reg_118">
@@ -348,6 +348,9 @@
   <expressionNodes realName="GDarrayDecoded_addr_gep_fu_81">
     <nodeIds>27</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="tmp_19_fu_192">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="tmp_fu_154">
     <nodeIds>24</nodeIds>
   </expressionNodes>
@@ -357,11 +360,11 @@
   <expressionNodes realName="index_phi_fu_110">
     <nodeIds>15</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="sext_ln581_fu_208">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="rhs_fu_135">
     <nodeIds>11</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_27_fu_192">
-    <nodeIds>32</nodeIds>
   </expressionNodes>
   <expressionNodes realName="index_1_fu_225">
     <nodeIds>37</nodeIds>
@@ -378,11 +381,11 @@
   <expressionNodes realName="diff_fu_200">
     <nodeIds>33</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="zext_ln579_fu_145">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="sub_ln180_fu_186">
     <nodeIds>31</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln586_fu_211">
-    <nodeIds>35</nodeIds>
   </expressionNodes>
   <expressionNodes realName="minVal_phi_fu_122">
     <nodeIds>16</nodeIds>
@@ -393,17 +396,14 @@
   <expressionNodes realName="GDn_points_addr_gep_fu_68">
     <nodeIds>9</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="icmp_ln579_fu_149">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln582_fu_211">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="i_04_phi_fu_98">
     <nodeIds>14</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln583_fu_145">
-    <nodeIds>19</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sext_ln585_fu_208">
-    <nodeIds>34</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln583_fu_149">
-    <nodeIds>20</nodeIds>
   </expressionNodes>
   <expressionNodes realName="minVal_1_fu_217">
     <nodeIds>36</nodeIds>

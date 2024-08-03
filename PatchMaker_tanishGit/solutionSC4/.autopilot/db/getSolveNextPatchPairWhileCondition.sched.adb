@@ -64,7 +64,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1970435104</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -97,7 +97,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1563833650</coreId>
+						<coreId>1767862369</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -130,7 +130,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1633836916</coreId>
+						<coreId>690366496</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -163,7 +163,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>539770418</coreId>
+						<coreId>741487420</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -202,7 +202,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>360</array_size>
+				<array_size>72</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -247,7 +247,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1532835163</coreId>
+						<coreId>88</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -263,7 +263,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>8</m_topoIndex>
+				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_8">
@@ -317,7 +317,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>9</m_topoIndex>
+				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_9">
@@ -371,7 +371,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>3</m_topoIndex>
+				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_10">
@@ -425,7 +425,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>10</m_topoIndex>
+				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_11">
@@ -465,7 +465,7 @@
 						<coreName></coreName>
 						<coreId>1532835163</coreId>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -480,7 +480,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>1</m_topoIndex>
+				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_12">
@@ -488,10 +488,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>icmp_ln973</name>
+						<name>icmp_ln970</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>973</lineNumber>
+						<lineNumber>970</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -507,7 +507,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>973</second>
+										<second>970</second>
 									</item>
 								</second>
 							</item>
@@ -534,7 +534,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.06</m_delay>
-				<m_topoIndex>11</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_13">
@@ -545,7 +545,7 @@
 						<name>tmp</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>973</lineNumber>
+						<lineNumber>970</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -561,7 +561,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>973</second>
+										<second>970</second>
 									</item>
 								</second>
 							</item>
@@ -589,7 +589,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -597,10 +597,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>xor_ln973</name>
+						<name>xor_ln970</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>973</lineNumber>
+						<lineNumber>970</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -616,7 +616,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>973</second>
+										<second>970</second>
 									</item>
 								</second>
 							</item>
@@ -643,7 +643,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_15">
@@ -651,10 +651,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>and_ln973</name>
+						<name>and_ln970</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>973</lineNumber>
+						<lineNumber>970</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -670,7 +670,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>973</second>
+										<second>970</second>
 									</item>
 								</second>
 							</item>
@@ -697,7 +697,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -751,7 +751,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.14</m_delay>
-				<m_topoIndex>4</m_topoIndex>
+				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -759,7 +759,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>tmp_28</name>
+						<name>tmp_20</name>
 						<fileName>C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\cstdlib</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
 						<lineNumber>180</lineNumber>
@@ -806,7 +806,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -861,7 +861,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_19">
@@ -913,8 +913,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.19</m_delay>
-				<m_topoIndex>2</m_topoIndex>
+				<m_delay>0.60</m_delay>
+				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_20">
@@ -925,7 +925,7 @@
 						<name>GDn_points_addr</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>976</lineNumber>
+						<lineNumber>973</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -941,7 +941,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>976</second>
+										<second>973</second>
 									</item>
 								</second>
 							</item>
@@ -980,7 +980,7 @@
 						<name>GDn_points_load</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>976</lineNumber>
+						<lineNumber>973</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -996,7 +996,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>976</second>
+										<second>973</second>
 									</item>
 								</second>
 							</item>
@@ -1033,7 +1033,7 @@
 						<name>exp4</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>976</lineNumber>
+						<lineNumber>973</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1049,7 +1049,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>976</second>
+										<second>973</second>
 									</item>
 								</second>
 							</item>
@@ -1076,7 +1076,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.85</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_23">
@@ -1084,10 +1084,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>icmp_ln979</name>
+						<name>icmp_ln976</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1103,7 +1103,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1130,7 +1130,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.06</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_24">
@@ -1138,10 +1138,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>icmp_ln979_1</name>
+						<name>icmp_ln976_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1157,7 +1157,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1184,7 +1184,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.85</m_delay>
-				<m_topoIndex>7</m_topoIndex>
+				<m_topoIndex>18</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_25">
@@ -1192,10 +1192,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>icmp_ln979_2</name>
+						<name>icmp_ln976_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1211,7 +1211,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1246,10 +1246,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>and_ln979</name>
+						<name>and_ln976</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1265,7 +1265,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1300,10 +1300,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>or_ln979</name>
+						<name>or_ln976</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1319,7 +1319,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1354,10 +1354,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>or_ln979_1</name>
+						<name>or_ln976_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1373,7 +1373,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1408,10 +1408,10 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>or_ln979_2</name>
+						<name>or_ln976_2</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1427,7 +1427,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1462,10 +1462,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>xor_ln979</name>
+						<name>xor_ln976</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1481,7 +1481,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1492,7 +1492,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1882143754</coreId>
+						<coreId>1532835163</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1516,10 +1516,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>and_ln979_1</name>
+						<name>and_ln976_1</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1535,7 +1535,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1570,10 +1570,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>_ln979</name>
+						<name>_ln976</name>
 						<fileName>patchMaker.cpp</fileName>
 						<fileDirectory>C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS</fileDirectory>
-						<lineNumber>979</lineNumber>
+						<lineNumber>976</lineNumber>
 						<contextFuncName>getSolveNextPatchPairWhileCondition</contextFuncName>
 						<contextNormFuncName>getSolveNextPatchPairWhileCondition</contextNormFuncName>
 						<inlineStackInfo>
@@ -1589,7 +1589,7 @@
 											<first>patchMaker.cpp</first>
 											<second>getSolveNextPatchPairWhileCondition</second>
 										</first>
-										<second>979</second>
+										<second>976</second>
 									</item>
 								</second>
 							</item>
@@ -1643,7 +1643,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>4294967295</coreId>
+						<coreId>1952542760</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1671,12 +1671,12 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1633836916</coreId>
+						<coreId>690366496</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>61</content>
+				<content>13</content>
 			</item>
 			<item class_id_reference="16" object_id="_35">
 				<Value>
@@ -1699,7 +1699,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1998613861</coreId>
+						<coreId>1014263401</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1727,7 +1727,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1701734249</coreId>
+						<coreId>859581810</coreId>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
@@ -1755,7 +1755,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>1563833650</coreId>
+						<coreId>1414675002</coreId>
 					</Obj>
 					<bitwidth>1</bitwidth>
 				</Value>
@@ -1783,7 +1783,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>0</coreId>
+						<coreId>1751326820</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -1811,7 +1811,7 @@
 						<opType></opType>
 						<implIndex></implIndex>
 						<coreName></coreName>
-						<coreId>3</coreId>
+						<coreId>1348760169</coreId>
 					</Obj>
 					<bitwidth>64</bitwidth>
 				</Value>
@@ -2266,8 +2266,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2</mMinLatency>
-			<mMaxLatency>2</mMaxLatency>
+			<mMinLatency>1</mMinLatency>
+			<mMaxLatency>1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -2280,28 +2280,28 @@
 		<item class_id="27" tracking_level="0" version="0">
 			<first>7</first>
 			<second class_id="28" tracking_level="0" version="0">
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>8</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>9</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>10</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2315,49 +2315,49 @@
 		<item>
 			<first>13</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>14</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>15</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>16</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>17</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>18</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>19</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2371,28 +2371,28 @@
 		<item>
 			<first>21</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>22</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>23</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>24</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2406,56 +2406,56 @@
 		<item>
 			<first>26</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>28</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>29</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>30</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>31</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>32</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>33</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2467,7 +2467,7 @@
 			<first>34</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>2</second>
+				<second>1</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

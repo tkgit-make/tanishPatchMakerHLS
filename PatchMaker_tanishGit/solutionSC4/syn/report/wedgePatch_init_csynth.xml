@@ -22,14 +22,14 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>243</Best-caseLatency>
-<Average-caseLatency>244</Average-caseLatency>
-<Worst-caseLatency>244</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.729 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.732 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.732 us</Worst-caseRealTimeLatency>
-<Interval-min>243</Interval-min>
-<Interval-max>244</Interval-max>
+<Best-caseLatency>378</Best-caseLatency>
+<Average-caseLatency>379</Average-caseLatency>
+<Worst-caseLatency>379</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.134 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.137 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.137 us</Worst-caseRealTimeLatency>
+<Interval-min>378</Interval-min>
+<Interval-max>379</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter>
@@ -44,10 +44,10 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
-<FF>3200</FF>
-<LUT>3670</LUT>
+<FF>15706</FF>
+<LUT>11886</LUT>
+<BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -222,7 +222,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>7</Bits>
+<Bits>5</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -259,17 +259,6 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wp_parameters_q0</name>
-<Object>wp_parameters</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>wp_parameters_address1</name>
 <Object>wp_parameters</Object>
 <Type>array</Type>
@@ -277,7 +266,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>7</Bits>
+<Bits>5</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -314,17 +303,6 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>wp_parameters_q1</name>
-<Object>wp_parameters</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>superpointsI_address0</name>
 <Object>superpointsI</Object>
 <Type>array</Type>
@@ -352,17 +330,6 @@
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>apexZ0I</name>
-<Object>apexZ0I</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>32</Bits>

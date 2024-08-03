@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makePatch_alignedToLine'" level="0">
-<item name = "Date">Thu Aug  1 23:30:50 2024
+<item name = "Date">Sat Aug  3 00:45:45 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2249, ?, 6.747 us, ?, 2249, ?, none</column>
+<column name="">?, ?, ?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,9 +36,9 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- makePatch_alignedToLine_initPatch_perLayer_makePatch_alignedToLine_initPatch_perPoint_makePatch_alignedToLine_initPatch_perParameter">161, 161, 3, 1, 1, 160, yes</column>
-<column name="- makePatch_alignedToLine_makeSuperpoint_loop">1540, ?, 308 ~ ?, -, -, 5, no</column>
+<column name="- makePatch_alignedToLine_makeSuperpoint_loop">?, ?, ?, -, -, 5, no</column>
 <column name="- makePatch_alignedToLine_initSP_perSuperpoint_makePatch_alignedToLine_initSP_perPoint_makePatch_alignedToLine_initSP_perParameter">161, 161, 3, 1, 1, 160, yes</column>
-<column name="- makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength">120, 120, 2, 1, 1, 120, yes</column>
+<column name="- makePatch_alignedToLine_initPP_perPropertyType_makePatch_alignedToLine_initPP_perParallelogram_makePatch_alignedToLine_initPP_perPropertyLength">24, 24, 2, 1, 1, 24, yes</column>
 </table>
 </item>
 </section>

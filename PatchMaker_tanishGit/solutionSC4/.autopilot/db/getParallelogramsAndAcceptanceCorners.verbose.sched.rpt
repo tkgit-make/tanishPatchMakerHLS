@@ -1,0 +1,1033 @@
+
+
+================================================================
+== Vitis HLS Report for 'getParallelogramsAndAcceptanceCorners'
+================================================================
+* Date:           Sat Aug  3 00:45:38 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionSC4 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.00 ns|  2.190 ns|     0.81 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      211|      212|  0.633 us|  0.636 us|  211|  212|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                         |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |                Loop Name                |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- getParallelograms_settingWPparameters  |      192|      192|        48|          -|          -|     4|        no|
+        |- get_acceptanceCorners_minMaxFinding    |        4|        4|         1|          -|          -|     4|        no|
+        +-----------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 64
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 52 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 4 
+52 --> 53 
+53 --> 54 53 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 62 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.19>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%a_corner_min_V = alloca i32 1"   --->   Operation 65 'alloca' 'a_corner_min_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%b_corner_min_V = alloca i32 1"   --->   Operation 66 'alloca' 'b_corner_min_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%c_corner_max_V = alloca i32 1"   --->   Operation 67 'alloca' 'c_corner_max_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%d_corner_max_V = alloca i32 1"   --->   Operation 68 'alloca' 'd_corner_max_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3 = alloca i32 1"   --->   Operation 69 'alloca' 'parallelogramsList_V_0_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3 = alloca i32 1"   --->   Operation 70 'alloca' 'parallelogramsList_V_1_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3 = alloca i32 1"   --->   Operation 71 'alloca' 'parallelogramsList_V_2_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3 = alloca i32 1"   --->   Operation 72 'alloca' 'parallelogramsList_V_3_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_1 = alloca i32 1"   --->   Operation 73 'alloca' 'parallelogramsList_V_0_3_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_2 = alloca i32 1"   --->   Operation 74 'alloca' 'parallelogramsList_V_0_3_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_3 = alloca i32 1"   --->   Operation 75 'alloca' 'parallelogramsList_V_0_3_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_4 = alloca i32 1"   --->   Operation 76 'alloca' 'parallelogramsList_V_0_3_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_1 = alloca i32 1"   --->   Operation 77 'alloca' 'parallelogramsList_V_1_3_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_2 = alloca i32 1"   --->   Operation 78 'alloca' 'parallelogramsList_V_1_3_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_3 = alloca i32 1"   --->   Operation 79 'alloca' 'parallelogramsList_V_1_3_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_4 = alloca i32 1"   --->   Operation 80 'alloca' 'parallelogramsList_V_1_3_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_1 = alloca i32 1"   --->   Operation 81 'alloca' 'parallelogramsList_V_2_3_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_2 = alloca i32 1"   --->   Operation 82 'alloca' 'parallelogramsList_V_2_3_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_3 = alloca i32 1"   --->   Operation 83 'alloca' 'parallelogramsList_V_2_3_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_4 = alloca i32 1"   --->   Operation 84 'alloca' 'parallelogramsList_V_2_3_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_1 = alloca i32 1"   --->   Operation 85 'alloca' 'parallelogramsList_V_3_3_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_2 = alloca i32 1"   --->   Operation 86 'alloca' 'parallelogramsList_V_3_3_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_3 = alloca i32 1"   --->   Operation 87 'alloca' 'parallelogramsList_V_3_3_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_4 = alloca i32 1"   --->   Operation 88 'alloca' 'parallelogramsList_V_3_3_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%wp_superpoints_addr = getelementptr i32 %wp_superpoints, i64 0, i64 1"   --->   Operation 89 'getelementptr' 'wp_superpoints_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%wp_superpoints_addr_2 = getelementptr i32 %wp_superpoints, i64 0, i64 31"   --->   Operation 90 'getelementptr' 'wp_superpoints_addr_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [2/2] (1.19ns)   --->   "%wp_superpoints_load = load i8 %wp_superpoints_addr"   --->   Operation 91 'load' 'wp_superpoints_load' <Predicate = true> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
+ST_1 : Operation 92 [2/2] (1.19ns)   --->   "%wp_superpoints_load_1 = load i8 %wp_superpoints_addr_2"   --->   Operation 92 'load' 'wp_superpoints_load_1' <Predicate = true> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
+
+State 2 <SV = 1> <Delay = 2.05>
+ST_2 : Operation 93 [1/2] (1.19ns)   --->   "%wp_superpoints_load = load i8 %wp_superpoints_addr"   --->   Operation 93 'load' 'wp_superpoints_load' <Predicate = true> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
+ST_2 : Operation 94 [1/1] (0.85ns)   --->   "%icmp_ln878 = icmp_slt  i32 %wp_superpoints_load, i32 4272967196"   --->   Operation 94 'icmp' 'icmp_ln878' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 95 [1/2] (1.19ns)   --->   "%wp_superpoints_load_1 = load i8 %wp_superpoints_addr_2"   --->   Operation 95 'load' 'wp_superpoints_load_1' <Predicate = true> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
+ST_2 : Operation 96 [1/1] (0.85ns)   --->   "%icmp_ln878_12 = icmp_slt  i32 %wp_superpoints_load_1, i32 22000100"   --->   Operation 96 'icmp' 'icmp_ln878_12' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 1.42>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%wp_parameters_addr = getelementptr i32 %wp_parameters, i64 0, i64 20" [patchMaker.cpp:80]   --->   Operation 97 'getelementptr' 'wp_parameters_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%wp_parameters_addr_7 = getelementptr i32 %wp_parameters, i64 0, i64 18" [patchMaker.cpp:81]   --->   Operation 98 'getelementptr' 'wp_parameters_addr_7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%wp_parameters_addr_8 = getelementptr i32 %wp_parameters, i64 0, i64 16" [patchMaker.cpp:82]   --->   Operation 99 'getelementptr' 'wp_parameters_addr_8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%wp_parameters_addr_9 = getelementptr i32 %wp_parameters, i64 0, i64 22" [patchMaker.cpp:83]   --->   Operation 100 'getelementptr' 'wp_parameters_addr_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%wp_parameters_addr_10 = getelementptr i32 %wp_parameters, i64 0, i64 8" [patchMaker.cpp:113]   --->   Operation 101 'getelementptr' 'wp_parameters_addr_10' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%wp_parameters_addr_11 = getelementptr i32 %wp_parameters, i64 0, i64 9" [patchMaker.cpp:114]   --->   Operation 102 'getelementptr' 'wp_parameters_addr_11' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%wp_parameters_addr_12 = getelementptr i32 %wp_parameters, i64 0, i64 10" [patchMaker.cpp:115]   --->   Operation 103 'getelementptr' 'wp_parameters_addr_12' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%wp_parameters_addr_13 = getelementptr i32 %wp_parameters, i64 0, i64 11" [patchMaker.cpp:116]   --->   Operation 104 'getelementptr' 'wp_parameters_addr_13' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 105 [1/1] (0.00ns)   --->   "%wp_parameters_addr_14 = getelementptr i32 %wp_parameters, i64 0, i64 12" [patchMaker.cpp:117]   --->   Operation 105 'getelementptr' 'wp_parameters_addr_14' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%wp_parameters_addr_15 = getelementptr i32 %wp_parameters, i64 0, i64 13" [patchMaker.cpp:118]   --->   Operation 106 'getelementptr' 'wp_parameters_addr_15' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 107 [1/1] (0.00ns)   --->   "%wp_parameters_addr_16 = getelementptr i32 %wp_parameters, i64 0, i64 14" [patchMaker.cpp:119]   --->   Operation 107 'getelementptr' 'wp_parameters_addr_16' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 108 [1/1] (0.00ns)   --->   "%wp_parameters_addr_17 = getelementptr i32 %wp_parameters, i64 0, i64 15" [patchMaker.cpp:120]   --->   Operation 108 'getelementptr' 'wp_parameters_addr_17' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 109 [1/1] (0.22ns)   --->   "%z1_min_V = select i1 %icmp_ln878, i32 4272967196, i32 %wp_superpoints_load" [patchMaker.cpp:43]   --->   Operation 109 'select' 'z1_min_V' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 110 [1/1] (0.00ns)   --->   "%trunc_ln43 = trunc i32 %z1_min_V" [patchMaker.cpp:43]   --->   Operation 110 'trunc' 'trunc_ln43' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 111 [1/1] (0.22ns)   --->   "%z1_max_V = select i1 %icmp_ln878_12, i32 %wp_superpoints_load_1, i32 22000100" [patchMaker.cpp:44]   --->   Operation 111 'select' 'z1_max_V' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 112 [1/1] (0.00ns)   --->   "%trunc_ln44 = trunc i32 %z1_max_V" [patchMaker.cpp:44]   --->   Operation 112 'trunc' 'trunc_ln44' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 113 [1/1] (0.85ns)   --->   "%icmp_ln886 = icmp_sgt  i32 %z1_min_V, i32 %z1_max_V"   --->   Operation 113 'icmp' 'icmp_ln886' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 114 [1/1] (0.34ns)   --->   "%parallelogramsList_V_5_0 = select i1 %icmp_ln886, i26 23000100, i26 %trunc_ln44" [patchMaker.cpp:48]   --->   Operation 114 'select' 'parallelogramsList_V_5_0' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "%sext_ln78 = sext i26 %parallelogramsList_V_5_0" [patchMaker.cpp:78]   --->   Operation 115 'sext' 'sext_ln78' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 116 [1/1] (0.34ns)   --->   "%parallelogramsList_V_4_0 = select i1 %icmp_ln886, i26 23000100, i26 %trunc_ln43" [patchMaker.cpp:48]   --->   Operation 116 'select' 'parallelogramsList_V_4_0' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 117 [1/1] (0.00ns)   --->   "%sext_ln77 = sext i26 %parallelogramsList_V_4_0" [patchMaker.cpp:77]   --->   Operation 117 'sext' 'sext_ln77' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 118 [1/1] (0.38ns)   --->   "%br_ln61 = br void" [patchMaker.cpp:61]   --->   Operation 118 'br' 'br_ln61' <Predicate = true> <Delay = 0.38>
+
+State 4 <SV = 3> <Delay = 1.19>
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%parallelogramsList_V_5_0_0145 = phi i32 0, void, i32 %select_ln78, void %.split3577899120" [patchMaker.cpp:78]   --->   Operation 119 'phi' 'parallelogramsList_V_5_0_0145' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%parallelogramsList_V_4_0_0144 = phi i32 0, void, i32 %select_ln77, void %.split3577899120" [patchMaker.cpp:77]   --->   Operation 120 'phi' 'parallelogramsList_V_4_0_0144' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%i = phi i3 1, void, i3 %add_ln66, void %.split3577899120" [patchMaker.cpp:66]   --->   Operation 121 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 122 [1/1] (0.00ns)   --->   "%a_corner_min_V_3 = load i32 %a_corner_min_V"   --->   Operation 122 'load' 'a_corner_min_V_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%b_corner_min_V_4 = load i32 %b_corner_min_V"   --->   Operation 123 'load' 'b_corner_min_V_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "%c_corner_max_V_3 = load i32 %c_corner_max_V"   --->   Operation 124 'load' 'c_corner_max_V_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 125 [1/1] (0.00ns)   --->   "%d_corner_max_V_4 = load i32 %d_corner_max_V"   --->   Operation 125 'load' 'd_corner_max_V_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 126 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i3.i5, i3 %i, i5 0" [patchMaker.cpp:63]   --->   Operation 126 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 127 [1/1] (0.00ns)   --->   "%or_ln63 = or i8 %tmp_s, i8 1" [patchMaker.cpp:63]   --->   Operation 127 'or' 'or_ln63' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_2 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i56.i8, i56 0, i8 %or_ln63" [patchMaker.cpp:63]   --->   Operation 128 'bitconcatenate' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 129 [1/1] (0.00ns)   --->   "%wp_superpoints_addr_3 = getelementptr i32 %wp_superpoints, i64 0, i64 %tmp_2" [patchMaker.cpp:63]   --->   Operation 129 'getelementptr' 'wp_superpoints_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "%or_ln64 = or i8 %tmp_s, i8 31" [patchMaker.cpp:64]   --->   Operation 130 'or' 'or_ln64' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%tmp_3 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i56.i8, i56 0, i8 %or_ln64" [patchMaker.cpp:64]   --->   Operation 131 'bitconcatenate' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%wp_superpoints_addr_4 = getelementptr i32 %wp_superpoints, i64 0, i64 %tmp_3" [patchMaker.cpp:64]   --->   Operation 132 'getelementptr' 'wp_superpoints_addr_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 133 [1/1] (0.49ns)   --->   "%icmp_ln61 = icmp_eq  i3 %i, i3 5" [patchMaker.cpp:61]   --->   Operation 133 'icmp' 'icmp_ln61' <Predicate = true> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4"   --->   Operation 134 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 135 [1/1] (0.00ns)   --->   "%br_ln61 = br i1 %icmp_ln61, void %.split3, void" [patchMaker.cpp:61]   --->   Operation 135 'br' 'br_ln61' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 136 [2/2] (1.19ns)   --->   "%wp_superpoints_load_2 = load i8 %wp_superpoints_addr_3" [patchMaker.cpp:63]   --->   Operation 136 'load' 'wp_superpoints_load_2' <Predicate = (!icmp_ln61)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
+ST_4 : Operation 137 [2/2] (1.19ns)   --->   "%wp_superpoints_load_3 = load i8 %wp_superpoints_addr_4" [patchMaker.cpp:64]   --->   Operation 137 'load' 'wp_superpoints_load_3' <Predicate = (!icmp_ln61)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
+ST_4 : Operation 138 [1/1] (0.69ns)   --->   "%store_ln80 = store i32 1, i5 %wp_parameters_addr" [patchMaker.cpp:80]   --->   Operation 138 'store' 'store_ln80' <Predicate = (icmp_ln61)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_4 : Operation 139 [1/1] (0.69ns)   --->   "%store_ln81 = store i32 1, i5 %wp_parameters_addr_7" [patchMaker.cpp:81]   --->   Operation 139 'store' 'store_ln81' <Predicate = (icmp_ln61)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+
+State 5 <SV = 4> <Delay = 1.19>
+ST_5 : Operation 140 [1/2] (1.19ns)   --->   "%wp_superpoints_load_2 = load i8 %wp_superpoints_addr_3" [patchMaker.cpp:63]   --->   Operation 140 'load' 'wp_superpoints_load_2' <Predicate = true> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
+ST_5 : Operation 141 [1/2] (1.19ns)   --->   "%wp_superpoints_load_3 = load i8 %wp_superpoints_addr_4" [patchMaker.cpp:64]   --->   Operation 141 'load' 'wp_superpoints_load_3' <Predicate = true> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
+
+State 6 <SV = 5> <Delay = 1.90>
+ST_6 : Operation 142 [1/1] (0.57ns)   --->   "%add_ln66 = add i3 %i, i3 1" [patchMaker.cpp:66]   --->   Operation 142 'add' 'add_ln66' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 143 [46/46] (1.33ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 143 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 1.33> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 144 [46/46] (1.33ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 144 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 1.33> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 145 [46/46] (1.33ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 145 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 1.33> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 146 [46/46] (1.33ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 146 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 1.33> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 147 [1/1] (0.00ns)   --->   "%trunc_ln73 = trunc i3 %i" [patchMaker.cpp:73]   --->   Operation 147 'trunc' 'trunc_ln73' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 2.19>
+ST_7 : Operation 148 [45/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 148 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 149 [45/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 149 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 150 [45/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 150 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 151 [45/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 151 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 2.19>
+ST_8 : Operation 152 [44/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 152 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 153 [44/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 153 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 154 [44/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 154 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 155 [44/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 155 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 2.19>
+ST_9 : Operation 156 [43/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 156 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 157 [43/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 157 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 158 [43/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 158 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 159 [43/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 159 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 2.19>
+ST_10 : Operation 160 [42/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 160 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 161 [42/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 161 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 162 [42/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 162 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 163 [42/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 163 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 2.19>
+ST_11 : Operation 164 [41/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 164 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 165 [41/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 165 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 166 [41/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 166 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 167 [41/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 167 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 2.19>
+ST_12 : Operation 168 [40/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 168 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 169 [40/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 169 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 170 [40/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 170 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 171 [40/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 171 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 2.19>
+ST_13 : Operation 172 [39/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 172 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 173 [39/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 173 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 174 [39/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 174 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 175 [39/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 175 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 2.19>
+ST_14 : Operation 176 [38/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 176 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 177 [38/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 177 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 178 [38/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 178 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 179 [38/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 179 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 2.19>
+ST_15 : Operation 180 [37/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 180 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 181 [37/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 181 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 182 [37/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 182 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 183 [37/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 183 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 2.19>
+ST_16 : Operation 184 [36/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 184 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 185 [36/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 185 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 186 [36/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 186 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 187 [36/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 187 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 2.19>
+ST_17 : Operation 188 [35/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 188 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 189 [35/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 189 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 190 [35/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 190 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 191 [35/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 191 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 2.19>
+ST_18 : Operation 192 [34/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 192 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 193 [34/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 193 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 194 [34/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 194 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 195 [34/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 195 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 2.19>
+ST_19 : Operation 196 [33/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 196 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 197 [33/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 197 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 198 [33/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 198 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 199 [33/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 199 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 19> <Delay = 2.19>
+ST_20 : Operation 200 [32/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 200 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_20 : Operation 201 [32/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 201 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_20 : Operation 202 [32/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 202 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_20 : Operation 203 [32/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 203 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 2.19>
+ST_21 : Operation 204 [31/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 204 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 205 [31/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 205 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 206 [31/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 206 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 207 [31/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 207 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 2.19>
+ST_22 : Operation 208 [30/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 208 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 209 [30/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 209 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 210 [30/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 210 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 211 [30/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 211 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 22> <Delay = 2.19>
+ST_23 : Operation 212 [29/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 212 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_23 : Operation 213 [29/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 213 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_23 : Operation 214 [29/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 214 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_23 : Operation 215 [29/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 215 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 2.19>
+ST_24 : Operation 216 [28/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 216 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_24 : Operation 217 [28/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 217 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_24 : Operation 218 [28/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 218 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_24 : Operation 219 [28/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 219 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 24> <Delay = 2.19>
+ST_25 : Operation 220 [27/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 220 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 221 [27/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 221 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 222 [27/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 222 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 223 [27/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 223 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 25> <Delay = 2.19>
+ST_26 : Operation 224 [26/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 224 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_26 : Operation 225 [26/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 225 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_26 : Operation 226 [26/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 226 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_26 : Operation 227 [26/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 227 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 26> <Delay = 2.19>
+ST_27 : Operation 228 [25/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 228 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 229 [25/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 229 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 230 [25/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 230 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 231 [25/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 231 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 27> <Delay = 2.19>
+ST_28 : Operation 232 [24/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 232 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_28 : Operation 233 [24/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 233 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_28 : Operation 234 [24/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 234 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_28 : Operation 235 [24/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 235 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 28> <Delay = 2.19>
+ST_29 : Operation 236 [23/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 236 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_29 : Operation 237 [23/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 237 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_29 : Operation 238 [23/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 238 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_29 : Operation 239 [23/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 239 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 29> <Delay = 2.19>
+ST_30 : Operation 240 [22/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 240 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 241 [22/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 241 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 242 [22/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 242 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 243 [22/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 243 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 2.19>
+ST_31 : Operation 244 [21/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 244 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 245 [21/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 245 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 246 [21/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 246 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 247 [21/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 247 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 2.19>
+ST_32 : Operation 248 [20/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 248 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_32 : Operation 249 [20/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 249 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_32 : Operation 250 [20/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 250 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_32 : Operation 251 [20/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 251 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 32> <Delay = 2.19>
+ST_33 : Operation 252 [19/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 252 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_33 : Operation 253 [19/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 253 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_33 : Operation 254 [19/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 254 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_33 : Operation 255 [19/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 255 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 34 <SV = 33> <Delay = 2.19>
+ST_34 : Operation 256 [18/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 256 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_34 : Operation 257 [18/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 257 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_34 : Operation 258 [18/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 258 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_34 : Operation 259 [18/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 259 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 35 <SV = 34> <Delay = 2.19>
+ST_35 : Operation 260 [17/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 260 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_35 : Operation 261 [17/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 261 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_35 : Operation 262 [17/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 262 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_35 : Operation 263 [17/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 263 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 36 <SV = 35> <Delay = 2.19>
+ST_36 : Operation 264 [16/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 264 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_36 : Operation 265 [16/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 265 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_36 : Operation 266 [16/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 266 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_36 : Operation 267 [16/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 267 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 37 <SV = 36> <Delay = 2.19>
+ST_37 : Operation 268 [15/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 268 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_37 : Operation 269 [15/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 269 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_37 : Operation 270 [15/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 270 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_37 : Operation 271 [15/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 271 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 38 <SV = 37> <Delay = 2.19>
+ST_38 : Operation 272 [14/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 272 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_38 : Operation 273 [14/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 273 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_38 : Operation 274 [14/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 274 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_38 : Operation 275 [14/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 275 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 39 <SV = 38> <Delay = 2.19>
+ST_39 : Operation 276 [13/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 276 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_39 : Operation 277 [13/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 277 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_39 : Operation 278 [13/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 278 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_39 : Operation 279 [13/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 279 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 40 <SV = 39> <Delay = 2.19>
+ST_40 : Operation 280 [12/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 280 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_40 : Operation 281 [12/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 281 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_40 : Operation 282 [12/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 282 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_40 : Operation 283 [12/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 283 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 41 <SV = 40> <Delay = 2.19>
+ST_41 : Operation 284 [11/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 284 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_41 : Operation 285 [11/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 285 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_41 : Operation 286 [11/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 286 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_41 : Operation 287 [11/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 287 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 42 <SV = 41> <Delay = 2.19>
+ST_42 : Operation 288 [10/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 288 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_42 : Operation 289 [10/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 289 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_42 : Operation 290 [10/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 290 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_42 : Operation 291 [10/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 291 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 43 <SV = 42> <Delay = 2.19>
+ST_43 : Operation 292 [9/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 292 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_43 : Operation 293 [9/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 293 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_43 : Operation 294 [9/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 294 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_43 : Operation 295 [9/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 295 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 44 <SV = 43> <Delay = 2.19>
+ST_44 : Operation 296 [8/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 296 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_44 : Operation 297 [8/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 297 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_44 : Operation 298 [8/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 298 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_44 : Operation 299 [8/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 299 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 45 <SV = 44> <Delay = 2.19>
+ST_45 : Operation 300 [7/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 300 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_45 : Operation 301 [7/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 301 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_45 : Operation 302 [7/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 302 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_45 : Operation 303 [7/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 303 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 46 <SV = 45> <Delay = 2.19>
+ST_46 : Operation 304 [6/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 304 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_46 : Operation 305 [6/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 305 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_46 : Operation 306 [6/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 306 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_46 : Operation 307 [6/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 307 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 47 <SV = 46> <Delay = 2.19>
+ST_47 : Operation 308 [5/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 308 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_47 : Operation 309 [5/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 309 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_47 : Operation 310 [5/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 310 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_47 : Operation 311 [5/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 311 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 48 <SV = 47> <Delay = 2.19>
+ST_48 : Operation 312 [4/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 312 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_48 : Operation 313 [4/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 313 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_48 : Operation 314 [4/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 314 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_48 : Operation 315 [4/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 315 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 49 <SV = 48> <Delay = 2.19>
+ST_49 : Operation 316 [3/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 316 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_49 : Operation 317 [3/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 317 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_49 : Operation 318 [3/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 318 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_49 : Operation 319 [3/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 319 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 50 <SV = 49> <Delay = 2.19>
+ST_50 : Operation 320 [2/46] (2.19ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 320 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_50 : Operation 321 [2/46] (2.19ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 321 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_50 : Operation 322 [2/46] (2.19ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 322 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_50 : Operation 323 [2/46] (2.19ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 323 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 51 <SV = 50> <Delay = 2.06>
+ST_51 : Operation 324 [1/1] (0.00ns)   --->   "%specloopname_ln61 = specloopname void @_ssdm_op_SpecLoopName, void @empty_17" [patchMaker.cpp:61]   --->   Operation 324 'specloopname' 'specloopname_ln61' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 325 [1/46] (2.06ns)   --->   "%parallelogramsList_V_0_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:66]   --->   Operation 325 'call' 'parallelogramsList_V_0_0' <Predicate = true> <Delay = 2.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_51 : Operation 326 [1/46] (2.06ns)   --->   "%parallelogramsList_V_1_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_3, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:67]   --->   Operation 326 'call' 'parallelogramsList_V_1_0' <Predicate = true> <Delay = 2.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_51 : Operation 327 [1/46] (2.06ns)   --->   "%parallelogramsList_V_2_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln77, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:68]   --->   Operation 327 'call' 'parallelogramsList_V_2_0' <Predicate = true> <Delay = 2.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_51 : Operation 328 [1/46] (2.06ns)   --->   "%parallelogramsList_V_3_0 = call i32 @straightLineProjectorFromLayerIJtoK, i32 %sext_ln78, i32 %wp_superpoints_load_2, i3 1, i3 %add_ln66, i3 5" [patchMaker.cpp:69]   --->   Operation 328 'call' 'parallelogramsList_V_3_0' <Predicate = true> <Delay = 2.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_51 : Operation 329 [1/1] (0.65ns)   --->   "%switch_ln73 = switch i2 %trunc_ln73, void %branch3, i2 1, void %.split3..split357_crit_edge, i2 2, void %branch1, i2 3, void %branch2" [patchMaker.cpp:73]   --->   Operation 329 'switch' 'switch_ln73' <Predicate = true> <Delay = 0.65>
+ST_51 : Operation 330 [1/1] (0.00ns)   --->   "%store_ln73 = store i32 %parallelogramsList_V_0_0, i32 %parallelogramsList_V_0_3_3" [patchMaker.cpp:73]   --->   Operation 330 'store' 'store_ln73' <Predicate = (trunc_ln73 == 3)> <Delay = 0.00>
+ST_51 : Operation 331 [1/1] (0.00ns)   --->   "%br_ln73 = br void %.split357" [patchMaker.cpp:73]   --->   Operation 331 'br' 'br_ln73' <Predicate = (trunc_ln73 == 3)> <Delay = 0.00>
+ST_51 : Operation 332 [1/1] (0.00ns)   --->   "%store_ln73 = store i32 %parallelogramsList_V_0_0, i32 %parallelogramsList_V_0_3_2" [patchMaker.cpp:73]   --->   Operation 332 'store' 'store_ln73' <Predicate = (trunc_ln73 == 2)> <Delay = 0.00>
+ST_51 : Operation 333 [1/1] (0.00ns)   --->   "%br_ln73 = br void %.split357" [patchMaker.cpp:73]   --->   Operation 333 'br' 'br_ln73' <Predicate = (trunc_ln73 == 2)> <Delay = 0.00>
+ST_51 : Operation 334 [1/1] (0.00ns)   --->   "%store_ln73 = store i32 %parallelogramsList_V_0_0, i32 %parallelogramsList_V_0_3_1" [patchMaker.cpp:73]   --->   Operation 334 'store' 'store_ln73' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 335 [1/1] (0.00ns)   --->   "%store_ln73 = store i32 %parallelogramsList_V_0_0, i32 %a_corner_min_V" [patchMaker.cpp:73]   --->   Operation 335 'store' 'store_ln73' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 336 [1/1] (0.00ns)   --->   "%br_ln73 = br void %.split357" [patchMaker.cpp:73]   --->   Operation 336 'br' 'br_ln73' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 337 [1/1] (0.00ns)   --->   "%store_ln73 = store i32 %parallelogramsList_V_0_0, i32 %parallelogramsList_V_0_3_4" [patchMaker.cpp:73]   --->   Operation 337 'store' 'store_ln73' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 338 [1/1] (0.00ns)   --->   "%store_ln73 = store i32 %parallelogramsList_V_0_0, i32 %parallelogramsList_V_0_3" [patchMaker.cpp:73]   --->   Operation 338 'store' 'store_ln73' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 339 [1/1] (0.00ns)   --->   "%br_ln73 = br void %.split357" [patchMaker.cpp:73]   --->   Operation 339 'br' 'br_ln73' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 340 [1/1] (0.65ns)   --->   "%switch_ln74 = switch i2 %trunc_ln73, void %branch7, i2 1, void %.split357..split35778_crit_edge, i2 2, void %branch5, i2 3, void %branch6" [patchMaker.cpp:74]   --->   Operation 340 'switch' 'switch_ln74' <Predicate = true> <Delay = 0.65>
+ST_51 : Operation 341 [1/1] (0.00ns)   --->   "%store_ln74 = store i32 %parallelogramsList_V_1_0, i32 %parallelogramsList_V_1_3_3" [patchMaker.cpp:74]   --->   Operation 341 'store' 'store_ln74' <Predicate = (trunc_ln73 == 3)> <Delay = 0.00>
+ST_51 : Operation 342 [1/1] (0.00ns)   --->   "%br_ln74 = br void %.split35778" [patchMaker.cpp:74]   --->   Operation 342 'br' 'br_ln74' <Predicate = (trunc_ln73 == 3)> <Delay = 0.00>
+ST_51 : Operation 343 [1/1] (0.00ns)   --->   "%store_ln74 = store i32 %parallelogramsList_V_1_0, i32 %parallelogramsList_V_1_3_2" [patchMaker.cpp:74]   --->   Operation 343 'store' 'store_ln74' <Predicate = (trunc_ln73 == 2)> <Delay = 0.00>
+ST_51 : Operation 344 [1/1] (0.00ns)   --->   "%br_ln74 = br void %.split35778" [patchMaker.cpp:74]   --->   Operation 344 'br' 'br_ln74' <Predicate = (trunc_ln73 == 2)> <Delay = 0.00>
+ST_51 : Operation 345 [1/1] (0.00ns)   --->   "%store_ln74 = store i32 %parallelogramsList_V_1_0, i32 %parallelogramsList_V_1_3_1" [patchMaker.cpp:74]   --->   Operation 345 'store' 'store_ln74' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 346 [1/1] (0.00ns)   --->   "%store_ln74 = store i32 %parallelogramsList_V_1_0, i32 %b_corner_min_V" [patchMaker.cpp:74]   --->   Operation 346 'store' 'store_ln74' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 347 [1/1] (0.00ns)   --->   "%br_ln74 = br void %.split35778" [patchMaker.cpp:74]   --->   Operation 347 'br' 'br_ln74' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 348 [1/1] (0.00ns)   --->   "%store_ln74 = store i32 %parallelogramsList_V_1_0, i32 %parallelogramsList_V_1_3_4" [patchMaker.cpp:74]   --->   Operation 348 'store' 'store_ln74' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 349 [1/1] (0.00ns)   --->   "%store_ln74 = store i32 %parallelogramsList_V_1_0, i32 %parallelogramsList_V_1_3" [patchMaker.cpp:74]   --->   Operation 349 'store' 'store_ln74' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 350 [1/1] (0.00ns)   --->   "%br_ln74 = br void %.split35778" [patchMaker.cpp:74]   --->   Operation 350 'br' 'br_ln74' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 351 [1/1] (0.65ns)   --->   "%switch_ln75 = switch i2 %trunc_ln73, void %branch11, i2 1, void %.split35778..split3577899_crit_edge, i2 2, void %branch9, i2 3, void %branch10" [patchMaker.cpp:75]   --->   Operation 351 'switch' 'switch_ln75' <Predicate = true> <Delay = 0.65>
+ST_51 : Operation 352 [1/1] (0.00ns)   --->   "%store_ln75 = store i32 %parallelogramsList_V_2_0, i32 %parallelogramsList_V_2_3_3" [patchMaker.cpp:75]   --->   Operation 352 'store' 'store_ln75' <Predicate = (trunc_ln73 == 3)> <Delay = 0.00>
+ST_51 : Operation 353 [1/1] (0.00ns)   --->   "%br_ln75 = br void %.split3577899" [patchMaker.cpp:75]   --->   Operation 353 'br' 'br_ln75' <Predicate = (trunc_ln73 == 3)> <Delay = 0.00>
+ST_51 : Operation 354 [1/1] (0.00ns)   --->   "%store_ln75 = store i32 %parallelogramsList_V_2_0, i32 %parallelogramsList_V_2_3_2" [patchMaker.cpp:75]   --->   Operation 354 'store' 'store_ln75' <Predicate = (trunc_ln73 == 2)> <Delay = 0.00>
+ST_51 : Operation 355 [1/1] (0.00ns)   --->   "%br_ln75 = br void %.split3577899" [patchMaker.cpp:75]   --->   Operation 355 'br' 'br_ln75' <Predicate = (trunc_ln73 == 2)> <Delay = 0.00>
+ST_51 : Operation 356 [1/1] (0.00ns)   --->   "%store_ln75 = store i32 %parallelogramsList_V_2_0, i32 %parallelogramsList_V_2_3_1" [patchMaker.cpp:75]   --->   Operation 356 'store' 'store_ln75' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 357 [1/1] (0.00ns)   --->   "%store_ln75 = store i32 %parallelogramsList_V_2_0, i32 %c_corner_max_V" [patchMaker.cpp:75]   --->   Operation 357 'store' 'store_ln75' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 358 [1/1] (0.00ns)   --->   "%br_ln75 = br void %.split3577899" [patchMaker.cpp:75]   --->   Operation 358 'br' 'br_ln75' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 359 [1/1] (0.00ns)   --->   "%store_ln75 = store i32 %parallelogramsList_V_2_0, i32 %parallelogramsList_V_2_3_4" [patchMaker.cpp:75]   --->   Operation 359 'store' 'store_ln75' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 360 [1/1] (0.00ns)   --->   "%store_ln75 = store i32 %parallelogramsList_V_2_0, i32 %parallelogramsList_V_2_3" [patchMaker.cpp:75]   --->   Operation 360 'store' 'store_ln75' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 361 [1/1] (0.00ns)   --->   "%br_ln75 = br void %.split3577899" [patchMaker.cpp:75]   --->   Operation 361 'br' 'br_ln75' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 362 [1/1] (0.65ns)   --->   "%switch_ln76 = switch i2 %trunc_ln73, void %branch15, i2 1, void %.split3577899..split3577899120_crit_edge, i2 2, void %branch13, i2 3, void %branch14" [patchMaker.cpp:76]   --->   Operation 362 'switch' 'switch_ln76' <Predicate = true> <Delay = 0.65>
+ST_51 : Operation 363 [1/1] (0.00ns)   --->   "%store_ln76 = store i32 %parallelogramsList_V_3_0, i32 %parallelogramsList_V_3_3_3" [patchMaker.cpp:76]   --->   Operation 363 'store' 'store_ln76' <Predicate = (trunc_ln73 == 3)> <Delay = 0.00>
+ST_51 : Operation 364 [1/1] (0.00ns)   --->   "%br_ln76 = br void %.split3577899120" [patchMaker.cpp:76]   --->   Operation 364 'br' 'br_ln76' <Predicate = (trunc_ln73 == 3)> <Delay = 0.00>
+ST_51 : Operation 365 [1/1] (0.00ns)   --->   "%store_ln76 = store i32 %parallelogramsList_V_3_0, i32 %parallelogramsList_V_3_3_2" [patchMaker.cpp:76]   --->   Operation 365 'store' 'store_ln76' <Predicate = (trunc_ln73 == 2)> <Delay = 0.00>
+ST_51 : Operation 366 [1/1] (0.00ns)   --->   "%br_ln76 = br void %.split3577899120" [patchMaker.cpp:76]   --->   Operation 366 'br' 'br_ln76' <Predicate = (trunc_ln73 == 2)> <Delay = 0.00>
+ST_51 : Operation 367 [1/1] (0.00ns)   --->   "%store_ln76 = store i32 %parallelogramsList_V_3_0, i32 %parallelogramsList_V_3_3_1" [patchMaker.cpp:76]   --->   Operation 367 'store' 'store_ln76' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 368 [1/1] (0.00ns)   --->   "%store_ln76 = store i32 %parallelogramsList_V_3_0, i32 %d_corner_max_V" [patchMaker.cpp:76]   --->   Operation 368 'store' 'store_ln76' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 369 [1/1] (0.00ns)   --->   "%br_ln76 = br void %.split3577899120" [patchMaker.cpp:76]   --->   Operation 369 'br' 'br_ln76' <Predicate = (trunc_ln73 == 1)> <Delay = 0.00>
+ST_51 : Operation 370 [1/1] (0.00ns)   --->   "%store_ln76 = store i32 %parallelogramsList_V_3_0, i32 %parallelogramsList_V_3_3_4" [patchMaker.cpp:76]   --->   Operation 370 'store' 'store_ln76' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 371 [1/1] (0.00ns)   --->   "%store_ln76 = store i32 %parallelogramsList_V_3_0, i32 %parallelogramsList_V_3_3" [patchMaker.cpp:76]   --->   Operation 371 'store' 'store_ln76' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 372 [1/1] (0.00ns)   --->   "%br_ln76 = br void %.split3577899120" [patchMaker.cpp:76]   --->   Operation 372 'br' 'br_ln76' <Predicate = (trunc_ln73 == 0)> <Delay = 0.00>
+ST_51 : Operation 373 [1/1] (0.34ns)   --->   "%icmp_ln77 = icmp_eq  i2 %trunc_ln73, i2 1" [patchMaker.cpp:77]   --->   Operation 373 'icmp' 'icmp_ln77' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 374 [1/1] (0.22ns)   --->   "%select_ln77 = select i1 %icmp_ln77, i32 %sext_ln77, i32 %parallelogramsList_V_4_0_0144" [patchMaker.cpp:77]   --->   Operation 374 'select' 'select_ln77' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_51 : Operation 375 [1/1] (0.22ns)   --->   "%select_ln78 = select i1 %icmp_ln77, i32 %sext_ln78, i32 %parallelogramsList_V_5_0_0145" [patchMaker.cpp:78]   --->   Operation 375 'select' 'select_ln78' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_51 : Operation 376 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 376 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 52 <SV = 4> <Delay = 0.69>
+ST_52 : Operation 377 [1/1] (0.69ns)   --->   "%store_ln82 = store i32 1, i5 %wp_parameters_addr_8" [patchMaker.cpp:82]   --->   Operation 377 'store' 'store_ln82' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_52 : Operation 378 [1/1] (0.69ns)   --->   "%store_ln83 = store i32 0, i5 %wp_parameters_addr_9" [patchMaker.cpp:83]   --->   Operation 378 'store' 'store_ln83' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_52 : Operation 379 [1/1] (0.38ns)   --->   "%br_ln92 = br void" [patchMaker.cpp:92]   --->   Operation 379 'br' 'br_ln92' <Predicate = true> <Delay = 0.38>
+
+State 53 <SV = 5> <Delay = 1.53>
+ST_53 : Operation 380 [1/1] (0.00ns)   --->   "%i_10 = phi i3 0, void, i3 %add_ln92, void %.split" [patchMaker.cpp:92]   --->   Operation 380 'phi' 'i_10' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 381 [1/1] (0.00ns)   --->   "%d_corner_max_V_1 = phi i32 %d_corner_max_V_4, void, i32 %d_corner_max_V_5, void %.split"   --->   Operation 381 'phi' 'd_corner_max_V_1' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 382 [1/1] (0.00ns)   --->   "%c_corner_max_V_1 = phi i32 %c_corner_max_V_3, void, i32 %c_corner_max_V_4, void %.split"   --->   Operation 382 'phi' 'c_corner_max_V_1' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 383 [1/1] (0.00ns)   --->   "%b_corner_min_V_1 = phi i32 %b_corner_min_V_4, void, i32 %b_corner_min_V_5, void %.split"   --->   Operation 383 'phi' 'b_corner_min_V_1' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 384 [1/1] (0.00ns)   --->   "%a_corner_min_V_1 = phi i32 %a_corner_min_V_3, void, i32 %a_corner_min_V_4, void %.split"   --->   Operation 384 'phi' 'a_corner_min_V_1' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 385 [1/1] (0.57ns)   --->   "%add_ln92 = add i3 %i_10, i3 1" [patchMaker.cpp:92]   --->   Operation 385 'add' 'add_ln92' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.57> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 386 [1/1] (0.49ns)   --->   "%icmp_ln92 = icmp_eq  i3 %i_10, i3 4" [patchMaker.cpp:92]   --->   Operation 386 'icmp' 'icmp_ln92' <Predicate = true> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 387 [1/1] (0.00ns)   --->   "%empty_89 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4"   --->   Operation 387 'speclooptripcount' 'empty_89' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 388 [1/1] (0.00ns)   --->   "%br_ln92 = br i1 %icmp_ln92, void %.split, void" [patchMaker.cpp:92]   --->   Operation 388 'br' 'br_ln92' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 389 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_1_load = load i32 %parallelogramsList_V_0_3_1"   --->   Operation 389 'load' 'parallelogramsList_V_0_3_1_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 390 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_2_load = load i32 %parallelogramsList_V_0_3_2"   --->   Operation 390 'load' 'parallelogramsList_V_0_3_2_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 391 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_3_load = load i32 %parallelogramsList_V_0_3_3"   --->   Operation 391 'load' 'parallelogramsList_V_0_3_3_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 392 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_4_load = load i32 %parallelogramsList_V_0_3_4"   --->   Operation 392 'load' 'parallelogramsList_V_0_3_4_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 393 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_1_load = load i32 %parallelogramsList_V_1_3_1"   --->   Operation 393 'load' 'parallelogramsList_V_1_3_1_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 394 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_2_load = load i32 %parallelogramsList_V_1_3_2"   --->   Operation 394 'load' 'parallelogramsList_V_1_3_2_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 395 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_3_load = load i32 %parallelogramsList_V_1_3_3"   --->   Operation 395 'load' 'parallelogramsList_V_1_3_3_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 396 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_4_load = load i32 %parallelogramsList_V_1_3_4"   --->   Operation 396 'load' 'parallelogramsList_V_1_3_4_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 397 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_1_load = load i32 %parallelogramsList_V_2_3_1"   --->   Operation 397 'load' 'parallelogramsList_V_2_3_1_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 398 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_2_load = load i32 %parallelogramsList_V_2_3_2"   --->   Operation 398 'load' 'parallelogramsList_V_2_3_2_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 399 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_3_load = load i32 %parallelogramsList_V_2_3_3"   --->   Operation 399 'load' 'parallelogramsList_V_2_3_3_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 400 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_4_load = load i32 %parallelogramsList_V_2_3_4"   --->   Operation 400 'load' 'parallelogramsList_V_2_3_4_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 401 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_1_load = load i32 %parallelogramsList_V_3_3_1"   --->   Operation 401 'load' 'parallelogramsList_V_3_3_1_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 402 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_2_load = load i32 %parallelogramsList_V_3_3_2"   --->   Operation 402 'load' 'parallelogramsList_V_3_3_2_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 403 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_3_load = load i32 %parallelogramsList_V_3_3_3"   --->   Operation 403 'load' 'parallelogramsList_V_3_3_3_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 404 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_4_load = load i32 %parallelogramsList_V_3_3_4"   --->   Operation 404 'load' 'parallelogramsList_V_3_3_4_load' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 405 [1/1] (0.00ns)   --->   "%specloopname_ln85 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [patchMaker.cpp:85]   --->   Operation 405 'specloopname' 'specloopname_ln85' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 406 [1/1] (0.00ns)   --->   "%trunc_ln878 = trunc i3 %i_10"   --->   Operation 406 'trunc' 'trunc_ln878' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 407 [1/1] (0.45ns)   --->   "%tmp = mux i32 @_ssdm_op_Mux.ap_auto.4i32.i2, i32 %parallelogramsList_V_0_3_1_load, i32 %parallelogramsList_V_0_3_2_load, i32 %parallelogramsList_V_0_3_3_load, i32 %parallelogramsList_V_0_3_4_load, i2 %trunc_ln878"   --->   Operation 407 'mux' 'tmp' <Predicate = (!icmp_ln92)> <Delay = 0.45> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 408 [1/1] (0.85ns)   --->   "%icmp_ln878_13 = icmp_slt  i32 %tmp, i32 %a_corner_min_V_1"   --->   Operation 408 'icmp' 'icmp_ln878_13' <Predicate = (!icmp_ln92)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 409 [1/1] (0.22ns)   --->   "%a_corner_min_V_4 = select i1 %icmp_ln878_13, i32 %tmp, i32 %a_corner_min_V_1" [patchMaker.cpp:94]   --->   Operation 409 'select' 'a_corner_min_V_4' <Predicate = (!icmp_ln92)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_53 : Operation 410 [1/1] (0.45ns)   --->   "%b_corner_min_V_2 = mux i32 @_ssdm_op_Mux.ap_auto.4i32.i2, i32 %parallelogramsList_V_1_3_1_load, i32 %parallelogramsList_V_1_3_2_load, i32 %parallelogramsList_V_1_3_3_load, i32 %parallelogramsList_V_1_3_4_load, i2 %trunc_ln878"   --->   Operation 410 'mux' 'b_corner_min_V_2' <Predicate = (!icmp_ln92)> <Delay = 0.45> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 411 [1/1] (0.85ns)   --->   "%icmp_ln878_14 = icmp_slt  i32 %b_corner_min_V_2, i32 %b_corner_min_V_1"   --->   Operation 411 'icmp' 'icmp_ln878_14' <Predicate = (!icmp_ln92)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 412 [1/1] (0.22ns)   --->   "%b_corner_min_V_5 = select i1 %icmp_ln878_14, i32 %b_corner_min_V_2, i32 %b_corner_min_V_1" [patchMaker.cpp:98]   --->   Operation 412 'select' 'b_corner_min_V_5' <Predicate = (!icmp_ln92)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_53 : Operation 413 [1/1] (0.45ns)   --->   "%tmp_5 = mux i32 @_ssdm_op_Mux.ap_auto.4i32.i2, i32 %parallelogramsList_V_2_3_1_load, i32 %parallelogramsList_V_2_3_2_load, i32 %parallelogramsList_V_2_3_3_load, i32 %parallelogramsList_V_2_3_4_load, i2 %trunc_ln878"   --->   Operation 413 'mux' 'tmp_5' <Predicate = (!icmp_ln92)> <Delay = 0.45> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 414 [1/1] (0.85ns)   --->   "%icmp_ln886_9 = icmp_sgt  i32 %tmp_5, i32 %c_corner_max_V_1"   --->   Operation 414 'icmp' 'icmp_ln886_9' <Predicate = (!icmp_ln92)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 415 [1/1] (0.22ns)   --->   "%c_corner_max_V_4 = select i1 %icmp_ln886_9, i32 %tmp_5, i32 %c_corner_max_V_1" [patchMaker.cpp:102]   --->   Operation 415 'select' 'c_corner_max_V_4' <Predicate = (!icmp_ln92)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_53 : Operation 416 [1/1] (0.45ns)   --->   "%d_corner_max_V_2 = mux i32 @_ssdm_op_Mux.ap_auto.4i32.i2, i32 %parallelogramsList_V_3_3_1_load, i32 %parallelogramsList_V_3_3_2_load, i32 %parallelogramsList_V_3_3_3_load, i32 %parallelogramsList_V_3_3_4_load, i2 %trunc_ln878"   --->   Operation 416 'mux' 'd_corner_max_V_2' <Predicate = (!icmp_ln92)> <Delay = 0.45> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.45> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 417 [1/1] (0.85ns)   --->   "%icmp_ln886_10 = icmp_sgt  i32 %d_corner_max_V_2, i32 %d_corner_max_V_1"   --->   Operation 417 'icmp' 'icmp_ln886_10' <Predicate = (!icmp_ln92)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 418 [1/1] (0.22ns)   --->   "%d_corner_max_V_5 = select i1 %icmp_ln886_10, i32 %d_corner_max_V_2, i32 %d_corner_max_V_1" [patchMaker.cpp:106]   --->   Operation 418 'select' 'd_corner_max_V_5' <Predicate = (!icmp_ln92)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_53 : Operation 419 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 419 'br' 'br_ln0' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_53 : Operation 420 [1/1] (0.69ns)   --->   "%store_ln113 = store i32 %parallelogramsList_V_4_0_0144, i5 %wp_parameters_addr_10" [patchMaker.cpp:113]   --->   Operation 420 'store' 'store_ln113' <Predicate = (icmp_ln92)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_53 : Operation 421 [1/1] (0.69ns)   --->   "%store_ln114 = store i32 %a_corner_min_V_1, i5 %wp_parameters_addr_11" [patchMaker.cpp:114]   --->   Operation 421 'store' 'store_ln114' <Predicate = (icmp_ln92)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+
+State 54 <SV = 6> <Delay = 0.69>
+ST_54 : Operation 422 [1/1] (0.69ns)   --->   "%store_ln115 = store i32 %parallelogramsList_V_5_0_0145, i5 %wp_parameters_addr_12" [patchMaker.cpp:115]   --->   Operation 422 'store' 'store_ln115' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_54 : Operation 423 [1/1] (0.69ns)   --->   "%store_ln116 = store i32 %b_corner_min_V_1, i5 %wp_parameters_addr_13" [patchMaker.cpp:116]   --->   Operation 423 'store' 'store_ln116' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+
+State 55 <SV = 7> <Delay = 0.69>
+ST_55 : Operation 424 [1/1] (0.69ns)   --->   "%store_ln117 = store i32 %parallelogramsList_V_4_0_0144, i5 %wp_parameters_addr_14" [patchMaker.cpp:117]   --->   Operation 424 'store' 'store_ln117' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_55 : Operation 425 [1/1] (0.69ns)   --->   "%store_ln118 = store i32 %c_corner_max_V_1, i5 %wp_parameters_addr_15" [patchMaker.cpp:118]   --->   Operation 425 'store' 'store_ln118' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+
+State 56 <SV = 8> <Delay = 0.85>
+ST_56 : Operation 426 [1/1] (0.00ns)   --->   "%parallelogramsList_V_0_3_load = load i32 %parallelogramsList_V_0_3"   --->   Operation 426 'load' 'parallelogramsList_V_0_3_load' <Predicate = true> <Delay = 0.00>
+ST_56 : Operation 427 [1/1] (0.69ns)   --->   "%store_ln119 = store i32 %parallelogramsList_V_5_0_0145, i5 %wp_parameters_addr_16" [patchMaker.cpp:119]   --->   Operation 427 'store' 'store_ln119' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_56 : Operation 428 [1/1] (0.69ns)   --->   "%store_ln120 = store i32 %d_corner_max_V_1, i5 %wp_parameters_addr_17" [patchMaker.cpp:120]   --->   Operation 428 'store' 'store_ln120' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_56 : Operation 429 [1/1] (0.85ns)   --->   "%icmp_ln874 = icmp_eq  i32 %a_corner_min_V_1, i32 %parallelogramsList_V_0_3_load"   --->   Operation 429 'icmp' 'icmp_ln874' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 430 [1/1] (0.00ns)   --->   "%br_ln123 = br i1 %icmp_ln874, void, void %._crit_edge" [patchMaker.cpp:123]   --->   Operation 430 'br' 'br_ln123' <Predicate = true> <Delay = 0.00>
+
+State 57 <SV = 9> <Delay = 0.85>
+ST_57 : Operation 431 [1/1] (0.69ns)   --->   "%store_ln125 = store i32 0, i5 %wp_parameters_addr" [patchMaker.cpp:125]   --->   Operation 431 'store' 'store_ln125' <Predicate = (!icmp_ln874)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_57 : Operation 432 [1/1] (0.69ns)   --->   "%store_ln126 = store i32 0, i5 %wp_parameters_addr_7" [patchMaker.cpp:126]   --->   Operation 432 'store' 'store_ln126' <Predicate = (!icmp_ln874)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_57 : Operation 433 [1/1] (0.00ns)   --->   "%br_ln127 = br void %._crit_edge" [patchMaker.cpp:127]   --->   Operation 433 'br' 'br_ln127' <Predicate = (!icmp_ln874)> <Delay = 0.00>
+ST_57 : Operation 434 [1/1] (0.00ns)   --->   "%parallelogramsList_V_1_3_load = load i32 %parallelogramsList_V_1_3"   --->   Operation 434 'load' 'parallelogramsList_V_1_3_load' <Predicate = true> <Delay = 0.00>
+ST_57 : Operation 435 [1/1] (0.85ns)   --->   "%icmp_ln874_1 = icmp_eq  i32 %b_corner_min_V_1, i32 %parallelogramsList_V_1_3_load"   --->   Operation 435 'icmp' 'icmp_ln874_1' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 436 [1/1] (0.00ns)   --->   "%br_ln128 = br i1 %icmp_ln874_1, void, void %._crit_edge1" [patchMaker.cpp:128]   --->   Operation 436 'br' 'br_ln128' <Predicate = true> <Delay = 0.00>
+
+State 58 <SV = 10> <Delay = 0.85>
+ST_58 : Operation 437 [1/1] (0.69ns)   --->   "%store_ln130 = store i32 0, i5 %wp_parameters_addr" [patchMaker.cpp:130]   --->   Operation 437 'store' 'store_ln130' <Predicate = (!icmp_ln874_1)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_58 : Operation 438 [1/1] (0.69ns)   --->   "%store_ln131 = store i32 0, i5 %wp_parameters_addr_7" [patchMaker.cpp:131]   --->   Operation 438 'store' 'store_ln131' <Predicate = (!icmp_ln874_1)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_58 : Operation 439 [1/1] (0.00ns)   --->   "%br_ln132 = br void %._crit_edge1" [patchMaker.cpp:132]   --->   Operation 439 'br' 'br_ln132' <Predicate = (!icmp_ln874_1)> <Delay = 0.00>
+ST_58 : Operation 440 [1/1] (0.00ns)   --->   "%parallelogramsList_V_2_3_load = load i32 %parallelogramsList_V_2_3"   --->   Operation 440 'load' 'parallelogramsList_V_2_3_load' <Predicate = true> <Delay = 0.00>
+ST_58 : Operation 441 [1/1] (0.85ns)   --->   "%icmp_ln874_2 = icmp_eq  i32 %c_corner_max_V_1, i32 %parallelogramsList_V_2_3_load"   --->   Operation 441 'icmp' 'icmp_ln874_2' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_58 : Operation 442 [1/1] (0.00ns)   --->   "%br_ln133 = br i1 %icmp_ln874_2, void, void %._crit_edge2" [patchMaker.cpp:133]   --->   Operation 442 'br' 'br_ln133' <Predicate = true> <Delay = 0.00>
+
+State 59 <SV = 11> <Delay = 0.85>
+ST_59 : Operation 443 [1/1] (0.69ns)   --->   "%store_ln135 = store i32 0, i5 %wp_parameters_addr" [patchMaker.cpp:135]   --->   Operation 443 'store' 'store_ln135' <Predicate = (!icmp_ln874_2)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_59 : Operation 444 [1/1] (0.69ns)   --->   "%store_ln136 = store i32 0, i5 %wp_parameters_addr_8" [patchMaker.cpp:136]   --->   Operation 444 'store' 'store_ln136' <Predicate = (!icmp_ln874_2)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_59 : Operation 445 [1/1] (0.00ns)   --->   "%br_ln137 = br void %._crit_edge2" [patchMaker.cpp:137]   --->   Operation 445 'br' 'br_ln137' <Predicate = (!icmp_ln874_2)> <Delay = 0.00>
+ST_59 : Operation 446 [1/1] (0.00ns)   --->   "%parallelogramsList_V_3_3_load = load i32 %parallelogramsList_V_3_3"   --->   Operation 446 'load' 'parallelogramsList_V_3_3_load' <Predicate = true> <Delay = 0.00>
+ST_59 : Operation 447 [1/1] (0.85ns)   --->   "%icmp_ln874_3 = icmp_eq  i32 %d_corner_max_V_1, i32 %parallelogramsList_V_3_3_load"   --->   Operation 447 'icmp' 'icmp_ln874_3' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 448 [1/1] (0.00ns)   --->   "%br_ln138 = br i1 %icmp_ln874_3, void, void %._crit_edge3" [patchMaker.cpp:138]   --->   Operation 448 'br' 'br_ln138' <Predicate = true> <Delay = 0.00>
+
+State 60 <SV = 12> <Delay = 1.24>
+ST_60 : Operation 449 [1/1] (0.69ns)   --->   "%store_ln140 = store i32 0, i5 %wp_parameters_addr" [patchMaker.cpp:140]   --->   Operation 449 'store' 'store_ln140' <Predicate = (!icmp_ln874_3)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_60 : Operation 450 [1/1] (0.69ns)   --->   "%store_ln141 = store i32 0, i5 %wp_parameters_addr_8" [patchMaker.cpp:141]   --->   Operation 450 'store' 'store_ln141' <Predicate = (!icmp_ln874_3)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_60 : Operation 451 [1/1] (0.00ns)   --->   "%br_ln142 = br void %._crit_edge3" [patchMaker.cpp:142]   --->   Operation 451 'br' 'br_ln142' <Predicate = (!icmp_ln874_3)> <Delay = 0.00>
+ST_60 : Operation 452 [1/1] (0.85ns)   --->   "%icmp_ln886_11 = icmp_sgt  i32 %c_corner_max_V_1, i32 %a_corner_min_V_1"   --->   Operation 452 'icmp' 'icmp_ln886_11' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 453 [1/1] (0.38ns)   --->   "%br_ln145 = br i1 %icmp_ln886_11, void %._crit_edge4, void" [patchMaker.cpp:145]   --->   Operation 453 'br' 'br_ln145' <Predicate = true> <Delay = 0.38>
+
+State 61 <SV = 13> <Delay = 0.69>
+ST_61 : Operation 454 [1/1] (0.69ns)   --->   "%store_ln147 = store i32 1, i5 %wp_parameters_addr_9" [patchMaker.cpp:147]   --->   Operation 454 'store' 'store_ln147' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_61 : Operation 455 [1/1] (0.69ns)   --->   "%store_ln148 = store i32 %b_corner_min_V_1, i5 %wp_parameters_addr_15" [patchMaker.cpp:148]   --->   Operation 455 'store' 'store_ln148' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+
+State 62 <SV = 14> <Delay = 0.85>
+ST_62 : Operation 456 [1/1] (0.69ns)   --->   "%store_ln149 = store i32 %b_corner_min_V_1, i5 %wp_parameters_addr_11" [patchMaker.cpp:149]   --->   Operation 456 'store' 'store_ln149' <Predicate = (icmp_ln886_11)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_62 : Operation 457 [1/1] (0.38ns)   --->   "%br_ln150 = br void %._crit_edge4" [patchMaker.cpp:150]   --->   Operation 457 'br' 'br_ln150' <Predicate = (icmp_ln886_11)> <Delay = 0.38>
+ST_62 : Operation 458 [1/1] (0.85ns)   --->   "%icmp_ln878_15 = icmp_slt  i32 %b_corner_min_V_1, i32 %d_corner_max_V_1"   --->   Operation 458 'icmp' 'icmp_ln878_15' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 15> <Delay = 0.69>
+ST_63 : Operation 459 [1/1] (0.00ns)   --->   "%arrayidx2356315_load_0 = phi i32 %b_corner_min_V_1, void, i32 %c_corner_max_V_1, void %._crit_edge3"   --->   Operation 459 'phi' 'arrayidx2356315_load_0' <Predicate = true> <Delay = 0.00>
+ST_63 : Operation 460 [1/1] (0.00ns)   --->   "%br_ln152 = br i1 %icmp_ln878_15, void %._crit_edge5, void" [patchMaker.cpp:152]   --->   Operation 460 'br' 'br_ln152' <Predicate = true> <Delay = 0.00>
+ST_63 : Operation 461 [1/1] (0.69ns)   --->   "%store_ln154 = store i32 1, i5 %wp_parameters_addr_9" [patchMaker.cpp:154]   --->   Operation 461 'store' 'store_ln154' <Predicate = (icmp_ln878_15)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_63 : Operation 462 [1/1] (0.69ns)   --->   "%store_ln155 = store i32 %arrayidx2356315_load_0, i5 %wp_parameters_addr_13" [patchMaker.cpp:155]   --->   Operation 462 'store' 'store_ln155' <Predicate = (icmp_ln878_15)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+
+State 64 <SV = 16> <Delay = 0.69>
+ST_64 : Operation 463 [1/1] (0.69ns)   --->   "%store_ln156 = store i32 %arrayidx2356315_load_0, i5 %wp_parameters_addr_17" [patchMaker.cpp:156]   --->   Operation 463 'store' 'store_ln156' <Predicate = (icmp_ln878_15)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_64 : Operation 464 [1/1] (0.00ns)   --->   "%br_ln157 = br void %._crit_edge5" [patchMaker.cpp:157]   --->   Operation 464 'br' 'br_ln157' <Predicate = (icmp_ln878_15)> <Delay = 0.00>
+ST_64 : Operation 465 [1/1] (0.00ns)   --->   "%ret_ln158 = ret" [patchMaker.cpp:158]   --->   Operation 465 'ret' 'ret_ln158' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3ns, clock uncertainty: 0.81ns.
+
+ <State 1>: 1.2ns
+The critical path consists of the following:
+	'getelementptr' operation ('wp_superpoints_addr') [27]  (0 ns)
+	'load' operation ('wp_superpoints_load') on array 'wp_superpoints' [41]  (1.2 ns)
+
+ <State 2>: 2.05ns
+The critical path consists of the following:
+	'load' operation ('wp_superpoints_load') on array 'wp_superpoints' [41]  (1.2 ns)
+	'icmp' operation ('icmp_ln878') [42]  (0.859 ns)
+
+ <State 3>: 1.43ns
+The critical path consists of the following:
+	'select' operation ('z1_min.V', patchMaker.cpp:43) [43]  (0.227 ns)
+	'icmp' operation ('icmp_ln886') [49]  (0.859 ns)
+	'select' operation ('parallelogramsList.V[5][0]', patchMaker.cpp:48) [50]  (0.343 ns)
+
+ <State 4>: 1.2ns
+The critical path consists of the following:
+	'phi' operation ('i', patchMaker.cpp:66) with incoming values : ('add_ln66', patchMaker.cpp:66) [58]  (0 ns)
+	'or' operation ('or_ln63', patchMaker.cpp:63) [64]  (0 ns)
+	'getelementptr' operation ('wp_superpoints_addr_3', patchMaker.cpp:63) [66]  (0 ns)
+	'load' operation ('wp_superpoints_load_2', patchMaker.cpp:63) on array 'wp_superpoints' [76]  (1.2 ns)
+	blocking operation 0.0025 ns on control path)
+
+ <State 5>: 1.2ns
+The critical path consists of the following:
+	'load' operation ('wp_superpoints_load_2', patchMaker.cpp:63) on array 'wp_superpoints' [76]  (1.2 ns)
+
+ <State 6>: 1.9ns
+The critical path consists of the following:
+	'add' operation ('add_ln66', patchMaker.cpp:66) [74]  (0.572 ns)
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (1.33 ns)
+
+ <State 7>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 8>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 9>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 10>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 11>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 12>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 13>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 14>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 15>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 16>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 17>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 18>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 19>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 20>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 21>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 22>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 23>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 24>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 25>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 26>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 27>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 28>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 29>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 30>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 31>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 32>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 33>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 34>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 35>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 36>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 37>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 38>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 39>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 40>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 41>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 42>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 43>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 44>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 45>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 46>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 47>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 48>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 49>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 50>: 2.19ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[0][0]', patchMaker.cpp:66) to 'straightLineProjectorFromLayerIJtoK' [78]  (2.19 ns)
+
+ <State 51>: 2.06ns
+The critical path consists of the following:
+	'call' operation ('parallelogramsList.V[1][0]', patchMaker.cpp:67) to 'straightLineProjectorFromLayerIJtoK' [79]  (2.06 ns)
+	'store' operation ('store_ln74', patchMaker.cpp:74) of variable 'parallelogramsList.V[1][0]', patchMaker.cpp:67 on local variable 'parallelogramsList.V[1][3]' [111]  (0 ns)
+
+ <State 52>: 0.699ns
+The critical path consists of the following:
+	'store' operation ('store_ln82', patchMaker.cpp:82) of constant 1 on array 'wp_parameters' [154]  (0.699 ns)
+
+ <State 53>: 1.54ns
+The critical path consists of the following:
+	'phi' operation ('i', patchMaker.cpp:92) with incoming values : ('add_ln92', patchMaker.cpp:92) [158]  (0 ns)
+	'mux' operation ('tmp') [186]  (0.453 ns)
+	'icmp' operation ('icmp_ln878_13') [187]  (0.859 ns)
+	'select' operation ('a_corner_min.V', patchMaker.cpp:94) [188]  (0.227 ns)
+
+ <State 54>: 0.699ns
+The critical path consists of the following:
+	'store' operation ('store_ln115', patchMaker.cpp:115) of variable 'parallelogramsList_V_5_0_0145', patchMaker.cpp:78 on array 'wp_parameters' [203]  (0.699 ns)
+
+ <State 55>: 0.699ns
+The critical path consists of the following:
+	'store' operation ('store_ln117', patchMaker.cpp:117) of variable 'parallelogramsList_V_4_0_0144', patchMaker.cpp:77 on array 'wp_parameters' [205]  (0.699 ns)
+
+ <State 56>: 0.859ns
+The critical path consists of the following:
+	'load' operation ('parallelogramsList_V_0_3_load') on local variable 'parallelogramsList.V[0][3]' [200]  (0 ns)
+	'icmp' operation ('icmp_ln874') [209]  (0.859 ns)
+
+ <State 57>: 0.859ns
+The critical path consists of the following:
+	'load' operation ('parallelogramsList_V_1_3_load') on local variable 'parallelogramsList.V[1][3]' [216]  (0 ns)
+	'icmp' operation ('icmp_ln874_1') [217]  (0.859 ns)
+
+ <State 58>: 0.859ns
+The critical path consists of the following:
+	'load' operation ('parallelogramsList_V_2_3_load') on local variable 'parallelogramsList.V[2][3]' [224]  (0 ns)
+	'icmp' operation ('icmp_ln874_2') [225]  (0.859 ns)
+
+ <State 59>: 0.859ns
+The critical path consists of the following:
+	'load' operation ('parallelogramsList_V_3_3_load') on local variable 'parallelogramsList.V[3][3]' [232]  (0 ns)
+	'icmp' operation ('icmp_ln874_3') [233]  (0.859 ns)
+
+ <State 60>: 1.25ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln886_11') [240]  (0.859 ns)
+	multiplexor before 'phi' operation ('b_corner_min.V') with incoming values : ('b_corner_min.V') ('c_corner_max.V') ('b_corner_min.V', patchMaker.cpp:98) ('c_corner_max.V', patchMaker.cpp:102) [248]  (0.387 ns)
+
+ <State 61>: 0.699ns
+The critical path consists of the following:
+	'store' operation ('store_ln147', patchMaker.cpp:147) of constant 1 on array 'wp_parameters' [243]  (0.699 ns)
+
+ <State 62>: 0.859ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln878_15') [249]  (0.859 ns)
+
+ <State 63>: 0.699ns
+The critical path consists of the following:
+	'store' operation ('store_ln154', patchMaker.cpp:154) of constant 1 on array 'wp_parameters' [252]  (0.699 ns)
+
+ <State 64>: 0.699ns
+The critical path consists of the following:
+	'store' operation ('store_ln156', patchMaker.cpp:156) of variable 'b_corner_min.V' on array 'wp_parameters' [254]  (0.699 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

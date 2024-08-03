@@ -18,18 +18,18 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.125</EstimatedClockPeriod>
+<EstimatedClockPeriod>1.902</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>14</Best-caseLatency>
-<Average-caseLatency>246</Average-caseLatency>
-<Worst-caseLatency>490</Worst-caseLatency>
+<Average-caseLatency>182</Average-caseLatency>
+<Worst-caseLatency>362</Worst-caseLatency>
 <Best-caseRealTimeLatency>42.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.738 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.470 us</Worst-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.546 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.086 us</Worst-caseRealTimeLatency>
 <Interval-min>14</Interval-min>
-<Interval-max>490</Interval-max>
+<Interval-max>362</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <add_patch_perSuperpointSP0_add_patch_perPointSP0>
@@ -73,8 +73,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>694</FF>
-<LUT>1691</LUT>
+<FF>546</FF>
+<LUT>1185</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -262,7 +262,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>7</Bits>
+<Bits>5</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -350,7 +350,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -387,29 +387,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>patches_parameters_address1</name>
-<Object>patches_parameters</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>9</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>patches_parameters_ce1</name>
-<Object>patches_parameters</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>patches_parameters_q1</name>
+<name>patches_parameters_q0</name>
 <Object>patches_parameters</Object>
 <Type>array</Type>
 <Scope></Scope>

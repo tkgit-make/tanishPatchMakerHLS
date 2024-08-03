@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity MPSQ_mul_33ns_33s_64_3_1_Multiplier_2 is
+entity MPSQ_mul_33ns_33s_64_3_1_Multiplier_1 is
 port (
     clk: in std_logic;
     ce: in std_logic;
@@ -15,7 +15,7 @@ port (
     p: out std_logic_vector(64 - 1 downto 0));
 end entity;
 
-architecture behav of MPSQ_mul_33ns_33s_64_3_1_Multiplier_2 is
+architecture behav of MPSQ_mul_33ns_33s_64_3_1_Multiplier_1 is
     signal tmp_product : std_logic_vector(64 - 1 downto 0);
     signal a_i : std_logic_vector(33 - 1 downto 0);
     signal b_i : std_logic_vector(33 - 1 downto 0);
@@ -63,7 +63,7 @@ entity MPSQ_mul_33ns_33s_64_3_1 is
 end entity;
 
 architecture arch of MPSQ_mul_33ns_33s_64_3_1 is
-    component MPSQ_mul_33ns_33s_64_3_1_Multiplier_2 is
+    component MPSQ_mul_33ns_33s_64_3_1_Multiplier_1 is
         port (
             clk : IN STD_LOGIC;
             ce : IN STD_LOGIC;
@@ -75,7 +75,7 @@ architecture arch of MPSQ_mul_33ns_33s_64_3_1 is
 
 
 begin
-    MPSQ_mul_33ns_33s_64_3_1_Multiplier_2_U :  component MPSQ_mul_33ns_33s_64_3_1_Multiplier_2
+    MPSQ_mul_33ns_33s_64_3_1_Multiplier_1_U :  component MPSQ_mul_33ns_33s_64_3_1_Multiplier_1
     port map (
         clk => clk,
         ce => ce,

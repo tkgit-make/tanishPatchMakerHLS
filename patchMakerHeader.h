@@ -56,10 +56,12 @@
 #define MAX_POINTS_IN_SUPERPOINT 16
 #define MAX_SUPERPOINTS_IN_PATCH 5
 #define MAX_PARALLELOGRAMS_PER_PATCH MAX_LAYERS - 1 // layer 1 is a vertical ribbon, the other 4 layers are sloping, so each intersects with layer 1 to make a parallelogram
+#define MAX_NUMBER_OF_CORNERS 4
 
 #define PARAMETERS_PER_POINT 2
-#define PATCH_PROPERTIES 4
-#define MAX_PATCH_PROPERTY_LENGTH 6
+#define PATCH_PROPERTIES 3
+#define MAX_PATCH_PROPERTY_LENGTH 2
+#define PARALLELOGRAM_PROPERTY_LENGTH 6
 // #define MAX_LINES __ //only used in visualization
 //#define MAX_SUPERPOINTS_IN_COVER (MAX_PATCHES * MAX_SUPERPOINTS_IN_PATCH)
 
@@ -86,11 +88,11 @@
 
 #define MAX_POINTS_FOR_DATASET MAX_POINTS_PER_LAYER    // max size of vector of points "vect" in CPP
 
-#define WEDGE_PATCH COORDINATE_TYPE (&wp_superpoints) [MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]
+#define WEDGE_PATCH COORDINATE_TYPE (&wp_superpoints) [MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]
 #define GDARRAY COORDINATE_TYPE (&GDarrayDecoded) [MAX_LAYERS][MAX_POINTS_FOR_DATASET][PARAMETERS_PER_POINT], int_type (&GDn_points) [MAX_LAYERS]
 #define GDARRAYPRESORT std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> &GDarray, int_type (&GDn_points) [MAX_LAYERS]
-#define GPATCHES SPACEPOINT_TYPE (&patches_superpoints) [MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]
-#define WEDGE_PATCH_GET_SHADOWS SPACEPOINT_TYPE (&wp_superpoints) [MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]
+#define GPATCHES SPACEPOINT_TYPE (&patches_superpoints) [MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]
+#define WEDGE_PATCH_GET_SHADOWS SPACEPOINT_TYPE (&wp_superpoints) [MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]
 
 
 
@@ -218,9 +220,8 @@ typedef struct
 bool areWedgeSuperPointsEqual(SPACEPOINT_TYPE wsp1[MAX_POINTS_IN_SUPERPOINT], SPACEPOINT_TYPE wsp2[MAX_POINTS_IN_SUPERPOINT]);
 void wedgePatch_init(WEDGE_PATCH, COORDINATE_TYPE superpointsI[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], long_type superpoint_count, COORDINATE_TYPE apexZ0I);
 COORDINATE_TYPE straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDINATE_TYPE z_j, int_type i, int_type j, int_type k);
-void getParallelograms(WEDGE_PATCH);
+void getParallelogramsAndAcceptanceCorners(WEDGE_PATCH);
 void getShadows(WEDGE_PATCH_GET_SHADOWS, COORDINATE_TYPE zTopMin, COORDINATE_TYPE zTopMax);
-void get_acceptanceCorners(COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]);
 void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES);
 void delete_patch(int_type index, index_type &n_patches, GPATCHES);
 index_type get_index_from_z(int_type layer, COORDINATE_TYPE z_value, GDARRAY);
@@ -233,7 +234,7 @@ void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int_
 void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_TYPE apexZ0, bool float_middleLayers_ppl, int_type &ppl, int_type original_ppl, bool leftRight, long_type alignmentAccuracy, COORDINATE_TYPE (&init_patch) [MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], GDARRAY);
 bool getSolveNextPatchPairWhileCondition(bool repeat_patch, bool repeat_original,
                                          long_type white_space_height, long_type previous_white_space_height,
-                                         int_type current_z_top_index, int_type (&GDn_points) [MAX_LAYERS], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_PARALLELOGRAMS_PER_PATCH][MAX_PATCH_PROPERTY_LENGTH]);
+                                         int_type current_z_top_index, int_type (&GDn_points) [MAX_LAYERS], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]);
 
 bool getSolveNextColumnWhileConditional(COORDINATE_TYPE c_corner, int_type nPatchesInColumn,
                                         COORDINATE_TYPE projectionOfCornerToBeam);

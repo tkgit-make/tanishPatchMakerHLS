@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'solveNextColumn'
 ================================================================
-* Date:           Thu Aug  1 23:31:24 2024
+* Date:           Sat Aug  3 00:46:19 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -70,13 +70,13 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 11
+* Number of FSM states : 49
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
-1 --> 2 
-2 --> 3 9 
+1 --> 2 47 
+2 --> 3 
 3 --> 4 
 4 --> 5 
 5 --> 6 
@@ -85,75 +85,228 @@ IsGatedGlobalClock: 0
 8 --> 9 
 9 --> 10 
 10 --> 11 
-11 --> 10 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 48 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.58>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%n_patches_read = read i8 @_ssdm_op_Read.ap_auto.i8P0A, i8 %n_patches" [patchMaker.cpp:748]   --->   Operation 12 'read' 'n_patches_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.58ns)   --->   "%icmp_ln748 = icmp_eq  i8 %n_patches_read, i8 0" [patchMaker.cpp:748]   --->   Operation 13 'icmp' 'icmp_ln748' <Predicate = true> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+State 1 <SV = 0> <Delay = 1.46>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%ppl_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %ppl"   --->   Operation 50 'read' 'ppl_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%apexZ0_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %apexZ0"   --->   Operation 51 'read' 'apexZ0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_13, i32 0, i32 0, void @empty_12, i32 4294967295, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 52 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%n_patches_read = read i8 @_ssdm_op_Read.ap_auto.i8P0A, i8 %n_patches" [patchMaker.cpp:744]   --->   Operation 53 'read' 'n_patches_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.58ns)   --->   "%icmp_ln744 = icmp_eq  i8 %n_patches_read, i8 0" [patchMaker.cpp:744]   --->   Operation 54 'icmp' 'icmp_ln744' <Predicate = true> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 55 [1/1] (0.38ns)   --->   "%br_ln744 = br i1 %icmp_ln744, void, void %._crit_edge.preheader" [patchMaker.cpp:744]   --->   Operation 55 'br' 'br_ln744' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 56 [46/46] (0.88ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 56 'call' 'op2_V' <Predicate = (!icmp_ln744)> <Delay = 0.88> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 2 <SV = 1> <Delay = 1.63>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%ppl_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %ppl"   --->   Operation 14 'read' 'ppl_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%apexZ0_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %apexZ0"   --->   Operation 15 'read' 'apexZ0_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %GDn_points, void @empty_33, i32 0, i32 0, void @empty_2, i32 4294967295, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.38ns)   --->   "%br_ln748 = br i1 %icmp_ln748, void, void %._crit_edge.preheader" [patchMaker.cpp:748]   --->   Operation 17 'br' 'br_ln748' <Predicate = true> <Delay = 0.38>
-ST_2 : Operation 18 [7/7] (1.63ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 18 'call' 'op2_V' <Predicate = (!icmp_ln748)> <Delay = 1.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 2 <SV = 1> <Delay = 2.10>
+ST_2 : Operation 57 [45/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 57 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 2.10>
-ST_3 : Operation 19 [6/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 19 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 58 [44/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 58 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 2.10>
-ST_4 : Operation 20 [5/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 20 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 59 [43/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 59 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 2.10>
-ST_5 : Operation 21 [4/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 21 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 60 [42/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 60 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 2.10>
-ST_6 : Operation 22 [3/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 22 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 61 [41/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 61 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 2.10>
-ST_7 : Operation 23 [2/7] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 23 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 62 [40/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 62 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 8 <SV = 7> <Delay = 1.10>
-ST_8 : Operation 24 [1/7] (1.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5, i35 %radiiDivisionList" [patchMaker.cpp:750]   --->   Operation 24 'call' 'op2_V' <Predicate = true> <Delay = 1.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 8 <SV = 7> <Delay = 2.10>
+ST_8 : Operation 63 [39/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 63 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 9 <SV = 8> <Delay = 1.47>
-ST_9 : Operation 25 [1/1] (0.85ns)   --->   "%icmp_ln878 = icmp_sgt  i32 %op2_V, i32 50000000"   --->   Operation 25 'icmp' 'icmp_ln878' <Predicate = (!icmp_ln748)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 26 [1/1] (0.22ns)   --->   "%select_ln750 = select i1 %icmp_ln878, i32 50000000, i32 %op2_V" [patchMaker.cpp:750]   --->   Operation 26 'select' 'select_ln750' <Predicate = (!icmp_ln748)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_9 : Operation 27 [1/1] (0.38ns)   --->   "%br_ln750 = br void %._crit_edge.preheader" [patchMaker.cpp:750]   --->   Operation 27 'br' 'br_ln750' <Predicate = (!icmp_ln748)> <Delay = 0.38>
-ST_9 : Operation 28 [1/1] (0.00ns)   --->   "%z_top_max_V_16_ph = phi i32 50000000, void, i32 %select_ln750, void" [patchMaker.cpp:750]   --->   Operation 28 'phi' 'z_top_max_V_16_ph' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 29 [1/1] (0.38ns)   --->   "%br_ln757 = br void %._crit_edge" [patchMaker.cpp:757]   --->   Operation 29 'br' 'br_ln757' <Predicate = true> <Delay = 0.38>
+State 9 <SV = 8> <Delay = 2.10>
+ST_9 : Operation 64 [38/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 64 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 10 <SV = 9> <Delay = 1.94>
-ST_10 : Operation 30 [1/1] (0.00ns)   --->   "%z_top_max_V_16 = phi i32 %z_top_max_V, void, i32 %z_top_max_V_16_ph, void %._crit_edge.preheader"   --->   Operation 30 'phi' 'z_top_max_V_16' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 31 [1/1] (0.00ns)   --->   "%c_corner_V_0 = phi i32 %c_corner_V, void, i32 4294967295, void %._crit_edge.preheader"   --->   Operation 31 'phi' 'c_corner_V_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 32 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V_0 = phi i32 %complementary_apexZ0_V, void, i32 0, void %._crit_edge.preheader"   --->   Operation 32 'phi' 'complementary_apexZ0_V_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 33 [1/1] (0.00ns)   --->   "%z_top_min_V_0 = phi i32 %z_top_min_V, void, i32 4244967296, void %._crit_edge.preheader"   --->   Operation 33 'phi' 'z_top_min_V_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 34 [1/1] (0.00ns)   --->   "%nPatchesInColumn_0 = phi i32 %nPatchesInColumn, void, i32 0, void %._crit_edge.preheader"   --->   Operation 34 'phi' 'nPatchesInColumn_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 35 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_V_0 = phi i32 %projectionOfCornerToBeam_V, void, i32 0, void %._crit_edge.preheader"   --->   Operation 35 'phi' 'projectionOfCornerToBeam_V_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 36 [1/1] (0.00ns)   --->   "%saved_apexZ0_buf_0 = phi i32 %saved_apexZ0_ret, void, i32 %apexZ0_read, void %._crit_edge.preheader" [patchMaker.cpp:764]   --->   Operation 36 'phi' 'saved_apexZ0_buf_0' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 37 [1/1] (0.00ns)   --->   "%loopCounter = phi i32 %loopCounter_1, void, i32 0, void %._crit_edge.preheader"   --->   Operation 37 'phi' 'loopCounter' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 38 [1/1] (0.98ns)   --->   "%tmp = call i1 @getSolveNextColumnWhileConditional, i32 %c_corner_V_0, i32 %nPatchesInColumn_0, i32 %projectionOfCornerToBeam_V_0" [patchMaker.cpp:762]   --->   Operation 38 'call' 'tmp' <Predicate = true> <Delay = 0.98> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 39 [1/1] (0.88ns)   --->   "%loopCounter_1 = add i32 %loopCounter, i32 1" [patchMaker.cpp:773]   --->   Operation 39 'add' 'loopCounter_1' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_10 : Operation 40 [1/1] (0.38ns)   --->   "%br_ln762 = br i1 %tmp, void %.loopexit, void" [patchMaker.cpp:762]   --->   Operation 40 'br' 'br_ln762' <Predicate = true> <Delay = 0.38>
-ST_10 : Operation 41 [2/2] (0.96ns)   --->   "%call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i33 %radiiDivisionList_1_4, i26 %trapezoid_edges_V, i35 %radiiDivisionList" [patchMaker.cpp:764]   --->   Operation 41 'call' 'call_ret' <Predicate = (tmp)> <Delay = 0.96> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 42 [1/1] (0.85ns)   --->   "%icmp_ln768 = icmp_sgt  i32 %loopCounter, i32 25" [patchMaker.cpp:768]   --->   Operation 42 'icmp' 'icmp_ln768' <Predicate = (tmp)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+State 10 <SV = 9> <Delay = 2.10>
+ST_10 : Operation 65 [37/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 65 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 11 <SV = 10> <Delay = 0.38>
-ST_11 : Operation 43 [1/1] (0.00ns)   --->   "%specloopname_ln764 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22" [patchMaker.cpp:764]   --->   Operation 43 'specloopname' 'specloopname_ln764' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 44 [1/2] (0.00ns)   --->   "%call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i33 %radiiDivisionList_1_4, i26 %trapezoid_edges_V, i35 %radiiDivisionList" [patchMaker.cpp:764]   --->   Operation 44 'call' 'call_ret' <Predicate = (tmp)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 45 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 45 'extractvalue' 'complementary_apexZ0_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 46 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 46 'extractvalue' 'projectionOfCornerToBeam_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 47 [1/1] (0.00ns)   --->   "%c_corner_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 47 'extractvalue' 'c_corner_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 48 [1/1] (0.00ns)   --->   "%nPatchesInColumn = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 48 'extractvalue' 'nPatchesInColumn' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 49 [1/1] (0.00ns)   --->   "%saved_apexZ0_ret = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 49 'extractvalue' 'saved_apexZ0_ret' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 50 [1/1] (0.00ns)   --->   "%z_top_max_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 50 'extractvalue' 'z_top_max_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 51 [1/1] (0.00ns)   --->   "%z_top_min_V = extractvalue i224 %call_ret" [patchMaker.cpp:764]   --->   Operation 51 'extractvalue' 'z_top_min_V' <Predicate = (tmp)> <Delay = 0.00>
-ST_11 : Operation 52 [1/1] (0.38ns)   --->   "%br_ln768 = br i1 %icmp_ln768, void, void %.loopexit" [patchMaker.cpp:768]   --->   Operation 52 'br' 'br_ln768' <Predicate = (tmp)> <Delay = 0.38>
-ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln762 = br void %._crit_edge" [patchMaker.cpp:762]   --->   Operation 53 'br' 'br_ln762' <Predicate = (tmp & !icmp_ln768)> <Delay = 0.00>
-ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%saved_apexZ0_buf_1 = phi i32 %saved_apexZ0_ret, void, i32 %saved_apexZ0_buf_0, void %._crit_edge" [patchMaker.cpp:764]   --->   Operation 54 'phi' 'saved_apexZ0_buf_1' <Predicate = (icmp_ln768) | (!tmp)> <Delay = 0.00>
-ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln783 = ret i32 %saved_apexZ0_buf_1" [patchMaker.cpp:783]   --->   Operation 55 'ret' 'ret_ln783' <Predicate = (icmp_ln768) | (!tmp)> <Delay = 0.00>
+State 11 <SV = 10> <Delay = 2.10>
+ST_11 : Operation 66 [36/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 66 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 2.10>
+ST_12 : Operation 67 [35/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 67 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 2.10>
+ST_13 : Operation 68 [34/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 68 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 2.10>
+ST_14 : Operation 69 [33/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 69 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 2.10>
+ST_15 : Operation 70 [32/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 70 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 2.10>
+ST_16 : Operation 71 [31/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 71 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 2.10>
+ST_17 : Operation 72 [30/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 72 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 2.10>
+ST_18 : Operation 73 [29/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 73 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 2.10>
+ST_19 : Operation 74 [28/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 74 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 19> <Delay = 2.10>
+ST_20 : Operation 75 [27/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 75 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 2.10>
+ST_21 : Operation 76 [26/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 76 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 2.10>
+ST_22 : Operation 77 [25/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 77 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 22> <Delay = 2.10>
+ST_23 : Operation 78 [24/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 78 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 2.10>
+ST_24 : Operation 79 [23/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 79 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 24> <Delay = 2.10>
+ST_25 : Operation 80 [22/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 80 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 25> <Delay = 2.10>
+ST_26 : Operation 81 [21/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 81 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 26> <Delay = 2.10>
+ST_27 : Operation 82 [20/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 82 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 27> <Delay = 2.10>
+ST_28 : Operation 83 [19/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 83 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 28> <Delay = 2.10>
+ST_29 : Operation 84 [18/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 84 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 29> <Delay = 2.10>
+ST_30 : Operation 85 [17/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 85 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 2.10>
+ST_31 : Operation 86 [16/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 86 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 2.10>
+ST_32 : Operation 87 [15/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 87 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 32> <Delay = 2.10>
+ST_33 : Operation 88 [14/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 88 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 34 <SV = 33> <Delay = 2.10>
+ST_34 : Operation 89 [13/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 89 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 35 <SV = 34> <Delay = 2.10>
+ST_35 : Operation 90 [12/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 90 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 36 <SV = 35> <Delay = 2.10>
+ST_36 : Operation 91 [11/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 91 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 37 <SV = 36> <Delay = 2.10>
+ST_37 : Operation 92 [10/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 92 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 38 <SV = 37> <Delay = 2.10>
+ST_38 : Operation 93 [9/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 93 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 39 <SV = 38> <Delay = 2.10>
+ST_39 : Operation 94 [8/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 94 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 40 <SV = 39> <Delay = 2.10>
+ST_40 : Operation 95 [7/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 95 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 41 <SV = 40> <Delay = 2.10>
+ST_41 : Operation 96 [6/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 96 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 42 <SV = 41> <Delay = 2.10>
+ST_42 : Operation 97 [5/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 97 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 43 <SV = 42> <Delay = 2.10>
+ST_43 : Operation 98 [4/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 98 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 44 <SV = 43> <Delay = 2.10>
+ST_44 : Operation 99 [3/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 99 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 45 <SV = 44> <Delay = 2.10>
+ST_45 : Operation 100 [2/46] (2.10ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 100 'call' 'op2_V' <Predicate = true> <Delay = 2.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 46 <SV = 45> <Delay = 2.06>
+ST_46 : Operation 101 [1/46] (2.06ns)   --->   "%op2_V = call i32 @straightLineProjectorFromLayerIJtoK, i32 4279967296, i32 %apexZ0_read, i3 0, i3 1, i3 5" [patchMaker.cpp:746]   --->   Operation 101 'call' 'op2_V' <Predicate = true> <Delay = 2.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 47 <SV = 46> <Delay = 1.47>
+ST_47 : Operation 102 [1/1] (0.85ns)   --->   "%icmp_ln878 = icmp_sgt  i32 %op2_V, i32 50000000"   --->   Operation 102 'icmp' 'icmp_ln878' <Predicate = (!icmp_ln744)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 103 [1/1] (0.22ns)   --->   "%select_ln746 = select i1 %icmp_ln878, i32 50000000, i32 %op2_V" [patchMaker.cpp:746]   --->   Operation 103 'select' 'select_ln746' <Predicate = (!icmp_ln744)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_47 : Operation 104 [1/1] (0.38ns)   --->   "%br_ln746 = br void %._crit_edge.preheader" [patchMaker.cpp:746]   --->   Operation 104 'br' 'br_ln746' <Predicate = (!icmp_ln744)> <Delay = 0.38>
+ST_47 : Operation 105 [1/1] (0.00ns)   --->   "%z_top_max_V_16_ph = phi i32 50000000, void, i32 %select_ln746, void" [patchMaker.cpp:746]   --->   Operation 105 'phi' 'z_top_max_V_16_ph' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 106 [1/1] (0.38ns)   --->   "%br_ln753 = br void %._crit_edge" [patchMaker.cpp:753]   --->   Operation 106 'br' 'br_ln753' <Predicate = true> <Delay = 0.38>
+
+State 48 <SV = 47> <Delay = 1.94>
+ST_48 : Operation 107 [1/1] (0.00ns)   --->   "%z_top_max_V_16 = phi i32 %z_top_max_V, void, i32 %z_top_max_V_16_ph, void %._crit_edge.preheader"   --->   Operation 107 'phi' 'z_top_max_V_16' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 108 [1/1] (0.00ns)   --->   "%c_corner_V_0 = phi i32 %c_corner_V, void, i32 50000000, void %._crit_edge.preheader"   --->   Operation 108 'phi' 'c_corner_V_0' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 109 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V_0 = phi i32 %complementary_apexZ0_V, void, i32 0, void %._crit_edge.preheader"   --->   Operation 109 'phi' 'complementary_apexZ0_V_0' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 110 [1/1] (0.00ns)   --->   "%z_top_min_V_0 = phi i32 %z_top_min_V, void, i32 4244967296, void %._crit_edge.preheader"   --->   Operation 110 'phi' 'z_top_min_V_0' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 111 [1/1] (0.00ns)   --->   "%nPatchesInColumn_0 = phi i32 %nPatchesInColumn, void, i32 0, void %._crit_edge.preheader"   --->   Operation 111 'phi' 'nPatchesInColumn_0' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 112 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_V_0 = phi i32 %projectionOfCornerToBeam_V, void, i32 0, void %._crit_edge.preheader"   --->   Operation 112 'phi' 'projectionOfCornerToBeam_V_0' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 113 [1/1] (0.00ns)   --->   "%saved_apexZ0_buf_0 = phi i32 %saved_apexZ0_ret, void, i32 %apexZ0_read, void %._crit_edge.preheader" [patchMaker.cpp:760]   --->   Operation 113 'phi' 'saved_apexZ0_buf_0' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 114 [1/1] (0.00ns)   --->   "%loopCounter = phi i32 %loopCounter_1, void, i32 0, void %._crit_edge.preheader"   --->   Operation 114 'phi' 'loopCounter' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 115 [1/1] (0.98ns)   --->   "%tmp = call i1 @getSolveNextColumnWhileConditional, i32 %c_corner_V_0, i32 %nPatchesInColumn_0, i32 %projectionOfCornerToBeam_V_0" [patchMaker.cpp:758]   --->   Operation 115 'call' 'tmp' <Predicate = true> <Delay = 0.98> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_48 : Operation 116 [1/1] (0.88ns)   --->   "%loopCounter_1 = add i32 %loopCounter, i32 1" [patchMaker.cpp:769]   --->   Operation 116 'add' 'loopCounter_1' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 117 [1/1] (0.38ns)   --->   "%br_ln758 = br i1 %tmp, void %.loopexit, void" [patchMaker.cpp:758]   --->   Operation 117 'br' 'br_ln758' <Predicate = true> <Delay = 0.38>
+ST_48 : Operation 118 [2/2] (0.96ns)   --->   "%call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i33 %radiiDivisionList_4, i26 %trapezoid_edges_V" [patchMaker.cpp:760]   --->   Operation 118 'call' 'call_ret' <Predicate = (tmp)> <Delay = 0.96> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_48 : Operation 119 [1/1] (0.85ns)   --->   "%icmp_ln764 = icmp_sgt  i32 %loopCounter, i32 25" [patchMaker.cpp:764]   --->   Operation 119 'icmp' 'icmp_ln764' <Predicate = (tmp)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 0.38>
+ST_49 : Operation 120 [1/1] (0.00ns)   --->   "%specloopname_ln760 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36" [patchMaker.cpp:760]   --->   Operation 120 'specloopname' 'specloopname_ln760' <Predicate = (tmp)> <Delay = 0.00>
+ST_49 : Operation 121 [1/2] (0.00ns)   --->   "%call_ret = call i224 @solveNextPatchPair, i8 %n_patches, i32 %GDn_points, i32 %apexZ0_read, i32 %ppl_read, i32 %nPatchesInColumn_0, i32 %z_top_min_V_0, i32 %z_top_max_V_16, i32 %complementary_apexZ0_V_0, i32 %GDarrayDecoded, i64 %patches_superpoints, i32 %patches_parameters, i33 %radiiDivisionList_4, i26 %trapezoid_edges_V" [patchMaker.cpp:760]   --->   Operation 121 'call' 'call_ret' <Predicate = (tmp)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_49 : Operation 122 [1/1] (0.00ns)   --->   "%complementary_apexZ0_V = extractvalue i224 %call_ret" [patchMaker.cpp:760]   --->   Operation 122 'extractvalue' 'complementary_apexZ0_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_49 : Operation 123 [1/1] (0.00ns)   --->   "%projectionOfCornerToBeam_V = extractvalue i224 %call_ret" [patchMaker.cpp:760]   --->   Operation 123 'extractvalue' 'projectionOfCornerToBeam_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_49 : Operation 124 [1/1] (0.00ns)   --->   "%c_corner_V = extractvalue i224 %call_ret" [patchMaker.cpp:760]   --->   Operation 124 'extractvalue' 'c_corner_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_49 : Operation 125 [1/1] (0.00ns)   --->   "%nPatchesInColumn = extractvalue i224 %call_ret" [patchMaker.cpp:760]   --->   Operation 125 'extractvalue' 'nPatchesInColumn' <Predicate = (tmp)> <Delay = 0.00>
+ST_49 : Operation 126 [1/1] (0.00ns)   --->   "%saved_apexZ0_ret = extractvalue i224 %call_ret" [patchMaker.cpp:760]   --->   Operation 126 'extractvalue' 'saved_apexZ0_ret' <Predicate = (tmp)> <Delay = 0.00>
+ST_49 : Operation 127 [1/1] (0.00ns)   --->   "%z_top_max_V = extractvalue i224 %call_ret" [patchMaker.cpp:760]   --->   Operation 127 'extractvalue' 'z_top_max_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_49 : Operation 128 [1/1] (0.00ns)   --->   "%z_top_min_V = extractvalue i224 %call_ret" [patchMaker.cpp:760]   --->   Operation 128 'extractvalue' 'z_top_min_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_49 : Operation 129 [1/1] (0.38ns)   --->   "%br_ln764 = br i1 %icmp_ln764, void, void %.loopexit" [patchMaker.cpp:764]   --->   Operation 129 'br' 'br_ln764' <Predicate = (tmp)> <Delay = 0.38>
+ST_49 : Operation 130 [1/1] (0.00ns)   --->   "%br_ln758 = br void %._crit_edge" [patchMaker.cpp:758]   --->   Operation 130 'br' 'br_ln758' <Predicate = (tmp & !icmp_ln764)> <Delay = 0.00>
+ST_49 : Operation 131 [1/1] (0.00ns)   --->   "%saved_apexZ0_buf_1 = phi i32 %saved_apexZ0_ret, void, i32 %saved_apexZ0_buf_0, void %._crit_edge" [patchMaker.cpp:760]   --->   Operation 131 'phi' 'saved_apexZ0_buf_1' <Predicate = (icmp_ln764) | (!tmp)> <Delay = 0.00>
+ST_49 : Operation 132 [1/1] (0.00ns)   --->   "%ret_ln779 = ret i32 %saved_apexZ0_buf_1" [patchMaker.cpp:779]   --->   Operation 132 'ret' 'ret_ln779' <Predicate = (icmp_ln764) | (!tmp)> <Delay = 0.00>
 
 
 ============================================================
@@ -161,59 +314,212 @@ ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln783 = ret i32 %saved_apexZ0
 ============================================================
 Target clock period: 3ns, clock uncertainty: 0.81ns.
 
- <State 1>: 0.581ns
+ <State 1>: 1.46ns
 The critical path consists of the following:
-	wire read on port 'n_patches' (patchMaker.cpp:748) [17]  (0 ns)
-	'icmp' operation ('icmp_ln748', patchMaker.cpp:748) [18]  (0.581 ns)
+	wire read on port 'n_patches' (patchMaker.cpp:744) [15]  (0 ns)
+	'icmp' operation ('icmp_ln744', patchMaker.cpp:744) [16]  (0.581 ns)
+	multiplexor before 'phi' operation ('z_top_max_V_16_ph', patchMaker.cpp:746) with incoming values : ('select_ln746', patchMaker.cpp:746) [24]  (0.387 ns)
+	blocking operation 0.493 ns on control path)
 
- <State 2>: 1.63ns
+ <State 2>: 2.1ns
 The critical path consists of the following:
-	wire read on port 'apexZ0' [15]  (0 ns)
-	'call' operation ('op2_V', patchMaker.cpp:750) to 'straightLineProjectorFromLayerIJtoK' [21]  (1.63 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
 
  <State 3>: 2.1ns
 The critical path consists of the following:
-	'call' operation ('op2_V', patchMaker.cpp:750) to 'straightLineProjectorFromLayerIJtoK' [21]  (2.1 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
 
  <State 4>: 2.1ns
 The critical path consists of the following:
-	'call' operation ('op2_V', patchMaker.cpp:750) to 'straightLineProjectorFromLayerIJtoK' [21]  (2.1 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
 
  <State 5>: 2.1ns
 The critical path consists of the following:
-	'call' operation ('op2_V', patchMaker.cpp:750) to 'straightLineProjectorFromLayerIJtoK' [21]  (2.1 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
 
  <State 6>: 2.1ns
 The critical path consists of the following:
-	'call' operation ('op2_V', patchMaker.cpp:750) to 'straightLineProjectorFromLayerIJtoK' [21]  (2.1 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
 
  <State 7>: 2.1ns
 The critical path consists of the following:
-	'call' operation ('op2_V', patchMaker.cpp:750) to 'straightLineProjectorFromLayerIJtoK' [21]  (2.1 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
 
- <State 8>: 1.11ns
+ <State 8>: 2.1ns
 The critical path consists of the following:
-	'call' operation ('op2_V', patchMaker.cpp:750) to 'straightLineProjectorFromLayerIJtoK' [21]  (1.11 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
 
- <State 9>: 1.47ns
+ <State 9>: 2.1ns
 The critical path consists of the following:
-	'icmp' operation ('icmp_ln878') [22]  (0.859 ns)
-	'select' operation ('select_ln750', patchMaker.cpp:750) [23]  (0.227 ns)
-	multiplexor before 'phi' operation ('z_top_max_V_16_ph', patchMaker.cpp:750) with incoming values : ('select_ln750', patchMaker.cpp:750) [26]  (0.387 ns)
-	'phi' operation ('z_top_max_V_16_ph', patchMaker.cpp:750) with incoming values : ('select_ln750', patchMaker.cpp:750) [26]  (0 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
 
- <State 10>: 1.95ns
+ <State 10>: 2.1ns
 The critical path consists of the following:
-	'phi' operation ('c_corner.V') with incoming values : ('c_corner.V', patchMaker.cpp:764) [30]  (0 ns)
-	'call' operation ('tmp', patchMaker.cpp:762) to 'getSolveNextColumnWhileConditional' [37]  (0.981 ns)
-	multiplexor before 'phi' operation ('saved_apexZ0_buf_1', patchMaker.cpp:764) with incoming values : ('apexZ0_read') ('saved_apexZ0_ret', patchMaker.cpp:764) [55]  (0.387 ns)
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 11>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 12>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 13>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 14>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 15>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 16>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 17>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 18>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 19>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 20>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 21>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 22>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 23>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 24>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 25>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 26>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 27>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 28>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 29>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 30>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 31>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 32>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 33>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 34>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 35>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 36>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 37>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 38>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 39>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 40>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 41>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 42>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 43>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 44>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 45>: 2.1ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.1 ns)
+
+ <State 46>: 2.06ns
+The critical path consists of the following:
+	'call' operation ('op2_V', patchMaker.cpp:746) to 'straightLineProjectorFromLayerIJtoK' [19]  (2.06 ns)
+
+ <State 47>: 1.47ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln878') [20]  (0.859 ns)
+	'select' operation ('select_ln746', patchMaker.cpp:746) [21]  (0.227 ns)
+	multiplexor before 'phi' operation ('z_top_max_V_16_ph', patchMaker.cpp:746) with incoming values : ('select_ln746', patchMaker.cpp:746) [24]  (0.387 ns)
+	'phi' operation ('z_top_max_V_16_ph', patchMaker.cpp:746) with incoming values : ('select_ln746', patchMaker.cpp:746) [24]  (0 ns)
+
+ <State 48>: 1.95ns
+The critical path consists of the following:
+	'phi' operation ('c_corner.V') with incoming values : ('c_corner.V', patchMaker.cpp:760) [28]  (0 ns)
+	'call' operation ('tmp', patchMaker.cpp:758) to 'getSolveNextColumnWhileConditional' [35]  (0.981 ns)
+	multiplexor before 'phi' operation ('saved_apexZ0_buf_1', patchMaker.cpp:760) with incoming values : ('apexZ0_read') ('saved_apexZ0_ret', patchMaker.cpp:760) [53]  (0.387 ns)
 	blocking operation 0.581 ns on control path)
 
- <State 11>: 0.387ns
+ <State 49>: 0.387ns
 The critical path consists of the following:
-	'call' operation ('call_ret', patchMaker.cpp:764) to 'solveNextPatchPair' [42]  (0 ns)
-	multiplexor before 'phi' operation ('saved_apexZ0_buf_1', patchMaker.cpp:764) with incoming values : ('apexZ0_read') ('saved_apexZ0_ret', patchMaker.cpp:764) [55]  (0.387 ns)
-	'phi' operation ('saved_apexZ0_buf_1', patchMaker.cpp:764) with incoming values : ('apexZ0_read') ('saved_apexZ0_ret', patchMaker.cpp:764) [55]  (0 ns)
+	'call' operation ('call_ret', patchMaker.cpp:760) to 'solveNextPatchPair' [40]  (0 ns)
+	multiplexor before 'phi' operation ('saved_apexZ0_buf_1', patchMaker.cpp:760) with incoming values : ('apexZ0_read') ('saved_apexZ0_ret', patchMaker.cpp:760) [53]  (0.387 ns)
+	'phi' operation ('saved_apexZ0_buf_1', patchMaker.cpp:760) with incoming values : ('apexZ0_read') ('saved_apexZ0_ret', patchMaker.cpp:760) [53]  (0 ns)
 
 
 ============================================================
@@ -235,6 +541,44 @@ N/A
 	State 9
 	State 10
 	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
 
 
 ============================================================

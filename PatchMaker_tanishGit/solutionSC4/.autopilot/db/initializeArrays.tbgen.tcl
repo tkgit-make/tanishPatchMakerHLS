@@ -13,7 +13,7 @@ set C_modelName {initializeArrays}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ patches_superpoints int 64 regular {array 2560 { 0 3 } 0 1 }  }
-	{ patches_parameters int 32 regular {array 360 { 0 3 } 0 1 }  }
+	{ patches_parameters int 32 regular {array 72 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "patches_superpoints", "interface" : "memory", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
@@ -31,7 +31,7 @@ set portList {
 	{ patches_superpoints_ce0 sc_out sc_logic 1 signal 0 } 
 	{ patches_superpoints_we0 sc_out sc_logic 1 signal 0 } 
 	{ patches_superpoints_d0 sc_out sc_lv 64 signal 0 } 
-	{ patches_parameters_address0 sc_out sc_lv 9 signal 1 } 
+	{ patches_parameters_address0 sc_out sc_lv 7 signal 1 } 
 	{ patches_parameters_ce0 sc_out sc_logic 1 signal 1 } 
 	{ patches_parameters_we0 sc_out sc_logic 1 signal 1 } 
 	{ patches_parameters_d0 sc_out sc_lv 32 signal 1 } 
@@ -47,7 +47,7 @@ set NewPortList {[
  	{ "name": "patches_superpoints_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "ce0" }} , 
  	{ "name": "patches_superpoints_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "we0" }} , 
  	{ "name": "patches_superpoints_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "patches_superpoints", "role": "d0" }} , 
- 	{ "name": "patches_parameters_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address0" }} , 
+ 	{ "name": "patches_parameters_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "patches_parameters", "role": "address0" }} , 
  	{ "name": "patches_parameters_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "ce0" }} , 
  	{ "name": "patches_parameters_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "patches_parameters", "role": "we0" }} , 
  	{ "name": "patches_parameters_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "patches_parameters", "role": "d0" }}  ]}
@@ -59,7 +59,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2926", "EstimateLatencyMax" : "2926",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2638", "EstimateLatencyMax" : "2638",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -79,8 +79,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2926", "Max" : "2926"}
-	, {"Name" : "Interval", "Min" : "2926", "Max" : "2926"}
+	{"Name" : "Latency", "Min" : "2638", "Max" : "2638"}
+	, {"Name" : "Interval", "Min" : "2638", "Max" : "2638"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -90,5 +90,5 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	patches_superpoints { ap_memory {  { patches_superpoints_address0 mem_address 1 12 }  { patches_superpoints_ce0 mem_ce 1 1 }  { patches_superpoints_we0 mem_we 1 1 }  { patches_superpoints_d0 mem_din 1 64 } } }
-	patches_parameters { ap_memory {  { patches_parameters_address0 mem_address 1 9 }  { patches_parameters_ce0 mem_ce 1 1 }  { patches_parameters_we0 mem_we 1 1 }  { patches_parameters_d0 mem_din 1 32 } } }
+	patches_parameters { ap_memory {  { patches_parameters_address0 mem_address 1 7 }  { patches_parameters_ce0 mem_ce 1 1 }  { patches_parameters_we0 mem_we 1 1 }  { patches_parameters_d0 mem_din 1 32 } } }
 }
