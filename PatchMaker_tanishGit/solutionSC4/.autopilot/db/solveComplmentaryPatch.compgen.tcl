@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 91
+set id 89
 set name MPSQ_mul_33s_64s_64_5_1
 set corename simcore_mul
 set op mul
@@ -86,7 +86,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 # Memory (RAM/ROM)  definition:
-set ID 93
+set ID 91
 set hasByteEnable 0
 set MemName MPSQ_solveComplmentaryPatch_current_z_i_index
 set CoreName ap_simcore_mem
@@ -171,7 +171,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 94
+set ID 92
 set hasByteEnable 0
 set MemName MPSQ_solveComplmentaryPatch_new_z_i_index
 set CoreName ap_simcore_mem
@@ -256,7 +256,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 95
+set ID 93
 set hasByteEnable 0
 set MemName MPSQ_solveComplmentaryPatch_new_z_i_V
 set CoreName ap_simcore_mem
@@ -351,7 +351,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 97 \
+    id 95 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -370,7 +370,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 108 \
+    id 107 \
     name GDarrayDecoded \
     reset_level 1 \
     sync_rst true \
@@ -389,14 +389,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 109 \
+    id 108 \
     name patches_superpoints \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename patches_superpoints \
     op interface \
-    ports { patches_superpoints_address0 { O 12 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 64 vector } patches_superpoints_q0 { I 64 vector } patches_superpoints_address1 { O 12 vector } patches_superpoints_ce1 { O 1 bit } patches_superpoints_q1 { I 64 vector } } \
+    ports { patches_superpoints_address0 { O 8 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 64 vector } patches_superpoints_q0 { I 64 vector } patches_superpoints_address1 { O 8 vector } patches_superpoints_ce1 { O 1 bit } patches_superpoints_we1 { O 1 bit } patches_superpoints_d1 { O 64 vector } patches_superpoints_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints'"
@@ -408,7 +408,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 110 \
+    id 109 \
     name patches_parameters \
     reset_level 1 \
     sync_rst true \
@@ -426,7 +426,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 96 \
+    id 94 \
     name n_patches \
     type other \
     dir IO \
@@ -441,7 +441,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 98 \
+    id 96 \
+    name output_patch_stream_V \
+    type fifo \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_output_patch_stream_V \
+    op interface \
+    ports { output_patch_stream_V_din { O 64 vector } output_patch_stream_V_full_n { I 1 bit } output_patch_stream_V_write { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 97 \
     name ppl \
     type other \
     dir I \
@@ -456,7 +471,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 99 \
+    id 98 \
     name nPatchesAtOriginal \
     type other \
     dir I \
@@ -471,7 +486,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 100 \
+    id 99 \
     name previous_z_top_min_read \
     type other \
     dir I \
@@ -486,7 +501,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 101 \
+    id 100 \
     name complementary_apexZ0 \
     type other \
     dir I \
@@ -501,7 +516,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 102 \
+    id 101 \
     name white_space_height_read \
     type other \
     dir I \
@@ -516,7 +531,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 103 \
+    id 102 \
     name original_c \
     type other \
     dir I \
@@ -531,7 +546,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 104 \
+    id 103 \
     name original_d \
     type other \
     dir I \
@@ -546,7 +561,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 105 \
+    id 104 \
     name p_read12 \
     type other \
     dir I \
@@ -561,7 +576,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 106 \
+    id 105 \
     name p_read13 \
     type other \
     dir I \
@@ -576,7 +591,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 107 \
+    id 106 \
     name z_top_min_read \
     type other \
     dir I \

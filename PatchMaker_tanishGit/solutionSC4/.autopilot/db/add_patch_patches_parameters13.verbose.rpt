@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'add_patch_patches_parameters13'
 ================================================================
-* Date:           Sat Aug  3 00:46:44 2024
+* Date:           Mon Aug  5 17:49:11 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -41,7 +41,7 @@
         |                                       |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |               Loop Name               |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_316_1                     |      160|      160|        80|          -|          -|     2|        no|
+        |- VITIS_LOOP_318_1                     |      160|      160|        80|          -|          -|     2|        no|
         | + add_patch_perPropertyTypePP0        |       78|       78|        26|          -|          -|     3|        no|
         |  ++ add_patch_perParallelogramPP0     |       24|       24|         6|          -|          -|     4|        no|
         |   +++ add_patch_perPropertyLengthPP0  |        4|        4|         2|          -|          -|     2|        no|
@@ -95,30 +95,30 @@
     +-----------------------+----------+----+---+----+------------+------------+
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
-    |add_ln316_fu_205_p2    |         +|   0|  0|   9|           2|           2|
-    |add_ln322_fu_237_p2    |         +|   0|  0|   9|           2|           1|
-    |add_ln328_fu_263_p2    |         +|   0|  0|  10|           3|           1|
-    |add_ln334_fu_321_p2    |         +|   0|  0|   9|           2|           1|
-    |add_ln339_1_fu_252_p2  |         +|   0|  0|  13|           6|           6|
-    |add_ln339_2_fu_278_p2  |         +|   0|  0|  13|           6|           6|
-    |add_ln339_3_fu_301_p2  |         +|   0|  0|  13|           6|           6|
-    |add_ln339_4_fu_331_p2  |         +|   0|  0|  14|           7|           7|
-    |add_ln339_5_fu_341_p2  |         +|   0|  0|  14|           7|           7|
-    |add_ln339_fu_247_p2    |         +|   0|  0|  13|           6|           6|
-    |add_ln346_fu_357_p2    |         +|   0|  0|   9|           2|           1|
-    |add_ln352_fu_381_p2    |         +|   0|  0|  10|           3|           1|
-    |add_ln358_fu_414_p2    |         +|   0|  0|   9|           2|           1|
-    |add_ln363_1_fu_424_p2  |         +|   0|  0|  14|           7|           7|
-    |add_ln363_fu_391_p2    |         +|   0|  0|  12|           5|           5|
-    |sub_ln339_1_fu_227_p2  |         -|   0|  0|  12|           5|           5|
-    |sub_ln339_fu_189_p2    |         -|   0|  0|  12|           5|           5|
-    |icmp_ln316_fu_199_p2   |      icmp|   0|  0|   8|           2|           1|
-    |icmp_ln322_fu_257_p2   |      icmp|   0|  0|   8|           2|           2|
-    |icmp_ln328_fu_315_p2   |      icmp|   0|  0|   9|           3|           4|
-    |icmp_ln334_fu_351_p2   |      icmp|   0|  0|   8|           2|           3|
-    |icmp_ln346_fu_375_p2   |      icmp|   0|  0|   8|           2|           2|
-    |icmp_ln352_fu_408_p2   |      icmp|   0|  0|   9|           3|           4|
-    |icmp_ln358_fu_435_p2   |      icmp|   0|  0|   8|           2|           3|
+    |add_ln318_fu_205_p2    |         +|   0|  0|   9|           2|           2|
+    |add_ln324_fu_237_p2    |         +|   0|  0|   9|           2|           1|
+    |add_ln330_fu_263_p2    |         +|   0|  0|  10|           3|           1|
+    |add_ln336_fu_321_p2    |         +|   0|  0|   9|           2|           1|
+    |add_ln341_1_fu_252_p2  |         +|   0|  0|  13|           6|           6|
+    |add_ln341_2_fu_278_p2  |         +|   0|  0|  13|           6|           6|
+    |add_ln341_3_fu_301_p2  |         +|   0|  0|  13|           6|           6|
+    |add_ln341_4_fu_331_p2  |         +|   0|  0|  14|           7|           7|
+    |add_ln341_5_fu_341_p2  |         +|   0|  0|  14|           7|           7|
+    |add_ln341_fu_247_p2    |         +|   0|  0|  13|           6|           6|
+    |add_ln348_fu_357_p2    |         +|   0|  0|   9|           2|           1|
+    |add_ln354_fu_381_p2    |         +|   0|  0|  10|           3|           1|
+    |add_ln360_fu_414_p2    |         +|   0|  0|   9|           2|           1|
+    |add_ln365_1_fu_424_p2  |         +|   0|  0|  14|           7|           7|
+    |add_ln365_fu_391_p2    |         +|   0|  0|  12|           5|           5|
+    |sub_ln341_1_fu_227_p2  |         -|   0|  0|  12|           5|           5|
+    |sub_ln341_fu_189_p2    |         -|   0|  0|  12|           5|           5|
+    |icmp_ln318_fu_199_p2   |      icmp|   0|  0|   8|           2|           1|
+    |icmp_ln324_fu_257_p2   |      icmp|   0|  0|   8|           2|           2|
+    |icmp_ln330_fu_315_p2   |      icmp|   0|  0|   9|           3|           4|
+    |icmp_ln336_fu_351_p2   |      icmp|   0|  0|   8|           2|           3|
+    |icmp_ln348_fu_375_p2   |      icmp|   0|  0|   8|           2|           2|
+    |icmp_ln354_fu_408_p2   |      icmp|   0|  0|   9|           3|           4|
+    |icmp_ln360_fu_435_p2   |      icmp|   0|  0|   8|           2|           3|
     +-----------------------+----------+----+---+----+------------+------------+
     |Total                  |          |   0|  0| 253|          92|          87|
     +-----------------------+----------+----+---+----+------------+------------+
@@ -147,15 +147,15 @@
     +------------------------------------+----+----+-----+-----------+
     |a_4_reg_140                         |   2|   0|    2|          0|
     |a_reg_107                           |   2|   0|    2|          0|
-    |add_ln316_reg_449                   |   2|   0|    2|          0|
-    |add_ln322_reg_459                   |   2|   0|    2|          0|
-    |add_ln328_reg_477                   |   3|   0|    3|          0|
-    |add_ln334_reg_495                   |   2|   0|    2|          0|
-    |add_ln339_1_reg_469                 |   6|   0|    6|          0|
-    |add_ln339_reg_464                   |   6|   0|    6|          0|
-    |add_ln346_reg_513                   |   2|   0|    2|          0|
-    |add_ln352_reg_526                   |   3|   0|    3|          0|
-    |add_ln358_reg_539                   |   2|   0|    2|          0|
+    |add_ln318_reg_449                   |   2|   0|    2|          0|
+    |add_ln324_reg_459                   |   2|   0|    2|          0|
+    |add_ln330_reg_477                   |   3|   0|    3|          0|
+    |add_ln336_reg_495                   |   2|   0|    2|          0|
+    |add_ln341_1_reg_469                 |   6|   0|    6|          0|
+    |add_ln341_reg_464                   |   6|   0|    6|          0|
+    |add_ln348_reg_513                   |   2|   0|    2|          0|
+    |add_ln354_reg_526                   |   3|   0|    3|          0|
+    |add_ln360_reg_539                   |   2|   0|    2|          0|
     |ap_CS_fsm                           |  10|   0|   10|          0|
     |b_6_reg_151                         |   3|   0|    3|          0|
     |b_reg_118                           |   3|   0|    3|          0|
@@ -164,12 +164,12 @@
     |i_reg_96                            |   2|   0|    2|          0|
     |patches_parameters_addr_18_reg_549  |   7|   0|    7|          0|
     |patches_parameters_addr_19_reg_505  |   7|   0|    7|          0|
-    |sext_ln316_reg_441                  |   6|   0|    6|          0|
-    |sext_ln322_reg_454                  |   6|   0|    6|          0|
-    |tmp_74_cast_reg_482                 |   6|   0|    7|          1|
-    |tmp_76_cast_reg_487                 |   6|   0|    7|          1|
-    |zext_ln346_reg_518                  |   2|   0|    5|          3|
-    |zext_ln352_reg_531                  |   5|   0|    7|          2|
+    |sext_ln318_reg_441                  |   6|   0|    6|          0|
+    |sext_ln324_reg_454                  |   6|   0|    6|          0|
+    |tmp_65_cast_reg_482                 |   6|   0|    7|          1|
+    |tmp_67_cast_reg_487                 |   6|   0|    7|          1|
+    |zext_ln348_reg_518                  |   2|   0|    5|          3|
+    |zext_ln354_reg_531                  |   5|   0|    7|          2|
     +------------------------------------+----+----+-----+-----------+
     |Total                               |  99|   0|  106|          7|
     +------------------------------------+----+----+-----+-----------+
@@ -244,125 +244,125 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.38>
-ST_1 : Operation 11 [1/1] (0.38ns)   --->   "%br_ln316 = br void" [patchMaker.cpp:316]   --->   Operation 11 'br' 'br_ln316' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 11 [1/1] (0.38ns)   --->   "%br_ln318 = br void" [patchMaker.cpp:318]   --->   Operation 11 'br' 'br_ln318' <Predicate = true> <Delay = 0.38>
 
 State 2 <SV = 1> <Delay = 1.14>
-ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%i = phi i2 %add_ln316, void, i2 2, void" [patchMaker.cpp:316]   --->   Operation 12 'phi' 'i' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln339 = zext i2 %i" [patchMaker.cpp:339]   --->   Operation 13 'zext' 'zext_ln339' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %i, i2 0" [patchMaker.cpp:339]   --->   Operation 14 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln339_1 = zext i4 %tmp" [patchMaker.cpp:339]   --->   Operation 15 'zext' 'zext_ln339_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.70ns)   --->   "%sub_ln339 = sub i5 %zext_ln339_1, i5 %zext_ln339" [patchMaker.cpp:339]   --->   Operation 16 'sub' 'sub_ln339' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%sext_ln316 = sext i5 %sub_ln339" [patchMaker.cpp:316]   --->   Operation 17 'sext' 'sext_ln316' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.34ns)   --->   "%icmp_ln316 = icmp_eq  i2 %i, i2 0" [patchMaker.cpp:316]   --->   Operation 18 'icmp' 'icmp_ln316' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%i = phi i2 %add_ln318, void, i2 2, void" [patchMaker.cpp:318]   --->   Operation 12 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln341 = zext i2 %i" [patchMaker.cpp:341]   --->   Operation 13 'zext' 'zext_ln341' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %i, i2 0" [patchMaker.cpp:341]   --->   Operation 14 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln341_1 = zext i4 %tmp" [patchMaker.cpp:341]   --->   Operation 15 'zext' 'zext_ln341_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.70ns)   --->   "%sub_ln341 = sub i5 %zext_ln341_1, i5 %zext_ln341" [patchMaker.cpp:341]   --->   Operation 16 'sub' 'sub_ln341' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%sext_ln318 = sext i5 %sub_ln341" [patchMaker.cpp:318]   --->   Operation 17 'sext' 'sext_ln318' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.34ns)   --->   "%icmp_ln318 = icmp_eq  i2 %i, i2 0" [patchMaker.cpp:318]   --->   Operation 18 'icmp' 'icmp_ln318' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 2, i64 2, i64 2"   --->   Operation 19 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln316 = br i1 %icmp_ln316, void %.split12, void %.preheader.preheader" [patchMaker.cpp:316]   --->   Operation 20 'br' 'br_ln316' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.43ns)   --->   "%add_ln316 = add i2 %i, i2 3" [patchMaker.cpp:316]   --->   Operation 21 'add' 'add_ln316' <Predicate = (!icmp_ln316)> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln316 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31" [patchMaker.cpp:316]   --->   Operation 22 'specloopname' 'specloopname_ln316' <Predicate = (!icmp_ln316)> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln339_2 = zext i2 %add_ln316" [patchMaker.cpp:339]   --->   Operation 23 'zext' 'zext_ln339_2' <Predicate = (!icmp_ln316)> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %add_ln316, i2 0" [patchMaker.cpp:339]   --->   Operation 24 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln316)> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln339_3 = zext i4 %tmp_s" [patchMaker.cpp:339]   --->   Operation 25 'zext' 'zext_ln339_3' <Predicate = (!icmp_ln316)> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.70ns)   --->   "%sub_ln339_1 = sub i5 %zext_ln339_3, i5 %zext_ln339_2" [patchMaker.cpp:339]   --->   Operation 26 'sub' 'sub_ln339_1' <Predicate = (!icmp_ln316)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%sext_ln322 = sext i5 %sub_ln339_1" [patchMaker.cpp:322]   --->   Operation 27 'sext' 'sext_ln322' <Predicate = (!icmp_ln316)> <Delay = 0.00>
-ST_2 : Operation 28 [1/1] (0.38ns)   --->   "%br_ln322 = br void" [patchMaker.cpp:322]   --->   Operation 28 'br' 'br_ln322' <Predicate = (!icmp_ln316)> <Delay = 0.38>
-ST_2 : Operation 29 [1/1] (0.38ns)   --->   "%br_ln363 = br void %.preheader" [patchMaker.cpp:363]   --->   Operation 29 'br' 'br_ln363' <Predicate = (icmp_ln316)> <Delay = 0.38>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln318 = br i1 %icmp_ln318, void %.split12, void %.preheader.preheader" [patchMaker.cpp:318]   --->   Operation 20 'br' 'br_ln318' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.43ns)   --->   "%add_ln318 = add i2 %i, i2 3" [patchMaker.cpp:318]   --->   Operation 21 'add' 'add_ln318' <Predicate = (!icmp_ln318)> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln318 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [patchMaker.cpp:318]   --->   Operation 22 'specloopname' 'specloopname_ln318' <Predicate = (!icmp_ln318)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln341_2 = zext i2 %add_ln318" [patchMaker.cpp:341]   --->   Operation 23 'zext' 'zext_ln341_2' <Predicate = (!icmp_ln318)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %add_ln318, i2 0" [patchMaker.cpp:341]   --->   Operation 24 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln318)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln341_3 = zext i4 %tmp_s" [patchMaker.cpp:341]   --->   Operation 25 'zext' 'zext_ln341_3' <Predicate = (!icmp_ln318)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.70ns)   --->   "%sub_ln341_1 = sub i5 %zext_ln341_3, i5 %zext_ln341_2" [patchMaker.cpp:341]   --->   Operation 26 'sub' 'sub_ln341_1' <Predicate = (!icmp_ln318)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%sext_ln324 = sext i5 %sub_ln341_1" [patchMaker.cpp:324]   --->   Operation 27 'sext' 'sext_ln324' <Predicate = (!icmp_ln318)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.38ns)   --->   "%br_ln324 = br void" [patchMaker.cpp:324]   --->   Operation 28 'br' 'br_ln324' <Predicate = (!icmp_ln318)> <Delay = 0.38>
+ST_2 : Operation 29 [1/1] (0.38ns)   --->   "%br_ln365 = br void %.preheader" [patchMaker.cpp:365]   --->   Operation 29 'br' 'br_ln365' <Predicate = (icmp_ln318)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 0.70>
-ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%a = phi i2 %add_ln322, void, i2 0, void %.split12" [patchMaker.cpp:322]   --->   Operation 30 'phi' 'a' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 31 [1/1] (0.43ns)   --->   "%add_ln322 = add i2 %a, i2 1" [patchMaker.cpp:322]   --->   Operation 31 'add' 'add_ln322' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln339_4 = zext i2 %a" [patchMaker.cpp:339]   --->   Operation 32 'zext' 'zext_ln339_4' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 33 [1/1] (0.70ns)   --->   "%add_ln339 = add i6 %sext_ln322, i6 %zext_ln339_4" [patchMaker.cpp:339]   --->   Operation 33 'add' 'add_ln339' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 34 [1/1] (0.70ns)   --->   "%add_ln339_1 = add i6 %sext_ln316, i6 %zext_ln339_4" [patchMaker.cpp:339]   --->   Operation 34 'add' 'add_ln339_1' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 35 [1/1] (0.34ns)   --->   "%icmp_ln322 = icmp_eq  i2 %a, i2 3" [patchMaker.cpp:322]   --->   Operation 35 'icmp' 'icmp_ln322' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%empty_92 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 36 'speclooptripcount' 'empty_92' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln322 = br i1 %icmp_ln322, void %.split10, void" [patchMaker.cpp:322]   --->   Operation 37 'br' 'br_ln322' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln322 = specloopname void @_ssdm_op_SpecLoopName, void @empty_30" [patchMaker.cpp:322]   --->   Operation 38 'specloopname' 'specloopname_ln322' <Predicate = (!icmp_ln322)> <Delay = 0.00>
-ST_3 : Operation 39 [1/1] (0.38ns)   --->   "%br_ln328 = br void" [patchMaker.cpp:328]   --->   Operation 39 'br' 'br_ln328' <Predicate = (!icmp_ln322)> <Delay = 0.38>
-ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 40 'br' 'br_ln0' <Predicate = (icmp_ln322)> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%a = phi i2 %add_ln324, void, i2 0, void %.split12" [patchMaker.cpp:324]   --->   Operation 30 'phi' 'a' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.43ns)   --->   "%add_ln324 = add i2 %a, i2 1" [patchMaker.cpp:324]   --->   Operation 31 'add' 'add_ln324' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln341_4 = zext i2 %a" [patchMaker.cpp:341]   --->   Operation 32 'zext' 'zext_ln341_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.70ns)   --->   "%add_ln341 = add i6 %sext_ln324, i6 %zext_ln341_4" [patchMaker.cpp:341]   --->   Operation 33 'add' 'add_ln341' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 34 [1/1] (0.70ns)   --->   "%add_ln341_1 = add i6 %sext_ln318, i6 %zext_ln341_4" [patchMaker.cpp:341]   --->   Operation 34 'add' 'add_ln341_1' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 35 [1/1] (0.34ns)   --->   "%icmp_ln324 = icmp_eq  i2 %a, i2 3" [patchMaker.cpp:324]   --->   Operation 35 'icmp' 'icmp_ln324' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%empty_99 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 36 'speclooptripcount' 'empty_99' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln324 = br i1 %icmp_ln324, void %.split10, void" [patchMaker.cpp:324]   --->   Operation 37 'br' 'br_ln324' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln324 = specloopname void @_ssdm_op_SpecLoopName, void @empty_39" [patchMaker.cpp:324]   --->   Operation 38 'specloopname' 'specloopname_ln324' <Predicate = (!icmp_ln324)> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.38ns)   --->   "%br_ln330 = br void" [patchMaker.cpp:330]   --->   Operation 39 'br' 'br_ln330' <Predicate = (!icmp_ln324)> <Delay = 0.38>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 40 'br' 'br_ln0' <Predicate = (icmp_ln324)> <Delay = 0.00>
 
 State 4 <SV = 3> <Delay = 0.70>
-ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%b = phi i3 %add_ln328, void, i3 0, void %.split10" [patchMaker.cpp:328]   --->   Operation 41 'phi' 'b' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 42 [1/1] (0.57ns)   --->   "%add_ln328 = add i3 %b, i3 1" [patchMaker.cpp:328]   --->   Operation 42 'add' 'add_ln328' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node add_ln339_2)   --->   "%shl_ln339 = shl i6 %add_ln339, i6 2" [patchMaker.cpp:339]   --->   Operation 43 'shl' 'shl_ln339' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node add_ln339_2)   --->   "%zext_ln339_5 = zext i3 %b" [patchMaker.cpp:339]   --->   Operation 44 'zext' 'zext_ln339_5' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 45 [1/1] (0.70ns) (out node of the LUT)   --->   "%add_ln339_2 = add i6 %shl_ln339, i6 %zext_ln339_5" [patchMaker.cpp:339]   --->   Operation 45 'add' 'add_ln339_2' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%tmp_74_cast = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i6.i1, i6 %add_ln339_2, i1 0" [patchMaker.cpp:339]   --->   Operation 46 'bitconcatenate' 'tmp_74_cast' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node add_ln339_3)   --->   "%shl_ln339_1 = shl i6 %add_ln339_1, i6 2" [patchMaker.cpp:339]   --->   Operation 47 'shl' 'shl_ln339_1' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node add_ln339_3)   --->   "%zext_ln339_6 = zext i3 %b" [patchMaker.cpp:339]   --->   Operation 48 'zext' 'zext_ln339_6' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 49 [1/1] (0.70ns) (out node of the LUT)   --->   "%add_ln339_3 = add i6 %shl_ln339_1, i6 %zext_ln339_6" [patchMaker.cpp:339]   --->   Operation 49 'add' 'add_ln339_3' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_76_cast = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i6.i1, i6 %add_ln339_3, i1 0" [patchMaker.cpp:328]   --->   Operation 50 'bitconcatenate' 'tmp_76_cast' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 51 [1/1] (0.49ns)   --->   "%icmp_ln328 = icmp_eq  i3 %b, i3 4" [patchMaker.cpp:328]   --->   Operation 51 'icmp' 'icmp_ln328' <Predicate = true> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%empty_93 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4"   --->   Operation 52 'speclooptripcount' 'empty_93' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln328 = br i1 %icmp_ln328, void %.split8, void" [patchMaker.cpp:328]   --->   Operation 53 'br' 'br_ln328' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%specloopname_ln328 = specloopname void @_ssdm_op_SpecLoopName, void @empty_29" [patchMaker.cpp:328]   --->   Operation 54 'specloopname' 'specloopname_ln328' <Predicate = (!icmp_ln328)> <Delay = 0.00>
-ST_4 : Operation 55 [1/1] (0.38ns)   --->   "%br_ln334 = br void" [patchMaker.cpp:334]   --->   Operation 55 'br' 'br_ln334' <Predicate = (!icmp_ln328)> <Delay = 0.38>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 56 'br' 'br_ln0' <Predicate = (icmp_ln328)> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%b = phi i3 %add_ln330, void, i3 0, void %.split10" [patchMaker.cpp:330]   --->   Operation 41 'phi' 'b' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.57ns)   --->   "%add_ln330 = add i3 %b, i3 1" [patchMaker.cpp:330]   --->   Operation 42 'add' 'add_ln330' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node add_ln341_2)   --->   "%shl_ln341 = shl i6 %add_ln341, i6 2" [patchMaker.cpp:341]   --->   Operation 43 'shl' 'shl_ln341' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node add_ln341_2)   --->   "%zext_ln341_5 = zext i3 %b" [patchMaker.cpp:341]   --->   Operation 44 'zext' 'zext_ln341_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.70ns) (out node of the LUT)   --->   "%add_ln341_2 = add i6 %shl_ln341, i6 %zext_ln341_5" [patchMaker.cpp:341]   --->   Operation 45 'add' 'add_ln341_2' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%tmp_65_cast = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i6.i1, i6 %add_ln341_2, i1 0" [patchMaker.cpp:341]   --->   Operation 46 'bitconcatenate' 'tmp_65_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node add_ln341_3)   --->   "%shl_ln341_1 = shl i6 %add_ln341_1, i6 2" [patchMaker.cpp:341]   --->   Operation 47 'shl' 'shl_ln341_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node add_ln341_3)   --->   "%zext_ln341_6 = zext i3 %b" [patchMaker.cpp:341]   --->   Operation 48 'zext' 'zext_ln341_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.70ns) (out node of the LUT)   --->   "%add_ln341_3 = add i6 %shl_ln341_1, i6 %zext_ln341_6" [patchMaker.cpp:341]   --->   Operation 49 'add' 'add_ln341_3' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_67_cast = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i6.i1, i6 %add_ln341_3, i1 0" [patchMaker.cpp:330]   --->   Operation 50 'bitconcatenate' 'tmp_67_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.49ns)   --->   "%icmp_ln330 = icmp_eq  i3 %b, i3 4" [patchMaker.cpp:330]   --->   Operation 51 'icmp' 'icmp_ln330' <Predicate = true> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%empty_100 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4"   --->   Operation 52 'speclooptripcount' 'empty_100' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln330 = br i1 %icmp_ln330, void %.split8, void" [patchMaker.cpp:330]   --->   Operation 53 'br' 'br_ln330' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%specloopname_ln330 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38" [patchMaker.cpp:330]   --->   Operation 54 'specloopname' 'specloopname_ln330' <Predicate = (!icmp_ln330)> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.38ns)   --->   "%br_ln336 = br void" [patchMaker.cpp:336]   --->   Operation 55 'br' 'br_ln336' <Predicate = (!icmp_ln330)> <Delay = 0.38>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 56 'br' 'br_ln0' <Predicate = (icmp_ln330)> <Delay = 0.00>
 
 State 5 <SV = 4> <Delay = 1.30>
-ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%c = phi i2 %add_ln334, void %.split6, i2 0, void %.split8" [patchMaker.cpp:334]   --->   Operation 57 'phi' 'c' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 58 [1/1] (0.43ns)   --->   "%add_ln334 = add i2 %c, i2 1" [patchMaker.cpp:334]   --->   Operation 58 'add' 'add_ln334' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%zext_ln339_7 = zext i2 %c" [patchMaker.cpp:339]   --->   Operation 59 'zext' 'zext_ln339_7' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 60 [1/1] (0.70ns)   --->   "%add_ln339_4 = add i7 %tmp_74_cast, i7 %zext_ln339_7" [patchMaker.cpp:339]   --->   Operation 60 'add' 'add_ln339_4' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln339_8 = zext i7 %add_ln339_4" [patchMaker.cpp:339]   --->   Operation 61 'zext' 'zext_ln339_8' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%patches_parameters_addr = getelementptr i32 %patches_parameters, i64 0, i64 %zext_ln339_8" [patchMaker.cpp:339]   --->   Operation 62 'getelementptr' 'patches_parameters_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 63 [1/1] (0.70ns)   --->   "%add_ln339_5 = add i7 %tmp_76_cast, i7 %zext_ln339_7" [patchMaker.cpp:339]   --->   Operation 63 'add' 'add_ln339_5' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%zext_ln339_9 = zext i7 %add_ln339_5" [patchMaker.cpp:339]   --->   Operation 64 'zext' 'zext_ln339_9' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%patches_parameters_addr_19 = getelementptr i32 %patches_parameters, i64 0, i64 %zext_ln339_9" [patchMaker.cpp:339]   --->   Operation 65 'getelementptr' 'patches_parameters_addr_19' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 66 [1/1] (0.34ns)   --->   "%icmp_ln334 = icmp_eq  i2 %c, i2 2" [patchMaker.cpp:334]   --->   Operation 66 'icmp' 'icmp_ln334' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%empty_94 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 2, i64 2, i64 2"   --->   Operation 67 'speclooptripcount' 'empty_94' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln334 = br i1 %icmp_ln334, void %.split6, void" [patchMaker.cpp:334]   --->   Operation 68 'br' 'br_ln334' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 69 [2/2] (0.60ns)   --->   "%patches_parameters_load = load i7 %patches_parameters_addr" [patchMaker.cpp:339]   --->   Operation 69 'load' 'patches_parameters_load' <Predicate = (!icmp_ln334)> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
-ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 70 'br' 'br_ln0' <Predicate = (icmp_ln334)> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%c = phi i2 %add_ln336, void %.split6, i2 0, void %.split8" [patchMaker.cpp:336]   --->   Operation 57 'phi' 'c' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.43ns)   --->   "%add_ln336 = add i2 %c, i2 1" [patchMaker.cpp:336]   --->   Operation 58 'add' 'add_ln336' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%zext_ln341_7 = zext i2 %c" [patchMaker.cpp:341]   --->   Operation 59 'zext' 'zext_ln341_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (0.70ns)   --->   "%add_ln341_4 = add i7 %tmp_65_cast, i7 %zext_ln341_7" [patchMaker.cpp:341]   --->   Operation 60 'add' 'add_ln341_4' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln341_8 = zext i7 %add_ln341_4" [patchMaker.cpp:341]   --->   Operation 61 'zext' 'zext_ln341_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%patches_parameters_addr = getelementptr i32 %patches_parameters, i64 0, i64 %zext_ln341_8" [patchMaker.cpp:341]   --->   Operation 62 'getelementptr' 'patches_parameters_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (0.70ns)   --->   "%add_ln341_5 = add i7 %tmp_67_cast, i7 %zext_ln341_7" [patchMaker.cpp:341]   --->   Operation 63 'add' 'add_ln341_5' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%zext_ln341_9 = zext i7 %add_ln341_5" [patchMaker.cpp:341]   --->   Operation 64 'zext' 'zext_ln341_9' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%patches_parameters_addr_19 = getelementptr i32 %patches_parameters, i64 0, i64 %zext_ln341_9" [patchMaker.cpp:341]   --->   Operation 65 'getelementptr' 'patches_parameters_addr_19' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 66 [1/1] (0.34ns)   --->   "%icmp_ln336 = icmp_eq  i2 %c, i2 2" [patchMaker.cpp:336]   --->   Operation 66 'icmp' 'icmp_ln336' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%empty_101 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 2, i64 2, i64 2"   --->   Operation 67 'speclooptripcount' 'empty_101' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln336 = br i1 %icmp_ln336, void %.split6, void" [patchMaker.cpp:336]   --->   Operation 68 'br' 'br_ln336' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 69 [2/2] (0.60ns)   --->   "%patches_parameters_load = load i7 %patches_parameters_addr" [patchMaker.cpp:341]   --->   Operation 69 'load' 'patches_parameters_load' <Predicate = (!icmp_ln336)> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 70 'br' 'br_ln0' <Predicate = (icmp_ln336)> <Delay = 0.00>
 
 State 6 <SV = 5> <Delay = 1.20>
-ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%specloopname_ln334 = specloopname void @_ssdm_op_SpecLoopName, void @empty_28" [patchMaker.cpp:334]   --->   Operation 71 'specloopname' 'specloopname_ln334' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 72 [1/2] (0.60ns)   --->   "%patches_parameters_load = load i7 %patches_parameters_addr" [patchMaker.cpp:339]   --->   Operation 72 'load' 'patches_parameters_load' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
-ST_6 : Operation 73 [1/1] (0.60ns)   --->   "%store_ln339 = store i32 %patches_parameters_load, i7 %patches_parameters_addr_19" [patchMaker.cpp:339]   --->   Operation 73 'store' 'store_ln339' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
+ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%specloopname_ln336 = specloopname void @_ssdm_op_SpecLoopName, void @empty_37" [patchMaker.cpp:336]   --->   Operation 71 'specloopname' 'specloopname_ln336' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 72 [1/2] (0.60ns)   --->   "%patches_parameters_load = load i7 %patches_parameters_addr" [patchMaker.cpp:341]   --->   Operation 72 'load' 'patches_parameters_load' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
+ST_6 : Operation 73 [1/1] (0.60ns)   --->   "%store_ln341 = store i32 %patches_parameters_load, i7 %patches_parameters_addr_19" [patchMaker.cpp:341]   --->   Operation 73 'store' 'store_ln341' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
 ST_6 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 74 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
 State 7 <SV = 2> <Delay = 0.43>
-ST_7 : Operation 75 [1/1] (0.00ns)   --->   "%a_4 = phi i2 %add_ln346, void, i2 0, void %.preheader.preheader" [patchMaker.cpp:346]   --->   Operation 75 'phi' 'a_4' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 76 [1/1] (0.43ns)   --->   "%add_ln346 = add i2 %a_4, i2 1" [patchMaker.cpp:346]   --->   Operation 76 'add' 'add_ln346' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_7 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %a_4, i2 0" [patchMaker.cpp:363]   --->   Operation 77 'bitconcatenate' 'tmp_7' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 78 [1/1] (0.00ns)   --->   "%zext_ln346 = zext i4 %tmp_7" [patchMaker.cpp:346]   --->   Operation 78 'zext' 'zext_ln346' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 79 [1/1] (0.34ns)   --->   "%icmp_ln346 = icmp_eq  i2 %a_4, i2 3" [patchMaker.cpp:346]   --->   Operation 79 'icmp' 'icmp_ln346' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 80 [1/1] (0.00ns)   --->   "%empty_95 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 80 'speclooptripcount' 'empty_95' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln346 = br i1 %icmp_ln346, void %.split4, void" [patchMaker.cpp:346]   --->   Operation 81 'br' 'br_ln346' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 82 [1/1] (0.00ns)   --->   "%specloopname_ln346 = specloopname void @_ssdm_op_SpecLoopName, void @empty_27" [patchMaker.cpp:346]   --->   Operation 82 'specloopname' 'specloopname_ln346' <Predicate = (!icmp_ln346)> <Delay = 0.00>
-ST_7 : Operation 83 [1/1] (0.38ns)   --->   "%br_ln352 = br void" [patchMaker.cpp:352]   --->   Operation 83 'br' 'br_ln352' <Predicate = (!icmp_ln346)> <Delay = 0.38>
-ST_7 : Operation 84 [1/1] (0.00ns)   --->   "%ret_ln367 = ret" [patchMaker.cpp:367]   --->   Operation 84 'ret' 'ret_ln367' <Predicate = (icmp_ln346)> <Delay = 0.00>
+ST_7 : Operation 75 [1/1] (0.00ns)   --->   "%a_4 = phi i2 %add_ln348, void, i2 0, void %.preheader.preheader" [patchMaker.cpp:348]   --->   Operation 75 'phi' 'a_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 76 [1/1] (0.43ns)   --->   "%add_ln348 = add i2 %a_4, i2 1" [patchMaker.cpp:348]   --->   Operation 76 'add' 'add_ln348' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_7 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %a_4, i2 0" [patchMaker.cpp:365]   --->   Operation 77 'bitconcatenate' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 78 [1/1] (0.00ns)   --->   "%zext_ln348 = zext i4 %tmp_7" [patchMaker.cpp:348]   --->   Operation 78 'zext' 'zext_ln348' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 79 [1/1] (0.34ns)   --->   "%icmp_ln348 = icmp_eq  i2 %a_4, i2 3" [patchMaker.cpp:348]   --->   Operation 79 'icmp' 'icmp_ln348' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 80 [1/1] (0.00ns)   --->   "%empty_102 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 80 'speclooptripcount' 'empty_102' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln348 = br i1 %icmp_ln348, void %.split4, void" [patchMaker.cpp:348]   --->   Operation 81 'br' 'br_ln348' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 82 [1/1] (0.00ns)   --->   "%specloopname_ln348 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36" [patchMaker.cpp:348]   --->   Operation 82 'specloopname' 'specloopname_ln348' <Predicate = (!icmp_ln348)> <Delay = 0.00>
+ST_7 : Operation 83 [1/1] (0.38ns)   --->   "%br_ln354 = br void" [patchMaker.cpp:354]   --->   Operation 83 'br' 'br_ln354' <Predicate = (!icmp_ln348)> <Delay = 0.38>
+ST_7 : Operation 84 [1/1] (0.00ns)   --->   "%ret_ln369 = ret" [patchMaker.cpp:369]   --->   Operation 84 'ret' 'ret_ln369' <Predicate = (icmp_ln348)> <Delay = 0.00>
 
 State 8 <SV = 3> <Delay = 0.70>
-ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%b_6 = phi i3 %add_ln352, void, i3 0, void %.split4" [patchMaker.cpp:352]   --->   Operation 85 'phi' 'b_6' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 86 [1/1] (0.57ns)   --->   "%add_ln352 = add i3 %b_6, i3 1" [patchMaker.cpp:352]   --->   Operation 86 'add' 'add_ln352' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln363 = zext i3 %b_6" [patchMaker.cpp:363]   --->   Operation 87 'zext' 'zext_ln363' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 88 [1/1] (0.70ns)   --->   "%add_ln363 = add i5 %zext_ln346, i5 %zext_ln363" [patchMaker.cpp:363]   --->   Operation 88 'add' 'add_ln363' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_26 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i5.i1, i5 %add_ln363, i1 0" [patchMaker.cpp:352]   --->   Operation 89 'bitconcatenate' 'tmp_26' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 90 [1/1] (0.00ns)   --->   "%zext_ln352 = zext i6 %tmp_26" [patchMaker.cpp:352]   --->   Operation 90 'zext' 'zext_ln352' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 91 [1/1] (0.49ns)   --->   "%icmp_ln352 = icmp_eq  i3 %b_6, i3 4" [patchMaker.cpp:352]   --->   Operation 91 'icmp' 'icmp_ln352' <Predicate = true> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 92 [1/1] (0.00ns)   --->   "%empty_96 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4"   --->   Operation 92 'speclooptripcount' 'empty_96' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%br_ln352 = br i1 %icmp_ln352, void %.split2, void" [patchMaker.cpp:352]   --->   Operation 93 'br' 'br_ln352' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 94 [1/1] (0.00ns)   --->   "%specloopname_ln352 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [patchMaker.cpp:352]   --->   Operation 94 'specloopname' 'specloopname_ln352' <Predicate = (!icmp_ln352)> <Delay = 0.00>
-ST_8 : Operation 95 [1/1] (0.38ns)   --->   "%br_ln358 = br void" [patchMaker.cpp:358]   --->   Operation 95 'br' 'br_ln358' <Predicate = (!icmp_ln352)> <Delay = 0.38>
-ST_8 : Operation 96 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader"   --->   Operation 96 'br' 'br_ln0' <Predicate = (icmp_ln352)> <Delay = 0.00>
+ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%b_6 = phi i3 %add_ln354, void, i3 0, void %.split4" [patchMaker.cpp:354]   --->   Operation 85 'phi' 'b_6' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 86 [1/1] (0.57ns)   --->   "%add_ln354 = add i3 %b_6, i3 1" [patchMaker.cpp:354]   --->   Operation 86 'add' 'add_ln354' <Predicate = true> <Delay = 0.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln365 = zext i3 %b_6" [patchMaker.cpp:365]   --->   Operation 87 'zext' 'zext_ln365' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 88 [1/1] (0.70ns)   --->   "%add_ln365 = add i5 %zext_ln348, i5 %zext_ln365" [patchMaker.cpp:365]   --->   Operation 88 'add' 'add_ln365' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_24 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i5.i1, i5 %add_ln365, i1 0" [patchMaker.cpp:354]   --->   Operation 89 'bitconcatenate' 'tmp_24' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 90 [1/1] (0.00ns)   --->   "%zext_ln354 = zext i6 %tmp_24" [patchMaker.cpp:354]   --->   Operation 90 'zext' 'zext_ln354' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 91 [1/1] (0.49ns)   --->   "%icmp_ln354 = icmp_eq  i3 %b_6, i3 4" [patchMaker.cpp:354]   --->   Operation 91 'icmp' 'icmp_ln354' <Predicate = true> <Delay = 0.49> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 92 [1/1] (0.00ns)   --->   "%empty_103 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4"   --->   Operation 92 'speclooptripcount' 'empty_103' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%br_ln354 = br i1 %icmp_ln354, void %.split2, void" [patchMaker.cpp:354]   --->   Operation 93 'br' 'br_ln354' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 94 [1/1] (0.00ns)   --->   "%specloopname_ln354 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35" [patchMaker.cpp:354]   --->   Operation 94 'specloopname' 'specloopname_ln354' <Predicate = (!icmp_ln354)> <Delay = 0.00>
+ST_8 : Operation 95 [1/1] (0.38ns)   --->   "%br_ln360 = br void" [patchMaker.cpp:360]   --->   Operation 95 'br' 'br_ln360' <Predicate = (!icmp_ln354)> <Delay = 0.38>
+ST_8 : Operation 96 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader"   --->   Operation 96 'br' 'br_ln0' <Predicate = (icmp_ln354)> <Delay = 0.00>
 
 State 9 <SV = 4> <Delay = 1.40>
-ST_9 : Operation 97 [1/1] (0.00ns)   --->   "%c_5 = phi i2 %add_ln358, void %.split, i2 0, void %.split2" [patchMaker.cpp:358]   --->   Operation 97 'phi' 'c_5' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 98 [1/1] (0.43ns)   --->   "%add_ln358 = add i2 %c_5, i2 1" [patchMaker.cpp:358]   --->   Operation 98 'add' 'add_ln358' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 99 [1/1] (0.00ns)   --->   "%zext_ln363_1 = zext i2 %c_5" [patchMaker.cpp:363]   --->   Operation 99 'zext' 'zext_ln363_1' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 100 [1/1] (0.70ns)   --->   "%add_ln363_1 = add i7 %zext_ln352, i7 %zext_ln363_1" [patchMaker.cpp:363]   --->   Operation 100 'add' 'add_ln363_1' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 101 [1/1] (0.00ns)   --->   "%zext_ln363_2 = zext i7 %add_ln363_1" [patchMaker.cpp:363]   --->   Operation 101 'zext' 'zext_ln363_2' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 102 [1/1] (0.00ns)   --->   "%wp_parameters_addr = getelementptr i32 %wp_parameters, i64 0, i64 %zext_ln363_2" [patchMaker.cpp:363]   --->   Operation 102 'getelementptr' 'wp_parameters_addr' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 103 [1/1] (0.00ns)   --->   "%patches_parameters_addr_18 = getelementptr i32 %patches_parameters, i64 0, i64 %zext_ln363_2" [patchMaker.cpp:363]   --->   Operation 103 'getelementptr' 'patches_parameters_addr_18' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 104 [1/1] (0.34ns)   --->   "%icmp_ln358 = icmp_eq  i2 %c_5, i2 2" [patchMaker.cpp:358]   --->   Operation 104 'icmp' 'icmp_ln358' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 105 [1/1] (0.00ns)   --->   "%empty_97 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 2, i64 2, i64 2"   --->   Operation 105 'speclooptripcount' 'empty_97' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 106 [1/1] (0.00ns)   --->   "%br_ln358 = br i1 %icmp_ln358, void %.split, void" [patchMaker.cpp:358]   --->   Operation 106 'br' 'br_ln358' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 107 [2/2] (0.69ns)   --->   "%wp_parameters_load = load i5 %wp_parameters_addr" [patchMaker.cpp:363]   --->   Operation 107 'load' 'wp_parameters_load' <Predicate = (!icmp_ln358)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
-ST_9 : Operation 108 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 108 'br' 'br_ln0' <Predicate = (icmp_ln358)> <Delay = 0.00>
+ST_9 : Operation 97 [1/1] (0.00ns)   --->   "%c_5 = phi i2 %add_ln360, void %.split, i2 0, void %.split2" [patchMaker.cpp:360]   --->   Operation 97 'phi' 'c_5' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 98 [1/1] (0.43ns)   --->   "%add_ln360 = add i2 %c_5, i2 1" [patchMaker.cpp:360]   --->   Operation 98 'add' 'add_ln360' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 99 [1/1] (0.00ns)   --->   "%zext_ln365_1 = zext i2 %c_5" [patchMaker.cpp:365]   --->   Operation 99 'zext' 'zext_ln365_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 100 [1/1] (0.70ns)   --->   "%add_ln365_1 = add i7 %zext_ln354, i7 %zext_ln365_1" [patchMaker.cpp:365]   --->   Operation 100 'add' 'add_ln365_1' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 101 [1/1] (0.00ns)   --->   "%zext_ln365_2 = zext i7 %add_ln365_1" [patchMaker.cpp:365]   --->   Operation 101 'zext' 'zext_ln365_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 102 [1/1] (0.00ns)   --->   "%wp_parameters_addr = getelementptr i32 %wp_parameters, i64 0, i64 %zext_ln365_2" [patchMaker.cpp:365]   --->   Operation 102 'getelementptr' 'wp_parameters_addr' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 103 [1/1] (0.00ns)   --->   "%patches_parameters_addr_18 = getelementptr i32 %patches_parameters, i64 0, i64 %zext_ln365_2" [patchMaker.cpp:365]   --->   Operation 103 'getelementptr' 'patches_parameters_addr_18' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 104 [1/1] (0.34ns)   --->   "%icmp_ln360 = icmp_eq  i2 %c_5, i2 2" [patchMaker.cpp:360]   --->   Operation 104 'icmp' 'icmp_ln360' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 105 [1/1] (0.00ns)   --->   "%empty_104 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 2, i64 2, i64 2"   --->   Operation 105 'speclooptripcount' 'empty_104' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 106 [1/1] (0.00ns)   --->   "%br_ln360 = br i1 %icmp_ln360, void %.split, void" [patchMaker.cpp:360]   --->   Operation 106 'br' 'br_ln360' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 107 [2/2] (0.69ns)   --->   "%wp_parameters_load = load i5 %wp_parameters_addr" [patchMaker.cpp:365]   --->   Operation 107 'load' 'wp_parameters_load' <Predicate = (!icmp_ln360)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_9 : Operation 108 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 108 'br' 'br_ln0' <Predicate = (icmp_ln360)> <Delay = 0.00>
 
 State 10 <SV = 5> <Delay = 1.29>
-ST_10 : Operation 109 [1/1] (0.00ns)   --->   "%specloopname_ln358 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [patchMaker.cpp:358]   --->   Operation 109 'specloopname' 'specloopname_ln358' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 110 [1/2] (0.69ns)   --->   "%wp_parameters_load = load i5 %wp_parameters_addr" [patchMaker.cpp:363]   --->   Operation 110 'load' 'wp_parameters_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
-ST_10 : Operation 111 [1/1] (0.60ns)   --->   "%store_ln363 = store i32 %wp_parameters_load, i7 %patches_parameters_addr_18" [patchMaker.cpp:363]   --->   Operation 111 'store' 'store_ln363' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
+ST_10 : Operation 109 [1/1] (0.00ns)   --->   "%specloopname_ln360 = specloopname void @_ssdm_op_SpecLoopName, void @empty_34" [patchMaker.cpp:360]   --->   Operation 109 'specloopname' 'specloopname_ln360' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 110 [1/2] (0.69ns)   --->   "%wp_parameters_load = load i5 %wp_parameters_addr" [patchMaker.cpp:365]   --->   Operation 110 'load' 'wp_parameters_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 24> <RAM>
+ST_10 : Operation 111 [1/1] (0.60ns)   --->   "%store_ln365 = store i32 %wp_parameters_load, i7 %patches_parameters_addr_18" [patchMaker.cpp:365]   --->   Operation 111 'store' 'store_ln365' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
 ST_10 : Operation 112 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 112 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
 
@@ -385,105 +385,105 @@ Port [ patches_parameters]:  wired=1; compound=1; hidden=0; nouse=0; global=0; s
 
 <LifeTime>
 <method=bitvector/>
-br_ln316                   (br               ) [ 01111110000]
+br_ln318                   (br               ) [ 01111110000]
 i                          (phi              ) [ 00100000000]
-zext_ln339                 (zext             ) [ 00000000000]
+zext_ln341                 (zext             ) [ 00000000000]
 tmp                        (bitconcatenate   ) [ 00000000000]
-zext_ln339_1               (zext             ) [ 00000000000]
-sub_ln339                  (sub              ) [ 00000000000]
-sext_ln316                 (sext             ) [ 00011110000]
-icmp_ln316                 (icmp             ) [ 00111110000]
+zext_ln341_1               (zext             ) [ 00000000000]
+sub_ln341                  (sub              ) [ 00000000000]
+sext_ln318                 (sext             ) [ 00011110000]
+icmp_ln318                 (icmp             ) [ 00111110000]
 empty                      (speclooptripcount) [ 00000000000]
-br_ln316                   (br               ) [ 00000000000]
-add_ln316                  (add              ) [ 01111110000]
-specloopname_ln316         (specloopname     ) [ 00000000000]
-zext_ln339_2               (zext             ) [ 00000000000]
+br_ln318                   (br               ) [ 00000000000]
+add_ln318                  (add              ) [ 01111110000]
+specloopname_ln318         (specloopname     ) [ 00000000000]
+zext_ln341_2               (zext             ) [ 00000000000]
 tmp_s                      (bitconcatenate   ) [ 00000000000]
-zext_ln339_3               (zext             ) [ 00000000000]
-sub_ln339_1                (sub              ) [ 00000000000]
-sext_ln322                 (sext             ) [ 00011110000]
-br_ln322                   (br               ) [ 00111110000]
-br_ln363                   (br               ) [ 00111111111]
+zext_ln341_3               (zext             ) [ 00000000000]
+sub_ln341_1                (sub              ) [ 00000000000]
+sext_ln324                 (sext             ) [ 00011110000]
+br_ln324                   (br               ) [ 00111110000]
+br_ln365                   (br               ) [ 00111111111]
 a                          (phi              ) [ 00010000000]
-add_ln322                  (add              ) [ 00111110000]
-zext_ln339_4               (zext             ) [ 00000000000]
-add_ln339                  (add              ) [ 00001110000]
-add_ln339_1                (add              ) [ 00001110000]
-icmp_ln322                 (icmp             ) [ 00111110000]
-empty_92                   (speclooptripcount) [ 00000000000]
-br_ln322                   (br               ) [ 00000000000]
-specloopname_ln322         (specloopname     ) [ 00000000000]
-br_ln328                   (br               ) [ 00111110000]
+add_ln324                  (add              ) [ 00111110000]
+zext_ln341_4               (zext             ) [ 00000000000]
+add_ln341                  (add              ) [ 00001110000]
+add_ln341_1                (add              ) [ 00001110000]
+icmp_ln324                 (icmp             ) [ 00111110000]
+empty_99                   (speclooptripcount) [ 00000000000]
+br_ln324                   (br               ) [ 00000000000]
+specloopname_ln324         (specloopname     ) [ 00000000000]
+br_ln330                   (br               ) [ 00111110000]
 br_ln0                     (br               ) [ 01111110000]
 b                          (phi              ) [ 00001000000]
-add_ln328                  (add              ) [ 00111110000]
-shl_ln339                  (shl              ) [ 00000000000]
-zext_ln339_5               (zext             ) [ 00000000000]
-add_ln339_2                (add              ) [ 00000000000]
-tmp_74_cast                (bitconcatenate   ) [ 00000110000]
-shl_ln339_1                (shl              ) [ 00000000000]
-zext_ln339_6               (zext             ) [ 00000000000]
-add_ln339_3                (add              ) [ 00000000000]
-tmp_76_cast                (bitconcatenate   ) [ 00000110000]
-icmp_ln328                 (icmp             ) [ 00111110000]
-empty_93                   (speclooptripcount) [ 00000000000]
-br_ln328                   (br               ) [ 00000000000]
-specloopname_ln328         (specloopname     ) [ 00000000000]
-br_ln334                   (br               ) [ 00111110000]
+add_ln330                  (add              ) [ 00111110000]
+shl_ln341                  (shl              ) [ 00000000000]
+zext_ln341_5               (zext             ) [ 00000000000]
+add_ln341_2                (add              ) [ 00000000000]
+tmp_65_cast                (bitconcatenate   ) [ 00000110000]
+shl_ln341_1                (shl              ) [ 00000000000]
+zext_ln341_6               (zext             ) [ 00000000000]
+add_ln341_3                (add              ) [ 00000000000]
+tmp_67_cast                (bitconcatenate   ) [ 00000110000]
+icmp_ln330                 (icmp             ) [ 00111110000]
+empty_100                  (speclooptripcount) [ 00000000000]
+br_ln330                   (br               ) [ 00000000000]
+specloopname_ln330         (specloopname     ) [ 00000000000]
+br_ln336                   (br               ) [ 00111110000]
 br_ln0                     (br               ) [ 00111110000]
 c                          (phi              ) [ 00000100000]
-add_ln334                  (add              ) [ 00111110000]
-zext_ln339_7               (zext             ) [ 00000000000]
-add_ln339_4                (add              ) [ 00000000000]
-zext_ln339_8               (zext             ) [ 00000000000]
+add_ln336                  (add              ) [ 00111110000]
+zext_ln341_7               (zext             ) [ 00000000000]
+add_ln341_4                (add              ) [ 00000000000]
+zext_ln341_8               (zext             ) [ 00000000000]
 patches_parameters_addr    (getelementptr    ) [ 00000010000]
-add_ln339_5                (add              ) [ 00000000000]
-zext_ln339_9               (zext             ) [ 00000000000]
+add_ln341_5                (add              ) [ 00000000000]
+zext_ln341_9               (zext             ) [ 00000000000]
 patches_parameters_addr_19 (getelementptr    ) [ 00000010000]
-icmp_ln334                 (icmp             ) [ 00111110000]
-empty_94                   (speclooptripcount) [ 00000000000]
-br_ln334                   (br               ) [ 00000000000]
+icmp_ln336                 (icmp             ) [ 00111110000]
+empty_101                  (speclooptripcount) [ 00000000000]
+br_ln336                   (br               ) [ 00000000000]
 br_ln0                     (br               ) [ 00111110000]
-specloopname_ln334         (specloopname     ) [ 00000000000]
+specloopname_ln336         (specloopname     ) [ 00000000000]
 patches_parameters_load    (load             ) [ 00000000000]
-store_ln339                (store            ) [ 00000000000]
+store_ln341                (store            ) [ 00000000000]
 br_ln0                     (br               ) [ 00111110000]
 a_4                        (phi              ) [ 00000001000]
-add_ln346                  (add              ) [ 00100001111]
+add_ln348                  (add              ) [ 00100001111]
 tmp_7                      (bitconcatenate   ) [ 00000000000]
-zext_ln346                 (zext             ) [ 00000000111]
-icmp_ln346                 (icmp             ) [ 00000001111]
-empty_95                   (speclooptripcount) [ 00000000000]
-br_ln346                   (br               ) [ 00000000000]
-specloopname_ln346         (specloopname     ) [ 00000000000]
-br_ln352                   (br               ) [ 00000001111]
-ret_ln367                  (ret              ) [ 00000000000]
+zext_ln348                 (zext             ) [ 00000000111]
+icmp_ln348                 (icmp             ) [ 00000001111]
+empty_102                  (speclooptripcount) [ 00000000000]
+br_ln348                   (br               ) [ 00000000000]
+specloopname_ln348         (specloopname     ) [ 00000000000]
+br_ln354                   (br               ) [ 00000001111]
+ret_ln369                  (ret              ) [ 00000000000]
 b_6                        (phi              ) [ 00000000100]
-add_ln352                  (add              ) [ 00000001111]
-zext_ln363                 (zext             ) [ 00000000000]
-add_ln363                  (add              ) [ 00000000000]
-tmp_26                     (bitconcatenate   ) [ 00000000000]
-zext_ln352                 (zext             ) [ 00000000011]
-icmp_ln352                 (icmp             ) [ 00000001111]
-empty_96                   (speclooptripcount) [ 00000000000]
-br_ln352                   (br               ) [ 00000000000]
-specloopname_ln352         (specloopname     ) [ 00000000000]
-br_ln358                   (br               ) [ 00000001111]
+add_ln354                  (add              ) [ 00000001111]
+zext_ln365                 (zext             ) [ 00000000000]
+add_ln365                  (add              ) [ 00000000000]
+tmp_24                     (bitconcatenate   ) [ 00000000000]
+zext_ln354                 (zext             ) [ 00000000011]
+icmp_ln354                 (icmp             ) [ 00000001111]
+empty_103                  (speclooptripcount) [ 00000000000]
+br_ln354                   (br               ) [ 00000000000]
+specloopname_ln354         (specloopname     ) [ 00000000000]
+br_ln360                   (br               ) [ 00000001111]
 br_ln0                     (br               ) [ 00100001111]
 c_5                        (phi              ) [ 00000000010]
-add_ln358                  (add              ) [ 00000001111]
-zext_ln363_1               (zext             ) [ 00000000000]
-add_ln363_1                (add              ) [ 00000000000]
-zext_ln363_2               (zext             ) [ 00000000000]
+add_ln360                  (add              ) [ 00000001111]
+zext_ln365_1               (zext             ) [ 00000000000]
+add_ln365_1                (add              ) [ 00000000000]
+zext_ln365_2               (zext             ) [ 00000000000]
 wp_parameters_addr         (getelementptr    ) [ 00000000001]
 patches_parameters_addr_18 (getelementptr    ) [ 00000000001]
-icmp_ln358                 (icmp             ) [ 00000001111]
-empty_97                   (speclooptripcount) [ 00000000000]
-br_ln358                   (br               ) [ 00000000000]
+icmp_ln360                 (icmp             ) [ 00000001111]
+empty_104                  (speclooptripcount) [ 00000000000]
+br_ln360                   (br               ) [ 00000000000]
 br_ln0                     (br               ) [ 00000001111]
-specloopname_ln358         (specloopname     ) [ 00000000000]
+specloopname_ln360         (specloopname     ) [ 00000000000]
 wp_parameters_load         (load             ) [ 00000000000]
-store_ln363                (store            ) [ 00000000000]
+store_ln365                (store            ) [ 00000000000]
 br_ln0                     (br               ) [ 00000001111]
 </LifeTime>
 
@@ -578,7 +578,7 @@ br_ln0                     (br               ) [ 00000001111]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_31"/></StgValue>
+<StgValue><ssdm name="empty_8"/></StgValue>
 </bind>
 </comp>
 
@@ -605,7 +605,7 @@ br_ln0                     (br               ) [ 00000001111]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_30"/></StgValue>
+<StgValue><ssdm name="empty_39"/></StgValue>
 </bind>
 </comp>
 
@@ -677,7 +677,7 @@ br_ln0                     (br               ) [ 00000001111]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_29"/></StgValue>
+<StgValue><ssdm name="empty_38"/></StgValue>
 </bind>
 </comp>
 
@@ -695,7 +695,7 @@ br_ln0                     (br               ) [ 00000001111]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_28"/></StgValue>
+<StgValue><ssdm name="empty_37"/></StgValue>
 </bind>
 </comp>
 
@@ -704,7 +704,7 @@ br_ln0                     (br               ) [ 00000001111]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_27"/></StgValue>
+<StgValue><ssdm name="empty_36"/></StgValue>
 </bind>
 </comp>
 
@@ -722,7 +722,7 @@ br_ln0                     (br               ) [ 00000001111]
 <pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_26"/></StgValue>
+<StgValue><ssdm name="empty_35"/></StgValue>
 </bind>
 </comp>
 
@@ -731,7 +731,7 @@ br_ln0                     (br               ) [ 00000001111]
 <pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_21"/></StgValue>
+<StgValue><ssdm name="empty_34"/></StgValue>
 </bind>
 </comp>
 
@@ -770,7 +770,7 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="store"/>
-<opset="patches_parameters_load/5 store_ln339/6 store_ln363/10 "/>
+<opset="patches_parameters_load/5 store_ln341/6 store_ln365/10 "/>
 </bind>
 </comp>
 
@@ -981,14 +981,14 @@ br_ln0                     (br               ) [ 00000001111]
 </bind>
 </comp>
 
-<comp id="173" class="1004" name="zext_ln339_fu_173">
+<comp id="173" class="1004" name="zext_ln341_fu_173">
 <pin_list>
 <pin id="174" dir="0" index="0" bw="2" slack="0"/>
 <pin id="175" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339/2 "/>
+<opset="zext_ln341/2 "/>
 </bind>
 </comp>
 
@@ -1005,18 +1005,18 @@ br_ln0                     (br               ) [ 00000001111]
 </bind>
 </comp>
 
-<comp id="185" class="1004" name="zext_ln339_1_fu_185">
+<comp id="185" class="1004" name="zext_ln341_1_fu_185">
 <pin_list>
 <pin id="186" dir="0" index="0" bw="4" slack="0"/>
 <pin id="187" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_1/2 "/>
+<opset="zext_ln341_1/2 "/>
 </bind>
 </comp>
 
-<comp id="189" class="1004" name="sub_ln339_fu_189">
+<comp id="189" class="1004" name="sub_ln341_fu_189">
 <pin_list>
 <pin id="190" dir="0" index="0" bw="4" slack="0"/>
 <pin id="191" dir="0" index="1" bw="2" slack="0"/>
@@ -1024,22 +1024,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="sub(10) " fcode="sub"/>
-<opset="sub_ln339/2 "/>
+<opset="sub_ln341/2 "/>
 </bind>
 </comp>
 
-<comp id="195" class="1004" name="sext_ln316_fu_195">
+<comp id="195" class="1004" name="sext_ln318_fu_195">
 <pin_list>
 <pin id="196" dir="0" index="0" bw="5" slack="0"/>
 <pin id="197" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln316/2 "/>
+<opset="sext_ln318/2 "/>
 </bind>
 </comp>
 
-<comp id="199" class="1004" name="icmp_ln316_fu_199">
+<comp id="199" class="1004" name="icmp_ln318_fu_199">
 <pin_list>
 <pin id="200" dir="0" index="0" bw="2" slack="0"/>
 <pin id="201" dir="0" index="1" bw="2" slack="0"/>
@@ -1047,11 +1047,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln316/2 "/>
+<opset="icmp_ln318/2 "/>
 </bind>
 </comp>
 
-<comp id="205" class="1004" name="add_ln316_fu_205">
+<comp id="205" class="1004" name="add_ln318_fu_205">
 <pin_list>
 <pin id="206" dir="0" index="0" bw="2" slack="0"/>
 <pin id="207" dir="0" index="1" bw="1" slack="0"/>
@@ -1059,18 +1059,18 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln316/2 "/>
+<opset="add_ln318/2 "/>
 </bind>
 </comp>
 
-<comp id="211" class="1004" name="zext_ln339_2_fu_211">
+<comp id="211" class="1004" name="zext_ln341_2_fu_211">
 <pin_list>
 <pin id="212" dir="0" index="0" bw="2" slack="0"/>
 <pin id="213" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_2/2 "/>
+<opset="zext_ln341_2/2 "/>
 </bind>
 </comp>
 
@@ -1087,18 +1087,18 @@ br_ln0                     (br               ) [ 00000001111]
 </bind>
 </comp>
 
-<comp id="223" class="1004" name="zext_ln339_3_fu_223">
+<comp id="223" class="1004" name="zext_ln341_3_fu_223">
 <pin_list>
 <pin id="224" dir="0" index="0" bw="4" slack="0"/>
 <pin id="225" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_3/2 "/>
+<opset="zext_ln341_3/2 "/>
 </bind>
 </comp>
 
-<comp id="227" class="1004" name="sub_ln339_1_fu_227">
+<comp id="227" class="1004" name="sub_ln341_1_fu_227">
 <pin_list>
 <pin id="228" dir="0" index="0" bw="4" slack="0"/>
 <pin id="229" dir="0" index="1" bw="2" slack="0"/>
@@ -1106,22 +1106,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="sub(10) " fcode="sub"/>
-<opset="sub_ln339_1/2 "/>
+<opset="sub_ln341_1/2 "/>
 </bind>
 </comp>
 
-<comp id="233" class="1004" name="sext_ln322_fu_233">
+<comp id="233" class="1004" name="sext_ln324_fu_233">
 <pin_list>
 <pin id="234" dir="0" index="0" bw="5" slack="0"/>
 <pin id="235" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="sext_ln322/2 "/>
+<opset="sext_ln324/2 "/>
 </bind>
 </comp>
 
-<comp id="237" class="1004" name="add_ln322_fu_237">
+<comp id="237" class="1004" name="add_ln324_fu_237">
 <pin_list>
 <pin id="238" dir="0" index="0" bw="2" slack="0"/>
 <pin id="239" dir="0" index="1" bw="1" slack="0"/>
@@ -1129,22 +1129,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln322/3 "/>
+<opset="add_ln324/3 "/>
 </bind>
 </comp>
 
-<comp id="243" class="1004" name="zext_ln339_4_fu_243">
+<comp id="243" class="1004" name="zext_ln341_4_fu_243">
 <pin_list>
 <pin id="244" dir="0" index="0" bw="2" slack="0"/>
 <pin id="245" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_4/3 "/>
+<opset="zext_ln341_4/3 "/>
 </bind>
 </comp>
 
-<comp id="247" class="1004" name="add_ln339_fu_247">
+<comp id="247" class="1004" name="add_ln341_fu_247">
 <pin_list>
 <pin id="248" dir="0" index="0" bw="5" slack="1"/>
 <pin id="249" dir="0" index="1" bw="2" slack="0"/>
@@ -1152,11 +1152,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln339/3 "/>
+<opset="add_ln341/3 "/>
 </bind>
 </comp>
 
-<comp id="252" class="1004" name="add_ln339_1_fu_252">
+<comp id="252" class="1004" name="add_ln341_1_fu_252">
 <pin_list>
 <pin id="253" dir="0" index="0" bw="5" slack="1"/>
 <pin id="254" dir="0" index="1" bw="2" slack="0"/>
@@ -1164,11 +1164,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln339_1/3 "/>
+<opset="add_ln341_1/3 "/>
 </bind>
 </comp>
 
-<comp id="257" class="1004" name="icmp_ln322_fu_257">
+<comp id="257" class="1004" name="icmp_ln324_fu_257">
 <pin_list>
 <pin id="258" dir="0" index="0" bw="2" slack="0"/>
 <pin id="259" dir="0" index="1" bw="2" slack="0"/>
@@ -1176,11 +1176,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln322/3 "/>
+<opset="icmp_ln324/3 "/>
 </bind>
 </comp>
 
-<comp id="263" class="1004" name="add_ln328_fu_263">
+<comp id="263" class="1004" name="add_ln330_fu_263">
 <pin_list>
 <pin id="264" dir="0" index="0" bw="3" slack="0"/>
 <pin id="265" dir="0" index="1" bw="1" slack="0"/>
@@ -1188,11 +1188,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln328/4 "/>
+<opset="add_ln330/4 "/>
 </bind>
 </comp>
 
-<comp id="269" class="1004" name="shl_ln339_fu_269">
+<comp id="269" class="1004" name="shl_ln341_fu_269">
 <pin_list>
 <pin id="270" dir="0" index="0" bw="6" slack="1"/>
 <pin id="271" dir="0" index="1" bw="3" slack="0"/>
@@ -1200,22 +1200,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="shl(20) " fcode="shl"/>
-<opset="shl_ln339/4 "/>
+<opset="shl_ln341/4 "/>
 </bind>
 </comp>
 
-<comp id="274" class="1004" name="zext_ln339_5_fu_274">
+<comp id="274" class="1004" name="zext_ln341_5_fu_274">
 <pin_list>
 <pin id="275" dir="0" index="0" bw="3" slack="0"/>
 <pin id="276" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_5/4 "/>
+<opset="zext_ln341_5/4 "/>
 </bind>
 </comp>
 
-<comp id="278" class="1004" name="add_ln339_2_fu_278">
+<comp id="278" class="1004" name="add_ln341_2_fu_278">
 <pin_list>
 <pin id="279" dir="0" index="0" bw="6" slack="0"/>
 <pin id="280" dir="0" index="1" bw="3" slack="0"/>
@@ -1223,11 +1223,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln339_2/4 "/>
+<opset="add_ln341_2/4 "/>
 </bind>
 </comp>
 
-<comp id="284" class="1004" name="tmp_74_cast_fu_284">
+<comp id="284" class="1004" name="tmp_65_cast_fu_284">
 <pin_list>
 <pin id="285" dir="0" index="0" bw="7" slack="0"/>
 <pin id="286" dir="0" index="1" bw="6" slack="0"/>
@@ -1236,11 +1236,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_74_cast/4 "/>
+<opset="tmp_65_cast/4 "/>
 </bind>
 </comp>
 
-<comp id="292" class="1004" name="shl_ln339_1_fu_292">
+<comp id="292" class="1004" name="shl_ln341_1_fu_292">
 <pin_list>
 <pin id="293" dir="0" index="0" bw="6" slack="1"/>
 <pin id="294" dir="0" index="1" bw="3" slack="0"/>
@@ -1248,22 +1248,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="shl(20) " fcode="shl"/>
-<opset="shl_ln339_1/4 "/>
+<opset="shl_ln341_1/4 "/>
 </bind>
 </comp>
 
-<comp id="297" class="1004" name="zext_ln339_6_fu_297">
+<comp id="297" class="1004" name="zext_ln341_6_fu_297">
 <pin_list>
 <pin id="298" dir="0" index="0" bw="3" slack="0"/>
 <pin id="299" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_6/4 "/>
+<opset="zext_ln341_6/4 "/>
 </bind>
 </comp>
 
-<comp id="301" class="1004" name="add_ln339_3_fu_301">
+<comp id="301" class="1004" name="add_ln341_3_fu_301">
 <pin_list>
 <pin id="302" dir="0" index="0" bw="6" slack="0"/>
 <pin id="303" dir="0" index="1" bw="3" slack="0"/>
@@ -1271,11 +1271,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln339_3/4 "/>
+<opset="add_ln341_3/4 "/>
 </bind>
 </comp>
 
-<comp id="307" class="1004" name="tmp_76_cast_fu_307">
+<comp id="307" class="1004" name="tmp_67_cast_fu_307">
 <pin_list>
 <pin id="308" dir="0" index="0" bw="7" slack="0"/>
 <pin id="309" dir="0" index="1" bw="6" slack="0"/>
@@ -1284,11 +1284,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_76_cast/4 "/>
+<opset="tmp_67_cast/4 "/>
 </bind>
 </comp>
 
-<comp id="315" class="1004" name="icmp_ln328_fu_315">
+<comp id="315" class="1004" name="icmp_ln330_fu_315">
 <pin_list>
 <pin id="316" dir="0" index="0" bw="3" slack="0"/>
 <pin id="317" dir="0" index="1" bw="3" slack="0"/>
@@ -1296,11 +1296,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln328/4 "/>
+<opset="icmp_ln330/4 "/>
 </bind>
 </comp>
 
-<comp id="321" class="1004" name="add_ln334_fu_321">
+<comp id="321" class="1004" name="add_ln336_fu_321">
 <pin_list>
 <pin id="322" dir="0" index="0" bw="2" slack="0"/>
 <pin id="323" dir="0" index="1" bw="1" slack="0"/>
@@ -1308,22 +1308,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln334/5 "/>
+<opset="add_ln336/5 "/>
 </bind>
 </comp>
 
-<comp id="327" class="1004" name="zext_ln339_7_fu_327">
+<comp id="327" class="1004" name="zext_ln341_7_fu_327">
 <pin_list>
 <pin id="328" dir="0" index="0" bw="2" slack="0"/>
 <pin id="329" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_7/5 "/>
+<opset="zext_ln341_7/5 "/>
 </bind>
 </comp>
 
-<comp id="331" class="1004" name="add_ln339_4_fu_331">
+<comp id="331" class="1004" name="add_ln341_4_fu_331">
 <pin_list>
 <pin id="332" dir="0" index="0" bw="7" slack="1"/>
 <pin id="333" dir="0" index="1" bw="2" slack="0"/>
@@ -1331,22 +1331,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln339_4/5 "/>
+<opset="add_ln341_4/5 "/>
 </bind>
 </comp>
 
-<comp id="336" class="1004" name="zext_ln339_8_fu_336">
+<comp id="336" class="1004" name="zext_ln341_8_fu_336">
 <pin_list>
 <pin id="337" dir="0" index="0" bw="7" slack="0"/>
 <pin id="338" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_8/5 "/>
+<opset="zext_ln341_8/5 "/>
 </bind>
 </comp>
 
-<comp id="341" class="1004" name="add_ln339_5_fu_341">
+<comp id="341" class="1004" name="add_ln341_5_fu_341">
 <pin_list>
 <pin id="342" dir="0" index="0" bw="7" slack="1"/>
 <pin id="343" dir="0" index="1" bw="2" slack="0"/>
@@ -1354,22 +1354,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln339_5/5 "/>
+<opset="add_ln341_5/5 "/>
 </bind>
 </comp>
 
-<comp id="346" class="1004" name="zext_ln339_9_fu_346">
+<comp id="346" class="1004" name="zext_ln341_9_fu_346">
 <pin_list>
 <pin id="347" dir="0" index="0" bw="7" slack="0"/>
 <pin id="348" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln339_9/5 "/>
+<opset="zext_ln341_9/5 "/>
 </bind>
 </comp>
 
-<comp id="351" class="1004" name="icmp_ln334_fu_351">
+<comp id="351" class="1004" name="icmp_ln336_fu_351">
 <pin_list>
 <pin id="352" dir="0" index="0" bw="2" slack="0"/>
 <pin id="353" dir="0" index="1" bw="2" slack="0"/>
@@ -1377,11 +1377,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln334/5 "/>
+<opset="icmp_ln336/5 "/>
 </bind>
 </comp>
 
-<comp id="357" class="1004" name="add_ln346_fu_357">
+<comp id="357" class="1004" name="add_ln348_fu_357">
 <pin_list>
 <pin id="358" dir="0" index="0" bw="2" slack="0"/>
 <pin id="359" dir="0" index="1" bw="1" slack="0"/>
@@ -1389,7 +1389,7 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln346/7 "/>
+<opset="add_ln348/7 "/>
 </bind>
 </comp>
 
@@ -1406,18 +1406,18 @@ br_ln0                     (br               ) [ 00000001111]
 </bind>
 </comp>
 
-<comp id="371" class="1004" name="zext_ln346_fu_371">
+<comp id="371" class="1004" name="zext_ln348_fu_371">
 <pin_list>
 <pin id="372" dir="0" index="0" bw="4" slack="0"/>
 <pin id="373" dir="1" index="1" bw="5" slack="1"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln346/7 "/>
+<opset="zext_ln348/7 "/>
 </bind>
 </comp>
 
-<comp id="375" class="1004" name="icmp_ln346_fu_375">
+<comp id="375" class="1004" name="icmp_ln348_fu_375">
 <pin_list>
 <pin id="376" dir="0" index="0" bw="2" slack="0"/>
 <pin id="377" dir="0" index="1" bw="2" slack="0"/>
@@ -1425,11 +1425,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln346/7 "/>
+<opset="icmp_ln348/7 "/>
 </bind>
 </comp>
 
-<comp id="381" class="1004" name="add_ln352_fu_381">
+<comp id="381" class="1004" name="add_ln354_fu_381">
 <pin_list>
 <pin id="382" dir="0" index="0" bw="3" slack="0"/>
 <pin id="383" dir="0" index="1" bw="1" slack="0"/>
@@ -1437,22 +1437,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln352/8 "/>
+<opset="add_ln354/8 "/>
 </bind>
 </comp>
 
-<comp id="387" class="1004" name="zext_ln363_fu_387">
+<comp id="387" class="1004" name="zext_ln365_fu_387">
 <pin_list>
 <pin id="388" dir="0" index="0" bw="3" slack="0"/>
 <pin id="389" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln363/8 "/>
+<opset="zext_ln365/8 "/>
 </bind>
 </comp>
 
-<comp id="391" class="1004" name="add_ln363_fu_391">
+<comp id="391" class="1004" name="add_ln365_fu_391">
 <pin_list>
 <pin id="392" dir="0" index="0" bw="4" slack="1"/>
 <pin id="393" dir="0" index="1" bw="3" slack="0"/>
@@ -1460,11 +1460,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln363/8 "/>
+<opset="add_ln365/8 "/>
 </bind>
 </comp>
 
-<comp id="396" class="1004" name="tmp_26_fu_396">
+<comp id="396" class="1004" name="tmp_24_fu_396">
 <pin_list>
 <pin id="397" dir="0" index="0" bw="6" slack="0"/>
 <pin id="398" dir="0" index="1" bw="5" slack="0"/>
@@ -1473,22 +1473,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_26/8 "/>
+<opset="tmp_24/8 "/>
 </bind>
 </comp>
 
-<comp id="404" class="1004" name="zext_ln352_fu_404">
+<comp id="404" class="1004" name="zext_ln354_fu_404">
 <pin_list>
 <pin id="405" dir="0" index="0" bw="6" slack="0"/>
 <pin id="406" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln352/8 "/>
+<opset="zext_ln354/8 "/>
 </bind>
 </comp>
 
-<comp id="408" class="1004" name="icmp_ln352_fu_408">
+<comp id="408" class="1004" name="icmp_ln354_fu_408">
 <pin_list>
 <pin id="409" dir="0" index="0" bw="3" slack="0"/>
 <pin id="410" dir="0" index="1" bw="3" slack="0"/>
@@ -1496,11 +1496,11 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln352/8 "/>
+<opset="icmp_ln354/8 "/>
 </bind>
 </comp>
 
-<comp id="414" class="1004" name="add_ln358_fu_414">
+<comp id="414" class="1004" name="add_ln360_fu_414">
 <pin_list>
 <pin id="415" dir="0" index="0" bw="2" slack="0"/>
 <pin id="416" dir="0" index="1" bw="1" slack="0"/>
@@ -1508,22 +1508,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln358/9 "/>
+<opset="add_ln360/9 "/>
 </bind>
 </comp>
 
-<comp id="420" class="1004" name="zext_ln363_1_fu_420">
+<comp id="420" class="1004" name="zext_ln365_1_fu_420">
 <pin_list>
 <pin id="421" dir="0" index="0" bw="2" slack="0"/>
 <pin id="422" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln363_1/9 "/>
+<opset="zext_ln365_1/9 "/>
 </bind>
 </comp>
 
-<comp id="424" class="1004" name="add_ln363_1_fu_424">
+<comp id="424" class="1004" name="add_ln365_1_fu_424">
 <pin_list>
 <pin id="425" dir="0" index="0" bw="6" slack="1"/>
 <pin id="426" dir="0" index="1" bw="2" slack="0"/>
@@ -1531,22 +1531,22 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln363_1/9 "/>
+<opset="add_ln365_1/9 "/>
 </bind>
 </comp>
 
-<comp id="429" class="1004" name="zext_ln363_2_fu_429">
+<comp id="429" class="1004" name="zext_ln365_2_fu_429">
 <pin_list>
 <pin id="430" dir="0" index="0" bw="7" slack="0"/>
 <pin id="431" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln363_2/9 "/>
+<opset="zext_ln365_2/9 "/>
 </bind>
 </comp>
 
-<comp id="435" class="1004" name="icmp_ln358_fu_435">
+<comp id="435" class="1004" name="icmp_ln360_fu_435">
 <pin_list>
 <pin id="436" dir="0" index="0" bw="2" slack="0"/>
 <pin id="437" dir="0" index="1" bw="2" slack="0"/>
@@ -1554,107 +1554,107 @@ br_ln0                     (br               ) [ 00000001111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln358/9 "/>
+<opset="icmp_ln360/9 "/>
 </bind>
 </comp>
 
-<comp id="441" class="1005" name="sext_ln316_reg_441">
+<comp id="441" class="1005" name="sext_ln318_reg_441">
 <pin_list>
 <pin id="442" dir="0" index="0" bw="6" slack="1"/>
 <pin id="443" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
-<opset="sext_ln316 "/>
+<opset="sext_ln318 "/>
 </bind>
 </comp>
 
-<comp id="449" class="1005" name="add_ln316_reg_449">
+<comp id="449" class="1005" name="add_ln318_reg_449">
 <pin_list>
 <pin id="450" dir="0" index="0" bw="2" slack="0"/>
 <pin id="451" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln316 "/>
+<opset="add_ln318 "/>
 </bind>
 </comp>
 
-<comp id="454" class="1005" name="sext_ln322_reg_454">
+<comp id="454" class="1005" name="sext_ln324_reg_454">
 <pin_list>
 <pin id="455" dir="0" index="0" bw="6" slack="1"/>
 <pin id="456" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
-<opset="sext_ln322 "/>
+<opset="sext_ln324 "/>
 </bind>
 </comp>
 
-<comp id="459" class="1005" name="add_ln322_reg_459">
+<comp id="459" class="1005" name="add_ln324_reg_459">
 <pin_list>
 <pin id="460" dir="0" index="0" bw="2" slack="0"/>
 <pin id="461" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln322 "/>
+<opset="add_ln324 "/>
 </bind>
 </comp>
 
-<comp id="464" class="1005" name="add_ln339_reg_464">
+<comp id="464" class="1005" name="add_ln341_reg_464">
 <pin_list>
 <pin id="465" dir="0" index="0" bw="6" slack="1"/>
 <pin id="466" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln339 "/>
+<opset="add_ln341 "/>
 </bind>
 </comp>
 
-<comp id="469" class="1005" name="add_ln339_1_reg_469">
+<comp id="469" class="1005" name="add_ln341_1_reg_469">
 <pin_list>
 <pin id="470" dir="0" index="0" bw="6" slack="1"/>
 <pin id="471" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln339_1 "/>
+<opset="add_ln341_1 "/>
 </bind>
 </comp>
 
-<comp id="477" class="1005" name="add_ln328_reg_477">
+<comp id="477" class="1005" name="add_ln330_reg_477">
 <pin_list>
 <pin id="478" dir="0" index="0" bw="3" slack="0"/>
 <pin id="479" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln328 "/>
+<opset="add_ln330 "/>
 </bind>
 </comp>
 
-<comp id="482" class="1005" name="tmp_74_cast_reg_482">
+<comp id="482" class="1005" name="tmp_65_cast_reg_482">
 <pin_list>
 <pin id="483" dir="0" index="0" bw="7" slack="1"/>
 <pin id="484" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_74_cast "/>
+<opset="tmp_65_cast "/>
 </bind>
 </comp>
 
-<comp id="487" class="1005" name="tmp_76_cast_reg_487">
+<comp id="487" class="1005" name="tmp_67_cast_reg_487">
 <pin_list>
 <pin id="488" dir="0" index="0" bw="7" slack="1"/>
 <pin id="489" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_76_cast "/>
+<opset="tmp_67_cast "/>
 </bind>
 </comp>
 
-<comp id="495" class="1005" name="add_ln334_reg_495">
+<comp id="495" class="1005" name="add_ln336_reg_495">
 <pin_list>
 <pin id="496" dir="0" index="0" bw="2" slack="0"/>
 <pin id="497" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln334 "/>
+<opset="add_ln336 "/>
 </bind>
 </comp>
 
@@ -1678,53 +1678,53 @@ br_ln0                     (br               ) [ 00000001111]
 </bind>
 </comp>
 
-<comp id="513" class="1005" name="add_ln346_reg_513">
+<comp id="513" class="1005" name="add_ln348_reg_513">
 <pin_list>
 <pin id="514" dir="0" index="0" bw="2" slack="0"/>
 <pin id="515" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln346 "/>
+<opset="add_ln348 "/>
 </bind>
 </comp>
 
-<comp id="518" class="1005" name="zext_ln346_reg_518">
+<comp id="518" class="1005" name="zext_ln348_reg_518">
 <pin_list>
 <pin id="519" dir="0" index="0" bw="5" slack="1"/>
 <pin id="520" dir="1" index="1" bw="5" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln346 "/>
+<opset="zext_ln348 "/>
 </bind>
 </comp>
 
-<comp id="526" class="1005" name="add_ln352_reg_526">
+<comp id="526" class="1005" name="add_ln354_reg_526">
 <pin_list>
 <pin id="527" dir="0" index="0" bw="3" slack="0"/>
 <pin id="528" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln352 "/>
+<opset="add_ln354 "/>
 </bind>
 </comp>
 
-<comp id="531" class="1005" name="zext_ln352_reg_531">
+<comp id="531" class="1005" name="zext_ln354_reg_531">
 <pin_list>
 <pin id="532" dir="0" index="0" bw="7" slack="1"/>
 <pin id="533" dir="1" index="1" bw="7" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln352 "/>
+<opset="zext_ln354 "/>
 </bind>
 </comp>
 
-<comp id="539" class="1005" name="add_ln358_reg_539">
+<comp id="539" class="1005" name="add_ln360_reg_539">
 <pin_list>
 <pin id="540" dir="0" index="0" bw="2" slack="0"/>
 <pin id="541" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln358 "/>
+<opset="add_ln360 "/>
 </bind>
 </comp>
 
@@ -2060,76 +2060,76 @@ br_ln0                     (br               ) [ 00000001111]
   - Chain level:
 	State 1
 	State 2
-		zext_ln339 : 1
+		zext_ln341 : 1
 		tmp : 1
-		zext_ln339_1 : 2
-		sub_ln339 : 3
-		sext_ln316 : 4
-		icmp_ln316 : 1
-		br_ln316 : 2
-		add_ln316 : 1
-		zext_ln339_2 : 2
+		zext_ln341_1 : 2
+		sub_ln341 : 3
+		sext_ln318 : 4
+		icmp_ln318 : 1
+		br_ln318 : 2
+		add_ln318 : 1
+		zext_ln341_2 : 2
 		tmp_s : 2
-		zext_ln339_3 : 3
-		sub_ln339_1 : 4
-		sext_ln322 : 5
+		zext_ln341_3 : 3
+		sub_ln341_1 : 4
+		sext_ln324 : 5
 	State 3
-		add_ln322 : 1
-		zext_ln339_4 : 1
-		add_ln339 : 2
-		add_ln339_1 : 2
-		icmp_ln322 : 1
-		br_ln322 : 2
+		add_ln324 : 1
+		zext_ln341_4 : 1
+		add_ln341 : 2
+		add_ln341_1 : 2
+		icmp_ln324 : 1
+		br_ln324 : 2
 	State 4
-		add_ln328 : 1
-		zext_ln339_5 : 1
-		add_ln339_2 : 2
-		tmp_74_cast : 3
-		zext_ln339_6 : 1
-		add_ln339_3 : 2
-		tmp_76_cast : 3
-		icmp_ln328 : 1
-		br_ln328 : 2
+		add_ln330 : 1
+		zext_ln341_5 : 1
+		add_ln341_2 : 2
+		tmp_65_cast : 3
+		zext_ln341_6 : 1
+		add_ln341_3 : 2
+		tmp_67_cast : 3
+		icmp_ln330 : 1
+		br_ln330 : 2
 	State 5
-		add_ln334 : 1
-		zext_ln339_7 : 1
-		add_ln339_4 : 2
-		zext_ln339_8 : 3
+		add_ln336 : 1
+		zext_ln341_7 : 1
+		add_ln341_4 : 2
+		zext_ln341_8 : 3
 		patches_parameters_addr : 4
-		add_ln339_5 : 2
-		zext_ln339_9 : 3
+		add_ln341_5 : 2
+		zext_ln341_9 : 3
 		patches_parameters_addr_19 : 4
-		icmp_ln334 : 1
-		br_ln334 : 2
+		icmp_ln336 : 1
+		br_ln336 : 2
 		patches_parameters_load : 5
 	State 6
-		store_ln339 : 1
+		store_ln341 : 1
 	State 7
-		add_ln346 : 1
+		add_ln348 : 1
 		tmp_7 : 1
-		zext_ln346 : 2
-		icmp_ln346 : 1
-		br_ln346 : 2
+		zext_ln348 : 2
+		icmp_ln348 : 1
+		br_ln348 : 2
 	State 8
-		add_ln352 : 1
-		zext_ln363 : 1
-		add_ln363 : 2
-		tmp_26 : 3
-		zext_ln352 : 4
-		icmp_ln352 : 1
-		br_ln352 : 2
+		add_ln354 : 1
+		zext_ln365 : 1
+		add_ln365 : 2
+		tmp_24 : 3
+		zext_ln354 : 4
+		icmp_ln354 : 1
+		br_ln354 : 2
 	State 9
-		add_ln358 : 1
-		zext_ln363_1 : 1
-		add_ln363_1 : 2
-		zext_ln363_2 : 3
+		add_ln360 : 1
+		zext_ln365_1 : 1
+		add_ln365_1 : 2
+		zext_ln365_2 : 3
 		wp_parameters_addr : 4
 		patches_parameters_addr_18 : 4
-		icmp_ln358 : 1
-		br_ln358 : 2
+		icmp_ln360 : 1
+		br_ln360 : 2
 		wp_parameters_load : 5
 	State 10
-		store_ln363 : 1
+		store_ln365 : 1
 
 
 ============================================================
@@ -2140,61 +2140,61 @@ br_ln0                     (br               ) [ 00000001111]
 |----------|---------------------|---------|---------|
 | Operation|   Functional Unit   |    FF   |   LUT   |
 |----------|---------------------|---------|---------|
-|          |   add_ln316_fu_205  |    0    |    9    |
-|          |   add_ln322_fu_237  |    0    |    9    |
-|          |   add_ln339_fu_247  |    0    |    12   |
-|          |  add_ln339_1_fu_252 |    0    |    12   |
-|          |   add_ln328_fu_263  |    0    |    10   |
-|          |  add_ln339_2_fu_278 |    0    |    13   |
-|          |  add_ln339_3_fu_301 |    0    |    13   |
-|    add   |   add_ln334_fu_321  |    0    |    9    |
-|          |  add_ln339_4_fu_331 |    0    |    14   |
-|          |  add_ln339_5_fu_341 |    0    |    14   |
-|          |   add_ln346_fu_357  |    0    |    9    |
-|          |   add_ln352_fu_381  |    0    |    10   |
-|          |   add_ln363_fu_391  |    0    |    12   |
-|          |   add_ln358_fu_414  |    0    |    9    |
-|          |  add_ln363_1_fu_424 |    0    |    13   |
+|          |   add_ln318_fu_205  |    0    |    9    |
+|          |   add_ln324_fu_237  |    0    |    9    |
+|          |   add_ln341_fu_247  |    0    |    12   |
+|          |  add_ln341_1_fu_252 |    0    |    12   |
+|          |   add_ln330_fu_263  |    0    |    10   |
+|          |  add_ln341_2_fu_278 |    0    |    13   |
+|          |  add_ln341_3_fu_301 |    0    |    13   |
+|    add   |   add_ln336_fu_321  |    0    |    9    |
+|          |  add_ln341_4_fu_331 |    0    |    14   |
+|          |  add_ln341_5_fu_341 |    0    |    14   |
+|          |   add_ln348_fu_357  |    0    |    9    |
+|          |   add_ln354_fu_381  |    0    |    10   |
+|          |   add_ln365_fu_391  |    0    |    12   |
+|          |   add_ln360_fu_414  |    0    |    9    |
+|          |  add_ln365_1_fu_424 |    0    |    13   |
 |----------|---------------------|---------|---------|
-|          |  icmp_ln316_fu_199  |    0    |    8    |
-|          |  icmp_ln322_fu_257  |    0    |    8    |
-|          |  icmp_ln328_fu_315  |    0    |    8    |
-|   icmp   |  icmp_ln334_fu_351  |    0    |    8    |
-|          |  icmp_ln346_fu_375  |    0    |    8    |
-|          |  icmp_ln352_fu_408  |    0    |    8    |
-|          |  icmp_ln358_fu_435  |    0    |    8    |
+|          |  icmp_ln318_fu_199  |    0    |    8    |
+|          |  icmp_ln324_fu_257  |    0    |    8    |
+|          |  icmp_ln330_fu_315  |    0    |    8    |
+|   icmp   |  icmp_ln336_fu_351  |    0    |    8    |
+|          |  icmp_ln348_fu_375  |    0    |    8    |
+|          |  icmp_ln354_fu_408  |    0    |    8    |
+|          |  icmp_ln360_fu_435  |    0    |    8    |
 |----------|---------------------|---------|---------|
-|    sub   |   sub_ln339_fu_189  |    0    |    12   |
-|          |  sub_ln339_1_fu_227 |    0    |    12   |
+|    sub   |   sub_ln341_fu_189  |    0    |    12   |
+|          |  sub_ln341_1_fu_227 |    0    |    12   |
 |----------|---------------------|---------|---------|
-|          |  zext_ln339_fu_173  |    0    |    0    |
-|          | zext_ln339_1_fu_185 |    0    |    0    |
-|          | zext_ln339_2_fu_211 |    0    |    0    |
-|          | zext_ln339_3_fu_223 |    0    |    0    |
-|          | zext_ln339_4_fu_243 |    0    |    0    |
-|          | zext_ln339_5_fu_274 |    0    |    0    |
-|          | zext_ln339_6_fu_297 |    0    |    0    |
-|   zext   | zext_ln339_7_fu_327 |    0    |    0    |
-|          | zext_ln339_8_fu_336 |    0    |    0    |
-|          | zext_ln339_9_fu_346 |    0    |    0    |
-|          |  zext_ln346_fu_371  |    0    |    0    |
-|          |  zext_ln363_fu_387  |    0    |    0    |
-|          |  zext_ln352_fu_404  |    0    |    0    |
-|          | zext_ln363_1_fu_420 |    0    |    0    |
-|          | zext_ln363_2_fu_429 |    0    |    0    |
+|          |  zext_ln341_fu_173  |    0    |    0    |
+|          | zext_ln341_1_fu_185 |    0    |    0    |
+|          | zext_ln341_2_fu_211 |    0    |    0    |
+|          | zext_ln341_3_fu_223 |    0    |    0    |
+|          | zext_ln341_4_fu_243 |    0    |    0    |
+|          | zext_ln341_5_fu_274 |    0    |    0    |
+|          | zext_ln341_6_fu_297 |    0    |    0    |
+|   zext   | zext_ln341_7_fu_327 |    0    |    0    |
+|          | zext_ln341_8_fu_336 |    0    |    0    |
+|          | zext_ln341_9_fu_346 |    0    |    0    |
+|          |  zext_ln348_fu_371  |    0    |    0    |
+|          |  zext_ln365_fu_387  |    0    |    0    |
+|          |  zext_ln354_fu_404  |    0    |    0    |
+|          | zext_ln365_1_fu_420 |    0    |    0    |
+|          | zext_ln365_2_fu_429 |    0    |    0    |
 |----------|---------------------|---------|---------|
 |          |      tmp_fu_177     |    0    |    0    |
 |          |     tmp_s_fu_215    |    0    |    0    |
-|bitconcatenate|  tmp_74_cast_fu_284 |    0    |    0    |
-|          |  tmp_76_cast_fu_307 |    0    |    0    |
+|bitconcatenate|  tmp_65_cast_fu_284 |    0    |    0    |
+|          |  tmp_67_cast_fu_307 |    0    |    0    |
 |          |     tmp_7_fu_363    |    0    |    0    |
-|          |    tmp_26_fu_396    |    0    |    0    |
+|          |    tmp_24_fu_396    |    0    |    0    |
 |----------|---------------------|---------|---------|
-|   sext   |  sext_ln316_fu_195  |    0    |    0    |
-|          |  sext_ln322_fu_233  |    0    |    0    |
+|   sext   |  sext_ln318_fu_195  |    0    |    0    |
+|          |  sext_ln324_fu_233  |    0    |    0    |
 |----------|---------------------|---------|---------|
-|    shl   |   shl_ln339_fu_269  |    0    |    0    |
-|          |  shl_ln339_1_fu_292 |    0    |    0    |
+|    shl   |   shl_ln341_fu_269  |    0    |    0    |
+|          |  shl_ln341_1_fu_292 |    0    |    0    |
 |----------|---------------------|---------|---------|
 |   Total  |                     |    0    |   248   |
 |----------|---------------------|---------|---------|
@@ -2208,15 +2208,15 @@ N/A
 +----------------------------------+--------+
 |            a_4_reg_140           |    2   |
 |             a_reg_107            |    2   |
-|         add_ln316_reg_449        |    2   |
-|         add_ln322_reg_459        |    2   |
-|         add_ln328_reg_477        |    3   |
-|         add_ln334_reg_495        |    2   |
-|        add_ln339_1_reg_469       |    6   |
-|         add_ln339_reg_464        |    6   |
-|         add_ln346_reg_513        |    2   |
-|         add_ln352_reg_526        |    3   |
-|         add_ln358_reg_539        |    2   |
+|         add_ln318_reg_449        |    2   |
+|         add_ln324_reg_459        |    2   |
+|         add_ln330_reg_477        |    3   |
+|         add_ln336_reg_495        |    2   |
+|        add_ln341_1_reg_469       |    6   |
+|         add_ln341_reg_464        |    6   |
+|         add_ln348_reg_513        |    2   |
+|         add_ln354_reg_526        |    3   |
+|         add_ln360_reg_539        |    2   |
 |            b_6_reg_151           |    3   |
 |             b_reg_118            |    3   |
 |            c_5_reg_162           |    2   |
@@ -2225,13 +2225,13 @@ N/A
 |patches_parameters_addr_18_reg_549|    7   |
 |patches_parameters_addr_19_reg_505|    7   |
 |  patches_parameters_addr_reg_500 |    7   |
-|        sext_ln316_reg_441        |    6   |
-|        sext_ln322_reg_454        |    6   |
-|        tmp_74_cast_reg_482       |    7   |
-|        tmp_76_cast_reg_487       |    7   |
+|        sext_ln318_reg_441        |    6   |
+|        sext_ln324_reg_454        |    6   |
+|        tmp_65_cast_reg_482       |    7   |
+|        tmp_67_cast_reg_487       |    7   |
 |    wp_parameters_addr_reg_544    |    5   |
-|        zext_ln346_reg_518        |    5   |
-|        zext_ln352_reg_531        |    7   |
+|        zext_ln348_reg_518        |    5   |
+|        zext_ln354_reg_531        |    7   |
 +----------------------------------+--------+
 |               Total              |   108  |
 +----------------------------------+--------+

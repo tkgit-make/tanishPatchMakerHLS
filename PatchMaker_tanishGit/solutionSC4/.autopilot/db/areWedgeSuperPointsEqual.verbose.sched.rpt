@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'areWedgeSuperPointsEqual'
 ================================================================
-* Date:           Sat Aug  3 00:45:48 2024
+* Date:           Mon Aug  5 17:48:14 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -20,17 +20,17 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  3.00 ns|  1.645 ns|     0.81 ns|
+    |ap_clk  |  3.00 ns|  1.905 ns|     0.81 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+-----+-----+---------+
-    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
-    |   min   |   max   |    min    |    max    | min | max |   Type  |
-    +---------+---------+-----------+-----------+-----+-----+---------+
-    |        4|        4|  12.000 ns|  12.000 ns|    2|    2|      yes|
-    +---------+---------+-----------+-----------+-----+-----+---------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        3|        3|  9.000 ns|  9.000 ns|    2|    2|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -62,75 +62,60 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 2, depth = 5
+  * Pipeline-0: initiation interval (II) = 2, depth = 4
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 5
+* Number of FSM states : 4
 * Pipeline : 1
-  Pipeline-0 : II = 2, D = 5, States = { 1 2 3 4 5 }
+  Pipeline-0 : II = 2, D = 4, States = { 1 2 3 4 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
 2 --> 3 
 3 --> 4 
-4 --> 5 
-5 --> 
+4 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.83>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%wsp2_offset3_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp2_offset3"   --->   Operation 6 'read' 'wsp2_offset3_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%wsp2_offset_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %wsp2_offset"   --->   Operation 7 'read' 'wsp2_offset_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%wsp1_offset1_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp1_offset1"   --->   Operation 8 'read' 'wsp1_offset1_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%wsp1_offset_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %wsp1_offset"   --->   Operation 9 'read' 'wsp1_offset_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%wsp2_offset3_cast23 = zext i3 %wsp2_offset3_read"   --->   Operation 10 'zext' 'wsp2_offset3_cast23' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln869 = zext i5 %wsp2_offset_read"   --->   Operation 11 'zext' 'zext_ln869' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i5.i2, i5 %wsp2_offset_read, i2 0"   --->   Operation 12 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln869_1 = zext i7 %tmp"   --->   Operation 13 'zext' 'zext_ln869_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln869 = add i8 %zext_ln869_1, i8 %zext_ln869"   --->   Operation 14 'add' 'add_ln869' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_1 : Operation 15 [1/1] (0.83ns) (root node of TernaryAdder)   --->   "%add_ln869_1 = add i8 %add_ln869, i8 %wsp2_offset3_cast23"   --->   Operation 15 'add' 'add_ln869_1' <Predicate = true> <Delay = 0.83> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%wsp1_offset1_cast25 = zext i3 %wsp1_offset1_read"   --->   Operation 16 'zext' 'wsp1_offset1_cast25' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln0 = zext i5 %wsp1_offset_read"   --->   Operation 17 'zext' 'zext_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i5.i2, i5 %wsp1_offset_read, i2 0"   --->   Operation 18 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln0_1 = zext i7 %tmp_s"   --->   Operation 19 'zext' 'zext_ln0_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln0 = add i8 %zext_ln0_1, i8 %zext_ln0"   --->   Operation 20 'add' 'add_ln0' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
-ST_1 : Operation 21 [1/1] (0.83ns) (root node of TernaryAdder)   --->   "%add_ln0_1 = add i8 %add_ln0, i8 %wsp1_offset1_cast25"   --->   Operation 21 'add' 'add_ln0_1' <Predicate = true> <Delay = 0.83> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.41> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+State 1 <SV = 0> <Delay = 1.90>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%wsp2_offset3_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp2_offset3"   --->   Operation 5 'read' 'wsp2_offset3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%wsp1_offset1_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp1_offset1"   --->   Operation 6 'read' 'wsp1_offset1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %wsp2_offset3_read, i4 0"   --->   Operation 7 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%zext_ln869 = zext i7 %tmp"   --->   Operation 8 'zext' 'zext_ln869' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%add_ln869 = add i8 %zext_ln869, i8 160"   --->   Operation 9 'add' 'add_ln869' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln869_1 = zext i8 %add_ln869"   --->   Operation 10 'zext' 'zext_ln869_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%wsp2_addr = getelementptr i64 %wsp2, i64 0, i64 %zext_ln869_1"   --->   Operation 11 'getelementptr' 'wsp2_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %wsp1_offset1_read, i4 0"   --->   Operation 12 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln0 = zext i7 %tmp_s"   --->   Operation 13 'zext' 'zext_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%wsp2_addr_1 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln0"   --->   Operation 14 'getelementptr' 'wsp2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [2/2] (1.20ns)   --->   "%wsp2_load_2 = load i8 %wsp2_addr_1"   --->   Operation 15 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
+ST_1 : Operation 16 [2/2] (1.20ns)   --->   "%wsp2_load = load i8 %wsp2_addr"   --->   Operation 16 'load' 'wsp2_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
 
-State 2 <SV = 1> <Delay = 1.64>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_24 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln869_1, i4 0"   --->   Operation 22 'bitconcatenate' 'tmp_24' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln869_2 = zext i12 %tmp_24"   --->   Operation 23 'zext' 'zext_ln869_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%wsp2_addr = getelementptr i64 %wsp2, i64 0, i64 %zext_ln869_2"   --->   Operation 24 'getelementptr' 'wsp2_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_25 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i8.i4, i8 %add_ln0_1, i4 0"   --->   Operation 25 'bitconcatenate' 'tmp_25' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln0_2 = zext i12 %tmp_25"   --->   Operation 26 'zext' 'zext_ln0_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%wsp2_addr_1 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln0_2"   --->   Operation 27 'getelementptr' 'wsp2_addr_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 28 [2/2] (1.64ns)   --->   "%wsp2_load_2 = load i12 %wsp2_addr_1"   --->   Operation 28 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_2 : Operation 29 [2/2] (1.64ns)   --->   "%wsp2_load = load i12 %wsp2_addr"   --->   Operation 29 'load' 'wsp2_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+State 2 <SV = 1> <Delay = 1.90>
+ST_2 : Operation 17 [1/1] (0.70ns)   --->   "%add_ln870 = add i8 %zext_ln869, i8 175"   --->   Operation 17 'add' 'add_ln870' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln870 = zext i8 %add_ln870"   --->   Operation 18 'zext' 'zext_ln870' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%wsp2_addr_3 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870"   --->   Operation 19 'getelementptr' 'wsp2_addr_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%or_ln870 = or i7 %tmp_s, i7 15"   --->   Operation 20 'or' 'or_ln870' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_6 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i57.i7, i57 0, i7 %or_ln870"   --->   Operation 21 'bitconcatenate' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%wsp2_addr_2 = getelementptr i64 %wsp2, i64 0, i64 %tmp_6"   --->   Operation 22 'getelementptr' 'wsp2_addr_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/2] (1.20ns)   --->   "%wsp2_load_2 = load i8 %wsp2_addr_1"   --->   Operation 23 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
+ST_2 : Operation 24 [1/2] (1.20ns)   --->   "%wsp2_load = load i8 %wsp2_addr"   --->   Operation 24 'load' 'wsp2_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
+ST_2 : Operation 25 [2/2] (1.20ns)   --->   "%wsp2_load_3 = load i8 %wsp2_addr_2"   --->   Operation 25 'load' 'wsp2_load_3' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
+ST_2 : Operation 26 [2/2] (1.20ns)   --->   "%wsp2_load_1 = load i8 %wsp2_addr_3"   --->   Operation 26 'load' 'wsp2_load_1' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
 
-State 3 <SV = 2> <Delay = 1.64>
-ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%or_ln870 = or i12 %tmp_24, i12 15"   --->   Operation 30 'or' 'or_ln870' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln870 = zext i12 %or_ln870"   --->   Operation 31 'zext' 'zext_ln870' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%wsp2_addr_3 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870"   --->   Operation 32 'getelementptr' 'wsp2_addr_3' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%or_ln870_1 = or i12 %tmp_25, i12 15"   --->   Operation 33 'or' 'or_ln870_1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln870_1 = zext i12 %or_ln870_1"   --->   Operation 34 'zext' 'zext_ln870_1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%wsp2_addr_2 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870_1"   --->   Operation 35 'getelementptr' 'wsp2_addr_2' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 36 [1/2] (1.64ns)   --->   "%wsp2_load_2 = load i12 %wsp2_addr_1"   --->   Operation 36 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_3 : Operation 37 [1/2] (1.64ns)   --->   "%wsp2_load = load i12 %wsp2_addr"   --->   Operation 37 'load' 'wsp2_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_3 : Operation 38 [2/2] (1.64ns)   --->   "%wsp2_load_3 = load i12 %wsp2_addr_2"   --->   Operation 38 'load' 'wsp2_load_3' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_3 : Operation 39 [2/2] (1.64ns)   --->   "%wsp2_load_1 = load i12 %wsp2_addr_3"   --->   Operation 39 'load' 'wsp2_load_1' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
+State 3 <SV = 2> <Delay = 1.20>
+ST_3 : Operation 27 [1/1] (1.06ns)   --->   "%icmp_ln870 = icmp_eq  i64 %wsp2_load_2, i64 %wsp2_load"   --->   Operation 27 'icmp' 'icmp_ln870' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 28 [1/2] (1.20ns)   --->   "%wsp2_load_3 = load i8 %wsp2_addr_2"   --->   Operation 28 'load' 'wsp2_load_3' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
+ST_3 : Operation 29 [1/2] (1.20ns)   --->   "%wsp2_load_1 = load i8 %wsp2_addr_3"   --->   Operation 29 'load' 'wsp2_load_1' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
 
-State 4 <SV = 3> <Delay = 1.64>
-ST_4 : Operation 40 [1/1] (1.06ns)   --->   "%icmp_ln870 = icmp_eq  i64 %wsp2_load_2, i64 %wsp2_load"   --->   Operation 40 'icmp' 'icmp_ln870' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 41 [1/2] (1.64ns)   --->   "%wsp2_load_3 = load i12 %wsp2_addr_2"   --->   Operation 41 'load' 'wsp2_load_3' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-ST_4 : Operation 42 [1/2] (1.64ns)   --->   "%wsp2_load_1 = load i12 %wsp2_addr_3"   --->   Operation 42 'load' 'wsp2_load_1' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2560> <RAM>
-
-State 5 <SV = 4> <Delay = 1.18>
-ST_5 : Operation 43 [1/1] (1.06ns)   --->   "%icmp_ln870_1 = icmp_eq  i64 %wsp2_load_3, i64 %wsp2_load_1"   --->   Operation 43 'icmp' 'icmp_ln870_1' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 44 [1/1] (0.12ns)   --->   "%and_ln870 = and i1 %icmp_ln870, i1 %icmp_ln870_1"   --->   Operation 44 'and' 'and_ln870' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%ret_ln37 = ret i1 %and_ln870" [patchMaker.cpp:37]   --->   Operation 45 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
+State 4 <SV = 3> <Delay = 1.18>
+ST_4 : Operation 30 [1/1] (1.06ns)   --->   "%icmp_ln870_1 = icmp_eq  i64 %wsp2_load_3, i64 %wsp2_load_1"   --->   Operation 30 'icmp' 'icmp_ln870_1' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 31 [1/1] (0.12ns)   --->   "%and_ln870 = and i1 %icmp_ln870, i1 %icmp_ln870_1"   --->   Operation 31 'and' 'and_ln870' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln37 = ret i1 %and_ln870" [patchMaker.cpp:37]   --->   Operation 32 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -138,28 +123,27 @@ ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%ret_ln37 = ret i1 %and_ln870" [pat
 ============================================================
 Target clock period: 3ns, clock uncertainty: 0.81ns.
 
- <State 1>: 0.838ns
+ <State 1>: 1.9ns
 The critical path consists of the following:
-	wire read on port 'wsp2_offset3' [6]  (0 ns)
-	'add' operation ('add_ln869_1') [15]  (0.838 ns)
+	wire read on port 'wsp2_offset3' [4]  (0 ns)
+	'add' operation ('add_ln869') [8]  (0.705 ns)
+	'getelementptr' operation ('wsp2_addr') [10]  (0 ns)
+	'load' operation ('wsp2_load') on array 'wsp2' [21]  (1.2 ns)
 
- <State 2>: 1.65ns
+ <State 2>: 1.9ns
 The critical path consists of the following:
-	'getelementptr' operation ('wsp2_addr_1') [30]  (0 ns)
-	'load' operation ('wsp2_load_2') on array 'wsp2' [34]  (1.65 ns)
+	'add' operation ('add_ln870') [11]  (0.705 ns)
+	'getelementptr' operation ('wsp2_addr_3') [13]  (0 ns)
+	'load' operation ('wsp2_load_1') on array 'wsp2' [24]  (1.2 ns)
 
- <State 3>: 1.65ns
+ <State 3>: 1.2ns
 The critical path consists of the following:
-	'load' operation ('wsp2_load_2') on array 'wsp2' [34]  (1.65 ns)
+	'load' operation ('wsp2_load_3') on array 'wsp2' [23]  (1.2 ns)
 
- <State 4>: 1.65ns
+ <State 4>: 1.19ns
 The critical path consists of the following:
-	'load' operation ('wsp2_load_3') on array 'wsp2' [37]  (1.65 ns)
-
- <State 5>: 1.19ns
-The critical path consists of the following:
-	'icmp' operation ('icmp_ln870_1') [39]  (1.06 ns)
-	'and' operation ('and_ln870') [40]  (0.122 ns)
+	'icmp' operation ('icmp_ln870_1') [25]  (1.06 ns)
+	'and' operation ('and_ln870') [26]  (0.122 ns)
 
 
 ============================================================
@@ -174,7 +158,6 @@ N/A
 	State 2
 	State 3
 	State 4
-	State 5
 
 
 ============================================================

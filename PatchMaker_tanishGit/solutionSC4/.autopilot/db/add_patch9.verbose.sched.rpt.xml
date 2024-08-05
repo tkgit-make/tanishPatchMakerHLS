@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'add_patch9'" level="0">
-<item name = "Date">Sat Aug  3 00:45:44 2024
+<item name = "Date">Mon Aug  5 17:48:09 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 1.902 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 2.087 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">14, 362, 42.000 ns, 1.086 us, 14, 362, none</column>
+<column name="">8, 594, 24.000 ns, 1.782 us, 8, 594, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,7 +36,9 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- add_patch_perSuperpointSP0_add_patch_perPointSP0">82, 82, 4, 1, 1, 80, yes</column>
-<column name="- add_patch_checkDiff">11, 35, 6, 6, 1, 1 ~ 5, yes</column>
+<column name="- add_patch_checkDiff">5, 17, 3, 3, 1, 1 ~ 5, yes</column>
+<column name="- add_patch_perSuperpointSP1_toSTREAM_add_patch_perPointSP1_toSTREAM">82, 82, 4, 1, 1, 80, yes</column>
+<column name="- add_patch_copySPBack_add_patch_copySPBack_perSuperpointSP1_add_patch_copySPBack_perPointSP1">162, 162, 4, 1, 1, 160, yes</column>
 <column name="- add_patch_perSuperpointSP1_add_patch_perPointSP1">82, 82, 4, 1, 1, 80, yes</column>
 </table>
 </item>

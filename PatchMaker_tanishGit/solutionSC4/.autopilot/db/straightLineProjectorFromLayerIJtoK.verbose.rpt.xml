@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'straightLineProjectorFromLayerIJtoK'" level="0">
-<item name = "Date">Sat Aug  3 00:46:37 2024
+<item name = "Date">Mon Aug  5 17:49:03 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.100 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 2.172 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">44, 44, 0.132 us, 0.132 us, 1, 1, yes</column>
+<column name="">6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">
@@ -47,12 +47,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 103, -</column>
+<column name="Expression">-, -, 0, 255, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 0, 3208, 2369, -</column>
-<column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 9, -</column>
-<column name="Register">-, -, 344, 64, -</column>
+<column name="Instance">-, 0, 199, 68, -</column>
+<column name="Memory">0, -, 64, 65, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, 540, 160, -</column>
 <specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
 <specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
@@ -63,8 +63,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_33s_4s_37_3_0_U3">mul_33s_4s_37_3_0, 0, 0, 170, 51, 0</column>
-<column name="sdiv_37ns_4s_32_41_0_U4">sdiv_37ns_4s_32_41_0, 0, 0, 3038, 2318, 0</column>
+<column name="mul_35ns_33s_64_3_1_U3">mul_35ns_33s_64_3_1, 0, 0, 199, 68, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -73,6 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="radiiDivisionList_U">straightLineProjectorFromLayerIJtoK_radiiDivisionList, 0, 64, 65, 0, 36, 35, 1, 1260</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -81,33 +81,56 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln69_fu_106_p2">+, 0, 0, 39, 32, 32</column>
-<column name="ret_fu_64_p2">-, 0, 0, 40, 33, 33</column>
-<column name="sub_ln241_1_fu_76_p2">-, 0, 0, 12, 4, 4</column>
-<column name="sub_ln241_fu_70_p2">-, 0, 0, 12, 4, 4</column>
+<column name="add_ln225_fu_173_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln69_fu_246_p2">+, 0, 0, 39, 32, 32</column>
+<column name="neg6_fu_121_p2">-, 0, 0, 12, 1, 4</column>
+<column name="neg_fu_127_p2">-, 0, 0, 10, 1, 3</column>
+<column name="ret_fu_190_p2">-, 0, 0, 40, 33, 33</column>
+<column name="sub_ln223_1_fu_103_p2">-, 0, 0, 12, 4, 4</column>
+<column name="sub_ln223_fu_93_p2">-, 0, 0, 12, 4, 4</column>
+<column name="sub_ln225_fu_158_p2">-, 0, 0, 13, 6, 6</column>
+<column name="sub_ln69_fu_242_p2">-, 0, 0, 39, 32, 32</column>
+<column name="and_ln223_1_fu_237_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln223_fu_225_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln223_1_fu_115_p2">icmp, 0, 0, 9, 4, 1</column>
+<column name="icmp_ln223_fu_109_p2">icmp, 0, 0, 9, 4, 1</column>
+<column name="or_ln223_fu_250_p2">or, 0, 0, 2, 1, 1</column>
+<column name="abs8_fu_164_p3">select, 0, 0, 4, 1, 4</column>
+<column name="abs_fu_132_p3">select, 0, 0, 3, 1, 3</column>
+<column name="ap_return">select, 0, 0, 32, 1, 32</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_return">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_ce_reg">1, 0, 1, 0</column>
-<column name="ap_return_int_reg">32, 0, 32, 0</column>
-<column name="i_int_reg">3, 0, 3, 0</column>
-<column name="j_int_reg">3, 0, 3, 0</column>
-<column name="k_int_reg">3, 0, 3, 0</column>
-<column name="mul_ln1364_reg_141">37, 0, 37, 0</column>
-<column name="ret_reg_116">33, 0, 33, 0</column>
-<column name="sub_ln241_1_reg_126">4, 0, 4, 0</column>
-<column name="sub_ln241_reg_121">4, 0, 4, 0</column>
-<column name="z_i_int_reg">32, 0, 32, 0</column>
-<column name="z_i_read_reg_111">32, 0, 32, 0</column>
-<column name="z_j_int_reg">32, 0, 32, 0</column>
-<column name="sub_ln241_1_reg_126">64, 32, 4, 0</column>
-<column name="z_i_read_reg_111">64, 32, 32, 0</column>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
+<column name="icmp_ln223_1_reg_299">1, 0, 1, 0</column>
+<column name="icmp_ln223_reg_293">1, 0, 1, 0</column>
+<column name="neg6_reg_305">4, 0, 4, 0</column>
+<column name="radiiDivisionList_load_reg_320">35, 0, 35, 0</column>
+<column name="ret_reg_315">33, 0, 33, 0</column>
+<column name="sub_ln223_1_reg_287">4, 0, 4, 0</column>
+<column name="sub_ln223_reg_276">4, 0, 4, 0</column>
+<column name="trunc_ln1_reg_335">32, 0, 32, 0</column>
+<column name="trunc_ln223_reg_281">3, 0, 3, 0</column>
+<column name="z_i_read_reg_269">32, 0, 32, 0</column>
+<column name="z_j_read_reg_264">32, 0, 32, 0</column>
+<column name="z_j_read_reg_264_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="icmp_ln223_1_reg_299">64, 32, 1, 0</column>
+<column name="icmp_ln223_reg_293">64, 32, 1, 0</column>
+<column name="sub_ln223_1_reg_287">64, 32, 4, 0</column>
+<column name="sub_ln223_reg_276">64, 32, 4, 0</column>
+<column name="z_i_read_reg_269">64, 32, 32, 0</column>
 </table>
 </item>
 </section>
@@ -119,8 +142,12 @@
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="ap_clk">in, 1, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
 <column name="ap_rst">in, 1, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
-<column name="ap_return">out, 32, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
 <column name="ap_ce">in, 1, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, straightLineProjectorFromLayerIJtoK, return value</column>
 <column name="z_i">in, 32, ap_none, z_i, scalar</column>
 <column name="z_j">in, 32, ap_none, z_j, scalar</column>
 <column name="i">in, 3, ap_none, i, scalar</column>

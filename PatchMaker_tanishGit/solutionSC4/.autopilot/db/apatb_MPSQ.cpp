@@ -30,8 +30,10 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_GDn_points "../tv/cdatafile/c.MPSQ.autotvin_GDn_points.dat"
 #define AUTOTB_TVOUT_GDn_points "../tv/cdatafile/c.MPSQ.autotvout_GDn_points.dat"
 // wrapc file define:
-#define AUTOTB_TVIN_patches_superpointsOUTPUT "../tv/cdatafile/c.MPSQ.autotvin_patches_superpointsOUTPUT.dat"
-#define AUTOTB_TVOUT_patches_superpointsOUTPUT "../tv/cdatafile/c.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
+#define AUTOTB_TVIN_output_patch_stream_V "../tv/cdatafile/c.MPSQ.autotvin_output_patch_stream_V.dat"
+#define AUTOTB_TVOUT_output_patch_stream_V "../tv/cdatafile/c.MPSQ.autotvout_output_patch_stream_V.dat"
+#define WRAPC_STREAM_SIZE_OUT_output_patch_stream_V "../tv/stream_size/stream_size_out_output_patch_stream_V.dat"
+#define WRAPC_STREAM_EGRESS_STATUS_output_patch_stream_V "../tv/stream_size/stream_egress_status_output_patch_stream_V.dat"
 
 #define INTER_TCL "../tv/cdatafile/ref.tcl"
 
@@ -44,7 +46,7 @@ using namespace sc_dt;
 // tvout file define:
 #define AUTOTB_TVOUT_PC_GDn_points "../tv/rtldatafile/rtl.MPSQ.autotvout_GDn_points.dat"
 // tvout file define:
-#define AUTOTB_TVOUT_PC_patches_superpointsOUTPUT "../tv/rtldatafile/rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
+#define AUTOTB_TVOUT_PC_output_patch_stream_V "../tv/rtldatafile/rtl.MPSQ.autotvout_output_patch_stream_V.dat"
 
 class INTER_TCL_FILE {
   public:
@@ -54,7 +56,7 @@ INTER_TCL_FILE(const char* name) {
   n_patches_depth = 0;
   GDarray_depth = 0;
   GDn_points_depth = 0;
-  patches_superpointsOUTPUT_depth = 0;
+  output_patch_stream_V_depth = 0;
   trans_num =0;
 }
 ~INTER_TCL_FILE() {
@@ -76,7 +78,7 @@ string get_depth_list () {
   total_list << "{n_patches " << n_patches_depth << "}\n";
   total_list << "{GDarray " << GDarray_depth << "}\n";
   total_list << "{GDn_points " << GDn_points_depth << "}\n";
-  total_list << "{patches_superpointsOUTPUT " << patches_superpointsOUTPUT_depth << "}\n";
+  total_list << "{output_patch_stream_V " << output_patch_stream_V_depth << "}\n";
   return total_list.str();
 }
 void set_num (int num , int* class_num) {
@@ -90,7 +92,7 @@ void set_string(std::string list, std::string* class_list) {
     int n_patches_depth;
     int GDarray_depth;
     int GDn_points_depth;
-    int patches_superpointsOUTPUT_depth;
+    int output_patch_stream_V_depth;
     int trans_num;
   private:
     ofstream mFile;
@@ -132,9 +134,10 @@ static void RTLOutputCheckAndReplacement(std::string &AESL_token, std::string Po
       no_x = true;
   }
 }
+struct __cosim_s8__ { char data[8]; };
 extern "C" void MPSQ_hw_stub_wrapper(int, volatile void *, volatile void *, volatile void *, volatile void *);
 
-extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_ppl, volatile void * __xlx_apatb_param_n_patches, volatile void * __xlx_apatb_param_GDarray, volatile void * __xlx_apatb_param_GDn_points, volatile void * __xlx_apatb_param_patches_superpointsOUTPUT) {
+extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_ppl, volatile void * __xlx_apatb_param_n_patches, volatile void * __xlx_apatb_param_GDarray, volatile void * __xlx_apatb_param_GDn_points, volatile void * __xlx_apatb_param_output_patch_stream) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -188,10 +191,11 @@ extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_ppl, volatile void * __xlx_a
         } // end transaction
       } // end file is good
     } // end post check logic bolck
-  {
+  long __xlx_apatb_param_output_patch_stream_V_stream_buf_final_size;
+{
       static ifstream rtl_tv_out_file;
       if (!rtl_tv_out_file.is_open()) {
-        rtl_tv_out_file.open(AUTOTB_TVOUT_PC_patches_superpointsOUTPUT);
+        rtl_tv_out_file.open(WRAPC_STREAM_SIZE_OUT_output_patch_stream_V);
         if (rtl_tv_out_file.good()) {
           rtl_tv_out_file >> AESL_token;
           if (AESL_token != "[[[runtime]]]")
@@ -207,17 +211,46 @@ extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_ppl, volatile void * __xlx_a
           exit(1);
         }
         if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
-          std::vector<sc_bv<64> > patches_superpointsOUTPUT_pc_buffer(2560);
+          rtl_tv_out_file >> AESL_token; //data
+          while (AESL_token != "[[/transaction]]"){__xlx_apatb_param_output_patch_stream_V_stream_buf_final_size = atoi(AESL_token.c_str());
+
+            rtl_tv_out_file >> AESL_token; //data or [[/transaction]]
+            if (AESL_token == "[[[/runtime]]]" || rtl_tv_out_file.eof())
+              exit(1);
+          }
+        } // end transaction
+      } // end file is good
+    } // end post check logic bolck
+  {
+      static ifstream rtl_tv_out_file;
+      if (!rtl_tv_out_file.is_open()) {
+        rtl_tv_out_file.open(AUTOTB_TVOUT_PC_output_patch_stream_V);
+        if (rtl_tv_out_file.good()) {
+          rtl_tv_out_file >> AESL_token;
+          if (AESL_token != "[[[runtime]]]")
+            exit(1);
+        }
+      }
+  
+      if (rtl_tv_out_file.good()) {
+        rtl_tv_out_file >> AESL_token; 
+        rtl_tv_out_file >> AESL_num;  // transaction number
+        if (AESL_token != "[[transaction]]") {
+          cerr << "Unexpected token: " << AESL_token << endl;
+          exit(1);
+        }
+        if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
+          std::vector<sc_bv<64> > output_patch_stream_V_pc_buffer;
           int i = 0;
 
           rtl_tv_out_file >> AESL_token; //data
           while (AESL_token != "[[/transaction]]"){
 
-            RTLOutputCheckAndReplacement(AESL_token, "patches_superpointsOUTPUT");
+            RTLOutputCheckAndReplacement(AESL_token, "output_patch_stream_V");
   
             // push token into output port buffer
             if (AESL_token != "") {
-              patches_superpointsOUTPUT_pc_buffer[i] = AESL_token.c_str();;
+              output_patch_stream_V_pc_buffer.push_back(AESL_token.c_str());
               i++;
             }
   
@@ -225,11 +258,13 @@ extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_ppl, volatile void * __xlx_a
             if (AESL_token == "[[[/runtime]]]" || rtl_tv_out_file.eof())
               exit(1);
           }
-          if (i > 0) {{
-            int i = 0;
-            for (int j = 0, e = 2560; j < e; j += 1, ++i) {
-            ((long long*)__xlx_apatb_param_patches_superpointsOUTPUT)[j] = patches_superpointsOUTPUT_pc_buffer[i].to_int64();
-          }}}
+          if (i > 0) {for (int j = 0, e = i; j != e; ++j) {
+__cosim_s8__ xlx_stream_elt;
+
+            ((long long*)&xlx_stream_elt)[0] = output_patch_stream_V_pc_buffer[j].to_int64();
+          ((hls::stream<__cosim_s8__>*)__xlx_apatb_param_output_patch_stream)->write(xlx_stream_elt);
+}
+}
         } // end transaction
       } // end file is good
     } // end post check logic bolck
@@ -254,9 +289,11 @@ aesl_fh.touch(AUTOTB_TVOUT_GDarray);
 //GDn_points
 aesl_fh.touch(AUTOTB_TVIN_GDn_points);
 aesl_fh.touch(AUTOTB_TVOUT_GDn_points);
-//patches_superpointsOUTPUT
-aesl_fh.touch(AUTOTB_TVIN_patches_superpointsOUTPUT);
-aesl_fh.touch(AUTOTB_TVOUT_patches_superpointsOUTPUT);
+//output_patch_stream_V
+aesl_fh.touch(AUTOTB_TVIN_output_patch_stream_V);
+aesl_fh.touch(AUTOTB_TVOUT_output_patch_stream_V);
+aesl_fh.touch(WRAPC_STREAM_SIZE_OUT_output_patch_stream_V);
+aesl_fh.touch(WRAPC_STREAM_EGRESS_STATUS_output_patch_stream_V);
 CodeState = DUMP_INPUTS;
 // print ppl Transactions
 {
@@ -324,27 +361,10 @@ sc_bv<32> __xlx_tmp_lv = ((int*)__xlx_apatb_param_GDn_points)[j];
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_GDn_points, __xlx_sprintf_buffer.data());
 }
-unsigned __xlx_offset_byte_param_patches_superpointsOUTPUT = 0;
-// print patches_superpointsOUTPUT Transactions
-{
-  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVIN_patches_superpointsOUTPUT, __xlx_sprintf_buffer.data());
-  {  __xlx_offset_byte_param_patches_superpointsOUTPUT = 0*8;
-  if (__xlx_apatb_param_patches_superpointsOUTPUT) {
-    for (int j = 0  - 0, e = 2560 - 0; j != e; ++j) {
-sc_bv<64> __xlx_tmp_lv = ((long long*)__xlx_apatb_param_patches_superpointsOUTPUT)[j];
-
-    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVIN_patches_superpointsOUTPUT, __xlx_sprintf_buffer.data()); 
-      }
-  }
-}
-  tcl_file.set_num(2560, &tcl_file.patches_superpointsOUTPUT_depth);
-  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVIN_patches_superpointsOUTPUT, __xlx_sprintf_buffer.data());
-}
+std::vector<__cosim_s8__> __xlx_apatb_param_output_patch_stream_stream_buf;
+long __xlx_apatb_param_output_patch_stream_stream_buf_size = ((hls::stream<__cosim_s8__>*)__xlx_apatb_param_output_patch_stream)->size();
 CodeState = CALL_C_DUT;
-MPSQ_hw_stub_wrapper(__xlx_apatb_param_ppl, __xlx_apatb_param_n_patches, __xlx_apatb_param_GDarray, __xlx_apatb_param_GDn_points, __xlx_apatb_param_patches_superpointsOUTPUT);
+MPSQ_hw_stub_wrapper(__xlx_apatb_param_ppl, __xlx_apatb_param_n_patches, __xlx_apatb_param_GDarray, __xlx_apatb_param_GDn_points, __xlx_apatb_param_output_patch_stream);
 CodeState = DUMP_OUTPUTS;
 // print n_patches Transactions
 {
@@ -360,25 +380,37 @@ CodeState = DUMP_OUTPUTS;
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVOUT_n_patches, __xlx_sprintf_buffer.data());
 }
-// print patches_superpointsOUTPUT Transactions
+long __xlx_apatb_param_output_patch_stream_stream_buf_final_size = ((hls::stream<__cosim_s8__>*)__xlx_apatb_param_output_patch_stream)->size() - __xlx_apatb_param_output_patch_stream_stream_buf_size;
+{
+  while (!((hls::stream<__cosim_s8__>*)__xlx_apatb_param_output_patch_stream)->empty())
+    __xlx_apatb_param_output_patch_stream_stream_buf.push_back(((hls::stream<__cosim_s8__>*)__xlx_apatb_param_output_patch_stream)->read());
+  for (int i = 0; i < __xlx_apatb_param_output_patch_stream_stream_buf.size(); ++i)
+    ((hls::stream<__cosim_s8__>*)__xlx_apatb_param_output_patch_stream)->write(__xlx_apatb_param_output_patch_stream_stream_buf[i]);
+  }
+// print output_patch_stream_V Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVOUT_patches_superpointsOUTPUT, __xlx_sprintf_buffer.data());
-  {  __xlx_offset_byte_param_patches_superpointsOUTPUT = 0*8;
-  if (__xlx_apatb_param_patches_superpointsOUTPUT) {
-    for (int j = 0  - 0, e = 2560 - 0; j != e; ++j) {
-sc_bv<64> __xlx_tmp_lv = ((long long*)__xlx_apatb_param_patches_superpointsOUTPUT)[j];
+  aesl_fh.write(AUTOTB_TVOUT_output_patch_stream_V, __xlx_sprintf_buffer.data());
+  for (int j = 0, e = __xlx_apatb_param_output_patch_stream_stream_buf_final_size; j != e; ++j) {
+sc_bv<64> __xlx_tmp_lv = ((long long*)&__xlx_apatb_param_output_patch_stream_stream_buf[__xlx_apatb_param_output_patch_stream_stream_buf_size+j])[0];
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVOUT_patches_superpointsOUTPUT, __xlx_sprintf_buffer.data()); 
-      }
+    aesl_fh.write(AUTOTB_TVOUT_output_patch_stream_V, __xlx_sprintf_buffer.data()); 
   }
-}
-  tcl_file.set_num(2560, &tcl_file.patches_superpointsOUTPUT_depth);
+
+  tcl_file.set_num(__xlx_apatb_param_output_patch_stream_stream_buf_final_size, &tcl_file.output_patch_stream_V_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVOUT_patches_superpointsOUTPUT, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVOUT_output_patch_stream_V, __xlx_sprintf_buffer.data());
 }
-CodeState = DELETE_CHAR_BUFFERS;
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(WRAPC_STREAM_SIZE_OUT_output_patch_stream_V, __xlx_sprintf_buffer.data());
+  sprintf(__xlx_sprintf_buffer.data(), "%d\n", __xlx_apatb_param_output_patch_stream_stream_buf_final_size);
+ aesl_fh.write(WRAPC_STREAM_SIZE_OUT_output_patch_stream_V, __xlx_sprintf_buffer.data());
+
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(WRAPC_STREAM_SIZE_OUT_output_patch_stream_V, __xlx_sprintf_buffer.data());
+}CodeState = DELETE_CHAR_BUFFERS;
 AESL_transaction++;
 tcl_file.set_num(AESL_transaction , &tcl_file.trans_num);
 }

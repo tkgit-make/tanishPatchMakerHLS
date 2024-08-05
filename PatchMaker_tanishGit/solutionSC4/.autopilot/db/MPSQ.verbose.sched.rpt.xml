@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MPSQ'" level="0">
-<item name = "Date">Sat Aug  3 00:46:27 2024
+<item name = "Date">Mon Aug  5 17:48:53 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -37,7 +37,9 @@
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint">1282, 1282, 4, 1, 1, 1280, yes</column>
 <column name="- shadowQuilt_loop">?, ?, ?, -, -, ?, no</column>
-<column name="- finalSPOutputInit_perPatch_finalSPOutputInit_perSuperpoint_finalSPOutputInit_perPoint">2563, 2563, 5, 1, 1, 2560, yes</column>
+<column name="- finalSPOutputInit_perPatch_PatchSTREAM0_finalSPOutputInit_perSuperpoint_PatchSTREAM0_finalSPOutputInit_perPoint_PatchSTREAM0">242, 242, 4, 1, 1, 240, yes</column>
+<column name="- VITIS_LOOP_772_1_VITIS_LOOP_774_2">80, 80, 1, 1, 1, 80, yes</column>
+<column name="- finalSPOutputInit_perSuperpoint_PatchSTREAMD_finalSPOutputInit_perPoint_PatchSTREAMD">80, 80, 2, 1, 1, 80, yes</column>
 </table>
 </item>
 </section>

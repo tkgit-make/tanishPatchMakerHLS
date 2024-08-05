@@ -1,14 +1,14 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 150
+set ID 152
 set hasByteEnable 0
 set MemName MPSQ_patches_superpoints_V
 set CoreName ap_simcore_mem
-set PortList { 2 1 }
+set PortList { 2 2 }
 set DataWd 64
-set AddrRange 2560
-set AddrWd 12
+set AddrRange 240
+set AddrWd 8
 set impl_style auto
 set TrueReset 0
 set HasInitializer 0
@@ -16,7 +16,7 @@ set IsROM 0
 set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 1.645
+set DelayBudget 1.2
 set ClkPeriod 3
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
@@ -86,7 +86,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 151
+set ID 153
 set hasByteEnable 0
 set MemName MPSQ_patches_parameters_V
 set CoreName ap_simcore_mem
@@ -171,7 +171,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 152
+set ID 154
 set hasByteEnable 0
 set MemName MPSQ_GDarrayDecoded_V
 set CoreName ap_simcore_mem
@@ -255,6 +255,91 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 }
 
 
+# Memory (RAM/ROM)  definition:
+set ID 155
+set hasByteEnable 0
+set MemName MPSQ_dummyPatch_V
+set CoreName ap_simcore_mem
+set PortList { 2 3 }
+set DataWd 1
+set AddrRange 80
+set AddrWd 7
+set impl_style auto
+set TrueReset 0
+set HasInitializer 0
+set IsROM 0
+set ROMData {}
+set NumOfStage 2
+set MaxLatency -1
+set DelayBudget 0.537
+set ClkPeriod 3
+set RegisteredInput 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+} else {
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+  ::AP::rtl_comp_handler $MemName
+}
+
+
+set CoreName RAM
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
+  }
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -267,7 +352,7 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 155 \
+    id 158 \
     name GDarray \
     reset_level 1 \
     sync_rst true \
@@ -286,7 +371,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 156 \
+    id 159 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -301,29 +386,10 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 
 
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 157 \
-    name patches_superpointsOUTPUT \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename patches_superpointsOUTPUT \
-    op interface \
-    ports { patches_superpointsOUTPUT_address0 { O 12 vector } patches_superpointsOUTPUT_ce0 { O 1 bit } patches_superpointsOUTPUT_we0 { O 1 bit } patches_superpointsOUTPUT_d0 { O 64 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpointsOUTPUT'"
-}
-}
-
-
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 153 \
+    id 156 \
     name ppl \
     type other \
     dir I \
@@ -338,7 +404,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 154 \
+    id 157 \
     name n_patches \
     type other \
     dir IO \
@@ -347,6 +413,21 @@ eval "cg_default_interface_gen_dc { \
     corename dc_n_patches \
     op interface \
     ports { n_patches_i { I 8 vector } n_patches_o { O 8 vector } n_patches_o_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 160 \
+    name output_patch_stream_V \
+    type fifo \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_output_patch_stream_V \
+    op interface \
+    ports { output_patch_stream_V_din { O 64 vector } output_patch_stream_V_full_n { I 1 bit } output_patch_stream_V_write { O 1 bit } } \
 } "
 }
 

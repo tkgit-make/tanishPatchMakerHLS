@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'makeThirdPatch'" level="0">
-<item name = "Date">Sat Aug  3 00:46:07 2024
+<item name = "Date">Mon Aug  5 17:48:31 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -31,11 +31,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makePatch_alignedToLine_fu_464">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_getShadows_fu_487">getShadows, 745, 745, 2.235 us, 2.235 us, 745, 745, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_502">straightLineProjectorFromLayerIJtoK, 44, 44, 0.132 us, 0.132 us, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_514">straightLineProjectorFromLayerIJtoK, 44, 44, 0.132 us, 0.132 us, 1, 1, yes</column>
-<column name="grp_delete_patch_fu_528">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_makePatch_alignedToLine_fu_466">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_getShadows_fu_493">getShadows, 117, 117, 0.351 us, 0.351 us, 117, 117, none</column>
+<column name="grp_delete_patch_fu_511">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_525">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

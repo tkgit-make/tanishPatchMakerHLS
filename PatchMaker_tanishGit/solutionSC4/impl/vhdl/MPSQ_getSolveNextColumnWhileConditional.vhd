@@ -28,9 +28,9 @@ architecture behav of MPSQ_getSolveNextColumnWhileConditional is
     constant ap_const_logic_0 : STD_LOGIC := '0';
 
 attribute shreg_extract : string;
-    signal icmp_ln786_fu_38_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal icmp_ln786_1_fu_44_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal and_ln786_fu_50_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln846_fu_38_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln846_1_fu_44_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal and_ln846_fu_50_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln886_fu_32_p2 : STD_LOGIC_VECTOR (0 downto 0);
 
 
@@ -38,10 +38,10 @@ begin
 
 
 
-    and_ln786_fu_50_p2 <= (icmp_ln786_fu_38_p2 and icmp_ln786_1_fu_44_p2);
+    and_ln846_fu_50_p2 <= (icmp_ln846_fu_38_p2 and icmp_ln846_1_fu_44_p2);
     ap_ready <= ap_const_logic_1;
-    ap_return <= (icmp_ln886_fu_32_p2 and and_ln786_fu_50_p2);
-    icmp_ln786_1_fu_44_p2 <= "1" when (signed(projectionOfCornerToBeam) < signed(ap_const_lv32_E4E1C0)) else "0";
-    icmp_ln786_fu_38_p2 <= "1" when (signed(nPatchesInColumn) < signed(ap_const_lv32_5F5E100)) else "0";
+    ap_return <= (icmp_ln886_fu_32_p2 and and_ln846_fu_50_p2);
+    icmp_ln846_1_fu_44_p2 <= "1" when (signed(projectionOfCornerToBeam) < signed(ap_const_lv32_E4E1C0)) else "0";
+    icmp_ln846_fu_38_p2 <= "1" when (signed(nPatchesInColumn) < signed(ap_const_lv32_5F5E100)) else "0";
     icmp_ln886_fu_32_p2 <= "1" when (signed(c_corner) > signed(ap_const_lv32_FD050F1C)) else "0";
 end behav;

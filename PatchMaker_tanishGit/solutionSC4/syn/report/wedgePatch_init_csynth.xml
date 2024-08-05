@@ -22,14 +22,14 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>378</Best-caseLatency>
-<Average-caseLatency>379</Average-caseLatency>
-<Worst-caseLatency>379</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.134 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.137 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.137 us</Worst-caseRealTimeLatency>
-<Interval-min>378</Interval-min>
-<Interval-max>379</Interval-max>
+<Best-caseLatency>221</Best-caseLatency>
+<Average-caseLatency>222</Average-caseLatency>
+<Worst-caseLatency>222</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.663 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.666 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.666 us</Worst-caseRealTimeLatency>
+<Interval-min>221</Interval-min>
+<Interval-max>222</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter>
@@ -44,10 +44,10 @@
 
 <AreaEstimates>
 <Resources>
-<DSP>0</DSP>
-<FF>15706</FF>
-<LUT>11886</LUT>
 <BRAM_18K>0</BRAM_18K>
+<DSP>0</DSP>
+<FF>4674</FF>
+<LUT>3748</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

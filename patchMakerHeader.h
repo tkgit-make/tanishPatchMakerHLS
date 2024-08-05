@@ -91,7 +91,7 @@
 #define WEDGE_PATCH COORDINATE_TYPE (&wp_superpoints) [MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]
 #define GDARRAY COORDINATE_TYPE (&GDarrayDecoded) [MAX_LAYERS][MAX_POINTS_FOR_DATASET][PARAMETERS_PER_POINT], int_type (&GDn_points) [MAX_LAYERS]
 #define GDARRAYPRESORT std::array<std::array<std::array<COORDINATE_TYPE, 3>, MAX_POINTS_FOR_DATASET>, MAX_LAYERS> &GDarray, int_type (&GDn_points) [MAX_LAYERS]
-#define GPATCHES SPACEPOINT_TYPE (&patches_superpoints) [MAX_PATCHES][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]
+#define GPATCHES SPACEPOINT_TYPE (&patches_superpoints) [MAX_PATCHES_BUFFER][MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]
 #define WEDGE_PATCH_GET_SHADOWS SPACEPOINT_TYPE (&wp_superpoints) [MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT], COORDINATE_TYPE (&wp_parameters) [PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]
 
 
@@ -222,15 +222,15 @@ void wedgePatch_init(WEDGE_PATCH, COORDINATE_TYPE superpointsI[MAX_SUPERPOINTS_I
 COORDINATE_TYPE straightLineProjectorFromLayerIJtoK(COORDINATE_TYPE z_i, COORDINATE_TYPE z_j, int_type i, int_type j, int_type k);
 void getParallelogramsAndAcceptanceCorners(WEDGE_PATCH);
 void getShadows(WEDGE_PATCH_GET_SHADOWS, COORDINATE_TYPE zTopMin, COORDINATE_TYPE zTopMax);
-void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES);
+void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
 void delete_patch(int_type index, index_type &n_patches, GPATCHES);
 index_type get_index_from_z(int_type layer, COORDINATE_TYPE z_value, GDARRAY);
-void MPSQ(int_type ppl, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int_type (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpoints)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]); // TOP-LEVEL FUNCTION FOR VITIS
-COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES);
-void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE &saved_apexZ0, int_type &nPatchesInColumn, COORDINATE_TYPE &c_corner, COORDINATE_TYPE &projectionOfCornerToBeam, COORDINATE_TYPE &z_top_min, COORDINATE_TYPE &z_top_max, COORDINATE_TYPE &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES);
-void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDINATE_TYPE z_top_max, COORDINATE_TYPE complementary_apexZ0, COORDINATE_TYPE apexZ0, int_type ppl, index_type &n_patches, GDARRAY, GPATCHES);
-void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl, bool fix42, int_type nPatchesAtOriginal, COORDINATE_TYPE &previous_z_top_min, COORDINATE_TYPE complementary_apexZ0, long_type &white_space_height, index_type &lastPatchIndex, COORDINATE_TYPE original_c, COORDINATE_TYPE original_d, COORDINATE_TYPE &complementary_a, COORDINATE_TYPE &complementary_b, int_type &current_z_top_index, int_type &counter, int_type &counterUpshift, COORDINATE_TYPE &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES);
-void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int_type &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES);
+void MPSQ(int_type ppl, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int_type (&GDn_points) [MAX_LAYERS], hls::stream<SPACEPOINT_TYPE> &output_patch_stream); // TOP-LEVEL FUNCTION FOR VITIS
+COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
+void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE &saved_apexZ0, int_type &nPatchesInColumn, COORDINATE_TYPE &c_corner, COORDINATE_TYPE &projectionOfCornerToBeam, COORDINATE_TYPE &z_top_min, COORDINATE_TYPE &z_top_max, COORDINATE_TYPE &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
+void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDINATE_TYPE z_top_max, COORDINATE_TYPE complementary_apexZ0, COORDINATE_TYPE apexZ0, int_type ppl, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
+void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl, bool fix42, int_type nPatchesAtOriginal, COORDINATE_TYPE &previous_z_top_min, COORDINATE_TYPE complementary_apexZ0, long_type &white_space_height, index_type &lastPatchIndex, COORDINATE_TYPE original_c, COORDINATE_TYPE original_d, COORDINATE_TYPE &complementary_a, COORDINATE_TYPE &complementary_b, int_type &current_z_top_index, int_type &counter, int_type &counterUpshift, COORDINATE_TYPE &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
+void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int_type &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
 void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_TYPE apexZ0, bool float_middleLayers_ppl, int_type &ppl, int_type original_ppl, bool leftRight, long_type alignmentAccuracy, COORDINATE_TYPE (&init_patch) [MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT], GDARRAY);
 bool getSolveNextPatchPairWhileCondition(bool repeat_patch, bool repeat_original,
                                          long_type white_space_height, long_type previous_white_space_height,
@@ -244,3 +244,5 @@ COORDINATE_TYPE decodePHIcoordinate(SPACEPOINT_TYPE packedCoordinates);
 COORDINATE_TYPE decodeZcoordinate(SPACEPOINT_TYPE packedCoordinates);
 SPACEPOINT_TYPE encodeCoordinates(COORDINATE_TYPE phi, COORDINATE_TYPE z);
 void initializeArrays(GPATCHES); 
+void add_patch_patches_parameters(COORDINATE_TYPE wp_parameters[PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]); 
+void delete_patch_patches_parameters(int_type index, int_type n_patches, COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]); 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'wedgePatch_init'" level="0">
-<item name = "Date">Sat Aug  3 00:45:40 2024
+<item name = "Date">Mon Aug  5 17:48:05 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">378, 379, 1.134 us, 1.137 us, 378, 379, none</column>
+<column name="">221, 222, 0.663 us, 0.666 us, 221, 222, none</column>
 </table>
 </item>
 <item name = "Detail">

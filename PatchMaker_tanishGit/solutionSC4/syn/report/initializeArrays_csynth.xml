@@ -22,22 +22,22 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>2638</Best-caseLatency>
-<Average-caseLatency>2638</Average-caseLatency>
-<Worst-caseLatency>2638</Worst-caseLatency>
-<Best-caseRealTimeLatency>7.914 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>7.914 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>7.914 us</Worst-caseRealTimeLatency>
-<Interval-min>2638</Interval-min>
-<Interval-max>2638</Interval-max>
+<Best-caseLatency>317</Best-caseLatency>
+<Average-caseLatency>317</Average-caseLatency>
+<Worst-caseLatency>317</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.951 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.951 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.951 us</Worst-caseRealTimeLatency>
+<Interval-min>317</Interval-min>
+<Interval-max>317</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <initArraysSPloop1_initArraysSPloop2_initArraysSPloop3>
-<TripCount>2560</TripCount>
-<Latency>2561</Latency>
-<AbsoluteTimeLatency>7683</AbsoluteTimeLatency>
+<TripCount>240</TripCount>
+<Latency>240</Latency>
+<AbsoluteTimeLatency>720</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<PipelineDepth>2</PipelineDepth>
 </initArraysSPloop1_initArraysSPloop2_initArraysSPloop3>
 <initArraysPPloop1_initArraysPPloop3_initArraysPPloop4>
 <TripCount>72</TripCount>
@@ -51,8 +51,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>118</FF>
-<LUT>629</LUT>
+<FF>96</FF>
+<LUT>584</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -141,7 +141,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>8</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>

@@ -20,36 +20,36 @@
 `define AESL_MEM_INST_GDarray mem_inst_GDarray
 `define AESL_MEM_GDn_points AESL_automem_GDn_points
 `define AESL_MEM_INST_GDn_points mem_inst_GDn_points
-`define AESL_MEM_patches_superpointsOUTPUT AESL_automem_patches_superpointsOUTPUT
-`define AESL_MEM_INST_patches_superpointsOUTPUT mem_inst_patches_superpointsOUTPUT
+`define AESL_FIFO_output_patch_stream_V AESL_autofifo_output_patch_stream_V
+`define AESL_FIFO_INST_output_patch_stream_V AESL_autofifo_inst_output_patch_stream_V
 `define AUTOTB_TVIN_ppl  "../tv/cdatafile/c.MPSQ.autotvin_ppl.dat"
 `define AUTOTB_TVIN_n_patches  "../tv/cdatafile/c.MPSQ.autotvin_n_patches.dat"
 `define AUTOTB_TVIN_GDarray  "../tv/cdatafile/c.MPSQ.autotvin_GDarray.dat"
 `define AUTOTB_TVIN_GDn_points  "../tv/cdatafile/c.MPSQ.autotvin_GDn_points.dat"
-`define AUTOTB_TVIN_patches_superpointsOUTPUT  "../tv/cdatafile/c.MPSQ.autotvin_patches_superpointsOUTPUT.dat"
+`define AUTOTB_TVIN_output_patch_stream_V  "../tv/cdatafile/c.MPSQ.autotvin_output_patch_stream_V.dat"
 `define AUTOTB_TVIN_ppl_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvin_ppl.dat"
 `define AUTOTB_TVIN_n_patches_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvin_n_patches.dat"
 `define AUTOTB_TVIN_GDarray_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvin_GDarray.dat"
 `define AUTOTB_TVIN_GDn_points_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvin_GDn_points.dat"
-`define AUTOTB_TVIN_patches_superpointsOUTPUT_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvin_patches_superpointsOUTPUT.dat"
+`define AUTOTB_TVIN_output_patch_stream_V_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvin_output_patch_stream_V.dat"
 `define AUTOTB_TVOUT_n_patches  "../tv/cdatafile/c.MPSQ.autotvout_n_patches.dat"
-`define AUTOTB_TVOUT_patches_superpointsOUTPUT  "../tv/cdatafile/c.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
+`define AUTOTB_TVOUT_output_patch_stream_V  "../tv/cdatafile/c.MPSQ.autotvout_output_patch_stream_V.dat"
 `define AUTOTB_TVOUT_n_patches_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvout_n_patches.dat"
-`define AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvout_patches_superpointsOUTPUT.dat"
+`define AUTOTB_TVOUT_output_patch_stream_V_out_wrapc  "../tv/rtldatafile/rtl.MPSQ.autotvout_output_patch_stream_V.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 1;
+parameter AUTOTB_TRANSACTION_NUM = 10;
 parameter PROGRESS_TIMEOUT = 10000000;
 parameter LATENCY_ESTIMATION = -1;
 parameter LENGTH_ppl = 1;
 parameter LENGTH_n_patches = 1;
 parameter LENGTH_GDarray = 1280;
 parameter LENGTH_GDn_points = 5;
-parameter LENGTH_patches_superpointsOUTPUT = 2560;
+parameter LENGTH_output_patch_stream_V = 2000;
 
 task read_token;
     input integer fp;
-    output reg [295 : 0] token;
+    output reg [247 : 0] token;
     integer ret;
     begin
         token = "";
@@ -90,10 +90,9 @@ wire [63 : 0] GDarray_q0;
 wire [2 : 0] GDn_points_address0;
 wire  GDn_points_ce0;
 wire [31 : 0] GDn_points_q0;
-wire [11 : 0] patches_superpointsOUTPUT_address0;
-wire  patches_superpointsOUTPUT_ce0;
-wire  patches_superpointsOUTPUT_we0;
-wire [63 : 0] patches_superpointsOUTPUT_d0;
+wire [63 : 0] output_patch_stream_V_din;
+wire  output_patch_stream_V_full_n;
+wire  output_patch_stream_V_write;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -125,10 +124,9 @@ wire ap_rst_n;
     .GDn_points_address0(GDn_points_address0),
     .GDn_points_ce0(GDn_points_ce0),
     .GDn_points_q0(GDn_points_q0),
-    .patches_superpointsOUTPUT_address0(patches_superpointsOUTPUT_address0),
-    .patches_superpointsOUTPUT_ce0(patches_superpointsOUTPUT_ce0),
-    .patches_superpointsOUTPUT_we0(patches_superpointsOUTPUT_we0),
-    .patches_superpointsOUTPUT_d0(patches_superpointsOUTPUT_d0));
+    .output_patch_stream_V_din(output_patch_stream_V_din),
+    .output_patch_stream_V_full_n(output_patch_stream_V_full_n),
+    .output_patch_stream_V_write(output_patch_stream_V_write));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -168,7 +166,7 @@ initial begin : read_file_process_ppl
     integer err;
     integer ret;
     integer proc_rand;
-    reg [295  : 0] token;
+    reg [247  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -228,7 +226,7 @@ initial begin : read_file_process_n_patches
     integer err;
     integer ret;
     integer proc_rand;
-    reg [295  : 0] token;
+    reg [247  : 0] token;
     integer i;
     reg transaction_finish;
     integer transaction_idx;
@@ -295,7 +293,7 @@ initial begin : write_file_process_n_patches
     integer hls_stream_size;
     integer proc_rand;
     integer n_patches_count;
-    reg [295:0] token;
+    reg [247:0] token;
     integer transaction_idx;
     reg [8 * 5:1] str;
     wait(AESL_reset === 0);
@@ -406,50 +404,47 @@ assign arrayGDn_points_ready=    ready;
 assign arrayGDn_points_done = 0;
 
 
-//------------------------arraypatches_superpointsOUTPUT Instantiation--------------
+//------------------------Fifooutput_patch_stream_V Instantiation--------------
 
-// The input and output of arraypatches_superpointsOUTPUT
-wire    arraypatches_superpointsOUTPUT_ce0, arraypatches_superpointsOUTPUT_ce1;
-wire [8 - 1 : 0]    arraypatches_superpointsOUTPUT_we0, arraypatches_superpointsOUTPUT_we1;
-wire    [11 : 0]    arraypatches_superpointsOUTPUT_address0, arraypatches_superpointsOUTPUT_address1;
-wire    [63 : 0]    arraypatches_superpointsOUTPUT_din0, arraypatches_superpointsOUTPUT_din1;
-wire    [63 : 0]    arraypatches_superpointsOUTPUT_dout0, arraypatches_superpointsOUTPUT_dout1;
-wire    arraypatches_superpointsOUTPUT_ready;
-wire    arraypatches_superpointsOUTPUT_done;
+// The input and output of fifooutput_patch_stream_V
+wire  fifooutput_patch_stream_V_wr;
+wire  [63 : 0] fifooutput_patch_stream_V_din;
+wire  fifooutput_patch_stream_V_full_n;
+wire  fifooutput_patch_stream_V_ready;
+wire  fifooutput_patch_stream_V_done;
 
-`AESL_MEM_patches_superpointsOUTPUT `AESL_MEM_INST_patches_superpointsOUTPUT(
-    .clk        (AESL_clock),
-    .rst        (AESL_reset),
-    .ce0        (arraypatches_superpointsOUTPUT_ce0),
-    .we0        (arraypatches_superpointsOUTPUT_we0),
-    .address0   (arraypatches_superpointsOUTPUT_address0),
-    .din0       (arraypatches_superpointsOUTPUT_din0),
-    .dout0      (arraypatches_superpointsOUTPUT_dout0),
-    .ce1        (arraypatches_superpointsOUTPUT_ce1),
-    .we1        (arraypatches_superpointsOUTPUT_we1),
-    .address1   (arraypatches_superpointsOUTPUT_address1),
-    .din1       (arraypatches_superpointsOUTPUT_din1),
-    .dout1      (arraypatches_superpointsOUTPUT_dout1),
-    .ready      (arraypatches_superpointsOUTPUT_ready),
-    .done    (arraypatches_superpointsOUTPUT_done)
+`AESL_FIFO_output_patch_stream_V `AESL_FIFO_INST_output_patch_stream_V(
+    .clk          (AESL_clock),
+    .reset        (AESL_reset),
+    .if_write     (fifooutput_patch_stream_V_wr),
+    .if_din       (fifooutput_patch_stream_V_din),
+    .if_full_n    (fifooutput_patch_stream_V_full_n),
+    .if_read      (),
+    .if_dout      (),
+    .if_empty_n   (),
+    .ready        (fifooutput_patch_stream_V_ready),
+    .done         (fifooutput_patch_stream_V_done)
 );
 
-// Assignment between dut and arraypatches_superpointsOUTPUT
-assign arraypatches_superpointsOUTPUT_address0 = patches_superpointsOUTPUT_address0;
-assign arraypatches_superpointsOUTPUT_ce0 = patches_superpointsOUTPUT_ce0;
-assign arraypatches_superpointsOUTPUT_we0[0] = patches_superpointsOUTPUT_we0;
-assign arraypatches_superpointsOUTPUT_we0[1] = patches_superpointsOUTPUT_we0;
-assign arraypatches_superpointsOUTPUT_we0[2] = patches_superpointsOUTPUT_we0;
-assign arraypatches_superpointsOUTPUT_we0[3] = patches_superpointsOUTPUT_we0;
-assign arraypatches_superpointsOUTPUT_we0[4] = patches_superpointsOUTPUT_we0;
-assign arraypatches_superpointsOUTPUT_we0[5] = patches_superpointsOUTPUT_we0;
-assign arraypatches_superpointsOUTPUT_we0[6] = patches_superpointsOUTPUT_we0;
-assign arraypatches_superpointsOUTPUT_we0[7] = patches_superpointsOUTPUT_we0;
-assign arraypatches_superpointsOUTPUT_din0 = patches_superpointsOUTPUT_d0;
-assign arraypatches_superpointsOUTPUT_we1 = 0;
-assign arraypatches_superpointsOUTPUT_din1 = 0;
-assign arraypatches_superpointsOUTPUT_ready= ready_initial | arraypatches_superpointsOUTPUT_done;
-assign arraypatches_superpointsOUTPUT_done =    AESL_done_delay;
+// Assignment between dut and fifooutput_patch_stream_V
+
+// Assign input of fifooutput_patch_stream_V
+assign      fifooutput_patch_stream_V_wr        =   output_patch_stream_V_write & output_patch_stream_V_full_n;
+assign      fifooutput_patch_stream_V_din        =   output_patch_stream_V_din;
+assign    fifooutput_patch_stream_V_ready   =  0;   //ready_initial | AESL_done_delay;
+assign    fifooutput_patch_stream_V_done    =   AESL_done_delay;
+// Assign input of dut
+reg   reg_fifooutput_patch_stream_V_full_n;
+initial begin : gen_reg_fifooutput_patch_stream_V_full_n_process
+    integer proc_rand;
+    reg_fifooutput_patch_stream_V_full_n = fifooutput_patch_stream_V_full_n;
+    while (1) begin
+        @ (fifooutput_patch_stream_V_full_n);
+        reg_fifooutput_patch_stream_V_full_n = fifooutput_patch_stream_V_full_n;
+    end
+end
+
+assign      output_patch_stream_V_full_n    =   reg_fifooutput_patch_stream_V_full_n;
 
 
 initial begin : generate_AESL_ready_cnt_proc
@@ -526,9 +521,9 @@ reg [31:0] size_GDarray_backup;
 reg end_GDn_points;
 reg [31:0] size_GDn_points;
 reg [31:0] size_GDn_points_backup;
-reg end_patches_superpointsOUTPUT;
-reg [31:0] size_patches_superpointsOUTPUT;
-reg [31:0] size_patches_superpointsOUTPUT_backup;
+reg end_output_patch_stream_V;
+reg [31:0] size_output_patch_stream_V;
+reg [31:0] size_output_patch_stream_V_backup;
 
 initial begin : initial_process
     integer proc_rand;
@@ -636,14 +631,14 @@ begin
   end
 end
 
-reg dump_tvout_finish_patches_superpointsOUTPUT;
+reg dump_tvout_finish_output_patch_stream_V;
 
-initial begin : dump_tvout_runtime_sign_patches_superpointsOUTPUT
+initial begin : dump_tvout_runtime_sign_output_patch_stream_V
     integer fp;
-    dump_tvout_finish_patches_superpointsOUTPUT = 0;
-    fp = $fopen(`AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc, "w");
+    dump_tvout_finish_output_patch_stream_V = 0;
+    fp = $fopen(`AUTOTB_TVOUT_output_patch_stream_V_out_wrapc, "w");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_patch_stream_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
@@ -654,15 +649,15 @@ initial begin : dump_tvout_runtime_sign_patches_superpointsOUTPUT
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
     @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc, "a");
+    fp = $fopen(`AUTOTB_TVOUT_output_patch_stream_V_out_wrapc, "a");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_patches_superpointsOUTPUT_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_output_patch_stream_V_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fdisplay(fp,"[[[/runtime]]]");
     $fclose(fp);
-    dump_tvout_finish_patches_superpointsOUTPUT = 1;
+    dump_tvout_finish_output_patch_stream_V = 1;
 end
 
 

@@ -5,7 +5,7 @@
 
 `timescale 1 ns / 1 ps
 
-module MPSQ_mul_33ns_33s_64_3_1_Multiplier_2(clk, ce, a, b, p);
+module MPSQ_mul_33ns_33s_64_3_1_Multiplier_1(clk, ce, a, b, p);
 input clk;
 input ce;
 input[33 - 1 : 0] a; 
@@ -50,7 +50,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-MPSQ_mul_33ns_33s_64_3_1_Multiplier_2 MPSQ_mul_33ns_33s_64_3_1_Multiplier_2_U(
+MPSQ_mul_33ns_33s_64_3_1_Multiplier_1 MPSQ_mul_33ns_33s_64_3_1_Multiplier_1_U(
     .clk( clk ),
     .ce( ce ),
     .a( din0 ),

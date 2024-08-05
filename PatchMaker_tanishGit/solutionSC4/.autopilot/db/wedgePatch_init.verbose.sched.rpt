@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'wedgePatch_init'
 ================================================================
-* Date:           Sat Aug  3 00:45:40 2024
+* Date:           Mon Aug  5 17:48:05 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      378|      379|  1.134 us|  1.137 us|  378|  379|     none|
+    |      221|      222|  0.663 us|  0.666 us|  221|  222|     none|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -134,9 +134,9 @@ ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_
 ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln174 = zext i7 %tmp" [patchMaker.cpp:174]   --->   Operation 43 'zext' 'zext_ln174' <Predicate = (!icmp_ln170)> <Delay = 0.00>
 ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln179 = zext i5 %select_ln174_1" [patchMaker.cpp:179]   --->   Operation 44 'zext' 'zext_ln179' <Predicate = (!icmp_ln170)> <Delay = 0.00>
 ST_4 : Operation 45 [1/1] (0.70ns)   --->   "%add_ln179 = add i8 %zext_ln174, i8 %zext_ln179" [patchMaker.cpp:179]   --->   Operation 45 'add' 'add_ln179' <Predicate = (!icmp_ln170)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node add_ln179_1)   --->   "%empty_58 = shl i8 %add_ln179, i8 1" [patchMaker.cpp:179]   --->   Operation 46 'shl' 'empty_58' <Predicate = (!icmp_ln170)> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node add_ln179_1)   --->   "%empty_66 = shl i8 %add_ln179, i8 1" [patchMaker.cpp:179]   --->   Operation 46 'shl' 'empty_66' <Predicate = (!icmp_ln170)> <Delay = 0.00>
 ST_4 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node add_ln179_1)   --->   "%zext_ln179_1 = zext i2 %select_ln174" [patchMaker.cpp:179]   --->   Operation 47 'zext' 'zext_ln179_1' <Predicate = (!icmp_ln170)> <Delay = 0.00>
-ST_4 : Operation 48 [1/1] (0.70ns) (out node of the LUT)   --->   "%add_ln179_1 = add i8 %empty_58, i8 %zext_ln179_1" [patchMaker.cpp:179]   --->   Operation 48 'add' 'add_ln179_1' <Predicate = (!icmp_ln170)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 48 [1/1] (0.70ns) (out node of the LUT)   --->   "%add_ln179_1 = add i8 %empty_66, i8 %zext_ln179_1" [patchMaker.cpp:179]   --->   Operation 48 'add' 'add_ln179_1' <Predicate = (!icmp_ln170)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 1.19>
 ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln179_2 = zext i8 %add_ln179_1" [patchMaker.cpp:179]   --->   Operation 49 'zext' 'zext_ln179_2' <Predicate = (!icmp_ln170)> <Delay = 0.00>
@@ -153,15 +153,15 @@ ST_7 : Operation 55 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline vo
 ST_7 : Operation 56 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @wedgePatch_init_perPoint_wedgePatch_init_perParameter_str"   --->   Operation 56 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln170)> <Delay = 0.00>
 ST_7 : Operation 57 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 57 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln170)> <Delay = 0.00>
 ST_7 : Operation 58 [1/1] (0.00ns)   --->   "%wp_superpoints_addr = getelementptr i32 %wp_superpoints, i64 0, i64 %zext_ln179_2" [patchMaker.cpp:179]   --->   Operation 58 'getelementptr' 'wp_superpoints_addr' <Predicate = (!icmp_ln170)> <Delay = 0.00>
-ST_7 : Operation 59 [1/1] (0.00ns)   --->   "%specloopname_ln177 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [patchMaker.cpp:177]   --->   Operation 59 'specloopname' 'specloopname_ln177' <Predicate = (!icmp_ln170)> <Delay = 0.00>
+ST_7 : Operation 59 [1/1] (0.00ns)   --->   "%specloopname_ln177 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [patchMaker.cpp:177]   --->   Operation 59 'specloopname' 'specloopname_ln177' <Predicate = (!icmp_ln170)> <Delay = 0.00>
 ST_7 : Operation 60 [1/1] (1.19ns)   --->   "%store_ln179 = store i32 %superpointsI_load, i8 %wp_superpoints_addr" [patchMaker.cpp:179]   --->   Operation 60 'store' 'store_ln179' <Predicate = (!icmp_ln170)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 160> <RAM>
 ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 61 'br' 'br_ln0' <Predicate = (!icmp_ln170)> <Delay = 0.00>
 
 State 8 <SV = 3> <Delay = 0.00>
-ST_8 : Operation 62 [2/2] (0.00ns)   --->   "%call_ln185 = call void @getParallelogramsAndAcceptanceCorners, i32 %wp_superpoints, i32 %wp_parameters" [patchMaker.cpp:185]   --->   Operation 62 'call' 'call_ln185' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 62 [2/2] (0.00ns)   --->   "%call_ln185 = call void @getParallelogramsAndAcceptanceCorners, i32 %wp_superpoints, i32 %wp_parameters, i35 %radiiDivisionList" [patchMaker.cpp:185]   --->   Operation 62 'call' 'call_ln185' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 9 <SV = 4> <Delay = 0.00>
-ST_9 : Operation 63 [1/2] (0.00ns)   --->   "%call_ln185 = call void @getParallelogramsAndAcceptanceCorners, i32 %wp_superpoints, i32 %wp_parameters" [patchMaker.cpp:185]   --->   Operation 63 'call' 'call_ln185' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 63 [1/2] (0.00ns)   --->   "%call_ln185 = call void @getParallelogramsAndAcceptanceCorners, i32 %wp_superpoints, i32 %wp_parameters, i35 %radiiDivisionList" [patchMaker.cpp:185]   --->   Operation 63 'call' 'call_ln185' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_9 : Operation 64 [1/1] (0.00ns)   --->   "%ret_ln187 = ret" [patchMaker.cpp:187]   --->   Operation 64 'ret' 'ret_ln187' <Predicate = true> <Delay = 0.00>
 
 
@@ -172,41 +172,41 @@ Target clock period: 3ns, clock uncertainty: 0.81ns.
 
  <State 1>: 0.699ns
 The critical path consists of the following:
-	'getelementptr' operation ('wp_parameters_addr', patchMaker.cpp:165) [4]  (0 ns)
-	'store' operation ('store_ln165', patchMaker.cpp:165) of constant 0 on array 'wp_parameters' [8]  (0.699 ns)
+	'getelementptr' operation ('wp_parameters_addr', patchMaker.cpp:165) [6]  (0 ns)
+	'store' operation ('store_ln165', patchMaker.cpp:165) of constant 0 on array 'wp_parameters' [10]  (0.699 ns)
 
  <State 2>: 0.699ns
 The critical path consists of the following:
-	'getelementptr' operation ('wp_parameters_addr_2', patchMaker.cpp:167) [6]  (0 ns)
-	'store' operation ('store_ln167', patchMaker.cpp:167) of constant 0 on array 'wp_parameters' [10]  (0.699 ns)
+	'getelementptr' operation ('wp_parameters_addr_2', patchMaker.cpp:167) [8]  (0 ns)
+	'store' operation ('store_ln167', patchMaker.cpp:167) of constant 0 on array 'wp_parameters' [12]  (0.699 ns)
 
  <State 3>: 1.86ns
 The critical path consists of the following:
-	'phi' operation ('indvar_flatten', patchMaker.cpp:174) with incoming values : ('select_ln174_2', patchMaker.cpp:174) [16]  (0 ns)
-	'icmp' operation ('icmp_ln174', patchMaker.cpp:174) [27]  (0.6 ns)
-	'select' operation ('select_ln170', patchMaker.cpp:170) [28]  (0.278 ns)
-	'add' operation ('add_ln174', patchMaker.cpp:174) [36]  (0.707 ns)
-	'select' operation ('select_ln174_1', patchMaker.cpp:174) [40]  (0.278 ns)
+	'phi' operation ('indvar_flatten', patchMaker.cpp:174) with incoming values : ('select_ln174_2', patchMaker.cpp:174) [18]  (0 ns)
+	'icmp' operation ('icmp_ln174', patchMaker.cpp:174) [29]  (0.6 ns)
+	'select' operation ('select_ln170', patchMaker.cpp:170) [30]  (0.278 ns)
+	'add' operation ('add_ln174', patchMaker.cpp:174) [38]  (0.707 ns)
+	'select' operation ('select_ln174_1', patchMaker.cpp:174) [42]  (0.278 ns)
 
  <State 4>: 1.41ns
 The critical path consists of the following:
-	'add' operation ('add_ln179', patchMaker.cpp:179) [42]  (0.706 ns)
-	'shl' operation ('empty_58', patchMaker.cpp:179) [43]  (0 ns)
-	'add' operation ('add_ln179_1', patchMaker.cpp:179) [46]  (0.705 ns)
+	'add' operation ('add_ln179', patchMaker.cpp:179) [44]  (0.706 ns)
+	'shl' operation ('empty_66', patchMaker.cpp:179) [45]  (0 ns)
+	'add' operation ('add_ln179_1', patchMaker.cpp:179) [48]  (0.705 ns)
 
  <State 5>: 1.2ns
 The critical path consists of the following:
-	'getelementptr' operation ('superpointsI_addr', patchMaker.cpp:179) [49]  (0 ns)
-	'load' operation ('superpointsI_load', patchMaker.cpp:179) on array 'superpointsI' [51]  (1.2 ns)
+	'getelementptr' operation ('superpointsI_addr', patchMaker.cpp:179) [51]  (0 ns)
+	'load' operation ('superpointsI_load', patchMaker.cpp:179) on array 'superpointsI' [53]  (1.2 ns)
 
  <State 6>: 1.2ns
 The critical path consists of the following:
-	'load' operation ('superpointsI_load', patchMaker.cpp:179) on array 'superpointsI' [51]  (1.2 ns)
+	'load' operation ('superpointsI_load', patchMaker.cpp:179) on array 'superpointsI' [53]  (1.2 ns)
 
  <State 7>: 1.2ns
 The critical path consists of the following:
-	'getelementptr' operation ('wp_superpoints_addr', patchMaker.cpp:179) [48]  (0 ns)
-	'store' operation ('store_ln179', patchMaker.cpp:179) of variable 'superpointsI_load', patchMaker.cpp:179 on array 'wp_superpoints' [52]  (1.2 ns)
+	'getelementptr' operation ('wp_superpoints_addr', patchMaker.cpp:179) [50]  (0 ns)
+	'store' operation ('store_ln179', patchMaker.cpp:179) of variable 'superpointsI_load', patchMaker.cpp:179 on array 'wp_superpoints' [54]  (1.2 ns)
 
  <State 8>: 0ns
 The critical path consists of the following:

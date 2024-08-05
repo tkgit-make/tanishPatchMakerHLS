@@ -75,15 +75,15 @@
 </solveComplmentaryPatch_fillNew_z_i_index5>
 <solveComplmentaryPatch_fillNew_z_i_atTop>
 <TripCount>4</TripCount>
-<Latency>49</Latency>
-<AbsoluteTimeLatency>147</AbsoluteTimeLatency>
+<Latency>11</Latency>
+<AbsoluteTimeLatency>33</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>47</PipelineDepth>
+<PipelineDepth>9</PipelineDepth>
 </solveComplmentaryPatch_fillNew_z_i_atTop>
 <solveComplmentaryPatch_findlayerWithSmallestShift>
 <TripCount>4</TripCount>
-<Latency>6</Latency>
-<AbsoluteTimeLatency>18</AbsoluteTimeLatency>
+<Latency>5</Latency>
+<AbsoluteTimeLatency>15</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 </solveComplmentaryPatch_findlayerWithSmallestShift>
@@ -96,18 +96,18 @@
 </TripCount>
 <Latency>
 <range>
-<min>11</min>
-<max>35</max>
+<min>9</min>
+<max>29</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
-<min>33</min>
-<max>105</max>
+<min>27</min>
+<max>87</max>
 </range>
 </AbsoluteTimeLatency>
-<PipelineII>6</PipelineII>
-<PipelineDepth>6</PipelineDepth>
+<PipelineII>5</PipelineII>
+<PipelineDepth>5</PipelineDepth>
 </solveComplmentaryPatch_superpointEqualCheck_2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -116,8 +116,8 @@
 <Resources>
 <BRAM_18K>3</BRAM_18K>
 <DSP>0</DSP>
-<FF>21582</FF>
-<LUT>22201</LUT>
+<FF>10420</FF>
+<LUT>13674</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -274,7 +274,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din1</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_din1</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -285,7 +285,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din2</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_din2</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -296,7 +296,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din3</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_din3</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -307,7 +307,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din4</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_din4</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -318,7 +318,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_din5</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_din5</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -329,7 +329,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_dout0</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_dout0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -340,7 +340,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_straightLineProjectorFromLayerIJtoK_fu_531_p_ce</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_ce</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -351,7 +351,51 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1144_p_din0</name>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_start</name>
+<Object>solveComplmentaryPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_ready</name>
+<Object>solveComplmentaryPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_done</name>
+<Object>solveComplmentaryPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_straightLineProjectorFromLayerIJtoK_fu_537_p_idle</name>
+<Object>solveComplmentaryPatch</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_1068_p_din0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -362,7 +406,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1144_p_din1</name>
+<name>grp_fu_1068_p_din1</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -373,7 +417,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1144_p_dout0</name>
+<name>grp_fu_1068_p_dout0</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -384,7 +428,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_1144_p_ce</name>
+<name>grp_fu_1068_p_ce</name>
 <Object>solveComplmentaryPatch</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -459,6 +503,39 @@
 <Dir>in</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_patch_stream_V_din</name>
+<Object>output_patch_stream_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>64</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_patch_stream_V_full_n</name>
+<Object>output_patch_stream_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_patch_stream_V_write</name>
+<Object>output_patch_stream_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>ppl</name>
@@ -611,7 +688,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>8</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -666,7 +743,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>8</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -679,6 +756,28 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>patches_superpoints_we1</name>
+<Object>patches_superpoints</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>patches_superpoints_d1</name>
+<Object>patches_superpoints</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>64</Bits>
+<Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>patches_superpoints_q1</name>

@@ -73,7 +73,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="6" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 :0 %wp_parameters_addr = getelementptr i32 %wp_parameters, i64 0, i64 0
 
@@ -88,7 +88,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="7" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 :1 %wp_parameters_addr_1 = getelementptr i32 %wp_parameters, i64 0, i64 2
 
@@ -103,7 +103,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="0" op_0_bw="32" op_1_bw="5">
+<Node id="10" bw="0" op_0_bw="32" op_1_bw="5">
 <![CDATA[
 :4 %store_ln165 = store i32 0, i5 %wp_parameters_addr
 
@@ -118,7 +118,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="0" op_0_bw="32" op_1_bw="5">
+<Node id="11" bw="0" op_0_bw="32" op_1_bw="5">
 <![CDATA[
 :5 %store_ln166 = store i32 0, i5 %wp_parameters_addr_1
 
@@ -136,7 +136,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="8" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 :2 %wp_parameters_addr_2 = getelementptr i32 %wp_parameters, i64 0, i64 4
 
@@ -151,7 +151,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="9" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 :3 %wp_parameters_addr_3 = getelementptr i32 %wp_parameters, i64 0, i64 6
 
@@ -166,7 +166,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="0" op_0_bw="32" op_1_bw="5">
+<Node id="12" bw="0" op_0_bw="32" op_1_bw="5">
 <![CDATA[
 :6 %store_ln167 = store i32 0, i5 %wp_parameters_addr_2
 
@@ -181,7 +181,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="11" bw="0" op_0_bw="32" op_1_bw="5">
+<Node id="13" bw="0" op_0_bw="32" op_1_bw="5">
 <![CDATA[
 :7 %store_ln168 = store i32 0, i5 %wp_parameters_addr_3
 
@@ -196,7 +196,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="12" bw="0" op_0_bw="0">
+<Node id="14" bw="0" op_0_bw="0">
 <![CDATA[
 :8 %br_ln170 = br void
 
@@ -214,7 +214,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="8" op_0_bw="8" op_1_bw="0" op_2_bw="8" op_3_bw="0">
+<Node id="16" bw="8" op_0_bw="8" op_1_bw="0" op_2_bw="8" op_3_bw="0">
 <![CDATA[
 :0 %indvar_flatten13 = phi i8 0, void, i8 %add_ln170_1, void %.split4
 
@@ -229,7 +229,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="3" op_0_bw="3" op_1_bw="0" op_2_bw="3" op_3_bw="0">
+<Node id="17" bw="3" op_0_bw="3" op_1_bw="0" op_2_bw="3" op_3_bw="0">
 <![CDATA[
 :1 %i = phi i3 0, void, i3 %select_ln170_1, void %.split4
 
@@ -244,7 +244,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="7" op_0_bw="7" op_1_bw="0" op_2_bw="7" op_3_bw="0">
+<Node id="18" bw="7" op_0_bw="7" op_1_bw="0" op_2_bw="7" op_3_bw="0">
 <![CDATA[
 :2 %indvar_flatten = phi i7 0, void, i7 %select_ln174_2, void %.split4
 
@@ -259,7 +259,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="5" op_0_bw="5" op_1_bw="0" op_2_bw="5" op_3_bw="0">
+<Node id="19" bw="5" op_0_bw="5" op_1_bw="0" op_2_bw="5" op_3_bw="0">
 <![CDATA[
 :3 %a = phi i5 0, void, i5 %select_ln174_1, void %.split4
 
@@ -274,7 +274,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="18" bw="2" op_0_bw="2" op_1_bw="0" op_2_bw="2" op_3_bw="0">
+<Node id="20" bw="2" op_0_bw="2" op_1_bw="0" op_2_bw="2" op_3_bw="0">
 <![CDATA[
 :4 %b = phi i2 0, void, i2 %add_ln177, void %.split4
 
@@ -289,7 +289,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="8" op_0_bw="8" op_1_bw="8">
+<Node id="21" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
 :5 %add_ln170_1 = add i8 %indvar_flatten13, i8 1
 
@@ -304,7 +304,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
 :6 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
 
@@ -319,7 +319,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="1" op_0_bw="8" op_1_bw="8">
+<Node id="23" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
 :7 %icmp_ln170 = icmp_eq  i8 %indvar_flatten13, i8 160
 
@@ -334,7 +334,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="24" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 :8 %br_ln170 = br i1 %icmp_ln170, void %.split4, void
 
@@ -350,7 +350,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="3" op_0_bw="3" op_1_bw="3">
+<Node id="26" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
 .split4:0 %add_ln170 = add i3 %i, i3 1
 
@@ -366,7 +366,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="1" op_0_bw="7" op_1_bw="7">
+<Node id="29" bw="1" op_0_bw="7" op_1_bw="7">
 <![CDATA[
 .split4:3 %icmp_ln174 = icmp_eq  i7 %indvar_flatten, i7 32
 
@@ -382,7 +382,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="5" op_0_bw="1" op_1_bw="5" op_2_bw="5">
+<Node id="30" bw="5" op_0_bw="1" op_1_bw="5" op_2_bw="5">
 <![CDATA[
 .split4:4 %select_ln170 = select i1 %icmp_ln174, i5 0, i5 %a
 
@@ -398,7 +398,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="3" op_0_bw="1" op_1_bw="3" op_2_bw="3">
+<Node id="31" bw="3" op_0_bw="1" op_1_bw="3" op_2_bw="3">
 <![CDATA[
 .split4:5 %select_ln170_1 = select i1 %icmp_ln174, i3 %add_ln170, i3 %i
 
@@ -414,7 +414,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="1" op_0_bw="1" op_1_bw="1">
+<Node id="35" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
 .split4:9 %xor_ln170 = xor i1 %icmp_ln174, i1 1
 
@@ -430,7 +430,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="1" op_0_bw="2" op_1_bw="2">
+<Node id="36" bw="1" op_0_bw="2" op_1_bw="2">
 <![CDATA[
 .split4:10 %icmp_ln177 = icmp_eq  i2 %b, i2 2
 
@@ -446,7 +446,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="1" op_0_bw="1" op_1_bw="1">
+<Node id="37" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
 .split4:11 %and_ln170 = and i1 %icmp_ln177, i1 %xor_ln170
 
@@ -462,7 +462,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="5" op_0_bw="5" op_1_bw="5">
+<Node id="38" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
 .split4:12 %add_ln174 = add i5 %select_ln170, i5 1
 
@@ -478,7 +478,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="1" op_0_bw="1" op_1_bw="1">
+<Node id="40" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
 .split4:14 %or_ln174 = or i1 %and_ln170, i1 %icmp_ln174
 
@@ -494,7 +494,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="2" op_0_bw="1" op_1_bw="2" op_2_bw="2">
+<Node id="41" bw="2" op_0_bw="1" op_1_bw="2" op_2_bw="2">
 <![CDATA[
 .split4:15 %select_ln174 = select i1 %or_ln174, i2 0, i2 %b
 
@@ -510,7 +510,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="5" op_0_bw="1" op_1_bw="5" op_2_bw="5">
+<Node id="42" bw="5" op_0_bw="1" op_1_bw="5" op_2_bw="5">
 <![CDATA[
 .split4:16 %select_ln174_1 = select i1 %and_ln170, i5 %add_ln174, i5 %select_ln170
 
@@ -526,7 +526,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="2" op_0_bw="2" op_1_bw="2">
+<Node id="55" bw="2" op_0_bw="2" op_1_bw="2">
 <![CDATA[
 .split4:29 %add_ln177 = add i2 %select_ln174, i2 1
 
@@ -542,7 +542,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="7" op_0_bw="7" op_1_bw="7">
+<Node id="56" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
 .split4:30 %add_ln174_1 = add i7 %indvar_flatten, i7 1
 
@@ -558,7 +558,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="7" op_0_bw="1" op_1_bw="7" op_2_bw="7">
+<Node id="57" bw="7" op_0_bw="1" op_1_bw="7" op_2_bw="7">
 <![CDATA[
 .split4:31 %select_ln174_2 = select i1 %icmp_ln174, i7 1, i7 %add_ln174_1
 
@@ -577,7 +577,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="7" op_0_bw="7" op_1_bw="3" op_2_bw="4">
+<Node id="32" bw="7" op_0_bw="7" op_1_bw="3" op_2_bw="4">
 <![CDATA[
 .split4:6 %tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %select_ln170_1, i4 0
 
@@ -593,7 +593,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="8" op_0_bw="7">
+<Node id="33" bw="8" op_0_bw="7">
 <![CDATA[
 .split4:7 %zext_ln174 = zext i7 %tmp
 
@@ -609,7 +609,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="8" op_0_bw="5">
+<Node id="43" bw="8" op_0_bw="5">
 <![CDATA[
 .split4:17 %zext_ln179 = zext i5 %select_ln174_1
 
@@ -625,7 +625,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="8" op_0_bw="8" op_1_bw="8">
+<Node id="44" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
 .split4:18 %add_ln179 = add i8 %zext_ln174, i8 %zext_ln179
 
@@ -641,12 +641,12 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="8" op_0_bw="8" op_1_bw="8">
+<Node id="45" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-.split4:19 %empty_58 = shl i8 %add_ln179, i8 1
+.split4:19 %empty_66 = shl i8 %add_ln179, i8 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_58"/></StgValue>
+<StgValue><ssdm name="empty_66"/></StgValue>
 </operation>
 
 <operation id="47" st_id="4" stage="1" lat="1">
@@ -657,7 +657,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="8" op_0_bw="2">
+<Node id="47" bw="8" op_0_bw="2">
 <![CDATA[
 .split4:21 %zext_ln179_1 = zext i2 %select_ln174
 
@@ -673,9 +673,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="8" op_0_bw="8" op_1_bw="8">
+<Node id="48" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-.split4:22 %add_ln179_1 = add i8 %empty_58, i8 %zext_ln179_1
+.split4:22 %add_ln179_1 = add i8 %empty_66, i8 %zext_ln179_1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln179_1"/></StgValue>
@@ -692,7 +692,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="64" op_0_bw="8">
+<Node id="49" bw="64" op_0_bw="8">
 <![CDATA[
 .split4:23 %zext_ln179_2 = zext i8 %add_ln179_1
 
@@ -708,7 +708,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="49" bw="8" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="51" bw="8" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 .split4:25 %superpointsI_addr = getelementptr i32 %superpointsI, i64 0, i64 %zext_ln179_2
 
@@ -724,7 +724,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="32" op_0_bw="8">
+<Node id="53" bw="32" op_0_bw="8">
 <![CDATA[
 .split4:27 %superpointsI_load = load i8 %superpointsI_addr
 
@@ -743,7 +743,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="32" op_0_bw="8">
+<Node id="53" bw="32" op_0_bw="8">
 <![CDATA[
 .split4:27 %superpointsI_load = load i8 %superpointsI_addr
 
@@ -762,7 +762,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
 .split4:1 %specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter_str
 
@@ -778,7 +778,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="28" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
 .split4:2 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 160, i64 160, i64 160
 
@@ -794,7 +794,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="34" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
 .split4:8 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
 
@@ -810,7 +810,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="39" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
 .split4:13 %specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @wedgePatch_init_perPoint_wedgePatch_init_perParameter_str
 
@@ -826,7 +826,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="46" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
 .split4:20 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
 
@@ -842,7 +842,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="48" bw="8" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="50" bw="8" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 .split4:24 %wp_superpoints_addr = getelementptr i32 %wp_superpoints, i64 0, i64 %zext_ln179_2
 
@@ -858,9 +858,9 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="52" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split4:26 %specloopname_ln177 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
+.split4:26 %specloopname_ln177 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln177"/></StgValue>
@@ -874,7 +874,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="0" op_0_bw="32" op_1_bw="8">
+<Node id="54" bw="0" op_0_bw="32" op_1_bw="8">
 <![CDATA[
 .split4:28 %store_ln179 = store i32 %superpointsI_load, i8 %wp_superpoints_addr
 
@@ -890,7 +890,7 @@
 </and_exp></or_exp>
 </condition>
 
-<Node id="56" bw="0" op_0_bw="0">
+<Node id="58" bw="0" op_0_bw="0">
 <![CDATA[
 .split4:32 %br_ln0 = br void
 
@@ -908,9 +908,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="58" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<Node id="60" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="35">
 <![CDATA[
-:0 %call_ln185 = call void @getParallelogramsAndAcceptanceCorners, i32 %wp_superpoints, i32 %wp_parameters
+:0 %call_ln185 = call void @getParallelogramsAndAcceptanceCorners, i32 %wp_superpoints, i32 %wp_parameters, i35 %radiiDivisionList
 
 ]]></Node>
 <StgValue><ssdm name="call_ln185"/></StgValue>
@@ -926,9 +926,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="58" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<Node id="60" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="35">
 <![CDATA[
-:0 %call_ln185 = call void @getParallelogramsAndAcceptanceCorners, i32 %wp_superpoints, i32 %wp_parameters
+:0 %call_ln185 = call void @getParallelogramsAndAcceptanceCorners, i32 %wp_superpoints, i32 %wp_parameters, i35 %radiiDivisionList
 
 ]]></Node>
 <StgValue><ssdm name="call_ln185"/></StgValue>
@@ -941,7 +941,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="59" bw="0">
+<Node id="61" bw="0">
 <![CDATA[
 :1 %ret_ln187 = ret
 

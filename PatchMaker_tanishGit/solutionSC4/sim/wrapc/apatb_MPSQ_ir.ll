@@ -6,33 +6,32 @@ target triple = "fpga64-xilinx-none"
 %struct.ap_int.0 = type { %struct.ap_int_base.1 }
 %struct.ap_int_base.1 = type { %struct.ssdm_int.2 }
 %struct.ssdm_int.2 = type { i64 }
+%"class.hls::stream" = type { %struct.ap_int.0 }
 
 ; Function Attrs: noinline
-define void @apatb_MPSQ_ir(i32 %ppl, i8* %n_patches, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x i32]* %GDn_points, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT) local_unnamed_addr #0 {
+define void @apatb_MPSQ_ir(i32 %ppl, i8* %n_patches, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x i32]* %GDn_points, %"class.hls::stream"* %output_patch_stream) local_unnamed_addr #0 {
 entry:
   %n_patches_copy = alloca i8, align 512
   %malloccall = tail call i8* @malloc(i64 10240)
   %GDarray_copy = bitcast i8* %malloccall to [5 x [256 x %struct.ap_int.0]]*
   %GDn_points_copy = alloca [5 x i32], align 512
-  %malloccall1 = tail call i8* @malloc(i64 20480)
-  %patches_superpointsOUTPUT_copy = bitcast i8* %malloccall1 to [32 x [5 x [16 x %struct.ap_int.0]]]*
-  call fastcc void @copy_in(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
-  call void @apatb_MPSQ_hw(i32 %ppl, i8* %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
-  call fastcc void @copy_out(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT, [32 x [5 x [16 x %struct.ap_int.0]]]* %patches_superpointsOUTPUT_copy)
+  %output_patch_stream_copy1 = alloca %"class.hls::stream", align 512
+  call fastcc void @copy_in(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, %"class.hls::stream"* %output_patch_stream, %"class.hls::stream"* nonnull align 512 %output_patch_stream_copy1)
+  call void @apatb_MPSQ_hw(i32 %ppl, i8* %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points_copy, %"class.hls::stream"* %output_patch_stream_copy1)
+  call fastcc void @copy_out(i8* %n_patches, i8* nonnull align 512 %n_patches_copy, [5 x [256 x %struct.ap_int.0]]* %GDarray, [5 x [256 x %struct.ap_int.0]]* %GDarray_copy, [5 x i32]* %GDn_points, [5 x i32]* nonnull align 512 %GDn_points_copy, %"class.hls::stream"* %output_patch_stream, %"class.hls::stream"* nonnull align 512 %output_patch_stream_copy1)
   tail call void @free(i8* %malloccall)
-  tail call void @free(i8* %malloccall1)
   ret void
 }
 
 declare noalias i8* @malloc(i64) local_unnamed_addr
 
 ; Function Attrs: noinline
-define internal fastcc void @copy_in(i8* readonly, i8* noalias align 512, [5 x [256 x %struct.ap_int.0]]*, [5 x [256 x %struct.ap_int.0]]* noalias, [5 x i32]* readonly, [5 x i32]* noalias align 512, [32 x [5 x [16 x %struct.ap_int.0]]]*, [32 x [5 x [16 x %struct.ap_int.0]]]* noalias) unnamed_addr #1 {
+define internal fastcc void @copy_in(i8* readonly, i8* noalias align 512, [5 x [256 x %struct.ap_int.0]]*, [5 x [256 x %struct.ap_int.0]]* noalias, [5 x i32]* readonly, [5 x i32]* noalias align 512, %"class.hls::stream"*, %"class.hls::stream"* noalias align 512) unnamed_addr #1 {
 entry:
   call fastcc void @onebyonecpy_hls.p0i8(i8* align 512 %1, i8* %0)
   call fastcc void @onebyonecpy_hls.p0a5a256struct.ap_int.0([5 x [256 x %struct.ap_int.0]]* %3, [5 x [256 x %struct.ap_int.0]]* %2)
   call fastcc void @onebyonecpy_hls.p0a5i32([5 x i32]* align 512 %5, [5 x i32]* %4)
-  call fastcc void @onebyonecpy_hls.p0a32a5a16struct.ap_int.0([32 x [5 x [16 x %struct.ap_int.0]]]* %7, [32 x [5 x [16 x %struct.ap_int.0]]]* %6)
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream"(%"class.hls::stream"* align 512 %7, %"class.hls::stream"* %6)
   ret void
 }
 
@@ -239,108 +238,112 @@ ret:                                              ; preds = %for.loop, %entry
 }
 
 ; Function Attrs: noinline
-define internal fastcc void @onebyonecpy_hls.p0a32a5a16struct.ap_int.0([32 x [5 x [16 x %struct.ap_int.0]]]* noalias, [32 x [5 x [16 x %struct.ap_int.0]]]* noalias) unnamed_addr #4 {
+define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream"(%"class.hls::stream"* noalias align 512, %"class.hls::stream"* noalias) unnamed_addr #4 {
 entry:
-  %2 = icmp eq [32 x [5 x [16 x %struct.ap_int.0]]]* %0, null
-  %3 = icmp eq [32 x [5 x [16 x %struct.ap_int.0]]]* %1, null
+  %2 = icmp eq %"class.hls::stream"* %0, null
+  %3 = icmp eq %"class.hls::stream"* %1, null
   %4 = or i1 %2, %3
   br i1 %4, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  br label %for.loop
-
-for.loop:                                         ; preds = %for.loop.split, %copy
-  %for.loop.idx27 = phi i64 [ 0, %copy ], [ %for.loop.idx.next, %for.loop.split ]
-  br label %for.loop2
-
-for.loop2:                                        ; preds = %for.loop2.split, %for.loop
-  %for.loop.idx326 = phi i64 [ 0, %for.loop ], [ %for.loop.idx3.next, %for.loop2.split ]
-  br label %for.loop8
-
-for.loop8:                                        ; preds = %for.loop.head7, %for.loop2
-  %for.loop.idx925 = phi i64 [ 0, %for.loop2 ], [ %for.loop.idx9.next, %for.loop.head7 ]
-  %dst.addr1115 = getelementptr [32 x [5 x [16 x %struct.ap_int.0]]], [32 x [5 x [16 x %struct.ap_int.0]]]* %0, i64 0, i64 %for.loop.idx27, i64 %for.loop.idx326, i64 %for.loop.idx925
-  %src.addr1216 = getelementptr [32 x [5 x [16 x %struct.ap_int.0]]], [32 x [5 x [16 x %struct.ap_int.0]]]* %1, i64 0, i64 %for.loop.idx27, i64 %for.loop.idx326, i64 %for.loop.idx925
-  %5 = bitcast %struct.ap_int.0* %src.addr1216 to i8*
+  %5 = bitcast %"class.hls::stream"* %1 to i8*
   %6 = call i1 @fpga_fifo_exist_8(i8* %5)
   br i1 %6, label %7, label %8
 
-; <label>:7:                                      ; preds = %for.loop8
-  call fastcc void @streamcpy_hls.p0struct.ap_int.0(%struct.ap_int.0* %dst.addr1115, %struct.ap_int.0* %src.addr1216)
-  br label %for.loop.head7
+; <label>:7:                                      ; preds = %copy
+  call fastcc void @"streamcpy_hls.p0class.hls::stream"(%"class.hls::stream"* nonnull align 512 %0, %"class.hls::stream"* nonnull %1)
+  br label %ret
 
-; <label>:8:                                      ; preds = %for.loop8
-  %src.addr12.017 = getelementptr [32 x [5 x [16 x %struct.ap_int.0]]], [32 x [5 x [16 x %struct.ap_int.0]]]* %1, i64 0, i64 %for.loop.idx27, i64 %for.loop.idx326, i64 %for.loop.idx925, i32 0
-  %dst.addr11.018 = getelementptr [32 x [5 x [16 x %struct.ap_int.0]]], [32 x [5 x [16 x %struct.ap_int.0]]]* %0, i64 0, i64 %for.loop.idx27, i64 %for.loop.idx326, i64 %for.loop.idx925, i32 0
-  %9 = bitcast %struct.ap_int_base.1* %src.addr12.017 to i8*
-  %10 = call i1 @fpga_fifo_exist_8(i8* %9)
-  br i1 %10, label %11, label %12
+; <label>:8:                                      ; preds = %copy
+  %.0 = getelementptr %"class.hls::stream", %"class.hls::stream"* %1, i32 0, i32 0
+  %.01 = getelementptr %"class.hls::stream", %"class.hls::stream"* %0, i32 0, i32 0
+  %9 = call i1 @fpga_fifo_exist_8(i8* %5)
+  br i1 %9, label %10, label %11
+
+; <label>:10:                                     ; preds = %8
+  call fastcc void @streamcpy_hls.p0struct.ap_int.0(%struct.ap_int.0* align 512 %.01, %struct.ap_int.0* %.0)
+  br label %ret
 
 ; <label>:11:                                     ; preds = %8
-  call fastcc void @streamcpy_hls.p0struct.ap_int_base.1(%struct.ap_int_base.1* %dst.addr11.018, %struct.ap_int_base.1* %src.addr12.017)
-  br label %for.loop.head7
+  %.0.02 = getelementptr %"class.hls::stream", %"class.hls::stream"* %1, i32 0, i32 0, i32 0
+  %.01.03 = getelementptr %"class.hls::stream", %"class.hls::stream"* %0, i32 0, i32 0, i32 0
+  %12 = call i1 @fpga_fifo_exist_8(i8* %5)
+  br i1 %12, label %13, label %14
 
-; <label>:12:                                     ; preds = %8
-  %src.addr12.0.019 = getelementptr [32 x [5 x [16 x %struct.ap_int.0]]], [32 x [5 x [16 x %struct.ap_int.0]]]* %1, i64 0, i64 %for.loop.idx27, i64 %for.loop.idx326, i64 %for.loop.idx925, i32 0, i32 0
-  %dst.addr11.0.020 = getelementptr [32 x [5 x [16 x %struct.ap_int.0]]], [32 x [5 x [16 x %struct.ap_int.0]]]* %0, i64 0, i64 %for.loop.idx27, i64 %for.loop.idx326, i64 %for.loop.idx925, i32 0, i32 0
-  %13 = bitcast %struct.ssdm_int.2* %src.addr12.0.019 to i8*
-  %14 = call i1 @fpga_fifo_exist_8(i8* %13)
-  br i1 %14, label %15, label %16
+; <label>:13:                                     ; preds = %11
+  call fastcc void @streamcpy_hls.p0struct.ap_int_base.1(%struct.ap_int_base.1* align 512 %.01.03, %struct.ap_int_base.1* %.0.02)
+  br label %ret
 
-; <label>:15:                                     ; preds = %12
-  call fastcc void @streamcpy_hls.p0struct.ssdm_int.2(%struct.ssdm_int.2* %dst.addr11.0.020, %struct.ssdm_int.2* %src.addr12.0.019)
-  br label %for.loop.head7
+; <label>:14:                                     ; preds = %11
+  %.0.0.04 = getelementptr %"class.hls::stream", %"class.hls::stream"* %1, i32 0, i32 0, i32 0, i32 0
+  %.01.0.05 = getelementptr %"class.hls::stream", %"class.hls::stream"* %0, i32 0, i32 0, i32 0, i32 0
+  %15 = call i1 @fpga_fifo_exist_8(i8* %5)
+  br i1 %15, label %16, label %17
 
-; <label>:16:                                     ; preds = %12
-  %dst.addr11.0.0.022.gep23 = getelementptr [32 x [5 x [16 x %struct.ap_int.0]]], [32 x [5 x [16 x %struct.ap_int.0]]]* %0, i64 0, i64 %for.loop.idx27, i64 %for.loop.idx326, i64 %for.loop.idx925, i32 0, i32 0, i32 0
-  %17 = bitcast i64* %dst.addr11.0.0.022.gep23 to i8*
-  %src.addr12.0.0.021.gep24 = getelementptr [32 x [5 x [16 x %struct.ap_int.0]]], [32 x [5 x [16 x %struct.ap_int.0]]]* %1, i64 0, i64 %for.loop.idx27, i64 %for.loop.idx326, i64 %for.loop.idx925, i32 0, i32 0, i32 0
-  %18 = bitcast i64* %src.addr12.0.0.021.gep24 to i8*
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %17, i8* align 1 %18, i64 8, i1 false)
-  br label %for.loop.head7
+; <label>:16:                                     ; preds = %14
+  call fastcc void @streamcpy_hls.p0struct.ssdm_int.2(%struct.ssdm_int.2* align 512 %.01.0.05, %struct.ssdm_int.2* %.0.0.04)
+  br label %ret
 
-for.loop.head7:                                   ; preds = %16, %15, %11, %7
-  %for.loop.idx9.next = add nuw nsw i64 %for.loop.idx925, 1
-  %exitcond = icmp ne i64 %for.loop.idx9.next, 16
-  br i1 %exitcond, label %for.loop8, label %for.loop2.split
+; <label>:17:                                     ; preds = %14
+  %18 = bitcast %"class.hls::stream"* %0 to i8*
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %18, i8* align 1 %5, i64 8, i1 false)
+  br label %ret
 
-for.loop2.split:                                  ; preds = %for.loop.head7
-  %for.loop.idx3.next = add nuw nsw i64 %for.loop.idx326, 1
-  %exitcond28 = icmp ne i64 %for.loop.idx3.next, 5
-  br i1 %exitcond28, label %for.loop2, label %for.loop.split
+ret:                                              ; preds = %17, %16, %13, %10, %7, %entry
+  ret void
+}
 
-for.loop.split:                                   ; preds = %for.loop2.split
-  %for.loop.idx.next = add nuw nsw i64 %for.loop.idx27, 1
-  %exitcond29 = icmp ne i64 %for.loop.idx.next, 32
-  br i1 %exitcond29, label %for.loop, label %ret
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"streamcpy_hls.p0class.hls::stream"(%"class.hls::stream"* noalias nocapture align 512, %"class.hls::stream"* noalias nocapture) unnamed_addr #5 {
+entry:
+  %2 = alloca %"class.hls::stream"
+  br label %empty
 
-ret:                                              ; preds = %for.loop.split, %entry
+empty:                                            ; preds = %push, %entry
+  %3 = bitcast %"class.hls::stream"* %1 to i8*
+  %4 = call i1 @fpga_fifo_not_empty_8(i8* %3)
+  br i1 %4, label %push, label %ret
+
+push:                                             ; preds = %empty
+  %5 = bitcast %"class.hls::stream"* %2 to i8*
+  %6 = bitcast %"class.hls::stream"* %1 to i8*
+  call void @fpga_fifo_pop_8(i8* %5, i8* %6)
+  %7 = load volatile %"class.hls::stream", %"class.hls::stream"* %2
+  %8 = bitcast %"class.hls::stream"* %2 to i8*
+  %9 = bitcast %"class.hls::stream"* %0 to i8*
+  call void @fpga_fifo_push_8(i8* %8, i8* %9)
+  br label %empty, !llvm.loop !9
+
+ret:                                              ; preds = %empty
+  %10 = bitcast %"class.hls::stream"* %1 to i8*
+  %11 = bitcast %"class.hls::stream"* %0 to i8*
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 8, i1 false)
   ret void
 }
 
 ; Function Attrs: noinline
-define internal fastcc void @copy_out(i8*, i8* noalias readonly align 512, [5 x [256 x %struct.ap_int.0]]*, [5 x [256 x %struct.ap_int.0]]* noalias, [5 x i32]*, [5 x i32]* noalias readonly align 512, [32 x [5 x [16 x %struct.ap_int.0]]]*, [32 x [5 x [16 x %struct.ap_int.0]]]* noalias) unnamed_addr #6 {
+define internal fastcc void @copy_out(i8*, i8* noalias readonly align 512, [5 x [256 x %struct.ap_int.0]]*, [5 x [256 x %struct.ap_int.0]]* noalias, [5 x i32]*, [5 x i32]* noalias readonly align 512, %"class.hls::stream"*, %"class.hls::stream"* noalias align 512) unnamed_addr #6 {
 entry:
   call fastcc void @onebyonecpy_hls.p0i8(i8* %0, i8* align 512 %1)
   call fastcc void @onebyonecpy_hls.p0a5a256struct.ap_int.0([5 x [256 x %struct.ap_int.0]]* %2, [5 x [256 x %struct.ap_int.0]]* %3)
   call fastcc void @onebyonecpy_hls.p0a5i32([5 x i32]* %4, [5 x i32]* align 512 %5)
-  call fastcc void @onebyonecpy_hls.p0a32a5a16struct.ap_int.0([32 x [5 x [16 x %struct.ap_int.0]]]* %6, [32 x [5 x [16 x %struct.ap_int.0]]]* %7)
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream"(%"class.hls::stream"* %6, %"class.hls::stream"* align 512 %7)
   ret void
 }
 
 declare void @free(i8*) local_unnamed_addr
 
-declare void @apatb_MPSQ_hw(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*)
+declare void @apatb_MPSQ_hw(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, %"class.hls::stream"*)
 
-define void @MPSQ_hw_stub_wrapper(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*) #7 {
+define void @MPSQ_hw_stub_wrapper(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, %"class.hls::stream"*) #7 {
 entry:
-  call void @copy_out(i8* null, i8* %1, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* null, [5 x i32]* %3, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %4)
-  call void @MPSQ_hw_stub(i32 %0, i8* %1, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* %3, [32 x [5 x [16 x %struct.ap_int.0]]]* %4)
-  call void @copy_in(i8* null, i8* %1, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* null, [5 x i32]* %3, [32 x [5 x [16 x %struct.ap_int.0]]]* null, [32 x [5 x [16 x %struct.ap_int.0]]]* %4)
+  call void @copy_out(i8* null, i8* %1, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* null, [5 x i32]* %3, %"class.hls::stream"* null, %"class.hls::stream"* %4)
+  call void @MPSQ_hw_stub(i32 %0, i8* %1, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* %3, %"class.hls::stream"* %4)
+  call void @copy_in(i8* null, i8* %1, [5 x [256 x %struct.ap_int.0]]* null, [5 x [256 x %struct.ap_int.0]]* %2, [5 x i32]* null, [5 x i32]* %3, %"class.hls::stream"* null, %"class.hls::stream"* %4)
   ret void
 }
 
-declare void @MPSQ_hw_stub(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, [32 x [5 x [16 x %struct.ap_int.0]]]*)
+declare void @MPSQ_hw_stub(i32, i8*, [5 x [256 x %struct.ap_int.0]]*, [5 x i32]*, %"class.hls::stream"*)
 
 declare i1 @fpga_fifo_not_empty_8(i8*)
 
@@ -371,3 +374,4 @@ attributes #7 = { "fpga.wrapper.func"="stub" }
 !6 = !{!"llvm.loop.rotate.disable"}
 !7 = distinct !{!7, !6}
 !8 = distinct !{!8, !6}
+!9 = distinct !{!9, !6}

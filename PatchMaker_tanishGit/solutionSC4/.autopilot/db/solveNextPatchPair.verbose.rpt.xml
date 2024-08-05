@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveNextPatchPair'" level="0">
-<item name = "Date">Sat Aug  3 00:47:03 2024
+<item name = "Date">Mon Aug  5 17:49:31 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -31,17 +31,17 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makeThirdPatch_fu_444">makeThirdPatch, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_solveComplmentaryPatch_fu_471">solveComplmentaryPatch, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_makePatch_alignedToLine_fu_504">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531">straightLineProjectorFromLayerIJtoK, 44, 44, 0.132 us, 0.132 us, 1, 1, yes</column>
-<column name="grp_getSolveNextPatchPairWhileCondition_fu_545">getSolveNextPatchPairWhileCondition, 1, 1, 3.000 ns, 3.000 ns, 1, 1, none</column>
-<column name="grp_areWedgeSuperPointsEqual_fu_561">areWedgeSuperPointsEqual, 4, 4, 12.000 ns, 12.000 ns, 2, 2, yes</column>
+<column name="grp_makeThirdPatch_fu_438">makeThirdPatch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_solveComplmentaryPatch_fu_469">solveComplmentaryPatch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_makePatch_alignedToLine_fu_506">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_getSolveNextPatchPairWhileCondition_fu_551">getSolveNextPatchPairWhileCondition, 1, 1, 3.000 ns, 3.000 ns, 1, 1, none</column>
+<column name="grp_areWedgeSuperPointsEqual_fu_567">areWedgeSuperPointsEqual, 3, 3, 9.000 ns, 9.000 ns, 2, 2, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- solveNextPatchPair_superPointEqualCheck">7, 41, 7, -, -, 1 ~ 5, no</column>
+<column name="- solveNextPatchPair_superPointEqualCheck">6, 35, 6, -, -, 1 ~ 5, no</column>
 <column name="- solveNextPatchPair_loop">?, ?, ?, -, -, ?, no</column>
 </table>
 </item>
@@ -55,31 +55,30 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 520, -</column>
+<column name="Expression">-, -, 0, 458, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">9, 2, 76914, 74233, -</column>
+<column name="Instance">9, 2, 31400, 38819, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 1394, -</column>
-<column name="Register">-, -, 951, -, -</column>
+<column name="Multiplexer">-, -, -, 1048, -</column>
+<column name="Register">-, -, 880, -, -</column>
 <specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
-<specialColumn name="Utilization SLR (%)">~0, ~0, 3, 7, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">~0, ~0, 1, 3, 0</specialColumn>
 <specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
-<specialColumn name="Utilization (%)">~0, ~0, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_areWedgeSuperPointsEqual_fu_561">areWedgeSuperPointsEqual, 0, 0, 166, 193, 0</column>
-<column name="grp_getSolveNextPatchPairWhileCondition_fu_545">getSolveNextPatchPairWhileCondition, 0, 0, 67, 300, 0</column>
-<column name="grp_makePatch_alignedToLine_fu_504">makePatch_alignedToLine, 3, 0, 18389, 16730, 0</column>
-<column name="grp_makeThirdPatch_fu_444">makeThirdPatch, 3, 0, 25613, 26925, 0</column>
+<column name="grp_areWedgeSuperPointsEqual_fu_567">areWedgeSuperPointsEqual, 0, 0, 139, 121, 0</column>
+<column name="grp_getSolveNextPatchPairWhileCondition_fu_551">getSolveNextPatchPairWhileCondition, 0, 0, 67, 300, 0</column>
+<column name="grp_makePatch_alignedToLine_fu_506">makePatch_alignedToLine, 3, 0, 7509, 9076, 0</column>
+<column name="grp_makeThirdPatch_fu_438">makeThirdPatch, 3, 0, 11218, 14303, 0</column>
 <column name="mul_33s_64s_64_5_1_U131">mul_33s_64s_64_5_1, 0, 2, 441, 249, 0</column>
-<column name="grp_solveComplmentaryPatch_fu_471">solveComplmentaryPatch, 3, 0, 21582, 22201, 0</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531">straightLineProjectorFromLayerIJtoK, 0, 0, 3552, 2545, 0</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1148">straightLineProjectorFromLayerIJtoK, 0, 0, 3552, 2545, 0</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1156">straightLineProjectorFromLayerIJtoK, 0, 0, 3552, 2545, 0</column>
+<column name="grp_solveComplmentaryPatch_fu_469">solveComplmentaryPatch, 3, 0, 10420, 13674, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537">straightLineProjectorFromLayerIJtoK, 0, 0, 803, 548, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1072">straightLineProjectorFromLayerIJtoK, 0, 0, 803, 548, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -96,38 +95,34 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln794_fu_591_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln865_fu_625_p2">+, 0, 0, 10, 3, 1</column>
-<column name="add_ln891_fu_709_p2">+, 0, 0, 19, 12, 12</column>
-<column name="add_ln901_fu_715_p2">+, 0, 0, 19, 12, 7</column>
-<column name="lastPatchIndex_1_fu_846_p2">+, 0, 0, 15, 8, 2</column>
-<column name="lastPatchIndex_fu_601_p2">+, 0, 0, 12, 5, 2</column>
-<column name="thirdLastPatchIndex_fu_613_p2">+, 0, 0, 12, 5, 3</column>
-<column name="ret_1_fu_791_p2">-, 0, 0, 40, 33, 33</column>
-<column name="ret_fu_777_p2">-, 0, 0, 40, 33, 33</column>
-<column name="and_ln886_fu_648_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln889_1_fu_681_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln889_fu_675_p2">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state117_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state69_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="ap_predicate_op279_call_state69">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln860_fu_607_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln865_fu_619_p2">icmp, 0, 0, 8, 3, 3</column>
-<column name="icmp_ln878_1_fu_797_p2">icmp, 0, 0, 20, 33, 33</column>
-<column name="icmp_ln878_fu_748_p2">icmp, 0, 0, 20, 32, 27</column>
-<column name="icmp_ln880_fu_642_p2">icmp, 0, 0, 20, 32, 1</column>
-<column name="icmp_ln886_1_fu_663_p2">icmp, 0, 0, 20, 32, 27</column>
-<column name="icmp_ln886_fu_631_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln889_fu_669_p2">icmp, 0, 0, 20, 32, 24</column>
-<column name="icmp_ln892_fu_729_p2">icmp, 0, 0, 20, 32, 1</column>
-<column name="icmp_ln934_fu_840_p2">icmp, 0, 0, 20, 32, 5</column>
-<column name="squarePatch_alternate2_fu_636_p2">icmp, 0, 0, 20, 32, 1</column>
-<column name="notChoppedPatch_fu_652_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln892_fu_743_p2">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln892_fu_760_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln901_fu_753_p3">select, 0, 0, 32, 1, 32</column>
-<column name="white_space_height_fu_801_p3">select, 0, 0, 33, 1, 33</column>
-<column name="xor_ln889_fu_657_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="add_ln854_fu_591_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln925_fu_609_p2">+, 0, 0, 10, 3, 1</column>
+<column name="lastPatchIndex_fu_788_p2">+, 0, 0, 15, 8, 2</column>
+<column name="ret_1_fu_733_p2">-, 0, 0, 40, 33, 33</column>
+<column name="ret_fu_719_p2">-, 0, 0, 40, 33, 33</column>
+<column name="and_ln886_fu_632_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln949_1_fu_665_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln949_fu_659_p2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state29_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state39_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op151_call_state29">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln878_1_fu_739_p2">icmp, 0, 0, 20, 33, 33</column>
+<column name="icmp_ln878_fu_690_p2">icmp, 0, 0, 20, 32, 27</column>
+<column name="icmp_ln886_1_fu_647_p2">icmp, 0, 0, 20, 32, 27</column>
+<column name="icmp_ln886_fu_615_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln920_fu_597_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln925_fu_603_p2">icmp, 0, 0, 8, 3, 3</column>
+<column name="icmp_ln940_fu_626_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="icmp_ln949_fu_653_p2">icmp, 0, 0, 20, 32, 24</column>
+<column name="icmp_ln952_fu_675_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="icmp_ln994_fu_782_p2">icmp, 0, 0, 20, 32, 5</column>
+<column name="squarePatch_alternate2_fu_620_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="notChoppedPatch_fu_636_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln952_fu_685_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln952_fu_702_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln961_fu_695_p3">select, 0, 0, 32, 1, 32</column>
+<column name="white_space_height_fu_743_p3">select, 0, 0, 33, 1, 33</column>
+<column name="xor_ln949_fu_641_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -136,29 +131,32 @@
 <column name="GDarrayDecoded_ce0">20, 4, 1, 4</column>
 <column name="GDn_points_address0">26, 5, 3, 15</column>
 <column name="GDn_points_ce0">26, 5, 1, 5</column>
-<column name="ap_NS_fsm">601, 118, 1, 118</column>
-<column name="ap_phi_mux_repeat_original_ph_phi_fu_286_p4">9, 2, 1, 2</column>
-<column name="ap_phi_mux_z_top_min_2_ph_phi_fu_391_p4">9, 2, 32, 64</column>
-<column name="complementary_apexZ0_0_reg_409">9, 2, 32, 64</column>
-<column name="counterUpshift_0_reg_354">9, 2, 32, 64</column>
-<column name="counter_0_reg_342">9, 2, 32, 64</column>
-<column name="current_z_top_index_0_reg_330">9, 2, 32, 64</column>
-<column name="grp_fu_1144_ce">9, 2, 1, 2</column>
-<column name="grp_makePatch_alignedToLine_fu_504_apexZ0">14, 3, 32, 96</column>
-<column name="grp_makePatch_alignedToLine_fu_504_leftRight">14, 3, 1, 3</column>
-<column name="grp_makePatch_alignedToLine_fu_504_p_read">14, 3, 32, 96</column>
-<column name="grp_makePatch_alignedToLine_fu_504_z_top">14, 3, 32, 96</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1148_ap_ce">14, 3, 1, 3</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1156_ap_ce">14, 3, 1, 3</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531_ap_ce">14, 3, 1, 3</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531_i">9, 2, 3, 6</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531_j">9, 2, 3, 6</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531_k">9, 2, 3, 6</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531_z_i">20, 4, 32, 128</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_531_z_j">9, 2, 32, 64</column>
-<column name="i_reg_270">9, 2, 3, 6</column>
+<column name="ap_NS_fsm">177, 40, 1, 40</column>
+<column name="ap_phi_mux_repeat_original_ph_phi_fu_280_p4">9, 2, 1, 2</column>
+<column name="ap_phi_mux_z_top_min_2_ph_phi_fu_385_p4">9, 2, 32, 64</column>
+<column name="complementary_apexZ0_0_reg_403">9, 2, 32, 64</column>
+<column name="counterUpshift_0_reg_348">9, 2, 32, 64</column>
+<column name="counter_0_reg_336">9, 2, 32, 64</column>
+<column name="current_z_top_index_0_reg_324">9, 2, 32, 64</column>
+<column name="grp_fu_1068_ce">9, 2, 1, 2</column>
+<column name="grp_makePatch_alignedToLine_fu_506_apexZ0">14, 3, 32, 96</column>
+<column name="grp_makePatch_alignedToLine_fu_506_leftRight">14, 3, 1, 3</column>
+<column name="grp_makePatch_alignedToLine_fu_506_p_read">14, 3, 32, 96</column>
+<column name="grp_makePatch_alignedToLine_fu_506_z_top">14, 3, 32, 96</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1072_ap_ce">9, 2, 1, 2</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_1072_ap_start">9, 2, 1, 2</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537_ap_ce">9, 2, 1, 2</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537_ap_start">9, 2, 1, 2</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537_i">9, 2, 3, 6</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537_j">9, 2, 3, 6</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537_k">9, 2, 3, 6</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537_z_i">9, 2, 32, 64</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537_z_j">20, 4, 32, 128</column>
+<column name="i_reg_264">9, 2, 3, 6</column>
 <column name="n_patches_o">20, 4, 8, 32</column>
 <column name="n_patches_o_ap_vld">20, 4, 1, 4</column>
+<column name="output_patch_stream_V_din">14, 3, 64, 192</column>
+<column name="output_patch_stream_V_write">20, 4, 1, 4</column>
 <column name="patches_parameters_address0">54, 10, 7, 70</column>
 <column name="patches_parameters_address1">37, 7, 7, 49</column>
 <column name="patches_parameters_ce0">31, 6, 1, 6</column>
@@ -166,73 +164,73 @@
 <column name="patches_parameters_d0">20, 4, 32, 128</column>
 <column name="patches_parameters_we0">20, 4, 1, 4</column>
 <column name="patches_parameters_we1">9, 2, 1, 2</column>
-<column name="patches_superpoints_address0">31, 6, 12, 72</column>
-<column name="patches_superpoints_address1">26, 5, 12, 60</column>
+<column name="patches_superpoints_address0">31, 6, 8, 48</column>
+<column name="patches_superpoints_address1">31, 6, 8, 48</column>
 <column name="patches_superpoints_ce0">31, 6, 1, 6</column>
-<column name="patches_superpoints_ce1">26, 5, 1, 5</column>
+<column name="patches_superpoints_ce1">31, 6, 1, 6</column>
 <column name="patches_superpoints_d0">20, 4, 64, 256</column>
+<column name="patches_superpoints_d1">20, 4, 64, 256</column>
 <column name="patches_superpoints_we0">20, 4, 1, 4</column>
-<column name="ppl_assign_0_reg_399">9, 2, 32, 64</column>
-<column name="previous_white_space_height_0_reg_318">9, 2, 64, 128</column>
-<column name="previous_z_top_min_V_0_reg_366">9, 2, 32, 64</column>
-<column name="reg_573">9, 2, 32, 64</column>
-<column name="reg_580">9, 2, 32, 64</column>
-<column name="repeat_original_reg_295">9, 2, 1, 2</column>
-<column name="white_space_height_0_reg_308">9, 2, 64, 128</column>
-<column name="z_top_min_0_reg_378">9, 2, 32, 64</column>
-<column name="z_top_min_2_ph_reg_388">9, 2, 32, 64</column>
-<column name="z_top_min_2_reg_419">9, 2, 32, 64</column>
+<column name="patches_superpoints_we1">20, 4, 1, 4</column>
+<column name="ppl_assign_0_reg_393">9, 2, 32, 64</column>
+<column name="previous_white_space_height_0_reg_312">9, 2, 64, 128</column>
+<column name="previous_z_top_min_V_0_reg_360">9, 2, 32, 64</column>
+<column name="reg_577">9, 2, 32, 64</column>
+<column name="reg_584">9, 2, 32, 64</column>
+<column name="repeat_original_reg_289">9, 2, 1, 2</column>
+<column name="white_space_height_0_reg_302">9, 2, 64, 128</column>
+<column name="z_top_min_0_reg_372">9, 2, 32, 64</column>
+<column name="z_top_min_2_ph_reg_382">9, 2, 32, 64</column>
+<column name="z_top_min_2_reg_413">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln794_reg_968">32, 0, 32, 0</column>
-<column name="add_ln865_reg_998">3, 0, 3, 0</column>
-<column name="add_ln891_reg_1030">8, 0, 12, 4</column>
-<column name="add_ln901_reg_1035">8, 0, 12, 4</column>
-<column name="and_ln889_1_reg_1026">1, 0, 1, 0</column>
-<column name="ap_CS_fsm">117, 0, 117, 0</column>
-<column name="complementary_apexZ0_0_reg_409">32, 0, 32, 0</column>
-<column name="counterUpshift_0_reg_354">32, 0, 32, 0</column>
-<column name="counter_0_reg_342">32, 0, 32, 0</column>
-<column name="current_z_top_index_0_reg_330">32, 0, 32, 0</column>
-<column name="grp_areWedgeSuperPointsEqual_fu_561_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_getSolveNextPatchPairWhileCondition_fu_545_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_makePatch_alignedToLine_fu_504_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_makeThirdPatch_fu_444_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_solveComplmentaryPatch_fu_471_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_reg_270">3, 0, 3, 0</column>
-<column name="icmp_ln860_reg_985">1, 0, 1, 0</column>
-<column name="icmp_ln865_reg_994">1, 0, 1, 0</column>
-<column name="icmp_ln880_reg_1021">1, 0, 1, 0</column>
-<column name="icmp_ln886_reg_1011">1, 0, 1, 0</column>
-<column name="icmp_ln892_reg_1050">1, 0, 1, 0</column>
-<column name="lastPatchIndex_1_reg_1139">8, 0, 8, 0</column>
-<column name="lastPatchIndex_reg_978">5, 0, 5, 0</column>
-<column name="madeComplementaryPatch_reg_430">1, 0, 1, 0</column>
-<column name="nPatchesAtOriginal_reg_973">8, 0, 8, 0</column>
-<column name="ppl_assign4_reg_911">32, 0, 32, 0</column>
-<column name="ppl_assign_0_reg_399">32, 0, 32, 0</column>
-<column name="ppl_assign_s_reg_1074">32, 0, 32, 0</column>
-<column name="previous_white_space_height_0_reg_318">64, 0, 64, 0</column>
-<column name="previous_z_top_min_V_0_reg_366">32, 0, 32, 0</column>
-<column name="reg_573">32, 0, 32, 0</column>
-<column name="reg_580">32, 0, 32, 0</column>
-<column name="reg_587">32, 0, 32, 0</column>
-<column name="repeat_original_ph_reg_282">1, 0, 1, 0</column>
-<column name="repeat_original_reg_295">1, 0, 1, 0</column>
-<column name="ret_1_reg_1086">33, 0, 33, 0</column>
-<column name="ret_reg_1080">33, 0, 33, 0</column>
-<column name="select_ln892_reg_1068">32, 0, 32, 0</column>
-<column name="squarePatch_alternate2_reg_1016">1, 0, 1, 0</column>
-<column name="thirdLastPatchIndex_reg_989">5, 0, 5, 0</column>
-<column name="tmp_s_reg_1097">1, 0, 1, 0</column>
-<column name="trunc_ln69_1_reg_1062">32, 0, 32, 0</column>
-<column name="trunc_ln69_reg_1055">32, 0, 32, 0</column>
-<column name="white_space_height_0_reg_308">64, 0, 64, 0</column>
-<column name="z_top_min_0_reg_378">32, 0, 32, 0</column>
-<column name="z_top_min_2_ph_reg_388">32, 0, 32, 0</column>
-<column name="z_top_min_2_reg_419">32, 0, 32, 0</column>
+<column name="add_ln854_reg_919">32, 0, 32, 0</column>
+<column name="add_ln925_reg_937">3, 0, 3, 0</column>
+<column name="and_ln949_1_reg_965">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">39, 0, 39, 0</column>
+<column name="complementary_apexZ0_0_reg_403">32, 0, 32, 0</column>
+<column name="counterUpshift_0_reg_348">32, 0, 32, 0</column>
+<column name="counter_0_reg_336">32, 0, 32, 0</column>
+<column name="current_z_top_index_0_reg_324">32, 0, 32, 0</column>
+<column name="grp_areWedgeSuperPointsEqual_fu_567_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_getSolveNextPatchPairWhileCondition_fu_551_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_makePatch_alignedToLine_fu_506_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_makeThirdPatch_fu_438_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_solveComplmentaryPatch_fu_469_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_reg_264">3, 0, 3, 0</column>
+<column name="icmp_ln886_reg_950">1, 0, 1, 0</column>
+<column name="icmp_ln920_reg_929">1, 0, 1, 0</column>
+<column name="icmp_ln925_reg_933">1, 0, 1, 0</column>
+<column name="icmp_ln940_reg_960">1, 0, 1, 0</column>
+<column name="icmp_ln952_reg_976">1, 0, 1, 0</column>
+<column name="lastPatchIndex_reg_1058">8, 0, 8, 0</column>
+<column name="madeComplementaryPatch_reg_424">1, 0, 1, 0</column>
+<column name="nPatchesAtOriginal_reg_924">8, 0, 8, 0</column>
+<column name="patches_parameters_load_reg_945">32, 0, 32, 0</column>
+<column name="ppl_assign4_reg_852">32, 0, 32, 0</column>
+<column name="ppl_assign_0_reg_393">32, 0, 32, 0</column>
+<column name="ppl_assign_s_reg_993">32, 0, 32, 0</column>
+<column name="previous_white_space_height_0_reg_312">64, 0, 64, 0</column>
+<column name="previous_z_top_min_V_0_reg_360">32, 0, 32, 0</column>
+<column name="ref_tmp1_reg_1063">32, 0, 32, 0</column>
+<column name="reg_577">32, 0, 32, 0</column>
+<column name="reg_584">32, 0, 32, 0</column>
+<column name="repeat_original_ph_reg_276">1, 0, 1, 0</column>
+<column name="repeat_original_reg_289">1, 0, 1, 0</column>
+<column name="ret_1_reg_1005">33, 0, 33, 0</column>
+<column name="ret_reg_999">33, 0, 33, 0</column>
+<column name="select_ln952_reg_987">32, 0, 32, 0</column>
+<column name="squarePatch_alternate2_reg_955">1, 0, 1, 0</column>
+<column name="tmp_s_reg_1016">1, 0, 1, 0</column>
+<column name="trunc_ln69_1_reg_981">32, 0, 32, 0</column>
+<column name="trunc_ln69_reg_969">32, 0, 32, 0</column>
+<column name="white_space_height_0_reg_302">64, 0, 64, 0</column>
+<column name="z_top_min_0_reg_372">32, 0, 32, 0</column>
+<column name="z_top_min_2_ph_reg_382">32, 0, 32, 0</column>
+<column name="z_top_min_2_reg_413">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -261,6 +259,9 @@
 <column name="GDn_points_address0">out, 3, ap_memory, GDn_points, array</column>
 <column name="GDn_points_ce0">out, 1, ap_memory, GDn_points, array</column>
 <column name="GDn_points_q0">in, 32, ap_memory, GDn_points, array</column>
+<column name="output_patch_stream_V_din">out, 64, ap_fifo, output_patch_stream_V, pointer</column>
+<column name="output_patch_stream_V_full_n">in, 1, ap_fifo, output_patch_stream_V, pointer</column>
+<column name="output_patch_stream_V_write">out, 1, ap_fifo, output_patch_stream_V, pointer</column>
 <column name="apexZ0">in, 32, ap_none, apexZ0, scalar</column>
 <column name="ppl">in, 32, ap_none, ppl, scalar</column>
 <column name="p_read1">in, 32, ap_none, p_read1, scalar</column>
@@ -270,13 +271,15 @@
 <column name="GDarrayDecoded_address0">out, 12, ap_memory, GDarrayDecoded, array</column>
 <column name="GDarrayDecoded_ce0">out, 1, ap_memory, GDarrayDecoded, array</column>
 <column name="GDarrayDecoded_q0">in, 32, ap_memory, GDarrayDecoded, array</column>
-<column name="patches_superpoints_address0">out, 12, ap_memory, patches_superpoints, array</column>
+<column name="patches_superpoints_address0">out, 8, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_ce0">out, 1, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_we0">out, 1, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_d0">out, 64, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_q0">in, 64, ap_memory, patches_superpoints, array</column>
-<column name="patches_superpoints_address1">out, 12, ap_memory, patches_superpoints, array</column>
+<column name="patches_superpoints_address1">out, 8, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_ce1">out, 1, ap_memory, patches_superpoints, array</column>
+<column name="patches_superpoints_we1">out, 1, ap_memory, patches_superpoints, array</column>
+<column name="patches_superpoints_d1">out, 64, ap_memory, patches_superpoints, array</column>
 <column name="patches_superpoints_q1">in, 64, ap_memory, patches_superpoints, array</column>
 <column name="patches_parameters_address0">out, 7, ap_memory, patches_parameters, array</column>
 <column name="patches_parameters_ce0">out, 1, ap_memory, patches_parameters, array</column>

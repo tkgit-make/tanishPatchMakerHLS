@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 121 \
+    id 120 \
     name GDn_points \
     reset_level 1 \
     sync_rst true \
@@ -56,7 +56,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir IO \
     corename patches_superpoints \
     op interface \
-    ports { patches_superpoints_address0 { O 12 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 64 vector } patches_superpoints_q0 { I 64 vector } patches_superpoints_address1 { O 12 vector } patches_superpoints_ce1 { O 1 bit } patches_superpoints_q1 { I 64 vector } } \
+    ports { patches_superpoints_address0 { O 8 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 64 vector } patches_superpoints_q0 { I 64 vector } patches_superpoints_address1 { O 8 vector } patches_superpoints_ce1 { O 1 bit } patches_superpoints_we1 { O 1 bit } patches_superpoints_d1 { O 64 vector } patches_superpoints_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints'"
@@ -86,7 +86,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 120 \
+    id 119 \
     name n_patches \
     type other \
     dir IO \
@@ -95,6 +95,21 @@ eval "cg_default_interface_gen_dc { \
     corename dc_n_patches \
     op interface \
     ports { n_patches_i { I 8 vector } n_patches_o { O 8 vector } n_patches_o_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 121 \
+    name output_patch_stream_V \
+    type fifo \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_output_patch_stream_V \
+    op interface \
+    ports { output_patch_stream_V_din { O 64 vector } output_patch_stream_V_full_n { I 1 bit } output_patch_stream_V_write { O 1 bit } } \
 } "
 }
 

@@ -64,10 +64,10 @@
 
 <Node id="6" bw="0" op_0_bw="64">
 <![CDATA[
-:3 %ret_ln310 = ret i64 %ret
+:3 %ret_ln312 = ret i64 %ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln310"/></StgValue>
+<StgValue><ssdm name="ret_ln312"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -98,7 +98,7 @@
 </dataflow>
 <dataflow id="17" from="z_read" to="ret" fromId="2" toId="4">
 </dataflow>
-<dataflow id="18" from="ret" to="ret_ln310" fromId="4" toId="5">
+<dataflow id="18" from="ret" to="ret_ln312" fromId="4" toId="5">
 </dataflow>
 </dataflows>
 

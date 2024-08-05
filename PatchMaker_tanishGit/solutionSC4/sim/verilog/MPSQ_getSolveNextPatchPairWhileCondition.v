@@ -27,9 +27,8 @@ module MPSQ_getSolveNextPatchPairWhileCondition (
         ap_return
 );
 
-parameter    ap_ST_fsm_state1 = 3'd1;
-parameter    ap_ST_fsm_state2 = 3'd2;
-parameter    ap_ST_fsm_state3 = 3'd4;
+parameter    ap_ST_fsm_state1 = 2'd1;
+parameter    ap_ST_fsm_state2 = 2'd2;
 
 input   ap_clk;
 input   ap_rst;
@@ -44,7 +43,7 @@ input  [0:0] repeat_original;
 input  [63:0] white_space_height;
 input  [63:0] previous_white_space_height;
 input  [31:0] current_z_top_index;
-output  [8:0] patches_parameters_address0;
+output  [6:0] patches_parameters_address0;
 output   patches_parameters_ce0;
 input  [31:0] patches_parameters_q0;
 output  [0:0] ap_return;
@@ -56,36 +55,34 @@ reg GDn_points_ce0;
 reg patches_parameters_ce0;
 reg[0:0] ap_return;
 
-(* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire    ap_CS_fsm_state2;
 wire   [63:0] sub_ln180_fu_98_p2;
-reg   [63:0] sub_ln180_reg_213;
-wire   [0:0] icmp_ln979_1_fu_104_p2;
-reg   [0:0] icmp_ln979_1_reg_223;
-wire    ap_CS_fsm_state3;
-wire   [0:0] tmp_fu_115_p3;
-wire   [0:0] icmp_ln973_fu_110_p2;
-wire   [0:0] xor_ln973_fu_123_p2;
-wire   [0:0] tmp_28_fu_135_p3;
-wire   [63:0] select_ln180_fu_142_p3;
-wire   [0:0] icmp_ln979_2_fu_160_p2;
-wire   [0:0] icmp_ln979_fu_154_p2;
-wire   [0:0] and_ln979_fu_165_p2;
-wire   [0:0] or_ln979_fu_170_p2;
-wire   [0:0] and_ln973_fu_129_p2;
-wire   [0:0] or_ln979_1_fu_176_p2;
-wire   [0:0] or_ln979_2_fu_182_p2;
-wire   [0:0] exp4_fu_148_p2;
-wire   [0:0] xor_ln979_fu_188_p2;
-wire   [0:0] and_ln979_1_fu_194_p2;
+reg   [63:0] sub_ln180_reg_214;
+wire    ap_CS_fsm_state2;
+wire   [0:0] tmp_fu_109_p3;
+wire   [0:0] icmp_ln1030_fu_104_p2;
+wire   [0:0] xor_ln1030_fu_117_p2;
+wire   [0:0] tmp_21_fu_129_p3;
+wire   [63:0] select_ln180_fu_136_p3;
+wire   [0:0] icmp_ln1036_2_fu_160_p2;
+wire   [0:0] icmp_ln1036_1_fu_154_p2;
+wire   [0:0] icmp_ln1036_fu_148_p2;
+wire   [0:0] and_ln1036_fu_165_p2;
+wire   [0:0] or_ln1036_fu_171_p2;
+wire   [0:0] and_ln1030_fu_123_p2;
+wire   [0:0] or_ln1036_1_fu_177_p2;
+wire   [0:0] or_ln1036_2_fu_183_p2;
+wire   [0:0] exp4_fu_142_p2;
+wire   [0:0] xor_ln1036_fu_189_p2;
+wire   [0:0] and_ln1036_1_fu_195_p2;
 reg   [0:0] ap_return_preg;
-reg   [2:0] ap_NS_fsm;
+reg   [1:0] ap_NS_fsm;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 3'd1;
+#0 ap_CS_fsm = 2'd1;
 #0 ap_return_preg = 1'd0;
 end
 
@@ -101,21 +98,20 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_preg <= 1'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state3)) begin
-            ap_return_preg <= and_ln979_1_fu_194_p2;
+        if ((1'b1 == ap_CS_fsm_state2)) begin
+            ap_return_preg <= and_ln1036_1_fu_195_p2;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        icmp_ln979_1_reg_223 <= icmp_ln979_1_fu_104_p2;
-        sub_ln180_reg_213 <= sub_ln180_fu_98_p2;
+    if ((1'b1 == ap_CS_fsm_state1)) begin
+        sub_ln180_reg_214 <= sub_ln180_fu_98_p2;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
+    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         GDn_points_ce0 = 1'b1;
     end else begin
         GDn_points_ce0 = 1'b0;
@@ -123,7 +119,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state2) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -139,7 +135,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -147,8 +143,8 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        ap_return = and_ln979_1_fu_194_p2;
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        ap_return = and_ln1036_1_fu_195_p2;
     end else begin
         ap_return = ap_return_preg;
     end
@@ -172,9 +168,6 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            ap_NS_fsm = ap_ST_fsm_state3;
-        end
-        ap_ST_fsm_state3 : begin
             ap_NS_fsm = ap_ST_fsm_state1;
         end
         default : begin
@@ -185,46 +178,44 @@ end
 
 assign GDn_points_address0 = 64'd4;
 
-assign and_ln973_fu_129_p2 = (xor_ln973_fu_123_p2 & icmp_ln973_fu_110_p2);
+assign and_ln1030_fu_123_p2 = (xor_ln1030_fu_117_p2 & icmp_ln1030_fu_104_p2);
 
-assign and_ln979_1_fu_194_p2 = (xor_ln979_fu_188_p2 & exp4_fu_148_p2);
+assign and_ln1036_1_fu_195_p2 = (xor_ln1036_fu_189_p2 & exp4_fu_142_p2);
 
-assign and_ln979_fu_165_p2 = (icmp_ln979_2_fu_160_p2 & icmp_ln979_1_reg_223);
+assign and_ln1036_fu_165_p2 = (icmp_ln1036_2_fu_160_p2 & icmp_ln1036_1_fu_154_p2);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
-assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
+assign exp4_fu_142_p2 = (($signed(GDn_points_q0) > $signed(current_z_top_index)) ? 1'b1 : 1'b0);
 
-assign exp4_fu_148_p2 = (($signed(GDn_points_q0) > $signed(current_z_top_index)) ? 1'b1 : 1'b0);
+assign icmp_ln1030_fu_104_p2 = (($signed(white_space_height) < $signed(64'd1)) ? 1'b1 : 1'b0);
 
-assign icmp_ln973_fu_110_p2 = (($signed(white_space_height) < $signed(64'd1)) ? 1'b1 : 1'b0);
+assign icmp_ln1036_1_fu_154_p2 = (($signed(patches_parameters_q0) < $signed(32'd4244967197)) ? 1'b1 : 1'b0);
 
-assign icmp_ln979_1_fu_104_p2 = (($signed(patches_parameters_q0) < $signed(32'd4244967197)) ? 1'b1 : 1'b0);
+assign icmp_ln1036_2_fu_160_p2 = (($signed(white_space_height) < $signed(64'd6)) ? 1'b1 : 1'b0);
 
-assign icmp_ln979_2_fu_160_p2 = (($signed(white_space_height) < $signed(64'd6)) ? 1'b1 : 1'b0);
+assign icmp_ln1036_fu_148_p2 = (($signed(select_ln180_fu_136_p3) < $signed(64'd6)) ? 1'b1 : 1'b0);
 
-assign icmp_ln979_fu_154_p2 = (($signed(select_ln180_fu_142_p3) < $signed(64'd6)) ? 1'b1 : 1'b0);
+assign or_ln1036_1_fu_177_p2 = (or_ln1036_fu_171_p2 | and_ln1030_fu_123_p2);
 
-assign or_ln979_1_fu_176_p2 = (or_ln979_fu_170_p2 | and_ln973_fu_129_p2);
+assign or_ln1036_2_fu_183_p2 = (repeat_original | or_ln1036_1_fu_177_p2);
 
-assign or_ln979_2_fu_182_p2 = (repeat_original | or_ln979_1_fu_176_p2);
+assign or_ln1036_fu_171_p2 = (icmp_ln1036_fu_148_p2 | and_ln1036_fu_165_p2);
 
-assign or_ln979_fu_170_p2 = (icmp_ln979_fu_154_p2 | and_ln979_fu_165_p2);
+assign patches_parameters_address0 = 64'd13;
 
-assign patches_parameters_address0 = 64'd61;
-
-assign select_ln180_fu_142_p3 = ((tmp_28_fu_135_p3[0:0] == 1'b1) ? sub_ln180_reg_213 : white_space_height);
+assign select_ln180_fu_136_p3 = ((tmp_21_fu_129_p3[0:0] == 1'b1) ? sub_ln180_reg_214 : white_space_height);
 
 assign sub_ln180_fu_98_p2 = (64'd0 - white_space_height);
 
-assign tmp_28_fu_135_p3 = white_space_height[32'd63];
+assign tmp_21_fu_129_p3 = white_space_height[32'd63];
 
-assign tmp_fu_115_p3 = previous_white_space_height[32'd63];
+assign tmp_fu_109_p3 = previous_white_space_height[32'd63];
 
-assign xor_ln973_fu_123_p2 = (tmp_fu_115_p3 ^ 1'd1);
+assign xor_ln1030_fu_117_p2 = (tmp_fu_109_p3 ^ 1'd1);
 
-assign xor_ln979_fu_188_p2 = (or_ln979_2_fu_182_p2 ^ 1'd1);
+assign xor_ln1036_fu_189_p2 = (or_ln1036_2_fu_183_p2 ^ 1'd1);
 
 endmodule //MPSQ_getSolveNextPatchPairWhileCondition

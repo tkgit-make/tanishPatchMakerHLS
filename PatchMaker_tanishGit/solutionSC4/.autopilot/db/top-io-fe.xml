@@ -21,9 +21,9 @@
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="4" access_type="w" src_name="patches_superpointsOUTPUT" src_type="ap_int&lt;64&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="2560">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="patches_superpointsOUTPUT" hw_bitwidth="64" hw_size_or_depth="2560">
-          <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
+      <arg id="4" access_type="w" src_name="output_patch_stream" src_type="stream&lt;ap_int&lt;64&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="FIFO" hw_name="output_patch_stream_V" hw_bitwidth="64" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0"/>
         </hw>
       </arg>
     </args>

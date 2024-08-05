@@ -8,4 +8,4 @@ int ppl,
 volatile void* n_patches,
 volatile void* GDarray,
 volatile void* GDn_points,
-volatile void* patches_superpointsOUTPUT);
+hls::stream<int > output_patch_stream);

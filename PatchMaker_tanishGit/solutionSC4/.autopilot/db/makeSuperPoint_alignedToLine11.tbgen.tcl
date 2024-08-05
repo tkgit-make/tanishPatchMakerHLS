@@ -104,11 +104,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "leftRight", "Type" : "None", "Direction" : "I"},
 			{"Name" : "init_patch", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "GDarrayDecoded", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "radiiDivisionList_4", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "radiiDivisionList_1_4", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "trapezoid_edges_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "3", "SubInstance" : "grp_mSP_findLRBounds_fu_261", "Port" : "trapezoid_edges_V"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.radiiDivisionList_4_U", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.radiiDivisionList_1_4_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.row_list_V_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findLRBounds_fu_261", "Parent" : "0", "Child" : ["4"],
 		"CDFG" : "mSP_findLRBounds",
@@ -146,7 +146,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "row_list_size", "Type" : "None", "Direction" : "I"},
 			{"Name" : "projectionToRow", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_33ns_33s_64_3_1_U22", "Parent" : "0"}]}
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_33ns_33s_64_3_1_U21", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -159,7 +159,7 @@ set ArgLastReadFirstWriteLatency {
 		leftRight {Type I LastRead 1 FirstWrite -1}
 		init_patch {Type O LastRead -1 FirstWrite 16}
 		GDarrayDecoded {Type I LastRead 14 FirstWrite -1}
-		radiiDivisionList_4 {Type I LastRead -1 FirstWrite -1}
+		radiiDivisionList_1_4 {Type I LastRead -1 FirstWrite -1}
 		trapezoid_edges_V {Type I LastRead -1 FirstWrite -1}}
 	mSP_findLRBounds {
 		i {Type I LastRead 0 FirstWrite -1}

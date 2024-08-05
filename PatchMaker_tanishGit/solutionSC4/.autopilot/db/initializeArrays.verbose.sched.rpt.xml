@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'initializeArrays'" level="0">
-<item name = "Date">Sat Aug  3 00:45:30 2024
+<item name = "Date">Mon Aug  5 17:47:56 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2638, 2638, 7.914 us, 7.914 us, 2638, 2638, none</column>
+<column name="">317, 317, 0.951 us, 0.951 us, 317, 317, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- initArraysSPloop1_initArraysSPloop2_initArraysSPloop3">2561, 2561, 3, 1, 1, 2560, yes</column>
+<column name="- initArraysSPloop1_initArraysSPloop2_initArraysSPloop3">240, 240, 2, 1, 1, 240, yes</column>
 <column name="- initArraysPPloop1_initArraysPPloop3_initArraysPPloop4">73, 73, 3, 1, 1, 72, yes</column>
 </table>
 </item>

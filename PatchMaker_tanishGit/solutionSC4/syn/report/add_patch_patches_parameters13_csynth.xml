@@ -32,7 +32,7 @@
 <Interval-max>240</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_316_1>
+<VITIS_LOOP_318_1>
 <TripCount>2</TripCount>
 <Latency>160</Latency>
 <AbsoluteTimeLatency>480</AbsoluteTimeLatency>
@@ -55,7 +55,7 @@
 </add_patch_perPropertyLengthPP0>
 </add_patch_perParallelogramPP0>
 </add_patch_perPropertyTypePP0>
-</VITIS_LOOP_316_1>
+</VITIS_LOOP_318_1>
 <add_patch_perPropertyTypePP1>
 <TripCount>3</TripCount>
 <Latency>78</Latency>

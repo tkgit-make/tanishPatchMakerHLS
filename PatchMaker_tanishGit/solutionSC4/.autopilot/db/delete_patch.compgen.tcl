@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 87 \
+    id 85 \
     name patches_superpoints \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename patches_superpoints \
     op interface \
-    ports { patches_superpoints_address0 { O 12 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 64 vector } patches_superpoints_address1 { O 12 vector } patches_superpoints_ce1 { O 1 bit } patches_superpoints_q1 { I 64 vector } } \
+    ports { patches_superpoints_address0 { O 8 vector } patches_superpoints_ce0 { O 1 bit } patches_superpoints_we0 { O 1 bit } patches_superpoints_d0 { O 64 vector } patches_superpoints_address1 { O 8 vector } patches_superpoints_ce1 { O 1 bit } patches_superpoints_q1 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'patches_superpoints'"
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 88 \
+    id 86 \
     name patches_parameters \
     reset_level 1 \
     sync_rst true \
@@ -48,7 +48,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 84 \
+    id 82 \
     name n_patches \
     type other \
     dir O \
@@ -63,7 +63,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 85 \
+    id 83 \
     name n_patches_read \
     type other \
     dir I \
@@ -78,7 +78,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 86 \
+    id 84 \
     name index \
     type other \
     dir I \
@@ -86,7 +86,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_index \
     op interface \
-    ports { index { I 9 vector } } \
+    ports { index { I 2 vector } } \
 } "
 }
 

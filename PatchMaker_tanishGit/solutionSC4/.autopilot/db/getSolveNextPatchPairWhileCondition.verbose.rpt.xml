@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getSolveNextPatchPairWhileCondition'" level="0">
-<item name = "Date">Sat Aug  3 00:46:49 2024
+<item name = "Date">Mon Aug  5 17:49:18 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -80,20 +80,20 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="sub_ln180_fu_98_p2">-, 0, 0, 71, 1, 64</column>
-<column name="and_ln970_fu_123_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln976_1_fu_195_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln976_fu_165_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln1030_fu_123_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln1036_1_fu_195_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln1036_fu_165_p2">and, 0, 0, 2, 1, 1</column>
 <column name="exp4_fu_142_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln970_fu_104_p2">icmp, 0, 0, 29, 64, 1</column>
-<column name="icmp_ln976_1_fu_154_p2">icmp, 0, 0, 20, 32, 27</column>
-<column name="icmp_ln976_2_fu_160_p2">icmp, 0, 0, 29, 64, 3</column>
-<column name="icmp_ln976_fu_148_p2">icmp, 0, 0, 29, 64, 3</column>
-<column name="or_ln976_1_fu_177_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln976_2_fu_183_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln976_fu_171_p2">or, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln1030_fu_104_p2">icmp, 0, 0, 29, 64, 1</column>
+<column name="icmp_ln1036_1_fu_154_p2">icmp, 0, 0, 20, 32, 27</column>
+<column name="icmp_ln1036_2_fu_160_p2">icmp, 0, 0, 29, 64, 3</column>
+<column name="icmp_ln1036_fu_148_p2">icmp, 0, 0, 29, 64, 3</column>
+<column name="or_ln1036_1_fu_177_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln1036_2_fu_183_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln1036_fu_171_p2">or, 0, 0, 2, 1, 1</column>
 <column name="select_ln180_fu_136_p3">select, 0, 0, 63, 1, 64</column>
-<column name="xor_ln970_fu_117_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln976_fu_189_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln1030_fu_117_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln1036_fu_189_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

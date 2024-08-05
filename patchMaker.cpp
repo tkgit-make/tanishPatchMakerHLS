@@ -368,7 +368,7 @@ void add_patch_patches_parameters(COORDINATE_TYPE wp_parameters[PATCH_PROPERTIES
 	}
 }
 
-void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
+void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream)
 {
 #pragma HLS INLINE OFF
     if (n_patches == 0)
@@ -405,8 +405,8 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
         add_patch_checkDiff:
         for (index_type i = 0; i < MAX_SUPERPOINTS_IN_PATCH; i++)
         {
-            if ((decodeZcoordinate(patches_superpoints[n_patches - 1][i][0]) != wp_superpoints[i][0][1]) ||
-                (decodeZcoordinate(patches_superpoints[n_patches - 1][i][MAX_POINTS_IN_SUPERPOINT - 1]) != wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][1]))
+            if ((decodeZcoordinate(patches_superpoints[0][i][0]) != wp_superpoints[i][0][1]) ||
+                (decodeZcoordinate(patches_superpoints[0][i][MAX_POINTS_IN_SUPERPOINT - 1]) != wp_superpoints[i][MAX_POINTS_IN_SUPERPOINT - 1][1]))
             {
                 different = true;
                 break;
@@ -418,22 +418,60 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
         {
             if (n_patches < MAX_PATCHES)
             {
-                add_patch_perSuperpointSP1:
-                for(int_type a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
-                {
+            	if ((n_patches >= MAX_PATCHES_BUFFER) && (patches_superpoints[MAX_PATCHES_BUFFER - 1][0][0] != 0))
+            	{
+					add_patch_perSuperpointSP1_toSTREAM:
+					for(int_type a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
+					{
+						add_patch_perPointSP1_toSTREAM:
+						for(int_type b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
+						{
+							output_patch_stream.write(patches_superpoints[MAX_PATCHES_BUFFER - 1][a][b]);
+						}
+					}
+            	}
+
+                add_patch_copySPBack:
+                for(int i = MAX_PATCHES_BUFFER - 1; i > 0; i--)
+				{
 #if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
+#pragma HLS UNROLL
 #endif
-                    add_patch_perPointSP1:
-                    for(int_type b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
-                    {
+                	add_patch_copySPBack_perSuperpointSP1:
+					for(int_type a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
+					{
 #if SMALL_CIRCUIT == false
-    #pragma HLS UNROLL
+#pragma HLS UNROLL
 #endif
-                        patches_superpoints[n_patches][a][b] = encodeCoordinates(wp_superpoints[a][b][0], wp_superpoints[a][b][1]);
-                    }
-                }
+						add_patch_copySPBack_perPointSP1:
+						for(int_type b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
+						{
+#if SMALL_CIRCUIT == false
+#pragma HLS UNROLL
+#endif
+							patches_superpoints[i][a][b] = patches_superpoints[i - 1][a][b];
+						}
+					}
+				}
                 
+                add_patch_perSuperpointSP1:
+				for(int_type a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
+				{
+#if SMALL_CIRCUIT == false
+	#pragma HLS UNROLL
+#endif
+					add_patch_perPointSP1:
+					for(int_type b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
+					{
+#if SMALL_CIRCUIT == false
+	#pragma HLS UNROLL
+#endif
+						patches_superpoints[0][a][b] = encodeCoordinates(wp_superpoints[a][b][0], wp_superpoints[a][b][1]);
+					}
+				}
+
+
+
                 add_patch_patches_parameters(wp_parameters, patches_parameters);
                 //cover->all_patches[cover->n_patches] = curr_patch;
                 #if KEEP_DELETED_PATCHES == true
@@ -448,8 +486,8 @@ void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES)
 void delete_patch_patches_parameters(int_type index, int_type n_patches, COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH])
 {
 #pragma HLS INLINE OFF
-	int_type true_index = (n_patches - index) - 1;
-	for (index_type i = true_index; i < MAX_PATCHES_BUFFER - 1; i++)
+
+	for (index_type i = index; i < MAX_PATCHES_BUFFER - 1; i++)
 	{
 		delete_patch_perPropertyTypePP0:
 		for(int_type a = 0; a < PATCH_PROPERTIES; a++)
@@ -511,7 +549,7 @@ void delete_patch(int_type index, index_type &n_patches, GPATCHES)
     #endif
 
     delete_patch_perPatch:
-    for (index_type i = index; i < n_patches - 1; i++)
+    for (index_type i = index; i < MAX_PATCHES_BUFFER - 1; i++)
     {
 #if SMALL_CIRCUIT == false
     #pragma HLS UNROLL
@@ -550,7 +588,7 @@ void delete_patch(int_type index, index_type &n_patches, GPATCHES)
 #if SMALL_CIRCUIT == false
 #pragma HLS UNROLL
 #endif
-			patches_superpoints[n_patches - 1][a][b] = 0;
+			patches_superpoints[MAX_PATCHES_BUFFER - 1][a][b] = 0;
 		}
 	}
 
@@ -596,7 +634,7 @@ void initializeArrays(GPATCHES)
 {
 #pragma HLS INLINE OFF
 	initArraysSPloop1:
-    for(int_type a = 0; a < MAX_PATCHES; a++)
+    for(int_type a = 0; a < MAX_PATCHES_BUFFER; a++)
     {
 //#pragma HLS UNROLL
     	initArraysSPloop2:
@@ -646,9 +684,9 @@ void initializeArrays(GPATCHES)
 }
 
 void MPSQ(int_type ppl, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET],
-		int_type (&GDn_points) [MAX_LAYERS], SPACEPOINT_TYPE (&patches_superpointsOUTPUT)[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT]) // TOP-LEVEL FUNCTION FOR VITIS
+		int_type (&GDn_points) [MAX_LAYERS], hls::stream<SPACEPOINT_TYPE> &output_patch_stream) // TOP-LEVEL FUNCTION FOR VITIS
 {
-	SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT];
+	SPACEPOINT_TYPE patches_superpoints[MAX_PATCHES_BUFFER][MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT];
 #if SMALL_CIRCUIT == false
 	//#pragma HLS DATAFLOW
     #pragma HLS ARRAY_PARTITION variable=patches_superpoints dim=3 complete
@@ -703,7 +741,7 @@ void MPSQ(int_type ppl, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_L
     shadowQuilt_loop:
     while (apexZ0 > trapezoid_edgesNEGATIVE[0]) //consider how this works when we are expanding instead of retracting the trapezoid_edges
     {
-        apexZ0 = solveNextColumn(apexZ0, ppl, fix42, saved_apexZ0, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
+        apexZ0 = solveNextColumn(apexZ0, ppl, fix42, saved_apexZ0, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, output_patch_stream);
         saved_apexZ0 = apexZ0;
 
         #if WHILE_LOOP_CATCHES == true 
@@ -716,23 +754,43 @@ void MPSQ(int_type ppl, index_type &n_patches, SPACEPOINT_TYPE (&GDarray) [MAX_L
         #endif
     }
 
-    finalSPOutputInit_perPatch:
-	for(int_type a = 0; a < MAX_PATCHES; a++)
-	{
-		finalSPOutputInit_perSuperpoint:
-		for(int_type b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
+    finalSPOutputInit_perPatch_PatchSTREAM0:
+    for(int_type a = MAX_PATCHES_BUFFER - 1; a >= 0; a--)
+    {
+    	finalSPOutputInit_perSuperpoint_PatchSTREAM0:
+    	for(int_type b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
 		{
-			finalSPOutputInit_perPoint:
+			finalSPOutputInit_perPoint_PatchSTREAM0:
 			for(int_type c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
 			{
-				patches_superpointsOUTPUT[a][b][c] = patches_superpoints[a][b][c];
+				output_patch_stream.write(patches_superpoints[a][b][c]);
 			}
+		}
+    }
+
+	SPACEPOINT_TYPE dummyPatch[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
+	for(int_type b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
+	{
+		for(int_type c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+		{
+			dummyPatch[b][c] = 0;
+		}
+	}
+	dummyPatch[0][0] = 0;
+
+	finalSPOutputInit_perSuperpoint_PatchSTREAMD:
+	for(int_type b = 0; b < MAX_SUPERPOINTS_IN_PATCH; b++)
+	{
+		finalSPOutputInit_perPoint_PatchSTREAMD:
+		for(int_type c = 0; c < MAX_POINTS_IN_SUPERPOINT; c++)
+		{
+			output_patch_stream.write(dummyPatch[b][c]);
 		}
 	}
 
 }
 
-COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
+COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream)
 {
 #pragma HLS INLINE OFF
     COORDINATE_TYPE z_top_min = static_cast<COORDINATE_TYPE>(-top_layer_lim);
@@ -760,7 +818,7 @@ COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42
     while(getSolveNextColumnWhileConditional(c_corner, nPatchesInColumn, projectionOfCornerToBeam))
     {
         solveNextPatchPair(apexZ0, ppl, fix42, saved_apexZ0, nPatchesInColumn, c_corner, projectionOfCornerToBeam,
-        		z_top_min, z_top_max, complementary_apexZ0, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
+        		z_top_min, z_top_max, complementary_apexZ0, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, output_patch_stream);
 
         #if WHILE_LOOP_CATCHES == true 
             if (loopCounter > 25)
@@ -790,7 +848,7 @@ bool getSolveNextColumnWhileConditional(COORDINATE_TYPE c_corner, int_type nPatc
 
 void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE &saved_apexZ0,
 		int_type &nPatchesInColumn, COORDINATE_TYPE &c_corner, COORDINATE_TYPE &projectionOfCornerToBeam, COORDINATE_TYPE &z_top_min,
-		COORDINATE_TYPE &z_top_max, COORDINATE_TYPE &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES)
+		COORDINATE_TYPE &z_top_max, COORDINATE_TYPE &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream)
 {
 #pragma HLS INLINE OFF
     nPatchesInColumn++;
@@ -799,15 +857,15 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDI
     #endif
 
     makePatch_alignedToLine(apexZ0, z_top_max, ppl, false, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints,
-    		patches_parameters);
+    		patches_parameters, output_patch_stream);
 
 
     index_type lastPatchIndex = n_patches - 1;
 
     #if PRINT_OUTS == true
         printf("top layer from %ld to %ld z_top_max: %ld\n",
-                patches_superpoints[lastPatchIndex][MAX_LAYERS - 1][2][2][0],
-                patches_superpoints[lastPatchIndex][MAX_LAYERS - 1][2][1][0],
+                patches_superpoints[0][MAX_LAYERS - 1][2][2][0],
+                patches_superpoints[0][MAX_LAYERS - 1][2][1][0],
                 z_top_max);
         printf("original: [%ld, %ld] for patch %d\n",
                 patches_parameters[0][2][0][0],
@@ -830,12 +888,12 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDI
             index_type j = i + 1;
             printf("%d superpoint: %ld %ld shadowTop from L1Max: %ld %ld from L1 min: %ld %ld\n",
                     j,
-                    patches_superpoints[lastPatchIndex][i][2][1][0],
-                    patches_superpoints[lastPatchIndex][i][2][2][0],
-                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][2][0], patches_superpoints[lastPatchIndex][i][2][1][0], 1, j, MAX_LAYERS),
-                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][2][0], patches_superpoints[lastPatchIndex][i][2][2][0], 1, j, MAX_LAYERS),
-                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][1][0], patches_superpoints[lastPatchIndex][i][2][1][0], 1, j, MAX_LAYERS),
-                    straightLineProjectorFromLayerIJtoK(patches_superpoints[lastPatchIndex][0][2][1][0], patches_superpoints[lastPatchIndex][i][2][2][0], 1, j, MAX_LAYERS));
+                    patches_superpoints[0][i][2][1][0],
+                    patches_superpoints[0][i][2][2][0],
+                    straightLineProjectorFromLayerIJtoK(patches_superpoints[0][0][2][2][0], patches_superpoints[0][i][2][1][0], 1, j, MAX_LAYERS),
+                    straightLineProjectorFromLayerIJtoK(patches_superpoints[0][0][2][2][0], patches_superpoints[0][i][2][2][0], 1, j, MAX_LAYERS),
+                    straightLineProjectorFromLayerIJtoK(patches_superpoints[0][0][2][1][0], patches_superpoints[0][i][2][1][0], 1, j, MAX_LAYERS),
+                    straightLineProjectorFromLayerIJtoK(patches_superpoints[0][0][2][1][0], patches_superpoints[0][i][2][2][0], 1, j, MAX_LAYERS));
         }
     #endif
 
@@ -851,11 +909,11 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDI
     /*
     if (cover->n_patches > 2) {
         int_type thirdLastPatchIndex = lastPatchIndex - 2;
-        repeat_original = (cover->patches[lastPatchIndex].superpoints[MAX_LAYERS - 1] == cover->patches[thirdLastPatchIndex].superpoints[MAX_LAYERS - 1]) &&
-                (cover->patches[lastPatchIndex].superpoints[0] == cover->patches[thirdLastPatchIndex].superpoints[0]) &&
-                (cover->patches[lastPatchIndex].superpoints[1] == cover->patches[thirdLastPatchIndex].superpoints[1]) &&
-                (cover->patches[lastPatchIndex].superpoints[2] == cover->patches[thirdLastPatchIndex].superpoints[2]) &&
-                (cover->patches[lastPatchIndex].superpoints[3] == cover->patches[thirdLastPatchIndex].superpoints[3]);
+        repeat_original = (cover->patches[0].superpoints[MAX_LAYERS - 1] == cover->patches[2].superpoints[MAX_LAYERS - 1]) &&
+                (cover->patches[0].superpoints[0] == cover->patches[2].superpoints[0]) &&
+                (cover->patches[0].superpoints[1] == cover->patches[2].superpoints[1]) &&
+                (cover->patches[0].superpoints[2] == cover->patches[2].superpoints[2]) &&
+                (cover->patches[0].superpoints[3] == cover->patches[2].superpoints[3]);
     }
     */
     // dynamic version below
@@ -866,7 +924,7 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDI
         solveNextPatchPair_superPointEqualCheck:
         for (index_type i = 0; i < MAX_SUPERPOINTS_IN_PATCH; i++)
         { // iterating over the first (five) superpoints
-            if (!areWedgeSuperPointsEqual(patches_superpoints[lastPatchIndex][i], patches_superpoints[thirdLastPatchIndex][i]))
+            if (!areWedgeSuperPointsEqual(patches_superpoints[0][i], patches_superpoints[2][i]))
             {
                 repeat_original = false; // if any pair of superpoints don't match, set to false
                 break;                   // no need to check further if a mismatch is found
@@ -890,7 +948,7 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDI
 
     if (!notChoppedPatch && (patches_parameters[0][1][2][1] > trapezoid_edgesNEGATIVE[MAX_LAYERS - 1]) && ((static_cast<long_type>(projectionOfCornerToBeam) < beam_axis_lim)))
     {
-        complementary_apexZ0 = decodeZcoordinate(patches_superpoints[lastPatchIndex][0][0]);
+        complementary_apexZ0 = decodeZcoordinate(patches_superpoints[0][0][0]);
         if (patches_parameters[0][2][3][0] && !repeat_original)
         {
             z_top_min = patches_parameters[0][1][3][1];
@@ -898,12 +956,12 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDI
         else
         {
             #if PRINT_OUTS == true
-                printf("z_top_min before: %ld superpoints[self.env.MAX_LAYERS-1][2][1][0]: %ld\n", z_top_min, patches_superpoints[lastPatchIndex][MAX_LAYERS - 1][2][1][0]);
+                printf("z_top_min before: %ld superpoints[self.env.MAX_LAYERS-1][2][1][0]: %ld\n", z_top_min, patches_superpoints[0][MAX_LAYERS - 1][2][1][0]);
             #endif
-                z_top_min = max(static_cast<COORDINATE_TYPE>(-top_layer_lim), decodeZcoordinate(patches_superpoints[lastPatchIndex][MAX_LAYERS - 1][0]));
+                z_top_min = max(static_cast<COORDINATE_TYPE>(-top_layer_lim), decodeZcoordinate(patches_superpoints[0][MAX_LAYERS - 1][0]));
         }
 
-        makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
+        makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, output_patch_stream);
 
         // updating the last patch index because makePatch_alignedToLine will add more patches to the patches array. Should revisit after writing method
         // makePatch_alignedToLine will call the add patch method, so we must get a new last patch index.
@@ -931,7 +989,7 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDI
         while (getSolveNextPatchPairWhileCondition(repeat_patch, repeat_original, white_space_height,
                                                    previous_white_space_height, current_z_top_index, GDn_points, patches_parameters))
         {
-            solveComplmentaryPatch(previous_white_space_height, ppl, fix42, nPatchesAtOriginal, previous_z_top_min, complementary_apexZ0, white_space_height, lastPatchIndex, original_c, original_d, complementary_a, complementary_b, current_z_top_index, counter, counterUpshift, z_top_min, repeat_patch, repeat_original, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
+            solveComplmentaryPatch(previous_white_space_height, ppl, fix42, nPatchesAtOriginal, previous_z_top_min, complementary_apexZ0, white_space_height, lastPatchIndex, original_c, original_d, complementary_a, complementary_b, current_z_top_index, counter, counterUpshift, z_top_min, repeat_patch, repeat_original, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, output_patch_stream);
             #if WHILE_LOOP_CATCHES == true
                 if(counter > 25)
                 {
@@ -951,7 +1009,7 @@ void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDI
 
     if (madeComplementaryPatch) // Create separate function for this
     {
-        makeThirdPatch(lastPatchIndex, z_top_min, z_top_max, complementary_apexZ0, apexZ0, ppl, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
+        makeThirdPatch(lastPatchIndex, z_top_min, z_top_max, complementary_apexZ0, apexZ0, ppl, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, output_patch_stream);
     }
 
     z_top_max = c_corner;
@@ -986,32 +1044,32 @@ bool getSolveNextPatchPairWhileCondition(bool repeat_patch, bool repeat_original
     */
 }
 
-void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDINATE_TYPE z_top_max, COORDINATE_TYPE complementary_apexZ0, COORDINATE_TYPE apexZ0, int_type ppl, index_type &n_patches, GDARRAY, GPATCHES)
+void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDINATE_TYPE z_top_max, COORDINATE_TYPE complementary_apexZ0, COORDINATE_TYPE apexZ0, int_type ppl, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream)
 {
 #pragma HLS INLINE OFF
 	index_type secondLastPatchIndex;
-	index_type secondLastPatchIndexPP;
+	index_type secondLastPatchIndexP;
 
 	if (lastPatchIndex == 0)
 	{
 		secondLastPatchIndex = 0;
-		secondLastPatchIndexPP = 0;
+		secondLastPatchIndexP = 0;
 	}
 	else
 	{
 		secondLastPatchIndex = lastPatchIndex - 1;
-		secondLastPatchIndexPP = 1;
+		secondLastPatchIndexP = 1;
 	}
 
     // modifying patches, not adding patches, so index variables do not need to be updated.
-    getShadows(patches_superpoints[lastPatchIndex], patches_parameters[0], z_top_min, z_top_max);
-    getShadows(patches_superpoints[secondLastPatchIndex], patches_parameters[secondLastPatchIndexPP], z_top_min, z_top_max);
+    getShadows(patches_superpoints[0], patches_parameters[0], z_top_min, z_top_max);
+    getShadows(patches_superpoints[secondLastPatchIndexP], patches_parameters[secondLastPatchIndexP], z_top_min, z_top_max);
 
-    COORDINATE_TYPE original_topR_jL = patches_parameters[secondLastPatchIndexPP][0][2][0];
+    COORDINATE_TYPE original_topR_jL = patches_parameters[secondLastPatchIndexP][0][2][0];
     bool originalPartialTop = (original_topR_jL > complementary_apexZ0) && (original_topR_jL < apexZ0) &&
                                 (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topR_jL, z_top_max, 1, MAX_LAYERS, 0))) < 20 * beam_axis_lim);
 
-    COORDINATE_TYPE original_topL_jL = patches_parameters[secondLastPatchIndexPP][0][0][0];
+    COORDINATE_TYPE original_topL_jL = patches_parameters[secondLastPatchIndexP][0][0][0];
 
     bool originalPartialBottom = (original_topL_jL > complementary_apexZ0) && ((original_topL_jL - apexZ0) < static_cast<long_type>(-0.0001 * INTEGER_FACTOR_CM)) &&
                                     (abs(static_cast<long_type>(straightLineProjectorFromLayerIJtoK(original_topL_jL,z_top_min, 1, MAX_LAYERS, 0))) < 20 * beam_axis_lim);
@@ -1031,8 +1089,8 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
 
     COORDINATE_TYPE complementary_topR_jL = patches_parameters[0][0][2][0];
     COORDINATE_TYPE complementary_topL_jL = patches_parameters[0][0][0][0];
-    COORDINATE_TYPE original_topR_jR = patches_parameters[secondLastPatchIndexPP][0][3][0];
-    COORDINATE_TYPE original_topL_jR = patches_parameters[secondLastPatchIndexPP][0][1][0];
+    COORDINATE_TYPE original_topR_jR = patches_parameters[secondLastPatchIndexP][0][3][0];
+    COORDINATE_TYPE original_topL_jR = patches_parameters[secondLastPatchIndexP][0][1][0];
 
     COORDINATE_TYPE horizontalOverlapTop = max(complementary_topR_jL - original_topR_jL, complementary_topR_jR - original_topR_jR);
     COORDINATE_TYPE horizontalOverlapBottom = max(complementary_topL_jL - original_topL_jL, complementary_topL_jR - original_topL_jR);
@@ -1098,13 +1156,13 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
 
         if (makeHorizontallyShiftedPatch)
         {
-            delete_patch(n_patches - 1, n_patches, patches_superpoints, patches_parameters);
+            delete_patch(0, n_patches, patches_superpoints, patches_parameters);
             // decrement n_patches is handled by delete_patch
         }
 
-        makePatch_alignedToLine(shifted_Align, newZtop, ppl, !shiftOriginal, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
+        makePatch_alignedToLine(shifted_Align, newZtop, ppl, !shiftOriginal, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, output_patch_stream);
 
-        getShadows(patches_superpoints[n_patches - 1], patches_parameters[0], z_top_min, z_top_max);
+        getShadows(patches_superpoints[0], patches_parameters[0], z_top_min, z_top_max);
 
         if (shiftOriginal)
         {
@@ -1157,7 +1215,7 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
         {
             if (n_patches > 2)
             {
-                delete_patch(n_patches - 3, n_patches, patches_superpoints, patches_parameters);
+                delete_patch(2, n_patches, patches_superpoints, patches_parameters);
             }
         }
     }
@@ -1165,7 +1223,7 @@ void makeThirdPatch(index_type lastPatchIndex, COORDINATE_TYPE z_top_min, COORDI
 
 void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl, bool fix42, int_type nPatchesAtOriginal, COORDINATE_TYPE &previous_z_top_min, COORDINATE_TYPE complementary_apexZ0,
 		long_type &white_space_height, index_type &lastPatchIndex, COORDINATE_TYPE original_c, COORDINATE_TYPE original_d,
-		COORDINATE_TYPE &complementary_a, COORDINATE_TYPE &complementary_b, int_type &current_z_top_index, int_type &counter, int_type &counterUpshift, COORDINATE_TYPE &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES)
+		COORDINATE_TYPE &complementary_a, COORDINATE_TYPE &complementary_b, int_type &current_z_top_index, int_type &counter, int_type &counterUpshift, COORDINATE_TYPE &z_top_min, bool &repeat_patch, bool &repeat_original, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream)
 {
 #pragma HLS INLINE OFF
     #if PRINT_OUTS == true
@@ -1176,8 +1234,8 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         index_type secondLastPatchIndex = lastPatchIndex - 1;
         #if PRINT_OUTS == true
             printf("original c: %ld %ld || original d: %ld %ld\n",
-                original_c, patches_parameters[secondLastPatchIndexPP][1][2][1],
-                original_d, patches_parameters[secondLastPatchIndexPP][1][3][1]);
+                original_c, patches_parameters[secondLastPatchIndexP][1][2][1],
+                original_d, patches_parameters[secondLastPatchIndexP][1][3][1]);
         #endif
     }
     #if PRINT_OUTS == true
@@ -1345,14 +1403,14 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         #endif
 
         // Call delete_patch to remove the last patch
-        delete_patch(lastPatchIndex, n_patches, patches_superpoints, patches_parameters);
+        delete_patch(0, n_patches, patches_superpoints, patches_parameters);
         // no need to manually decrement n_patches, delete_patch will handle it
     }
     lastPatchIndex = n_patches - 1; // lastPatchIndex has changed because of the delete patch
     // it may be not needed to update lastPatchIndex, but for now, I did it, so it wouldn't be forgotten later.
 
     // call makePatch_alignedToLine to add a new patch based on the complementary apex and top z values.
-    makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
+    makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, output_patch_stream);
     // update the lastPatchIndex to point to the newly added patch.
     lastPatchIndex = n_patches - 1;
 
@@ -1391,7 +1449,7 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         solveComplmentaryPatch_superpointEqualCheck_2:
         for (index_type i = 0; i < MAX_LAYERS; i++)
         {
-            if (!areWedgeSuperPointsEqual(patches_superpoints[lastPatchIdx][i], patches_superpoints[thirdLastPatchIdx][i]))
+            if (!areWedgeSuperPointsEqual(patches_superpoints[0][i], patches_superpoints[2][i]))
             {
                 repeat_patch = false;
                 break;
@@ -1402,24 +1460,24 @@ void solveComplmentaryPatch(long_type &previous_white_space_height, int_type ppl
         {
             #if PRINT_OUTS == true
                 printf("%ld %ld repeat_patch: %d\n",
-                    patches_superpoints[lastPatchIdx][MAX_LAYERS - 1][2][1][0],
-                    patches_superpoints[lastPatchIdx][MAX_LAYERS - 1][2][2][0],
+                    patches_superpoints[0][MAX_LAYERS - 1][2][1][0],
+                    patches_superpoints[0][MAX_LAYERS - 1][2][2][0],
                     repeat_patch);
             #endif
 
-            delete_patch(lastPatchIdx, n_patches, patches_superpoints, patches_parameters);
+            delete_patch(0, n_patches, patches_superpoints, patches_parameters);
 
             current_z_top_index -= 1;
 
             z_top_min = GDarrayDecoded[MAX_LAYERS - 1][current_z_top_index][1];
             z_top_min = new_z_i_atTop[layerWithSmallestShift - 1];
 
-            makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters);
+            makePatch_alignedToLine(complementary_apexZ0, z_top_min, ppl, true, false, n_patches, GDarrayDecoded, GDn_points, patches_superpoints, patches_parameters, output_patch_stream);
         }
     }
 }
 
-void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int_type &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES)
+void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int_type &ppl, bool leftRight, bool float_middleLayers_ppl, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream)
 {
 #pragma HLS INLINE OFF
     COORDINATE_TYPE init_patch[MAX_LAYERS][MAX_POINTS_IN_SUPERPOINT][PARAMETERS_PER_POINT]; // correct
@@ -1530,7 +1588,7 @@ void makePatch_alignedToLine(COORDINATE_TYPE apexZ0, COORDINATE_TYPE z_top, int_
     wedgePatch_init(NPpatches_superpoints, NPpatches_parameters, init_patch, MAX_LAYERS, apexZ0);
     //indeed, add_patch is working fine as it is copying the values over: cover->patches[cover->n_patches] = *curr_patch;
     //doesn't matter how wedgePatch_init works since we're dereferencing the patch to store by value in an array belonging to cover.
-    add_patch(NPpatches_superpoints, NPpatches_parameters, n_patches, patches_superpoints, patches_parameters);
+    add_patch(NPpatches_superpoints, NPpatches_parameters, n_patches, patches_superpoints, patches_parameters, output_patch_stream);
 }
 
 void makeSuperPoint_alignedToLine(int_type i, COORDINATE_TYPE z_top, COORDINATE_TYPE apexZ0, bool float_middleLayers_ppl,

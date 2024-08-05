@@ -16,9 +16,8 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("GDn_points_address0", 3, hls_out, 3, "ap_memory", "mem_address", 1),
 	Port_Property("GDn_points_ce0", 1, hls_out, 3, "ap_memory", "mem_ce", 1),
 	Port_Property("GDn_points_q0", 32, hls_in, 3, "ap_memory", "mem_dout", 1),
-	Port_Property("patches_superpointsOUTPUT_address0", 12, hls_out, 4, "ap_memory", "mem_address", 1),
-	Port_Property("patches_superpointsOUTPUT_ce0", 1, hls_out, 4, "ap_memory", "mem_ce", 1),
-	Port_Property("patches_superpointsOUTPUT_we0", 1, hls_out, 4, "ap_memory", "mem_we", 1),
-	Port_Property("patches_superpointsOUTPUT_d0", 64, hls_out, 4, "ap_memory", "mem_din", 1),
+	Port_Property("output_patch_stream_V_din", 64, hls_out, 4, "ap_fifo", "fifo_data", 321),
+	Port_Property("output_patch_stream_V_full_n", 1, hls_in, 4, "ap_fifo", "fifo_status", 321),
+	Port_Property("output_patch_stream_V_write", 1, hls_out, 4, "ap_fifo", "fifo_update", 321),
 };
 const char* HLS_Design_Meta::dut_name = "MPSQ";

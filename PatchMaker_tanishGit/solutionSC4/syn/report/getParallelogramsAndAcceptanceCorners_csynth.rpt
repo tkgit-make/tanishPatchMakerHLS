@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'getParallelogramsAndAcceptanceCorners'
 ================================================================
-* Date:           Sat Aug  3 00:46:41 2024
+* Date:           Mon Aug  5 17:49:08 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -29,27 +29,27 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      211|      212|  0.633 us|  0.636 us|  211|  212|     none|
+    |       54|       55|  0.162 us|  0.165 us|   54|   55|     none|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
-        +------------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |                                                |                                     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
-        |                    Instance                    |                Module               |   min   |   max   |    min   |    max   | min | max |   Type  |
-        +------------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_straightLineProjectorFromLayerIJtoK_fu_441  |straightLineProjectorFromLayerIJtoK  |       44|       44|  0.132 us|  0.132 us|    1|    1|      yes|
-        |grp_straightLineProjectorFromLayerIJtoK_fu_452  |straightLineProjectorFromLayerIJtoK  |       44|       44|  0.132 us|  0.132 us|    1|    1|      yes|
-        |grp_straightLineProjectorFromLayerIJtoK_fu_463  |straightLineProjectorFromLayerIJtoK  |       44|       44|  0.132 us|  0.132 us|    1|    1|      yes|
-        |grp_straightLineProjectorFromLayerIJtoK_fu_474  |straightLineProjectorFromLayerIJtoK  |       44|       44|  0.132 us|  0.132 us|    1|    1|      yes|
-        +------------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                |                                     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                    Instance                    |                Module               |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_straightLineProjectorFromLayerIJtoK_fu_444  |straightLineProjectorFromLayerIJtoK  |        6|        6|  18.000 ns|  18.000 ns|    1|    1|      yes|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_457  |straightLineProjectorFromLayerIJtoK  |        6|        6|  18.000 ns|  18.000 ns|    1|    1|      yes|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_470  |straightLineProjectorFromLayerIJtoK  |        6|        6|  18.000 ns|  18.000 ns|    1|    1|      yes|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_483  |straightLineProjectorFromLayerIJtoK  |        6|        6|  18.000 ns|  18.000 ns|    1|    1|      yes|
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
 
         * Loop: 
         +-----------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
         |                                         |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |                Loop Name                |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +-----------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- getParallelograms_settingWPparameters  |      192|      192|        48|          -|          -|     4|        no|
+        |- getParallelograms_settingWPparameters  |       36|       36|         9|          -|          -|     4|        no|
         |- get_acceptanceCorners_minMaxFinding    |        4|        4|         1|          -|          -|     4|        no|
         +-----------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
 
@@ -65,16 +65,16 @@
 |DSP                  |        -|     -|        -|        -|    -|
 |Expression           |        -|     -|        0|      629|    -|
 |FIFO                 |        -|     -|        -|        -|    -|
-|Instance             |        -|     0|    14208|    10260|    -|
+|Instance             |        0|     0|     3212|     2272|    -|
 |Memory               |        -|     -|        -|        -|    -|
-|Multiplexer          |        -|     -|        -|      541|    -|
-|Register             |        -|     -|     1331|        -|    -|
+|Multiplexer          |        -|     -|        -|      391|    -|
+|Register             |        -|     -|     1295|        -|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        0|     0|    15539|    11430|    0|
+|Total                |        0|     0|     4507|     3292|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1080|   960|  2042880|  1021440|   80|
 +---------------------+---------+------+---------+---------+-----+
-|Utilization SLR (%)  |        0|     0|       ~0|        1|    0|
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available            |     4320|  3840|  8171520|  4085760|  320|
 +---------------------+---------+------+---------+---------+-----+
@@ -83,20 +83,20 @@
 
 + Detail: 
     * Instance: 
-    +------------------------------------------------+-------------------------------------+---------+----+------+------+-----+
-    |                    Instance                    |                Module               | BRAM_18K| DSP|  FF  |  LUT | URAM|
-    +------------------------------------------------+-------------------------------------+---------+----+------+------+-----+
-    |mux_42_32_1_1_U34                               |mux_42_32_1_1                        |        0|   0|     0|    20|    0|
-    |mux_42_32_1_1_U35                               |mux_42_32_1_1                        |        0|   0|     0|    20|    0|
-    |mux_42_32_1_1_U36                               |mux_42_32_1_1                        |        0|   0|     0|    20|    0|
-    |mux_42_32_1_1_U37                               |mux_42_32_1_1                        |        0|   0|     0|    20|    0|
-    |grp_straightLineProjectorFromLayerIJtoK_fu_441  |straightLineProjectorFromLayerIJtoK  |        0|   0|  3552|  2545|    0|
-    |grp_straightLineProjectorFromLayerIJtoK_fu_452  |straightLineProjectorFromLayerIJtoK  |        0|   0|  3552|  2545|    0|
-    |grp_straightLineProjectorFromLayerIJtoK_fu_463  |straightLineProjectorFromLayerIJtoK  |        0|   0|  3552|  2545|    0|
-    |grp_straightLineProjectorFromLayerIJtoK_fu_474  |straightLineProjectorFromLayerIJtoK  |        0|   0|  3552|  2545|    0|
-    +------------------------------------------------+-------------------------------------+---------+----+------+------+-----+
-    |Total                                           |                                     |        0|   0| 14208| 10260|    0|
-    +------------------------------------------------+-------------------------------------+---------+----+------+------+-----+
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |                    Instance                    |                Module               | BRAM_18K| DSP|  FF | LUT | URAM|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |mux_42_32_1_1_U33                               |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |mux_42_32_1_1_U34                               |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |mux_42_32_1_1_U35                               |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |mux_42_32_1_1_U36                               |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_444  |straightLineProjectorFromLayerIJtoK  |        0|   0|  803|  548|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_457  |straightLineProjectorFromLayerIJtoK  |        0|   0|  803|  548|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_470  |straightLineProjectorFromLayerIJtoK  |        0|   0|  803|  548|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_483  |straightLineProjectorFromLayerIJtoK  |        0|   0|  803|  548|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |Total                                           |                                     |        0|   0| 3212| 2272|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
     N/A
@@ -111,36 +111,36 @@
     +------------------------------------+----------+----+---+----+------------+------------+
     |            Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------------------+----------+----+---+----+------------+------------+
-    |add_ln66_fu_617_p2                  |         +|   0|  0|  10|           3|           1|
-    |add_ln92_fu_770_p2                  |         +|   0|  0|  10|           3|           1|
-    |icmp_ln61_fu_611_p2                 |      icmp|   0|  0|   8|           3|           3|
-    |icmp_ln77_fu_751_p2                 |      icmp|   0|  0|   8|           2|           1|
-    |icmp_ln874_1_fu_958_p2              |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln874_2_fu_967_p2              |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln874_3_fu_976_p2              |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln874_fu_949_p2                |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln878_12_fu_503_p2             |      icmp|   0|  0|  20|          32|          25|
-    |icmp_ln878_13_fu_848_p2             |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln878_14_fu_876_p2             |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln878_15_fu_988_p2             |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln878_fu_497_p2                |      icmp|   0|  0|  20|          32|          26|
-    |icmp_ln886_10_fu_932_p2             |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln886_11_fu_982_p2             |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln886_9_fu_904_p2              |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln886_fu_531_p2                |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln92_fu_776_p2                 |      icmp|   0|  0|   9|           3|           4|
-    |or_ln63_fu_581_p2                   |        or|   0|  0|   8|           8|           1|
-    |or_ln64_fu_596_p2                   |        or|   0|  0|   8|           8|           5|
-    |a_corner_min_V_4_fu_854_p3          |    select|   0|  0|  32|           1|          32|
-    |b_corner_min_V_5_fu_882_p3          |    select|   0|  0|  32|           1|          32|
-    |c_corner_max_V_4_fu_910_p3          |    select|   0|  0|  32|           1|          32|
-    |d_corner_max_V_5_fu_938_p3          |    select|   0|  0|  32|           1|          32|
-    |parallelogramsList_V_4_0_fu_549_p3  |    select|   0|  0|  26|           1|          25|
-    |parallelogramsList_V_5_0_fu_537_p3  |    select|   0|  0|  26|           1|          25|
-    |select_ln77_fu_756_p3               |    select|   0|  0|  32|           1|          32|
-    |select_ln78_fu_763_p3               |    select|   0|  0|  32|           1|          32|
-    |z1_max_V_fu_520_p3                  |    select|   0|  0|  32|           1|          32|
-    |z1_min_V_fu_509_p3                  |    select|   0|  0|  32|           1|          26|
+    |add_ln66_fu_628_p2                  |         +|   0|  0|  10|           3|           1|
+    |add_ln92_fu_777_p2                  |         +|   0|  0|  10|           3|           1|
+    |icmp_ln61_fu_622_p2                 |      icmp|   0|  0|   8|           3|           3|
+    |icmp_ln77_fu_758_p2                 |      icmp|   0|  0|   8|           2|           1|
+    |icmp_ln874_1_fu_965_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln874_2_fu_974_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln874_3_fu_983_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln874_fu_956_p2                |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_12_fu_514_p2             |      icmp|   0|  0|  20|          32|          25|
+    |icmp_ln878_13_fu_855_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_14_fu_883_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_15_fu_995_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln878_fu_508_p2                |      icmp|   0|  0|  20|          32|          26|
+    |icmp_ln886_10_fu_939_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln886_11_fu_989_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln886_9_fu_911_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln886_fu_542_p2                |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln92_fu_783_p2                 |      icmp|   0|  0|   9|           3|           4|
+    |or_ln63_fu_592_p2                   |        or|   0|  0|   8|           8|           1|
+    |or_ln64_fu_607_p2                   |        or|   0|  0|   8|           8|           5|
+    |a_corner_min_V_4_fu_861_p3          |    select|   0|  0|  32|           1|          32|
+    |b_corner_min_V_5_fu_889_p3          |    select|   0|  0|  32|           1|          32|
+    |c_corner_max_V_4_fu_917_p3          |    select|   0|  0|  32|           1|          32|
+    |d_corner_max_V_5_fu_945_p3          |    select|   0|  0|  32|           1|          32|
+    |parallelogramsList_V_4_0_fu_560_p3  |    select|   0|  0|  26|           1|          25|
+    |parallelogramsList_V_5_0_fu_548_p3  |    select|   0|  0|  26|           1|          25|
+    |select_ln77_fu_763_p3               |    select|   0|  0|  32|           1|          32|
+    |select_ln78_fu_770_p3               |    select|   0|  0|  32|           1|          32|
+    |z1_max_V_fu_531_p3                  |    select|   0|  0|  32|           1|          32|
+    |z1_min_V_fu_520_p3                  |    select|   0|  0|  32|           1|          26|
     +------------------------------------+----------+----+---+----+------------+------------+
     |Total                               |          |   0|  0| 629|         456|         719|
     +------------------------------------+----------+----+---+----+------------+------------+
@@ -149,83 +149,87 @@
     +--------------------------------+-----+-----------+-----+-----------+
     |              Name              | LUT | Input Size| Bits| Total Bits|
     +--------------------------------+-----+-----------+-----+-----------+
-    |a_corner_min_V_1_reg_416        |    9|          2|   32|         64|
-    |ap_NS_fsm                       |  279|         65|    1|         65|
-    |arrayidx2356315_load_0_reg_427  |    9|          2|   32|         64|
-    |b_corner_min_V_1_reg_405        |    9|          2|   32|         64|
-    |c_corner_max_V_1_reg_394        |    9|          2|   32|         64|
-    |d_corner_max_V_1_reg_383        |    9|          2|   32|         64|
-    |i_10_reg_372                    |    9|          2|    3|          6|
-    |i_reg_360                       |    9|          2|    3|          6|
+    |a_corner_min_V_1_reg_419        |    9|          2|   32|         64|
+    |ap_NS_fsm                       |  123|         25|    1|         25|
+    |arrayidx2356315_load_0_reg_430  |    9|          2|   32|         64|
+    |b_corner_min_V_1_reg_407        |    9|          2|   32|         64|
+    |c_corner_max_V_1_reg_396        |    9|          2|   32|         64|
+    |d_corner_max_V_1_reg_385        |    9|          2|   32|         64|
+    |i_10_reg_374                    |    9|          2|    3|          6|
+    |i_reg_362                       |    9|          2|    3|          6|
     |wp_parameters_address0          |   43|          8|    5|         40|
     |wp_parameters_address1          |   54|         10|    5|         50|
-    |wp_parameters_d0                |   37|          7|   32|        224|
+    |wp_parameters_d0                |   43|          8|   32|        256|
     |wp_parameters_d1                |   37|          7|   32|        224|
     |wp_superpoints_address0         |   14|          3|    8|         24|
     |wp_superpoints_address1         |   14|          3|    8|         24|
     +--------------------------------+-----+-----------+-----+-----------+
-    |Total                           |  541|        117|  257|        983|
+    |Total                           |  391|         78|  257|        975|
     +--------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
-    +---------------------------------------+----+----+-----+-----------+
-    |                  Name                 | FF | LUT| Bits| Const Bits|
-    +---------------------------------------+----+----+-----+-----------+
-    |a_corner_min_V_1_reg_416               |  32|   0|   32|          0|
-    |a_corner_min_V_3_reg_1236              |  32|   0|   32|          0|
-    |a_corner_min_V_fu_86                   |  32|   0|   32|          0|
-    |add_ln66_reg_1269                      |   3|   0|    3|          0|
-    |ap_CS_fsm                              |  64|   0|   64|          0|
-    |arrayidx2356315_load_0_reg_427         |  32|   0|   32|          0|
-    |b_corner_min_V_1_reg_405               |  32|   0|   32|          0|
-    |b_corner_min_V_4_reg_1241              |  32|   0|   32|          0|
-    |b_corner_min_V_fu_90                   |  32|   0|   32|          0|
-    |c_corner_max_V_1_reg_394               |  32|   0|   32|          0|
-    |c_corner_max_V_3_reg_1246              |  32|   0|   32|          0|
-    |c_corner_max_V_fu_94                   |  32|   0|   32|          0|
-    |d_corner_max_V_1_reg_383               |  32|   0|   32|          0|
-    |d_corner_max_V_4_reg_1251              |  32|   0|   32|          0|
-    |d_corner_max_V_fu_98                   |  32|   0|   32|          0|
-    |i_10_reg_372                           |   3|   0|    3|          0|
-    |i_reg_360                              |   3|   0|    3|          0|
-    |icmp_ln874_1_reg_1325                  |   1|   0|    1|          0|
-    |icmp_ln874_2_reg_1329                  |   1|   0|    1|          0|
-    |icmp_ln874_3_reg_1333                  |   1|   0|    1|          0|
-    |icmp_ln874_reg_1321                    |   1|   0|    1|          0|
-    |icmp_ln878_12_reg_1153                 |   1|   0|    1|          0|
-    |icmp_ln878_15_reg_1341                 |   1|   0|    1|          0|
-    |icmp_ln878_reg_1148                    |   1|   0|    1|          0|
-    |icmp_ln886_11_reg_1337                 |   1|   0|    1|          0|
-    |parallelogramsList_V_0_3_1_fu_118      |  32|   0|   32|          0|
-    |parallelogramsList_V_0_3_2_fu_122      |  32|   0|   32|          0|
-    |parallelogramsList_V_0_3_3_fu_126      |  32|   0|   32|          0|
-    |parallelogramsList_V_0_3_4_fu_130      |  32|   0|   32|          0|
-    |parallelogramsList_V_0_3_fu_102        |  32|   0|   32|          0|
-    |parallelogramsList_V_1_3_1_fu_134      |  32|   0|   32|          0|
-    |parallelogramsList_V_1_3_2_fu_138      |  32|   0|   32|          0|
-    |parallelogramsList_V_1_3_3_fu_142      |  32|   0|   32|          0|
-    |parallelogramsList_V_1_3_4_fu_146      |  32|   0|   32|          0|
-    |parallelogramsList_V_1_3_fu_106        |  32|   0|   32|          0|
-    |parallelogramsList_V_2_3_1_fu_150      |  32|   0|   32|          0|
-    |parallelogramsList_V_2_3_2_fu_154      |  32|   0|   32|          0|
-    |parallelogramsList_V_2_3_3_fu_158      |  32|   0|   32|          0|
-    |parallelogramsList_V_2_3_4_fu_162      |  32|   0|   32|          0|
-    |parallelogramsList_V_2_3_fu_110        |  32|   0|   32|          0|
-    |parallelogramsList_V_3_3_1_fu_166      |  32|   0|   32|          0|
-    |parallelogramsList_V_3_3_2_fu_170      |  32|   0|   32|          0|
-    |parallelogramsList_V_3_3_3_fu_174      |  32|   0|   32|          0|
-    |parallelogramsList_V_3_3_4_fu_178      |  32|   0|   32|          0|
-    |parallelogramsList_V_3_3_fu_114        |  32|   0|   32|          0|
-    |parallelogramsList_V_4_0_0144_reg_347  |  32|   0|   32|          0|
-    |parallelogramsList_V_5_0_0145_reg_334  |  32|   0|   32|          0|
-    |reg_485                                |  32|   0|   32|          0|
-    |reg_491                                |  32|   0|   32|          0|
-    |sext_ln77_reg_1229                     |  32|   0|   32|          0|
-    |sext_ln78_reg_1222                     |  32|   0|   32|          0|
-    |trunc_ln73_reg_1278                    |   2|   0|    2|          0|
-    +---------------------------------------+----+----+-----+-----------+
-    |Total                                  |1331|   0| 1331|          0|
-    +---------------------------------------+----+----+-----+-----------+
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |                             Name                            | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |a_corner_min_V_1_reg_419                                     |  32|   0|   32|          0|
+    |a_corner_min_V_3_reg_1243                                    |  32|   0|   32|          0|
+    |a_corner_min_V_fu_88                                         |  32|   0|   32|          0|
+    |add_ln66_reg_1276                                            |   3|   0|    3|          0|
+    |ap_CS_fsm                                                    |  24|   0|   24|          0|
+    |arrayidx2356315_load_0_reg_430                               |  32|   0|   32|          0|
+    |b_corner_min_V_1_reg_407                                     |  32|   0|   32|          0|
+    |b_corner_min_V_4_reg_1248                                    |  32|   0|   32|          0|
+    |b_corner_min_V_fu_92                                         |  32|   0|   32|          0|
+    |c_corner_max_V_1_reg_396                                     |  32|   0|   32|          0|
+    |c_corner_max_V_3_reg_1253                                    |  32|   0|   32|          0|
+    |c_corner_max_V_fu_96                                         |  32|   0|   32|          0|
+    |d_corner_max_V_1_reg_385                                     |  32|   0|   32|          0|
+    |d_corner_max_V_4_reg_1258                                    |  32|   0|   32|          0|
+    |d_corner_max_V_fu_100                                        |  32|   0|   32|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_444_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_457_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_470_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_483_ap_start_reg  |   1|   0|    1|          0|
+    |i_10_reg_374                                                 |   3|   0|    3|          0|
+    |i_reg_362                                                    |   3|   0|    3|          0|
+    |icmp_ln874_1_reg_1332                                        |   1|   0|    1|          0|
+    |icmp_ln874_2_reg_1336                                        |   1|   0|    1|          0|
+    |icmp_ln874_3_reg_1340                                        |   1|   0|    1|          0|
+    |icmp_ln874_reg_1328                                          |   1|   0|    1|          0|
+    |icmp_ln878_12_reg_1160                                       |   1|   0|    1|          0|
+    |icmp_ln878_15_reg_1348                                       |   1|   0|    1|          0|
+    |icmp_ln878_reg_1155                                          |   1|   0|    1|          0|
+    |icmp_ln886_11_reg_1344                                       |   1|   0|    1|          0|
+    |parallelogramsList_V_0_3_1_fu_120                            |  32|   0|   32|          0|
+    |parallelogramsList_V_0_3_2_fu_124                            |  32|   0|   32|          0|
+    |parallelogramsList_V_0_3_3_fu_128                            |  32|   0|   32|          0|
+    |parallelogramsList_V_0_3_4_fu_132                            |  32|   0|   32|          0|
+    |parallelogramsList_V_0_3_fu_104                              |  32|   0|   32|          0|
+    |parallelogramsList_V_1_3_1_fu_136                            |  32|   0|   32|          0|
+    |parallelogramsList_V_1_3_2_fu_140                            |  32|   0|   32|          0|
+    |parallelogramsList_V_1_3_3_fu_144                            |  32|   0|   32|          0|
+    |parallelogramsList_V_1_3_4_fu_148                            |  32|   0|   32|          0|
+    |parallelogramsList_V_1_3_fu_108                              |  32|   0|   32|          0|
+    |parallelogramsList_V_2_3_1_fu_152                            |  32|   0|   32|          0|
+    |parallelogramsList_V_2_3_2_fu_156                            |  32|   0|   32|          0|
+    |parallelogramsList_V_2_3_3_fu_160                            |  32|   0|   32|          0|
+    |parallelogramsList_V_2_3_4_fu_164                            |  32|   0|   32|          0|
+    |parallelogramsList_V_2_3_fu_112                              |  32|   0|   32|          0|
+    |parallelogramsList_V_3_3_1_fu_168                            |  32|   0|   32|          0|
+    |parallelogramsList_V_3_3_2_fu_172                            |  32|   0|   32|          0|
+    |parallelogramsList_V_3_3_3_fu_176                            |  32|   0|   32|          0|
+    |parallelogramsList_V_3_3_4_fu_180                            |  32|   0|   32|          0|
+    |parallelogramsList_V_3_3_fu_116                              |  32|   0|   32|          0|
+    |parallelogramsList_V_4_0_0144_reg_349                        |  32|   0|   32|          0|
+    |parallelogramsList_V_5_0_0145_reg_336                        |  32|   0|   32|          0|
+    |reg_496                                                      |  32|   0|   32|          0|
+    |reg_502                                                      |  32|   0|   32|          0|
+    |sext_ln77_reg_1236                                           |  32|   0|   32|          0|
+    |sext_ln78_reg_1229                                           |  32|   0|   32|          0|
+    |trunc_ln73_reg_1285                                          |   2|   0|    2|          0|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                        |1295|   0| 1295|          0|
+    +-------------------------------------------------------------+----+----+-----+-----------+
 
 
 

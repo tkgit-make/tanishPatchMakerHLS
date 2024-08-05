@@ -80,7 +80,47 @@ solve_loop:
 //#pragma HLS array_partition variable=GDarrayPostSort
 //#pragma HLS INTERFACE mode=ap_memory depth=100 port=GDarrayPostSort bundle=GDarrayPostSort_b
 
-    MPSQ(ppl, n_patches,  GDarrayPostSort, GDn_points, patches_superpoints);
+    hls::stream<SPACEPOINT_TYPE> output_patch_stream;
+    bool tlast = false;
+
+    MPSQ(ppl, n_patches,  GDarrayPostSort, GDn_points, output_patch_stream);
+
+    int counter = 0;
+
+    while(!tlast)
+    {
+    	SPACEPOINT_TYPE tempArray[MAX_SUPERPOINTS_IN_PATCH][MAX_POINTS_IN_SUPERPOINT];
+		read_patch_perSuperpointSP_toSTREAM:
+		for(int_type a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
+		{
+			read_patch_perPointSP1_toSTREAM:
+			for(int_type b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
+			{
+				SPACEPOINT_TYPE temp = output_patch_stream.read();
+				//cout << temp;
+				tempArray[a][b] = temp;
+			}
+		}
+
+		if(tempArray[0][0] == 0)
+		{
+			tlast = true;
+		}
+		else
+		{
+			write_patch_perSuperpointSP_toARRAY:
+			for(int_type a = 0; a < MAX_SUPERPOINTS_IN_PATCH; a++)
+			{
+				write_patch_perPointSP1_toARRAY:
+				for(int_type b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
+				{
+					patches_superpoints[counter][a][b] = tempArray[a][b];
+				}
+			}
+		}
+
+		counter++;
+    }
 
     /*
 
@@ -490,7 +530,7 @@ int_type main () {
 
     // Call any preliminary functions required to prepare input for the test.
     // Call the top-level function multiple times, passing input stimuli as needed.
-    int_type wedgesToTest[] = {0, 1}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
+    int_type wedgesToTest[] = {0, 10}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
 
     wedge_test(0, 16, wedgesToTest);
 
