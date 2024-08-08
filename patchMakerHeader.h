@@ -5,7 +5,7 @@
 #define PRINT_OUTS false
 #define LOGIC_VALIDATION false //Set to true if comparing to the Standalone, validated CPP, for validation of VITIS code
 #define WHILE_LOOP_CATCHES true
-#define SMALL_CIRCUIT true
+#define SMALL_CIRCUIT false
 
 #include <stdio.h>
 #include <limits.h>

@@ -1,0 +1,223 @@
+
+
+================================================================
+== Vitis HLS Report for 'add_patch_patches_parameters'
+================================================================
+* Date:           Thu Aug  8 04:18:34 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionLC (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.00 ns|      0 ns|     0.81 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        -|        -|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|        -|    -|
+|Register             |        -|     -|        -|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|        0|        0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|        0|        0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|        0|        0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |          Source Object          |    C Type    |
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+|ap_ready                         |  out|    1|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_0                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_1                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_2                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_3                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_4                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_5                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_6                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_7                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_8                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_9                      |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_10                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_11                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_12                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_13                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_14                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_15                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_16                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_17                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_18                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_19                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_20                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_21                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_22                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_23                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_24                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_25                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_26                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_27                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_28                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_29                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_30                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_31                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_32                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_33                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_34                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_35                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_36                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_37                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_38                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_39                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_40                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_41                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_42                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_43                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_44                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_45                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_46                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_47                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_48                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_49                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_50                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_51                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_52                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_53                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_54                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_55                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_56                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_57                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_58                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|ap_return_59                     |  out|   32|  ap_ctrl_hs|     add_patch_patches_parameters|  return value|
+|wp_parameters_1_0_0_read         |   in|   32|     ap_none|         wp_parameters_1_0_0_read|        scalar|
+|wp_parameters_1_0_1_read         |   in|   32|     ap_none|         wp_parameters_1_0_1_read|        scalar|
+|wp_parameters_1_1_0_read         |   in|   32|     ap_none|         wp_parameters_1_1_0_read|        scalar|
+|wp_parameters_1_1_1_read         |   in|   32|     ap_none|         wp_parameters_1_1_1_read|        scalar|
+|wp_parameters_1_2_0_read         |   in|   32|     ap_none|         wp_parameters_1_2_0_read|        scalar|
+|wp_parameters_1_2_1_read         |   in|   32|     ap_none|         wp_parameters_1_2_1_read|        scalar|
+|wp_parameters_1_3_0_read         |   in|   32|     ap_none|         wp_parameters_1_3_0_read|        scalar|
+|wp_parameters_1_3_1_read         |   in|   32|     ap_none|         wp_parameters_1_3_1_read|        scalar|
+|wp_parameters_2_0_0_read         |   in|   32|     ap_none|         wp_parameters_2_0_0_read|        scalar|
+|wp_parameters_2_1_0_read         |   in|   32|     ap_none|         wp_parameters_2_1_0_read|        scalar|
+|wp_parameters_2_2_0_read         |   in|   32|     ap_none|         wp_parameters_2_2_0_read|        scalar|
+|wp_parameters_2_3_0_read         |   in|   32|     ap_none|         wp_parameters_2_3_0_read|        scalar|
+|patches_parameters_0_0_0_0_read  |   in|   32|     ap_none|  patches_parameters_0_0_0_0_read|        scalar|
+|patches_parameters_0_0_0_1_read  |   in|   32|     ap_none|  patches_parameters_0_0_0_1_read|        scalar|
+|patches_parameters_0_0_1_0_read  |   in|   32|     ap_none|  patches_parameters_0_0_1_0_read|        scalar|
+|patches_parameters_0_0_1_1_read  |   in|   32|     ap_none|  patches_parameters_0_0_1_1_read|        scalar|
+|patches_parameters_0_1_0_0_read  |   in|   32|     ap_none|  patches_parameters_0_1_0_0_read|        scalar|
+|patches_parameters_0_1_0_1_read  |   in|   32|     ap_none|  patches_parameters_0_1_0_1_read|        scalar|
+|patches_parameters_0_1_1_0_read  |   in|   32|     ap_none|  patches_parameters_0_1_1_0_read|        scalar|
+|patches_parameters_0_1_1_1_read  |   in|   32|     ap_none|  patches_parameters_0_1_1_1_read|        scalar|
+|patches_parameters_0_2_0_0_read  |   in|   32|     ap_none|  patches_parameters_0_2_0_0_read|        scalar|
+|patches_parameters_0_2_0_1_read  |   in|   32|     ap_none|  patches_parameters_0_2_0_1_read|        scalar|
+|patches_parameters_0_2_1_0_read  |   in|   32|     ap_none|  patches_parameters_0_2_1_0_read|        scalar|
+|patches_parameters_0_2_1_1_read  |   in|   32|     ap_none|  patches_parameters_0_2_1_1_read|        scalar|
+|patches_parameters_0_3_0_0_read  |   in|   32|     ap_none|  patches_parameters_0_3_0_0_read|        scalar|
+|patches_parameters_0_3_0_1_read  |   in|   32|     ap_none|  patches_parameters_0_3_0_1_read|        scalar|
+|patches_parameters_0_3_1_0_read  |   in|   32|     ap_none|  patches_parameters_0_3_1_0_read|        scalar|
+|patches_parameters_0_3_1_1_read  |   in|   32|     ap_none|  patches_parameters_0_3_1_1_read|        scalar|
+|patches_parameters_1_0_0_0_read  |   in|   32|     ap_none|  patches_parameters_1_0_0_0_read|        scalar|
+|patches_parameters_1_0_0_1_read  |   in|   32|     ap_none|  patches_parameters_1_0_0_1_read|        scalar|
+|patches_parameters_1_0_1_0_read  |   in|   32|     ap_none|  patches_parameters_1_0_1_0_read|        scalar|
+|patches_parameters_1_0_1_1_read  |   in|   32|     ap_none|  patches_parameters_1_0_1_1_read|        scalar|
+|patches_parameters_1_1_0_0_read  |   in|   32|     ap_none|  patches_parameters_1_1_0_0_read|        scalar|
+|patches_parameters_1_1_0_1_read  |   in|   32|     ap_none|  patches_parameters_1_1_0_1_read|        scalar|
+|patches_parameters_1_1_1_0_read  |   in|   32|     ap_none|  patches_parameters_1_1_1_0_read|        scalar|
+|patches_parameters_1_1_1_1_read  |   in|   32|     ap_none|  patches_parameters_1_1_1_1_read|        scalar|
+|patches_parameters_1_2_0_0_read  |   in|   32|     ap_none|  patches_parameters_1_2_0_0_read|        scalar|
+|patches_parameters_1_2_0_1_read  |   in|   32|     ap_none|  patches_parameters_1_2_0_1_read|        scalar|
+|patches_parameters_1_2_1_0_read  |   in|   32|     ap_none|  patches_parameters_1_2_1_0_read|        scalar|
+|patches_parameters_1_2_1_1_read  |   in|   32|     ap_none|  patches_parameters_1_2_1_1_read|        scalar|
+|patches_parameters_1_3_0_0_read  |   in|   32|     ap_none|  patches_parameters_1_3_0_0_read|        scalar|
+|patches_parameters_1_3_0_1_read  |   in|   32|     ap_none|  patches_parameters_1_3_0_1_read|        scalar|
+|patches_parameters_1_3_1_0_read  |   in|   32|     ap_none|  patches_parameters_1_3_1_0_read|        scalar|
+|patches_parameters_1_3_1_1_read  |   in|   32|     ap_none|  patches_parameters_1_3_1_1_read|        scalar|
+|patches_parameters_2_0_0_0_read  |   in|   32|     ap_none|  patches_parameters_2_0_0_0_read|        scalar|
+|patches_parameters_2_0_0_1_read  |   in|   32|     ap_none|  patches_parameters_2_0_0_1_read|        scalar|
+|patches_parameters_2_0_1_0_read  |   in|   32|     ap_none|  patches_parameters_2_0_1_0_read|        scalar|
+|patches_parameters_2_0_1_1_read  |   in|   32|     ap_none|  patches_parameters_2_0_1_1_read|        scalar|
+|patches_parameters_2_1_0_0_read  |   in|   32|     ap_none|  patches_parameters_2_1_0_0_read|        scalar|
+|patches_parameters_2_1_0_1_read  |   in|   32|     ap_none|  patches_parameters_2_1_0_1_read|        scalar|
+|patches_parameters_2_1_1_0_read  |   in|   32|     ap_none|  patches_parameters_2_1_1_0_read|        scalar|
+|patches_parameters_2_1_1_1_read  |   in|   32|     ap_none|  patches_parameters_2_1_1_1_read|        scalar|
+|patches_parameters_2_2_0_0_read  |   in|   32|     ap_none|  patches_parameters_2_2_0_0_read|        scalar|
+|patches_parameters_2_2_0_1_read  |   in|   32|     ap_none|  patches_parameters_2_2_0_1_read|        scalar|
+|patches_parameters_2_2_1_0_read  |   in|   32|     ap_none|  patches_parameters_2_2_1_0_read|        scalar|
+|patches_parameters_2_2_1_1_read  |   in|   32|     ap_none|  patches_parameters_2_2_1_1_read|        scalar|
+|patches_parameters_2_3_0_0_read  |   in|   32|     ap_none|  patches_parameters_2_3_0_0_read|        scalar|
+|patches_parameters_2_3_0_1_read  |   in|   32|     ap_none|  patches_parameters_2_3_0_1_read|        scalar|
+|patches_parameters_2_3_1_0_read  |   in|   32|     ap_none|  patches_parameters_2_3_1_0_read|        scalar|
+|patches_parameters_2_3_1_1_read  |   in|   32|     ap_none|  patches_parameters_2_3_1_1_read|        scalar|
++---------------------------------+-----+-----+------------+---------------------------------+--------------+
+

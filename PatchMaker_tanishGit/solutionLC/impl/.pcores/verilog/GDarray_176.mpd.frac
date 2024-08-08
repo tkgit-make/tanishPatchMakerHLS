@@ -1,0 +1,21 @@
+
+#####################Xilinx BRAM########################
+BUS_INTERFACE BUS = GDarray_176_PORTA, BUS_STD = XIL_BRAM, BUS_TYPE = INITIATOR
+BUS_INTERFACE BUS = GDarray_176_PORTB, BUS_STD = XIL_BRAM, BUS_TYPE = INITIATOR
+## Ports
+PORT GDarray_176_Rst_A = BRAM_Rst, DIR = O, BUS = GDarray_176_PORTA
+PORT GDarray_176_Clk_A = BRAM_Clk, DIR = O, BUS = GDarray_176_PORTA
+PORT GDarray_176_EN_A = BRAM_EN, DIR = O, BUS = GDarray_176_PORTA
+PORT GDarray_176_WEN_A = BRAM_WEN, DIR = O, BUS = GDarray_176_PORTA, VEC = [7:0]
+PORT GDarray_176_Addr_A = BRAM_Addr, DIR = O, BUS = GDarray_176_PORTA, VEC = [31:0]
+PORT GDarray_176_Dout_A = BRAM_Dout, DIR = O, BUS = GDarray_176_PORTA, VEC = [63:0]
+PORT GDarray_176_Din_A = BRAM_Din, DIR = I, BUS = GDarray_176_PORTA, VEC = [63:0]
+PORT GDarray_176_Rst_B = BRAM_Rst, DIR = O, BUS = GDarray_176_PORTB
+PORT GDarray_176_Clk_B = BRAM_Clk, DIR = O, BUS = GDarray_176_PORTB
+PORT GDarray_176_EN_B = BRAM_EN, DIR = O, BUS = GDarray_176_PORTB
+PORT GDarray_176_WEN_B = BRAM_WEN, DIR = O, BUS = GDarray_176_PORTB, VEC = [7:0]
+PORT GDarray_176_Addr_B = BRAM_Addr, DIR = O, BUS = GDarray_176_PORTB, VEC = [31:0]
+PORT GDarray_176_Dout_B = BRAM_Dout, DIR = O, BUS = GDarray_176_PORTB, VEC = [63:0]
+PORT GDarray_176_Din_B = BRAM_Din, DIR = I, BUS = GDarray_176_PORTB, VEC = [63:0]
+########################################################
+

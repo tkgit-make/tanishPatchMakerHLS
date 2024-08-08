@@ -1,0 +1,21 @@
+
+#####################Xilinx BRAM########################
+BUS_INTERFACE BUS = GDarray_192_PORTA, BUS_STD = XIL_BRAM, BUS_TYPE = INITIATOR
+BUS_INTERFACE BUS = GDarray_192_PORTB, BUS_STD = XIL_BRAM, BUS_TYPE = INITIATOR
+## Ports
+PORT GDarray_192_Rst_A = BRAM_Rst, DIR = O, BUS = GDarray_192_PORTA
+PORT GDarray_192_Clk_A = BRAM_Clk, DIR = O, BUS = GDarray_192_PORTA
+PORT GDarray_192_EN_A = BRAM_EN, DIR = O, BUS = GDarray_192_PORTA
+PORT GDarray_192_WEN_A = BRAM_WEN, DIR = O, BUS = GDarray_192_PORTA, VEC = [7:0]
+PORT GDarray_192_Addr_A = BRAM_Addr, DIR = O, BUS = GDarray_192_PORTA, VEC = [31:0]
+PORT GDarray_192_Dout_A = BRAM_Dout, DIR = O, BUS = GDarray_192_PORTA, VEC = [63:0]
+PORT GDarray_192_Din_A = BRAM_Din, DIR = I, BUS = GDarray_192_PORTA, VEC = [63:0]
+PORT GDarray_192_Rst_B = BRAM_Rst, DIR = O, BUS = GDarray_192_PORTB
+PORT GDarray_192_Clk_B = BRAM_Clk, DIR = O, BUS = GDarray_192_PORTB
+PORT GDarray_192_EN_B = BRAM_EN, DIR = O, BUS = GDarray_192_PORTB
+PORT GDarray_192_WEN_B = BRAM_WEN, DIR = O, BUS = GDarray_192_PORTB, VEC = [7:0]
+PORT GDarray_192_Addr_B = BRAM_Addr, DIR = O, BUS = GDarray_192_PORTB, VEC = [31:0]
+PORT GDarray_192_Dout_B = BRAM_Dout, DIR = O, BUS = GDarray_192_PORTB, VEC = [63:0]
+PORT GDarray_192_Din_B = BRAM_Din, DIR = I, BUS = GDarray_192_PORTB, VEC = [63:0]
+########################################################
+

@@ -541,7 +541,7 @@ int_type main () {
 
     // Call any preliminary functions required to prepare input for the test.
     // Call the top-level function multiple times, passing input stimuli as needed.
-    int_type wedgesToTest[] = {0, 20}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
+    int_type wedgesToTest[] = {0, 1}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
 
     wedge_test(0, 16, wedgesToTest);
 

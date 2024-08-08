@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mSP_findBounds'" level="0">
-<item name = "Date">Thu Aug  8 00:39:22 2024
+<item name = "Date">Thu Aug  8 03:55:13 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.172 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 2.190 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">794, 797, 2.382 us, 2.391 us, 794, 797, none</column>
+<column name="">9, 10, 27.000 ns, 30.000 ns, 9, 10, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,9 +35,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_1982_1">257, 257, 3, 1, 1, 256, yes</column>
-<column name="- VITIS_LOOP_1990_2">257, 257, 3, 1, 1, 256, yes</column>
-<column name="- VITIS_LOOP_1998_3">257, 257, 3, 1, 1, 256, yes</column>
 </table>
 </item>
 </section>

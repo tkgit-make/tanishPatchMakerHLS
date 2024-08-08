@@ -1,0 +1,301 @@
+
+
+================================================================
+== Vitis HLS Report for 'getParallelogramsAndAcceptanceCorners'
+================================================================
+* Date:           Thu Aug  8 04:18:27 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        PatchMaker_tanishGit
+* Solution:       solutionLC (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu19p-fsvb3824-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.00 ns|  2.172 ns|     0.81 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       13|       13|  39.000 ns|  39.000 ns|   13|   13|     none|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                |                                     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                    Instance                    |                Module               |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_straightLineProjectorFromLayerIJtoK_fu_163  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_178  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_193  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_208  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_223  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_238  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_253  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_268  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_283  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_298  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_313  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_328  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_343  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_358  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_373  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        |grp_straightLineProjectorFromLayerIJtoK_fu_388  |straightLineProjectorFromLayerIJtoK  |        7|        7|  21.000 ns|  21.000 ns|    7|    7|     none|
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                       |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |               Loop Name               |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- get_acceptanceCorners_minMaxFinding  |        4|        4|         1|          -|          -|     4|        no|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      663|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        0|     0|     6176|     6928|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      179|    -|
+|Register             |        -|     -|     1040|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|     7216|     7770|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1080|   960|  2042880|  1021440|   80|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  3840|  8171520|  4085760|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |                    Instance                    |                Module               | BRAM_18K| DSP|  FF | LUT | URAM|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |mux_42_32_1_1_U4031                             |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |mux_42_32_1_1_U4032                             |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |mux_42_32_1_1_U4033                             |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |mux_42_32_1_1_U4034                             |mux_42_32_1_1                        |        0|   0|    0|   20|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_163  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_178  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_193  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_208  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_223  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_238  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_253  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_268  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_283  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_298  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_313  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_328  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_343  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_358  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_373  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_388  |straightLineProjectorFromLayerIJtoK  |        0|   0|  386|  428|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+    |Total                                           |                                     |        0|   0| 6176| 6928|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |add_ln60_fu_481_p2               |         +|   0|  0|  10|           3|           1|
+    |and_ln104_1_fu_639_p2            |       and|   0|  0|   2|           1|           1|
+    |and_ln104_fu_629_p2              |       and|   0|  0|   2|           1|           1|
+    |and_ln94_fu_603_p2               |       and|   0|  0|   2|           1|           1|
+    |and_ln99_fu_618_p2               |       and|   0|  0|   2|           1|           1|
+    |icmp_ln104_fu_624_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln110_fu_649_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln117_fu_671_p2             |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln13_fu_403_p2              |      icmp|   0|  0|  20|          32|          26|
+    |icmp_ln14_fu_421_p2              |      icmp|   0|  0|  20|          32|          25|
+    |icmp_ln22_fu_439_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln60_fu_487_p2              |      icmp|   0|  0|   9|           3|           4|
+    |icmp_ln62_fu_507_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln66_fu_531_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln70_fu_555_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln74_fu_579_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln89_fu_593_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln94_fu_598_p2              |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln99_fu_613_p2              |      icmp|   0|  0|  20|          32|          32|
+    |ap_block_state3_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    |or_ln117_fu_693_p2               |        or|   0|  0|   2|           1|           1|
+    |a_corner_min_2_fu_513_p3         |    select|   0|  0|  32|           1|          32|
+    |b_corner_min_4_fu_537_p3         |    select|   0|  0|  32|           1|          32|
+    |b_corner_min_fu_677_p3           |    select|   0|  0|  32|           1|          32|
+    |c_corner_max_2_fu_561_p3         |    select|   0|  0|  32|           1|          32|
+    |d_corner_max_4_fu_585_p3         |    select|   0|  0|  32|           1|          32|
+    |d_corner_max_fu_685_p3           |    select|   0|  0|  32|           1|          32|
+    |select_ln110_1_fu_663_p3         |    select|   0|  0|  32|           1|          32|
+    |select_ln110_fu_655_p3           |    select|   0|  0|  32|           1|          32|
+    |z1_max_1_fu_445_p3               |    select|   0|  0|  26|           1|          25|
+    |z1_max_fu_427_p3                 |    select|   0|  0|  32|           1|          32|
+    |z1_min_1_fu_463_p3               |    select|   0|  0|  26|           1|          25|
+    |z1_min_fu_409_p3                 |    select|   0|  0|  32|           1|          26|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |Total                            |          |   0|  0| 663|         440|         778|
+    +---------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |a_corner_min_1_reg_154  |   9|          2|   32|         64|
+    |ap_NS_fsm               |  26|          5|    1|          5|
+    |ap_return_0             |   9|          2|   32|         64|
+    |ap_return_1             |   9|          2|   32|         64|
+    |ap_return_10            |   9|          2|    1|          2|
+    |ap_return_11            |   9|          2|    1|          2|
+    |ap_return_2             |   9|          2|   32|         64|
+    |ap_return_3             |   9|          2|   32|         64|
+    |ap_return_4             |   9|          2|   32|         64|
+    |ap_return_5             |   9|          2|   32|         64|
+    |ap_return_6             |   9|          2|   32|         64|
+    |ap_return_7             |   9|          2|   32|         64|
+    |ap_return_8             |   9|          2|    1|          2|
+    |ap_return_9             |   9|          2|    1|          2|
+    |b_corner_min_1_reg_145  |   9|          2|   32|         64|
+    |c_corner_max_1_reg_136  |   9|          2|   32|         64|
+    |d_corner_max_1_reg_127  |   9|          2|   32|         64|
+    |i_reg_116               |   9|          2|    3|          6|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   | 179|         39|  392|        787|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |                             Name                            | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |a_2_reg_887                                                  |  32|   0|   32|          0|
+    |a_3_reg_907                                                  |  32|   0|   32|          0|
+    |a_4_reg_927                                                  |  32|   0|   32|          0|
+    |a_corner_min_1_reg_154                                       |  32|   0|   32|          0|
+    |a_reg_863                                                    |  32|   0|   32|          0|
+    |ap_CS_fsm                                                    |   4|   0|    4|          0|
+    |ap_return_0_preg                                             |  32|   0|   32|          0|
+    |ap_return_10_preg                                            |   1|   0|   32|         31|
+    |ap_return_11_preg                                            |   1|   0|   32|         31|
+    |ap_return_1_preg                                             |  32|   0|   32|          0|
+    |ap_return_2_preg                                             |  32|   0|   32|          0|
+    |ap_return_3_preg                                             |  32|   0|   32|          0|
+    |ap_return_4_preg                                             |  32|   0|   32|          0|
+    |ap_return_5_preg                                             |  32|   0|   32|          0|
+    |ap_return_6_preg                                             |  32|   0|   32|          0|
+    |ap_return_7_preg                                             |  32|   0|   32|          0|
+    |ap_return_8_preg                                             |   1|   0|   32|         31|
+    |ap_return_9_preg                                             |   1|   0|   32|         31|
+    |b_1_reg_892                                                  |  32|   0|   32|          0|
+    |b_2_reg_912                                                  |  32|   0|   32|          0|
+    |b_3_reg_933                                                  |  32|   0|   32|          0|
+    |b_corner_min_1_reg_145                                       |  32|   0|   32|          0|
+    |b_reg_869                                                    |  32|   0|   32|          0|
+    |c_1_reg_897                                                  |  32|   0|   32|          0|
+    |c_2_reg_917                                                  |  32|   0|   32|          0|
+    |c_3_reg_939                                                  |  32|   0|   32|          0|
+    |c_corner_max_1_reg_136                                       |  32|   0|   32|          0|
+    |c_reg_875                                                    |  32|   0|   32|          0|
+    |d_1_reg_902                                                  |  32|   0|   32|          0|
+    |d_2_reg_922                                                  |  32|   0|   32|          0|
+    |d_3_reg_945                                                  |  32|   0|   32|          0|
+    |d_corner_max_1_reg_127                                       |  32|   0|   32|          0|
+    |d_reg_881                                                    |  32|   0|   32|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_163_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_178_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_193_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_208_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_223_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_238_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_253_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_268_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_283_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_298_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_313_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_328_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_343_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_358_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_373_ap_start_reg  |   1|   0|    1|          0|
+    |grp_straightLineProjectorFromLayerIJtoK_fu_388_ap_start_reg  |   1|   0|    1|          0|
+    |i_reg_116                                                    |   3|   0|    3|          0|
+    |icmp_ln22_reg_781                                            |   1|   0|    1|          0|
+    |sext_ln13_reg_849                                            |  32|   0|   32|          0|
+    |sext_ln22_reg_835                                            |  32|   0|   32|          0|
+    |trunc_ln13_reg_771                                           |  26|   0|   26|          0|
+    |trunc_ln14_reg_776                                           |  26|   0|   26|          0|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                        |1040|   0| 1164|        124|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+---------------------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++----------------------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk                      |   in|    1|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_rst                      |   in|    1|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_start                    |   in|    1|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_done                     |  out|    1|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_idle                     |  out|    1|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_ready                    |  out|    1|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_0                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_1                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_2                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_3                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_4                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_5                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_6                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_7                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_8                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_9                 |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_10                |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|ap_return_11                |  out|   32|  ap_ctrl_hs|  getParallelogramsAndAcceptanceCorners|  return value|
+|wp_superpoints_0_0_1_read   |   in|   32|     ap_none|              wp_superpoints_0_0_1_read|        scalar|
+|wp_superpoints_0_15_1_read  |   in|   32|     ap_none|             wp_superpoints_0_15_1_read|        scalar|
+|wp_superpoints_1_0_1_read   |   in|   32|     ap_none|              wp_superpoints_1_0_1_read|        scalar|
+|wp_superpoints_1_15_1_read  |   in|   32|     ap_none|             wp_superpoints_1_15_1_read|        scalar|
+|wp_superpoints_2_0_1_read   |   in|   32|     ap_none|              wp_superpoints_2_0_1_read|        scalar|
+|wp_superpoints_2_15_1_read  |   in|   32|     ap_none|             wp_superpoints_2_15_1_read|        scalar|
+|wp_superpoints_3_0_1_read   |   in|   32|     ap_none|              wp_superpoints_3_0_1_read|        scalar|
+|wp_superpoints_3_15_1_read  |   in|   32|     ap_none|             wp_superpoints_3_15_1_read|        scalar|
+|wp_superpoints_4_0_1_read   |   in|   32|     ap_none|              wp_superpoints_4_0_1_read|        scalar|
+|wp_superpoints_4_15_1_read  |   in|   32|     ap_none|             wp_superpoints_4_15_1_read|        scalar|
++----------------------------+-----+-----+------------+---------------------------------------+--------------+
+

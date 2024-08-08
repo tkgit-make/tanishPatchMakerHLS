@@ -17,4 +17,4 @@ source "./PatchMaker_tanishGit/solutionLC/directives.tcl"
 csim_design
 csynth_design
 cosim_design
-export_design -format ip_catalog
+export_design -rtl verilog -format ip_catalog

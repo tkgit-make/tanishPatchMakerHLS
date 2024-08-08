@@ -1,0 +1,21 @@
+
+#####################Xilinx BRAM########################
+BUS_INTERFACE BUS = GDarray_207_PORTA, BUS_STD = XIL_BRAM, BUS_TYPE = INITIATOR
+BUS_INTERFACE BUS = GDarray_207_PORTB, BUS_STD = XIL_BRAM, BUS_TYPE = INITIATOR
+## Ports
+PORT GDarray_207_Rst_A = BRAM_Rst, DIR = O, BUS = GDarray_207_PORTA
+PORT GDarray_207_Clk_A = BRAM_Clk, DIR = O, BUS = GDarray_207_PORTA
+PORT GDarray_207_EN_A = BRAM_EN, DIR = O, BUS = GDarray_207_PORTA
+PORT GDarray_207_WEN_A = BRAM_WEN, DIR = O, BUS = GDarray_207_PORTA, VEC = [7:0]
+PORT GDarray_207_Addr_A = BRAM_Addr, DIR = O, BUS = GDarray_207_PORTA, VEC = [31:0]
+PORT GDarray_207_Dout_A = BRAM_Dout, DIR = O, BUS = GDarray_207_PORTA, VEC = [63:0]
+PORT GDarray_207_Din_A = BRAM_Din, DIR = I, BUS = GDarray_207_PORTA, VEC = [63:0]
+PORT GDarray_207_Rst_B = BRAM_Rst, DIR = O, BUS = GDarray_207_PORTB
+PORT GDarray_207_Clk_B = BRAM_Clk, DIR = O, BUS = GDarray_207_PORTB
+PORT GDarray_207_EN_B = BRAM_EN, DIR = O, BUS = GDarray_207_PORTB
+PORT GDarray_207_WEN_B = BRAM_WEN, DIR = O, BUS = GDarray_207_PORTB, VEC = [7:0]
+PORT GDarray_207_Addr_B = BRAM_Addr, DIR = O, BUS = GDarray_207_PORTB, VEC = [31:0]
+PORT GDarray_207_Dout_B = BRAM_Dout, DIR = O, BUS = GDarray_207_PORTB, VEC = [63:0]
+PORT GDarray_207_Din_B = BRAM_Din, DIR = I, BUS = GDarray_207_PORTB, VEC = [63:0]
+########################################################
+

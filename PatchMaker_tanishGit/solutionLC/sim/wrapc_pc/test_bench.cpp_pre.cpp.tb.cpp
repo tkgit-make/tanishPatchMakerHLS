@@ -108234,11 +108234,11 @@ namespace std
 }
 # 63 "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/numeric" 2 3
 # 38 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h" 2
-# 113 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
+# 114 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
 
-# 113 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
+# 114 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
 static const int64_t radii[5] = {5 * 1000000, 10 * 1000000, 15 * 1000000, 20 * 1000000, 25 * 1000000};
-# 125 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
+# 126 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
 static const int32_t trapezoid_edges[5] = {static_cast<int64_t>(220001 * (1000000 / 10000)),
                                               static_cast<int64_t>(290001 * (1000000 / 10000)),
                                               static_cast<int64_t>(360001 * (1000000 / 10000)),
@@ -108250,7 +108250,7 @@ static const int32_t trapezoid_edgesNEGATIVE[5] = {static_cast<int64_t>(-220001 
                                               static_cast<int64_t>(-360001 * (1000000 / 10000)),
                                               static_cast<int64_t>(-430001 * (1000000 / 10000)),
                                               static_cast<int64_t>(-500001 * (1000000 / 10000))};
-# 224 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
+# 225 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
 bool areWedgeSuperPointsEqual(int64_t wsp1[16], int64_t wsp2[16]);
 void wedgePatch_init(int32_t (&wp_superpoints) [5][16][2], int32_t (&wp_parameters) [3][4][2], int32_t superpointsI[5][16][2], int64_t superpoint_count, int32_t apexZ0I);
 int32_t straightLineProjectorFromLayerIJtoK(int32_t z_i, int32_t z_j, int32_t i, int32_t j, int32_t k);
@@ -108397,11 +108397,11 @@ MPSQ(ppl, n_patches, GDarrayPostSort, GDn_points, output_patch_stream);
    for(int32_t b = 0; b < 16; b++)
    {
     int64_t temp = output_patch_stream.read();
-    cout << temp;
+
     tempArray[a][b] = temp;
    }
   }
-  cout << endl;
+
   if(tempArray[0][0] == 0)
   {
    tlast = true;

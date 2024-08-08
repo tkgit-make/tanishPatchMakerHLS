@@ -1287,3 +1287,1562 @@ INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
 INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 25.099 seconds; current allocated memory: 92.155 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 27.004 seconds; current allocated memory: 92.139 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.214 seconds; current allocated memory: 871.689 MB.
+INFO: [HLS 200-10] Analyzing design file 'patchMaker.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5512] 'ON' in '#pragma HLS INLINE' is ignored: patchMaker.cpp:6:20
+WARNING: [HLS 207-5301] unused parameter 'n_patches': patchMaker.cpp:417:61
+WARNING: [HLS 207-5301] unused parameter 'GDn_points': patchMaker.cpp:628:105
+WARNING: [HLS 207-5301] unused parameter 'repeat_patch': patchMaker.cpp:1208:154
+WARNING: [HLS 207-5301] unused parameter 'repeat_original': patchMaker.cpp:1208:174
+WARNING: [HLS 207-5301] unused parameter 'row_list_size': patchMaker.cpp:1635:63
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 41.356 seconds; current allocated memory: 94.931 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'add_patch(int (&) [5][16][2], int (&) [3][4][2], unsigned char&, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:343:18)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'add_patch(int (&) [5][16][2], int (&) [3][4][2], unsigned char&, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:344:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'add_patch(int (&) [5][16][2], int (&) [3][4][2], unsigned char&, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:363:28)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveComplmentaryPatch(long long&, int, bool, int, int&, int, long long&, unsigned char&, int, int, int&, int&, int&, int&, int&, int&, bool&, bool&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:1432:29)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveComplmentaryPatch(long long&, int, bool, int, int&, int, long long&, unsigned char&, int, int, int&, int&, int&, int&, int&, int&, bool&, bool&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:1433:19)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveComplmentaryPatch(long long&, int, bool, int, int&, int, long long&, unsigned char&, int, int, int&, int&, int&, int&, int&, int&, bool&, bool&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:1434:13)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveComplmentaryPatch(long long&, int, bool, int, int&, int, long long&, unsigned char&, int, int, int&, int&, int&, int&, int&, int&, bool&, bool&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:1436:13)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveComplmentaryPatch(long long&, int, bool, int, int&, int, long long&, unsigned char&, int, int, int&, int&, int&, int&, int&, int&, bool&, bool&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:1435:13)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'getShadows(long long (&) [5][16], int (&) [3][4][2], int, int)' (patchMaker.cpp:210:20)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'getShadows(long long (&) [5][16], int (&) [3][4][2], int, int)' (patchMaker.cpp:211:27)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveNextPatchPair(int, int, bool, int&, int&, int&, int&, int&, int&, int&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:926:24)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveNextPatchPair(int, int, bool, int&, int&, int&, int&, int&, int&, int&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:927:11)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveNextPatchPair(int, int, bool, int&, int&, int&, int&, int&, int&, int&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:928:5)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveNextPatchPair(int, int, bool, int&, int&, int&, int&, int&, int&, int&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:929:5)
+INFO: [HLS 214-131] Inlining function 'areWedgeSuperPointsEqual(long long*, long long*)' into 'solveNextPatchPair(int, int, bool, int&, int&, int&, int&, int&, int&, int&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:930:5)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'solveNextPatchPair(int, int, bool, int&, int&, int&, int&, int&, int&, int&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:948:32)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'solveNextPatchPair(int, int, bool, int&, int&, int&, int&, int&, int&, int&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:958:129)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'solveNextPatchPair(int, int, bool, int&, int&, int&, int&, int&, int&, int&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:958:73)
+INFO: [HLS 214-131] Inlining function 'decodePHIcoordinate(long long)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:754:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:803:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:789:25)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:755:39)
+INFO: [HLS 214-186] Unrolling loop 'getParallelograms_settingWPparameters' (patchMaker.cpp:29:5) in function 'getParallelogramsAndAcceptanceCorners' completely with a factor of 4 (patchMaker.cpp:29:5)
+INFO: [HLS 214-186] Unrolling loop 'getShadows_settingtopArrays' (patchMaker.cpp:205:5) in function 'getShadows' completely with a factor of 4 (patchMaker.cpp:205:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyTypePP1' (patchMaker.cpp:285:2) in function 'add_patch_patches_parameters' completely with a factor of 3 (patchMaker.cpp:285:2)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP1' (patchMaker.cpp:291:3) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:291:3)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP1' (patchMaker.cpp:291:3) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:291:3)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP1' (patchMaker.cpp:291:3) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:291:3)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP1' (patchMaker.cpp:297:4) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:297:4)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_255_1' (patchMaker.cpp:255:20) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:255:20)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyTypePP0' (patchMaker.cpp:261:3) in function 'add_patch_patches_parameters' completely with a factor of 3 (patchMaker.cpp:261:3)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP0' (patchMaker.cpp:267:4) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:267:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP0' (patchMaker.cpp:267:4) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:267:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP0' (patchMaker.cpp:267:4) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:267:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyTypePP0' (patchMaker.cpp:261:3) in function 'add_patch_patches_parameters' completely with a factor of 3 (patchMaker.cpp:261:3)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP0' (patchMaker.cpp:267:4) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:267:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP0' (patchMaker.cpp:267:4) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:267:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perParallelogramPP0' (patchMaker.cpp:267:4) in function 'add_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:267:4)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPropertyLengthPP0' (patchMaker.cpp:273:5) in function 'add_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:273:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perSuperpointSP0' (patchMaker.cpp:314:9) in function 'add_patch' completely with a factor of 5 (patchMaker.cpp:314:9)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP0' (patchMaker.cpp:320:13) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:320:13)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP0' (patchMaker.cpp:320:13) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:320:13)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP0' (patchMaker.cpp:320:13) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:320:13)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP0' (patchMaker.cpp:320:13) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:320:13)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP0' (patchMaker.cpp:320:13) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:320:13)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perSuperpointSP1' (patchMaker.cpp:392:5) in function 'add_patch' completely with a factor of 5 (patchMaker.cpp:392:5)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP1' (patchMaker.cpp:398:6) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:398:6)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP1' (patchMaker.cpp:398:6) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:398:6)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP1' (patchMaker.cpp:398:6) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:398:6)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP1' (patchMaker.cpp:398:6) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:398:6)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_perPointSP1' (patchMaker.cpp:398:6) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:398:6)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack' (patchMaker.cpp:369:17) in function 'add_patch' completely with a factor of 2 (patchMaker.cpp:369:17)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perSuperpointSP1' (patchMaker.cpp:375:6) in function 'add_patch' completely with a factor of 5 (patchMaker.cpp:375:6)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perSuperpointSP1' (patchMaker.cpp:375:6) in function 'add_patch' completely with a factor of 5 (patchMaker.cpp:375:6)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'add_patch_copySPBack_perPointSP1' (patchMaker.cpp:381:7) in function 'add_patch' completely with a factor of 16 (patchMaker.cpp:381:7)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyTypePP1' (patchMaker.cpp:448:2) in function 'delete_patch_patches_parameters' completely with a factor of 3 (patchMaker.cpp:448:2)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perParallelogramPP1' (patchMaker.cpp:454:3) in function 'delete_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:454:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perParallelogramPP1' (patchMaker.cpp:454:3) in function 'delete_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:454:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perParallelogramPP1' (patchMaker.cpp:454:3) in function 'delete_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:454:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP1' (patchMaker.cpp:460:4) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:460:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyTypePP0' (patchMaker.cpp:424:3) in function 'delete_patch_patches_parameters' completely with a factor of 3 (patchMaker.cpp:424:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perParallelogramPP0' (patchMaker.cpp:430:4) in function 'delete_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:430:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perParallelogramPP0' (patchMaker.cpp:430:4) in function 'delete_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:430:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perParallelogramPP0' (patchMaker.cpp:430:4) in function 'delete_patch_patches_parameters' completely with a factor of 4 (patchMaker.cpp:430:4)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPropertyLengthPP0' (patchMaker.cpp:436:5) in function 'delete_patch_patches_parameters' completely with a factor of 2 (patchMaker.cpp:436:5)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perSuperpointSPLP' (patchMaker.cpp:509:2) in function 'delete_patch' completely with a factor of 5 (patchMaker.cpp:509:2)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSPLP' (patchMaker.cpp:515:3) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:515:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSPLP' (patchMaker.cpp:515:3) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:515:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSPLP' (patchMaker.cpp:515:3) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:515:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSPLP' (patchMaker.cpp:515:3) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:515:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSPLP' (patchMaker.cpp:515:3) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:515:3)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perSuperpointSP' (patchMaker.cpp:489:9) in function 'delete_patch' completely with a factor of 5 (patchMaker.cpp:489:9)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSP' (patchMaker.cpp:495:13) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:495:13)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSP' (patchMaker.cpp:495:13) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:495:13)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSP' (patchMaker.cpp:495:13) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:495:13)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSP' (patchMaker.cpp:495:13) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:495:13)
+INFO: [HLS 214-186] Unrolling loop 'delete_patch_perPointSP' (patchMaker.cpp:495:13) in function 'delete_patch' completely with a factor of 16 (patchMaker.cpp:495:13)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_returnMinVal' (patchMaker.cpp:613:2) in function 'minValFinder' completely with a factor of 256 (patchMaker.cpp:613:2)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_602_7' (patchMaker.cpp:602:20) in function 'minValFinder' completely with a factor of 2 (patchMaker.cpp:602:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_594_6' (patchMaker.cpp:594:20) in function 'minValFinder' completely with a factor of 4 (patchMaker.cpp:594:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_586_5' (patchMaker.cpp:586:20) in function 'minValFinder' completely with a factor of 8 (patchMaker.cpp:586:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_578_4' (patchMaker.cpp:578:20) in function 'minValFinder' completely with a factor of 16 (patchMaker.cpp:578:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_570_3' (patchMaker.cpp:570:20) in function 'minValFinder' completely with a factor of 32 (patchMaker.cpp:570:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_562_2' (patchMaker.cpp:562:20) in function 'minValFinder' completely with a factor of 64 (patchMaker.cpp:562:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_554_1' (patchMaker.cpp:554:20) in function 'minValFinder' completely with a factor of 128 (patchMaker.cpp:554:20)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArrayCOPY' (patchMaker.cpp:546:2) in function 'minValFinder' completely with a factor of 256 (patchMaker.cpp:546:2)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArray' (patchMaker.cpp:640:5) in function 'get_index_from_z' completely with a factor of 256 (patchMaker.cpp:640:5)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop2' (patchMaker.cpp:680:9) in function 'initializeArrays' completely with a factor of 3 (patchMaker.cpp:680:9)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop3' (patchMaker.cpp:686:13) in function 'initializeArrays' completely with a factor of 4 (patchMaker.cpp:686:13)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop3' (patchMaker.cpp:686:13) in function 'initializeArrays' completely with a factor of 4 (patchMaker.cpp:686:13)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop3' (patchMaker.cpp:686:13) in function 'initializeArrays' completely with a factor of 4 (patchMaker.cpp:686:13)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysPPloop4' (patchMaker.cpp:692:17) in function 'initializeArrays' completely with a factor of 2 (patchMaker.cpp:692:17)
+INFO: [HLS 214-186] Unrolling loop 'initArraysSPloop2' (patchMaker.cpp:659:9) in function 'initializeArrays' completely with a factor of 5 (patchMaker.cpp:659:9)
+INFO: [HLS 214-186] Unrolling loop 'initArraysSPloop3' (patchMaker.cpp:665:13) in function 'initializeArrays' completely with a factor of 16 (patchMaker.cpp:665:13)
+INFO: [HLS 214-186] Unrolling loop 'initArraysSPloop3' (patchMaker.cpp:665:13) in function 'initializeArrays' completely with a factor of 16 (patchMaker.cpp:665:13)
+INFO: [HLS 214-186] Unrolling loop 'initArraysSPloop3' (patchMaker.cpp:665:13) in function 'initializeArrays' completely with a factor of 16 (patchMaker.cpp:665:13)
+INFO: [HLS 214-186] Unrolling loop 'initArraysSPloop3' (patchMaker.cpp:665:13) in function 'initializeArrays' completely with a factor of 16 (patchMaker.cpp:665:13)
+INFO: [HLS 214-186] Unrolling loop 'initArraysSPloop3' (patchMaker.cpp:665:13) in function 'initializeArrays' completely with a factor of 16 (patchMaker.cpp:665:13)
+INFO: [HLS 214-186] Unrolling loop 'initGDarrayDecoded_perLayer' (patchMaker.cpp:743:5) in function 'MPSQ' completely with a factor of 5 (patchMaker.cpp:743:5)
+INFO: [HLS 214-186] Unrolling loop 'initGDarrayDecoded_perPoint' (patchMaker.cpp:749:9) in function 'MPSQ' completely with a factor of 256 (patchMaker.cpp:749:9)
+INFO: [HLS 214-186] Unrolling loop 'initGDarrayDecoded_perPoint' (patchMaker.cpp:749:9) in function 'MPSQ' completely with a factor of 256 (patchMaker.cpp:749:9)
+INFO: [HLS 214-186] Unrolling loop 'initGDarrayDecoded_perPoint' (patchMaker.cpp:749:9) in function 'MPSQ' completely with a factor of 256 (patchMaker.cpp:749:9)
+INFO: [HLS 214-186] Unrolling loop 'initGDarrayDecoded_perPoint' (patchMaker.cpp:749:9) in function 'MPSQ' completely with a factor of 256 (patchMaker.cpp:749:9)
+INFO: [HLS 214-186] Unrolling loop 'initGDarrayDecoded_perPoint' (patchMaker.cpp:749:9) in function 'MPSQ' completely with a factor of 256 (patchMaker.cpp:749:9)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyType' (patchMaker.cpp:1511:5) in function 'makePatch_alignedToLine' completely with a factor of 3 (patchMaker.cpp:1511:5)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perParallelogram' (patchMaker.cpp:1517:3) in function 'makePatch_alignedToLine' completely with a factor of 4 (patchMaker.cpp:1517:3)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perParallelogram' (patchMaker.cpp:1517:3) in function 'makePatch_alignedToLine' completely with a factor of 4 (patchMaker.cpp:1517:3)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perParallelogram' (patchMaker.cpp:1517:3) in function 'makePatch_alignedToLine' completely with a factor of 4 (patchMaker.cpp:1517:3)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPP_perPropertyLength' (patchMaker.cpp:1523:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1523:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_makeSuperpoint_loop' (patchMaker.cpp:1495:5) in function 'makePatch_alignedToLine' completely with a factor of 5 (patchMaker.cpp:1495:5)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perLayer' (patchMaker.cpp:1470:5) in function 'makePatch_alignedToLine' completely with a factor of 5 (patchMaker.cpp:1470:5)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perPoint' (patchMaker.cpp:1476:3) in function 'makePatch_alignedToLine' completely with a factor of 16 (patchMaker.cpp:1476:3)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perPoint' (patchMaker.cpp:1476:3) in function 'makePatch_alignedToLine' completely with a factor of 16 (patchMaker.cpp:1476:3)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perPoint' (patchMaker.cpp:1476:3) in function 'makePatch_alignedToLine' completely with a factor of 16 (patchMaker.cpp:1476:3)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perPoint' (patchMaker.cpp:1476:3) in function 'makePatch_alignedToLine' completely with a factor of 16 (patchMaker.cpp:1476:3)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perPoint' (patchMaker.cpp:1476:3) in function 'makePatch_alignedToLine' completely with a factor of 16 (patchMaker.cpp:1476:3)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'makePatch_alignedToLine_initPatch_perParameter' (patchMaker.cpp:1482:4) in function 'makePatch_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1482:4)
+INFO: [HLS 214-186] Unrolling loop 'solveComplmentaryPatch_fillNew_z_i_atTop' (patchMaker.cpp:1305:5) in function 'solveComplmentaryPatch' completely with a factor of 4 (patchMaker.cpp:1305:5)
+INFO: [HLS 214-186] Unrolling loop 'solveComplmentaryPatch_fillNew_z_i_index3' (patchMaker.cpp:1291:5) in function 'solveComplmentaryPatch' completely with a factor of 5 (patchMaker.cpp:1291:5)
+INFO: [HLS 214-186] Unrolling loop 'solveComplmentaryPatch_fillNew_z_i_index1' (patchMaker.cpp:1266:9) in function 'solveComplmentaryPatch' completely with a factor of 5 (patchMaker.cpp:1266:9)
+INFO: [HLS 214-186] Unrolling loop 'solveComplmentaryPatch_fillNew_z_i_index2' (patchMaker.cpp:1279:9) in function 'solveComplmentaryPatch' completely with a factor of 5 (patchMaker.cpp:1279:9)
+INFO: [HLS 214-186] Unrolling loop 'solveComplmentaryPatch_fillNew_z_i_index0' (patchMaker.cpp:1250:9) in function 'solveComplmentaryPatch' completely with a factor of 5 (patchMaker.cpp:1250:9)
+INFO: [HLS 214-186] Unrolling loop 'solveComplmentaryPatch_fillCurrent_z_i_index' (patchMaker.cpp:1238:5) in function 'solveComplmentaryPatch' completely with a factor of 5 (patchMaker.cpp:1238:5)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perPoint' (patchMaker.cpp:1619:5) in function 'makeSuperPoint_alignedToLine' completely with a factor of 16 (patchMaker.cpp:1619:5)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_initSP_perParameter' (patchMaker.cpp:1625:6) in function 'makeSuperPoint_alignedToLine' completely with a factor of 2 (patchMaker.cpp:1625:6)
+INFO: [HLS 214-186] Unrolling loop 'makeSuperPoint_alignedToLine_rowListSet_loop' (patchMaker.cpp:1550:5) in function 'makeSuperPoint_alignedToLine' completely with a factor of 256 (patchMaker.cpp:1550:5)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1670_3' (patchMaker.cpp:1670:24) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:1670:24)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1662_2' (patchMaker.cpp:1662:24) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:1662:24)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1654_1' (patchMaker.cpp:1654:21) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:1654:21)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'getSolveNextPatchPairWhileCondition(bool, bool, long long, long long, int, int*, int (&) [3][3][4][2])' (patchMaker.cpp:1019:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'solveComplmentaryPatch(long long&, int, bool, int, int&, int, long long&, unsigned char&, int, int, int&, int&, int&, int&, int&, int&, bool&, bool&, unsigned char&, int (*) [256][2], int*, long long (&) [3][5][16], int (&) [3][3][4][2], hls::stream<long long, 0>&)' (patchMaker.cpp:1209:0)
+INFO: [HLS 214-248] complete partitioned array 'GDarra' on dimension 2 (patchMaker.cpp:734:9)
+INFO: [HLS 214-248] complete partitioned array 'GDarra' on dimension 1 (patchMaker.cpp:736:9)
+INFO: [HLS 214-248] complete partitioned array 'GDn_points' on dimension 1 (patchMaker.cpp:724:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 78 seconds. CPU system time: 1 seconds. Elapsed time: 2601.59 seconds; current allocated memory: 209.954 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 209.955 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 115 seconds. CPU system time: 0 seconds. Elapsed time: 116.736 seconds; current allocated memory: 227.202 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 120 seconds. CPU system time: 0 seconds. Elapsed time: 120.42 seconds; current allocated memory: 239.645 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_421_1' (patchMaker.cpp:421) in function 'delete_patch_patches_parameters' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'add_patch_perPointSP1_toSTREAM' (patchMaker.cpp:361) in function 'add_patch' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'initArraysSPloop1' (patchMaker.cpp:655) in function 'initializeArrays' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'initArraysPPloop1' (patchMaker.cpp:676) in function 'initializeArrays' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'finalSPOutputInit_perPoint_PatchSTREAM0' (patchMaker.cpp:787) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'finalSPOutput_writeDummy_perPoint' (patchMaker.cpp:794) in function 'MPSQ' automatically.
+WARNING: [HLS 200-932] Cannot unroll loop 'delete_patch_perPatch' (patchMaker.cpp:483) in function 'delete_patch' completely: variable loop bound.
+INFO: [XFORM 203-102] Partitioning array 'radiiDivisionList.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'topL_jL' (patchMaker.cpp:199) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'topL_jR' (patchMaker.cpp:200) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'topR_jL' (patchMaker.cpp:201) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'topR_jR' (patchMaker.cpp:202) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'parallelogramsList' (patchMaker.cpp:16) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints' (patchMaker.cpp:708) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters' (patchMaker.cpp:715) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:730) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'current_z_i_index' (patchMaker.cpp:1228) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'new_z_i_atTop' (patchMaker.cpp:1299) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'row_list' (patchMaker.cpp:1543) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArray' (patchMaker.cpp:634) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'row_list' (patchMaker.cpp:1543) accessed through non-constant indices on dimension 1 (patchMaker.cpp:1602:31), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'row_list' (patchMaker.cpp:1543) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'row_list' (patchMaker.cpp:1543) accessed through non-constant indices on dimension 1 (patchMaker.cpp:1602:31), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'row_list' (patchMaker.cpp:1543) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArraySTART' (patchMaker.cpp:1645) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayLEFT' (patchMaker.cpp:1646) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayRIGHT' (patchMaker.cpp:1647) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayCOPY' (patchMaker.cpp:540) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topL_jL' (patchMaker.cpp:199) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topL_jR' (patchMaker.cpp:200) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topR_jL' (patchMaker.cpp:201) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'topR_jR' (patchMaker.cpp:202) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'parallelogramsList' (patchMaker.cpp:16) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints' (patchMaker.cpp:708) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters' (patchMaker.cpp:715) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:730) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters' (patchMaker.cpp:715) in dimension 4 completely.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:730) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'init_patch' (patchMaker.cpp:1462) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'NPpatches_parameters' (patchMaker.cpp:1503) in dimension 3 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'GDarrayDecoded' (patchMaker.cpp:730) accessed through non-constant indices on dimension 1 (patchMaker.cpp:1311:24), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+WARNING: [HLS 200-914] Completely partitioning array 'row_list' (patchMaker.cpp:1543) accessed through non-constant indices on dimension 1 (patchMaker.cpp:1682:9), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][0]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][1]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][2]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][3]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][4]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][5]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][6]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][7]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][8]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][9]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][10]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][11]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][12]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][13]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][14]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[0][15]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][0]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][1]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][2]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][3]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][4]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][5]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][6]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][7]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][8]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][9]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][10]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][11]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][12]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][13]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][14]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[1][15]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][0]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][1]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][2]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][3]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][4]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][5]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][6]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][7]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][8]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][9]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][10]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][11]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][12]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][13]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][14]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[2][15]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][0]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][1]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][2]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][3]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][4]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][5]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][6]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][7]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][8]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][9]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][10]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][11]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][12]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][13]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][14]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[3][15]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][0]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][1]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][2]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][3]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][4]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][5]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][6]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][7]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][8]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][9]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][10]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][11]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][12]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][13]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][14]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_superpoints[4][15]' (patchMaker.cpp:708) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[0][0][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[0][0][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[0][1][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[0][1][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[0][2][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[0][2][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[0][3][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[0][3][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[1][0][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[1][0][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[1][1][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[1][1][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[1][2][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[1][2][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[1][3][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[1][3][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[2][0][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[2][0][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[2][1][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[2][1][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[2][2][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[2][2][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[2][3][0]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'patches_parameters[2][3][1]' (patchMaker.cpp:715) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][0]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][1]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][2]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][3]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][4]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][5]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][6]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][7]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][8]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][9]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][10]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][11]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][12]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][13]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][14]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[0][15]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][0]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][1]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][2]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][3]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][4]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][5]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][6]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][7]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][8]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][9]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][10]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][11]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][12]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][13]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][14]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[1][15]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][0]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][1]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][2]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][3]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][4]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][5]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][6]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][7]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][8]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][9]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][10]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][11]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][12]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][13]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][14]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[2][15]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][0]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][1]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][2]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][3]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][4]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][5]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][6]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][7]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][8]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][9]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][10]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][11]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][12]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][13]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][14]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[3][15]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][0]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][1]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][2]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][3]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][4]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][5]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][6]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][7]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][8]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][9]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][10]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][11]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][12]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][13]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][14]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_superpoints[4][15]' (patchMaker.cpp:708) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[0][0][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[0][0][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[0][1][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[0][1][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[0][2][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[0][2][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[0][3][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[0][3][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[1][0][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[1][0][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[1][1][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[1][1][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[1][2][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[1][2][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[1][3][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[1][3][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[2][0][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[2][0][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[2][1][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[2][1][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[2][2][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[2][2][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[2][3][0]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'patches_parameters[2][3][1]' (patchMaker.cpp:715) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:181:1) in function 'straightLineProjectorFromLayerIJtoK'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:934:80) in function 'solveNextPatchPair'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:948:50) to (patchMaker.cpp:984:9) in function 'solveNextPatchPair'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:1321:5) in function 'solveComplmentaryPatch'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:1330:28) to (patchMaker.cpp:1375:9) in function 'solveComplmentaryPatch'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'minValFinder'... converting 257 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:1053:73) in function 'makeThirdPatch'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:1056:32) to (patchMaker.cpp:1058:76) in function 'makeThirdPatch'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:1071:51) to (patchMaker.cpp:1121:5) in function 'makeThirdPatch'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:1633:1) in function 'makeSuperPoint_alignedToLine.2'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:1633:1) in function 'makeSuperPoint_alignedToLine.1'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:1633:1) in function 'makeSuperPoint_alignedToLine'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:1016:47) to (patchMaker.cpp:1031:2) in function 'getSolveNextPatchPairWhileCondition'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:225:18) to (patchMaker.cpp:227:13) in function 'getShadows'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:421:33) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:441:35) to (patchMaker.cpp:441:33) in function 'delete_patch_patches_parameters'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:483:18) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:500:33) to (patchMaker.cpp:500:31) in function 'delete_patch'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2439 seconds. CPU system time: 2 seconds. Elapsed time: 2458.96 seconds; current allocated memory: 451.108 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'add_patch_perSuperpointSP1_toSTREAM' (patchMaker.cpp:358:18) in function 'add_patch'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutputInit_perSuperpoint_PatchSTREAM0' (patchMaker.cpp:784:18) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutputInit_perPatch_PatchSTREAM0' (patchMaker.cpp:781:17) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutput_writeDummy_perSuperpoint' (patchMaker.cpp:797:14) in function 'MPSQ'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1084 seconds. CPU system time: 0 seconds. Elapsed time: 1085.92 seconds; current allocated memory: 1.353 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MPSQ' ...
+WARNING: [SYN 201-103] Legalizing function name 'makeSuperPoint_alignedToLine.1' to 'makeSuperPoint_alignedToLine_1'.
+WARNING: [SYN 201-103] Legalizing function name 'makeSuperPoint_alignedToLine.2' to 'makeSuperPoint_alignedToLine_2'.
+WARNING: [SYN 201-103] Legalizing function name 'makePatch_alignedToLine.1' to 'makePatch_alignedToLine_1'.
+WARNING: [SYN 201-103] Legalizing function name 'makePatch_alignedToLine.2' to 'makePatch_alignedToLine_2'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'initializeArrays' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'initArraysSPloop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'initArraysSPloop1'
+INFO: [SCHED 204-61] Pipelining loop 'initArraysPPloop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'initArraysPPloop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.837 seconds; current allocated memory: 1.427 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.528 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'straightLineProjectorFromLayerIJtoK' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.506 seconds; current allocated memory: 1.432 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.008 seconds; current allocated memory: 1.432 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getSolveNextColumnWhileConditional' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.173 seconds; current allocated memory: 1.432 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.896 seconds; current allocated memory: 1.432 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'minValFinder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 7 seconds. CPU system time: 0 seconds. Elapsed time: 7.532 seconds; current allocated memory: 1.436 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.646 seconds; current allocated memory: 1.451 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mSP_findBounds' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 9.263 seconds; current allocated memory: 1.460 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 9 seconds. CPU system time: 0 seconds. Elapsed time: 10.661 seconds; current allocated memory: 1.470 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makeSuperPoint_alignedToLine_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 21 seconds. CPU system time: 0 seconds. Elapsed time: 22.99 seconds; current allocated memory: 1.480 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 7 seconds. CPU system time: 0 seconds. Elapsed time: 9.062 seconds; current allocated memory: 1.526 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getParallelogramsAndAcceptanceCorners' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 16 seconds. CPU system time: 1 seconds. Elapsed time: 17.458 seconds; current allocated memory: 1.527 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.433 seconds; current allocated memory: 1.527 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'encodeCoordinates' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.011 seconds; current allocated memory: 1.527 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.056 seconds; current allocated memory: 1.527 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'add_patch_patches_parameters' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.228 seconds; current allocated memory: 1.528 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.453 seconds; current allocated memory: 1.528 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'add_patch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'add_patch_perSuperpointSP1_toSTREAM_add_patch_perPointSP1_toSTREAM'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'add_patch_perSuperpointSP1_toSTREAM_add_patch_perPointSP1_toSTREAM'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.364 seconds; current allocated memory: 1.532 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.384 seconds; current allocated memory: 1.538 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makePatch_alignedToLine' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 9 seconds. CPU system time: 0 seconds. Elapsed time: 10.283 seconds; current allocated memory: 1.548 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 33 seconds. CPU system time: 1 seconds. Elapsed time: 34.908 seconds; current allocated memory: 1.582 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makeSuperPoint_alignedToLine_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 23 seconds. CPU system time: 0 seconds. Elapsed time: 25.653 seconds; current allocated memory: 1.592 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 8.841 seconds; current allocated memory: 1.638 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makePatch_alignedToLine_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 24 seconds. CPU system time: 1 seconds. Elapsed time: 26.544 seconds; current allocated memory: 1.650 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 30 seconds. CPU system time: 0 seconds. Elapsed time: 31.421 seconds; current allocated memory: 1.684 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getSolveNextPatchPairWhileCondition' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 18 seconds. CPU system time: 0 seconds. Elapsed time: 19.687 seconds; current allocated memory: 1.684 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.221 seconds; current allocated memory: 1.684 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'get_index_from_z' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.762 seconds; current allocated memory: 1.690 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.741 seconds; current allocated memory: 1.699 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'delete_patch_patches_parameters' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_421_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_421_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 6 seconds. CPU system time: 0 seconds. Elapsed time: 7.112 seconds; current allocated memory: 1.700 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.589 seconds; current allocated memory: 1.701 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'delete_patch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 4.008 seconds; current allocated memory: 1.705 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.91 seconds; current allocated memory: 1.712 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makeSuperPoint_alignedToLine' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 9.985 seconds; current allocated memory: 1.722 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 9 seconds. CPU system time: 0 seconds. Elapsed time: 9.941 seconds; current allocated memory: 1.768 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makePatch_alignedToLine_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 24 seconds. CPU system time: 0 seconds. Elapsed time: 26.867 seconds; current allocated memory: 1.779 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 31 seconds. CPU system time: 1 seconds. Elapsed time: 32.46 seconds; current allocated memory: 1.813 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'solveComplmentaryPatch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 48 seconds. CPU system time: 0 seconds. Elapsed time: 50.259 seconds; current allocated memory: 1.825 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 32 seconds. CPU system time: 0 seconds. Elapsed time: 34.421 seconds; current allocated memory: 1.867 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getShadows' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 42 seconds. CPU system time: 0 seconds. Elapsed time: 42.93 seconds; current allocated memory: 1.868 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.446 seconds; current allocated memory: 1.869 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'makeThirdPatch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 53 seconds. CPU system time: 0 seconds. Elapsed time: 53.895 seconds; current allocated memory: 1.881 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 20 seconds. CPU system time: 0 seconds. Elapsed time: 22.052 seconds; current allocated memory: 1.908 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'solveNextPatchPair' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 35 seconds. CPU system time: 0 seconds. Elapsed time: 38.923 seconds; current allocated memory: 1.921 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 208 seconds. CPU system time: 0 seconds. Elapsed time: 210.305 seconds; current allocated memory: 1.961 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'solveNextColumn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 104 seconds. CPU system time: 1 seconds. Elapsed time: 106.616 seconds; current allocated memory: 1.970 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 72 seconds. CPU system time: 0 seconds. Elapsed time: 72.699 seconds; current allocated memory: 1.990 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MPSQ' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'finalSPOutputInit_perPatch_PatchSTREAM0_finalSPOutputInit_perSuperpoint_PatchSTREAM0_finalSPOutputInit_perPoint_PatchSTREAM0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'finalSPOutputInit_perPatch_PatchSTREAM0_finalSPOutputInit_perSuperpoint_PatchSTREAM0_finalSPOutputInit_perPoint_PatchSTREAM0'
+INFO: [SCHED 204-61] Pipelining loop 'finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 101 seconds. CPU system time: 0 seconds. Elapsed time: 104.149 seconds; current allocated memory: 2.005 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 84 seconds. CPU system time: 1 seconds. Elapsed time: 86.647 seconds; current allocated memory: 2.031 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'initializeArrays' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'initializeArrays' is 17665 from HDL expression: (1'b1 == ap_CS_fsm_state5)
+INFO: [RTGEN 206-100] Generating core module 'mux_42_1_1_1': 312 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'initializeArrays'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 117 seconds. CPU system time: 0 seconds. Elapsed time: 120.121 seconds; current allocated memory: 2.256 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'straightLineProjectorFromLayerIJtoK' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_35ns_32s_64_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'straightLineProjectorFromLayerIJtoK'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4 seconds. CPU system time: 2 seconds. Elapsed time: 6.223 seconds; current allocated memory: 2.263 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getSolveNextColumnWhileConditional' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getSolveNextColumnWhileConditional'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.096 seconds; current allocated memory: 2.264 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'minValFinder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'minValFinder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.741 seconds; current allocated memory: 2.280 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mSP_findBounds' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'mSP_findBounds' is 25344 from HDL expression: (1'b1 == ap_CS_fsm_state3)
+INFO: [RTGEN 206-100] Generating core module 'mux_2568_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mSP_findBounds'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 14 seconds. CPU system time: 2 seconds. Elapsed time: 18.943 seconds; current allocated memory: 2.319 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makeSuperPoint_alignedToLine_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'makeSuperPoint_alignedToLine_1' is 10305 from HDL expression: (1'b1 == ap_CS_fsm_state12)
+INFO: [RTGEN 206-100] Generating core module 'mul_33ns_32s_64_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_128011_32_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_53_32_1_1': 256 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_83_1_1_1': 160 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makeSuperPoint_alignedToLine_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 42 seconds. CPU system time: 5 seconds. Elapsed time: 50.467 seconds; current allocated memory: 2.581 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getParallelogramsAndAcceptanceCorners' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getParallelogramsAndAcceptanceCorners'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 21 seconds. CPU system time: 1 seconds. Elapsed time: 25.358 seconds; current allocated memory: 2.663 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'encodeCoordinates' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'encodeCoordinates'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 5.015 seconds; current allocated memory: 2.665 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'add_patch_patches_parameters' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'add_patch_patches_parameters'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.887 seconds; current allocated memory: 2.673 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'add_patch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'add_patch' is 35345 from HDL expression: (1'b1 == ap_CS_fsm_state5)
+INFO: [RTGEN 206-100] Generating core module 'mux_154_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_53_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_807_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'add_patch'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 15 seconds. CPU system time: 0 seconds. Elapsed time: 16.903 seconds; current allocated memory: 2.902 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makePatch_alignedToLine' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'makePatch_alignedToLine' is 35409 from HDL expression: ((1'b1 == ap_CS_fsm_state13) & (grp_add_patch_fu_28558_ap_done == 1'b1))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makePatch_alignedToLine'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 59 seconds. CPU system time: 3 seconds. Elapsed time: 63.723 seconds; current allocated memory: 3.297 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makeSuperPoint_alignedToLine_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'makeSuperPoint_alignedToLine_2' is 10305 from HDL expression: (1'b1 == ap_CS_fsm_state12)
+INFO: [RTGEN 206-100] Generating core module 'mul_33ns_32s_64_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_128011_32_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_53_32_1_1': 256 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_83_1_1_1': 160 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makeSuperPoint_alignedToLine_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 31 seconds. CPU system time: 2 seconds. Elapsed time: 38.803 seconds; current allocated memory: 3.568 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makePatch_alignedToLine_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'makePatch_alignedToLine_1' is 35409 from HDL expression: ((1'b1 == ap_CS_fsm_state13) & (grp_add_patch_fu_28570_ap_done == 1'b1))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makePatch_alignedToLine_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 76 seconds. CPU system time: 2 seconds. Elapsed time: 82.456 seconds; current allocated memory: 28.856 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getSolveNextPatchPairWhileCondition' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getSolveNextPatchPairWhileCondition'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 24 seconds. CPU system time: 7 seconds. Elapsed time: 33.075 seconds; current allocated memory: 91.050 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'get_index_from_z' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'get_index_from_z' is 8448 from HDL expression: (1'b1 == ap_CS_fsm_state2)
+INFO: [RTGEN 206-100] Generating core module 'mux_53_32_1_1': 256 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'get_index_from_z'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 6 seconds. CPU system time: 0 seconds. Elapsed time: 7.456 seconds; current allocated memory: 109.778 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'delete_patch_patches_parameters' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'delete_patch_patches_parameters'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 16 seconds. CPU system time: 2 seconds. Elapsed time: 21.46 seconds; current allocated memory: 152.339 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'delete_patch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'delete_patch' is 35329 from HDL expression: ((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'delete_patch'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 16 seconds. CPU system time: 0 seconds. Elapsed time: 19.978 seconds; current allocated memory: 387.662 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makeSuperPoint_alignedToLine' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'makeSuperPoint_alignedToLine' is 10305 from HDL expression: (1'b1 == ap_CS_fsm_state11)
+INFO: [RTGEN 206-100] Generating core module 'mul_33ns_32s_64_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_128011_32_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_53_32_1_1': 256 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_83_1_1_1': 160 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makeSuperPoint_alignedToLine'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 18 seconds. CPU system time: 3 seconds. Elapsed time: 23.898 seconds; current allocated memory: 626.459 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makePatch_alignedToLine_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'makePatch_alignedToLine_2' is 35409 from HDL expression: ((1'b1 == ap_CS_fsm_state13) & (grp_add_patch_fu_28508_ap_done == 1'b1))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makePatch_alignedToLine_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 80 seconds. CPU system time: 1 seconds. Elapsed time: 86.691 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'solveComplmentaryPatch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'solveComplmentaryPatch' is 35921 from HDL expression: ((1'b0 == ap_block_state22_on_subcall_done) & (1'b1 == ap_CS_fsm_state22))
+INFO: [RTGEN 206-100] Generating core module 'mux_2568_32_1_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'solveComplmentaryPatch'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 242 seconds. CPU system time: 7 seconds. Elapsed time: 253.78 seconds; current allocated memory: 1.633 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getShadows' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mux_21_1_1_1': 24 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_21_32_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_32_64_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getShadows'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 53 seconds. CPU system time: 4 seconds. Elapsed time: 60.813 seconds; current allocated memory: 1.704 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'makeThirdPatch' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'makeThirdPatch' is 35329 from HDL expression: ((1'b1 == ap_CS_fsm_state33) & (1'b0 == ap_block_state33_on_subcall_done))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'makeThirdPatch'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 99 seconds. CPU system time: 1 seconds. Elapsed time: 102.012 seconds; current allocated memory: 2.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'solveNextPatchPair' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'solveNextPatchPair' is 35777 from HDL expression: ((1'b0 == ap_block_state16_on_subcall_done) & (1'b1 == ap_CS_fsm_state16))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'solveNextPatchPair'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 405 seconds. CPU system time: 5 seconds. Elapsed time: 414.213 seconds; current allocated memory: 2.991 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'solveNextColumn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'solveNextColumn' is 35393 from HDL expression: ((1'b1 == ap_CS_fsm_state7) & ((icmp_ln840_reg_50284 == 1'd1) | (tmp_3_reg_50275 == 1'd0)))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'solveNextColumn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 176 seconds. CPU system time: 4 seconds. Elapsed time: 186.21 seconds; current allocated memory: 3.427 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MPSQ' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/ppl' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/n_patches' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_16' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_17' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_18' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_19' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_20' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_21' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_22' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_23' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_24' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_25' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_26' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_27' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_28' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_29' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_30' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_31' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_32' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_33' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_34' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_35' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_36' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_37' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_38' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_39' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_40' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_41' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_42' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_43' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_44' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_45' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_46' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_47' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_48' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_49' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_50' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_51' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_52' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_53' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_54' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_55' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_56' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_57' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_58' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_59' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_60' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_61' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_62' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_63' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_64' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_65' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_66' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_67' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_68' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_69' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_70' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_71' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_72' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_73' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_74' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_75' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_76' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_77' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_78' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_79' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_80' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_81' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_82' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_83' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_84' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_85' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_86' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_87' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_88' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_89' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_90' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_91' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_92' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_93' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_94' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_95' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_96' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_97' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_98' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_99' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_100' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_101' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_102' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_103' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_104' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_105' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_106' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_107' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_108' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_109' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_110' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_111' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_112' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_113' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_114' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_115' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_116' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_117' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_118' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_119' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_120' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_121' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_122' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_123' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_124' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_125' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_126' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_127' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_128' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_129' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_130' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_131' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_132' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_133' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_134' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_135' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_136' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_137' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_138' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_139' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_140' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_141' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_142' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_143' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_144' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_145' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_146' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_147' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_148' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_149' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_150' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_151' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_152' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_153' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_154' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_155' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_156' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_157' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_158' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_159' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_160' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_161' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_162' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_163' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_164' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_165' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_166' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_167' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_168' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_169' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_170' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_171' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_172' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_173' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_174' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_175' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_176' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_177' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_178' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_179' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_180' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_181' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_182' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_183' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_184' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_185' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_186' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_187' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_188' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_189' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_190' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_191' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_192' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_193' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_194' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_195' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_196' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_197' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_198' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_199' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_200' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_201' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_202' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_203' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_204' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_205' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_206' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_207' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_208' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_209' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_210' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_211' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_212' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_213' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_214' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_215' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_216' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_217' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_218' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_219' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_220' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_221' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_222' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_223' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_224' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_225' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_226' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_227' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_228' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_229' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_230' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_231' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_232' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_233' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_234' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_235' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_236' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_237' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_238' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_239' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_240' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_241' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_242' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_243' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_244' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_245' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_246' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_247' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_248' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_249' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_250' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_251' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_252' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_253' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_254' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray_255' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/output_patch_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MPSQ' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-104] Estimated max fanout for 'MPSQ' is 34305 from HDL expression: (1'b1 == ap_CS_fsm_state3)
+INFO: [RTGEN 206-100] Generating core module 'mux_2408_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MPSQ'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 183 seconds. CPU system time: 4 seconds. Elapsed time: 193.137 seconds; current allocated memory: 3.740 GB.
+INFO: [RTMG 210-282] Generating pipelined core: 'MPSQ_mul_35ns_32s_64_3_1_Multiplier_0'
+INFO: [RTMG 210-279] Implementing memory 'MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'MPSQ_mSP_findBounds_trapezoid_edges_rom' using auto ROMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'MPSQ_mul_33ns_32s_64_3_1_Multiplier_1'
+INFO: [RTMG 210-279] Implementing memory 'MPSQ_makeSuperPoint_alignedToLine_1_radiiDivisionList_1_4_rom' using auto ROMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 514 seconds. CPU system time: 26 seconds. Elapsed time: 572.504 seconds; current allocated memory: 3.898 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MPSQ.
+INFO: [VLOG 209-307] Generating Verilog RTL for MPSQ.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 403.01 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7219 seconds. CPU system time: 96 seconds. Elapsed time: 10065.1 seconds; current allocated memory: 3.991 GB.
+INFO: [HLS 200-112] Total CPU user time: 7244 seconds. Total CPU system time: 97 seconds. Total elapsed time: 10094.1 seconds; peak allocated memory: 3.898 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1745 seconds. CPU system time: 673 seconds. Elapsed time: 4224.78 seconds; current allocated memory: 195.476 MB.

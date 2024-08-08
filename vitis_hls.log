@@ -1,7 +1,7 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Thu Aug 08 01:58:07 -0400 2024
+INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Thu Aug 08 18:07:32 -0400 2024
 INFO: [HLS 200-10] In directory 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS'
-Sourcing Tcl script 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/csim.tcl'
+Sourcing Tcl script 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/export.tcl'
 INFO: [HLS 200-1510] Running: open_project PatchMaker_tanishGit 
 INFO: [HLS 200-10] Opening project 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit'.
 INFO: [HLS 200-1510] Running: set_top MPSQ 
@@ -24,93 +24,5 @@ Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020
 INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
 INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
-INFO: [HLS 200-1510] Running: csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../tanishTestBench/test_bench.cpp in debug mode
-   Compiling ../../../../patchMaker.cpp in debug mode
-   Generating csim.exe
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:55,
-                 from \Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h:22,
-                 from ../../../../tanishTestBench/test_bench.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
- #define __GMP_LIBGMP_DLL  0
- 
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:55,
-                 from \Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h:22,
-                 from ../../../../tanishTestBench/test_bench.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
- #define __GMP_LIBGMP_DLL 1
- 
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_hotbm_apfixed.h:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_math.h:1065,
-                 from \Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\patchMakerHeader.h:23,
-                 from ../../../../tanishTestBench/test_bench.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/utils/x_hls_utils.h:243:40: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
- __attribute__((hls_preserve)) T reg(T d)
-                                        ^
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:55,
-                 from ../../../../patchMakerHeader.h:22,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
- #define __GMP_LIBGMP_DLL  0
- 
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h:55,
-                 from ../../../../patchMakerHeader.h:22,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
- #define __GMP_LIBGMP_DLL 1
- 
-In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_hotbm_apfixed.h:45:0,
-                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_math.h:1065,
-                 from ../../../../patchMakerHeader.h:23,
-                 from ../../../../patchMaker.cpp:1:
-C:/Xilinx/Vitis_HLS/2020.2/include/utils/x_hls_utils.h:243:40: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
- __attribute__((hls_preserve)) T reg(T d)
-                                        ^
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-The maximum depth reached by any of the 20 hls::stream() instances in the design is 0
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 25.099 seconds; current allocated memory: 92.155 MB.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

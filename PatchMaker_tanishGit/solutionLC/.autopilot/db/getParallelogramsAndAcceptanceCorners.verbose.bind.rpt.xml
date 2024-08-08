@@ -1,0 +1,62 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'getParallelogramsAndAcceptanceCorners'" level="0">
+<item name = "Date">Thu Aug  8 03:56:14 2024
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">PatchMaker_tanishGit</item>
+<item name = "Solution">solutionLC (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu19p-fsvb3824-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 2.172 ns, 0.81 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">13, 13, 39.000 ns, 39.000 ns, 13, 13, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_163">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_178">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_193">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_208">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_223">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_238">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_253">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_268">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_283">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_298">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_313">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_328">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_343">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_358">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_373">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_388">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 6, 6, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- get_acceptanceCorners_minMaxFinding">4, 4, 1, -, -, 4, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
