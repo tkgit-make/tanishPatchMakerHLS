@@ -35,7 +35,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 1471;
+parameter LATENCY_ESTIMATION = 2839;
 parameter LENGTH_ppl = 1;
 parameter LENGTH_n_patches = 1;
 parameter LENGTH_GDarray = 1280;
@@ -44,7 +44,7 @@ parameter LENGTH_GDn_points_1 = 1;
 parameter LENGTH_GDn_points_2 = 1;
 parameter LENGTH_GDn_points_3 = 1;
 parameter LENGTH_GDn_points_4 = 1;
-parameter LENGTH_output_patch_stream_V = 160;
+parameter LENGTH_output_patch_stream_V = 480;
 
 task read_token;
     input integer fp;

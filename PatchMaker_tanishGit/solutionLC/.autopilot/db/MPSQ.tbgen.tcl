@@ -77,13 +77,13 @@ set NewPortList {[
  	{ "name": "output_patch_stream_V_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_patch_stream_V", "role": "write" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4"],
 		"CDFG" : "MPSQ",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1454", "EstimateLatencyMax" : "1455",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2835", "EstimateLatencyMax" : "2839",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -102,7 +102,23 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_patch_stream_V", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "output_patch_stream_V_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_get_index_from_z_fu_1708", "Parent" : "0",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.row_list_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mSP_findBounds_fu_2830", "Parent" : "0",
+		"CDFG" : "mSP_findBounds",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "794", "EstimateLatencyMax" : "797",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "row_list", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_get_index_from_z_fu_2835", "Parent" : "0",
 		"CDFG" : "get_index_from_z",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -371,7 +387,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_read252", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read253", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read254", "Type" : "None", "Direction" : "I"},
-			{"Name" : "p_read255", "Type" : "None", "Direction" : "I"}]}]}
+			{"Name" : "p_read255", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mux_2568_32_1_1_U258", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -385,6 +402,8 @@ set ArgLastReadFirstWriteLatency {
 		GDn_points_3 {Type I LastRead -1 FirstWrite -1}
 		GDn_points_4 {Type I LastRead -1 FirstWrite -1}
 		output_patch_stream_V {Type O LastRead -1 FirstWrite 5}}
+	mSP_findBounds {
+		row_list {Type I LastRead 24 FirstWrite -1}}
 	get_index_from_z {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		p_read1 {Type I LastRead 0 FirstWrite -1}
@@ -646,14 +665,19 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1454", "Max" : "1455"}
-	, {"Name" : "Interval", "Min" : "1455", "Max" : "1456"}
+	{"Name" : "Latency", "Min" : "2835", "Max" : "2839"}
+	, {"Name" : "Interval", "Min" : "2836", "Max" : "2840"}
 ]}
 
 set PipelineEnableSignalInfo {[
 	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 	{"Pipeline" : "1", "EnableSignal" : "ap_enable_pp1"}
 	{"Pipeline" : "2", "EnableSignal" : "ap_enable_pp2"}
+	{"Pipeline" : "3", "EnableSignal" : "ap_enable_pp3"}
+	{"Pipeline" : "4", "EnableSignal" : "ap_enable_pp4"}
+	{"Pipeline" : "5", "EnableSignal" : "ap_enable_pp5"}
+	{"Pipeline" : "6", "EnableSignal" : "ap_enable_pp6"}
+	{"Pipeline" : "7", "EnableSignal" : "ap_enable_pp7"}
 ]}
 
 set Spec2ImplPortList { 
@@ -673,7 +697,7 @@ set busDeadlockParameterList {
 
 # RTL port scheduling information:
 set fifoSchedulingInfoList { 
-	output_patch_stream_V { fifo_write 160 no_conditional }
+	output_patch_stream_V { fifo_write 480 no_conditional }
 }
 
 # RTL bus port read request latency information:

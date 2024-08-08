@@ -1,0 +1,28 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tanishTestBench/test_bench.cpp in debug mode
+   Compiling ../../../../patchMaker.cpp in debug mode
+   Generating csim.exe
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+The maximum depth reached by any of the 20 hls::stream() instances in the design is 0
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

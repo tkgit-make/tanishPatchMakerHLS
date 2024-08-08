@@ -162,7 +162,7 @@
     "Uncertainty": "0.81",
     "IsCombinational": "0",
     "II": "x",
-    "Latency": "1454"
+    "Latency": "2835"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 3.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -181,10 +181,16 @@
     "CSource": ["..\/..\/patchMaker.cpp"],
     "Vhdl": [
       "impl\/vhdl\/MPSQ_get_index_from_z.vhd",
+      "impl\/vhdl\/MPSQ_mSP_findBounds.vhd",
+      "impl\/vhdl\/MPSQ_mux_2568_32_1_1.vhd",
+      "impl\/vhdl\/MPSQ_row_list.vhd",
       "impl\/vhdl\/MPSQ.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/MPSQ_get_index_from_z.v",
+      "impl\/verilog\/MPSQ_mSP_findBounds.v",
+      "impl\/verilog\/MPSQ_mux_2568_32_1_1.v",
+      "impl\/verilog\/MPSQ_row_list.v",
       "impl\/verilog\/MPSQ.v"
     ],
     "IpMisc": ["impl\/misc\/logo.png"],
@@ -462,13 +468,26 @@
   "ModuleInfo": {
     "Hierarchy": {
       "ModuleName": "MPSQ",
-      "Instances": [{
+      "Instances": [
+        {
+          "ModuleName": "mSP_findBounds",
+          "InstanceName": "grp_mSP_findBounds_fu_2830"
+        },
+        {
           "ModuleName": "get_index_from_z",
-          "InstanceName": "grp_get_index_from_z_fu_1708"
-        }]
+          "InstanceName": "grp_get_index_from_z_fu_2835"
+        }
+      ]
     },
     "Info": {
       "get_index_from_z": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "mSP_findBounds": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
@@ -518,14 +537,71 @@
           "UTIL_URAM": "0"
         }
       },
+      "mSP_findBounds": {
+        "Latency": {
+          "LatencyBest": "794",
+          "LatencyAvg": "794",
+          "LatencyWorst": "797",
+          "PipelineIIMin": "794",
+          "PipelineIIMax": "797",
+          "PipelineII": "794 ~ 797",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.172"
+        },
+        "Loops": [
+          {
+            "Name": "VITIS_LOOP_1982_1",
+            "TripCount": "256",
+            "Latency": "257",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "VITIS_LOOP_1990_2",
+            "TripCount": "256",
+            "Latency": "257",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "VITIS_LOOP_1998_3",
+            "TripCount": "256",
+            "Latency": "257",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          }
+        ],
+        "Area": {
+          "FF": "32923",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "60071",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "1",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
       "MPSQ": {
         "Latency": {
-          "LatencyBest": "1454",
-          "LatencyAvg": "1454",
-          "LatencyWorst": "1455",
-          "PipelineIIMin": "1455",
-          "PipelineIIMax": "1456",
-          "PipelineII": "1455 ~ 1456",
+          "LatencyBest": "2835",
+          "LatencyAvg": "2835",
+          "LatencyWorst": "2839",
+          "PipelineIIMin": "2836",
+          "PipelineIIMax": "2840",
+          "PipelineII": "2836 ~ 2840",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -550,6 +626,41 @@
             "PipelineDepth": "2"
           },
           {
+            "Name": "makeSuperPoint_alignedToLine_rowListSet_loop",
+            "TripCount": "256",
+            "Latency": "256",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "VITIS_LOOP_926_1_VITIS_LOOP_928_2",
+            "TripCount": "80",
+            "Latency": "80",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "VITIS_LOOP_934_3_VITIS_LOOP_936_4",
+            "TripCount": "80",
+            "Latency": "80",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "VITIS_LOOP_942_5_VITIS_LOOP_944_6",
+            "TripCount": "80",
+            "Latency": "80",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "VITIS_LOOP_950_7_VITIS_LOOP_952_8",
+            "TripCount": "80",
+            "Latency": "80",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
             "Name": "finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint",
             "TripCount": "80",
             "Latency": "80",
@@ -558,15 +669,15 @@
           }
         ],
         "Area": {
-          "FF": "19225",
+          "BRAM_18K": "1",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "~0",
+          "FF": "60798",
           "AVAIL_FF": "8171520",
           "UTIL_FF": "~0",
-          "LUT": "53420",
+          "LUT": "115233",
           "AVAIL_LUT": "4085760",
-          "UTIL_LUT": "1",
-          "BRAM_18K": "0",
-          "AVAIL_BRAM": "4320",
-          "UTIL_BRAM": "0",
+          "UTIL_LUT": "2",
           "DSP": "0",
           "AVAIL_DSP": "3840",
           "UTIL_DSP": "0",
@@ -580,7 +691,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-08-07 22:57:41 -0400",
+    "Time": "2024-08-08 00:42:23 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

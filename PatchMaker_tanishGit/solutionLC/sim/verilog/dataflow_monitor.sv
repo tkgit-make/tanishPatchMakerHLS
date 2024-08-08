@@ -24,13 +24,21 @@ input logic finish
     csv_file_dump mstatus_csv_dumper_1;
     nodf_module_monitor module_monitor_1;
     nodf_module_intf module_intf_2(clock,reset);
-    assign module_intf_2.ap_start = AESL_inst_MPSQ.grp_get_index_from_z_fu_1708.ap_start;
-    assign module_intf_2.ap_ready = AESL_inst_MPSQ.grp_get_index_from_z_fu_1708.ap_ready;
-    assign module_intf_2.ap_done = AESL_inst_MPSQ.grp_get_index_from_z_fu_1708.ap_done;
+    assign module_intf_2.ap_start = AESL_inst_MPSQ.grp_mSP_findBounds_fu_2830.ap_start;
+    assign module_intf_2.ap_ready = AESL_inst_MPSQ.grp_mSP_findBounds_fu_2830.ap_ready;
+    assign module_intf_2.ap_done = AESL_inst_MPSQ.grp_mSP_findBounds_fu_2830.ap_done;
     assign module_intf_2.ap_continue = 1'b1;
     assign module_intf_2.finish = finish;
     csv_file_dump mstatus_csv_dumper_2;
     nodf_module_monitor module_monitor_2;
+    nodf_module_intf module_intf_3(clock,reset);
+    assign module_intf_3.ap_start = AESL_inst_MPSQ.grp_get_index_from_z_fu_2835.ap_start;
+    assign module_intf_3.ap_ready = AESL_inst_MPSQ.grp_get_index_from_z_fu_2835.ap_ready;
+    assign module_intf_3.ap_done = AESL_inst_MPSQ.grp_get_index_from_z_fu_2835.ap_done;
+    assign module_intf_3.ap_continue = 1'b1;
+    assign module_intf_3.finish = finish;
+    csv_file_dump mstatus_csv_dumper_3;
+    nodf_module_monitor module_monitor_3;
 
     sample_manager sample_manager_inst;
 
@@ -43,9 +51,12 @@ initial begin
     module_monitor_1 = new(module_intf_1,mstatus_csv_dumper_1);
     mstatus_csv_dumper_2 = new("./module_status2.csv");
     module_monitor_2 = new(module_intf_2,mstatus_csv_dumper_2);
+    mstatus_csv_dumper_3 = new("./module_status3.csv");
+    module_monitor_3 = new(module_intf_3,mstatus_csv_dumper_3);
 
     sample_manager_inst.add_one_monitor(module_monitor_1);
     sample_manager_inst.add_one_monitor(module_monitor_2);
+    sample_manager_inst.add_one_monitor(module_monitor_3);
     
     fork
         sample_manager_inst.start_monitor();

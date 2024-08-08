@@ -108234,11 +108234,11 @@ namespace std
 }
 # 63 "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/include/c++/6.2.0/numeric" 2 3
 # 38 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h" 2
-# 114 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
+# 113 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
 
-# 114 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
+# 113 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
 static const int64_t radii[5] = {5 * 1000000, 10 * 1000000, 15 * 1000000, 20 * 1000000, 25 * 1000000};
-# 126 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
+# 125 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
 static const int32_t trapezoid_edges[5] = {static_cast<int64_t>(220001 * (1000000 / 10000)),
                                               static_cast<int64_t>(290001 * (1000000 / 10000)),
                                               static_cast<int64_t>(360001 * (1000000 / 10000)),
@@ -108250,7 +108250,7 @@ static const int32_t trapezoid_edgesNEGATIVE[5] = {static_cast<int64_t>(-220001 
                                               static_cast<int64_t>(-360001 * (1000000 / 10000)),
                                               static_cast<int64_t>(-430001 * (1000000 / 10000)),
                                               static_cast<int64_t>(-500001 * (1000000 / 10000))};
-# 225 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
+# 224 "\\Users\\rapiduser\\Desktop\\tanishGitHub\\tanishPatchMakerHLS\\patchMakerHeader.h"
 bool areWedgeSuperPointsEqual(int64_t wsp1[16], int64_t wsp2[16]);
 void wedgePatch_init(int32_t (&wp_superpoints) [5][16][2], int32_t (&wp_parameters) [3][4][2], int32_t superpointsI[5][16][2], int64_t superpoint_count, int32_t apexZ0I);
 int32_t straightLineProjectorFromLayerIJtoK(int32_t z_i, int32_t z_j, int32_t i, int32_t j, int32_t k);
@@ -108258,7 +108258,7 @@ void getParallelogramsAndAcceptanceCorners(int32_t (&wp_superpoints) [5][16][2],
 void getShadows(int64_t (&wp_superpoints) [5][16], int32_t (&wp_parameters) [3][4][2], int32_t zTopMin, int32_t zTopMax);
 void add_patch(int32_t (&wp_superpoints) [5][16][2], int32_t (&wp_parameters) [3][4][2], uint8_t &n_patches, int64_t (&patches_superpoints) [3][5][16], int32_t (&patches_parameters) [3][3][4][2], hls::stream<int64_t> &output_patch_stream);
 void delete_patch(int32_t index, uint8_t &n_patches, int64_t (&patches_superpoints) [3][5][16], int32_t (&patches_parameters) [3][3][4][2]);
-uint8_t get_index_from_z(int32_t layer, int32_t z_value, int32_t (GDarrayDecoded) [5][256][2], int32_t (GDn_points) [5]);
+int32_t get_index_from_z(int32_t layer, int32_t z_value, int32_t (GDarrayDecoded) [5][256][2], int32_t (GDn_points) [5]);
 void MPSQ(int32_t ppl, uint8_t &n_patches, int64_t (GDarray) [5][256], int32_t (GDn_points) [5], hls::stream<int64_t> &output_patch_stream);
 int32_t solveNextColumn(int32_t apexZ0, int32_t ppl, bool fix42, int32_t saved_apexZ0, uint8_t &n_patches, int32_t (GDarrayDecoded) [5][256][2], int32_t (GDn_points) [5], int64_t (&patches_superpoints) [3][5][16], int32_t (&patches_parameters) [3][3][4][2], hls::stream<int64_t> &output_patch_stream);
 void solveNextPatchPair(int32_t apexZ0, int32_t ppl, bool fix42, int32_t &saved_apexZ0, int32_t &nPatchesInColumn, int32_t &c_corner, int32_t &projectionOfCornerToBeam, int32_t &z_top_min, int32_t &z_top_max, int32_t &complementary_apexZ0, uint8_t &n_patches, int32_t (GDarrayDecoded) [5][256][2], int32_t (GDn_points) [5], int64_t (&patches_superpoints) [3][5][16], int32_t (&patches_parameters) [3][3][4][2], hls::stream<int64_t> &output_patch_stream);
@@ -108279,7 +108279,7 @@ int64_t encodeCoordinates(int32_t phi, int32_t z);
 void initializeArrays(int64_t (&patches_superpoints) [3][5][16], int32_t (&patches_parameters) [3][3][4][2]);
 void add_patch_patches_parameters(int32_t wp_parameters[3][4][2], int32_t (&patches_parameters) [3][3][4][2]);
 void delete_patch_patches_parameters(int32_t index, int32_t n_patches, int32_t (&patches_parameters) [3][3][4][2]);
-void minValFinder(int32_t diffArray[256], int32_t &minIndex, int32_t &minVal);
+int32_t minValFinder(int32_t diffArray[256], int32_t &minVal);
 # 2 "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/tanishTestBench/test_bench.cpp" 2
 
 int32_t master_list[6400][512][3];
@@ -108401,7 +108401,7 @@ MPSQ(ppl, n_patches, GDarrayPostSort, GDn_points, output_patch_stream);
     tempArray[a][b] = temp;
    }
   }
-
+  cout << endl;
   if(tempArray[0][0] == 0)
   {
    tlast = true;

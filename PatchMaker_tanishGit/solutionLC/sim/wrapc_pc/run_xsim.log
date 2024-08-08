@@ -1,5 +1,11 @@
 0
-343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343400000000000000000000000000000000000000000000000000000000000000000000000000000000The maximum depth reached by any of the 1 hls::stream() instances in the design is 0
+3434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434
+4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+00000000000000000000000000000000000000000000000000000000000000000000000000000000
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 0
 
 C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\PatchMaker_tanishGit\solutionLC\sim\verilog>set PATH= 
 
@@ -19,6 +25,13 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/ta
 INFO: [VRFC 10-311] analyzing module MPSQ
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ_get_index_from_z.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_get_index_from_z
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ_mSP_findBounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findBounds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ_mux_2568_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_2568_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ_row_list.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_row_list_ram
+INFO: [VRFC 10-311] analyzing module MPSQ_row_list
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
@@ -44,7 +57,11 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.MPSQ_row_list_ram
+Compiling module xil_defaultlib.MPSQ_row_list(DataWidth=32,Addre...
+Compiling module xil_defaultlib.MPSQ_mSP_findBounds
 Compiling module xil_defaultlib.MPSQ_get_index_from_z
+Compiling module xil_defaultlib.MPSQ_mux_2568_32_1_1(ID=1,din256...
 Compiling module xil_defaultlib.MPSQ
 Compiling module xil_defaultlib.AESL_automem_GDarray
 Compiling module xil_defaultlib.AESL_autofifo_output_patch_strea...
@@ -60,7 +77,7 @@ Built simulation snapshot MPSQ
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/xsim.dir/MPSQ/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Aug  7 22:21:16 2024...
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug  8 01:03:19 2024...
 
 ****** xsim v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -80,10 +97,17 @@ source MPSQ.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "107000"
-// RTL Simulation : 1 / 1 [100.00%] @ "4526000"
+// RTL Simulation : 1 / 1 [100.00%] @ "8618000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 4537500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ.autotb.v" Line 324
+$finish called at time : 8629500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ.autotb.v" Line 324
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 917.023 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Wed Aug  7 22:21:34 2024...
+INFO: [Common 17-206] Exiting xsim at Thu Aug  8 01:03:55 2024...
 0
-343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343400000000000000000000000000000000000000000000000000000000000000000000000000000000The maximum depth reached by any of the 1 hls::stream() instances in the design is 0
+3434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434
+4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+00000000000000000000000000000000000000000000000000000000000000000000000000000000
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 0

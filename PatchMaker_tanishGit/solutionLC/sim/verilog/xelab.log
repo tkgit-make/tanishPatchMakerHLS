@@ -13,6 +13,13 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/ta
 INFO: [VRFC 10-311] analyzing module MPSQ
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ_get_index_from_z.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_get_index_from_z
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ_mSP_findBounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findBounds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ_mux_2568_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_2568_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/MPSQ_row_list.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_row_list_ram
+INFO: [VRFC 10-311] analyzing module MPSQ_row_list
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
@@ -38,7 +45,11 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.MPSQ_row_list_ram
+Compiling module xil_defaultlib.MPSQ_row_list(DataWidth=32,Addre...
+Compiling module xil_defaultlib.MPSQ_mSP_findBounds
 Compiling module xil_defaultlib.MPSQ_get_index_from_z
+Compiling module xil_defaultlib.MPSQ_mux_2568_32_1_1(ID=1,din256...
 Compiling module xil_defaultlib.MPSQ
 Compiling module xil_defaultlib.AESL_automem_GDarray
 Compiling module xil_defaultlib.AESL_autofifo_output_patch_strea...

@@ -7,6 +7,6 @@ set depth_list {
 {GDn_points_2 1}
 {GDn_points_3 1}
 {GDn_points_4 1}
-{output_patch_stream_V 160}
+{output_patch_stream_V 480}
 }
 set trans_num 1

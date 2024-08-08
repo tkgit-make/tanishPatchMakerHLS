@@ -702,3 +702,588 @@ INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satis
 INFO: [HLS 200-789] **** Estimated Fmax: 460.41 MHz
 INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 378 seconds. CPU system time: 7 seconds. Elapsed time: 446.04 seconds; current allocated memory: 331.697 MB.
 INFO: [HLS 200-112] Total CPU user time: 380 seconds. Total CPU system time: 8 seconds. Total elapsed time: 449.825 seconds; peak allocated memory: 871.690 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 188.652 seconds; current allocated memory: 97.820 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 20.589 seconds; current allocated memory: 92.189 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 25.115 seconds; current allocated memory: 92.179 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.131 seconds; current allocated memory: 871.689 MB.
+INFO: [HLS 200-10] Analyzing design file 'patchMaker.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5512] 'ON' in '#pragma HLS INLINE' is ignored: patchMaker.cpp:25:20
+WARNING: [HLS 207-5301] unused parameter 'n_patches': patchMaker.cpp:495:61
+WARNING: [HLS 207-5512] 'ON' in '#pragma HLS INLINE' is ignored: patchMaker.cpp:620:20
+WARNING: [HLS 207-5301] unused parameter 'GDn_points': patchMaker.cpp:710:105
+WARNING: [HLS 207-5301] unused parameter 'ppl': patchMaker.cpp:801:58
+WARNING: [HLS 207-5301] unused parameter 'n_patches': patchMaker.cpp:801:72
+WARNING: [HLS 207-5301] unused parameter 'repeat_patch': patchMaker.cpp:1355:154
+WARNING: [HLS 207-5301] unused parameter 'repeat_original': patchMaker.cpp:1355:174
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 36.803 seconds; current allocated memory: 94.949 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'minValFinder(int*, int&)' into 'get_index_from_z(int, int, int (*) [256][2], int*)' (patchMaker.cpp:729:12)
+INFO: [HLS 214-131] Inlining function 'decodePHIcoordinate(long long)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:852:39)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:915:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:903:24)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:853:39)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_returnMinVal' (patchMaker.cpp:695:2) in function 'get_index_from_z' completely with a factor of 256 (patchMaker.cpp:695:2)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_684_7' (patchMaker.cpp:684:20) in function 'get_index_from_z' completely with a factor of 2 (patchMaker.cpp:684:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_676_6' (patchMaker.cpp:676:20) in function 'get_index_from_z' completely with a factor of 4 (patchMaker.cpp:676:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_668_5' (patchMaker.cpp:668:20) in function 'get_index_from_z' completely with a factor of 8 (patchMaker.cpp:668:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_660_4' (patchMaker.cpp:660:20) in function 'get_index_from_z' completely with a factor of 16 (patchMaker.cpp:660:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_652_3' (patchMaker.cpp:652:20) in function 'get_index_from_z' completely with a factor of 32 (patchMaker.cpp:652:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_644_2' (patchMaker.cpp:644:20) in function 'get_index_from_z' completely with a factor of 64 (patchMaker.cpp:644:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_636_1' (patchMaker.cpp:636:20) in function 'get_index_from_z' completely with a factor of 128 (patchMaker.cpp:636:20)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArrayCOPY' (patchMaker.cpp:628:2) in function 'get_index_from_z' completely with a factor of 256 (patchMaker.cpp:628:2)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArray' (patchMaker.cpp:721:5) in function 'get_index_from_z' completely with a factor of 256 (patchMaker.cpp:721:5)
+INFO: [HLS 214-248] complete partitioned array 'GDn_points' on dimension 1 (patchMaker.cpp:803:37)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 12 seconds. CPU system time: 0 seconds. Elapsed time: 24.021 seconds; current allocated memory: 114.476 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 114.477 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 109 seconds. CPU system time: 0 seconds. Elapsed time: 110.262 seconds; current allocated memory: 119.171 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 90 seconds. CPU system time: 0 seconds. Elapsed time: 90.137 seconds; current allocated memory: 120.532 MB.
+INFO: [XFORM 203-510] Pipelining loop 'initGDarrayDecoded_perPoint' (patchMaker.cpp:847) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'finalSPOutput_writeDummy_perPoint1234' (patchMaker.cpp:894) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'finalSPOutput_writeDummy_perPoint' (patchMaker.cpp:894) in function 'MPSQ' automatically.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:828) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArray' (patchMaker.cpp:718) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayCOPY' (patchMaker.cpp:621) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'GDarrayDecoded' (patchMaker.cpp:828) accessed through non-constant indices on dimension 1 (patchMaker.cpp:853:13), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:828) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:828) in dimension 3 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:729:5) in function 'get_index_from_z'... converting 257 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 102 seconds. CPU system time: 0 seconds. Elapsed time: 102.61 seconds; current allocated memory: 173.515 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'initGDarrayDecoded_perLayer' (patchMaker.cpp:841:17) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutput_writeDummy_perSuperpoint1234' (patchMaker.cpp:897:14) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutput_writeDummy_perSuperpoint' (patchMaker.cpp:909:14) in function 'MPSQ'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.72 seconds; current allocated memory: 224.550 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MPSQ' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'get_index_from_z' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 13 seconds. CPU system time: 0 seconds. Elapsed time: 13.729 seconds; current allocated memory: 232.334 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.401 seconds; current allocated memory: 249.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MPSQ' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint'
+INFO: [SCHED 204-61] Pipelining loop 'finalSPOutput_writeDummy_perSuperpoint1234_finalSPOutput_writeDummy_perPoint1234'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'finalSPOutput_writeDummy_perSuperpoint1234_finalSPOutput_writeDummy_perPoint1234'
+INFO: [SCHED 204-61] Pipelining loop 'finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 7.042 seconds; current allocated memory: 253.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.334 seconds; current allocated memory: 256.958 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'get_index_from_z' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'get_index_from_z' is 8192 from HDL expression: (1'b1 == ap_CS_fsm_state1)
+INFO: [RTGEN 206-100] Finished creating RTL model for 'get_index_from_z'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 7 seconds. CPU system time: 0 seconds. Elapsed time: 8.105 seconds; current allocated memory: 279.462 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MPSQ' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/ppl' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/n_patches' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/output_patch_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MPSQ' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'MPSQ/ppl' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/n_patches' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_2' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_3' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_4' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MPSQ'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 14 seconds. CPU system time: 3 seconds. Elapsed time: 18.763 seconds; current allocated memory: 314.166 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 9 seconds. CPU system time: 2 seconds. Elapsed time: 12.517 seconds; current allocated memory: 329.591 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MPSQ.
+INFO: [VLOG 209-307] Generating Verilog RTL for MPSQ.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 460.41 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 375 seconds. CPU system time: 7 seconds. Elapsed time: 437.068 seconds; current allocated memory: 331.497 MB.
+INFO: [HLS 200-112] Total CPU user time: 377 seconds. Total CPU system time: 8 seconds. Total elapsed time: 440.848 seconds; peak allocated memory: 871.689 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 23.366 seconds; current allocated memory: 92.188 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 16.024 seconds; current allocated memory: 92.171 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 871.689 MB.
+INFO: [HLS 200-10] Analyzing design file 'patchMaker.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5512] 'ON' in '#pragma HLS INLINE' is ignored: patchMaker.cpp:25:20
+WARNING: [HLS 207-5301] unused parameter 'n_patches': patchMaker.cpp:495:61
+WARNING: [HLS 207-5512] 'ON' in '#pragma HLS INLINE' is ignored: patchMaker.cpp:620:20
+WARNING: [HLS 207-5301] unused parameter 'GDn_points': patchMaker.cpp:710:105
+WARNING: [HLS 207-5301] unused parameter 'ppl': patchMaker.cpp:801:58
+WARNING: [HLS 207-5301] unused parameter 'n_patches': patchMaker.cpp:801:72
+WARNING: [HLS 207-5301] unused parameter 'repeat_patch': patchMaker.cpp:1409:154
+WARNING: [HLS 207-5301] unused parameter 'repeat_original': patchMaker.cpp:1409:174
+WARNING: [HLS 207-5301] unused parameter 'row_list_size': patchMaker.cpp:1968:63
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 37.59 seconds; current allocated memory: 95.035 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'minValFinder(int*, int&)' into 'get_index_from_z(int, int, int (*) [256][2], int*)' (patchMaker.cpp:729:12)
+INFO: [HLS 214-131] Inlining function 'minValFinder(int*, int&)' into 'mSP_findBounds(int, int*, int, int&, int&, int, int&, int&)' (patchMaker.cpp:2006:18)
+INFO: [HLS 214-131] Inlining function 'minValFinder(int*, int&)' into 'mSP_findBounds(int, int*, int, int&, int&, int, int&, int&)' (patchMaker.cpp:2008:19)
+INFO: [HLS 214-131] Inlining function 'minValFinder(int*, int&)' into 'mSP_findBounds(int, int*, int, int&, int&, int, int&, int&)' (patchMaker.cpp:2007:19)
+INFO: [HLS 214-131] Inlining function 'decodePHIcoordinate(long long)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:852:39)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:969:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:955:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:947:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:939:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:931:24)
+INFO: [HLS 214-131] Inlining function 'decodeZcoordinate(long long)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:853:39)
+INFO: [HLS 214-131] Inlining function 'hls::stream<long long, 0>::write(long long const&)' into 'MPSQ(int, unsigned char&, long long (*) [256], int*, hls::stream<long long, 0>&)' (patchMaker.cpp:903:24)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_returnMinVal' (patchMaker.cpp:695:2) in function 'get_index_from_z' completely with a factor of 256 (patchMaker.cpp:695:2)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_684_7' (patchMaker.cpp:684:20) in function 'get_index_from_z' completely with a factor of 2 (patchMaker.cpp:684:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_676_6' (patchMaker.cpp:676:20) in function 'get_index_from_z' completely with a factor of 4 (patchMaker.cpp:676:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_668_5' (patchMaker.cpp:668:20) in function 'get_index_from_z' completely with a factor of 8 (patchMaker.cpp:668:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_660_4' (patchMaker.cpp:660:20) in function 'get_index_from_z' completely with a factor of 16 (patchMaker.cpp:660:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_652_3' (patchMaker.cpp:652:20) in function 'get_index_from_z' completely with a factor of 32 (patchMaker.cpp:652:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_644_2' (patchMaker.cpp:644:20) in function 'get_index_from_z' completely with a factor of 64 (patchMaker.cpp:644:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_636_1' (patchMaker.cpp:636:20) in function 'get_index_from_z' completely with a factor of 128 (patchMaker.cpp:636:20)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArrayCOPY' (patchMaker.cpp:628:2) in function 'get_index_from_z' completely with a factor of 256 (patchMaker.cpp:628:2)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArray' (patchMaker.cpp:721:5) in function 'get_index_from_z' completely with a factor of 256 (patchMaker.cpp:721:5)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_returnMinVal' (patchMaker.cpp:695:2) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:695:2)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_684_7' (patchMaker.cpp:684:20) in function 'mSP_findBounds' completely with a factor of 2 (patchMaker.cpp:684:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_676_6' (patchMaker.cpp:676:20) in function 'mSP_findBounds' completely with a factor of 4 (patchMaker.cpp:676:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_668_5' (patchMaker.cpp:668:20) in function 'mSP_findBounds' completely with a factor of 8 (patchMaker.cpp:668:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_660_4' (patchMaker.cpp:660:20) in function 'mSP_findBounds' completely with a factor of 16 (patchMaker.cpp:660:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_652_3' (patchMaker.cpp:652:20) in function 'mSP_findBounds' completely with a factor of 32 (patchMaker.cpp:652:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_644_2' (patchMaker.cpp:644:20) in function 'mSP_findBounds' completely with a factor of 64 (patchMaker.cpp:644:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_636_1' (patchMaker.cpp:636:20) in function 'mSP_findBounds' completely with a factor of 128 (patchMaker.cpp:636:20)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArrayCOPY' (patchMaker.cpp:628:2) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:628:2)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_returnMinVal' (patchMaker.cpp:695:2) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:695:2)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_684_7' (patchMaker.cpp:684:20) in function 'mSP_findBounds' completely with a factor of 2 (patchMaker.cpp:684:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_676_6' (patchMaker.cpp:676:20) in function 'mSP_findBounds' completely with a factor of 4 (patchMaker.cpp:676:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_668_5' (patchMaker.cpp:668:20) in function 'mSP_findBounds' completely with a factor of 8 (patchMaker.cpp:668:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_660_4' (patchMaker.cpp:660:20) in function 'mSP_findBounds' completely with a factor of 16 (patchMaker.cpp:660:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_652_3' (patchMaker.cpp:652:20) in function 'mSP_findBounds' completely with a factor of 32 (patchMaker.cpp:652:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_644_2' (patchMaker.cpp:644:20) in function 'mSP_findBounds' completely with a factor of 64 (patchMaker.cpp:644:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_636_1' (patchMaker.cpp:636:20) in function 'mSP_findBounds' completely with a factor of 128 (patchMaker.cpp:636:20)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArrayCOPY' (patchMaker.cpp:628:2) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:628:2)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_returnMinVal' (patchMaker.cpp:695:2) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:695:2)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_684_7' (patchMaker.cpp:684:20) in function 'mSP_findBounds' completely with a factor of 2 (patchMaker.cpp:684:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_676_6' (patchMaker.cpp:676:20) in function 'mSP_findBounds' completely with a factor of 4 (patchMaker.cpp:676:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_668_5' (patchMaker.cpp:668:20) in function 'mSP_findBounds' completely with a factor of 8 (patchMaker.cpp:668:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_660_4' (patchMaker.cpp:660:20) in function 'mSP_findBounds' completely with a factor of 16 (patchMaker.cpp:660:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_652_3' (patchMaker.cpp:652:20) in function 'mSP_findBounds' completely with a factor of 32 (patchMaker.cpp:652:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_644_2' (patchMaker.cpp:644:20) in function 'mSP_findBounds' completely with a factor of 64 (patchMaker.cpp:644:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_636_1' (patchMaker.cpp:636:20) in function 'mSP_findBounds' completely with a factor of 128 (patchMaker.cpp:636:20)
+INFO: [HLS 214-186] Unrolling loop 'getIndexFromZ_setDiffArrayCOPY' (patchMaker.cpp:628:2) in function 'mSP_findBounds' completely with a factor of 256 (patchMaker.cpp:628:2)
+INFO: [HLS 214-248] complete partitioned array 'GDn_points' on dimension 1 (patchMaker.cpp:803:37)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 41 seconds. CPU system time: 0 seconds. Elapsed time: 69.967 seconds; current allocated memory: 158.277 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 158.277 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1171 seconds. CPU system time: 0 seconds. Elapsed time: 1180.25 seconds; current allocated memory: 168.609 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 980 seconds. CPU system time: 0 seconds. Elapsed time: 988.783 seconds; current allocated memory: 171.278 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_1982_1' (patchMaker.cpp:1982) in function 'mSP_findBounds' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_1990_2' (patchMaker.cpp:1990) in function 'mSP_findBounds' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_1998_3' (patchMaker.cpp:1998) in function 'mSP_findBounds' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'initGDarrayDecoded_perPoint' (patchMaker.cpp:847) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'finalSPOutput_writeDummy_perPoint1234' (patchMaker.cpp:894) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'makeSuperPoint_alignedToLine_rowListSet_loop' (patchMaker.cpp:914) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_928_2' (patchMaker.cpp:894) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_936_4' (patchMaker.cpp:894) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_944_6' (patchMaker.cpp:894) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_952_8' (patchMaker.cpp:894) in function 'MPSQ' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'finalSPOutput_writeDummy_perPoint' (patchMaker.cpp:894) in function 'MPSQ' automatically.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:828) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'diffArrayLEFT' (patchMaker.cpp:1979) accessed through non-constant indices on dimension 1 (patchMaker.cpp:1987:6), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayLEFT' (patchMaker.cpp:1979) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayCOPY.2' (patchMaker.cpp:621) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'diffArrayRIGHT' (patchMaker.cpp:1980) accessed through non-constant indices on dimension 1 (patchMaker.cpp:1995:6), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayRIGHT' (patchMaker.cpp:1980) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayCOPY' (patchMaker.cpp:621) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'diffArraySTART' (patchMaker.cpp:1978) accessed through non-constant indices on dimension 1 (patchMaker.cpp:2003:6), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'diffArraySTART' (patchMaker.cpp:1978) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayCOPY.1' (patchMaker.cpp:621) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArray' (patchMaker.cpp:718) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'diffArrayCOPY' (patchMaker.cpp:621) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'GDarrayDecoded' (patchMaker.cpp:828) accessed through non-constant indices on dimension 1 (patchMaker.cpp:853:13), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:828) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'GDarrayDecoded' (patchMaker.cpp:828) in dimension 3 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (patchMaker.cpp:633:19) to (patchMaker.cpp:700:5) in function 'mSP_findBounds'... converting 257 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (patchMaker.cpp:729:5) in function 'get_index_from_z'... converting 257 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1005 seconds. CPU system time: 1 seconds. Elapsed time: 1052.19 seconds; current allocated memory: 270.799 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'initGDarrayDecoded_perLayer' (patchMaker.cpp:841:17) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutput_writeDummy_perSuperpoint1234' (patchMaker.cpp:897:14) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_926_1' (patchMaker.cpp:926:32) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_934_3' (patchMaker.cpp:934:32) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_942_5' (patchMaker.cpp:942:32) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_950_7' (patchMaker.cpp:950:32) in function 'MPSQ'.
+INFO: [XFORM 203-541] Flattening a loop nest 'finalSPOutput_writeDummy_perSuperpoint' (patchMaker.cpp:963:14) in function 'MPSQ'.
+INFO: [HLS 200-472] Inferring partial write operation for 'row_list' (patchMaker.cpp:916:15)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 50 seconds. CPU system time: 0 seconds. Elapsed time: 50.46 seconds; current allocated memory: 420.052 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MPSQ' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'get_index_from_z' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 15 seconds. CPU system time: 0 seconds. Elapsed time: 15.481 seconds; current allocated memory: 428.799 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.666 seconds; current allocated memory: 445.869 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mSP_findBounds' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1982_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_1982_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1990_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_1990_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1998_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_1998_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 39 seconds. CPU system time: 1 seconds. Elapsed time: 40.941 seconds; current allocated memory: 464.924 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 30 seconds. CPU system time: 0 seconds. Elapsed time: 31.673 seconds; current allocated memory: 501.927 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MPSQ' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint'
+INFO: [SCHED 204-61] Pipelining loop 'finalSPOutput_writeDummy_perSuperpoint1234_finalSPOutput_writeDummy_perPoint1234'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'finalSPOutput_writeDummy_perSuperpoint1234_finalSPOutput_writeDummy_perPoint1234'
+INFO: [SCHED 204-61] Pipelining loop 'makeSuperPoint_alignedToLine_rowListSet_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'makeSuperPoint_alignedToLine_rowListSet_loop'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_926_1_VITIS_LOOP_928_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_926_1_VITIS_LOOP_928_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_934_3_VITIS_LOOP_936_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_934_3_VITIS_LOOP_936_4'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_942_5_VITIS_LOOP_944_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_942_5_VITIS_LOOP_944_6'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_950_7_VITIS_LOOP_952_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_950_7_VITIS_LOOP_952_8'
+INFO: [SCHED 204-61] Pipelining loop 'finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 20 seconds. CPU system time: 1 seconds. Elapsed time: 21.224 seconds; current allocated memory: 507.767 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 8.241 seconds; current allocated memory: 522.267 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'get_index_from_z' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'get_index_from_z' is 8192 from HDL expression: (1'b1 == ap_CS_fsm_state1)
+INFO: [RTGEN 206-100] Finished creating RTL model for 'get_index_from_z'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 13 seconds. CPU system time: 0 seconds. Elapsed time: 14.361 seconds; current allocated memory: 544.818 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mSP_findBounds' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mSP_findBounds'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 33 seconds. CPU system time: 4 seconds. Elapsed time: 39.58 seconds; current allocated memory: 636.935 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MPSQ' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/ppl' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/n_patches' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDarray' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/GDn_points_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MPSQ/output_patch_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MPSQ' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'MPSQ/ppl' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/n_patches' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_2' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_3' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'MPSQ/GDn_points_4' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'mux_2568_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MPSQ'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 30 seconds. CPU system time: 9 seconds. Elapsed time: 41.888 seconds; current allocated memory: 715.495 MB.
+INFO: [RTMG 210-278] Implementing memory 'MPSQ_row_list_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 20 seconds. CPU system time: 3 seconds. Elapsed time: 24.984 seconds; current allocated memory: 742.276 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MPSQ.
+INFO: [VLOG 209-307] Generating Verilog RTL for MPSQ.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 460.41 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3462 seconds. CPU system time: 20 seconds. Elapsed time: 3623.63 seconds; current allocated memory: 747.068 MB.
+INFO: [HLS 200-112] Total CPU user time: 3464 seconds. Total CPU system time: 22 seconds. Total elapsed time: 3627.65 seconds; peak allocated memory: 871.689 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 297.686 seconds; current allocated memory: 97.858 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 24.651 seconds; current allocated memory: 92.153 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 13.169 seconds; current allocated memory: 92.137 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 11.99 seconds; current allocated memory: 92.153 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 25.099 seconds; current allocated memory: 92.155 MB.

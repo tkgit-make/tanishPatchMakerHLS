@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MPSQ'" level="0">
-<item name = "Date">Wed Aug  7 22:57:00 2024
+<item name = "Date">Thu Aug  8 00:40:23 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,20 +24,26 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1454, 1455, 4.362 us, 4.365 us, 1455, 1456, none</column>
+<column name="">2835, 2839, 8.505 us, 8.517 us, 2836, 2840, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_get_index_from_z_fu_1708">get_index_from_z, 6, 7, 18.000 ns, 21.000 ns, 6, 7, none</column>
+<column name="grp_mSP_findBounds_fu_2830">mSP_findBounds, 794, 797, 2.382 us, 2.391 us, 794, 797, none</column>
+<column name="grp_get_index_from_z_fu_2835">get_index_from_z, 6, 7, 18.000 ns, 21.000 ns, 6, 7, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint">1281, 1281, 3, 1, 1, 1280, yes</column>
 <column name="- finalSPOutput_writeDummy_perSuperpoint1234_finalSPOutput_writeDummy_perPoint1234">80, 80, 2, 1, 1, 80, yes</column>
+<column name="- makeSuperPoint_alignedToLine_rowListSet_loop">256, 256, 2, 1, 1, 256, yes</column>
+<column name="- VITIS_LOOP_926_1_VITIS_LOOP_928_2">80, 80, 2, 1, 1, 80, yes</column>
+<column name="- VITIS_LOOP_934_3_VITIS_LOOP_936_4">80, 80, 2, 1, 1, 80, yes</column>
+<column name="- VITIS_LOOP_942_5_VITIS_LOOP_944_6">80, 80, 2, 1, 1, 80, yes</column>
+<column name="- VITIS_LOOP_950_7_VITIS_LOOP_952_8">80, 80, 2, 1, 1, 80, yes</column>
 <column name="- finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint">80, 80, 2, 1, 1, 80, yes</column>
 </table>
 </item>

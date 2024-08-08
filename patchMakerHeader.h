@@ -229,7 +229,7 @@ void getParallelogramsAndAcceptanceCorners(WEDGE_PATCH);
 void getShadows(WEDGE_PATCH_GET_SHADOWS, COORDINATE_TYPE zTopMin, COORDINATE_TYPE zTopMax);
 void add_patch(WEDGE_PATCH, index_type &n_patches, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
 void delete_patch(int_type index, index_type &n_patches, GPATCHES);
-index_type get_index_from_z(int_type layer, COORDINATE_TYPE z_value, GDARRAY);
+int_type get_index_from_z(int_type layer, COORDINATE_TYPE z_value, GDARRAY);
 void MPSQ(int_type ppl, index_type &n_patches, SPACEPOINT_TYPE (GDarray) [MAX_LAYERS][MAX_POINTS_FOR_DATASET], int_type (GDn_points) [MAX_LAYERS], hls::stream<SPACEPOINT_TYPE> &output_patch_stream); // TOP-LEVEL FUNCTION FOR VITIS
 COORDINATE_TYPE solveNextColumn(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE saved_apexZ0, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
 void solveNextPatchPair(COORDINATE_TYPE apexZ0, int_type ppl, bool fix42, COORDINATE_TYPE &saved_apexZ0, int_type &nPatchesInColumn, COORDINATE_TYPE &c_corner, COORDINATE_TYPE &projectionOfCornerToBeam, COORDINATE_TYPE &z_top_min, COORDINATE_TYPE &z_top_max, COORDINATE_TYPE &complementary_apexZ0, index_type &n_patches, GDARRAY, GPATCHES, hls::stream<SPACEPOINT_TYPE> &output_patch_stream);
@@ -250,4 +250,4 @@ SPACEPOINT_TYPE encodeCoordinates(COORDINATE_TYPE phi, COORDINATE_TYPE z);
 void initializeArrays(GPATCHES); 
 void add_patch_patches_parameters(COORDINATE_TYPE wp_parameters[PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH], COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]); 
 void delete_patch_patches_parameters(int_type index, int_type n_patches, COORDINATE_TYPE (&patches_parameters) [MAX_PATCHES_BUFFER][PATCH_PROPERTIES][MAX_NUMBER_OF_CORNERS][MAX_PATCH_PROPERTY_LENGTH]); 
-void minValFinder(COORDINATE_TYPE diffArray[MAX_POINTS_PER_LAYER], int_type &minIndex, COORDINATE_TYPE &minVal); 
+int_type minValFinder(COORDINATE_TYPE diffArray[MAX_POINTS_PER_LAYER], COORDINATE_TYPE &minVal); 
