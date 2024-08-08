@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getShadows'" level="0">
-<item name = "Date">Mon Aug  5 17:48:28 2024
+<item name = "Date">Mon Aug  5 23:34:33 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,20 +24,34 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">117, 117, 0.351 us, 0.351 us, 117, 117, none</column>
+<column name="">11, 11, 33.000 ns, 33.000 ns, 11, 11, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_260">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_495">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_509">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_523">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_537">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_551">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_565">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_579">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_593">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_607">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_621">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_635">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_649">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_663">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_677">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_691">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_705">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- getShadows_settingtopArrays">108, 108, 27, -, -, 4, no</column>
-<column name="- getShadows_maxFinding_loop">6, 6, 2, -, -, 3, no</column>
+<column name="- getShadows_maxFinding_loop">3, 3, 1, -, -, 3, no</column>
 </table>
 </item>
 </section>

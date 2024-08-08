@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveNextColumn'" level="0">
-<item name = "Date">Mon Aug  5 17:48:47 2024
+<item name = "Date">Mon Aug  5 23:37:55 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.190 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 2.481 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -31,9 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_solveNextPatchPair_fu_196">solveNextPatchPair, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_228">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
-<column name="tmp_getSolveNextColumnWhileConditional_fu_244">getSolveNextColumnWhileConditional, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_solveNextPatchPair_fu_29444">solveNextPatchPair, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_32657">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="tmp_getSolveNextColumnWhileConditional_fu_32673">getSolveNextColumnWhileConditional, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

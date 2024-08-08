@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'encodeCoordinates'
 ================================================================
-* Date:           Mon Aug  5 17:49:11 2024
+* Date:           Mon Aug  5 23:40:54 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    |        0|        0|      0 ns|      0 ns|    0|    0|     none|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 

@@ -1,0 +1,3439 @@
+{
+  "Top": "MPSQ",
+  "RtlTop": "MPSQ",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "MPSQ_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "virtexuplus",
+    "Device": "xcvu19p",
+    "Package": "-fsvb3824",
+    "Speed": "-2-e",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "ppl": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "ppl",
+          "name": "ppl",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "n_patches": {
+      "index": "1",
+      "direction": "inout",
+      "srcType": "int",
+      "srcSize": "8",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "n_patches_i",
+          "name": "n_patches_i",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "n_patches_o",
+          "name": "n_patches_o",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "n_patches_o_ap_vld",
+          "name": "n_patches_o_ap_vld",
+          "usage": "control",
+          "direction": "inout"
+        }
+      ]
+    },
+    "GDarray": {
+      "index": "2",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "64",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "GDarray_address0",
+          "name": "GDarray_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_ce0",
+          "name": "GDarray_ce0",
+          "usage": "control",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_q0",
+          "name": "GDarray_q0",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_address1",
+          "name": "GDarray_address1",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_ce1",
+          "name": "GDarray_ce1",
+          "usage": "control",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "GDarray_q1",
+          "name": "GDarray_q1",
+          "usage": "data",
+          "direction": "in"
+        }
+      ]
+    },
+    "GDn_points_0": {
+      "index": "3",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "GDn_points_0",
+          "name": "GDn_points_0",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "GDn_points_1": {
+      "index": "4",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "GDn_points_1",
+          "name": "GDn_points_1",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "GDn_points_2": {
+      "index": "5",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "GDn_points_2",
+          "name": "GDn_points_2",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "GDn_points_3": {
+      "index": "6",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "GDn_points_3",
+          "name": "GDn_points_3",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "GDn_points_4": {
+      "index": "7",
+      "direction": "in",
+      "srcType": "int",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "GDn_points_4",
+          "name": "GDn_points_4",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "output_patch_stream": {
+      "index": "8",
+      "direction": "out",
+      "srcType": "int",
+      "srcSize": "64",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "output_patch_stream_V",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        }]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "DirectiveTcl": ["set_directive_top MPSQ -name MPSQ"],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "MPSQ"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "3",
+    "Uncertainty": "0.81",
+    "IsCombinational": "0",
+    "II": "x",
+    "Latency": "undef"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 3.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "MPSQ",
+    "Version": "1.0",
+    "DisplayName": "Mpsq",
+    "Revision": "",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_MPSQ_1_0.zip"
+  },
+  "Files": {
+    "CSource": ["..\/..\/patchMaker.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/MPSQ_add_patch.vhd",
+      "impl\/vhdl\/MPSQ_add_patch_patches_parameters.vhd",
+      "impl\/vhdl\/MPSQ_areWedgeSuperPointsEqual.vhd",
+      "impl\/vhdl\/MPSQ_delete_patch.vhd",
+      "impl\/vhdl\/MPSQ_delete_patch_patches_parameters.vhd",
+      "impl\/vhdl\/MPSQ_encodeCoordinates.vhd",
+      "impl\/vhdl\/MPSQ_get_index_from_z.vhd",
+      "impl\/vhdl\/MPSQ_getParallelogramsAndAcceptanceCorners.vhd",
+      "impl\/vhdl\/MPSQ_getShadows.vhd",
+      "impl\/vhdl\/MPSQ_getSolveNextColumnWhileConditional.vhd",
+      "impl\/vhdl\/MPSQ_getSolveNextPatchPairWhileCondition.vhd",
+      "impl\/vhdl\/MPSQ_initializeArrays.vhd",
+      "impl\/vhdl\/MPSQ_makePatch_alignedToLine.vhd",
+      "impl\/vhdl\/MPSQ_makePatch_alignedToLine_1.vhd",
+      "impl\/vhdl\/MPSQ_makePatch_alignedToLine_2.vhd",
+      "impl\/vhdl\/MPSQ_makeSuperPoint_alignedToLine.vhd",
+      "impl\/vhdl\/MPSQ_makeSuperPoint_alignedToLine_1.vhd",
+      "impl\/vhdl\/MPSQ_makeSuperPoint_alignedToLine_2.vhd",
+      "impl\/vhdl\/MPSQ_makeSuperPoint_alignedToLine_radiiDivisionList_1_4.vhd",
+      "impl\/vhdl\/MPSQ_makeThirdPatch.vhd",
+      "impl\/vhdl\/MPSQ_mSP_findBounds.vhd",
+      "impl\/vhdl\/MPSQ_mSP_findBounds_trapezoid_edges_V.vhd",
+      "impl\/vhdl\/MPSQ_mul_33ns_33s_64_3_1.vhd",
+      "impl\/vhdl\/MPSQ_mul_33s_64s_64_5_1.vhd",
+      "impl\/vhdl\/MPSQ_mul_35ns_33s_64_3_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_21_1_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_21_32_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_32_64_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_42_1_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_42_32_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_53_32_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_83_1_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_83_32_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_154_64_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_807_64_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_2408_64_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_2568_32_1_1.vhd",
+      "impl\/vhdl\/MPSQ_mux_128011_32_1_1.vhd",
+      "impl\/vhdl\/MPSQ_solveComplmentaryPatch.vhd",
+      "impl\/vhdl\/MPSQ_solveNextColumn.vhd",
+      "impl\/vhdl\/MPSQ_solveNextPatchPair.vhd",
+      "impl\/vhdl\/MPSQ_straightLineProjectorFromLayerIJtoK.vhd",
+      "impl\/vhdl\/MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList.vhd",
+      "impl\/vhdl\/MPSQ.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/MPSQ_add_patch.v",
+      "impl\/verilog\/MPSQ_add_patch_patches_parameters.v",
+      "impl\/verilog\/MPSQ_areWedgeSuperPointsEqual.v",
+      "impl\/verilog\/MPSQ_delete_patch.v",
+      "impl\/verilog\/MPSQ_delete_patch_patches_parameters.v",
+      "impl\/verilog\/MPSQ_encodeCoordinates.v",
+      "impl\/verilog\/MPSQ_get_index_from_z.v",
+      "impl\/verilog\/MPSQ_getParallelogramsAndAcceptanceCorners.v",
+      "impl\/verilog\/MPSQ_getShadows.v",
+      "impl\/verilog\/MPSQ_getSolveNextColumnWhileConditional.v",
+      "impl\/verilog\/MPSQ_getSolveNextPatchPairWhileCondition.v",
+      "impl\/verilog\/MPSQ_initializeArrays.v",
+      "impl\/verilog\/MPSQ_makePatch_alignedToLine.v",
+      "impl\/verilog\/MPSQ_makePatch_alignedToLine_1.v",
+      "impl\/verilog\/MPSQ_makePatch_alignedToLine_2.v",
+      "impl\/verilog\/MPSQ_makeSuperPoint_alignedToLine.v",
+      "impl\/verilog\/MPSQ_makeSuperPoint_alignedToLine_1.v",
+      "impl\/verilog\/MPSQ_makeSuperPoint_alignedToLine_2.v",
+      "impl\/verilog\/MPSQ_makeSuperPoint_alignedToLine_radiiDivisionList_1_4.v",
+      "impl\/verilog\/MPSQ_makeSuperPoint_alignedToLine_radiiDivisionList_1_4_rom.dat",
+      "impl\/verilog\/MPSQ_makeThirdPatch.v",
+      "impl\/verilog\/MPSQ_mSP_findBounds.v",
+      "impl\/verilog\/MPSQ_mSP_findBounds_trapezoid_edges_V.v",
+      "impl\/verilog\/MPSQ_mSP_findBounds_trapezoid_edges_V_rom.dat",
+      "impl\/verilog\/MPSQ_mul_33ns_33s_64_3_1.v",
+      "impl\/verilog\/MPSQ_mul_33s_64s_64_5_1.v",
+      "impl\/verilog\/MPSQ_mul_35ns_33s_64_3_1.v",
+      "impl\/verilog\/MPSQ_mux_21_1_1_1.v",
+      "impl\/verilog\/MPSQ_mux_21_32_1_1.v",
+      "impl\/verilog\/MPSQ_mux_32_64_1_1.v",
+      "impl\/verilog\/MPSQ_mux_42_1_1_1.v",
+      "impl\/verilog\/MPSQ_mux_42_32_1_1.v",
+      "impl\/verilog\/MPSQ_mux_53_32_1_1.v",
+      "impl\/verilog\/MPSQ_mux_83_1_1_1.v",
+      "impl\/verilog\/MPSQ_mux_83_32_1_1.v",
+      "impl\/verilog\/MPSQ_mux_154_64_1_1.v",
+      "impl\/verilog\/MPSQ_mux_807_64_1_1.v",
+      "impl\/verilog\/MPSQ_mux_2408_64_1_1.v",
+      "impl\/verilog\/MPSQ_mux_2568_32_1_1.v",
+      "impl\/verilog\/MPSQ_mux_128011_32_1_1.v",
+      "impl\/verilog\/MPSQ_solveComplmentaryPatch.v",
+      "impl\/verilog\/MPSQ_solveNextColumn.v",
+      "impl\/verilog\/MPSQ_solveNextPatchPair.v",
+      "impl\/verilog\/MPSQ_straightLineProjectorFromLayerIJtoK.v",
+      "impl\/verilog\/MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList.v",
+      "impl\/verilog\/MPSQ_straightLineProjectorFromLayerIJtoK_radiiDivisionList_rom.dat",
+      "impl\/verilog\/MPSQ.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "DesignXml": ".autopilot\/db\/MPSQ.design.xml",
+    "DebugDir": ".debug",
+    "ProtoInst": ["C:\/Users\/rapiduser\/Desktop\/tanishGitHub\/tanishPatchMakerHLS\/PatchMaker_tanishGit\/solutionSC5\/.debug\/MPSQ.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {"ASSOCIATED_RESET": "ap_rst"},
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "ap_rst": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_HIGH"},
+      "portMap": {"ap_rst": "RST"},
+      "ports": ["ap_rst"]
+    },
+    "GDarray_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "11",
+      "portMap": {"GDarray_address0": "DATA"},
+      "ports": ["GDarray_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_address1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "11",
+      "portMap": {"GDarray_address1": "DATA"},
+      "ports": ["GDarray_address1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"GDarray_q0": "DATA"},
+      "ports": ["GDarray_q0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDarray_q1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portMap": {"GDarray_q1": "DATA"},
+      "ports": ["GDarray_q1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "GDarray"
+        }]
+    },
+    "GDn_points_0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_0": "DATA"},
+      "ports": ["GDn_points_0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "GDn_points_0"
+        }]
+    },
+    "GDn_points_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_1": "DATA"},
+      "ports": ["GDn_points_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "GDn_points_1"
+        }]
+    },
+    "GDn_points_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_2": "DATA"},
+      "ports": ["GDn_points_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "GDn_points_2"
+        }]
+    },
+    "GDn_points_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_3": "DATA"},
+      "ports": ["GDn_points_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "GDn_points_3"
+        }]
+    },
+    "GDn_points_4": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"GDn_points_4": "DATA"},
+      "ports": ["GDn_points_4"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "GDn_points_4"
+        }]
+    },
+    "n_patches_i": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "8",
+      "portMap": {"n_patches_i": "DATA"},
+      "ports": ["n_patches_i"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "n_patches"
+        }]
+    },
+    "n_patches_o": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "8",
+      "portMap": {"n_patches_o": "DATA"},
+      "ports": ["n_patches_o"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "n_patches"
+        }]
+    },
+    "output_patch_stream_V": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "64",
+      "portPrefix": "output_patch_stream_V_",
+      "portMap": {
+        "output_patch_stream_V_din": "WR_DATA",
+        "output_patch_stream_V_full_n": "FULL_N",
+        "output_patch_stream_V_write": "WR_EN"
+      },
+      "ports": [
+        "output_patch_stream_V_din",
+        "output_patch_stream_V_full_n",
+        "output_patch_stream_V_write"
+      ],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_fifo",
+          "register_option": "0",
+          "argName": "output_patch_stream"
+        }]
+    },
+    "ppl": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"ppl": "DATA"},
+      "ports": ["ppl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "ppl"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ppl": {
+      "dir": "in",
+      "width": "32"
+    },
+    "n_patches_i": {
+      "dir": "in",
+      "width": "8"
+    },
+    "n_patches_o": {
+      "dir": "out",
+      "width": "8"
+    },
+    "n_patches_o_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_address0": {
+      "dir": "out",
+      "width": "11"
+    },
+    "GDarray_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_q0": {
+      "dir": "in",
+      "width": "64"
+    },
+    "GDarray_address1": {
+      "dir": "out",
+      "width": "11"
+    },
+    "GDarray_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "GDarray_q1": {
+      "dir": "in",
+      "width": "64"
+    },
+    "GDn_points_0": {
+      "dir": "in",
+      "width": "32"
+    },
+    "GDn_points_1": {
+      "dir": "in",
+      "width": "32"
+    },
+    "GDn_points_2": {
+      "dir": "in",
+      "width": "32"
+    },
+    "GDn_points_3": {
+      "dir": "in",
+      "width": "32"
+    },
+    "GDn_points_4": {
+      "dir": "in",
+      "width": "32"
+    },
+    "output_patch_stream_V_din": {
+      "dir": "out",
+      "width": "64"
+    },
+    "output_patch_stream_V_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "output_patch_stream_V_write": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "MPSQ",
+      "Instances": [
+        {
+          "ModuleName": "solveNextColumn",
+          "InstanceName": "grp_solveNextColumn_fu_20111",
+          "Instances": [
+            {
+              "ModuleName": "solveNextPatchPair",
+              "InstanceName": "grp_solveNextPatchPair_fu_29444",
+              "Instances": [
+                {
+                  "ModuleName": "solveComplmentaryPatch",
+                  "InstanceName": "grp_solveComplmentaryPatch_fu_36469",
+                  "Instances": [
+                    {
+                      "ModuleName": "makePatch_alignedToLine_2",
+                      "InstanceName": "grp_makePatch_alignedToLine_2_fu_29850",
+                      "Instances": [
+                        {
+                          "ModuleName": "makeSuperPoint_alignedToLine_2",
+                          "InstanceName": "grp_makeSuperPoint_alignedToLine_2_fu_23088",
+                          "Instances": [{
+                              "ModuleName": "mSP_findBounds",
+                              "InstanceName": "grp_mSP_findBounds_fu_21923"
+                            }]
+                        },
+                        {
+                          "ModuleName": "add_patch",
+                          "InstanceName": "grp_add_patch_fu_28558",
+                          "Instances": [
+                            {
+                              "ModuleName": "add_patch_patches_parameters",
+                              "InstanceName": "grp_add_patch_patches_parameters_fu_8850"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8914"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8921"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8928"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8935"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8942"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8949"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8956"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8963"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8970"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8977"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8984"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8991"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8998"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9005"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9012"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9019"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9026"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9033"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9040"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9047"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9054"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9061"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9068"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9075"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9082"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9089"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9096"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9103"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9110"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9117"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9124"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9131"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9138"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9145"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9152"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9159"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9166"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9173"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9180"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9187"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9194"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9201"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9208"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9215"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9222"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9229"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9236"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9243"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9250"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9257"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9264"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9271"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9278"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9285"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9292"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9299"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9306"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9313"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9320"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9327"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9334"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9341"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9348"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9355"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9362"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9369"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9376"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9383"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9390"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9397"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9404"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9411"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9418"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9425"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9432"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9439"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9446"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9453"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9460"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9467"
+                            }
+                          ]
+                        },
+                        {
+                          "ModuleName": "getParallelogramsAndAcceptanceCorners",
+                          "InstanceName": "grp_getParallelogramsAndAcceptanceCorners_fu_29542",
+                          "Instances": [
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_322"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_335"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_348"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_362"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "delete_patch",
+                      "InstanceName": "grp_delete_patch_fu_33055",
+                      "Instances": [{
+                          "ModuleName": "delete_patch_patches_parameters",
+                          "InstanceName": "grp_delete_patch_patches_parameters_fu_10118"
+                        }]
+                    },
+                    {
+                      "ModuleName": "get_index_from_z",
+                      "InstanceName": "grp_get_index_from_z_fu_33455"
+                    },
+                    {
+                      "ModuleName": "get_index_from_z",
+                      "InstanceName": "grp_get_index_from_z_fu_36034"
+                    },
+                    {
+                      "ModuleName": "get_index_from_z",
+                      "InstanceName": "grp_get_index_from_z_fu_37326"
+                    },
+                    {
+                      "ModuleName": "get_index_from_z",
+                      "InstanceName": "grp_get_index_from_z_fu_38618"
+                    },
+                    {
+                      "ModuleName": "areWedgeSuperPointsEqual",
+                      "InstanceName": "tmp_4_areWedgeSuperPointsEqual_fu_39910"
+                    },
+                    {
+                      "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                      "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_40078"
+                    },
+                    {
+                      "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                      "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_40094"
+                    },
+                    {
+                      "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                      "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_40110"
+                    },
+                    {
+                      "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                      "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_40126"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "makeThirdPatch",
+                  "InstanceName": "grp_makeThirdPatch_fu_39687",
+                  "Instances": [
+                    {
+                      "ModuleName": "makePatch_alignedToLine_1",
+                      "InstanceName": "grp_makePatch_alignedToLine_1_fu_38373",
+                      "Instances": [
+                        {
+                          "ModuleName": "makeSuperPoint_alignedToLine_1",
+                          "InstanceName": "grp_makeSuperPoint_alignedToLine_1_fu_23098",
+                          "Instances": [{
+                              "ModuleName": "mSP_findBounds",
+                              "InstanceName": "grp_mSP_findBounds_fu_21935"
+                            }]
+                        },
+                        {
+                          "ModuleName": "add_patch",
+                          "InstanceName": "grp_add_patch_fu_28570",
+                          "Instances": [
+                            {
+                              "ModuleName": "add_patch_patches_parameters",
+                              "InstanceName": "grp_add_patch_patches_parameters_fu_8850"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8914"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8921"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8928"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8935"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8942"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8949"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8956"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8963"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8970"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8977"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8984"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8991"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_8998"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9005"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9012"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9019"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9026"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9033"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9040"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9047"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9054"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9061"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9068"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9075"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9082"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9089"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9096"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9103"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9110"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9117"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9124"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9131"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9138"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9145"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9152"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9159"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9166"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9173"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9180"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9187"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9194"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9201"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9208"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9215"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9222"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9229"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9236"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9243"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9250"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9257"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9264"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9271"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9278"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9285"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9292"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9299"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9306"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9313"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9320"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9327"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9334"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9341"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9348"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9355"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9362"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9369"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9376"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9383"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9390"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9397"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9404"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9411"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9418"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9425"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9432"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9439"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9446"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9453"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9460"
+                            },
+                            {
+                              "ModuleName": "encodeCoordinates",
+                              "InstanceName": "grp_encodeCoordinates_fu_9467"
+                            }
+                          ]
+                        },
+                        {
+                          "ModuleName": "getParallelogramsAndAcceptanceCorners",
+                          "InstanceName": "grp_getParallelogramsAndAcceptanceCorners_fu_29554",
+                          "Instances": [
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_322"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_335"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_348"
+                            },
+                            {
+                              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_362"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "delete_patch",
+                      "InstanceName": "grp_delete_patch_fu_41581",
+                      "Instances": [{
+                          "ModuleName": "delete_patch_patches_parameters",
+                          "InstanceName": "grp_delete_patch_patches_parameters_fu_10118"
+                        }]
+                    },
+                    {
+                      "ModuleName": "getShadows",
+                      "InstanceName": "grp_getShadows_fu_42767",
+                      "Instances": [
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_495"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_509"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_523"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_537"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_551"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_565"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_579"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_593"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_607"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_621"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_635"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_649"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_663"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_677"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_691"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_705"
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                      "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_42853"
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "makePatch_alignedToLine",
+                  "InstanceName": "grp_makePatch_alignedToLine_fu_42899",
+                  "Instances": [
+                    {
+                      "ModuleName": "makeSuperPoint_alignedToLine",
+                      "InstanceName": "grp_makeSuperPoint_alignedToLine_fu_23088",
+                      "Instances": [{
+                          "ModuleName": "mSP_findBounds",
+                          "InstanceName": "grp_mSP_findBounds_fu_21921"
+                        }]
+                    },
+                    {
+                      "ModuleName": "add_patch",
+                      "InstanceName": "grp_add_patch_fu_28558",
+                      "Instances": [
+                        {
+                          "ModuleName": "add_patch_patches_parameters",
+                          "InstanceName": "grp_add_patch_patches_parameters_fu_8850"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8914"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8921"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8928"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8935"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8942"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8949"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8956"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8963"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8970"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8977"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8984"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8991"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8998"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9005"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9012"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9019"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9026"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9033"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9040"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9047"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9054"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9061"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9068"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9075"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9082"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9089"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9096"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9103"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9110"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9117"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9124"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9131"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9138"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9145"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9152"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9159"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9166"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9173"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9180"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9187"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9194"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9201"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9208"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9215"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9222"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9229"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9236"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9243"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9250"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9257"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9264"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9271"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9278"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9285"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9292"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9299"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9306"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9313"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9320"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9327"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9334"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9341"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9348"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9355"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9362"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9369"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9376"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9383"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9390"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9397"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9404"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9411"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9418"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9425"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9432"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9439"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9446"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9453"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9460"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9467"
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "getParallelogramsAndAcceptanceCorners",
+                      "InstanceName": "grp_getParallelogramsAndAcceptanceCorners_fu_29542",
+                      "Instances": [
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_322"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_335"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_348"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_362"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "makePatch_alignedToLine_1",
+                  "InstanceName": "grp_makePatch_alignedToLine_1_fu_48673",
+                  "Instances": [
+                    {
+                      "ModuleName": "makeSuperPoint_alignedToLine_1",
+                      "InstanceName": "grp_makeSuperPoint_alignedToLine_1_fu_23098",
+                      "Instances": [{
+                          "ModuleName": "mSP_findBounds",
+                          "InstanceName": "grp_mSP_findBounds_fu_21935"
+                        }]
+                    },
+                    {
+                      "ModuleName": "add_patch",
+                      "InstanceName": "grp_add_patch_fu_28570",
+                      "Instances": [
+                        {
+                          "ModuleName": "add_patch_patches_parameters",
+                          "InstanceName": "grp_add_patch_patches_parameters_fu_8850"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8914"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8921"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8928"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8935"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8942"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8949"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8956"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8963"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8970"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8977"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8984"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8991"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_8998"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9005"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9012"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9019"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9026"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9033"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9040"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9047"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9054"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9061"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9068"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9075"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9082"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9089"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9096"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9103"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9110"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9117"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9124"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9131"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9138"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9145"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9152"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9159"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9166"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9173"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9180"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9187"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9194"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9201"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9208"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9215"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9222"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9229"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9236"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9243"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9250"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9257"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9264"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9271"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9278"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9285"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9292"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9299"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9306"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9313"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9320"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9327"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9334"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9341"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9348"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9355"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9362"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9369"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9376"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9383"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9390"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9397"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9404"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9411"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9418"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9425"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9432"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9439"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9446"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9453"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9460"
+                        },
+                        {
+                          "ModuleName": "encodeCoordinates",
+                          "InstanceName": "grp_encodeCoordinates_fu_9467"
+                        }
+                      ]
+                    },
+                    {
+                      "ModuleName": "getParallelogramsAndAcceptanceCorners",
+                      "InstanceName": "grp_getParallelogramsAndAcceptanceCorners_fu_29554",
+                      "Instances": [
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_322"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_335"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_348"
+                        },
+                        {
+                          "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                          "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_362"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "ModuleName": "areWedgeSuperPointsEqual",
+                  "InstanceName": "tmp_areWedgeSuperPointsEqual_fu_51568"
+                },
+                {
+                  "ModuleName": "straightLineProjectorFromLayerIJtoK",
+                  "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_51736"
+                },
+                {
+                  "ModuleName": "getSolveNextPatchPairWhileCondition",
+                  "InstanceName": "grp_getSolveNextPatchPairWhileCondition_fu_51752"
+                }
+              ]
+            },
+            {
+              "ModuleName": "straightLineProjectorFromLayerIJtoK",
+              "InstanceName": "grp_straightLineProjectorFromLayerIJtoK_fu_32657"
+            },
+            {
+              "ModuleName": "getSolveNextColumnWhileConditional",
+              "InstanceName": "tmp_getSolveNextColumnWhileConditional_fu_32673"
+            }
+          ]
+        },
+        {
+          "ModuleName": "initializeArrays",
+          "InstanceName": "grp_initializeArrays_fu_23317"
+        }
+      ]
+    },
+    "Info": {
+      "initializeArrays": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "straightLineProjectorFromLayerIJtoK": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getSolveNextColumnWhileConditional": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "mSP_findBounds": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makeSuperPoint_alignedToLine": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getParallelogramsAndAcceptanceCorners": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "encodeCoordinates": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "add_patch_patches_parameters": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "add_patch": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makePatch_alignedToLine": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "areWedgeSuperPointsEqual": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "makeSuperPoint_alignedToLine_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makePatch_alignedToLine_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getSolveNextPatchPairWhileCondition": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "get_index_from_z": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "delete_patch_patches_parameters": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "delete_patch": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makeSuperPoint_alignedToLine_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makePatch_alignedToLine_2": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "solveComplmentaryPatch": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getShadows": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "makeThirdPatch": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "solveNextPatchPair": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "solveNextColumn": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "MPSQ": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "initializeArrays": {
+        "Latency": {
+          "LatencyBest": "10",
+          "LatencyAvg": "10",
+          "LatencyWorst": "10",
+          "PipelineII": "10",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "0.453"
+        },
+        "Loops": [
+          {
+            "Name": "initArraysSPloop1",
+            "TripCount": "3",
+            "Latency": "3",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "initArraysPPloop1",
+            "TripCount": "3",
+            "Latency": "3",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          }
+        ],
+        "Area": {
+          "FF": "321",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "9131",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "straightLineProjectorFromLayerIJtoK": {
+        "Latency": {
+          "LatencyBest": "7",
+          "LatencyAvg": "7",
+          "LatencyWorst": "7",
+          "PipelineII": "7",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.172"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "387",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "429",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "getSolveNextColumnWhileConditional": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "0",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "0.981"
+        },
+        "Area": {
+          "FF": "0",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "0",
+          "LUT": "64",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "mSP_findBounds": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.987"
+        },
+        "Loops": [{
+            "Name": "mSP_findLRBounds_LRdiscovery",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "2",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "FF": "766",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "2526",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makeSuperPoint_alignedToLine": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.100"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "15325",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "109729",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "2",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "getParallelogramsAndAcceptanceCorners": {
+        "Latency": {
+          "LatencyBest": "43",
+          "LatencyAvg": "43",
+          "LatencyWorst": "43",
+          "PipelineII": "43",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.172"
+        },
+        "Loops": [
+          {
+            "Name": "getParallelograms_settingWPparameters",
+            "TripCount": "4",
+            "Latency": "36",
+            "PipelineII": "",
+            "PipelineDepth": "9"
+          },
+          {
+            "Name": "get_acceptanceCorners_minMaxFinding",
+            "TripCount": "4",
+            "Latency": "4",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "2970",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "2813",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "encodeCoordinates": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "0",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "0.000"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "0",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "0",
+          "LUT": "0",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "add_patch_patches_parameters": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "0",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "0.000"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "0",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "0",
+          "LUT": "0",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "add_patch": {
+        "Latency": {
+          "LatencyBest": "2",
+          "LatencyAvg": "15",
+          "LatencyWorst": "88",
+          "PipelineIIMin": "2",
+          "PipelineIIMax": "88",
+          "PipelineII": "2 ~ 88",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.778"
+        },
+        "Loops": [
+          {
+            "Name": "add_patch_checkDiff",
+            "TripCount": "",
+            "LatencyMin": "1",
+            "LatencyMax": "5",
+            "Latency": "1 ~ 5",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "add_patch_perSuperpointSP1_toSTREAM_add_patch_perPointSP1_toSTREAM",
+            "TripCount": "80",
+            "Latency": "80",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }
+        ],
+        "Area": {
+          "FF": "35440",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "9320",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makePatch_alignedToLine": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.481"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "74021",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "124220",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "3",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "areWedgeSuperPointsEqual": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "0",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.050"
+        },
+        "Area": {
+          "FF": "0",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "0",
+          "LUT": "1582",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makeSuperPoint_alignedToLine_1": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.100"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "14830",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "110003",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "2",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makePatch_alignedToLine_1": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.481"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "76496",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "127307",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "3",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "getSolveNextPatchPairWhileCondition": {
+        "Latency": {
+          "LatencyBest": "1",
+          "LatencyAvg": "1",
+          "LatencyWorst": "1",
+          "PipelineII": "1",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.309"
+        },
+        "Area": {
+          "FF": "67",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "300",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "get_index_from_z": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "1.997"
+        },
+        "Loops": [{
+            "Name": "getIndexFromZ_perPoint",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "FF": "234",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "3189",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "delete_patch_patches_parameters": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "0.436"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_491_1",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "FF": "1565",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "2824",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "delete_patch": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "0.968"
+        },
+        "Loops": [{
+            "Name": "delete_patch_perPatch",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "FF": "47300",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "28756",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makeSuperPoint_alignedToLine_2": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.172"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "14724",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "109714",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "2",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makePatch_alignedToLine_2": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.481"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "76390",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "127018",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "3",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "solveComplmentaryPatch": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.481"
+        },
+        "Loops": [
+          {
+            "Name": "solveComplmentaryPatch_findlayerWithSmallestShift",
+            "TripCount": "4",
+            "Latency": "12",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "solveComplmentaryPatch_superpointEqualCheck_2",
+            "TripCount": "",
+            "LatencyMin": "2",
+            "LatencyMax": "11",
+            "Latency": "2 ~ 11",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "214435",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "2",
+          "LUT": "201468",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "4",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "getShadows": {
+        "Latency": {
+          "LatencyBest": "13",
+          "LatencyAvg": "13",
+          "LatencyWorst": "13",
+          "PipelineII": "13",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.172"
+        },
+        "Loops": [{
+            "Name": "getShadows_maxFinding_loop",
+            "TripCount": "3",
+            "Latency": "3",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "7443",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "~0",
+          "LUT": "8316",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "makeThirdPatch": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.481"
+        },
+        "Loops": [{
+            "Name": "thirdPatch_loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "0",
+          "FF": "239504",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "2",
+          "LUT": "191291",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "4",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "solveNextPatchPair": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.481"
+        },
+        "Loops": [
+          {
+            "Name": "solveNextPatchPair_superPointEqualCheck",
+            "TripCount": "",
+            "LatencyMin": "3",
+            "LatencyMax": "17",
+            "Latency": "3 ~ 17",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "solveNextPatchPair_loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "2",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "~0",
+          "FF": "752075",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "9",
+          "LUT": "670279",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "16",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "solveNextColumn": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.481"
+        },
+        "Loops": [{
+            "Name": "solveNextColumn_loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "2",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "~0",
+          "FF": "823770",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "10",
+          "LUT": "682313",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "16",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      },
+      "MPSQ": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "3.00",
+          "Uncertainty": "0.81",
+          "Estimate": "2.481"
+        },
+        "Loops": [
+          {
+            "Name": "shadowQuilt_loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": ""
+          },
+          {
+            "Name": "finalSPOutputInit_perPatch_PatchSTREAM0_finalSPOutputInit_perSuperpoint_PatchSTREAM0_finalSPOutputInit_perPoint_PatchSTREAM0",
+            "TripCount": "240",
+            "Latency": "241",
+            "PipelineII": "1",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint",
+            "TripCount": "80",
+            "Latency": "80",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "4320",
+          "UTIL_BRAM": "0",
+          "DSP": "2",
+          "AVAIL_DSP": "3840",
+          "UTIL_DSP": "~0",
+          "FF": "939845",
+          "AVAIL_FF": "8171520",
+          "UTIL_FF": "11",
+          "LUT": "706224",
+          "AVAIL_LUT": "4085760",
+          "UTIL_LUT": "17",
+          "URAM": "0",
+          "AVAIL_URAM": "320",
+          "UTIL_URAM": "0"
+        }
+      }
+    }
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2024-08-06 03:50:30 -0400",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2020.2"
+  }
+}

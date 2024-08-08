@@ -1,0 +1,442 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'MPSQ'" level="0">
+<item name = "Date">Wed Aug  7 22:57:29 2024
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">PatchMaker_tanishGit</item>
+<item name = "Solution">solutionLC (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu19p-fsvb3824-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.00 ns, 2.172 ns, 0.81 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1454, 1455, 4.362 us, 4.365 us, 1455, 1456, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_get_index_from_z_fu_1708">get_index_from_z, 6, 7, 18.000 ns, 21.000 ns, 6, 7, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint">1281, 1281, 3, 1, 1, 1280, yes</column>
+<column name="- finalSPOutput_writeDummy_perSuperpoint1234_finalSPOutput_writeDummy_perPoint1234">80, 80, 2, 1, 1, 80, yes</column>
+<column name="- finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint">80, 80, 2, 1, 1, 80, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 166, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 10937, 53082, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 172, -</column>
+<column name="Register">-, -, 8288, -, -</column>
+<specialColumn name="Available SLR">1080, 960, 2042880, 1021440, 80</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, 5, 0</specialColumn>
+<specialColumn name="Available">4320, 3840, 8171520, 4085760, 320</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_get_index_from_z_fu_1708">get_index_from_z, 0, 0, 10937, 53082, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln923_1_fu_1968_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln923_fu_1980_p2">+, 0, 0, 10, 3, 1</column>
+<column name="add_ln929_fu_2054_p2">+, 0, 0, 16, 9, 1</column>
+<column name="add_ln934_fu_2044_p2">+, 0, 0, 18, 11, 11</column>
+<column name="add_ln979_fu_4376_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln991_fu_4388_p2">+, 0, 0, 14, 7, 1</column>
+<column name="ap_block_pp1_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp2_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state11_pp2_stage0_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state8_pp1_stage0_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln923_fu_1974_p2">icmp, 0, 0, 11, 11, 11</column>
+<column name="icmp_ln929_fu_1986_p2">icmp, 0, 0, 11, 9, 10</column>
+<column name="icmp_ln979_fu_4382_p2">icmp, 0, 0, 10, 7, 7</column>
+<column name="icmp_ln991_fu_4394_p2">icmp, 0, 0, 10, 7, 7</column>
+<column name="select_ln923_1_fu_2000_p3">select, 0, 0, 3, 1, 3</column>
+<column name="select_ln923_2_fu_2032_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln923_fu_1992_p3">select, 0, 0, 9, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_pp2">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="ap_enable_reg_pp1_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="ap_enable_reg_pp2_iter1">xor, 0, 0, 2, 2, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="a_reg_1664">9, 2, 3, 6</column>
+<column name="ap_NS_fsm">49, 9, 1, 9</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp1_iter1">14, 3, 1, 3</column>
+<column name="ap_enable_reg_pp2_iter1">14, 3, 1, 3</column>
+<column name="ap_phi_mux_a_phi_fu_1668_p4">9, 2, 3, 6</column>
+<column name="b_reg_1675">9, 2, 9, 18</column>
+<column name="indvar_flatten15_reg_1697">9, 2, 7, 14</column>
+<column name="indvar_flatten7_reg_1686">9, 2, 7, 14</column>
+<column name="indvar_flatten_reg_1653">9, 2, 11, 22</column>
+<column name="output_patch_stream_V_blk_n">9, 2, 1, 2</column>
+<column name="output_patch_stream_V_din">14, 3, 64, 192</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="GDarrayDecoded_4_255_1_100_fu_1008">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_101_fu_1012">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_102_fu_1016">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_103_fu_1020">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_104_fu_1024">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_105_fu_1028">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_106_fu_1032">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_107_fu_1036">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_108_fu_1040">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_109_fu_1044">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_10_fu_648">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_110_fu_1048">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_111_fu_1052">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_112_fu_1056">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_113_fu_1060">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_114_fu_1064">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_115_fu_1068">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_116_fu_1072">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_117_fu_1076">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_118_fu_1080">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_119_fu_1084">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_11_fu_652">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_120_fu_1088">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_121_fu_1092">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_122_fu_1096">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_123_fu_1100">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_124_fu_1104">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_125_fu_1108">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_126_fu_1112">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_127_fu_1116">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_128_fu_1120">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_129_fu_1124">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_12_fu_656">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_130_fu_1128">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_131_fu_1132">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_132_fu_1136">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_133_fu_1140">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_134_fu_1144">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_135_fu_1148">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_136_fu_1152">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_137_fu_1156">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_138_fu_1160">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_139_fu_1164">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_13_fu_660">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_140_fu_1168">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_141_fu_1172">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_142_fu_1176">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_143_fu_1180">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_144_fu_1184">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_145_fu_1188">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_146_fu_1192">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_147_fu_1196">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_148_fu_1200">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_149_fu_1204">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_14_fu_664">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_150_fu_1208">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_151_fu_1212">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_152_fu_1216">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_153_fu_1220">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_154_fu_1224">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_155_fu_1228">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_156_fu_1232">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_157_fu_1236">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_158_fu_1240">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_159_fu_1244">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_15_fu_668">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_160_fu_1248">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_161_fu_1252">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_162_fu_1256">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_163_fu_1260">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_164_fu_1264">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_165_fu_1268">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_166_fu_1272">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_167_fu_1276">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_168_fu_1280">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_169_fu_1284">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_16_fu_672">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_170_fu_1288">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_171_fu_1292">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_172_fu_1296">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_173_fu_1300">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_174_fu_1304">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_175_fu_1308">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_176_fu_1312">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_177_fu_1316">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_178_fu_1320">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_179_fu_1324">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_17_fu_676">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_180_fu_1328">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_181_fu_1332">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_182_fu_1336">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_183_fu_1340">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_184_fu_1344">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_185_fu_1348">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_186_fu_1352">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_187_fu_1356">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_188_fu_1360">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_189_fu_1364">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_18_fu_680">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_190_fu_1368">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_191_fu_1372">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_192_fu_1376">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_193_fu_1380">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_194_fu_1384">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_195_fu_1388">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_196_fu_1392">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_197_fu_1396">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_198_fu_1400">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_199_fu_1404">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_19_fu_684">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_1_fu_612">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_200_fu_1408">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_201_fu_1412">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_202_fu_1416">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_203_fu_1420">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_204_fu_1424">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_205_fu_1428">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_206_fu_1432">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_207_fu_1436">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_208_fu_1440">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_209_fu_1444">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_20_fu_688">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_210_fu_1448">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_211_fu_1452">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_212_fu_1456">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_213_fu_1460">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_214_fu_1464">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_215_fu_1468">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_216_fu_1472">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_217_fu_1476">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_218_fu_1480">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_219_fu_1484">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_21_fu_692">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_220_fu_1488">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_221_fu_1492">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_222_fu_1496">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_223_fu_1500">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_224_fu_1504">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_225_fu_1508">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_226_fu_1512">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_227_fu_1516">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_228_fu_1520">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_229_fu_1524">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_22_fu_696">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_230_fu_1528">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_231_fu_1532">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_232_fu_1536">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_233_fu_1540">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_234_fu_1544">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_235_fu_1548">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_236_fu_1552">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_237_fu_1556">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_238_fu_1560">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_239_fu_1564">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_23_fu_700">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_240_fu_1568">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_241_fu_1572">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_242_fu_1576">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_243_fu_1580">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_244_fu_1584">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_245_fu_1588">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_246_fu_1592">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_247_fu_1596">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_248_fu_1600">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_249_fu_1604">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_24_fu_704">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_250_fu_1608">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_251_fu_1612">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_252_fu_1616">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_253_fu_1620">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_254_fu_1624">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_255_fu_1628">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_25_fu_708">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_26_fu_712">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_27_fu_716">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_28_fu_720">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_29_fu_724">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_2_fu_616">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_30_fu_728">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_31_fu_732">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_32_fu_736">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_33_fu_740">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_34_fu_744">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_35_fu_748">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_36_fu_752">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_37_fu_756">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_38_fu_760">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_39_fu_764">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_3_fu_620">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_40_fu_768">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_41_fu_772">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_42_fu_776">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_43_fu_780">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_44_fu_784">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_45_fu_788">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_46_fu_792">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_47_fu_796">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_48_fu_800">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_49_fu_804">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_4_fu_624">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_50_fu_808">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_51_fu_812">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_52_fu_816">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_53_fu_820">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_54_fu_824">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_55_fu_828">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_56_fu_832">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_57_fu_836">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_58_fu_840">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_59_fu_844">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_5_fu_628">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_60_fu_848">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_61_fu_852">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_62_fu_856">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_63_fu_860">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_64_fu_864">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_65_fu_868">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_66_fu_872">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_67_fu_876">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_68_fu_880">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_69_fu_884">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_6_fu_632">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_70_fu_888">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_71_fu_892">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_72_fu_896">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_73_fu_900">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_74_fu_904">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_75_fu_908">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_76_fu_912">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_77_fu_916">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_78_fu_920">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_79_fu_924">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_7_fu_636">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_80_fu_928">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_81_fu_932">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_82_fu_936">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_83_fu_940">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_84_fu_944">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_85_fu_948">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_86_fu_952">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_87_fu_956">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_88_fu_960">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_89_fu_964">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_8_fu_640">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_90_fu_968">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_91_fu_972">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_92_fu_976">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_93_fu_980">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_94_fu_984">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_95_fu_988">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_96_fu_992">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_97_fu_996">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_98_fu_1000">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_99_fu_1004">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_9_fu_644">32, 0, 32, 0</column>
+<column name="GDarrayDecoded_4_255_1_fu_608">32, 0, 32, 0</column>
+<column name="a_reg_1664">3, 0, 3, 0</column>
+<column name="add_ln934_reg_5954">11, 0, 11, 0</column>
+<column name="ap_CS_fsm">8, 0, 8, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp2_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp2_iter1">1, 0, 1, 0</column>
+<column name="b_reg_1675">9, 0, 9, 0</column>
+<column name="dummyPatch_reg_6741">8, 0, 64, 56</column>
+<column name="grp_get_index_from_z_fu_1708_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln923_reg_5941">1, 0, 1, 0</column>
+<column name="icmp_ln979_reg_6751">1, 0, 1, 0</column>
+<column name="icmp_ln991_reg_6760">1, 0, 1, 0</column>
+<column name="indvar_flatten15_reg_1697">7, 0, 7, 0</column>
+<column name="indvar_flatten7_reg_1686">7, 0, 7, 0</column>
+<column name="indvar_flatten_reg_1653">11, 0, 11, 0</column>
+<column name="select_ln923_1_reg_5945">3, 0, 3, 0</column>
+<column name="select_ln923_2_reg_5950">1, 0, 1, 0</column>
+<column name="select_ln923_2_reg_5950_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="trunc_ln935_reg_5959">8, 0, 8, 0</column>
+<column name="trunc_ln935_reg_5959_pp0_iter1_reg">8, 0, 8, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, MPSQ, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, MPSQ, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, MPSQ, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, MPSQ, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, MPSQ, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, MPSQ, return value</column>
+<column name="ppl">in, 32, ap_none, ppl, scalar</column>
+<column name="n_patches">in, 8, ap_none, n_patches, pointer</column>
+<column name="GDarray_address0">out, 11, ap_memory, GDarray, array</column>
+<column name="GDarray_ce0">out, 1, ap_memory, GDarray, array</column>
+<column name="GDarray_q0">in, 64, ap_memory, GDarray, array</column>
+<column name="GDn_points_0">in, 32, ap_none, GDn_points_0, pointer</column>
+<column name="GDn_points_1">in, 32, ap_none, GDn_points_1, pointer</column>
+<column name="GDn_points_2">in, 32, ap_none, GDn_points_2, pointer</column>
+<column name="GDn_points_3">in, 32, ap_none, GDn_points_3, pointer</column>
+<column name="GDn_points_4">in, 32, ap_none, GDn_points_4, pointer</column>
+<column name="output_patch_stream_V_din">out, 64, ap_fifo, output_patch_stream_V, pointer</column>
+<column name="output_patch_stream_V_full_n">in, 1, ap_fifo, output_patch_stream_V, pointer</column>
+<column name="output_patch_stream_V_write">out, 1, ap_fifo, output_patch_stream_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

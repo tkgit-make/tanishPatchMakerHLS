@@ -1,14 +1,5 @@
 0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-The maximum depth reached by any of the 10 hls::stream() instances in the design is 0
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 0
 
 C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS\PatchMaker_tanishGit\solutionSC4\sim\verilog>set PATH= 
 
@@ -22,30 +13,22 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/ta
 INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_patch_stream_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/AESL_automem_GDarray.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_automem_GDarray
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/AESL_automem_GDn_points.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_GDn_points
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_MPSQ_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_add_patch9.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_add_patch9
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_add_patch_patches_parameters13.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_add_patch_patches_parameters13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_add_patch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_add_patch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_add_patch_patches_parameters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_add_patch_patches_parameters
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_areWedgeSuperPointsEqual.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_areWedgeSuperPointsEqual
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_delete_patch.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_delete_patch
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_delete_patch_patches_parameters.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_delete_patch_patches_parameters
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_dummyPatch_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_dummyPatch_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_dummyPatch_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_encodeCoordinates.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_encodeCoordinates
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_GDarrayDecoded_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_GDarrayDecoded_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_GDarrayDecoded_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_getParallelogramsAndAcceptanceCorners.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_getParallelogramsAndAcceptanceCorners
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_getShadows.v" into library xil_defaultlib
@@ -60,32 +43,26 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/ta
 INFO: [VRFC 10-311] analyzing module MPSQ_initializeArrays
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine_init_patch_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_init_patch_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_init_patch_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine_NPpatches_parameters_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_NPpatches_parameters_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_NPpatches_parameters_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_NPpatches_superpoints_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine11.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine11_radiiDivisionList_1_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_radiiDivisionList_1_4_rom
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_radiiDivisionList_1_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine11_row_list_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_row_list_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine11_row_list_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makePatch_alignedToLine_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_makePatch_alignedToLine_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeSuperPoint_alignedToLine_radiiDivisionList_1_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine_radiiDivisionList_1_4_rom
+INFO: [VRFC 10-311] analyzing module MPSQ_makeSuperPoint_alignedToLine_radiiDivisionList_1_4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_makeThirdPatch.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_makeThirdPatch
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mSP_findLRBounds.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findLRBounds
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mSP_findLRBounds_trapezoid_edges_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findLRBounds_trapezoid_edges_V_rom
-INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findLRBounds_trapezoid_edges_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mSP_findStartIndex.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findStartIndex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mSP_findBounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findBounds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mSP_findBounds_trapezoid_edges_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findBounds_trapezoid_edges_V_rom
+INFO: [VRFC 10-311] analyzing module MPSQ_mSP_findBounds_trapezoid_edges_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mul_33ns_33s_64_3_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_mul_33ns_33s_64_3_1_Multiplier_1
 INFO: [VRFC 10-311] analyzing module MPSQ_mul_33ns_33s_64_3_1
@@ -95,14 +72,34 @@ INFO: [VRFC 10-311] analyzing module MPSQ_mul_33s_64s_64_5_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mul_35ns_33s_64_3_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_mul_35ns_33s_64_3_1_Multiplier_0
 INFO: [VRFC 10-311] analyzing module MPSQ_mul_35ns_33s_64_3_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_128011_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_128011_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_154_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_154_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_1608_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_1608_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_21_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_21_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_21_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_21_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_2408_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_2408_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_2568_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_2568_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_32_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_32_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_42_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_42_1_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_42_32_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_mux_42_32_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_patches_parameters_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_patches_parameters_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_patches_parameters_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_patches_superpoints_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MPSQ_patches_superpoints_V_ram
-INFO: [VRFC 10-311] analyzing module MPSQ_patches_superpoints_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_53_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_53_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_807_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_807_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_83_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_83_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_mux_83_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MPSQ_mux_83_32_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_solveComplmentaryPatch.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MPSQ_solveComplmentaryPatch
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ_solveComplmentaryPatch_current_z_i_index.v" into library xil_defaultlib
@@ -150,66 +147,65 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
-Compiling module xil_defaultlib.MPSQ_patches_superpoints_V_ram
-Compiling module xil_defaultlib.MPSQ_patches_superpoints_V(DataW...
-Compiling module xil_defaultlib.MPSQ_patches_parameters_V_ram
-Compiling module xil_defaultlib.MPSQ_patches_parameters_V(DataWi...
-Compiling module xil_defaultlib.MPSQ_GDarrayDecoded_V_ram
-Compiling module xil_defaultlib.MPSQ_GDarrayDecoded_V(DataWidth=...
-Compiling module xil_defaultlib.MPSQ_dummyPatch_V_ram
-Compiling module xil_defaultlib.MPSQ_dummyPatch_V(DataWidth=1,Ad...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_ini...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_ini...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_NPp...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_NPp...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_NPp...
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_NPp...
+Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_curr...
+Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_curr...
+Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
+Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
+Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
+Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
+Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
+Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
+Compiling module xil_defaultlib.MPSQ_mSP_findBounds_trapezoid_ed...
+Compiling module xil_defaultlib.MPSQ_mSP_findBounds_trapezoid_ed...
+Compiling module xil_defaultlib.MPSQ_mux_2568_32_1_1(ID=1,din256...
+Compiling module xil_defaultlib.MPSQ_mSP_findBounds
+Compiling module xil_defaultlib.MPSQ_mul_33ns_33s_64_3_1_Multipl...
+Compiling module xil_defaultlib.MPSQ_mul_33ns_33s_64_3_1(ID=1,NU...
+Compiling module xil_defaultlib.MPSQ_mux_53_32_1_1(ID=1,din5_WID...
+Compiling module xil_defaultlib.MPSQ_mux_128011_32_1_1(ID=1,din1...
+Compiling module xil_defaultlib.MPSQ_mux_83_1_1_1(ID=1,din0_WIDT...
+Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
+Compiling module xil_defaultlib.MPSQ_add_patch_patches_parameter...
+Compiling module xil_defaultlib.MPSQ_encodeCoordinates
+Compiling module xil_defaultlib.MPSQ_mux_154_64_1_1(ID=1,din0_WI...
+Compiling module xil_defaultlib.MPSQ_mux_807_64_1_1(ID=1,din0_WI...
+Compiling module xil_defaultlib.MPSQ_add_patch
 Compiling module xil_defaultlib.MPSQ_straightLineProjectorFromLa...
 Compiling module xil_defaultlib.MPSQ_straightLineProjectorFromLa...
 Compiling module xil_defaultlib.MPSQ_mul_35ns_33s_64_3_1_Multipl...
 Compiling module xil_defaultlib.MPSQ_mul_35ns_33s_64_3_1(ID=1,NU...
 Compiling module xil_defaultlib.MPSQ_straightLineProjectorFromLa...
+Compiling module xil_defaultlib.MPSQ_mux_83_32_1_1(ID=1,din8_WID...
 Compiling module xil_defaultlib.MPSQ_mux_42_32_1_1(ID=1,din4_WID...
 Compiling module xil_defaultlib.MPSQ_getParallelogramsAndAccepta...
+Compiling module xil_defaultlib.MPSQ_mux_1608_32_1_1(ID=1,din160...
 Compiling module xil_defaultlib.MPSQ_wedgePatch_init
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_mSP_findLRBounds_trapezoid_...
-Compiling module xil_defaultlib.MPSQ_mSP_findLRBounds_trapezoid_...
-Compiling module xil_defaultlib.MPSQ_mSP_findLRBounds
-Compiling module xil_defaultlib.MPSQ_mSP_findStartIndex
-Compiling module xil_defaultlib.MPSQ_mul_33ns_33s_64_3_1_Multipl...
-Compiling module xil_defaultlib.MPSQ_mul_33ns_33s_64_3_1(ID=1,NU...
-Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
-Compiling module xil_defaultlib.MPSQ_add_patch_patches_parameter...
-Compiling module xil_defaultlib.MPSQ_encodeCoordinates
-Compiling module xil_defaultlib.MPSQ_add_patch9
-Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine
-Compiling module xil_defaultlib.MPSQ_getShadows
+Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_2
 Compiling module xil_defaultlib.MPSQ_delete_patch_patches_parame...
 Compiling module xil_defaultlib.MPSQ_delete_patch
-Compiling module xil_defaultlib.MPSQ_makeThirdPatch
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_curr...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_curr...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
-Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch_new_...
 Compiling module xil_defaultlib.MPSQ_get_index_from_z
-Compiling module xil_defaultlib.MPSQ_areWedgeSuperPointsEqual
 Compiling module xil_defaultlib.MPSQ_solveComplmentaryPatch
+Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
+Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine_1
+Compiling module xil_defaultlib.MPSQ_mux_32_64_1_1(ID=1,din0_WID...
+Compiling module xil_defaultlib.MPSQ_mux_21_1_1_1(ID=1,din0_WIDT...
+Compiling module xil_defaultlib.MPSQ_mux_21_32_1_1(ID=1,din2_WID...
+Compiling module xil_defaultlib.MPSQ_getShadows
+Compiling module xil_defaultlib.MPSQ_makeThirdPatch
+Compiling module xil_defaultlib.MPSQ_makeSuperPoint_alignedToLin...
+Compiling module xil_defaultlib.MPSQ_makePatch_alignedToLine
+Compiling module xil_defaultlib.MPSQ_areWedgeSuperPointsEqual
 Compiling module xil_defaultlib.MPSQ_getSolveNextPatchPairWhileC...
 Compiling module xil_defaultlib.MPSQ_mul_33s_64s_64_5_1_Multipli...
 Compiling module xil_defaultlib.MPSQ_mul_33s_64s_64_5_1(ID=1,NUM...
 Compiling module xil_defaultlib.MPSQ_solveNextPatchPair
 Compiling module xil_defaultlib.MPSQ_getSolveNextColumnWhileCond...
 Compiling module xil_defaultlib.MPSQ_solveNextColumn
+Compiling module xil_defaultlib.MPSQ_mux_42_1_1_1(ID=1,din0_WIDT...
 Compiling module xil_defaultlib.MPSQ_initializeArrays
+Compiling module xil_defaultlib.MPSQ_mux_2408_64_1_1(ID=1,din0_W...
 Compiling module xil_defaultlib.MPSQ
 Compiling module xil_defaultlib.AESL_automem_GDarray
-Compiling module xil_defaultlib.AESL_automem_GDn_points
 Compiling module xil_defaultlib.AESL_autofifo_output_patch_strea...
 Compiling module xil_defaultlib.nodf_module_intf
 Compiling module xil_defaultlib.dataflow_monitor_1
@@ -223,7 +219,7 @@ Built simulation snapshot MPSQ
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/xsim.dir/MPSQ/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Aug  5 17:58:03 2024...
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug  6 00:40:05 2024...
 
 ****** xsim v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -242,30 +238,12 @@ source MPSQ.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 10 [n/a] @ "107000"
-// RTL Simulation : 1 / 10 [n/a] @ "545909000"
-// RTL Simulation : 2 / 10 [n/a] @ "1434968000"
-// RTL Simulation : 3 / 10 [n/a] @ "2589179000"
-// RTL Simulation : 4 / 10 [n/a] @ "3323006000"
-// RTL Simulation : 5 / 10 [n/a] @ "4386755000"
-// RTL Simulation : 6 / 10 [n/a] @ "5789066000"
-// RTL Simulation : 7 / 10 [n/a] @ "7182191000"
-// RTL Simulation : 8 / 10 [n/a] @ "8152661000"
-// RTL Simulation : 9 / 10 [n/a] @ "9574187000"
-// RTL Simulation : 10 / 10 [n/a] @ "11267495000"
+// RTL Simulation : 0 / 1 [n/a] @ "107000"
+// RTL Simulation : 1 / 1 [n/a] @ "169487000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 11267506500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 503
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:14:24 . Memory (MB): peak = 923.617 ; gain = 0.000
+$finish called at time : 169498500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 761
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:24 . Memory (MB): peak = 1043.230 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Aug  5 18:12:35 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Aug  6 00:42:42 2024...
 0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-The maximum depth reached by any of the 10 hls::stream() instances in the design is 0
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 0

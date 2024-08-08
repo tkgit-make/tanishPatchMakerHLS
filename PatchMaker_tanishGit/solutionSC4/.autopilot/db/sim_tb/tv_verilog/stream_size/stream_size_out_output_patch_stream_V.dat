@@ -2,31 +2,4 @@
 [[transaction]] 0
 1200
 [[/transaction]] 
-[[transaction]] 1
-1200
-[[/transaction]] 
-[[transaction]] 2
-1280
-[[/transaction]] 
-[[transaction]] 3
-1600
-[[/transaction]] 
-[[transaction]] 4
-1440
-[[/transaction]] 
-[[transaction]] 5
-1600
-[[/transaction]] 
-[[transaction]] 6
-1680
-[[/transaction]] 
-[[transaction]] 7
-1840
-[[/transaction]] 
-[[transaction]] 8
-1680
-[[/transaction]] 
-[[transaction]] 9
-2000
-[[/transaction]] 
 [[[/runtime]]]

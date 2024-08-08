@@ -27,8 +27,20 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_GDarray "../tv/cdatafile/c.MPSQ.autotvin_GDarray.dat"
 #define AUTOTB_TVOUT_GDarray "../tv/cdatafile/c.MPSQ.autotvout_GDarray.dat"
 // wrapc file define:
-#define AUTOTB_TVIN_GDn_points "../tv/cdatafile/c.MPSQ.autotvin_GDn_points.dat"
-#define AUTOTB_TVOUT_GDn_points "../tv/cdatafile/c.MPSQ.autotvout_GDn_points.dat"
+#define AUTOTB_TVIN_GDn_points_0 "../tv/cdatafile/c.MPSQ.autotvin_GDn_points_0.dat"
+#define AUTOTB_TVOUT_GDn_points_0 "../tv/cdatafile/c.MPSQ.autotvout_GDn_points_0.dat"
+// wrapc file define:
+#define AUTOTB_TVIN_GDn_points_1 "../tv/cdatafile/c.MPSQ.autotvin_GDn_points_1.dat"
+#define AUTOTB_TVOUT_GDn_points_1 "../tv/cdatafile/c.MPSQ.autotvout_GDn_points_1.dat"
+// wrapc file define:
+#define AUTOTB_TVIN_GDn_points_2 "../tv/cdatafile/c.MPSQ.autotvin_GDn_points_2.dat"
+#define AUTOTB_TVOUT_GDn_points_2 "../tv/cdatafile/c.MPSQ.autotvout_GDn_points_2.dat"
+// wrapc file define:
+#define AUTOTB_TVIN_GDn_points_3 "../tv/cdatafile/c.MPSQ.autotvin_GDn_points_3.dat"
+#define AUTOTB_TVOUT_GDn_points_3 "../tv/cdatafile/c.MPSQ.autotvout_GDn_points_3.dat"
+// wrapc file define:
+#define AUTOTB_TVIN_GDn_points_4 "../tv/cdatafile/c.MPSQ.autotvin_GDn_points_4.dat"
+#define AUTOTB_TVOUT_GDn_points_4 "../tv/cdatafile/c.MPSQ.autotvout_GDn_points_4.dat"
 // wrapc file define:
 #define AUTOTB_TVIN_output_patch_stream_V "../tv/cdatafile/c.MPSQ.autotvin_output_patch_stream_V.dat"
 #define AUTOTB_TVOUT_output_patch_stream_V "../tv/cdatafile/c.MPSQ.autotvout_output_patch_stream_V.dat"
@@ -44,7 +56,15 @@ using namespace sc_dt;
 // tvout file define:
 #define AUTOTB_TVOUT_PC_GDarray "../tv/rtldatafile/rtl.MPSQ.autotvout_GDarray.dat"
 // tvout file define:
-#define AUTOTB_TVOUT_PC_GDn_points "../tv/rtldatafile/rtl.MPSQ.autotvout_GDn_points.dat"
+#define AUTOTB_TVOUT_PC_GDn_points_0 "../tv/rtldatafile/rtl.MPSQ.autotvout_GDn_points_0.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_GDn_points_1 "../tv/rtldatafile/rtl.MPSQ.autotvout_GDn_points_1.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_GDn_points_2 "../tv/rtldatafile/rtl.MPSQ.autotvout_GDn_points_2.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_GDn_points_3 "../tv/rtldatafile/rtl.MPSQ.autotvout_GDn_points_3.dat"
+// tvout file define:
+#define AUTOTB_TVOUT_PC_GDn_points_4 "../tv/rtldatafile/rtl.MPSQ.autotvout_GDn_points_4.dat"
 // tvout file define:
 #define AUTOTB_TVOUT_PC_output_patch_stream_V "../tv/rtldatafile/rtl.MPSQ.autotvout_output_patch_stream_V.dat"
 
@@ -55,7 +75,11 @@ INTER_TCL_FILE(const char* name) {
   ppl_depth = 0;
   n_patches_depth = 0;
   GDarray_depth = 0;
-  GDn_points_depth = 0;
+  GDn_points_0_depth = 0;
+  GDn_points_1_depth = 0;
+  GDn_points_2_depth = 0;
+  GDn_points_3_depth = 0;
+  GDn_points_4_depth = 0;
   output_patch_stream_V_depth = 0;
   trans_num =0;
 }
@@ -77,7 +101,11 @@ string get_depth_list () {
   total_list << "{ppl " << ppl_depth << "}\n";
   total_list << "{n_patches " << n_patches_depth << "}\n";
   total_list << "{GDarray " << GDarray_depth << "}\n";
-  total_list << "{GDn_points " << GDn_points_depth << "}\n";
+  total_list << "{GDn_points_0 " << GDn_points_0_depth << "}\n";
+  total_list << "{GDn_points_1 " << GDn_points_1_depth << "}\n";
+  total_list << "{GDn_points_2 " << GDn_points_2_depth << "}\n";
+  total_list << "{GDn_points_3 " << GDn_points_3_depth << "}\n";
+  total_list << "{GDn_points_4 " << GDn_points_4_depth << "}\n";
   total_list << "{output_patch_stream_V " << output_patch_stream_V_depth << "}\n";
   return total_list.str();
 }
@@ -91,7 +119,11 @@ void set_string(std::string list, std::string* class_list) {
     int ppl_depth;
     int n_patches_depth;
     int GDarray_depth;
-    int GDn_points_depth;
+    int GDn_points_0_depth;
+    int GDn_points_1_depth;
+    int GDn_points_2_depth;
+    int GDn_points_3_depth;
+    int GDn_points_4_depth;
     int output_patch_stream_V_depth;
     int trans_num;
   private:
@@ -135,9 +167,9 @@ static void RTLOutputCheckAndReplacement(std::string &AESL_token, std::string Po
   }
 }
 struct __cosim_s8__ { char data[8]; };
-extern "C" void MPSQ_hw_stub_wrapper(int, volatile void *, volatile void *, volatile void *, volatile void *);
+extern "C" void MPSQ_hw_stub_wrapper(int, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
 
-extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_ppl, volatile void * __xlx_apatb_param_n_patches, volatile void * __xlx_apatb_param_GDarray, volatile void * __xlx_apatb_param_GDn_points, volatile void * __xlx_apatb_param_output_patch_stream) {
+extern "C" void apatb_MPSQ_hw(int __xlx_apatb_param_ppl, volatile void * __xlx_apatb_param_n_patches, volatile void * __xlx_apatb_param_GDarray, volatile void * __xlx_apatb_param_GDn_points_0, volatile void * __xlx_apatb_param_GDn_points_1, volatile void * __xlx_apatb_param_GDn_points_2, volatile void * __xlx_apatb_param_GDn_points_3, volatile void * __xlx_apatb_param_GDn_points_4, volatile void * __xlx_apatb_param_output_patch_stream) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -286,9 +318,21 @@ aesl_fh.touch(AUTOTB_TVOUT_n_patches);
 //GDarray
 aesl_fh.touch(AUTOTB_TVIN_GDarray);
 aesl_fh.touch(AUTOTB_TVOUT_GDarray);
-//GDn_points
-aesl_fh.touch(AUTOTB_TVIN_GDn_points);
-aesl_fh.touch(AUTOTB_TVOUT_GDn_points);
+//GDn_points_0
+aesl_fh.touch(AUTOTB_TVIN_GDn_points_0);
+aesl_fh.touch(AUTOTB_TVOUT_GDn_points_0);
+//GDn_points_1
+aesl_fh.touch(AUTOTB_TVIN_GDn_points_1);
+aesl_fh.touch(AUTOTB_TVOUT_GDn_points_1);
+//GDn_points_2
+aesl_fh.touch(AUTOTB_TVIN_GDn_points_2);
+aesl_fh.touch(AUTOTB_TVOUT_GDn_points_2);
+//GDn_points_3
+aesl_fh.touch(AUTOTB_TVIN_GDn_points_3);
+aesl_fh.touch(AUTOTB_TVOUT_GDn_points_3);
+//GDn_points_4
+aesl_fh.touch(AUTOTB_TVIN_GDn_points_4);
+aesl_fh.touch(AUTOTB_TVOUT_GDn_points_4);
 //output_patch_stream_V
 aesl_fh.touch(AUTOTB_TVIN_output_patch_stream_V);
 aesl_fh.touch(AUTOTB_TVOUT_output_patch_stream_V);
@@ -342,29 +386,80 @@ sc_bv<64> __xlx_tmp_lv = ((long long*)__xlx_apatb_param_GDarray)[j];
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
   aesl_fh.write(AUTOTB_TVIN_GDarray, __xlx_sprintf_buffer.data());
 }
-unsigned __xlx_offset_byte_param_GDn_points = 0;
-// print GDn_points Transactions
+// print GDn_points_0 Transactions
 {
   sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
-  aesl_fh.write(AUTOTB_TVIN_GDn_points, __xlx_sprintf_buffer.data());
-  {  __xlx_offset_byte_param_GDn_points = 0*4;
-  if (__xlx_apatb_param_GDn_points) {
-    for (int j = 0  - 0, e = 5 - 0; j != e; ++j) {
-sc_bv<32> __xlx_tmp_lv = ((int*)__xlx_apatb_param_GDn_points)[j];
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_0, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = *((int*)__xlx_apatb_param_GDn_points_0);
 
     sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
-    aesl_fh.write(AUTOTB_TVIN_GDn_points, __xlx_sprintf_buffer.data()); 
-      }
+    aesl_fh.write(AUTOTB_TVIN_GDn_points_0, __xlx_sprintf_buffer.data()); 
   }
-}
-  tcl_file.set_num(5, &tcl_file.GDn_points_depth);
+  tcl_file.set_num(1, &tcl_file.GDn_points_0_depth);
   sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
-  aesl_fh.write(AUTOTB_TVIN_GDn_points, __xlx_sprintf_buffer.data());
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_0, __xlx_sprintf_buffer.data());
+}
+// print GDn_points_1 Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_1, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = *((int*)__xlx_apatb_param_GDn_points_1);
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_GDn_points_1, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.GDn_points_1_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_1, __xlx_sprintf_buffer.data());
+}
+// print GDn_points_2 Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_2, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = *((int*)__xlx_apatb_param_GDn_points_2);
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_GDn_points_2, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.GDn_points_2_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_2, __xlx_sprintf_buffer.data());
+}
+// print GDn_points_3 Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_3, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = *((int*)__xlx_apatb_param_GDn_points_3);
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_GDn_points_3, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.GDn_points_3_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_3, __xlx_sprintf_buffer.data());
+}
+// print GDn_points_4 Transactions
+{
+  sprintf(__xlx_sprintf_buffer.data(), "[[transaction]] %d\n", AESL_transaction);
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_4, __xlx_sprintf_buffer.data());
+  {
+    sc_bv<32> __xlx_tmp_lv = *((int*)__xlx_apatb_param_GDn_points_4);
+
+    sprintf(__xlx_sprintf_buffer.data(), "%s\n", __xlx_tmp_lv.to_string(SC_HEX).c_str());
+    aesl_fh.write(AUTOTB_TVIN_GDn_points_4, __xlx_sprintf_buffer.data()); 
+  }
+  tcl_file.set_num(1, &tcl_file.GDn_points_4_depth);
+  sprintf(__xlx_sprintf_buffer.data(), "[[/transaction]] \n");
+  aesl_fh.write(AUTOTB_TVIN_GDn_points_4, __xlx_sprintf_buffer.data());
 }
 std::vector<__cosim_s8__> __xlx_apatb_param_output_patch_stream_stream_buf;
 long __xlx_apatb_param_output_patch_stream_stream_buf_size = ((hls::stream<__cosim_s8__>*)__xlx_apatb_param_output_patch_stream)->size();
 CodeState = CALL_C_DUT;
-MPSQ_hw_stub_wrapper(__xlx_apatb_param_ppl, __xlx_apatb_param_n_patches, __xlx_apatb_param_GDarray, __xlx_apatb_param_GDn_points, __xlx_apatb_param_output_patch_stream);
+MPSQ_hw_stub_wrapper(__xlx_apatb_param_ppl, __xlx_apatb_param_n_patches, __xlx_apatb_param_GDarray, __xlx_apatb_param_GDn_points_0, __xlx_apatb_param_GDn_points_1, __xlx_apatb_param_GDn_points_2, __xlx_apatb_param_GDn_points_3, __xlx_apatb_param_GDn_points_4, __xlx_apatb_param_output_patch_stream);
 CodeState = DUMP_OUTPUTS;
 // print n_patches Transactions
 {

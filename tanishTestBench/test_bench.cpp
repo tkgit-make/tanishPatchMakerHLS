@@ -60,6 +60,17 @@ solve_loop:
     	cout << "Has not failed" << endl;
 	#endif
 
+
+
+    for(index_type i = 0; i < MAX_LAYERS; i++)
+	{
+		for(int_type j = GDn_points[i]; j < MAX_POINTS_PER_LAYER; j++)
+		{
+			GDarray[i][j][1] = 536870912;
+			GDarray[i][j][2] = 536870912;
+		}
+	}
+
     SPACEPOINT_TYPE GDarrayPostSort[MAX_LAYERS][MAX_POINTS_PER_LAYER];
 
     for(index_type i = 0; i < MAX_LAYERS; i++)
@@ -97,7 +108,7 @@ solve_loop:
 			for(int_type b = 0; b < MAX_POINTS_IN_SUPERPOINT; b++)
 			{
 				SPACEPOINT_TYPE temp = output_patch_stream.read();
-				//cout << temp;
+				cout << temp;
 				tempArray[a][b] = temp;
 			}
 		}
@@ -530,7 +541,7 @@ int_type main () {
 
     // Call any preliminary functions required to prepare input for the test.
     // Call the top-level function multiple times, passing input stimuli as needed.
-    int_type wedgesToTest[] = {0, 10}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
+    int_type wedgesToTest[] = {0, 1}; //2176, 2177 //4632, 4633 <- error in this wedge concerning z_top_max, line 543
 
     wedge_test(0, 16, wedgesToTest);
 

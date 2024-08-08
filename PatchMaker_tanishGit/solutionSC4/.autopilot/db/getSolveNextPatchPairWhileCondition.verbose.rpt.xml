@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getSolveNextPatchPairWhileCondition'" level="0">
-<item name = "Date">Mon Aug  5 17:49:18 2024
+<item name = "Date">Mon Aug  5 23:44:26 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 1.703 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 1.309 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -79,21 +79,21 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="sub_ln180_fu_98_p2">-, 0, 0, 71, 1, 64</column>
-<column name="and_ln1030_fu_123_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln1036_1_fu_195_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln1036_fu_165_p2">and, 0, 0, 2, 1, 1</column>
-<column name="exp4_fu_142_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln1030_fu_104_p2">icmp, 0, 0, 29, 64, 1</column>
-<column name="icmp_ln1036_1_fu_154_p2">icmp, 0, 0, 20, 32, 27</column>
-<column name="icmp_ln1036_2_fu_160_p2">icmp, 0, 0, 29, 64, 3</column>
-<column name="icmp_ln1036_fu_148_p2">icmp, 0, 0, 29, 64, 3</column>
-<column name="or_ln1036_1_fu_177_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln1036_2_fu_183_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln1036_fu_171_p2">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln180_fu_136_p3">select, 0, 0, 63, 1, 64</column>
-<column name="xor_ln1030_fu_117_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln1036_fu_189_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="sub_ln180_fu_68_p2">-, 0, 0, 71, 1, 64</column>
+<column name="and_ln1025_fu_93_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln1031_1_fu_165_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln1031_fu_135_p2">and, 0, 0, 2, 1, 1</column>
+<column name="exp4_fu_112_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln1025_fu_74_p2">icmp, 0, 0, 29, 64, 1</column>
+<column name="icmp_ln1031_1_fu_124_p2">icmp, 0, 0, 20, 32, 27</column>
+<column name="icmp_ln1031_2_fu_130_p2">icmp, 0, 0, 29, 64, 3</column>
+<column name="icmp_ln1031_fu_118_p2">icmp, 0, 0, 29, 64, 3</column>
+<column name="or_ln1031_1_fu_147_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln1031_2_fu_153_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln1031_fu_141_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln180_fu_106_p3">select, 0, 0, 63, 1, 64</column>
+<column name="xor_ln1025_fu_87_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln1031_fu_159_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -106,7 +106,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_return_preg">1, 0, 1, 0</column>
-<column name="sub_ln180_reg_214">64, 0, 64, 0</column>
+<column name="sub_ln180_reg_179">64, 0, 64, 0</column>
 </table>
 </item>
 </section>
@@ -123,16 +123,12 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, getSolveNextPatchPairWhileCondition, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, getSolveNextPatchPairWhileCondition, return value</column>
 <column name="ap_return">out, 1, ap_ctrl_hs, getSolveNextPatchPairWhileCondition, return value</column>
-<column name="GDn_points_address0">out, 3, ap_memory, GDn_points, array</column>
-<column name="GDn_points_ce0">out, 1, ap_memory, GDn_points, array</column>
-<column name="GDn_points_q0">in, 32, ap_memory, GDn_points, array</column>
+<column name="p_read">in, 32, ap_none, p_read, scalar</column>
 <column name="repeat_original">in, 1, ap_none, repeat_original, scalar</column>
 <column name="white_space_height">in, 64, ap_none, white_space_height, scalar</column>
 <column name="previous_white_space_height">in, 64, ap_none, previous_white_space_height, scalar</column>
 <column name="current_z_top_index">in, 32, ap_none, current_z_top_index, scalar</column>
-<column name="patches_parameters_address0">out, 7, ap_memory, patches_parameters, array</column>
-<column name="patches_parameters_ce0">out, 1, ap_memory, patches_parameters, array</column>
-<column name="patches_parameters_q0">in, 32, ap_memory, patches_parameters, array</column>
+<column name="p_read1">in, 32, ap_none, p_read1, scalar</column>
 </table>
 </item>
 </section>

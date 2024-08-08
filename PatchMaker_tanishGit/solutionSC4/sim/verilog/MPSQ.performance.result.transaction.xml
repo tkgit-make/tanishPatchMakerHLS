@@ -1,11 +1,2 @@
                              latency        interval
-transaction       0:          181932          181933
-transaction       1:          296352          296353
-transaction       2:          384736          384737
-transaction       3:          244608          244609
-transaction       4:          354582          354583
-transaction       5:          467436          467437
-transaction       6:          464374          464375
-transaction       7:          323489          323490
-transaction       8:          473841          473842
-transaction       9:          564435               x
+transaction       0:           56458               0

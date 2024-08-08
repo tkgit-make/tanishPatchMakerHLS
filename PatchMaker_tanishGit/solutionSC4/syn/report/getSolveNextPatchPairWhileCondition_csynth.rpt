@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'getSolveNextPatchPairWhileCondition'
 ================================================================
-* Date:           Mon Aug  5 17:49:18 2024
+* Date:           Mon Aug  5 23:44:26 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  3.00 ns|  1.703 ns|     0.81 ns|
+    |ap_clk  |  3.00 ns|  1.309 ns|     0.81 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -84,21 +84,21 @@
     +-------------------------+----------+----+---+----+------------+------------+
     |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-------------------------+----------+----+---+----+------------+------------+
-    |sub_ln180_fu_98_p2       |         -|   0|  0|  71|           1|          64|
-    |and_ln1030_fu_123_p2     |       and|   0|  0|   2|           1|           1|
-    |and_ln1036_1_fu_195_p2   |       and|   0|  0|   2|           1|           1|
-    |and_ln1036_fu_165_p2     |       and|   0|  0|   2|           1|           1|
-    |exp4_fu_142_p2           |      icmp|   0|  0|  20|          32|          32|
-    |icmp_ln1030_fu_104_p2    |      icmp|   0|  0|  29|          64|           1|
-    |icmp_ln1036_1_fu_154_p2  |      icmp|   0|  0|  20|          32|          27|
-    |icmp_ln1036_2_fu_160_p2  |      icmp|   0|  0|  29|          64|           3|
-    |icmp_ln1036_fu_148_p2    |      icmp|   0|  0|  29|          64|           3|
-    |or_ln1036_1_fu_177_p2    |        or|   0|  0|   2|           1|           1|
-    |or_ln1036_2_fu_183_p2    |        or|   0|  0|   2|           1|           1|
-    |or_ln1036_fu_171_p2      |        or|   0|  0|   2|           1|           1|
-    |select_ln180_fu_136_p3   |    select|   0|  0|  63|           1|          64|
-    |xor_ln1030_fu_117_p2     |       xor|   0|  0|   2|           1|           2|
-    |xor_ln1036_fu_189_p2     |       xor|   0|  0|   2|           1|           2|
+    |sub_ln180_fu_68_p2       |         -|   0|  0|  71|           1|          64|
+    |and_ln1025_fu_93_p2      |       and|   0|  0|   2|           1|           1|
+    |and_ln1031_1_fu_165_p2   |       and|   0|  0|   2|           1|           1|
+    |and_ln1031_fu_135_p2     |       and|   0|  0|   2|           1|           1|
+    |exp4_fu_112_p2           |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln1025_fu_74_p2     |      icmp|   0|  0|  29|          64|           1|
+    |icmp_ln1031_1_fu_124_p2  |      icmp|   0|  0|  20|          32|          27|
+    |icmp_ln1031_2_fu_130_p2  |      icmp|   0|  0|  29|          64|           3|
+    |icmp_ln1031_fu_118_p2    |      icmp|   0|  0|  29|          64|           3|
+    |or_ln1031_1_fu_147_p2    |        or|   0|  0|   2|           1|           1|
+    |or_ln1031_2_fu_153_p2    |        or|   0|  0|   2|           1|           1|
+    |or_ln1031_fu_141_p2      |        or|   0|  0|   2|           1|           1|
+    |select_ln180_fu_106_p3   |    select|   0|  0|  63|           1|          64|
+    |xor_ln1025_fu_87_p2      |       xor|   0|  0|   2|           1|           2|
+    |xor_ln1031_fu_159_p2     |       xor|   0|  0|   2|           1|           2|
     +-------------------------+----------+----+---+----+------------+------------+
     |Total                    |          |   0|  0| 277|         266|         204|
     +-------------------------+----------+----+---+----+------------+------------+
@@ -119,7 +119,7 @@
     +-------------------+----+----+-----+-----------+
     |ap_CS_fsm          |   2|   0|    2|          0|
     |ap_return_preg     |   1|   0|    1|          0|
-    |sub_ln180_reg_214  |  64|   0|   64|          0|
+    |sub_ln180_reg_179  |  64|   0|   64|          0|
     +-------------------+----+----+-----+-----------+
     |Total              |  67|   0|   67|          0|
     +-------------------+----+----+-----+-----------+
@@ -140,15 +140,11 @@
 |ap_idle                      |  out|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
 |ap_ready                     |  out|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
 |ap_return                    |  out|    1|  ap_ctrl_hs|  getSolveNextPatchPairWhileCondition|  return value|
-|GDn_points_address0          |  out|    3|   ap_memory|                           GDn_points|         array|
-|GDn_points_ce0               |  out|    1|   ap_memory|                           GDn_points|         array|
-|GDn_points_q0                |   in|   32|   ap_memory|                           GDn_points|         array|
+|p_read                       |   in|   32|     ap_none|                               p_read|        scalar|
 |repeat_original              |   in|    1|     ap_none|                      repeat_original|        scalar|
 |white_space_height           |   in|   64|     ap_none|                   white_space_height|        scalar|
 |previous_white_space_height  |   in|   64|     ap_none|          previous_white_space_height|        scalar|
 |current_z_top_index          |   in|   32|     ap_none|                  current_z_top_index|        scalar|
-|patches_parameters_address0  |  out|    7|   ap_memory|                   patches_parameters|         array|
-|patches_parameters_ce0       |  out|    1|   ap_memory|                   patches_parameters|         array|
-|patches_parameters_q0        |   in|   32|   ap_memory|                   patches_parameters|         array|
+|p_read1                      |   in|   32|     ap_none|                              p_read1|        scalar|
 +-----------------------------+-----+-----+------------+-------------------------------------+--------------+
 

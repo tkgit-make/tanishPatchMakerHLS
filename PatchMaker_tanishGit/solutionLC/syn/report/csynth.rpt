@@ -1,0 +1,28 @@
+
+
+================================================================
+== Synthesis Summary Report of 'MPSQ'
+================================================================
++ General Information: 
+    * Date:           Wed Aug  7 22:57:37 2024
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        PatchMaker_tanishGit
+    * Solution:       solutionLC (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu19p-fsvb3824-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-------------+------------+-----+
+    |                                       Modules                                       | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |    |             |            |     |
+    |                                       & Loops                                       | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|      FF     |     LUT    | URAM|
+    +-------------------------------------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-------------+------------+-----+
+    |+ MPSQ                                                                               |     -|  -0.02|     1455|  4.365e+03|         -|     1456|     -|        no|     -|   -|  19225 (~0%)|  53420 (1%)|    -|
+    | + grp_get_index_from_z_fu_1708                                                      |     -|  -0.02|        7|     21.000|         -|        7|     -|        no|     -|   -|  10937 (~0%)|  53082 (1%)|    -|
+    | o initGDarrayDecoded_perLayer_initGDarrayDecoded_perPoint                           |     -|  -2.19|     1281|  3.843e+03|         3|        1|  1280|       yes|     -|   -|            -|           -|    -|
+    | o finalSPOutput_writeDummy_perSuperpoint1234_finalSPOutput_writeDummy_perPoint1234  |     -|  -2.19|       80|    240.000|         2|        1|    80|       yes|     -|   -|            -|           -|    -|
+    | o finalSPOutput_writeDummy_perSuperpoint_finalSPOutput_writeDummy_perPoint          |     -|  -2.19|       80|    240.000|         2|        1|    80|       yes|     -|   -|            -|           -|    -|
+    +-------------------------------------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-------------+------------+-----+
+

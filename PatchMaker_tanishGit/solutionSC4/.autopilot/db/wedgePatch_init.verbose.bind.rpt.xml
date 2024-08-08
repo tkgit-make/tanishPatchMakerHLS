@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'wedgePatch_init'" level="0">
-<item name = "Date">Mon Aug  5 17:48:05 2024
+<item name = "Date">Mon Aug  5 23:31:10 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">221, 222, 0.663 us, 0.666 us, 221, 222, none</column>
+<column name="">202, 202, 0.606 us, 0.606 us, 202, 202, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_getParallelogramsAndAcceptanceCorners_fu_200">getParallelogramsAndAcceptanceCorners, 54, 55, 0.162 us, 0.165 us, 54, 55, none</column>
+<column name="grp_getParallelogramsAndAcceptanceCorners_fu_2673">getParallelogramsAndAcceptanceCorners, 39, 39, 0.117 us, 0.117 us, 39, 39, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter">163, 163, 5, 1, 1, 160, yes</column>
+<column name="- wedgePatch_init_perSuperpoint_wedgePatch_init_perPoint_wedgePatch_init_perParameter">160, 160, 2, 1, 1, 160, yes</column>
 </table>
 </item>
 </section>

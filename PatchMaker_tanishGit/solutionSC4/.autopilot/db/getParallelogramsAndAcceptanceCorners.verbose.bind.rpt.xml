@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'getParallelogramsAndAcceptanceCorners'" level="0">
-<item name = "Date">Mon Aug  5 17:48:04 2024
+<item name = "Date">Mon Aug  5 23:31:04 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -24,22 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">54, 55, 0.162 us, 0.165 us, 54, 55, none</column>
+<column name="">39, 39, 0.117 us, 0.117 us, 39, 39, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_444">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_457">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_470">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_483">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_322">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_335">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_348">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_362">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- getParallelograms_settingWPparameters">36, 36, 9, -, -, 4, no</column>
+<column name="- getParallelograms_settingWPparameters">32, 32, 8, -, -, 4, no</column>
 <column name="- get_acceptanceCorners_minMaxFinding">4, 4, 1, -, -, 4, no</column>
 </table>
 </item>

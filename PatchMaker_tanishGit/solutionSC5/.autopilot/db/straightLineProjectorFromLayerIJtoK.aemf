@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1722929131011">
+  <ports id="1" name="z_i" type="PortType" originalName="rhs" coreId="1953392991" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="z_j" type="PortType" originalName="lhs" coreId="976909164" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="i" type="PortType" originalName="i" coreId="976909164" bitwidth="3">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="j" type="PortType" originalName="j" coreId="976909164" bitwidth="3">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="k" type="PortType" originalName="k" coreId="976909164" bitwidth="3">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="15" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="53" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="55" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="57" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="60" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="62" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="63" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="64" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="68" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="75" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="80" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="81" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="89" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="96" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="101" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="108" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="110" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="112" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="114" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="116" source_obj="//@blocks.0/@node_objs.28" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="117" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.0/@node_objs.30"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.29" sink_obj="//@blocks.0/@node_objs.30"/>
+  <edges id="119" source_obj="//@blocks.0/@node_objs.30" sink_obj="//@blocks.0/@node_objs.31"/>
+  <edges id="120" sink_obj="//@blocks.0/@node_objs.32"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.31" sink_obj="//@blocks.0/@node_objs.32"/>
+  <edges id="124" source_obj="//@blocks.0/@node_objs.32" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="125" source_obj="//@blocks.0/@node_objs.33" sink_obj="//@blocks.0/@node_objs.34"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.34" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="127" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="130" source_obj="//@blocks.0/@node_objs.35" sink_obj="//@blocks.0/@node_objs.36"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.37"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.36" sink_obj="//@blocks.0/@node_objs.37"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.36" sink_obj="//@blocks.0/@node_objs.38"/>
+  <edges id="138" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.38"/>
+  <edges id="139" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.39"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.39"/>
+  <edges id="141" source_obj="//@blocks.0/@node_objs.39" sink_obj="//@blocks.0/@node_objs.40"/>
+  <edges id="142" source_obj="//@blocks.0/@node_objs.37" sink_obj="//@blocks.0/@node_objs.40"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.38" sink_obj="//@blocks.0/@node_objs.40"/>
+  <edges id="144" source_obj="//@blocks.0/@node_objs.40" sink_obj="//@blocks.0/@node_objs.41"/>
+  <edges source_obj="//@blocks.0/@node_objs.41" sink_obj="//@ports.5"/>
+  <blocks id="50" name="straightLineProjectorFromLayerIJtoK" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="k_read" coreId="0" bitwidth="3" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>k</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="j_read" coreId="0" bitwidth="3" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>j</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i_read" coreId="0" bitwidth="3" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>i</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="z_j_read" coreId="0" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <dataInputObjs>z_j</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="z_i_read" coreId="0" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <dataInputObjs>z_i</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="j_cast" rtlName="j_cast_fu_81_p1" coreId="1820632592" bitwidth="4" opcode="zext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i_cast" rtlName="i_cast_fu_85_p1" coreId="0" bitwidth="4" opcode="zext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="k_cast" rtlName="k_cast_fu_89_p1" coreId="0" bitwidth="4" opcode="zext" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="sub_ln224" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln224_fu_93_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="4" opcode="sub" m_display="0" m_delay="0.57" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="trunc_ln224" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="trunc_ln224_fu_99_p1" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="3" opcode="trunc" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_2" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_2_fu_220_p3" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="1" opcode="bitselect" nodeLabel="6.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="sub_ln224_1" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln224_1_fu_103_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="4" opcode="sub" m_display="0" m_delay="0.57" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="icmp_ln224" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln224_fu_109_p2" opType="icmp" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.65" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="and_ln224" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln224_fu_227_p2" opType="and" coreId="1836412015" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="1" opcode="and" nodeLabel="6.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="icmp_ln224_1" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="icmp_ln224_1_fu_115_p2" opType="icmp" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.65" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="tmp_3" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_3_fu_232_p3" coreId="1827627808" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="1" opcode="bitselect" nodeLabel="6.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="and_ln224_1" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="and_ln224_1_fu_239_p2" opType="and" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="1" opcode="and" nodeLabel="6.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="sext_ln215" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln215_fu_184_p1" coreId="0" contextFuncName="ap_int_base_32_true_s" bitwidth="33" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="sext_ln215_1" lineNumber="215" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="sext_ln215_1_fu_188_p1" coreId="1820135184" contextFuncName="ap_int_base_32_true_s" bitwidth="33" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="215" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int_base&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="ret" lineNumber="1347" originalName="ret" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="ret_fu_192_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="operator_sub_32_true_32_true" bitwidth="33" opcode="sub" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="1347" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator-&amp;lt;32, true, 32, true&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="sext_ln534" lineNumber="534" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_long_long" bitwidth="64" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h" linenumber="534" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="operator long long"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="neg" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="neg_fu_127_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="3" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="0.57" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="abs" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="abs_fu_132_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="3" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.27" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_fu_138_p3" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="6" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp_1" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="tmp_1_fu_146_p3" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="4" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="zext_ln226" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln226_fu_154_p1" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="6" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="sub_ln226" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sub_ln226_fu_158_p2" coreName="TAddSub" implIndex="tadder" control="auto" opType="add" coreId="10" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="6" opcode="sub" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="neg6" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="neg6_fu_121_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="4" opcode="sub" m_display="0" m_delay="0.7" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="abs8" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="abs8_fu_164_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="4" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.35" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="sext_ln226" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="sext_ln226_fu_169_p1" coreId="1852795252" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="6" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="add_ln226" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="add_ln226_fu_173_p2" coreName="TAddSub" implIndex="tadder" control="auto" opType="add" coreId="10" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="6" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.6" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="zext_ln226_1" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="zext_ln226_1_fu_179_p1" coreId="1027423549" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="radiiDivisionList_addr" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." coreId="874659172" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="6" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="radiiDivisionList_load" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="auto" opType="rom" coreId="101" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="35" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.71" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln226_2" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="grp_fu_204_p00" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="mul_ln226" lineNumber="226" fileName="patchMaker.cpp" fileDirectory=".." rtlName="mul_35ns_33s_64_3_1_U316" opType="mul" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="64" opcode="mul" nodeLabel="3.0" nodeLatency="2" m_display="0" m_delay="2.1" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="226" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln1" lineNumber="166" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="trunc_ln1_reg_331" coreId="0" contextFuncName="ap_int" bitwidth="32" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int.h" linenumber="166" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="sub_ln69" lineNumber="69" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="sub_ln69_fu_244_p2" coreName="Adder" implIndex="fabric" control="auto" opType="sub" coreId="1" contextFuncName="ap_int_33_s" bitwidth="32" opcode="sub" nodeLabel="6.0" m_display="0" m_delay="0.88" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int.h" linenumber="69" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int&amp;lt;33&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="add_ln69" lineNumber="69" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="add_ln69_fu_248_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="ap_int_33_s" bitwidth="32" opcode="add" nodeLabel="6.0" m_display="0" m_delay="0.88" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int.h" linenumber="69" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="ap_int&amp;lt;33&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="or_ln224" lineNumber="224" fileName="patchMaker.cpp" fileDirectory=".." rtlName="or_ln224_fu_252_p2" opType="or" coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="1" opcode="or" nodeLabel="6.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="select_ln224" lineNumber="224" originalName="this.V" fileName="patchMaker.cpp" fileDirectory=".." rtlName="ap_return" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="straightLineProjectorFromLayerIJtoK" bitwidth="32" opcode="select" nodeLabel="6.0" m_display="0" m_delay="0.22" m_topoIndex="41" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="224" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>ret</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln244" lineNumber="244" fileName="patchMaker.cpp" fileDirectory=".." coreId="0" contextFuncName="straightLineProjectorFromLayerIJtoK" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="patchMaker.cpp" linenumber="244" fileDirectory="C:\Users\rapiduser\Desktop\tanishGitHub\tanishPatchMakerHLS" functionName="straightLineProjectorFromLayerIJtoK"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int.h">
+      <validLinenumbers>166</validLinenumbers>
+      <validLinenumbers>69</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="patchMaker.cpp">
+      <validLinenumbers>224</validLinenumbers>
+      <validLinenumbers>226</validLinenumbers>
+      <validLinenumbers>244</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>215</validLinenumbers>
+      <validLinenumbers>1347</validLinenumbers>
+      <validLinenumbers>534</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="trunc_ln1_reg_331">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln534_reg_321">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln226_2_reg_326">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln224_reg_283">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="radiiDivisionList_addr_reg_300">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_ln224_reg_266">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="z_i_read_reg_305">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln224_reg_271">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="ret_reg_311">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_ln224_1_reg_277">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="neg6_reg_295">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="radiiDivisionList_load_reg_316">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln224_1_reg_289">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <expressionNodes realName="trunc_ln224_fu_99">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="abs_fu_132">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln534_fu_198">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1_fu_210">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="abs8_fu_164">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln69_fu_244">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_138">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_232">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln215_1_fu_188">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln226_1_fu_179">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln224_fu_227">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln224_fu_109">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="neg_fu_127">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_cast_fu_89">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="neg6_fu_121">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln226_fu_169">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln226_fu_154">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln224_1_fu_239">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln224_fu_252">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_146">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln226_fu_173">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="radiiDivisionList_addr_gep_fu_68">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln224_fu_93">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln226_2_fu_201">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln215_fu_184">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_220">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_fu_192">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln224_1_fu_103">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_cast_fu_81">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln226_fu_158">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast_fu_85">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln69_fu_248">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln224_fu_258">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln224_1_fu_115">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_204">
+    <nodeIds>43</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="j_read_read_fu_44">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_read_read_fu_50">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="k_read_read_fu_38">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="z_i_read_read_fu_62">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="z_j_read_read_fu_56">
+    <nodeIds>11</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="radiiDivisionList">
+    <nodeIds>41</nodeIds>
+  </memoryPorts>
+  <ioPorts name="i">
+    <contents name="read">
+      <nodeIds>10</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="j">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="k">
+    <contents name="read">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="z_i">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="z_j">
+    <contents name="read">
+      <nodeIds>11</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="3" latency="3"/>
+    </states>
+    <states id="5">
+      <operations id="43" stage="2" latency="3"/>
+    </states>
+    <states id="6">
+      <operations id="43" stage="1" latency="3"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="straightLineProjectorFromLayerIJtoK" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="6" mMaxLatency="6">
+      <basicBlocks>50</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

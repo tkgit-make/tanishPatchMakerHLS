@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'areWedgeSuperPointsEqual'
 ================================================================
-* Date:           Mon Aug  5 17:48:14 2024
+* Date:           Mon Aug  5 23:31:52 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        PatchMaker_tanishGit
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  3.00 ns|  1.905 ns|     0.81 ns|
+    |ap_clk  |  3.00 ns|  2.050 ns|     0.81 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |        3|        3|  9.000 ns|  9.000 ns|    2|    2|      yes|
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -55,67 +55,204 @@ HasWiredReturn: 1
 HasMFsm: 2
 HasVarLatency: 0
 IsPipeline: 1
-IsRtlPipelined: 1
+IsRtlPipelined: 0
 IsInstanceOverlapped: 0
 IsDontTouch: 0
 HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 2, depth = 4
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 4
+* Number of FSM states : 1
 * Pipeline : 1
-  Pipeline-0 : II = 2, D = 4, States = { 1 2 3 4 }
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
-1 --> 2 
-2 --> 3 
-3 --> 4 
-4 --> 
+1 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.90>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%wsp2_offset3_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp2_offset3"   --->   Operation 5 'read' 'wsp2_offset3_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%wsp1_offset1_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp1_offset1"   --->   Operation 6 'read' 'wsp1_offset1_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %wsp2_offset3_read, i4 0"   --->   Operation 7 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%zext_ln869 = zext i7 %tmp"   --->   Operation 8 'zext' 'zext_ln869' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.70ns)   --->   "%add_ln869 = add i8 %zext_ln869, i8 160"   --->   Operation 9 'add' 'add_ln869' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln869_1 = zext i8 %add_ln869"   --->   Operation 10 'zext' 'zext_ln869_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%wsp2_addr = getelementptr i64 %wsp2, i64 0, i64 %zext_ln869_1"   --->   Operation 11 'getelementptr' 'wsp2_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %wsp1_offset1_read, i4 0"   --->   Operation 12 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln0 = zext i7 %tmp_s"   --->   Operation 13 'zext' 'zext_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%wsp2_addr_1 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln0"   --->   Operation 14 'getelementptr' 'wsp2_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [2/2] (1.20ns)   --->   "%wsp2_load_2 = load i8 %wsp2_addr_1"   --->   Operation 15 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
-ST_1 : Operation 16 [2/2] (1.20ns)   --->   "%wsp2_load = load i8 %wsp2_addr"   --->   Operation 16 'load' 'wsp2_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
-
-State 2 <SV = 1> <Delay = 1.90>
-ST_2 : Operation 17 [1/1] (0.70ns)   --->   "%add_ln870 = add i8 %zext_ln869, i8 175"   --->   Operation 17 'add' 'add_ln870' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln870 = zext i8 %add_ln870"   --->   Operation 18 'zext' 'zext_ln870' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%wsp2_addr_3 = getelementptr i64 %wsp2, i64 0, i64 %zext_ln870"   --->   Operation 19 'getelementptr' 'wsp2_addr_3' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%or_ln870 = or i7 %tmp_s, i7 15"   --->   Operation 20 'or' 'or_ln870' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_6 = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i57.i7, i57 0, i7 %or_ln870"   --->   Operation 21 'bitconcatenate' 'tmp_6' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%wsp2_addr_2 = getelementptr i64 %wsp2, i64 0, i64 %tmp_6"   --->   Operation 22 'getelementptr' 'wsp2_addr_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/2] (1.20ns)   --->   "%wsp2_load_2 = load i8 %wsp2_addr_1"   --->   Operation 23 'load' 'wsp2_load_2' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
-ST_2 : Operation 24 [1/2] (1.20ns)   --->   "%wsp2_load = load i8 %wsp2_addr"   --->   Operation 24 'load' 'wsp2_load' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
-ST_2 : Operation 25 [2/2] (1.20ns)   --->   "%wsp2_load_3 = load i8 %wsp2_addr_2"   --->   Operation 25 'load' 'wsp2_load_3' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
-ST_2 : Operation 26 [2/2] (1.20ns)   --->   "%wsp2_load_1 = load i8 %wsp2_addr_3"   --->   Operation 26 'load' 'wsp2_load_1' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
-
-State 3 <SV = 2> <Delay = 1.20>
-ST_3 : Operation 27 [1/1] (1.06ns)   --->   "%icmp_ln870 = icmp_eq  i64 %wsp2_load_2, i64 %wsp2_load"   --->   Operation 27 'icmp' 'icmp_ln870' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 28 [1/2] (1.20ns)   --->   "%wsp2_load_3 = load i8 %wsp2_addr_2"   --->   Operation 28 'load' 'wsp2_load_3' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
-ST_3 : Operation 29 [1/2] (1.20ns)   --->   "%wsp2_load_1 = load i8 %wsp2_addr_3"   --->   Operation 29 'load' 'wsp2_load_1' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 240> <RAM>
-
-State 4 <SV = 3> <Delay = 1.18>
-ST_4 : Operation 30 [1/1] (1.06ns)   --->   "%icmp_ln870_1 = icmp_eq  i64 %wsp2_load_3, i64 %wsp2_load_1"   --->   Operation 30 'icmp' 'icmp_ln870_1' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 31 [1/1] (0.12ns)   --->   "%and_ln870 = and i1 %icmp_ln870, i1 %icmp_ln870_1"   --->   Operation 31 'and' 'and_ln870' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln37 = ret i1 %and_ln870" [patchMaker.cpp:37]   --->   Operation 32 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 2.04>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%wsp2_offset3_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp2_offset3"   --->   Operation 2 'read' 'wsp2_offset3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%wsp1_offset1_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %wsp1_offset1"   --->   Operation 3 'read' 'wsp1_offset1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%p_read_28561 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read159"   --->   Operation 4 'read' 'p_read_28561' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_read_28562 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read158"   --->   Operation 5 'read' 'p_read_28562' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_read_28563 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read157"   --->   Operation 6 'read' 'p_read_28563' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_read_28564 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read156"   --->   Operation 7 'read' 'p_read_28564' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_read_28565 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read155"   --->   Operation 8 'read' 'p_read_28565' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_read_28566 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read154"   --->   Operation 9 'read' 'p_read_28566' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_read_28567 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read153"   --->   Operation 10 'read' 'p_read_28567' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_read_28568 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read152"   --->   Operation 11 'read' 'p_read_28568' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_read_28569 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read151"   --->   Operation 12 'read' 'p_read_28569' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_read_28570 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read150"   --->   Operation 13 'read' 'p_read_28570' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_read_28571 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read149"   --->   Operation 14 'read' 'p_read_28571' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_read_28572 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read148"   --->   Operation 15 'read' 'p_read_28572' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_read_28573 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read147"   --->   Operation 16 'read' 'p_read_28573' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_read_28574 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read146"   --->   Operation 17 'read' 'p_read_28574' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_read_28575 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read145"   --->   Operation 18 'read' 'p_read_28575' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_read_28576 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read144"   --->   Operation 19 'read' 'p_read_28576' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_read_28577 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read143"   --->   Operation 20 'read' 'p_read_28577' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_read_28578 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read142"   --->   Operation 21 'read' 'p_read_28578' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_read_28579 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read141"   --->   Operation 22 'read' 'p_read_28579' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_read_28580 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read140"   --->   Operation 23 'read' 'p_read_28580' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%p_read_28581 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read139"   --->   Operation 24 'read' 'p_read_28581' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%p_read_28582 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read138"   --->   Operation 25 'read' 'p_read_28582' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%p_read_28583 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read137"   --->   Operation 26 'read' 'p_read_28583' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%p_read_28584 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read136"   --->   Operation 27 'read' 'p_read_28584' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%p_read_28585 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read135"   --->   Operation 28 'read' 'p_read_28585' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%p_read_28586 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read134"   --->   Operation 29 'read' 'p_read_28586' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%p_read_28587 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read133"   --->   Operation 30 'read' 'p_read_28587' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%p_read_28588 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read132"   --->   Operation 31 'read' 'p_read_28588' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%p_read_28589 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read131"   --->   Operation 32 'read' 'p_read_28589' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%p_read_28590 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read130"   --->   Operation 33 'read' 'p_read_28590' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%p_read_28591 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read129"   --->   Operation 34 'read' 'p_read_28591' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%p_read128288 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read128"   --->   Operation 35 'read' 'p_read128288' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%p_read127287 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read127"   --->   Operation 36 'read' 'p_read127287' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%p_read126286 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read126"   --->   Operation 37 'read' 'p_read126286' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%p_read125285 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read125"   --->   Operation 38 'read' 'p_read125285' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%p_read124284 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read124"   --->   Operation 39 'read' 'p_read124284' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%p_read123283 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read123"   --->   Operation 40 'read' 'p_read123283' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%p_read122282 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read122"   --->   Operation 41 'read' 'p_read122282' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%p_read121281 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read121"   --->   Operation 42 'read' 'p_read121281' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%p_read120280 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read120"   --->   Operation 43 'read' 'p_read120280' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%p_read119279 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read119"   --->   Operation 44 'read' 'p_read119279' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%p_read118278 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read118"   --->   Operation 45 'read' 'p_read118278' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%p_read117277 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read117"   --->   Operation 46 'read' 'p_read117277' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%p_read116276 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read116"   --->   Operation 47 'read' 'p_read116276' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%p_read115275 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read115"   --->   Operation 48 'read' 'p_read115275' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%p_read114274 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read114"   --->   Operation 49 'read' 'p_read114274' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%p_read113273 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read113"   --->   Operation 50 'read' 'p_read113273' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%p_read112272 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read112"   --->   Operation 51 'read' 'p_read112272' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%p_read111271 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read111"   --->   Operation 52 'read' 'p_read111271' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%p_read110270 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read110"   --->   Operation 53 'read' 'p_read110270' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%p_read109269 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read109"   --->   Operation 54 'read' 'p_read109269' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%p_read108268 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read108"   --->   Operation 55 'read' 'p_read108268' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%p_read107267 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read107"   --->   Operation 56 'read' 'p_read107267' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%p_read106266 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read106"   --->   Operation 57 'read' 'p_read106266' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%p_read105265 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read105"   --->   Operation 58 'read' 'p_read105265' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%p_read104264 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read104"   --->   Operation 59 'read' 'p_read104264' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%p_read103263 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read103"   --->   Operation 60 'read' 'p_read103263' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%p_read102262 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read102"   --->   Operation 61 'read' 'p_read102262' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%p_read101261 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read101"   --->   Operation 62 'read' 'p_read101261' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%p_read100260 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read100"   --->   Operation 63 'read' 'p_read100260' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%p_read99259 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read99"   --->   Operation 64 'read' 'p_read99259' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%p_read98258 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read98"   --->   Operation 65 'read' 'p_read98258' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%p_read97257 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read97"   --->   Operation 66 'read' 'p_read97257' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%p_read96256 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read96"   --->   Operation 67 'read' 'p_read96256' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%p_read95255 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read95"   --->   Operation 68 'read' 'p_read95255' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%p_read94254 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read94"   --->   Operation 69 'read' 'p_read94254' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%p_read93253 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read93"   --->   Operation 70 'read' 'p_read93253' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%p_read92252 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read92"   --->   Operation 71 'read' 'p_read92252' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%p_read91251 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read91"   --->   Operation 72 'read' 'p_read91251' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%p_read90250 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read90"   --->   Operation 73 'read' 'p_read90250' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%p_read89249 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read89"   --->   Operation 74 'read' 'p_read89249' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%p_read88248 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read88"   --->   Operation 75 'read' 'p_read88248' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%p_read87247 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read87"   --->   Operation 76 'read' 'p_read87247' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%p_read86246 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read86"   --->   Operation 77 'read' 'p_read86246' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%p_read85245 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read85"   --->   Operation 78 'read' 'p_read85245' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%p_read84244 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read84"   --->   Operation 79 'read' 'p_read84244' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%p_read83243 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read83"   --->   Operation 80 'read' 'p_read83243' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%p_read82242 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read82"   --->   Operation 81 'read' 'p_read82242' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%p_read81241 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read81"   --->   Operation 82 'read' 'p_read81241' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%p_read80240 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read80"   --->   Operation 83 'read' 'p_read80240' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%p_read79239 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read79"   --->   Operation 84 'read' 'p_read79239' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%p_read78238 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read78"   --->   Operation 85 'read' 'p_read78238' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%p_read77237 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read77"   --->   Operation 86 'read' 'p_read77237' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%p_read76236 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read76"   --->   Operation 87 'read' 'p_read76236' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%p_read75235 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read75"   --->   Operation 88 'read' 'p_read75235' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%p_read74234 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read74"   --->   Operation 89 'read' 'p_read74234' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%p_read73233 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read73"   --->   Operation 90 'read' 'p_read73233' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%p_read72232 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read72"   --->   Operation 91 'read' 'p_read72232' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%p_read71231 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read71"   --->   Operation 92 'read' 'p_read71231' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%p_read70230 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read70"   --->   Operation 93 'read' 'p_read70230' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%p_read69229 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read69"   --->   Operation 94 'read' 'p_read69229' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%p_read68228 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read68"   --->   Operation 95 'read' 'p_read68228' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%p_read67227 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read67"   --->   Operation 96 'read' 'p_read67227' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%p_read66226 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read66"   --->   Operation 97 'read' 'p_read66226' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%p_read65225 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read65"   --->   Operation 98 'read' 'p_read65225' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%p_read64224 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read64"   --->   Operation 99 'read' 'p_read64224' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%p_read63223 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read63"   --->   Operation 100 'read' 'p_read63223' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%p_read62222 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read62"   --->   Operation 101 'read' 'p_read62222' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%p_read61221 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read61"   --->   Operation 102 'read' 'p_read61221' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%p_read60220 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read60"   --->   Operation 103 'read' 'p_read60220' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%p_read59219 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read59"   --->   Operation 104 'read' 'p_read59219' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%p_read58218 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read58"   --->   Operation 105 'read' 'p_read58218' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%p_read57217 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read57"   --->   Operation 106 'read' 'p_read57217' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%p_read56216 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read56"   --->   Operation 107 'read' 'p_read56216' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%p_read55215 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read55"   --->   Operation 108 'read' 'p_read55215' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%p_read54214 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read54"   --->   Operation 109 'read' 'p_read54214' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%p_read53213 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read53"   --->   Operation 110 'read' 'p_read53213' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%p_read52212 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read52"   --->   Operation 111 'read' 'p_read52212' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%p_read51211 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read51"   --->   Operation 112 'read' 'p_read51211' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%p_read50210 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read50"   --->   Operation 113 'read' 'p_read50210' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%p_read49209 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read49"   --->   Operation 114 'read' 'p_read49209' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%p_read48208 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read48"   --->   Operation 115 'read' 'p_read48208' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%p_read47207 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read47"   --->   Operation 116 'read' 'p_read47207' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%p_read46206 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read46"   --->   Operation 117 'read' 'p_read46206' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%p_read45205 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read45"   --->   Operation 118 'read' 'p_read45205' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%p_read44204 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read44"   --->   Operation 119 'read' 'p_read44204' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%p_read43203 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read43"   --->   Operation 120 'read' 'p_read43203' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%p_read42202 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read42"   --->   Operation 121 'read' 'p_read42202' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%p_read41201 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read41"   --->   Operation 122 'read' 'p_read41201' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%p_read40200 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read40"   --->   Operation 123 'read' 'p_read40200' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%p_read39199 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read39"   --->   Operation 124 'read' 'p_read39199' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%p_read38198 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read38"   --->   Operation 125 'read' 'p_read38198' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%p_read37197 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read37"   --->   Operation 126 'read' 'p_read37197' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%p_read36196 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read36"   --->   Operation 127 'read' 'p_read36196' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%p_read35195 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read35"   --->   Operation 128 'read' 'p_read35195' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%p_read34194 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read34"   --->   Operation 129 'read' 'p_read34194' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 130 [1/1] (0.00ns)   --->   "%p_read33193 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read33"   --->   Operation 130 'read' 'p_read33193' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%p_read32192 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read32"   --->   Operation 131 'read' 'p_read32192' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 132 [1/1] (0.00ns)   --->   "%p_read31191 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read31"   --->   Operation 132 'read' 'p_read31191' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%p_read30190 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read30"   --->   Operation 133 'read' 'p_read30190' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 134 [1/1] (0.00ns)   --->   "%p_read29189 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read29"   --->   Operation 134 'read' 'p_read29189' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 135 [1/1] (0.00ns)   --->   "%p_read28188 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read28"   --->   Operation 135 'read' 'p_read28188' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 136 [1/1] (0.00ns)   --->   "%p_read27187 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read27"   --->   Operation 136 'read' 'p_read27187' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 137 [1/1] (0.00ns)   --->   "%p_read26186 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read26"   --->   Operation 137 'read' 'p_read26186' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 138 [1/1] (0.00ns)   --->   "%p_read25185 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read25"   --->   Operation 138 'read' 'p_read25185' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 139 [1/1] (0.00ns)   --->   "%p_read24184 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read24"   --->   Operation 139 'read' 'p_read24184' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 140 [1/1] (0.00ns)   --->   "%p_read23183 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read23"   --->   Operation 140 'read' 'p_read23183' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 141 [1/1] (0.00ns)   --->   "%p_read22182 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read22"   --->   Operation 141 'read' 'p_read22182' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 142 [1/1] (0.00ns)   --->   "%p_read21181 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read21"   --->   Operation 142 'read' 'p_read21181' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%p_read20180 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read20"   --->   Operation 143 'read' 'p_read20180' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%p_read19179 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read19"   --->   Operation 144 'read' 'p_read19179' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%p_read18178 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read18"   --->   Operation 145 'read' 'p_read18178' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%p_read17177 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read17"   --->   Operation 146 'read' 'p_read17177' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 147 [1/1] (0.00ns)   --->   "%p_read16176 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read16"   --->   Operation 147 'read' 'p_read16176' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 148 [1/1] (0.00ns)   --->   "%p_read15175 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read15"   --->   Operation 148 'read' 'p_read15175' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%p_read14174 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read14"   --->   Operation 149 'read' 'p_read14174' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%p_read13173 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read13"   --->   Operation 150 'read' 'p_read13173' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 151 [1/1] (0.00ns)   --->   "%p_read12172 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read12"   --->   Operation 151 'read' 'p_read12172' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 152 [1/1] (0.00ns)   --->   "%p_read11171 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read11"   --->   Operation 152 'read' 'p_read11171' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 153 [1/1] (0.00ns)   --->   "%p_read10170 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read10"   --->   Operation 153 'read' 'p_read10170' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 154 [1/1] (0.00ns)   --->   "%p_read9169 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read9"   --->   Operation 154 'read' 'p_read9169' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 155 [1/1] (0.00ns)   --->   "%p_read8168 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read8"   --->   Operation 155 'read' 'p_read8168' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 156 [1/1] (0.00ns)   --->   "%p_read7167 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read7"   --->   Operation 156 'read' 'p_read7167' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 157 [1/1] (0.00ns)   --->   "%p_read6166 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read6"   --->   Operation 157 'read' 'p_read6166' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 158 [1/1] (0.00ns)   --->   "%p_read5165 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read5"   --->   Operation 158 'read' 'p_read5165' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 159 [1/1] (0.00ns)   --->   "%p_read4164 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read4"   --->   Operation 159 'read' 'p_read4164' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 160 [1/1] (0.00ns)   --->   "%p_read3163 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read3"   --->   Operation 160 'read' 'p_read3163' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 161 [1/1] (0.00ns)   --->   "%p_read2162 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read2"   --->   Operation 161 'read' 'p_read2162' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 162 [1/1] (0.00ns)   --->   "%p_read1161 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read1"   --->   Operation 162 'read' 'p_read1161' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 163 [1/1] (0.00ns)   --->   "%p_read160 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %p_read"   --->   Operation 163 'read' 'p_read160' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 164 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %wsp1_offset1_read, i4 0"   --->   Operation 164 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 165 [1/1] (0.86ns)   --->   "%tmp = mux i64 @_ssdm_op_Mux.ap_auto.80i64.i7, i64 %p_read160, i64 %p_read2162, i64 %p_read4164, i64 %p_read6166, i64 %p_read8168, i64 %p_read10170, i64 %p_read12172, i64 %p_read14174, i64 %p_read16176, i64 %p_read18178, i64 %p_read20180, i64 %p_read22182, i64 %p_read24184, i64 %p_read26186, i64 %p_read28188, i64 %p_read30190, i64 %p_read32192, i64 %p_read34194, i64 %p_read36196, i64 %p_read38198, i64 %p_read40200, i64 %p_read42202, i64 %p_read44204, i64 %p_read46206, i64 %p_read48208, i64 %p_read50210, i64 %p_read52212, i64 %p_read54214, i64 %p_read56216, i64 %p_read58218, i64 %p_read60220, i64 %p_read62222, i64 %p_read64224, i64 %p_read66226, i64 %p_read68228, i64 %p_read70230, i64 %p_read72232, i64 %p_read74234, i64 %p_read76236, i64 %p_read78238, i64 %p_read80240, i64 %p_read82242, i64 %p_read84244, i64 %p_read86246, i64 %p_read88248, i64 %p_read90250, i64 %p_read92252, i64 %p_read94254, i64 %p_read96256, i64 %p_read98258, i64 %p_read100260, i64 %p_read102262, i64 %p_read104264, i64 %p_read106266, i64 %p_read108268, i64 %p_read110270, i64 %p_read112272, i64 %p_read114274, i64 %p_read116276, i64 %p_read118278, i64 %p_read120280, i64 %p_read122282, i64 %p_read124284, i64 %p_read126286, i64 %p_read128288, i64 %p_read_28590, i64 %p_read_28588, i64 %p_read_28586, i64 %p_read_28584, i64 %p_read_28582, i64 %p_read_28580, i64 %p_read_28578, i64 %p_read_28576, i64 %p_read_28574, i64 %p_read_28572, i64 %p_read_28570, i64 %p_read_28568, i64 %p_read_28566, i64 %p_read_28564, i64 %p_read_28562, i7 %shl_ln"   --->   Operation 165 'mux' 'tmp' <Predicate = true> <Delay = 0.86> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 166 [1/1] (0.00ns)   --->   "%shl_ln870_1 = bitconcatenate i7 @_ssdm_op_BitConcatenate.i7.i3.i4, i3 %wsp2_offset3_read, i4 0"   --->   Operation 166 'bitconcatenate' 'shl_ln870_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 167 [1/1] (0.86ns)   --->   "%tmp_s = mux i64 @_ssdm_op_Mux.ap_auto.80i64.i7, i64 %p_read1161, i64 %p_read3163, i64 %p_read5165, i64 %p_read7167, i64 %p_read9169, i64 %p_read11171, i64 %p_read13173, i64 %p_read15175, i64 %p_read17177, i64 %p_read19179, i64 %p_read21181, i64 %p_read23183, i64 %p_read25185, i64 %p_read27187, i64 %p_read29189, i64 %p_read31191, i64 %p_read33193, i64 %p_read35195, i64 %p_read37197, i64 %p_read39199, i64 %p_read41201, i64 %p_read43203, i64 %p_read45205, i64 %p_read47207, i64 %p_read49209, i64 %p_read51211, i64 %p_read53213, i64 %p_read55215, i64 %p_read57217, i64 %p_read59219, i64 %p_read61221, i64 %p_read63223, i64 %p_read65225, i64 %p_read67227, i64 %p_read69229, i64 %p_read71231, i64 %p_read73233, i64 %p_read75235, i64 %p_read77237, i64 %p_read79239, i64 %p_read81241, i64 %p_read83243, i64 %p_read85245, i64 %p_read87247, i64 %p_read89249, i64 %p_read91251, i64 %p_read93253, i64 %p_read95255, i64 %p_read97257, i64 %p_read99259, i64 %p_read101261, i64 %p_read103263, i64 %p_read105265, i64 %p_read107267, i64 %p_read109269, i64 %p_read111271, i64 %p_read113273, i64 %p_read115275, i64 %p_read117277, i64 %p_read119279, i64 %p_read121281, i64 %p_read123283, i64 %p_read125285, i64 %p_read127287, i64 %p_read_28591, i64 %p_read_28589, i64 %p_read_28587, i64 %p_read_28585, i64 %p_read_28583, i64 %p_read_28581, i64 %p_read_28579, i64 %p_read_28577, i64 %p_read_28575, i64 %p_read_28573, i64 %p_read_28571, i64 %p_read_28569, i64 %p_read_28567, i64 %p_read_28565, i64 %p_read_28563, i64 %p_read_28561, i7 %shl_ln870_1"   --->   Operation 167 'mux' 'tmp_s' <Predicate = true> <Delay = 0.86> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 168 [1/1] (1.06ns)   --->   "%icmp_ln870 = icmp_eq  i64 %tmp, i64 %tmp_s"   --->   Operation 168 'icmp' 'icmp_ln870' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 169 [1/1] (0.00ns)   --->   "%or_ln870 = or i7 %shl_ln, i7 15"   --->   Operation 169 'or' 'or_ln870' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 170 [1/1] (0.86ns)   --->   "%tmp_91 = mux i64 @_ssdm_op_Mux.ap_auto.80i64.i7, i64 %p_read160, i64 %p_read2162, i64 %p_read4164, i64 %p_read6166, i64 %p_read8168, i64 %p_read10170, i64 %p_read12172, i64 %p_read14174, i64 %p_read16176, i64 %p_read18178, i64 %p_read20180, i64 %p_read22182, i64 %p_read24184, i64 %p_read26186, i64 %p_read28188, i64 %p_read30190, i64 %p_read32192, i64 %p_read34194, i64 %p_read36196, i64 %p_read38198, i64 %p_read40200, i64 %p_read42202, i64 %p_read44204, i64 %p_read46206, i64 %p_read48208, i64 %p_read50210, i64 %p_read52212, i64 %p_read54214, i64 %p_read56216, i64 %p_read58218, i64 %p_read60220, i64 %p_read62222, i64 %p_read64224, i64 %p_read66226, i64 %p_read68228, i64 %p_read70230, i64 %p_read72232, i64 %p_read74234, i64 %p_read76236, i64 %p_read78238, i64 %p_read80240, i64 %p_read82242, i64 %p_read84244, i64 %p_read86246, i64 %p_read88248, i64 %p_read90250, i64 %p_read92252, i64 %p_read94254, i64 %p_read96256, i64 %p_read98258, i64 %p_read100260, i64 %p_read102262, i64 %p_read104264, i64 %p_read106266, i64 %p_read108268, i64 %p_read110270, i64 %p_read112272, i64 %p_read114274, i64 %p_read116276, i64 %p_read118278, i64 %p_read120280, i64 %p_read122282, i64 %p_read124284, i64 %p_read126286, i64 %p_read128288, i64 %p_read_28590, i64 %p_read_28588, i64 %p_read_28586, i64 %p_read_28584, i64 %p_read_28582, i64 %p_read_28580, i64 %p_read_28578, i64 %p_read_28576, i64 %p_read_28574, i64 %p_read_28572, i64 %p_read_28570, i64 %p_read_28568, i64 %p_read_28566, i64 %p_read_28564, i64 %p_read_28562, i7 %or_ln870"   --->   Operation 170 'mux' 'tmp_91' <Predicate = true> <Delay = 0.86> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 171 [1/1] (0.00ns)   --->   "%or_ln870_1 = or i7 %shl_ln870_1, i7 15"   --->   Operation 171 'or' 'or_ln870_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 172 [1/1] (0.86ns)   --->   "%tmp_92 = mux i64 @_ssdm_op_Mux.ap_auto.80i64.i7, i64 %p_read1161, i64 %p_read3163, i64 %p_read5165, i64 %p_read7167, i64 %p_read9169, i64 %p_read11171, i64 %p_read13173, i64 %p_read15175, i64 %p_read17177, i64 %p_read19179, i64 %p_read21181, i64 %p_read23183, i64 %p_read25185, i64 %p_read27187, i64 %p_read29189, i64 %p_read31191, i64 %p_read33193, i64 %p_read35195, i64 %p_read37197, i64 %p_read39199, i64 %p_read41201, i64 %p_read43203, i64 %p_read45205, i64 %p_read47207, i64 %p_read49209, i64 %p_read51211, i64 %p_read53213, i64 %p_read55215, i64 %p_read57217, i64 %p_read59219, i64 %p_read61221, i64 %p_read63223, i64 %p_read65225, i64 %p_read67227, i64 %p_read69229, i64 %p_read71231, i64 %p_read73233, i64 %p_read75235, i64 %p_read77237, i64 %p_read79239, i64 %p_read81241, i64 %p_read83243, i64 %p_read85245, i64 %p_read87247, i64 %p_read89249, i64 %p_read91251, i64 %p_read93253, i64 %p_read95255, i64 %p_read97257, i64 %p_read99259, i64 %p_read101261, i64 %p_read103263, i64 %p_read105265, i64 %p_read107267, i64 %p_read109269, i64 %p_read111271, i64 %p_read113273, i64 %p_read115275, i64 %p_read117277, i64 %p_read119279, i64 %p_read121281, i64 %p_read123283, i64 %p_read125285, i64 %p_read127287, i64 %p_read_28591, i64 %p_read_28589, i64 %p_read_28587, i64 %p_read_28585, i64 %p_read_28583, i64 %p_read_28581, i64 %p_read_28579, i64 %p_read_28577, i64 %p_read_28575, i64 %p_read_28573, i64 %p_read_28571, i64 %p_read_28569, i64 %p_read_28567, i64 %p_read_28565, i64 %p_read_28563, i64 %p_read_28561, i7 %or_ln870_1"   --->   Operation 172 'mux' 'tmp_92' <Predicate = true> <Delay = 0.86> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 173 [1/1] (1.06ns)   --->   "%icmp_ln870_1 = icmp_eq  i64 %tmp_91, i64 %tmp_92"   --->   Operation 173 'icmp' 'icmp_ln870_1' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 174 [1/1] (0.12ns)   --->   "%and_ln870 = and i1 %icmp_ln870, i1 %icmp_ln870_1"   --->   Operation 174 'and' 'and_ln870' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 175 [1/1] (0.00ns)   --->   "%ret_ln37 = ret i1 %and_ln870" [patchMaker.cpp:37]   --->   Operation 175 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -123,27 +260,12 @@ ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln37 = ret i1 %and_ln870" [pat
 ============================================================
 Target clock period: 3ns, clock uncertainty: 0.81ns.
 
- <State 1>: 1.9ns
+ <State 1>: 2.05ns
 The critical path consists of the following:
-	wire read on port 'wsp2_offset3' [4]  (0 ns)
-	'add' operation ('add_ln869') [8]  (0.705 ns)
-	'getelementptr' operation ('wsp2_addr') [10]  (0 ns)
-	'load' operation ('wsp2_load') on array 'wsp2' [21]  (1.2 ns)
-
- <State 2>: 1.9ns
-The critical path consists of the following:
-	'add' operation ('add_ln870') [11]  (0.705 ns)
-	'getelementptr' operation ('wsp2_addr_3') [13]  (0 ns)
-	'load' operation ('wsp2_load_1') on array 'wsp2' [24]  (1.2 ns)
-
- <State 3>: 1.2ns
-The critical path consists of the following:
-	'load' operation ('wsp2_load_3') on array 'wsp2' [23]  (1.2 ns)
-
- <State 4>: 1.19ns
-The critical path consists of the following:
-	'icmp' operation ('icmp_ln870_1') [25]  (1.06 ns)
-	'and' operation ('and_ln870') [26]  (0.122 ns)
+	wire read on port 'wsp2_offset3' [163]  (0 ns)
+	'mux' operation ('tmp_s') [328]  (0.863 ns)
+	'icmp' operation ('icmp_ln870') [329]  (1.06 ns)
+	'and' operation ('and_ln870') [335]  (0.122 ns)
 
 
 ============================================================
@@ -155,9 +277,6 @@ N/A
  - Input state : 
   - Chain level:
 	State 1
-	State 2
-	State 3
-	State 4
 
 
 ============================================================

@@ -79,7 +79,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "k", "Type" : "None", "Direction" : "I"},
 			{"Name" : "radiiDivisionList", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.radiiDivisionList_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_35ns_33s_64_3_1_U3", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_35ns_33s_64_3_1_U316", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

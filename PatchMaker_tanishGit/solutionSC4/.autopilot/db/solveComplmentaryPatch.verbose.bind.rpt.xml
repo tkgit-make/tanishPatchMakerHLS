@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'solveComplmentaryPatch'" level="0">
-<item name = "Date">Mon Aug  5 17:48:24 2024
+<item name = "Date">Mon Aug  5 23:34:21 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 2.190 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 2.481 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -31,11 +31,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_makePatch_alignedToLine_fu_647">makePatch_alignedToLine, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_delete_patch_fu_674">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_straightLineProjectorFromLayerIJtoK_fu_687">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
-<column name="grp_get_index_from_z_fu_701">get_index_from_z, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_areWedgeSuperPointsEqual_fu_715">areWedgeSuperPointsEqual, 3, 3, 9.000 ns, 9.000 ns, 2, 2, yes</column>
+<column name="grp_makePatch_alignedToLine_2_fu_30135">makePatch_alignedToLine_2, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_delete_patch_fu_33340">delete_patch, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_get_index_from_z_fu_33740">get_index_from_z, ?, ?, ?, ?, ?, ?, none</column>
+<column name="tmp_s_areWedgeSuperPointsEqual_fu_36320">areWedgeSuperPointsEqual, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_straightLineProjectorFromLayerIJtoK_fu_36488">straightLineProjectorFromLayerIJtoK, 6, 6, 18.000 ns, 18.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -45,10 +45,10 @@
 <column name="- solveComplmentaryPatch_fillNew_z_i_index1">5, 5, 2, 1, 1, 5, yes</column>
 <column name="- solveComplmentaryPatch_fillNew_z_i_index2">5, 5, 2, 1, 1, 5, yes</column>
 <column name="- solveComplmentaryPatch_fillNew_z_i_index3">6, 6, 3, 1, 1, 5, yes</column>
-<column name="- solveComplmentaryPatch_fillNew_z_i_index5">8, 8, 5, 1, 1, 5, yes</column>
+<column name="- solveComplmentaryPatch_fillNew_z_i_index5">6, 6, 3, 1, 1, 5, yes</column>
 <column name="- solveComplmentaryPatch_fillNew_z_i_atTop">11, 11, 9, 1, 1, 4, yes</column>
 <column name="- solveComplmentaryPatch_findlayerWithSmallestShift">5, 5, 3, 1, 1, 4, yes</column>
-<column name="- solveComplmentaryPatch_superpointEqualCheck_2">9, 29, 5, 5, 1, 1 ~ 5, yes</column>
+<column name="- solveComplmentaryPatch_superpointEqualCheck_2">3, 11, 2, 2, 1, 1 ~ 5, yes</column>
 </table>
 </item>
 </section>

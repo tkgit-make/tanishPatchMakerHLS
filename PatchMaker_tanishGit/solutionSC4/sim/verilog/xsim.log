@@ -2,8 +2,8 @@
 # xsim v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Aug  5 17:58:05 2024
-# Process ID: 4104
+# Start of session at: Tue Aug  6 00:40:07 2024
+# Process ID: 8664
 # Current directory: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/MPSQ/xsim_script.tcl}
 # Log file: C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/xsim.log
@@ -21,19 +21,10 @@ source MPSQ.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 10 [n/a] @ "107000"
-// RTL Simulation : 1 / 10 [n/a] @ "545909000"
-// RTL Simulation : 2 / 10 [n/a] @ "1434968000"
-// RTL Simulation : 3 / 10 [n/a] @ "2589179000"
-// RTL Simulation : 4 / 10 [n/a] @ "3323006000"
-// RTL Simulation : 5 / 10 [n/a] @ "4386755000"
-// RTL Simulation : 6 / 10 [n/a] @ "5789066000"
-// RTL Simulation : 7 / 10 [n/a] @ "7182191000"
-// RTL Simulation : 8 / 10 [n/a] @ "8152661000"
-// RTL Simulation : 9 / 10 [n/a] @ "9574187000"
-// RTL Simulation : 10 / 10 [n/a] @ "11267495000"
+// RTL Simulation : 0 / 1 [n/a] @ "107000"
+// RTL Simulation : 1 / 1 [n/a] @ "169487000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 11267506500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 503
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:14:24 . Memory (MB): peak = 923.617 ; gain = 0.000
+$finish called at time : 169498500 ps : File "C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionSC4/sim/verilog/MPSQ.autotb.v" Line 761
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:24 . Memory (MB): peak = 1043.230 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Aug  5 18:12:35 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Aug  6 00:42:42 2024...

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'straightLineProjectorFromLayerIJtoK'" level="0">
-<item name = "Date">Mon Aug  5 17:49:03 2024
+<item name = "Date">Mon Aug  5 23:40:05 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">PatchMaker_tanishGit</item>
@@ -63,7 +63,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_35ns_33s_64_3_1_U3">mul_35ns_33s_64_3_1, 0, 0, 199, 68, 0</column>
+<column name="mul_35ns_33s_64_3_1_U316">mul_35ns_33s_64_3_1, 0, 0, 199, 68, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -81,20 +81,20 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln225_fu_173_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln226_fu_173_p2">+, 0, 0, 13, 6, 6</column>
 <column name="add_ln69_fu_246_p2">+, 0, 0, 39, 32, 32</column>
 <column name="neg6_fu_121_p2">-, 0, 0, 12, 1, 4</column>
 <column name="neg_fu_127_p2">-, 0, 0, 10, 1, 3</column>
 <column name="ret_fu_190_p2">-, 0, 0, 40, 33, 33</column>
-<column name="sub_ln223_1_fu_103_p2">-, 0, 0, 12, 4, 4</column>
-<column name="sub_ln223_fu_93_p2">-, 0, 0, 12, 4, 4</column>
-<column name="sub_ln225_fu_158_p2">-, 0, 0, 13, 6, 6</column>
+<column name="sub_ln224_1_fu_103_p2">-, 0, 0, 12, 4, 4</column>
+<column name="sub_ln224_fu_93_p2">-, 0, 0, 12, 4, 4</column>
+<column name="sub_ln226_fu_158_p2">-, 0, 0, 13, 6, 6</column>
 <column name="sub_ln69_fu_242_p2">-, 0, 0, 39, 32, 32</column>
-<column name="and_ln223_1_fu_237_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln223_fu_225_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln223_1_fu_115_p2">icmp, 0, 0, 9, 4, 1</column>
-<column name="icmp_ln223_fu_109_p2">icmp, 0, 0, 9, 4, 1</column>
-<column name="or_ln223_fu_250_p2">or, 0, 0, 2, 1, 1</column>
+<column name="and_ln224_1_fu_237_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln224_fu_225_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln224_1_fu_115_p2">icmp, 0, 0, 9, 4, 1</column>
+<column name="icmp_ln224_fu_109_p2">icmp, 0, 0, 9, 4, 1</column>
+<column name="or_ln224_fu_250_p2">or, 0, 0, 2, 1, 1</column>
 <column name="abs8_fu_164_p3">select, 0, 0, 4, 1, 4</column>
 <column name="abs_fu_132_p3">select, 0, 0, 3, 1, 3</column>
 <column name="ap_return">select, 0, 0, 32, 1, 32</column>
@@ -114,22 +114,22 @@
 <column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
-<column name="icmp_ln223_1_reg_299">1, 0, 1, 0</column>
-<column name="icmp_ln223_reg_293">1, 0, 1, 0</column>
+<column name="icmp_ln224_1_reg_299">1, 0, 1, 0</column>
+<column name="icmp_ln224_reg_293">1, 0, 1, 0</column>
 <column name="neg6_reg_305">4, 0, 4, 0</column>
 <column name="radiiDivisionList_load_reg_320">35, 0, 35, 0</column>
 <column name="ret_reg_315">33, 0, 33, 0</column>
-<column name="sub_ln223_1_reg_287">4, 0, 4, 0</column>
-<column name="sub_ln223_reg_276">4, 0, 4, 0</column>
+<column name="sub_ln224_1_reg_287">4, 0, 4, 0</column>
+<column name="sub_ln224_reg_276">4, 0, 4, 0</column>
 <column name="trunc_ln1_reg_335">32, 0, 32, 0</column>
-<column name="trunc_ln223_reg_281">3, 0, 3, 0</column>
+<column name="trunc_ln224_reg_281">3, 0, 3, 0</column>
 <column name="z_i_read_reg_269">32, 0, 32, 0</column>
 <column name="z_j_read_reg_264">32, 0, 32, 0</column>
 <column name="z_j_read_reg_264_pp0_iter1_reg">32, 0, 32, 0</column>
-<column name="icmp_ln223_1_reg_299">64, 32, 1, 0</column>
-<column name="icmp_ln223_reg_293">64, 32, 1, 0</column>
-<column name="sub_ln223_1_reg_287">64, 32, 4, 0</column>
-<column name="sub_ln223_reg_276">64, 32, 4, 0</column>
+<column name="icmp_ln224_1_reg_299">64, 32, 1, 0</column>
+<column name="icmp_ln224_reg_293">64, 32, 1, 0</column>
+<column name="sub_ln224_1_reg_287">64, 32, 4, 0</column>
+<column name="sub_ln224_reg_276">64, 32, 4, 0</column>
 <column name="z_i_read_reg_269">64, 32, 32, 0</column>
 </table>
 </item>
