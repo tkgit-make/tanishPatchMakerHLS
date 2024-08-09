@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Thu Aug 08 18:07:32 -0400 2024
+INFO: [HLS 200-10] For user 'rapiduser' on host 'rapid-1511' (Windows NT_amd64 version 6.2) on Sun Aug 08 20:13:14 -0400 2021
 INFO: [HLS 200-10] In directory 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS'
 Sourcing Tcl script 'C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/PatchMaker_tanishGit/solutionLC/export.tcl'
 INFO: [HLS 200-1510] Running: open_project PatchMaker_tanishGit 
@@ -21,8 +21,24 @@ INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
 INFO: [HLS 200-10] Setting target device to 'xcvu19p-fsvb3824-2-e'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 INFO: [HLS 200-1510] Running: set_part xcvu19p-fsvb3824-2-e 
 INFO: [HLS 200-1510] Running: create_clock -period 3 -name default 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/rapiduser/Desktop/tanishGitHub/tanishPatchMakerHLS/VivadoRTL/MPSQ.zip 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  8 21:40:17 2021...
+INFO: [HLS 200-802] Generated output file VivadoRTL/MPSQ.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3037 seconds. CPU system time: 2066 seconds. Elapsed time: 5221.38 seconds; current allocated memory: 282.921 MB.
